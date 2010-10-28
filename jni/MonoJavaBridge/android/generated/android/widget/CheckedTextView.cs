@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class CheckedTextView : android.widget.TextView, Checkable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CheckedTextView()
-		{
-			InitJNI();
-		}
 		protected CheckedTextView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,7 +125,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CheckedTextView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.CheckedTextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CheckedTextView"));
@@ -146,6 +142,9 @@ namespace android.widget
 			global::android.widget.CheckedTextView._CheckedTextView16856 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.CheckedTextView._CheckedTextView16857 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.CheckedTextView._CheckedTextView16858 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

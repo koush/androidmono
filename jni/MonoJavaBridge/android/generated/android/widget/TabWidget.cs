@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TabWidget : android.widget.LinearLayout, android.view.View.OnFocusChangeListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TabWidget()
-		{
-			InitJNI();
-		}
 		protected TabWidget(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -231,7 +227,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TabWidget.staticClass, global::android.widget.TabWidget._TabWidget17909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TabWidget()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TabWidget.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TabWidget"));
@@ -257,6 +253,9 @@ namespace android.widget
 			global::android.widget.TabWidget._TabWidget17907 = @__env.GetMethodIDNoThrow(global::android.widget.TabWidget.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TabWidget._TabWidget17908 = @__env.GetMethodIDNoThrow(global::android.widget.TabWidget.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.TabWidget._TabWidget17909 = @__env.GetMethodIDNoThrow(global::android.widget.TabWidget.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.location
 	public partial class Address : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Address()
-		{
-			InitJNI();
-		}
 		protected Address(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -604,7 +600,7 @@ namespace android.location
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.location.Address.staticClass, _CREATOR6839)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Address()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.Address.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Address"));
@@ -653,6 +649,9 @@ namespace android.location
 			global::android.location.Address._setExtras6837 = @__env.GetMethodIDNoThrow(global::android.location.Address.staticClass, "setExtras", "(Landroid/os/Bundle;)V");
 			global::android.location.Address._Address6838 = @__env.GetMethodIDNoThrow(global::android.location.Address.staticClass, "<init>", "(Ljava/util/Locale;)V");
 			global::android.location.Address._CREATOR6839 = @__env.GetStaticFieldIDNoThrow(global::android.location.Address.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

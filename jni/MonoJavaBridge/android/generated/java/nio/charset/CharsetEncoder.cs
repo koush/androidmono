@@ -4,10 +4,6 @@ namespace java.nio.charset
 	public abstract partial class CharsetEncoder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharsetEncoder()
-		{
-			InitJNI();
-		}
 		protected CharsetEncoder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -220,7 +216,7 @@ namespace java.nio.charset
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._CharsetEncoder22794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CharsetEncoder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CharsetEncoder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CharsetEncoder"));
@@ -249,16 +245,15 @@ namespace java.nio.charset
 			global::java.nio.charset.CharsetEncoder._CharsetEncoder22793 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharsetEncoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF[B)V");
 			global::java.nio.charset.CharsetEncoder._CharsetEncoder22794 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharsetEncoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.charset.CharsetEncoder))]
 	internal sealed partial class CharsetEncoder_ : java.nio.charset.CharsetEncoder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharsetEncoder_()
-		{
-			InitJNI();
-		}
 		internal CharsetEncoder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -271,11 +266,14 @@ namespace java.nio.charset
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.CharsetEncoder_.staticClass, global::java.nio.charset.CharsetEncoder_._encodeLoop22795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.nio.charset.CoderResult;
 		}
-		private static void InitJNI()
+		static CharsetEncoder_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CharsetEncoder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CharsetEncoder"));
 			global::java.nio.charset.CharsetEncoder_._encodeLoop22795 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharsetEncoder_.staticClass, "encodeLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

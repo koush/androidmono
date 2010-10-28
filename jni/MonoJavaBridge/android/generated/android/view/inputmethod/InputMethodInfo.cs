@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public sealed partial class InputMethodInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMethodInfo()
-		{
-			InitJNI();
-		}
 		internal InputMethodInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -213,7 +209,7 @@ namespace android.view.inputmethod
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.InputMethodInfo.staticClass, _CREATOR15944)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static InputMethodInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethodInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethodInfo"));
@@ -234,6 +230,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputMethodInfo._InputMethodInfo15942 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodInfo.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V");
 			global::android.view.inputmethod.InputMethodInfo._InputMethodInfo15943 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;)V");
 			global::android.view.inputmethod.InputMethodInfo._CREATOR15944 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.InputMethodInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

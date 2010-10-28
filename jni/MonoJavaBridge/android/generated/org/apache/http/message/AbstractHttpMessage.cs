@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public abstract partial class AbstractHttpMessage : java.lang.Object, HttpMessage
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpMessage()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpMessage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -171,7 +167,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.AbstractHttpMessage.staticClass, global::org.apache.http.message.AbstractHttpMessage._AbstractHttpMessage33503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.AbstractHttpMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/AbstractHttpMessage"));
@@ -195,16 +191,15 @@ namespace org.apache.http.message
 			global::org.apache.http.message.AbstractHttpMessage._AbstractHttpMessage33502 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.AbstractHttpMessage.staticClass, "<init>", "()V");
 			global::org.apache.http.message.AbstractHttpMessage._AbstractHttpMessage33503 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.AbstractHttpMessage.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.message.AbstractHttpMessage))]
 	internal sealed partial class AbstractHttpMessage_ : org.apache.http.message.AbstractHttpMessage
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpMessage_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpMessage_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -217,11 +212,14 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.AbstractHttpMessage_.staticClass, global::org.apache.http.message.AbstractHttpMessage_._getProtocolVersion33504)) as org.apache.http.ProtocolVersion;
 		}
-		private static void InitJNI()
+		static AbstractHttpMessage_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.AbstractHttpMessage_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/AbstractHttpMessage"));
 			global::org.apache.http.message.AbstractHttpMessage_._getProtocolVersion33504 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.AbstractHttpMessage_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

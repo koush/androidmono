@@ -4,10 +4,6 @@ namespace android.test
 	public partial class InstrumentationTestCase : junit.framework.TestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InstrumentationTestCase()
-		{
-			InitJNI();
-		}
 		protected InstrumentationTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -128,7 +124,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestCase.staticClass, global::android.test.InstrumentationTestCase._InstrumentationTestCase12197);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InstrumentationTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.InstrumentationTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/InstrumentationTestCase"));
@@ -144,6 +140,9 @@ namespace android.test
 			global::android.test.InstrumentationTestCase._sendKeys12195 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestCase.staticClass, "sendKeys", "([I)V");
 			global::android.test.InstrumentationTestCase._sendRepeatedKeys12196 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestCase.staticClass, "sendRepeatedKeys", "([I)V");
 			global::android.test.InstrumentationTestCase._InstrumentationTestCase12197 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestCase.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

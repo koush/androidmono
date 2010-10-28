@@ -4,10 +4,6 @@ namespace android.util
 	public partial class Pair : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Pair()
-		{
-			InitJNI();
-		}
 		protected Pair(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -60,7 +56,7 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _second13818)) as java.lang.Object;
 			}
 		}
-		private static void InitJNI()
+		static Pair()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Pair.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Pair"));
@@ -70,6 +66,9 @@ namespace android.util
 			global::android.util.Pair._Pair13816 = @__env.GetMethodIDNoThrow(global::android.util.Pair.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/Object;)V");
 			global::android.util.Pair._first13817 = @__env.GetFieldIDNoThrow(global::android.util.Pair.staticClass, "first", "Ljava/lang/Object;");
 			global::android.util.Pair._second13818 = @__env.GetFieldIDNoThrow(global::android.util.Pair.staticClass, "second", "Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

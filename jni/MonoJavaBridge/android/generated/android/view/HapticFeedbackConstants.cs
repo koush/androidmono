@@ -4,10 +4,6 @@ namespace android.view
 	public partial class HapticFeedbackConstants : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HapticFeedbackConstants()
-		{
-			InitJNI();
-		}
 		protected HapticFeedbackConstants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,10 +42,13 @@ namespace android.view
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static HapticFeedbackConstants()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.HapticFeedbackConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/HapticFeedbackConstants"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

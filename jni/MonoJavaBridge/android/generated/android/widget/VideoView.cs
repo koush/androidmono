@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class VideoView : android.view.SurfaceView, android.widget.MediaController.MediaPlayerControl
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VideoView()
-		{
-			InitJNI();
-		}
 		protected VideoView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -323,7 +319,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.VideoView.staticClass, global::android.widget.VideoView._VideoView18246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static VideoView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.VideoView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/VideoView"));
@@ -354,6 +350,9 @@ namespace android.widget
 			global::android.widget.VideoView._VideoView18244 = @__env.GetMethodIDNoThrow(global::android.widget.VideoView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.VideoView._VideoView18245 = @__env.GetMethodIDNoThrow(global::android.widget.VideoView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.VideoView._VideoView18246 = @__env.GetMethodIDNoThrow(global::android.widget.VideoView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

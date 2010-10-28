@@ -4,10 +4,6 @@ namespace org.apache.http.auth.@params
 	public partial class AuthParamBean : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthParamBean()
-		{
-			InitJNI();
-		}
 		protected AuthParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace org.apache.http.auth.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.@params.AuthParamBean.staticClass, global::org.apache.http.auth.@params.AuthParamBean._AuthParamBean31861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AuthParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.@params.AuthParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/params/AuthParamBean"));
 			global::org.apache.http.auth.@params.AuthParamBean._setCredentialCharset31860 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParamBean.staticClass, "setCredentialCharset", "(Ljava/lang/String;)V");
 			global::org.apache.http.auth.@params.AuthParamBean._AuthParamBean31861 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

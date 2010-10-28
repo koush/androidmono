@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class SimpleFormatter : java.util.logging.Formatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleFormatter()
-		{
-			InitJNI();
-		}
 		protected SimpleFormatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.SimpleFormatter.staticClass, global::java.util.logging.SimpleFormatter._SimpleFormatter28099);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SimpleFormatter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.SimpleFormatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/SimpleFormatter"));
 			global::java.util.logging.SimpleFormatter._format28098 = @__env.GetMethodIDNoThrow(global::java.util.logging.SimpleFormatter.staticClass, "format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;");
 			global::java.util.logging.SimpleFormatter._SimpleFormatter28099 = @__env.GetMethodIDNoThrow(global::java.util.logging.SimpleFormatter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

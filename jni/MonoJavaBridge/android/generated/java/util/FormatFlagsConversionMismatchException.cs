@@ -4,10 +4,6 @@ namespace java.util
 	public partial class FormatFlagsConversionMismatchException : java.util.IllegalFormatException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FormatFlagsConversionMismatchException()
-		{
-			InitJNI();
-		}
 		protected FormatFlagsConversionMismatchException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._FormatFlagsConversionMismatchException26181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FormatFlagsConversionMismatchException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.FormatFlagsConversionMismatchException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/FormatFlagsConversionMismatchException"));
@@ -74,6 +70,9 @@ namespace java.util
 			global::java.util.FormatFlagsConversionMismatchException._getFlags26179 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "getFlags", "()Ljava/lang/String;");
 			global::java.util.FormatFlagsConversionMismatchException._getConversion26180 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "getConversion", "()C");
 			global::java.util.FormatFlagsConversionMismatchException._FormatFlagsConversionMismatchException26181 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "<init>", "(Ljava/lang/String;C)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

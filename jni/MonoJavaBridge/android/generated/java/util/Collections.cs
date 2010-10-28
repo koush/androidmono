@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Collections : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Collections()
-		{
-			InitJNI();
-		}
 		protected Collections(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -344,7 +340,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.GetStaticObjectField(global::java.util.Collections.staticClass, _EMPTY_MAP26075)) as java.util.Map;
 			}
 		}
-		private static void InitJNI()
+		static Collections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Collections.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Collections"));
@@ -402,6 +398,9 @@ namespace java.util
 			global::java.util.Collections._EMPTY_SET26073 = @__env.GetStaticFieldIDNoThrow(global::java.util.Collections.staticClass, "EMPTY_SET", "Ljava/util/Set;");
 			global::java.util.Collections._EMPTY_LIST26074 = @__env.GetStaticFieldIDNoThrow(global::java.util.Collections.staticClass, "EMPTY_LIST", "Ljava/util/List;");
 			global::java.util.Collections._EMPTY_MAP26075 = @__env.GetStaticFieldIDNoThrow(global::java.util.Collections.staticClass, "EMPTY_MAP", "Ljava/util/Map;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

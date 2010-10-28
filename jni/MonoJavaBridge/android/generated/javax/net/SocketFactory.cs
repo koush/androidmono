@@ -4,10 +4,6 @@ namespace javax.net
 	public abstract partial class SocketFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketFactory()
-		{
-			InitJNI();
-		}
 		protected SocketFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,7 +37,7 @@ namespace javax.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._SocketFactory29824);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.SocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/SocketFactory"));
@@ -53,16 +49,15 @@ namespace javax.net
 			global::javax.net.SocketFactory._createSocket29823 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;");
 			global::javax.net.SocketFactory._SocketFactory29824 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.SocketFactory))]
 	internal sealed partial class SocketFactory_ : javax.net.SocketFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketFactory_()
-		{
-			InitJNI();
-		}
 		internal SocketFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +97,7 @@ namespace javax.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_.staticClass, global::javax.net.SocketFactory_._createSocket29828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Socket;
 		}
-		private static void InitJNI()
+		static SocketFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.SocketFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/SocketFactory"));
@@ -110,6 +105,9 @@ namespace javax.net
 			global::javax.net.SocketFactory_._createSocket29826 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;");
 			global::javax.net.SocketFactory_._createSocket29827 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;");
 			global::javax.net.SocketFactory_._createSocket29828 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

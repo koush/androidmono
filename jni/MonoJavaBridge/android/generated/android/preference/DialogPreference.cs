@@ -4,10 +4,6 @@ namespace android.preference
 	public abstract partial class DialogPreference : android.preference.Preference, android.content.DialogInterface_OnClickListener, android.content.DialogInterface_OnDismissListener, android.preference.PreferenceManager.OnActivityDestroyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialogPreference()
-		{
-			InitJNI();
-		}
 		protected DialogPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -302,7 +298,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.DialogPreference.staticClass, global::android.preference.DialogPreference._DialogPreference10277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DialogPreference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.DialogPreference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/DialogPreference"));
@@ -338,23 +334,25 @@ namespace android.preference
 			global::android.preference.DialogPreference._DialogPreference10276 = @__env.GetMethodIDNoThrow(global::android.preference.DialogPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.DialogPreference._DialogPreference10277 = @__env.GetMethodIDNoThrow(global::android.preference.DialogPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.preference.DialogPreference))]
 	internal sealed partial class DialogPreference_ : android.preference.DialogPreference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialogPreference_()
-		{
-			InitJNI();
-		}
 		internal DialogPreference_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static DialogPreference_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.DialogPreference_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/DialogPreference"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

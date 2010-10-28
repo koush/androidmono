@@ -11,10 +11,6 @@ namespace org.apache.http
 	internal sealed partial class HttpResponseFactory_ : java.lang.Object, HttpResponseFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpResponseFactory_()
-		{
-			InitJNI();
-		}
 		internal HttpResponseFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpResponseFactory_.staticClass, global::org.apache.http.HttpResponseFactory_._newHttpResponse31666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
 		}
-		private static void InitJNI()
+		static HttpResponseFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpResponseFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpResponseFactory"));
 			global::org.apache.http.HttpResponseFactory_._newHttpResponse31665 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpResponseFactory_.staticClass, "newHttpResponse", "(Lorg/apache/http/ProtocolVersion;ILorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
 			global::org.apache.http.HttpResponseFactory_._newHttpResponse31666 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpResponseFactory_.staticClass, "newHttpResponse", "(Lorg/apache/http/StatusLine;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

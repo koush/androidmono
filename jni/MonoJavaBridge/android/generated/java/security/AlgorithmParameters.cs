@@ -4,10 +4,6 @@ namespace java.security
 	public partial class AlgorithmParameters : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlgorithmParameters()
-		{
-			InitJNI();
-		}
 		protected AlgorithmParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -138,7 +134,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._AlgorithmParameters22875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlgorithmParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AlgorithmParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AlgorithmParameters"));
@@ -155,6 +151,9 @@ namespace java.security
 			global::java.security.AlgorithmParameters._getProvider22873 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameters.staticClass, "getProvider", "()Ljava/security/Provider;");
 			global::java.security.AlgorithmParameters._getParameterSpec22874 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameters.staticClass, "getParameterSpec", "(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;");
 			global::java.security.AlgorithmParameters._AlgorithmParameters22875 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameters.staticClass, "<init>", "(Ljava/security/AlgorithmParametersSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.inputmethodservice
 	public partial class Keyboard : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Keyboard()
-		{
-			InitJNI();
-		}
 		protected Keyboard(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.inputmethodservice
 		public partial class Key : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Key()
-			{
-				InitJNI();
-			}
 			protected Key(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -304,7 +296,7 @@ namespace android.inputmethodservice
 				{
 				}
 			}
-			private static void InitJNI()
+			static Key()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.Keyboard.Key.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard$Key"));
@@ -334,15 +326,14 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.Keyboard.Key._popupResId6716 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "popupResId", "I");
 				global::android.inputmethodservice.Keyboard.Key._repeatable6717 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "repeatable", "Z");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Row : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Row()
-			{
-				InitJNI();
-			}
 			protected Row(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -432,7 +423,7 @@ namespace android.inputmethodservice
 				{
 				}
 			}
-			private static void InitJNI()
+			static Row()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.Keyboard.Row.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard$Row"));
@@ -444,6 +435,9 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.Keyboard.Row._verticalGap6723 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "verticalGap", "I");
 				global::android.inputmethodservice.Keyboard.Row._rowEdgeFlags6724 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "rowEdgeFlags", "I");
 				global::android.inputmethodservice.Keyboard.Row._mode6725 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "mode", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new int Height
@@ -785,7 +779,7 @@ namespace android.inputmethodservice
 				return -6;
 			}
 		}
-		private static void InitJNI()
+		static Keyboard()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.Keyboard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard"));
@@ -810,6 +804,9 @@ namespace android.inputmethodservice
 			global::android.inputmethodservice.Keyboard._Keyboard6744 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;I)V");
 			global::android.inputmethodservice.Keyboard._Keyboard6745 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;II)V");
 			global::android.inputmethodservice.Keyboard._Keyboard6746 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;ILjava/lang/CharSequence;II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

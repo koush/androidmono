@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class ExemptionMechanism : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExemptionMechanism()
-		{
-			InitJNI();
-		}
 		protected ExemptionMechanism(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,7 +145,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanism.staticClass, global::javax.crypto.ExemptionMechanism._ExemptionMechanism28606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ExemptionMechanism()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.ExemptionMechanism.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/ExemptionMechanism"));
@@ -168,6 +164,9 @@ namespace javax.crypto
 			global::javax.crypto.ExemptionMechanism._genExemptionBlob28604 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanism.staticClass, "genExemptionBlob", "([B)I");
 			global::javax.crypto.ExemptionMechanism._genExemptionBlob28605 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanism.staticClass, "genExemptionBlob", "([BI)I");
 			global::javax.crypto.ExemptionMechanism._ExemptionMechanism28606 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanism.staticClass, "<init>", "(Ljavax/crypto/ExemptionMechanismSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

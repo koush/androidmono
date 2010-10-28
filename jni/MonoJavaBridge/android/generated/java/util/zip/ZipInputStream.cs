@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class ZipInputStream : java.util.zip.InflaterInputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ZipInputStream()
-		{
-			InitJNI();
-		}
 		protected ZipInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -88,7 +84,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._ZipInputStream28477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ZipInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.ZipInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/ZipInputStream"));
@@ -100,6 +96,9 @@ namespace java.util.zip
 			global::java.util.zip.ZipInputStream._createZipEntry28475 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "createZipEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;");
 			global::java.util.zip.ZipInputStream._closeEntry28476 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "closeEntry", "()V");
 			global::java.util.zip.ZipInputStream._ZipInputStream28477 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

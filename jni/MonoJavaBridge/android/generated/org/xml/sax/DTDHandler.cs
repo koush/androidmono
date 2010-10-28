@@ -11,10 +11,6 @@ namespace org.xml.sax
 	internal sealed partial class DTDHandler_ : java.lang.Object, DTDHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DTDHandler_()
-		{
-			InitJNI();
-		}
 		internal DTDHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.xml.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_.staticClass, global::org.xml.sax.DTDHandler_._notationDecl34974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static DTDHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.DTDHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/DTDHandler"));
 			global::org.xml.sax.DTDHandler_._unparsedEntityDecl34973 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.DTDHandler_._notationDecl34974 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSResourceResolver_ : java.lang.Object, LSResourceResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSResourceResolver_()
-		{
-			InitJNI();
-		}
 		internal LSResourceResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.w3c.dom.ls
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSInput>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSResourceResolver_.staticClass, global::org.w3c.dom.ls.LSResourceResolver_._resolveResource34937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as org.w3c.dom.ls.LSInput;
 		}
-		private static void InitJNI()
+		static LSResourceResolver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSResourceResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSResourceResolver"));
 			global::org.w3c.dom.ls.LSResourceResolver_._resolveResource34937 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSResourceResolver_.staticClass, "resolveResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ls/LSInput;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

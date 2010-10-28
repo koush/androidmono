@@ -4,10 +4,6 @@ namespace org.apache.http
 	public partial class UnsupportedHttpVersionException : org.apache.http.ProtocolException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UnsupportedHttpVersionException()
-		{
-			InitJNI();
-		}
 		protected UnsupportedHttpVersionException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace org.apache.http
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.UnsupportedHttpVersionException.staticClass, global::org.apache.http.UnsupportedHttpVersionException._UnsupportedHttpVersionException31772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UnsupportedHttpVersionException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.UnsupportedHttpVersionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/UnsupportedHttpVersionException"));
 			global::org.apache.http.UnsupportedHttpVersionException._UnsupportedHttpVersionException31771 = @__env.GetMethodIDNoThrow(global::org.apache.http.UnsupportedHttpVersionException.staticClass, "<init>", "()V");
 			global::org.apache.http.UnsupportedHttpVersionException._UnsupportedHttpVersionException31772 = @__env.GetMethodIDNoThrow(global::org.apache.http.UnsupportedHttpVersionException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

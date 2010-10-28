@@ -4,10 +4,6 @@ namespace java.util.prefs
 	public partial class NodeChangeEvent : java.util.EventObject
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NodeChangeEvent()
-		{
-			InitJNI();
-		}
 		protected NodeChangeEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.util.prefs
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.NodeChangeEvent.staticClass, global::java.util.prefs.NodeChangeEvent._NodeChangeEvent28179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NodeChangeEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.NodeChangeEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/NodeChangeEvent"));
 			global::java.util.prefs.NodeChangeEvent._getParent28177 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeEvent.staticClass, "getParent", "()Ljava/util/prefs/Preferences;");
 			global::java.util.prefs.NodeChangeEvent._getChild28178 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeEvent.staticClass, "getChild", "()Ljava/util/prefs/Preferences;");
 			global::java.util.prefs.NodeChangeEvent._NodeChangeEvent28179 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeEvent.staticClass, "<init>", "(Ljava/util/prefs/Preferences;Ljava/util/prefs/Preferences;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

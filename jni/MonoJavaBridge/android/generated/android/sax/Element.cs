@@ -4,10 +4,6 @@ namespace android.sax
 	public partial class Element : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Element()
-		{
-			InitJNI();
-		}
 		protected Element(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -148,7 +144,7 @@ namespace android.sax
 		{
 			setEndTextElementListener((global::android.sax.EndTextElementListenerDelegateWrapper)arg0);
 		}
-		private static void InitJNI()
+		static Element()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.Element.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/Element"));
@@ -162,6 +158,9 @@ namespace android.sax
 			global::android.sax.Element._setStartElementListener11605 = @__env.GetMethodIDNoThrow(global::android.sax.Element.staticClass, "setStartElementListener", "(Landroid/sax/StartElementListener;)V");
 			global::android.sax.Element._setEndElementListener11606 = @__env.GetMethodIDNoThrow(global::android.sax.Element.staticClass, "setEndElementListener", "(Landroid/sax/EndElementListener;)V");
 			global::android.sax.Element._setEndTextElementListener11607 = @__env.GetMethodIDNoThrow(global::android.sax.Element.staticClass, "setEndTextElementListener", "(Landroid/sax/EndTextElementListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

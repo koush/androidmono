@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class TunnelRefusedException : org.apache.http.HttpException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TunnelRefusedException()
-		{
-			InitJNI();
-		}
 		protected TunnelRefusedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.TunnelRefusedException.staticClass, global::org.apache.http.impl.client.TunnelRefusedException._TunnelRefusedException32957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TunnelRefusedException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.TunnelRefusedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/TunnelRefusedException"));
 			global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.TunnelRefusedException.staticClass, "getResponse", "()Lorg/apache/http/HttpResponse;");
 			global::org.apache.http.impl.client.TunnelRefusedException._TunnelRefusedException32957 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.TunnelRefusedException.staticClass, "<init>", "(Ljava/lang/String;Lorg/apache/http/HttpResponse;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

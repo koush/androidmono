@@ -4,10 +4,6 @@ namespace org.xml.sax.helpers
 	public partial class ParserFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParserFactory()
-		{
-			InitJNI();
-		}
 		protected ParserFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -23,12 +19,15 @@ namespace org.xml.sax.helpers
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.Parser>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.ParserFactory.staticClass, global::org.xml.sax.helpers.ParserFactory._makeParser35253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.Parser;
 		}
-		private static void InitJNI()
+		static ParserFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.ParserFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/ParserFactory"));
 			global::org.xml.sax.helpers.ParserFactory._makeParser35252 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.ParserFactory.staticClass, "makeParser", "()Lorg/xml/sax/Parser;");
 			global::org.xml.sax.helpers.ParserFactory._makeParser35253 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.ParserFactory.staticClass, "makeParser", "(Ljava/lang/String;)Lorg/xml/sax/Parser;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

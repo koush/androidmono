@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class EventListenerProxy : java.lang.Object, EventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EventListenerProxy()
-		{
-			InitJNI();
-		}
 		protected EventListenerProxy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.EventListenerProxy.staticClass, global::java.util.EventListenerProxy._EventListenerProxy26174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EventListenerProxy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EventListenerProxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EventListenerProxy"));
 			global::java.util.EventListenerProxy._getListener26173 = @__env.GetMethodIDNoThrow(global::java.util.EventListenerProxy.staticClass, "getListener", "()Ljava/util/EventListener;");
 			global::java.util.EventListenerProxy._EventListenerProxy26174 = @__env.GetMethodIDNoThrow(global::java.util.EventListenerProxy.staticClass, "<init>", "(Ljava/util/EventListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -40,17 +39,16 @@ namespace java.util
 	internal sealed partial class EventListenerProxy_ : java.util.EventListenerProxy
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EventListenerProxy_()
-		{
-			InitJNI();
-		}
 		internal EventListenerProxy_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static EventListenerProxy_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EventListenerProxy_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EventListenerProxy"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

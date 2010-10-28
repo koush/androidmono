@@ -4,10 +4,6 @@ namespace android.view
 	public partial class ContextThemeWrapper : android.content.ContextWrapper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContextThemeWrapper()
-		{
-			InitJNI();
-		}
 		protected ContextThemeWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace android.view
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._ContextThemeWrapper14013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContextThemeWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ContextThemeWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextThemeWrapper"));
@@ -88,6 +84,9 @@ namespace android.view
 			global::android.view.ContextThemeWrapper._onApplyThemeResource14011 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "onApplyThemeResource", "(Landroid/content/res/Resources$Theme;IZ)V");
 			global::android.view.ContextThemeWrapper._ContextThemeWrapper14012 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "()V");
 			global::android.view.ContextThemeWrapper._ContextThemeWrapper14013 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "(Landroid/content/Context;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

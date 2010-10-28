@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BasicDomainHandler : java.lang.Object, org.apache.http.cookie.CookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicDomainHandler()
-		{
-			InitJNI();
-		}
 		protected BasicDomainHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BasicDomainHandler.staticClass, global::org.apache.http.impl.cookie.BasicDomainHandler._BasicDomainHandler33256);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicDomainHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BasicDomainHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BasicDomainHandler"));
@@ -53,6 +49,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.BasicDomainHandler._match33254 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicDomainHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
 			global::org.apache.http.impl.cookie.BasicDomainHandler._validate33255 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicDomainHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
 			global::org.apache.http.impl.cookie.BasicDomainHandler._BasicDomainHandler33256 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicDomainHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

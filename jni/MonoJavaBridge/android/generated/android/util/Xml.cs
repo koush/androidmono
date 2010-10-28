@@ -4,10 +4,6 @@ namespace android.util
 	public partial class Xml : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Xml()
-		{
-			InitJNI();
-		}
 		protected Xml(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.util
 		public sealed partial class Encoding : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Encoding()
-			{
-				InitJNI();
-			}
 			internal Encoding(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -70,7 +62,7 @@ namespace android.util
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _UTF_813960)) as android.util.Xml.Encoding;
 				}
 			}
-			private static void InitJNI()
+			static Encoding()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.util.Xml.Encoding.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Xml$Encoding"));
@@ -80,6 +72,9 @@ namespace android.util
 				global::android.util.Xml.Encoding._US_ASCII13958 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "US_ASCII", "Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._UTF_1613959 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "UTF_16", "Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._UTF_813960 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "UTF_8", "Landroid/util/Xml$Encoding;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _parse13961;
@@ -143,7 +138,7 @@ namespace android.util
 			{
 			}
 		}
-		private static void InitJNI()
+		static Xml()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Xml.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Xml"));
@@ -156,6 +151,9 @@ namespace android.util
 			global::android.util.Xml._asAttributeSet13967 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "asAttributeSet", "(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;");
 			global::android.util.Xml._Xml13968 = @__env.GetMethodIDNoThrow(global::android.util.Xml.staticClass, "<init>", "()V");
 			global::android.util.Xml._FEATURE_RELAXED13969 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.staticClass, "FEATURE_RELAXED", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

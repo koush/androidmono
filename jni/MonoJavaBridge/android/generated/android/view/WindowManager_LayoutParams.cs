@@ -4,10 +4,6 @@ namespace android.view
 	public partial class WindowManager_LayoutParams : android.view.ViewGroup.LayoutParams, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WindowManager_LayoutParams()
-		{
-			InitJNI();
-		}
 		protected WindowManager_LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -967,7 +963,7 @@ namespace android.view
 				return 2048;
 			}
 		}
-		private static void InitJNI()
+		static WindowManager_LayoutParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.WindowManager_LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/WindowManager$LayoutParams"));
@@ -1007,6 +1003,9 @@ namespace android.view
 			global::android.view.WindowManager_LayoutParams._packageName15486 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "packageName", "Ljava/lang/String;");
 			global::android.view.WindowManager_LayoutParams._screenOrientation15487 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenOrientation", "I");
 			global::android.view.WindowManager_LayoutParams._CREATOR15488 = @__env.GetStaticFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

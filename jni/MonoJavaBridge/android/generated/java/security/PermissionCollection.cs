@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class PermissionCollection : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PermissionCollection()
-		{
-			InitJNI();
-		}
 		protected PermissionCollection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -51,7 +47,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._PermissionCollection23221);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PermissionCollection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PermissionCollection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PermissionCollection"));
@@ -63,16 +59,15 @@ namespace java.security
 			global::java.security.PermissionCollection._isReadOnly23220 = @__env.GetMethodIDNoThrow(global::java.security.PermissionCollection.staticClass, "isReadOnly", "()Z");
 			global::java.security.PermissionCollection._PermissionCollection23221 = @__env.GetMethodIDNoThrow(global::java.security.PermissionCollection.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.PermissionCollection))]
 	internal sealed partial class PermissionCollection_ : java.security.PermissionCollection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PermissionCollection_()
-		{
-			InitJNI();
-		}
 		internal PermissionCollection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -103,13 +98,16 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.PermissionCollection_.staticClass, global::java.security.PermissionCollection_._elements23224)) as java.util.Enumeration;
 		}
-		private static void InitJNI()
+		static PermissionCollection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PermissionCollection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PermissionCollection"));
 			global::java.security.PermissionCollection_._add23222 = @__env.GetMethodIDNoThrow(global::java.security.PermissionCollection_.staticClass, "add", "(Ljava/security/Permission;)V");
 			global::java.security.PermissionCollection_._implies23223 = @__env.GetMethodIDNoThrow(global::java.security.PermissionCollection_.staticClass, "implies", "(Ljava/security/Permission;)Z");
 			global::java.security.PermissionCollection_._elements23224 = @__env.GetMethodIDNoThrow(global::java.security.PermissionCollection_.staticClass, "elements", "()Ljava/util/Enumeration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

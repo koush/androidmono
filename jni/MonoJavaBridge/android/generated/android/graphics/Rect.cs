@@ -4,10 +4,6 @@ namespace android.graphics
 	public sealed partial class Rect : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Rect()
-		{
-			InitJNI();
-		}
 		internal Rect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -380,7 +376,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.graphics.Rect.staticClass, _CREATOR5708)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Rect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Rect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Rect"));
@@ -425,6 +421,9 @@ namespace android.graphics
 			global::android.graphics.Rect._right5706 = @__env.GetFieldIDNoThrow(global::android.graphics.Rect.staticClass, "right", "I");
 			global::android.graphics.Rect._bottom5707 = @__env.GetFieldIDNoThrow(global::android.graphics.Rect.staticClass, "bottom", "I");
 			global::android.graphics.Rect._CREATOR5708 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Rect.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BasicClientCookie : java.lang.Object, org.apache.http.cookie.SetCookie, org.apache.http.cookie.ClientCookie, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicClientCookie()
-		{
-			InitJNI();
-		}
 		protected BasicClientCookie(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -328,7 +324,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BasicClientCookie.staticClass, global::org.apache.http.impl.cookie.BasicClientCookie._BasicClientCookie33241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicClientCookie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BasicClientCookie.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BasicClientCookie"));
@@ -357,6 +353,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.BasicClientCookie._setDomain33239 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicClientCookie.staticClass, "setDomain", "(Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.BasicClientCookie._setSecure33240 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicClientCookie.staticClass, "setSecure", "(Z)V");
 			global::org.apache.http.impl.cookie.BasicClientCookie._BasicClientCookie33241 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicClientCookie.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

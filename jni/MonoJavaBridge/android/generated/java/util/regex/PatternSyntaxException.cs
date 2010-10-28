@@ -4,10 +4,6 @@ namespace java.util.regex
 	public partial class PatternSyntaxException : java.lang.IllegalArgumentException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PatternSyntaxException()
-		{
-			InitJNI();
-		}
 		protected PatternSyntaxException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -82,7 +78,7 @@ namespace java.util.regex
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.regex.PatternSyntaxException.staticClass, global::java.util.regex.PatternSyntaxException._PatternSyntaxException28326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PatternSyntaxException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.regex.PatternSyntaxException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/PatternSyntaxException"));
@@ -91,6 +87,9 @@ namespace java.util.regex
 			global::java.util.regex.PatternSyntaxException._getDescription28324 = @__env.GetMethodIDNoThrow(global::java.util.regex.PatternSyntaxException.staticClass, "getDescription", "()Ljava/lang/String;");
 			global::java.util.regex.PatternSyntaxException._getPattern28325 = @__env.GetMethodIDNoThrow(global::java.util.regex.PatternSyntaxException.staticClass, "getPattern", "()Ljava/lang/String;");
 			global::java.util.regex.PatternSyntaxException._PatternSyntaxException28326 = @__env.GetMethodIDNoThrow(global::java.util.regex.PatternSyntaxException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

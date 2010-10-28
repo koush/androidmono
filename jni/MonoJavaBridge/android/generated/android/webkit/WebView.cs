@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class WebView : android.widget.AbsoluteLayout, android.view.ViewTreeObserver.OnGlobalFocusChangeListener, android.view.ViewGroup.OnHierarchyChangeListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebView()
-		{
-			InitJNI();
-		}
 		protected WebView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.webkit
 		public partial class HitTestResult : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static HitTestResult()
-			{
-				InitJNI();
-			}
 			protected HitTestResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -124,12 +116,15 @@ namespace android.webkit
 					return 9;
 				}
 			}
-			private static void InitJNI()
+			static HitTestResult()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebView.HitTestResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebView$HitTestResult"));
 				global::android.webkit.WebView.HitTestResult._getType16304 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.HitTestResult.staticClass, "getType", "()I");
 				global::android.webkit.WebView.HitTestResult._getExtra16305 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.HitTestResult.staticClass, "getExtra", "()Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.WebView.PictureListener_))]
@@ -142,10 +137,6 @@ namespace android.webkit
 		internal sealed partial class PictureListener_ : java.lang.Object, PictureListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PictureListener_()
-			{
-				InitJNI();
-			}
 			internal PictureListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -158,11 +149,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.PictureListener_.staticClass, global::android.webkit.WebView.PictureListener_._onNewPicture16316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static PictureListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebView.PictureListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebView$PictureListener"));
 				global::android.webkit.WebView.PictureListener_._onNewPicture16316 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.PictureListener_.staticClass, "onNewPicture", "(Landroid/webkit/WebView;Landroid/graphics/Picture;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -171,10 +165,6 @@ namespace android.webkit
 		internal partial class PictureListenerDelegateWrapper : java.lang.Object, PictureListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PictureListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected PictureListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -185,11 +175,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebView.PictureListenerDelegateWrapper.staticClass, global::android.webkit.WebView.PictureListenerDelegateWrapper._PictureListenerDelegateWrapper16317);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PictureListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebView.PictureListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebView_PictureListenerDelegateWrapper"));
 				global::android.webkit.WebView.PictureListenerDelegateWrapper._PictureListenerDelegateWrapper16317 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.PictureListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class PictureListenerDelegateWrapper
@@ -211,10 +204,6 @@ namespace android.webkit
 		public partial class WebViewTransport : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WebViewTransport()
-			{
-				InitJNI();
-			}
 			protected WebViewTransport(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -254,13 +243,16 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._WebViewTransport16320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static WebViewTransport()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebView.WebViewTransport.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebView$WebViewTransport"));
 				global::android.webkit.WebView.WebViewTransport._setWebView16318 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.WebViewTransport.staticClass, "setWebView", "(Landroid/webkit/WebView;)V");
 				global::android.webkit.WebView.WebViewTransport._getWebView16319 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.WebViewTransport.staticClass, "getWebView", "()Landroid/webkit/WebView;");
 				global::android.webkit.WebView.WebViewTransport._WebViewTransport16320 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.WebViewTransport.staticClass, "<init>", "(Landroid/webkit/WebView;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize16321;
@@ -1395,7 +1387,7 @@ namespace android.webkit
 				return "geo:0,0?q=";
 			}
 		}
-		private static void InitJNI()
+		static WebView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebView"));
@@ -1506,6 +1498,9 @@ namespace android.webkit
 			global::android.webkit.WebView._WebView16425 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.webkit.WebView._WebView16426 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.webkit.WebView._WebView16427 = @__env.GetMethodIDNoThrow(global::android.webkit.WebView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

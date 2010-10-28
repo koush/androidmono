@@ -11,10 +11,6 @@ namespace java.util.concurrent.locks
 	internal sealed partial class ReadWriteLock_ : java.lang.Object, ReadWriteLock
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReadWriteLock_()
-		{
-			InitJNI();
-		}
 		internal ReadWriteLock_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.util.concurrent.locks
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754)) as java.util.concurrent.locks.Lock;
 		}
-		private static void InitJNI()
+		static ReadWriteLock_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.ReadWriteLock_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReadWriteLock"));
 			global::java.util.concurrent.locks.ReadWriteLock_._readLock27753 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "readLock", "()Ljava/util/concurrent/locks/Lock;");
 			global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "writeLock", "()Ljava/util/concurrent/locks/Lock;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class SQLException : java.lang.Exception, java.lang.Iterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLException()
-		{
-			InitJNI();
-		}
 		protected SQLException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -141,7 +137,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.SQLException.staticClass, global::java.sql.SQLException._SQLException24982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SQLException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLException"));
@@ -158,6 +154,9 @@ namespace java.sql
 			global::java.sql.SQLException._SQLException24980 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.sql.SQLException._SQLException24981 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.sql.SQLException._SQLException24982 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

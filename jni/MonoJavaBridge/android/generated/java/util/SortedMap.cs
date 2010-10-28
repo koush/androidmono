@@ -18,10 +18,6 @@ namespace java.util
 	internal sealed partial class SortedMap_ : java.lang.Object, SortedMap
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SortedMap_()
-		{
-			InitJNI();
-		}
 		internal SortedMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -232,7 +228,7 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._containsKey26781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SortedMap_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.SortedMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/SortedMap"));
@@ -259,6 +255,9 @@ namespace java.util
 			global::java.util.SortedMap_._keySet26779 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "keySet", "()Ljava/util/Set;");
 			global::java.util.SortedMap_._containsValue26780 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
 			global::java.util.SortedMap_._containsKey26781 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

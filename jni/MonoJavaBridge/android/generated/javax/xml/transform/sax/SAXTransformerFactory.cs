@@ -4,10 +4,6 @@ namespace javax.xml.transform.sax
 	public abstract partial class SAXTransformerFactory : javax.xml.transform.TransformerFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXTransformerFactory()
-		{
-			InitJNI();
-		}
 		protected SAXTransformerFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -44,7 +40,7 @@ namespace javax.xml.transform.sax
 				return "http://javax.xml.transform.sax.SAXTransformerFactory/feature/xmlfilter";
 			}
 		}
-		private static void InitJNI()
+		static SAXTransformerFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.SAXTransformerFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/SAXTransformerFactory"));
@@ -56,16 +52,15 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.SAXTransformerFactory._newXMLFilter31090 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory.staticClass, "newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;");
 			global::javax.xml.transform.sax.SAXTransformerFactory._SAXTransformerFactory31091 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.transform.sax.SAXTransformerFactory))]
 	internal sealed partial class SAXTransformerFactory_ : javax.xml.transform.sax.SAXTransformerFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXTransformerFactory_()
-		{
-			InitJNI();
-		}
 		internal SAXTransformerFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -231,7 +226,7 @@ namespace javax.xml.transform.sax
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Source>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as javax.xml.transform.Source;
 		}
-		private static void InitJNI()
+		static SAXTransformerFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/SAXTransformerFactory"));
@@ -253,6 +248,9 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31109 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
 			global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31110 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTemplates", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Templates;");
 			global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getAssociatedStylesheet", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace org.apache.http
 	internal sealed partial class StatusLine_ : java.lang.Object, StatusLine
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StatusLine_()
-		{
-			InitJNI();
-		}
 		internal StatusLine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getReasonPhrase31765)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static StatusLine_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.StatusLine_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/StatusLine"));
 			global::org.apache.http.StatusLine_._getProtocolVersion31763 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
 			global::org.apache.http.StatusLine_._getStatusCode31764 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getStatusCode", "()I");
 			global::org.apache.http.StatusLine_._getReasonPhrase31765 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getReasonPhrase", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

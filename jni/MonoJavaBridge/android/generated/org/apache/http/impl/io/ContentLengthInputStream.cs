@@ -4,10 +4,6 @@ namespace org.apache.http.impl.io
 	public partial class ContentLengthInputStream : java.io.InputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentLengthInputStream()
-		{
-			InitJNI();
-		}
 		protected ContentLengthInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.ContentLengthInputStream.staticClass, global::org.apache.http.impl.io.ContentLengthInputStream._ContentLengthInputStream33433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContentLengthInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.ContentLengthInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/ContentLengthInputStream"));
@@ -73,6 +69,9 @@ namespace org.apache.http.impl.io
 			global::org.apache.http.impl.io.ContentLengthInputStream._read33431 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthInputStream.staticClass, "read", "([B)I");
 			global::org.apache.http.impl.io.ContentLengthInputStream._skip33432 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthInputStream.staticClass, "skip", "(J)J");
 			global::org.apache.http.impl.io.ContentLengthInputStream._ContentLengthInputStream33433 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthInputStream.staticClass, "<init>", "(Lorg/apache/http/io/SessionInputBuffer;J)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

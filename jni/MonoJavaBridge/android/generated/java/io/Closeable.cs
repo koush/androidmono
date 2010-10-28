@@ -10,10 +10,6 @@ namespace java.io
 	internal sealed partial class Closeable_ : java.lang.Object, Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Closeable_()
-		{
-			InitJNI();
-		}
 		internal Closeable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Closeable_.staticClass, global::java.io.Closeable_._close18883);
 		}
-		private static void InitJNI()
+		static Closeable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Closeable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Closeable"));
 			global::java.io.Closeable_._close18883 = @__env.GetMethodIDNoThrow(global::java.io.Closeable_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

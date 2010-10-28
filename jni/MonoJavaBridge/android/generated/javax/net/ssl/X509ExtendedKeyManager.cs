@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public abstract partial class X509ExtendedKeyManager : java.lang.Object, X509KeyManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509ExtendedKeyManager()
-		{
-			InitJNI();
-		}
 		protected X509ExtendedKeyManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -48,7 +44,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.X509ExtendedKeyManager.staticClass, global::javax.net.ssl.X509ExtendedKeyManager._X509ExtendedKeyManager30147);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509ExtendedKeyManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.X509ExtendedKeyManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/X509ExtendedKeyManager"));
@@ -62,16 +58,15 @@ namespace javax.net.ssl
 			global::javax.net.ssl.X509ExtendedKeyManager._chooseEngineServerAlias30146 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509ExtendedKeyManager.staticClass, "chooseEngineServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljavax/net/ssl/SSLEngine;)Ljava/lang/String;");
 			global::javax.net.ssl.X509ExtendedKeyManager._X509ExtendedKeyManager30147 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509ExtendedKeyManager.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.X509ExtendedKeyManager))]
 	internal sealed partial class X509ExtendedKeyManager_ : javax.net.ssl.X509ExtendedKeyManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509ExtendedKeyManager_()
-		{
-			InitJNI();
-		}
 		internal X509ExtendedKeyManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,7 +124,7 @@ namespace javax.net.ssl
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.X509ExtendedKeyManager_.staticClass, global::javax.net.ssl.X509ExtendedKeyManager_._chooseServerAlias30153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static X509ExtendedKeyManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.X509ExtendedKeyManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/X509ExtendedKeyManager"));
@@ -139,6 +134,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.X509ExtendedKeyManager_._chooseClientAlias30151 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509ExtendedKeyManager_.staticClass, "chooseClientAlias", "([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;");
 			global::javax.net.ssl.X509ExtendedKeyManager_._getServerAliases30152 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509ExtendedKeyManager_.staticClass, "getServerAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;");
 			global::javax.net.ssl.X509ExtendedKeyManager_._chooseServerAlias30153 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509ExtendedKeyManager_.staticClass, "chooseServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

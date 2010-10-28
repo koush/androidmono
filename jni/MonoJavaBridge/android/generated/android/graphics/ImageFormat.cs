@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class ImageFormat : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ImageFormat()
-		{
-			InitJNI();
-		}
 		protected ImageFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,12 +62,15 @@ namespace android.graphics
 				return 256;
 			}
 		}
-		private static void InitJNI()
+		static ImageFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ImageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ImageFormat"));
 			global::android.graphics.ImageFormat._getBitsPerPixel5267 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
 			global::android.graphics.ImageFormat._ImageFormat5268 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

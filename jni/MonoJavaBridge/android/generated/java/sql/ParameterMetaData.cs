@@ -18,10 +18,6 @@ namespace java.sql
 	internal sealed partial class ParameterMetaData_ : java.lang.Object, ParameterMetaData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParameterMetaData_()
-		{
-			InitJNI();
-		}
 		internal ParameterMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace java.sql
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getParameterMode24654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ParameterMetaData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.ParameterMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/ParameterMetaData"));
@@ -119,6 +115,9 @@ namespace java.sql
 			global::java.sql.ParameterMetaData_._getParameterTypeName24652 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterTypeName", "(I)Ljava/lang/String;");
 			global::java.sql.ParameterMetaData_._getParameterClassName24653 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterClassName", "(I)Ljava/lang/String;");
 			global::java.sql.ParameterMetaData_._getParameterMode24654 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterMode", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

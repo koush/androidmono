@@ -4,10 +4,6 @@ namespace android.content.res
 	public partial class Resources : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Resources()
-		{
-			InitJNI();
-		}
 		protected Resources(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content.res
 		public partial class NotFoundException : java.lang.RuntimeException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static NotFoundException()
-			{
-				InitJNI();
-			}
 			protected NotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -36,22 +28,21 @@ namespace android.content.res
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Resources.NotFoundException.staticClass, global::android.content.res.Resources.NotFoundException._NotFoundException4202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static NotFoundException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.Resources.NotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources$NotFoundException"));
 				global::android.content.res.Resources.NotFoundException._NotFoundException4201 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.NotFoundException.staticClass, "<init>", "()V");
 				global::android.content.res.Resources.NotFoundException._NotFoundException4202 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.NotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Theme : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Theme()
-			{
-				InitJNI();
-			}
 			internal Theme(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -125,7 +116,7 @@ namespace android.content.res
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Resources.Theme.staticClass, global::android.content.res.Resources.Theme._resolveAttribute4209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static Theme()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.Resources.Theme.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources$Theme"));
@@ -136,6 +127,9 @@ namespace android.content.res
 				global::android.content.res.Resources.Theme._setTo4207 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.Theme.staticClass, "setTo", "(Landroid/content/res/Resources$Theme;)V");
 				global::android.content.res.Resources.Theme._applyStyle4208 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.Theme.staticClass, "applyStyle", "(IZ)V");
 				global::android.content.res.Resources.Theme._resolveAttribute4209 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.Theme.staticClass, "resolveAttribute", "(ILandroid/util/TypedValue;Z)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean4210;
@@ -579,7 +573,7 @@ namespace android.content.res
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Resources.staticClass, global::android.content.res.Resources._Resources4255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Resources()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.Resources.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources"));
@@ -629,6 +623,9 @@ namespace android.content.res
 			global::android.content.res.Resources._flushLayoutCache4253 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.staticClass, "flushLayoutCache", "()V");
 			global::android.content.res.Resources._finishPreloading4254 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.staticClass, "finishPreloading", "()V");
 			global::android.content.res.Resources._Resources4255 = @__env.GetMethodIDNoThrow(global::android.content.res.Resources.staticClass, "<init>", "(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.view
 	public partial class Gravity : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Gravity()
-		{
-			InitJNI();
-		}
 		protected Gravity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -209,7 +205,7 @@ namespace android.view
 				return 16777216;
 			}
 		}
-		private static void InitJNI()
+		static Gravity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Gravity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Gravity"));
@@ -219,6 +215,9 @@ namespace android.view
 			global::android.view.Gravity._isVertical14058 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isVertical", "(I)Z");
 			global::android.view.Gravity._isHorizontal14059 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isHorizontal", "(I)Z");
 			global::android.view.Gravity._Gravity14060 = @__env.GetMethodIDNoThrow(global::android.view.Gravity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

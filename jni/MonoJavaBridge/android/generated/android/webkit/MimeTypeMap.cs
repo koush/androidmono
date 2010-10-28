@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class MimeTypeMap : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MimeTypeMap()
-		{
-			InitJNI();
-		}
 		protected MimeTypeMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.MimeTypeMap.staticClass, global::android.webkit.MimeTypeMap._getSingleton16064)) as android.webkit.MimeTypeMap;
 		}
-		private static void InitJNI()
+		static MimeTypeMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.MimeTypeMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/MimeTypeMap"));
@@ -76,6 +72,9 @@ namespace android.webkit
 			global::android.webkit.MimeTypeMap._hasExtension16062 = @__env.GetMethodIDNoThrow(global::android.webkit.MimeTypeMap.staticClass, "hasExtension", "(Ljava/lang/String;)Z");
 			global::android.webkit.MimeTypeMap._getExtensionFromMimeType16063 = @__env.GetMethodIDNoThrow(global::android.webkit.MimeTypeMap.staticClass, "getExtensionFromMimeType", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::android.webkit.MimeTypeMap._getSingleton16064 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.MimeTypeMap.staticClass, "getSingleton", "()Landroid/webkit/MimeTypeMap;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

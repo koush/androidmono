@@ -4,10 +4,6 @@ namespace java.util
 	public partial class IllegalFormatCodePointException : java.util.IllegalFormatException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IllegalFormatCodePointException()
-		{
-			InitJNI();
-		}
 		protected IllegalFormatCodePointException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatCodePointException.staticClass, global::java.util.IllegalFormatCodePointException._IllegalFormatCodePointException26314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IllegalFormatCodePointException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatCodePointException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatCodePointException"));
 			global::java.util.IllegalFormatCodePointException._getMessage26312 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatCodePointException.staticClass, "getMessage", "()Ljava/lang/String;");
 			global::java.util.IllegalFormatCodePointException._getCodePoint26313 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatCodePointException.staticClass, "getCodePoint", "()I");
 			global::java.util.IllegalFormatCodePointException._IllegalFormatCodePointException26314 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatCodePointException.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

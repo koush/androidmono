@@ -4,10 +4,6 @@ namespace java.util
 	public partial class IllegalFormatWidthException : java.util.IllegalFormatException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IllegalFormatWidthException()
-		{
-			InitJNI();
-		}
 		protected IllegalFormatWidthException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IllegalFormatWidthException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatWidthException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatWidthException"));
 			global::java.util.IllegalFormatWidthException._getMessage26325 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
 			global::java.util.IllegalFormatWidthException._getWidth26326 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getWidth", "()I");
 			global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMStringList_ : java.lang.Object, DOMStringList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMStringList_()
-		{
-			InitJNI();
-		}
 		internal DOMStringList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._item34385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static DOMStringList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMStringList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMStringList"));
 			global::org.w3c.dom.DOMStringList_._getLength34383 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMStringList_.staticClass, "getLength", "()I");
 			global::org.w3c.dom.DOMStringList_._contains34384 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMStringList_.staticClass, "contains", "(Ljava/lang/String;)Z");
 			global::org.w3c.dom.DOMStringList_._item34385 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMStringList_.staticClass, "item", "(I)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

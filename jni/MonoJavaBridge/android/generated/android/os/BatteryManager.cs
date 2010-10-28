@@ -4,10 +4,6 @@ namespace android.os
 	public partial class BatteryManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BatteryManager()
-		{
-			InitJNI();
-		}
 		protected BatteryManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -179,11 +175,14 @@ namespace android.os
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static BatteryManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.BatteryManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/BatteryManager"));
 			global::android.os.BatteryManager._BatteryManager9515 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

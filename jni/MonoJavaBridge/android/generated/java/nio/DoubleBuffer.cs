@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class DoubleBuffer : java.nio.Buffer, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DoubleBuffer()
-		{
-			InitJNI();
-		}
 		protected DoubleBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -166,7 +162,7 @@ namespace java.nio
 		public abstract global::java.nio.DoubleBuffer compact();
 		internal static global::MonoJavaBridge.MethodId _order22193;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI()
+		static DoubleBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.DoubleBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/DoubleBuffer"));
@@ -197,16 +193,15 @@ namespace java.nio
 			global::java.nio.DoubleBuffer._compact22192 = @__env.GetMethodIDNoThrow(global::java.nio.DoubleBuffer.staticClass, "compact", "()Ljava/nio/DoubleBuffer;");
 			global::java.nio.DoubleBuffer._order22193 = @__env.GetMethodIDNoThrow(global::java.nio.DoubleBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.DoubleBuffer))]
 	internal sealed partial class DoubleBuffer_ : java.nio.DoubleBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DoubleBuffer_()
-		{
-			InitJNI();
-		}
 		internal DoubleBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -309,7 +304,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.DoubleBuffer_.staticClass, global::java.nio.DoubleBuffer_._isReadOnly22204);
 		}
-		private static void InitJNI()
+		static DoubleBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.DoubleBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/DoubleBuffer"));
@@ -324,6 +319,9 @@ namespace java.nio
 			global::java.nio.DoubleBuffer_._compact22202 = @__env.GetMethodIDNoThrow(global::java.nio.DoubleBuffer_.staticClass, "compact", "()Ljava/nio/DoubleBuffer;");
 			global::java.nio.DoubleBuffer_._order22203 = @__env.GetMethodIDNoThrow(global::java.nio.DoubleBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
 			global::java.nio.DoubleBuffer_._isReadOnly22204 = @__env.GetMethodIDNoThrow(global::java.nio.DoubleBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

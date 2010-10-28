@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class ShortBuffer : java.nio.Buffer, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ShortBuffer()
-		{
-			InitJNI();
-		}
 		protected ShortBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -166,7 +162,7 @@ namespace java.nio
 		public abstract global::java.nio.ShortBuffer compact();
 		internal static global::MonoJavaBridge.MethodId _order22386;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI()
+		static ShortBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ShortBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ShortBuffer"));
@@ -197,16 +193,15 @@ namespace java.nio
 			global::java.nio.ShortBuffer._compact22385 = @__env.GetMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "compact", "()Ljava/nio/ShortBuffer;");
 			global::java.nio.ShortBuffer._order22386 = @__env.GetMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.ShortBuffer))]
 	internal sealed partial class ShortBuffer_ : java.nio.ShortBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ShortBuffer_()
-		{
-			InitJNI();
-		}
 		internal ShortBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -309,7 +304,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._isReadOnly22397);
 		}
-		private static void InitJNI()
+		static ShortBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ShortBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ShortBuffer"));
@@ -324,6 +319,9 @@ namespace java.nio
 			global::java.nio.ShortBuffer_._compact22395 = @__env.GetMethodIDNoThrow(global::java.nio.ShortBuffer_.staticClass, "compact", "()Ljava/nio/ShortBuffer;");
 			global::java.nio.ShortBuffer_._order22396 = @__env.GetMethodIDNoThrow(global::java.nio.ShortBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
 			global::java.nio.ShortBuffer_._isReadOnly22397 = @__env.GetMethodIDNoThrow(global::java.nio.ShortBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

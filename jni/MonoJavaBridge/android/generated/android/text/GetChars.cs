@@ -10,10 +10,6 @@ namespace android.text
 	internal sealed partial class GetChars_ : java.lang.Object, GetChars
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GetChars_()
-		{
-			InitJNI();
-		}
 		internal GetChars_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace android.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.GetChars_.staticClass, global::android.text.GetChars_._subSequence12773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		private static void InitJNI()
+		static GetChars_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.GetChars_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/GetChars"));
@@ -71,6 +67,9 @@ namespace android.text
 			global::android.text.GetChars_._length12771 = @__env.GetMethodIDNoThrow(global::android.text.GetChars_.staticClass, "length", "()I");
 			global::android.text.GetChars_._charAt12772 = @__env.GetMethodIDNoThrow(global::android.text.GetChars_.staticClass, "charAt", "(I)C");
 			global::android.text.GetChars_._subSequence12773 = @__env.GetMethodIDNoThrow(global::android.text.GetChars_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

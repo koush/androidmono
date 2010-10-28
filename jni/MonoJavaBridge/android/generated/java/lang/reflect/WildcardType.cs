@@ -11,10 +11,6 @@ namespace java.lang.reflect
 	internal sealed partial class WildcardType_ : java.lang.Object, WildcardType
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WildcardType_()
-		{
-			InitJNI();
-		}
 		internal WildcardType_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_.staticClass, global::java.lang.reflect.WildcardType_._getLowerBounds21163)) as java.lang.reflect.Type[];
 		}
-		private static void InitJNI()
+		static WildcardType_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.WildcardType_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/WildcardType"));
 			global::java.lang.reflect.WildcardType_._getUpperBounds21162 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getUpperBounds", "()[Ljava/lang/reflect/Type;");
 			global::java.lang.reflect.WildcardType_._getLowerBounds21163 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getLowerBounds", "()[Ljava/lang/reflect/Type;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

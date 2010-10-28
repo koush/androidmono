@@ -4,10 +4,6 @@ namespace java.security
 	public sealed partial class AccessController : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessController()
-		{
-			InitJNI();
-		}
 		internal AccessController(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.AccessController.staticClass, global::java.security.AccessController._doPrivilegedWithCombiner22844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static AccessController()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AccessController.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AccessController"));
@@ -78,6 +74,9 @@ namespace java.security
 			global::java.security.AccessController._getContext22842 = @__env.GetStaticMethodIDNoThrow(global::java.security.AccessController.staticClass, "getContext", "()Ljava/security/AccessControlContext;");
 			global::java.security.AccessController._doPrivilegedWithCombiner22843 = @__env.GetStaticMethodIDNoThrow(global::java.security.AccessController.staticClass, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;");
 			global::java.security.AccessController._doPrivilegedWithCombiner22844 = @__env.GetStaticMethodIDNoThrow(global::java.security.AccessController.staticClass, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

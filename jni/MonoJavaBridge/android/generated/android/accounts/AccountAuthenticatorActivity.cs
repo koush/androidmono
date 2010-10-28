@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class AccountAuthenticatorActivity : android.app.Activity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccountAuthenticatorActivity()
-		{
-			InitJNI();
-		}
 		protected AccountAuthenticatorActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity1291);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AccountAuthenticatorActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountAuthenticatorActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountAuthenticatorActivity"));
@@ -60,6 +56,9 @@ namespace android.accounts
 			global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult1289 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "setAccountAuthenticatorResult", "(Landroid/os/Bundle;)V");
 			global::android.accounts.AccountAuthenticatorActivity._finish1290 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "finish", "()V");
 			global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity1291 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

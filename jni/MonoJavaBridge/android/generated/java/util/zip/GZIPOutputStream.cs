@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class GZIPOutputStream : java.util.zip.DeflaterOutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GZIPOutputStream()
-		{
-			InitJNI();
-		}
 		protected GZIPOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.GZIPOutputStream.staticClass, global::java.util.zip.GZIPOutputStream._GZIPOutputStream28400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GZIPOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.GZIPOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/GZIPOutputStream"));
@@ -51,6 +47,9 @@ namespace java.util.zip
 			global::java.util.zip.GZIPOutputStream._finish28398 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPOutputStream.staticClass, "finish", "()V");
 			global::java.util.zip.GZIPOutputStream._GZIPOutputStream28399 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;I)V");
 			global::java.util.zip.GZIPOutputStream._GZIPOutputStream28400 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

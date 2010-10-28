@@ -4,10 +4,6 @@ namespace java.nio.charset
 	public partial class CodingErrorAction : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CodingErrorAction()
-		{
-			InitJNI();
-		}
 		protected CodingErrorAction(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace java.nio.charset
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.charset.CodingErrorAction.staticClass, _REPORT22812)) as java.nio.charset.CodingErrorAction;
 			}
 		}
-		private static void InitJNI()
+		static CodingErrorAction()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CodingErrorAction.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CodingErrorAction"));
@@ -55,6 +51,9 @@ namespace java.nio.charset
 			global::java.nio.charset.CodingErrorAction._IGNORE22810 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "IGNORE", "Ljava/nio/charset/CodingErrorAction;");
 			global::java.nio.charset.CodingErrorAction._REPLACE22811 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPLACE", "Ljava/nio/charset/CodingErrorAction;");
 			global::java.nio.charset.CodingErrorAction._REPORT22812 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPORT", "Ljava/nio/charset/CodingErrorAction;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

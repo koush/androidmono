@@ -13,10 +13,6 @@ namespace junit.framework
 	internal sealed partial class TestListener_ : java.lang.Object, TestListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestListener_()
-		{
-			InitJNI();
-		}
 		internal TestListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace junit.framework
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestListener_.staticClass, global::junit.framework.TestListener_._startTest31400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TestListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestListener"));
@@ -64,6 +60,9 @@ namespace junit.framework
 			global::junit.framework.TestListener_._addFailure31398 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V");
 			global::junit.framework.TestListener_._endTest31399 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "endTest", "(Ljunit/framework/Test;)V");
 			global::junit.framework.TestListener_._startTest31400 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "startTest", "(Ljunit/framework/Test;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

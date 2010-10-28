@@ -12,10 +12,6 @@ namespace org.apache.http
 	internal sealed partial class Header_ : java.lang.Object, Header
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Header_()
-		{
-			InitJNI();
-		}
 		internal Header_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.HeaderElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.Header_.staticClass, global::org.apache.http.Header_._getElements31499)) as org.apache.http.HeaderElement[];
 		}
-		private static void InitJNI()
+		static Header_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.Header_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/Header"));
 			global::org.apache.http.Header_._getName31497 = @__env.GetMethodIDNoThrow(global::org.apache.http.Header_.staticClass, "getName", "()Ljava/lang/String;");
 			global::org.apache.http.Header_._getValue31498 = @__env.GetMethodIDNoThrow(global::org.apache.http.Header_.staticClass, "getValue", "()Ljava/lang/String;");
 			global::org.apache.http.Header_._getElements31499 = @__env.GetMethodIDNoThrow(global::org.apache.http.Header_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

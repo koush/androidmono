@@ -10,10 +10,6 @@ namespace java.security.interfaces
 	internal sealed partial class DSAKey_ : java.lang.Object, DSAKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DSAKey_()
-		{
-			InitJNI();
-		}
 		internal DSAKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_.staticClass, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
 		}
-		private static void InitJNI()
+		static DSAKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.DSAKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/DSAKey"));
 			global::java.security.interfaces.DSAKey_._getParams23895 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

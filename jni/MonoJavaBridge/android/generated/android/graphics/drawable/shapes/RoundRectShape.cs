@@ -4,10 +4,6 @@ namespace android.graphics.drawable.shapes
 	public partial class RoundRectShape : android.graphics.drawable.shapes.RectShape
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RoundRectShape()
-		{
-			InitJNI();
-		}
 		protected RoundRectShape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.RoundRectShape.staticClass, global::android.graphics.drawable.shapes.RoundRectShape._RoundRectShape6256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RoundRectShape()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.RoundRectShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/RoundRectShape"));
@@ -53,6 +49,9 @@ namespace android.graphics.drawable.shapes
 			global::android.graphics.drawable.shapes.RoundRectShape._draw6254 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
 			global::android.graphics.drawable.shapes.RoundRectShape._onResize6255 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "onResize", "(FF)V");
 			global::android.graphics.drawable.shapes.RoundRectShape._RoundRectShape6256 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "<init>", "([FLandroid/graphics/RectF;[F)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

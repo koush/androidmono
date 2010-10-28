@@ -4,10 +4,6 @@ namespace javax.xml.transform.sax
 	public partial class SAXResult : java.lang.Object, Result
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXResult()
-		{
-			InitJNI();
-		}
 		protected SAXResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace javax.xml.transform.sax
 				return "http://javax.xml.transform.sax.SAXResult/feature";
 			}
 		}
-		private static void InitJNI()
+		static SAXResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.SAXResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/SAXResult"));
@@ -131,6 +127,9 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.SAXResult._getLexicalHandler31070 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXResult.staticClass, "getLexicalHandler", "()Lorg/xml/sax/ext/LexicalHandler;");
 			global::javax.xml.transform.sax.SAXResult._SAXResult31071 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXResult.staticClass, "<init>", "(Lorg/xml/sax/ContentHandler;)V");
 			global::javax.xml.transform.sax.SAXResult._SAXResult31072 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXResult.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

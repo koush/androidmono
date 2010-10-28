@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public partial class Proxy : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Proxy()
-		{
-			InitJNI();
-		}
 		protected Proxy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -42,7 +38,7 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._Proxy21152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Proxy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Proxy"));
@@ -51,6 +47,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Proxy._newProxyInstance21150 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Proxy.staticClass, "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;");
 			global::java.lang.reflect.Proxy._getInvocationHandler21151 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Proxy.staticClass, "getInvocationHandler", "(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;");
 			global::java.lang.reflect.Proxy._Proxy21152 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Proxy.staticClass, "<init>", "(Ljava/lang/reflect/InvocationHandler;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

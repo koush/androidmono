@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class Level : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Level()
-		{
-			InitJNI();
-		}
 		protected Level(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.logging.Level.staticClass, _ALL27996)) as java.util.logging.Level;
 			}
 		}
-		private static void InitJNI()
+		static Level()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Level.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Level"));
@@ -219,6 +215,9 @@ namespace java.util.logging
 			global::java.util.logging.Level._FINER27994 = @__env.GetStaticFieldIDNoThrow(global::java.util.logging.Level.staticClass, "FINER", "Ljava/util/logging/Level;");
 			global::java.util.logging.Level._FINEST27995 = @__env.GetStaticFieldIDNoThrow(global::java.util.logging.Level.staticClass, "FINEST", "Ljava/util/logging/Level;");
 			global::java.util.logging.Level._ALL27996 = @__env.GetStaticFieldIDNoThrow(global::java.util.logging.Level.staticClass, "ALL", "Ljava/util/logging/Level;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class NumberFormat : java.text.Format
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NumberFormat()
-		{
-			InitJNI();
-		}
 		protected NumberFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.text
 		public new partial class Field : java.text.Format.Field
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Field()
-			{
-				InitJNI();
-			}
 			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -137,7 +129,7 @@ namespace java.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT_SIGN25566)) as java.text.NumberFormat.Field;
 				}
 			}
-			private static void InitJNI()
+			static Field()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.text.NumberFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/NumberFormat$Field"));
@@ -154,6 +146,9 @@ namespace java.text
 				global::java.text.NumberFormat.Field._PERMILLE25564 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "PERMILLE", "Ljava/text/NumberFormat$Field;");
 				global::java.text.NumberFormat.Field._CURRENCY25565 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "CURRENCY", "Ljava/text/NumberFormat$Field;");
 				global::java.text.NumberFormat.Field._EXPONENT_SIGN25566 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT_SIGN", "Ljava/text/NumberFormat$Field;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25567;
@@ -465,7 +460,7 @@ namespace java.text
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static NumberFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.NumberFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/NumberFormat"));
@@ -509,16 +504,15 @@ namespace java.text
 			global::java.text.NumberFormat._setRoundingMode25604 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "setRoundingMode", "(Ljava/math/RoundingMode;)V");
 			global::java.text.NumberFormat._NumberFormat25605 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.NumberFormat))]
 	internal sealed partial class NumberFormat_ : java.text.NumberFormat
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NumberFormat_()
-		{
-			InitJNI();
-		}
 		internal NumberFormat_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -549,13 +543,16 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.NumberFormat_.staticClass, global::java.text.NumberFormat_._parse25610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Number;
 		}
-		private static void InitJNI()
+		static NumberFormat_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.NumberFormat_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/NumberFormat"));
 			global::java.text.NumberFormat_._format25608 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat_.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.NumberFormat_._format25609 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat_.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.NumberFormat_._parse25610 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

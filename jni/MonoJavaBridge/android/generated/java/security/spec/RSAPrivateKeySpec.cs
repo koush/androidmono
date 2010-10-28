@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class RSAPrivateKeySpec : java.lang.Object, KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAPrivateKeySpec()
-		{
-			InitJNI();
-		}
 		protected RSAPrivateKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAPrivateKeySpec.staticClass, global::java.security.spec.RSAPrivateKeySpec._RSAPrivateKeySpec24073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RSAPrivateKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAPrivateKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAPrivateKeySpec"));
 			global::java.security.spec.RSAPrivateKeySpec._getModulus24071 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateKeySpec.staticClass, "getModulus", "()Ljava/math/BigInteger;");
 			global::java.security.spec.RSAPrivateKeySpec._getPrivateExponent24072 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateKeySpec.staticClass, "getPrivateExponent", "()Ljava/math/BigInteger;");
 			global::java.security.spec.RSAPrivateKeySpec._RSAPrivateKeySpec24073 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

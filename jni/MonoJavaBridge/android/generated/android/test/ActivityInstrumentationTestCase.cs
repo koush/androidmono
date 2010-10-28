@@ -4,10 +4,6 @@ namespace android.test
 	public abstract partial class ActivityInstrumentationTestCase : android.test.ActivityTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityInstrumentationTestCase()
-		{
-			InitJNI();
-		}
 		protected ActivityInstrumentationTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,7 +57,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ActivityInstrumentationTestCase.staticClass, global::android.test.ActivityInstrumentationTestCase._ActivityInstrumentationTestCase12115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ActivityInstrumentationTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ActivityInstrumentationTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ActivityInstrumentationTestCase"));
@@ -72,23 +68,25 @@ namespace android.test
 			global::android.test.ActivityInstrumentationTestCase._ActivityInstrumentationTestCase12114 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Class;)V");
 			global::android.test.ActivityInstrumentationTestCase._ActivityInstrumentationTestCase12115 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Z)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.ActivityInstrumentationTestCase))]
 	internal sealed partial class ActivityInstrumentationTestCase_ : android.test.ActivityInstrumentationTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityInstrumentationTestCase_()
-		{
-			InitJNI();
-		}
 		internal ActivityInstrumentationTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ActivityInstrumentationTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ActivityInstrumentationTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ActivityInstrumentationTestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

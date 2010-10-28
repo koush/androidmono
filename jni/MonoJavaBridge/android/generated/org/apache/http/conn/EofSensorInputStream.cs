@@ -4,10 +4,6 @@ namespace org.apache.http.conn
 	public partial class EofSensorInputStream : java.io.InputStream, ConnectionReleaseTrigger
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EofSensorInputStream()
-		{
-			InitJNI();
-		}
 		protected EofSensorInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -117,7 +113,7 @@ namespace org.apache.http.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._EofSensorInputStream32106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EofSensorInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.EofSensorInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/EofSensorInputStream"));
@@ -133,6 +129,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.EofSensorInputStream._checkClose32104 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorInputStream.staticClass, "checkClose", "()V");
 			global::org.apache.http.conn.EofSensorInputStream._checkAbort32105 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorInputStream.staticClass, "checkAbort", "()V");
 			global::org.apache.http.conn.EofSensorInputStream._EofSensorInputStream32106 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorInputStream.staticClass, "<init>", "(Ljava/io/InputStream;Lorg/apache/http/conn/EofSensorWatcher;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Math : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Math()
-		{
-			InitJNI();
-		}
 		internal Math(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -349,7 +345,7 @@ namespace java.lang
 				return 3.141592653589793;
 			}
 		}
-		private static void InitJNI()
+		static Math()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Math.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Math"));
@@ -407,6 +403,9 @@ namespace java.lang
 			global::java.lang.Math._nextAfter20335 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Math.staticClass, "nextAfter", "(FD)F");
 			global::java.lang.Math._nextUp20336 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Math.staticClass, "nextUp", "(F)F");
 			global::java.lang.Math._nextUp20337 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Math.staticClass, "nextUp", "(D)D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

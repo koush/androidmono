@@ -11,10 +11,6 @@ namespace android.hardware
 	internal sealed partial class SensorEventListener_ : java.lang.Object, SensorEventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SensorEventListener_()
-		{
-			InitJNI();
-		}
 		internal SensorEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.hardware
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.SensorEventListener_.staticClass, global::android.hardware.SensorEventListener_._onAccuracyChanged6453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static SensorEventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorEventListener"));
 			global::android.hardware.SensorEventListener_._onSensorChanged6452 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onSensorChanged", "(Landroid/hardware/SensorEvent;)V");
 			global::android.hardware.SensorEventListener_._onAccuracyChanged6453 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onAccuracyChanged", "(Landroid/hardware/Sensor;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

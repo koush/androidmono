@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class ETC1 : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ETC1()
-		{
-			InitJNI();
-		}
 		protected ETC1(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace android.opengl
 				return 36196;
 			}
 		}
-		private static void InitJNI()
+		static ETC1()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.ETC1.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/ETC1"));
@@ -114,6 +110,9 @@ namespace android.opengl
 			global::android.opengl.ETC1._decodeImage8125 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.ETC1.staticClass, "decodeImage", "(Ljava/nio/Buffer;Ljava/nio/Buffer;IIII)V");
 			global::android.opengl.ETC1._formatHeader8126 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.ETC1.staticClass, "formatHeader", "(Ljava/nio/Buffer;II)V");
 			global::android.opengl.ETC1._ETC18127 = @__env.GetMethodIDNoThrow(global::android.opengl.ETC1.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

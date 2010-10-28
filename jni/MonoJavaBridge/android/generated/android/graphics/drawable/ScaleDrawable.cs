@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class ScaleDrawable : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScaleDrawable()
-		{
-			InitJNI();
-		}
 		protected ScaleDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -262,7 +258,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._ScaleDrawable6197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ScaleDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.ScaleDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ScaleDrawable"));
@@ -287,6 +283,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.ScaleDrawable._scheduleDrawable6195 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ScaleDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
 			global::android.graphics.drawable.ScaleDrawable._unscheduleDrawable6196 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ScaleDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
 			global::android.graphics.drawable.ScaleDrawable._ScaleDrawable6197 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ScaleDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;IFF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

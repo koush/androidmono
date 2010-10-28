@@ -34,10 +34,6 @@ namespace org.xmlpull.v1
 	internal sealed partial class XmlSerializer_ : java.lang.Object, XmlSerializer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XmlSerializer_()
-		{
-			InitJNI();
-		}
 		internal XmlSerializer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -266,7 +262,7 @@ namespace org.xmlpull.v1
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlSerializer_.staticClass, global::org.xmlpull.v1.XmlSerializer_._docdecl35407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static XmlSerializer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.XmlSerializer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlSerializer"));
@@ -295,6 +291,9 @@ namespace org.xmlpull.v1
 			global::org.xmlpull.v1.XmlSerializer_._cdsect35405 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlSerializer_.staticClass, "cdsect", "(Ljava/lang/String;)V");
 			global::org.xmlpull.v1.XmlSerializer_._entityRef35406 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlSerializer_.staticClass, "entityRef", "(Ljava/lang/String;)V");
 			global::org.xmlpull.v1.XmlSerializer_._docdecl35407 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlSerializer_.staticClass, "docdecl", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

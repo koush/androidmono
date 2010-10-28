@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class KeyFactorySpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyFactorySpi()
-		{
-			InitJNI();
-		}
 		protected KeyFactorySpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,7 +22,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyFactorySpi.staticClass, global::java.security.KeyFactorySpi._KeyFactorySpi23028);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyFactorySpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyFactorySpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyFactorySpi"));
@@ -36,16 +32,15 @@ namespace java.security
 			global::java.security.KeyFactorySpi._engineTranslateKey23027 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi.staticClass, "engineTranslateKey", "(Ljava/security/Key;)Ljava/security/Key;");
 			global::java.security.KeyFactorySpi._KeyFactorySpi23028 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.KeyFactorySpi))]
 	internal sealed partial class KeyFactorySpi_ : java.security.KeyFactorySpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyFactorySpi_()
-		{
-			InitJNI();
-		}
 		internal KeyFactorySpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -85,7 +80,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactorySpi_.staticClass, global::java.security.KeyFactorySpi_._engineTranslateKey23032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Key;
 		}
-		private static void InitJNI()
+		static KeyFactorySpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyFactorySpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyFactorySpi"));
@@ -93,6 +88,9 @@ namespace java.security
 			global::java.security.KeyFactorySpi_._engineGeneratePrivate23030 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineGeneratePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;");
 			global::java.security.KeyFactorySpi_._engineGetKeySpec23031 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
 			global::java.security.KeyFactorySpi_._engineTranslateKey23032 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljava/security/Key;)Ljava/security/Key;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

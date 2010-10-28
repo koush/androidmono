@@ -4,10 +4,6 @@ namespace android.content
 	public partial class UriMatcher : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UriMatcher()
-		{
-			InitJNI();
-		}
 		protected UriMatcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,13 +39,16 @@ namespace android.content
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static UriMatcher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.UriMatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/UriMatcher"));
 			global::android.content.UriMatcher._match3590 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "match", "(Landroid/net/Uri;)I");
 			global::android.content.UriMatcher._addURI3591 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "addURI", "(Ljava/lang/String;Ljava/lang/String;I)V");
 			global::android.content.UriMatcher._UriMatcher3592 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

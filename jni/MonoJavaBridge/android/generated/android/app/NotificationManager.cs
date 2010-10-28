@@ -4,10 +4,6 @@ namespace android.app
 	public partial class NotificationManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NotificationManager()
-		{
-			InitJNI();
-		}
 		protected NotificationManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancelAll2008);
 		}
-		private static void InitJNI()
+		static NotificationManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.NotificationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/NotificationManager"));
@@ -65,6 +61,9 @@ namespace android.app
 			global::android.app.NotificationManager._cancel2006 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancel", "(I)V");
 			global::android.app.NotificationManager._cancel2007 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancel", "(Ljava/lang/String;I)V");
 			global::android.app.NotificationManager._cancelAll2008 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancelAll", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

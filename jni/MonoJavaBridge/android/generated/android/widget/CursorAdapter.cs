@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class CursorAdapter : android.widget.BaseAdapter, Filterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CursorAdapter()
-		{
-			InitJNI();
-		}
 		protected CursorAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -181,7 +177,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CursorAdapter.staticClass, global::android.widget.CursorAdapter._CursorAdapter16912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CursorAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.CursorAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CursorAdapter"));
@@ -206,16 +202,15 @@ namespace android.widget
 			global::android.widget.CursorAdapter._CursorAdapter16911 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;)V");
 			global::android.widget.CursorAdapter._CursorAdapter16912 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;Z)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.CursorAdapter))]
 	internal sealed partial class CursorAdapter_ : android.widget.CursorAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CursorAdapter_()
-		{
-			InitJNI();
-		}
 		internal CursorAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -237,12 +232,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CursorAdapter_.staticClass, global::android.widget.CursorAdapter_._bindView16914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static CursorAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.CursorAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CursorAdapter"));
 			global::android.widget.CursorAdapter_._newView16913 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter_.staticClass, "newView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;");
 			global::android.widget.CursorAdapter_._bindView16914 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter_.staticClass, "bindView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class ResponseCache : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseCache()
-		{
-			InitJNI();
-		}
 		protected ResponseCache(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,7 +30,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ResponseCache.staticClass, global::java.net.ResponseCache._ResponseCache21682);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResponseCache()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ResponseCache.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ResponseCache"));
@@ -44,16 +40,15 @@ namespace java.net
 			global::java.net.ResponseCache._setDefault21681 = @__env.GetStaticMethodIDNoThrow(global::java.net.ResponseCache.staticClass, "setDefault", "(Ljava/net/ResponseCache;)V");
 			global::java.net.ResponseCache._ResponseCache21682 = @__env.GetMethodIDNoThrow(global::java.net.ResponseCache.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.ResponseCache))]
 	internal sealed partial class ResponseCache_ : java.net.ResponseCache
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseCache_()
-		{
-			InitJNI();
-		}
 		internal ResponseCache_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,12 +70,15 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ResponseCache_.staticClass, global::java.net.ResponseCache_._put21684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.CacheRequest;
 		}
-		private static void InitJNI()
+		static ResponseCache_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ResponseCache_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ResponseCache"));
 			global::java.net.ResponseCache_._get21683 = @__env.GetMethodIDNoThrow(global::java.net.ResponseCache_.staticClass, "get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;");
 			global::java.net.ResponseCache_._put21684 = @__env.GetMethodIDNoThrow(global::java.net.ResponseCache_.staticClass, "put", "(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

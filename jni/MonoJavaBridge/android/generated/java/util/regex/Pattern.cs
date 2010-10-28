@@ -4,10 +4,6 @@ namespace java.util.regex
 	public sealed partial class Pattern : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Pattern()
-		{
-			InitJNI();
-		}
 		internal Pattern(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -161,7 +157,7 @@ namespace java.util.regex
 				return 128;
 			}
 		}
-		private static void InitJNI()
+		static Pattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.regex.Pattern.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/Pattern"));
@@ -175,6 +171,9 @@ namespace java.util.regex
 			global::java.util.regex.Pattern._matcher28311 = @__env.GetMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;");
 			global::java.util.regex.Pattern._quote28312 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::java.util.regex.Pattern._pattern28313 = @__env.GetMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

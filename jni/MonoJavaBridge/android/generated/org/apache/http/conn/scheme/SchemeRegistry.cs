@@ -4,10 +4,6 @@ namespace org.apache.http.conn.scheme
 	public sealed partial class SchemeRegistry : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SchemeRegistry()
-		{
-			InitJNI();
-		}
 		internal SchemeRegistry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace org.apache.http.conn.scheme
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32318);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SchemeRegistry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.SchemeRegistry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/SchemeRegistry"));
@@ -107,6 +103,9 @@ namespace org.apache.http.conn.scheme
 			global::org.apache.http.conn.scheme.SchemeRegistry._unregister32316 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "unregister", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
 			global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32317 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getSchemeNames", "()Ljava/util/List;");
 			global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32318 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

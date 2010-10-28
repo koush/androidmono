@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public abstract partial class SSLServerSocket : java.net.ServerSocket
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLServerSocket()
-		{
-			InitJNI();
-		}
 		protected SSLServerSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -67,7 +63,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._SSLServerSocket30013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLServerSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLServerSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLServerSocket"));
@@ -90,16 +86,15 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLServerSocket._SSLServerSocket30012 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(II)V");
 			global::javax.net.ssl.SSLServerSocket._SSLServerSocket30013 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(IILjava/net/InetAddress;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.SSLServerSocket))]
 	internal sealed partial class SSLServerSocket_ : javax.net.ssl.SSLServerSocket
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLServerSocket_()
-		{
-			InitJNI();
-		}
 		internal SSLServerSocket_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -229,7 +224,7 @@ namespace javax.net.ssl
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLServerSocket_.staticClass, global::javax.net.ssl.SSLServerSocket_._getEnableSessionCreation30027);
 		}
-		private static void InitJNI()
+		static SSLServerSocket_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLServerSocket_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLServerSocket"));
@@ -247,6 +242,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLServerSocket_._getWantClientAuth30025 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket_.staticClass, "getWantClientAuth", "()Z");
 			global::javax.net.ssl.SSLServerSocket_._setEnableSessionCreation30026 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnableSessionCreation", "(Z)V");
 			global::javax.net.ssl.SSLServerSocket_._getEnableSessionCreation30027 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnableSessionCreation", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

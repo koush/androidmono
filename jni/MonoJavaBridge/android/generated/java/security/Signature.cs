@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class Signature : java.security.SignatureSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Signature()
-		{
-			InitJNI();
-		}
 		protected Signature(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -216,7 +212,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Signature.staticClass, global::java.security.Signature._Signature23361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Signature()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Signature.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Signature"));
@@ -245,16 +241,15 @@ namespace java.security
 			global::java.security.Signature._getParameter23360 = @__env.GetMethodIDNoThrow(global::java.security.Signature.staticClass, "getParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::java.security.Signature._Signature23361 = @__env.GetMethodIDNoThrow(global::java.security.Signature.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Signature))]
 	internal sealed partial class Signature_ : java.security.Signature
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Signature_()
-		{
-			InitJNI();
-		}
 		internal Signature_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -330,7 +325,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Signature_.staticClass, global::java.security.Signature_._engineGetParameter23369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static Signature_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Signature_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Signature"));
@@ -342,6 +337,9 @@ namespace java.security
 			global::java.security.Signature_._engineUpdate23367 = @__env.GetMethodIDNoThrow(global::java.security.Signature_.staticClass, "engineUpdate", "([BII)V");
 			global::java.security.Signature_._engineSetParameter23368 = @__env.GetMethodIDNoThrow(global::java.security.Signature_.staticClass, "engineSetParameter", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::java.security.Signature_._engineGetParameter23369 = @__env.GetMethodIDNoThrow(global::java.security.Signature_.staticClass, "engineGetParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

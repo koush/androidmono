@@ -14,10 +14,6 @@ namespace android.text
 	internal sealed partial class Spanned_ : java.lang.Object, Spanned
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Spanned_()
-		{
-			InitJNI();
-		}
 		internal Spanned_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace android.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Spanned_.staticClass, global::android.text.Spanned_._subSequence12997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		private static void InitJNI()
+		static Spanned_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Spanned_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Spanned"));
@@ -115,6 +111,9 @@ namespace android.text
 			global::android.text.Spanned_._length12995 = @__env.GetMethodIDNoThrow(global::android.text.Spanned_.staticClass, "length", "()I");
 			global::android.text.Spanned_._charAt12996 = @__env.GetMethodIDNoThrow(global::android.text.Spanned_.staticClass, "charAt", "(I)C");
 			global::android.text.Spanned_._subSequence12997 = @__env.GetMethodIDNoThrow(global::android.text.Spanned_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

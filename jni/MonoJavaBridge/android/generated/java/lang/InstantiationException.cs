@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class InstantiationException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InstantiationException()
-		{
-			InitJNI();
-		}
 		protected InstantiationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InstantiationException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InstantiationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InstantiationException"));
 			global::java.lang.InstantiationException._InstantiationException20193 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "()V");
 			global::java.lang.InstantiationException._InstantiationException20194 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

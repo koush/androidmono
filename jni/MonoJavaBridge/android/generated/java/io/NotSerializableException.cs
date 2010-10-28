@@ -4,10 +4,6 @@ namespace java.io
 	public partial class NotSerializableException : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NotSerializableException()
-		{
-			InitJNI();
-		}
 		protected NotSerializableException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19144);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NotSerializableException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.NotSerializableException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/NotSerializableException"));
 			global::java.io.NotSerializableException._NotSerializableException19143 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.NotSerializableException._NotSerializableException19144 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

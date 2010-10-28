@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class SerializableEntity : org.apache.http.entity.AbstractHttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SerializableEntity()
-		{
-			InitJNI();
-		}
 		protected SerializableEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.SerializableEntity.staticClass, global::org.apache.http.entity.SerializableEntity._SerializableEntity32569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SerializableEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.SerializableEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/SerializableEntity"));
@@ -87,6 +83,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.SerializableEntity._isRepeatable32567 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.SerializableEntity.staticClass, "isRepeatable", "()Z");
 			global::org.apache.http.entity.SerializableEntity._isStreaming32568 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.SerializableEntity.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.entity.SerializableEntity._SerializableEntity32569 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.SerializableEntity.staticClass, "<init>", "(Ljava/io/Serializable;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

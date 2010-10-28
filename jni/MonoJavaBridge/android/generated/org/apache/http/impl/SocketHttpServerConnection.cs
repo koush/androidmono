@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class SocketHttpServerConnection : org.apache.http.impl.AbstractHttpServerConnection, HttpInetConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketHttpServerConnection()
-		{
-			InitJNI();
-		}
 		protected SocketHttpServerConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -199,7 +195,7 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._SocketHttpServerConnection32700);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketHttpServerConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.SocketHttpServerConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/SocketHttpServerConnection"));
@@ -219,6 +215,9 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.SocketHttpServerConnection._createHttpDataReceiver32698 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.SocketHttpServerConnection.staticClass, "createHttpDataReceiver", "(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionInputBuffer;");
 			global::org.apache.http.impl.SocketHttpServerConnection._createHttpDataTransmitter32699 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.SocketHttpServerConnection.staticClass, "createHttpDataTransmitter", "(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionOutputBuffer;");
 			global::org.apache.http.impl.SocketHttpServerConnection._SocketHttpServerConnection32700 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.SocketHttpServerConnection.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

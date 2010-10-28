@@ -10,10 +10,6 @@ namespace org.apache.http.conn.scheme
 	internal sealed partial class LayeredSocketFactory_ : java.lang.Object, LayeredSocketFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LayeredSocketFactory_()
-		{
-			InitJNI();
-		}
 		internal LayeredSocketFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,7 +49,7 @@ namespace org.apache.http.conn.scheme
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, global::org.apache.http.conn.scheme.LayeredSocketFactory_._isSecure32293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LayeredSocketFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/LayeredSocketFactory"));
@@ -61,6 +57,9 @@ namespace org.apache.http.conn.scheme
 			global::org.apache.http.conn.scheme.LayeredSocketFactory_._createSocket32291 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "createSocket", "()Ljava/net/Socket;");
 			global::org.apache.http.conn.scheme.LayeredSocketFactory_._connectSocket32292 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;");
 			global::org.apache.http.conn.scheme.LayeredSocketFactory_._isSecure32293 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "isSecure", "(Ljava/net/Socket;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

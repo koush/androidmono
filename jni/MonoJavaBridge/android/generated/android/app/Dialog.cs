@@ -4,10 +4,6 @@ namespace android.app
 	public partial class Dialog : java.lang.Object, android.content.DialogInterface, android.view.Window.Callback, android.view.KeyEvent.Callback, android.view.View.OnCreateContextMenuListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Dialog()
-		{
-			InitJNI();
-		}
 		protected Dialog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -824,7 +820,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Dialog.staticClass, global::android.app.Dialog._Dialog1823, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Dialog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Dialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Dialog"));
@@ -905,6 +901,9 @@ namespace android.app
 			global::android.app.Dialog._Dialog1821 = @__env.GetMethodIDNoThrow(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.app.Dialog._Dialog1822 = @__env.GetMethodIDNoThrow(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
 			global::android.app.Dialog._Dialog1823 = @__env.GetMethodIDNoThrow(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

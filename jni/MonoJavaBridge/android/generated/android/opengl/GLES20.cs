@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLES20 : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLES20()
-		{
-			InitJNI();
-		}
 		protected GLES20(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -3248,7 +3244,7 @@ namespace android.opengl
 				return 1286;
 			}
 		}
-		private static void InitJNI()
+		static GLES20()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES20.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES20"));
@@ -3439,6 +3435,9 @@ namespace android.opengl
 			global::android.opengl.GLES20._glVertexAttrib4fv9114 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES20.staticClass, "glVertexAttrib4fv", "(ILjava/nio/FloatBuffer;)V");
 			global::android.opengl.GLES20._glVertexAttribPointer9115 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES20.staticClass, "glVertexAttribPointer", "(IIIZILjava/nio/Buffer;)V");
 			global::android.opengl.GLES20._GLES209116 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES20.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

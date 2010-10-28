@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class Logger : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Logger()
-		{
-			InitJNI();
-		}
 		protected Logger(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -506,7 +502,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.logging.Logger.staticClass, _global28083)) as java.util.logging.Logger;
 			}
 		}
-		private static void InitJNI()
+		static Logger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Logger.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Logger"));
@@ -557,6 +553,9 @@ namespace java.util.logging
 			global::java.util.logging.Logger._getUseParentHandlers28080 = @__env.GetMethodIDNoThrow(global::java.util.logging.Logger.staticClass, "getUseParentHandlers", "()Z");
 			global::java.util.logging.Logger._Logger28081 = @__env.GetMethodIDNoThrow(global::java.util.logging.Logger.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.util.logging.Logger._global28083 = @__env.GetStaticFieldIDNoThrow(global::java.util.logging.Logger.staticClass, "global", "Ljava/util/logging/Logger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

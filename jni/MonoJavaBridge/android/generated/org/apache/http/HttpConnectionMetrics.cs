@@ -15,10 +15,6 @@ namespace org.apache.http
 	internal sealed partial class HttpConnectionMetrics_ : java.lang.Object, HttpConnectionMetrics
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpConnectionMetrics_()
-		{
-			InitJNI();
-		}
 		internal HttpConnectionMetrics_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getMetric31541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static HttpConnectionMetrics_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpConnectionMetrics_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpConnectionMetrics"));
@@ -86,6 +82,9 @@ namespace org.apache.http
 			global::org.apache.http.HttpConnectionMetrics_._getSentBytesCount31539 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getSentBytesCount", "()J");
 			global::org.apache.http.HttpConnectionMetrics_._getReceivedBytesCount31540 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getReceivedBytesCount", "()J");
 			global::org.apache.http.HttpConnectionMetrics_._getMetric31541 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getMetric", "(Ljava/lang/String;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

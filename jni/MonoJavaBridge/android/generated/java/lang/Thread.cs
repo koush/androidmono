@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class Thread : java.lang.Object, Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Thread()
-		{
-			InitJNI();
-		}
 		protected Thread(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.lang
 		public sealed partial class State : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static State()
-			{
-				InitJNI();
-			}
 			internal State(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -88,7 +80,7 @@ namespace java.lang
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _TERMINATED20819)) as java.lang.Thread.State;
 				}
 			}
-			private static void InitJNI()
+			static State()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Thread.State.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread$State"));
@@ -101,6 +93,9 @@ namespace java.lang
 				global::java.lang.Thread.State._TIMED_WAITING20818 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Thread.State.staticClass, "TIMED_WAITING", "Ljava/lang/Thread$State;");
 				global::java.lang.Thread.State._TERMINATED20819 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Thread.State.staticClass, "TERMINATED", "Ljava/lang/Thread$State;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Thread.UncaughtExceptionHandler_))]
 		public partial interface UncaughtExceptionHandler  : global::MonoJavaBridge.IJavaObject 
@@ -112,10 +107,6 @@ namespace java.lang
 		internal sealed partial class UncaughtExceptionHandler_ : java.lang.Object, UncaughtExceptionHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static UncaughtExceptionHandler_()
-			{
-				InitJNI();
-			}
 			internal UncaughtExceptionHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -128,11 +119,14 @@ namespace java.lang
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Thread.UncaughtExceptionHandler_.staticClass, global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static UncaughtExceptionHandler_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Thread.UncaughtExceptionHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread$UncaughtExceptionHandler"));
 				global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.UncaughtExceptionHandler_.staticClass, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _run20821;
@@ -633,7 +627,7 @@ namespace java.lang
 				return 10;
 			}
 		}
-		private static void InitJNI()
+		static Thread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Thread.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread"));
@@ -687,6 +681,9 @@ namespace java.lang
 			global::java.lang.Thread._Thread20868 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
 			global::java.lang.Thread._Thread20869 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.Thread._Thread20870 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

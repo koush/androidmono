@@ -54,10 +54,6 @@ namespace java.sql
 	internal sealed partial class Connection_ : java.lang.Object, Connection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Connection_()
-		{
-			InitJNI();
-		}
 		internal Connection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -466,7 +462,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Struct>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Connection_.staticClass, global::java.sql.Connection_._createStruct24364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Struct;
 		}
-		private static void InitJNI()
+		static Connection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Connection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Connection"));
@@ -515,6 +511,9 @@ namespace java.sql
 			global::java.sql.Connection_._getClientInfo24362 = @__env.GetMethodIDNoThrow(global::java.sql.Connection_.staticClass, "getClientInfo", "()Ljava/util/Properties;");
 			global::java.sql.Connection_._createArrayOf24363 = @__env.GetMethodIDNoThrow(global::java.sql.Connection_.staticClass, "createArrayOf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Array;");
 			global::java.sql.Connection_._createStruct24364 = @__env.GetMethodIDNoThrow(global::java.sql.Connection_.staticClass, "createStruct", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Struct;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

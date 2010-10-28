@@ -4,10 +4,6 @@ namespace android.view
 	public abstract partial class OrientationEventListener : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OrientationEventListener()
-		{
-			InitJNI();
-		}
 		protected OrientationEventListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,7 +57,7 @@ namespace android.view
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static OrientationEventListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.OrientationEventListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/OrientationEventListener"));
@@ -72,16 +68,15 @@ namespace android.view
 			global::android.view.OrientationEventListener._OrientationEventListener14452 = @__env.GetMethodIDNoThrow(global::android.view.OrientationEventListener.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.view.OrientationEventListener._OrientationEventListener14453 = @__env.GetMethodIDNoThrow(global::android.view.OrientationEventListener.staticClass, "<init>", "(Landroid/content/Context;I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.OrientationEventListener))]
 	internal sealed partial class OrientationEventListener_ : android.view.OrientationEventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OrientationEventListener_()
-		{
-			InitJNI();
-		}
 		internal OrientationEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -94,11 +89,14 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener_.staticClass, global::android.view.OrientationEventListener_._onOrientationChanged14455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static OrientationEventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.OrientationEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/OrientationEventListener"));
 			global::android.view.OrientationEventListener_._onOrientationChanged14455 = @__env.GetMethodIDNoThrow(global::android.view.OrientationEventListener_.staticClass, "onOrientationChanged", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

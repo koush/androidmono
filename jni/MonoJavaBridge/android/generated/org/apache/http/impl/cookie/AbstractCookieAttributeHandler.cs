@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public abstract partial class AbstractCookieAttributeHandler : java.lang.Object, org.apache.http.cookie.CookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCookieAttributeHandler()
-		{
-			InitJNI();
-		}
 		protected AbstractCookieAttributeHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,7 +34,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._AbstractCookieAttributeHandler33198);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractCookieAttributeHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/AbstractCookieAttributeHandler"));
@@ -47,16 +43,15 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._validate33197 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
 			global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._AbstractCookieAttributeHandler33198 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler))]
 	internal sealed partial class AbstractCookieAttributeHandler_ : org.apache.http.impl.cookie.AbstractCookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCookieAttributeHandler_()
-		{
-			InitJNI();
-		}
 		internal AbstractCookieAttributeHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,11 +64,14 @@ namespace org.apache.http.impl.cookie
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_.staticClass, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static AbstractCookieAttributeHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/AbstractCookieAttributeHandler"));
 			global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

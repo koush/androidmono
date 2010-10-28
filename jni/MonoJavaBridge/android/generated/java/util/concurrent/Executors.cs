@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class Executors : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Executors()
-		{
-			InitJNI();
-		}
 		protected Executors(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,7 +135,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Callable>(@__env.CallStaticObjectMethod(java.util.concurrent.Executors.staticClass, global::java.util.concurrent.Executors._privilegedCallableUsingCurrentClassLoader27301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.Callable;
 		}
-		private static void InitJNI()
+		static Executors()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Executors.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Executors"));
@@ -163,6 +159,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.Executors._callable27299 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.Executors.staticClass, "callable", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;");
 			global::java.util.concurrent.Executors._privilegedCallable27300 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.Executors.staticClass, "privilegedCallable", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;");
 			global::java.util.concurrent.Executors._privilegedCallableUsingCurrentClassLoader27301 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.Executors.staticClass, "privilegedCallableUsingCurrentClassLoader", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

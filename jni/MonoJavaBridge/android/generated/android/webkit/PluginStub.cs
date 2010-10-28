@@ -11,10 +11,6 @@ namespace android.webkit
 	internal sealed partial class PluginStub_ : java.lang.Object, PluginStub
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PluginStub_()
-		{
-			InitJNI();
-		}
 		internal PluginStub_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.webkit
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_.staticClass, global::android.webkit.PluginStub_._getFullScreenView16091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
-		private static void InitJNI()
+		static PluginStub_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginStub_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginStub"));
 			global::android.webkit.PluginStub_._getEmbeddedView16090 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getEmbeddedView", "(ILandroid/content/Context;)Landroid/view/View;");
 			global::android.webkit.PluginStub_._getFullScreenView16091 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getFullScreenView", "(ILandroid/content/Context;)Landroid/view/View;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

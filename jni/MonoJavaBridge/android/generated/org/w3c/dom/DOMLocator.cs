@@ -15,10 +15,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMLocator_ : java.lang.Object, DOMLocator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMLocator_()
-		{
-			InitJNI();
-		}
 		internal DOMLocator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_.staticClass, global::org.w3c.dom.DOMLocator_._getUtf16Offset34382);
 		}
-		private static void InitJNI()
+		static DOMLocator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMLocator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMLocator"));
@@ -86,6 +82,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DOMLocator_._getRelatedNode34380 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getRelatedNode", "()Lorg/w3c/dom/Node;");
 			global::org.w3c.dom.DOMLocator_._getByteOffset34381 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getByteOffset", "()I");
 			global::org.w3c.dom.DOMLocator_._getUtf16Offset34382 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getUtf16Offset", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

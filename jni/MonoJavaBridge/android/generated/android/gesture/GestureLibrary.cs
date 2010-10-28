@@ -4,10 +4,6 @@ namespace android.gesture
 	public abstract partial class GestureLibrary : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureLibrary()
-		{
-			InitJNI();
-		}
 		protected GestureLibrary(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,7 +117,7 @@ namespace android.gesture
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._GestureLibrary4898);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GestureLibrary()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureLibrary.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureLibrary"));
@@ -140,16 +136,15 @@ namespace android.gesture
 			global::android.gesture.GestureLibrary._getGestures4897 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureLibrary.staticClass, "getGestures", "(Ljava/lang/String;)Ljava/util/ArrayList;");
 			global::android.gesture.GestureLibrary._GestureLibrary4898 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureLibrary.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.gesture.GestureLibrary))]
 	internal sealed partial class GestureLibrary_ : android.gesture.GestureLibrary
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureLibrary_()
-		{
-			InitJNI();
-		}
 		internal GestureLibrary_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -171,12 +166,15 @@ namespace android.gesture
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureLibrary_.staticClass, global::android.gesture.GestureLibrary_._save4900);
 		}
-		private static void InitJNI()
+		static GestureLibrary_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureLibrary_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureLibrary"));
 			global::android.gesture.GestureLibrary_._load4899 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureLibrary_.staticClass, "load", "()Z");
 			global::android.gesture.GestureLibrary_._save4900 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureLibrary_.staticClass, "save", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

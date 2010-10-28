@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class Certificate : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Certificate()
-		{
-			InitJNI();
-		}
 		protected Certificate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.security.cert
 		protected partial class CertificateRep : java.lang.Object, java.io.Serializable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CertificateRep()
-			{
-				InitJNI();
-			}
 			protected CertificateRep(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -38,12 +30,15 @@ namespace java.security.cert
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.Certificate.CertificateRep.staticClass, global::java.security.cert.Certificate.CertificateRep._CertificateRep23555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CertificateRep()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.security.cert.Certificate.CertificateRep.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/Certificate$CertificateRep"));
 				global::java.security.cert.Certificate.CertificateRep._readResolve23554 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate.CertificateRep.staticClass, "readResolve", "()Ljava/lang/Object;");
 				global::java.security.cert.Certificate.CertificateRep._CertificateRep23555 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate.CertificateRep.staticClass, "<init>", "(Ljava/lang/String;[B)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23556;
@@ -99,7 +94,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.Certificate.staticClass, global::java.security.cert.Certificate._Certificate23565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Certificate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.Certificate.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/Certificate"));
@@ -114,16 +109,15 @@ namespace java.security.cert
 			global::java.security.cert.Certificate._writeReplace23564 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate.staticClass, "writeReplace", "()Ljava/lang/Object;");
 			global::java.security.cert.Certificate._Certificate23565 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.Certificate))]
 	internal sealed partial class Certificate_ : java.security.cert.Certificate
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Certificate_()
-		{
-			InitJNI();
-		}
 		internal Certificate_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -172,7 +166,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.Certificate_.staticClass, global::java.security.cert.Certificate_._getPublicKey23570)) as java.security.PublicKey;
 		}
-		private static void InitJNI()
+		static Certificate_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.Certificate_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/Certificate"));
@@ -181,6 +175,9 @@ namespace java.security.cert
 			global::java.security.cert.Certificate_._verify23568 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V");
 			global::java.security.cert.Certificate_._verify23569 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V");
 			global::java.security.cert.Certificate_._getPublicKey23570 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

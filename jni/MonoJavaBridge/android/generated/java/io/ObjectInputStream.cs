@@ -4,10 +4,6 @@ namespace java.io
 	public partial class ObjectInputStream : java.io.InputStream, ObjectInput, ObjectStreamConstants
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectInputStream()
-		{
-			InitJNI();
-		}
 		protected ObjectInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.io
 		public abstract partial class GetField : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static GetField()
-			{
-				InitJNI();
-			}
 			protected GetField(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -51,7 +43,7 @@ namespace java.io
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectInputStream.GetField.staticClass, global::java.io.ObjectInputStream.GetField._GetField19178);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static GetField()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.io.ObjectInputStream.GetField.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectInputStream$GetField"));
@@ -68,16 +60,15 @@ namespace java.io
 				global::java.io.ObjectInputStream.GetField._getObjectStreamClass19177 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.GetField.staticClass, "getObjectStreamClass", "()Ljava/io/ObjectStreamClass;");
 				global::java.io.ObjectInputStream.GetField._GetField19178 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.GetField.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.ObjectInputStream.GetField))]
 		internal sealed partial class GetField_ : java.io.ObjectInputStream.GetField
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static GetField_()
-			{
-				InitJNI();
-			}
 			internal GetField_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -180,7 +171,7 @@ namespace java.io
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.GetField_.staticClass, global::java.io.ObjectInputStream.GetField_._getObjectStreamClass19189)) as java.io.ObjectStreamClass;
 			}
-			private static void InitJNI()
+			static GetField_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.io.ObjectInputStream.GetField_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectInputStream$GetField"));
@@ -195,6 +186,9 @@ namespace java.io
 				global::java.io.ObjectInputStream.GetField_._get19187 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.GetField_.staticClass, "get", "(Ljava/lang/String;J)J");
 				global::java.io.ObjectInputStream.GetField_._defaulted19188 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.GetField_.staticClass, "defaulted", "(Ljava/lang/String;)Z");
 				global::java.io.ObjectInputStream.GetField_._getObjectStreamClass19189 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.GetField_.staticClass, "getObjectStreamClass", "()Ljava/io/ObjectStreamClass;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveClass19190;
@@ -490,7 +484,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._ObjectInputStream19222);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ObjectInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectInputStream"));
@@ -527,6 +521,9 @@ namespace java.io
 			global::java.io.ObjectInputStream._readClassDescriptor19220 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.staticClass, "readClassDescriptor", "()Ljava/io/ObjectStreamClass;");
 			global::java.io.ObjectInputStream._ObjectInputStream19221 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
 			global::java.io.ObjectInputStream._ObjectInputStream19222 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputStream.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

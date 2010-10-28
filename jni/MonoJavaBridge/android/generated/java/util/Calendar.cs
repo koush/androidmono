@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class Calendar : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Calendar()
-		{
-			InitJNI();
-		}
 		protected Calendar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -694,7 +690,7 @@ namespace java.util
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static Calendar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Calendar.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Calendar"));
@@ -749,16 +745,15 @@ namespace java.util
 			global::java.util.Calendar._Calendar25952 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "<init>", "(Ljava/util/TimeZone;Ljava/util/Locale;)V");
 			global::java.util.Calendar._Calendar25953 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.Calendar))]
 	internal sealed partial class Calendar_ : java.util.Calendar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Calendar_()
-		{
-			InitJNI();
-		}
 		internal Calendar_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -834,7 +829,7 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._getLeastMaximum26005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Calendar_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Calendar_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Calendar"));
@@ -846,6 +841,9 @@ namespace java.util
 			global::java.util.Calendar_._getMaximum26003 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getMaximum", "(I)I");
 			global::java.util.Calendar_._getGreatestMinimum26004 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getGreatestMinimum", "(I)I");
 			global::java.util.Calendar_._getLeastMaximum26005 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getLeastMaximum", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

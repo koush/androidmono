@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractSet : java.util.AbstractCollection, Set
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSet()
-		{
-			InitJNI();
-		}
 		protected AbstractSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractSet.staticClass, global::java.util.AbstractSet._AbstractSet25745);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractSet"));
@@ -54,16 +50,15 @@ namespace java.util
 			global::java.util.AbstractSet._removeAll25744 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
 			global::java.util.AbstractSet._AbstractSet25745 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractSet))]
 	internal sealed partial class AbstractSet_ : java.util.AbstractSet
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSet_()
-		{
-			InitJNI();
-		}
 		internal AbstractSet_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,12 +84,15 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.AbstractSet_.staticClass, global::java.util.AbstractSet_._iterator25747)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static AbstractSet_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractSet"));
 			global::java.util.AbstractSet_._size25746 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet_.staticClass, "size", "()I");
 			global::java.util.AbstractSet_._iterator25747 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

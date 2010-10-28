@@ -15,10 +15,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSSerializer_ : java.lang.Object, LSSerializer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSSerializer_()
-		{
-			InitJNI();
-		}
 		internal LSSerializer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.w3c.dom.ls
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSSerializer_.staticClass, global::org.w3c.dom.ls.LSSerializer_._writeToString34943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static LSSerializer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSSerializer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSSerializer"));
@@ -86,6 +82,9 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.LSSerializer_._setNewLine34941 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSSerializer_.staticClass, "setNewLine", "(Ljava/lang/String;)V");
 			global::org.w3c.dom.ls.LSSerializer_._writeToURI34942 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSSerializer_.staticClass, "writeToURI", "(Lorg/w3c/dom/Node;Ljava/lang/String;)Z");
 			global::org.w3c.dom.ls.LSSerializer_._writeToString34943 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSSerializer_.staticClass, "writeToString", "(Lorg/w3c/dom/Node;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

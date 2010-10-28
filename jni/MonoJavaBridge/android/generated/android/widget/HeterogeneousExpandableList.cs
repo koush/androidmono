@@ -13,10 +13,6 @@ namespace android.widget
 	internal sealed partial class HeterogeneousExpandableList_ : java.lang.Object, HeterogeneousExpandableList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeterogeneousExpandableList_()
-		{
-			InitJNI();
-		}
 		internal HeterogeneousExpandableList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_.staticClass, global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204);
 		}
-		private static void InitJNI()
+		static HeterogeneousExpandableList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.HeterogeneousExpandableList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/HeterogeneousExpandableList"));
@@ -64,6 +60,9 @@ namespace android.widget
 			global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I");
 			global::android.widget.HeterogeneousExpandableList_._getGroupType17203 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I");
 			global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

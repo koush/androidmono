@@ -4,10 +4,6 @@ namespace java.util
 	public sealed partial class Locale : java.lang.Object, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Locale()
-		{
-			InitJNI();
-		}
 		internal Locale(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -508,7 +504,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ROOT26496)) as java.util.Locale;
 			}
 		}
-		private static void InitJNI()
+		static Locale()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Locale.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Locale"));
@@ -559,6 +555,9 @@ namespace java.util
 			global::java.util.Locale._CANADA26494 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA", "Ljava/util/Locale;");
 			global::java.util.Locale._CANADA_FRENCH26495 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA_FRENCH", "Ljava/util/Locale;");
 			global::java.util.Locale._ROOT26496 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ROOT", "Ljava/util/Locale;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

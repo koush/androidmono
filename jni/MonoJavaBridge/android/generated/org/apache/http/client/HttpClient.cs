@@ -19,10 +19,6 @@ namespace org.apache.http.client
 	internal sealed partial class HttpClient_ : java.lang.Object, HttpClient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpClient_()
-		{
-			InitJNI();
-		}
 		internal HttpClient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace org.apache.http.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._getConnectionManager31890)) as org.apache.http.conn.ClientConnectionManager;
 		}
-		private static void InitJNI()
+		static HttpClient_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.HttpClient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/HttpClient"));
@@ -130,6 +126,9 @@ namespace org.apache.http.client
 			global::org.apache.http.client.HttpClient_._execute31888 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
 			global::org.apache.http.client.HttpClient_._execute31889 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
 			global::org.apache.http.client.HttpClient_._getConnectionManager31890 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "getConnectionManager", "()Lorg/apache/http/conn/ClientConnectionManager;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

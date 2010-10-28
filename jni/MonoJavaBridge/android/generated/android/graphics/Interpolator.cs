@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Interpolator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Interpolator()
-		{
-			InitJNI();
-		}
 		protected Interpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Result : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Result()
-			{
-				InitJNI();
-			}
 			internal Result(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _NORMAL5279)) as android.graphics.Interpolator.Result;
 				}
 			}
-			private static void InitJNI()
+			static Result()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Interpolator.Result.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Interpolator$Result"));
@@ -70,6 +62,9 @@ namespace android.graphics
 				global::android.graphics.Interpolator.Result._FREEZE_END5277 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Interpolator.Result.staticClass, "FREEZE_END", "Landroid/graphics/Interpolator$Result;");
 				global::android.graphics.Interpolator.Result._FREEZE_START5278 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Interpolator.Result.staticClass, "FREEZE_START", "Landroid/graphics/Interpolator$Result;");
 				global::android.graphics.Interpolator.Result._NORMAL5279 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Interpolator.Result.staticClass, "NORMAL", "Landroid/graphics/Interpolator$Result;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5280;
@@ -190,7 +185,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._Interpolator5291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Interpolator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Interpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Interpolator"));
@@ -206,6 +201,9 @@ namespace android.graphics
 			global::android.graphics.Interpolator._timeToValues5289 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "timeToValues", "([F)Landroid/graphics/Interpolator$Result;");
 			global::android.graphics.Interpolator._Interpolator5290 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "<init>", "(I)V");
 			global::android.graphics.Interpolator._Interpolator5291 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "<init>", "(II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class ZipOutputStream : java.util.zip.DeflaterOutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ZipOutputStream()
-		{
-			InitJNI();
-		}
 		protected ZipOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -125,7 +121,7 @@ namespace java.util.zip
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static ZipOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.ZipOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/ZipOutputStream"));
@@ -138,6 +134,9 @@ namespace java.util.zip
 			global::java.util.zip.ZipOutputStream._finish28484 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipOutputStream.staticClass, "finish", "()V");
 			global::java.util.zip.ZipOutputStream._putNextEntry28485 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipOutputStream.staticClass, "putNextEntry", "(Ljava/util/zip/ZipEntry;)V");
 			global::java.util.zip.ZipOutputStream._ZipOutputStream28486 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

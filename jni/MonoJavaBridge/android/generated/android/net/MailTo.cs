@@ -4,10 +4,6 @@ namespace android.net
 	public partial class MailTo : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MailTo()
-		{
-			InitJNI();
-		}
 		protected MailTo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace android.net
 				return "mailto:";
 			}
 		}
-		private static void InitJNI()
+		static MailTo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.MailTo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/MailTo"));
@@ -131,6 +127,9 @@ namespace android.net
 			global::android.net.MailTo._getCc7706 = @__env.GetMethodIDNoThrow(global::android.net.MailTo.staticClass, "getCc", "()Ljava/lang/String;");
 			global::android.net.MailTo._getSubject7707 = @__env.GetMethodIDNoThrow(global::android.net.MailTo.staticClass, "getSubject", "()Ljava/lang/String;");
 			global::android.net.MailTo._getBody7708 = @__env.GetMethodIDNoThrow(global::android.net.MailTo.staticClass, "getBody", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

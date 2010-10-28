@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class BitmapFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BitmapFactory()
-		{
-			InitJNI();
-		}
 		protected BitmapFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public partial class Options : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Options()
-			{
-				InitJNI();
-			}
 			protected Options(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -218,7 +210,7 @@ namespace android.graphics
 				{
 				}
 			}
-			private static void InitJNI()
+			static Options()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.BitmapFactory.Options.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BitmapFactory$Options"));
@@ -239,6 +231,9 @@ namespace android.graphics
 				global::android.graphics.BitmapFactory.Options._outMimeType5078 = @__env.GetFieldIDNoThrow(global::android.graphics.BitmapFactory.Options.staticClass, "outMimeType", "Ljava/lang/String;");
 				global::android.graphics.BitmapFactory.Options._inTempStorage5079 = @__env.GetFieldIDNoThrow(global::android.graphics.BitmapFactory.Options.staticClass, "inTempStorage", "[B");
 				global::android.graphics.BitmapFactory.Options._mCancel5080 = @__env.GetFieldIDNoThrow(global::android.graphics.BitmapFactory.Options.staticClass, "mCancel", "Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _decodeStream5081;
@@ -314,7 +309,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.BitmapFactory.staticClass, global::android.graphics.BitmapFactory._BitmapFactory5092);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BitmapFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.BitmapFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BitmapFactory"));
@@ -330,6 +325,9 @@ namespace android.graphics
 			global::android.graphics.BitmapFactory._decodeFileDescriptor5090 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;");
 			global::android.graphics.BitmapFactory._decodeFileDescriptor5091 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
 			global::android.graphics.BitmapFactory._BitmapFactory5092 = @__env.GetMethodIDNoThrow(global::android.graphics.BitmapFactory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

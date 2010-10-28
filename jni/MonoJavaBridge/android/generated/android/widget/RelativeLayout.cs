@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class RelativeLayout : android.view.ViewGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RelativeLayout()
-		{
-			InitJNI();
-		}
 		protected RelativeLayout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.view.ViewGroup.MarginLayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -105,7 +97,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.RelativeLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout$LayoutParams"));
@@ -118,6 +110,9 @@ namespace android.widget
 				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17579 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
 				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17580 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
 				global::android.widget.RelativeLayout.LayoutParams._alignWithParent17581 = @__env.GetFieldIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "alignWithParent", "Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent17582;
@@ -412,7 +407,7 @@ namespace android.widget
 				return 15;
 			}
 		}
-		private static void InitJNI()
+		static RelativeLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.RelativeLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout"));
@@ -432,6 +427,9 @@ namespace android.widget
 			global::android.widget.RelativeLayout._RelativeLayout17595 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.RelativeLayout._RelativeLayout17596 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.RelativeLayout._RelativeLayout17597 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

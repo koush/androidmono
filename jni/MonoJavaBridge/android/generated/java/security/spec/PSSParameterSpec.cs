@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class PSSParameterSpec : java.lang.Object, AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PSSParameterSpec()
-		{
-			InitJNI();
-		}
 		protected PSSParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.spec.PSSParameterSpec.staticClass, _DEFAULT24046)) as java.security.spec.PSSParameterSpec;
 			}
 		}
-		private static void InitJNI()
+		static PSSParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.PSSParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/PSSParameterSpec"));
@@ -126,6 +122,9 @@ namespace java.security.spec
 			global::java.security.spec.PSSParameterSpec._PSSParameterSpec24044 = @__env.GetMethodIDNoThrow(global::java.security.spec.PSSParameterSpec.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;II)V");
 			global::java.security.spec.PSSParameterSpec._PSSParameterSpec24045 = @__env.GetMethodIDNoThrow(global::java.security.spec.PSSParameterSpec.staticClass, "<init>", "(I)V");
 			global::java.security.spec.PSSParameterSpec._DEFAULT24046 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.PSSParameterSpec.staticClass, "DEFAULT", "Ljava/security/spec/PSSParameterSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

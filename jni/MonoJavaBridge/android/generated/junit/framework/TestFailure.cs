@@ -4,10 +4,6 @@ namespace junit.framework
 	public partial class TestFailure : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestFailure()
-		{
-			InitJNI();
-		}
 		protected TestFailure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace junit.framework
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._TestFailure31396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestFailure()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestFailure.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestFailure"));
@@ -83,6 +79,9 @@ namespace junit.framework
 			global::junit.framework.TestFailure._exceptionMessage31394 = @__env.GetMethodIDNoThrow(global::junit.framework.TestFailure.staticClass, "exceptionMessage", "()Ljava/lang/String;");
 			global::junit.framework.TestFailure._isFailure31395 = @__env.GetMethodIDNoThrow(global::junit.framework.TestFailure.staticClass, "isFailure", "()Z");
 			global::junit.framework.TestFailure._TestFailure31396 = @__env.GetMethodIDNoThrow(global::junit.framework.TestFailure.staticClass, "<init>", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

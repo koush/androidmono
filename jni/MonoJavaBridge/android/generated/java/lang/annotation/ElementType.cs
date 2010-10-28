@@ -4,10 +4,6 @@ namespace java.lang.annotation
 	public sealed partial class ElementType : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ElementType()
-		{
-			InitJNI();
-		}
 		internal ElementType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _PACKAGE20961)) as java.lang.annotation.ElementType;
 			}
 		}
-		private static void InitJNI()
+		static ElementType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.ElementType.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/ElementType"));
@@ -109,6 +105,9 @@ namespace java.lang.annotation
 			global::java.lang.annotation.ElementType._LOCAL_VARIABLE20959 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "LOCAL_VARIABLE", "Ljava/lang/annotation/ElementType;");
 			global::java.lang.annotation.ElementType._ANNOTATION_TYPE20960 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "ANNOTATION_TYPE", "Ljava/lang/annotation/ElementType;");
 			global::java.lang.annotation.ElementType._PACKAGE20961 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "PACKAGE", "Ljava/lang/annotation/ElementType;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

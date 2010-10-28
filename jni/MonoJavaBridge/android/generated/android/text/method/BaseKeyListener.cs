@@ -4,10 +4,6 @@ namespace android.text.method
 	public abstract partial class BaseKeyListener : android.text.method.MetaKeyKeyListener, KeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseKeyListener()
-		{
-			InitJNI();
-		}
 		protected BaseKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.BaseKeyListener.staticClass, global::android.text.method.BaseKeyListener._BaseKeyListener13260);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BaseKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.BaseKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/BaseKeyListener"));
@@ -57,16 +53,15 @@ namespace android.text.method
 			global::android.text.method.BaseKeyListener._backspace13259 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener.staticClass, "backspace", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
 			global::android.text.method.BaseKeyListener._BaseKeyListener13260 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.BaseKeyListener))]
 	internal sealed partial class BaseKeyListener_ : android.text.method.BaseKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseKeyListener_()
-		{
-			InitJNI();
-		}
 		internal BaseKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -79,11 +74,14 @@ namespace android.text.method
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.BaseKeyListener_.staticClass, global::android.text.method.BaseKeyListener_._getInputType13261);
 		}
-		private static void InitJNI()
+		static BaseKeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.BaseKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/BaseKeyListener"));
 			global::android.text.method.BaseKeyListener_._getInputType13261 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener_.staticClass, "getInputType", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

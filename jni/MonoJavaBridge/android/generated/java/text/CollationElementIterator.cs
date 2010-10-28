@@ -4,10 +4,6 @@ namespace java.text
 	public sealed partial class CollationElementIterator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CollationElementIterator()
-		{
-			InitJNI();
-		}
 		internal CollationElementIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace java.text
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static CollationElementIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.CollationElementIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CollationElementIterator"));
@@ -134,6 +130,9 @@ namespace java.text
 			global::java.text.CollationElementIterator._secondaryOrder25288 = @__env.GetStaticMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "secondaryOrder", "(I)S");
 			global::java.text.CollationElementIterator._tertiaryOrder25289 = @__env.GetStaticMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "tertiaryOrder", "(I)S");
 			global::java.text.CollationElementIterator._getMaxExpansion25290 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "getMaxExpansion", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

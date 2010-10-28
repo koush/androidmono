@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class ConcurrentLinkedQueue : java.util.AbstractQueue, Queue, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConcurrentLinkedQueue()
-		{
-			InitJNI();
-		}
 		protected ConcurrentLinkedQueue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -128,7 +124,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ConcurrentLinkedQueue.staticClass, global::java.util.concurrent.ConcurrentLinkedQueue._ConcurrentLinkedQueue27146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConcurrentLinkedQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ConcurrentLinkedQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ConcurrentLinkedQueue"));
@@ -145,6 +141,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ConcurrentLinkedQueue._offer27144 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentLinkedQueue.staticClass, "offer", "(Ljava/lang/Object;)Z");
 			global::java.util.concurrent.ConcurrentLinkedQueue._ConcurrentLinkedQueue27145 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentLinkedQueue.staticClass, "<init>", "()V");
 			global::java.util.concurrent.ConcurrentLinkedQueue._ConcurrentLinkedQueue27146 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentLinkedQueue.staticClass, "<init>", "(Ljava/util/Collection;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

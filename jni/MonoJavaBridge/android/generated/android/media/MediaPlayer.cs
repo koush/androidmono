@@ -4,10 +4,6 @@ namespace android.media
 	public partial class MediaPlayer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MediaPlayer()
-		{
-			InitJNI();
-		}
 		protected MediaPlayer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.media
 		internal sealed partial class OnBufferingUpdateListener_ : java.lang.Object, OnBufferingUpdateListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnBufferingUpdateListener_()
-			{
-				InitJNI();
-			}
 			internal OnBufferingUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass, global::android.media.MediaPlayer.OnBufferingUpdateListener_._onBufferingUpdate7316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnBufferingUpdateListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnBufferingUpdateListener"));
 				global::android.media.MediaPlayer.OnBufferingUpdateListener_._onBufferingUpdate7316 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass, "onBufferingUpdate", "(Landroid/media/MediaPlayer;I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.media
 		internal partial class OnBufferingUpdateListenerDelegateWrapper : java.lang.Object, OnBufferingUpdateListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnBufferingUpdateListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnBufferingUpdateListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnBufferingUpdateListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnBufferingUpdateListenerDelegateWrapper._OnBufferingUpdateListenerDelegateWrapper7317);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnBufferingUpdateListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnBufferingUpdateListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnBufferingUpdateListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnBufferingUpdateListenerDelegateWrapper._OnBufferingUpdateListenerDelegateWrapper7317 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnBufferingUpdateListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnBufferingUpdateListenerDelegateWrapper
@@ -96,10 +90,6 @@ namespace android.media
 		internal sealed partial class OnCompletionListener_ : java.lang.Object, OnCompletionListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCompletionListener_()
-			{
-				InitJNI();
-			}
 			internal OnCompletionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,11 +102,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnCompletionListener_.staticClass, global::android.media.MediaPlayer.OnCompletionListener_._onCompletion7318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnCompletionListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnCompletionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnCompletionListener"));
 				global::android.media.MediaPlayer.OnCompletionListener_._onCompletion7318 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnCompletionListener_.staticClass, "onCompletion", "(Landroid/media/MediaPlayer;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -125,10 +118,6 @@ namespace android.media
 		internal partial class OnCompletionListenerDelegateWrapper : java.lang.Object, OnCompletionListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCompletionListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnCompletionListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -139,11 +128,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnCompletionListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnCompletionListenerDelegateWrapper._OnCompletionListenerDelegateWrapper7319);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnCompletionListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnCompletionListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnCompletionListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnCompletionListenerDelegateWrapper._OnCompletionListenerDelegateWrapper7319 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnCompletionListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnCompletionListenerDelegateWrapper
@@ -171,10 +163,6 @@ namespace android.media
 		internal sealed partial class OnErrorListener_ : java.lang.Object, OnErrorListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnErrorListener_()
-			{
-				InitJNI();
-			}
 			internal OnErrorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -187,11 +175,14 @@ namespace android.media
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnErrorListener_.staticClass, global::android.media.MediaPlayer.OnErrorListener_._onError7320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnErrorListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnErrorListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnErrorListener"));
 				global::android.media.MediaPlayer.OnErrorListener_._onError7320 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnErrorListener_.staticClass, "onError", "(Landroid/media/MediaPlayer;II)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -200,10 +191,6 @@ namespace android.media
 		internal partial class OnErrorListenerDelegateWrapper : java.lang.Object, OnErrorListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnErrorListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnErrorListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -214,11 +201,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnErrorListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnErrorListenerDelegateWrapper._OnErrorListenerDelegateWrapper7321);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnErrorListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnErrorListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnErrorListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnErrorListenerDelegateWrapper._OnErrorListenerDelegateWrapper7321 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnErrorListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnErrorListenerDelegateWrapper
@@ -246,10 +236,6 @@ namespace android.media
 		internal sealed partial class OnInfoListener_ : java.lang.Object, OnInfoListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnInfoListener_()
-			{
-				InitJNI();
-			}
 			internal OnInfoListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -262,11 +248,14 @@ namespace android.media
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnInfoListener_.staticClass, global::android.media.MediaPlayer.OnInfoListener_._onInfo7322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnInfoListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnInfoListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnInfoListener"));
 				global::android.media.MediaPlayer.OnInfoListener_._onInfo7322 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnInfoListener_.staticClass, "onInfo", "(Landroid/media/MediaPlayer;II)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -275,10 +264,6 @@ namespace android.media
 		internal partial class OnInfoListenerDelegateWrapper : java.lang.Object, OnInfoListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnInfoListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnInfoListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -289,11 +274,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnInfoListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnInfoListenerDelegateWrapper._OnInfoListenerDelegateWrapper7323);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnInfoListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnInfoListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnInfoListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnInfoListenerDelegateWrapper._OnInfoListenerDelegateWrapper7323 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnInfoListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnInfoListenerDelegateWrapper
@@ -321,10 +309,6 @@ namespace android.media
 		internal sealed partial class OnPreparedListener_ : java.lang.Object, OnPreparedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreparedListener_()
-			{
-				InitJNI();
-			}
 			internal OnPreparedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -337,11 +321,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnPreparedListener_.staticClass, global::android.media.MediaPlayer.OnPreparedListener_._onPrepared7324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnPreparedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnPreparedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnPreparedListener"));
 				global::android.media.MediaPlayer.OnPreparedListener_._onPrepared7324 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnPreparedListener_.staticClass, "onPrepared", "(Landroid/media/MediaPlayer;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -350,10 +337,6 @@ namespace android.media
 		internal partial class OnPreparedListenerDelegateWrapper : java.lang.Object, OnPreparedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreparedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnPreparedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -364,11 +347,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnPreparedListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnPreparedListenerDelegateWrapper._OnPreparedListenerDelegateWrapper7325);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnPreparedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnPreparedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnPreparedListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnPreparedListenerDelegateWrapper._OnPreparedListenerDelegateWrapper7325 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnPreparedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnPreparedListenerDelegateWrapper
@@ -396,10 +382,6 @@ namespace android.media
 		internal sealed partial class OnSeekCompleteListener_ : java.lang.Object, OnSeekCompleteListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnSeekCompleteListener_()
-			{
-				InitJNI();
-			}
 			internal OnSeekCompleteListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -412,11 +394,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass, global::android.media.MediaPlayer.OnSeekCompleteListener_._onSeekComplete7326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnSeekCompleteListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnSeekCompleteListener"));
 				global::android.media.MediaPlayer.OnSeekCompleteListener_._onSeekComplete7326 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass, "onSeekComplete", "(Landroid/media/MediaPlayer;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -425,10 +410,6 @@ namespace android.media
 		internal partial class OnSeekCompleteListenerDelegateWrapper : java.lang.Object, OnSeekCompleteListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnSeekCompleteListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnSeekCompleteListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -439,11 +420,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnSeekCompleteListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnSeekCompleteListenerDelegateWrapper._OnSeekCompleteListenerDelegateWrapper7327);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnSeekCompleteListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnSeekCompleteListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnSeekCompleteListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnSeekCompleteListenerDelegateWrapper._OnSeekCompleteListenerDelegateWrapper7327 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnSeekCompleteListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnSeekCompleteListenerDelegateWrapper
@@ -471,10 +455,6 @@ namespace android.media
 		internal sealed partial class OnVideoSizeChangedListener_ : java.lang.Object, OnVideoSizeChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnVideoSizeChangedListener_()
-			{
-				InitJNI();
-			}
 			internal OnVideoSizeChangedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -487,11 +467,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass, global::android.media.MediaPlayer.OnVideoSizeChangedListener_._onVideoSizeChanged7328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnVideoSizeChangedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnVideoSizeChangedListener"));
 				global::android.media.MediaPlayer.OnVideoSizeChangedListener_._onVideoSizeChanged7328 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass, "onVideoSizeChanged", "(Landroid/media/MediaPlayer;II)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -500,10 +483,6 @@ namespace android.media
 		internal partial class OnVideoSizeChangedListenerDelegateWrapper : java.lang.Object, OnVideoSizeChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnVideoSizeChangedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnVideoSizeChangedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -514,11 +493,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.OnVideoSizeChangedListenerDelegateWrapper.staticClass, global::android.media.MediaPlayer.OnVideoSizeChangedListenerDelegateWrapper._OnVideoSizeChangedListenerDelegateWrapper7329);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnVideoSizeChangedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaPlayer.OnVideoSizeChangedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer_OnVideoSizeChangedListenerDelegateWrapper"));
 				global::android.media.MediaPlayer.OnVideoSizeChangedListenerDelegateWrapper._OnVideoSizeChangedListenerDelegateWrapper7329 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnVideoSizeChangedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnVideoSizeChangedListenerDelegateWrapper
@@ -989,7 +971,7 @@ namespace android.media
 				return 802;
 			}
 		}
-		private static void InitJNI()
+		static MediaPlayer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.MediaPlayer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer"));
@@ -1029,6 +1011,9 @@ namespace android.media
 			global::android.media.MediaPlayer._setOnErrorListener7363 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnErrorListener", "(Landroid/media/MediaPlayer$OnErrorListener;)V");
 			global::android.media.MediaPlayer._setOnInfoListener7364 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnInfoListener", "(Landroid/media/MediaPlayer$OnInfoListener;)V");
 			global::android.media.MediaPlayer._MediaPlayer7365 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

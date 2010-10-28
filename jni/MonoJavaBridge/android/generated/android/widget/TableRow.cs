@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TableRow : android.widget.LinearLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TableRow()
-		{
-			InitJNI();
-		}
 		protected TableRow(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.widget.LinearLayout.LayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -104,7 +96,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TableRow.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TableRow$LayoutParams"));
@@ -118,6 +110,9 @@ namespace android.widget
 				global::android.widget.TableRow.LayoutParams._LayoutParams17948 = @__env.GetMethodIDNoThrow(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
 				global::android.widget.TableRow.LayoutParams._column17949 = @__env.GetFieldIDNoThrow(global::android.widget.TableRow.LayoutParams.staticClass, "column", "I");
 				global::android.widget.TableRow.LayoutParams._span17950 = @__env.GetFieldIDNoThrow(global::android.widget.TableRow.LayoutParams.staticClass, "span", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onLayout17951;
@@ -229,7 +224,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TableRow.staticClass, global::android.widget.TableRow._TableRow17961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TableRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TableRow.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TableRow"));
@@ -244,6 +239,9 @@ namespace android.widget
 			global::android.widget.TableRow._getVirtualChildCount17959 = @__env.GetMethodIDNoThrow(global::android.widget.TableRow.staticClass, "getVirtualChildCount", "()I");
 			global::android.widget.TableRow._TableRow17960 = @__env.GetMethodIDNoThrow(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.TableRow._TableRow17961 = @__env.GetMethodIDNoThrow(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

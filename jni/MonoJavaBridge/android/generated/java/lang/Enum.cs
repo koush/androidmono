@@ -4,10 +4,6 @@ namespace java.lang
 	public abstract partial class Enum : java.lang.Object, Comparable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Enum()
-		{
-			InitJNI();
-		}
 		protected Enum(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Enum.staticClass, global::java.lang.Enum._Enum20125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Enum()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Enum.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Enum"));
@@ -131,23 +127,25 @@ namespace java.lang
 			global::java.lang.Enum._ordinal20124 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "ordinal", "()I");
 			global::java.lang.Enum._Enum20125 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "<init>", "(Ljava/lang/String;I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.Enum))]
 	internal sealed partial class Enum_ : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Enum_()
-		{
-			InitJNI();
-		}
 		internal Enum_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Enum_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Enum_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Enum"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

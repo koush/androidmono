@@ -4,10 +4,6 @@ namespace android.test
 	public partial class InstrumentationTestSuite : junit.framework.TestSuite
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InstrumentationTestSuite()
-		{
-			InitJNI();
-		}
 		protected InstrumentationTestSuite(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,7 +46,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InstrumentationTestSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.InstrumentationTestSuite.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/InstrumentationTestSuite"));
@@ -59,6 +55,9 @@ namespace android.test
 			global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12217 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestSuite.staticClass, "<init>", "(Landroid/app/Instrumentation;)V");
 			global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12218 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestSuite.staticClass, "<init>", "(Ljava/lang/String;Landroid/app/Instrumentation;)V");
 			global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12219 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestSuite.staticClass, "<init>", "(Ljava/lang/Class;Landroid/app/Instrumentation;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

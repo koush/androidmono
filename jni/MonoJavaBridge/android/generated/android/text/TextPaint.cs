@@ -4,10 +4,6 @@ namespace android.text
 	public partial class TextPaint : android.graphics.Paint
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextPaint()
-		{
-			InitJNI();
-		}
 		protected TextPaint(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace android.text
 			{
 			}
 		}
-		private static void InitJNI()
+		static TextPaint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.TextPaint.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextPaint"));
@@ -114,6 +110,9 @@ namespace android.text
 			global::android.text.TextPaint._linkColor13039 = @__env.GetFieldIDNoThrow(global::android.text.TextPaint.staticClass, "linkColor", "I");
 			global::android.text.TextPaint._drawableState13040 = @__env.GetFieldIDNoThrow(global::android.text.TextPaint.staticClass, "drawableState", "[I");
 			global::android.text.TextPaint._density13041 = @__env.GetFieldIDNoThrow(global::android.text.TextPaint.staticClass, "density", "F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

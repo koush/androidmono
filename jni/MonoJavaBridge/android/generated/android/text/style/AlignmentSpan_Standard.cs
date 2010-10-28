@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class AlignmentSpan_Standard : java.lang.Object, AlignmentSpan, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlignmentSpan_Standard()
-		{
-			InitJNI();
-		}
 		protected AlignmentSpan_Standard(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AlignmentSpan_Standard.staticClass, global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlignmentSpan_Standard()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.AlignmentSpan_Standard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/AlignmentSpan$Standard"));
@@ -85,6 +81,9 @@ namespace android.text.style
 			global::android.text.style.AlignmentSpan_Standard._getSpanTypeId13438 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "getSpanTypeId", "()I");
 			global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13439 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/text/Layout$Alignment;)V");
 			global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13440 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

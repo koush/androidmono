@@ -4,10 +4,6 @@ namespace junit.framework
 	public partial class TestResult : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestResult()
-		{
-			InitJNI();
-		}
 		protected TestResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -162,7 +158,7 @@ namespace junit.framework
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestResult.staticClass, global::junit.framework.TestResult._TestResult31417);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestResult"));
@@ -183,6 +179,9 @@ namespace junit.framework
 			global::junit.framework.TestResult._startTest31415 = @__env.GetMethodIDNoThrow(global::junit.framework.TestResult.staticClass, "startTest", "(Ljunit/framework/Test;)V");
 			global::junit.framework.TestResult._wasSuccessful31416 = @__env.GetMethodIDNoThrow(global::junit.framework.TestResult.staticClass, "wasSuccessful", "()Z");
 			global::junit.framework.TestResult._TestResult31417 = @__env.GetMethodIDNoThrow(global::junit.framework.TestResult.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

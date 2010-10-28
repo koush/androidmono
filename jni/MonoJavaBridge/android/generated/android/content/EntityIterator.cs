@@ -11,10 +11,6 @@ namespace android.content
 	internal sealed partial class EntityIterator_ : java.lang.Object, EntityIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityIterator_()
-		{
-			InitJNI();
-		}
 		internal EntityIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._remove3099);
 		}
-		private static void InitJNI()
+		static EntityIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.EntityIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/EntityIterator"));
@@ -72,6 +68,9 @@ namespace android.content
 			global::android.content.EntityIterator_._hasNext3097 = @__env.GetMethodIDNoThrow(global::android.content.EntityIterator_.staticClass, "hasNext", "()Z");
 			global::android.content.EntityIterator_._next3098 = @__env.GetMethodIDNoThrow(global::android.content.EntityIterator_.staticClass, "next", "()Ljava/lang/Object;");
 			global::android.content.EntityIterator_._remove3099 = @__env.GetMethodIDNoThrow(global::android.content.EntityIterator_.staticClass, "remove", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

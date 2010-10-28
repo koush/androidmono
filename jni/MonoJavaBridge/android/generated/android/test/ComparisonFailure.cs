@@ -4,10 +4,6 @@ namespace android.test
 	public partial class ComparisonFailure : android.test.AssertionFailedError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ComparisonFailure()
-		{
-			InitJNI();
-		}
 		protected ComparisonFailure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ComparisonFailure.staticClass, global::android.test.ComparisonFailure._ComparisonFailure12180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ComparisonFailure()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ComparisonFailure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ComparisonFailure"));
 			global::android.test.ComparisonFailure._getMessage12179 = @__env.GetMethodIDNoThrow(global::android.test.ComparisonFailure.staticClass, "getMessage", "()Ljava/lang/String;");
 			global::android.test.ComparisonFailure._ComparisonFailure12180 = @__env.GetMethodIDNoThrow(global::android.test.ComparisonFailure.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

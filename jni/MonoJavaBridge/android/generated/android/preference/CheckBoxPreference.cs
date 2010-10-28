@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class CheckBoxPreference : android.preference.Preference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CheckBoxPreference()
-		{
-			InitJNI();
-		}
 		protected CheckBoxPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -233,7 +229,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._CheckBoxPreference10246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CheckBoxPreference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.CheckBoxPreference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/CheckBoxPreference"));
@@ -257,6 +253,9 @@ namespace android.preference
 			global::android.preference.CheckBoxPreference._CheckBoxPreference10244 = @__env.GetMethodIDNoThrow(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.CheckBoxPreference._CheckBoxPreference10245 = @__env.GetMethodIDNoThrow(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.preference.CheckBoxPreference._CheckBoxPreference10246 = @__env.GetMethodIDNoThrow(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

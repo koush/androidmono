@@ -4,10 +4,6 @@ namespace javax.xml.validation
 	public abstract partial class ValidatorHandler : java.lang.Object, org.xml.sax.ContentHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ValidatorHandler()
-		{
-			InitJNI();
-		}
 		protected ValidatorHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace javax.xml.validation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.ValidatorHandler.staticClass, global::javax.xml.validation.ValidatorHandler._ValidatorHandler31261);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ValidatorHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.ValidatorHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/ValidatorHandler"));
@@ -118,16 +114,15 @@ namespace javax.xml.validation
 			global::javax.xml.validation.ValidatorHandler._getTypeInfoProvider31260 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.ValidatorHandler.staticClass, "getTypeInfoProvider", "()Ljavax/xml/validation/TypeInfoProvider;");
 			global::javax.xml.validation.ValidatorHandler._ValidatorHandler31261 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.ValidatorHandler.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.validation.ValidatorHandler))]
 	internal sealed partial class ValidatorHandler_ : javax.xml.validation.ValidatorHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ValidatorHandler_()
-		{
-			InitJNI();
-		}
 		internal ValidatorHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -293,7 +288,7 @@ namespace javax.xml.validation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.ValidatorHandler_.staticClass, global::javax.xml.validation.ValidatorHandler_._getTypeInfoProvider31279)) as javax.xml.validation.TypeInfoProvider;
 		}
-		private static void InitJNI()
+		static ValidatorHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.ValidatorHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/ValidatorHandler"));
@@ -315,6 +310,9 @@ namespace javax.xml.validation
 			global::javax.xml.validation.ValidatorHandler_._setResourceResolver31277 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.ValidatorHandler_.staticClass, "setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V");
 			global::javax.xml.validation.ValidatorHandler_._getResourceResolver31278 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.ValidatorHandler_.staticClass, "getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
 			global::javax.xml.validation.ValidatorHandler_._getTypeInfoProvider31279 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.ValidatorHandler_.staticClass, "getTypeInfoProvider", "()Ljavax/xml/validation/TypeInfoProvider;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

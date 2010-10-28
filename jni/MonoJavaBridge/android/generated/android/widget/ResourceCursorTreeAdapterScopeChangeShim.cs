@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class ResourceCursorTreeAdapterScopeChangeShim : android.widget.CursorTreeAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResourceCursorTreeAdapterScopeChangeShim()
-		{
-			InitJNI();
-		}
 		protected ResourceCursorTreeAdapterScopeChangeShim(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -29,12 +25,15 @@ namespace android.widget
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ResourceCursorTreeAdapterScopeChangeShim.staticClass, global::android.widget.ResourceCursorTreeAdapterScopeChangeShim._newChildView17671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.View;
 		}
-		private static void InitJNI()
+		static ResourceCursorTreeAdapterScopeChangeShim()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ResourceCursorTreeAdapterScopeChangeShim"));
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim._newGroupView17670 = @__env.GetMethodIDNoThrow(global::android.widget.ResourceCursorTreeAdapterScopeChangeShim.staticClass, "newGroupView", "(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;");
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim._newChildView17671 = @__env.GetMethodIDNoThrow(global::android.widget.ResourceCursorTreeAdapterScopeChangeShim.staticClass, "newChildView", "(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -42,10 +41,6 @@ namespace android.widget
 	internal sealed partial class ResourceCursorTreeAdapterScopeChangeShim_ : android.widget.ResourceCursorTreeAdapterScopeChangeShim
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResourceCursorTreeAdapterScopeChangeShim_()
-		{
-			InitJNI();
-		}
 		internal ResourceCursorTreeAdapterScopeChangeShim_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,13 +71,16 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_.staticClass, global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_._bindChildView17674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static ResourceCursorTreeAdapterScopeChangeShim_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ResourceCursorTreeAdapterScopeChangeShim"));
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_._getChildrenCursor17672 = @__env.GetMethodIDNoThrow(global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_.staticClass, "getChildrenCursor", "(Landroid/database/Cursor;)Landroid/database/Cursor;");
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_._bindGroupView17673 = @__env.GetMethodIDNoThrow(global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_.staticClass, "bindGroupView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V");
 			global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_._bindChildView17674 = @__env.GetMethodIDNoThrow(global::android.widget.ResourceCursorTreeAdapterScopeChangeShim_.staticClass, "bindChildView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

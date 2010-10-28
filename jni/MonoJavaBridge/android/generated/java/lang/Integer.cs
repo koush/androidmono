@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Integer : java.lang.Number, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Integer()
-		{
-			InitJNI();
-		}
 		internal Integer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -298,7 +294,7 @@ namespace java.lang
 				return 32;
 			}
 		}
-		private static void InitJNI()
+		static Integer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Integer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Integer"));
@@ -340,6 +336,9 @@ namespace java.lang
 			global::java.lang.Integer._Integer20230 = @__env.GetMethodIDNoThrow(global::java.lang.Integer.staticClass, "<init>", "(I)V");
 			global::java.lang.Integer._Integer20231 = @__env.GetMethodIDNoThrow(global::java.lang.Integer.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.Integer._TYPE20234 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Integer.staticClass, "TYPE", "Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

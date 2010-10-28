@@ -13,10 +13,6 @@ namespace java.util.zip
 	internal sealed partial class Checksum_ : java.lang.Object, Checksum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Checksum_()
-		{
-			InitJNI();
-		}
 		internal Checksum_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.util.zip
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_.staticClass, global::java.util.zip.Checksum_._update28351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static Checksum_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.Checksum_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/Checksum"));
@@ -64,6 +60,9 @@ namespace java.util.zip
 			global::java.util.zip.Checksum_._reset28349 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "reset", "()V");
 			global::java.util.zip.Checksum_._update28350 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "(I)V");
 			global::java.util.zip.Checksum_._update28351 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "([BII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

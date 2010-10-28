@@ -4,10 +4,6 @@ namespace android.util
 	public partial class SparseBooleanArray : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SparseBooleanArray()
-		{
-			InitJNI();
-		}
 		protected SparseBooleanArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -124,7 +120,7 @@ namespace android.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._SparseBooleanArray13863);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SparseBooleanArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.SparseBooleanArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/SparseBooleanArray"));
@@ -141,6 +137,9 @@ namespace android.util
 			global::android.util.SparseBooleanArray._indexOfValue13861 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "indexOfValue", "(Z)I");
 			global::android.util.SparseBooleanArray._SparseBooleanArray13862 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "<init>", "(I)V");
 			global::android.util.SparseBooleanArray._SparseBooleanArray13863 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

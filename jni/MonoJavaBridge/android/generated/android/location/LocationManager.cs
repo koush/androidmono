@@ -4,10 +4,6 @@ namespace android.location
 	public partial class LocationManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocationManager()
-		{
-			InitJNI();
-		}
 		protected LocationManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -335,7 +331,7 @@ namespace android.location
 				return "location";
 			}
 		}
-		private static void InitJNI()
+		static LocationManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.LocationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationManager"));
@@ -367,6 +363,9 @@ namespace android.location
 			global::android.location.LocationManager._removeNmeaListener6958 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)V");
 			global::android.location.LocationManager._getGpsStatus6959 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getGpsStatus", "(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;");
 			global::android.location.LocationManager._sendExtraCommand6960 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "sendExtraCommand", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

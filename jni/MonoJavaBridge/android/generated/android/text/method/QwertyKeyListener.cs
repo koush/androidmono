@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class QwertyKeyListener : android.text.method.BaseKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static QwertyKeyListener()
-		{
-			InitJNI();
-		}
 		protected QwertyKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.QwertyKeyListener.staticClass, global::android.text.method.QwertyKeyListener._QwertyKeyListener13369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static QwertyKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.QwertyKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/QwertyKeyListener"));
@@ -64,6 +60,9 @@ namespace android.text.method
 			global::android.text.method.QwertyKeyListener._getInputType13367 = @__env.GetMethodIDNoThrow(global::android.text.method.QwertyKeyListener.staticClass, "getInputType", "()I");
 			global::android.text.method.QwertyKeyListener._markAsReplaced13368 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.QwertyKeyListener.staticClass, "markAsReplaced", "(Landroid/text/Spannable;IILjava/lang/String;)V");
 			global::android.text.method.QwertyKeyListener._QwertyKeyListener13369 = @__env.GetMethodIDNoThrow(global::android.text.method.QwertyKeyListener.staticClass, "<init>", "(Landroid/text/method/TextKeyListener$Capitalize;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

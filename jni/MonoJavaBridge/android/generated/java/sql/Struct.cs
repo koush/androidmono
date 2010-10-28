@@ -12,10 +12,6 @@ namespace java.sql
 	internal sealed partial class Struct_ : java.lang.Object, Struct
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Struct_()
-		{
-			InitJNI();
-		}
 		internal Struct_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Struct_.staticClass, global::java.sql.Struct_._getSQLTypeName25094)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Struct_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Struct_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Struct"));
 			global::java.sql.Struct_._getAttributes25092 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getAttributes", "()[Ljava/lang/Object;");
 			global::java.sql.Struct_._getAttributes25093 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;");
 			global::java.sql.Struct_._getSQLTypeName25094 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

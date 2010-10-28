@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class Message : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Message()
-		{
-			InitJNI();
-		}
 		internal Message(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -292,7 +288,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.Message.staticClass, _CREATOR9961)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Message()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Message.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Message"));
@@ -324,6 +320,9 @@ namespace android.os
 			global::android.os.Message._obj9959 = @__env.GetFieldIDNoThrow(global::android.os.Message.staticClass, "obj", "Ljava/lang/Object;");
 			global::android.os.Message._replyTo9960 = @__env.GetFieldIDNoThrow(global::android.os.Message.staticClass, "replyTo", "Landroid/os/Messenger;");
 			global::android.os.Message._CREATOR9961 = @__env.GetStaticFieldIDNoThrow(global::android.os.Message.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

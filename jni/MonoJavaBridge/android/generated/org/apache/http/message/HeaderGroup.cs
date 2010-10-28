@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class HeaderGroup : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeaderGroup()
-		{
-			InitJNI();
-		}
 		protected HeaderGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -171,7 +167,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.HeaderGroup.staticClass, global::org.apache.http.message.HeaderGroup._HeaderGroup33689);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HeaderGroup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.HeaderGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/HeaderGroup"));
@@ -191,6 +187,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.HeaderGroup._updateHeader33687 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderGroup.staticClass, "updateHeader", "(Lorg/apache/http/Header;)V");
 			global::org.apache.http.message.HeaderGroup._getCondensedHeader33688 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderGroup.staticClass, "getCondensedHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
 			global::org.apache.http.message.HeaderGroup._HeaderGroup33689 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderGroup.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.xml.transform.sax
 	public partial class SAXSource : java.lang.Object, Source
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXSource()
-		{
-			InitJNI();
-		}
 		protected SAXSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -132,7 +128,7 @@ namespace javax.xml.transform.sax
 				return "http://javax.xml.transform.sax.SAXSource/feature";
 			}
 		}
-		private static void InitJNI()
+		static SAXSource()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.SAXSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/SAXSource"));
@@ -146,6 +142,9 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.SAXSource._SAXSource31081 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)V");
 			global::javax.xml.transform.sax.SAXSource._SAXSource31082 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/InputSource;)V");
 			global::javax.xml.transform.sax.SAXSource._SAXSource31083 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

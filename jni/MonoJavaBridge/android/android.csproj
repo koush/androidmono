@@ -2317,6 +2317,8 @@
     <Compile Include="java\lang\String.cs" />
     <Compile Include="java\lang\Throwable.cs" />
     <Compile Include="java\lang\Iterable.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AndroidInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

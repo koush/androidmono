@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Random : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Random()
-		{
-			InitJNI();
-		}
 		protected Random(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -122,7 +118,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Random.staticClass, global::java.util.Random._Random26619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Random()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Random.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Random"));
@@ -138,6 +134,9 @@ namespace java.util
 			global::java.util.Random._nextGaussian26617 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextGaussian", "()D");
 			global::java.util.Random._Random26618 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "<init>", "()V");
 			global::java.util.Random._Random26619 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "<init>", "(J)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class HttpURLConnection : java.net.URLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpURLConnection()
-		{
-			InitJNI();
-		}
 		protected HttpURLConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -403,7 +399,7 @@ namespace java.net
 				return 505;
 			}
 		}
-		private static void InitJNI()
+		static HttpURLConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.HttpURLConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/HttpURLConnection"));
@@ -426,16 +422,15 @@ namespace java.net
 			global::java.net.HttpURLConnection._usingProxy21488 = @__env.GetMethodIDNoThrow(global::java.net.HttpURLConnection.staticClass, "usingProxy", "()Z");
 			global::java.net.HttpURLConnection._HttpURLConnection21489 = @__env.GetMethodIDNoThrow(global::java.net.HttpURLConnection.staticClass, "<init>", "(Ljava/net/URL;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.HttpURLConnection))]
 	internal sealed partial class HttpURLConnection_ : java.net.HttpURLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpURLConnection_()
-		{
-			InitJNI();
-		}
 		internal HttpURLConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -466,13 +461,16 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection_.staticClass, global::java.net.HttpURLConnection_._connect21528);
 		}
-		private static void InitJNI()
+		static HttpURLConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.HttpURLConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/HttpURLConnection"));
 			global::java.net.HttpURLConnection_._disconnect21526 = @__env.GetMethodIDNoThrow(global::java.net.HttpURLConnection_.staticClass, "disconnect", "()V");
 			global::java.net.HttpURLConnection_._usingProxy21527 = @__env.GetMethodIDNoThrow(global::java.net.HttpURLConnection_.staticClass, "usingProxy", "()Z");
 			global::java.net.HttpURLConnection_._connect21528 = @__env.GetMethodIDNoThrow(global::java.net.HttpURLConnection_.staticClass, "connect", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -13,10 +13,6 @@ namespace javax.xml.xpath
 	internal sealed partial class XPathExpression_ : java.lang.Object, XPathExpression
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathExpression_()
-		{
-			InitJNI();
-		}
 		internal XPathExpression_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace javax.xml.xpath
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathExpression_.staticClass, global::javax.xml.xpath.XPathExpression_._evaluate31307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static XPathExpression_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathExpression_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathExpression"));
@@ -64,6 +60,9 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathExpression_._evaluate31305 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpression_.staticClass, "evaluate", "(Ljava/lang/Object;)Ljava/lang/String;");
 			global::javax.xml.xpath.XPathExpression_._evaluate31306 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpression_.staticClass, "evaluate", "(Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;");
 			global::javax.xml.xpath.XPathExpression_._evaluate31307 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpression_.staticClass, "evaluate", "(Lorg/xml/sax/InputSource;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

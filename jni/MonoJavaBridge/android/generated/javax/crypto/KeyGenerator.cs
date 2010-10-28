@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class KeyGenerator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyGenerator()
-		{
-			InitJNI();
-		}
 		protected KeyGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -122,7 +118,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.KeyGenerator.staticClass, global::javax.crypto.KeyGenerator._KeyGenerator28662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyGenerator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.KeyGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/KeyGenerator"));
@@ -138,6 +134,9 @@ namespace javax.crypto
 			global::javax.crypto.KeyGenerator._getProvider28660 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGenerator.staticClass, "getProvider", "()Ljava/security/Provider;");
 			global::javax.crypto.KeyGenerator._generateKey28661 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGenerator.staticClass, "generateKey", "()Ljavax/crypto/SecretKey;");
 			global::javax.crypto.KeyGenerator._KeyGenerator28662 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGenerator.staticClass, "<init>", "(Ljavax/crypto/KeyGeneratorSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

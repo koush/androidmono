@@ -16,10 +16,6 @@ namespace org.apache.http.io
 	internal sealed partial class SessionOutputBuffer_ : java.lang.Object, SessionOutputBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SessionOutputBuffer_()
-		{
-			InitJNI();
-		}
 		internal SessionOutputBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_.staticClass, global::org.apache.http.io.SessionOutputBuffer_._writeLine33484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SessionOutputBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.SessionOutputBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/SessionOutputBuffer"));
@@ -97,6 +93,9 @@ namespace org.apache.http.io
 			global::org.apache.http.io.SessionOutputBuffer_._getMetrics33482 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;");
 			global::org.apache.http.io.SessionOutputBuffer_._writeLine33483 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Ljava/lang/String;)V");
 			global::org.apache.http.io.SessionOutputBuffer_._writeLine33484 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Lorg/apache/http/util/CharArrayBuffer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

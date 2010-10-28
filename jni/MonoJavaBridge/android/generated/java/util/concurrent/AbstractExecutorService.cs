@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public abstract partial class AbstractExecutorService : java.lang.Object, ExecutorService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractExecutorService()
-		{
-			InitJNI();
-		}
 		protected AbstractExecutorService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.AbstractExecutorService.staticClass, global::java.util.concurrent.AbstractExecutorService._AbstractExecutorService27038);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractExecutorService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.AbstractExecutorService.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/AbstractExecutorService"));
@@ -120,16 +116,15 @@ namespace java.util.concurrent
 			global::java.util.concurrent.AbstractExecutorService._invokeAll27037 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.AbstractExecutorService.staticClass, "invokeAll", "(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/util/List;");
 			global::java.util.concurrent.AbstractExecutorService._AbstractExecutorService27038 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.AbstractExecutorService.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.concurrent.AbstractExecutorService))]
 	internal sealed partial class AbstractExecutorService_ : java.util.concurrent.AbstractExecutorService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractExecutorService_()
-		{
-			InitJNI();
-		}
 		internal AbstractExecutorService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -191,7 +186,7 @@ namespace java.util.concurrent
 		{
 			execute((global::java.lang.RunnableDelegateWrapper)arg0);
 		}
-		private static void InitJNI()
+		static AbstractExecutorService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.AbstractExecutorService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/AbstractExecutorService"));
@@ -201,6 +196,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.AbstractExecutorService_._isShutdown27042 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.AbstractExecutorService_.staticClass, "isShutdown", "()Z");
 			global::java.util.concurrent.AbstractExecutorService_._isTerminated27043 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.AbstractExecutorService_.staticClass, "isTerminated", "()Z");
 			global::java.util.concurrent.AbstractExecutorService_._execute27044 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.AbstractExecutorService_.staticClass, "execute", "(Ljava/lang/Runnable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

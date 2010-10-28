@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class BasicHttpEntity : org.apache.http.entity.AbstractHttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHttpEntity()
-		{
-			InitJNI();
-		}
 		protected BasicHttpEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -112,7 +108,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BasicHttpEntity.staticClass, global::org.apache.http.entity.BasicHttpEntity._BasicHttpEntity32514);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHttpEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.BasicHttpEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/BasicHttpEntity"));
@@ -125,6 +121,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.BasicHttpEntity._consumeContent32512 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BasicHttpEntity.staticClass, "consumeContent", "()V");
 			global::org.apache.http.entity.BasicHttpEntity._setContent32513 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BasicHttpEntity.staticClass, "setContent", "(Ljava/io/InputStream;)V");
 			global::org.apache.http.entity.BasicHttpEntity._BasicHttpEntity32514 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BasicHttpEntity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.os
 	public partial class DropBoxManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DropBoxManager()
-		{
-			InitJNI();
-		}
 		protected DropBoxManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.os
 		public partial class Entry : java.lang.Object, Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Entry()
-			{
-				InitJNI();
-			}
 			protected Entry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -166,7 +158,7 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.DropBoxManager.Entry.staticClass, _CREATOR9798)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static Entry()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.DropBoxManager.Entry.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DropBoxManager$Entry"));
@@ -184,6 +176,9 @@ namespace android.os
 				global::android.os.DropBoxManager.Entry._Entry9796 = @__env.GetMethodIDNoThrow(global::android.os.DropBoxManager.Entry.staticClass, "<init>", "(Ljava/lang/String;JLandroid/os/ParcelFileDescriptor;I)V");
 				global::android.os.DropBoxManager.Entry._Entry9797 = @__env.GetMethodIDNoThrow(global::android.os.DropBoxManager.Entry.staticClass, "<init>", "(Ljava/lang/String;JLjava/io/File;I)V");
 				global::android.os.DropBoxManager.Entry._CREATOR9798 = @__env.GetStaticFieldIDNoThrow(global::android.os.DropBoxManager.Entry.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNextEntry9799;
@@ -259,7 +254,7 @@ namespace android.os
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static DropBoxManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.DropBoxManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DropBoxManager"));
@@ -269,6 +264,9 @@ namespace android.os
 			global::android.os.DropBoxManager._addFile9802 = @__env.GetMethodIDNoThrow(global::android.os.DropBoxManager.staticClass, "addFile", "(Ljava/lang/String;Ljava/io/File;I)V");
 			global::android.os.DropBoxManager._isTagEnabled9803 = @__env.GetMethodIDNoThrow(global::android.os.DropBoxManager.staticClass, "isTagEnabled", "(Ljava/lang/String;)Z");
 			global::android.os.DropBoxManager._DropBoxManager9804 = @__env.GetMethodIDNoThrow(global::android.os.DropBoxManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

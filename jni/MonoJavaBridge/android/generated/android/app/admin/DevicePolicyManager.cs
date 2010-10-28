@@ -4,10 +4,6 @@ namespace android.app.admin
 	public partial class DevicePolicyManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DevicePolicyManager()
-		{
-			InitJNI();
-		}
 		protected DevicePolicyManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -248,7 +244,7 @@ namespace android.app.admin
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static DevicePolicyManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.admin.DevicePolicyManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DevicePolicyManager"));
@@ -269,6 +265,9 @@ namespace android.app.admin
 			global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock2285 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumTimeToLock", "(Landroid/content/ComponentName;)J");
 			global::android.app.admin.DevicePolicyManager._lockNow2286 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "lockNow", "()V");
 			global::android.app.admin.DevicePolicyManager._wipeData2287 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "wipeData", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

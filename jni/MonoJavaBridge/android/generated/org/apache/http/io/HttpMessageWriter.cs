@@ -10,10 +10,6 @@ namespace org.apache.http.io
 	internal sealed partial class HttpMessageWriter_ : java.lang.Object, HttpMessageWriter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpMessageWriter_()
-		{
-			InitJNI();
-		}
 		internal HttpMessageWriter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageWriter_.staticClass, global::org.apache.http.io.HttpMessageWriter_._write33468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static HttpMessageWriter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.HttpMessageWriter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/HttpMessageWriter"));
 			global::org.apache.http.io.HttpMessageWriter_._write33468 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageWriter_.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

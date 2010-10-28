@@ -242,13 +242,6 @@ namespace MonoDroid
                 }
                 */
                 
-                WriteLine("static {0}()", type.SimpleName);
-                WriteLine("{");
-                myIndent++;
-                WriteLine("InitJNI();");
-                myIndent--;
-                WriteLine("}");
-
                 WriteLine("{1} {0}(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");
@@ -437,7 +430,7 @@ namespace MonoDroid
             }
 
             myIndent++;
-            WriteLine("private static void InitJNI()");
+            WriteLine("static {0}()", type.SimpleName);
             WriteLine("{");
             myIndent++;
             WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
@@ -450,6 +443,10 @@ namespace MonoDroid
                 WriteLine(initJni);
             }
             myIndent--;
+            WriteLine("}");
+
+            WriteLine("internal static void InitJNI()");
+            WriteLine("{");
             WriteLine("}");
             myIndent--;
 

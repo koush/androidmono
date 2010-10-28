@@ -4,10 +4,6 @@ namespace android.content.res
 	public partial class TypedArray : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TypedArray()
-		{
-			InitJNI();
-		}
 		protected TypedArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -284,7 +280,7 @@ namespace android.content.res
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._peekValue4283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.TypedValue;
 		}
-		private static void InitJNI()
+		static TypedArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.TypedArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/TypedArray"));
@@ -316,6 +312,9 @@ namespace android.content.res
 			global::android.content.res.TypedArray._getResourceId4281 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getResourceId", "(II)I");
 			global::android.content.res.TypedArray._hasValue4282 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "hasValue", "(I)Z");
 			global::android.content.res.TypedArray._peekValue4283 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "peekValue", "(I)Landroid/util/TypedValue;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

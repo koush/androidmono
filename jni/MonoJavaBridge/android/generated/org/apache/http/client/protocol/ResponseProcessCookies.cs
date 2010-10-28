@@ -4,10 +4,6 @@ namespace org.apache.http.client.protocol
 	public partial class ResponseProcessCookies : java.lang.Object, HttpResponseInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseProcessCookies()
-		{
-			InitJNI();
-		}
 		protected ResponseProcessCookies(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.client.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.protocol.ResponseProcessCookies.staticClass, global::org.apache.http.client.protocol.ResponseProcessCookies._ResponseProcessCookies32047);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResponseProcessCookies()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.protocol.ResponseProcessCookies.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/protocol/ResponseProcessCookies"));
 			global::org.apache.http.client.protocol.ResponseProcessCookies._process32046 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.ResponseProcessCookies.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.client.protocol.ResponseProcessCookies._ResponseProcessCookies32047 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.ResponseProcessCookies.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

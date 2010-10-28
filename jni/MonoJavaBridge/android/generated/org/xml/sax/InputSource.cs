@@ -4,10 +4,6 @@ namespace org.xml.sax
 	public partial class InputSource : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputSource()
-		{
-			InitJNI();
-		}
 		protected InputSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -184,7 +180,7 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._InputSource35015);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputSource()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.InputSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/InputSource"));
@@ -202,6 +198,9 @@ namespace org.xml.sax
 			global::org.xml.sax.InputSource._InputSource35013 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::org.xml.sax.InputSource._InputSource35014 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "<init>", "(Ljava/io/InputStream;)V");
 			global::org.xml.sax.InputSource._InputSource35015 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

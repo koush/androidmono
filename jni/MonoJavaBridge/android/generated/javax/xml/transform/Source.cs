@@ -11,10 +11,6 @@ namespace javax.xml.transform
 	internal sealed partial class Source_ : java.lang.Object, Source
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Source_()
-		{
-			InitJNI();
-		}
 		internal Source_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.xml.transform
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.Source_.staticClass, global::javax.xml.transform.Source_._setSystemId30952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Source_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Source_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Source"));
 			global::javax.xml.transform.Source_._getSystemId30951 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Source_.staticClass, "getSystemId", "()Ljava/lang/String;");
 			global::javax.xml.transform.Source_._setSystemId30952 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Source_.staticClass, "setSystemId", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

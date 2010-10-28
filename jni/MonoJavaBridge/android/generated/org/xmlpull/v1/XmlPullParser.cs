@@ -46,10 +46,6 @@ namespace org.xmlpull.v1
 	internal sealed partial class XmlPullParser_ : java.lang.Object, XmlPullParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XmlPullParser_()
-		{
-			InitJNI();
-		}
 		internal XmlPullParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -386,7 +382,7 @@ namespace org.xmlpull.v1
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._nextTag35347);
 		}
-		private static void InitJNI()
+		static XmlPullParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.XmlPullParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlPullParser"));
@@ -427,6 +423,9 @@ namespace org.xmlpull.v1
 			global::org.xmlpull.v1.XmlPullParser_._require35345 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "require", "(ILjava/lang/String;Ljava/lang/String;)V");
 			global::org.xmlpull.v1.XmlPullParser_._nextText35346 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "nextText", "()Ljava/lang/String;");
 			global::org.xmlpull.v1.XmlPullParser_._nextTag35347 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "nextTag", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content
 	public partial class ContentUris : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentUris()
-		{
-			InitJNI();
-		}
 		protected ContentUris(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,7 +32,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentUris.staticClass, global::android.content.ContentUris._ContentUris2774);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContentUris()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentUris.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentUris"));
@@ -44,6 +40,9 @@ namespace android.content
 			global::android.content.ContentUris._appendId2772 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentUris.staticClass, "appendId", "(Landroid/net/Uri$Builder;J)Landroid/net/Uri$Builder;");
 			global::android.content.ContentUris._withAppendedId2773 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentUris.staticClass, "withAppendedId", "(Landroid/net/Uri;J)Landroid/net/Uri;");
 			global::android.content.ContentUris._ContentUris2774 = @__env.GetMethodIDNoThrow(global::android.content.ContentUris.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

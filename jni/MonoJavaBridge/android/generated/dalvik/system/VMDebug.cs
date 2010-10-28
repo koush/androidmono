@@ -4,10 +4,6 @@ namespace dalvik.system
 	public sealed partial class VMDebug : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VMDebug()
-		{
-			InitJNI();
-		}
 		internal VMDebug(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -339,7 +335,7 @@ namespace dalvik.system
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static VMDebug()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.VMDebug.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/VMDebug"));
@@ -365,6 +361,9 @@ namespace dalvik.system
 			global::dalvik.system.VMDebug._stopInstructionCounting18634 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopInstructionCounting", "()V");
 			global::dalvik.system.VMDebug._getInstructionCount18635 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getInstructionCount", "([I)V");
 			global::dalvik.system.VMDebug._resetInstructionCount18636 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "resetInstructionCount", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

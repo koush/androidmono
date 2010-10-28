@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Date : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Date()
-		{
-			InitJNI();
-		}
 		protected Date(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -379,7 +375,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date26120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Date()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Date.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Date"));
@@ -417,6 +413,9 @@ namespace java.util
 			global::java.util.Date._Date26118 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(IIIII)V");
 			global::java.util.Date._Date26119 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(IIIIII)V");
 			global::java.util.Date._Date26120 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

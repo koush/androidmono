@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class NinePatch : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NinePatch()
-		{
-			InitJNI();
-		}
 		protected NinePatch(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -133,7 +129,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._NinePatch5385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NinePatch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.NinePatch.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/NinePatch"));
@@ -148,6 +144,9 @@ namespace android.graphics
 			global::android.graphics.NinePatch._setPaint5383 = @__env.GetMethodIDNoThrow(global::android.graphics.NinePatch.staticClass, "setPaint", "(Landroid/graphics/Paint;)V");
 			global::android.graphics.NinePatch._isNinePatchChunk5384 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.NinePatch.staticClass, "isNinePatchChunk", "([B)Z");
 			global::android.graphics.NinePatch._NinePatch5385 = @__env.GetMethodIDNoThrow(global::android.graphics.NinePatch.staticClass, "<init>", "(Landroid/graphics/Bitmap;[BLjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

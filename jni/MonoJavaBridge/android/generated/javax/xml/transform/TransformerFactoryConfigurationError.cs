@@ -4,10 +4,6 @@ namespace javax.xml.transform
 	public partial class TransformerFactoryConfigurationError : java.lang.Error
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TransformerFactoryConfigurationError()
-		{
-			InitJNI();
-		}
 		protected TransformerFactoryConfigurationError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace javax.xml.transform
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.TransformerFactoryConfigurationError.staticClass, global::javax.xml.transform.TransformerFactoryConfigurationError._TransformerFactoryConfigurationError31038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TransformerFactoryConfigurationError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/TransformerFactoryConfigurationError"));
@@ -81,6 +77,9 @@ namespace javax.xml.transform
 			global::javax.xml.transform.TransformerFactoryConfigurationError._TransformerFactoryConfigurationError31036 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.transform.TransformerFactoryConfigurationError._TransformerFactoryConfigurationError31037 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 			global::javax.xml.transform.TransformerFactoryConfigurationError._TransformerFactoryConfigurationError31038 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

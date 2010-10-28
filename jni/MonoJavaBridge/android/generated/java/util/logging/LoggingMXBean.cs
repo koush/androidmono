@@ -13,10 +13,6 @@ namespace java.util.logging
 	internal sealed partial class LoggingMXBean_ : java.lang.Object, LoggingMXBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LoggingMXBean_()
-		{
-			InitJNI();
-		}
 		internal LoggingMXBean_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.util.logging
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LoggingMXBean_.staticClass, global::java.util.logging.LoggingMXBean_._getParentLoggerName28087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static LoggingMXBean_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.LoggingMXBean_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/LoggingMXBean"));
@@ -64,6 +60,9 @@ namespace java.util.logging
 			global::java.util.logging.LoggingMXBean_._getLoggerLevel28085 = @__env.GetMethodIDNoThrow(global::java.util.logging.LoggingMXBean_.staticClass, "getLoggerLevel", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::java.util.logging.LoggingMXBean_._setLoggerLevel28086 = @__env.GetMethodIDNoThrow(global::java.util.logging.LoggingMXBean_.staticClass, "setLoggerLevel", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.util.logging.LoggingMXBean_._getParentLoggerName28087 = @__env.GetMethodIDNoThrow(global::java.util.logging.LoggingMXBean_.staticClass, "getParentLoggerName", "(Ljava/lang/String;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class AccountAuthenticatorResponse : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccountAuthenticatorResponse()
-		{
-			InitJNI();
-		}
 		protected AccountAuthenticatorResponse(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace android.accounts
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.accounts.AccountAuthenticatorResponse.staticClass, _CREATOR1298)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AccountAuthenticatorResponse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountAuthenticatorResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountAuthenticatorResponse"));
@@ -83,6 +79,9 @@ namespace android.accounts
 			global::android.accounts.AccountAuthenticatorResponse._onError1296 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onError", "(ILjava/lang/String;)V");
 			global::android.accounts.AccountAuthenticatorResponse._AccountAuthenticatorResponse1297 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.accounts.AccountAuthenticatorResponse._CREATOR1298 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

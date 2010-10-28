@@ -4,10 +4,6 @@ namespace android.content
 	public partial class Intent : java.lang.Object, android.os.Parcelable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Intent()
-		{
-			InitJNI();
-		}
 		protected Intent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content
 		public sealed partial class FilterComparison : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FilterComparison()
-			{
-				InitJNI();
-			}
 			internal FilterComparison(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -63,7 +55,7 @@ namespace android.content
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Intent.FilterComparison.staticClass, global::android.content.Intent.FilterComparison._FilterComparison3103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static FilterComparison()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.Intent.FilterComparison.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Intent$FilterComparison"));
@@ -72,15 +64,14 @@ namespace android.content
 				global::android.content.Intent.FilterComparison._getIntent3102 = @__env.GetMethodIDNoThrow(global::android.content.Intent.FilterComparison.staticClass, "getIntent", "()Landroid/content/Intent;");
 				global::android.content.Intent.FilterComparison._FilterComparison3103 = @__env.GetMethodIDNoThrow(global::android.content.Intent.FilterComparison.staticClass, "<init>", "(Landroid/content/Intent;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class ShortcutIconResource : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ShortcutIconResource()
-			{
-				InitJNI();
-			}
 			protected ShortcutIconResource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -157,7 +148,7 @@ namespace android.content
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.Intent.ShortcutIconResource.staticClass, _CREATOR3111)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static ShortcutIconResource()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.Intent.ShortcutIconResource.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Intent$ShortcutIconResource"));
@@ -169,6 +160,9 @@ namespace android.content
 				global::android.content.Intent.ShortcutIconResource._packageName3109 = @__env.GetFieldIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "packageName", "Ljava/lang/String;");
 				global::android.content.Intent.ShortcutIconResource._resourceName3110 = @__env.GetFieldIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "resourceName", "Ljava/lang/String;");
 				global::android.content.Intent.ShortcutIconResource._CREATOR3111 = @__env.GetStaticFieldIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString3112;
@@ -2495,7 +2489,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.Intent.staticClass, _CREATOR3396)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Intent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.Intent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Intent"));
@@ -2617,6 +2611,9 @@ namespace android.content
 			global::android.content.Intent._Intent3227 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/Class;)V");
 			global::android.content.Intent._Intent3228 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "<init>", "(Ljava/lang/String;Landroid/net/Uri;Landroid/content/Context;Ljava/lang/Class;)V");
 			global::android.content.Intent._CREATOR3396 = @__env.GetStaticFieldIDNoThrow(global::android.content.Intent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

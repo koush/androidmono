@@ -13,10 +13,6 @@ namespace org.apache.http.client
 	internal sealed partial class CookieStore_ : java.lang.Object, CookieStore
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieStore_()
-		{
-			InitJNI();
-		}
 		internal CookieStore_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.apache.http.client
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.client.CookieStore_.staticClass, global::org.apache.http.client.CookieStore_._clearExpired31877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CookieStore_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.CookieStore_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/CookieStore"));
@@ -64,6 +60,9 @@ namespace org.apache.http.client
 			global::org.apache.http.client.CookieStore_._addCookie31875 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CookieStore_.staticClass, "addCookie", "(Lorg/apache/http/cookie/Cookie;)V");
 			global::org.apache.http.client.CookieStore_._getCookies31876 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CookieStore_.staticClass, "getCookies", "()Ljava/util/List;");
 			global::org.apache.http.client.CookieStore_._clearExpired31877 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CookieStore_.staticClass, "clearExpired", "(Ljava/util/Date;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

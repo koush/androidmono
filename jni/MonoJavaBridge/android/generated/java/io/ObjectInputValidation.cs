@@ -10,10 +10,6 @@ namespace java.io
 	internal sealed partial class ObjectInputValidation_ : java.lang.Object, ObjectInputValidation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectInputValidation_()
-		{
-			InitJNI();
-		}
 		internal ObjectInputValidation_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_.staticClass, global::java.io.ObjectInputValidation_._validateObject19223);
 		}
-		private static void InitJNI()
+		static ObjectInputValidation_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectInputValidation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectInputValidation"));
 			global::java.io.ObjectInputValidation_._validateObject19223 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputValidation_.staticClass, "validateObject", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

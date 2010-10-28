@@ -4,10 +4,6 @@ namespace org.xml.sax.helpers
 	public partial class AttributesImpl : java.lang.Object, Attributes
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributesImpl()
-		{
-			InitJNI();
-		}
 		protected AttributesImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -237,7 +233,7 @@ namespace org.xml.sax.helpers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.AttributesImpl.staticClass, global::org.xml.sax.helpers.AttributesImpl._AttributesImpl35184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AttributesImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.AttributesImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/AttributesImpl"));
@@ -265,6 +261,9 @@ namespace org.xml.sax.helpers
 			global::org.xml.sax.helpers.AttributesImpl._setQName35182 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.AttributesImpl.staticClass, "setQName", "(ILjava/lang/String;)V");
 			global::org.xml.sax.helpers.AttributesImpl._AttributesImpl35183 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.AttributesImpl.staticClass, "<init>", "()V");
 			global::org.xml.sax.helpers.AttributesImpl._AttributesImpl35184 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.AttributesImpl.staticClass, "<init>", "(Lorg/xml/sax/Attributes;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

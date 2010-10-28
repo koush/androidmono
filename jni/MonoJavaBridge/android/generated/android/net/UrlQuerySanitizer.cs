@@ -4,10 +4,6 @@ namespace android.net
 	public partial class UrlQuerySanitizer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UrlQuerySanitizer()
-		{
-			InitJNI();
-		}
 		protected UrlQuerySanitizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net
 		public partial class IllegalCharacterValueSanitizer : java.lang.Object, ValueSanitizer
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static IllegalCharacterValueSanitizer()
-			{
-				InitJNI();
-			}
 			protected IllegalCharacterValueSanitizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -192,22 +184,21 @@ namespace android.net
 					return 1439;
 				}
 			}
-			private static void InitJNI()
+			static IllegalCharacterValueSanitizer()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/UrlQuerySanitizer$IllegalCharacterValueSanitizer"));
 				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._sanitize7861 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "sanitize", "(Ljava/lang/String;)Ljava/lang/String;");
 				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._IllegalCharacterValueSanitizer7862 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "<init>", "(I)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class ParameterValuePair : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ParameterValuePair()
-			{
-				InitJNI();
-			}
 			protected ParameterValuePair(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -242,13 +233,16 @@ namespace android.net
 				{
 				}
 			}
-			private static void InitJNI()
+			static ParameterValuePair()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/UrlQuerySanitizer$ParameterValuePair"));
 				global::android.net.UrlQuerySanitizer.ParameterValuePair._ParameterValuePair7885 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, "<init>", "(Landroid/net/UrlQuerySanitizer;Ljava/lang/String;Ljava/lang/String;)V");
 				global::android.net.UrlQuerySanitizer.ParameterValuePair._mParameter7886 = @__env.GetFieldIDNoThrow(global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, "mParameter", "Ljava/lang/String;");
 				global::android.net.UrlQuerySanitizer.ParameterValuePair._mValue7887 = @__env.GetFieldIDNoThrow(global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, "mValue", "Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.net.UrlQuerySanitizer.ValueSanitizer_))]
@@ -261,10 +255,6 @@ namespace android.net
 		internal sealed partial class ValueSanitizer_ : java.lang.Object, ValueSanitizer
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ValueSanitizer_()
-			{
-				InitJNI();
-			}
 			internal ValueSanitizer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -277,11 +267,14 @@ namespace android.net
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.ValueSanitizer_.staticClass, global::android.net.UrlQuerySanitizer.ValueSanitizer_._sanitize7888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
-			private static void InitJNI()
+			static ValueSanitizer_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.UrlQuerySanitizer.ValueSanitizer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/UrlQuerySanitizer$ValueSanitizer"));
 				global::android.net.UrlQuerySanitizer.ValueSanitizer_._sanitize7888 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.ValueSanitizer_.staticClass, "sanitize", "(Ljava/lang/String;)Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -290,10 +283,6 @@ namespace android.net
 		internal partial class ValueSanitizerDelegateWrapper : java.lang.Object, ValueSanitizer
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ValueSanitizerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected ValueSanitizerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -304,11 +293,14 @@ namespace android.net
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.UrlQuerySanitizer.ValueSanitizerDelegateWrapper.staticClass, global::android.net.UrlQuerySanitizer.ValueSanitizerDelegateWrapper._ValueSanitizerDelegateWrapper7889);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ValueSanitizerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.UrlQuerySanitizer.ValueSanitizerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/UrlQuerySanitizer_ValueSanitizerDelegateWrapper"));
 				global::android.net.UrlQuerySanitizer.ValueSanitizerDelegateWrapper._ValueSanitizerDelegateWrapper7889 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.ValueSanitizerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class ValueSanitizerDelegateWrapper
@@ -714,7 +706,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._UrlQuerySanitizer7922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UrlQuerySanitizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.UrlQuerySanitizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/UrlQuerySanitizer"));
@@ -751,6 +743,9 @@ namespace android.net
 			global::android.net.UrlQuerySanitizer._decodeHexDigit7920 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.staticClass, "decodeHexDigit", "(C)I");
 			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer7921 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "()V");
 			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer7922 = @__env.GetMethodIDNoThrow(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

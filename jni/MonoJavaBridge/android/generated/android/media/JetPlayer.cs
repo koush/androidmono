@@ -4,10 +4,6 @@ namespace android.media
 	public partial class JetPlayer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JetPlayer()
-		{
-			InitJNI();
-		}
 		protected JetPlayer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,10 +20,6 @@ namespace android.media
 		internal sealed partial class OnJetEventListener_ : java.lang.Object, OnJetEventListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnJetEventListener_()
-			{
-				InitJNI();
-			}
 			internal OnJetEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -67,7 +59,7 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_.staticClass, global::android.media.JetPlayer.OnJetEventListener_._onJetPauseUpdate7296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnJetEventListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.JetPlayer.OnJetEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/JetPlayer$OnJetEventListener"));
@@ -75,6 +67,9 @@ namespace android.media
 				global::android.media.JetPlayer.OnJetEventListener_._onJetUserIdUpdate7294 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetUserIdUpdate", "(Landroid/media/JetPlayer;II)V");
 				global::android.media.JetPlayer.OnJetEventListener_._onJetNumQueuedSegmentUpdate7295 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetNumQueuedSegmentUpdate", "(Landroid/media/JetPlayer;I)V");
 				global::android.media.JetPlayer.OnJetEventListener_._onJetPauseUpdate7296 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetPauseUpdate", "(Landroid/media/JetPlayer;I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize7297;
@@ -256,7 +251,7 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener7315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static JetPlayer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.JetPlayer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/JetPlayer"));
@@ -279,6 +274,9 @@ namespace android.media
 			global::android.media.JetPlayer._clearQueue7313 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "clearQueue", "()Z");
 			global::android.media.JetPlayer._setEventListener7314 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;)V");
 			global::android.media.JetPlayer._setEventListener7315 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;Landroid/os/Handler;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

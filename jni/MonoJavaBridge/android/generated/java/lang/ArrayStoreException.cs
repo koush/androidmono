@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class ArrayStoreException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ArrayStoreException()
-		{
-			InitJNI();
-		}
 		protected ArrayStoreException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayStoreException.staticClass, global::java.lang.ArrayStoreException._ArrayStoreException19716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ArrayStoreException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ArrayStoreException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ArrayStoreException"));
 			global::java.lang.ArrayStoreException._ArrayStoreException19715 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "()V");
 			global::java.lang.ArrayStoreException._ArrayStoreException19716 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

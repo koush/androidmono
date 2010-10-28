@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class KeyStoreBuilderParameters : java.lang.Object, ManagerFactoryParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyStoreBuilderParameters()
-		{
-			InitJNI();
-		}
 		protected KeyStoreBuilderParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,13 +37,16 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._KeyStoreBuilderParameters29881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyStoreBuilderParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.KeyStoreBuilderParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/KeyStoreBuilderParameters"));
 			global::javax.net.ssl.KeyStoreBuilderParameters._getParameters29879 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, "getParameters", "()Ljava/util/List;");
 			global::javax.net.ssl.KeyStoreBuilderParameters._KeyStoreBuilderParameters29880 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, "<init>", "(Ljava/security/KeyStore$Builder;)V");
 			global::javax.net.ssl.KeyStoreBuilderParameters._KeyStoreBuilderParameters29881 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, "<init>", "(Ljava/util/List;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

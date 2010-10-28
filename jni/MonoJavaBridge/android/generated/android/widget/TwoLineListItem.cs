@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TwoLineListItem : android.widget.RelativeLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TwoLineListItem()
-		{
-			InitJNI();
-		}
 		protected TwoLineListItem(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,7 +69,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem18219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TwoLineListItem()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TwoLineListItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TwoLineListItem"));
@@ -83,6 +79,9 @@ namespace android.widget
 			global::android.widget.TwoLineListItem._TwoLineListItem18217 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TwoLineListItem._TwoLineListItem18218 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.TwoLineListItem._TwoLineListItem18219 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

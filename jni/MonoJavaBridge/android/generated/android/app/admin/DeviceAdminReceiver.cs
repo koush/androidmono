@@ -4,10 +4,6 @@ namespace android.app.admin
 	public partial class DeviceAdminReceiver : android.content.BroadcastReceiver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DeviceAdminReceiver()
-		{
-			InitJNI();
-		}
 		protected DeviceAdminReceiver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +151,7 @@ namespace android.app.admin
 				return "android.app.device_admin";
 			}
 		}
-		private static void InitJNI()
+		static DeviceAdminReceiver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.admin.DeviceAdminReceiver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DeviceAdminReceiver"));
@@ -169,6 +165,9 @@ namespace android.app.admin
 			global::android.app.admin.DeviceAdminReceiver._onPasswordFailed2260 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminReceiver.staticClass, "onPasswordFailed", "(Landroid/content/Context;Landroid/content/Intent;)V");
 			global::android.app.admin.DeviceAdminReceiver._onPasswordSucceeded2261 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminReceiver.staticClass, "onPasswordSucceeded", "(Landroid/content/Context;Landroid/content/Intent;)V");
 			global::android.app.admin.DeviceAdminReceiver._DeviceAdminReceiver2262 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminReceiver.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

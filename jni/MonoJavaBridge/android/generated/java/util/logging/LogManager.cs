@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class LogManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LogManager()
-		{
-			InitJNI();
-		}
 		protected LogManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -141,7 +137,7 @@ namespace java.util.logging
 				return "java.util.logging:type=Logging";
 			}
 		}
-		private static void InitJNI()
+		static LogManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.LogManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/LogManager"));
@@ -158,6 +154,9 @@ namespace java.util.logging
 			global::java.util.logging.LogManager._readConfiguration28007 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogManager.staticClass, "readConfiguration", "()V");
 			global::java.util.logging.LogManager._getLoggingMXBean28008 = @__env.GetStaticMethodIDNoThrow(global::java.util.logging.LogManager.staticClass, "getLoggingMXBean", "()Ljava/util/logging/LoggingMXBean;");
 			global::java.util.logging.LogManager._LogManager28009 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

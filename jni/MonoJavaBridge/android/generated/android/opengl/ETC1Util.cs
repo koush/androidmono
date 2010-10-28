@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class ETC1Util : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ETC1Util()
-		{
-			InitJNI();
-		}
 		protected ETC1Util(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.opengl
 		public partial class ETC1Texture : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ETC1Texture()
-			{
-				InitJNI();
-			}
 			protected ETC1Texture(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -77,7 +69,7 @@ namespace android.opengl
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._ETC1Texture8135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ETC1Texture()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.ETC1Util.ETC1Texture.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/ETC1Util$ETC1Texture"));
@@ -85,6 +77,9 @@ namespace android.opengl
 				global::android.opengl.ETC1Util.ETC1Texture._getWidth8133 = @__env.GetMethodIDNoThrow(global::android.opengl.ETC1Util.ETC1Texture.staticClass, "getWidth", "()I");
 				global::android.opengl.ETC1Util.ETC1Texture._getHeight8134 = @__env.GetMethodIDNoThrow(global::android.opengl.ETC1Util.ETC1Texture.staticClass, "getHeight", "()I");
 				global::android.opengl.ETC1Util.ETC1Texture._ETC1Texture8135 = @__env.GetMethodIDNoThrow(global::android.opengl.ETC1Util.ETC1Texture.staticClass, "<init>", "(IILjava/nio/ByteBuffer;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _loadTexture8136;
@@ -130,7 +125,7 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.ETC1Util.staticClass, global::android.opengl.ETC1Util._ETC1Util8142);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ETC1Util()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.ETC1Util.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/ETC1Util"));
@@ -141,6 +136,9 @@ namespace android.opengl
 			global::android.opengl.ETC1Util._compressTexture8140 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.ETC1Util.staticClass, "compressTexture", "(Ljava/nio/Buffer;IIII)Landroid/opengl/ETC1Util$ETC1Texture;");
 			global::android.opengl.ETC1Util._writeTexture8141 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.ETC1Util.staticClass, "writeTexture", "(Landroid/opengl/ETC1Util$ETC1Texture;Ljava/io/OutputStream;)V");
 			global::android.opengl.ETC1Util._ETC1Util8142 = @__env.GetMethodIDNoThrow(global::android.opengl.ETC1Util.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

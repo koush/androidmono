@@ -9,17 +9,16 @@ namespace javax.net.ssl
 	internal sealed partial class ManagerFactoryParameters_ : java.lang.Object, ManagerFactoryParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ManagerFactoryParameters_()
-		{
-			InitJNI();
-		}
 		internal ManagerFactoryParameters_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ManagerFactoryParameters_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.ManagerFactoryParameters_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/ManagerFactoryParameters"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

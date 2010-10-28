@@ -18,10 +18,6 @@ namespace java.text
 	internal sealed partial class AttributedCharacterIterator_ : java.lang.Object, AttributedCharacterIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributedCharacterIterator_()
-		{
-			InitJNI();
-		}
 		internal AttributedCharacterIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace java.text
 			else
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.AttributedCharacterIterator_.staticClass, global::java.text.AttributedCharacterIterator_._first25187);
 		}
-		private static void InitJNI()
+		static AttributedCharacterIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.AttributedCharacterIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/AttributedCharacterIterator"));
@@ -219,6 +215,9 @@ namespace java.text
 			global::java.text.AttributedCharacterIterator_._getEndIndex25185 = @__env.GetMethodIDNoThrow(global::java.text.AttributedCharacterIterator_.staticClass, "getEndIndex", "()I");
 			global::java.text.AttributedCharacterIterator_._last25186 = @__env.GetMethodIDNoThrow(global::java.text.AttributedCharacterIterator_.staticClass, "last", "()C");
 			global::java.text.AttributedCharacterIterator_._first25187 = @__env.GetMethodIDNoThrow(global::java.text.AttributedCharacterIterator_.staticClass, "first", "()C");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

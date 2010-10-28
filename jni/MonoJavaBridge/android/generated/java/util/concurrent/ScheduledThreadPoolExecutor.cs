@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class ScheduledThreadPoolExecutor : java.util.concurrent.ThreadPoolExecutor, ScheduledExecutorService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScheduledThreadPoolExecutor()
-		{
-			InitJNI();
-		}
 		protected ScheduledThreadPoolExecutor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -240,7 +236,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ScheduledThreadPoolExecutor.staticClass, global::java.util.concurrent.ScheduledThreadPoolExecutor._ScheduledThreadPoolExecutor27411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ScheduledThreadPoolExecutor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ScheduledThreadPoolExecutor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ScheduledThreadPoolExecutor"));
@@ -264,6 +260,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ScheduledThreadPoolExecutor._ScheduledThreadPoolExecutor27409 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledThreadPoolExecutor.staticClass, "<init>", "(ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V");
 			global::java.util.concurrent.ScheduledThreadPoolExecutor._ScheduledThreadPoolExecutor27410 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledThreadPoolExecutor.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.ScheduledThreadPoolExecutor._ScheduledThreadPoolExecutor27411 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledThreadPoolExecutor.staticClass, "<init>", "(ILjava/util/concurrent/ThreadFactory;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

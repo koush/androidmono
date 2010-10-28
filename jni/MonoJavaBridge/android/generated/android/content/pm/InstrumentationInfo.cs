@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class InstrumentationInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InstrumentationInfo()
-		{
-			InitJNI();
-		}
 		protected InstrumentationInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -133,7 +129,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.InstrumentationInfo.staticClass, _CREATOR3739)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static InstrumentationInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.InstrumentationInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/InstrumentationInfo"));
@@ -149,6 +145,9 @@ namespace android.content.pm
 			global::android.content.pm.InstrumentationInfo._handleProfiling3737 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "handleProfiling", "Z");
 			global::android.content.pm.InstrumentationInfo._functionalTest3738 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "functionalTest", "Z");
 			global::android.content.pm.InstrumentationInfo._CREATOR3739 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

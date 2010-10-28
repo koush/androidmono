@@ -4,10 +4,6 @@ namespace java.beans
 	public partial class PropertyChangeEvent : java.util.EventObject
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PropertyChangeEvent()
-		{
-			InitJNI();
-		}
 		protected PropertyChangeEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace java.beans
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.PropertyChangeEvent.staticClass, global::java.beans.PropertyChangeEvent._PropertyChangeEvent18780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PropertyChangeEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.beans.PropertyChangeEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/beans/PropertyChangeEvent"));
@@ -105,6 +101,9 @@ namespace java.beans
 			global::java.beans.PropertyChangeEvent._setPropagationId18778 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeEvent.staticClass, "setPropagationId", "(Ljava/lang/Object;)V");
 			global::java.beans.PropertyChangeEvent._getPropagationId18779 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeEvent.staticClass, "getPropagationId", "()Ljava/lang/Object;");
 			global::java.beans.PropertyChangeEvent._PropertyChangeEvent18780 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeEvent.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

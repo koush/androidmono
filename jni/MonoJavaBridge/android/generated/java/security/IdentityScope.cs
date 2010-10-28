@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class IdentityScope : java.security.Identity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IdentityScope()
-		{
-			InitJNI();
-		}
 		protected IdentityScope(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -74,7 +70,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.IdentityScope.staticClass, global::java.security.IdentityScope._IdentityScope22989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IdentityScope()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.IdentityScope.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/IdentityScope"));
@@ -92,16 +88,15 @@ namespace java.security
 			global::java.security.IdentityScope._IdentityScope22988 = @__env.GetMethodIDNoThrow(global::java.security.IdentityScope.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.security.IdentityScope._IdentityScope22989 = @__env.GetMethodIDNoThrow(global::java.security.IdentityScope.staticClass, "<init>", "(Ljava/lang/String;Ljava/security/IdentityScope;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.IdentityScope))]
 	internal sealed partial class IdentityScope_ : java.security.IdentityScope
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IdentityScope_()
-		{
-			InitJNI();
-		}
 		internal IdentityScope_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,7 +154,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._identities22995)) as java.util.Enumeration;
 		}
-		private static void InitJNI()
+		static IdentityScope_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.IdentityScope_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/IdentityScope"));
@@ -169,6 +164,9 @@ namespace java.security
 			global::java.security.IdentityScope_._getIdentity22993 = @__env.GetMethodIDNoThrow(global::java.security.IdentityScope_.staticClass, "getIdentity", "(Ljava/lang/String;)Ljava/security/Identity;");
 			global::java.security.IdentityScope_._removeIdentity22994 = @__env.GetMethodIDNoThrow(global::java.security.IdentityScope_.staticClass, "removeIdentity", "(Ljava/security/Identity;)V");
 			global::java.security.IdentityScope_._identities22995 = @__env.GetMethodIDNoThrow(global::java.security.IdentityScope_.staticClass, "identities", "()Ljava/util/Enumeration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

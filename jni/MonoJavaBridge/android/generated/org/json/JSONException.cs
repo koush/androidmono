@@ -4,10 +4,6 @@ namespace org.json
 	public partial class JSONException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JSONException()
-		{
-			InitJNI();
-		}
 		protected JSONException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace org.json
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.json.JSONException.staticClass, global::org.json.JSONException._JSONException34080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static JSONException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONException"));
 			global::org.json.JSONException._JSONException34080 = @__env.GetMethodIDNoThrow(global::org.json.JSONException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

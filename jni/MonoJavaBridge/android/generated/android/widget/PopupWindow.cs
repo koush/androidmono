@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class PopupWindow : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PopupWindow()
-		{
-			InitJNI();
-		}
 		protected PopupWindow(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class OnDismissListener_ : java.lang.Object, OnDismissListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDismissListener_()
-			{
-				InitJNI();
-			}
 			internal OnDismissListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.OnDismissListener_.staticClass, global::android.widget.PopupWindow.OnDismissListener_._onDismiss17439);
 			}
-			private static void InitJNI()
+			static OnDismissListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.PopupWindow.OnDismissListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/PopupWindow$OnDismissListener"));
 				global::android.widget.PopupWindow.OnDismissListener_._onDismiss17439 = @__env.GetMethodIDNoThrow(global::android.widget.PopupWindow.OnDismissListener_.staticClass, "onDismiss", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class OnDismissListenerDelegateWrapper : java.lang.Object, OnDismissListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDismissListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnDismissListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.OnDismissListenerDelegateWrapper.staticClass, global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper17440);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnDismissListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/PopupWindow_OnDismissListenerDelegateWrapper"));
 				global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper17440 = @__env.GetMethodIDNoThrow(global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnDismissListenerDelegateWrapper
@@ -646,7 +640,7 @@ namespace android.widget
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static PopupWindow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.PopupWindow.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/PopupWindow"));
@@ -698,6 +692,9 @@ namespace android.widget
 			global::android.widget.PopupWindow._PopupWindow17486 = @__env.GetMethodIDNoThrow(global::android.widget.PopupWindow.staticClass, "<init>", "(II)V");
 			global::android.widget.PopupWindow._PopupWindow17487 = @__env.GetMethodIDNoThrow(global::android.widget.PopupWindow.staticClass, "<init>", "(Landroid/view/View;II)V");
 			global::android.widget.PopupWindow._PopupWindow17488 = @__env.GetMethodIDNoThrow(global::android.widget.PopupWindow.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class PaintFlagsDrawFilter : android.graphics.DrawFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PaintFlagsDrawFilter()
-		{
-			InitJNI();
-		}
 		protected PaintFlagsDrawFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PaintFlagsDrawFilter.staticClass, global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter5514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PaintFlagsDrawFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PaintFlagsDrawFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PaintFlagsDrawFilter"));
 			global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter5514 = @__env.GetMethodIDNoThrow(global::android.graphics.PaintFlagsDrawFilter.staticClass, "<init>", "(II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

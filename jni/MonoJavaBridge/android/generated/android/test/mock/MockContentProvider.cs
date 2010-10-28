@@ -4,10 +4,6 @@ namespace android.test.mock
 	public partial class MockContentProvider : android.content.ContentProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MockContentProvider()
-		{
-			InitJNI();
-		}
 		protected MockContentProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -113,7 +109,7 @@ namespace android.test.mock
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockContentProvider.staticClass, global::android.test.mock.MockContentProvider._MockContentProvider12394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MockContentProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.mock.MockContentProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/mock/MockContentProvider"));
@@ -129,6 +125,9 @@ namespace android.test.mock
 			global::android.test.mock.MockContentProvider._MockContentProvider12392 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockContentProvider.staticClass, "<init>", "()V");
 			global::android.test.mock.MockContentProvider._MockContentProvider12393 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockContentProvider.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Landroid/content/pm/PathPermission;)V");
 			global::android.test.mock.MockContentProvider._MockContentProvider12394 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockContentProvider.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

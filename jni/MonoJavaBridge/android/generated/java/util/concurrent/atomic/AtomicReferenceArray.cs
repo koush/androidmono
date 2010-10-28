@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public partial class AtomicReferenceArray : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicReferenceArray()
-		{
-			InitJNI();
-		}
 		protected AtomicReferenceArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicReferenceArray.staticClass, global::java.util.concurrent.atomic.AtomicReferenceArray._AtomicReferenceArray27666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicReferenceArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicReferenceArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicReferenceArray"));
@@ -111,6 +107,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicReferenceArray._weakCompareAndSet27664 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceArray.staticClass, "weakCompareAndSet", "(ILjava/lang/Object;Ljava/lang/Object;)Z");
 			global::java.util.concurrent.atomic.AtomicReferenceArray._AtomicReferenceArray27665 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceArray.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.atomic.AtomicReferenceArray._AtomicReferenceArray27666 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceArray.staticClass, "<init>", "([Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

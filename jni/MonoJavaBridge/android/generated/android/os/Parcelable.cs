@@ -11,10 +11,6 @@ namespace android.os
 	internal sealed partial class Parcelable_ : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Parcelable_()
-		{
-			InitJNI();
-		}
 		internal Parcelable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Parcelable_.staticClass, global::android.os.Parcelable_._describeContents10114);
 		}
-		private static void InitJNI()
+		static Parcelable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Parcelable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcelable"));
 			global::android.os.Parcelable_._writeToParcel10113 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.os.Parcelable_._describeContents10114 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "describeContents", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

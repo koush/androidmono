@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class Gallery : android.widget.AbsSpinner, android.view.GestureDetector.OnGestureListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Gallery()
-		{
-			InitJNI();
-		}
 		protected Gallery(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.view.ViewGroup.LayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -43,13 +35,16 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams17118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Gallery.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Gallery$LayoutParams"));
 				global::android.widget.Gallery.LayoutParams._LayoutParams17116 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 				global::android.widget.Gallery.LayoutParams._LayoutParams17117 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(II)V");
 				global::android.widget.Gallery.LayoutParams._LayoutParams17118 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown17119;
@@ -394,7 +389,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery17152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Gallery()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Gallery.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Gallery"));
@@ -432,6 +427,9 @@ namespace android.widget
 			global::android.widget.Gallery._Gallery17150 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.Gallery._Gallery17151 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.Gallery._Gallery17152 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

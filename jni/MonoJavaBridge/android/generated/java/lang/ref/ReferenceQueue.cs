@@ -4,10 +4,6 @@ namespace java.lang.@ref
 	public partial class ReferenceQueue : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReferenceQueue()
-		{
-			InitJNI();
-		}
 		protected ReferenceQueue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace java.lang.@ref
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._ReferenceQueue20993);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ReferenceQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.ReferenceQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/ReferenceQueue"));
@@ -53,6 +49,9 @@ namespace java.lang.@ref
 			global::java.lang.@ref.ReferenceQueue._remove20991 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "remove", "()Ljava/lang/ref/Reference;");
 			global::java.lang.@ref.ReferenceQueue._poll20992 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "poll", "()Ljava/lang/ref/Reference;");
 			global::java.lang.@ref.ReferenceQueue._ReferenceQueue20993 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

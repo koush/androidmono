@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class AlphabetIndexer : android.database.DataSetObserver, SectionIndexer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlphabetIndexer()
-		{
-			InitJNI();
-		}
 		protected AlphabetIndexer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._AlphabetIndexer16693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlphabetIndexer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AlphabetIndexer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AlphabetIndexer"));
@@ -107,6 +103,9 @@ namespace android.widget
 			global::android.widget.AlphabetIndexer._getPositionForSection16691 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "getPositionForSection", "(I)I");
 			global::android.widget.AlphabetIndexer._getSectionForPosition16692 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "getSectionForPosition", "(I)I");
 			global::android.widget.AlphabetIndexer._AlphabetIndexer16693 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "<init>", "(Landroid/database/Cursor;ILjava/lang/CharSequence;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

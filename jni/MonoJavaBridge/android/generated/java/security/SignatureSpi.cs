@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class SignatureSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SignatureSpi()
-		{
-			InitJNI();
-		}
 		protected SignatureSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignatureSpi.staticClass, global::java.security.SignatureSpi._SignatureSpi23389);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SignatureSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SignatureSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SignatureSpi"));
@@ -118,16 +114,15 @@ namespace java.security
 			global::java.security.SignatureSpi._engineGetParameter23388 = @__env.GetMethodIDNoThrow(global::java.security.SignatureSpi.staticClass, "engineGetParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::java.security.SignatureSpi._SignatureSpi23389 = @__env.GetMethodIDNoThrow(global::java.security.SignatureSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.SignatureSpi))]
 	internal sealed partial class SignatureSpi_ : java.security.SignatureSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SignatureSpi_()
-		{
-			InitJNI();
-		}
 		internal SignatureSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -203,7 +198,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineGetParameter23397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static SignatureSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SignatureSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SignatureSpi"));
@@ -215,6 +210,9 @@ namespace java.security
 			global::java.security.SignatureSpi_._engineUpdate23395 = @__env.GetMethodIDNoThrow(global::java.security.SignatureSpi_.staticClass, "engineUpdate", "([BII)V");
 			global::java.security.SignatureSpi_._engineSetParameter23396 = @__env.GetMethodIDNoThrow(global::java.security.SignatureSpi_.staticClass, "engineSetParameter", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::java.security.SignatureSpi_._engineGetParameter23397 = @__env.GetMethodIDNoThrow(global::java.security.SignatureSpi_.staticClass, "engineGetParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

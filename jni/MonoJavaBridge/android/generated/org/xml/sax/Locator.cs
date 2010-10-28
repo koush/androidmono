@@ -13,10 +13,6 @@ namespace org.xml.sax
 	internal sealed partial class Locator_ : java.lang.Object, Locator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Locator_()
-		{
-			InitJNI();
-		}
 		internal Locator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.xml.sax
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xml.sax.Locator_.staticClass, global::org.xml.sax.Locator_._getColumnNumber35019);
 		}
-		private static void InitJNI()
+		static Locator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.Locator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/Locator"));
@@ -64,6 +60,9 @@ namespace org.xml.sax
 			global::org.xml.sax.Locator_._getPublicId35017 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Locator_.staticClass, "getPublicId", "()Ljava/lang/String;");
 			global::org.xml.sax.Locator_._getSystemId35018 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Locator_.staticClass, "getSystemId", "()Ljava/lang/String;");
 			global::org.xml.sax.Locator_._getColumnNumber35019 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Locator_.staticClass, "getColumnNumber", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

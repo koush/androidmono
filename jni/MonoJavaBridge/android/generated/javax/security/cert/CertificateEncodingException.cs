@@ -4,10 +4,6 @@ namespace javax.security.cert
 	public partial class CertificateEncodingException : javax.security.cert.CertificateException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertificateEncodingException()
-		{
-			InitJNI();
-		}
 		protected CertificateEncodingException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace javax.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateEncodingException.staticClass, global::javax.security.cert.CertificateEncodingException._CertificateEncodingException30238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertificateEncodingException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.cert.CertificateEncodingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/cert/CertificateEncodingException"));
 			global::javax.security.cert.CertificateEncodingException._CertificateEncodingException30237 = @__env.GetMethodIDNoThrow(global::javax.security.cert.CertificateEncodingException.staticClass, "<init>", "()V");
 			global::javax.security.cert.CertificateEncodingException._CertificateEncodingException30238 = @__env.GetMethodIDNoThrow(global::javax.security.cert.CertificateEncodingException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

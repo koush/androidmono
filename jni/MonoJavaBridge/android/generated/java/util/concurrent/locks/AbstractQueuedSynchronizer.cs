@@ -4,10 +4,6 @@ namespace java.util.concurrent.locks
 	public abstract partial class AbstractQueuedSynchronizer : java.util.concurrent.locks.AbstractOwnableSynchronizer, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractQueuedSynchronizer()
-		{
-			InitJNI();
-		}
 		protected AbstractQueuedSynchronizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.util.concurrent.locks
 		public partial class ConditionObject : java.lang.Object, Condition, java.io.Serializable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ConditionObject()
-			{
-				InitJNI();
-			}
 			protected ConditionObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -133,7 +125,7 @@ namespace java.util.concurrent.locks
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._ConditionObject27701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ConditionObject()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject"));
@@ -148,6 +140,9 @@ namespace java.util.concurrent.locks
 				global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._awaitNanos27699 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, "awaitNanos", "(J)J");
 				global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._awaitUntil27700 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, "awaitUntil", "(Ljava/util/Date;)Z");
 				global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._ConditionObject27701 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, "<init>", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27702;
@@ -418,7 +413,7 @@ namespace java.util.concurrent.locks
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._AbstractQueuedSynchronizer27731);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractQueuedSynchronizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/AbstractQueuedSynchronizer"));
@@ -453,23 +448,25 @@ namespace java.util.concurrent.locks
 			global::java.util.concurrent.locks.AbstractQueuedSynchronizer._owns27730 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, "owns", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;)Z");
 			global::java.util.concurrent.locks.AbstractQueuedSynchronizer._AbstractQueuedSynchronizer27731 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.concurrent.locks.AbstractQueuedSynchronizer))]
 	internal sealed partial class AbstractQueuedSynchronizer_ : java.util.concurrent.locks.AbstractQueuedSynchronizer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractQueuedSynchronizer_()
-		{
-			InitJNI();
-		}
 		internal AbstractQueuedSynchronizer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AbstractQueuedSynchronizer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.AbstractQueuedSynchronizer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/AbstractQueuedSynchronizer"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

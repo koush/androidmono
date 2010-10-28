@@ -4,10 +4,6 @@ namespace android.media
 	public partial class AudioFormat : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AudioFormat()
-		{
-			InitJNI();
-		}
 		protected AudioFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -312,11 +308,14 @@ namespace android.media
 				return 12;
 			}
 		}
-		private static void InitJNI()
+		static AudioFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioFormat"));
 			global::android.media.AudioFormat._AudioFormat6994 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

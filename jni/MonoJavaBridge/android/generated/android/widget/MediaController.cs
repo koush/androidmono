@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class MediaController : android.widget.FrameLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MediaController()
-		{
-			InitJNI();
-		}
 		protected MediaController(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,10 +26,6 @@ namespace android.widget
 		internal sealed partial class MediaPlayerControl_ : java.lang.Object, MediaPlayerControl
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MediaPlayerControl_()
-			{
-				InitJNI();
-			}
 			internal MediaPlayerControl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -127,7 +119,7 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_.staticClass, global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407);
 			}
-			private static void InitJNI()
+			static MediaPlayerControl_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.MediaController.MediaPlayerControl_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/MediaController$MediaPlayerControl"));
@@ -141,6 +133,9 @@ namespace android.widget
 				global::android.widget.MediaController.MediaPlayerControl_._canPause17405 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canPause", "()Z");
 				global::android.widget.MediaController.MediaPlayerControl_._canSeekBackward17406 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekBackward", "()Z");
 				global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekForward", "()Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new bool Enabled
@@ -297,7 +292,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController17422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MediaController()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.MediaController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/MediaController"));
@@ -316,6 +311,9 @@ namespace android.widget
 			global::android.widget.MediaController._MediaController17420 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Z)V");
 			global::android.widget.MediaController._MediaController17421 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.MediaController._MediaController17422 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

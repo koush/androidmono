@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class Mac : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Mac()
-		{
-			InitJNI();
-		}
 		protected Mac(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -183,7 +179,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.Mac.staticClass, global::javax.crypto.Mac._Mac28689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Mac()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.Mac.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/Mac"));
@@ -205,6 +201,9 @@ namespace javax.crypto
 			global::javax.crypto.Mac._doFinal28687 = @__env.GetMethodIDNoThrow(global::javax.crypto.Mac.staticClass, "doFinal", "([BI)V");
 			global::javax.crypto.Mac._getMacLength28688 = @__env.GetMethodIDNoThrow(global::javax.crypto.Mac.staticClass, "getMacLength", "()I");
 			global::javax.crypto.Mac._Mac28689 = @__env.GetMethodIDNoThrow(global::javax.crypto.Mac.staticClass, "<init>", "(Ljavax/crypto/MacSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

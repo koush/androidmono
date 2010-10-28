@@ -4,10 +4,6 @@ namespace java.io
 	public partial class FileOutputStream : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileOutputStream()
-		{
-			InitJNI();
-		}
 		protected FileOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -123,7 +119,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FileOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FileOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileOutputStream"));
@@ -139,6 +135,9 @@ namespace java.io
 			global::java.io.FileOutputStream._FileOutputStream19040 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;)V");
 			global::java.io.FileOutputStream._FileOutputStream19041 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;Z)V");
 			global::java.io.FileOutputStream._FileOutputStream19042 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

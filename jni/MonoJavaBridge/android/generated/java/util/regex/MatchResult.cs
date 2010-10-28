@@ -16,10 +16,6 @@ namespace java.util.regex
 	internal sealed partial class MatchResult_ : java.lang.Object, MatchResult
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MatchResult_()
-		{
-			InitJNI();
-		}
 		internal MatchResult_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace java.util.regex
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._groupCount28272);
 		}
-		private static void InitJNI()
+		static MatchResult_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.regex.MatchResult_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/MatchResult"));
@@ -97,6 +93,9 @@ namespace java.util.regex
 			global::java.util.regex.MatchResult_._end28270 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "end", "()I");
 			global::java.util.regex.MatchResult_._end28271 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "end", "(I)I");
 			global::java.util.regex.MatchResult_._groupCount28272 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "groupCount", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

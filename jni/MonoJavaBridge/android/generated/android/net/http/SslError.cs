@@ -4,10 +4,6 @@ namespace android.net.http
 	public partial class SslError : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SslError()
-		{
-			InitJNI();
-		}
 		protected SslError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace android.net.http
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static SslError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.http.SslError.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/SslError"));
@@ -130,6 +126,9 @@ namespace android.net.http
 			global::android.net.http.SslError._getPrimaryError7965 = @__env.GetMethodIDNoThrow(global::android.net.http.SslError.staticClass, "getPrimaryError", "()I");
 			global::android.net.http.SslError._SslError7966 = @__env.GetMethodIDNoThrow(global::android.net.http.SslError.staticClass, "<init>", "(ILandroid/net/http/SslCertificate;)V");
 			global::android.net.http.SslError._SslError7967 = @__env.GetMethodIDNoThrow(global::android.net.http.SslError.staticClass, "<init>", "(ILjava/security/cert/X509Certificate;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

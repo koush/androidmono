@@ -4,10 +4,6 @@ namespace org.apache.http.client.utils
 	public partial class URLEncodedUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static URLEncodedUtils()
-		{
-			InitJNI();
-		}
 		protected URLEncodedUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.client.utils
 				return "application/x-www-form-urlencoded";
 			}
 		}
-		private static void InitJNI()
+		static URLEncodedUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.utils.URLEncodedUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/utils/URLEncodedUtils"));
@@ -65,6 +61,9 @@ namespace org.apache.http.client.utils
 			global::org.apache.http.client.utils.URLEncodedUtils._parse32057 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URLEncodedUtils.staticClass, "parse", "(Ljava/util/List;Ljava/util/Scanner;Ljava/lang/String;)V");
 			global::org.apache.http.client.utils.URLEncodedUtils._isEncoded32058 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URLEncodedUtils.staticClass, "isEncoded", "(Lorg/apache/http/HttpEntity;)Z");
 			global::org.apache.http.client.utils.URLEncodedUtils._URLEncodedUtils32059 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.utils.URLEncodedUtils.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class SeekBar : android.widget.AbsSeekBar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SeekBar()
-		{
-			InitJNI();
-		}
 		protected SeekBar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -23,10 +19,6 @@ namespace android.widget
 		internal sealed partial class OnSeekBarChangeListener_ : java.lang.Object, OnSeekBarChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnSeekBarChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnSeekBarChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -57,13 +49,16 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass, global::android.widget.SeekBar.OnSeekBarChangeListener_._onStopTrackingTouch17738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnSeekBarChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SeekBar$OnSeekBarChangeListener"));
 				global::android.widget.SeekBar.OnSeekBarChangeListener_._onProgressChanged17736 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass, "onProgressChanged", "(Landroid/widget/SeekBar;IZ)V");
 				global::android.widget.SeekBar.OnSeekBarChangeListener_._onStartTrackingTouch17737 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass, "onStartTrackingTouch", "(Landroid/widget/SeekBar;)V");
 				global::android.widget.SeekBar.OnSeekBarChangeListener_._onStopTrackingTouch17738 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass, "onStopTrackingTouch", "(Landroid/widget/SeekBar;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnSeekBarChangeListener17739;
@@ -96,7 +91,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SeekBar.staticClass, global::android.widget.SeekBar._SeekBar17742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SeekBar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SeekBar.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SeekBar"));
@@ -104,6 +99,9 @@ namespace android.widget
 			global::android.widget.SeekBar._SeekBar17740 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.SeekBar._SeekBar17741 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.SeekBar._SeekBar17742 = @__env.GetMethodIDNoThrow(global::android.widget.SeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

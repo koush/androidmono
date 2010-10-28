@@ -4,10 +4,6 @@ namespace java.awt.font
 	public sealed partial class NumericShaper : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NumericShaper()
-		{
-			InitJNI();
-		}
 		internal NumericShaper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -239,7 +235,7 @@ namespace java.awt.font
 				return 524287;
 			}
 		}
-		private static void InitJNI()
+		static NumericShaper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.awt.font.NumericShaper.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/awt/font/NumericShaper"));
@@ -253,6 +249,9 @@ namespace java.awt.font
 			global::java.awt.font.NumericShaper._getContextualShaper18691 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getContextualShaper", "(II)Ljava/awt/font/NumericShaper;");
 			global::java.awt.font.NumericShaper._isContextual18692 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "isContextual", "()Z");
 			global::java.awt.font.NumericShaper._getRanges18693 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getRanges", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

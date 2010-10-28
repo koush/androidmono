@@ -10,10 +10,6 @@ namespace java.security.spec
 	internal sealed partial class ECField_ : java.lang.Object, ECField
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECField_()
-		{
-			InitJNI();
-		}
 		internal ECField_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.security.spec
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECField_.staticClass, global::java.security.spec.ECField_._getFieldSize23978);
 		}
-		private static void InitJNI()
+		static ECField_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECField_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECField"));
 			global::java.security.spec.ECField_._getFieldSize23978 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECField_.staticClass, "getFieldSize", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

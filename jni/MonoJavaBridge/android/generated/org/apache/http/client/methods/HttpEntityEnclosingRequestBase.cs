@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public abstract partial class HttpEntityEnclosingRequestBase : org.apache.http.client.methods.HttpRequestBase, HttpEntityEnclosingRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpEntityEnclosingRequestBase()
-		{
-			InitJNI();
-		}
 		protected HttpEntityEnclosingRequestBase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace org.apache.http.client.methods
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._HttpEntityEnclosingRequestBase31918);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpEntityEnclosingRequestBase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpEntityEnclosingRequestBase"));
@@ -64,16 +60,15 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._expectContinue31917 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, "expectContinue", "()Z");
 			global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._HttpEntityEnclosingRequestBase31918 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase))]
 	internal sealed partial class HttpEntityEnclosingRequestBase_ : org.apache.http.client.methods.HttpEntityEnclosingRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpEntityEnclosingRequestBase_()
-		{
-			InitJNI();
-		}
 		internal HttpEntityEnclosingRequestBase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,11 +81,14 @@ namespace org.apache.http.client.methods
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase_.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase_._getMethod31919)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static HttpEntityEnclosingRequestBase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpEntityEnclosingRequestBase"));
 			global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase_._getMethod31919 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase_.staticClass, "getMethod", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

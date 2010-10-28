@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class AssertionError : java.lang.Error
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AssertionError()
-		{
-			InitJNI();
-		}
 		protected AssertionError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -67,7 +63,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19724);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AssertionError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.AssertionError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/AssertionError"));
@@ -79,6 +75,9 @@ namespace java.lang
 			global::java.lang.AssertionError._AssertionError19722 = @__env.GetMethodIDNoThrow(global::java.lang.AssertionError.staticClass, "<init>", "(J)V");
 			global::java.lang.AssertionError._AssertionError19723 = @__env.GetMethodIDNoThrow(global::java.lang.AssertionError.staticClass, "<init>", "(F)V");
 			global::java.lang.AssertionError._AssertionError19724 = @__env.GetMethodIDNoThrow(global::java.lang.AssertionError.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

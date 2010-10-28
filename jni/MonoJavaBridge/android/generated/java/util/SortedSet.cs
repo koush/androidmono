@@ -15,10 +15,6 @@ namespace java.util
 	internal sealed partial class SortedSet_ : java.lang.Object, SortedSet
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SortedSet_()
-		{
-			InitJNI();
-		}
 		internal SortedSet_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -359,7 +355,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedSet_.staticClass, global::java.util.SortedSet_._iterator26818)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static SortedSet_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.SortedSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/SortedSet"));
@@ -400,6 +396,9 @@ namespace java.util
 			global::java.util.SortedSet_._removeAll26816 = @__env.GetMethodIDNoThrow(global::java.util.SortedSet_.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
 			global::java.util.SortedSet_._retainAll26817 = @__env.GetMethodIDNoThrow(global::java.util.SortedSet_.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.SortedSet_._iterator26818 = @__env.GetMethodIDNoThrow(global::java.util.SortedSet_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

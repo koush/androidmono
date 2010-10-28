@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class FrameLayout : android.view.ViewGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FrameLayout()
-		{
-			InitJNI();
-		}
 		protected FrameLayout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.view.ViewGroup.MarginLayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -69,7 +61,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.FrameLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FrameLayout$LayoutParams"));
@@ -79,6 +71,9 @@ namespace android.widget
 				global::android.widget.FrameLayout.LayoutParams._LayoutParams17094 = @__env.GetMethodIDNoThrow(global::android.widget.FrameLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
 				global::android.widget.FrameLayout.LayoutParams._LayoutParams17095 = @__env.GetMethodIDNoThrow(global::android.widget.FrameLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
 				global::android.widget.FrameLayout.LayoutParams._gravity17096 = @__env.GetFieldIDNoThrow(global::android.widget.FrameLayout.LayoutParams.staticClass, "gravity", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setForeground17097;
@@ -278,7 +273,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FrameLayout.staticClass, global::android.widget.FrameLayout._FrameLayout17115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FrameLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FrameLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FrameLayout"));
@@ -301,6 +296,9 @@ namespace android.widget
 			global::android.widget.FrameLayout._FrameLayout17113 = @__env.GetMethodIDNoThrow(global::android.widget.FrameLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.FrameLayout._FrameLayout17114 = @__env.GetMethodIDNoThrow(global::android.widget.FrameLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.FrameLayout._FrameLayout17115 = @__env.GetMethodIDNoThrow(global::android.widget.FrameLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

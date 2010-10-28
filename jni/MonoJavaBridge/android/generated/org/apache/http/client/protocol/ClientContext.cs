@@ -9,17 +9,16 @@ namespace org.apache.http.client.protocol
 	internal sealed partial class ClientContext_ : java.lang.Object, ClientContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientContext_()
-		{
-			InitJNI();
-		}
 		internal ClientContext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ClientContext_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.protocol.ClientContext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/protocol/ClientContext"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

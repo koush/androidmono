@@ -11,10 +11,6 @@ namespace javax.microedition.khronos.opengles
 	internal sealed partial class GL10Ext_ : java.lang.Object, GL10Ext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GL10Ext_()
-		{
-			InitJNI();
-		}
 		internal GL10Ext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.microedition.khronos.opengles
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static GL10Ext_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL10Ext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL10Ext"));
 			global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29318 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "([II[II)I");
 			global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

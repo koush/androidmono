@@ -4,10 +4,6 @@ namespace android.net
 	public partial class LocalServerSocket : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocalServerSocket()
-		{
-			InitJNI();
-		}
 		protected LocalServerSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._LocalServerSocket7664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LocalServerSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.LocalServerSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalServerSocket"));
@@ -85,6 +81,9 @@ namespace android.net
 			global::android.net.LocalServerSocket._getLocalSocketAddress7662 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;");
 			global::android.net.LocalServerSocket._LocalServerSocket7663 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.net.LocalServerSocket._LocalServerSocket7664 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

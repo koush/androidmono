@@ -4,10 +4,6 @@ namespace org.apache.http.impl.io
 	public partial class IdentityOutputStream : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IdentityOutputStream()
-		{
-			InitJNI();
-		}
 		protected IdentityOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.IdentityOutputStream.staticClass, global::org.apache.http.impl.io.IdentityOutputStream._IdentityOutputStream33463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IdentityOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.IdentityOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/IdentityOutputStream"));
@@ -73,6 +69,9 @@ namespace org.apache.http.impl.io
 			global::org.apache.http.impl.io.IdentityOutputStream._flush33461 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.IdentityOutputStream.staticClass, "flush", "()V");
 			global::org.apache.http.impl.io.IdentityOutputStream._close33462 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.IdentityOutputStream.staticClass, "close", "()V");
 			global::org.apache.http.impl.io.IdentityOutputStream._IdentityOutputStream33463 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.IdentityOutputStream.staticClass, "<init>", "(Lorg/apache/http/io/SessionOutputBuffer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

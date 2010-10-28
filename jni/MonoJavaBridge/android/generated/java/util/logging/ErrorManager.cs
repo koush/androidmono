@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class ErrorManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ErrorManager()
-		{
-			InitJNI();
-		}
 		protected ErrorManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,12 +65,15 @@ namespace java.util.logging
 				return 5;
 			}
 		}
-		private static void InitJNI()
+		static ErrorManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.ErrorManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/ErrorManager"));
 			global::java.util.logging.ErrorManager._error27937 = @__env.GetMethodIDNoThrow(global::java.util.logging.ErrorManager.staticClass, "error", "(Ljava/lang/String;Ljava/lang/Exception;I)V");
 			global::java.util.logging.ErrorManager._ErrorManager27938 = @__env.GetMethodIDNoThrow(global::java.util.logging.ErrorManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

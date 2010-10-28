@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class EnglishReasonPhraseCatalog : java.lang.Object, ReasonPhraseCatalog
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EnglishReasonPhraseCatalog()
-		{
-			InitJNI();
-		}
 		protected EnglishReasonPhraseCatalog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, _INSTANCE32652)) as org.apache.http.impl.EnglishReasonPhraseCatalog;
 			}
 		}
-		private static void InitJNI()
+		static EnglishReasonPhraseCatalog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/EnglishReasonPhraseCatalog"));
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog._getReason32650 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;");
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog._EnglishReasonPhraseCatalog32651 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, "<init>", "()V");
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog._INSTANCE32652 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, "INSTANCE", "Lorg/apache/http/impl/EnglishReasonPhraseCatalog;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

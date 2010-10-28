@@ -4,10 +4,6 @@ namespace java.lang.@ref
 	public partial class WeakReference : java.lang.@ref.Reference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WeakReference()
-		{
-			InitJNI();
-		}
 		protected WeakReference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang.@ref
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.WeakReference.staticClass, global::java.lang.@ref.WeakReference._WeakReference20998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static WeakReference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.WeakReference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/WeakReference"));
 			global::java.lang.@ref.WeakReference._WeakReference20997 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.WeakReference.staticClass, "<init>", "(Ljava/lang/Object;)V");
 			global::java.lang.@ref.WeakReference._WeakReference20998 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.WeakReference.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

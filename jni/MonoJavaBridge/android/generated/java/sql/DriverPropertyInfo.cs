@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class DriverPropertyInfo : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DriverPropertyInfo()
-		{
-			InitJNI();
-		}
 		protected DriverPropertyInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -78,7 +74,7 @@ namespace java.sql
 			{
 			}
 		}
-		private static void InitJNI()
+		static DriverPropertyInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DriverPropertyInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DriverPropertyInfo"));
@@ -88,6 +84,9 @@ namespace java.sql
 			global::java.sql.DriverPropertyInfo._required24643 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "required", "Z");
 			global::java.sql.DriverPropertyInfo._value24644 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "value", "Ljava/lang/String;");
 			global::java.sql.DriverPropertyInfo._choices24645 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "choices", "[Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

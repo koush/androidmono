@@ -39,10 +39,6 @@ namespace android.view
 	internal sealed partial class MenuItem_ : java.lang.Object, MenuItem
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MenuItem_()
-		{
-			InitJNI();
-		}
 		internal MenuItem_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -316,7 +312,7 @@ namespace android.view
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.MenuItem_.staticClass, global::android.view.MenuItem_._getMenuInfo14377)) as android.view.ContextMenu_ContextMenuInfo;
 		}
-		private static void InitJNI()
+		static MenuItem_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MenuItem_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuItem"));
@@ -350,6 +346,9 @@ namespace android.view
 			global::android.view.MenuItem_._getSubMenu14375 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_.staticClass, "getSubMenu", "()Landroid/view/SubMenu;");
 			global::android.view.MenuItem_._setOnMenuItemClickListener14376 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_.staticClass, "setOnMenuItemClickListener", "(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;");
 			global::android.view.MenuItem_._getMenuInfo14377 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_.staticClass, "getMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public sealed partial class AuthSchemeRegistry : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthSchemeRegistry()
-		{
-			InitJNI();
-		}
 		internal AuthSchemeRegistry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._AuthSchemeRegistry31790);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AuthSchemeRegistry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.AuthSchemeRegistry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/AuthSchemeRegistry"));
@@ -87,6 +83,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.AuthSchemeRegistry._getAuthScheme31788 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthSchemeRegistry.staticClass, "getAuthScheme", "(Ljava/lang/String;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/auth/AuthScheme;");
 			global::org.apache.http.auth.AuthSchemeRegistry._getSchemeNames31789 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthSchemeRegistry.staticClass, "getSchemeNames", "()Ljava/util/List;");
 			global::org.apache.http.auth.AuthSchemeRegistry._AuthSchemeRegistry31790 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthSchemeRegistry.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

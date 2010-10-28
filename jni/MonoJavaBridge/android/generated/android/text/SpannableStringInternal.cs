@@ -4,10 +4,6 @@ namespace android.text
 	public abstract partial class SpannableStringInternal : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpannableStringInternal()
-		{
-			InitJNI();
-		}
 		protected SpannableStringInternal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -92,7 +88,7 @@ namespace android.text
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._nextSpanTransition12988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static SpannableStringInternal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.SpannableStringInternal.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableStringInternal"));
@@ -106,23 +102,25 @@ namespace android.text
 			global::android.text.SpannableStringInternal._getSpanFlags12987 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getSpanFlags", "(Ljava/lang/Object;)I");
 			global::android.text.SpannableStringInternal._nextSpanTransition12988 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "nextSpanTransition", "(IILjava/lang/Class;)I");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.SpannableStringInternal))]
 	internal sealed partial class SpannableStringInternal_ : android.text.SpannableStringInternal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpannableStringInternal_()
-		{
-			InitJNI();
-		}
 		internal SpannableStringInternal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static SpannableStringInternal_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.SpannableStringInternal_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableStringInternal"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

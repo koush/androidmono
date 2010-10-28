@@ -4,10 +4,6 @@ namespace dalvik.system
 	public sealed partial class VMStack : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VMStack()
-		{
-			InitJNI();
-		}
 		internal VMStack(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._VMStack18674);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static VMStack()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.VMStack.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/VMStack"));
@@ -65,6 +61,9 @@ namespace dalvik.system
 			global::dalvik.system.VMStack._getCallingClassLoader218672 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMStack.staticClass, "getCallingClassLoader2", "()Ljava/lang/ClassLoader;");
 			global::dalvik.system.VMStack._getThreadStackTrace18673 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMStack.staticClass, "getThreadStackTrace", "(Ljava/lang/Thread;)[Ljava/lang/StackTraceElement;");
 			global::dalvik.system.VMStack._VMStack18674 = @__env.GetMethodIDNoThrow(global::dalvik.system.VMStack.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

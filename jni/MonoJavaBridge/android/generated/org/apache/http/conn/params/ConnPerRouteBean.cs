@@ -4,10 +4,6 @@ namespace org.apache.http.conn.@params
 	public sealed partial class ConnPerRouteBean : java.lang.Object, ConnPerRoute
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnPerRouteBean()
-		{
-			InitJNI();
-		}
 		internal ConnPerRouteBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -98,7 +94,7 @@ namespace org.apache.http.conn.@params
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static ConnPerRouteBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnPerRouteBean"));
@@ -109,6 +105,9 @@ namespace org.apache.http.conn.@params
 			global::org.apache.http.conn.@params.ConnPerRouteBean._setMaxForRoutes32196 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, "setMaxForRoutes", "(Ljava/util/Map;)V");
 			global::org.apache.http.conn.@params.ConnPerRouteBean._ConnPerRouteBean32197 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, "<init>", "(I)V");
 			global::org.apache.http.conn.@params.ConnPerRouteBean._ConnPerRouteBean32198 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

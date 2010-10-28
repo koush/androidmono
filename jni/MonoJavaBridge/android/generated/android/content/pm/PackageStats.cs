@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class PackageStats : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PackageStats()
-		{
-			InitJNI();
-		}
 		protected PackageStats(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PackageStats.staticClass, _CREATOR3976)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PackageStats()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageStats"));
@@ -131,6 +127,9 @@ namespace android.content.pm
 			global::android.content.pm.PackageStats._dataSize3974 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "dataSize", "J");
 			global::android.content.pm.PackageStats._cacheSize3975 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "cacheSize", "J");
 			global::android.content.pm.PackageStats._CREATOR3976 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

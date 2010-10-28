@@ -4,10 +4,6 @@ namespace android.test
 	public partial class AndroidTestRunner : junit.runner.BaseTestRunner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AndroidTestRunner()
-		{
-			InitJNI();
-		}
 		protected AndroidTestRunner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -229,7 +225,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.AndroidTestRunner.staticClass, global::android.test.AndroidTestRunner._AndroidTestRunner12168);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AndroidTestRunner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.AndroidTestRunner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/AndroidTestRunner"));
@@ -252,6 +248,9 @@ namespace android.test
 			global::android.test.AndroidTestRunner._testFailed12166 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestRunner.staticClass, "testFailed", "(ILjunit/framework/Test;Ljava/lang/Throwable;)V");
 			global::android.test.AndroidTestRunner._runFailed12167 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestRunner.staticClass, "runFailed", "(Ljava/lang/String;)V");
 			global::android.test.AndroidTestRunner._AndroidTestRunner12168 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestRunner.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

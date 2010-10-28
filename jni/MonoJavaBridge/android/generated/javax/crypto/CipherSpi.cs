@@ -4,10 +4,6 @@ namespace javax.crypto
 	public abstract partial class CipherSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CipherSpi()
-		{
-			InitJNI();
-		}
 		protected CipherSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,7 +85,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherSpi.staticClass, global::javax.crypto.CipherSpi._CipherSpi28567);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CipherSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.CipherSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/CipherSpi"));
@@ -113,16 +109,15 @@ namespace javax.crypto
 			global::javax.crypto.CipherSpi._engineSetPadding28566 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherSpi.staticClass, "engineSetPadding", "(Ljava/lang/String;)V");
 			global::javax.crypto.CipherSpi._CipherSpi28567 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.CipherSpi))]
 	internal sealed partial class CipherSpi_ : javax.crypto.CipherSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CipherSpi_()
-		{
-			InitJNI();
-		}
 		internal CipherSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -243,7 +238,7 @@ namespace javax.crypto
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherSpi_.staticClass, global::javax.crypto.CipherSpi_._engineSetPadding28580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CipherSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.CipherSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/CipherSpi"));
@@ -260,6 +255,9 @@ namespace javax.crypto
 			global::javax.crypto.CipherSpi_._engineGetOutputSize28578 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherSpi_.staticClass, "engineGetOutputSize", "(I)I");
 			global::javax.crypto.CipherSpi_._engineSetMode28579 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherSpi_.staticClass, "engineSetMode", "(Ljava/lang/String;)V");
 			global::javax.crypto.CipherSpi_._engineSetPadding28580 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherSpi_.staticClass, "engineSetPadding", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

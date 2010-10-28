@@ -12,10 +12,6 @@ namespace android.text
 	internal sealed partial class SpanWatcher_ : java.lang.Object, SpanWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpanWatcher_()
-		{
-			InitJNI();
-		}
 		internal SpanWatcher_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.text
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.SpanWatcher_.staticClass, global::android.text.SpanWatcher_._onSpanChanged12929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		private static void InitJNI()
+		static SpanWatcher_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.SpanWatcher_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpanWatcher"));
 			global::android.text.SpanWatcher_._onSpanAdded12927 = @__env.GetMethodIDNoThrow(global::android.text.SpanWatcher_.staticClass, "onSpanAdded", "(Landroid/text/Spannable;Ljava/lang/Object;II)V");
 			global::android.text.SpanWatcher_._onSpanRemoved12928 = @__env.GetMethodIDNoThrow(global::android.text.SpanWatcher_.staticClass, "onSpanRemoved", "(Landroid/text/Spannable;Ljava/lang/Object;II)V");
 			global::android.text.SpanWatcher_._onSpanChanged12929 = @__env.GetMethodIDNoThrow(global::android.text.SpanWatcher_.staticClass, "onSpanChanged", "(Landroid/text/Spannable;Ljava/lang/Object;IIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

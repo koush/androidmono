@@ -4,10 +4,6 @@ namespace java.lang.@ref
 	public partial class SoftReference : java.lang.@ref.Reference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SoftReference()
-		{
-			InitJNI();
-		}
 		protected SoftReference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,13 +30,16 @@ namespace java.lang.@ref
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._SoftReference20996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SoftReference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.SoftReference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/SoftReference"));
 			global::java.lang.@ref.SoftReference._get20994 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.SoftReference.staticClass, "get", "()Ljava/lang/Object;");
 			global::java.lang.@ref.SoftReference._SoftReference20995 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.SoftReference.staticClass, "<init>", "(Ljava/lang/Object;)V");
 			global::java.lang.@ref.SoftReference._SoftReference20996 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.SoftReference.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

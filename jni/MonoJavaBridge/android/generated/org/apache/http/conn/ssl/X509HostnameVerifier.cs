@@ -13,10 +13,6 @@ namespace org.apache.http.conn.ssl
 	internal sealed partial class X509HostnameVerifier_ : java.lang.Object, X509HostnameVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509HostnameVerifier_()
-		{
-			InitJNI();
-		}
 		internal X509HostnameVerifier_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace org.apache.http.conn.ssl
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass, global::org.apache.http.conn.ssl.X509HostnameVerifier_._verify32363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static X509HostnameVerifier_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/X509HostnameVerifier"));
@@ -74,6 +70,9 @@ namespace org.apache.http.conn.ssl
 			global::org.apache.http.conn.ssl.X509HostnameVerifier_._verify32361 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;Ljava/security/cert/X509Certificate;)V");
 			global::org.apache.http.conn.ssl.X509HostnameVerifier_._verify32362 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
 			global::org.apache.http.conn.ssl.X509HostnameVerifier_._verify32363 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

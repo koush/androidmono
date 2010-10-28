@@ -4,10 +4,6 @@ namespace java.util
 	public partial class PriorityQueue : java.util.AbstractQueue, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PriorityQueue()
-		{
-			InitJNI();
-		}
 		protected PriorityQueue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -165,7 +161,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._PriorityQueue26555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PriorityQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.PriorityQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/PriorityQueue"));
@@ -187,6 +183,9 @@ namespace java.util
 			global::java.util.PriorityQueue._PriorityQueue26553 = @__env.GetMethodIDNoThrow(global::java.util.PriorityQueue.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::java.util.PriorityQueue._PriorityQueue26554 = @__env.GetMethodIDNoThrow(global::java.util.PriorityQueue.staticClass, "<init>", "(Ljava/util/PriorityQueue;)V");
 			global::java.util.PriorityQueue._PriorityQueue26555 = @__env.GetMethodIDNoThrow(global::java.util.PriorityQueue.staticClass, "<init>", "(Ljava/util/SortedSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

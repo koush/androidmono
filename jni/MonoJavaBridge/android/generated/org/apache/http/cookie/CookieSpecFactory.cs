@@ -10,10 +10,6 @@ namespace org.apache.http.cookie
 	internal sealed partial class CookieSpecFactory_ : java.lang.Object, CookieSpecFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieSpecFactory_()
-		{
-			InitJNI();
-		}
 		internal CookieSpecFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.cookie
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.cookie.CookieSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecFactory_.staticClass, global::org.apache.http.cookie.CookieSpecFactory_._newInstance32425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.cookie.CookieSpec;
 		}
-		private static void InitJNI()
+		static CookieSpecFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.CookieSpecFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/CookieSpecFactory"));
 			global::org.apache.http.cookie.CookieSpecFactory_._newInstance32425 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieSpecFactory_.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

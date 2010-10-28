@@ -4,10 +4,6 @@ namespace dalvik.system
 	public partial class AllocationLimitError : java.lang.VirtualMachineError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AllocationLimitError()
-		{
-			InitJNI();
-		}
 		protected AllocationLimitError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.AllocationLimitError.staticClass, global::dalvik.system.AllocationLimitError._AllocationLimitError18583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AllocationLimitError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.AllocationLimitError.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/AllocationLimitError"));
 			global::dalvik.system.AllocationLimitError._AllocationLimitError18582 = @__env.GetMethodIDNoThrow(global::dalvik.system.AllocationLimitError.staticClass, "<init>", "()V");
 			global::dalvik.system.AllocationLimitError._AllocationLimitError18583 = @__env.GetMethodIDNoThrow(global::dalvik.system.AllocationLimitError.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

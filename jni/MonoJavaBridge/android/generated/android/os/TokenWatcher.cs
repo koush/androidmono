@@ -4,10 +4,6 @@ namespace android.os
 	public abstract partial class TokenWatcher : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TokenWatcher()
-		{
-			InitJNI();
-		}
 		protected TokenWatcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -67,7 +63,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._TokenWatcher10221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TokenWatcher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.TokenWatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/TokenWatcher"));
@@ -80,16 +76,15 @@ namespace android.os
 			global::android.os.TokenWatcher._isAcquired10220 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "isAcquired", "()Z");
 			global::android.os.TokenWatcher._TokenWatcher10221 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "<init>", "(Landroid/os/Handler;Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.TokenWatcher))]
 	internal sealed partial class TokenWatcher_ : android.os.TokenWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TokenWatcher_()
-		{
-			InitJNI();
-		}
 		internal TokenWatcher_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -111,12 +106,15 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.TokenWatcher_.staticClass, global::android.os.TokenWatcher_._released10223);
 		}
-		private static void InitJNI()
+		static TokenWatcher_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.TokenWatcher_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/TokenWatcher"));
 			global::android.os.TokenWatcher_._acquired10222 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher_.staticClass, "acquired", "()V");
 			global::android.os.TokenWatcher_._released10223 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher_.staticClass, "released", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

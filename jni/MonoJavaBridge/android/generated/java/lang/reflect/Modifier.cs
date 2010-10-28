@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public partial class Modifier : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Modifier()
-		{
-			InitJNI();
-		}
 		protected Modifier(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -180,7 +176,7 @@ namespace java.lang.reflect
 				return 2048;
 			}
 		}
-		private static void InitJNI()
+		static Modifier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Modifier.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Modifier"));
@@ -198,6 +194,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Modifier._isNative21130 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Modifier.staticClass, "isNative", "(I)Z");
 			global::java.lang.reflect.Modifier._isStrict21131 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Modifier.staticClass, "isStrict", "(I)Z");
 			global::java.lang.reflect.Modifier._Modifier21132 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Modifier.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

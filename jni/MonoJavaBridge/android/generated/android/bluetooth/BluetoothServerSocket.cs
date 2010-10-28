@@ -4,10 +4,6 @@ namespace android.bluetooth
 	public sealed partial class BluetoothServerSocket : java.lang.Object, java.io.Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BluetoothServerSocket()
-		{
-			InitJNI();
-		}
 		internal BluetoothServerSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,13 +34,16 @@ namespace android.bluetooth
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothSocket>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothServerSocket.staticClass, global::android.bluetooth.BluetoothServerSocket._accept2552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.bluetooth.BluetoothSocket;
 		}
-		private static void InitJNI()
+		static BluetoothServerSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.bluetooth.BluetoothServerSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothServerSocket"));
 			global::android.bluetooth.BluetoothServerSocket._close2550 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothServerSocket.staticClass, "close", "()V");
 			global::android.bluetooth.BluetoothServerSocket._accept2551 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "()Landroid/bluetooth/BluetoothSocket;");
 			global::android.bluetooth.BluetoothServerSocket._accept2552 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "(I)Landroid/bluetooth/BluetoothSocket;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

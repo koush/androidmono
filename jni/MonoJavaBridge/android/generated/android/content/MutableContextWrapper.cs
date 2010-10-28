@@ -4,10 +4,6 @@ namespace android.content
 	public partial class MutableContextWrapper : android.content.ContextWrapper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MutableContextWrapper()
-		{
-			InitJNI();
-		}
 		protected MutableContextWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._MutableContextWrapper3482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MutableContextWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.MutableContextWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/MutableContextWrapper"));
 			global::android.content.MutableContextWrapper._setBaseContext3481 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "setBaseContext", "(Landroid/content/Context;)V");
 			global::android.content.MutableContextWrapper._MutableContextWrapper3482 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

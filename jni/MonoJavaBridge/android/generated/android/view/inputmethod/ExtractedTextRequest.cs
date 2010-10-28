@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public partial class ExtractedTextRequest : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExtractedTextRequest()
-		{
-			InitJNI();
-		}
 		protected ExtractedTextRequest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace android.view.inputmethod
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.ExtractedTextRequest.staticClass, _CREATOR15861)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ExtractedTextRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.ExtractedTextRequest.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/ExtractedTextRequest"));
@@ -105,6 +101,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.ExtractedTextRequest._hintMaxLines15859 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "hintMaxLines", "I");
 			global::android.view.inputmethod.ExtractedTextRequest._hintMaxChars15860 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "hintMaxChars", "I");
 			global::android.view.inputmethod.ExtractedTextRequest._CREATOR15861 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

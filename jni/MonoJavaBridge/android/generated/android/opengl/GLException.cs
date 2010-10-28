@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLException()
-		{
-			InitJNI();
-		}
 		protected GLException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLException.staticClass, global::android.opengl.GLException._GLException9420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GLException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLException"));
 			global::android.opengl.GLException._GLException9419 = @__env.GetMethodIDNoThrow(global::android.opengl.GLException.staticClass, "<init>", "(I)V");
 			global::android.opengl.GLException._GLException9420 = @__env.GetMethodIDNoThrow(global::android.opengl.GLException.staticClass, "<init>", "(ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

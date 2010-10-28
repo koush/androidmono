@@ -4,10 +4,6 @@ namespace android.database
 	public partial class CursorWindow : android.database.sqlite.SQLiteClosable, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CursorWindow()
-		{
-			InitJNI();
-		}
 		protected CursorWindow(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -328,7 +324,7 @@ namespace android.database
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.database.CursorWindow.staticClass, _CREATOR4558)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static CursorWindow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CursorWindow.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorWindow"));
@@ -365,6 +361,9 @@ namespace android.database
 			global::android.database.CursorWindow._newFromParcel4556 = @__env.GetStaticMethodIDNoThrow(global::android.database.CursorWindow.staticClass, "newFromParcel", "(Landroid/os/Parcel;)Landroid/database/CursorWindow;");
 			global::android.database.CursorWindow._CursorWindow4557 = @__env.GetMethodIDNoThrow(global::android.database.CursorWindow.staticClass, "<init>", "(Z)V");
 			global::android.database.CursorWindow._CREATOR4558 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorWindow.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

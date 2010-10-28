@@ -4,10 +4,6 @@ namespace javax.security.auth.callback
 	public partial class PasswordCallback : java.lang.Object, Callback, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PasswordCallback()
-		{
-			InitJNI();
-		}
 		protected PasswordCallback(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,7 +77,7 @@ namespace javax.security.auth.callback
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._PasswordCallback30204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PasswordCallback()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.PasswordCallback.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/PasswordCallback"));
@@ -91,6 +87,9 @@ namespace javax.security.auth.callback
 			global::javax.security.auth.callback.PasswordCallback._getPrompt30202 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.PasswordCallback.staticClass, "getPrompt", "()Ljava/lang/String;");
 			global::javax.security.auth.callback.PasswordCallback._isEchoOn30203 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.PasswordCallback.staticClass, "isEchoOn", "()Z");
 			global::javax.security.auth.callback.PasswordCallback._PasswordCallback30204 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.PasswordCallback.staticClass, "<init>", "(Ljava/lang/String;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

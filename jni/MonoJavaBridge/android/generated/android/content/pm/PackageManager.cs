@@ -4,10 +4,6 @@ namespace android.content.pm
 	public abstract partial class PackageManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PackageManager()
-		{
-			InitJNI();
-		}
 		protected PackageManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content.pm
 		public partial class NameNotFoundException : android.util.AndroidException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static NameNotFoundException()
-			{
-				InitJNI();
-			}
 			protected NameNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -36,12 +28,15 @@ namespace android.content.pm
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static NameNotFoundException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.pm.PackageManager.NameNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager$NameNotFoundException"));
 				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3793 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "()V");
 				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3794 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _checkPermission3795;
@@ -523,7 +518,7 @@ namespace android.content.pm
 				return "android.hardware.wifi";
 			}
 		}
-		private static void InitJNI()
+		static PackageManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager"));
@@ -590,16 +585,15 @@ namespace android.content.pm
 			global::android.content.pm.PackageManager._isSafeMode3855 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "isSafeMode", "()Z");
 			global::android.content.pm.PackageManager._PackageManager3856 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.pm.PackageManager))]
 	internal sealed partial class PackageManager_ : android.content.pm.PackageManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PackageManager_()
-		{
-			InitJNI();
-		}
 		internal PackageManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1143,7 +1137,7 @@ namespace android.content.pm
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._isSafeMode3965);
 		}
-		private static void InitJNI()
+		static PackageManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager"));
@@ -1207,6 +1201,9 @@ namespace android.content.pm
 			global::android.content.pm.PackageManager_._setApplicationEnabledSetting3963 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V");
 			global::android.content.pm.PackageManager_._getApplicationEnabledSetting3964 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I");
 			global::android.content.pm.PackageManager_._isSafeMode3965 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "isSafeMode", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

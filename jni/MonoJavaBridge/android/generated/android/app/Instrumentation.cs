@@ -4,10 +4,6 @@ namespace android.app
 	public partial class Instrumentation : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Instrumentation()
-		{
-			InitJNI();
-		}
 		protected Instrumentation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.app
 		public partial class ActivityMonitor : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ActivityMonitor()
-			{
-				InitJNI();
-			}
 			protected ActivityMonitor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -127,7 +119,7 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._ActivityMonitor1846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ActivityMonitor()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.Instrumentation.ActivityMonitor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation$ActivityMonitor"));
@@ -141,15 +133,14 @@ namespace android.app
 				global::android.app.Instrumentation.ActivityMonitor._ActivityMonitor1845 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.ActivityMonitor.staticClass, "<init>", "(Landroid/content/IntentFilter;Landroid/app/Instrumentation$ActivityResult;Z)V");
 				global::android.app.Instrumentation.ActivityMonitor._ActivityMonitor1846 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.ActivityMonitor.staticClass, "<init>", "(Ljava/lang/String;Landroid/app/Instrumentation$ActivityResult;Z)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class ActivityResult : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ActivityResult()
-			{
-				InitJNI();
-			}
 			internal ActivityResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -192,13 +183,16 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Instrumentation.ActivityResult.staticClass, global::android.app.Instrumentation.ActivityResult._ActivityResult1849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ActivityResult()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.Instrumentation.ActivityResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation$ActivityResult"));
 				global::android.app.Instrumentation.ActivityResult._getResultCode1847 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.ActivityResult.staticClass, "getResultCode", "()I");
 				global::android.app.Instrumentation.ActivityResult._getResultData1848 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.ActivityResult.staticClass, "getResultData", "()Landroid/content/Intent;");
 				global::android.app.Instrumentation.ActivityResult._ActivityResult1849 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.ActivityResult.staticClass, "<init>", "(ILandroid/content/Intent;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _start1850;
@@ -786,7 +780,7 @@ namespace android.app
 				return "stream";
 			}
 		}
-		private static void InitJNI()
+		static Instrumentation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Instrumentation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation"));
@@ -848,6 +842,9 @@ namespace android.app
 			global::android.app.Instrumentation._getAllocCounts1905 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.staticClass, "getAllocCounts", "()Landroid/os/Bundle;");
 			global::android.app.Instrumentation._getBinderCounts1906 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.staticClass, "getBinderCounts", "()Landroid/os/Bundle;");
 			global::android.app.Instrumentation._Instrumentation1907 = @__env.GetMethodIDNoThrow(global::android.app.Instrumentation.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

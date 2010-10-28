@@ -19,10 +19,6 @@ namespace android.content
 	internal sealed partial class SharedPreferences_ : java.lang.Object, SharedPreferences
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SharedPreferences_()
-		{
-			InitJNI();
-		}
 		internal SharedPreferences_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._unregisterOnSharedPreferenceChangeListener3531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SharedPreferences_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences"));
@@ -130,6 +126,9 @@ namespace android.content
 			global::android.content.SharedPreferences_._getAll3529 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_.staticClass, "getAll", "()Ljava/util/Map;");
 			global::android.content.SharedPreferences_._registerOnSharedPreferenceChangeListener3530 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_.staticClass, "registerOnSharedPreferenceChangeListener", "(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V");
 			global::android.content.SharedPreferences_._unregisterOnSharedPreferenceChangeListener3531 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_.staticClass, "unregisterOnSharedPreferenceChangeListener", "(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace java.nio.channels
 	internal sealed partial class ReadableByteChannel_ : java.lang.Object, ReadableByteChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReadableByteChannel_()
-		{
-			InitJNI();
-		}
 		internal ReadableByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,7 +49,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ReadableByteChannel_.staticClass, global::java.nio.channels.ReadableByteChannel_._close22549);
 		}
-		private static void InitJNI()
+		static ReadableByteChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ReadableByteChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ReadableByteChannel"));
@@ -61,6 +57,9 @@ namespace java.nio.channels
 			global::java.nio.channels.ReadableByteChannel_._close22547 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V");
 			global::java.nio.channels.ReadableByteChannel_._isOpen22548 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ReadableByteChannel_.staticClass, "isOpen", "()Z");
 			global::java.nio.channels.ReadableByteChannel_._close22549 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

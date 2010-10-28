@@ -4,10 +4,6 @@ namespace org.apache.http.cookie
 	public sealed partial class CookieSpecRegistry : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieSpecRegistry()
-		{
-			InitJNI();
-		}
 		internal CookieSpecRegistry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._CookieSpecRegistry32432);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CookieSpecRegistry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.CookieSpecRegistry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/CookieSpecRegistry"));
@@ -97,6 +93,9 @@ namespace org.apache.http.cookie
 			global::org.apache.http.cookie.CookieSpecRegistry._getCookieSpec32430 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieSpecRegistry.staticClass, "getCookieSpec", "(Ljava/lang/String;)Lorg/apache/http/cookie/CookieSpec;");
 			global::org.apache.http.cookie.CookieSpecRegistry._getSpecNames32431 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieSpecRegistry.staticClass, "getSpecNames", "()Ljava/util/List;");
 			global::org.apache.http.cookie.CookieSpecRegistry._CookieSpecRegistry32432 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieSpecRegistry.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

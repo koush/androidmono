@@ -4,10 +4,6 @@ namespace java.util
 	public partial class LinkedHashMap : java.util.HashMap, Map
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LinkedHashMap()
-		{
-			InitJNI();
-		}
 		protected LinkedHashMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -82,7 +78,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashMap.staticClass, global::java.util.LinkedHashMap._LinkedHashMap26343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LinkedHashMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.LinkedHashMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/LinkedHashMap"));
@@ -95,6 +91,9 @@ namespace java.util
 			global::java.util.LinkedHashMap._LinkedHashMap26341 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "<init>", "(Ljava/util/Map;)V");
 			global::java.util.LinkedHashMap._LinkedHashMap26342 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "<init>", "(IFZ)V");
 			global::java.util.LinkedHashMap._LinkedHashMap26343 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "<init>", "(IF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

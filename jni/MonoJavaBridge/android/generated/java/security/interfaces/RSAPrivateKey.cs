@@ -10,10 +10,6 @@ namespace java.security.interfaces
 	internal sealed partial class RSAPrivateKey_ : java.lang.Object, RSAPrivateKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAPrivateKey_()
-		{
-			InitJNI();
-		}
 		internal RSAPrivateKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateKey_.staticClass, global::java.security.interfaces.RSAPrivateKey_._getModulus23956)) as java.math.BigInteger;
 		}
-		private static void InitJNI()
+		static RSAPrivateKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.RSAPrivateKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/RSAPrivateKey"));
@@ -71,6 +67,9 @@ namespace java.security.interfaces
 			global::java.security.interfaces.RSAPrivateKey_._getAlgorithm23954 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAPrivateKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.interfaces.RSAPrivateKey_._getFormat23955 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAPrivateKey_.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::java.security.interfaces.RSAPrivateKey_._getModulus23956 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAPrivateKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class LevelListDrawable : android.graphics.drawable.DrawableContainer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LevelListDrawable()
-		{
-			InitJNI();
-		}
 		protected LevelListDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.LevelListDrawable.staticClass, global::android.graphics.drawable.LevelListDrawable._LevelListDrawable6115);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LevelListDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.LevelListDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/LevelListDrawable"));
@@ -63,6 +59,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.LevelListDrawable._mutate6113 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.LevelListDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
 			global::android.graphics.drawable.LevelListDrawable._addLevel6114 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.LevelListDrawable.staticClass, "addLevel", "(IILandroid/graphics/drawable/Drawable;)V");
 			global::android.graphics.drawable.LevelListDrawable._LevelListDrawable6115 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.LevelListDrawable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

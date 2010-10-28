@@ -4,10 +4,6 @@ namespace android.view
 	public partial class FocusFinder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FocusFinder()
-		{
-			InitJNI();
-		}
 		protected FocusFinder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -51,7 +47,7 @@ namespace android.view
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.FocusFinder.staticClass, global::android.view.FocusFinder._findNearestTouchable14026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.view.View;
 		}
-		private static void InitJNI()
+		static FocusFinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.FocusFinder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/FocusFinder"));
@@ -59,6 +55,9 @@ namespace android.view
 			global::android.view.FocusFinder._findNextFocus14024 = @__env.GetMethodIDNoThrow(global::android.view.FocusFinder.staticClass, "findNextFocus", "(Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;");
 			global::android.view.FocusFinder._findNextFocusFromRect14025 = @__env.GetMethodIDNoThrow(global::android.view.FocusFinder.staticClass, "findNextFocusFromRect", "(Landroid/view/ViewGroup;Landroid/graphics/Rect;I)Landroid/view/View;");
 			global::android.view.FocusFinder._findNearestTouchable14026 = @__env.GetMethodIDNoThrow(global::android.view.FocusFinder.staticClass, "findNearestTouchable", "(Landroid/view/ViewGroup;III[I)Landroid/view/View;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

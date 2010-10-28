@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractQueue : java.util.AbstractCollection, Queue
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractQueue()
-		{
-			InitJNI();
-		}
 		protected AbstractQueue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,7 +65,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractQueue.staticClass, global::java.util.AbstractQueue._AbstractQueue25726);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractQueue"));
@@ -83,16 +79,15 @@ namespace java.util
 			global::java.util.AbstractQueue._element25725 = @__env.GetMethodIDNoThrow(global::java.util.AbstractQueue.staticClass, "element", "()Ljava/lang/Object;");
 			global::java.util.AbstractQueue._AbstractQueue25726 = @__env.GetMethodIDNoThrow(global::java.util.AbstractQueue.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractQueue))]
 	internal sealed partial class AbstractQueue_ : java.util.AbstractQueue
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractQueue_()
-		{
-			InitJNI();
-		}
 		internal AbstractQueue_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -145,7 +140,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.AbstractQueue_.staticClass, global::java.util.AbstractQueue_._iterator25731)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static AbstractQueue_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractQueue_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractQueue"));
@@ -154,6 +149,9 @@ namespace java.util
 			global::java.util.AbstractQueue_._offer25729 = @__env.GetMethodIDNoThrow(global::java.util.AbstractQueue_.staticClass, "offer", "(Ljava/lang/Object;)Z");
 			global::java.util.AbstractQueue_._size25730 = @__env.GetMethodIDNoThrow(global::java.util.AbstractQueue_.staticClass, "size", "()I");
 			global::java.util.AbstractQueue_._iterator25731 = @__env.GetMethodIDNoThrow(global::java.util.AbstractQueue_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

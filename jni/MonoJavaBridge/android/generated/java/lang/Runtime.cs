@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class Runtime : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Runtime()
-		{
-			InitJNI();
-		}
 		protected Runtime(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -221,7 +217,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Runtime.staticClass, global::java.lang.Runtime._getLocalizedOutputStream20453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
 		}
-		private static void InitJNI()
+		static Runtime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Runtime.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Runtime"));
@@ -249,6 +245,9 @@ namespace java.lang
 			global::java.lang.Runtime._traceMethodCalls20451 = @__env.GetMethodIDNoThrow(global::java.lang.Runtime.staticClass, "traceMethodCalls", "(Z)V");
 			global::java.lang.Runtime._getLocalizedInputStream20452 = @__env.GetMethodIDNoThrow(global::java.lang.Runtime.staticClass, "getLocalizedInputStream", "(Ljava/io/InputStream;)Ljava/io/InputStream;");
 			global::java.lang.Runtime._getLocalizedOutputStream20453 = @__env.GetMethodIDNoThrow(global::java.lang.Runtime.staticClass, "getLocalizedOutputStream", "(Ljava/io/OutputStream;)Ljava/io/OutputStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

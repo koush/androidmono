@@ -4,10 +4,6 @@ namespace java.security.spec
 	public abstract partial class EncodedKeySpec : java.lang.Object, KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EncodedKeySpec()
-		{
-			InitJNI();
-		}
 		protected EncodedKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -29,7 +25,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._EncodedKeySpec24022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EncodedKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.EncodedKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/EncodedKeySpec"));
@@ -37,16 +33,15 @@ namespace java.security.spec
 			global::java.security.spec.EncodedKeySpec._getFormat24021 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::java.security.spec.EncodedKeySpec._EncodedKeySpec24022 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "<init>", "([B)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.spec.EncodedKeySpec))]
 	internal sealed partial class EncodedKeySpec_ : java.security.spec.EncodedKeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EncodedKeySpec_()
-		{
-			InitJNI();
-		}
 		internal EncodedKeySpec_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,11 +54,14 @@ namespace java.security.spec
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec_.staticClass, global::java.security.spec.EncodedKeySpec_._getFormat24023)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static EncodedKeySpec_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.EncodedKeySpec_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/EncodedKeySpec"));
 			global::java.security.spec.EncodedKeySpec_._getFormat24023 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

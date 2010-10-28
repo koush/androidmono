@@ -4,10 +4,6 @@ namespace java.text
 	public sealed partial class StringCharacterIterator : java.lang.Object, CharacterIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StringCharacterIterator()
-		{
-			InitJNI();
-		}
 		internal StringCharacterIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -181,7 +177,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.StringCharacterIterator.staticClass, global::java.text.StringCharacterIterator._StringCharacterIterator25663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StringCharacterIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.StringCharacterIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/StringCharacterIterator"));
@@ -201,6 +197,9 @@ namespace java.text
 			global::java.text.StringCharacterIterator._StringCharacterIterator25661 = @__env.GetMethodIDNoThrow(global::java.text.StringCharacterIterator.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::java.text.StringCharacterIterator._StringCharacterIterator25662 = @__env.GetMethodIDNoThrow(global::java.text.StringCharacterIterator.staticClass, "<init>", "(Ljava/lang/String;III)V");
 			global::java.text.StringCharacterIterator._StringCharacterIterator25663 = @__env.GetMethodIDNoThrow(global::java.text.StringCharacterIterator.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class ByteBuffer : java.nio.Buffer, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteBuffer()
-		{
-			InitJNI();
-		}
 		protected ByteBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -248,7 +244,7 @@ namespace java.nio
 		public abstract global::java.nio.FloatBuffer asFloatBuffer();
 		internal static global::MonoJavaBridge.MethodId _asDoubleBuffer22074;
 		public abstract global::java.nio.DoubleBuffer asDoubleBuffer();
-		private static void InitJNI()
+		static ByteBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ByteBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ByteBuffer"));
@@ -311,16 +307,15 @@ namespace java.nio
 			global::java.nio.ByteBuffer._asFloatBuffer22073 = @__env.GetMethodIDNoThrow(global::java.nio.ByteBuffer.staticClass, "asFloatBuffer", "()Ljava/nio/FloatBuffer;");
 			global::java.nio.ByteBuffer._asDoubleBuffer22074 = @__env.GetMethodIDNoThrow(global::java.nio.ByteBuffer.staticClass, "asDoubleBuffer", "()Ljava/nio/DoubleBuffer;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.ByteBuffer))]
 	internal sealed partial class ByteBuffer_ : java.nio.ByteBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteBuffer_()
-		{
-			InitJNI();
-		}
 		internal ByteBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -684,7 +679,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.ByteBuffer_.staticClass, global::java.nio.ByteBuffer_._isReadOnly22114);
 		}
-		private static void InitJNI()
+		static ByteBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ByteBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ByteBuffer"));
@@ -728,6 +723,9 @@ namespace java.nio
 			global::java.nio.ByteBuffer_._asFloatBuffer22112 = @__env.GetMethodIDNoThrow(global::java.nio.ByteBuffer_.staticClass, "asFloatBuffer", "()Ljava/nio/FloatBuffer;");
 			global::java.nio.ByteBuffer_._asDoubleBuffer22113 = @__env.GetMethodIDNoThrow(global::java.nio.ByteBuffer_.staticClass, "asDoubleBuffer", "()Ljava/nio/DoubleBuffer;");
 			global::java.nio.ByteBuffer_._isReadOnly22114 = @__env.GetMethodIDNoThrow(global::java.nio.ByteBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

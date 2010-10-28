@@ -4,10 +4,6 @@ namespace android.app.admin
 	public sealed partial class DeviceAdminInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DeviceAdminInfo()
-		{
-			InitJNI();
-		}
 		internal DeviceAdminInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -220,7 +216,7 @@ namespace android.app.admin
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.admin.DeviceAdminInfo.staticClass, _CREATOR2252)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static DeviceAdminInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.admin.DeviceAdminInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DeviceAdminInfo"));
@@ -240,6 +236,9 @@ namespace android.app.admin
 			global::android.app.admin.DeviceAdminInfo._getTagForPolicy2245 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getTagForPolicy", "(I)Ljava/lang/String;");
 			global::android.app.admin.DeviceAdminInfo._DeviceAdminInfo2246 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V");
 			global::android.app.admin.DeviceAdminInfo._CREATOR2252 = @__env.GetStaticFieldIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

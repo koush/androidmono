@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class RasterizerSpan : android.text.style.CharacterStyle, UpdateAppearance
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RasterizerSpan()
-		{
-			InitJNI();
-		}
 		protected RasterizerSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,13 +39,16 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.RasterizerSpan.staticClass, global::android.text.style.RasterizerSpan._RasterizerSpan13544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RasterizerSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.RasterizerSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/RasterizerSpan"));
 			global::android.text.style.RasterizerSpan._getRasterizer13542 = @__env.GetMethodIDNoThrow(global::android.text.style.RasterizerSpan.staticClass, "getRasterizer", "()Landroid/graphics/Rasterizer;");
 			global::android.text.style.RasterizerSpan._updateDrawState13543 = @__env.GetMethodIDNoThrow(global::android.text.style.RasterizerSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
 			global::android.text.style.RasterizerSpan._RasterizerSpan13544 = @__env.GetMethodIDNoThrow(global::android.text.style.RasterizerSpan.staticClass, "<init>", "(Landroid/graphics/Rasterizer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

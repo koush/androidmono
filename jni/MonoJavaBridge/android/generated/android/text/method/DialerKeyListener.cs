@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class DialerKeyListener : android.text.method.NumberKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialerKeyListener()
-		{
-			InitJNI();
-		}
 		protected DialerKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,7 +77,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.GetStaticObjectField(global::android.text.method.DialerKeyListener.staticClass, _CHARACTERS13281)) as char[];
 			}
 		}
-		private static void InitJNI()
+		static DialerKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.DialerKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DialerKeyListener"));
@@ -91,6 +87,9 @@ namespace android.text.method
 			global::android.text.method.DialerKeyListener._getAcceptedChars13279 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.DialerKeyListener._DialerKeyListener13280 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "<init>", "()V");
 			global::android.text.method.DialerKeyListener._CHARACTERS13281 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "CHARACTERS", "[C");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

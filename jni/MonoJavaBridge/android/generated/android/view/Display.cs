@@ -4,10 +4,6 @@ namespace android.view
 	public partial class Display : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Display()
-		{
-			InitJNI();
-		}
 		protected Display(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,7 +135,7 @@ namespace android.view
 				return 0;
 			}
 		}
-		private static void InitJNI()
+		static Display()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Display.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Display"));
@@ -151,6 +147,9 @@ namespace android.view
 			global::android.view.Display._getPixelFormat14019 = @__env.GetMethodIDNoThrow(global::android.view.Display.staticClass, "getPixelFormat", "()I");
 			global::android.view.Display._getRefreshRate14020 = @__env.GetMethodIDNoThrow(global::android.view.Display.staticClass, "getRefreshRate", "()F");
 			global::android.view.Display._getMetrics14021 = @__env.GetMethodIDNoThrow(global::android.view.Display.staticClass, "getMetrics", "(Landroid/util/DisplayMetrics;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

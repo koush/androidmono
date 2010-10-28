@@ -4,10 +4,6 @@ namespace java.text
 	public partial class AttributedString : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributedString()
-		{
-			InitJNI();
-		}
 		protected AttributedString(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -107,7 +103,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.AttributedString.staticClass, global::java.text.AttributedString._AttributedString25198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AttributedString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.AttributedString.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/AttributedString"));
@@ -122,6 +118,9 @@ namespace java.text
 			global::java.text.AttributedString._AttributedString25196 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "<init>", "(Ljava/text/AttributedCharacterIterator;)V");
 			global::java.text.AttributedString._AttributedString25197 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "<init>", "(Ljava/text/AttributedCharacterIterator;II)V");
 			global::java.text.AttributedString._AttributedString25198 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "<init>", "(Ljava/text/AttributedCharacterIterator;II[Ljava/text/AttributedCharacterIterator$Attribute;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

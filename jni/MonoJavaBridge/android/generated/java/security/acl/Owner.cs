@@ -12,10 +12,6 @@ namespace java.security.acl
 	internal sealed partial class Owner_ : java.lang.Object, Owner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Owner_()
-		{
-			InitJNI();
-		}
 		internal Owner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.security.acl
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._isOwner23464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Owner_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.acl.Owner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/acl/Owner"));
 			global::java.security.acl.Owner_._addOwner23462 = @__env.GetMethodIDNoThrow(global::java.security.acl.Owner_.staticClass, "addOwner", "(Ljava/security/Principal;Ljava/security/Principal;)Z");
 			global::java.security.acl.Owner_._deleteOwner23463 = @__env.GetMethodIDNoThrow(global::java.security.acl.Owner_.staticClass, "deleteOwner", "(Ljava/security/Principal;Ljava/security/Principal;)Z");
 			global::java.security.acl.Owner_._isOwner23464 = @__env.GetMethodIDNoThrow(global::java.security.acl.Owner_.staticClass, "isOwner", "(Ljava/security/Principal;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

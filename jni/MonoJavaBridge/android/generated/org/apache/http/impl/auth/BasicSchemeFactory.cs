@@ -4,10 +4,6 @@ namespace org.apache.http.impl.auth
 	public partial class BasicSchemeFactory : java.lang.Object, org.apache.http.auth.AuthSchemeFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicSchemeFactory()
-		{
-			InitJNI();
-		}
 		protected BasicSchemeFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.BasicSchemeFactory.staticClass, global::org.apache.http.impl.auth.BasicSchemeFactory._BasicSchemeFactory32726);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicSchemeFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.BasicSchemeFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/BasicSchemeFactory"));
 			global::org.apache.http.impl.auth.BasicSchemeFactory._newInstance32725 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.BasicSchemeFactory.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/auth/AuthScheme;");
 			global::org.apache.http.impl.auth.BasicSchemeFactory._BasicSchemeFactory32726 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.BasicSchemeFactory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

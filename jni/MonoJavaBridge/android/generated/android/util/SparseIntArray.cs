@@ -4,10 +4,6 @@ namespace android.util
 	public partial class SparseIntArray : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SparseIntArray()
-		{
-			InitJNI();
-		}
 		protected SparseIntArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -133,7 +129,7 @@ namespace android.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._SparseIntArray13877);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SparseIntArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.SparseIntArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/SparseIntArray"));
@@ -151,6 +147,9 @@ namespace android.util
 			global::android.util.SparseIntArray._removeAt13875 = @__env.GetMethodIDNoThrow(global::android.util.SparseIntArray.staticClass, "removeAt", "(I)V");
 			global::android.util.SparseIntArray._SparseIntArray13876 = @__env.GetMethodIDNoThrow(global::android.util.SparseIntArray.staticClass, "<init>", "(I)V");
 			global::android.util.SparseIntArray._SparseIntArray13877 = @__env.GetMethodIDNoThrow(global::android.util.SparseIntArray.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

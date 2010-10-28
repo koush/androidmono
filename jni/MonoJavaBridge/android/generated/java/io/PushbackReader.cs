@@ -4,10 +4,6 @@ namespace java.io
 	public partial class PushbackReader : java.io.FilterReader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PushbackReader()
-		{
-			InitJNI();
-		}
 		protected PushbackReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -124,7 +120,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PushbackReader.staticClass, global::java.io.PushbackReader._PushbackReader19511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PushbackReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PushbackReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PushbackReader"));
@@ -141,6 +137,9 @@ namespace java.io
 			global::java.io.PushbackReader._unread19509 = @__env.GetMethodIDNoThrow(global::java.io.PushbackReader.staticClass, "unread", "(I)V");
 			global::java.io.PushbackReader._PushbackReader19510 = @__env.GetMethodIDNoThrow(global::java.io.PushbackReader.staticClass, "<init>", "(Ljava/io/Reader;I)V");
 			global::java.io.PushbackReader._PushbackReader19511 = @__env.GetMethodIDNoThrow(global::java.io.PushbackReader.staticClass, "<init>", "(Ljava/io/Reader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

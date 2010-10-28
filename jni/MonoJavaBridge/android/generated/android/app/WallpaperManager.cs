@@ -4,10 +4,6 @@ namespace android.app
 	public partial class WallpaperManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WallpaperManager()
-		{
-			InitJNI();
-		}
 		protected WallpaperManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -238,7 +234,7 @@ namespace android.app
 				return "android.home.drop";
 			}
 		}
-		private static void InitJNI()
+		static WallpaperManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.WallpaperManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/WallpaperManager"));
@@ -259,6 +255,9 @@ namespace android.app
 			global::android.app.WallpaperManager._setWallpaperOffsetSteps2226 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setWallpaperOffsetSteps", "(FF)V");
 			global::android.app.WallpaperManager._sendWallpaperCommand2227 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "sendWallpaperCommand", "(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)V");
 			global::android.app.WallpaperManager._clearWallpaperOffsets2228 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "clearWallpaperOffsets", "(Landroid/os/IBinder;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

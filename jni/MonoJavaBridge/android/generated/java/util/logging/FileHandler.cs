@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class FileHandler : java.util.logging.StreamHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileHandler()
-		{
-			InitJNI();
-		}
 		protected FileHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -64,7 +60,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.FileHandler.staticClass, global::java.util.logging.FileHandler._FileHandler27951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FileHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.FileHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/FileHandler"));
@@ -75,6 +71,9 @@ namespace java.util.logging
 			global::java.util.logging.FileHandler._FileHandler27949 = @__env.GetMethodIDNoThrow(global::java.util.logging.FileHandler.staticClass, "<init>", "()V");
 			global::java.util.logging.FileHandler._FileHandler27950 = @__env.GetMethodIDNoThrow(global::java.util.logging.FileHandler.staticClass, "<init>", "(Ljava/lang/String;Z)V");
 			global::java.util.logging.FileHandler._FileHandler27951 = @__env.GetMethodIDNoThrow(global::java.util.logging.FileHandler.staticClass, "<init>", "(Ljava/lang/String;II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

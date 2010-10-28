@@ -33,10 +33,6 @@ namespace java.sql
 	internal sealed partial class SQLInput_ : java.lang.Object, SQLInput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLInput_()
-		{
-			InitJNI();
-		}
 		internal SQLInput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -256,7 +252,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readNString25006)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static SQLInput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLInput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLInput"));
@@ -284,6 +280,9 @@ namespace java.sql
 			global::java.sql.SQLInput_._readClob25004 = @__env.GetMethodIDNoThrow(global::java.sql.SQLInput_.staticClass, "readClob", "()Ljava/sql/Clob;");
 			global::java.sql.SQLInput_._readURL25005 = @__env.GetMethodIDNoThrow(global::java.sql.SQLInput_.staticClass, "readURL", "()Ljava/net/URL;");
 			global::java.sql.SQLInput_._readNString25006 = @__env.GetMethodIDNoThrow(global::java.sql.SQLInput_.staticClass, "readNString", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

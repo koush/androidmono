@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class InheritableThreadLocal : java.lang.ThreadLocal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InheritableThreadLocal()
-		{
-			InitJNI();
-		}
 		protected InheritableThreadLocal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InheritableThreadLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InheritableThreadLocal.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InheritableThreadLocal"));
 			global::java.lang.InheritableThreadLocal._childValue20189 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "childValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

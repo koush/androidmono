@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class Semaphore : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Semaphore()
-		{
-			InitJNI();
-		}
 		protected Semaphore(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -201,7 +197,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.Semaphore.staticClass, global::java.util.concurrent.Semaphore._Semaphore27431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Semaphore()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Semaphore.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Semaphore"));
@@ -225,6 +221,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.Semaphore._reducePermits27429 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Semaphore.staticClass, "reducePermits", "(I)V");
 			global::java.util.concurrent.Semaphore._Semaphore27430 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Semaphore.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.Semaphore._Semaphore27431 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Semaphore.staticClass, "<init>", "(IZ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

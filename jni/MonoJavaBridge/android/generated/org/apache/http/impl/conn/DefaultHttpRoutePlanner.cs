@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn
 	public partial class DefaultHttpRoutePlanner : java.lang.Object, org.apache.http.conn.routing.HttpRoutePlanner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultHttpRoutePlanner()
-		{
-			InitJNI();
-		}
 		protected DefaultHttpRoutePlanner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass, global::org.apache.http.impl.conn.DefaultHttpRoutePlanner._DefaultHttpRoutePlanner33045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultHttpRoutePlanner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/DefaultHttpRoutePlanner"));
 			global::org.apache.http.impl.conn.DefaultHttpRoutePlanner._determineRoute33044 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass, "determineRoute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/conn/routing/HttpRoute;");
 			global::org.apache.http.impl.conn.DefaultHttpRoutePlanner._DefaultHttpRoutePlanner33045 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass, "<init>", "(Lorg/apache/http/conn/scheme/SchemeRegistry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

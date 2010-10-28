@@ -12,10 +12,6 @@ namespace android.text
 	internal sealed partial class TextWatcher_ : java.lang.Object, TextWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextWatcher_()
-		{
-			InitJNI();
-		}
 		internal TextWatcher_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.text
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextWatcher_.staticClass, global::android.text.TextWatcher_._afterTextChanged13101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TextWatcher_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.TextWatcher_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextWatcher"));
 			global::android.text.TextWatcher_._onTextChanged13099 = @__env.GetMethodIDNoThrow(global::android.text.TextWatcher_.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
 			global::android.text.TextWatcher_._beforeTextChanged13100 = @__env.GetMethodIDNoThrow(global::android.text.TextWatcher_.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
 			global::android.text.TextWatcher_._afterTextChanged13101 = @__env.GetMethodIDNoThrow(global::android.text.TextWatcher_.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

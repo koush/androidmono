@@ -4,10 +4,6 @@ namespace junit.runner
 	public abstract partial class BaseTestRunner : java.lang.Object, junit.framework.TestListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseTestRunner()
-		{
-			InitJNI();
-		}
 		protected BaseTestRunner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -219,7 +215,7 @@ namespace junit.runner
 				return "suite";
 			}
 		}
-		private static void InitJNI()
+		static BaseTestRunner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.BaseTestRunner.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/BaseTestRunner"));
@@ -253,16 +249,15 @@ namespace junit.runner
 			global::junit.runner.BaseTestRunner._showStackRaw31462 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "showStackRaw", "()Z");
 			global::junit.runner.BaseTestRunner._BaseTestRunner31463 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::junit.runner.BaseTestRunner))]
 	internal sealed partial class BaseTestRunner_ : junit.runner.BaseTestRunner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseTestRunner_()
-		{
-			InitJNI();
-		}
 		internal BaseTestRunner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -302,7 +297,7 @@ namespace junit.runner
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.runner.BaseTestRunner_.staticClass, global::junit.runner.BaseTestRunner_._runFailed31468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static BaseTestRunner_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.BaseTestRunner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/BaseTestRunner"));
@@ -310,6 +305,9 @@ namespace junit.runner
 			global::junit.runner.BaseTestRunner_._testEnded31466 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner_.staticClass, "testEnded", "(Ljava/lang/String;)V");
 			global::junit.runner.BaseTestRunner_._testFailed31467 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner_.staticClass, "testFailed", "(ILjunit/framework/Test;Ljava/lang/Throwable;)V");
 			global::junit.runner.BaseTestRunner_._runFailed31468 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner_.staticClass, "runFailed", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

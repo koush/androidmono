@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class WebIconDatabase : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebIconDatabase()
-		{
-			InitJNI();
-		}
 		internal WebIconDatabase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.webkit
 		internal sealed partial class IconListener_ : java.lang.Object, IconListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static IconListener_()
-			{
-				InitJNI();
-			}
 			internal IconListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.IconListener_.staticClass, global::android.webkit.WebIconDatabase.IconListener_._onReceivedIcon16160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static IconListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebIconDatabase.IconListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase$IconListener"));
 				global::android.webkit.WebIconDatabase.IconListener_._onReceivedIcon16160 = @__env.GetMethodIDNoThrow(global::android.webkit.WebIconDatabase.IconListener_.staticClass, "onReceivedIcon", "(Ljava/lang/String;Landroid/graphics/Bitmap;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.webkit
 		internal partial class IconListenerDelegateWrapper : java.lang.Object, IconListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static IconListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected IconListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebIconDatabase.IconListenerDelegateWrapper.staticClass, global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper._IconListenerDelegateWrapper16161);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static IconListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase_IconListenerDelegateWrapper"));
 				global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper._IconListenerDelegateWrapper16161 = @__env.GetMethodIDNoThrow(global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class IconListenerDelegateWrapper
@@ -157,7 +151,7 @@ namespace android.webkit
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._releaseIconForPageUrl16168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static WebIconDatabase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebIconDatabase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase"));
@@ -168,6 +162,9 @@ namespace android.webkit
 			global::android.webkit.WebIconDatabase._requestIconForPageUrl16166 = @__env.GetMethodIDNoThrow(global::android.webkit.WebIconDatabase.staticClass, "requestIconForPageUrl", "(Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V");
 			global::android.webkit.WebIconDatabase._retainIconForPageUrl16167 = @__env.GetMethodIDNoThrow(global::android.webkit.WebIconDatabase.staticClass, "retainIconForPageUrl", "(Ljava/lang/String;)V");
 			global::android.webkit.WebIconDatabase._releaseIconForPageUrl16168 = @__env.GetMethodIDNoThrow(global::android.webkit.WebIconDatabase.staticClass, "releaseIconForPageUrl", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

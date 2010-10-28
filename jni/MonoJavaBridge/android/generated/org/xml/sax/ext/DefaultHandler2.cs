@@ -4,10 +4,6 @@ namespace org.xml.sax.ext
 	public partial class DefaultHandler2 : org.xml.sax.helpers.DefaultHandler, LexicalHandler, DeclHandler, EntityResolver2
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultHandler2()
-		{
-			InitJNI();
-		}
 		protected DefaultHandler2(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -144,7 +140,7 @@ namespace org.xml.sax.ext
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235126);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultHandler2()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.DefaultHandler2.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/DefaultHandler2"));
@@ -163,6 +159,9 @@ namespace org.xml.sax.ext
 			global::org.xml.sax.ext.DefaultHandler2._resolveEntity35124 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35125 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235126 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

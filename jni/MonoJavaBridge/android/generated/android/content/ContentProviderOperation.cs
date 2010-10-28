@@ -4,10 +4,6 @@ namespace android.content
 	public partial class ContentProviderOperation : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProviderOperation()
-		{
-			InitJNI();
-		}
 		protected ContentProviderOperation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content
 		public partial class Builder : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Builder()
-			{
-				InitJNI();
-			}
 			protected Builder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -103,7 +95,7 @@ namespace android.content
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderOperation.Builder.staticClass, global::android.content.ContentProviderOperation.Builder._withYieldAllowed2681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ContentProviderOperation.Builder;
 			}
-			private static void InitJNI()
+			static Builder()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.ContentProviderOperation.Builder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProviderOperation$Builder"));
@@ -116,6 +108,9 @@ namespace android.content
 				global::android.content.ContentProviderOperation.Builder._withSelection2679 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderOperation.Builder.staticClass, "withSelection", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;");
 				global::android.content.ContentProviderOperation.Builder._withExpectedCount2680 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderOperation.Builder.staticClass, "withExpectedCount", "(I)Landroid/content/ContentProviderOperation$Builder;");
 				global::android.content.ContentProviderOperation.Builder._withYieldAllowed2681 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderOperation.Builder.staticClass, "withYieldAllowed", "(Z)Landroid/content/ContentProviderOperation$Builder;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString2682;
@@ -248,7 +243,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.ContentProviderOperation.staticClass, _CREATOR2696)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ContentProviderOperation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProviderOperation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProviderOperation"));
@@ -267,6 +262,9 @@ namespace android.content
 			global::android.content.ContentProviderOperation._resolveValueBackReferences2694 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderOperation.staticClass, "resolveValueBackReferences", "([Landroid/content/ContentProviderResult;I)Landroid/content/ContentValues;");
 			global::android.content.ContentProviderOperation._resolveSelectionArgsBackReferences2695 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderOperation.staticClass, "resolveSelectionArgsBackReferences", "([Landroid/content/ContentProviderResult;I)[Ljava/lang/String;");
 			global::android.content.ContentProviderOperation._CREATOR2696 = @__env.GetStaticFieldIDNoThrow(global::android.content.ContentProviderOperation.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

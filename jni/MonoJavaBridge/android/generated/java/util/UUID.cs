@@ -4,10 +4,6 @@ namespace java.util
 	public sealed partial class UUID : java.lang.Object, java.io.Serializable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UUID()
-		{
-			InitJNI();
-		}
 		internal UUID(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -158,7 +154,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.UUID.staticClass, global::java.util.UUID._UUID26956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UUID()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.UUID.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/UUID"));
@@ -178,6 +174,9 @@ namespace java.util
 			global::java.util.UUID._getMostSignificantBits26954 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "getMostSignificantBits", "()J");
 			global::java.util.UUID._clockSequence26955 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "clockSequence", "()I");
 			global::java.util.UUID._UUID26956 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "<init>", "(JJ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

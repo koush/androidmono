@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class FileLock : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileLock()
-		{
-			InitJNI();
-		}
 		protected FileLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._FileLock22498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FileLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileLock"));
@@ -90,16 +86,15 @@ namespace java.nio.channels
 			global::java.nio.channels.FileLock._overlaps22497 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "overlaps", "(JJ)Z");
 			global::java.nio.channels.FileLock._FileLock22498 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "<init>", "(Ljava/nio/channels/FileChannel;JJZ)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.FileLock))]
 	internal sealed partial class FileLock_ : java.nio.channels.FileLock
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileLock_()
-		{
-			InitJNI();
-		}
 		internal FileLock_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,12 +116,15 @@ namespace java.nio.channels
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.FileLock_.staticClass, global::java.nio.channels.FileLock_._isValid22500);
 		}
-		private static void InitJNI()
+		static FileLock_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileLock_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileLock"));
 			global::java.nio.channels.FileLock_._release22499 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock_.staticClass, "release", "()V");
 			global::java.nio.channels.FileLock_._isValid22500 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock_.staticClass, "isValid", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

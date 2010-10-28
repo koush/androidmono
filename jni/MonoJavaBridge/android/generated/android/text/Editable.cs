@@ -21,10 +21,6 @@ namespace android.text
 	internal sealed partial class Editable_ : java.lang.Object, Editable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Editable_()
-		{
-			InitJNI();
-		}
 		internal Editable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -271,7 +267,7 @@ namespace android.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Editable_.staticClass, global::android.text.Editable_._append12768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 		}
-		private static void InitJNI()
+		static Editable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Editable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Editable"));
@@ -302,6 +298,9 @@ namespace android.text
 			global::android.text.Editable_._append12766 = @__env.GetMethodIDNoThrow(global::android.text.Editable_.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
 			global::android.text.Editable_._append12767 = @__env.GetMethodIDNoThrow(global::android.text.Editable_.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
 			global::android.text.Editable_._append12768 = @__env.GetMethodIDNoThrow(global::android.text.Editable_.staticClass, "append", "(C)Ljava/lang/Appendable;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

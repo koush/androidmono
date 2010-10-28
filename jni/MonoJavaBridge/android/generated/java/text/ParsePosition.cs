@@ -4,10 +4,6 @@ namespace java.text
 	public partial class ParsePosition : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParsePosition()
-		{
-			InitJNI();
-		}
 		protected ParsePosition(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -103,7 +99,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.ParsePosition.staticClass, global::java.text.ParsePosition._ParsePosition25620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ParsePosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.ParsePosition.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/ParsePosition"));
@@ -115,6 +111,9 @@ namespace java.text
 			global::java.text.ParsePosition._setErrorIndex25618 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "setErrorIndex", "(I)V");
 			global::java.text.ParsePosition._getErrorIndex25619 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "getErrorIndex", "()I");
 			global::java.text.ParsePosition._ParsePosition25620 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

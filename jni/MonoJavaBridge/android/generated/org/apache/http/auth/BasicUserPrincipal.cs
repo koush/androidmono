@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public sealed partial class BasicUserPrincipal : java.lang.Object, java.security.Principal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicUserPrincipal()
-		{
-			InitJNI();
-		}
 		internal BasicUserPrincipal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,7 +57,7 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.BasicUserPrincipal.staticClass, global::org.apache.http.auth.BasicUserPrincipal._BasicUserPrincipal31825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicUserPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.BasicUserPrincipal.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/BasicUserPrincipal"));
@@ -70,6 +66,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.BasicUserPrincipal._hashCode31823 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.BasicUserPrincipal.staticClass, "hashCode", "()I");
 			global::org.apache.http.auth.BasicUserPrincipal._getName31824 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.BasicUserPrincipal.staticClass, "getName", "()Ljava/lang/String;");
 			global::org.apache.http.auth.BasicUserPrincipal._BasicUserPrincipal31825 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.BasicUserPrincipal.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

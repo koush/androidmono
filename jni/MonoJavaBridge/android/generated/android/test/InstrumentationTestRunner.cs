@@ -4,10 +4,6 @@ namespace android.test
 	public partial class InstrumentationTestRunner : android.app.Instrumentation, TestSuiteProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InstrumentationTestRunner()
-		{
-			InitJNI();
-		}
 		protected InstrumentationTestRunner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -170,7 +166,7 @@ namespace android.test
 				return "stack";
 			}
 		}
-		private static void InitJNI()
+		static InstrumentationTestRunner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.InstrumentationTestRunner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/InstrumentationTestRunner"));
@@ -181,6 +177,9 @@ namespace android.test
 			global::android.test.InstrumentationTestRunner._getTestSuite12202 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
 			global::android.test.InstrumentationTestRunner._getAllTests12203 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAllTests", "()Ljunit/framework/TestSuite;");
 			global::android.test.InstrumentationTestRunner._InstrumentationTestRunner12204 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public partial class ObjectStreamClass : java.lang.Object, Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectStreamClass()
-		{
-			InitJNI();
-		}
 		protected ObjectStreamClass(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -107,7 +103,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.io.ObjectStreamField>(@__env.GetStaticObjectField(global::java.io.ObjectStreamClass.staticClass, _NO_FIELDS19306)) as java.io.ObjectStreamField[];
 			}
 		}
-		private static void InitJNI()
+		static ObjectStreamClass()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectStreamClass.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectStreamClass"));
@@ -120,6 +116,9 @@ namespace java.io
 			global::java.io.ObjectStreamClass._getSerialVersionUID19304 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "getSerialVersionUID", "()J");
 			global::java.io.ObjectStreamClass._forClass19305 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "forClass", "()Ljava/lang/Class;");
 			global::java.io.ObjectStreamClass._NO_FIELDS19306 = @__env.GetStaticFieldIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "NO_FIELDS", "[Ljava/io/ObjectStreamField;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

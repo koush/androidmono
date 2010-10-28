@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class TrustAnchor : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TrustAnchor()
-		{
-			InitJNI();
-		}
 		protected TrustAnchor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,7 +117,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._TrustAnchor23700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TrustAnchor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.TrustAnchor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/TrustAnchor"));
@@ -134,6 +130,9 @@ namespace java.security.cert
 			global::java.security.cert.TrustAnchor._TrustAnchor23698 = @__env.GetMethodIDNoThrow(global::java.security.cert.TrustAnchor.staticClass, "<init>", "(Ljava/security/cert/X509Certificate;[B)V");
 			global::java.security.cert.TrustAnchor._TrustAnchor23699 = @__env.GetMethodIDNoThrow(global::java.security.cert.TrustAnchor.staticClass, "<init>", "(Ljavax/security/auth/x500/X500Principal;Ljava/security/PublicKey;[B)V");
 			global::java.security.cert.TrustAnchor._TrustAnchor23700 = @__env.GetMethodIDNoThrow(global::java.security.cert.TrustAnchor.staticClass, "<init>", "(Ljava/lang/String;Ljava/security/PublicKey;[B)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

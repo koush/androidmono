@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class RelativeSizeSpan : android.text.style.MetricAffectingSpan, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RelativeSizeSpan()
-		{
-			InitJNI();
-		}
 		protected RelativeSizeSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._RelativeSizeSpan13552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RelativeSizeSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.RelativeSizeSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/RelativeSizeSpan"));
@@ -105,6 +101,9 @@ namespace android.text.style
 			global::android.text.style.RelativeSizeSpan._getSizeChange13550 = @__env.GetMethodIDNoThrow(global::android.text.style.RelativeSizeSpan.staticClass, "getSizeChange", "()F");
 			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan13551 = @__env.GetMethodIDNoThrow(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(F)V");
 			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan13552 = @__env.GetMethodIDNoThrow(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

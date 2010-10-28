@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class Identity : java.lang.Object, Principal, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Identity()
-		{
-			InitJNI();
-		}
 		protected Identity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -158,7 +154,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Identity.staticClass, global::java.security.Identity._Identity22976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Identity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Identity.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Identity"));
@@ -180,23 +176,25 @@ namespace java.security
 			global::java.security.Identity._Identity22975 = @__env.GetMethodIDNoThrow(global::java.security.Identity.staticClass, "<init>", "(Ljava/lang/String;Ljava/security/IdentityScope;)V");
 			global::java.security.Identity._Identity22976 = @__env.GetMethodIDNoThrow(global::java.security.Identity.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Identity))]
 	internal sealed partial class Identity_ : java.security.Identity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Identity_()
-		{
-			InitJNI();
-		}
 		internal Identity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Identity_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Identity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Identity"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

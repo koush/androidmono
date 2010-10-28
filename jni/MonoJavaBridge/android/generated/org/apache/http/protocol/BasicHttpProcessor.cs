@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public sealed partial class BasicHttpProcessor : java.lang.Object, HttpProcessor, HttpRequestInterceptorList, HttpResponseInterceptorList, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHttpProcessor()
-		{
-			InitJNI();
-		}
 		internal BasicHttpProcessor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -237,7 +233,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.BasicHttpProcessor.staticClass, global::org.apache.http.protocol.BasicHttpProcessor._BasicHttpProcessor33842);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHttpProcessor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.BasicHttpProcessor.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/BasicHttpProcessor"));
@@ -264,6 +260,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.BasicHttpProcessor._setInterceptors33840 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpProcessor.staticClass, "setInterceptors", "(Ljava/util/List;)V");
 			global::org.apache.http.protocol.BasicHttpProcessor._clearInterceptors33841 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpProcessor.staticClass, "clearInterceptors", "()V");
 			global::org.apache.http.protocol.BasicHttpProcessor._BasicHttpProcessor33842 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpProcessor.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

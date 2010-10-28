@@ -4,10 +4,6 @@ namespace android.test
 	public abstract partial class ApplicationTestCase : android.test.AndroidTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ApplicationTestCase()
-		{
-			InitJNI();
-		}
 		protected ApplicationTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,7 +77,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ApplicationTestCase.staticClass, global::android.test.ApplicationTestCase._ApplicationTestCase12176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ApplicationTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ApplicationTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ApplicationTestCase"));
@@ -94,23 +90,25 @@ namespace android.test
 			global::android.test.ApplicationTestCase._testApplicationTestCaseSetUpProperly12175 = @__env.GetMethodIDNoThrow(global::android.test.ApplicationTestCase.staticClass, "testApplicationTestCaseSetUpProperly", "()V");
 			global::android.test.ApplicationTestCase._ApplicationTestCase12176 = @__env.GetMethodIDNoThrow(global::android.test.ApplicationTestCase.staticClass, "<init>", "(Ljava/lang/Class;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.ApplicationTestCase))]
 	internal sealed partial class ApplicationTestCase_ : android.test.ApplicationTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ApplicationTestCase_()
-		{
-			InitJNI();
-		}
 		internal ApplicationTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ApplicationTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ApplicationTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ApplicationTestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

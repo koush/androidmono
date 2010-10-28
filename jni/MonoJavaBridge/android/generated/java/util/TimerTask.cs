@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class TimerTask : java.lang.Object, java.lang.Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimerTask()
-		{
-			InitJNI();
-		}
 		protected TimerTask(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,7 +34,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TimerTask.staticClass, global::java.util.TimerTask._TimerTask26877);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TimerTask()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimerTask.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimerTask"));
@@ -47,16 +43,15 @@ namespace java.util
 			global::java.util.TimerTask._scheduledExecutionTime26876 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "scheduledExecutionTime", "()J");
 			global::java.util.TimerTask._TimerTask26877 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.TimerTask))]
 	internal sealed partial class TimerTask_ : java.util.TimerTask
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimerTask_()
-		{
-			InitJNI();
-		}
 		internal TimerTask_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,11 +64,14 @@ namespace java.util
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TimerTask_.staticClass, global::java.util.TimerTask_._run26878);
 		}
-		private static void InitJNI()
+		static TimerTask_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimerTask_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimerTask"));
 			global::java.util.TimerTask_._run26878 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask_.staticClass, "run", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class GestureStroke : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureStroke()
-		{
-			InitJNI();
-		}
 		protected GestureStroke(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<float>(@__env.GetObjectField(this.JvmHandle, _points4994)) as float[];
 			}
 		}
-		private static void InitJNI()
+		static GestureStroke()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureStroke.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureStroke"));
@@ -110,6 +106,9 @@ namespace android.gesture
 			global::android.gesture.GestureStroke._boundingBox4992 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "boundingBox", "Landroid/graphics/RectF;");
 			global::android.gesture.GestureStroke._length4993 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "length", "F");
 			global::android.gesture.GestureStroke._points4994 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "points", "[F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.speech
 	public abstract partial class RecognitionService : android.app.Service
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RecognitionService()
-		{
-			InitJNI();
-		}
 		protected RecognitionService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.speech
 		public partial class Callback : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Callback()
-			{
-				InitJNI();
-			}
 			protected Callback(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -94,7 +86,7 @@ namespace android.speech
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionService.Callback.staticClass, global::android.speech.RecognitionService.Callback._rmsChanged11662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static Callback()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.RecognitionService.Callback.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognitionService$Callback"));
@@ -106,6 +98,9 @@ namespace android.speech
 				global::android.speech.RecognitionService.Callback._partialResults11660 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService.Callback.staticClass, "partialResults", "(Landroid/os/Bundle;)V");
 				global::android.speech.RecognitionService.Callback._readyForSpeech11661 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService.Callback.staticClass, "readyForSpeech", "(Landroid/os/Bundle;)V");
 				global::android.speech.RecognitionService.Callback._rmsChanged11662 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService.Callback.staticClass, "rmsChanged", "(F)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onBind11663;
@@ -153,7 +148,7 @@ namespace android.speech
 				return "android.speech";
 			}
 		}
-		private static void InitJNI()
+		static RecognitionService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognitionService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognitionService"));
@@ -164,16 +159,15 @@ namespace android.speech
 			global::android.speech.RecognitionService._onStopListening11667 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService.staticClass, "onStopListening", "(Landroid/speech/RecognitionService$Callback;)V");
 			global::android.speech.RecognitionService._RecognitionService11668 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.speech.RecognitionService))]
 	internal sealed partial class RecognitionService_ : android.speech.RecognitionService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RecognitionService_()
-		{
-			InitJNI();
-		}
 		internal RecognitionService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -204,13 +198,16 @@ namespace android.speech
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionService_.staticClass, global::android.speech.RecognitionService_._onStopListening11673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RecognitionService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognitionService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognitionService"));
 			global::android.speech.RecognitionService_._onCancel11671 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService_.staticClass, "onCancel", "(Landroid/speech/RecognitionService$Callback;)V");
 			global::android.speech.RecognitionService_._onStartListening11672 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService_.staticClass, "onStartListening", "(Landroid/content/Intent;Landroid/speech/RecognitionService$Callback;)V");
 			global::android.speech.RecognitionService_._onStopListening11673 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionService_.staticClass, "onStopListening", "(Landroid/speech/RecognitionService$Callback;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

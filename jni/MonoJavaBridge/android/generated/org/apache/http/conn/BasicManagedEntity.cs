@@ -4,10 +4,6 @@ namespace org.apache.http.conn
 	public partial class BasicManagedEntity : org.apache.http.entity.HttpEntityWrapper, ConnectionReleaseTrigger, EofSensorWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicManagedEntity()
-		{
-			InitJNI();
-		}
 		protected BasicManagedEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -115,7 +111,7 @@ namespace org.apache.http.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.BasicManagedEntity.staticClass, global::org.apache.http.conn.BasicManagedEntity._BasicManagedEntity32075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicManagedEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.BasicManagedEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/BasicManagedEntity"));
@@ -130,6 +126,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.BasicManagedEntity._streamAbort32073 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.BasicManagedEntity.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z");
 			global::org.apache.http.conn.BasicManagedEntity._releaseManagedConnection32074 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.BasicManagedEntity.staticClass, "releaseManagedConnection", "()V");
 			global::org.apache.http.conn.BasicManagedEntity._BasicManagedEntity32075 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.BasicManagedEntity.staticClass, "<init>", "(Lorg/apache/http/HttpEntity;Lorg/apache/http/conn/ManagedClientConnection;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

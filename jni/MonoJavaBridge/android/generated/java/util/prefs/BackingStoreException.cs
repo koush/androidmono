@@ -4,10 +4,6 @@ namespace java.util.prefs
 	public partial class BackingStoreException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackingStoreException()
-		{
-			InitJNI();
-		}
 		protected BackingStoreException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.util.prefs
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.BackingStoreException.staticClass, global::java.util.prefs.BackingStoreException._BackingStoreException28173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BackingStoreException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.BackingStoreException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/BackingStoreException"));
 			global::java.util.prefs.BackingStoreException._BackingStoreException28172 = @__env.GetMethodIDNoThrow(global::java.util.prefs.BackingStoreException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.util.prefs.BackingStoreException._BackingStoreException28173 = @__env.GetMethodIDNoThrow(global::java.util.prefs.BackingStoreException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class ContentResolver : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentResolver()
-		{
-			InitJNI();
-		}
 		protected ContentResolver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -443,7 +439,7 @@ namespace android.content
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static ContentResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentResolver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentResolver"));
@@ -487,23 +483,25 @@ namespace android.content
 			global::android.content.ContentResolver._removeStatusChangeListener2750 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "removeStatusChangeListener", "(Ljava/lang/Object;)V");
 			global::android.content.ContentResolver._ContentResolver2751 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.ContentResolver))]
 	internal sealed partial class ContentResolver_ : android.content.ContentResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentResolver_()
-		{
-			InitJNI();
-		}
 		internal ContentResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ContentResolver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentResolver"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

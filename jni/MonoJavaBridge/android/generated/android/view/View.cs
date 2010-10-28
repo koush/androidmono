@@ -4,10 +4,6 @@ namespace android.view
 	public partial class View : java.lang.Object, android.graphics.drawable.Drawable.Callback, android.view.KeyEvent.Callback, android.view.accessibility.AccessibilityEventSource
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static View()
-		{
-			InitJNI();
-		}
 		protected View(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view
 		public partial class BaseSavedState : android.view.AbsSavedState
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static BaseSavedState()
-			{
-				InitJNI();
-			}
 			protected BaseSavedState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -45,7 +37,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.View.BaseSavedState.staticClass, _CREATOR14620)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static BaseSavedState()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.BaseSavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$BaseSavedState"));
@@ -53,15 +45,14 @@ namespace android.view
 				global::android.view.View.BaseSavedState._BaseSavedState14619 = @__env.GetMethodIDNoThrow(global::android.view.View.BaseSavedState.staticClass, "<init>", "(Landroid/os/Parcelable;)V");
 				global::android.view.View.BaseSavedState._CREATOR14620 = @__env.GetStaticFieldIDNoThrow(global::android.view.View.BaseSavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MeasureSpec : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MeasureSpec()
-			{
-				InitJNI();
-			}
 			protected MeasureSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -117,7 +108,7 @@ namespace android.view
 					return -2147483648;
 				}
 			}
-			private static void InitJNI()
+			static MeasureSpec()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.MeasureSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$MeasureSpec"));
@@ -126,6 +117,9 @@ namespace android.view
 				global::android.view.View.MeasureSpec._getMode14623 = @__env.GetStaticMethodIDNoThrow(global::android.view.View.MeasureSpec.staticClass, "getMode", "(I)I");
 				global::android.view.View.MeasureSpec._makeMeasureSpec14624 = @__env.GetStaticMethodIDNoThrow(global::android.view.View.MeasureSpec.staticClass, "makeMeasureSpec", "(II)I");
 				global::android.view.View.MeasureSpec._MeasureSpec14625 = @__env.GetMethodIDNoThrow(global::android.view.View.MeasureSpec.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnClickListener_))]
@@ -138,10 +132,6 @@ namespace android.view
 		internal sealed partial class OnClickListener_ : java.lang.Object, OnClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnClickListener_()
-			{
-				InitJNI();
-			}
 			internal OnClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -154,11 +144,14 @@ namespace android.view
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.View.OnClickListener_.staticClass, global::android.view.View.OnClickListener_._onClick14629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnClickListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnClickListener"));
 				global::android.view.View.OnClickListener_._onClick14629 = @__env.GetMethodIDNoThrow(global::android.view.View.OnClickListener_.staticClass, "onClick", "(Landroid/view/View;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -167,10 +160,6 @@ namespace android.view
 		internal partial class OnClickListenerDelegateWrapper : java.lang.Object, OnClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnClickListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -181,11 +170,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnClickListenerDelegateWrapper.staticClass, global::android.view.View.OnClickListenerDelegateWrapper._OnClickListenerDelegateWrapper14630);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnClickListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnClickListenerDelegateWrapper"));
 				global::android.view.View.OnClickListenerDelegateWrapper._OnClickListenerDelegateWrapper14630 = @__env.GetMethodIDNoThrow(global::android.view.View.OnClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnClickListenerDelegateWrapper
@@ -213,10 +205,6 @@ namespace android.view
 		internal sealed partial class OnCreateContextMenuListener_ : java.lang.Object, OnCreateContextMenuListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCreateContextMenuListener_()
-			{
-				InitJNI();
-			}
 			internal OnCreateContextMenuListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -229,11 +217,14 @@ namespace android.view
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.View.OnCreateContextMenuListener_.staticClass, global::android.view.View.OnCreateContextMenuListener_._onCreateContextMenu14631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnCreateContextMenuListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnCreateContextMenuListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnCreateContextMenuListener"));
 				global::android.view.View.OnCreateContextMenuListener_._onCreateContextMenu14631 = @__env.GetMethodIDNoThrow(global::android.view.View.OnCreateContextMenuListener_.staticClass, "onCreateContextMenu", "(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -242,10 +233,6 @@ namespace android.view
 		internal partial class OnCreateContextMenuListenerDelegateWrapper : java.lang.Object, OnCreateContextMenuListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCreateContextMenuListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnCreateContextMenuListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -256,11 +243,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnCreateContextMenuListenerDelegateWrapper.staticClass, global::android.view.View.OnCreateContextMenuListenerDelegateWrapper._OnCreateContextMenuListenerDelegateWrapper14632);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnCreateContextMenuListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnCreateContextMenuListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnCreateContextMenuListenerDelegateWrapper"));
 				global::android.view.View.OnCreateContextMenuListenerDelegateWrapper._OnCreateContextMenuListenerDelegateWrapper14632 = @__env.GetMethodIDNoThrow(global::android.view.View.OnCreateContextMenuListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnCreateContextMenuListenerDelegateWrapper
@@ -288,10 +278,6 @@ namespace android.view
 		internal sealed partial class OnFocusChangeListener_ : java.lang.Object, OnFocusChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFocusChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnFocusChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -304,11 +290,14 @@ namespace android.view
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.View.OnFocusChangeListener_.staticClass, global::android.view.View.OnFocusChangeListener_._onFocusChange14633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnFocusChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnFocusChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnFocusChangeListener"));
 				global::android.view.View.OnFocusChangeListener_._onFocusChange14633 = @__env.GetMethodIDNoThrow(global::android.view.View.OnFocusChangeListener_.staticClass, "onFocusChange", "(Landroid/view/View;Z)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -317,10 +306,6 @@ namespace android.view
 		internal partial class OnFocusChangeListenerDelegateWrapper : java.lang.Object, OnFocusChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFocusChangeListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnFocusChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -331,11 +316,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnFocusChangeListenerDelegateWrapper.staticClass, global::android.view.View.OnFocusChangeListenerDelegateWrapper._OnFocusChangeListenerDelegateWrapper14634);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnFocusChangeListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnFocusChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnFocusChangeListenerDelegateWrapper"));
 				global::android.view.View.OnFocusChangeListenerDelegateWrapper._OnFocusChangeListenerDelegateWrapper14634 = @__env.GetMethodIDNoThrow(global::android.view.View.OnFocusChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnFocusChangeListenerDelegateWrapper
@@ -363,10 +351,6 @@ namespace android.view
 		internal sealed partial class OnKeyListener_ : java.lang.Object, OnKeyListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnKeyListener_()
-			{
-				InitJNI();
-			}
 			internal OnKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -379,11 +363,14 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.OnKeyListener_.staticClass, global::android.view.View.OnKeyListener_._onKey14635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnKeyListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnKeyListener"));
 				global::android.view.View.OnKeyListener_._onKey14635 = @__env.GetMethodIDNoThrow(global::android.view.View.OnKeyListener_.staticClass, "onKey", "(Landroid/view/View;ILandroid/view/KeyEvent;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -392,10 +379,6 @@ namespace android.view
 		internal partial class OnKeyListenerDelegateWrapper : java.lang.Object, OnKeyListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnKeyListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnKeyListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -406,11 +389,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnKeyListenerDelegateWrapper.staticClass, global::android.view.View.OnKeyListenerDelegateWrapper._OnKeyListenerDelegateWrapper14636);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnKeyListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnKeyListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnKeyListenerDelegateWrapper"));
 				global::android.view.View.OnKeyListenerDelegateWrapper._OnKeyListenerDelegateWrapper14636 = @__env.GetMethodIDNoThrow(global::android.view.View.OnKeyListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnKeyListenerDelegateWrapper
@@ -438,10 +424,6 @@ namespace android.view
 		internal sealed partial class OnLongClickListener_ : java.lang.Object, OnLongClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnLongClickListener_()
-			{
-				InitJNI();
-			}
 			internal OnLongClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -454,11 +436,14 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.OnLongClickListener_.staticClass, global::android.view.View.OnLongClickListener_._onLongClick14637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnLongClickListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnLongClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnLongClickListener"));
 				global::android.view.View.OnLongClickListener_._onLongClick14637 = @__env.GetMethodIDNoThrow(global::android.view.View.OnLongClickListener_.staticClass, "onLongClick", "(Landroid/view/View;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -467,10 +452,6 @@ namespace android.view
 		internal partial class OnLongClickListenerDelegateWrapper : java.lang.Object, OnLongClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnLongClickListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnLongClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -481,11 +462,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnLongClickListenerDelegateWrapper.staticClass, global::android.view.View.OnLongClickListenerDelegateWrapper._OnLongClickListenerDelegateWrapper14638);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnLongClickListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnLongClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnLongClickListenerDelegateWrapper"));
 				global::android.view.View.OnLongClickListenerDelegateWrapper._OnLongClickListenerDelegateWrapper14638 = @__env.GetMethodIDNoThrow(global::android.view.View.OnLongClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnLongClickListenerDelegateWrapper
@@ -513,10 +497,6 @@ namespace android.view
 		internal sealed partial class OnTouchListener_ : java.lang.Object, OnTouchListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnTouchListener_()
-			{
-				InitJNI();
-			}
 			internal OnTouchListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -529,11 +509,14 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.OnTouchListener_.staticClass, global::android.view.View.OnTouchListener_._onTouch14639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnTouchListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnTouchListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View$OnTouchListener"));
 				global::android.view.View.OnTouchListener_._onTouch14639 = @__env.GetMethodIDNoThrow(global::android.view.View.OnTouchListener_.staticClass, "onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -542,10 +525,6 @@ namespace android.view
 		internal partial class OnTouchListenerDelegateWrapper : java.lang.Object, OnTouchListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnTouchListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnTouchListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -556,11 +535,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.View.OnTouchListenerDelegateWrapper.staticClass, global::android.view.View.OnTouchListenerDelegateWrapper._OnTouchListenerDelegateWrapper14640);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnTouchListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.View.OnTouchListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View_OnTouchListenerDelegateWrapper"));
 				global::android.view.View.OnTouchListenerDelegateWrapper._OnTouchListenerDelegateWrapper14640 = @__env.GetMethodIDNoThrow(global::android.view.View.OnTouchListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnTouchListenerDelegateWrapper
@@ -3980,7 +3962,7 @@ namespace android.view
 				return 130;
 			}
 		}
-		private static void InitJNI()
+		static View()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.View.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/View"));
@@ -4268,6 +4250,9 @@ namespace android.view
 			global::android.view.View._View14922 = @__env.GetMethodIDNoThrow(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.view.View._View14923 = @__env.GetMethodIDNoThrow(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.view.View._View14924 = @__env.GetMethodIDNoThrow(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

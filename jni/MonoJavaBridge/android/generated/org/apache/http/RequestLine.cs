@@ -12,10 +12,6 @@ namespace org.apache.http
 	internal sealed partial class RequestLine_ : java.lang.Object, RequestLine
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RequestLine_()
-		{
-			InitJNI();
-		}
 		internal RequestLine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_.staticClass, global::org.apache.http.RequestLine_._getUri31762)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static RequestLine_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.RequestLine_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/RequestLine"));
 			global::org.apache.http.RequestLine_._getMethod31760 = @__env.GetMethodIDNoThrow(global::org.apache.http.RequestLine_.staticClass, "getMethod", "()Ljava/lang/String;");
 			global::org.apache.http.RequestLine_._getProtocolVersion31761 = @__env.GetMethodIDNoThrow(global::org.apache.http.RequestLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
 			global::org.apache.http.RequestLine_._getUri31762 = @__env.GetMethodIDNoThrow(global::org.apache.http.RequestLine_.staticClass, "getUri", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

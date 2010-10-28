@@ -4,10 +4,6 @@ namespace android.net
 	public partial class DhcpInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DhcpInfo()
-		{
-			InitJNI();
-		}
 		protected DhcpInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,7 +125,7 @@ namespace android.net
 			{
 			}
 		}
-		private static void InitJNI()
+		static DhcpInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.DhcpInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/DhcpInfo"));
@@ -144,6 +140,9 @@ namespace android.net
 			global::android.net.DhcpInfo._dns27656 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "dns2", "I");
 			global::android.net.DhcpInfo._serverAddress7657 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "serverAddress", "I");
 			global::android.net.DhcpInfo._leaseDuration7658 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "leaseDuration", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

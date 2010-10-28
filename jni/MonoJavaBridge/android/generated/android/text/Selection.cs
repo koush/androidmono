@@ -4,10 +4,6 @@ namespace android.text
 	public partial class Selection : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Selection()
-		{
-			InitJNI();
-		}
 		protected Selection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace android.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Selection.staticClass, _SELECTION_END12926)) as java.lang.Object;
 			}
 		}
-		private static void InitJNI()
+		static Selection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Selection.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Selection"));
@@ -176,6 +172,9 @@ namespace android.text
 			global::android.text.Selection._moveToRightEdge12924 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
 			global::android.text.Selection._SELECTION_START12925 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_START", "Ljava/lang/Object;");
 			global::android.text.Selection._SELECTION_END12926 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_END", "Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

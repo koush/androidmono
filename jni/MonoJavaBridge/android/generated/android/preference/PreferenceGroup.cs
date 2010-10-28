@@ -4,10 +4,6 @@ namespace android.preference
 	public abstract partial class PreferenceGroup : android.preference.Preference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceGroup()
-		{
-			InitJNI();
-		}
 		protected PreferenceGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -173,7 +169,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._PreferenceGroup10431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PreferenceGroup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceGroup"));
@@ -196,23 +192,25 @@ namespace android.preference
 			global::android.preference.PreferenceGroup._PreferenceGroup10430 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.preference.PreferenceGroup._PreferenceGroup10431 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.preference.PreferenceGroup))]
 	internal sealed partial class PreferenceGroup_ : android.preference.PreferenceGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceGroup_()
-		{
-			InitJNI();
-		}
 		internal PreferenceGroup_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static PreferenceGroup_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceGroup_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceGroup"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

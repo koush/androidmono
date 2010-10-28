@@ -10,10 +10,6 @@ namespace java.net
 	internal sealed partial class DatagramSocketImplFactory_ : java.lang.Object, DatagramSocketImplFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramSocketImplFactory_()
-		{
-			InitJNI();
-		}
 		internal DatagramSocketImplFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_.staticClass, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
 		}
-		private static void InitJNI()
+		static DatagramSocketImplFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramSocketImplFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramSocketImplFactory"));
 			global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

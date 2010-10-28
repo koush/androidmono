@@ -4,10 +4,6 @@ namespace org.apache.http
 	public sealed partial class HttpHost : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpHost()
-		{
-			InitJNI();
-		}
 		internal HttpHost(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -148,7 +144,7 @@ namespace org.apache.http
 				return "http";
 			}
 		}
-		private static void InitJNI()
+		static HttpHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpHost.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpHost"));
@@ -165,6 +161,9 @@ namespace org.apache.http
 			global::org.apache.http.HttpHost._HttpHost31585 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpHost.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::org.apache.http.HttpHost._HttpHost31586 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpHost.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::org.apache.http.HttpHost._HttpHost31587 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpHost.staticClass, "<init>", "(Ljava/lang/String;ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

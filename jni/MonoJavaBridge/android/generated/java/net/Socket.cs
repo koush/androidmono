@@ -4,10 +4,6 @@ namespace java.net
 	public partial class Socket : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Socket()
-		{
-			InitJNI();
-		}
 		protected Socket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -614,7 +610,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.Socket.staticClass, global::java.net.Socket._Socket21772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Socket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Socket.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Socket"));
@@ -669,6 +665,9 @@ namespace java.net
 			global::java.net.Socket._Socket21770 = @__env.GetMethodIDNoThrow(global::java.net.Socket.staticClass, "<init>", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)V");
 			global::java.net.Socket._Socket21771 = @__env.GetMethodIDNoThrow(global::java.net.Socket.staticClass, "<init>", "(Ljava/lang/String;IZ)V");
 			global::java.net.Socket._Socket21772 = @__env.GetMethodIDNoThrow(global::java.net.Socket.staticClass, "<init>", "(Ljava/net/InetAddress;IZ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

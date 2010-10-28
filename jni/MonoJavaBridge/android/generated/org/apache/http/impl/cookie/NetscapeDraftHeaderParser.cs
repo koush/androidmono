@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class NetscapeDraftHeaderParser : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetscapeDraftHeaderParser()
-		{
-			InitJNI();
-		}
 		protected NetscapeDraftHeaderParser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, _DEFAULT33312)) as org.apache.http.impl.cookie.NetscapeDraftHeaderParser;
 			}
 		}
-		private static void InitJNI()
+		static NetscapeDraftHeaderParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/NetscapeDraftHeaderParser"));
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._parseHeader33310 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, "parseHeader", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;");
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._NetscapeDraftHeaderParser33311 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, "<init>", "()V");
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._DEFAULT33312 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, "DEFAULT", "Lorg/apache/http/impl/cookie/NetscapeDraftHeaderParser;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

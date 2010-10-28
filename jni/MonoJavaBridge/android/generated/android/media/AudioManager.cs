@@ -4,10 +4,6 @@ namespace android.media
 	public partial class AudioManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AudioManager()
-		{
-			InitJNI();
-		}
 		protected AudioManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.media
 		internal sealed partial class OnAudioFocusChangeListener_ : java.lang.Object, OnAudioFocusChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnAudioFocusChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnAudioFocusChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioManager.OnAudioFocusChangeListener_.staticClass, global::android.media.AudioManager.OnAudioFocusChangeListener_._onAudioFocusChange7037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnAudioFocusChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.AudioManager.OnAudioFocusChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioManager$OnAudioFocusChangeListener"));
 				global::android.media.AudioManager.OnAudioFocusChangeListener_._onAudioFocusChange7037 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.OnAudioFocusChangeListener_.staticClass, "onAudioFocusChange", "(I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.media
 		internal partial class OnAudioFocusChangeListenerDelegateWrapper : java.lang.Object, OnAudioFocusChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnAudioFocusChangeListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnAudioFocusChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._OnAudioFocusChangeListenerDelegateWrapper7038);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnAudioFocusChangeListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioManager_OnAudioFocusChangeListenerDelegateWrapper"));
 				global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._OnAudioFocusChangeListenerDelegateWrapper7038 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnAudioFocusChangeListenerDelegateWrapper
@@ -982,7 +976,7 @@ namespace android.media
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static AudioManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioManager"));
@@ -1027,6 +1021,9 @@ namespace android.media
 			global::android.media.AudioManager._abandonAudioFocus7077 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.staticClass, "abandonAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I");
 			global::android.media.AudioManager._registerMediaButtonEventReceiver7078 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.staticClass, "registerMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V");
 			global::android.media.AudioManager._unregisterMediaButtonEventReceiver7079 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.staticClass, "unregisterMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

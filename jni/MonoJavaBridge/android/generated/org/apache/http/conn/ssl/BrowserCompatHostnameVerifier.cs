@@ -4,10 +4,6 @@ namespace org.apache.http.conn.ssl
 	public partial class BrowserCompatHostnameVerifier : org.apache.http.conn.ssl.AbstractVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BrowserCompatHostnameVerifier()
-		{
-			InitJNI();
-		}
 		protected BrowserCompatHostnameVerifier(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.conn.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._BrowserCompatHostnameVerifier32338);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BrowserCompatHostnameVerifier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/BrowserCompatHostnameVerifier"));
 			global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._toString32336 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;");
 			global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._verify32337 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
 			global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._BrowserCompatHostnameVerifier32338 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

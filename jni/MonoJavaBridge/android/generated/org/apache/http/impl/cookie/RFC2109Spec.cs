@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class RFC2109Spec : org.apache.http.impl.cookie.CookieSpecBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RFC2109Spec()
-		{
-			InitJNI();
-		}
 		protected RFC2109Spec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2109Spec.staticClass, global::org.apache.http.impl.cookie.RFC2109Spec._RFC2109Spec33333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RFC2109Spec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.RFC2109Spec.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/RFC2109Spec"));
@@ -115,6 +111,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.RFC2109Spec._formatCookieAsVer33331 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109Spec.staticClass, "formatCookieAsVer", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/cookie/Cookie;I)V");
 			global::org.apache.http.impl.cookie.RFC2109Spec._RFC2109Spec33332 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109Spec.staticClass, "<init>", "()V");
 			global::org.apache.http.impl.cookie.RFC2109Spec._RFC2109Spec33333 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109Spec.staticClass, "<init>", "([Ljava/lang/String;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

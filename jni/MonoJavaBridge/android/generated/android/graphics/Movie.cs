@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Movie : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Movie()
-		{
-			InitJNI();
-		}
 		protected Movie(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Movie.staticClass, global::android.graphics.Movie._decodeFile5374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Movie;
 		}
-		private static void InitJNI()
+		static Movie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Movie.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Movie"));
@@ -113,6 +109,9 @@ namespace android.graphics
 			global::android.graphics.Movie._decodeStream5372 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Movie.staticClass, "decodeStream", "(Ljava/io/InputStream;)Landroid/graphics/Movie;");
 			global::android.graphics.Movie._decodeByteArray5373 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Movie.staticClass, "decodeByteArray", "([BII)Landroid/graphics/Movie;");
 			global::android.graphics.Movie._decodeFile5374 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Movie.staticClass, "decodeFile", "(Ljava/lang/String;)Landroid/graphics/Movie;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

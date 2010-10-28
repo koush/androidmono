@@ -4,10 +4,6 @@ namespace org.apache.http.conn.@params
 	public sealed partial class ConnManagerParams : java.lang.Object, ConnManagerPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnManagerParams()
-		{
-			InitJNI();
-		}
 		internal ConnManagerParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,7 +57,7 @@ namespace org.apache.http.conn.@params
 				return 20;
 			}
 		}
-		private static void InitJNI()
+		static ConnManagerParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnManagerParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnManagerParams"));
@@ -72,6 +68,9 @@ namespace org.apache.http.conn.@params
 			global::org.apache.http.conn.@params.ConnManagerParams._getMaxConnectionsPerRoute32187 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxConnectionsPerRoute", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/conn/params/ConnPerRoute;");
 			global::org.apache.http.conn.@params.ConnManagerParams._getMaxTotalConnections32188 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxTotalConnections", "(Lorg/apache/http/params/HttpParams;)I");
 			global::org.apache.http.conn.@params.ConnManagerParams._ConnManagerParams32189 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

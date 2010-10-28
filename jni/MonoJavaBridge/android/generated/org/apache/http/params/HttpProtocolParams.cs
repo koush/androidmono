@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public sealed partial class HttpProtocolParams : java.lang.Object, CoreProtocolPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpProtocolParams()
-		{
-			InitJNI();
-		}
 		internal HttpProtocolParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getContentCharset33814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static HttpProtocolParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpProtocolParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpProtocolParams"));
@@ -85,6 +81,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.HttpProtocolParams._useExpectContinue33812 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "useExpectContinue", "(Lorg/apache/http/params/HttpParams;)Z");
 			global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33813 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getHttpElementCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
 			global::org.apache.http.@params.HttpProtocolParams._getContentCharset33814 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getContentCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

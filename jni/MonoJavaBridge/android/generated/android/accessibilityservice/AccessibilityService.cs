@@ -4,10 +4,6 @@ namespace android.accessibilityservice
 	public abstract partial class AccessibilityService : android.app.Service
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityService()
-		{
-			InitJNI();
-		}
 		protected AccessibilityService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace android.accessibilityservice
 				return "android.accessibilityservice.AccessibilityService";
 			}
 		}
-		private static void InitJNI()
+		static AccessibilityService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accessibilityservice.AccessibilityService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accessibilityservice/AccessibilityService"));
@@ -67,16 +63,15 @@ namespace android.accessibilityservice
 			global::android.accessibilityservice.AccessibilityService._onBind1241 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityService.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;");
 			global::android.accessibilityservice.AccessibilityService._AccessibilityService1242 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityService.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accessibilityservice.AccessibilityService))]
 	internal sealed partial class AccessibilityService_ : android.accessibilityservice.AccessibilityService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityService_()
-		{
-			InitJNI();
-		}
 		internal AccessibilityService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -98,12 +93,15 @@ namespace android.accessibilityservice
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accessibilityservice.AccessibilityService_.staticClass, global::android.accessibilityservice.AccessibilityService_._onInterrupt1245);
 		}
-		private static void InitJNI()
+		static AccessibilityService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accessibilityservice.AccessibilityService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accessibilityservice/AccessibilityService"));
 			global::android.accessibilityservice.AccessibilityService_._onAccessibilityEvent1244 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityService_.staticClass, "onAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V");
 			global::android.accessibilityservice.AccessibilityService_._onInterrupt1245 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityService_.staticClass, "onInterrupt", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

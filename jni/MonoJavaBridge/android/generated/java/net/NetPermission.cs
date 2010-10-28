@@ -4,10 +4,6 @@ namespace java.net
 	public sealed partial class NetPermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetPermission()
-		{
-			InitJNI();
-		}
 		internal NetPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.NetPermission.staticClass, global::java.net.NetPermission._NetPermission21630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NetPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.NetPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/NetPermission"));
 			global::java.net.NetPermission._NetPermission21629 = @__env.GetMethodIDNoThrow(global::java.net.NetPermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.net.NetPermission._NetPermission21630 = @__env.GetMethodIDNoThrow(global::java.net.NetPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

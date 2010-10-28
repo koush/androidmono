@@ -4,10 +4,6 @@ namespace android.app
 	public partial class UiModeManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UiModeManager()
-		{
-			InitJNI();
-		}
 		protected UiModeManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -157,7 +153,7 @@ namespace android.app
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static UiModeManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.UiModeManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/UiModeManager"));
@@ -170,6 +166,9 @@ namespace android.app
 			global::android.app.UiModeManager._ACTION_EXIT_CAR_MODE2188 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_EXIT_CAR_MODE", "Ljava/lang/String;");
 			global::android.app.UiModeManager._ACTION_ENTER_DESK_MODE2189 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_ENTER_DESK_MODE", "Ljava/lang/String;");
 			global::android.app.UiModeManager._ACTION_EXIT_DESK_MODE2190 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_EXIT_DESK_MODE", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

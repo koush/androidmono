@@ -4,10 +4,6 @@ namespace java.security
 	public partial class KeyRep : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyRep()
-		{
-			InitJNI();
-		}
 		protected KeyRep(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.security
 		public sealed partial class Type : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Type()
-			{
-				InitJNI();
-			}
 			internal Type(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace java.security
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _PRIVATE23062)) as java.security.KeyRep.Type;
 				}
 			}
-			private static void InitJNI()
+			static Type()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.security.KeyRep.Type.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyRep$Type"));
@@ -70,6 +62,9 @@ namespace java.security
 				global::java.security.KeyRep.Type._SECRET23060 = @__env.GetStaticFieldIDNoThrow(global::java.security.KeyRep.Type.staticClass, "SECRET", "Ljava/security/KeyRep$Type;");
 				global::java.security.KeyRep.Type._PUBLIC23061 = @__env.GetStaticFieldIDNoThrow(global::java.security.KeyRep.Type.staticClass, "PUBLIC", "Ljava/security/KeyRep$Type;");
 				global::java.security.KeyRep.Type._PRIVATE23062 = @__env.GetStaticFieldIDNoThrow(global::java.security.KeyRep.Type.staticClass, "PRIVATE", "Ljava/security/KeyRep$Type;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _readResolve23063;
@@ -88,12 +83,15 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyRep.staticClass, global::java.security.KeyRep._KeyRep23064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyRep()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyRep.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyRep"));
 			global::java.security.KeyRep._readResolve23063 = @__env.GetMethodIDNoThrow(global::java.security.KeyRep.staticClass, "readResolve", "()Ljava/lang/Object;");
 			global::java.security.KeyRep._KeyRep23064 = @__env.GetMethodIDNoThrow(global::java.security.KeyRep.staticClass, "<init>", "(Ljava/security/KeyRep$Type;Ljava/lang/String;Ljava/lang/String;[B)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

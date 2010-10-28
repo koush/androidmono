@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class InputStream : java.lang.Object, Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputStream()
-		{
-			InitJNI();
-		}
 		protected InputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -92,7 +88,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InputStream.staticClass, global::java.io.InputStream._InputStream19103);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InputStream"));
@@ -107,16 +103,15 @@ namespace java.io
 			global::java.io.InputStream._markSupported19102 = @__env.GetMethodIDNoThrow(global::java.io.InputStream.staticClass, "markSupported", "()Z");
 			global::java.io.InputStream._InputStream19103 = @__env.GetMethodIDNoThrow(global::java.io.InputStream.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.InputStream))]
 	internal sealed partial class InputStream_ : java.io.InputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputStream_()
-		{
-			InitJNI();
-		}
 		internal InputStream_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,11 +124,14 @@ namespace java.io
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.InputStream_.staticClass, global::java.io.InputStream_._read19104);
 		}
-		private static void InitJNI()
+		static InputStream_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InputStream_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InputStream"));
 			global::java.io.InputStream_._read19104 = @__env.GetMethodIDNoThrow(global::java.io.InputStream_.staticClass, "read", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

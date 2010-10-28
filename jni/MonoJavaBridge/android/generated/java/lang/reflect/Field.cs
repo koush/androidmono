@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public sealed partial class Field : java.lang.reflect.AccessibleObject, Member
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Field()
-		{
-			InitJNI();
-		}
 		internal Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -332,7 +328,7 @@ namespace java.lang.reflect
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setDouble21080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Field()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Field"));
@@ -367,6 +363,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Field._setLong21078 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Field.staticClass, "setLong", "(Ljava/lang/Object;J)V");
 			global::java.lang.reflect.Field._setFloat21079 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Field.staticClass, "setFloat", "(Ljava/lang/Object;F)V");
 			global::java.lang.reflect.Field._setDouble21080 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Field.staticClass, "setDouble", "(Ljava/lang/Object;D)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

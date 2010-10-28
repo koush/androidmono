@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class EditTextPreference : android.preference.DialogPreference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EditTextPreference()
-		{
-			InitJNI();
-		}
 		protected EditTextPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,7 +145,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference10291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EditTextPreference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.EditTextPreference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/EditTextPreference"));
@@ -167,6 +163,9 @@ namespace android.preference
 			global::android.preference.EditTextPreference._EditTextPreference10289 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.preference.EditTextPreference._EditTextPreference10290 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.EditTextPreference._EditTextPreference10291 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

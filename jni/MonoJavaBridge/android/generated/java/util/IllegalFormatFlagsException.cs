@@ -4,10 +4,6 @@ namespace java.util
 	public partial class IllegalFormatFlagsException : java.util.IllegalFormatException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IllegalFormatFlagsException()
-		{
-			InitJNI();
-		}
 		protected IllegalFormatFlagsException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatFlagsException.staticClass, global::java.util.IllegalFormatFlagsException._IllegalFormatFlagsException26321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IllegalFormatFlagsException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatFlagsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatFlagsException"));
 			global::java.util.IllegalFormatFlagsException._getMessage26319 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;");
 			global::java.util.IllegalFormatFlagsException._getFlags26320 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;");
 			global::java.util.IllegalFormatFlagsException._IllegalFormatFlagsException26321 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatFlagsException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

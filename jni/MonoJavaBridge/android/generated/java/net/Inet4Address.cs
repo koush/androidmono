@@ -4,10 +4,6 @@ namespace java.net
 	public sealed partial class Inet4Address : java.net.InetAddress
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Inet4Address()
-		{
-			InitJNI();
-		}
 		internal Inet4Address(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace java.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Inet4Address.staticClass, global::java.net.Inet4Address._isMCOrgLocal21542);
 		}
-		private static void InitJNI()
+		static Inet4Address()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Inet4Address.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Inet4Address"));
@@ -169,6 +165,9 @@ namespace java.net
 			global::java.net.Inet4Address._isMCLinkLocal21540 = @__env.GetMethodIDNoThrow(global::java.net.Inet4Address.staticClass, "isMCLinkLocal", "()Z");
 			global::java.net.Inet4Address._isMCSiteLocal21541 = @__env.GetMethodIDNoThrow(global::java.net.Inet4Address.staticClass, "isMCSiteLocal", "()Z");
 			global::java.net.Inet4Address._isMCOrgLocal21542 = @__env.GetMethodIDNoThrow(global::java.net.Inet4Address.staticClass, "isMCOrgLocal", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

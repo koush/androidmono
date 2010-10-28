@@ -27,10 +27,6 @@ namespace android.widget
 	internal sealed partial class ExpandableListAdapter_ : java.lang.Object, ExpandableListAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExpandableListAdapter_()
-		{
-			InitJNI();
-		}
 		internal ExpandableListAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.ExpandableListAdapter_.staticClass, global::android.widget.ExpandableListAdapter_._getCombinedGroupId17021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ExpandableListAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ExpandableListAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListAdapter"));
@@ -218,6 +214,9 @@ namespace android.widget
 			global::android.widget.ExpandableListAdapter_._onGroupCollapsed17019 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListAdapter_.staticClass, "onGroupCollapsed", "(I)V");
 			global::android.widget.ExpandableListAdapter_._getCombinedChildId17020 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListAdapter_.staticClass, "getCombinedChildId", "(JJ)J");
 			global::android.widget.ExpandableListAdapter_._getCombinedGroupId17021 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListAdapter_.staticClass, "getCombinedGroupId", "(J)J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class Context : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Context()
-		{
-			InitJNI();
-		}
 		protected Context(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -461,7 +457,7 @@ namespace android.content
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static Context()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.Context.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Context"));
@@ -545,16 +541,15 @@ namespace android.content
 			global::android.content.Context._obtainStyledAttributes2888 = @__env.GetMethodIDNoThrow(global::android.content.Context.staticClass, "obtainStyledAttributes", "([I)Landroid/content/res/TypedArray;");
 			global::android.content.Context._Context2889 = @__env.GetMethodIDNoThrow(global::android.content.Context.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.Context))]
 	internal sealed partial class Context_ : android.content.Context
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Context_()
-		{
-			InitJNI();
-		}
 		internal Context_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1192,7 +1187,7 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Context_.staticClass, global::android.content.Context_._createPackageContext2992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.Context;
 		}
-		private static void InitJNI()
+		static Context_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.Context_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Context"));
@@ -1266,6 +1261,9 @@ namespace android.content
 			global::android.content.Context_._enforceCallingUriPermission2990 = @__env.GetMethodIDNoThrow(global::android.content.Context_.staticClass, "enforceCallingUriPermission", "(Landroid/net/Uri;ILjava/lang/String;)V");
 			global::android.content.Context_._enforceCallingOrSelfUriPermission2991 = @__env.GetMethodIDNoThrow(global::android.content.Context_.staticClass, "enforceCallingOrSelfUriPermission", "(Landroid/net/Uri;ILjava/lang/String;)V");
 			global::android.content.Context_._createPackageContext2992 = @__env.GetMethodIDNoThrow(global::android.content.Context_.staticClass, "createPackageContext", "(Ljava/lang/String;I)Landroid/content/Context;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

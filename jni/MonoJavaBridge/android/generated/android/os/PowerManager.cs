@@ -4,10 +4,6 @@ namespace android.os
 	public partial class PowerManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PowerManager()
-		{
-			InitJNI();
-		}
 		protected PowerManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.os
 		public partial class WakeLock : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WakeLock()
-			{
-				InitJNI();
-			}
 			protected WakeLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -92,7 +84,7 @@ namespace android.os
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._isHeld10135);
 			}
-			private static void InitJNI()
+			static WakeLock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.PowerManager.WakeLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PowerManager$WakeLock"));
@@ -103,6 +95,9 @@ namespace android.os
 				global::android.os.PowerManager.WakeLock._release10133 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "release", "()V");
 				global::android.os.PowerManager.WakeLock._setReferenceCounted10134 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "setReferenceCounted", "(Z)V");
 				global::android.os.PowerManager.WakeLock._isHeld10135 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "isHeld", "()Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _newWakeLock10136;
@@ -192,7 +187,7 @@ namespace android.os
 				return 536870912;
 			}
 		}
-		private static void InitJNI()
+		static PowerManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.PowerManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PowerManager"));
@@ -201,6 +196,9 @@ namespace android.os
 			global::android.os.PowerManager._goToSleep10138 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "goToSleep", "(J)V");
 			global::android.os.PowerManager._isScreenOn10139 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "isScreenOn", "()Z");
 			global::android.os.PowerManager._reboot10140 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "reboot", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

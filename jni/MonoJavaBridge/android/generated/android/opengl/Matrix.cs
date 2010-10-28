@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class Matrix : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Matrix()
-		{
-			InitJNI();
-		}
 		protected Matrix(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -120,7 +116,7 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.Matrix.staticClass, global::android.opengl.Matrix._Matrix9489);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Matrix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.Matrix.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/Matrix"));
@@ -142,6 +138,9 @@ namespace android.opengl
 			global::android.opengl.Matrix._setRotateEulerM9487 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Matrix.staticClass, "setRotateEulerM", "([FIFFF)V");
 			global::android.opengl.Matrix._setLookAtM9488 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Matrix.staticClass, "setLookAtM", "([FIFFFFFFFFF)V");
 			global::android.opengl.Matrix._Matrix9489 = @__env.GetMethodIDNoThrow(global::android.opengl.Matrix.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

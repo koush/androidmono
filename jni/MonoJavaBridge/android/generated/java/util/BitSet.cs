@@ -4,10 +4,6 @@ namespace java.util
 	public partial class BitSet : java.lang.Object, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BitSet()
-		{
-			InitJNI();
-		}
 		protected BitSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -259,7 +255,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.BitSet.staticClass, global::java.util.BitSet._BitSet25903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BitSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.BitSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/BitSet"));
@@ -291,6 +287,9 @@ namespace java.util
 			global::java.util.BitSet._andNot25901 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "andNot", "(Ljava/util/BitSet;)V");
 			global::java.util.BitSet._BitSet25902 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "()V");
 			global::java.util.BitSet._BitSet25903 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.util
 	public partial class VersionInfo : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VersionInfo()
-		{
-			InitJNI();
-		}
 		protected VersionInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -160,7 +156,7 @@ namespace org.apache.http.util
 				return "info.timestamp";
 			}
 		}
-		private static void InitJNI()
+		static VersionInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.VersionInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/VersionInfo"));
@@ -174,6 +170,9 @@ namespace org.apache.http.util
 			global::org.apache.http.util.VersionInfo._loadVersionInfo34029 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "loadVersionInfo", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Lorg/apache/http/util/VersionInfo;");
 			global::org.apache.http.util.VersionInfo._fromMap34030 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "fromMap", "(Ljava/lang/String;Ljava/util/Map;Ljava/lang/ClassLoader;)Lorg/apache/http/util/VersionInfo;");
 			global::org.apache.http.util.VersionInfo._VersionInfo34031 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

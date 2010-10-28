@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class PackageInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PackageInfo()
-		{
-			InitJNI();
-		}
 		protected PackageInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -258,7 +254,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PackageInfo.staticClass, _CREATOR3774)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PackageInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageInfo"));
@@ -284,6 +280,9 @@ namespace android.content.pm
 			global::android.content.pm.PackageInfo._configPreferences3772 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "configPreferences", "[Landroid/content/pm/ConfigurationInfo;");
 			global::android.content.pm.PackageInfo._reqFeatures3773 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "reqFeatures", "[Landroid/content/pm/FeatureInfo;");
 			global::android.content.pm.PackageInfo._CREATOR3774 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

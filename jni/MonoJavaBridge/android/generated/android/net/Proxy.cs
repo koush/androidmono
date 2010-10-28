@@ -4,10 +4,6 @@ namespace android.net
 	public sealed partial class Proxy : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Proxy()
-		{
-			InitJNI();
-		}
 		internal Proxy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.net
 				return "android.intent.action.PROXY_CHANGE";
 			}
 		}
-		private static void InitJNI()
+		static Proxy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Proxy"));
@@ -72,6 +68,9 @@ namespace android.net
 			global::android.net.Proxy._getHost7749 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getHost", "(Landroid/content/Context;)Ljava/lang/String;");
 			global::android.net.Proxy._getDefaultHost7750 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultHost", "()Ljava/lang/String;");
 			global::android.net.Proxy._Proxy7751 = @__env.GetMethodIDNoThrow(global::android.net.Proxy.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

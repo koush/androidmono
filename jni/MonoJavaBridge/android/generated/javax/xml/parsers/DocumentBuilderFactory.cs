@@ -4,10 +4,6 @@ namespace javax.xml.parsers
 	public abstract partial class DocumentBuilderFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentBuilderFactory()
-		{
-			InitJNI();
-		}
 		protected DocumentBuilderFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -184,7 +180,7 @@ namespace javax.xml.parsers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._DocumentBuilderFactory30877);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DocumentBuilderFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.DocumentBuilderFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/DocumentBuilderFactory"));
@@ -213,16 +209,15 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.DocumentBuilderFactory._setXIncludeAware30876 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setXIncludeAware", "(Z)V");
 			global::javax.xml.parsers.DocumentBuilderFactory._DocumentBuilderFactory30877 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.parsers.DocumentBuilderFactory))]
 	internal sealed partial class DocumentBuilderFactory_ : javax.xml.parsers.DocumentBuilderFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentBuilderFactory_()
-		{
-			InitJNI();
-		}
 		internal DocumentBuilderFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -271,7 +266,7 @@ namespace javax.xml.parsers
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882)) as javax.xml.parsers.DocumentBuilder;
 		}
-		private static void InitJNI()
+		static DocumentBuilderFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.DocumentBuilderFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/DocumentBuilderFactory"));
@@ -280,6 +275,9 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.DocumentBuilderFactory_._getFeature30880 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
 			global::javax.xml.parsers.DocumentBuilderFactory_._setAttribute30881 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "newDocumentBuilder", "()Ljavax/xml/parsers/DocumentBuilder;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

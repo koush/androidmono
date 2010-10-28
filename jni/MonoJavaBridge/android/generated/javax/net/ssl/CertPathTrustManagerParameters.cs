@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class CertPathTrustManagerParameters : java.lang.Object, ManagerFactoryParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertPathTrustManagerParameters()
-		{
-			InitJNI();
-		}
 		protected CertPathTrustManagerParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.CertPathTrustManagerParameters.staticClass, global::javax.net.ssl.CertPathTrustManagerParameters._CertPathTrustManagerParameters29830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertPathTrustManagerParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.CertPathTrustManagerParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/CertPathTrustManagerParameters"));
 			global::javax.net.ssl.CertPathTrustManagerParameters._getParameters29829 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.CertPathTrustManagerParameters.staticClass, "getParameters", "()Ljava/security/cert/CertPathParameters;");
 			global::javax.net.ssl.CertPathTrustManagerParameters._CertPathTrustManagerParameters29830 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.CertPathTrustManagerParameters.staticClass, "<init>", "(Ljava/security/cert/CertPathParameters;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

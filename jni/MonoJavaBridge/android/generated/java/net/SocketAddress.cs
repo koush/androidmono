@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class SocketAddress : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketAddress()
-		{
-			InitJNI();
-		}
 		protected SocketAddress(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._SocketAddress21773);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketAddress"));
 			global::java.net.SocketAddress._SocketAddress21773 = @__env.GetMethodIDNoThrow(global::java.net.SocketAddress.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -30,17 +29,16 @@ namespace java.net
 	internal sealed partial class SocketAddress_ : java.net.SocketAddress
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketAddress_()
-		{
-			InitJNI();
-		}
 		internal SocketAddress_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static SocketAddress_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketAddress_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketAddress"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

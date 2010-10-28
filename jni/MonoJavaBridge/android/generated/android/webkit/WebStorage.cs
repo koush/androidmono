@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class WebStorage : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebStorage()
-		{
-			InitJNI();
-		}
 		internal WebStorage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.webkit
 		internal sealed partial class QuotaUpdater_ : java.lang.Object, QuotaUpdater
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static QuotaUpdater_()
-			{
-				InitJNI();
-			}
 			internal QuotaUpdater_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebStorage.QuotaUpdater_.staticClass, global::android.webkit.WebStorage.QuotaUpdater_._updateQuota16286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static QuotaUpdater_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebStorage.QuotaUpdater_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage$QuotaUpdater"));
 				global::android.webkit.WebStorage.QuotaUpdater_._updateQuota16286 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.QuotaUpdater_.staticClass, "updateQuota", "(J)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.webkit
 		internal partial class QuotaUpdaterDelegateWrapper : java.lang.Object, QuotaUpdater
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static QuotaUpdaterDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected QuotaUpdaterDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._QuotaUpdaterDelegateWrapper16287);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static QuotaUpdaterDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage_QuotaUpdaterDelegateWrapper"));
 				global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._QuotaUpdaterDelegateWrapper16287 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class QuotaUpdaterDelegateWrapper
@@ -172,7 +166,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._WebStorage16295);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static WebStorage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebStorage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage"));
@@ -184,6 +178,9 @@ namespace android.webkit
 			global::android.webkit.WebStorage._deleteOrigin16293 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "deleteOrigin", "(Ljava/lang/String;)V");
 			global::android.webkit.WebStorage._deleteAllData16294 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "deleteAllData", "()V");
 			global::android.webkit.WebStorage._WebStorage16295 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

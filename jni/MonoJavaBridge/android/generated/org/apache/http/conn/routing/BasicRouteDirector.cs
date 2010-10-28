@@ -4,10 +4,6 @@ namespace org.apache.http.conn.routing
 	public partial class BasicRouteDirector : java.lang.Object, HttpRouteDirector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicRouteDirector()
-		{
-			InitJNI();
-		}
 		protected BasicRouteDirector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace org.apache.http.conn.routing
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.routing.BasicRouteDirector.staticClass, global::org.apache.http.conn.routing.BasicRouteDirector._BasicRouteDirector32219);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicRouteDirector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.BasicRouteDirector.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/BasicRouteDirector"));
@@ -63,6 +59,9 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.BasicRouteDirector._directStep32217 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.BasicRouteDirector.staticClass, "directStep", "(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I");
 			global::org.apache.http.conn.routing.BasicRouteDirector._proxiedStep32218 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.BasicRouteDirector.staticClass, "proxiedStep", "(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I");
 			global::org.apache.http.conn.routing.BasicRouteDirector._BasicRouteDirector32219 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.BasicRouteDirector.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

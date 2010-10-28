@@ -4,10 +4,6 @@ namespace java.security
 	public partial class SecureClassLoader : java.lang.ClassLoader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecureClassLoader()
-		{
-			InitJNI();
-		}
 		protected SecureClassLoader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureClassLoader.staticClass, global::java.security.SecureClassLoader._SecureClassLoader23303);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecureClassLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SecureClassLoader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SecureClassLoader"));
@@ -61,6 +57,9 @@ namespace java.security
 			global::java.security.SecureClassLoader._getPermissions23301 = @__env.GetMethodIDNoThrow(global::java.security.SecureClassLoader.staticClass, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;");
 			global::java.security.SecureClassLoader._SecureClassLoader23302 = @__env.GetMethodIDNoThrow(global::java.security.SecureClassLoader.staticClass, "<init>", "(Ljava/lang/ClassLoader;)V");
 			global::java.security.SecureClassLoader._SecureClassLoader23303 = @__env.GetMethodIDNoThrow(global::java.security.SecureClassLoader.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

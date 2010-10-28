@@ -10,10 +10,6 @@ namespace android.text.style
 	internal sealed partial class LeadingMarginSpan_LeadingMarginSpan2_ : java.lang.Object, LeadingMarginSpan_LeadingMarginSpan2
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LeadingMarginSpan_LeadingMarginSpan2_()
-		{
-			InitJNI();
-		}
 		internal LeadingMarginSpan_LeadingMarginSpan2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -44,13 +40,16 @@ namespace android.text.style
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._drawLeadingMargin13510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11));
 		}
-		private static void InitJNI()
+		static LeadingMarginSpan_LeadingMarginSpan2_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/LeadingMarginSpan$LeadingMarginSpan2"));
 			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMarginLineCount13508 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "getLeadingMarginLineCount", "()I");
 			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMargin13509 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "getLeadingMargin", "(Z)I");
 			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._drawLeadingMargin13510 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.app.backup
 	public partial class BackupManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackupManager()
-		{
-			InitJNI();
-		}
 		protected BackupManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -42,7 +38,7 @@ namespace android.app.backup
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._BackupManager2327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BackupManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.BackupManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/BackupManager"));
@@ -50,6 +46,9 @@ namespace android.app.backup
 			global::android.app.backup.BackupManager._dataChanged2325 = @__env.GetStaticMethodIDNoThrow(global::android.app.backup.BackupManager.staticClass, "dataChanged", "(Ljava/lang/String;)V");
 			global::android.app.backup.BackupManager._requestRestore2326 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupManager.staticClass, "requestRestore", "(Landroid/app/backup/RestoreObserver;)I");
 			global::android.app.backup.BackupManager._BackupManager2327 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupManager.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

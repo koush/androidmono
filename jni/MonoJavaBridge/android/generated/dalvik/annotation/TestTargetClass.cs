@@ -10,10 +10,6 @@ namespace dalvik.annotation
 	internal sealed partial class TestTargetClass_ : java.lang.Object, TestTargetClass
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestTargetClass_()
-		{
-			InitJNI();
-		}
 		internal TestTargetClass_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace dalvik.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTargetClass_.staticClass, global::dalvik.annotation.TestTargetClass_._annotationType18348)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static TestTargetClass_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.annotation.TestTargetClass_.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/annotation/TestTargetClass"));
@@ -71,6 +67,9 @@ namespace dalvik.annotation
 			global::dalvik.annotation.TestTargetClass_._toString18346 = @__env.GetMethodIDNoThrow(global::dalvik.annotation.TestTargetClass_.staticClass, "toString", "()Ljava/lang/String;");
 			global::dalvik.annotation.TestTargetClass_._hashCode18347 = @__env.GetMethodIDNoThrow(global::dalvik.annotation.TestTargetClass_.staticClass, "hashCode", "()I");
 			global::dalvik.annotation.TestTargetClass_._annotationType18348 = @__env.GetMethodIDNoThrow(global::dalvik.annotation.TestTargetClass_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

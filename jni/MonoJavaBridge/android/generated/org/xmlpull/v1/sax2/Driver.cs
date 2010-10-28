@@ -4,10 +4,6 @@ namespace org.xmlpull.v1.sax2
 	public partial class Driver : java.lang.Object, org.xml.sax.Locator, org.xml.sax.XMLReader, org.xml.sax.Attributes
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Driver()
-		{
-			InitJNI();
-		}
 		protected Driver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -392,7 +388,7 @@ namespace org.xmlpull.v1.sax2
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._Driver35441);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Driver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.sax2.Driver.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/sax2/Driver"));
@@ -430,6 +426,9 @@ namespace org.xmlpull.v1.sax2
 			global::org.xmlpull.v1.sax2.Driver._parseSubTree35439 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.sax2.Driver.staticClass, "parseSubTree", "(Lorg/xmlpull/v1/XmlPullParser;)V");
 			global::org.xmlpull.v1.sax2.Driver._Driver35440 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.sax2.Driver.staticClass, "<init>", "(Lorg/xmlpull/v1/XmlPullParser;)V");
 			global::org.xmlpull.v1.sax2.Driver._Driver35441 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.sax2.Driver.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -13,10 +13,6 @@ namespace javax.xml.transform
 	internal sealed partial class SourceLocator_ : java.lang.Object, SourceLocator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SourceLocator_()
-		{
-			InitJNI();
-		}
 		internal SourceLocator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace javax.xml.transform
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_.staticClass, global::javax.xml.transform.SourceLocator_._getColumnNumber30956);
 		}
-		private static void InitJNI()
+		static SourceLocator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.SourceLocator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/SourceLocator"));
@@ -64,6 +60,9 @@ namespace javax.xml.transform
 			global::javax.xml.transform.SourceLocator_._getPublicId30954 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getPublicId", "()Ljava/lang/String;");
 			global::javax.xml.transform.SourceLocator_._getSystemId30955 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getSystemId", "()Ljava/lang/String;");
 			global::javax.xml.transform.SourceLocator_._getColumnNumber30956 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getColumnNumber", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

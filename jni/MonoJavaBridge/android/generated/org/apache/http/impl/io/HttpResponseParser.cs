@@ -4,10 +4,6 @@ namespace org.apache.http.impl.io
 	public partial class HttpResponseParser : org.apache.http.impl.io.AbstractMessageParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpResponseParser()
-		{
-			InitJNI();
-		}
 		protected HttpResponseParser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.HttpResponseParser.staticClass, global::org.apache.http.impl.io.HttpResponseParser._HttpResponseParser33445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpResponseParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.HttpResponseParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/HttpResponseParser"));
 			global::org.apache.http.impl.io.HttpResponseParser._parseHead33444 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpResponseParser.staticClass, "parseHead", "(Lorg/apache/http/io/SessionInputBuffer;)Lorg/apache/http/HttpMessage;");
 			global::org.apache.http.impl.io.HttpResponseParser._HttpResponseParser33445 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpResponseParser.staticClass, "<init>", "(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/HttpResponseFactory;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

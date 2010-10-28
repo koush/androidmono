@@ -13,10 +13,6 @@ namespace org.apache.http.message
 	internal sealed partial class HeaderValueParser_ : java.lang.Object, HeaderValueParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeaderValueParser_()
-		{
-			InitJNI();
-		}
 		internal HeaderValueParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueParser_.staticClass, global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.NameValuePair;
 		}
-		private static void InitJNI()
+		static HeaderValueParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.HeaderValueParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/HeaderValueParser"));
@@ -64,6 +60,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.HeaderValueParser_._parseHeaderElement33695 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseHeaderElement", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;");
 			global::org.apache.http.message.HeaderValueParser_._parseParameters33696 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseParameters", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/NameValuePair;");
 			global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseNameValuePair", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/NameValuePair;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

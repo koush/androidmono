@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Shader : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Shader()
-		{
-			InitJNI();
-		}
 		protected Shader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class TileMode : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static TileMode()
-			{
-				InitJNI();
-			}
 			internal TileMode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _REPEAT5798)) as android.graphics.Shader.TileMode;
 				}
 			}
-			private static void InitJNI()
+			static TileMode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Shader.TileMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Shader$TileMode"));
@@ -70,6 +62,9 @@ namespace android.graphics
 				global::android.graphics.Shader.TileMode._CLAMP5796 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "CLAMP", "Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._MIRROR5797 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "MIRROR", "Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._REPEAT5798 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "REPEAT", "Landroid/graphics/Shader$TileMode;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5799;
@@ -113,7 +108,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Shader.staticClass, global::android.graphics.Shader._Shader5802);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Shader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Shader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Shader"));
@@ -121,6 +116,9 @@ namespace android.graphics
 			global::android.graphics.Shader._getLocalMatrix5800 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "getLocalMatrix", "(Landroid/graphics/Matrix;)Z");
 			global::android.graphics.Shader._setLocalMatrix5801 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "setLocalMatrix", "(Landroid/graphics/Matrix;)V");
 			global::android.graphics.Shader._Shader5802 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class DHPrivateKeySpec : java.lang.Object, java.security.spec.KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DHPrivateKeySpec()
-		{
-			InitJNI();
-		}
 		protected DHPrivateKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHPrivateKeySpec.staticClass, global::javax.crypto.spec.DHPrivateKeySpec._DHPrivateKeySpec28778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DHPrivateKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.DHPrivateKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/DHPrivateKeySpec"));
@@ -74,6 +70,9 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.DHPrivateKeySpec._getG28776 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPrivateKeySpec.staticClass, "getG", "()Ljava/math/BigInteger;");
 			global::javax.crypto.spec.DHPrivateKeySpec._getX28777 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPrivateKeySpec.staticClass, "getX", "()Ljava/math/BigInteger;");
 			global::javax.crypto.spec.DHPrivateKeySpec._DHPrivateKeySpec28778 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPrivateKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

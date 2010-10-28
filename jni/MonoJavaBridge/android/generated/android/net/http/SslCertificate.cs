@@ -4,10 +4,6 @@ namespace android.net.http
 	public partial class SslCertificate : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SslCertificate()
-		{
-			InitJNI();
-		}
 		protected SslCertificate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net.http
 		public partial class DName : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DName()
-			{
-				InitJNI();
-			}
 			protected DName(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -86,7 +78,7 @@ namespace android.net.http
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._DName7948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static DName()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.http.SslCertificate.DName.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/SslCertificate$DName"));
@@ -95,6 +87,9 @@ namespace android.net.http
 				global::android.net.http.SslCertificate.DName._getOName7946 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.DName.staticClass, "getOName", "()Ljava/lang/String;");
 				global::android.net.http.SslCertificate.DName._getUName7947 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.DName.staticClass, "getUName", "()Ljava/lang/String;");
 				global::android.net.http.SslCertificate.DName._DName7948 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.DName.staticClass, "<init>", "(Landroid/net/http/SslCertificate;Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7949;
@@ -235,7 +230,7 @@ namespace android.net.http
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._SslCertificate7960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SslCertificate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.http.SslCertificate.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/SslCertificate"));
@@ -251,6 +246,9 @@ namespace android.net.http
 			global::android.net.http.SslCertificate._SslCertificate7958 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::android.net.http.SslCertificate._SslCertificate7959 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)V");
 			global::android.net.http.SslCertificate._SslCertificate7960 = @__env.GetMethodIDNoThrow(global::android.net.http.SslCertificate.staticClass, "<init>", "(Ljava/security/cert/X509Certificate;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

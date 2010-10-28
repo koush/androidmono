@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class Dictionary : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Dictionary()
-		{
-			InitJNI();
-		}
 		protected Dictionary(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,7 +28,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Dictionary.staticClass, global::java.util.Dictionary._Dictionary26128);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Dictionary()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Dictionary.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Dictionary"));
@@ -45,16 +41,15 @@ namespace java.util
 			global::java.util.Dictionary._keys26127 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary.staticClass, "keys", "()Ljava/util/Enumeration;");
 			global::java.util.Dictionary._Dictionary26128 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.Dictionary))]
 	internal sealed partial class Dictionary_ : java.util.Dictionary
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Dictionary_()
-		{
-			InitJNI();
-		}
 		internal Dictionary_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,7 +116,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._keys26135)) as java.util.Enumeration;
 		}
-		private static void InitJNI()
+		static Dictionary_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Dictionary_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Dictionary"));
@@ -132,6 +127,9 @@ namespace java.util
 			global::java.util.Dictionary_._remove26133 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.util.Dictionary_._elements26134 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "elements", "()Ljava/util/Enumeration;");
 			global::java.util.Dictionary_._keys26135 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "keys", "()Ljava/util/Enumeration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

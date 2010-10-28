@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class ECPoint : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECPoint()
-		{
-			InitJNI();
-		}
 		protected ECPoint(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.spec.ECPoint.staticClass, _POINT_INFINITY24005)) as java.security.spec.ECPoint;
 			}
 		}
-		private static void InitJNI()
+		static ECPoint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECPoint.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECPoint"));
@@ -87,6 +83,9 @@ namespace java.security.spec
 			global::java.security.spec.ECPoint._getAffineY24003 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "getAffineY", "()Ljava/math/BigInteger;");
 			global::java.security.spec.ECPoint._ECPoint24004 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 			global::java.security.spec.ECPoint._POINT_INFINITY24005 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.ECPoint.staticClass, "POINT_INFINITY", "Ljava/security/spec/ECPoint;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

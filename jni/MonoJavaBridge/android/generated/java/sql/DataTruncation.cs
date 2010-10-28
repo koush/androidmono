@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class DataTruncation : java.sql.SQLWarning
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataTruncation()
-		{
-			InitJNI();
-		}
 		protected DataTruncation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -105,7 +101,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._DataTruncation24376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DataTruncation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DataTruncation.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DataTruncation"));
@@ -116,6 +112,9 @@ namespace java.sql
 			global::java.sql.DataTruncation._getTransferSize24374 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getTransferSize", "()I");
 			global::java.sql.DataTruncation._DataTruncation24375 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZII)V");
 			global::java.sql.DataTruncation._DataTruncation24376 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZIILjava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

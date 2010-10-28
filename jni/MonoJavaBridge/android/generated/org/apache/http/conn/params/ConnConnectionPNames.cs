@@ -9,17 +9,16 @@ namespace org.apache.http.conn.@params
 	internal sealed partial class ConnConnectionPNames_ : java.lang.Object, ConnConnectionPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnConnectionPNames_()
-		{
-			InitJNI();
-		}
 		internal ConnConnectionPNames_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ConnConnectionPNames_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnConnectionPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnConnectionPNames"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

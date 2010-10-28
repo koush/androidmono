@@ -4,10 +4,6 @@ namespace android.graphics.drawable.shapes
 	public abstract partial class Shape : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Shape()
-		{
-			InitJNI();
-		}
 		protected Shape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -74,7 +70,7 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._Shape6264);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Shape()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.Shape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/Shape"));
@@ -87,16 +83,15 @@ namespace android.graphics.drawable.shapes
 			global::android.graphics.drawable.shapes.Shape._onResize6263 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.Shape.staticClass, "onResize", "(FF)V");
 			global::android.graphics.drawable.shapes.Shape._Shape6264 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.Shape.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.graphics.drawable.shapes.Shape))]
 	internal sealed partial class Shape_ : android.graphics.drawable.shapes.Shape
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Shape_()
-		{
-			InitJNI();
-		}
 		internal Shape_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,11 +104,14 @@ namespace android.graphics.drawable.shapes
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.Shape_.staticClass, global::android.graphics.drawable.shapes.Shape_._draw6265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Shape_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.Shape_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/Shape"));
 			global::android.graphics.drawable.shapes.Shape_._draw6265 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.Shape_.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

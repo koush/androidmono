@@ -9,10 +9,6 @@ namespace org.w3c.dom
 	internal sealed partial class DocumentFragment_ : java.lang.Object, DocumentFragment
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentFragment_()
-		{
-			InitJNI();
-		}
 		internal DocumentFragment_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -349,7 +345,7 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DocumentFragment_.staticClass, global::org.w3c.dom.DocumentFragment_._isEqualNode34490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static DocumentFragment_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DocumentFragment_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DocumentFragment"));
@@ -390,6 +386,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DocumentFragment_._isDefaultNamespace34488 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DocumentFragment_.staticClass, "isDefaultNamespace", "(Ljava/lang/String;)Z");
 			global::org.w3c.dom.DocumentFragment_._lookupNamespaceURI34489 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DocumentFragment_.staticClass, "lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::org.w3c.dom.DocumentFragment_._isEqualNode34490 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DocumentFragment_.staticClass, "isEqualNode", "(Lorg/w3c/dom/Node;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

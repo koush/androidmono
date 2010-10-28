@@ -11,10 +11,6 @@ namespace org.xml.sax.ext
 	internal sealed partial class EntityResolver2_ : java.lang.Object, EntityResolver2
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityResolver2_()
-		{
-			InitJNI();
-		}
 		internal EntityResolver2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,13 +41,16 @@ namespace org.xml.sax.ext
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.EntityResolver2_.staticClass, global::org.xml.sax.ext.EntityResolver2_._resolveEntity35129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 		}
-		private static void InitJNI()
+		static EntityResolver2_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.EntityResolver2_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/EntityResolver2"));
 			global::org.xml.sax.ext.EntityResolver2_._resolveEntity35127 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.ext.EntityResolver2_._getExternalSubset35128 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.EntityResolver2_.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.ext.EntityResolver2_._resolveEntity35129 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

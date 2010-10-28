@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class TimeZone : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimeZone()
-		{
-			InitJNI();
-		}
 		protected TimeZone(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -162,7 +158,7 @@ namespace java.util
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static TimeZone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimeZone.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimeZone"));
@@ -188,16 +184,15 @@ namespace java.util
 			global::java.util.TimeZone._getAvailableIDs26853 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getAvailableIDs", "(I)[Ljava/lang/String;");
 			global::java.util.TimeZone._TimeZone26854 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.TimeZone))]
 	internal sealed partial class TimeZone_ : java.util.TimeZone
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimeZone_()
-		{
-			InitJNI();
-		}
 		internal TimeZone_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -246,7 +241,7 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._inDaylightTime26861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TimeZone_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimeZone_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimeZone"));
@@ -255,6 +250,9 @@ namespace java.util
 			global::java.util.TimeZone_._setRawOffset26859 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "setRawOffset", "(I)V");
 			global::java.util.TimeZone_._useDaylightTime26860 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "useDaylightTime", "()Z");
 			global::java.util.TimeZone_._inDaylightTime26861 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

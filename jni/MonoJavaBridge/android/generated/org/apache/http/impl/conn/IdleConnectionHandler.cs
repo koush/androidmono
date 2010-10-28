@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn
 	public partial class IdleConnectionHandler : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IdleConnectionHandler()
-		{
-			InitJNI();
-		}
 		protected IdleConnectionHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http.impl.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._IdleConnectionHandler33053);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IdleConnectionHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/IdleConnectionHandler"));
@@ -73,6 +69,9 @@ namespace org.apache.http.impl.conn
 			global::org.apache.http.impl.conn.IdleConnectionHandler._closeIdleConnections33051 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, "closeIdleConnections", "(J)V");
 			global::org.apache.http.impl.conn.IdleConnectionHandler._closeExpiredConnections33052 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, "closeExpiredConnections", "()V");
 			global::org.apache.http.impl.conn.IdleConnectionHandler._IdleConnectionHandler33053 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

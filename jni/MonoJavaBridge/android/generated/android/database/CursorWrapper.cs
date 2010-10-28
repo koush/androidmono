@@ -4,10 +4,6 @@ namespace android.database
 	public partial class CursorWrapper : java.lang.Object, Cursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CursorWrapper()
-		{
-			InitJNI();
-		}
 		protected CursorWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -402,7 +398,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._CursorWrapper4597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CursorWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CursorWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorWrapper"));
@@ -445,6 +441,9 @@ namespace android.database
 			global::android.database.CursorWrapper._getWantsAllOnMoveCalls4595 = @__env.GetMethodIDNoThrow(global::android.database.CursorWrapper.staticClass, "getWantsAllOnMoveCalls", "()Z");
 			global::android.database.CursorWrapper._respond4596 = @__env.GetMethodIDNoThrow(global::android.database.CursorWrapper.staticClass, "respond", "(Landroid/os/Bundle;)Landroid/os/Bundle;");
 			global::android.database.CursorWrapper._CursorWrapper4597 = @__env.GetMethodIDNoThrow(global::android.database.CursorWrapper.staticClass, "<init>", "(Landroid/database/Cursor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

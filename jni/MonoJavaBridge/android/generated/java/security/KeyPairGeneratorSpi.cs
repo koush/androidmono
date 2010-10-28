@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class KeyPairGeneratorSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyPairGeneratorSpi()
-		{
-			InitJNI();
-		}
 		protected KeyPairGeneratorSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -31,7 +27,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyPairGeneratorSpi.staticClass, global::java.security.KeyPairGeneratorSpi._KeyPairGeneratorSpi23055);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyPairGeneratorSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyPairGeneratorSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyPairGeneratorSpi"));
@@ -40,16 +36,15 @@ namespace java.security
 			global::java.security.KeyPairGeneratorSpi._generateKeyPair23054 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGeneratorSpi.staticClass, "generateKeyPair", "()Ljava/security/KeyPair;");
 			global::java.security.KeyPairGeneratorSpi._KeyPairGeneratorSpi23055 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGeneratorSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.KeyPairGeneratorSpi))]
 	internal sealed partial class KeyPairGeneratorSpi_ : java.security.KeyPairGeneratorSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyPairGeneratorSpi_()
-		{
-			InitJNI();
-		}
 		internal KeyPairGeneratorSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,12 +66,15 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyPair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPairGeneratorSpi_.staticClass, global::java.security.KeyPairGeneratorSpi_._generateKeyPair23057)) as java.security.KeyPair;
 		}
-		private static void InitJNI()
+		static KeyPairGeneratorSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyPairGeneratorSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyPairGeneratorSpi"));
 			global::java.security.KeyPairGeneratorSpi_._initialize23056 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGeneratorSpi_.staticClass, "initialize", "(ILjava/security/SecureRandom;)V");
 			global::java.security.KeyPairGeneratorSpi_._generateKeyPair23057 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGeneratorSpi_.staticClass, "generateKeyPair", "()Ljava/security/KeyPair;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

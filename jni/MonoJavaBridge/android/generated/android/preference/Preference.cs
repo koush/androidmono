@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class Preference : java.lang.Object, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Preference()
-		{
-			InitJNI();
-		}
 		protected Preference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.preference
 		public partial class BaseSavedState : android.view.AbsSavedState
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static BaseSavedState()
-			{
-				InitJNI();
-			}
 			protected BaseSavedState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -45,13 +37,16 @@ namespace android.preference
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.preference.Preference.BaseSavedState.staticClass, _CREATOR10313)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static BaseSavedState()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.BaseSavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$BaseSavedState"));
 				global::android.preference.Preference.BaseSavedState._BaseSavedState10311 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.BaseSavedState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 				global::android.preference.Preference.BaseSavedState._BaseSavedState10312 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.BaseSavedState.staticClass, "<init>", "(Landroid/os/Parcelable;)V");
 				global::android.preference.Preference.BaseSavedState._CREATOR10313 = @__env.GetStaticFieldIDNoThrow(global::android.preference.Preference.BaseSavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.Preference.OnPreferenceChangeListener_))]
@@ -64,10 +59,6 @@ namespace android.preference
 		internal sealed partial class OnPreferenceChangeListener_ : java.lang.Object, OnPreferenceChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreferenceChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnPreferenceChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -80,11 +71,14 @@ namespace android.preference
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.Preference.OnPreferenceChangeListener_.staticClass, global::android.preference.Preference.OnPreferenceChangeListener_._onPreferenceChange10314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnPreferenceChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$OnPreferenceChangeListener"));
 				global::android.preference.Preference.OnPreferenceChangeListener_._onPreferenceChange10314 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.OnPreferenceChangeListener_.staticClass, "onPreferenceChange", "(Landroid/preference/Preference;Ljava/lang/Object;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -93,10 +87,6 @@ namespace android.preference
 		internal partial class OnPreferenceChangeListenerDelegateWrapper : java.lang.Object, OnPreferenceChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreferenceChangeListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnPreferenceChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -107,11 +97,14 @@ namespace android.preference
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper.staticClass, global::android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper._OnPreferenceChangeListenerDelegateWrapper10315);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnPreferenceChangeListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference_OnPreferenceChangeListenerDelegateWrapper"));
 				global::android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper._OnPreferenceChangeListenerDelegateWrapper10315 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnPreferenceChangeListenerDelegateWrapper
@@ -139,10 +132,6 @@ namespace android.preference
 		internal sealed partial class OnPreferenceClickListener_ : java.lang.Object, OnPreferenceClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreferenceClickListener_()
-			{
-				InitJNI();
-			}
 			internal OnPreferenceClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -155,11 +144,14 @@ namespace android.preference
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.Preference.OnPreferenceClickListener_.staticClass, global::android.preference.Preference.OnPreferenceClickListener_._onPreferenceClick10316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnPreferenceClickListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$OnPreferenceClickListener"));
 				global::android.preference.Preference.OnPreferenceClickListener_._onPreferenceClick10316 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.OnPreferenceClickListener_.staticClass, "onPreferenceClick", "(Landroid/preference/Preference;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -168,10 +160,6 @@ namespace android.preference
 		internal partial class OnPreferenceClickListenerDelegateWrapper : java.lang.Object, OnPreferenceClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPreferenceClickListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnPreferenceClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -182,11 +170,14 @@ namespace android.preference
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.Preference.OnPreferenceClickListenerDelegateWrapper.staticClass, global::android.preference.Preference.OnPreferenceClickListenerDelegateWrapper._OnPreferenceClickListenerDelegateWrapper10317);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnPreferenceClickListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference_OnPreferenceClickListenerDelegateWrapper"));
 				global::android.preference.Preference.OnPreferenceClickListenerDelegateWrapper._OnPreferenceClickListenerDelegateWrapper10317 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.OnPreferenceClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnPreferenceClickListenerDelegateWrapper
@@ -1042,7 +1033,7 @@ namespace android.preference
 				return 2147483647;
 			}
 		}
-		private static void InitJNI()
+		static Preference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.Preference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference"));
@@ -1120,6 +1111,9 @@ namespace android.preference
 			global::android.preference.Preference._Preference10389 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.Preference._Preference10390 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.preference.Preference._Preference10391 = @__env.GetMethodIDNoThrow(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

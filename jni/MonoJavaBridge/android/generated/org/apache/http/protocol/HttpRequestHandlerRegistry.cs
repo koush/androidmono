@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class HttpRequestHandlerRegistry : java.lang.Object, HttpRequestHandlerResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestHandlerRegistry()
-		{
-			InitJNI();
-		}
 		protected HttpRequestHandlerRegistry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._HttpRequestHandlerRegistry33909);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpRequestHandlerRegistry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestHandlerRegistry"));
@@ -80,6 +76,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.HttpRequestHandlerRegistry._setHandlers33907 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, "setHandlers", "(Ljava/util/Map;)V");
 			global::org.apache.http.protocol.HttpRequestHandlerRegistry._matchUriRequestPattern33908 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, "matchUriRequestPattern", "(Ljava/lang/String;Ljava/lang/String;)Z");
 			global::org.apache.http.protocol.HttpRequestHandlerRegistry._HttpRequestHandlerRegistry33909 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

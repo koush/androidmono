@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class StateListDrawable : android.graphics.drawable.DrawableContainer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StateListDrawable()
-		{
-			InitJNI();
-		}
 		protected StateListDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.StateListDrawable.staticClass, global::android.graphics.drawable.StateListDrawable._StateListDrawable6232);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StateListDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.StateListDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/StateListDrawable"));
@@ -73,6 +69,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.StateListDrawable._mutate6230 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.StateListDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
 			global::android.graphics.drawable.StateListDrawable._addState6231 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.StateListDrawable.staticClass, "addState", "([ILandroid/graphics/drawable/Drawable;)V");
 			global::android.graphics.drawable.StateListDrawable._StateListDrawable6232 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.StateListDrawable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

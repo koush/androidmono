@@ -4,10 +4,6 @@ namespace org.apache.http.client.protocol
 	public partial class RequestTargetAuthentication : java.lang.Object, HttpRequestInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RequestTargetAuthentication()
-		{
-			InitJNI();
-		}
 		protected RequestTargetAuthentication(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.client.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.protocol.RequestTargetAuthentication.staticClass, global::org.apache.http.client.protocol.RequestTargetAuthentication._RequestTargetAuthentication32045);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RequestTargetAuthentication()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.protocol.RequestTargetAuthentication.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/protocol/RequestTargetAuthentication"));
 			global::org.apache.http.client.protocol.RequestTargetAuthentication._process32044 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.RequestTargetAuthentication.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.client.protocol.RequestTargetAuthentication._RequestTargetAuthentication32045 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.RequestTargetAuthentication.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

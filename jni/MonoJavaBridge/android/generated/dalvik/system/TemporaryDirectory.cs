@@ -4,10 +4,6 @@ namespace dalvik.system
 	public partial class TemporaryDirectory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TemporaryDirectory()
-		{
-			InitJNI();
-		}
 		protected TemporaryDirectory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,13 +26,16 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.TemporaryDirectory.staticClass, global::dalvik.system.TemporaryDirectory._TemporaryDirectory18611);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TemporaryDirectory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.TemporaryDirectory.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/TemporaryDirectory"));
 			global::dalvik.system.TemporaryDirectory._setUpDirectory18609 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.TemporaryDirectory.staticClass, "setUpDirectory", "(Ljava/lang/String;)V");
 			global::dalvik.system.TemporaryDirectory._setUpDirectory18610 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.TemporaryDirectory.staticClass, "setUpDirectory", "(Ljava/io/File;)V");
 			global::dalvik.system.TemporaryDirectory._TemporaryDirectory18611 = @__env.GetMethodIDNoThrow(global::dalvik.system.TemporaryDirectory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

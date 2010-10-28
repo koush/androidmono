@@ -26,10 +26,6 @@ namespace javax.sql
 	internal sealed partial class RowSetMetaData_ : java.lang.Object, RowSetMetaData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSetMetaData_()
-		{
-			InitJNI();
-		}
 		internal RowSetMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -375,7 +371,7 @@ namespace javax.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetMetaData_.staticClass, global::javax.sql.RowSetMetaData_._getColumnClassName30620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static RowSetMetaData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetMetaData"));
@@ -417,6 +413,9 @@ namespace javax.sql
 			global::javax.sql.RowSetMetaData_._getColumnTypeName30618 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetMetaData_.staticClass, "getColumnTypeName", "(I)Ljava/lang/String;");
 			global::javax.sql.RowSetMetaData_._isDefinitelyWritable30619 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetMetaData_.staticClass, "isDefinitelyWritable", "(I)Z");
 			global::javax.sql.RowSetMetaData_._getColumnClassName30620 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetMetaData_.staticClass, "getColumnClassName", "(I)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -15,10 +15,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMError_ : java.lang.Object, DOMError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMError_()
-		{
-			InitJNI();
-		}
 		internal DOMError_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMError_.staticClass, global::org.w3c.dom.DOMError_._getRelatedData34345)) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static DOMError_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMError_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMError"));
@@ -86,6 +82,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DOMError_._getSeverity34343 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMError_.staticClass, "getSeverity", "()S");
 			global::org.w3c.dom.DOMError_._getRelatedException34344 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMError_.staticClass, "getRelatedException", "()Ljava/lang/Object;");
 			global::org.w3c.dom.DOMError_._getRelatedData34345 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMError_.staticClass, "getRelatedData", "()Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

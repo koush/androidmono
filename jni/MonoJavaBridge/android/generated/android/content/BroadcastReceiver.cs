@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class BroadcastReceiver : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BroadcastReceiver()
-		{
-			InitJNI();
-		}
 		protected BroadcastReceiver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -164,7 +160,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._BroadcastReceiver2607);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BroadcastReceiver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.BroadcastReceiver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/BroadcastReceiver"));
@@ -187,16 +183,15 @@ namespace android.content
 			global::android.content.BroadcastReceiver._getDebugUnregister2606 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getDebugUnregister", "()Z");
 			global::android.content.BroadcastReceiver._BroadcastReceiver2607 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.BroadcastReceiver))]
 	internal sealed partial class BroadcastReceiver_ : android.content.BroadcastReceiver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BroadcastReceiver_()
-		{
-			InitJNI();
-		}
 		internal BroadcastReceiver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -209,11 +204,14 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver_.staticClass, global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static BroadcastReceiver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.BroadcastReceiver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/BroadcastReceiver"));
 			global::android.content.BroadcastReceiver_._onReceive2608 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver_.staticClass, "onReceive", "(Landroid/content/Context;Landroid/content/Intent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

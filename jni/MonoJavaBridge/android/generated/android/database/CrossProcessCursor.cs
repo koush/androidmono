@@ -12,10 +12,6 @@ namespace android.database
 	internal sealed partial class CrossProcessCursor_ : java.lang.Object, CrossProcessCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CrossProcessCursor_()
-		{
-			InitJNI();
-		}
 		internal CrossProcessCursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -388,7 +384,7 @@ namespace android.database
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.CrossProcessCursor_.staticClass, global::android.database.CrossProcessCursor_._respond4475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
-		private static void InitJNI()
+		static CrossProcessCursor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CrossProcessCursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CrossProcessCursor"));
@@ -433,6 +429,9 @@ namespace android.database
 			global::android.database.CrossProcessCursor_._setNotificationUri4473 = @__env.GetMethodIDNoThrow(global::android.database.CrossProcessCursor_.staticClass, "setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V");
 			global::android.database.CrossProcessCursor_._getWantsAllOnMoveCalls4474 = @__env.GetMethodIDNoThrow(global::android.database.CrossProcessCursor_.staticClass, "getWantsAllOnMoveCalls", "()Z");
 			global::android.database.CrossProcessCursor_._respond4475 = @__env.GetMethodIDNoThrow(global::android.database.CrossProcessCursor_.staticClass, "respond", "(Landroid/os/Bundle;)Landroid/os/Bundle;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics.drawable.shapes
 	public partial class PathShape : android.graphics.drawable.shapes.Shape
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PathShape()
-		{
-			InitJNI();
-		}
 		protected PathShape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.PathShape.staticClass, global::android.graphics.drawable.shapes.PathShape._PathShape6247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PathShape()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.PathShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/PathShape"));
@@ -53,6 +49,9 @@ namespace android.graphics.drawable.shapes
 			global::android.graphics.drawable.shapes.PathShape._draw6245 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.PathShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
 			global::android.graphics.drawable.shapes.PathShape._onResize6246 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.PathShape.staticClass, "onResize", "(FF)V");
 			global::android.graphics.drawable.shapes.PathShape._PathShape6247 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.PathShape.staticClass, "<init>", "(Landroid/graphics/Path;FF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

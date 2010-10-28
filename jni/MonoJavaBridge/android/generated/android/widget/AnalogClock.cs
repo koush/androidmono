@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class AnalogClock : android.view.View
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AnalogClock()
-		{
-			InitJNI();
-		}
 		protected AnalogClock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._AnalogClock16701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AnalogClock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AnalogClock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AnalogClock"));
@@ -89,6 +85,9 @@ namespace android.widget
 			global::android.widget.AnalogClock._AnalogClock16699 = @__env.GetMethodIDNoThrow(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.AnalogClock._AnalogClock16700 = @__env.GetMethodIDNoThrow(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.AnalogClock._AnalogClock16701 = @__env.GetMethodIDNoThrow(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

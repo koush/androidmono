@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class FutureTask : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FutureTask()
-		{
-			InitJNI();
-		}
 		protected FutureTask(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -122,7 +118,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._FutureTask27318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FutureTask()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.FutureTask.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/FutureTask"));
@@ -138,6 +134,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.FutureTask._runAndReset27316 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.FutureTask.staticClass, "runAndReset", "()Z");
 			global::java.util.concurrent.FutureTask._FutureTask27317 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.FutureTask.staticClass, "<init>", "(Ljava/util/concurrent/Callable;)V");
 			global::java.util.concurrent.FutureTask._FutureTask27318 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.FutureTask.staticClass, "<init>", "(Ljava/lang/Runnable;Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

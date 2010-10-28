@@ -4,10 +4,6 @@ namespace org.apache.http.client
 	public partial class ClientProtocolException : java.io.IOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientProtocolException()
-		{
-			InitJNI();
-		}
 		protected ClientProtocolException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace org.apache.http.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._ClientProtocolException31873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ClientProtocolException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.ClientProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/ClientProtocolException"));
@@ -47,6 +43,9 @@ namespace org.apache.http.client
 			global::org.apache.http.client.ClientProtocolException._ClientProtocolException31871 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::org.apache.http.client.ClientProtocolException._ClientProtocolException31872 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::org.apache.http.client.ClientProtocolException._ClientProtocolException31873 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class HandshakeCompletedEvent : java.util.EventObject
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HandshakeCompletedEvent()
-		{
-			InitJNI();
-		}
 		protected HandshakeCompletedEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -146,7 +142,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.HandshakeCompletedEvent.staticClass, global::javax.net.ssl.HandshakeCompletedEvent._HandshakeCompletedEvent29839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HandshakeCompletedEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HandshakeCompletedEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HandshakeCompletedEvent"));
@@ -159,6 +155,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.HandshakeCompletedEvent._getPeerCertificates29837 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedEvent.staticClass, "getPeerCertificates", "()[Ljava/security/cert/Certificate;");
 			global::javax.net.ssl.HandshakeCompletedEvent._getPeerCertificateChain29838 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedEvent.staticClass, "getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;");
 			global::javax.net.ssl.HandshakeCompletedEvent._HandshakeCompletedEvent29839 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedEvent.staticClass, "<init>", "(Ljavax/net/ssl/SSLSocket;Ljavax/net/ssl/SSLSession;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

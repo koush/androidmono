@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public partial class HttpConnectionParamBean : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpConnectionParamBean()
-		{
-			InitJNI();
-		}
 		protected HttpConnectionParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._HttpConnectionParamBean33772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpConnectionParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpConnectionParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpConnectionParamBean"));
@@ -125,6 +121,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.HttpConnectionParamBean._setConnectionTimeout33770 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParamBean.staticClass, "setConnectionTimeout", "(I)V");
 			global::org.apache.http.@params.HttpConnectionParamBean._setStaleCheckingEnabled33771 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParamBean.staticClass, "setStaleCheckingEnabled", "(Z)V");
 			global::org.apache.http.@params.HttpConnectionParamBean._HttpConnectionParamBean33772 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

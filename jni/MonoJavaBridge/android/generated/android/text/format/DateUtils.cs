@@ -4,10 +4,6 @@ namespace android.text.format
 	public partial class DateUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateUtils()
-		{
-			InitJNI();
-		}
 		protected DateUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -426,7 +422,7 @@ namespace android.text.format
 				return 50;
 			}
 		}
-		private static void InitJNI()
+		static DateUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.format.DateUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/DateUtils"));
@@ -449,6 +445,9 @@ namespace android.text.format
 			global::android.text.format.DateUtils._DateUtils13140 = @__env.GetMethodIDNoThrow(global::android.text.format.DateUtils.staticClass, "<init>", "()V");
 			global::android.text.format.DateUtils._sameYearTable13178 = @__env.GetStaticFieldIDNoThrow(global::android.text.format.DateUtils.staticClass, "sameYearTable", "[I");
 			global::android.text.format.DateUtils._sameMonthTable13179 = @__env.GetStaticFieldIDNoThrow(global::android.text.format.DateUtils.staticClass, "sameMonthTable", "[I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

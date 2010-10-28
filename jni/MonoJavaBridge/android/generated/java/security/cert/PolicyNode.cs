@@ -16,10 +16,6 @@ namespace java.security.cert
 	internal sealed partial class PolicyNode_ : java.lang.Object, PolicyNode
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PolicyNode_()
-		{
-			InitJNI();
-		}
 		internal PolicyNode_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getExpectedPolicies23686)) as java.util.Set;
 		}
-		private static void InitJNI()
+		static PolicyNode_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PolicyNode_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PolicyNode"));
@@ -97,6 +93,9 @@ namespace java.security.cert
 			global::java.security.cert.PolicyNode_._getValidPolicy23684 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getValidPolicy", "()Ljava/lang/String;");
 			global::java.security.cert.PolicyNode_._getPolicyQualifiers23685 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getPolicyQualifiers", "()Ljava/util/Set;");
 			global::java.security.cert.PolicyNode_._getExpectedPolicies23686 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getExpectedPolicies", "()Ljava/util/Set;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class Touch : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Touch()
-		{
-			InitJNI();
-		}
 		protected Touch(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,7 +31,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._getInitialScrollY13422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Touch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.Touch.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/Touch"));
@@ -43,6 +39,9 @@ namespace android.text.method
 			global::android.text.method.Touch._scrollTo13420 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "scrollTo", "(Landroid/widget/TextView;Landroid/text/Layout;II)V");
 			global::android.text.method.Touch._getInitialScrollX13421 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollX", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
 			global::android.text.method.Touch._getInitialScrollY13422 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollY", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

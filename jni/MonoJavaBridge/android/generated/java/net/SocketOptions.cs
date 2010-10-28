@@ -11,10 +11,6 @@ namespace java.net
 	internal sealed partial class SocketOptions_ : java.lang.Object, SocketOptions
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketOptions_()
-		{
-			InitJNI();
-		}
 		internal SocketOptions_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.SocketOptions_.staticClass, global::java.net.SocketOptions_._setOption21816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static SocketOptions_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketOptions_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketOptions"));
 			global::java.net.SocketOptions_._getOption21815 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "getOption", "(I)Ljava/lang/Object;");
 			global::java.net.SocketOptions_._setOption21816 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "setOption", "(ILjava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

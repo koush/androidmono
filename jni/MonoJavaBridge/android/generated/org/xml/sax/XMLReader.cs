@@ -23,10 +23,6 @@ namespace org.xml.sax
 	internal sealed partial class XMLReader_ : java.lang.Object, XMLReader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLReader_()
-		{
-			InitJNI();
-		}
 		internal XMLReader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -156,7 +152,7 @@ namespace org.xml.sax
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getErrorHandler35076)) as org.xml.sax.ErrorHandler;
 		}
-		private static void InitJNI()
+		static XMLReader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.XMLReader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/XMLReader"));
@@ -174,6 +170,9 @@ namespace org.xml.sax
 			global::org.xml.sax.XMLReader_._setContentHandler35074 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V");
 			global::org.xml.sax.XMLReader_._setErrorHandler35075 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V");
 			global::org.xml.sax.XMLReader_._getErrorHandler35076 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.util
 	public sealed partial class CharArrayBuffer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharArrayBuffer()
-		{
-			InitJNI();
-		}
 		internal CharArrayBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -225,7 +221,7 @@ namespace org.apache.http.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.util.CharArrayBuffer.staticClass, global::org.apache.http.util.CharArrayBuffer._CharArrayBuffer34003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CharArrayBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.CharArrayBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/CharArrayBuffer"));
@@ -253,6 +249,9 @@ namespace org.apache.http.util
 			global::org.apache.http.util.CharArrayBuffer._isFull34001 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.CharArrayBuffer.staticClass, "isFull", "()Z");
 			global::org.apache.http.util.CharArrayBuffer._substringTrimmed34002 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.CharArrayBuffer.staticClass, "substringTrimmed", "(II)Ljava/lang/String;");
 			global::org.apache.http.util.CharArrayBuffer._CharArrayBuffer34003 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.CharArrayBuffer.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

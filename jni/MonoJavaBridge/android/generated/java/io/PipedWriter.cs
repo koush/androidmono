@@ -4,10 +4,6 @@ namespace java.io
 	public partial class PipedWriter : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PipedWriter()
-		{
-			InitJNI();
-		}
 		protected PipedWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PipedWriter.staticClass, global::java.io.PipedWriter._PipedWriter19401);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PipedWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PipedWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PipedWriter"));
@@ -81,6 +77,9 @@ namespace java.io
 			global::java.io.PipedWriter._connect19399 = @__env.GetMethodIDNoThrow(global::java.io.PipedWriter.staticClass, "connect", "(Ljava/io/PipedReader;)V");
 			global::java.io.PipedWriter._PipedWriter19400 = @__env.GetMethodIDNoThrow(global::java.io.PipedWriter.staticClass, "<init>", "(Ljava/io/PipedReader;)V");
 			global::java.io.PipedWriter._PipedWriter19401 = @__env.GetMethodIDNoThrow(global::java.io.PipedWriter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

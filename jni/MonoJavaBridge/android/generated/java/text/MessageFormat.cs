@@ -4,10 +4,6 @@ namespace java.text
 	public partial class MessageFormat : java.text.Format
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MessageFormat()
-		{
-			InitJNI();
-		}
 		protected MessageFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.text
 		public new partial class Field : java.text.Format.Field
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Field()
-			{
-				InitJNI();
-			}
 			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,13 +39,16 @@ namespace java.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.MessageFormat.Field.staticClass, _ARGUMENT25531)) as java.text.MessageFormat.Field;
 				}
 			}
-			private static void InitJNI()
+			static Field()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.text.MessageFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/MessageFormat$Field"));
 				global::java.text.MessageFormat.Field._readResolve25529 = @__env.GetMethodIDNoThrow(global::java.text.MessageFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;");
 				global::java.text.MessageFormat.Field._Field25530 = @__env.GetMethodIDNoThrow(global::java.text.MessageFormat.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::java.text.MessageFormat.Field._ARGUMENT25531 = @__env.GetStaticFieldIDNoThrow(global::java.text.MessageFormat.Field.staticClass, "ARGUMENT", "Ljava/text/MessageFormat$Field;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25532;
@@ -280,7 +275,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.MessageFormat.staticClass, global::java.text.MessageFormat._MessageFormat25553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MessageFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.MessageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/MessageFormat"));
@@ -306,6 +301,9 @@ namespace java.text
 			global::java.text.MessageFormat._getFormatsByArgumentIndex25551 = @__env.GetMethodIDNoThrow(global::java.text.MessageFormat.staticClass, "getFormatsByArgumentIndex", "()[Ljava/text/Format;");
 			global::java.text.MessageFormat._MessageFormat25552 = @__env.GetMethodIDNoThrow(global::java.text.MessageFormat.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.text.MessageFormat._MessageFormat25553 = @__env.GetMethodIDNoThrow(global::java.text.MessageFormat.staticClass, "<init>", "(Ljava/lang/String;Ljava/util/Locale;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

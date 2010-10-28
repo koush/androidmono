@@ -10,10 +10,6 @@ namespace org.w3c.dom
 	internal sealed partial class UserDataHandler_ : java.lang.Object, UserDataHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UserDataHandler_()
-		{
-			InitJNI();
-		}
 		internal UserDataHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.w3c.dom
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.UserDataHandler_.staticClass, global::org.w3c.dom.UserDataHandler_._handle34876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		private static void InitJNI()
+		static UserDataHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.UserDataHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/UserDataHandler"));
 			global::org.w3c.dom.UserDataHandler_._handle34876 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.UserDataHandler_.staticClass, "handle", "(SLjava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -16,10 +16,6 @@ namespace org.apache.http.io
 	internal sealed partial class SessionInputBuffer_ : java.lang.Object, SessionInputBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SessionInputBuffer_()
-		{
-			InitJNI();
-		}
 		internal SessionInputBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.io
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SessionInputBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.SessionInputBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/SessionInputBuffer"));
@@ -97,6 +93,9 @@ namespace org.apache.http.io
 			global::org.apache.http.io.SessionInputBuffer_._read33475 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "()I");
 			global::org.apache.http.io.SessionInputBuffer_._getMetrics33476 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;");
 			global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "isDataAvailable", "(I)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

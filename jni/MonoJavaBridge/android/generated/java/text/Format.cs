@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class Format : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Format()
-		{
-			InitJNI();
-		}
 		protected Format(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.text
 		public partial class Field : java.text.AttributedCharacterIterator_Attribute
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Field()
-			{
-				InitJNI();
-			}
 			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -29,11 +21,14 @@ namespace java.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.Field.staticClass, global::java.text.Format.Field._Field25519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Field()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.text.Format.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Format$Field"));
 				global::java.text.Format.Field._Field25519 = @__env.GetMethodIDNoThrow(global::java.text.Format.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _clone25520;
@@ -83,7 +78,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.staticClass, global::java.text.Format._Format25526);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Format()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Format.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Format"));
@@ -95,16 +90,15 @@ namespace java.text
 			global::java.text.Format._formatToCharacterIterator25525 = @__env.GetMethodIDNoThrow(global::java.text.Format.staticClass, "formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;");
 			global::java.text.Format._Format25526 = @__env.GetMethodIDNoThrow(global::java.text.Format.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.Format))]
 	internal sealed partial class Format_ : java.text.Format
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Format_()
-		{
-			InitJNI();
-		}
 		internal Format_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -126,12 +120,15 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Format_.staticClass, global::java.text.Format_._parseObject25528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static Format_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Format_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Format"));
 			global::java.text.Format_._format25527 = @__env.GetMethodIDNoThrow(global::java.text.Format_.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.Format_._parseObject25528 = @__env.GetMethodIDNoThrow(global::java.text.Format_.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

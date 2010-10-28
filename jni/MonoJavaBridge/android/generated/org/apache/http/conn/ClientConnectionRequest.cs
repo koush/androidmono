@@ -11,10 +11,6 @@ namespace org.apache.http.conn
 	internal sealed partial class ClientConnectionRequest_ : java.lang.Object, ClientConnectionRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientConnectionRequest_()
-		{
-			InitJNI();
-		}
 		internal ClientConnectionRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http.conn
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, global::org.apache.http.conn.ClientConnectionRequest_._abortRequest32087);
 		}
-		private static void InitJNI()
+		static ClientConnectionRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ClientConnectionRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ClientConnectionRequest"));
 			global::org.apache.http.conn.ClientConnectionRequest_._getConnection32086 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "getConnection", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;");
 			global::org.apache.http.conn.ClientConnectionRequest_._abortRequest32087 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "abortRequest", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

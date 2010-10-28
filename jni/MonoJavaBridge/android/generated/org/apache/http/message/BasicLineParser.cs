@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicLineParser : java.lang.Object, LineParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicLineParser()
-		{
-			InitJNI();
-		}
 		protected BasicLineParser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,7 +135,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.message.BasicLineParser.staticClass, _DEFAULT33624)) as org.apache.http.message.BasicLineParser;
 			}
 		}
-		private static void InitJNI()
+		static BasicLineParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicLineParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicLineParser"));
@@ -159,6 +155,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicLineParser._BasicLineParser33622 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "<init>", "(Lorg/apache/http/ProtocolVersion;)V");
 			global::org.apache.http.message.BasicLineParser._BasicLineParser33623 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "<init>", "()V");
 			global::org.apache.http.message.BasicLineParser._DEFAULT33624 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicLineParser;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

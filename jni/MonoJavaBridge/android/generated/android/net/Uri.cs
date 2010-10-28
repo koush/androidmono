@@ -4,10 +4,6 @@ namespace android.net
 	public abstract partial class Uri : java.lang.Object, android.os.Parcelable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Uri()
-		{
-			InitJNI();
-		}
 		protected Uri(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net
 		public sealed partial class Builder : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Builder()
-			{
-				InitJNI();
-			}
 			internal Builder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -173,7 +165,7 @@ namespace android.net
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._Builder7796);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Builder()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.Uri.Builder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Uri$Builder"));
@@ -194,6 +186,9 @@ namespace android.net
 				global::android.net.Uri.Builder._encodedFragment7794 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedFragment", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
 				global::android.net.Uri.Builder._appendQueryParameter7795 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "appendQueryParameter", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;");
 				global::android.net.Uri.Builder._Builder7796 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7797;
@@ -380,7 +375,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.net.Uri.staticClass, _CREATOR7837)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Uri()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Uri.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Uri"));
@@ -426,16 +421,15 @@ namespace android.net
 			global::android.net.Uri._EMPTY7836 = @__env.GetStaticFieldIDNoThrow(global::android.net.Uri.staticClass, "EMPTY", "Landroid/net/Uri;");
 			global::android.net.Uri._CREATOR7837 = @__env.GetStaticFieldIDNoThrow(global::android.net.Uri.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.net.Uri))]
 	internal sealed partial class Uri_ : android.net.Uri
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Uri_()
-		{
-			InitJNI();
-		}
 		internal Uri_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -646,7 +640,7 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri_.staticClass, global::android.net.Uri_._buildUpon7860)) as android.net.Uri.Builder;
 		}
-		private static void InitJNI()
+		static Uri_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Uri_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Uri"));
@@ -673,6 +667,9 @@ namespace android.net
 			global::android.net.Uri_._getPathSegments7858 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getPathSegments", "()Ljava/util/List;");
 			global::android.net.Uri_._getLastPathSegment7859 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getLastPathSegment", "()Ljava/lang/String;");
 			global::android.net.Uri_._buildUpon7860 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "buildUpon", "()Landroid/net/Uri$Builder;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

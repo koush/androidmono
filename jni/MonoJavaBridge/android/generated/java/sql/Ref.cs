@@ -13,10 +13,6 @@ namespace java.sql
 	internal sealed partial class Ref_ : java.lang.Object, Ref
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Ref_()
-		{
-			InitJNI();
-		}
 		internal Ref_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getBaseTypeName24757)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Ref_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Ref_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Ref"));
@@ -64,6 +60,9 @@ namespace java.sql
 			global::java.sql.Ref_._getObject24755 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getObject", "()Ljava/lang/Object;");
 			global::java.sql.Ref_._setObject24756 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "setObject", "(Ljava/lang/Object;)V");
 			global::java.sql.Ref_._getBaseTypeName24757 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getBaseTypeName", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

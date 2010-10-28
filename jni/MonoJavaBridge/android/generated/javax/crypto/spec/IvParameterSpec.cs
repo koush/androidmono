@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class IvParameterSpec : java.lang.Object, java.security.spec.AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IvParameterSpec()
-		{
-			InitJNI();
-		}
 		protected IvParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,13 +37,16 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.IvParameterSpec.staticClass, global::javax.crypto.spec.IvParameterSpec._IvParameterSpec28785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IvParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.IvParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/IvParameterSpec"));
 			global::javax.crypto.spec.IvParameterSpec._getIV28783 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.IvParameterSpec.staticClass, "getIV", "()[B");
 			global::javax.crypto.spec.IvParameterSpec._IvParameterSpec28784 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.IvParameterSpec.staticClass, "<init>", "([B)V");
 			global::javax.crypto.spec.IvParameterSpec._IvParameterSpec28785 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.IvParameterSpec.staticClass, "<init>", "([BII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

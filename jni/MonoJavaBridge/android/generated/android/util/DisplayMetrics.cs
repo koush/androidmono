@@ -4,10 +4,6 @@ namespace android.util
 	public partial class DisplayMetrics : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DisplayMetrics()
-		{
-			InitJNI();
-		}
 		protected DisplayMetrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -164,7 +160,7 @@ namespace android.util
 			{
 			}
 		}
-		private static void InitJNI()
+		static DisplayMetrics()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.DisplayMetrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/DisplayMetrics"));
@@ -179,6 +175,9 @@ namespace android.util
 			global::android.util.DisplayMetrics._scaledDensity13746 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "scaledDensity", "F");
 			global::android.util.DisplayMetrics._xdpi13747 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "xdpi", "F");
 			global::android.util.DisplayMetrics._ydpi13748 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "ydpi", "F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

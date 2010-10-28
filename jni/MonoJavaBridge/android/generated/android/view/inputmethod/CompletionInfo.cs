@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public sealed partial class CompletionInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CompletionInfo()
-		{
-			InitJNI();
-		}
 		internal CompletionInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -125,7 +121,7 @@ namespace android.view.inputmethod
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.CompletionInfo.staticClass, _CREATOR15809)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static CompletionInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.CompletionInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/CompletionInfo"));
@@ -139,6 +135,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.CompletionInfo._CompletionInfo15807 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "<init>", "(JILjava/lang/CharSequence;)V");
 			global::android.view.inputmethod.CompletionInfo._CompletionInfo15808 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "<init>", "(JILjava/lang/CharSequence;Ljava/lang/CharSequence;)V");
 			global::android.view.inputmethod.CompletionInfo._CREATOR15809 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.telephony.gsm
 	public partial class GsmCellLocation : android.telephony.CellLocation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GsmCellLocation()
-		{
-			InitJNI();
-		}
 		protected GsmCellLocation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -111,7 +107,7 @@ namespace android.telephony.gsm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._GsmCellLocation12046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GsmCellLocation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.GsmCellLocation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/GsmCellLocation"));
@@ -125,6 +121,9 @@ namespace android.telephony.gsm
 			global::android.telephony.gsm.GsmCellLocation._setLacAndCid12044 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.GsmCellLocation.staticClass, "setLacAndCid", "(II)V");
 			global::android.telephony.gsm.GsmCellLocation._GsmCellLocation12045 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.GsmCellLocation.staticClass, "<init>", "()V");
 			global::android.telephony.gsm.GsmCellLocation._GsmCellLocation12046 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.GsmCellLocation.staticClass, "<init>", "(Landroid/os/Bundle;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

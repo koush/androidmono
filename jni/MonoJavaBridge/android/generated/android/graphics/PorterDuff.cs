@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class PorterDuff : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PorterDuff()
-		{
-			InitJNI();
-		}
 		protected PorterDuff(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Mode : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Mode()
-			{
-				InitJNI();
-			}
 			internal Mode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -178,7 +170,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _XOR5660)) as android.graphics.PorterDuff.Mode;
 				}
 			}
-			private static void InitJNI()
+			static Mode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.PorterDuff.Mode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuff$Mode"));
@@ -201,6 +193,9 @@ namespace android.graphics
 				global::android.graphics.PorterDuff.Mode._SRC_OVER5659 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "SRC_OVER", "Landroid/graphics/PorterDuff$Mode;");
 				global::android.graphics.PorterDuff.Mode._XOR5660 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "XOR", "Landroid/graphics/PorterDuff$Mode;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _PorterDuff5661;
 		public PorterDuff() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -209,11 +204,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuff.staticClass, global::android.graphics.PorterDuff._PorterDuff5661);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PorterDuff()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PorterDuff.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuff"));
 			global::android.graphics.PorterDuff._PorterDuff5661 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuff.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

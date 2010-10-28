@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ListView : android.widget.AbsListView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListView()
-		{
-			InitJNI();
-		}
 		protected ListView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public partial class FixedViewInfo : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FixedViewInfo()
-			{
-				InitJNI();
-			}
 			protected FixedViewInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -65,7 +57,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static FixedViewInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ListView.FixedViewInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ListView$FixedViewInfo"));
@@ -73,6 +65,9 @@ namespace android.widget
 				global::android.widget.ListView.FixedViewInfo._view17337 = @__env.GetFieldIDNoThrow(global::android.widget.ListView.FixedViewInfo.staticClass, "view", "Landroid/view/View;");
 				global::android.widget.ListView.FixedViewInfo._data17338 = @__env.GetFieldIDNoThrow(global::android.widget.ListView.FixedViewInfo.staticClass, "data", "Ljava/lang/Object;");
 				global::android.widget.ListView.FixedViewInfo._isSelectable17339 = @__env.GetFieldIDNoThrow(global::android.widget.ListView.FixedViewInfo.staticClass, "isSelectable", "Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState17340;
@@ -717,7 +712,7 @@ namespace android.widget
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static ListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ListView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ListView"));
@@ -776,6 +771,9 @@ namespace android.widget
 			global::android.widget.ListView._ListView17392 = @__env.GetMethodIDNoThrow(global::android.widget.ListView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.ListView._ListView17393 = @__env.GetMethodIDNoThrow(global::android.widget.ListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.ListView._ListView17394 = @__env.GetMethodIDNoThrow(global::android.widget.ListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class EnumConstantNotPresentException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EnumConstantNotPresentException()
-		{
-			InitJNI();
-		}
 		protected EnumConstantNotPresentException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._EnumConstantNotPresentException20128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EnumConstantNotPresentException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.EnumConstantNotPresentException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/EnumConstantNotPresentException"));
 			global::java.lang.EnumConstantNotPresentException._enumType20126 = @__env.GetMethodIDNoThrow(global::java.lang.EnumConstantNotPresentException.staticClass, "enumType", "()Ljava/lang/Class;");
 			global::java.lang.EnumConstantNotPresentException._constantName20127 = @__env.GetMethodIDNoThrow(global::java.lang.EnumConstantNotPresentException.staticClass, "constantName", "()Ljava/lang/String;");
 			global::java.lang.EnumConstantNotPresentException._EnumConstantNotPresentException20128 = @__env.GetMethodIDNoThrow(global::java.lang.EnumConstantNotPresentException.staticClass, "<init>", "(Ljava/lang/Class;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

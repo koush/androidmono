@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class ECParameterSpec : java.lang.Object, AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECParameterSpec()
-		{
-			InitJNI();
-		}
 		protected ECParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -82,7 +78,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._ECParameterSpec23999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ECParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECParameterSpec"));
@@ -91,6 +87,9 @@ namespace java.security.spec
 			global::java.security.spec.ECParameterSpec._getGenerator23997 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getGenerator", "()Ljava/security/spec/ECPoint;");
 			global::java.security.spec.ECParameterSpec._getCofactor23998 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getCofactor", "()I");
 			global::java.security.spec.ECParameterSpec._ECParameterSpec23999 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "<init>", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

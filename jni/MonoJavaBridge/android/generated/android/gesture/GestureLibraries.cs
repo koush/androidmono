@@ -4,10 +4,6 @@ namespace android.gesture
 	public sealed partial class GestureLibraries : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureLibraries()
-		{
-			InitJNI();
-		}
 		internal GestureLibraries(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,7 +31,7 @@ namespace android.gesture
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromRawResource4884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.gesture.GestureLibrary;
 		}
-		private static void InitJNI()
+		static GestureLibraries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureLibraries.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureLibraries"));
@@ -43,6 +39,9 @@ namespace android.gesture
 			global::android.gesture.GestureLibraries._fromFile4882 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureLibraries.staticClass, "fromFile", "(Ljava/io/File;)Landroid/gesture/GestureLibrary;");
 			global::android.gesture.GestureLibraries._fromPrivateFile4883 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureLibraries.staticClass, "fromPrivateFile", "(Landroid/content/Context;Ljava/lang/String;)Landroid/gesture/GestureLibrary;");
 			global::android.gesture.GestureLibraries._fromRawResource4884 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureLibraries.staticClass, "fromRawResource", "(Landroid/content/Context;I)Landroid/gesture/GestureLibrary;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

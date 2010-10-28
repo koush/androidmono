@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class PluginData : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PluginData()
-		{
-			InitJNI();
-		}
 		internal PluginData(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -82,7 +78,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginData.staticClass, global::android.webkit.PluginData._PluginData16083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PluginData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginData.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginData"));
@@ -91,6 +87,9 @@ namespace android.webkit
 			global::android.webkit.PluginData._getHeaders16081 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;");
 			global::android.webkit.PluginData._getStatusCode16082 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getStatusCode", "()I");
 			global::android.webkit.PluginData._PluginData16083 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "<init>", "(Ljava/io/InputStream;JLjava/util/Map;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

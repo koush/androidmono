@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class DigitsKeyListener : android.text.method.NumberKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DigitsKeyListener()
-		{
-			InitJNI();
-		}
 		protected DigitsKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DigitsKeyListener.staticClass, global::android.text.method.DigitsKeyListener._DigitsKeyListener13289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DigitsKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.DigitsKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DigitsKeyListener"));
@@ -107,6 +103,9 @@ namespace android.text.method
 			global::android.text.method.DigitsKeyListener._getAcceptedChars13287 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.DigitsKeyListener._DigitsKeyListener13288 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "()V");
 			global::android.text.method.DigitsKeyListener._DigitsKeyListener13289 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "(ZZ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

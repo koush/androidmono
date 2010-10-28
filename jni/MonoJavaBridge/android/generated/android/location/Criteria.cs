@@ -4,10 +4,6 @@ namespace android.location
 	public partial class Criteria : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Criteria()
-		{
-			InitJNI();
-		}
 		protected Criteria(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -252,7 +248,7 @@ namespace android.location
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.location.Criteria.staticClass, _CREATOR6862)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Criteria()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.Criteria.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Criteria"));
@@ -273,6 +269,9 @@ namespace android.location
 			global::android.location.Criteria._Criteria6854 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "()V");
 			global::android.location.Criteria._Criteria6855 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "(Landroid/location/Criteria;)V");
 			global::android.location.Criteria._CREATOR6862 = @__env.GetStaticFieldIDNoThrow(global::android.location.Criteria.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

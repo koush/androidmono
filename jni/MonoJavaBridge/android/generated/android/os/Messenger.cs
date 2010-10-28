@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class Messenger : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Messenger()
-		{
-			InitJNI();
-		}
 		internal Messenger(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -107,7 +103,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.Messenger.staticClass, _CREATOR9976)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Messenger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Messenger.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Messenger"));
@@ -122,6 +118,9 @@ namespace android.os
 			global::android.os.Messenger._Messenger9974 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/Handler;)V");
 			global::android.os.Messenger._Messenger9975 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/IBinder;)V");
 			global::android.os.Messenger._CREATOR9976 = @__env.GetStaticFieldIDNoThrow(global::android.os.Messenger.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.xml.sax
 	public partial class SAXException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXException()
-		{
-			InitJNI();
-		}
 		protected SAXException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException35034);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SAXException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.SAXException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/SAXException"));
@@ -108,6 +104,9 @@ namespace org.xml.sax
 			global::org.xml.sax.SAXException._SAXException35032 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 			global::org.xml.sax.SAXException._SAXException35033 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
 			global::org.xml.sax.SAXException._SAXException35034 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

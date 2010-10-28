@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public sealed partial class DateUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateUtils()
-		{
-			InitJNI();
-		}
 		internal DateUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace org.apache.http.impl.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.impl.cookie.DateUtils.staticClass, _GMT33306)) as java.util.TimeZone;
 			}
 		}
-		private static void InitJNI()
+		static DateUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.DateUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/DateUtils"));
@@ -81,6 +77,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.DateUtils._formatDate33301 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.impl.cookie.DateUtils.staticClass, "formatDate", "(Ljava/util/Date;)Ljava/lang/String;");
 			global::org.apache.http.impl.cookie.DateUtils._formatDate33302 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.impl.cookie.DateUtils.staticClass, "formatDate", "(Ljava/util/Date;Ljava/lang/String;)Ljava/lang/String;");
 			global::org.apache.http.impl.cookie.DateUtils._GMT33306 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.cookie.DateUtils.staticClass, "GMT", "Ljava/util/TimeZone;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.xml.xpath
 	public partial class XPathFunctionException : javax.xml.xpath.XPathExpressionException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathFunctionException()
-		{
-			InitJNI();
-		}
 		protected XPathFunctionException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace javax.xml.xpath
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFunctionException.staticClass, global::javax.xml.xpath.XPathFunctionException._XPathFunctionException31332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static XPathFunctionException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathFunctionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathFunctionException"));
 			global::javax.xml.xpath.XPathFunctionException._XPathFunctionException31331 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunctionException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.xpath.XPathFunctionException._XPathFunctionException31332 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunctionException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

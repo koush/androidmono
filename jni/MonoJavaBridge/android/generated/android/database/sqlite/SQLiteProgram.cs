@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public abstract partial class SQLiteProgram : android.database.sqlite.SQLiteClosable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteProgram()
-		{
-			InitJNI();
-		}
 		protected SQLiteProgram(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -173,7 +169,7 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteProgram.staticClass, global::android.database.sqlite.SQLiteProgram._native_bind_blob4835, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static SQLiteProgram()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteProgram.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteProgram"));
@@ -196,23 +192,25 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteProgram._native_bind_string4834 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteProgram.staticClass, "native_bind_string", "(ILjava/lang/String;)V");
 			global::android.database.sqlite.SQLiteProgram._native_bind_blob4835 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteProgram.staticClass, "native_bind_blob", "(I[B)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.sqlite.SQLiteProgram))]
 	internal sealed partial class SQLiteProgram_ : android.database.sqlite.SQLiteProgram
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteProgram_()
-		{
-			InitJNI();
-		}
 		internal SQLiteProgram_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static SQLiteProgram_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteProgram_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteProgram"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

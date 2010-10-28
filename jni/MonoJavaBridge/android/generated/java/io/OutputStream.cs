@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class OutputStream : java.lang.Object, Closeable, Flushable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OutputStream()
-		{
-			InitJNI();
-		}
 		protected OutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStream.staticClass, global::java.io.OutputStream._OutputStream19357);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static OutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.OutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/OutputStream"));
@@ -67,16 +63,15 @@ namespace java.io
 			global::java.io.OutputStream._close19356 = @__env.GetMethodIDNoThrow(global::java.io.OutputStream.staticClass, "close", "()V");
 			global::java.io.OutputStream._OutputStream19357 = @__env.GetMethodIDNoThrow(global::java.io.OutputStream.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.OutputStream))]
 	internal sealed partial class OutputStream_ : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OutputStream_()
-		{
-			InitJNI();
-		}
 		internal OutputStream_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,11 +84,14 @@ namespace java.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.OutputStream_.staticClass, global::java.io.OutputStream_._write19358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static OutputStream_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.OutputStream_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/OutputStream"));
 			global::java.io.OutputStream_._write19358 = @__env.GetMethodIDNoThrow(global::java.io.OutputStream_.staticClass, "write", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

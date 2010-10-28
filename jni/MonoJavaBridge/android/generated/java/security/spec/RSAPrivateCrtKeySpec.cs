@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class RSAPrivateCrtKeySpec : java.security.spec.RSAPrivateKeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAPrivateCrtKeySpec()
-		{
-			InitJNI();
-		}
 		protected RSAPrivateCrtKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAPrivateCrtKeySpec.staticClass, global::java.security.spec.RSAPrivateCrtKeySpec._RSAPrivateCrtKeySpec24070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RSAPrivateCrtKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAPrivateCrtKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAPrivateCrtKeySpec"));
@@ -125,6 +121,9 @@ namespace java.security.spec
 			global::java.security.spec.RSAPrivateCrtKeySpec._getPrimeExponentQ24068 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateCrtKeySpec.staticClass, "getPrimeExponentQ", "()Ljava/math/BigInteger;");
 			global::java.security.spec.RSAPrivateCrtKeySpec._getCrtCoefficient24069 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateCrtKeySpec.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
 			global::java.security.spec.RSAPrivateCrtKeySpec._RSAPrivateCrtKeySpec24070 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateCrtKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

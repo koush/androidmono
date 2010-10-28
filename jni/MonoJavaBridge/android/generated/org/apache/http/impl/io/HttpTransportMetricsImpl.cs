@@ -4,10 +4,6 @@ namespace org.apache.http.impl.io
 	public partial class HttpTransportMetricsImpl : java.lang.Object, org.apache.http.io.HttpTransportMetrics
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpTransportMetricsImpl()
-		{
-			InitJNI();
-		}
 		protected HttpTransportMetricsImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, global::org.apache.http.impl.io.HttpTransportMetricsImpl._HttpTransportMetricsImpl33452);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpTransportMetricsImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/HttpTransportMetricsImpl"));
@@ -74,6 +70,9 @@ namespace org.apache.http.impl.io
 			global::org.apache.http.impl.io.HttpTransportMetricsImpl._setBytesTransferred33450 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, "setBytesTransferred", "(J)V");
 			global::org.apache.http.impl.io.HttpTransportMetricsImpl._incrementBytesTransferred33451 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, "incrementBytesTransferred", "(J)V");
 			global::org.apache.http.impl.io.HttpTransportMetricsImpl._HttpTransportMetricsImpl33452 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

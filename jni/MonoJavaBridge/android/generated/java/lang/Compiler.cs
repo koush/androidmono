@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Compiler : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Compiler()
-		{
-			InitJNI();
-		}
 		internal Compiler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,7 +37,7 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._disable20083);
 		}
-		private static void InitJNI()
+		static Compiler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Compiler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Compiler"));
@@ -50,6 +46,9 @@ namespace java.lang
 			global::java.lang.Compiler._command20081 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "command", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.lang.Compiler._enable20082 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "enable", "()V");
 			global::java.lang.Compiler._disable20083 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "disable", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public partial class FilterOutputStream : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterOutputStream()
-		{
-			InitJNI();
-		}
 		protected FilterOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilterOutputStream.staticClass, global::java.io.FilterOutputStream._FilterOutputStream19073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FilterOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilterOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilterOutputStream"));
@@ -73,6 +69,9 @@ namespace java.io
 			global::java.io.FilterOutputStream._flush19071 = @__env.GetMethodIDNoThrow(global::java.io.FilterOutputStream.staticClass, "flush", "()V");
 			global::java.io.FilterOutputStream._close19072 = @__env.GetMethodIDNoThrow(global::java.io.FilterOutputStream.staticClass, "close", "()V");
 			global::java.io.FilterOutputStream._FilterOutputStream19073 = @__env.GetMethodIDNoThrow(global::java.io.FilterOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

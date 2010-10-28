@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public sealed partial class Array : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Array()
-		{
-			InitJNI();
-		}
 		internal Array(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -137,7 +133,7 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setDouble21031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static Array()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Array.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Array"));
@@ -162,6 +158,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Array._setLong21029 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Array.staticClass, "setLong", "(Ljava/lang/Object;IJ)V");
 			global::java.lang.reflect.Array._setFloat21030 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Array.staticClass, "setFloat", "(Ljava/lang/Object;IF)V");
 			global::java.lang.reflect.Array._setDouble21031 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.Array.staticClass, "setDouble", "(Ljava/lang/Object;ID)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

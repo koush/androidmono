@@ -4,10 +4,6 @@ namespace android.content
 	public partial class SyncInfo : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SyncInfo()
-		{
-			InitJNI();
-		}
 		protected SyncInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,13 +34,16 @@ namespace android.content
 				return @__env.GetLongField(this.JvmHandle, _startTime3550);
 			}
 		}
-		private static void InitJNI()
+		static SyncInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncInfo"));
 			global::android.content.SyncInfo._account3548 = @__env.GetFieldIDNoThrow(global::android.content.SyncInfo.staticClass, "account", "Landroid/accounts/Account;");
 			global::android.content.SyncInfo._authority3549 = @__env.GetFieldIDNoThrow(global::android.content.SyncInfo.staticClass, "authority", "Ljava/lang/String;");
 			global::android.content.SyncInfo._startTime3550 = @__env.GetFieldIDNoThrow(global::android.content.SyncInfo.staticClass, "startTime", "J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

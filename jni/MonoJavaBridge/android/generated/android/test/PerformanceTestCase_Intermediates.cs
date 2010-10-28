@@ -14,10 +14,6 @@ namespace android.test
 	internal sealed partial class PerformanceTestCase_Intermediates_ : java.lang.Object, PerformanceTestCase_Intermediates
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PerformanceTestCase_Intermediates_()
-		{
-			InitJNI();
-		}
 		internal PerformanceTestCase_Intermediates_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.test
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_.staticClass, global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static PerformanceTestCase_Intermediates_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.PerformanceTestCase_Intermediates_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/PerformanceTestCase$Intermediates"));
@@ -75,6 +71,9 @@ namespace android.test
 			global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12269 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;)V");
 			global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12270 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;J)V");
 			global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "finishTiming", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

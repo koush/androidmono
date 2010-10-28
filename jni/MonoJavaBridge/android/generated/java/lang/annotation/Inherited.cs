@@ -9,10 +9,6 @@ namespace java.lang.annotation
 	internal sealed partial class Inherited_ : java.lang.Object, Inherited
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Inherited_()
-		{
-			InitJNI();
-		}
 		internal Inherited_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.lang.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Inherited_.staticClass, global::java.lang.annotation.Inherited_._annotationType20968)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Inherited_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.Inherited_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/Inherited"));
@@ -60,6 +56,9 @@ namespace java.lang.annotation
 			global::java.lang.annotation.Inherited_._toString20966 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Inherited_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.annotation.Inherited_._hashCode20967 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Inherited_.staticClass, "hashCode", "()I");
 			global::java.lang.annotation.Inherited_._annotationType20968 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Inherited_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

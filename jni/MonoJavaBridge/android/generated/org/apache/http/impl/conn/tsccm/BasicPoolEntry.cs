@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn.tsccm
 	public partial class BasicPoolEntry : org.apache.http.impl.conn.AbstractPoolEntry
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicPoolEntry()
-		{
-			InitJNI();
-		}
 		protected BasicPoolEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicPoolEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/BasicPoolEntry"));
@@ -74,6 +70,9 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getPlannedRoute33123 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getPlannedRoute", "()Lorg/apache/http/conn/routing/HttpRoute;");
 			global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getWeakRef33124 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getWeakRef", "()Lorg/apache/http/impl/conn/tsccm/BasicPoolEntryRef;");
 			global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33125 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/ref/ReferenceQueue;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

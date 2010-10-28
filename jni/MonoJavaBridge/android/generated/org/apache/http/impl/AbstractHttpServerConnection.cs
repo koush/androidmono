@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public abstract partial class AbstractHttpServerConnection : java.lang.Object, HttpServerConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpServerConnection()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpServerConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -156,7 +152,7 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.AbstractHttpServerConnection.staticClass, global::org.apache.http.impl.AbstractHttpServerConnection._AbstractHttpServerConnection32626);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpServerConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.AbstractHttpServerConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/AbstractHttpServerConnection"));
@@ -182,16 +178,15 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.AbstractHttpServerConnection._createResponseWriter32625 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpServerConnection.staticClass, "createResponseWriter", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageWriter;");
 			global::org.apache.http.impl.AbstractHttpServerConnection._AbstractHttpServerConnection32626 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpServerConnection.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.AbstractHttpServerConnection))]
 	internal sealed partial class AbstractHttpServerConnection_ : org.apache.http.impl.AbstractHttpServerConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpServerConnection_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpServerConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -249,7 +244,7 @@ namespace org.apache.http.impl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.AbstractHttpServerConnection_.staticClass, global::org.apache.http.impl.AbstractHttpServerConnection_._assertOpen32632);
 		}
-		private static void InitJNI()
+		static AbstractHttpServerConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.AbstractHttpServerConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/AbstractHttpServerConnection"));
@@ -259,6 +254,9 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.AbstractHttpServerConnection_._setSocketTimeout32630 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpServerConnection_.staticClass, "setSocketTimeout", "(I)V");
 			global::org.apache.http.impl.AbstractHttpServerConnection_._getSocketTimeout32631 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpServerConnection_.staticClass, "getSocketTimeout", "()I");
 			global::org.apache.http.impl.AbstractHttpServerConnection_._assertOpen32632 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpServerConnection_.staticClass, "assertOpen", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

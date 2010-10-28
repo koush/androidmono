@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class Time : java.util.Date
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Time()
-		{
-			InitJNI();
-		}
 		protected Time(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +148,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.Time.staticClass, global::java.sql.Time._Time25106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Time()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Time.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Time"));
@@ -168,6 +164,9 @@ namespace java.sql
 			global::java.sql.Time._getDay25104 = @__env.GetMethodIDNoThrow(global::java.sql.Time.staticClass, "getDay", "()I");
 			global::java.sql.Time._Time25105 = @__env.GetMethodIDNoThrow(global::java.sql.Time.staticClass, "<init>", "(III)V");
 			global::java.sql.Time._Time25106 = @__env.GetMethodIDNoThrow(global::java.sql.Time.staticClass, "<init>", "(J)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

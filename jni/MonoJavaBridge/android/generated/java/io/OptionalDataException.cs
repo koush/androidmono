@@ -4,10 +4,6 @@ namespace java.io
 	public partial class OptionalDataException : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OptionalDataException()
-		{
-			InitJNI();
-		}
 		protected OptionalDataException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,12 +31,15 @@ namespace java.io
 			{
 			}
 		}
-		private static void InitJNI()
+		static OptionalDataException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.OptionalDataException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/OptionalDataException"));
 			global::java.io.OptionalDataException._length19350 = @__env.GetFieldIDNoThrow(global::java.io.OptionalDataException.staticClass, "length", "I");
 			global::java.io.OptionalDataException._eof19351 = @__env.GetFieldIDNoThrow(global::java.io.OptionalDataException.staticClass, "eof", "Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

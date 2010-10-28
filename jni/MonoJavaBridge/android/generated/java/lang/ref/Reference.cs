@@ -4,10 +4,6 @@ namespace java.lang.@ref
 	public abstract partial class Reference : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Reference()
-		{
-			InitJNI();
-		}
 		protected Reference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace java.lang.@ref
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._enqueue20989);
 		}
-		private static void InitJNI()
+		static Reference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.Reference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/Reference"));
@@ -56,23 +52,25 @@ namespace java.lang.@ref
 			global::java.lang.@ref.Reference._isEnqueued20988 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "isEnqueued", "()Z");
 			global::java.lang.@ref.Reference._enqueue20989 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "enqueue", "()Z");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.@ref.Reference))]
 	internal sealed partial class Reference_ : java.lang.@ref.Reference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Reference_()
-		{
-			InitJNI();
-		}
 		internal Reference_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Reference_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.Reference_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/Reference"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

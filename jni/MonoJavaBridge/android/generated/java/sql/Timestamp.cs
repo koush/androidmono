@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class Timestamp : java.util.Date
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Timestamp()
-		{
-			InitJNI();
-		}
 		protected Timestamp(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +148,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.Timestamp.staticClass, global::java.sql.Timestamp._Timestamp25120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Timestamp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Timestamp.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Timestamp"));
@@ -170,6 +166,9 @@ namespace java.sql
 			global::java.sql.Timestamp._setNanos25118 = @__env.GetMethodIDNoThrow(global::java.sql.Timestamp.staticClass, "setNanos", "(I)V");
 			global::java.sql.Timestamp._Timestamp25119 = @__env.GetMethodIDNoThrow(global::java.sql.Timestamp.staticClass, "<init>", "(J)V");
 			global::java.sql.Timestamp._Timestamp25120 = @__env.GetMethodIDNoThrow(global::java.sql.Timestamp.staticClass, "<init>", "(IIIIIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -9,17 +9,16 @@ namespace org.apache.http.@params
 	internal sealed partial class CoreProtocolPNames_ : java.lang.Object, CoreProtocolPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CoreProtocolPNames_()
-		{
-			InitJNI();
-		}
 		internal CoreProtocolPNames_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static CoreProtocolPNames_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.CoreProtocolPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/CoreProtocolPNames"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

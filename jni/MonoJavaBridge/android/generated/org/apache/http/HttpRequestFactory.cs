@@ -11,10 +11,6 @@ namespace org.apache.http
 	internal sealed partial class HttpRequestFactory_ : java.lang.Object, HttpRequestFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestFactory_()
-		{
-			InitJNI();
-		}
 		internal HttpRequestFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpRequest>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpRequestFactory_.staticClass, global::org.apache.http.HttpRequestFactory_._newHttpRequest31636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpRequest;
 		}
-		private static void InitJNI()
+		static HttpRequestFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpRequestFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpRequestFactory"));
 			global::org.apache.http.HttpRequestFactory_._newHttpRequest31635 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpRequestFactory_.staticClass, "newHttpRequest", "(Lorg/apache/http/RequestLine;)Lorg/apache/http/HttpRequest;");
 			global::org.apache.http.HttpRequestFactory_._newHttpRequest31636 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpRequestFactory_.staticClass, "newHttpRequest", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/HttpRequest;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

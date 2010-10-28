@@ -9,17 +9,16 @@ namespace java.lang
 	internal sealed partial class Cloneable_ : java.lang.Object, Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Cloneable_()
-		{
-			InitJNI();
-		}
 		internal Cloneable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Cloneable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Cloneable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Cloneable"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

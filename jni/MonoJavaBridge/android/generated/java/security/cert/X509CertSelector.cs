@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class X509CertSelector : java.lang.Object, CertSelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CertSelector()
-		{
-			InitJNI();
-		}
 		protected X509CertSelector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -712,7 +708,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CertSelector.staticClass, global::java.security.cert.X509CertSelector._X509CertSelector23837);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509CertSelector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CertSelector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CertSelector"));
@@ -769,6 +765,9 @@ namespace java.security.cert
 			global::java.security.cert.X509CertSelector._getMatchAllSubjectAltNames23835 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CertSelector.staticClass, "getMatchAllSubjectAltNames", "()Z");
 			global::java.security.cert.X509CertSelector._getPathToNames23836 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CertSelector.staticClass, "getPathToNames", "()Ljava/util/Collection;");
 			global::java.security.cert.X509CertSelector._X509CertSelector23837 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CertSelector.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

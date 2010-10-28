@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class BulletSpan : java.lang.Object, LeadingMarginSpan, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BulletSpan()
-		{
-			InitJNI();
-		}
 		protected BulletSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace android.text.style
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static BulletSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.BulletSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/BulletSpan"));
@@ -115,6 +111,9 @@ namespace android.text.style
 			global::android.text.style.BulletSpan._BulletSpan13455 = @__env.GetMethodIDNoThrow(global::android.text.style.BulletSpan.staticClass, "<init>", "(II)V");
 			global::android.text.style.BulletSpan._BulletSpan13456 = @__env.GetMethodIDNoThrow(global::android.text.style.BulletSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.text.style.BulletSpan._BulletSpan13457 = @__env.GetMethodIDNoThrow(global::android.text.style.BulletSpan.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

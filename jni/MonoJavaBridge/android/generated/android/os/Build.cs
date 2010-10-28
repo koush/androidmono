@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Build : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Build()
-		{
-			InitJNI();
-		}
 		protected Build(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.os
 		public partial class VERSION : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static VERSION()
-			{
-				InitJNI();
-			}
 			protected VERSION(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -72,7 +64,7 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _CODENAME9563)) as java.lang.String;
 				}
 			}
-			private static void InitJNI()
+			static VERSION()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Build.VERSION.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build$VERSION"));
@@ -82,15 +74,14 @@ namespace android.os
 				global::android.os.Build.VERSION._SDK9561 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.VERSION.staticClass, "SDK", "Ljava/lang/String;");
 				global::android.os.Build.VERSION._CODENAME9563 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.VERSION.staticClass, "CODENAME", "Ljava/lang/String;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class VERSION_CODES : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static VERSION_CODES()
-			{
-				InitJNI();
-			}
 			protected VERSION_CODES(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -164,11 +155,14 @@ namespace android.os
 					return 8;
 				}
 			}
-			private static void InitJNI()
+			static VERSION_CODES()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Build.VERSION_CODES.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build$VERSION_CODES"));
 				global::android.os.Build.VERSION_CODES._VERSION_CODES9564 = @__env.GetMethodIDNoThrow(global::android.os.Build.VERSION_CODES.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _Build9574;
@@ -354,7 +348,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _HOST9594)) as java.lang.String;
 			}
 		}
-		private static void InitJNI()
+		static Build()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Build.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build"));
@@ -377,6 +371,9 @@ namespace android.os
 			global::android.os.Build._FINGERPRINT9591 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "FINGERPRINT", "Ljava/lang/String;");
 			global::android.os.Build._USER9593 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "USER", "Ljava/lang/String;");
 			global::android.os.Build._HOST9594 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "HOST", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

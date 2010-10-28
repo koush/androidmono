@@ -10,10 +10,6 @@ namespace javax.xml.transform.dom
 	internal sealed partial class DOMLocator_ : java.lang.Object, DOMLocator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMLocator_()
-		{
-			InitJNI();
-		}
 		internal DOMLocator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace javax.xml.transform.dom
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getColumnNumber31044);
 		}
-		private static void InitJNI()
+		static DOMLocator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.dom.DOMLocator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/dom/DOMLocator"));
@@ -71,6 +67,9 @@ namespace javax.xml.transform.dom
 			global::javax.xml.transform.dom.DOMLocator_._getPublicId31042 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getPublicId", "()Ljava/lang/String;");
 			global::javax.xml.transform.dom.DOMLocator_._getSystemId31043 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getSystemId", "()Ljava/lang/String;");
 			global::javax.xml.transform.dom.DOMLocator_._getColumnNumber31044 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getColumnNumber", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace android.widget
 	internal sealed partial class FilterQueryProvider_ : java.lang.Object, FilterQueryProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterQueryProvider_()
-		{
-			InitJNI();
-		}
 		internal FilterQueryProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.widget
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_.staticClass, global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
-		private static void InitJNI()
+		static FilterQueryProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FilterQueryProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterQueryProvider"));
 			global::android.widget.FilterQueryProvider_._runQuery17087 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.widget
 	internal partial class FilterQueryProviderDelegateWrapper : java.lang.Object, FilterQueryProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterQueryProviderDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected FilterQueryProviderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterQueryProviderDelegateWrapper.staticClass, global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FilterQueryProviderDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FilterQueryProviderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterQueryProviderDelegateWrapper"));
 			global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProviderDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class FilterQueryProviderDelegateWrapper

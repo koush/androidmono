@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLES10Ext : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLES10Ext()
-		{
-			InitJNI();
-		}
 		protected GLES10Ext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,13 +26,16 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._GLES10Ext8513);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GLES10Ext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES10Ext.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES10Ext"));
 			global::android.opengl.GLES10Ext._glQueryMatrixxOES8511 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "([II[II)I");
 			global::android.opengl.GLES10Ext._glQueryMatrixxOES8512 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I");
 			global::android.opengl.GLES10Ext._GLES10Ext8513 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

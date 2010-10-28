@@ -4,10 +4,6 @@ namespace java.util
 	public partial class TreeSet : java.util.AbstractSet, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TreeSet()
-		{
-			InitJNI();
-		}
 		protected TreeSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -241,7 +237,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TreeSet.staticClass, global::java.util.TreeSet._TreeSet26940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TreeSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TreeSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TreeSet"));
@@ -271,6 +267,9 @@ namespace java.util
 			global::java.util.TreeSet._TreeSet26938 = @__env.GetMethodIDNoThrow(global::java.util.TreeSet.staticClass, "<init>", "(Ljava/util/Comparator;)V");
 			global::java.util.TreeSet._TreeSet26939 = @__env.GetMethodIDNoThrow(global::java.util.TreeSet.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::java.util.TreeSet._TreeSet26940 = @__env.GetMethodIDNoThrow(global::java.util.TreeSet.staticClass, "<init>", "(Ljava/util/SortedSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

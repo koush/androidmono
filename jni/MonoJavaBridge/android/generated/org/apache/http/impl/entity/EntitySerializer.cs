@@ -4,10 +4,6 @@ namespace org.apache.http.impl.entity
 	public partial class EntitySerializer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntitySerializer()
-		{
-			InitJNI();
-		}
 		protected EntitySerializer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.EntitySerializer.staticClass, global::org.apache.http.impl.entity.EntitySerializer._EntitySerializer33375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EntitySerializer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.entity.EntitySerializer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/entity/EntitySerializer"));
 			global::org.apache.http.impl.entity.EntitySerializer._serialize33373 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntitySerializer.staticClass, "serialize", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/HttpMessage;Lorg/apache/http/HttpEntity;)V");
 			global::org.apache.http.impl.entity.EntitySerializer._doSerialize33374 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntitySerializer.staticClass, "doSerialize", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/HttpMessage;)Ljava/io/OutputStream;");
 			global::org.apache.http.impl.entity.EntitySerializer._EntitySerializer33375 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntitySerializer.staticClass, "<init>", "(Lorg/apache/http/entity/ContentLengthStrategy;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.provider
 	public partial class SearchRecentSuggestions : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SearchRecentSuggestions()
-		{
-			InitJNI();
-		}
 		protected SearchRecentSuggestions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -91,7 +87,7 @@ namespace android.provider
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static SearchRecentSuggestions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.SearchRecentSuggestions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SearchRecentSuggestions"));
@@ -101,6 +97,9 @@ namespace android.provider
 			global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions11332 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;I)V");
 			global::android.provider.SearchRecentSuggestions._QUERIES_PROJECTION_1LINE11333 = @__env.GetStaticFieldIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "QUERIES_PROJECTION_1LINE", "[Ljava/lang/String;");
 			global::android.provider.SearchRecentSuggestions._QUERIES_PROJECTION_2LINE11334 = @__env.GetStaticFieldIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "QUERIES_PROJECTION_2LINE", "[Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

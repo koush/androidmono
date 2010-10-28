@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class GridView : android.widget.AbsListView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GridView()
-		{
-			InitJNI();
-		}
 		protected GridView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -320,7 +316,7 @@ namespace android.widget
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static GridView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.GridView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/GridView"));
@@ -348,6 +344,9 @@ namespace android.widget
 			global::android.widget.GridView._GridView17174 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.GridView._GridView17175 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.GridView._GridView17176 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

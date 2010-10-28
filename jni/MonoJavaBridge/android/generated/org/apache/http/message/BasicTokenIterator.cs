@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicTokenIterator : java.lang.Object, TokenIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicTokenIterator()
-		{
-			InitJNI();
-		}
 		protected BasicTokenIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -142,7 +138,7 @@ namespace org.apache.http.message
 				return " ,;=()<>@:\\\"/[]?{}	";
 			}
 		}
-		private static void InitJNI()
+		static BasicTokenIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicTokenIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicTokenIterator"));
@@ -160,6 +156,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicTokenIterator._isTokenChar33662 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isTokenChar", "(C)Z");
 			global::org.apache.http.message.BasicTokenIterator._isHttpSeparator33663 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isHttpSeparator", "(C)Z");
 			global::org.apache.http.message.BasicTokenIterator._BasicTokenIterator33664 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "<init>", "(Lorg/apache/http/HeaderIterator;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

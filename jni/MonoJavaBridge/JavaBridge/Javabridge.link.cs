@@ -153,7 +153,17 @@ namespace MonoJavaBridge
             Console.WriteLine("Loading Assembly: {0}", assemblyName);
             var assembly = Assembly.LoadFile(assemblyName);
             if (assembly != null)
+            {
                 myAssemblies.Add(assembly.FullName);
+                object[] attrs = assembly.GetCustomAttributes(typeof(MonoJavaBridgeAssemblyInitializerAttribute), false);
+                if (attrs.Length >= 1)
+                {
+                    var attr = attrs[0] as MonoJavaBridgeAssemblyInitializerAttribute;
+                    var type = attr.Type;
+                    var method = type.GetMethod("InitializeBridge");
+                    method.Invoke(null, null);
+                }
+            }
             Console.WriteLine("Done loading assembly");
         }
 
@@ -405,7 +415,9 @@ namespace MonoJavaBridge
             var methodSig = env.ConvertToString(methodSignatureHandle);
             var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
             string classCanonicalName = GetClassCanonicalName(env, classHandle);
-            //Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
+            if (classCanonicalName.StartsWith("internal."))
+                classCanonicalName = classCanonicalName.Substring("internal.".Length);
+            Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
             Type type = FindType(classCanonicalName);
             if (type == null)
             {

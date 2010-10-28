@@ -10,10 +10,6 @@ namespace javax.security.auth.callback
 	internal sealed partial class CallbackHandler_ : java.lang.Object, CallbackHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CallbackHandler_()
-		{
-			InitJNI();
-		}
 		internal CallbackHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.security.auth.callback
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_.staticClass, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CallbackHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.CallbackHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/CallbackHandler"));
 			global::javax.security.auth.callback.CallbackHandler_._handle30198 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

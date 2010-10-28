@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class Deflater : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Deflater()
-		{
-			InitJNI();
-		}
 		protected Deflater(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -322,7 +318,7 @@ namespace java.util.zip
 				return 0;
 			}
 		}
-		private static void InitJNI()
+		static Deflater()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.Deflater.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/Deflater"));
@@ -348,6 +344,9 @@ namespace java.util.zip
 			global::java.util.zip.Deflater._Deflater28373 = @__env.GetMethodIDNoThrow(global::java.util.zip.Deflater.staticClass, "<init>", "(IZ)V");
 			global::java.util.zip.Deflater._Deflater28374 = @__env.GetMethodIDNoThrow(global::java.util.zip.Deflater.staticClass, "<init>", "(I)V");
 			global::java.util.zip.Deflater._Deflater28375 = @__env.GetMethodIDNoThrow(global::java.util.zip.Deflater.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

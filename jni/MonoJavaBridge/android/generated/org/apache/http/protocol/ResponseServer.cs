@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class ResponseServer : java.lang.Object, HttpResponseInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseServer()
-		{
-			InitJNI();
-		}
 		protected ResponseServer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.ResponseServer.staticClass, global::org.apache.http.protocol.ResponseServer._ResponseServer33955);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResponseServer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.ResponseServer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/ResponseServer"));
 			global::org.apache.http.protocol.ResponseServer._process33954 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseServer.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.ResponseServer._ResponseServer33955 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseServer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

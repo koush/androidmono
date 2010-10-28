@@ -18,10 +18,6 @@ namespace android.view
 	internal sealed partial class SubMenu_ : java.lang.Object, SubMenu
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SubMenu_()
-		{
-			InitJNI();
-		}
 		internal SubMenu_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -322,7 +318,7 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setQwertyMode14520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SubMenu_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SubMenu_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SubMenu"));
@@ -359,6 +355,9 @@ namespace android.view
 			global::android.view.SubMenu_._performShortcut14518 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "performShortcut", "(ILandroid/view/KeyEvent;I)Z");
 			global::android.view.SubMenu_._performIdentifierAction14519 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "performIdentifierAction", "(II)Z");
 			global::android.view.SubMenu_._setQwertyMode14520 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setQwertyMode", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

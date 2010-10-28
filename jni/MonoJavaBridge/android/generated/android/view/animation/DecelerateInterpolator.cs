@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class DecelerateInterpolator : java.lang.Object, Interpolator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DecelerateInterpolator()
-		{
-			InitJNI();
-		}
 		protected DecelerateInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,7 +37,7 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.DecelerateInterpolator.staticClass, global::android.view.animation.DecelerateInterpolator._DecelerateInterpolator15682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DecelerateInterpolator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.DecelerateInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/DecelerateInterpolator"));
@@ -49,6 +45,9 @@ namespace android.view.animation
 			global::android.view.animation.DecelerateInterpolator._DecelerateInterpolator15680 = @__env.GetMethodIDNoThrow(global::android.view.animation.DecelerateInterpolator.staticClass, "<init>", "()V");
 			global::android.view.animation.DecelerateInterpolator._DecelerateInterpolator15681 = @__env.GetMethodIDNoThrow(global::android.view.animation.DecelerateInterpolator.staticClass, "<init>", "(F)V");
 			global::android.view.animation.DecelerateInterpolator._DecelerateInterpolator15682 = @__env.GetMethodIDNoThrow(global::android.view.animation.DecelerateInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.conn.routing
 	public sealed partial class RouteTracker : java.lang.Object, RouteInfo, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RouteTracker()
-		{
-			InitJNI();
-		}
 		internal RouteTracker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -256,7 +252,7 @@ namespace org.apache.http.conn.routing
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._RouteTracker32288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RouteTracker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.RouteTracker.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/RouteTracker"));
@@ -283,6 +279,9 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.RouteTracker._toRoute32286 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteTracker.staticClass, "toRoute", "()Lorg/apache/http/conn/routing/HttpRoute;");
 			global::org.apache.http.conn.routing.RouteTracker._RouteTracker32287 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteTracker.staticClass, "<init>", "(Lorg/apache/http/conn/routing/HttpRoute;)V");
 			global::org.apache.http.conn.routing.RouteTracker._RouteTracker32288 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteTracker.staticClass, "<init>", "(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

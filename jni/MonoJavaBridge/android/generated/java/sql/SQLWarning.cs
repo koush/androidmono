@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class SQLWarning : java.sql.SQLException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLWarning()
-		{
-			InitJNI();
-		}
 		protected SQLWarning(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._SQLWarning25042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SQLWarning()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLWarning.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLWarning"));
@@ -110,6 +106,9 @@ namespace java.sql
 			global::java.sql.SQLWarning._SQLWarning25040 = @__env.GetMethodIDNoThrow(global::java.sql.SQLWarning.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.sql.SQLWarning._SQLWarning25041 = @__env.GetMethodIDNoThrow(global::java.sql.SQLWarning.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.sql.SQLWarning._SQLWarning25042 = @__env.GetMethodIDNoThrow(global::java.sql.SQLWarning.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

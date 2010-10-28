@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class ProcessBuilder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProcessBuilder()
-		{
-			InitJNI();
-		}
 		internal ProcessBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._ProcessBuilder20426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ProcessBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ProcessBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ProcessBuilder"));
@@ -121,6 +117,9 @@ namespace java.lang
 			global::java.lang.ProcessBuilder._redirectErrorStream20424 = @__env.GetMethodIDNoThrow(global::java.lang.ProcessBuilder.staticClass, "redirectErrorStream", "(Z)Ljava/lang/ProcessBuilder;");
 			global::java.lang.ProcessBuilder._ProcessBuilder20425 = @__env.GetMethodIDNoThrow(global::java.lang.ProcessBuilder.staticClass, "<init>", "(Ljava/util/List;)V");
 			global::java.lang.ProcessBuilder._ProcessBuilder20426 = @__env.GetMethodIDNoThrow(global::java.lang.ProcessBuilder.staticClass, "<init>", "([Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

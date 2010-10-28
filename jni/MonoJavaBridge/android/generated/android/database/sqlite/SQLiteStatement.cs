@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public partial class SQLiteStatement : android.database.sqlite.SQLiteProgram
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteStatement()
-		{
-			InitJNI();
-		}
 		protected SQLiteStatement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace android.database.sqlite
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static SQLiteStatement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteStatement.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteStatement"));
@@ -55,6 +51,9 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteStatement._executeInsert4858 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "executeInsert", "()J");
 			global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForLong", "()J");
 			global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForString", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

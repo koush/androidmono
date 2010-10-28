@@ -4,10 +4,6 @@ namespace javax.xml.transform
 	public partial class OutputKeys : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OutputKeys()
-		{
-			InitJNI();
-		}
 		protected OutputKeys(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,10 +77,13 @@ namespace javax.xml.transform
 				return "media-type";
 			}
 		}
-		private static void InitJNI()
+		static OutputKeys()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.OutputKeys.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/OutputKeys"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace org.apache.http.conn
 	internal sealed partial class EofSensorWatcher_ : java.lang.Object, EofSensorWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EofSensorWatcher_()
-		{
-			InitJNI();
-		}
 		internal EofSensorWatcher_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http.conn
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static EofSensorWatcher_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.EofSensorWatcher_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/EofSensorWatcher"));
 			global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "eofDetected", "(Ljava/io/InputStream;)Z");
 			global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamClosed", "(Ljava/io/InputStream;)Z");
 			global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

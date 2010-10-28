@@ -4,10 +4,6 @@ namespace android.util
 	public partial class TypedValue : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TypedValue()
-		{
-			InitJNI();
-		}
 		protected TypedValue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -484,7 +480,7 @@ namespace android.util
 			{
 			}
 		}
-		private static void InitJNI()
+		static TypedValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.TypedValue.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/TypedValue"));
@@ -510,6 +506,9 @@ namespace android.util
 			global::android.util.TypedValue._resourceId13952 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "resourceId", "I");
 			global::android.util.TypedValue._changingConfigurations13953 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "changingConfigurations", "I");
 			global::android.util.TypedValue._density13954 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "density", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

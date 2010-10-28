@@ -12,10 +12,6 @@ namespace javax.net.ssl
 	internal sealed partial class X509TrustManager_ : java.lang.Object, X509TrustManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509TrustManager_()
-		{
-			InitJNI();
-		}
 		internal X509TrustManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace javax.net.ssl
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.X509Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30162)) as java.security.cert.X509Certificate[];
 		}
-		private static void InitJNI()
+		static X509TrustManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.X509TrustManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/X509TrustManager"));
 			global::javax.net.ssl.X509TrustManager_._checkClientTrusted30160 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
 			global::javax.net.ssl.X509TrustManager_._checkServerTrusted30161 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
 			global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30162 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

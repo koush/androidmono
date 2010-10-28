@@ -4,10 +4,6 @@ namespace java.util
 	public partial class ArrayList : java.util.AbstractList, List, RandomAccess, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ArrayList()
-		{
-			InitJNI();
-		}
 		protected ArrayList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -212,7 +208,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList25770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ArrayList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ArrayList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ArrayList"));
@@ -239,6 +235,9 @@ namespace java.util
 			global::java.util.ArrayList._ArrayList25768 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "(I)V");
 			global::java.util.ArrayList._ArrayList25769 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "()V");
 			global::java.util.ArrayList._ArrayList25770 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "(Ljava/util/Collection;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

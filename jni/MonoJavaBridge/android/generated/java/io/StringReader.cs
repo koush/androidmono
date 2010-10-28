@@ -4,10 +4,6 @@ namespace java.io
 	public partial class StringReader : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StringReader()
-		{
-			InitJNI();
-		}
 		protected StringReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.StringReader.staticClass, global::java.io.StringReader._StringReader19616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StringReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.StringReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/StringReader"));
@@ -103,6 +99,9 @@ namespace java.io
 			global::java.io.StringReader._markSupported19614 = @__env.GetMethodIDNoThrow(global::java.io.StringReader.staticClass, "markSupported", "()Z");
 			global::java.io.StringReader._ready19615 = @__env.GetMethodIDNoThrow(global::java.io.StringReader.staticClass, "ready", "()Z");
 			global::java.io.StringReader._StringReader19616 = @__env.GetMethodIDNoThrow(global::java.io.StringReader.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

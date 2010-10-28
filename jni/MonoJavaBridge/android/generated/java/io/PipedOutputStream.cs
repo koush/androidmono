@@ -4,10 +4,6 @@ namespace java.io
 	public partial class PipedOutputStream : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PipedOutputStream()
-		{
-			InitJNI();
-		}
 		protected PipedOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._PipedOutputStream19385);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PipedOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PipedOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PipedOutputStream"));
@@ -81,6 +77,9 @@ namespace java.io
 			global::java.io.PipedOutputStream._connect19383 = @__env.GetMethodIDNoThrow(global::java.io.PipedOutputStream.staticClass, "connect", "(Ljava/io/PipedInputStream;)V");
 			global::java.io.PipedOutputStream._PipedOutputStream19384 = @__env.GetMethodIDNoThrow(global::java.io.PipedOutputStream.staticClass, "<init>", "(Ljava/io/PipedInputStream;)V");
 			global::java.io.PipedOutputStream._PipedOutputStream19385 = @__env.GetMethodIDNoThrow(global::java.io.PipedOutputStream.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

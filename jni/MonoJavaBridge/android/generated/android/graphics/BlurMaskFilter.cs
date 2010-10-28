@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class BlurMaskFilter : android.graphics.MaskFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BlurMaskFilter()
-		{
-			InitJNI();
-		}
 		protected BlurMaskFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Blur : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Blur()
-			{
-				InitJNI();
-			}
 			internal Blur(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -70,7 +62,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _SOLID5099)) as android.graphics.BlurMaskFilter.Blur;
 				}
 			}
-			private static void InitJNI()
+			static Blur()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.BlurMaskFilter.Blur.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BlurMaskFilter$Blur"));
@@ -81,6 +73,9 @@ namespace android.graphics
 				global::android.graphics.BlurMaskFilter.Blur._OUTER5098 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.BlurMaskFilter.Blur.staticClass, "OUTER", "Landroid/graphics/BlurMaskFilter$Blur;");
 				global::android.graphics.BlurMaskFilter.Blur._SOLID5099 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.BlurMaskFilter.Blur.staticClass, "SOLID", "Landroid/graphics/BlurMaskFilter$Blur;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _BlurMaskFilter5100;
 		public BlurMaskFilter(float arg0, android.graphics.BlurMaskFilter.Blur arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -89,11 +84,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.BlurMaskFilter.staticClass, global::android.graphics.BlurMaskFilter._BlurMaskFilter5100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BlurMaskFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.BlurMaskFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BlurMaskFilter"));
 			global::android.graphics.BlurMaskFilter._BlurMaskFilter5100 = @__env.GetMethodIDNoThrow(global::android.graphics.BlurMaskFilter.staticClass, "<init>", "(FLandroid/graphics/BlurMaskFilter$Blur;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

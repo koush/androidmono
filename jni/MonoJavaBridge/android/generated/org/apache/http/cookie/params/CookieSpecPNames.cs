@@ -9,17 +9,16 @@ namespace org.apache.http.cookie.@params
 	internal sealed partial class CookieSpecPNames_ : java.lang.Object, CookieSpecPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieSpecPNames_()
-		{
-			InitJNI();
-		}
 		internal CookieSpecPNames_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static CookieSpecPNames_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.@params.CookieSpecPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/params/CookieSpecPNames"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

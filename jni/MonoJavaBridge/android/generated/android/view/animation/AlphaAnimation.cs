@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class AlphaAnimation : android.view.animation.Animation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlphaAnimation()
-		{
-			InitJNI();
-		}
 		protected AlphaAnimation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._AlphaAnimation15574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlphaAnimation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.AlphaAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/AlphaAnimation"));
@@ -61,6 +57,9 @@ namespace android.view.animation
 			global::android.view.animation.AlphaAnimation._applyTransformation15572 = @__env.GetMethodIDNoThrow(global::android.view.animation.AlphaAnimation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V");
 			global::android.view.animation.AlphaAnimation._AlphaAnimation15573 = @__env.GetMethodIDNoThrow(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.view.animation.AlphaAnimation._AlphaAnimation15574 = @__env.GetMethodIDNoThrow(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(FF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

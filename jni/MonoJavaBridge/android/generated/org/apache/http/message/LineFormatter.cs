@@ -13,10 +13,6 @@ namespace org.apache.http.message
 	internal sealed partial class LineFormatter_ : java.lang.Object, LineFormatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LineFormatter_()
-		{
-			InitJNI();
-		}
 		internal LineFormatter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.LineFormatter_.staticClass, global::org.apache.http.message.LineFormatter_._formatStatusLine33701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.CharArrayBuffer;
 		}
-		private static void InitJNI()
+		static LineFormatter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.LineFormatter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/LineFormatter"));
@@ -64,6 +60,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.LineFormatter_._appendProtocolVersion33699 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineFormatter_.staticClass, "appendProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/util/CharArrayBuffer;");
 			global::org.apache.http.message.LineFormatter_._formatRequestLine33700 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineFormatter_.staticClass, "formatRequestLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/RequestLine;)Lorg/apache/http/util/CharArrayBuffer;");
 			global::org.apache.http.message.LineFormatter_._formatStatusLine33701 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineFormatter_.staticClass, "formatStatusLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/StatusLine;)Lorg/apache/http/util/CharArrayBuffer;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

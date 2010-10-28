@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class HeaderViewListAdapter : java.lang.Object, WrapperListAdapter, Filterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeaderViewListAdapter()
-		{
-			InitJNI();
-		}
 		protected HeaderViewListAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -222,7 +218,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter17200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HeaderViewListAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.HeaderViewListAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/HeaderViewListAdapter"));
@@ -245,6 +241,9 @@ namespace android.widget
 			global::android.widget.HeaderViewListAdapter._removeFooter17198 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "removeFooter", "(Landroid/view/View;)Z");
 			global::android.widget.HeaderViewListAdapter._getWrappedAdapter17199 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getWrappedAdapter", "()Landroid/widget/ListAdapter;");
 			global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter17200 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "<init>", "(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

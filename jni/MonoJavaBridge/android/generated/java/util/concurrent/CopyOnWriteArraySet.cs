@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class CopyOnWriteArraySet : java.util.AbstractSet, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CopyOnWriteArraySet()
-		{
-			InitJNI();
-		}
 		protected CopyOnWriteArraySet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +151,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.CopyOnWriteArraySet.staticClass, global::java.util.concurrent.CopyOnWriteArraySet._CopyOnWriteArraySet27214);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CopyOnWriteArraySet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.CopyOnWriteArraySet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/CopyOnWriteArraySet"));
@@ -175,6 +171,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.CopyOnWriteArraySet._retainAll27212 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CopyOnWriteArraySet.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.concurrent.CopyOnWriteArraySet._CopyOnWriteArraySet27213 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CopyOnWriteArraySet.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::java.util.concurrent.CopyOnWriteArraySet._CopyOnWriteArraySet27214 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CopyOnWriteArraySet.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

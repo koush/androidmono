@@ -11,10 +11,6 @@ namespace android.os
 	internal sealed partial class Parcelable_Creator_ : java.lang.Object, Parcelable_Creator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Parcelable_Creator_()
-		{
-			InitJNI();
-		}
 		internal Parcelable_Creator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.os
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_.staticClass, global::android.os.Parcelable_Creator_._createFromParcel10112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static Parcelable_Creator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Parcelable_Creator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcelable$Creator"));
 			global::android.os.Parcelable_Creator_._newArray10111 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_Creator_.staticClass, "newArray", "(I)[Ljava/lang/Object;");
 			global::android.os.Parcelable_Creator_._createFromParcel10112 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_Creator_.staticClass, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

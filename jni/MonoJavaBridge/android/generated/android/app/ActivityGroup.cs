@@ -4,10 +4,6 @@ namespace android.app
 	public partial class ActivityGroup : android.app.Activity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityGroup()
-		{
-			InitJNI();
-		}
 		protected ActivityGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -111,7 +107,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._ActivityGroup1552);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ActivityGroup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ActivityGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityGroup"));
@@ -125,6 +121,9 @@ namespace android.app
 			global::android.app.ActivityGroup._getLocalActivityManager1550 = @__env.GetMethodIDNoThrow(global::android.app.ActivityGroup.staticClass, "getLocalActivityManager", "()Landroid/app/LocalActivityManager;");
 			global::android.app.ActivityGroup._ActivityGroup1551 = @__env.GetMethodIDNoThrow(global::android.app.ActivityGroup.staticClass, "<init>", "(Z)V");
 			global::android.app.ActivityGroup._ActivityGroup1552 = @__env.GetMethodIDNoThrow(global::android.app.ActivityGroup.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

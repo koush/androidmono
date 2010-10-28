@@ -4,10 +4,6 @@ namespace android.view
 	public abstract partial class Window : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Window()
-		{
-			InitJNI();
-		}
 		protected Window(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,10 +32,6 @@ namespace android.view
 		internal sealed partial class Callback_ : java.lang.Object, Callback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Callback_()
-			{
-				InitJNI();
-			}
 			internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -187,7 +179,7 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.Window.Callback_.staticClass, global::android.view.Window.Callback_._onSearchRequested15258);
 			}
-			private static void InitJNI()
+			static Callback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.Window.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Window$Callback"));
@@ -207,6 +199,9 @@ namespace android.view
 				global::android.view.Window.Callback_._onMenuItemSelected15256 = @__env.GetMethodIDNoThrow(global::android.view.Window.Callback_.staticClass, "onMenuItemSelected", "(ILandroid/view/MenuItem;)Z");
 				global::android.view.Window.Callback_._onPanelClosed15257 = @__env.GetMethodIDNoThrow(global::android.view.Window.Callback_.staticClass, "onPanelClosed", "(ILandroid/view/Menu;)V");
 				global::android.view.Window.Callback_._onSearchRequested15258 = @__env.GetMethodIDNoThrow(global::android.view.Window.Callback_.staticClass, "onSearchRequested", "()Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContext15259;
@@ -679,7 +674,7 @@ namespace android.view
 				return 16908290;
 			}
 		}
-		private static void InitJNI()
+		static Window()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Window.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Window"));
@@ -752,16 +747,15 @@ namespace android.view
 			global::android.view.Window._isShortcutKey15325 = @__env.GetMethodIDNoThrow(global::android.view.Window.staticClass, "isShortcutKey", "(ILandroid/view/KeyEvent;)Z");
 			global::android.view.Window._Window15326 = @__env.GetMethodIDNoThrow(global::android.view.Window.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.Window))]
 	internal sealed partial class Window_ : android.view.Window
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Window_()
-		{
-			InitJNI();
-		}
 		internal Window_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1102,7 +1096,7 @@ namespace android.view
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.Window_.staticClass, global::android.view.Window_._isShortcutKey15380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Window_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Window_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Window"));
@@ -1143,6 +1137,9 @@ namespace android.view
 			global::android.view.Window_._setChildDrawable15378 = @__env.GetMethodIDNoThrow(global::android.view.Window_.staticClass, "setChildDrawable", "(ILandroid/graphics/drawable/Drawable;)V");
 			global::android.view.Window_._setChildInt15379 = @__env.GetMethodIDNoThrow(global::android.view.Window_.staticClass, "setChildInt", "(II)V");
 			global::android.view.Window_._isShortcutKey15380 = @__env.GetMethodIDNoThrow(global::android.view.Window_.staticClass, "isShortcutKey", "(ILandroid/view/KeyEvent;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

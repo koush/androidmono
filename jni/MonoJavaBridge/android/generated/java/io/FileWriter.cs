@@ -4,10 +4,6 @@ namespace java.io
 	public partial class FileWriter : java.io.OutputStreamWriter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileWriter()
-		{
-			InitJNI();
-		}
 		protected FileWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,7 +42,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileWriter.staticClass, global::java.io.FileWriter._FileWriter19056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FileWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FileWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileWriter"));
@@ -55,6 +51,9 @@ namespace java.io
 			global::java.io.FileWriter._FileWriter19054 = @__env.GetMethodIDNoThrow(global::java.io.FileWriter.staticClass, "<init>", "(Ljava/io/File;)V");
 			global::java.io.FileWriter._FileWriter19055 = @__env.GetMethodIDNoThrow(global::java.io.FileWriter.staticClass, "<init>", "(Ljava/io/File;Z)V");
 			global::java.io.FileWriter._FileWriter19056 = @__env.GetMethodIDNoThrow(global::java.io.FileWriter.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

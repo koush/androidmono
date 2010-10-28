@@ -10,10 +10,6 @@ namespace com.android.@internal.util
 	internal sealed partial class Predicate_ : java.lang.Object, Predicate
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Predicate_()
-		{
-			InitJNI();
-		}
 		internal Predicate_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace com.android.@internal.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::com.android.@internal.util.Predicate_.staticClass, global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Predicate_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::com.android.@internal.util.Predicate_.staticClass = @__env.NewGlobalRef(@__env.FindClass("com/android/internal/util/Predicate"));
 			global::com.android.@internal.util.Predicate_._apply18336 = @__env.GetMethodIDNoThrow(global::com.android.@internal.util.Predicate_.staticClass, "apply", "(Ljava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

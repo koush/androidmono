@@ -4,10 +4,6 @@ namespace javax.security.auth
 	public sealed partial class PrivateCredentialPermission : java.security.Permission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PrivateCredentialPermission()
-		{
-			InitJNI();
-		}
 		internal PrivateCredentialPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.PrivateCredentialPermission.staticClass, global::javax.security.auth.PrivateCredentialPermission._PrivateCredentialPermission30176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PrivateCredentialPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.PrivateCredentialPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/PrivateCredentialPermission"));
@@ -114,6 +110,9 @@ namespace javax.security.auth
 			global::javax.security.auth.PrivateCredentialPermission._newPermissionCollection30174 = @__env.GetMethodIDNoThrow(global::javax.security.auth.PrivateCredentialPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;");
 			global::javax.security.auth.PrivateCredentialPermission._getCredentialClass30175 = @__env.GetMethodIDNoThrow(global::javax.security.auth.PrivateCredentialPermission.staticClass, "getCredentialClass", "()Ljava/lang/String;");
 			global::javax.security.auth.PrivateCredentialPermission._PrivateCredentialPermission30176 = @__env.GetMethodIDNoThrow(global::javax.security.auth.PrivateCredentialPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

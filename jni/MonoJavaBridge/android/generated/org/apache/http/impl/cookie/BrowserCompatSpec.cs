@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BrowserCompatSpec : org.apache.http.impl.cookie.CookieSpecBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BrowserCompatSpec()
-		{
-			InitJNI();
-		}
 		protected BrowserCompatSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BrowserCompatSpec.staticClass, global::org.apache.http.impl.cookie.BrowserCompatSpec._BrowserCompatSpec33283);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BrowserCompatSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BrowserCompatSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BrowserCompatSpec"));
@@ -85,6 +81,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.BrowserCompatSpec._getVersionHeader33281 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpec.staticClass, "getVersionHeader", "()Lorg/apache/http/Header;");
 			global::org.apache.http.impl.cookie.BrowserCompatSpec._BrowserCompatSpec33282 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpec.staticClass, "<init>", "([Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.BrowserCompatSpec._BrowserCompatSpec33283 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpec.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

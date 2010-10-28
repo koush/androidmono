@@ -9,17 +9,16 @@ namespace android.text.style
 	internal sealed partial class UpdateLayout_ : java.lang.Object, UpdateLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UpdateLayout_()
-		{
-			InitJNI();
-		}
 		internal UpdateLayout_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static UpdateLayout_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.UpdateLayout_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/UpdateLayout"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

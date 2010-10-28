@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Observable : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Observable()
-		{
-			InitJNI();
-		}
 		protected Observable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Observable.staticClass, global::java.util.Observable._Observable26536);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Observable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Observable.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Observable"));
@@ -113,6 +109,9 @@ namespace java.util
 			global::java.util.Observable._hasChanged26534 = @__env.GetMethodIDNoThrow(global::java.util.Observable.staticClass, "hasChanged", "()Z");
 			global::java.util.Observable._countObservers26535 = @__env.GetMethodIDNoThrow(global::java.util.Observable.staticClass, "countObservers", "()I");
 			global::java.util.Observable._Observable26536 = @__env.GetMethodIDNoThrow(global::java.util.Observable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.view
 	public partial class KeyCharacterMap : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyCharacterMap()
-		{
-			InitJNI();
-		}
 		protected KeyCharacterMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view
 		public partial class KeyData : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static KeyData()
-			{
-				InitJNI();
-			}
 			protected KeyData(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -72,7 +64,7 @@ namespace android.view
 				{
 				}
 			}
-			private static void InitJNI()
+			static KeyData()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.KeyCharacterMap.KeyData.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyCharacterMap$KeyData"));
@@ -80,6 +72,9 @@ namespace android.view
 				global::android.view.KeyCharacterMap.KeyData._displayLabel14095 = @__env.GetFieldIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "displayLabel", "C");
 				global::android.view.KeyCharacterMap.KeyData._number14096 = @__env.GetFieldIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "number", "C");
 				global::android.view.KeyCharacterMap.KeyData._meta14097 = @__env.GetFieldIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "meta", "[C");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize14098;
@@ -259,7 +254,7 @@ namespace android.view
 				return 2147483647;
 			}
 		}
-		private static void InitJNI()
+		static KeyCharacterMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.KeyCharacterMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyCharacterMap"));
@@ -277,6 +272,9 @@ namespace android.view
 			global::android.view.KeyCharacterMap._getKeyboardType14109 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getKeyboardType", "()I");
 			global::android.view.KeyCharacterMap._deviceHasKey14110 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "deviceHasKey", "(I)Z");
 			global::android.view.KeyCharacterMap._deviceHasKeys14111 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "deviceHasKeys", "([I)[Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

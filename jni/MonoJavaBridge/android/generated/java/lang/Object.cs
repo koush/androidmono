@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class Object 
 	{
 		internal static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Object()
-		{
-			InitJNI();
-		}
 		protected Object(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -124,7 +120,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Object.staticClass, global::java.lang.Object._Object20378);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Object()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Object.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Object"));
@@ -140,6 +136,9 @@ namespace java.lang
 			global::java.lang.Object._notify20376 = @__env.GetMethodIDNoThrow(global::java.lang.Object.staticClass, "notify", "()V");
 			global::java.lang.Object._notifyAll20377 = @__env.GetMethodIDNoThrow(global::java.lang.Object.staticClass, "notifyAll", "()V");
 			global::java.lang.Object._Object20378 = @__env.GetMethodIDNoThrow(global::java.lang.Object.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

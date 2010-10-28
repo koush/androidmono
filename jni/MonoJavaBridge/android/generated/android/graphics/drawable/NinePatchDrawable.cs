@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class NinePatchDrawable : android.graphics.drawable.Drawable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NinePatchDrawable()
-		{
-			InitJNI();
-		}
 		protected NinePatchDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -310,7 +306,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._NinePatchDrawable6139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NinePatchDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.NinePatchDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/NinePatchDrawable"));
@@ -338,6 +334,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.NinePatchDrawable._NinePatchDrawable6137 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.NinePatchDrawable.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Ljava/lang/String;)V");
 			global::android.graphics.drawable.NinePatchDrawable._NinePatchDrawable6138 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.NinePatchDrawable.staticClass, "<init>", "(Landroid/graphics/NinePatch;)V");
 			global::android.graphics.drawable.NinePatchDrawable._NinePatchDrawable6139 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.NinePatchDrawable.staticClass, "<init>", "(Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

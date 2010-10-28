@@ -13,10 +13,6 @@ namespace org.apache.http.message
 	internal sealed partial class HeaderValueFormatter_ : java.lang.Object, HeaderValueFormatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeaderValueFormatter_()
-		{
-			InitJNI();
-		}
 		internal HeaderValueFormatter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueFormatter_.staticClass, global::org.apache.http.message.HeaderValueFormatter_._formatNameValuePair33693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.util.CharArrayBuffer;
 		}
-		private static void InitJNI()
+		static HeaderValueFormatter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.HeaderValueFormatter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/HeaderValueFormatter"));
@@ -64,6 +60,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.HeaderValueFormatter_._formatHeaderElement33691 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueFormatter_.staticClass, "formatHeaderElement", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/HeaderElement;Z)Lorg/apache/http/util/CharArrayBuffer;");
 			global::org.apache.http.message.HeaderValueFormatter_._formatParameters33692 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueFormatter_.staticClass, "formatParameters", "(Lorg/apache/http/util/CharArrayBuffer;[Lorg/apache/http/NameValuePair;Z)Lorg/apache/http/util/CharArrayBuffer;");
 			global::org.apache.http.message.HeaderValueFormatter_._formatNameValuePair33693 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueFormatter_.staticClass, "formatNameValuePair", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/NameValuePair;Z)Lorg/apache/http/util/CharArrayBuffer;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

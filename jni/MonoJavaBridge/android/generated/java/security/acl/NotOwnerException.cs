@@ -4,10 +4,6 @@ namespace java.security.acl
 	public partial class NotOwnerException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NotOwnerException()
-		{
-			InitJNI();
-		}
 		protected NotOwnerException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace java.security.acl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.acl.NotOwnerException.staticClass, global::java.security.acl.NotOwnerException._NotOwnerException23461);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NotOwnerException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.acl.NotOwnerException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/acl/NotOwnerException"));
 			global::java.security.acl.NotOwnerException._NotOwnerException23461 = @__env.GetMethodIDNoThrow(global::java.security.acl.NotOwnerException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

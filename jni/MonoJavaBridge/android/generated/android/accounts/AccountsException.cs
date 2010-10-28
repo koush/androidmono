@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class AccountsException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccountsException()
-		{
-			InitJNI();
-		}
 		protected AccountsException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException1361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AccountsException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountsException"));
@@ -47,6 +43,9 @@ namespace android.accounts
 			global::android.accounts.AccountsException._AccountsException1359 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.accounts.AccountsException._AccountsException1360 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::android.accounts.AccountsException._AccountsException1361 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

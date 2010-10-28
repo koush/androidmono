@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class ScrollingMovementMethod : java.lang.Object, MovementMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScrollingMovementMethod()
-		{
-			InitJNI();
-		}
 		protected ScrollingMovementMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,7 +135,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.ScrollingMovementMethod.staticClass, global::android.text.method.ScrollingMovementMethod._ScrollingMovementMethod13390);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ScrollingMovementMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ScrollingMovementMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ScrollingMovementMethod"));
@@ -157,6 +153,9 @@ namespace android.text.method
 			global::android.text.method.ScrollingMovementMethod._onTakeFocus13388 = @__env.GetMethodIDNoThrow(global::android.text.method.ScrollingMovementMethod.staticClass, "onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
 			global::android.text.method.ScrollingMovementMethod._canSelectArbitrarily13389 = @__env.GetMethodIDNoThrow(global::android.text.method.ScrollingMovementMethod.staticClass, "canSelectArbitrarily", "()Z");
 			global::android.text.method.ScrollingMovementMethod._ScrollingMovementMethod13390 = @__env.GetMethodIDNoThrow(global::android.text.method.ScrollingMovementMethod.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

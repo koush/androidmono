@@ -4,10 +4,6 @@ namespace android.database
 	public partial class DatabaseUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatabaseUtils()
-		{
-			InitJNI();
-		}
 		protected DatabaseUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.database
 		public partial class InsertHelper : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static InsertHelper()
-			{
-				InitJNI();
-			}
 			protected InsertHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -171,7 +163,7 @@ namespace android.database
 					return 4;
 				}
 			}
-			private static void InitJNI()
+			static InsertHelper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.DatabaseUtils.InsertHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DatabaseUtils$InsertHelper"));
@@ -191,6 +183,9 @@ namespace android.database
 				global::android.database.DatabaseUtils.InsertHelper._prepareForInsert4617 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForInsert", "()V");
 				global::android.database.DatabaseUtils.InsertHelper._prepareForReplace4618 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForReplace", "()V");
 				global::android.database.DatabaseUtils.InsertHelper._InsertHelper4619 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "<init>", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _writeExceptionToParcel4621;
@@ -440,7 +435,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._DatabaseUtils4661);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DatabaseUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.DatabaseUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DatabaseUtils"));
@@ -485,6 +480,9 @@ namespace android.database
 			global::android.database.DatabaseUtils._cursorDoubleToContentValuesIfPresent4659 = @__env.GetStaticMethodIDNoThrow(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
 			global::android.database.DatabaseUtils._createDbFromSqlStatements4660 = @__env.GetStaticMethodIDNoThrow(global::android.database.DatabaseUtils.staticClass, "createDbFromSqlStatements", "(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V");
 			global::android.database.DatabaseUtils._DatabaseUtils4661 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

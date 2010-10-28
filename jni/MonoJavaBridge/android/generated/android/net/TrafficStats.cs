@@ -4,10 +4,6 @@ namespace android.net
 	public partial class TrafficStats : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TrafficStats()
-		{
-			InitJNI();
-		}
 		protected TrafficStats(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -141,7 +137,7 @@ namespace android.net
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static TrafficStats()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.TrafficStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/TrafficStats"));
@@ -156,6 +152,9 @@ namespace android.net
 			global::android.net.TrafficStats._getUidTxBytes7776 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidTxBytes", "(I)J");
 			global::android.net.TrafficStats._getUidRxBytes7777 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidRxBytes", "(I)J");
 			global::android.net.TrafficStats._TrafficStats7778 = @__env.GetMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

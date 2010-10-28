@@ -4,10 +4,6 @@ namespace javax.security.cert
 	public abstract partial class X509Certificate : javax.security.cert.Certificate
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509Certificate()
-		{
-			InitJNI();
-		}
 		protected X509Certificate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace javax.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.X509Certificate.staticClass, global::javax.security.cert.X509Certificate._X509Certificate30260);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509Certificate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.cert.X509Certificate.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/cert/X509Certificate"));
@@ -71,16 +67,15 @@ namespace javax.security.cert
 			global::javax.security.cert.X509Certificate._getSigAlgParams30259 = @__env.GetMethodIDNoThrow(global::javax.security.cert.X509Certificate.staticClass, "getSigAlgParams", "()[B");
 			global::javax.security.cert.X509Certificate._X509Certificate30260 = @__env.GetMethodIDNoThrow(global::javax.security.cert.X509Certificate.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.security.cert.X509Certificate))]
 	internal sealed partial class X509Certificate_ : javax.security.cert.X509Certificate
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509Certificate_()
-		{
-			InitJNI();
-		}
 		internal X509Certificate_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -228,7 +223,7 @@ namespace javax.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.cert.X509Certificate_.staticClass, global::javax.security.cert.X509Certificate_._getPublicKey30276)) as java.security.PublicKey;
 		}
-		private static void InitJNI()
+		static X509Certificate_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.cert.X509Certificate_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/cert/X509Certificate"));
@@ -248,6 +243,9 @@ namespace javax.security.cert
 			global::javax.security.cert.X509Certificate_._verify30274 = @__env.GetMethodIDNoThrow(global::javax.security.cert.X509Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V");
 			global::javax.security.cert.X509Certificate_._verify30275 = @__env.GetMethodIDNoThrow(global::javax.security.cert.X509Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V");
 			global::javax.security.cert.X509Certificate_._getPublicKey30276 = @__env.GetMethodIDNoThrow(global::javax.security.cert.X509Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

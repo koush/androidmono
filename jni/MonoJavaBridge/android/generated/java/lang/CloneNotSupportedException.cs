@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class CloneNotSupportedException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CloneNotSupportedException()
-		{
-			InitJNI();
-		}
 		protected CloneNotSupportedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.CloneNotSupportedException.staticClass, global::java.lang.CloneNotSupportedException._CloneNotSupportedException20077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CloneNotSupportedException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.CloneNotSupportedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/CloneNotSupportedException"));
 			global::java.lang.CloneNotSupportedException._CloneNotSupportedException20076 = @__env.GetMethodIDNoThrow(global::java.lang.CloneNotSupportedException.staticClass, "<init>", "()V");
 			global::java.lang.CloneNotSupportedException._CloneNotSupportedException20077 = @__env.GetMethodIDNoThrow(global::java.lang.CloneNotSupportedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

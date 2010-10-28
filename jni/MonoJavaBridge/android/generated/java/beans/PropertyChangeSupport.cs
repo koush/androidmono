@@ -4,10 +4,6 @@ namespace java.beans
 	public partial class PropertyChangeSupport : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PropertyChangeSupport()
-		{
-			InitJNI();
-		}
 		protected PropertyChangeSupport(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace java.beans
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._PropertyChangeSupport18799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PropertyChangeSupport()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.beans.PropertyChangeSupport.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/beans/PropertyChangeSupport"));
@@ -170,6 +166,9 @@ namespace java.beans
 			global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18797 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;III)V");
 			global::java.beans.PropertyChangeSupport._hasListeners18798 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "hasListeners", "(Ljava/lang/String;)Z");
 			global::java.beans.PropertyChangeSupport._PropertyChangeSupport18799 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "<init>", "(Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

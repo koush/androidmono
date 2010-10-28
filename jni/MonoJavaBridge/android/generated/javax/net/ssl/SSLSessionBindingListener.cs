@@ -11,10 +11,6 @@ namespace javax.net.ssl
 	internal sealed partial class SSLSessionBindingListener_ : java.lang.Object, SSLSessionBindingListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLSessionBindingListener_()
-		{
-			InitJNI();
-		}
 		internal SSLSessionBindingListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.net.ssl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionBindingListener_.staticClass, global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SSLSessionBindingListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLSessionBindingListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLSessionBindingListener"));
 			global::javax.net.ssl.SSLSessionBindingListener_._valueBound30061 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V");
 			global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

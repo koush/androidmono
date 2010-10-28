@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Matrix : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Matrix()
-		{
-			InitJNI();
-		}
 		protected Matrix(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class ScaleToFit : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ScaleToFit()
-			{
-				InitJNI();
-			}
 			internal ScaleToFit(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -70,7 +62,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _START5305)) as android.graphics.Matrix.ScaleToFit;
 				}
 			}
-			private static void InitJNI()
+			static ScaleToFit()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Matrix.ScaleToFit.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Matrix$ScaleToFit"));
@@ -80,6 +72,9 @@ namespace android.graphics
 				global::android.graphics.Matrix.ScaleToFit._END5303 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Matrix.ScaleToFit.staticClass, "END", "Landroid/graphics/Matrix$ScaleToFit;");
 				global::android.graphics.Matrix.ScaleToFit._FILL5304 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Matrix.ScaleToFit.staticClass, "FILL", "Landroid/graphics/Matrix$ScaleToFit;");
 				global::android.graphics.Matrix.ScaleToFit._START5305 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Matrix.ScaleToFit.staticClass, "START", "Landroid/graphics/Matrix$ScaleToFit;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5306;
@@ -605,7 +600,7 @@ namespace android.graphics
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static Matrix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Matrix.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Matrix"));
@@ -659,6 +654,9 @@ namespace android.graphics
 			global::android.graphics.Matrix._setValues5353 = @__env.GetMethodIDNoThrow(global::android.graphics.Matrix.staticClass, "setValues", "([F)V");
 			global::android.graphics.Matrix._Matrix5354 = @__env.GetMethodIDNoThrow(global::android.graphics.Matrix.staticClass, "<init>", "()V");
 			global::android.graphics.Matrix._Matrix5355 = @__env.GetMethodIDNoThrow(global::android.graphics.Matrix.staticClass, "<init>", "(Landroid/graphics/Matrix;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public partial class HttpPut : org.apache.http.client.methods.HttpEntityEnclosingRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpPut()
-		{
-			InitJNI();
-		}
 		protected HttpPut(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.client.methods
 				return "PUT";
 			}
 		}
-		private static void InitJNI()
+		static HttpPut()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpPut.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpPut"));
@@ -63,6 +59,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpPut._HttpPut31942 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPut.staticClass, "<init>", "()V");
 			global::org.apache.http.client.methods.HttpPut._HttpPut31943 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPut.staticClass, "<init>", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpPut._HttpPut31944 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPut.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

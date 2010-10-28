@@ -4,10 +4,6 @@ namespace java.security
 	public partial class DigestException : java.security.GeneralSecurityException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DigestException()
-		{
-			InitJNI();
-		}
 		protected DigestException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.DigestException.staticClass, global::java.security.DigestException._DigestException22937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DigestException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.DigestException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/DigestException"));
@@ -47,6 +43,9 @@ namespace java.security
 			global::java.security.DigestException._DigestException22935 = @__env.GetMethodIDNoThrow(global::java.security.DigestException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.security.DigestException._DigestException22936 = @__env.GetMethodIDNoThrow(global::java.security.DigestException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.security.DigestException._DigestException22937 = @__env.GetMethodIDNoThrow(global::java.security.DigestException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

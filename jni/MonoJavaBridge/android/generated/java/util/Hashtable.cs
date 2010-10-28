@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Hashtable : java.util.Dictionary, Map, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Hashtable()
-		{
-			InitJNI();
-		}
 		protected Hashtable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -219,7 +215,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Hashtable.staticClass, global::java.util.Hashtable._Hashtable26293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Hashtable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Hashtable.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Hashtable"));
@@ -247,6 +243,9 @@ namespace java.util
 			global::java.util.Hashtable._Hashtable26291 = @__env.GetMethodIDNoThrow(global::java.util.Hashtable.staticClass, "<init>", "(I)V");
 			global::java.util.Hashtable._Hashtable26292 = @__env.GetMethodIDNoThrow(global::java.util.Hashtable.staticClass, "<init>", "()V");
 			global::java.util.Hashtable._Hashtable26293 = @__env.GetMethodIDNoThrow(global::java.util.Hashtable.staticClass, "<init>", "(Ljava/util/Map;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

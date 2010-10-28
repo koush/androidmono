@@ -4,10 +4,6 @@ namespace android.database
 	public abstract partial class AbstractCursor : java.lang.Object, CrossProcessCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCursor()
-		{
-			InitJNI();
-		}
 		protected AbstractCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.database
 		protected partial class SelfContentObserver : android.database.ContentObserver
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SelfContentObserver()
-			{
-				InitJNI();
-			}
 			protected SelfContentObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,13 +39,16 @@ namespace android.database
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.AbstractCursor.SelfContentObserver.staticClass, global::android.database.AbstractCursor.SelfContentObserver._SelfContentObserver4346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SelfContentObserver()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.AbstractCursor.SelfContentObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractCursor$SelfContentObserver"));
 				global::android.database.AbstractCursor.SelfContentObserver._deliverSelfNotifications4344 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor.SelfContentObserver.staticClass, "deliverSelfNotifications", "()Z");
 				global::android.database.AbstractCursor.SelfContentObserver._onChange4345 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor.SelfContentObserver.staticClass, "onChange", "(Z)V");
 				global::android.database.AbstractCursor.SelfContentObserver._SelfContentObserver4346 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor.SelfContentObserver.staticClass, "<init>", "(Landroid/database/AbstractCursor;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize4347;
@@ -414,7 +409,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._AbstractCursor4393);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.AbstractCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractCursor"));
@@ -466,16 +461,15 @@ namespace android.database
 			global::android.database.AbstractCursor._checkPosition4392 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor.staticClass, "checkPosition", "()V");
 			global::android.database.AbstractCursor._AbstractCursor4393 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.AbstractCursor))]
 	internal sealed partial class AbstractCursor_ : android.database.AbstractCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCursor_()
-		{
-			InitJNI();
-		}
 		internal AbstractCursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -560,7 +554,7 @@ namespace android.database
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractCursor_.staticClass, global::android.database.AbstractCursor_._isNull4402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static AbstractCursor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.AbstractCursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractCursor"));
@@ -573,6 +567,9 @@ namespace android.database
 			global::android.database.AbstractCursor_._getCount4400 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor_.staticClass, "getCount", "()I");
 			global::android.database.AbstractCursor_._getColumnNames4401 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor_.staticClass, "getColumnNames", "()[Ljava/lang/String;");
 			global::android.database.AbstractCursor_._isNull4402 = @__env.GetMethodIDNoThrow(global::android.database.AbstractCursor_.staticClass, "isNull", "(I)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

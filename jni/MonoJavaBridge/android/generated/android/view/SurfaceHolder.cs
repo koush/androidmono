@@ -22,10 +22,6 @@ namespace android.view
 	internal sealed partial class SurfaceHolder_ : java.lang.Object, SurfaceHolder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SurfaceHolder_()
-		{
-			InitJNI();
-		}
 		internal SurfaceHolder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -146,7 +142,7 @@ namespace android.view
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SurfaceHolder_.staticClass, global::android.view.SurfaceHolder_._getSurface14582)) as android.view.Surface;
 		}
-		private static void InitJNI()
+		static SurfaceHolder_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SurfaceHolder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SurfaceHolder"));
@@ -163,6 +159,9 @@ namespace android.view
 			global::android.view.SurfaceHolder_._unlockCanvasAndPost14580 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_.staticClass, "unlockCanvasAndPost", "(Landroid/graphics/Canvas;)V");
 			global::android.view.SurfaceHolder_._getSurfaceFrame14581 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_.staticClass, "getSurfaceFrame", "()Landroid/graphics/Rect;");
 			global::android.view.SurfaceHolder_._getSurface14582 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_.staticClass, "getSurface", "()Landroid/view/Surface;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

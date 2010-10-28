@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class WebViewClient : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebViewClient()
-		{
-			InitJNI();
-		}
 		protected WebViewClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -240,7 +236,7 @@ namespace android.webkit
 				return -15;
 			}
 		}
-		private static void InitJNI()
+		static WebViewClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebViewClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebViewClient"));
@@ -258,6 +254,9 @@ namespace android.webkit
 			global::android.webkit.WebViewClient._onUnhandledKeyEvent16442 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewClient.staticClass, "onUnhandledKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)V");
 			global::android.webkit.WebViewClient._onScaleChanged16443 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewClient.staticClass, "onScaleChanged", "(Landroid/webkit/WebView;FF)V");
 			global::android.webkit.WebViewClient._WebViewClient16444 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewClient.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

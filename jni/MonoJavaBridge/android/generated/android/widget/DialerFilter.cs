@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class DialerFilter : android.widget.RelativeLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialerFilter()
-		{
-			InitJNI();
-		}
 		protected DialerFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -266,7 +262,7 @@ namespace android.widget
 				return 5;
 			}
 		}
-		private static void InitJNI()
+		static DialerFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.DialerFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DialerFilter"));
@@ -289,6 +285,9 @@ namespace android.widget
 			global::android.widget.DialerFilter._onModeChange16980 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "onModeChange", "(II)V");
 			global::android.widget.DialerFilter._DialerFilter16981 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.DialerFilter._DialerFilter16982 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

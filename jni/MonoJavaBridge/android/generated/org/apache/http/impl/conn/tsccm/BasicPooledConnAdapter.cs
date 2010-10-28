@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn.tsccm
 	public partial class BasicPooledConnAdapter : org.apache.http.impl.conn.AbstractPooledConnAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicPooledConnAdapter()
-		{
-			InitJNI();
-		}
 		protected BasicPooledConnAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,7 +55,7 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._BasicPooledConnAdapter33131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicPooledConnAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/BasicPooledConnAdapter"));
@@ -67,6 +63,9 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._detach33129 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "detach", "()V");
 			global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33130 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "getPoolEntry", "()Lorg/apache/http/impl/conn/AbstractPoolEntry;");
 			global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._BasicPooledConnAdapter33131 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "<init>", "(Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;Lorg/apache/http/impl/conn/AbstractPoolEntry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

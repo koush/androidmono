@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class ECFieldF2m : java.lang.Object, ECField
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECFieldF2m()
-		{
-			InitJNI();
-		}
 		protected ECFieldF2m(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._ECFieldF2m23987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ECFieldF2m()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECFieldF2m.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECFieldF2m"));
@@ -127,6 +123,9 @@ namespace java.security.spec
 			global::java.security.spec.ECFieldF2m._ECFieldF2m23985 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldF2m.staticClass, "<init>", "(ILjava/math/BigInteger;)V");
 			global::java.security.spec.ECFieldF2m._ECFieldF2m23986 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldF2m.staticClass, "<init>", "(I[I)V");
 			global::java.security.spec.ECFieldF2m._ECFieldF2m23987 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldF2m.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

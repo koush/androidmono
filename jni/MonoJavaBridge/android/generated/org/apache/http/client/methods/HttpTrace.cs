@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public partial class HttpTrace : org.apache.http.client.methods.HttpRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpTrace()
-		{
-			InitJNI();
-		}
 		protected HttpTrace(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.client.methods
 				return "TRACE";
 			}
 		}
-		private static void InitJNI()
+		static HttpTrace()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpTrace.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpTrace"));
@@ -63,6 +59,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpTrace._HttpTrace31959 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpTrace.staticClass, "<init>", "()V");
 			global::org.apache.http.client.methods.HttpTrace._HttpTrace31960 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpTrace.staticClass, "<init>", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpTrace._HttpTrace31961 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpTrace.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

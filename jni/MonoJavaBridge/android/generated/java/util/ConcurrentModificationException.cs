@@ -4,10 +4,6 @@ namespace java.util
 	public partial class ConcurrentModificationException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConcurrentModificationException()
-		{
-			InitJNI();
-		}
 		protected ConcurrentModificationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ConcurrentModificationException.staticClass, global::java.util.ConcurrentModificationException._ConcurrentModificationException26079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConcurrentModificationException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ConcurrentModificationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ConcurrentModificationException"));
 			global::java.util.ConcurrentModificationException._ConcurrentModificationException26078 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "()V");
 			global::java.util.ConcurrentModificationException._ConcurrentModificationException26079 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

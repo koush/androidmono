@@ -4,10 +4,6 @@ namespace android.app.backup
 	public partial class BackupDataInputStream : java.io.InputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackupDataInputStream()
-		{
-			InitJNI();
-		}
 		protected BackupDataInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.app.backup
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupDataInputStream.staticClass, global::android.app.backup.BackupDataInputStream._read2318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static BackupDataInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.BackupDataInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/BackupDataInputStream"));
@@ -72,6 +68,9 @@ namespace android.app.backup
 			global::android.app.backup.BackupDataInputStream._read2316 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInputStream.staticClass, "read", "()I");
 			global::android.app.backup.BackupDataInputStream._read2317 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInputStream.staticClass, "read", "([BII)I");
 			global::android.app.backup.BackupDataInputStream._read2318 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInputStream.staticClass, "read", "([B)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

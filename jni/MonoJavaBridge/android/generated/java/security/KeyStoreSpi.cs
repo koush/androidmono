@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class KeyStoreSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyStoreSpi()
-		{
-			InitJNI();
-		}
 		protected KeyStoreSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStoreSpi.staticClass, global::java.security.KeyStoreSpi._KeyStoreSpi23144);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyStoreSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyStoreSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStoreSpi"));
@@ -122,16 +118,15 @@ namespace java.security
 			global::java.security.KeyStoreSpi._engineEntryInstanceOf23143 = @__env.GetMethodIDNoThrow(global::java.security.KeyStoreSpi.staticClass, "engineEntryInstanceOf", "(Ljava/lang/String;Ljava/lang/Class;)Z");
 			global::java.security.KeyStoreSpi._KeyStoreSpi23144 = @__env.GetMethodIDNoThrow(global::java.security.KeyStoreSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.KeyStoreSpi))]
 	internal sealed partial class KeyStoreSpi_ : java.security.KeyStoreSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyStoreSpi_()
-		{
-			InitJNI();
-		}
 		internal KeyStoreSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -279,7 +274,7 @@ namespace java.security
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStoreSpi_.staticClass, global::java.security.KeyStoreSpi_._engineLoad23160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static KeyStoreSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyStoreSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStoreSpi"));
@@ -299,6 +294,9 @@ namespace java.security
 			global::java.security.KeyStoreSpi_._engineGetCertificateAlias23158 = @__env.GetMethodIDNoThrow(global::java.security.KeyStoreSpi_.staticClass, "engineGetCertificateAlias", "(Ljava/security/cert/Certificate;)Ljava/lang/String;");
 			global::java.security.KeyStoreSpi_._engineStore23159 = @__env.GetMethodIDNoThrow(global::java.security.KeyStoreSpi_.staticClass, "engineStore", "(Ljava/io/OutputStream;[C)V");
 			global::java.security.KeyStoreSpi_._engineLoad23160 = @__env.GetMethodIDNoThrow(global::java.security.KeyStoreSpi_.staticClass, "engineLoad", "(Ljava/io/InputStream;[C)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

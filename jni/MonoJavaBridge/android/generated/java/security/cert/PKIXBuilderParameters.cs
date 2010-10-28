@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class PKIXBuilderParameters : java.security.cert.PKIXParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PKIXBuilderParameters()
-		{
-			InitJNI();
-		}
 		protected PKIXBuilderParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXBuilderParameters.staticClass, global::java.security.cert.PKIXBuilderParameters._PKIXBuilderParameters23630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PKIXBuilderParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PKIXBuilderParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PKIXBuilderParameters"));
@@ -72,6 +68,9 @@ namespace java.security.cert
 			global::java.security.cert.PKIXBuilderParameters._getMaxPathLength23628 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXBuilderParameters.staticClass, "getMaxPathLength", "()I");
 			global::java.security.cert.PKIXBuilderParameters._PKIXBuilderParameters23629 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXBuilderParameters.staticClass, "<init>", "(Ljava/util/Set;Ljava/security/cert/CertSelector;)V");
 			global::java.security.cert.PKIXBuilderParameters._PKIXBuilderParameters23630 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXBuilderParameters.staticClass, "<init>", "(Ljava/security/KeyStore;Ljava/security/cert/CertSelector;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

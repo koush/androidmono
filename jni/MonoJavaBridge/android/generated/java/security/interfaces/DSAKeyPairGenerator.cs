@@ -11,10 +11,6 @@ namespace java.security.interfaces
 	internal sealed partial class DSAKeyPairGenerator_ : java.lang.Object, DSAKeyPairGenerator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DSAKeyPairGenerator_()
-		{
-			InitJNI();
-		}
 		internal DSAKeyPairGenerator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.security.interfaces
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.interfaces.DSAKeyPairGenerator_.staticClass, global::java.security.interfaces.DSAKeyPairGenerator_._initialize23897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static DSAKeyPairGenerator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.DSAKeyPairGenerator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/DSAKeyPairGenerator"));
 			global::java.security.interfaces.DSAKeyPairGenerator_._initialize23896 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKeyPairGenerator_.staticClass, "initialize", "(Ljava/security/interfaces/DSAParams;Ljava/security/SecureRandom;)V");
 			global::java.security.interfaces.DSAKeyPairGenerator_._initialize23897 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKeyPairGenerator_.staticClass, "initialize", "(IZLjava/security/SecureRandom;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

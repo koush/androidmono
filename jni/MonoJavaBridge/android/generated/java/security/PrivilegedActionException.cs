@@ -4,10 +4,6 @@ namespace java.security
 	public partial class PrivilegedActionException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PrivilegedActionException()
-		{
-			InitJNI();
-		}
 		protected PrivilegedActionException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,7 +55,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._PrivilegedActionException23251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PrivilegedActionException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PrivilegedActionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PrivilegedActionException"));
@@ -67,6 +63,9 @@ namespace java.security
 			global::java.security.PrivilegedActionException._toString23249 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.security.PrivilegedActionException._getException23250 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "getException", "()Ljava/lang/Exception;");
 			global::java.security.PrivilegedActionException._PrivilegedActionException23251 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

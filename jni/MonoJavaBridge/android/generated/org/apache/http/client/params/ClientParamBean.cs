@@ -4,10 +4,6 @@ namespace org.apache.http.client.@params
 	public partial class ClientParamBean : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientParamBean()
-		{
-			InitJNI();
-		}
 		protected ClientParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -194,7 +190,7 @@ namespace org.apache.http.client.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.@params.ClientParamBean.staticClass, global::org.apache.http.client.@params.ClientParamBean._ClientParamBean32010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ClientParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.@params.ClientParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/ClientParamBean"));
@@ -210,6 +206,9 @@ namespace org.apache.http.client.@params
 			global::org.apache.http.client.@params.ClientParamBean._setDefaultHeaders32008 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHeaders", "(Ljava/util/Collection;)V");
 			global::org.apache.http.client.@params.ClientParamBean._setDefaultHost32009 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHost", "(Lorg/apache/http/HttpHost;)V");
 			global::org.apache.http.client.@params.ClientParamBean._ClientParamBean32010 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.@params.ClientParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

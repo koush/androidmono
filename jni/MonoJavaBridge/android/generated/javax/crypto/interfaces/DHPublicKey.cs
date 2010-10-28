@@ -10,10 +10,6 @@ namespace javax.crypto.interfaces
 	internal sealed partial class DHPublicKey_ : java.lang.Object, DHPublicKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DHPublicKey_()
-		{
-			InitJNI();
-		}
 		internal DHPublicKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace javax.crypto.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHPublicKey_.staticClass, global::javax.crypto.interfaces.DHPublicKey_._getFormat28747)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static DHPublicKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.DHPublicKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/DHPublicKey"));
@@ -71,6 +67,9 @@ namespace javax.crypto.interfaces
 			global::javax.crypto.interfaces.DHPublicKey_._getEncoded28745 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getEncoded", "()[B");
 			global::javax.crypto.interfaces.DHPublicKey_._getAlgorithm28746 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::javax.crypto.interfaces.DHPublicKey_._getFormat28747 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

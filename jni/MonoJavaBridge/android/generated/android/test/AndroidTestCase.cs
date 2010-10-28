@@ -4,10 +4,6 @@ namespace android.test
 	public partial class AndroidTestCase : junit.framework.TestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AndroidTestCase()
-		{
-			InitJNI();
-		}
 		protected AndroidTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -110,7 +106,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._AndroidTestCase12149);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AndroidTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.AndroidTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/AndroidTestCase"));
@@ -124,6 +120,9 @@ namespace android.test
 			global::android.test.AndroidTestCase._assertReadingContentUriRequiresPermission12147 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestCase.staticClass, "assertReadingContentUriRequiresPermission", "(Landroid/net/Uri;Ljava/lang/String;)V");
 			global::android.test.AndroidTestCase._assertWritingContentUriRequiresPermission12148 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestCase.staticClass, "assertWritingContentUriRequiresPermission", "(Landroid/net/Uri;Ljava/lang/String;)V");
 			global::android.test.AndroidTestCase._AndroidTestCase12149 = @__env.GetMethodIDNoThrow(global::android.test.AndroidTestCase.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util
 	public partial class TreeMap : java.util.AbstractMap, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TreeMap()
-		{
-			InitJNI();
-		}
 		protected TreeMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -309,7 +305,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TreeMap.staticClass, global::java.util.TreeMap._TreeMap26914);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TreeMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TreeMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TreeMap"));
@@ -347,6 +343,9 @@ namespace java.util
 			global::java.util.TreeMap._TreeMap26912 = @__env.GetMethodIDNoThrow(global::java.util.TreeMap.staticClass, "<init>", "(Ljava/util/Map;)V");
 			global::java.util.TreeMap._TreeMap26913 = @__env.GetMethodIDNoThrow(global::java.util.TreeMap.staticClass, "<init>", "(Ljava/util/SortedMap;)V");
 			global::java.util.TreeMap._TreeMap26914 = @__env.GetMethodIDNoThrow(global::java.util.TreeMap.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

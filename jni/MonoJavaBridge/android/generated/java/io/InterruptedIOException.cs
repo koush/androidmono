@@ -4,10 +4,6 @@ namespace java.io
 	public partial class InterruptedIOException : java.io.IOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InterruptedIOException()
-		{
-			InitJNI();
-		}
 		protected InterruptedIOException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -37,13 +33,16 @@ namespace java.io
 			{
 			}
 		}
-		private static void InitJNI()
+		static InterruptedIOException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InterruptedIOException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InterruptedIOException"));
 			global::java.io.InterruptedIOException._InterruptedIOException19114 = @__env.GetMethodIDNoThrow(global::java.io.InterruptedIOException.staticClass, "<init>", "()V");
 			global::java.io.InterruptedIOException._InterruptedIOException19115 = @__env.GetMethodIDNoThrow(global::java.io.InterruptedIOException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.InterruptedIOException._bytesTransferred19116 = @__env.GetFieldIDNoThrow(global::java.io.InterruptedIOException.staticClass, "bytesTransferred", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

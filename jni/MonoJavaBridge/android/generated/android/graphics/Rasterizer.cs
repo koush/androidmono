@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Rasterizer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Rasterizer()
-		{
-			InitJNI();
-		}
 		protected Rasterizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Rasterizer.staticClass, global::android.graphics.Rasterizer._Rasterizer5667);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Rasterizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Rasterizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Rasterizer"));
 			global::android.graphics.Rasterizer._finalize5666 = @__env.GetMethodIDNoThrow(global::android.graphics.Rasterizer.staticClass, "finalize", "()V");
 			global::android.graphics.Rasterizer._Rasterizer5667 = @__env.GetMethodIDNoThrow(global::android.graphics.Rasterizer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

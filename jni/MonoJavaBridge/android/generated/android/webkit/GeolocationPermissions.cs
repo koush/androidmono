@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class GeolocationPermissions : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GeolocationPermissions()
-		{
-			InitJNI();
-		}
 		internal GeolocationPermissions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.webkit
 		internal sealed partial class Callback_ : java.lang.Object, Callback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Callback_()
-			{
-				InitJNI();
-			}
 			internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.GeolocationPermissions.Callback_.staticClass, global::android.webkit.GeolocationPermissions.Callback_._invoke16042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static Callback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.GeolocationPermissions.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions$Callback"));
 				global::android.webkit.GeolocationPermissions.Callback_._invoke16042 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.Callback_.staticClass, "invoke", "(Ljava/lang/String;ZZ)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.webkit
 		internal partial class CallbackDelegateWrapper : java.lang.Object, Callback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected CallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._CallbackDelegateWrapper16043);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions_CallbackDelegateWrapper"));
 				global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._CallbackDelegateWrapper16043 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class CallbackDelegateWrapper
@@ -159,7 +153,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._GeolocationPermissions16050);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GeolocationPermissions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.GeolocationPermissions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions"));
@@ -170,6 +164,9 @@ namespace android.webkit
 			global::android.webkit.GeolocationPermissions._getAllowed16048 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "getAllowed", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V");
 			global::android.webkit.GeolocationPermissions._clearAll16049 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "clearAll", "()V");
 			global::android.webkit.GeolocationPermissions._GeolocationPermissions16050 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

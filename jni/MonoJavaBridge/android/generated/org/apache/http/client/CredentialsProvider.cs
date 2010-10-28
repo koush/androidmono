@@ -12,10 +12,6 @@ namespace org.apache.http.client
 	internal sealed partial class CredentialsProvider_ : java.lang.Object, CredentialsProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CredentialsProvider_()
-		{
-			InitJNI();
-		}
 		internal CredentialsProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http.client
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._setCredentials31880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static CredentialsProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.CredentialsProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/CredentialsProvider"));
 			global::org.apache.http.client.CredentialsProvider_._clear31878 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "clear", "()V");
 			global::org.apache.http.client.CredentialsProvider_._getCredentials31879 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "getCredentials", "(Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;");
 			global::org.apache.http.client.CredentialsProvider_._setCredentials31880 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "setCredentials", "(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

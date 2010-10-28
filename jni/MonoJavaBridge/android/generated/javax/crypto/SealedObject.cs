@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class SealedObject : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SealedObject()
-		{
-			InitJNI();
-		}
 		protected SealedObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.SealedObject.staticClass, global::javax.crypto.SealedObject._SealedObject28713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SealedObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.SealedObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/SealedObject"));
@@ -78,6 +74,9 @@ namespace javax.crypto
 			global::javax.crypto.SealedObject._getAlgorithm28711 = @__env.GetMethodIDNoThrow(global::javax.crypto.SealedObject.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::javax.crypto.SealedObject._SealedObject28712 = @__env.GetMethodIDNoThrow(global::javax.crypto.SealedObject.staticClass, "<init>", "(Ljava/io/Serializable;Ljavax/crypto/Cipher;)V");
 			global::javax.crypto.SealedObject._SealedObject28713 = @__env.GetMethodIDNoThrow(global::javax.crypto.SealedObject.staticClass, "<init>", "(Ljavax/crypto/SealedObject;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class TextKeyListener : android.text.method.BaseKeyListener, SpanWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextKeyListener()
-		{
-			InitJNI();
-		}
 		protected TextKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.text.method
 		public sealed partial class Capitalize : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Capitalize()
-			{
-				InitJNI();
-			}
 			internal Capitalize(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -70,7 +62,7 @@ namespace android.text.method
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _WORDS13400)) as android.text.method.TextKeyListener.Capitalize;
 				}
 			}
-			private static void InitJNI()
+			static Capitalize()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.method.TextKeyListener.Capitalize.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/TextKeyListener$Capitalize"));
@@ -80,6 +72,9 @@ namespace android.text.method
 				global::android.text.method.TextKeyListener.Capitalize._NONE13398 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TextKeyListener.Capitalize.staticClass, "NONE", "Landroid/text/method/TextKeyListener$Capitalize;");
 				global::android.text.method.TextKeyListener.Capitalize._SENTENCES13399 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TextKeyListener.Capitalize.staticClass, "SENTENCES", "Landroid/text/method/TextKeyListener$Capitalize;");
 				global::android.text.method.TextKeyListener.Capitalize._WORDS13400 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TextKeyListener.Capitalize.staticClass, "WORDS", "Landroid/text/method/TextKeyListener$Capitalize;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _clear13401;
@@ -203,7 +198,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._TextKeyListener13413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TextKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.TextKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/TextKeyListener"));
@@ -220,6 +215,9 @@ namespace android.text.method
 			global::android.text.method.TextKeyListener._onSpanChanged13411 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onSpanChanged", "(Landroid/text/Spannable;Ljava/lang/Object;IIII)V");
 			global::android.text.method.TextKeyListener._shouldCap13412 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "shouldCap", "(Landroid/text/method/TextKeyListener$Capitalize;Ljava/lang/CharSequence;I)Z");
 			global::android.text.method.TextKeyListener._TextKeyListener13413 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "<init>", "(Landroid/text/method/TextKeyListener$Capitalize;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

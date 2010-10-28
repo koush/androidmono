@@ -4,10 +4,6 @@ namespace android.media
 	public partial class CameraProfile : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CameraProfile()
-		{
-			InitJNI();
-		}
 		protected CameraProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,12 +41,15 @@ namespace android.media
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static CameraProfile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.CameraProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CameraProfile"));
 			global::android.media.CameraProfile._getJpegEncodingQualityParameter7241 = @__env.GetStaticMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "getJpegEncodingQualityParameter", "(I)I");
 			global::android.media.CameraProfile._CameraProfile7242 = @__env.GetMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

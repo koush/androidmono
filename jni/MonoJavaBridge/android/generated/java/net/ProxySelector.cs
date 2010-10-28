@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class ProxySelector : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProxySelector()
-		{
-			InitJNI();
-		}
 		protected ProxySelector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,7 +30,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._ProxySelector21675);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ProxySelector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ProxySelector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ProxySelector"));
@@ -44,16 +40,15 @@ namespace java.net
 			global::java.net.ProxySelector._connectFailed21674 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V");
 			global::java.net.ProxySelector._ProxySelector21675 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.ProxySelector))]
 	internal sealed partial class ProxySelector_ : java.net.ProxySelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProxySelector_()
-		{
-			InitJNI();
-		}
 		internal ProxySelector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,12 +70,15 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.ProxySelector_.staticClass, global::java.net.ProxySelector_._connectFailed21677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static ProxySelector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ProxySelector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ProxySelector"));
 			global::java.net.ProxySelector_._select21676 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector_.staticClass, "select", "(Ljava/net/URI;)Ljava/util/List;");
 			global::java.net.ProxySelector_._connectFailed21677 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector_.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

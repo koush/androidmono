@@ -4,10 +4,6 @@ namespace android.text.method
 	public abstract partial class MetaKeyKeyListener : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MetaKeyKeyListener()
-		{
-			InitJNI();
-		}
 		protected MetaKeyKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace android.text.method
 				return 1024;
 			}
 		}
-		private static void InitJNI()
+		static MetaKeyKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.MetaKeyKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/MetaKeyKeyListener"));
@@ -220,23 +216,25 @@ namespace android.text.method
 			global::android.text.method.MetaKeyKeyListener._handleKeyUp13327 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "handleKeyUp", "(JILandroid/view/KeyEvent;)J");
 			global::android.text.method.MetaKeyKeyListener._MetaKeyKeyListener13328 = @__env.GetMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.MetaKeyKeyListener))]
 	internal sealed partial class MetaKeyKeyListener_ : android.text.method.MetaKeyKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MetaKeyKeyListener_()
-		{
-			InitJNI();
-		}
 		internal MetaKeyKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static MetaKeyKeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.MetaKeyKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/MetaKeyKeyListener"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

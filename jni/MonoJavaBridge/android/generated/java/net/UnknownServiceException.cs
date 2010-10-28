@@ -4,10 +4,6 @@ namespace java.net
 	public partial class UnknownServiceException : java.io.IOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UnknownServiceException()
-		{
-			InitJNI();
-		}
 		protected UnknownServiceException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.UnknownServiceException.staticClass, global::java.net.UnknownServiceException._UnknownServiceException21994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UnknownServiceException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.UnknownServiceException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/UnknownServiceException"));
 			global::java.net.UnknownServiceException._UnknownServiceException21993 = @__env.GetMethodIDNoThrow(global::java.net.UnknownServiceException.staticClass, "<init>", "()V");
 			global::java.net.UnknownServiceException._UnknownServiceException21994 = @__env.GetMethodIDNoThrow(global::java.net.UnknownServiceException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

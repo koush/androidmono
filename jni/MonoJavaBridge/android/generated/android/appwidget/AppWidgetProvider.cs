@@ -4,10 +4,6 @@ namespace android.appwidget
 	public partial class AppWidgetProvider : android.content.BroadcastReceiver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AppWidgetProvider()
-		{
-			InitJNI();
-		}
 		protected AppWidgetProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.appwidget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._AppWidgetProvider2388);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AppWidgetProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.appwidget.AppWidgetProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetProvider"));
@@ -73,6 +69,9 @@ namespace android.appwidget
 			global::android.appwidget.AppWidgetProvider._onUpdate2386 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProvider.staticClass, "onUpdate", "(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V");
 			global::android.appwidget.AppWidgetProvider._onDeleted2387 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProvider.staticClass, "onDeleted", "(Landroid/content/Context;[I)V");
 			global::android.appwidget.AppWidgetProvider._AppWidgetProvider2388 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProvider.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

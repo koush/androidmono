@@ -4,10 +4,6 @@ namespace dalvik.system
 	public sealed partial class VMRuntime : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VMRuntime()
-		{
-			InitJNI();
-		}
 		internal VMRuntime(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace dalvik.system
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getExternalBytesAllocated18669);
 		}
-		private static void InitJNI()
+		static VMRuntime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.VMRuntime.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/VMRuntime"));
@@ -128,6 +124,9 @@ namespace dalvik.system
 			global::dalvik.system.VMRuntime._gcSoftReferences18667 = @__env.GetMethodIDNoThrow(global::dalvik.system.VMRuntime.staticClass, "gcSoftReferences", "()V");
 			global::dalvik.system.VMRuntime._runFinalizationSync18668 = @__env.GetMethodIDNoThrow(global::dalvik.system.VMRuntime.staticClass, "runFinalizationSync", "()V");
 			global::dalvik.system.VMRuntime._getExternalBytesAllocated18669 = @__env.GetMethodIDNoThrow(global::dalvik.system.VMRuntime.staticClass, "getExternalBytesAllocated", "()J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace dalvik.system
 	public partial class DexClassLoader : java.lang.ClassLoader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DexClassLoader()
-		{
-			InitJNI();
-		}
 		protected DexClassLoader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.DexClassLoader.staticClass, global::dalvik.system.DexClassLoader._DexClassLoader18588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DexClassLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.DexClassLoader.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/DexClassLoader"));
@@ -63,6 +59,9 @@ namespace dalvik.system
 			global::dalvik.system.DexClassLoader._findResource18586 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "findResource", "(Ljava/lang/String;)Ljava/net/URL;");
 			global::dalvik.system.DexClassLoader._findLibrary18587 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "findLibrary", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::dalvik.system.DexClassLoader._DexClassLoader18588 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public partial class AtomicLongArray : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicLongArray()
-		{
-			InitJNI();
-		}
 		protected AtomicLongArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicLongArray.staticClass, global::java.util.concurrent.atomic.AtomicLongArray._AtomicLongArray27620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicLongArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicLongArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicLongArray"));
@@ -171,6 +167,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicLongArray._addAndGet27618 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLongArray.staticClass, "addAndGet", "(IJ)J");
 			global::java.util.concurrent.atomic.AtomicLongArray._AtomicLongArray27619 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLongArray.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.atomic.AtomicLongArray._AtomicLongArray27620 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLongArray.staticClass, "<init>", "([J)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

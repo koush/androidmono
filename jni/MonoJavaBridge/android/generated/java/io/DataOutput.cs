@@ -23,10 +23,6 @@ namespace java.io
 	internal sealed partial class DataOutput_ : java.lang.Object, DataOutput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataOutput_()
-		{
-			InitJNI();
-		}
 		internal DataOutput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -156,7 +152,7 @@ namespace java.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.DataOutput_.staticClass, global::java.io.DataOutput_._writeChars18931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static DataOutput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.DataOutput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/DataOutput"));
@@ -174,6 +170,9 @@ namespace java.io
 			global::java.io.DataOutput_._writeDouble18929 = @__env.GetMethodIDNoThrow(global::java.io.DataOutput_.staticClass, "writeDouble", "(D)V");
 			global::java.io.DataOutput_._writeBoolean18930 = @__env.GetMethodIDNoThrow(global::java.io.DataOutput_.staticClass, "writeBoolean", "(Z)V");
 			global::java.io.DataOutput_._writeChars18931 = @__env.GetMethodIDNoThrow(global::java.io.DataOutput_.staticClass, "writeChars", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

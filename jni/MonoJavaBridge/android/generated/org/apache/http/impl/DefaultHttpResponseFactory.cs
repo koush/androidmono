@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class DefaultHttpResponseFactory : java.lang.Object, HttpResponseFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultHttpResponseFactory()
-		{
-			InitJNI();
-		}
 		protected DefaultHttpResponseFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultHttpResponseFactory.staticClass, global::org.apache.http.impl.DefaultHttpResponseFactory._DefaultHttpResponseFactory32646);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultHttpResponseFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.DefaultHttpResponseFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/DefaultHttpResponseFactory"));
@@ -61,6 +57,9 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.DefaultHttpResponseFactory._determineLocale32644 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpResponseFactory.staticClass, "determineLocale", "(Lorg/apache/http/protocol/HttpContext;)Ljava/util/Locale;");
 			global::org.apache.http.impl.DefaultHttpResponseFactory._DefaultHttpResponseFactory32645 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpResponseFactory.staticClass, "<init>", "(Lorg/apache/http/ReasonPhraseCatalog;)V");
 			global::org.apache.http.impl.DefaultHttpResponseFactory._DefaultHttpResponseFactory32646 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpResponseFactory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

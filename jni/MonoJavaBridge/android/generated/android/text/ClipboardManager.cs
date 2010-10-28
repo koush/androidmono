@@ -4,10 +4,6 @@ namespace android.text
 	public partial class ClipboardManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClipboardManager()
-		{
-			InitJNI();
-		}
 		protected ClipboardManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,13 +49,16 @@ namespace android.text
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText12723);
 		}
-		private static void InitJNI()
+		static ClipboardManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.ClipboardManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/ClipboardManager"));
 			global::android.text.ClipboardManager._setText12721 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
 			global::android.text.ClipboardManager._getText12722 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "getText", "()Ljava/lang/CharSequence;");
 			global::android.text.ClipboardManager._hasText12723 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "hasText", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

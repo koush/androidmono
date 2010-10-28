@@ -4,10 +4,6 @@ namespace android.test
 	public sealed partial class MoreAsserts : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MoreAsserts()
-		{
-			InitJNI();
-		}
 		internal MoreAsserts(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -227,7 +223,7 @@ namespace android.test
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.test.MoreAsserts.staticClass, global::android.test.MoreAsserts._checkEqualsAndHashCodeMethods12266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static MoreAsserts()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.MoreAsserts.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/MoreAsserts"));
@@ -267,6 +263,9 @@ namespace android.test
 			global::android.test.MoreAsserts._assertNotEmpty12264 = @__env.GetStaticMethodIDNoThrow(global::android.test.MoreAsserts.staticClass, "assertNotEmpty", "(Ljava/util/Map;)V");
 			global::android.test.MoreAsserts._checkEqualsAndHashCodeMethods12265 = @__env.GetStaticMethodIDNoThrow(global::android.test.MoreAsserts.staticClass, "checkEqualsAndHashCodeMethods", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Z)V");
 			global::android.test.MoreAsserts._checkEqualsAndHashCodeMethods12266 = @__env.GetStaticMethodIDNoThrow(global::android.test.MoreAsserts.staticClass, "checkEqualsAndHashCodeMethods", "(Ljava/lang/Object;Ljava/lang/Object;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class MemoryHandler : java.util.logging.Handler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MemoryHandler()
-		{
-			InitJNI();
-		}
 		protected MemoryHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._MemoryHandler28097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MemoryHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.MemoryHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/MemoryHandler"));
@@ -112,6 +108,9 @@ namespace java.util.logging
 			global::java.util.logging.MemoryHandler._getPushLevel28095 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "getPushLevel", "()Ljava/util/logging/Level;");
 			global::java.util.logging.MemoryHandler._MemoryHandler28096 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "<init>", "()V");
 			global::java.util.logging.MemoryHandler._MemoryHandler28097 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "<init>", "(Ljava/util/logging/Handler;ILjava/util/logging/Level;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

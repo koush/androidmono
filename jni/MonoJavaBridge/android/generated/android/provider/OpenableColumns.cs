@@ -9,17 +9,16 @@ namespace android.provider
 	internal sealed partial class OpenableColumns_ : java.lang.Object, OpenableColumns
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OpenableColumns_()
-		{
-			InitJNI();
-		}
 		internal OpenableColumns_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static OpenableColumns_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.OpenableColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/OpenableColumns"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

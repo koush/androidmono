@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ViewFlipper : android.widget.ViewAnimator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewFlipper()
-		{
-			InitJNI();
-		}
 		protected ViewFlipper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -120,7 +116,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._ViewFlipper18279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ViewFlipper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ViewFlipper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ViewFlipper"));
@@ -135,6 +131,9 @@ namespace android.widget
 			global::android.widget.ViewFlipper._isAutoStart18277 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "isAutoStart", "()Z");
 			global::android.widget.ViewFlipper._ViewFlipper18278 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.ViewFlipper._ViewFlipper18279 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

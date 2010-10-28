@@ -4,10 +4,6 @@ namespace android.net
 	public partial class Credentials : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Credentials()
-		{
-			InitJNI();
-		}
 		protected Credentials(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Credentials.staticClass, global::android.net.Credentials._Credentials7647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Credentials()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Credentials.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Credentials"));
@@ -74,6 +70,9 @@ namespace android.net
 			global::android.net.Credentials._getPid7645 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "getPid", "()I");
 			global::android.net.Credentials._getGid7646 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "getGid", "()I");
 			global::android.net.Credentials._Credentials7647 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "<init>", "(III)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

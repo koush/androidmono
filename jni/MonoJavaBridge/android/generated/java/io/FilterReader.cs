@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class FilterReader : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterReader()
-		{
-			InitJNI();
-		}
 		protected FilterReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilterReader.staticClass, global::java.io.FilterReader._FilterReader19082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FilterReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilterReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilterReader"));
@@ -104,23 +100,25 @@ namespace java.io
 			global::java.io.FilterReader._ready19081 = @__env.GetMethodIDNoThrow(global::java.io.FilterReader.staticClass, "ready", "()Z");
 			global::java.io.FilterReader._FilterReader19082 = @__env.GetMethodIDNoThrow(global::java.io.FilterReader.staticClass, "<init>", "(Ljava/io/Reader;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.FilterReader))]
 	internal sealed partial class FilterReader_ : java.io.FilterReader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterReader_()
-		{
-			InitJNI();
-		}
 		internal FilterReader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static FilterReader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilterReader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilterReader"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

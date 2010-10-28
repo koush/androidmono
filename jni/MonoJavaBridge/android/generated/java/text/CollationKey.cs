@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class CollationKey : java.lang.Object, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CollationKey()
-		{
-			InitJNI();
-		}
 		protected CollationKey(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -40,7 +36,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.CollationKey.staticClass, global::java.text.CollationKey._CollationKey25296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CollationKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.CollationKey.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CollationKey"));
@@ -50,16 +46,15 @@ namespace java.text
 			global::java.text.CollationKey._getSourceString25295 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey.staticClass, "getSourceString", "()Ljava/lang/String;");
 			global::java.text.CollationKey._CollationKey25296 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.CollationKey))]
 	internal sealed partial class CollationKey_ : java.text.CollationKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CollationKey_()
-		{
-			InitJNI();
-		}
 		internal CollationKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,12 +76,15 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.CollationKey_.staticClass, global::java.text.CollationKey_._toByteArray25298)) as byte[];
 		}
-		private static void InitJNI()
+		static CollationKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.CollationKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CollationKey"));
 			global::java.text.CollationKey_._compareTo25297 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey_.staticClass, "compareTo", "(Ljava/text/CollationKey;)I");
 			global::java.text.CollationKey_._toByteArray25298 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey_.staticClass, "toByteArray", "()[B");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.app
 	public partial class SearchManager : java.lang.Object, android.content.DialogInterface_OnDismissListener, android.content.DialogInterface_OnCancelListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SearchManager()
-		{
-			InitJNI();
-		}
 		protected SearchManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.app
 		internal sealed partial class OnCancelListener_ : java.lang.Object, OnCancelListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCancelListener_()
-			{
-				InitJNI();
-			}
 			internal OnCancelListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.app
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.OnCancelListener_.staticClass, global::android.app.SearchManager.OnCancelListener_._onCancel2062);
 			}
-			private static void InitJNI()
+			static OnCancelListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnCancelListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager$OnCancelListener"));
 				global::android.app.SearchManager.OnCancelListener_._onCancel2062 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnCancelListener_.staticClass, "onCancel", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.app
 		internal partial class OnCancelListenerDelegateWrapper : java.lang.Object, OnCancelListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCancelListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnCancelListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.SearchManager.OnCancelListenerDelegateWrapper.staticClass, global::android.app.SearchManager.OnCancelListenerDelegateWrapper._OnCancelListenerDelegateWrapper2063);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnCancelListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnCancelListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager_OnCancelListenerDelegateWrapper"));
 				global::android.app.SearchManager.OnCancelListenerDelegateWrapper._OnCancelListenerDelegateWrapper2063 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnCancelListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnCancelListenerDelegateWrapper
@@ -96,10 +90,6 @@ namespace android.app
 		internal sealed partial class OnDismissListener_ : java.lang.Object, OnDismissListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDismissListener_()
-			{
-				InitJNI();
-			}
 			internal OnDismissListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,11 +102,14 @@ namespace android.app
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.OnDismissListener_.staticClass, global::android.app.SearchManager.OnDismissListener_._onDismiss2064);
 			}
-			private static void InitJNI()
+			static OnDismissListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnDismissListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager$OnDismissListener"));
 				global::android.app.SearchManager.OnDismissListener_._onDismiss2064 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnDismissListener_.staticClass, "onDismiss", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -125,10 +118,6 @@ namespace android.app
 		internal partial class OnDismissListenerDelegateWrapper : java.lang.Object, OnDismissListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDismissListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnDismissListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -139,11 +128,14 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.SearchManager.OnDismissListenerDelegateWrapper.staticClass, global::android.app.SearchManager.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper2065);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnDismissListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnDismissListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager_OnDismissListenerDelegateWrapper"));
 				global::android.app.SearchManager.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper2065 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnDismissListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnDismissListenerDelegateWrapper
@@ -495,7 +487,7 @@ namespace android.app
 				return "android.search.action.SETTINGS_CHANGED";
 			}
 		}
-		private static void InitJNI()
+		static SearchManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.SearchManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager"));
@@ -508,6 +500,9 @@ namespace android.app
 			global::android.app.SearchManager._stopSearch2072 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "stopSearch", "()V");
 			global::android.app.SearchManager._getSearchableInfo2073 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "getSearchableInfo", "(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;");
 			global::android.app.SearchManager._getSearchablesInGlobalSearch2074 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "getSearchablesInGlobalSearch", "()Ljava/util/List;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

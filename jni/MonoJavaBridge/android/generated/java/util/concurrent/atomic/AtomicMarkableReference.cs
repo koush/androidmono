@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public partial class AtomicMarkableReference : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicMarkableReference()
-		{
-			InitJNI();
-		}
 		protected AtomicMarkableReference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -88,7 +84,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicMarkableReference.staticClass, global::java.util.concurrent.atomic.AtomicMarkableReference._AtomicMarkableReference27647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicMarkableReference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicMarkableReference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicMarkableReference"));
@@ -100,6 +96,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicMarkableReference._isMarked27645 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicMarkableReference.staticClass, "isMarked", "()Z");
 			global::java.util.concurrent.atomic.AtomicMarkableReference._attemptMark27646 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicMarkableReference.staticClass, "attemptMark", "(Ljava/lang/Object;Z)Z");
 			global::java.util.concurrent.atomic.AtomicMarkableReference._AtomicMarkableReference27647 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicMarkableReference.staticClass, "<init>", "(Ljava/lang/Object;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.provider
 	public partial class SyncStateContract : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SyncStateContract()
-		{
-			InitJNI();
-		}
 		protected SyncStateContract(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -20,17 +16,16 @@ namespace android.provider
 		internal sealed partial class Columns_ : java.lang.Object, Columns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Columns_()
-			{
-				InitJNI();
-			}
 			internal Columns_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			private static void InitJNI()
+			static Columns_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.SyncStateContract.Columns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract$Columns"));
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -62,10 +57,6 @@ namespace android.provider
 		public partial class Constants : java.lang.Object, Columns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Constants()
-			{
-				InitJNI();
-			}
 			protected Constants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -83,21 +74,20 @@ namespace android.provider
 					return "syncstate";
 				}
 			}
-			private static void InitJNI()
+			static Constants()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.SyncStateContract.Constants.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract$Constants"));
 				global::android.provider.SyncStateContract.Constants._Constants11571 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Constants.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Helpers : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Helpers()
-			{
-				InitJNI();
-			}
 			internal Helpers(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -150,7 +140,7 @@ namespace android.provider
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._Helpers11580);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Helpers()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.SyncStateContract.Helpers.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract$Helpers"));
@@ -163,6 +153,9 @@ namespace android.provider
 				global::android.provider.SyncStateContract.Helpers._newUpdateOperation11579 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "newUpdateOperation", "(Landroid/net/Uri;[B)Landroid/content/ContentProviderOperation;");
 				global::android.provider.SyncStateContract.Helpers._Helpers11580 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncStateContract11581;
 		public SyncStateContract() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -171,11 +164,14 @@ namespace android.provider
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SyncStateContract.staticClass, global::android.provider.SyncStateContract._SyncStateContract11581);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SyncStateContract()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.SyncStateContract.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract"));
 			global::android.provider.SyncStateContract._SyncStateContract11581 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

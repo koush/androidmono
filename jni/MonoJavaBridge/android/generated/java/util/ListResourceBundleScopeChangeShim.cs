@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class ListResourceBundleScopeChangeShim : java.util.ResourceBundle
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListResourceBundleScopeChangeShim()
-		{
-			InitJNI();
-		}
 		protected ListResourceBundleScopeChangeShim(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -20,11 +16,14 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundleScopeChangeShim.staticClass, global::java.util.ListResourceBundleScopeChangeShim._handleGetObject26448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static ListResourceBundleScopeChangeShim()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ListResourceBundleScopeChangeShim.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ListResourceBundleScopeChangeShim"));
 			global::java.util.ListResourceBundleScopeChangeShim._handleGetObject26448 = @__env.GetMethodIDNoThrow(global::java.util.ListResourceBundleScopeChangeShim.staticClass, "handleGetObject", "(Ljava/lang/String;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -32,10 +31,6 @@ namespace java.util
 	internal sealed partial class ListResourceBundleScopeChangeShim_ : java.util.ListResourceBundleScopeChangeShim
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListResourceBundleScopeChangeShim_()
-		{
-			InitJNI();
-		}
 		internal ListResourceBundleScopeChangeShim_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -48,11 +43,14 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundleScopeChangeShim_.staticClass, global::java.util.ListResourceBundleScopeChangeShim_._getKeys26449)) as java.util.Enumeration;
 		}
-		private static void InitJNI()
+		static ListResourceBundleScopeChangeShim_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ListResourceBundleScopeChangeShim_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ListResourceBundleScopeChangeShim"));
 			global::java.util.ListResourceBundleScopeChangeShim_._getKeys26449 = @__env.GetMethodIDNoThrow(global::java.util.ListResourceBundleScopeChangeShim_.staticClass, "getKeys", "()Ljava/util/Enumeration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

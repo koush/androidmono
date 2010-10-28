@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Timer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Timer()
-		{
-			InitJNI();
-		}
 		protected Timer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -111,7 +107,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Timer.staticClass, global::java.util.Timer._Timer26873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Timer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Timer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Timer"));
@@ -127,6 +123,9 @@ namespace java.util
 			global::java.util.Timer._Timer26871 = @__env.GetMethodIDNoThrow(global::java.util.Timer.staticClass, "<init>", "()V");
 			global::java.util.Timer._Timer26872 = @__env.GetMethodIDNoThrow(global::java.util.Timer.staticClass, "<init>", "(Z)V");
 			global::java.util.Timer._Timer26873 = @__env.GetMethodIDNoThrow(global::java.util.Timer.staticClass, "<init>", "(Ljava/lang/String;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

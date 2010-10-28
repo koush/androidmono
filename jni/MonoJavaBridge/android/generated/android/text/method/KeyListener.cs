@@ -14,10 +14,6 @@ namespace android.text.method
 	internal sealed partial class KeyListener_ : java.lang.Object, KeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyListener_()
-		{
-			InitJNI();
-		}
 		internal KeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.text.method
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.KeyListener_.staticClass, global::android.text.method.KeyListener_._clearMetaKeyState13298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static KeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.KeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/KeyListener"));
@@ -75,6 +71,9 @@ namespace android.text.method
 			global::android.text.method.KeyListener_._getInputType13296 = @__env.GetMethodIDNoThrow(global::android.text.method.KeyListener_.staticClass, "getInputType", "()I");
 			global::android.text.method.KeyListener_._onKeyOther13297 = @__env.GetMethodIDNoThrow(global::android.text.method.KeyListener_.staticClass, "onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z");
 			global::android.text.method.KeyListener_._clearMetaKeyState13298 = @__env.GetMethodIDNoThrow(global::android.text.method.KeyListener_.staticClass, "clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

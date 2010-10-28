@@ -11,10 +11,6 @@ namespace javax.xml.transform
 	internal sealed partial class Templates_ : java.lang.Object, Templates
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Templates_()
-		{
-			InitJNI();
-		}
 		internal Templates_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.xml.transform
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._getOutputProperties30958)) as java.util.Properties;
 		}
-		private static void InitJNI()
+		static Templates_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Templates_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Templates"));
 			global::javax.xml.transform.Templates_._newTransformer30957 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;");
 			global::javax.xml.transform.Templates_._getOutputProperties30958 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "getOutputProperties", "()Ljava/util/Properties;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

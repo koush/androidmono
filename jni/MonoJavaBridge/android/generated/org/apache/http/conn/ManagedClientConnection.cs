@@ -22,10 +22,6 @@ namespace org.apache.http.conn
 	internal sealed partial class ManagedClientConnection_ : java.lang.Object, ManagedClientConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ManagedClientConnection_()
-		{
-			InitJNI();
-		}
 		internal ManagedClientConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -317,7 +313,7 @@ namespace org.apache.http.conn
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ManagedClientConnection_.staticClass, global::org.apache.http.conn.ManagedClientConnection_._abortConnection32143);
 		}
-		private static void InitJNI()
+		static ManagedClientConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ManagedClientConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ManagedClientConnection"));
@@ -353,6 +349,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.ManagedClientConnection_._getRemotePort32141 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ManagedClientConnection_.staticClass, "getRemotePort", "()I");
 			global::org.apache.http.conn.ManagedClientConnection_._releaseConnection32142 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ManagedClientConnection_.staticClass, "releaseConnection", "()V");
 			global::org.apache.http.conn.ManagedClientConnection_._abortConnection32143 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ManagedClientConnection_.staticClass, "abortConnection", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

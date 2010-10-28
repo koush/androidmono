@@ -10,10 +10,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMErrorHandler_ : java.lang.Object, DOMErrorHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMErrorHandler_()
-		{
-			InitJNI();
-		}
 		internal DOMErrorHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMErrorHandler_.staticClass, global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static DOMErrorHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMErrorHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMErrorHandler"));
 			global::org.w3c.dom.DOMErrorHandler_._handleError34349 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMErrorHandler_.staticClass, "handleError", "(Lorg/w3c/dom/DOMError;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

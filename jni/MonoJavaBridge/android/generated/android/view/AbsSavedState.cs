@@ -4,10 +4,6 @@ namespace android.view
 	public abstract partial class AbsSavedState : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSavedState()
-		{
-			InitJNI();
-		}
 		protected AbsSavedState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.AbsSavedState.staticClass, _CREATOR13976)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AbsSavedState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.AbsSavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/AbsSavedState"));
@@ -82,23 +78,25 @@ namespace android.view
 			global::android.view.AbsSavedState._EMPTY_STATE13975 = @__env.GetStaticFieldIDNoThrow(global::android.view.AbsSavedState.staticClass, "EMPTY_STATE", "Landroid/view/AbsSavedState;");
 			global::android.view.AbsSavedState._CREATOR13976 = @__env.GetStaticFieldIDNoThrow(global::android.view.AbsSavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.AbsSavedState))]
 	internal sealed partial class AbsSavedState_ : android.view.AbsSavedState
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSavedState_()
-		{
-			InitJNI();
-		}
 		internal AbsSavedState_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AbsSavedState_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.AbsSavedState_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/AbsSavedState"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

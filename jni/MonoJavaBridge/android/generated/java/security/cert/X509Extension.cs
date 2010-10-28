@@ -13,10 +13,6 @@ namespace java.security.cert
 	internal sealed partial class X509Extension_ : java.lang.Object, X509Extension
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509Extension_()
-		{
-			InitJNI();
-		}
 		internal X509Extension_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getExtensionValue23894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		private static void InitJNI()
+		static X509Extension_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509Extension_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509Extension"));
@@ -64,6 +60,9 @@ namespace java.security.cert
 			global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;");
 			global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
 			global::java.security.cert.X509Extension_._getExtensionValue23894 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

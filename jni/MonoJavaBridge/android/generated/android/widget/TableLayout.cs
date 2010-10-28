@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TableLayout : android.widget.LinearLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TableLayout()
-		{
-			InitJNI();
-		}
 		protected TableLayout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.widget.LinearLayout.LayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -73,7 +65,7 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TableLayout.LayoutParams.staticClass, global::android.widget.TableLayout.LayoutParams._LayoutParams17916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TableLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TableLayout$LayoutParams"));
@@ -84,6 +76,9 @@ namespace android.widget
 				global::android.widget.TableLayout.LayoutParams._LayoutParams17914 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.LayoutParams.staticClass, "<init>", "()V");
 				global::android.widget.TableLayout.LayoutParams._LayoutParams17915 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
 				global::android.widget.TableLayout.LayoutParams._LayoutParams17916 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _addView17917;
@@ -319,7 +314,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TableLayout.staticClass, global::android.widget.TableLayout._TableLayout17940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TableLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TableLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TableLayout"));
@@ -347,6 +342,9 @@ namespace android.widget
 			global::android.widget.TableLayout._isColumnShrinkable17938 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.staticClass, "isColumnShrinkable", "(I)Z");
 			global::android.widget.TableLayout._TableLayout17939 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TableLayout._TableLayout17940 = @__env.GetMethodIDNoThrow(global::android.widget.TableLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util.concurrent.locks
 	public partial class ReentrantLock : java.lang.Object, Lock, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReentrantLock()
-		{
-			InitJNI();
-		}
 		protected ReentrantLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -224,7 +220,7 @@ namespace java.util.concurrent.locks
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.ReentrantLock.staticClass, global::java.util.concurrent.locks.ReentrantLock._ReentrantLock27775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ReentrantLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.ReentrantLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReentrantLock"));
@@ -249,6 +245,9 @@ namespace java.util.concurrent.locks
 			global::java.util.concurrent.locks.ReentrantLock._getWaitingThreads27773 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantLock.staticClass, "getWaitingThreads", "(Ljava/util/concurrent/locks/Condition;)Ljava/util/Collection;");
 			global::java.util.concurrent.locks.ReentrantLock._ReentrantLock27774 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantLock.staticClass, "<init>", "()V");
 			global::java.util.concurrent.locks.ReentrantLock._ReentrantLock27775 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantLock.staticClass, "<init>", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

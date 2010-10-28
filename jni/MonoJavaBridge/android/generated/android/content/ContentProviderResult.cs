@@ -4,10 +4,6 @@ namespace android.content
 	public partial class ContentProviderResult : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProviderResult()
-		{
-			InitJNI();
-		}
 		protected ContentProviderResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.ContentProviderResult.staticClass, _CREATOR2705)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ContentProviderResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProviderResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProviderResult"));
@@ -99,6 +95,9 @@ namespace android.content
 			global::android.content.ContentProviderResult._uri2703 = @__env.GetFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "uri", "Landroid/net/Uri;");
 			global::android.content.ContentProviderResult._count2704 = @__env.GetFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "count", "Ljava/lang/Integer;");
 			global::android.content.ContentProviderResult._CREATOR2705 = @__env.GetStaticFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

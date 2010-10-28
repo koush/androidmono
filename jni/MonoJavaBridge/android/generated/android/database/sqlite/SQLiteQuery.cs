@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public partial class SQLiteQuery : android.database.sqlite.SQLiteProgram
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteQuery()
-		{
-			InitJNI();
-		}
 		protected SQLiteQuery(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQuery.staticClass, global::android.database.sqlite.SQLiteQuery._bindString4841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static SQLiteQuery()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteQuery.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteQuery"));
@@ -75,6 +71,9 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteQuery._bindLong4839 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQuery.staticClass, "bindLong", "(IJ)V");
 			global::android.database.sqlite.SQLiteQuery._bindDouble4840 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQuery.staticClass, "bindDouble", "(ID)V");
 			global::android.database.sqlite.SQLiteQuery._bindString4841 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQuery.staticClass, "bindString", "(ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

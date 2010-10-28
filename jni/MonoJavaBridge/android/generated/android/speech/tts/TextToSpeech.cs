@@ -4,10 +4,6 @@ namespace android.speech.tts
 	public partial class TextToSpeech : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextToSpeech()
-		{
-			InitJNI();
-		}
 		protected TextToSpeech(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.speech.tts
 		public partial class Engine : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Engine()
-			{
-				InitJNI();
-			}
 			protected Engine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -155,11 +147,14 @@ namespace android.speech.tts
 					return "utteranceId";
 				}
 			}
-			private static void InitJNI()
+			static Engine()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.Engine.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$Engine"));
 				global::android.speech.tts.TextToSpeech.Engine._Engine11719 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.Engine.staticClass, "<init>", "(Landroid/speech/tts/TextToSpeech;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.tts.TextToSpeech.OnInitListener_))]
@@ -172,10 +167,6 @@ namespace android.speech.tts
 		internal sealed partial class OnInitListener_ : java.lang.Object, OnInitListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnInitListener_()
-			{
-				InitJNI();
-			}
 			internal OnInitListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -188,11 +179,14 @@ namespace android.speech.tts
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass, global::android.speech.tts.TextToSpeech.OnInitListener_._onInit11738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnInitListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$OnInitListener"));
 				global::android.speech.tts.TextToSpeech.OnInitListener_._onInit11738 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass, "onInit", "(I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -201,10 +195,6 @@ namespace android.speech.tts
 		internal partial class OnInitListenerDelegateWrapper : java.lang.Object, OnInitListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnInitListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnInitListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -215,11 +205,14 @@ namespace android.speech.tts
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._OnInitListenerDelegateWrapper11739);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnInitListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech_OnInitListenerDelegateWrapper"));
 				global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._OnInitListenerDelegateWrapper11739 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnInitListenerDelegateWrapper
@@ -247,10 +240,6 @@ namespace android.speech.tts
 		internal sealed partial class OnUtteranceCompletedListener_ : java.lang.Object, OnUtteranceCompletedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnUtteranceCompletedListener_()
-			{
-				InitJNI();
-			}
 			internal OnUtteranceCompletedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -263,11 +252,14 @@ namespace android.speech.tts
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_._onUtteranceCompleted11740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnUtteranceCompletedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$OnUtteranceCompletedListener"));
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_._onUtteranceCompleted11740 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass, "onUtteranceCompleted", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -276,10 +268,6 @@ namespace android.speech.tts
 		internal partial class OnUtteranceCompletedListenerDelegateWrapper : java.lang.Object, OnUtteranceCompletedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnUtteranceCompletedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnUtteranceCompletedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -290,11 +278,14 @@ namespace android.speech.tts
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._OnUtteranceCompletedListenerDelegateWrapper11741);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnUtteranceCompletedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech_OnUtteranceCompletedListenerDelegateWrapper"));
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._OnUtteranceCompletedListenerDelegateWrapper11741 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnUtteranceCompletedListenerDelegateWrapper
@@ -612,7 +603,7 @@ namespace android.speech.tts
 				return "android.speech.tts.TTS_QUEUE_PROCESSING_COMPLETED";
 			}
 		}
-		private static void InitJNI()
+		static TextToSpeech()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.tts.TextToSpeech.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech"));
@@ -637,6 +628,9 @@ namespace android.speech.tts
 			global::android.speech.tts.TextToSpeech._getDefaultEngine11760 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.staticClass, "getDefaultEngine", "()Ljava/lang/String;");
 			global::android.speech.tts.TextToSpeech._areDefaultsEnforced11761 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.staticClass, "areDefaultsEnforced", "()Z");
 			global::android.speech.tts.TextToSpeech._TextToSpeech11762 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.staticClass, "<init>", "(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

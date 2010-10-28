@@ -4,10 +4,6 @@ namespace android.hardware
 	public partial class Camera : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Camera()
-		{
-			InitJNI();
-		}
 		protected Camera(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.hardware
 		internal sealed partial class AutoFocusCallback_ : java.lang.Object, AutoFocusCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoFocusCallback_()
-			{
-				InitJNI();
-			}
 			internal AutoFocusCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.AutoFocusCallback_.staticClass, global::android.hardware.Camera.AutoFocusCallback_._onAutoFocus6266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static AutoFocusCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.AutoFocusCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$AutoFocusCallback"));
 				global::android.hardware.Camera.AutoFocusCallback_._onAutoFocus6266 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.AutoFocusCallback_.staticClass, "onAutoFocus", "(ZLandroid/hardware/Camera;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.hardware
 		internal partial class AutoFocusCallbackDelegateWrapper : java.lang.Object, AutoFocusCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoFocusCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected AutoFocusCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._AutoFocusCallbackDelegateWrapper6267);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AutoFocusCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_AutoFocusCallbackDelegateWrapper"));
 				global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._AutoFocusCallbackDelegateWrapper6267 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class AutoFocusCallbackDelegateWrapper
@@ -96,10 +90,6 @@ namespace android.hardware
 		internal sealed partial class ErrorCallback_ : java.lang.Object, ErrorCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ErrorCallback_()
-			{
-				InitJNI();
-			}
 			internal ErrorCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,11 +102,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.ErrorCallback_.staticClass, global::android.hardware.Camera.ErrorCallback_._onError6268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static ErrorCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.ErrorCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$ErrorCallback"));
 				global::android.hardware.Camera.ErrorCallback_._onError6268 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ErrorCallback_.staticClass, "onError", "(ILandroid/hardware/Camera;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -125,10 +118,6 @@ namespace android.hardware
 		internal partial class ErrorCallbackDelegateWrapper : java.lang.Object, ErrorCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ErrorCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected ErrorCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -139,11 +128,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ErrorCallbackDelegateWrapper._ErrorCallbackDelegateWrapper6269);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ErrorCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_ErrorCallbackDelegateWrapper"));
 				global::android.hardware.Camera.ErrorCallbackDelegateWrapper._ErrorCallbackDelegateWrapper6269 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class ErrorCallbackDelegateWrapper
@@ -171,10 +163,6 @@ namespace android.hardware
 		internal sealed partial class OnZoomChangeListener_ : java.lang.Object, OnZoomChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnZoomChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnZoomChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -187,11 +175,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.OnZoomChangeListener_.staticClass, global::android.hardware.Camera.OnZoomChangeListener_._onZoomChange6270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnZoomChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.OnZoomChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$OnZoomChangeListener"));
 				global::android.hardware.Camera.OnZoomChangeListener_._onZoomChange6270 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.OnZoomChangeListener_.staticClass, "onZoomChange", "(IZLandroid/hardware/Camera;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -200,10 +191,6 @@ namespace android.hardware
 		internal partial class OnZoomChangeListenerDelegateWrapper : java.lang.Object, OnZoomChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnZoomChangeListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnZoomChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -214,11 +201,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._OnZoomChangeListenerDelegateWrapper6271);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnZoomChangeListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_OnZoomChangeListenerDelegateWrapper"));
 				global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._OnZoomChangeListenerDelegateWrapper6271 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnZoomChangeListenerDelegateWrapper
@@ -240,10 +230,6 @@ namespace android.hardware
 		public partial class Parameters : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Parameters()
-			{
-				InitJNI();
-			}
 			protected Parameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1534,7 +1520,7 @@ namespace android.hardware
 					return "edof";
 				}
 			}
-			private static void InitJNI()
+			static Parameters()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.Parameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$Parameters"));
@@ -1607,6 +1593,9 @@ namespace android.hardware
 				global::android.hardware.Camera.Parameters._getZoomRatios6338 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.Parameters.staticClass, "getZoomRatios", "()Ljava/util/List;");
 				global::android.hardware.Camera.Parameters._isSmoothZoomSupported6339 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.Parameters.staticClass, "isSmoothZoomSupported", "()Z");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.PictureCallback_))]
 		public partial interface PictureCallback  : global::MonoJavaBridge.IJavaObject 
@@ -1618,10 +1607,6 @@ namespace android.hardware
 		internal sealed partial class PictureCallback_ : java.lang.Object, PictureCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PictureCallback_()
-			{
-				InitJNI();
-			}
 			internal PictureCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1634,11 +1619,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.PictureCallback_.staticClass, global::android.hardware.Camera.PictureCallback_._onPictureTaken6387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static PictureCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.PictureCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$PictureCallback"));
 				global::android.hardware.Camera.PictureCallback_._onPictureTaken6387 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PictureCallback_.staticClass, "onPictureTaken", "([BLandroid/hardware/Camera;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -1647,10 +1635,6 @@ namespace android.hardware
 		internal partial class PictureCallbackDelegateWrapper : java.lang.Object, PictureCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PictureCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected PictureCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1661,11 +1645,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PictureCallbackDelegateWrapper._PictureCallbackDelegateWrapper6388);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PictureCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_PictureCallbackDelegateWrapper"));
 				global::android.hardware.Camera.PictureCallbackDelegateWrapper._PictureCallbackDelegateWrapper6388 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class PictureCallbackDelegateWrapper
@@ -1693,10 +1680,6 @@ namespace android.hardware
 		internal sealed partial class PreviewCallback_ : java.lang.Object, PreviewCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PreviewCallback_()
-			{
-				InitJNI();
-			}
 			internal PreviewCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1709,11 +1692,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.PreviewCallback_.staticClass, global::android.hardware.Camera.PreviewCallback_._onPreviewFrame6389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static PreviewCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.PreviewCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$PreviewCallback"));
 				global::android.hardware.Camera.PreviewCallback_._onPreviewFrame6389 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PreviewCallback_.staticClass, "onPreviewFrame", "([BLandroid/hardware/Camera;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -1722,10 +1708,6 @@ namespace android.hardware
 		internal partial class PreviewCallbackDelegateWrapper : java.lang.Object, PreviewCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PreviewCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected PreviewCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1736,11 +1718,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PreviewCallbackDelegateWrapper._PreviewCallbackDelegateWrapper6390);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PreviewCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_PreviewCallbackDelegateWrapper"));
 				global::android.hardware.Camera.PreviewCallbackDelegateWrapper._PreviewCallbackDelegateWrapper6390 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class PreviewCallbackDelegateWrapper
@@ -1768,10 +1753,6 @@ namespace android.hardware
 		internal sealed partial class ShutterCallback_ : java.lang.Object, ShutterCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ShutterCallback_()
-			{
-				InitJNI();
-			}
 			internal ShutterCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1784,11 +1765,14 @@ namespace android.hardware
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.hardware.Camera.ShutterCallback_.staticClass, global::android.hardware.Camera.ShutterCallback_._onShutter6391);
 			}
-			private static void InitJNI()
+			static ShutterCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.ShutterCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$ShutterCallback"));
 				global::android.hardware.Camera.ShutterCallback_._onShutter6391 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ShutterCallback_.staticClass, "onShutter", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -1797,10 +1781,6 @@ namespace android.hardware
 		internal partial class ShutterCallbackDelegateWrapper : java.lang.Object, ShutterCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ShutterCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected ShutterCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1811,11 +1791,14 @@ namespace android.hardware
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ShutterCallbackDelegateWrapper._ShutterCallbackDelegateWrapper6392);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ShutterCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera_ShutterCallbackDelegateWrapper"));
 				global::android.hardware.Camera.ShutterCallbackDelegateWrapper._ShutterCallbackDelegateWrapper6392 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class ShutterCallbackDelegateWrapper
@@ -1837,10 +1820,6 @@ namespace android.hardware
 		public partial class Size : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Size()
-			{
-				InitJNI();
-			}
 			protected Size(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1893,7 +1872,7 @@ namespace android.hardware
 				{
 				}
 			}
-			private static void InitJNI()
+			static Size()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.Size.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$Size"));
@@ -1902,6 +1881,9 @@ namespace android.hardware
 				global::android.hardware.Camera.Size._Size6395 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.Size.staticClass, "<init>", "(Landroid/hardware/Camera;II)V");
 				global::android.hardware.Camera.Size._width6396 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "width", "I");
 				global::android.hardware.Camera.Size._height6397 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "height", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize6398;
@@ -2198,7 +2180,7 @@ namespace android.hardware
 				return 100;
 			}
 		}
-		private static void InitJNI()
+		static Camera()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.Camera.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera"));
@@ -2226,6 +2208,9 @@ namespace android.hardware
 			global::android.hardware.Camera._setZoomChangeListener6419 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.staticClass, "setZoomChangeListener", "(Landroid/hardware/Camera$OnZoomChangeListener;)V");
 			global::android.hardware.Camera._setErrorCallback6420 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.staticClass, "setErrorCallback", "(Landroid/hardware/Camera$ErrorCallback;)V");
 			global::android.hardware.Camera._setParameters6421 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.staticClass, "setParameters", "(Landroid/hardware/Camera$Parameters;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

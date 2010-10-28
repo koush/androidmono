@@ -4,10 +4,6 @@ namespace java.lang
 	public abstract partial class Number : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Number()
-		{
-			InitJNI();
-		}
 		protected Number(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -44,7 +40,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Number.staticClass, global::java.lang.Number._Number20360);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Number()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Number.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Number"));
@@ -56,16 +52,15 @@ namespace java.lang
 			global::java.lang.Number._doubleValue20359 = @__env.GetMethodIDNoThrow(global::java.lang.Number.staticClass, "doubleValue", "()D");
 			global::java.lang.Number._Number20360 = @__env.GetMethodIDNoThrow(global::java.lang.Number.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.Number))]
 	internal sealed partial class Number_ : java.lang.Number
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Number_()
-		{
-			InitJNI();
-		}
 		internal Number_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -105,7 +100,7 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._doubleValue20364);
 		}
-		private static void InitJNI()
+		static Number_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Number_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Number"));
@@ -113,6 +108,9 @@ namespace java.lang
 			global::java.lang.Number_._longValue20362 = @__env.GetMethodIDNoThrow(global::java.lang.Number_.staticClass, "longValue", "()J");
 			global::java.lang.Number_._floatValue20363 = @__env.GetMethodIDNoThrow(global::java.lang.Number_.staticClass, "floatValue", "()F");
 			global::java.lang.Number_._doubleValue20364 = @__env.GetMethodIDNoThrow(global::java.lang.Number_.staticClass, "doubleValue", "()D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

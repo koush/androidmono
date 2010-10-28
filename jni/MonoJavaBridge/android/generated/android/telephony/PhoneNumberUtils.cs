@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class PhoneNumberUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PhoneNumberUtils()
-		{
-			InitJNI();
-		}
 		protected PhoneNumberUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -254,7 +250,7 @@ namespace android.telephony
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static PhoneNumberUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.PhoneNumberUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/PhoneNumberUtils"));
@@ -289,6 +285,9 @@ namespace android.telephony
 			global::android.telephony.PhoneNumberUtils._isEmergencyNumber11825 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isEmergencyNumber", "(Ljava/lang/String;)Z");
 			global::android.telephony.PhoneNumberUtils._convertKeypadLettersToDigits11826 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "convertKeypadLettersToDigits", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::android.telephony.PhoneNumberUtils._PhoneNumberUtils11827 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

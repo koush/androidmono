@@ -4,10 +4,6 @@ namespace org.apache.http.impl.auth
 	public partial class DigestScheme : org.apache.http.impl.auth.RFC2617Scheme
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DigestScheme()
-		{
-			InitJNI();
-		}
 		protected DigestScheme(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -85,7 +81,7 @@ namespace org.apache.http.impl.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.DigestScheme.staticClass, global::org.apache.http.impl.auth.DigestScheme._DigestScheme32734);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DigestScheme()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.DigestScheme.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/DigestScheme"));
@@ -97,6 +93,9 @@ namespace org.apache.http.impl.auth
 			global::org.apache.http.impl.auth.DigestScheme._overrideParamter32732 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.DigestScheme.staticClass, "overrideParamter", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.apache.http.impl.auth.DigestScheme._createCnonce32733 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.impl.auth.DigestScheme.staticClass, "createCnonce", "()Ljava/lang/String;");
 			global::org.apache.http.impl.auth.DigestScheme._DigestScheme32734 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.DigestScheme.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

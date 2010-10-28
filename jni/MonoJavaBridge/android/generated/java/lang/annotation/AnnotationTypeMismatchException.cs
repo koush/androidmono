@@ -4,10 +4,6 @@ namespace java.lang.annotation
 	public partial class AnnotationTypeMismatchException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AnnotationTypeMismatchException()
-		{
-			InitJNI();
-		}
 		protected AnnotationTypeMismatchException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace java.lang.annotation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._AnnotationTypeMismatchException20947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AnnotationTypeMismatchException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.AnnotationTypeMismatchException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/AnnotationTypeMismatchException"));
 			global::java.lang.annotation.AnnotationTypeMismatchException._element20945 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "element", "()Ljava/lang/reflect/Method;");
 			global::java.lang.annotation.AnnotationTypeMismatchException._foundType20946 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "foundType", "()Ljava/lang/String;");
 			global::java.lang.annotation.AnnotationTypeMismatchException._AnnotationTypeMismatchException20947 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "<init>", "(Ljava/lang/reflect/Method;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

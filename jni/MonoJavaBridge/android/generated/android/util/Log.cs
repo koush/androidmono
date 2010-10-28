@@ -4,10 +4,6 @@ namespace android.util
 	public sealed partial class Log : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Log()
-		{
-			InitJNI();
-		}
 		internal Log(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +151,7 @@ namespace android.util
 				return 7;
 			}
 		}
-		private static void InitJNI()
+		static Log()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Log.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Log"));
@@ -176,6 +172,9 @@ namespace android.util
 			global::android.util.Log._wtf13787 = @__env.GetStaticMethodIDNoThrow(global::android.util.Log.staticClass, "wtf", "(Ljava/lang/String;Ljava/lang/String;)I");
 			global::android.util.Log._wtf13788 = @__env.GetStaticMethodIDNoThrow(global::android.util.Log.staticClass, "wtf", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I");
 			global::android.util.Log._getStackTraceString13789 = @__env.GetStaticMethodIDNoThrow(global::android.util.Log.staticClass, "getStackTraceString", "(Ljava/lang/Throwable;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

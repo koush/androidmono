@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public sealed partial class SSLPermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLPermission()
-		{
-			InitJNI();
-		}
 		internal SSLPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLPermission.staticClass, global::javax.net.ssl.SSLPermission._SSLPermission29994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLPermission"));
 			global::javax.net.ssl.SSLPermission._SSLPermission29993 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLPermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.net.ssl.SSLPermission._SSLPermission29994 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class SuperscriptSpan : android.text.style.MetricAffectingSpan, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SuperscriptSpan()
-		{
-			InitJNI();
-		}
 		protected SuperscriptSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan13595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SuperscriptSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.SuperscriptSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/SuperscriptSpan"));
@@ -88,6 +84,9 @@ namespace android.text.style
 			global::android.text.style.SuperscriptSpan._updateMeasureState13593 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
 			global::android.text.style.SuperscriptSpan._SuperscriptSpan13594 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "()V");
 			global::android.text.style.SuperscriptSpan._SuperscriptSpan13595 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

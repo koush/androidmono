@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Point : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Point()
-		{
-			InitJNI();
-		}
 		protected Point(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace android.graphics
 			{
 			}
 		}
-		private static void InitJNI()
+		static Point()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Point.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Point"));
@@ -135,6 +131,9 @@ namespace android.graphics
 			global::android.graphics.Point._Point5628 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "<init>", "()V");
 			global::android.graphics.Point._x5629 = @__env.GetFieldIDNoThrow(global::android.graphics.Point.staticClass, "x", "I");
 			global::android.graphics.Point._y5630 = @__env.GetFieldIDNoThrow(global::android.graphics.Point.staticClass, "y", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

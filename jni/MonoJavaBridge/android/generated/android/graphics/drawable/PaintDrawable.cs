@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class PaintDrawable : android.graphics.drawable.ShapeDrawable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PaintDrawable()
-		{
-			InitJNI();
-		}
 		protected PaintDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.PaintDrawable.staticClass, global::android.graphics.drawable.PaintDrawable._PaintDrawable6144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PaintDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.PaintDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/PaintDrawable"));
@@ -75,6 +71,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.PaintDrawable._inflateTag6142 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PaintDrawable.staticClass, "inflateTag", "(Ljava/lang/String;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Z");
 			global::android.graphics.drawable.PaintDrawable._PaintDrawable6143 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PaintDrawable.staticClass, "<init>", "()V");
 			global::android.graphics.drawable.PaintDrawable._PaintDrawable6144 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PaintDrawable.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text
 	public partial class Annotation : java.lang.Object, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Annotation()
-		{
-			InitJNI();
-		}
 		protected Annotation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -91,7 +87,7 @@ namespace android.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Annotation.staticClass, global::android.text.Annotation._Annotation12691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Annotation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Annotation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Annotation"));
@@ -102,6 +98,9 @@ namespace android.text
 			global::android.text.Annotation._getSpanTypeId12689 = @__env.GetMethodIDNoThrow(global::android.text.Annotation.staticClass, "getSpanTypeId", "()I");
 			global::android.text.Annotation._Annotation12690 = @__env.GetMethodIDNoThrow(global::android.text.Annotation.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::android.text.Annotation._Annotation12691 = @__env.GetMethodIDNoThrow(global::android.text.Annotation.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

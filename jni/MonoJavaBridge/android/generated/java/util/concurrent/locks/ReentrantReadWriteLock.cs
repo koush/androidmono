@@ -4,10 +4,6 @@ namespace java.util.concurrent.locks
 	public partial class ReentrantReadWriteLock : java.lang.Object, ReadWriteLock, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReentrantReadWriteLock()
-		{
-			InitJNI();
-		}
 		protected ReentrantReadWriteLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.util.concurrent.locks
 		public partial class ReadLock : java.lang.Object, Lock, java.io.Serializable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ReadLock()
-			{
-				InitJNI();
-			}
 			protected ReadLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -92,7 +84,7 @@ namespace java.util.concurrent.locks
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock.staticClass, global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock._ReadLock27783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ReadLock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock"));
@@ -105,15 +97,14 @@ namespace java.util.concurrent.locks
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock._newCondition27782 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;");
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock._ReadLock27783 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock.staticClass, "<init>", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class WriteLock : java.lang.Object, Lock, java.io.Serializable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WriteLock()
-			{
-				InitJNI();
-			}
 			protected WriteLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -212,7 +203,7 @@ namespace java.util.concurrent.locks
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock.staticClass, global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock._WriteLock27793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static WriteLock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock"));
@@ -226,6 +217,9 @@ namespace java.util.concurrent.locks
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock._getHoldCount27791 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock.staticClass, "getHoldCount", "()I");
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock._isHeldByCurrentThread27792 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock.staticClass, "isHeldByCurrentThread", "()Z");
 				global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock._WriteLock27793 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock.staticClass, "<init>", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27794;
@@ -469,7 +463,7 @@ namespace java.util.concurrent.locks
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.ReentrantReadWriteLock.staticClass, global::java.util.concurrent.locks.ReentrantReadWriteLock._ReentrantReadWriteLock27814);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ReentrantReadWriteLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.ReentrantReadWriteLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReentrantReadWriteLock"));
@@ -494,6 +488,9 @@ namespace java.util.concurrent.locks
 			global::java.util.concurrent.locks.ReentrantReadWriteLock._getQueuedReaderThreads27812 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.staticClass, "getQueuedReaderThreads", "()Ljava/util/Collection;");
 			global::java.util.concurrent.locks.ReentrantReadWriteLock._ReentrantReadWriteLock27813 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.staticClass, "<init>", "(Z)V");
 			global::java.util.concurrent.locks.ReentrantReadWriteLock._ReentrantReadWriteLock27814 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReentrantReadWriteLock.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

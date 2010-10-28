@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class AnimationSet : android.view.animation.Animation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AnimationSet()
-		{
-			InitJNI();
-		}
 		protected AnimationSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -253,7 +249,7 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnimationSet.staticClass, global::android.view.animation.AnimationSet._AnimationSet15655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AnimationSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.AnimationSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/AnimationSet"));
@@ -278,6 +274,9 @@ namespace android.view.animation
 			global::android.view.animation.AnimationSet._getAnimations15653 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnimationSet.staticClass, "getAnimations", "()Ljava/util/List;");
 			global::android.view.animation.AnimationSet._AnimationSet15654 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnimationSet.staticClass, "<init>", "(Z)V");
 			global::android.view.animation.AnimationSet._AnimationSet15655 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnimationSet.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.xml.xpath
 	public abstract partial class XPathFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathFactory()
-		{
-			InitJNI();
-		}
 		protected XPathFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace javax.xml.xpath
 				return "http://java.sun.com/jaxp/xpath/dom";
 			}
 		}
-		private static void InitJNI()
+		static XPathFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathFactory"));
@@ -77,16 +73,15 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathFactory._newXPath31318 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory.staticClass, "newXPath", "()Ljavax/xml/xpath/XPath;");
 			global::javax.xml.xpath.XPathFactory._XPathFactory31319 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.xpath.XPathFactory))]
 	internal sealed partial class XPathFactory_ : javax.xml.xpath.XPathFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathFactory_()
-		{
-			InitJNI();
-		}
 		internal XPathFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -144,7 +139,7 @@ namespace javax.xml.xpath
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPath>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._newXPath31327)) as javax.xml.xpath.XPath;
 		}
-		private static void InitJNI()
+		static XPathFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathFactory"));
@@ -154,6 +149,9 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31325 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V");
 			global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31326 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "isObjectModelSupported", "(Ljava/lang/String;)Z");
 			global::javax.xml.xpath.XPathFactory_._newXPath31327 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "newXPath", "()Ljavax/xml/xpath/XPath;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

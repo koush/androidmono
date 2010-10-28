@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public sealed partial class InputMethodManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMethodManager()
-		{
-			InitJNI();
-		}
 		internal InputMethodManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -306,7 +302,7 @@ namespace android.view.inputmethod
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static InputMethodManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethodManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethodManager"));
@@ -335,6 +331,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputMethodManager._hideSoftInputFromInputMethod15967 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodManager.staticClass, "hideSoftInputFromInputMethod", "(Landroid/os/IBinder;I)V");
 			global::android.view.inputmethod.InputMethodManager._showSoftInputFromInputMethod15968 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodManager.staticClass, "showSoftInputFromInputMethod", "(Landroid/os/IBinder;I)V");
 			global::android.view.inputmethod.InputMethodManager._showInputMethodPicker15969 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodManager.staticClass, "showInputMethodPicker", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

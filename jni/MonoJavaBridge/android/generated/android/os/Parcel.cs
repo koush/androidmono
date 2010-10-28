@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class Parcel : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Parcel()
-		{
-			InitJNI();
-		}
 		internal Parcel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -912,7 +908,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.Parcel.staticClass, _STRING_CREATOR10076)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Parcel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Parcel.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcel"));
@@ -1016,6 +1012,9 @@ namespace android.os
 			global::android.os.Parcel._readParcelableArray10074 = @__env.GetMethodIDNoThrow(global::android.os.Parcel.staticClass, "readParcelableArray", "(Ljava/lang/ClassLoader;)[Landroid/os/Parcelable;");
 			global::android.os.Parcel._readSerializable10075 = @__env.GetMethodIDNoThrow(global::android.os.Parcel.staticClass, "readSerializable", "()Ljava/io/Serializable;");
 			global::android.os.Parcel._STRING_CREATOR10076 = @__env.GetStaticFieldIDNoThrow(global::android.os.Parcel.staticClass, "STRING_CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

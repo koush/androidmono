@@ -4,10 +4,6 @@ namespace android.app
 	public partial class ListActivity : android.app.Activity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListActivity()
-		{
-			InitJNI();
-		}
 		protected ListActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -147,7 +143,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ListActivity.staticClass, global::android.app.ListActivity._ListActivity1954);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ListActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ListActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ListActivity"));
@@ -162,6 +158,9 @@ namespace android.app
 			global::android.app.ListActivity._onListItemClick1952 = @__env.GetMethodIDNoThrow(global::android.app.ListActivity.staticClass, "onListItemClick", "(Landroid/widget/ListView;Landroid/view/View;IJ)V");
 			global::android.app.ListActivity._getListAdapter1953 = @__env.GetMethodIDNoThrow(global::android.app.ListActivity.staticClass, "getListAdapter", "()Landroid/widget/ListAdapter;");
 			global::android.app.ListActivity._ListActivity1954 = @__env.GetMethodIDNoThrow(global::android.app.ListActivity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

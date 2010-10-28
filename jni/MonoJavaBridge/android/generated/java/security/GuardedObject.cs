@@ -4,10 +4,6 @@ namespace java.security
 	public partial class GuardedObject : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GuardedObject()
-		{
-			InitJNI();
-		}
 		protected GuardedObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GuardedObject.staticClass, global::java.security.GuardedObject._GuardedObject22959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GuardedObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.GuardedObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/GuardedObject"));
 			global::java.security.GuardedObject._getObject22958 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "getObject", "()Ljava/lang/Object;");
 			global::java.security.GuardedObject._GuardedObject22959 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "<init>", "(Ljava/lang/Object;Ljava/security/Guard;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

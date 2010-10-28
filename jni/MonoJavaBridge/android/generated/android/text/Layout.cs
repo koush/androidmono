@@ -4,10 +4,6 @@ namespace android.text
 	public abstract partial class Layout : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Layout()
-		{
-			InitJNI();
-		}
 		protected Layout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.text
 		public sealed partial class Alignment : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Alignment()
-			{
-				InitJNI();
-			}
 			internal Alignment(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_OPPOSITE12825)) as android.text.Layout.Alignment;
 				}
 			}
-			private static void InitJNI()
+			static Alignment()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Layout.Alignment.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout$Alignment"));
@@ -71,22 +63,24 @@ namespace android.text
 				global::android.text.Layout.Alignment._ALIGN_NORMAL12824 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_NORMAL", "Landroid/text/Layout$Alignment;");
 				global::android.text.Layout.Alignment._ALIGN_OPPOSITE12825 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_OPPOSITE", "Landroid/text/Layout$Alignment;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Directions : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Directions()
-			{
-				InitJNI();
-			}
 			protected Directions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			private static void InitJNI()
+			static Directions()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Layout.Directions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout$Directions"));
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineWidth12826;
@@ -462,7 +456,7 @@ namespace android.text
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static Layout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
@@ -515,16 +509,15 @@ namespace android.text
 			global::android.text.Layout._getEllipsisCount12872 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsisCount", "(I)I");
 			global::android.text.Layout._Layout12873 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.Layout))]
 	internal sealed partial class Layout_ : android.text.Layout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Layout_()
-		{
-			InitJNI();
-		}
 		internal Layout_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -627,7 +620,7 @@ namespace android.text
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getEllipsisCount12886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Layout_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
@@ -642,6 +635,9 @@ namespace android.text
 			global::android.text.Layout_._getBottomPadding12884 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getBottomPadding", "()I");
 			global::android.text.Layout_._getEllipsisStart12885 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisStart", "(I)I");
 			global::android.text.Layout_._getEllipsisCount12886 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisCount", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

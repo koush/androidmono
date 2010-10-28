@@ -4,10 +4,6 @@ namespace android.view
 	public sealed partial class MotionEvent : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MotionEvent()
-		{
-			InitJNI();
-		}
 		internal MotionEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -716,7 +712,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.MotionEvent.staticClass, _CREATOR14447)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static MotionEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MotionEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MotionEvent"));
@@ -768,6 +764,9 @@ namespace android.view
 			global::android.view.MotionEvent._setLocation14423 = @__env.GetMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "setLocation", "(FF)V");
 			global::android.view.MotionEvent._addBatch14424 = @__env.GetMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "addBatch", "(JFFFFI)V");
 			global::android.view.MotionEvent._CREATOR14447 = @__env.GetStaticFieldIDNoThrow(global::android.view.MotionEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

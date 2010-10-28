@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class Prediction : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Prediction()
-		{
-			InitJNI();
-		}
 		protected Prediction(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,13 +37,16 @@ namespace android.gesture
 			{
 			}
 		}
-		private static void InitJNI()
+		static Prediction()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.Prediction.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/Prediction"));
 			global::android.gesture.Prediction._toString5006 = @__env.GetMethodIDNoThrow(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.gesture.Prediction._name5007 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "name", "Ljava/lang/String;");
 			global::android.gesture.Prediction._score5008 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "score", "D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

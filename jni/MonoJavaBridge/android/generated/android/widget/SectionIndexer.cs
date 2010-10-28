@@ -12,10 +12,6 @@ namespace android.widget
 	internal sealed partial class SectionIndexer_ : java.lang.Object, SectionIndexer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SectionIndexer_()
-		{
-			InitJNI();
-		}
 		internal SectionIndexer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SectionIndexer_.staticClass, global::android.widget.SectionIndexer_._getSectionForPosition17735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SectionIndexer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SectionIndexer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SectionIndexer"));
 			global::android.widget.SectionIndexer_._getSections17733 = @__env.GetMethodIDNoThrow(global::android.widget.SectionIndexer_.staticClass, "getSections", "()[Ljava/lang/Object;");
 			global::android.widget.SectionIndexer_._getPositionForSection17734 = @__env.GetMethodIDNoThrow(global::android.widget.SectionIndexer_.staticClass, "getPositionForSection", "(I)I");
 			global::android.widget.SectionIndexer_._getSectionForPosition17735 = @__env.GetMethodIDNoThrow(global::android.widget.SectionIndexer_.staticClass, "getSectionForPosition", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

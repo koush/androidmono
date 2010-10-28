@@ -14,10 +14,6 @@ namespace java.util.concurrent
 	internal sealed partial class CompletionService_ : java.lang.Object, CompletionService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CompletionService_()
-		{
-			InitJNI();
-		}
 		internal CompletionService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace java.util.concurrent
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CompletionService_.staticClass, global::java.util.concurrent.CompletionService_._take27109)) as java.util.concurrent.Future;
 		}
-		private static void InitJNI()
+		static CompletionService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.CompletionService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/CompletionService"));
@@ -75,6 +71,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.CompletionService_._submit27107 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CompletionService_.staticClass, "submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;");
 			global::java.util.concurrent.CompletionService_._submit27108 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CompletionService_.staticClass, "submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;");
 			global::java.util.concurrent.CompletionService_._take27109 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CompletionService_.staticClass, "take", "()Ljava/util/concurrent/Future;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

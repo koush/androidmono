@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class Gesture : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Gesture()
-		{
-			InitJNI();
-		}
 		protected Gesture(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -197,7 +193,7 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.gesture.Gesture.staticClass, _CREATOR4880)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Gesture()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.Gesture.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/Gesture"));
@@ -218,6 +214,9 @@ namespace android.gesture
 			global::android.gesture.Gesture._toBitmap4878 = @__env.GetMethodIDNoThrow(global::android.gesture.Gesture.staticClass, "toBitmap", "(IIIII)Landroid/graphics/Bitmap;");
 			global::android.gesture.Gesture._Gesture4879 = @__env.GetMethodIDNoThrow(global::android.gesture.Gesture.staticClass, "<init>", "()V");
 			global::android.gesture.Gesture._CREATOR4880 = @__env.GetStaticFieldIDNoThrow(global::android.gesture.Gesture.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

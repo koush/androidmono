@@ -4,10 +4,6 @@ namespace java.sql
 	public sealed partial class SQLPermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLPermission()
-		{
-			InitJNI();
-		}
 		internal SQLPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.SQLPermission.staticClass, global::java.sql.SQLPermission._SQLPermission25032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SQLPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLPermission"));
 			global::java.sql.SQLPermission._SQLPermission25031 = @__env.GetMethodIDNoThrow(global::java.sql.SQLPermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.sql.SQLPermission._SQLPermission25032 = @__env.GetMethodIDNoThrow(global::java.sql.SQLPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

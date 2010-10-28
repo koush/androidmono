@@ -4,10 +4,6 @@ namespace android.database
 	public partial class ContentObservable : android.database.Observable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentObservable()
-		{
-			InitJNI();
-		}
 		protected ContentObservable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.ContentObservable.staticClass, global::android.database.ContentObservable._ContentObservable4430);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContentObservable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.ContentObservable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/ContentObservable"));
@@ -53,6 +49,9 @@ namespace android.database
 			global::android.database.ContentObservable._dispatchChange4428 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "dispatchChange", "(Z)V");
 			global::android.database.ContentObservable._registerObserver4429 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "registerObserver", "(Landroid/database/ContentObserver;)V");
 			global::android.database.ContentObservable._ContentObservable4430 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class OAEPParameterSpec : java.lang.Object, java.security.spec.AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OAEPParameterSpec()
-		{
-			InitJNI();
-		}
 		protected OAEPParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -91,7 +87,7 @@ namespace javax.crypto.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.crypto.spec.OAEPParameterSpec.staticClass, _DEFAULT28791)) as javax.crypto.spec.OAEPParameterSpec;
 			}
 		}
-		private static void InitJNI()
+		static OAEPParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.OAEPParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/OAEPParameterSpec"));
@@ -101,6 +97,9 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.OAEPParameterSpec._getPSource28789 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getPSource", "()Ljavax/crypto/spec/PSource;");
 			global::javax.crypto.spec.OAEPParameterSpec._OAEPParameterSpec28790 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V");
 			global::javax.crypto.spec.OAEPParameterSpec._DEFAULT28791 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "DEFAULT", "Ljavax/crypto/spec/OAEPParameterSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

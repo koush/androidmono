@@ -4,10 +4,6 @@ namespace org.apache.http.client.protocol
 	public partial class ClientContextConfigurer : java.lang.Object, ClientContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientContextConfigurer()
-		{
-			InitJNI();
-		}
 		protected ClientContextConfigurer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -98,7 +94,7 @@ namespace org.apache.http.client.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.protocol.ClientContextConfigurer.staticClass, global::org.apache.http.client.protocol.ClientContextConfigurer._ClientContextConfigurer32037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ClientContextConfigurer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.protocol.ClientContextConfigurer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/protocol/ClientContextConfigurer"));
@@ -108,6 +104,9 @@ namespace org.apache.http.client.protocol
 			global::org.apache.http.client.protocol.ClientContextConfigurer._setCredentialsProvider32035 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.ClientContextConfigurer.staticClass, "setCredentialsProvider", "(Lorg/apache/http/client/CredentialsProvider;)V");
 			global::org.apache.http.client.protocol.ClientContextConfigurer._setAuthSchemePref32036 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.ClientContextConfigurer.staticClass, "setAuthSchemePref", "(Ljava/util/List;)V");
 			global::org.apache.http.client.protocol.ClientContextConfigurer._ClientContextConfigurer32037 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.protocol.ClientContextConfigurer.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpContext;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.math
 	public partial class BigInteger : java.lang.Number, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BigInteger()
-		{
-			InitJNI();
-		}
 		protected BigInteger(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -493,7 +489,7 @@ namespace java.math
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigInteger.staticClass, _TEN21305)) as java.math.BigInteger;
 			}
 		}
-		private static void InitJNI()
+		static BigInteger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.BigInteger.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/BigInteger"));
@@ -551,6 +547,9 @@ namespace java.math
 			global::java.math.BigInteger._ZERO21303 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigInteger.staticClass, "ZERO", "Ljava/math/BigInteger;");
 			global::java.math.BigInteger._ONE21304 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigInteger.staticClass, "ONE", "Ljava/math/BigInteger;");
 			global::java.math.BigInteger._TEN21305 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigInteger.staticClass, "TEN", "Ljava/math/BigInteger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

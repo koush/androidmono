@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class PathDashPathEffect : android.graphics.PathEffect
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PathDashPathEffect()
-		{
-			InitJNI();
-		}
 		protected PathDashPathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Style : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Style()
-			{
-				InitJNI();
-			}
 			internal Style(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PathDashPathEffect.Style>(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _TRANSLATE5569)) as android.graphics.PathDashPathEffect.Style;
 				}
 			}
-			private static void InitJNI()
+			static Style()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.PathDashPathEffect.Style.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathDashPathEffect$Style"));
@@ -71,6 +63,9 @@ namespace android.graphics
 				global::android.graphics.PathDashPathEffect.Style._ROTATE5568 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PathDashPathEffect.Style.staticClass, "ROTATE", "Landroid/graphics/PathDashPathEffect$Style;");
 				global::android.graphics.PathDashPathEffect.Style._TRANSLATE5569 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PathDashPathEffect.Style.staticClass, "TRANSLATE", "Landroid/graphics/PathDashPathEffect$Style;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _PathDashPathEffect5570;
 		public PathDashPathEffect(android.graphics.Path arg0, float arg1, float arg2, android.graphics.PathDashPathEffect.Style arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -79,11 +74,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PathDashPathEffect.staticClass, global::android.graphics.PathDashPathEffect._PathDashPathEffect5570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PathDashPathEffect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PathDashPathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathDashPathEffect"));
 			global::android.graphics.PathDashPathEffect._PathDashPathEffect5570 = @__env.GetMethodIDNoThrow(global::android.graphics.PathDashPathEffect.staticClass, "<init>", "(Landroid/graphics/Path;FFLandroid/graphics/PathDashPathEffect$Style;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

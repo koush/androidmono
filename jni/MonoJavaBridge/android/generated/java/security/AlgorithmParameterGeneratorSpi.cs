@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class AlgorithmParameterGeneratorSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlgorithmParameterGeneratorSpi()
-		{
-			InitJNI();
-		}
 		protected AlgorithmParameterGeneratorSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,7 +20,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParameterGeneratorSpi.staticClass, global::java.security.AlgorithmParameterGeneratorSpi._AlgorithmParameterGeneratorSpi22859);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlgorithmParameterGeneratorSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AlgorithmParameterGeneratorSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AlgorithmParameterGeneratorSpi"));
@@ -33,16 +29,15 @@ namespace java.security
 			global::java.security.AlgorithmParameterGeneratorSpi._engineGenerateParameters22858 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameterGeneratorSpi.staticClass, "engineGenerateParameters", "()Ljava/security/AlgorithmParameters;");
 			global::java.security.AlgorithmParameterGeneratorSpi._AlgorithmParameterGeneratorSpi22859 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameterGeneratorSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.AlgorithmParameterGeneratorSpi))]
 	internal sealed partial class AlgorithmParameterGeneratorSpi_ : java.security.AlgorithmParameterGeneratorSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlgorithmParameterGeneratorSpi_()
-		{
-			InitJNI();
-		}
 		internal AlgorithmParameterGeneratorSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,13 +68,16 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, global::java.security.AlgorithmParameterGeneratorSpi_._engineGenerateParameters22862)) as java.security.AlgorithmParameters;
 		}
-		private static void InitJNI()
+		static AlgorithmParameterGeneratorSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AlgorithmParameterGeneratorSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AlgorithmParameterGeneratorSpi"));
 			global::java.security.AlgorithmParameterGeneratorSpi_._engineInit22860 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, "engineInit", "(ILjava/security/SecureRandom;)V");
 			global::java.security.AlgorithmParameterGeneratorSpi_._engineInit22861 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V");
 			global::java.security.AlgorithmParameterGeneratorSpi_._engineGenerateParameters22862 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, "engineGenerateParameters", "()Ljava/security/AlgorithmParameters;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class ThreadGroup : java.lang.Object, java.lang.Thread.UncaughtExceptionHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ThreadGroup()
-		{
-			InitJNI();
-		}
 		protected ThreadGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -273,7 +269,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._ThreadGroup20900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ThreadGroup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ThreadGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ThreadGroup"));
@@ -303,6 +299,9 @@ namespace java.lang
 			global::java.lang.ThreadGroup._allowThreadSuspension20898 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "allowThreadSuspension", "(Z)Z");
 			global::java.lang.ThreadGroup._ThreadGroup20899 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.ThreadGroup._ThreadGroup20900 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

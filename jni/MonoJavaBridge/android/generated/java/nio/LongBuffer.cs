@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class LongBuffer : java.nio.Buffer, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LongBuffer()
-		{
-			InitJNI();
-		}
 		protected LongBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -166,7 +162,7 @@ namespace java.nio
 		public abstract global::java.nio.LongBuffer compact();
 		internal static global::MonoJavaBridge.MethodId _order22305;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI()
+		static LongBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.LongBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/LongBuffer"));
@@ -197,16 +193,15 @@ namespace java.nio
 			global::java.nio.LongBuffer._compact22304 = @__env.GetMethodIDNoThrow(global::java.nio.LongBuffer.staticClass, "compact", "()Ljava/nio/LongBuffer;");
 			global::java.nio.LongBuffer._order22305 = @__env.GetMethodIDNoThrow(global::java.nio.LongBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.LongBuffer))]
 	internal sealed partial class LongBuffer_ : java.nio.LongBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LongBuffer_()
-		{
-			InitJNI();
-		}
 		internal LongBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -309,7 +304,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.LongBuffer_.staticClass, global::java.nio.LongBuffer_._isReadOnly22316);
 		}
-		private static void InitJNI()
+		static LongBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.LongBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/LongBuffer"));
@@ -324,6 +319,9 @@ namespace java.nio
 			global::java.nio.LongBuffer_._compact22314 = @__env.GetMethodIDNoThrow(global::java.nio.LongBuffer_.staticClass, "compact", "()Ljava/nio/LongBuffer;");
 			global::java.nio.LongBuffer_._order22315 = @__env.GetMethodIDNoThrow(global::java.nio.LongBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
 			global::java.nio.LongBuffer_._isReadOnly22316 = @__env.GetMethodIDNoThrow(global::java.nio.LongBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.security
 	public sealed partial class AccessControlContext : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessControlContext()
-		{
-			InitJNI();
-		}
 		internal AccessControlContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._AccessControlContext22833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AccessControlContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AccessControlContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AccessControlContext"));
@@ -78,6 +74,9 @@ namespace java.security
 			global::java.security.AccessControlContext._getDomainCombiner22831 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "getDomainCombiner", "()Ljava/security/DomainCombiner;");
 			global::java.security.AccessControlContext._AccessControlContext22832 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "([Ljava/security/ProtectionDomain;)V");
 			global::java.security.AccessControlContext._AccessControlContext22833 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

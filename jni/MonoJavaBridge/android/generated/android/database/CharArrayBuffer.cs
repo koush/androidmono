@@ -4,10 +4,6 @@ namespace android.database
 	public sealed partial class CharArrayBuffer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharArrayBuffer()
-		{
-			InitJNI();
-		}
 		internal CharArrayBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -49,7 +45,7 @@ namespace android.database
 			{
 			}
 		}
-		private static void InitJNI()
+		static CharArrayBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CharArrayBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CharArrayBuffer"));
@@ -57,6 +53,9 @@ namespace android.database
 			global::android.database.CharArrayBuffer._CharArrayBuffer4424 = @__env.GetMethodIDNoThrow(global::android.database.CharArrayBuffer.staticClass, "<init>", "([C)V");
 			global::android.database.CharArrayBuffer._data4425 = @__env.GetFieldIDNoThrow(global::android.database.CharArrayBuffer.staticClass, "data", "[C");
 			global::android.database.CharArrayBuffer._sizeCopied4426 = @__env.GetFieldIDNoThrow(global::android.database.CharArrayBuffer.staticClass, "sizeCopied", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

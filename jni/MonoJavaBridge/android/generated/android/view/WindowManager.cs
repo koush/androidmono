@@ -11,10 +11,6 @@ namespace android.view
 	internal sealed partial class WindowManager_ : java.lang.Object, WindowManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WindowManager_()
-		{
-			InitJNI();
-		}
 		internal WindowManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._removeView15505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static WindowManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.WindowManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/WindowManager"));
@@ -72,6 +68,9 @@ namespace android.view
 			global::android.view.WindowManager_._addView15503 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
 			global::android.view.WindowManager_._updateViewLayout15504 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
 			global::android.view.WindowManager_._removeView15505 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "removeView", "(Landroid/view/View;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

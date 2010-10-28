@@ -14,10 +14,6 @@ namespace javax.sql
 	internal sealed partial class RowSetInternal_ : java.lang.Object, RowSetInternal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSetInternal_()
-		{
-			InitJNI();
-		}
 		internal RowSetInternal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace javax.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._getOriginalRow30579)) as java.sql.ResultSet;
 		}
-		private static void InitJNI()
+		static RowSetInternal_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetInternal_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetInternal"));
@@ -75,6 +71,9 @@ namespace javax.sql
 			global::javax.sql.RowSetInternal_._getOriginal30577 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetInternal_.staticClass, "getOriginal", "()Ljava/sql/ResultSet;");
 			global::javax.sql.RowSetInternal_._setMetaData30578 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetInternal_.staticClass, "setMetaData", "(Ljavax/sql/RowSetMetaData;)V");
 			global::javax.sql.RowSetInternal_._getOriginalRow30579 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetInternal_.staticClass, "getOriginalRow", "()Ljava/sql/ResultSet;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

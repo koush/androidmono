@@ -11,10 +11,6 @@ namespace org.apache.http.impl.conn.tsccm
 	internal sealed partial class PoolEntryRequest_ : java.lang.Object, PoolEntryRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PoolEntryRequest_()
-		{
-			InitJNI();
-		}
 		internal PoolEntryRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http.impl.conn.tsccm
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._getPoolEntry33152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.impl.conn.tsccm.BasicPoolEntry;
 		}
-		private static void InitJNI()
+		static PoolEntryRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/PoolEntryRequest"));
 			global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._abortRequest33151 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "abortRequest", "()V");
 			global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._getPoolEntry33152 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "getPoolEntry", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

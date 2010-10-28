@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class BaseAdapter : java.lang.Object, ListAdapter, SpinnerAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseAdapter()
-		{
-			InitJNI();
-		}
 		protected BaseAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -125,7 +121,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._BaseAdapter16797);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BaseAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.BaseAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/BaseAdapter"));
@@ -146,16 +142,15 @@ namespace android.widget
 			global::android.widget.BaseAdapter._notifyDataSetInvalidated16796 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter.staticClass, "notifyDataSetInvalidated", "()V");
 			global::android.widget.BaseAdapter._BaseAdapter16797 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.BaseAdapter))]
 	internal sealed partial class BaseAdapter_ : android.widget.BaseAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseAdapter_()
-		{
-			InitJNI();
-		}
 		internal BaseAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -195,7 +190,7 @@ namespace android.widget
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.BaseAdapter_.staticClass, global::android.widget.BaseAdapter_._getView16801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
-		private static void InitJNI()
+		static BaseAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.BaseAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/BaseAdapter"));
@@ -203,6 +198,9 @@ namespace android.widget
 			global::android.widget.BaseAdapter_._getItem16799 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter_.staticClass, "getItem", "(I)Ljava/lang/Object;");
 			global::android.widget.BaseAdapter_._getItemId16800 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter_.staticClass, "getItemId", "(I)J");
 			global::android.widget.BaseAdapter_._getView16801 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

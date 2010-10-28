@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class KeyAgreement : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyAgreement()
-		{
-			InitJNI();
-		}
 		protected KeyAgreement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -140,7 +136,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.KeyAgreement.staticClass, global::javax.crypto.KeyAgreement._KeyAgreement28637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyAgreement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.KeyAgreement.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/KeyAgreement"));
@@ -158,6 +154,9 @@ namespace javax.crypto
 			global::javax.crypto.KeyAgreement._generateSecret28635 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreement.staticClass, "generateSecret", "([BI)I");
 			global::javax.crypto.KeyAgreement._generateSecret28636 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreement.staticClass, "generateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;");
 			global::javax.crypto.KeyAgreement._KeyAgreement28637 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreement.staticClass, "<init>", "(Ljavax/crypto/KeyAgreementSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -9,17 +9,16 @@ namespace org.apache.http.auth.@params
 	internal sealed partial class AuthPNames_ : java.lang.Object, AuthPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthPNames_()
-		{
-			InitJNI();
-		}
 		internal AuthPNames_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AuthPNames_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.@params.AuthPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/params/AuthPNames"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

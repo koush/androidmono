@@ -10,10 +10,6 @@ namespace java.util.concurrent
 	internal sealed partial class Executor_ : java.lang.Object, Executor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Executor_()
-		{
-			InitJNI();
-		}
 		internal Executor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util.concurrent
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.Executor_.staticClass, global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Executor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Executor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Executor"));
 			global::java.util.concurrent.Executor_._execute27261 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Executor_.staticClass, "execute", "(Ljava/lang/Runnable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

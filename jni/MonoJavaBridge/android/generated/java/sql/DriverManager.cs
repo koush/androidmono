@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class DriverManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DriverManager()
-		{
-			InitJNI();
-		}
 		protected DriverManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -135,7 +131,7 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.sql.DriverManager.staticClass, global::java.sql.DriverManager._getLogStream24639)) as java.io.PrintStream;
 		}
-		private static void InitJNI()
+		static DriverManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DriverManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DriverManager"));
@@ -153,6 +149,9 @@ namespace java.sql
 			global::java.sql.DriverManager._getLoginTimeout24637 = @__env.GetStaticMethodIDNoThrow(global::java.sql.DriverManager.staticClass, "getLoginTimeout", "()I");
 			global::java.sql.DriverManager._setLogStream24638 = @__env.GetStaticMethodIDNoThrow(global::java.sql.DriverManager.staticClass, "setLogStream", "(Ljava/io/PrintStream;)V");
 			global::java.sql.DriverManager._getLogStream24639 = @__env.GetStaticMethodIDNoThrow(global::java.sql.DriverManager.staticClass, "getLogStream", "()Ljava/io/PrintStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

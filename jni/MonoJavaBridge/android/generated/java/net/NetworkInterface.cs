@@ -4,10 +4,6 @@ namespace java.net
 	public sealed partial class NetworkInterface : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetworkInterface()
-		{
-			InitJNI();
-		}
 		internal NetworkInterface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -236,7 +232,7 @@ namespace java.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._isVirtual21649);
 		}
-		private static void InitJNI()
+		static NetworkInterface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.NetworkInterface.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/NetworkInterface"));
@@ -259,6 +255,9 @@ namespace java.net
 			global::java.net.NetworkInterface._getHardwareAddress21647 = @__env.GetMethodIDNoThrow(global::java.net.NetworkInterface.staticClass, "getHardwareAddress", "()[B");
 			global::java.net.NetworkInterface._getMTU21648 = @__env.GetMethodIDNoThrow(global::java.net.NetworkInterface.staticClass, "getMTU", "()I");
 			global::java.net.NetworkInterface._isVirtual21649 = @__env.GetMethodIDNoThrow(global::java.net.NetworkInterface.staticClass, "isVirtual", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.net
 	public sealed partial class Inet6Address : java.net.InetAddress
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Inet6Address()
-		{
-			InitJNI();
-		}
 		internal Inet6Address(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -204,7 +200,7 @@ namespace java.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Inet6Address.staticClass, global::java.net.Inet6Address._isIPv4CompatibleAddress21561);
 		}
-		private static void InitJNI()
+		static Inet6Address()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Inet6Address.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Inet6Address"));
@@ -227,6 +223,9 @@ namespace java.net
 			global::java.net.Inet6Address._getScopeId21559 = @__env.GetMethodIDNoThrow(global::java.net.Inet6Address.staticClass, "getScopeId", "()I");
 			global::java.net.Inet6Address._getScopedInterface21560 = @__env.GetMethodIDNoThrow(global::java.net.Inet6Address.staticClass, "getScopedInterface", "()Ljava/net/NetworkInterface;");
 			global::java.net.Inet6Address._isIPv4CompatibleAddress21561 = @__env.GetMethodIDNoThrow(global::java.net.Inet6Address.staticClass, "isIPv4CompatibleAddress", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

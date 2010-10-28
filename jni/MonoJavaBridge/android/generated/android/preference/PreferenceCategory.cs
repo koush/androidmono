@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class PreferenceCategory : android.preference.PreferenceGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceCategory()
-		{
-			InitJNI();
-		}
 		protected PreferenceCategory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,7 +46,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._PreferenceCategory10413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PreferenceCategory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceCategory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceCategory"));
@@ -59,6 +55,9 @@ namespace android.preference
 			global::android.preference.PreferenceCategory._PreferenceCategory10411 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.preference.PreferenceCategory._PreferenceCategory10412 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.PreferenceCategory._PreferenceCategory10413 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

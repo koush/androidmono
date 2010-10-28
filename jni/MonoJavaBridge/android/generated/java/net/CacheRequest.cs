@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class CacheRequest : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CacheRequest()
-		{
-			InitJNI();
-		}
 		protected CacheRequest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -22,7 +18,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.CacheRequest.staticClass, global::java.net.CacheRequest._CacheRequest21351);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CacheRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheRequest.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheRequest"));
@@ -30,16 +26,15 @@ namespace java.net
 			global::java.net.CacheRequest._abort21350 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "abort", "()V");
 			global::java.net.CacheRequest._CacheRequest21351 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.CacheRequest))]
 	internal sealed partial class CacheRequest_ : java.net.CacheRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CacheRequest_()
-		{
-			InitJNI();
-		}
 		internal CacheRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,12 +56,15 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.CacheRequest_.staticClass, global::java.net.CacheRequest_._abort21353);
 		}
-		private static void InitJNI()
+		static CacheRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheRequest"));
 			global::java.net.CacheRequest_._getBody21352 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "getBody", "()Ljava/io/OutputStream;");
 			global::java.net.CacheRequest_._abort21353 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "abort", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

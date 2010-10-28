@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class CRC32 : java.lang.Object, Checksum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CRC32()
-		{
-			InitJNI();
-		}
 		protected CRC32(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._CRC3228338);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CRC32()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.CRC32.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/CRC32"));
@@ -80,6 +76,9 @@ namespace java.util.zip
 			global::java.util.zip.CRC32._update28336 = @__env.GetMethodIDNoThrow(global::java.util.zip.CRC32.staticClass, "update", "([BII)V");
 			global::java.util.zip.CRC32._update28337 = @__env.GetMethodIDNoThrow(global::java.util.zip.CRC32.staticClass, "update", "(I)V");
 			global::java.util.zip.CRC32._CRC3228338 = @__env.GetMethodIDNoThrow(global::java.util.zip.CRC32.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

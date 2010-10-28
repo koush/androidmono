@@ -13,10 +13,6 @@ namespace java.util.concurrent
 	internal sealed partial class ConcurrentMap_ : java.lang.Object, ConcurrentMap
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConcurrentMap_()
-		{
-			InitJNI();
-		}
 		internal ConcurrentMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -182,7 +178,7 @@ namespace java.util.concurrent
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ConcurrentMap_.staticClass, global::java.util.concurrent.ConcurrentMap_._containsKey27164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ConcurrentMap_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ConcurrentMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ConcurrentMap"));
@@ -204,6 +200,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ConcurrentMap_._keySet27162 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentMap_.staticClass, "keySet", "()Ljava/util/Set;");
 			global::java.util.concurrent.ConcurrentMap_._containsValue27163 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentMap_.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
 			global::java.util.concurrent.ConcurrentMap_._containsKey27164 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentMap_.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

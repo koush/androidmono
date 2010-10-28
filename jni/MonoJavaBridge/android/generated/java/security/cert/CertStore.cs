@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class CertStore : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertStore()
-		{
-			InitJNI();
-		}
 		protected CertStore(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -115,7 +111,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._CertStore23543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertStore()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertStore.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertStore"));
@@ -129,6 +125,9 @@ namespace java.security.cert
 			global::java.security.cert.CertStore._getDefaultType23541 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertStore.staticClass, "getDefaultType", "()Ljava/lang/String;");
 			global::java.security.cert.CertStore._getCertStoreParameters23542 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStore.staticClass, "getCertStoreParameters", "()Ljava/security/cert/CertStoreParameters;");
 			global::java.security.cert.CertStore._CertStore23543 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStore.staticClass, "<init>", "(Ljava/security/cert/CertStoreSpi;Ljava/security/Provider;Ljava/lang/String;Ljava/security/cert/CertStoreParameters;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

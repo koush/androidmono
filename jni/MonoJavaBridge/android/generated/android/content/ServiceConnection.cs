@@ -11,10 +11,6 @@ namespace android.content
 	internal sealed partial class ServiceConnection_ : java.lang.Object, ServiceConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServiceConnection_()
-		{
-			InitJNI();
-		}
 		internal ServiceConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ServiceConnection_.staticClass, global::android.content.ServiceConnection_._onServiceDisconnected3511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ServiceConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ServiceConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ServiceConnection"));
 			global::android.content.ServiceConnection_._onServiceConnected3510 = @__env.GetMethodIDNoThrow(global::android.content.ServiceConnection_.staticClass, "onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V");
 			global::android.content.ServiceConnection_._onServiceDisconnected3511 = @__env.GetMethodIDNoThrow(global::android.content.ServiceConnection_.staticClass, "onServiceDisconnected", "(Landroid/content/ComponentName;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

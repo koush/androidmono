@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class JarURLConnection : java.net.URLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JarURLConnection()
-		{
-			InitJNI();
-		}
 		protected JarURLConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -83,7 +79,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._JarURLConnection21605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static JarURLConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.JarURLConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/JarURLConnection"));
@@ -97,16 +93,15 @@ namespace java.net
 			global::java.net.JarURLConnection._getEntryName21604 = @__env.GetMethodIDNoThrow(global::java.net.JarURLConnection.staticClass, "getEntryName", "()Ljava/lang/String;");
 			global::java.net.JarURLConnection._JarURLConnection21605 = @__env.GetMethodIDNoThrow(global::java.net.JarURLConnection.staticClass, "<init>", "(Ljava/net/URL;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.JarURLConnection))]
 	internal sealed partial class JarURLConnection_ : java.net.JarURLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JarURLConnection_()
-		{
-			InitJNI();
-		}
 		internal JarURLConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -128,12 +123,15 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.JarURLConnection_.staticClass, global::java.net.JarURLConnection_._connect21607);
 		}
-		private static void InitJNI()
+		static JarURLConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.JarURLConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/JarURLConnection"));
 			global::java.net.JarURLConnection_._getJarFile21606 = @__env.GetMethodIDNoThrow(global::java.net.JarURLConnection_.staticClass, "getJarFile", "()Ljava/util/jar/JarFile;");
 			global::java.net.JarURLConnection_._connect21607 = @__env.GetMethodIDNoThrow(global::java.net.JarURLConnection_.staticClass, "connect", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

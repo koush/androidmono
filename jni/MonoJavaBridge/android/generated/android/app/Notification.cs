@@ -4,10 +4,6 @@ namespace android.app
 	public partial class Notification : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Notification()
-		{
-			InitJNI();
-		}
 		protected Notification(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -357,7 +353,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.Notification.staticClass, _CREATOR2003)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Notification()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Notification.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Notification"));
@@ -385,6 +381,9 @@ namespace android.app
 			global::android.app.Notification._defaults1994 = @__env.GetFieldIDNoThrow(global::android.app.Notification.staticClass, "defaults", "I");
 			global::android.app.Notification._flags2002 = @__env.GetFieldIDNoThrow(global::android.app.Notification.staticClass, "flags", "I");
 			global::android.app.Notification._CREATOR2003 = @__env.GetStaticFieldIDNoThrow(global::android.app.Notification.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

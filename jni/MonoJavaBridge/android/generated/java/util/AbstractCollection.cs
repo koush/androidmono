@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractCollection : java.lang.Object, Collection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCollection()
-		{
-			InitJNI();
-		}
 		protected AbstractCollection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -134,7 +130,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._AbstractCollection25678);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractCollection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractCollection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractCollection"));
@@ -154,16 +150,15 @@ namespace java.util
 			global::java.util.AbstractCollection._retainAll25677 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.AbstractCollection._AbstractCollection25678 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractCollection))]
 	internal sealed partial class AbstractCollection_ : java.util.AbstractCollection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractCollection_()
-		{
-			InitJNI();
-		}
 		internal AbstractCollection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -189,12 +184,15 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.AbstractCollection_.staticClass, global::java.util.AbstractCollection_._iterator25680)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static AbstractCollection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractCollection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractCollection"));
 			global::java.util.AbstractCollection_._size25679 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection_.staticClass, "size", "()I");
 			global::java.util.AbstractCollection_._iterator25680 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

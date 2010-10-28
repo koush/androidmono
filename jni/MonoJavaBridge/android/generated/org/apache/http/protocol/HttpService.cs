@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class HttpService : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpService()
-		{
-			InitJNI();
-		}
 		protected HttpService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -154,7 +150,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._HttpService33935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpService.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpService"));
@@ -169,6 +165,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.HttpService._handleRequest33933 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpService.staticClass, "handleRequest", "(Lorg/apache/http/HttpServerConnection;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.HttpService._doService33934 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpService.staticClass, "doService", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.HttpService._HttpService33935 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpService.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/HttpResponseFactory;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

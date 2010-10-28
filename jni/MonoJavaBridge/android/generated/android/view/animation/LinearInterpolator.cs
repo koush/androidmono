@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class LinearInterpolator : java.lang.Object, Interpolator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LinearInterpolator()
-		{
-			InitJNI();
-		}
 		protected LinearInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,13 +30,16 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._LinearInterpolator15739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LinearInterpolator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.LinearInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LinearInterpolator"));
 			global::android.view.animation.LinearInterpolator._getInterpolation15737 = @__env.GetMethodIDNoThrow(global::android.view.animation.LinearInterpolator.staticClass, "getInterpolation", "(F)F");
 			global::android.view.animation.LinearInterpolator._LinearInterpolator15738 = @__env.GetMethodIDNoThrow(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "()V");
 			global::android.view.animation.LinearInterpolator._LinearInterpolator15739 = @__env.GetMethodIDNoThrow(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.net.http
 	public sealed partial class AndroidHttpClient : java.lang.Object, org.apache.http.client.HttpClient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AndroidHttpClient()
-		{
-			InitJNI();
-		}
 		internal AndroidHttpClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace android.net.http
 			{
 			}
 		}
-		private static void InitJNI()
+		static AndroidHttpClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.http.AndroidHttpClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/AndroidHttpClient"));
@@ -221,6 +217,9 @@ namespace android.net.http
 			global::android.net.http.AndroidHttpClient._disableCurlLogging7941 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "disableCurlLogging", "()V");
 			global::android.net.http.AndroidHttpClient._parseDate7942 = @__env.GetStaticMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "parseDate", "(Ljava/lang/String;)J");
 			global::android.net.http.AndroidHttpClient._DEFAULT_SYNC_MIN_GZIP_BYTES7943 = @__env.GetStaticFieldIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "DEFAULT_SYNC_MIN_GZIP_BYTES", "J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

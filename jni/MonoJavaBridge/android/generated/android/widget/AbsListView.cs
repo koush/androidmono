@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class AbsListView : android.widget.AdapterView, android.text.TextWatcher, android.view.ViewTreeObserver.OnGlobalLayoutListener, android.widget.Filter.FilterListener, android.view.ViewTreeObserver.OnTouchModeChangeListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsListView()
-		{
-			InitJNI();
-		}
 		protected AbsListView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.view.ViewGroup.LayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -50,7 +42,7 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$LayoutParams"));
@@ -58,6 +50,9 @@ namespace android.widget
 				global::android.widget.AbsListView.LayoutParams._LayoutParams16468 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(II)V");
 				global::android.widget.AbsListView.LayoutParams._LayoutParams16469 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(III)V");
 				global::android.widget.AbsListView.LayoutParams._LayoutParams16470 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AbsListView.OnScrollListener_))]
@@ -71,10 +66,6 @@ namespace android.widget
 		internal sealed partial class OnScrollListener_ : java.lang.Object, OnScrollListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnScrollListener_()
-			{
-				InitJNI();
-			}
 			internal OnScrollListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -96,12 +87,15 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_.staticClass, global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnScrollListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.OnScrollListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$OnScrollListener"));
 				global::android.widget.AbsListView.OnScrollListener_._onScroll16471 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScroll", "(Landroid/widget/AbsListView;III)V");
 				global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16472 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScrollStateChanged", "(Landroid/widget/AbsListView;I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -139,10 +133,6 @@ namespace android.widget
 		internal sealed partial class RecyclerListener_ : java.lang.Object, RecyclerListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RecyclerListener_()
-			{
-				InitJNI();
-			}
 			internal RecyclerListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -155,11 +145,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.RecyclerListener_.staticClass, global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static RecyclerListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.RecyclerListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$RecyclerListener"));
 				global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16476 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.RecyclerListener_.staticClass, "onMovedToScrapHeap", "(Landroid/view/View;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -168,10 +161,6 @@ namespace android.widget
 		internal partial class RecyclerListenerDelegateWrapper : java.lang.Object, RecyclerListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RecyclerListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected RecyclerListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -182,11 +171,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass, global::android.widget.AbsListView.RecyclerListenerDelegateWrapper._RecyclerListenerDelegateWrapper16477);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static RecyclerListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView_RecyclerListenerDelegateWrapper"));
 				global::android.widget.AbsListView.RecyclerListenerDelegateWrapper._RecyclerListenerDelegateWrapper16477 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class RecyclerListenerDelegateWrapper
@@ -996,7 +988,7 @@ namespace android.widget
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static AbsListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsListView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView"));
@@ -1086,16 +1078,15 @@ namespace android.widget
 			global::android.widget.AbsListView._AbsListView16561 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.AbsListView._AbsListView16562 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsListView))]
 	internal sealed partial class AbsListView_ : android.widget.AbsListView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsListView_()
-		{
-			InitJNI();
-		}
 		internal AbsListView_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1126,13 +1117,16 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._setSelection16568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static AbsListView_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsListView_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView"));
 			global::android.widget.AbsListView_._setAdapter16566 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V");
 			global::android.widget.AbsListView_._getAdapter16567 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "getAdapter", "()Landroid/widget/Adapter;");
 			global::android.widget.AbsListView_._setSelection16568 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setSelection", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

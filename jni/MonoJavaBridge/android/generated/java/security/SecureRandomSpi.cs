@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class SecureRandomSpi : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecureRandomSpi()
-		{
-			InitJNI();
-		}
 		protected SecureRandomSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,7 +20,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandomSpi.staticClass, global::java.security.SecureRandomSpi._SecureRandomSpi23321);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecureRandomSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SecureRandomSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SecureRandomSpi"));
@@ -33,16 +29,15 @@ namespace java.security
 			global::java.security.SecureRandomSpi._engineGenerateSeed23320 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi.staticClass, "engineGenerateSeed", "(I)[B");
 			global::java.security.SecureRandomSpi._SecureRandomSpi23321 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.SecureRandomSpi))]
 	internal sealed partial class SecureRandomSpi_ : java.security.SecureRandomSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecureRandomSpi_()
-		{
-			InitJNI();
-		}
 		internal SecureRandomSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,13 +68,16 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SecureRandomSpi_.staticClass, global::java.security.SecureRandomSpi_._engineGenerateSeed23324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		private static void InitJNI()
+		static SecureRandomSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SecureRandomSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SecureRandomSpi"));
 			global::java.security.SecureRandomSpi_._engineSetSeed23322 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi_.staticClass, "engineSetSeed", "([B)V");
 			global::java.security.SecureRandomSpi_._engineNextBytes23323 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi_.staticClass, "engineNextBytes", "([B)V");
 			global::java.security.SecureRandomSpi_._engineGenerateSeed23324 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi_.staticClass, "engineGenerateSeed", "(I)[B");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

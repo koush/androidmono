@@ -11,10 +11,6 @@ namespace javax.sql
 	internal sealed partial class ConnectionEventListener_ : java.lang.Object, ConnectionEventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnectionEventListener_()
-		{
-			InitJNI();
-		}
 		internal ConnectionEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.ConnectionEventListener_.staticClass, global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ConnectionEventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.ConnectionEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/ConnectionEventListener"));
 			global::javax.sql.ConnectionEventListener_._connectionClosed30280 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V");
 			global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

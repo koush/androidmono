@@ -12,10 +12,6 @@ namespace javax.crypto.interfaces
 	internal sealed partial class PBEKey_ : java.lang.Object, PBEKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PBEKey_()
-		{
-			InitJNI();
-		}
 		internal PBEKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,7 +69,7 @@ namespace javax.crypto.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getFormat28754)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static PBEKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.PBEKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/PBEKey"));
@@ -83,6 +79,9 @@ namespace javax.crypto.interfaces
 			global::javax.crypto.interfaces.PBEKey_._getEncoded28752 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.PBEKey_.staticClass, "getEncoded", "()[B");
 			global::javax.crypto.interfaces.PBEKey_._getAlgorithm28753 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.PBEKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::javax.crypto.interfaces.PBEKey_._getFormat28754 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.PBEKey_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -11,10 +11,6 @@ namespace javax.sql
 	internal sealed partial class ConnectionPoolDataSource_ : java.lang.Object, ConnectionPoolDataSource
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnectionPoolDataSource_()
-		{
-			InitJNI();
-		}
 		internal ConnectionPoolDataSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.sql.PooledConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.ConnectionPoolDataSource_.staticClass, global::javax.sql.ConnectionPoolDataSource_._getPooledConnection30283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.sql.PooledConnection;
 		}
-		private static void InitJNI()
+		static ConnectionPoolDataSource_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.ConnectionPoolDataSource_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/ConnectionPoolDataSource"));
 			global::javax.sql.ConnectionPoolDataSource_._getPooledConnection30282 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "()Ljavax/sql/PooledConnection;");
 			global::javax.sql.ConnectionPoolDataSource_._getPooledConnection30283 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/sql/PooledConnection;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

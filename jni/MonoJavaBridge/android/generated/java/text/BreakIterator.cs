@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class BreakIterator : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BreakIterator()
-		{
-			InitJNI();
-		}
 		protected BreakIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -133,7 +129,7 @@ namespace java.text
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static BreakIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.BreakIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/BreakIterator"));
@@ -161,16 +157,15 @@ namespace java.text
 			global::java.text.BreakIterator._getSentenceInstance25242 = @__env.GetStaticMethodIDNoThrow(global::java.text.BreakIterator.staticClass, "getSentenceInstance", "()Ljava/text/BreakIterator;");
 			global::java.text.BreakIterator._BreakIterator25243 = @__env.GetMethodIDNoThrow(global::java.text.BreakIterator.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.BreakIterator))]
 	internal sealed partial class BreakIterator_ : java.text.BreakIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BreakIterator_()
-		{
-			InitJNI();
-		}
 		internal BreakIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -255,7 +250,7 @@ namespace java.text
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.BreakIterator_.staticClass, global::java.text.BreakIterator_._following25253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static BreakIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.BreakIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/BreakIterator"));
@@ -268,6 +263,9 @@ namespace java.text
 			global::java.text.BreakIterator_._first25251 = @__env.GetMethodIDNoThrow(global::java.text.BreakIterator_.staticClass, "first", "()I");
 			global::java.text.BreakIterator_._getText25252 = @__env.GetMethodIDNoThrow(global::java.text.BreakIterator_.staticClass, "getText", "()Ljava/text/CharacterIterator;");
 			global::java.text.BreakIterator_._following25253 = @__env.GetMethodIDNoThrow(global::java.text.BreakIterator_.staticClass, "following", "(I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

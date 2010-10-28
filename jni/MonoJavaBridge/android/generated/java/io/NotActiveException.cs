@@ -4,10 +4,6 @@ namespace java.io
 	public partial class NotActiveException : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NotActiveException()
-		{
-			InitJNI();
-		}
 		protected NotActiveException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotActiveException.staticClass, global::java.io.NotActiveException._NotActiveException19142);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NotActiveException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.NotActiveException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/NotActiveException"));
 			global::java.io.NotActiveException._NotActiveException19141 = @__env.GetMethodIDNoThrow(global::java.io.NotActiveException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.NotActiveException._NotActiveException19142 = @__env.GetMethodIDNoThrow(global::java.io.NotActiveException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Looper : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Looper()
-		{
-			InitJNI();
-		}
 		protected Looper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,7 +117,7 @@ namespace android.os
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._getThread9923)) as java.lang.Thread;
 		}
-		private static void InitJNI()
+		static Looper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Looper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Looper"));
@@ -136,6 +132,9 @@ namespace android.os
 			global::android.os.Looper._myQueue9921 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "myQueue", "()Landroid/os/MessageQueue;");
 			global::android.os.Looper._quit9922 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "quit", "()V");
 			global::android.os.Looper._getThread9923 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "getThread", "()Ljava/lang/Thread;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

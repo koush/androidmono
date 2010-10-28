@@ -12,10 +12,6 @@ namespace android.view
 	internal sealed partial class SurfaceHolder_Callback_ : java.lang.Object, SurfaceHolder_Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SurfaceHolder_Callback_()
-		{
-			InitJNI();
-		}
 		internal SurfaceHolder_Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceChanged14569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static SurfaceHolder_Callback_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SurfaceHolder_Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SurfaceHolder$Callback"));
 			global::android.view.SurfaceHolder_Callback_._surfaceCreated14567 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceCreated", "(Landroid/view/SurfaceHolder;)V");
 			global::android.view.SurfaceHolder_Callback_._surfaceDestroyed14568 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
 			global::android.view.SurfaceHolder_Callback_._surfaceChanged14569 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceChanged", "(Landroid/view/SurfaceHolder;III)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

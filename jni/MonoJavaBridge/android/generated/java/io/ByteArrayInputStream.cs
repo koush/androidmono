@@ -4,10 +4,6 @@ namespace java.io
 	public partial class ByteArrayInputStream : java.io.InputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteArrayInputStream()
-		{
-			InitJNI();
-		}
 		protected ByteArrayInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ByteArrayInputStream.staticClass, global::java.io.ByteArrayInputStream._ByteArrayInputStream18843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ByteArrayInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ByteArrayInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ByteArrayInputStream"));
@@ -111,6 +107,9 @@ namespace java.io
 			global::java.io.ByteArrayInputStream._markSupported18841 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayInputStream.staticClass, "markSupported", "()Z");
 			global::java.io.ByteArrayInputStream._ByteArrayInputStream18842 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayInputStream.staticClass, "<init>", "([B)V");
 			global::java.io.ByteArrayInputStream._ByteArrayInputStream18843 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayInputStream.staticClass, "<init>", "([BII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

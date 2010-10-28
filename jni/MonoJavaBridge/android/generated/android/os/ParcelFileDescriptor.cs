@@ -4,10 +4,6 @@ namespace android.os
 	public partial class ParcelFileDescriptor : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParcelFileDescriptor()
-		{
-			InitJNI();
-		}
 		protected ParcelFileDescriptor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.os
 		public partial class AutoCloseInputStream : java.io.FileInputStream
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoCloseInputStream()
-			{
-				InitJNI();
-			}
 			protected AutoCloseInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -38,22 +30,21 @@ namespace android.os
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream10078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AutoCloseInputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelFileDescriptor$AutoCloseInputStream"));
 				global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close10077 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "close", "()V");
 				global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream10078 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class AutoCloseOutputStream : java.io.FileOutputStream
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoCloseOutputStream()
-			{
-				InitJNI();
-			}
 			protected AutoCloseOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -73,12 +64,15 @@ namespace android.os
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream10080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AutoCloseOutputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelFileDescriptor$AutoCloseOutputStream"));
 				global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close10079 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "close", "()V");
 				global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream10080 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize10081;
@@ -242,7 +236,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ParcelFileDescriptor.staticClass, _CREATOR10099)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ParcelFileDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.ParcelFileDescriptor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelFileDescriptor"));
@@ -257,6 +251,9 @@ namespace android.os
 			global::android.os.ParcelFileDescriptor._getStatSize10089 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "getStatSize", "()J");
 			global::android.os.ParcelFileDescriptor._ParcelFileDescriptor10090 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
 			global::android.os.ParcelFileDescriptor._CREATOR10099 = @__env.GetStaticFieldIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

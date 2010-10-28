@@ -4,10 +4,6 @@ namespace org.apache.http.conn
 	public sealed partial class MultihomePlainSocketFactory : java.lang.Object, org.apache.http.conn.scheme.SocketFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MultihomePlainSocketFactory()
-		{
-			InitJNI();
-		}
 		internal MultihomePlainSocketFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,7 +65,7 @@ namespace org.apache.http.conn
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.MultihomePlainSocketFactory.staticClass, global::org.apache.http.conn.MultihomePlainSocketFactory._isSecure32149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static MultihomePlainSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.MultihomePlainSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/MultihomePlainSocketFactory"));
@@ -79,6 +75,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.MultihomePlainSocketFactory._getSocketFactory32147 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.MultihomePlainSocketFactory.staticClass, "getSocketFactory", "()Lorg/apache/http/conn/MultihomePlainSocketFactory;");
 			global::org.apache.http.conn.MultihomePlainSocketFactory._connectSocket32148 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.MultihomePlainSocketFactory.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;");
 			global::org.apache.http.conn.MultihomePlainSocketFactory._isSecure32149 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.MultihomePlainSocketFactory.staticClass, "isSecure", "(Ljava/net/Socket;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

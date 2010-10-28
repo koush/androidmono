@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class DatePicker : android.widget.FrameLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatePicker()
-		{
-			InitJNI();
-		}
 		protected DatePicker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class OnDateChangedListener_ : java.lang.Object, OnDateChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDateChangedListener_()
-			{
-				InitJNI();
-			}
 			internal OnDateChangedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.OnDateChangedListener_.staticClass, global::android.widget.DatePicker.OnDateChangedListener_._onDateChanged16950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			private static void InitJNI()
+			static OnDateChangedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.DatePicker.OnDateChangedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DatePicker$OnDateChangedListener"));
 				global::android.widget.DatePicker.OnDateChangedListener_._onDateChanged16950 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.OnDateChangedListener_.staticClass, "onDateChanged", "(Landroid/widget/DatePicker;III)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class OnDateChangedListenerDelegateWrapper : java.lang.Object, OnDateChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnDateChangedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnDateChangedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DatePicker.OnDateChangedListenerDelegateWrapper.staticClass, global::android.widget.DatePicker.OnDateChangedListenerDelegateWrapper._OnDateChangedListenerDelegateWrapper16951);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnDateChangedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.DatePicker.OnDateChangedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DatePicker_OnDateChangedListenerDelegateWrapper"));
 				global::android.widget.DatePicker.OnDateChangedListenerDelegateWrapper._OnDateChangedListenerDelegateWrapper16951 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.OnDateChangedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnDateChangedListenerDelegateWrapper
@@ -220,7 +214,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker16963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DatePicker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.DatePicker.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DatePicker"));
@@ -236,6 +230,9 @@ namespace android.widget
 			global::android.widget.DatePicker._DatePicker16961 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.DatePicker._DatePicker16962 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.DatePicker._DatePicker16963 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

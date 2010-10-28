@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicHeaderValueFormatter : java.lang.Object, HeaderValueFormatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHeaderValueFormatter()
-		{
-			InitJNI();
-		}
 		protected BasicHeaderValueFormatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -164,7 +160,7 @@ namespace org.apache.http.message
 				return "\"\\";
 			}
 		}
-		private static void InitJNI()
+		static BasicHeaderValueFormatter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicHeaderValueFormatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicHeaderValueFormatter"));
@@ -185,6 +181,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicHeaderValueFormatter._isUnsafe33550 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderValueFormatter.staticClass, "isUnsafe", "(C)Z");
 			global::org.apache.http.message.BasicHeaderValueFormatter._BasicHeaderValueFormatter33551 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderValueFormatter.staticClass, "<init>", "()V");
 			global::org.apache.http.message.BasicHeaderValueFormatter._DEFAULT33552 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicHeaderValueFormatter.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicHeaderValueFormatter;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

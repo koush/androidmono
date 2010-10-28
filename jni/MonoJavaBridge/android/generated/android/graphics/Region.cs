@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Region : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Region()
-		{
-			InitJNI();
-		}
 		protected Region(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Op : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Op()
-			{
-				InitJNI();
-			}
 			internal Op(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -88,7 +80,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _XOR5755)) as android.graphics.Region.Op;
 				}
 			}
-			private static void InitJNI()
+			static Op()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Region.Op.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Region$Op"));
@@ -100,6 +92,9 @@ namespace android.graphics
 				global::android.graphics.Region.Op._REVERSE_DIFFERENCE5753 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "REVERSE_DIFFERENCE", "Landroid/graphics/Region$Op;");
 				global::android.graphics.Region.Op._UNION5754 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "UNION", "Landroid/graphics/Region$Op;");
 				global::android.graphics.Region.Op._XOR5755 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "XOR", "Landroid/graphics/Region$Op;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5756;
@@ -423,7 +418,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.graphics.Region.staticClass, _CREATOR5790)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Region()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Region.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Region"));
@@ -462,6 +457,9 @@ namespace android.graphics
 			global::android.graphics.Region._Region5788 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Rect;)V");
 			global::android.graphics.Region._Region5789 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(IIII)V");
 			global::android.graphics.Region._CREATOR5790 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

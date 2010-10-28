@@ -62,10 +62,6 @@ namespace javax.microedition.khronos.opengles
 	internal sealed partial class GL11ExtensionPack_ : java.lang.Object, GL11ExtensionPack
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GL11ExtensionPack_()
-		{
-			InitJNI();
-		}
 		internal GL11ExtensionPack_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -546,7 +542,7 @@ namespace javax.microedition.khronos.opengles
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL11ExtensionPack_.staticClass, global::javax.microedition.khronos.opengles.GL11ExtensionPack_._glTexGenxv29722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static GL11ExtensionPack_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL11ExtensionPack_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL11ExtensionPack"));
@@ -603,6 +599,9 @@ namespace javax.microedition.khronos.opengles
 			global::javax.microedition.khronos.opengles.GL11ExtensionPack_._glTexGenx29720 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11ExtensionPack_.staticClass, "glTexGenx", "(III)V");
 			global::javax.microedition.khronos.opengles.GL11ExtensionPack_._glTexGenxv29721 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11ExtensionPack_.staticClass, "glTexGenxv", "(II[II)V");
 			global::javax.microedition.khronos.opengles.GL11ExtensionPack_._glTexGenxv29722 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11ExtensionPack_.staticClass, "glTexGenxv", "(IILjava/nio/IntBuffer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

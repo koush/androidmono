@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public sealed partial class BasicHttpParams : org.apache.http.@params.AbstractHttpParams, java.io.Serializable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHttpParams()
-		{
-			InitJNI();
-		}
 		internal BasicHttpParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.BasicHttpParams.staticClass, global::org.apache.http.@params.BasicHttpParams._BasicHttpParams33742);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHttpParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.BasicHttpParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/BasicHttpParams"));
@@ -113,6 +109,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.BasicHttpParams._isParameterSet33740 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.BasicHttpParams.staticClass, "isParameterSet", "(Ljava/lang/String;)Z");
 			global::org.apache.http.@params.BasicHttpParams._isParameterSetLocally33741 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.BasicHttpParams.staticClass, "isParameterSetLocally", "(Ljava/lang/String;)Z");
 			global::org.apache.http.@params.BasicHttpParams._BasicHttpParams33742 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.BasicHttpParams.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

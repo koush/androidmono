@@ -4,10 +4,6 @@ namespace javax.xml.parsers
 	public abstract partial class SAXParserFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXParserFactory()
-		{
-			InitJNI();
-		}
 		protected SAXParserFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -108,7 +104,7 @@ namespace javax.xml.parsers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.SAXParserFactory.staticClass, global::javax.xml.parsers.SAXParserFactory._SAXParserFactory30930);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SAXParserFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.SAXParserFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/SAXParserFactory"));
@@ -127,16 +123,15 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.SAXParserFactory._newSAXParser30929 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParserFactory.staticClass, "newSAXParser", "()Ljavax/xml/parsers/SAXParser;");
 			global::javax.xml.parsers.SAXParserFactory._SAXParserFactory30930 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParserFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.parsers.SAXParserFactory))]
 	internal sealed partial class SAXParserFactory_ : javax.xml.parsers.SAXParserFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXParserFactory_()
-		{
-			InitJNI();
-		}
 		internal SAXParserFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -167,13 +162,16 @@ namespace javax.xml.parsers
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.SAXParserFactory_.staticClass, global::javax.xml.parsers.SAXParserFactory_._newSAXParser30933)) as javax.xml.parsers.SAXParser;
 		}
-		private static void InitJNI()
+		static SAXParserFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.SAXParserFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/SAXParserFactory"));
 			global::javax.xml.parsers.SAXParserFactory_._setFeature30931 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParserFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
 			global::javax.xml.parsers.SAXParserFactory_._getFeature30932 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParserFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
 			global::javax.xml.parsers.SAXParserFactory_._newSAXParser30933 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParserFactory_.staticClass, "newSAXParser", "()Ljavax/xml/parsers/SAXParser;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

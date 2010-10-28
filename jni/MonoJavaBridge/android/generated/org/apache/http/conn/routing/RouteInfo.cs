@@ -19,10 +19,6 @@ namespace org.apache.http.conn.routing
 	internal sealed partial class RouteInfo_ : java.lang.Object, RouteInfo
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RouteInfo_()
-		{
-			InitJNI();
-		}
 		internal RouteInfo_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace org.apache.http.conn.routing
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteInfo_.staticClass, global::org.apache.http.conn.routing.RouteInfo_._isLayered32265);
 		}
-		private static void InitJNI()
+		static RouteInfo_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.RouteInfo_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/RouteInfo"));
@@ -130,6 +126,9 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.RouteInfo_._isTunnelled32263 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_.staticClass, "isTunnelled", "()Z");
 			global::org.apache.http.conn.routing.RouteInfo_._getLayerType32264 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_.staticClass, "getLayerType", "()Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
 			global::org.apache.http.conn.routing.RouteInfo_._isLayered32265 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_.staticClass, "isLayered", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

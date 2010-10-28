@@ -4,10 +4,6 @@ namespace android.app
 	public partial class Application : android.content.ContextWrapper, android.content.ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Application()
-		{
-			InitJNI();
-		}
 		protected Application(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Application.staticClass, global::android.app.Application._Application1736);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Application()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Application.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Application"));
@@ -63,6 +59,9 @@ namespace android.app
 			global::android.app.Application._onLowMemory1734 = @__env.GetMethodIDNoThrow(global::android.app.Application.staticClass, "onLowMemory", "()V");
 			global::android.app.Application._onTerminate1735 = @__env.GetMethodIDNoThrow(global::android.app.Application.staticClass, "onTerminate", "()V");
 			global::android.app.Application._Application1736 = @__env.GetMethodIDNoThrow(global::android.app.Application.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

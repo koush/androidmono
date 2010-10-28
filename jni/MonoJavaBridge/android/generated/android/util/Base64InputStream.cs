@@ -4,10 +4,6 @@ namespace android.util
 	public partial class Base64InputStream : java.io.FilterInputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Base64InputStream()
-		{
-			InitJNI();
-		}
 		protected Base64InputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace android.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Base64InputStream.staticClass, global::android.util.Base64InputStream._Base64InputStream13721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Base64InputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Base64InputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Base64InputStream"));
@@ -103,6 +99,9 @@ namespace android.util
 			global::android.util.Base64InputStream._available13719 = @__env.GetMethodIDNoThrow(global::android.util.Base64InputStream.staticClass, "available", "()I");
 			global::android.util.Base64InputStream._markSupported13720 = @__env.GetMethodIDNoThrow(global::android.util.Base64InputStream.staticClass, "markSupported", "()Z");
 			global::android.util.Base64InputStream._Base64InputStream13721 = @__env.GetMethodIDNoThrow(global::android.util.Base64InputStream.staticClass, "<init>", "(Ljava/io/InputStream;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

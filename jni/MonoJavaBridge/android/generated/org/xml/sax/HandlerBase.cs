@@ -4,10 +4,6 @@ namespace org.xml.sax
 	public partial class HandlerBase : java.lang.Object, EntityResolver, DTDHandler, DocumentHandler, ErrorHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HandlerBase()
-		{
-			InitJNI();
-		}
 		protected HandlerBase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.HandlerBase.staticClass, global::org.xml.sax.HandlerBase._HandlerBase35001);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HandlerBase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.HandlerBase.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/HandlerBase"));
@@ -170,6 +166,9 @@ namespace org.xml.sax
 			global::org.xml.sax.HandlerBase._notationDecl34999 = @__env.GetMethodIDNoThrow(global::org.xml.sax.HandlerBase.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.HandlerBase._resolveEntity35000 = @__env.GetMethodIDNoThrow(global::org.xml.sax.HandlerBase.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.HandlerBase._HandlerBase35001 = @__env.GetMethodIDNoThrow(global::org.xml.sax.HandlerBase.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

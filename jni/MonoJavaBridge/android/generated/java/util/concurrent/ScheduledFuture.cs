@@ -9,10 +9,6 @@ namespace java.util.concurrent
 	internal sealed partial class ScheduledFuture_ : java.lang.Object, ScheduledFuture
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScheduledFuture_()
-		{
-			InitJNI();
-		}
 		internal ScheduledFuture_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -79,7 +75,7 @@ namespace java.util.concurrent
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._isDone27391);
 		}
-		private static void InitJNI()
+		static ScheduledFuture_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ScheduledFuture_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ScheduledFuture"));
@@ -90,6 +86,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ScheduledFuture_._cancel27389 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "cancel", "(Z)Z");
 			global::java.util.concurrent.ScheduledFuture_._isCancelled27390 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "isCancelled", "()Z");
 			global::java.util.concurrent.ScheduledFuture_._isDone27391 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "isDone", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

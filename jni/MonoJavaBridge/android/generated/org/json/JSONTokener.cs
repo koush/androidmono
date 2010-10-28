@@ -4,10 +4,6 @@ namespace org.json
 	public partial class JSONTokener : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JSONTokener()
-		{
-			InitJNI();
-		}
 		protected JSONTokener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -150,7 +146,7 @@ namespace org.json
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.json.JSONTokener.staticClass, global::org.json.JSONTokener._JSONTokener34152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static JSONTokener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONTokener.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONTokener"));
@@ -170,6 +166,9 @@ namespace org.json
 			global::org.json.JSONTokener._back34150 = @__env.GetMethodIDNoThrow(global::org.json.JSONTokener.staticClass, "back", "()V");
 			global::org.json.JSONTokener._dehexchar34151 = @__env.GetStaticMethodIDNoThrow(global::org.json.JSONTokener.staticClass, "dehexchar", "(C)I");
 			global::org.json.JSONTokener._JSONTokener34152 = @__env.GetMethodIDNoThrow(global::org.json.JSONTokener.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

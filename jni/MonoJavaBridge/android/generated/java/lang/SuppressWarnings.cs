@@ -10,10 +10,6 @@ namespace java.lang
 	internal sealed partial class SuppressWarnings_ : java.lang.Object, SuppressWarnings
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SuppressWarnings_()
-		{
-			InitJNI();
-		}
 		internal SuppressWarnings_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.SuppressWarnings_.staticClass, global::java.lang.SuppressWarnings_._annotationType20783)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static SuppressWarnings_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.SuppressWarnings_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/SuppressWarnings"));
@@ -71,6 +67,9 @@ namespace java.lang
 			global::java.lang.SuppressWarnings_._toString20781 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.SuppressWarnings_._hashCode20782 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "hashCode", "()I");
 			global::java.lang.SuppressWarnings_._annotationType20783 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

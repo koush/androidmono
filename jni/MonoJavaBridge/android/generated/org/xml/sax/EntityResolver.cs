@@ -10,10 +10,6 @@ namespace org.xml.sax
 	internal sealed partial class EntityResolver_ : java.lang.Object, EntityResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityResolver_()
-		{
-			InitJNI();
-		}
 		internal EntityResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.xml.sax
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.EntityResolver_.staticClass, global::org.xml.sax.EntityResolver_._resolveEntity34983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 		}
-		private static void InitJNI()
+		static EntityResolver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.EntityResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/EntityResolver"));
 			global::org.xml.sax.EntityResolver_._resolveEntity34983 = @__env.GetMethodIDNoThrow(global::org.xml.sax.EntityResolver_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

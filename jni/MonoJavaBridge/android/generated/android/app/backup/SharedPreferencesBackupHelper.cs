@@ -4,10 +4,6 @@ namespace android.app.backup
 	public partial class SharedPreferencesBackupHelper : android.app.backup.FileBackupHelperBase, BackupHelper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SharedPreferencesBackupHelper()
-		{
-			InitJNI();
-		}
 		protected SharedPreferencesBackupHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace android.app.backup
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.SharedPreferencesBackupHelper.staticClass, global::android.app.backup.SharedPreferencesBackupHelper._SharedPreferencesBackupHelper2339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SharedPreferencesBackupHelper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.SharedPreferencesBackupHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/SharedPreferencesBackupHelper"));
 			global::android.app.backup.SharedPreferencesBackupHelper._performBackup2337 = @__env.GetMethodIDNoThrow(global::android.app.backup.SharedPreferencesBackupHelper.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V");
 			global::android.app.backup.SharedPreferencesBackupHelper._restoreEntity2338 = @__env.GetMethodIDNoThrow(global::android.app.backup.SharedPreferencesBackupHelper.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V");
 			global::android.app.backup.SharedPreferencesBackupHelper._SharedPreferencesBackupHelper2339 = @__env.GetMethodIDNoThrow(global::android.app.backup.SharedPreferencesBackupHelper.staticClass, "<init>", "(Landroid/content/Context;[Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

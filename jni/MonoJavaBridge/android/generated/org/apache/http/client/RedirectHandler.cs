@@ -11,10 +11,6 @@ namespace org.apache.http.client
 	internal sealed partial class RedirectHandler_ : java.lang.Object, RedirectHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RedirectHandler_()
-		{
-			InitJNI();
-		}
 		internal RedirectHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.RedirectHandler_.staticClass, global::org.apache.http.client.RedirectHandler_._getLocationURI31900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
 		}
-		private static void InitJNI()
+		static RedirectHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.RedirectHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/RedirectHandler"));
 			global::org.apache.http.client.RedirectHandler_._isRedirectRequested31899 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectHandler_.staticClass, "isRedirectRequested", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
 			global::org.apache.http.client.RedirectHandler_._getLocationURI31900 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectHandler_.staticClass, "getLocationURI", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

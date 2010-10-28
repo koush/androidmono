@@ -4,10 +4,6 @@ namespace org.apache.http.util
 	public sealed partial class LangUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LangUtils()
-		{
-			InitJNI();
-		}
 		internal LangUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.util
 				return 37;
 			}
 		}
-		private static void InitJNI()
+		static LangUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.LangUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/LangUtils"));
@@ -64,6 +60,9 @@ namespace org.apache.http.util
 			global::org.apache.http.util.LangUtils._hashCode34017 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.LangUtils.staticClass, "hashCode", "(II)I");
 			global::org.apache.http.util.LangUtils._hashCode34018 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.LangUtils.staticClass, "hashCode", "(IZ)I");
 			global::org.apache.http.util.LangUtils._hashCode34019 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.LangUtils.staticClass, "hashCode", "(ILjava/lang/Object;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

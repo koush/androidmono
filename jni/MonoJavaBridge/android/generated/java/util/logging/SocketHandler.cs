@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class SocketHandler : java.util.logging.StreamHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketHandler()
-		{
-			InitJNI();
-		}
 		protected SocketHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._SocketHandler28103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.SocketHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/SocketHandler"));
@@ -51,6 +47,9 @@ namespace java.util.logging
 			global::java.util.logging.SocketHandler._publish28101 = @__env.GetMethodIDNoThrow(global::java.util.logging.SocketHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
 			global::java.util.logging.SocketHandler._SocketHandler28102 = @__env.GetMethodIDNoThrow(global::java.util.logging.SocketHandler.staticClass, "<init>", "()V");
 			global::java.util.logging.SocketHandler._SocketHandler28103 = @__env.GetMethodIDNoThrow(global::java.util.logging.SocketHandler.staticClass, "<init>", "(Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

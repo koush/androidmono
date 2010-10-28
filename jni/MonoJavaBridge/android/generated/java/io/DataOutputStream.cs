@@ -4,10 +4,6 @@ namespace java.io
 	public partial class DataOutputStream : java.io.FilterOutputStream, DataOutput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataOutputStream()
-		{
-			InitJNI();
-		}
 		protected DataOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -153,7 +149,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.DataOutputStream.staticClass, global::java.io.DataOutputStream._DataOutputStream18947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DataOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.DataOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/DataOutputStream"));
@@ -173,6 +169,9 @@ namespace java.io
 			global::java.io.DataOutputStream._writeBoolean18945 = @__env.GetMethodIDNoThrow(global::java.io.DataOutputStream.staticClass, "writeBoolean", "(Z)V");
 			global::java.io.DataOutputStream._writeChars18946 = @__env.GetMethodIDNoThrow(global::java.io.DataOutputStream.staticClass, "writeChars", "(Ljava/lang/String;)V");
 			global::java.io.DataOutputStream._DataOutputStream18947 = @__env.GetMethodIDNoThrow(global::java.io.DataOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

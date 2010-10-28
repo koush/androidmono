@@ -4,10 +4,6 @@ namespace org.apache.http.cookie.@params
 	public partial class CookieSpecParamBean : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieSpecParamBean()
-		{
-			InitJNI();
-		}
 		protected CookieSpecParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace org.apache.http.cookie.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.@params.CookieSpecParamBean.staticClass, global::org.apache.http.cookie.@params.CookieSpecParamBean._CookieSpecParamBean32485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CookieSpecParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.@params.CookieSpecParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/params/CookieSpecParamBean"));
 			global::org.apache.http.cookie.@params.CookieSpecParamBean._setDatePatterns32483 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.@params.CookieSpecParamBean.staticClass, "setDatePatterns", "(Ljava/util/Collection;)V");
 			global::org.apache.http.cookie.@params.CookieSpecParamBean._setSingleHeader32484 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.@params.CookieSpecParamBean.staticClass, "setSingleHeader", "(Z)V");
 			global::org.apache.http.cookie.@params.CookieSpecParamBean._CookieSpecParamBean32485 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.@params.CookieSpecParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

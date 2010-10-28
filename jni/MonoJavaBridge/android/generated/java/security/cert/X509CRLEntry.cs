@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class X509CRLEntry : java.lang.Object, X509Extension
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CRLEntry()
-		{
-			InitJNI();
-		}
 		protected X509CRLEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CRLEntry.staticClass, global::java.security.cert.X509CRLEntry._X509CRLEntry23756);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509CRLEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CRLEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CRLEntry"));
@@ -81,16 +77,15 @@ namespace java.security.cert
 			global::java.security.cert.X509CRLEntry._hasExtensions23755 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLEntry.staticClass, "hasExtensions", "()Z");
 			global::java.security.cert.X509CRLEntry._X509CRLEntry23756 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLEntry.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.X509CRLEntry))]
 	internal sealed partial class X509CRLEntry_ : java.security.cert.X509CRLEntry
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CRLEntry_()
-		{
-			InitJNI();
-		}
 		internal X509CRLEntry_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -175,7 +170,7 @@ namespace java.security.cert
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509CRLEntry_.staticClass, global::java.security.cert.X509CRLEntry_._hasExtensions23765);
 		}
-		private static void InitJNI()
+		static X509CRLEntry_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CRLEntry_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CRLEntry"));
@@ -188,6 +183,9 @@ namespace java.security.cert
 			global::java.security.cert.X509CRLEntry_._getSerialNumber23763 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLEntry_.staticClass, "getSerialNumber", "()Ljava/math/BigInteger;");
 			global::java.security.cert.X509CRLEntry_._getRevocationDate23764 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLEntry_.staticClass, "getRevocationDate", "()Ljava/util/Date;");
 			global::java.security.cert.X509CRLEntry_._hasExtensions23765 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLEntry_.staticClass, "hasExtensions", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

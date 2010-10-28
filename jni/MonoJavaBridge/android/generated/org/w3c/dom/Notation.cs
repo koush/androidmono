@@ -11,10 +11,6 @@ namespace org.w3c.dom
 	internal sealed partial class Notation_ : java.lang.Object, Notation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Notation_()
-		{
-			InitJNI();
-		}
 		internal Notation_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -369,7 +365,7 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Notation_.staticClass, global::org.w3c.dom.Notation_._isEqualNode34779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Notation_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.Notation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/Notation"));
@@ -412,6 +408,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.Notation_._isDefaultNamespace34777 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Notation_.staticClass, "isDefaultNamespace", "(Ljava/lang/String;)Z");
 			global::org.w3c.dom.Notation_._lookupNamespaceURI34778 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Notation_.staticClass, "lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::org.w3c.dom.Notation_._isEqualNode34779 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Notation_.staticClass, "isEqualNode", "(Lorg/w3c/dom/Node;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

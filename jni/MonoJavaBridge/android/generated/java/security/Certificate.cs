@@ -16,10 +16,6 @@ namespace java.security
 	internal sealed partial class Certificate_ : java.lang.Object, Certificate
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Certificate_()
-		{
-			InitJNI();
-		}
 		internal Certificate_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._getPrincipal22918)) as java.security.Principal;
 		}
-		private static void InitJNI()
+		static Certificate_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Certificate_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Certificate"));
@@ -97,6 +93,9 @@ namespace java.security
 			global::java.security.Certificate_._getFormat22916 = @__env.GetMethodIDNoThrow(global::java.security.Certificate_.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::java.security.Certificate_._getGuarantor22917 = @__env.GetMethodIDNoThrow(global::java.security.Certificate_.staticClass, "getGuarantor", "()Ljava/security/Principal;");
 			global::java.security.Certificate_._getPrincipal22918 = @__env.GetMethodIDNoThrow(global::java.security.Certificate_.staticClass, "getPrincipal", "()Ljava/security/Principal;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

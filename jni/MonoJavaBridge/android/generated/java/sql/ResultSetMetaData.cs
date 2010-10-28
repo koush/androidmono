@@ -30,10 +30,6 @@ namespace java.sql
 	internal sealed partial class ResultSetMetaData_ : java.lang.Object, ResultSetMetaData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResultSetMetaData_()
-		{
-			InitJNI();
-		}
 		internal ResultSetMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -226,7 +222,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.ResultSetMetaData_.staticClass, global::java.sql.ResultSetMetaData_._getColumnClassName24963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static ResultSetMetaData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.ResultSetMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/ResultSetMetaData"));
@@ -251,6 +247,9 @@ namespace java.sql
 			global::java.sql.ResultSetMetaData_._getColumnTypeName24961 = @__env.GetMethodIDNoThrow(global::java.sql.ResultSetMetaData_.staticClass, "getColumnTypeName", "(I)Ljava/lang/String;");
 			global::java.sql.ResultSetMetaData_._isDefinitelyWritable24962 = @__env.GetMethodIDNoThrow(global::java.sql.ResultSetMetaData_.staticClass, "isDefinitelyWritable", "(I)Z");
 			global::java.sql.ResultSetMetaData_._getColumnClassName24963 = @__env.GetMethodIDNoThrow(global::java.sql.ResultSetMetaData_.staticClass, "getColumnClassName", "(I)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

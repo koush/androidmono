@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public abstract partial class HttpRequestBase : org.apache.http.message.AbstractHttpMessage, HttpUriRequest, AbortableHttpRequest, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestBase()
-		{
-			InitJNI();
-		}
 		protected HttpRequestBase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace org.apache.http.client.methods
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpRequestBase.staticClass, global::org.apache.http.client.methods.HttpRequestBase._HttpRequestBase31956);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpRequestBase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpRequestBase.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpRequestBase"));
@@ -117,16 +113,15 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpRequestBase._setURI31955 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpRequestBase.staticClass, "setURI", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpRequestBase._HttpRequestBase31956 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpRequestBase.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.client.methods.HttpRequestBase))]
 	internal sealed partial class HttpRequestBase_ : org.apache.http.client.methods.HttpRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestBase_()
-		{
-			InitJNI();
-		}
 		internal HttpRequestBase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,11 +134,14 @@ namespace org.apache.http.client.methods
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpRequestBase_.staticClass, global::org.apache.http.client.methods.HttpRequestBase_._getMethod31957)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static HttpRequestBase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpRequestBase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpRequestBase"));
 			global::org.apache.http.client.methods.HttpRequestBase_._getMethod31957 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpRequestBase_.staticClass, "getMethod", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

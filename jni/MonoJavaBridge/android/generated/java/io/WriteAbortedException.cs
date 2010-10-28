@@ -4,10 +4,6 @@ namespace java.io
 	public partial class WriteAbortedException : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WriteAbortedException()
-		{
-			InitJNI();
-		}
 		protected WriteAbortedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.io
 			{
 			}
 		}
-		private static void InitJNI()
+		static WriteAbortedException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.WriteAbortedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/WriteAbortedException"));
@@ -70,6 +66,9 @@ namespace java.io
 			global::java.io.WriteAbortedException._getMessage19636 = @__env.GetMethodIDNoThrow(global::java.io.WriteAbortedException.staticClass, "getMessage", "()Ljava/lang/String;");
 			global::java.io.WriteAbortedException._WriteAbortedException19637 = @__env.GetMethodIDNoThrow(global::java.io.WriteAbortedException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
 			global::java.io.WriteAbortedException._detail19638 = @__env.GetFieldIDNoThrow(global::java.io.WriteAbortedException.staticClass, "detail", "Ljava/lang/Exception;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

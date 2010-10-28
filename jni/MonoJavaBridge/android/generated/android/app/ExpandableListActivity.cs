@@ -4,10 +4,6 @@ namespace android.app
 	public partial class ExpandableListActivity : android.app.Activity, android.view.View.OnCreateContextMenuListener, android.widget.ExpandableListView.OnChildClickListener, android.widget.ExpandableListView.OnGroupCollapseListener, android.widget.ExpandableListView.OnGroupExpandListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExpandableListActivity()
-		{
-			InitJNI();
-		}
 		protected ExpandableListActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -177,7 +173,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._ExpandableListActivity1837);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ExpandableListActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ExpandableListActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ExpandableListActivity"));
@@ -195,6 +191,9 @@ namespace android.app
 			global::android.app.ExpandableListActivity._setSelectedChild1835 = @__env.GetMethodIDNoThrow(global::android.app.ExpandableListActivity.staticClass, "setSelectedChild", "(IIZ)Z");
 			global::android.app.ExpandableListActivity._setSelectedGroup1836 = @__env.GetMethodIDNoThrow(global::android.app.ExpandableListActivity.staticClass, "setSelectedGroup", "(I)V");
 			global::android.app.ExpandableListActivity._ExpandableListActivity1837 = @__env.GetMethodIDNoThrow(global::android.app.ExpandableListActivity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

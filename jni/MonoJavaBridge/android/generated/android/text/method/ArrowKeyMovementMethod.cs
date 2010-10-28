@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class ArrowKeyMovementMethod : java.lang.Object, MovementMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ArrowKeyMovementMethod()
-		{
-			InitJNI();
-		}
 		protected ArrowKeyMovementMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -103,7 +99,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.ArrowKeyMovementMethod.staticClass, global::android.text.method.ArrowKeyMovementMethod._ArrowKeyMovementMethod13255);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ArrowKeyMovementMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ArrowKeyMovementMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ArrowKeyMovementMethod"));
@@ -117,6 +113,9 @@ namespace android.text.method
 			global::android.text.method.ArrowKeyMovementMethod._onTakeFocus13253 = @__env.GetMethodIDNoThrow(global::android.text.method.ArrowKeyMovementMethod.staticClass, "onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
 			global::android.text.method.ArrowKeyMovementMethod._canSelectArbitrarily13254 = @__env.GetMethodIDNoThrow(global::android.text.method.ArrowKeyMovementMethod.staticClass, "canSelectArbitrarily", "()Z");
 			global::android.text.method.ArrowKeyMovementMethod._ArrowKeyMovementMethod13255 = @__env.GetMethodIDNoThrow(global::android.text.method.ArrowKeyMovementMethod.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

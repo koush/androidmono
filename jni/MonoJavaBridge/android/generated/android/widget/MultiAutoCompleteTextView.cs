@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class MultiAutoCompleteTextView : android.widget.AutoCompleteTextView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MultiAutoCompleteTextView()
-		{
-			InitJNI();
-		}
 		protected MultiAutoCompleteTextView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public partial class CommaTokenizer : java.lang.Object, Tokenizer
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CommaTokenizer()
-			{
-				InitJNI();
-			}
 			protected CommaTokenizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -68,7 +60,7 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._CommaTokenizer17426);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CommaTokenizer()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/MultiAutoCompleteTextView$CommaTokenizer"));
@@ -76,6 +68,9 @@ namespace android.widget
 				global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenEnd17424 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
 				global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._terminateToken17425 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
 				global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._CommaTokenizer17426 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.MultiAutoCompleteTextView.Tokenizer_))]
@@ -90,10 +85,6 @@ namespace android.widget
 		internal sealed partial class Tokenizer_ : java.lang.Object, Tokenizer
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Tokenizer_()
-			{
-				InitJNI();
-			}
 			internal Tokenizer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -124,13 +115,16 @@ namespace android.widget
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.MultiAutoCompleteTextView.Tokenizer_.staticClass, global::android.widget.MultiAutoCompleteTextView.Tokenizer_._terminateToken17429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			}
-			private static void InitJNI()
+			static Tokenizer_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.MultiAutoCompleteTextView.Tokenizer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/MultiAutoCompleteTextView$Tokenizer"));
 				global::android.widget.MultiAutoCompleteTextView.Tokenizer_._findTokenStart17427 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.Tokenizer_.staticClass, "findTokenStart", "(Ljava/lang/CharSequence;I)I");
 				global::android.widget.MultiAutoCompleteTextView.Tokenizer_._findTokenEnd17428 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.Tokenizer_.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
 				global::android.widget.MultiAutoCompleteTextView.Tokenizer_._terminateToken17429 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.Tokenizer_.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setTokenizer17430;
@@ -220,7 +214,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView17438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MultiAutoCompleteTextView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.MultiAutoCompleteTextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/MultiAutoCompleteTextView"));
@@ -233,6 +227,9 @@ namespace android.widget
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView17436 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView17437 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView17438 = @__env.GetMethodIDNoThrow(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

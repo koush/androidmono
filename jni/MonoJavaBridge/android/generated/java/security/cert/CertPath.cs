@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class CertPath : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertPath()
-		{
-			InitJNI();
-		}
 		protected CertPath(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.security.cert
 		protected partial class CertPathRep : java.lang.Object, java.io.Serializable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CertPathRep()
-			{
-				InitJNI();
-			}
 			protected CertPathRep(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -38,12 +30,15 @@ namespace java.security.cert
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPath.CertPathRep.staticClass, global::java.security.cert.CertPath.CertPathRep._CertPathRep23480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CertPathRep()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.security.cert.CertPath.CertPathRep.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPath$CertPathRep"));
 				global::java.security.cert.CertPath.CertPathRep._readResolve23479 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath.CertPathRep.staticClass, "readResolve", "()Ljava/lang/Object;");
 				global::java.security.cert.CertPath.CertPathRep._CertPathRep23480 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath.CertPathRep.staticClass, "<init>", "(Ljava/lang/String;[B)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23481;
@@ -106,7 +101,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._CertPath23490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPath.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPath"));
@@ -121,16 +116,15 @@ namespace java.security.cert
 			global::java.security.cert.CertPath._getEncodings23489 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath.staticClass, "getEncodings", "()Ljava/util/Iterator;");
 			global::java.security.cert.CertPath._CertPath23490 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.CertPath))]
 	internal sealed partial class CertPath_ : java.security.cert.CertPath
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertPath_()
-		{
-			InitJNI();
-		}
 		internal CertPath_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -170,7 +164,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertPath_.staticClass, global::java.security.cert.CertPath_._getEncodings23494)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static CertPath_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPath_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPath"));
@@ -178,6 +172,9 @@ namespace java.security.cert
 			global::java.security.cert.CertPath_._getEncoded23492 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath_.staticClass, "getEncoded", "()[B");
 			global::java.security.cert.CertPath_._getEncoded23493 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath_.staticClass, "getEncoded", "(Ljava/lang/String;)[B");
 			global::java.security.cert.CertPath_._getEncodings23494 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath_.staticClass, "getEncodings", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class HttpConnectionMetricsImpl : java.lang.Object, HttpConnectionMetrics
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpConnectionMetricsImpl()
-		{
-			InitJNI();
-		}
 		protected HttpConnectionMetricsImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +151,7 @@ namespace org.apache.http.impl
 				return "http.received-bytes-count";
 			}
 		}
-		private static void InitJNI()
+		static HttpConnectionMetricsImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/HttpConnectionMetricsImpl"));
@@ -169,6 +165,9 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.HttpConnectionMetricsImpl._incrementResponseCount32660 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "incrementResponseCount", "()V");
 			global::org.apache.http.impl.HttpConnectionMetricsImpl._setMetric32661 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "setMetric", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::org.apache.http.impl.HttpConnectionMetricsImpl._HttpConnectionMetricsImpl32662 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "<init>", "(Lorg/apache/http/io/HttpTransportMetrics;Lorg/apache/http/io/HttpTransportMetrics;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

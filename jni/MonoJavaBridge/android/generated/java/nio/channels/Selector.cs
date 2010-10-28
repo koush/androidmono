@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class Selector : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Selector()
-		{
-			InitJNI();
-		}
 		protected Selector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -42,7 +38,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.Selector.staticClass, global::java.nio.channels.Selector._Selector22610);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Selector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Selector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Selector"));
@@ -58,16 +54,15 @@ namespace java.nio.channels
 			global::java.nio.channels.Selector._wakeup22609 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Selector.staticClass, "wakeup", "()Ljava/nio/channels/Selector;");
 			global::java.nio.channels.Selector._Selector22610 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Selector.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.Selector))]
 	internal sealed partial class Selector_ : java.nio.channels.Selector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Selector_()
-		{
-			InitJNI();
-		}
 		internal Selector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +147,7 @@ namespace java.nio.channels
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.Selector_.staticClass, global::java.nio.channels.Selector_._wakeup22619)) as java.nio.channels.Selector;
 		}
-		private static void InitJNI()
+		static Selector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Selector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Selector"));
@@ -165,6 +160,9 @@ namespace java.nio.channels
 			global::java.nio.channels.Selector_._selectedKeys22617 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Selector_.staticClass, "selectedKeys", "()Ljava/util/Set;");
 			global::java.nio.channels.Selector_._selectNow22618 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Selector_.staticClass, "selectNow", "()I");
 			global::java.nio.channels.Selector_._wakeup22619 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Selector_.staticClass, "wakeup", "()Ljava/nio/channels/Selector;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

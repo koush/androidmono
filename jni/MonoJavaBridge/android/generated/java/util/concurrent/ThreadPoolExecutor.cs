@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class ThreadPoolExecutor : java.util.concurrent.AbstractExecutorService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ThreadPoolExecutor()
-		{
-			InitJNI();
-		}
 		protected ThreadPoolExecutor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.util.concurrent
 		public partial class AbortPolicy : java.lang.Object, RejectedExecutionHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AbortPolicy()
-			{
-				InitJNI();
-			}
 			protected AbortPolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -42,22 +34,21 @@ namespace java.util.concurrent
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._AbortPolicy27457);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AbortPolicy()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ThreadPoolExecutor$AbortPolicy"));
 				global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._rejectedExecution27456 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
 				global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._AbortPolicy27457 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class CallerRunsPolicy : java.lang.Object, RejectedExecutionHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CallerRunsPolicy()
-			{
-				InitJNI();
-			}
 			protected CallerRunsPolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -81,22 +72,21 @@ namespace java.util.concurrent
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._CallerRunsPolicy27459);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CallerRunsPolicy()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ThreadPoolExecutor$CallerRunsPolicy"));
 				global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._rejectedExecution27458 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
 				global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._CallerRunsPolicy27459 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class DiscardOldestPolicy : java.lang.Object, RejectedExecutionHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DiscardOldestPolicy()
-			{
-				InitJNI();
-			}
 			protected DiscardOldestPolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -120,22 +110,21 @@ namespace java.util.concurrent
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._DiscardOldestPolicy27461);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static DiscardOldestPolicy()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ThreadPoolExecutor$DiscardOldestPolicy"));
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._rejectedExecution27460 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._DiscardOldestPolicy27461 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class DiscardPolicy : java.lang.Object, RejectedExecutionHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DiscardPolicy()
-			{
-				InitJNI();
-			}
 			protected DiscardPolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -159,12 +148,15 @@ namespace java.util.concurrent
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._DiscardPolicy27463);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static DiscardPolicy()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ThreadPoolExecutor$DiscardPolicy"));
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._rejectedExecution27462 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
 				global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._DiscardPolicy27463 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown27464;
@@ -594,7 +586,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._ThreadPoolExecutor27500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ThreadPoolExecutor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ThreadPoolExecutor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ThreadPoolExecutor"));
@@ -635,6 +627,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ThreadPoolExecutor._ThreadPoolExecutor27498 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.staticClass, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/RejectedExecutionHandler;)V");
 			global::java.util.concurrent.ThreadPoolExecutor._ThreadPoolExecutor27499 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.staticClass, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V");
 			global::java.util.concurrent.ThreadPoolExecutor._ThreadPoolExecutor27500 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadPoolExecutor.staticClass, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

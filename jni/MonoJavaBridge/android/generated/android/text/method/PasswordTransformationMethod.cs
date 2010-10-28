@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class PasswordTransformationMethod : java.lang.Object, TransformationMethod, TextWatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PasswordTransformationMethod()
-		{
-			InitJNI();
-		}
 		protected PasswordTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -92,7 +88,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod13364);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PasswordTransformationMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.PasswordTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/PasswordTransformationMethod"));
@@ -103,6 +99,9 @@ namespace android.text.method
 			global::android.text.method.PasswordTransformationMethod._afterTextChanged13362 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
 			global::android.text.method.PasswordTransformationMethod._getTransformation13363 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
 			global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod13364 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

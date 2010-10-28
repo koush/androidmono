@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class DateTimeKeyListener : android.text.method.NumberKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateTimeKeyListener()
-		{
-			InitJNI();
-		}
 		protected DateTimeKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.GetStaticObjectField(global::android.text.method.DateTimeKeyListener.staticClass, _CHARACTERS13275)) as char[];
 			}
 		}
-		private static void InitJNI()
+		static DateTimeKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.DateTimeKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DateTimeKeyListener"));
@@ -81,6 +77,9 @@ namespace android.text.method
 			global::android.text.method.DateTimeKeyListener._getAcceptedChars13273 = @__env.GetMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.DateTimeKeyListener._DateTimeKeyListener13274 = @__env.GetMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "<init>", "()V");
 			global::android.text.method.DateTimeKeyListener._CHARACTERS13275 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "CHARACTERS", "[C");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

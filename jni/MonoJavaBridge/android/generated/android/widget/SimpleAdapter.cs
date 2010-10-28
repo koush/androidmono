@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class SimpleAdapter : android.widget.BaseAdapter, Filterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleAdapter()
-		{
-			InitJNI();
-		}
 		protected SimpleAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class ViewBinder_ : java.lang.Object, ViewBinder
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ViewBinder_()
-			{
-				InitJNI();
-			}
 			internal ViewBinder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SimpleAdapter.ViewBinder_.staticClass, global::android.widget.SimpleAdapter.ViewBinder_._setViewValue17743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static ViewBinder_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleAdapter.ViewBinder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleAdapter$ViewBinder"));
 				global::android.widget.SimpleAdapter.ViewBinder_._setViewValue17743 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleAdapter.ViewBinder_.staticClass, "setViewValue", "(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class ViewBinderDelegateWrapper : java.lang.Object, ViewBinder
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ViewBinderDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected ViewBinderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SimpleAdapter.ViewBinderDelegateWrapper.staticClass, global::android.widget.SimpleAdapter.ViewBinderDelegateWrapper._ViewBinderDelegateWrapper17744);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ViewBinderDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleAdapter.ViewBinderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleAdapter_ViewBinderDelegateWrapper"));
 				global::android.widget.SimpleAdapter.ViewBinderDelegateWrapper._ViewBinderDelegateWrapper17744 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleAdapter.ViewBinderDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class ViewBinderDelegateWrapper
@@ -226,7 +220,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._SimpleAdapter17757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SimpleAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleAdapter"));
@@ -243,6 +237,9 @@ namespace android.widget
 			global::android.widget.SimpleAdapter._setViewImage17755 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleAdapter.staticClass, "setViewImage", "(Landroid/widget/ImageView;Ljava/lang/String;)V");
 			global::android.widget.SimpleAdapter._setViewText17756 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleAdapter.staticClass, "setViewText", "(Landroid/widget/TextView;Ljava/lang/String;)V");
 			global::android.widget.SimpleAdapter._SimpleAdapter17757 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

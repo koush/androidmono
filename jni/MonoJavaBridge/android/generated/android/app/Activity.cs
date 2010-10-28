@@ -4,10 +4,6 @@ namespace android.app
 	public partial class Activity : android.view.ContextThemeWrapper, android.view.LayoutInflater.Factory, android.view.Window.Callback, android.view.KeyEvent.Callback, android.view.View.OnCreateContextMenuListener, android.content.ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Activity()
-		{
-			InitJNI();
-		}
 		protected Activity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1620,7 +1616,7 @@ namespace android.app
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static Activity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Activity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Activity"));
@@ -1769,6 +1765,9 @@ namespace android.app
 			global::android.app.Activity._runOnUiThread1532 = @__env.GetMethodIDNoThrow(global::android.app.Activity.staticClass, "runOnUiThread", "(Ljava/lang/Runnable;)V");
 			global::android.app.Activity._onCreateView1533 = @__env.GetMethodIDNoThrow(global::android.app.Activity.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;");
 			global::android.app.Activity._Activity1534 = @__env.GetMethodIDNoThrow(global::android.app.Activity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

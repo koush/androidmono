@@ -4,10 +4,6 @@ namespace android.media
 	public partial class RingtoneManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RingtoneManager()
-		{
-			InitJNI();
-		}
 		protected RingtoneManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -303,7 +299,7 @@ namespace android.media
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static RingtoneManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.RingtoneManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/RingtoneManager"));
@@ -327,6 +323,9 @@ namespace android.media
 			global::android.media.RingtoneManager._getDefaultUri7466 = @__env.GetStaticMethodIDNoThrow(global::android.media.RingtoneManager.staticClass, "getDefaultUri", "(I)Landroid/net/Uri;");
 			global::android.media.RingtoneManager._RingtoneManager7467 = @__env.GetMethodIDNoThrow(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/app/Activity;)V");
 			global::android.media.RingtoneManager._RingtoneManager7468 = @__env.GetMethodIDNoThrow(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

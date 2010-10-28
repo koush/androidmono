@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class SocketImpl : java.lang.Object, SocketOptions
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketImpl()
-		{
-			InitJNI();
-		}
 		protected SocketImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -127,7 +123,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketImpl.staticClass, global::java.net.SocketImpl._SocketImpl21799);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketImpl"));
@@ -156,16 +152,15 @@ namespace java.net
 			global::java.net.SocketImpl._supportsUrgentData21798 = @__env.GetMethodIDNoThrow(global::java.net.SocketImpl.staticClass, "supportsUrgentData", "()Z");
 			global::java.net.SocketImpl._SocketImpl21799 = @__env.GetMethodIDNoThrow(global::java.net.SocketImpl.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.SocketImpl))]
 	internal sealed partial class SocketImpl_ : java.net.SocketImpl
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketImpl_()
-		{
-			InitJNI();
-		}
 		internal SocketImpl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -295,7 +290,7 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.SocketImpl_.staticClass, global::java.net.SocketImpl_._sendUrgentData21813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SocketImpl_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketImpl_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketImpl"));
@@ -313,6 +308,9 @@ namespace java.net
 			global::java.net.SocketImpl_._listen21811 = @__env.GetMethodIDNoThrow(global::java.net.SocketImpl_.staticClass, "listen", "(I)V");
 			global::java.net.SocketImpl_._bind21812 = @__env.GetMethodIDNoThrow(global::java.net.SocketImpl_.staticClass, "bind", "(Ljava/net/InetAddress;I)V");
 			global::java.net.SocketImpl_._sendUrgentData21813 = @__env.GetMethodIDNoThrow(global::java.net.SocketImpl_.staticClass, "sendUrgentData", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

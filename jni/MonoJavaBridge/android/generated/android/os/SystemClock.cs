@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class SystemClock : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SystemClock()
-		{
-			InitJNI();
-		}
 		internal SystemClock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -48,7 +44,7 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._currentThreadTimeMillis10213);
 		}
-		private static void InitJNI()
+		static SystemClock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.SystemClock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/SystemClock"));
@@ -57,6 +53,9 @@ namespace android.os
 			global::android.os.SystemClock._setCurrentTimeMillis10211 = @__env.GetStaticMethodIDNoThrow(global::android.os.SystemClock.staticClass, "setCurrentTimeMillis", "(J)Z");
 			global::android.os.SystemClock._elapsedRealtime10212 = @__env.GetStaticMethodIDNoThrow(global::android.os.SystemClock.staticClass, "elapsedRealtime", "()J");
 			global::android.os.SystemClock._currentThreadTimeMillis10213 = @__env.GetStaticMethodIDNoThrow(global::android.os.SystemClock.staticClass, "currentThreadTimeMillis", "()J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

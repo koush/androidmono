@@ -4,10 +4,6 @@ namespace org.xml.sax.helpers
 	public partial class XMLFilterImpl : java.lang.Object, XMLFilter, EntityResolver, DTDHandler, ContentHandler, ErrorHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLFilterImpl()
-		{
-			InitJNI();
-		}
 		protected XMLFilterImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -384,7 +380,7 @@ namespace org.xml.sax.helpers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.XMLFilterImpl.staticClass, global::org.xml.sax.helpers.XMLFilterImpl._XMLFilterImpl35288);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static XMLFilterImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.XMLFilterImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/XMLFilterImpl"));
@@ -423,6 +419,9 @@ namespace org.xml.sax.helpers
 			global::org.xml.sax.helpers.XMLFilterImpl._resolveEntity35286 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.XMLFilterImpl.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 			global::org.xml.sax.helpers.XMLFilterImpl._XMLFilterImpl35287 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.XMLFilterImpl.staticClass, "<init>", "(Lorg/xml/sax/XMLReader;)V");
 			global::org.xml.sax.helpers.XMLFilterImpl._XMLFilterImpl35288 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.XMLFilterImpl.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

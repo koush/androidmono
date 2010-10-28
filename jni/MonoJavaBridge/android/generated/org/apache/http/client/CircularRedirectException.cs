@@ -4,10 +4,6 @@ namespace org.apache.http.client
 	public partial class CircularRedirectException : org.apache.http.client.RedirectException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CircularRedirectException()
-		{
-			InitJNI();
-		}
 		protected CircularRedirectException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,13 +28,16 @@ namespace org.apache.http.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.CircularRedirectException.staticClass, global::org.apache.http.client.CircularRedirectException._CircularRedirectException31869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CircularRedirectException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.CircularRedirectException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/CircularRedirectException"));
 			global::org.apache.http.client.CircularRedirectException._CircularRedirectException31867 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CircularRedirectException.staticClass, "<init>", "()V");
 			global::org.apache.http.client.CircularRedirectException._CircularRedirectException31868 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CircularRedirectException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::org.apache.http.client.CircularRedirectException._CircularRedirectException31869 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CircularRedirectException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

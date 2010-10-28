@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Vector : java.util.AbstractList, List, RandomAccess, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Vector()
-		{
-			InitJNI();
-		}
 		protected Vector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -417,7 +413,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Vector.staticClass, global::java.util.Vector._Vector27008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Vector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Vector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Vector"));
@@ -467,6 +463,9 @@ namespace java.util
 			global::java.util.Vector._Vector27006 = @__env.GetMethodIDNoThrow(global::java.util.Vector.staticClass, "<init>", "(I)V");
 			global::java.util.Vector._Vector27007 = @__env.GetMethodIDNoThrow(global::java.util.Vector.staticClass, "<init>", "()V");
 			global::java.util.Vector._Vector27008 = @__env.GetMethodIDNoThrow(global::java.util.Vector.staticClass, "<init>", "(Ljava/util/Collection;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

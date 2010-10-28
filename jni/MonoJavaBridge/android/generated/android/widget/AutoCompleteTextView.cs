@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class AutoCompleteTextView : android.widget.EditText, android.widget.Filter.FilterListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AutoCompleteTextView()
-		{
-			InitJNI();
-		}
 		protected AutoCompleteTextView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -22,10 +18,6 @@ namespace android.widget
 		internal sealed partial class Validator_ : java.lang.Object, Validator
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Validator_()
-			{
-				InitJNI();
-			}
 			internal Validator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,12 +39,15 @@ namespace android.widget
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_.staticClass, global::android.widget.AutoCompleteTextView.Validator_._fixText16726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			}
-			private static void InitJNI()
+			static Validator_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AutoCompleteTextView.Validator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AutoCompleteTextView$Validator"));
 				global::android.widget.AutoCompleteTextView.Validator_._isValid16725 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "isValid", "(Ljava/lang/CharSequence;)Z");
 				global::android.widget.AutoCompleteTextView.Validator_._fixText16726 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "fixText", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setThreshold16727;
@@ -730,7 +725,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AutoCompleteTextView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AutoCompleteTextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AutoCompleteTextView"));
@@ -789,6 +784,9 @@ namespace android.widget
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16779 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16780 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16781 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

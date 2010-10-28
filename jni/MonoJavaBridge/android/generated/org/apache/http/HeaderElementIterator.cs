@@ -11,10 +11,6 @@ namespace org.apache.http
 	internal sealed partial class HeaderElementIterator_ : java.lang.Object, HeaderElementIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HeaderElementIterator_()
-		{
-			InitJNI();
-		}
 		internal HeaderElementIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HeaderElementIterator_.staticClass, global::org.apache.http.HeaderElementIterator_._remove31510);
 		}
-		private static void InitJNI()
+		static HeaderElementIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HeaderElementIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HeaderElementIterator"));
@@ -72,6 +68,9 @@ namespace org.apache.http
 			global::org.apache.http.HeaderElementIterator_._hasNext31508 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElementIterator_.staticClass, "hasNext", "()Z");
 			global::org.apache.http.HeaderElementIterator_._next31509 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElementIterator_.staticClass, "next", "()Ljava/lang/Object;");
 			global::org.apache.http.HeaderElementIterator_._remove31510 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElementIterator_.staticClass, "remove", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

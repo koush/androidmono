@@ -10,10 +10,6 @@ namespace java.lang.annotation
 	internal sealed partial class Retention_ : java.lang.Object, Retention
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Retention_()
-		{
-			InitJNI();
-		}
 		internal Retention_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.lang.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._annotationType20973)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Retention_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.Retention_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/Retention"));
@@ -71,6 +67,9 @@ namespace java.lang.annotation
 			global::java.lang.annotation.Retention_._toString20971 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Retention_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.annotation.Retention_._hashCode20972 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Retention_.staticClass, "hashCode", "()I");
 			global::java.lang.annotation.Retention_._annotationType20973 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Retention_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

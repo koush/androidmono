@@ -11,10 +11,6 @@ namespace junit.framework
 	internal sealed partial class Test_ : java.lang.Object, Test
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Test_()
-		{
-			InitJNI();
-		}
 		internal Test_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace junit.framework
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::junit.framework.Test_.staticClass, global::junit.framework.Test_._countTestCases31376);
 		}
-		private static void InitJNI()
+		static Test_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.Test_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/Test"));
 			global::junit.framework.Test_._run31375 = @__env.GetMethodIDNoThrow(global::junit.framework.Test_.staticClass, "run", "(Ljunit/framework/TestResult;)V");
 			global::junit.framework.Test_._countTestCases31376 = @__env.GetMethodIDNoThrow(global::junit.framework.Test_.staticClass, "countTestCases", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.view.accessibility
 	public sealed partial class AccessibilityEvent : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityEvent()
-		{
-			InitJNI();
-		}
 		internal AccessibilityEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -627,7 +623,7 @@ namespace android.view.accessibility
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.accessibility.AccessibilityEvent.staticClass, _CREATOR15556)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AccessibilityEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.accessibility.AccessibilityEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityEvent"));
@@ -672,6 +668,9 @@ namespace android.view.accessibility
 			global::android.view.accessibility.AccessibilityEvent._writeToParcel15544 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.view.accessibility.AccessibilityEvent._describeContents15545 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEvent.staticClass, "describeContents", "()I");
 			global::android.view.accessibility.AccessibilityEvent._CREATOR15556 = @__env.GetStaticFieldIDNoThrow(global::android.view.accessibility.AccessibilityEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Stack : java.util.Vector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Stack()
-		{
-			InitJNI();
-		}
 		protected Stack(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Stack.staticClass, global::java.util.Stack._Stack26824);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Stack()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Stack.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Stack"));
@@ -73,6 +69,9 @@ namespace java.util
 			global::java.util.Stack._empty26822 = @__env.GetMethodIDNoThrow(global::java.util.Stack.staticClass, "empty", "()Z");
 			global::java.util.Stack._search26823 = @__env.GetMethodIDNoThrow(global::java.util.Stack.staticClass, "search", "(Ljava/lang/Object;)I");
 			global::java.util.Stack._Stack26824 = @__env.GetMethodIDNoThrow(global::java.util.Stack.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

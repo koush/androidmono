@@ -9,17 +9,16 @@ namespace android.provider
 	internal sealed partial class BaseColumns_ : java.lang.Object, BaseColumns
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseColumns_()
-		{
-			InitJNI();
-		}
 		internal BaseColumns_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static BaseColumns_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.BaseColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/BaseColumns"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

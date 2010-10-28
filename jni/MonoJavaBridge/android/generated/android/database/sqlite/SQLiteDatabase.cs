@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public partial class SQLiteDatabase : android.database.sqlite.SQLiteClosable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteDatabase()
-		{
-			InitJNI();
-		}
 		protected SQLiteDatabase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.database.sqlite
 		internal sealed partial class CursorFactory_ : java.lang.Object, CursorFactory
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CursorFactory_()
-			{
-				InitJNI();
-			}
 			internal CursorFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.database.sqlite
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass, global::android.database.sqlite.SQLiteDatabase.CursorFactory_._newCursor4733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.database.Cursor;
 			}
-			private static void InitJNI()
+			static CursorFactory_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase$CursorFactory"));
 				global::android.database.sqlite.SQLiteDatabase.CursorFactory_._newCursor4733 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass, "newCursor", "(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)Landroid/database/Cursor;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.database.sqlite
 		internal partial class CursorFactoryDelegateWrapper : java.lang.Object, CursorFactory
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CursorFactoryDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected CursorFactoryDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.database.sqlite
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._CursorFactoryDelegateWrapper4734);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CursorFactoryDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase_CursorFactoryDelegateWrapper"));
 				global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._CursorFactoryDelegateWrapper4734 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class CursorFactoryDelegateWrapper
@@ -689,7 +683,7 @@ namespace android.database.sqlite
 				return 268435456;
 			}
 		}
-		private static void InitJNI()
+		static SQLiteDatabase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteDatabase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase"));
@@ -744,6 +738,9 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteDatabase._execSQL4783 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;[Ljava/lang/Object;)V");
 			global::android.database.sqlite.SQLiteDatabase._execSQL4784 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;)V");
 			global::android.database.sqlite.SQLiteDatabase._needUpgrade4785 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "needUpgrade", "(I)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

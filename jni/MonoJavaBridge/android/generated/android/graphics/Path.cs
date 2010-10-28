@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Path : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Path()
-		{
-			InitJNI();
-		}
 		protected Path(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Direction : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Direction()
-			{
-				InitJNI();
-			}
 			internal Direction(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -52,7 +44,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.Direction>(@__env.GetStaticObjectField(global::android.graphics.Path.Direction.staticClass, _CW5518)) as android.graphics.Path.Direction;
 				}
 			}
-			private static void InitJNI()
+			static Direction()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Path.Direction.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Path$Direction"));
@@ -61,15 +53,14 @@ namespace android.graphics
 				global::android.graphics.Path.Direction._CCW5517 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.Direction.staticClass, "CCW", "Landroid/graphics/Path$Direction;");
 				global::android.graphics.Path.Direction._CW5518 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.Direction.staticClass, "CW", "Landroid/graphics/Path$Direction;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class FillType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FillType()
-			{
-				InitJNI();
-			}
 			internal FillType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -121,7 +112,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _WINDING5524)) as android.graphics.Path.FillType;
 				}
 			}
-			private static void InitJNI()
+			static FillType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Path.FillType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Path$FillType"));
@@ -131,6 +122,9 @@ namespace android.graphics
 				global::android.graphics.Path.FillType._INVERSE_EVEN_ODD5522 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "INVERSE_EVEN_ODD", "Landroid/graphics/Path$FillType;");
 				global::android.graphics.Path.FillType._INVERSE_WINDING5523 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "INVERSE_WINDING", "Landroid/graphics/Path$FillType;");
 				global::android.graphics.Path.FillType._WINDING5524 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "WINDING", "Landroid/graphics/Path$FillType;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5525;
@@ -489,7 +483,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Path.staticClass, global::android.graphics.Path._Path5564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Path()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Path.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Path"));
@@ -533,6 +527,9 @@ namespace android.graphics
 			global::android.graphics.Path._setLastPoint5562 = @__env.GetMethodIDNoThrow(global::android.graphics.Path.staticClass, "setLastPoint", "(FF)V");
 			global::android.graphics.Path._Path5563 = @__env.GetMethodIDNoThrow(global::android.graphics.Path.staticClass, "<init>", "()V");
 			global::android.graphics.Path._Path5564 = @__env.GetMethodIDNoThrow(global::android.graphics.Path.staticClass, "<init>", "(Landroid/graphics/Path;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

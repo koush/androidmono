@@ -4,10 +4,6 @@ namespace java.nio.charset
 	public abstract partial class Charset : java.lang.Object, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Charset()
-		{
-			InitJNI();
-		}
 		protected Charset(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -174,7 +170,7 @@ namespace java.nio.charset
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.Charset.staticClass, global::java.nio.charset.Charset._Charset22743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Charset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.Charset.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/Charset"));
@@ -201,16 +197,15 @@ namespace java.nio.charset
 			global::java.nio.charset.Charset._canEncode22742 = @__env.GetMethodIDNoThrow(global::java.nio.charset.Charset.staticClass, "canEncode", "()Z");
 			global::java.nio.charset.Charset._Charset22743 = @__env.GetMethodIDNoThrow(global::java.nio.charset.Charset.staticClass, "<init>", "(Ljava/lang/String;[Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.charset.Charset))]
 	internal sealed partial class Charset_ : java.nio.charset.Charset
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Charset_()
-		{
-			InitJNI();
-		}
 		internal Charset_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -241,13 +236,16 @@ namespace java.nio.charset
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.Charset_.staticClass, global::java.nio.charset.Charset_._newEncoder22746)) as java.nio.charset.CharsetEncoder;
 		}
-		private static void InitJNI()
+		static Charset_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.Charset_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/Charset"));
 			global::java.nio.charset.Charset_._contains22744 = @__env.GetMethodIDNoThrow(global::java.nio.charset.Charset_.staticClass, "contains", "(Ljava/nio/charset/Charset;)Z");
 			global::java.nio.charset.Charset_._newDecoder22745 = @__env.GetMethodIDNoThrow(global::java.nio.charset.Charset_.staticClass, "newDecoder", "()Ljava/nio/charset/CharsetDecoder;");
 			global::java.nio.charset.Charset_._newEncoder22746 = @__env.GetMethodIDNoThrow(global::java.nio.charset.Charset_.staticClass, "newEncoder", "()Ljava/nio/charset/CharsetEncoder;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

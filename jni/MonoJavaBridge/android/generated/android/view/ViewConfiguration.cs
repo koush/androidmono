@@ -4,10 +4,6 @@ namespace android.view
 	public partial class ViewConfiguration : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewConfiguration()
-		{
-			InitJNI();
-		}
 		protected ViewConfiguration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -418,7 +414,7 @@ namespace android.view
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._ViewConfiguration14976);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ViewConfiguration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewConfiguration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewConfiguration"));
@@ -452,6 +448,9 @@ namespace android.view
 			global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getGlobalActionKeyTimeout", "()J");
 			global::android.view.ViewConfiguration._getScrollFriction14975 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollFriction", "()F");
 			global::android.view.ViewConfiguration._ViewConfiguration14976 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

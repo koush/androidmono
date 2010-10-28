@@ -10,10 +10,6 @@ namespace android.view.inputmethod
 	internal sealed partial class InputMethod_SessionCallback_ : java.lang.Object, InputMethod_SessionCallback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMethod_SessionCallback_()
-		{
-			InitJNI();
-		}
 		internal InputMethod_SessionCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.view.inputmethod
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass, global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static InputMethod_SessionCallback_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethod$SessionCallback"));
 			global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass, "sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.view.inputmethod
 	internal partial class InputMethod_SessionCallbackDelegateWrapper : java.lang.Object, InputMethod_SessionCallback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMethod_SessionCallbackDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected InputMethod_SessionCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.view.inputmethod
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper.staticClass, global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper._InputMethod_SessionCallbackDelegateWrapper15913);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputMethod_SessionCallbackDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethod_SessionCallbackDelegateWrapper"));
 			global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper._InputMethod_SessionCallbackDelegateWrapper15913 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class InputMethod_SessionCallbackDelegateWrapper

@@ -13,10 +13,6 @@ namespace javax.xml.transform.sax
 	internal sealed partial class TransformerHandler_ : java.lang.Object, TransformerHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TransformerHandler_()
-		{
-			InitJNI();
-		}
 		internal TransformerHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -236,7 +232,7 @@ namespace javax.xml.transform.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.TransformerHandler_.staticClass, global::javax.xml.transform.sax.TransformerHandler_._notationDecl31149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static TransformerHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.TransformerHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/TransformerHandler"));
@@ -264,6 +260,9 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.TransformerHandler_._endDTD31147 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TransformerHandler_.staticClass, "endDTD", "()V");
 			global::javax.xml.transform.sax.TransformerHandler_._unparsedEntityDecl31148 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TransformerHandler_.staticClass, "unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::javax.xml.transform.sax.TransformerHandler_._notationDecl31149 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TransformerHandler_.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

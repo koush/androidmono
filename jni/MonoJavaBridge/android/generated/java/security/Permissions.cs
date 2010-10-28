@@ -4,10 +4,6 @@ namespace java.security
 	public sealed partial class Permissions : java.security.PermissionCollection, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Permissions()
-		{
-			InitJNI();
-		}
 		internal Permissions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Permissions.staticClass, global::java.security.Permissions._Permissions23228);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Permissions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Permissions.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Permissions"));
@@ -53,6 +49,9 @@ namespace java.security
 			global::java.security.Permissions._implies23226 = @__env.GetMethodIDNoThrow(global::java.security.Permissions.staticClass, "implies", "(Ljava/security/Permission;)Z");
 			global::java.security.Permissions._elements23227 = @__env.GetMethodIDNoThrow(global::java.security.Permissions.staticClass, "elements", "()Ljava/util/Enumeration;");
 			global::java.security.Permissions._Permissions23228 = @__env.GetMethodIDNoThrow(global::java.security.Permissions.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

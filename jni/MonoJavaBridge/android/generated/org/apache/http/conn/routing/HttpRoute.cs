@@ -4,10 +4,6 @@ namespace org.apache.http.conn.routing
 	public sealed partial class HttpRoute : java.lang.Object, RouteInfo, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRoute()
-		{
-			InitJNI();
-		}
 		internal HttpRoute(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -214,7 +210,7 @@ namespace org.apache.http.conn.routing
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.routing.HttpRoute.staticClass, global::org.apache.http.conn.routing.HttpRoute._HttpRoute32238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.HttpRoute.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/HttpRoute"));
@@ -237,6 +233,9 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.HttpRoute._HttpRoute32236 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRoute.staticClass, "<init>", "(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Z)V");
 			global::org.apache.http.conn.routing.HttpRoute._HttpRoute32237 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRoute.staticClass, "<init>", "(Lorg/apache/http/HttpHost;)V");
 			global::org.apache.http.conn.routing.HttpRoute._HttpRoute32238 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRoute.staticClass, "<init>", "(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/HttpHost;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

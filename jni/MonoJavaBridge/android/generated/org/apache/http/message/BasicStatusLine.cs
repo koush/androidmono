@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicStatusLine : java.lang.Object, StatusLine, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicStatusLine()
-		{
-			InitJNI();
-		}
 		protected BasicStatusLine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -84,7 +80,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicStatusLine.staticClass, global::org.apache.http.message.BasicStatusLine._BasicStatusLine33650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicStatusLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicStatusLine.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicStatusLine"));
@@ -94,6 +90,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicStatusLine._getStatusCode33648 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicStatusLine.staticClass, "getStatusCode", "()I");
 			global::org.apache.http.message.BasicStatusLine._getReasonPhrase33649 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicStatusLine.staticClass, "getReasonPhrase", "()Ljava/lang/String;");
 			global::org.apache.http.message.BasicStatusLine._BasicStatusLine33650 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicStatusLine.staticClass, "<init>", "(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

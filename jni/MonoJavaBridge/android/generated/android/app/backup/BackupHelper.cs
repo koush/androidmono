@@ -12,10 +12,6 @@ namespace android.app.backup
 	internal sealed partial class BackupHelper_ : java.lang.Object, BackupHelper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackupHelper_()
-		{
-			InitJNI();
-		}
 		internal BackupHelper_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.app.backup
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupHelper_.staticClass, global::android.app.backup.BackupHelper_._writeNewStateDescription2323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static BackupHelper_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.BackupHelper_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/BackupHelper"));
 			global::android.app.backup.BackupHelper_._performBackup2321 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupHelper_.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V");
 			global::android.app.backup.BackupHelper_._restoreEntity2322 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupHelper_.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V");
 			global::android.app.backup.BackupHelper_._writeNewStateDescription2323 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupHelper_.staticClass, "writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

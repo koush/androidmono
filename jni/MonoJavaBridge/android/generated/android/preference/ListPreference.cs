@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class ListPreference : android.preference.DialogPreference
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListPreference()
-		{
-			InitJNI();
-		}
 		protected ListPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -225,7 +221,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.ListPreference.staticClass, global::android.preference.ListPreference._ListPreference10310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ListPreference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.ListPreference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/ListPreference"));
@@ -248,6 +244,9 @@ namespace android.preference
 			global::android.preference.ListPreference._findIndexOfValue10308 = @__env.GetMethodIDNoThrow(global::android.preference.ListPreference.staticClass, "findIndexOfValue", "(Ljava/lang/String;)I");
 			global::android.preference.ListPreference._ListPreference10309 = @__env.GetMethodIDNoThrow(global::android.preference.ListPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.preference.ListPreference._ListPreference10310 = @__env.GetMethodIDNoThrow(global::android.preference.ListPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

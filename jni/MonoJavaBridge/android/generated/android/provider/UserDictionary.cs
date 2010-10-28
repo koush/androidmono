@@ -4,10 +4,6 @@ namespace android.provider
 	public partial class UserDictionary : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UserDictionary()
-		{
-			InitJNI();
-		}
 		protected UserDictionary(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.provider
 		public partial class Words : java.lang.Object, BaseColumns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Words()
-			{
-				InitJNI();
-			}
 			protected Words(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -114,13 +106,16 @@ namespace android.provider
 					return "frequency DESC";
 				}
 			}
-			private static void InitJNI()
+			static Words()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.UserDictionary.Words.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary$Words"));
 				global::android.provider.UserDictionary.Words._addWord11582 = @__env.GetStaticMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "addWord", "(Landroid/content/Context;Ljava/lang/String;II)V");
 				global::android.provider.UserDictionary.Words._Words11583 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "<init>", "()V");
 				global::android.provider.UserDictionary.Words._CONTENT_URI11584 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _UserDictionary11595;
@@ -146,12 +141,15 @@ namespace android.provider
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.UserDictionary.staticClass, _CONTENT_URI11597)) as android.net.Uri;
 			}
 		}
-		private static void InitJNI()
+		static UserDictionary()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.UserDictionary.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary"));
 			global::android.provider.UserDictionary._UserDictionary11595 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.staticClass, "<init>", "()V");
 			global::android.provider.UserDictionary._CONTENT_URI11597 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

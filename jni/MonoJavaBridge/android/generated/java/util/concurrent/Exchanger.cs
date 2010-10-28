@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class Exchanger : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Exchanger()
-		{
-			InitJNI();
-		}
 		protected Exchanger(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.Exchanger.staticClass, global::java.util.concurrent.Exchanger._Exchanger27256);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Exchanger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Exchanger.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Exchanger"));
 			global::java.util.concurrent.Exchanger._exchange27254 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Exchanger.staticClass, "exchange", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.util.concurrent.Exchanger._exchange27255 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Exchanger.staticClass, "exchange", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
 			global::java.util.concurrent.Exchanger._Exchanger27256 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Exchanger.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

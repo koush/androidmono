@@ -4,10 +4,6 @@ namespace android.media
 	public partial class ExifInterface : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExifInterface()
-		{
-			InitJNI();
-		}
 		protected ExifInterface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -286,7 +282,7 @@ namespace android.media
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static ExifInterface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.ExifInterface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ExifInterface"));
@@ -299,6 +295,9 @@ namespace android.media
 			global::android.media.ExifInterface._getThumbnail7252 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getThumbnail", "()[B");
 			global::android.media.ExifInterface._getLatLong7253 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getLatLong", "([F)Z");
 			global::android.media.ExifInterface._ExifInterface7254 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

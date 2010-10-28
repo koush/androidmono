@@ -23,10 +23,6 @@ namespace org.apache.http.@params
 	internal sealed partial class HttpParams_ : java.lang.Object, HttpParams
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpParams_()
-		{
-			InitJNI();
-		}
 		internal HttpParams_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -156,7 +152,7 @@ namespace org.apache.http.@params
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.@params.HttpParams_.staticClass, global::org.apache.http.@params.HttpParams_._isParameterFalse33798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static HttpParams_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpParams_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpParams"));
@@ -174,6 +170,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.HttpParams_._setBooleanParameter33796 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpParams_.staticClass, "setBooleanParameter", "(Ljava/lang/String;Z)Lorg/apache/http/params/HttpParams;");
 			global::org.apache.http.@params.HttpParams_._isParameterTrue33797 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpParams_.staticClass, "isParameterTrue", "(Ljava/lang/String;)Z");
 			global::org.apache.http.@params.HttpParams_._isParameterFalse33798 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpParams_.staticClass, "isParameterFalse", "(Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

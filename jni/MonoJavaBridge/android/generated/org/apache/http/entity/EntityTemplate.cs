@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class EntityTemplate : org.apache.http.entity.AbstractHttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityTemplate()
-		{
-			InitJNI();
-		}
 		protected EntityTemplate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.EntityTemplate.staticClass, global::org.apache.http.entity.EntityTemplate._EntityTemplate32539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EntityTemplate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.EntityTemplate.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/EntityTemplate"));
@@ -97,6 +93,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.EntityTemplate._isStreaming32537 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.EntityTemplate.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.entity.EntityTemplate._consumeContent32538 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.EntityTemplate.staticClass, "consumeContent", "()V");
 			global::org.apache.http.entity.EntityTemplate._EntityTemplate32539 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.EntityTemplate.staticClass, "<init>", "(Lorg/apache/http/entity/ContentProducer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace java.io
 	internal sealed partial class FilenameFilter_ : java.lang.Object, FilenameFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilenameFilter_()
-		{
-			InitJNI();
-		}
 		internal FilenameFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.io
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FilenameFilter_.staticClass, global::java.io.FilenameFilter_._accept19057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static FilenameFilter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilenameFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilenameFilter"));
 			global::java.io.FilenameFilter_._accept19057 = @__env.GetMethodIDNoThrow(global::java.io.FilenameFilter_.staticClass, "accept", "(Ljava/io/File;Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

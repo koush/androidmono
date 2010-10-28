@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BasicCommentHandler : org.apache.http.impl.cookie.AbstractCookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicCommentHandler()
-		{
-			InitJNI();
-		}
 		protected BasicCommentHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BasicCommentHandler.staticClass, global::org.apache.http.impl.cookie.BasicCommentHandler._BasicCommentHandler33252);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicCommentHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BasicCommentHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BasicCommentHandler"));
 			global::org.apache.http.impl.cookie.BasicCommentHandler._parse33251 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicCommentHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.BasicCommentHandler._BasicCommentHandler33252 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicCommentHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

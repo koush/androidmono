@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class UnsupportedClassVersionError : java.lang.ClassFormatError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UnsupportedClassVersionError()
-		{
-			InitJNI();
-		}
 		protected UnsupportedClassVersionError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedClassVersionError.staticClass, global::java.lang.UnsupportedClassVersionError._UnsupportedClassVersionError20928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UnsupportedClassVersionError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.UnsupportedClassVersionError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/UnsupportedClassVersionError"));
 			global::java.lang.UnsupportedClassVersionError._UnsupportedClassVersionError20927 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedClassVersionError.staticClass, "<init>", "()V");
 			global::java.lang.UnsupportedClassVersionError._UnsupportedClassVersionError20928 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedClassVersionError.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

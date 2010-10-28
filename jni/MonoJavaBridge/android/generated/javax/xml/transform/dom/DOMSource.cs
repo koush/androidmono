@@ -4,10 +4,6 @@ namespace javax.xml.transform.dom
 	public partial class DOMSource : java.lang.Object, Source
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMSource()
-		{
-			InitJNI();
-		}
 		protected DOMSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace javax.xml.transform.dom
 				return "http://javax.xml.transform.dom.DOMSource/feature";
 			}
 		}
-		private static void InitJNI()
+		static DOMSource()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.dom.DOMSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/dom/DOMSource"));
@@ -108,6 +104,9 @@ namespace javax.xml.transform.dom
 			global::javax.xml.transform.dom.DOMSource._DOMSource31061 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "<init>", "()V");
 			global::javax.xml.transform.dom.DOMSource._DOMSource31062 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "<init>", "(Lorg/w3c/dom/Node;)V");
 			global::javax.xml.transform.dom.DOMSource._DOMSource31063 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "<init>", "(Lorg/w3c/dom/Node;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

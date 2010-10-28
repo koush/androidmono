@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TimePicker : android.widget.FrameLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimePicker()
-		{
-			InitJNI();
-		}
 		protected TimePicker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class OnTimeChangedListener_ : java.lang.Object, OnTimeChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnTimeChangedListener_()
-			{
-				InitJNI();
-			}
 			internal OnTimeChangedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.TimePicker.OnTimeChangedListener_.staticClass, global::android.widget.TimePicker.OnTimeChangedListener_._onTimeChanged18167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnTimeChangedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TimePicker.OnTimeChangedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TimePicker$OnTimeChangedListener"));
 				global::android.widget.TimePicker.OnTimeChangedListener_._onTimeChanged18167 = @__env.GetMethodIDNoThrow(global::android.widget.TimePicker.OnTimeChangedListener_.staticClass, "onTimeChanged", "(Landroid/widget/TimePicker;II)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class OnTimeChangedListenerDelegateWrapper : java.lang.Object, OnTimeChangedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnTimeChangedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnTimeChangedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TimePicker.OnTimeChangedListenerDelegateWrapper.staticClass, global::android.widget.TimePicker.OnTimeChangedListenerDelegateWrapper._OnTimeChangedListenerDelegateWrapper18168);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnTimeChangedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TimePicker.OnTimeChangedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TimePicker_OnTimeChangedListenerDelegateWrapper"));
 				global::android.widget.TimePicker.OnTimeChangedListenerDelegateWrapper._OnTimeChangedListenerDelegateWrapper18168 = @__env.GetMethodIDNoThrow(global::android.widget.TimePicker.OnTimeChangedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnTimeChangedListenerDelegateWrapper
@@ -246,7 +240,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TimePicker.staticClass, global::android.widget.TimePicker._TimePicker18182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TimePicker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TimePicker.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TimePicker"));
@@ -264,6 +258,9 @@ namespace android.widget
 			global::android.widget.TimePicker._TimePicker18180 = @__env.GetMethodIDNoThrow(global::android.widget.TimePicker.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TimePicker._TimePicker18181 = @__env.GetMethodIDNoThrow(global::android.widget.TimePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.TimePicker._TimePicker18182 = @__env.GetMethodIDNoThrow(global::android.widget.TimePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.hardware
 	public partial class GeomagneticField : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GeomagneticField()
-		{
-			InitJNI();
-		}
 		protected GeomagneticField(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -130,7 +126,7 @@ namespace android.hardware
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._GeomagneticField6431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GeomagneticField()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.GeomagneticField.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/GeomagneticField"));
@@ -142,6 +138,9 @@ namespace android.hardware
 			global::android.hardware.GeomagneticField._getHorizontalStrength6429 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getHorizontalStrength", "()F");
 			global::android.hardware.GeomagneticField._getFieldStrength6430 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getFieldStrength", "()F");
 			global::android.hardware.GeomagneticField._GeomagneticField6431 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "<init>", "(FFFJ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

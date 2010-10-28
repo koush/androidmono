@@ -4,10 +4,6 @@ namespace android.text
 	public partial class BoringLayout : android.text.Layout, android.text.TextUtils.EllipsizeCallback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BoringLayout()
-		{
-			InitJNI();
-		}
 		protected BoringLayout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.text
 		public partial class Metrics : android.graphics.Paint.FontMetricsInt
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Metrics()
-			{
-				InitJNI();
-			}
 			protected Metrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -50,13 +42,16 @@ namespace android.text
 				{
 				}
 			}
-			private static void InitJNI()
+			static Metrics()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.BoringLayout.Metrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/BoringLayout$Metrics"));
 				global::android.text.BoringLayout.Metrics._toString12694 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.text.BoringLayout.Metrics._Metrics12695 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "<init>", "()V");
 				global::android.text.BoringLayout.Metrics._width12696 = @__env.GetFieldIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "width", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _make12697;
@@ -318,7 +313,7 @@ namespace android.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._BoringLayout12720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BoringLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.BoringLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/BoringLayout"));
@@ -346,6 +341,9 @@ namespace android.text
 			global::android.text.BoringLayout._ellipsized12718 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "ellipsized", "(II)V");
 			global::android.text.BoringLayout._BoringLayout12719 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)V");
 			global::android.text.BoringLayout._BoringLayout12720 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -33,10 +33,6 @@ namespace java.sql
 	internal sealed partial class SQLOutput_ : java.lang.Object, SQLOutput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLOutput_()
-		{
-			InitJNI();
-		}
 		internal SQLOutput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -256,7 +252,7 @@ namespace java.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLOutput_.staticClass, global::java.sql.SQLOutput_._writeNString25030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SQLOutput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLOutput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLOutput"));
@@ -284,6 +280,9 @@ namespace java.sql
 			global::java.sql.SQLOutput_._writeStruct25028 = @__env.GetMethodIDNoThrow(global::java.sql.SQLOutput_.staticClass, "writeStruct", "(Ljava/sql/Struct;)V");
 			global::java.sql.SQLOutput_._writeURL25029 = @__env.GetMethodIDNoThrow(global::java.sql.SQLOutput_.staticClass, "writeURL", "(Ljava/net/URL;)V");
 			global::java.sql.SQLOutput_._writeNString25030 = @__env.GetMethodIDNoThrow(global::java.sql.SQLOutput_.staticClass, "writeNString", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

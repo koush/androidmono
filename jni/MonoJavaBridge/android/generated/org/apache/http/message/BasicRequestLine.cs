@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicRequestLine : java.lang.Object, RequestLine, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicRequestLine()
-		{
-			InitJNI();
-		}
 		protected BasicRequestLine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -84,7 +80,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._BasicRequestLine33644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicRequestLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicRequestLine.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicRequestLine"));
@@ -94,6 +90,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicRequestLine._getProtocolVersion33642 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
 			global::org.apache.http.message.BasicRequestLine._getUri33643 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "getUri", "()Ljava/lang/String;");
 			global::org.apache.http.message.BasicRequestLine._BasicRequestLine33644 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

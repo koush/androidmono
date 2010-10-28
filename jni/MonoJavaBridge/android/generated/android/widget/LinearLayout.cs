@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class LinearLayout : android.view.ViewGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LinearLayout()
-		{
-			InitJNI();
-		}
 		protected LinearLayout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public new partial class LayoutParams : android.view.ViewGroup.MarginLayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -90,7 +82,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.LinearLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/LinearLayout$LayoutParams"));
@@ -102,6 +94,9 @@ namespace android.widget
 				global::android.widget.LinearLayout.LayoutParams._LayoutParams17299 = @__env.GetMethodIDNoThrow(global::android.widget.LinearLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
 				global::android.widget.LinearLayout.LayoutParams._weight17300 = @__env.GetFieldIDNoThrow(global::android.widget.LinearLayout.LayoutParams.staticClass, "weight", "F");
 				global::android.widget.LinearLayout.LayoutParams._gravity17301 = @__env.GetFieldIDNoThrow(global::android.widget.LinearLayout.LayoutParams.staticClass, "gravity", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new int Gravity
@@ -362,7 +357,7 @@ namespace android.widget
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static LinearLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.LinearLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/LinearLayout"));
@@ -386,6 +381,9 @@ namespace android.widget
 			global::android.widget.LinearLayout._setVerticalGravity17319 = @__env.GetMethodIDNoThrow(global::android.widget.LinearLayout.staticClass, "setVerticalGravity", "(I)V");
 			global::android.widget.LinearLayout._LinearLayout17320 = @__env.GetMethodIDNoThrow(global::android.widget.LinearLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.LinearLayout._LinearLayout17321 = @__env.GetMethodIDNoThrow(global::android.widget.LinearLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

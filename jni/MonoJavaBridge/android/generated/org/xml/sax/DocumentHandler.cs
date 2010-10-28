@@ -17,10 +17,6 @@ namespace org.xml.sax
 	internal sealed partial class DocumentHandler_ : java.lang.Object, DocumentHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentHandler_()
-		{
-			InitJNI();
-		}
 		internal DocumentHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace org.xml.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.DocumentHandler_.staticClass, global::org.xml.sax.DocumentHandler_._setDocumentLocator34982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static DocumentHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.DocumentHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/DocumentHandler"));
@@ -108,6 +104,9 @@ namespace org.xml.sax
 			global::org.xml.sax.DocumentHandler_._ignorableWhitespace34980 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DocumentHandler_.staticClass, "ignorableWhitespace", "([CII)V");
 			global::org.xml.sax.DocumentHandler_._processingInstruction34981 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DocumentHandler_.staticClass, "processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.DocumentHandler_._setDocumentLocator34982 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DocumentHandler_.staticClass, "setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

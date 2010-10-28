@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class SecretKeySpec : java.lang.Object, java.security.spec.KeySpec, SecretKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecretKeySpec()
-		{
-			InitJNI();
-		}
 		protected SecretKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -91,7 +87,7 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._SecretKeySpec28830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecretKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.SecretKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/SecretKeySpec"));
@@ -102,6 +98,9 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.SecretKeySpec._getFormat28828 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::javax.crypto.spec.SecretKeySpec._SecretKeySpec28829 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "<init>", "([BLjava/lang/String;)V");
 			global::javax.crypto.spec.SecretKeySpec._SecretKeySpec28830 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "<init>", "([BIILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

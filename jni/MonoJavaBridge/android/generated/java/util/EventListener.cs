@@ -9,17 +9,16 @@ namespace java.util
 	internal sealed partial class EventListener_ : java.lang.Object, EventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EventListener_()
-		{
-			InitJNI();
-		}
 		internal EventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static EventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EventListener"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.app
 	public sealed partial class SearchableInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SearchableInfo()
-		{
-			InitJNI();
-		}
 		internal SearchableInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -387,7 +383,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.SearchableInfo.staticClass, _CREATOR2135)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static SearchableInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.SearchableInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchableInfo"));
@@ -418,6 +414,9 @@ namespace android.app
 			global::android.app.SearchableInfo._getVoiceMaxResults2133 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceMaxResults", "()I");
 			global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2134 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldIncludeInGlobalSearch", "()Z");
 			global::android.app.SearchableInfo._CREATOR2135 = @__env.GetStaticFieldIDNoThrow(global::android.app.SearchableInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

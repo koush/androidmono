@@ -10,10 +10,6 @@ namespace javax.sql
 	internal sealed partial class RowSetReader_ : java.lang.Object, RowSetReader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSetReader_()
-		{
-			InitJNI();
-		}
 		internal RowSetReader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_.staticClass, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RowSetReader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetReader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetReader"));
 			global::javax.sql.RowSetReader_._readData30621 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetReader_.staticClass, "readData", "(Ljavax/sql/RowSetInternal;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -20,10 +20,6 @@ namespace java.sql
 	internal sealed partial class Array_ : java.lang.Object, Array
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Array_()
-		{
-			InitJNI();
-		}
 		internal Array_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -126,7 +122,7 @@ namespace java.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Array_.staticClass, global::java.sql.Array_._free24090);
 		}
-		private static void InitJNI()
+		static Array_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Array_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Array"));
@@ -141,6 +137,9 @@ namespace java.sql
 			global::java.sql.Array_._getResultSet24088 = @__env.GetMethodIDNoThrow(global::java.sql.Array_.staticClass, "getResultSet", "(JI)Ljava/sql/ResultSet;");
 			global::java.sql.Array_._getResultSet24089 = @__env.GetMethodIDNoThrow(global::java.sql.Array_.staticClass, "getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;");
 			global::java.sql.Array_._free24090 = @__env.GetMethodIDNoThrow(global::java.sql.Array_.staticClass, "free", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

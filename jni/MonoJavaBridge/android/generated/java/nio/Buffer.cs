@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class Buffer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Buffer()
-		{
-			InitJNI();
-		}
 		protected Buffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -127,7 +123,7 @@ namespace java.nio
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly22010;
 		public abstract bool isReadOnly();
-		private static void InitJNI()
+		static Buffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.Buffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/Buffer"));
@@ -148,16 +144,15 @@ namespace java.nio
 			global::java.nio.Buffer._hasRemaining22009 = @__env.GetMethodIDNoThrow(global::java.nio.Buffer.staticClass, "hasRemaining", "()Z");
 			global::java.nio.Buffer._isReadOnly22010 = @__env.GetMethodIDNoThrow(global::java.nio.Buffer.staticClass, "isReadOnly", "()Z");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.Buffer))]
 	internal sealed partial class Buffer_ : java.nio.Buffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Buffer_()
-		{
-			InitJNI();
-		}
 		internal Buffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -197,7 +192,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.Buffer_.staticClass, global::java.nio.Buffer_._isReadOnly22014);
 		}
-		private static void InitJNI()
+		static Buffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.Buffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/Buffer"));
@@ -205,6 +200,9 @@ namespace java.nio
 			global::java.nio.Buffer_._array22012 = @__env.GetMethodIDNoThrow(global::java.nio.Buffer_.staticClass, "array", "()Ljava/lang/Object;");
 			global::java.nio.Buffer_._arrayOffset22013 = @__env.GetMethodIDNoThrow(global::java.nio.Buffer_.staticClass, "arrayOffset", "()I");
 			global::java.nio.Buffer_._isReadOnly22014 = @__env.GetMethodIDNoThrow(global::java.nio.Buffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

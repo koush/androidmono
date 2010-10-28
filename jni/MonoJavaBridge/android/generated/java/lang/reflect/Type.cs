@@ -9,17 +9,16 @@ namespace java.lang.reflect
 	internal sealed partial class Type_ : java.lang.Object, Type
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Type_()
-		{
-			InitJNI();
-		}
 		internal Type_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Type_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Type_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Type"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -13,10 +13,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class DOMImplementationLS_ : java.lang.Object, DOMImplementationLS
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMImplementationLS_()
-		{
-			InitJNI();
-		}
 		internal DOMImplementationLS_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.w3c.dom.ls
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSOutput>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, global::org.w3c.dom.ls.DOMImplementationLS_._createLSOutput34885)) as org.w3c.dom.ls.LSOutput;
 		}
-		private static void InitJNI()
+		static DOMImplementationLS_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.DOMImplementationLS_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/DOMImplementationLS"));
@@ -64,6 +60,9 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.DOMImplementationLS_._createLSSerializer34883 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, "createLSSerializer", "()Lorg/w3c/dom/ls/LSSerializer;");
 			global::org.w3c.dom.ls.DOMImplementationLS_._createLSInput34884 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, "createLSInput", "()Lorg/w3c/dom/ls/LSInput;");
 			global::org.w3c.dom.ls.DOMImplementationLS_._createLSOutput34885 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, "createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

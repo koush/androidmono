@@ -17,10 +17,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSOutput_ : java.lang.Object, LSOutput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSOutput_()
-		{
-			InitJNI();
-		}
 		internal LSOutput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace org.w3c.dom.ls
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._getByteStream34915)) as java.io.OutputStream;
 		}
-		private static void InitJNI()
+		static LSOutput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSOutput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSOutput"));
@@ -108,6 +104,9 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.LSOutput_._setSystemId34913 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSOutput_.staticClass, "setSystemId", "(Ljava/lang/String;)V");
 			global::org.w3c.dom.ls.LSOutput_._setByteStream34914 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSOutput_.staticClass, "setByteStream", "(Ljava/io/OutputStream;)V");
 			global::org.w3c.dom.ls.LSOutput_._getByteStream34915 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSOutput_.staticClass, "getByteStream", "()Ljava/io/OutputStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

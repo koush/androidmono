@@ -12,10 +12,6 @@ namespace android.view
 	internal sealed partial class ViewManager_ : java.lang.Object, ViewManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewManager_()
-		{
-			InitJNI();
-		}
 		internal ViewManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewManager_.staticClass, global::android.view.ViewManager_._removeView15187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ViewManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewManager"));
 			global::android.view.ViewManager_._addView15185 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
 			global::android.view.ViewManager_._updateViewLayout15186 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
 			global::android.view.ViewManager_._removeView15187 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "removeView", "(Landroid/view/View;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

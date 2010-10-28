@@ -4,10 +4,6 @@ namespace org.apache.http.client.@params
 	public partial class HttpClientParams : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpClientParams()
-		{
-			InitJNI();
-		}
 		protected HttpClientParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace org.apache.http.client.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._getCookiePolicy32021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static HttpClientParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.@params.HttpClientParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/HttpClientParams"));
@@ -57,6 +53,9 @@ namespace org.apache.http.client.@params
 			global::org.apache.http.client.@params.HttpClientParams._isAuthenticating32019 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.@params.HttpClientParams.staticClass, "isAuthenticating", "(Lorg/apache/http/params/HttpParams;)Z");
 			global::org.apache.http.client.@params.HttpClientParams._setAuthenticating32020 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.@params.HttpClientParams.staticClass, "setAuthenticating", "(Lorg/apache/http/params/HttpParams;Z)V");
 			global::org.apache.http.client.@params.HttpClientParams._getCookiePolicy32021 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.@params.HttpClientParams.staticClass, "getCookiePolicy", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

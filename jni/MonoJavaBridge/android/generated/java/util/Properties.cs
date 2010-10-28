@@ -4,10 +4,6 @@ namespace java.util
 	public partial class Properties : java.util.Hashtable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Properties()
-		{
-			InitJNI();
-		}
 		protected Properties(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -160,7 +156,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Properties.staticClass, global::java.util.Properties._Properties26572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Properties()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Properties.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Properties"));
@@ -181,6 +177,9 @@ namespace java.util
 			global::java.util.Properties._stringPropertyNames26570 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "stringPropertyNames", "()Ljava/util/Set;");
 			global::java.util.Properties._Properties26571 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "()V");
 			global::java.util.Properties._Properties26572 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "(Ljava/util/Properties;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

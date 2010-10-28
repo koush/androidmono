@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class StrictMath : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StrictMath()
-		{
-			InitJNI();
-		}
 		internal StrictMath(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -349,7 +345,7 @@ namespace java.lang
 				return 3.141592653589793;
 			}
 		}
-		private static void InitJNI()
+		static StrictMath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.StrictMath.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/StrictMath"));
@@ -407,6 +403,9 @@ namespace java.lang
 			global::java.lang.StrictMath._nextAfter20593 = @__env.GetStaticMethodIDNoThrow(global::java.lang.StrictMath.staticClass, "nextAfter", "(FD)F");
 			global::java.lang.StrictMath._nextUp20594 = @__env.GetStaticMethodIDNoThrow(global::java.lang.StrictMath.staticClass, "nextUp", "(F)F");
 			global::java.lang.StrictMath._nextUp20595 = @__env.GetStaticMethodIDNoThrow(global::java.lang.StrictMath.staticClass, "nextUp", "(D)D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

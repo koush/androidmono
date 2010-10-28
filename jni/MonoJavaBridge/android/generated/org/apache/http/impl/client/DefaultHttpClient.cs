@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class DefaultHttpClient : org.apache.http.impl.client.AbstractHttpClient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultHttpClient()
-		{
-			InitJNI();
-		}
 		protected DefaultHttpClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -185,7 +181,7 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.DefaultHttpClient.staticClass, global::org.apache.http.impl.client.DefaultHttpClient._DefaultHttpClient32902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultHttpClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.DefaultHttpClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/DefaultHttpClient"));
@@ -209,6 +205,9 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.DefaultHttpClient._DefaultHttpClient32900 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultHttpClient.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
 			global::org.apache.http.impl.client.DefaultHttpClient._DefaultHttpClient32901 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultHttpClient.staticClass, "<init>", "()V");
 			global::org.apache.http.impl.client.DefaultHttpClient._DefaultHttpClient32902 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultHttpClient.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

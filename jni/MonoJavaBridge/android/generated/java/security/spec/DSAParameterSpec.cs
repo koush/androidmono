@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class DSAParameterSpec : java.lang.Object, AlgorithmParameterSpec, java.security.interfaces.DSAParams
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DSAParameterSpec()
-		{
-			InitJNI();
-		}
 		protected DSAParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.DSAParameterSpec.staticClass, global::java.security.spec.DSAParameterSpec._DSAParameterSpec23967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DSAParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.DSAParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/DSAParameterSpec"));
@@ -74,6 +70,9 @@ namespace java.security.spec
 			global::java.security.spec.DSAParameterSpec._getQ23965 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAParameterSpec.staticClass, "getQ", "()Ljava/math/BigInteger;");
 			global::java.security.spec.DSAParameterSpec._getG23966 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAParameterSpec.staticClass, "getG", "()Ljava/math/BigInteger;");
 			global::java.security.spec.DSAParameterSpec._DSAParameterSpec23967 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAParameterSpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

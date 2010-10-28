@@ -4,10 +4,6 @@ namespace android.text.util
 	public partial class Rfc822Tokenizer : java.lang.Object, android.widget.MultiAutoCompleteTextView.Tokenizer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Rfc822Tokenizer()
-		{
-			InitJNI();
-		}
 		protected Rfc822Tokenizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace android.text.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer13671);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Rfc822Tokenizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.util.Rfc822Tokenizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Rfc822Tokenizer"));
@@ -87,6 +83,9 @@ namespace android.text.util
 			global::android.text.util.Rfc822Tokenizer._findTokenEnd13669 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
 			global::android.text.util.Rfc822Tokenizer._terminateToken13670 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
 			global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer13671 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

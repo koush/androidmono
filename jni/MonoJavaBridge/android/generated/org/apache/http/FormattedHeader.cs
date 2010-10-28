@@ -11,10 +11,6 @@ namespace org.apache.http
 	internal sealed partial class FormattedHeader_ : java.lang.Object, FormattedHeader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FormattedHeader_()
-		{
-			InitJNI();
-		}
 		internal FormattedHeader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.HeaderElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.FormattedHeader_.staticClass, global::org.apache.http.FormattedHeader_._getElements31496)) as org.apache.http.HeaderElement[];
 		}
-		private static void InitJNI()
+		static FormattedHeader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.FormattedHeader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/FormattedHeader"));
@@ -72,6 +68,9 @@ namespace org.apache.http
 			global::org.apache.http.FormattedHeader_._getName31494 = @__env.GetMethodIDNoThrow(global::org.apache.http.FormattedHeader_.staticClass, "getName", "()Ljava/lang/String;");
 			global::org.apache.http.FormattedHeader_._getValue31495 = @__env.GetMethodIDNoThrow(global::org.apache.http.FormattedHeader_.staticClass, "getValue", "()Ljava/lang/String;");
 			global::org.apache.http.FormattedHeader_._getElements31496 = @__env.GetMethodIDNoThrow(global::org.apache.http.FormattedHeader_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

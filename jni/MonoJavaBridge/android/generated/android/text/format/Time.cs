@@ -4,10 +4,6 @@ namespace android.text.format
 	public partial class Time : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Time()
-		{
-			InitJNI();
-		}
 		protected Time(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -527,7 +523,7 @@ namespace android.text.format
 				return 6;
 			}
 		}
-		private static void InitJNI()
+		static Time()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.format.Time.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/Time"));
@@ -570,6 +566,9 @@ namespace android.text.format
 			global::android.text.format.Time._isDst13227 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "isDst", "I");
 			global::android.text.format.Time._gmtoff13228 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "gmtoff", "J");
 			global::android.text.format.Time._timezone13229 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "timezone", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

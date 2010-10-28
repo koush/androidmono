@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class SynchronousQueue : java.util.AbstractQueue, BlockingQueue, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SynchronousQueue()
-		{
-			InitJNI();
-		}
 		protected SynchronousQueue(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -218,7 +214,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.SynchronousQueue.staticClass, global::java.util.concurrent.SynchronousQueue._SynchronousQueue27454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SynchronousQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.SynchronousQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/SynchronousQueue"));
@@ -245,6 +241,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.SynchronousQueue._drainTo27452 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.SynchronousQueue.staticClass, "drainTo", "(Ljava/util/Collection;)I");
 			global::java.util.concurrent.SynchronousQueue._SynchronousQueue27453 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.SynchronousQueue.staticClass, "<init>", "()V");
 			global::java.util.concurrent.SynchronousQueue._SynchronousQueue27454 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.SynchronousQueue.staticClass, "<init>", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

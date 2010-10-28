@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class RSAMultiPrimePrivateCrtKeySpec : java.security.spec.RSAPrivateKeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAMultiPrimePrivateCrtKeySpec()
-		{
-			InitJNI();
-		}
 		protected RSAMultiPrimePrivateCrtKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -130,7 +126,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAMultiPrimePrivateCrtKeySpec.staticClass, global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec._RSAMultiPrimePrivateCrtKeySpec24059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RSAMultiPrimePrivateCrtKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAMultiPrimePrivateCrtKeySpec"));
@@ -142,6 +138,9 @@ namespace java.security.spec
 			global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec._getCrtCoefficient24057 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
 			global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec._getOtherPrimeInfo24058 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec.staticClass, "getOtherPrimeInfo", "()[Ljava/security/spec/RSAOtherPrimeInfo;");
 			global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec._RSAMultiPrimePrivateCrtKeySpec24059 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAMultiPrimePrivateCrtKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;[Ljava/security/spec/RSAOtherPrimeInfo;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

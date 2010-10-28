@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Binder : java.lang.Object, IBinder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Binder()
-		{
-			InitJNI();
-		}
 		protected Binder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -195,7 +191,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Binder.staticClass, global::android.os.Binder._Binder9557);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Binder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Binder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Binder"));
@@ -218,6 +214,9 @@ namespace android.os
 			global::android.os.Binder._attachInterface9555 = @__env.GetMethodIDNoThrow(global::android.os.Binder.staticClass, "attachInterface", "(Landroid/os/IInterface;Ljava/lang/String;)V");
 			global::android.os.Binder._onTransact9556 = @__env.GetMethodIDNoThrow(global::android.os.Binder.staticClass, "onTransact", "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z");
 			global::android.os.Binder._Binder9557 = @__env.GetMethodIDNoThrow(global::android.os.Binder.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

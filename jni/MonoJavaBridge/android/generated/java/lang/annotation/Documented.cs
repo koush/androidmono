@@ -9,10 +9,6 @@ namespace java.lang.annotation
 	internal sealed partial class Documented_ : java.lang.Object, Documented
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Documented_()
-		{
-			InitJNI();
-		}
 		internal Documented_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.lang.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Documented_.staticClass, global::java.lang.annotation.Documented_._annotationType20951)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Documented_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.Documented_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/Documented"));
@@ -60,6 +56,9 @@ namespace java.lang.annotation
 			global::java.lang.annotation.Documented_._toString20949 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Documented_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.annotation.Documented_._hashCode20950 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Documented_.staticClass, "hashCode", "()I");
 			global::java.lang.annotation.Documented_._annotationType20951 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.Documented_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

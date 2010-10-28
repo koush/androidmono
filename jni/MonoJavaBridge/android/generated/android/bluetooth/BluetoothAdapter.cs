@@ -4,10 +4,6 @@ namespace android.bluetooth
 	public sealed partial class BluetoothAdapter : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BluetoothAdapter()
-		{
-			InitJNI();
-		}
 		internal BluetoothAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -342,7 +338,7 @@ namespace android.bluetooth
 				return "android.bluetooth.adapter.extra.LOCAL_NAME";
 			}
 		}
-		private static void InitJNI()
+		static BluetoothAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.bluetooth.BluetoothAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothAdapter"));
@@ -362,6 +358,9 @@ namespace android.bluetooth
 			global::android.bluetooth.BluetoothAdapter._getBondedDevices2416 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "getBondedDevices", "()Ljava/util/Set;");
 			global::android.bluetooth.BluetoothAdapter._listenUsingRfcommWithServiceRecord2417 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "listenUsingRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;");
 			global::android.bluetooth.BluetoothAdapter._checkBluetoothAddress2418 = @__env.GetStaticMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "checkBluetoothAddress", "(Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text
 	public abstract partial class LoginFilter : java.lang.Object, InputFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LoginFilter()
-		{
-			InitJNI();
-		}
 		protected LoginFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.text
 		public partial class PasswordFilterGMail : android.text.LoginFilter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PasswordFilterGMail()
-			{
-				InitJNI();
-			}
 			protected PasswordFilterGMail(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -45,7 +37,7 @@ namespace android.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.PasswordFilterGMail.staticClass, global::android.text.LoginFilter.PasswordFilterGMail._PasswordFilterGMail12889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PasswordFilterGMail()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.LoginFilter.PasswordFilterGMail.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/LoginFilter$PasswordFilterGMail"));
@@ -53,15 +45,14 @@ namespace android.text
 				global::android.text.LoginFilter.PasswordFilterGMail._PasswordFilterGMail12888 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.PasswordFilterGMail.staticClass, "<init>", "()V");
 				global::android.text.LoginFilter.PasswordFilterGMail._PasswordFilterGMail12889 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.PasswordFilterGMail.staticClass, "<init>", "(Z)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class UsernameFilterGMail : android.text.LoginFilter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static UsernameFilterGMail()
-			{
-				InitJNI();
-			}
 			protected UsernameFilterGMail(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -88,7 +79,7 @@ namespace android.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGMail.staticClass, global::android.text.LoginFilter.UsernameFilterGMail._UsernameFilterGMail12892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static UsernameFilterGMail()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.LoginFilter.UsernameFilterGMail.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/LoginFilter$UsernameFilterGMail"));
@@ -96,15 +87,14 @@ namespace android.text
 				global::android.text.LoginFilter.UsernameFilterGMail._UsernameFilterGMail12891 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.UsernameFilterGMail.staticClass, "<init>", "()V");
 				global::android.text.LoginFilter.UsernameFilterGMail._UsernameFilterGMail12892 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.UsernameFilterGMail.staticClass, "<init>", "(Z)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class UsernameFilterGeneric : android.text.LoginFilter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static UsernameFilterGeneric()
-			{
-				InitJNI();
-			}
 			protected UsernameFilterGeneric(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -131,13 +121,16 @@ namespace android.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGeneric.staticClass, global::android.text.LoginFilter.UsernameFilterGeneric._UsernameFilterGeneric12895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static UsernameFilterGeneric()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.LoginFilter.UsernameFilterGeneric.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/LoginFilter$UsernameFilterGeneric"));
 				global::android.text.LoginFilter.UsernameFilterGeneric._isAllowed12893 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.UsernameFilterGeneric.staticClass, "isAllowed", "(C)Z");
 				global::android.text.LoginFilter.UsernameFilterGeneric._UsernameFilterGeneric12894 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.UsernameFilterGeneric.staticClass, "<init>", "()V");
 				global::android.text.LoginFilter.UsernameFilterGeneric._UsernameFilterGeneric12895 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.UsernameFilterGeneric.staticClass, "<init>", "(Z)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _filter12896;
@@ -182,7 +175,7 @@ namespace android.text
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._onInvalidCharacter12900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LoginFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.LoginFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/LoginFilter"));
@@ -192,16 +185,15 @@ namespace android.text
 			global::android.text.LoginFilter._isAllowed12899 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.staticClass, "isAllowed", "(C)Z");
 			global::android.text.LoginFilter._onInvalidCharacter12900 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter.staticClass, "onInvalidCharacter", "(C)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.LoginFilter))]
 	internal sealed partial class LoginFilter_ : android.text.LoginFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LoginFilter_()
-		{
-			InitJNI();
-		}
 		internal LoginFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -214,11 +206,14 @@ namespace android.text
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.LoginFilter_.staticClass, global::android.text.LoginFilter_._isAllowed12901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LoginFilter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.LoginFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/LoginFilter"));
 			global::android.text.LoginFilter_._isAllowed12901 = @__env.GetMethodIDNoThrow(global::android.text.LoginFilter_.staticClass, "isAllowed", "(C)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

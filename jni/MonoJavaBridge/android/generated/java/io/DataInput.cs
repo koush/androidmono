@@ -24,10 +24,6 @@ namespace java.io
 	internal sealed partial class DataInput_ : java.lang.Object, DataInput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataInput_()
-		{
-			InitJNI();
-		}
 		internal DataInput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -166,7 +162,7 @@ namespace java.io
 			else
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readDouble18898);
 		}
-		private static void InitJNI()
+		static DataInput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.DataInput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/DataInput"));
@@ -185,6 +181,9 @@ namespace java.io
 			global::java.io.DataInput_._readUnsignedByte18896 = @__env.GetMethodIDNoThrow(global::java.io.DataInput_.staticClass, "readUnsignedByte", "()I");
 			global::java.io.DataInput_._readUnsignedShort18897 = @__env.GetMethodIDNoThrow(global::java.io.DataInput_.staticClass, "readUnsignedShort", "()I");
 			global::java.io.DataInput_._readDouble18898 = @__env.GetMethodIDNoThrow(global::java.io.DataInput_.staticClass, "readDouble", "()D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

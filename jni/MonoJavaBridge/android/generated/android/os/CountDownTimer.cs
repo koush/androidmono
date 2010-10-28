@@ -4,10 +4,6 @@ namespace android.os
 	public abstract partial class CountDownTimer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CountDownTimer()
-		{
-			InitJNI();
-		}
 		protected CountDownTimer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -40,7 +36,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.CountDownTimer.staticClass, global::android.os.CountDownTimer._CountDownTimer9692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CountDownTimer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.CountDownTimer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/CountDownTimer"));
@@ -50,16 +46,15 @@ namespace android.os
 			global::android.os.CountDownTimer._onFinish9691 = @__env.GetMethodIDNoThrow(global::android.os.CountDownTimer.staticClass, "onFinish", "()V");
 			global::android.os.CountDownTimer._CountDownTimer9692 = @__env.GetMethodIDNoThrow(global::android.os.CountDownTimer.staticClass, "<init>", "(JJ)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.CountDownTimer))]
 	internal sealed partial class CountDownTimer_ : android.os.CountDownTimer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CountDownTimer_()
-		{
-			InitJNI();
-		}
 		internal CountDownTimer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,12 +76,15 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.CountDownTimer_.staticClass, global::android.os.CountDownTimer_._onFinish9694);
 		}
-		private static void InitJNI()
+		static CountDownTimer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.CountDownTimer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/CountDownTimer"));
 			global::android.os.CountDownTimer_._onTick9693 = @__env.GetMethodIDNoThrow(global::android.os.CountDownTimer_.staticClass, "onTick", "(J)V");
 			global::android.os.CountDownTimer_._onFinish9694 = @__env.GetMethodIDNoThrow(global::android.os.CountDownTimer_.staticClass, "onFinish", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

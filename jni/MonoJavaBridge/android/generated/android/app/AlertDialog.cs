@@ -4,10 +4,6 @@ namespace android.app
 	public partial class AlertDialog : android.app.Dialog, android.content.DialogInterface
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlertDialog()
-		{
-			InitJNI();
-		}
 		protected AlertDialog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.app
 		public partial class Builder : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Builder()
-			{
-				InitJNI();
-			}
 			protected Builder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -450,7 +442,7 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._Builder1705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Builder()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.AlertDialog.Builder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AlertDialog$Builder"));
@@ -487,6 +479,9 @@ namespace android.app
 				global::android.app.AlertDialog.Builder._setView1703 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.Builder.staticClass, "setView", "(Landroid/view/View;)Landroid/app/AlertDialog$Builder;");
 				global::android.app.AlertDialog.Builder._setInverseBackgroundForced1704 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.Builder.staticClass, "setInverseBackgroundForced", "(Z)Landroid/app/AlertDialog$Builder;");
 				global::android.app.AlertDialog.Builder._Builder1705 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.Builder.staticClass, "<init>", "(Landroid/content/Context;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1706;
@@ -781,7 +776,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.staticClass, global::android.app.AlertDialog._AlertDialog1729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlertDialog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.AlertDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AlertDialog"));
@@ -809,6 +804,9 @@ namespace android.app
 			global::android.app.AlertDialog._AlertDialog1727 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
 			global::android.app.AlertDialog._AlertDialog1728 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V");
 			global::android.app.AlertDialog._AlertDialog1729 = @__env.GetMethodIDNoThrow(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

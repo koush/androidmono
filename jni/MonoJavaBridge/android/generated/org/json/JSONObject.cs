@@ -4,10 +4,6 @@ namespace org.json
 	public partial class JSONObject : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JSONObject()
-		{
-			InitJNI();
-		}
 		protected JSONObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -400,7 +396,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.json.JSONObject.staticClass, _NULL34125)) as java.lang.Object;
 			}
 		}
-		private static void InitJNI()
+		static JSONObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONObject"));
@@ -449,6 +445,9 @@ namespace org.json
 			global::org.json.JSONObject._JSONObject34123 = @__env.GetMethodIDNoThrow(global::org.json.JSONObject.staticClass, "<init>", "()V");
 			global::org.json.JSONObject._JSONObject34124 = @__env.GetMethodIDNoThrow(global::org.json.JSONObject.staticClass, "<init>", "(Ljava/util/Map;)V");
 			global::org.json.JSONObject._NULL34125 = @__env.GetStaticFieldIDNoThrow(global::org.json.JSONObject.staticClass, "NULL", "Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

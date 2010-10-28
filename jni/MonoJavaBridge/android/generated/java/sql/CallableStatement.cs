@@ -111,10 +111,6 @@ namespace java.sql
 	internal sealed partial class CallableStatement_ : java.lang.Object, CallableStatement
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CallableStatement_()
-		{
-			InitJNI();
-		}
 		internal CallableStatement_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1864,7 +1860,7 @@ namespace java.sql
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.CallableStatement_.staticClass, global::java.sql.CallableStatement_._isPoolable24306);
 		}
-		private static void InitJNI()
+		static CallableStatement_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.CallableStatement_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/CallableStatement"));
@@ -2062,6 +2058,9 @@ namespace java.sql
 			global::java.sql.CallableStatement_._getResultSetHoldability24304 = @__env.GetMethodIDNoThrow(global::java.sql.CallableStatement_.staticClass, "getResultSetHoldability", "()I");
 			global::java.sql.CallableStatement_._setPoolable24305 = @__env.GetMethodIDNoThrow(global::java.sql.CallableStatement_.staticClass, "setPoolable", "(Z)V");
 			global::java.sql.CallableStatement_._isPoolable24306 = @__env.GetMethodIDNoThrow(global::java.sql.CallableStatement_.staticClass, "isPoolable", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

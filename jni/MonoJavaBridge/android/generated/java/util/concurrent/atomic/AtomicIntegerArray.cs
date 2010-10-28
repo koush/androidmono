@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public partial class AtomicIntegerArray : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicIntegerArray()
-		{
-			InitJNI();
-		}
 		protected AtomicIntegerArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._AtomicIntegerArray27566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicIntegerArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicIntegerArray"));
@@ -171,6 +167,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicIntegerArray._addAndGet27564 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "addAndGet", "(II)I");
 			global::java.util.concurrent.atomic.AtomicIntegerArray._AtomicIntegerArray27565 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.atomic.AtomicIntegerArray._AtomicIntegerArray27566 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "<init>", "([I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

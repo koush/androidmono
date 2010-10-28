@@ -4,10 +4,6 @@ namespace android.content
 	public partial class IntentSender : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IntentSender()
-		{
-			InitJNI();
-		}
 		protected IntentSender(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.content
 		internal sealed partial class OnFinished_ : java.lang.Object, OnFinished
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFinished_()
-			{
-				InitJNI();
-			}
 			internal OnFinished_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.content
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.IntentSender.OnFinished_.staticClass, global::android.content.IntentSender.OnFinished_._onSendFinished3467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			}
-			private static void InitJNI()
+			static OnFinished_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.OnFinished_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender$OnFinished"));
 				global::android.content.IntentSender.OnFinished_._onSendFinished3467 = @__env.GetMethodIDNoThrow(global::android.content.IntentSender.OnFinished_.staticClass, "onSendFinished", "(Landroid/content/IntentSender;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.content
 		internal partial class OnFinishedDelegateWrapper : java.lang.Object, OnFinished
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFinishedDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnFinishedDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.content
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentSender.OnFinishedDelegateWrapper.staticClass, global::android.content.IntentSender.OnFinishedDelegateWrapper._OnFinishedDelegateWrapper3468);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnFinishedDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.OnFinishedDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender_OnFinishedDelegateWrapper"));
 				global::android.content.IntentSender.OnFinishedDelegateWrapper._OnFinishedDelegateWrapper3468 = @__env.GetMethodIDNoThrow(global::android.content.IntentSender.OnFinishedDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnFinishedDelegateWrapper
@@ -90,10 +84,6 @@ namespace android.content
 		public partial class SendIntentException : android.util.AndroidException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SendIntentException()
-			{
-				InitJNI();
-			}
 			protected SendIntentException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -118,13 +108,16 @@ namespace android.content
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentSender.SendIntentException.staticClass, global::android.content.IntentSender.SendIntentException._SendIntentException3471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SendIntentException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.SendIntentException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender$SendIntentException"));
 				global::android.content.IntentSender.SendIntentException._SendIntentException3469 = @__env.GetMethodIDNoThrow(global::android.content.IntentSender.SendIntentException.staticClass, "<init>", "()V");
 				global::android.content.IntentSender.SendIntentException._SendIntentException3470 = @__env.GetMethodIDNoThrow(global::android.content.IntentSender.SendIntentException.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::android.content.IntentSender.SendIntentException._SendIntentException3471 = @__env.GetMethodIDNoThrow(global::android.content.IntentSender.SendIntentException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals3472;
@@ -206,7 +199,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.IntentSender.staticClass, _CREATOR3480)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static IntentSender()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.IntentSender.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender"));
@@ -219,6 +212,9 @@ namespace android.content
 			global::android.content.IntentSender._writeIntentSenderOrNullToParcel3478 = @__env.GetStaticMethodIDNoThrow(global::android.content.IntentSender.staticClass, "writeIntentSenderOrNullToParcel", "(Landroid/content/IntentSender;Landroid/os/Parcel;)V");
 			global::android.content.IntentSender._readIntentSenderOrNullFromParcel3479 = @__env.GetStaticMethodIDNoThrow(global::android.content.IntentSender.staticClass, "readIntentSenderOrNullFromParcel", "(Landroid/os/Parcel;)Landroid/content/IntentSender;");
 			global::android.content.IntentSender._CREATOR3480 = @__env.GetStaticFieldIDNoThrow(global::android.content.IntentSender.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

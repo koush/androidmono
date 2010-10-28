@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class SSLEngineResult : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLEngineResult()
-		{
-			InitJNI();
-		}
 		protected SSLEngineResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace javax.net.ssl
 		public sealed partial class HandshakeStatus : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static HandshakeStatus()
-			{
-				InitJNI();
-			}
 			internal HandshakeStatus(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -79,7 +71,7 @@ namespace javax.net.ssl
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.net.ssl.SSLEngineResult.HandshakeStatus>(@__env.GetStaticObjectField(global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass, _NEED_UNWRAP29974)) as javax.net.ssl.SSLEngineResult.HandshakeStatus;
 				}
 			}
-			private static void InitJNI()
+			static HandshakeStatus()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLEngineResult$HandshakeStatus"));
@@ -91,15 +83,14 @@ namespace javax.net.ssl
 				global::javax.net.ssl.SSLEngineResult.HandshakeStatus._NEED_WRAP29973 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass, "NEED_WRAP", "Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;");
 				global::javax.net.ssl.SSLEngineResult.HandshakeStatus._NEED_UNWRAP29974 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass, "NEED_UNWRAP", "Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Status : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Status()
-			{
-				InitJNI();
-			}
 			internal Status(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -151,7 +142,7 @@ namespace javax.net.ssl
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.net.ssl.SSLEngineResult.Status>(@__env.GetStaticObjectField(global::javax.net.ssl.SSLEngineResult.Status.staticClass, _CLOSED29980)) as javax.net.ssl.SSLEngineResult.Status;
 				}
 			}
-			private static void InitJNI()
+			static Status()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::javax.net.ssl.SSLEngineResult.Status.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLEngineResult$Status"));
@@ -161,6 +152,9 @@ namespace javax.net.ssl
 				global::javax.net.ssl.SSLEngineResult.Status._BUFFER_OVERFLOW29978 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.Status.staticClass, "BUFFER_OVERFLOW", "Ljavax/net/ssl/SSLEngineResult$Status;");
 				global::javax.net.ssl.SSLEngineResult.Status._OK29979 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.Status.staticClass, "OK", "Ljavax/net/ssl/SSLEngineResult$Status;");
 				global::javax.net.ssl.SSLEngineResult.Status._CLOSED29980 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.Status.staticClass, "CLOSED", "Ljavax/net/ssl/SSLEngineResult$Status;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString29981;
@@ -215,7 +209,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLEngineResult.staticClass, global::javax.net.ssl.SSLEngineResult._SSLEngineResult29986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLEngineResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLEngineResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLEngineResult"));
@@ -225,6 +219,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLEngineResult._bytesConsumed29984 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLEngineResult.staticClass, "bytesConsumed", "()I");
 			global::javax.net.ssl.SSLEngineResult._bytesProduced29985 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLEngineResult.staticClass, "bytesProduced", "()I");
 			global::javax.net.ssl.SSLEngineResult._SSLEngineResult29986 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLEngineResult.staticClass, "<init>", "(Ljavax/net/ssl/SSLEngineResult$Status;Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

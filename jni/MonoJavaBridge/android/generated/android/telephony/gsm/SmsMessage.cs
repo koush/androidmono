@@ -4,10 +4,6 @@ namespace android.telephony.gsm
 	public partial class SmsMessage : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SmsMessage()
-		{
-			InitJNI();
-		}
 		protected SmsMessage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.telephony.gsm
 		public sealed partial class MessageClass : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MessageClass()
-			{
-				InitJNI();
-			}
 			internal MessageClass(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -79,7 +71,7 @@ namespace android.telephony.gsm
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.telephony.gsm.SmsMessage.MessageClass>(@__env.GetStaticObjectField(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, _UNKNOWN12067)) as android.telephony.gsm.SmsMessage.MessageClass;
 				}
 			}
-			private static void InitJNI()
+			static MessageClass()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.gsm.SmsMessage.MessageClass.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage$MessageClass"));
@@ -91,15 +83,14 @@ namespace android.telephony.gsm
 				global::android.telephony.gsm.SmsMessage.MessageClass._CLASS_312066 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "CLASS_3", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				global::android.telephony.gsm.SmsMessage.MessageClass._UNKNOWN12067 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "UNKNOWN", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SubmitPdu : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SubmitPdu()
-			{
-				InitJNI();
-			}
 			protected SubmitPdu(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -143,7 +134,7 @@ namespace android.telephony.gsm
 				{
 				}
 			}
-			private static void InitJNI()
+			static SubmitPdu()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage$SubmitPdu"));
@@ -151,6 +142,9 @@ namespace android.telephony.gsm
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._SubmitPdu12069 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "<init>", "()V");
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedScAddress12070 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedScAddress", "[B");
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedMessage12071 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedMessage", "[B");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new byte[] UserData
@@ -570,7 +564,7 @@ namespace android.telephony.gsm
 				return 153;
 			}
 		}
-		private static void InitJNI()
+		static SmsMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.SmsMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage"));
@@ -605,6 +599,9 @@ namespace android.telephony.gsm
 			global::android.telephony.gsm.SmsMessage._isStatusReportMessage12100 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isStatusReportMessage", "()Z");
 			global::android.telephony.gsm.SmsMessage._isReplyPathPresent12101 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isReplyPathPresent", "()Z");
 			global::android.telephony.gsm.SmsMessage._SmsMessage12102 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

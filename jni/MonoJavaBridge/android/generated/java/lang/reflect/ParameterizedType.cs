@@ -12,10 +12,6 @@ namespace java.lang.reflect
 	internal sealed partial class ParameterizedType_ : java.lang.Object, ParameterizedType
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParameterizedType_()
-		{
-			InitJNI();
-		}
 		internal ParameterizedType_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_.staticClass, global::java.lang.reflect.ParameterizedType_._getOwnerType21147)) as java.lang.reflect.Type;
 		}
-		private static void InitJNI()
+		static ParameterizedType_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.ParameterizedType_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/ParameterizedType"));
 			global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21145 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getActualTypeArguments", "()[Ljava/lang/reflect/Type;");
 			global::java.lang.reflect.ParameterizedType_._getRawType21146 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getRawType", "()Ljava/lang/reflect/Type;");
 			global::java.lang.reflect.ParameterizedType_._getOwnerType21147 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getOwnerType", "()Ljava/lang/reflect/Type;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

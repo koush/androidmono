@@ -4,10 +4,6 @@ namespace android.content
 	public partial class SyncAdapterType : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SyncAdapterType()
-		{
-			InitJNI();
-		}
 		protected SyncAdapterType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -130,7 +126,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.SyncAdapterType.staticClass, _CREATOR3545)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static SyncAdapterType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncAdapterType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncAdapterType"));
@@ -148,6 +144,9 @@ namespace android.content
 			global::android.content.SyncAdapterType._accountType3543 = @__env.GetFieldIDNoThrow(global::android.content.SyncAdapterType.staticClass, "accountType", "Ljava/lang/String;");
 			global::android.content.SyncAdapterType._isKey3544 = @__env.GetFieldIDNoThrow(global::android.content.SyncAdapterType.staticClass, "isKey", "Z");
 			global::android.content.SyncAdapterType._CREATOR3545 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncAdapterType.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

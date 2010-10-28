@@ -10,10 +10,6 @@ namespace javax.net.ssl
 	internal sealed partial class HostnameVerifier_ : java.lang.Object, HostnameVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HostnameVerifier_()
-		{
-			InitJNI();
-		}
 		internal HostnameVerifier_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.net.ssl
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.HostnameVerifier_.staticClass, global::javax.net.ssl.HostnameVerifier_._verify29841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static HostnameVerifier_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HostnameVerifier_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HostnameVerifier"));
 			global::javax.net.ssl.HostnameVerifier_._verify29841 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

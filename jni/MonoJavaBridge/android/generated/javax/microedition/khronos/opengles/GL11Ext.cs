@@ -30,10 +30,6 @@ namespace javax.microedition.khronos.opengles
 	internal sealed partial class GL11Ext_ : java.lang.Object, GL11Ext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GL11Ext_()
-		{
-			InitJNI();
-		}
 		internal GL11Ext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -226,7 +222,7 @@ namespace javax.microedition.khronos.opengles
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL11Ext_.staticClass, global::javax.microedition.khronos.opengles.GL11Ext_._glWeightPointerOES29653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static GL11Ext_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL11Ext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL11Ext"));
@@ -251,6 +247,9 @@ namespace javax.microedition.khronos.opengles
 			global::javax.microedition.khronos.opengles.GL11Ext_._glMatrixIndexPointerOES29651 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11Ext_.staticClass, "glMatrixIndexPointerOES", "(IIII)V");
 			global::javax.microedition.khronos.opengles.GL11Ext_._glWeightPointerOES29652 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11Ext_.staticClass, "glWeightPointerOES", "(IIILjava/nio/Buffer;)V");
 			global::javax.microedition.khronos.opengles.GL11Ext_._glWeightPointerOES29653 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL11Ext_.staticClass, "glWeightPointerOES", "(IIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -9,10 +9,6 @@ namespace android.test.suitebuilder.annotation
 	internal sealed partial class Suppress_ : java.lang.Object, Suppress
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Suppress_()
-		{
-			InitJNI();
-		}
 		internal Suppress_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.test.suitebuilder.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Suppress_.staticClass, global::android.test.suitebuilder.annotation.Suppress_._annotationType12666)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Suppress_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.suitebuilder.annotation.Suppress_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/suitebuilder/annotation/Suppress"));
@@ -60,6 +56,9 @@ namespace android.test.suitebuilder.annotation
 			global::android.test.suitebuilder.annotation.Suppress_._toString12664 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Suppress_.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.test.suitebuilder.annotation.Suppress_._hashCode12665 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Suppress_.staticClass, "hashCode", "()I");
 			global::android.test.suitebuilder.annotation.Suppress_._annotationType12666 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Suppress_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

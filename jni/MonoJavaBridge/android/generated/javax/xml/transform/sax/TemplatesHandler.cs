@@ -12,10 +12,6 @@ namespace javax.xml.transform.sax
 	internal sealed partial class TemplatesHandler_ : java.lang.Object, TemplatesHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TemplatesHandler_()
-		{
-			InitJNI();
-		}
 		internal TemplatesHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -145,7 +141,7 @@ namespace javax.xml.transform.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.TemplatesHandler_.staticClass, global::javax.xml.transform.sax.TemplatesHandler_._endPrefixMapping31125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TemplatesHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.TemplatesHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/TemplatesHandler"));
@@ -163,6 +159,9 @@ namespace javax.xml.transform.sax
 			global::javax.xml.transform.sax.TemplatesHandler_._setDocumentLocator31123 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TemplatesHandler_.staticClass, "setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
 			global::javax.xml.transform.sax.TemplatesHandler_._skippedEntity31124 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TemplatesHandler_.staticClass, "skippedEntity", "(Ljava/lang/String;)V");
 			global::javax.xml.transform.sax.TemplatesHandler_._endPrefixMapping31125 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.TemplatesHandler_.staticClass, "endPrefixMapping", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

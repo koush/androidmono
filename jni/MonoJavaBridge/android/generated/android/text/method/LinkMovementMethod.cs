@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class LinkMovementMethod : android.text.method.ScrollingMovementMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LinkMovementMethod()
-		{
-			InitJNI();
-		}
 		protected LinkMovementMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -112,7 +108,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.LinkMovementMethod.staticClass, global::android.text.method.LinkMovementMethod._LinkMovementMethod13309);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LinkMovementMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.LinkMovementMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/LinkMovementMethod"));
@@ -127,6 +123,9 @@ namespace android.text.method
 			global::android.text.method.LinkMovementMethod._down13307 = @__env.GetMethodIDNoThrow(global::android.text.method.LinkMovementMethod.staticClass, "down", "(Landroid/widget/TextView;Landroid/text/Spannable;)Z");
 			global::android.text.method.LinkMovementMethod._onTakeFocus13308 = @__env.GetMethodIDNoThrow(global::android.text.method.LinkMovementMethod.staticClass, "onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
 			global::android.text.method.LinkMovementMethod._LinkMovementMethod13309 = @__env.GetMethodIDNoThrow(global::android.text.method.LinkMovementMethod.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

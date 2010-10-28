@@ -4,10 +4,6 @@ namespace android.content
 	public partial class SearchRecentSuggestionsProvider : android.content.ContentProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SearchRecentSuggestionsProvider()
-		{
-			InitJNI();
-		}
 		protected SearchRecentSuggestionsProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace android.content
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static SearchRecentSuggestionsProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SearchRecentSuggestionsProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SearchRecentSuggestionsProvider"));
@@ -107,6 +103,9 @@ namespace android.content
 			global::android.content.SearchRecentSuggestionsProvider._onCreate3505 = @__env.GetMethodIDNoThrow(global::android.content.SearchRecentSuggestionsProvider.staticClass, "onCreate", "()Z");
 			global::android.content.SearchRecentSuggestionsProvider._setupSuggestions3506 = @__env.GetMethodIDNoThrow(global::android.content.SearchRecentSuggestionsProvider.staticClass, "setupSuggestions", "(Ljava/lang/String;I)V");
 			global::android.content.SearchRecentSuggestionsProvider._SearchRecentSuggestionsProvider3507 = @__env.GetMethodIDNoThrow(global::android.content.SearchRecentSuggestionsProvider.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

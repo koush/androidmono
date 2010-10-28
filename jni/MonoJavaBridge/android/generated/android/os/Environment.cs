@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Environment : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Environment()
-		{
-			InitJNI();
-		}
 		protected Environment(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -260,7 +256,7 @@ namespace android.os
 				return "unmountable";
 			}
 		}
-		private static void InitJNI()
+		static Environment()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Environment.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Environment"));
@@ -280,6 +276,9 @@ namespace android.os
 			global::android.os.Environment._DIRECTORY_MOVIES9821 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_MOVIES", "Ljava/lang/String;");
 			global::android.os.Environment._DIRECTORY_DOWNLOADS9822 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_DOWNLOADS", "Ljava/lang/String;");
 			global::android.os.Environment._DIRECTORY_DCIM9823 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_DCIM", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

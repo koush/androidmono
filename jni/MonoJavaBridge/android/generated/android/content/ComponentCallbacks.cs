@@ -11,10 +11,6 @@ namespace android.content
 	internal sealed partial class ComponentCallbacks_ : java.lang.Object, ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ComponentCallbacks_()
-		{
-			InitJNI();
-		}
 		internal ComponentCallbacks_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onLowMemory2610);
 		}
-		private static void InitJNI()
+		static ComponentCallbacks_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ComponentCallbacks_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ComponentCallbacks"));
 			global::android.content.ComponentCallbacks_._onConfigurationChanged2609 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
 			global::android.content.ComponentCallbacks_._onLowMemory2610 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

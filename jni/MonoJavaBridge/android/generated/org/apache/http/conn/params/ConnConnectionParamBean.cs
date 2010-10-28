@@ -4,10 +4,6 @@ namespace org.apache.http.conn.@params
 	public partial class ConnConnectionParamBean : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnConnectionParamBean()
-		{
-			InitJNI();
-		}
 		protected ConnConnectionParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace org.apache.http.conn.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnConnectionParamBean.staticClass, global::org.apache.http.conn.@params.ConnConnectionParamBean._ConnConnectionParamBean32175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConnConnectionParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnConnectionParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnConnectionParamBean"));
 			global::org.apache.http.conn.@params.ConnConnectionParamBean._setMaxStatusLineGarbage32174 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnConnectionParamBean.staticClass, "setMaxStatusLineGarbage", "(I)V");
 			global::org.apache.http.conn.@params.ConnConnectionParamBean._ConnConnectionParamBean32175 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnConnectionParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

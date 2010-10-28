@@ -4,10 +4,6 @@ namespace java.util
 	public partial class PropertyResourceBundle : java.util.PropertyResourceBundleScopeChangeShim
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PropertyResourceBundle()
-		{
-			InitJNI();
-		}
 		protected PropertyResourceBundle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,7 +55,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._PropertyResourceBundle26583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PropertyResourceBundle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.PropertyResourceBundle.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/PropertyResourceBundle"));
@@ -68,6 +64,9 @@ namespace java.util
 			global::java.util.PropertyResourceBundle._handleKeySet26581 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundle.staticClass, "handleKeySet", "()Ljava/util/Set;");
 			global::java.util.PropertyResourceBundle._PropertyResourceBundle26582 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundle.staticClass, "<init>", "(Ljava/io/InputStream;)V");
 			global::java.util.PropertyResourceBundle._PropertyResourceBundle26583 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundle.staticClass, "<init>", "(Ljava/io/Reader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public sealed partial class SerializablePermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SerializablePermission()
-		{
-			InitJNI();
-		}
 		internal SerializablePermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.SerializablePermission.staticClass, global::java.io.SerializablePermission._SerializablePermission19574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SerializablePermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.SerializablePermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/SerializablePermission"));
 			global::java.io.SerializablePermission._SerializablePermission19573 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.SerializablePermission._SerializablePermission19574 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

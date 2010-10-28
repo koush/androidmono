@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class NoSuchMethodException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NoSuchMethodException()
-		{
-			InitJNI();
-		}
 		protected NoSuchMethodException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoSuchMethodException.staticClass, global::java.lang.NoSuchMethodException._NoSuchMethodException20351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NoSuchMethodException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.NoSuchMethodException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/NoSuchMethodException"));
 			global::java.lang.NoSuchMethodException._NoSuchMethodException20350 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchMethodException.staticClass, "<init>", "()V");
 			global::java.lang.NoSuchMethodException._NoSuchMethodException20351 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchMethodException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

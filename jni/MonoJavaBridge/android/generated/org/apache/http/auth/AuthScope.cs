@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public partial class AuthScope : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthScope()
-		{
-			InitJNI();
-		}
 		protected AuthScope(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -182,7 +178,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.auth.AuthScope.staticClass, _ANY31807)) as org.apache.http.auth.AuthScope;
 			}
 		}
-		private static void InitJNI()
+		static AuthScope()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.AuthScope.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/AuthScope"));
@@ -202,6 +198,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.AuthScope._ANY_REALM31805 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "ANY_REALM", "Ljava/lang/String;");
 			global::org.apache.http.auth.AuthScope._ANY_SCHEME31806 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "ANY_SCHEME", "Ljava/lang/String;");
 			global::org.apache.http.auth.AuthScope._ANY31807 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "ANY", "Lorg/apache/http/auth/AuthScope;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

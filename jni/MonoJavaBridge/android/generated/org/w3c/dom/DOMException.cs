@@ -4,10 +4,6 @@ namespace org.w3c.dom
 	public partial class DOMException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMException()
-		{
-			InitJNI();
-		}
 		protected DOMException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,12 +145,15 @@ namespace org.w3c.dom
 				return 17;
 			}
 		}
-		private static void InitJNI()
+		static DOMException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMException"));
 			global::org.w3c.dom.DOMException._DOMException34350 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "<init>", "(SLjava/lang/String;)V");
 			global::org.w3c.dom.DOMException._code34351 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "code", "S");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

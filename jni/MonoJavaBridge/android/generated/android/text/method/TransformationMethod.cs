@@ -11,10 +11,6 @@ namespace android.text.method
 	internal sealed partial class TransformationMethod_ : java.lang.Object, TransformationMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TransformationMethod_()
-		{
-			InitJNI();
-		}
 		internal TransformationMethod_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.text.method
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.TransformationMethod_.staticClass, global::android.text.method.TransformationMethod_._getTransformation13424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		private static void InitJNI()
+		static TransformationMethod_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.TransformationMethod_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/TransformationMethod"));
 			global::android.text.method.TransformationMethod_._onFocusChanged13423 = @__env.GetMethodIDNoThrow(global::android.text.method.TransformationMethod_.staticClass, "onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V");
 			global::android.text.method.TransformationMethod_._getTransformation13424 = @__env.GetMethodIDNoThrow(global::android.text.method.TransformationMethod_.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

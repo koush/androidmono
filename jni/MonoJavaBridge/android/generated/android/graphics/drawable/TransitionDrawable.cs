@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class TransitionDrawable : android.graphics.drawable.LayerDrawable, android.graphics.drawable.Drawable.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TransitionDrawable()
-		{
-			InitJNI();
-		}
 		protected TransitionDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -79,7 +75,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TransitionDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.TransitionDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/TransitionDrawable"));
@@ -90,6 +86,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "setCrossFadeEnabled", "(Z)V");
 			global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "isCrossFadeEnabled", "()Z");
 			global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "<init>", "([Landroid/graphics/drawable/Drawable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

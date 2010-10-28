@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class Transformation : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Transformation()
-		{
-			InitJNI();
-		}
 		protected Transformation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -185,7 +181,7 @@ namespace android.view.animation
 			{
 			}
 		}
-		private static void InitJNI()
+		static Transformation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.Transformation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Transformation"));
@@ -204,6 +200,9 @@ namespace android.view.animation
 			global::android.view.animation.Transformation._TYPE_ALPHA15768 = @__env.GetStaticFieldIDNoThrow(global::android.view.animation.Transformation.staticClass, "TYPE_ALPHA", "I");
 			global::android.view.animation.Transformation._TYPE_MATRIX15769 = @__env.GetStaticFieldIDNoThrow(global::android.view.animation.Transformation.staticClass, "TYPE_MATRIX", "I");
 			global::android.view.animation.Transformation._TYPE_BOTH15770 = @__env.GetStaticFieldIDNoThrow(global::android.view.animation.Transformation.staticClass, "TYPE_BOTH", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

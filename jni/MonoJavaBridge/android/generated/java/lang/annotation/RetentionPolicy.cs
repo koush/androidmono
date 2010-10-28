@@ -4,10 +4,6 @@ namespace java.lang.annotation
 	public sealed partial class RetentionPolicy : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RetentionPolicy()
-		{
-			InitJNI();
-		}
 		internal RetentionPolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,7 +46,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _RUNTIME20978)) as java.lang.annotation.RetentionPolicy;
 			}
 		}
-		private static void InitJNI()
+		static RetentionPolicy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.RetentionPolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/RetentionPolicy"));
@@ -59,6 +55,9 @@ namespace java.lang.annotation
 			global::java.lang.annotation.RetentionPolicy._SOURCE20976 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.RetentionPolicy.staticClass, "SOURCE", "Ljava/lang/annotation/RetentionPolicy;");
 			global::java.lang.annotation.RetentionPolicy._CLASS20977 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.RetentionPolicy.staticClass, "CLASS", "Ljava/lang/annotation/RetentionPolicy;");
 			global::java.lang.annotation.RetentionPolicy._RUNTIME20978 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.RetentionPolicy.staticClass, "RUNTIME", "Ljava/lang/annotation/RetentionPolicy;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

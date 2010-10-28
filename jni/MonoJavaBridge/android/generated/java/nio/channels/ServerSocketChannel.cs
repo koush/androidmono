@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class ServerSocketChannel : java.nio.channels.spi.AbstractSelectableChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServerSocketChannel()
-		{
-			InitJNI();
-		}
 		protected ServerSocketChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -37,7 +33,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._ServerSocketChannel22624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ServerSocketChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ServerSocketChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ServerSocketChannel"));
@@ -47,16 +43,15 @@ namespace java.nio.channels
 			global::java.nio.channels.ServerSocketChannel._validOps22623 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel.staticClass, "validOps", "()I");
 			global::java.nio.channels.ServerSocketChannel._ServerSocketChannel22624 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.ServerSocketChannel))]
 	internal sealed partial class ServerSocketChannel_ : java.nio.channels.ServerSocketChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServerSocketChannel_()
-		{
-			InitJNI();
-		}
 		internal ServerSocketChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +91,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_.staticClass, global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ServerSocketChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ServerSocketChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ServerSocketChannel"));
@@ -104,6 +99,9 @@ namespace java.nio.channels
 			global::java.nio.channels.ServerSocketChannel_._socket22626 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "socket", "()Ljava/net/ServerSocket;");
 			global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22627 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "implCloseSelectableChannel", "()V");
 			global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "implConfigureBlocking", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

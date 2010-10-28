@@ -20,10 +20,6 @@ namespace org.xml.sax
 	internal sealed partial class ContentHandler_ : java.lang.Object, ContentHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentHandler_()
-		{
-			InitJNI();
-		}
 		internal ContentHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -126,7 +122,7 @@ namespace org.xml.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._endPrefixMapping34972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ContentHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ContentHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ContentHandler"));
@@ -141,6 +137,9 @@ namespace org.xml.sax
 			global::org.xml.sax.ContentHandler_._setDocumentLocator34970 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
 			global::org.xml.sax.ContentHandler_._skippedEntity34971 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "skippedEntity", "(Ljava/lang/String;)V");
 			global::org.xml.sax.ContentHandler_._endPrefixMapping34972 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "endPrefixMapping", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

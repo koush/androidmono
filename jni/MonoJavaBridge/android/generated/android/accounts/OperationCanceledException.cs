@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class OperationCanceledException : android.accounts.AccountsException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OperationCanceledException()
-		{
-			InitJNI();
-		}
 		protected OperationCanceledException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException1389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static OperationCanceledException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OperationCanceledException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OperationCanceledException"));
@@ -47,6 +43,9 @@ namespace android.accounts
 			global::android.accounts.OperationCanceledException._OperationCanceledException1387 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.accounts.OperationCanceledException._OperationCanceledException1388 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::android.accounts.OperationCanceledException._OperationCanceledException1389 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

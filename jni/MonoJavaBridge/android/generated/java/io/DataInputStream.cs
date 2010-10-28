@@ -4,10 +4,6 @@ namespace java.io
 	public partial class DataInputStream : java.io.FilterInputStream, DataInput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataInputStream()
-		{
-			InitJNI();
-		}
 		protected DataInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -177,7 +173,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.DataInputStream.staticClass, global::java.io.DataInputStream._DataInputStream18917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DataInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.DataInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/DataInputStream"));
@@ -200,6 +196,9 @@ namespace java.io
 			global::java.io.DataInputStream._readUnsignedShort18915 = @__env.GetMethodIDNoThrow(global::java.io.DataInputStream.staticClass, "readUnsignedShort", "()I");
 			global::java.io.DataInputStream._readDouble18916 = @__env.GetMethodIDNoThrow(global::java.io.DataInputStream.staticClass, "readDouble", "()D");
 			global::java.io.DataInputStream._DataInputStream18917 = @__env.GetMethodIDNoThrow(global::java.io.DataInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

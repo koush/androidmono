@@ -4,10 +4,6 @@ namespace java.net
 	public sealed partial class DatagramPacket : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramPacket()
-		{
-			InitJNI();
-		}
 		internal DatagramPacket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -223,7 +219,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DatagramPacket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramPacket.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramPacket"));
@@ -245,6 +241,9 @@ namespace java.net
 			global::java.net.DatagramPacket._DatagramPacket21388 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BIILjava/net/SocketAddress;)V");
 			global::java.net.DatagramPacket._DatagramPacket21389 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/InetAddress;I)V");
 			global::java.net.DatagramPacket._DatagramPacket21390 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/SocketAddress;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

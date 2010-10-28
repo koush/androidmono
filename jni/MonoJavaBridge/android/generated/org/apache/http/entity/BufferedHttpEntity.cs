@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class BufferedHttpEntity : org.apache.http.entity.HttpEntityWrapper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BufferedHttpEntity()
-		{
-			InitJNI();
-		}
 		protected BufferedHttpEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BufferedHttpEntity.staticClass, global::org.apache.http.entity.BufferedHttpEntity._BufferedHttpEntity32521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BufferedHttpEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.BufferedHttpEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/BufferedHttpEntity"));
@@ -97,6 +93,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.BufferedHttpEntity._isChunked32519 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isChunked", "()Z");
 			global::org.apache.http.entity.BufferedHttpEntity._isStreaming32520 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.entity.BufferedHttpEntity._BufferedHttpEntity32521 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BufferedHttpEntity.staticClass, "<init>", "(Lorg/apache/http/HttpEntity;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

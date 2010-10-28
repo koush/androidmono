@@ -10,10 +10,6 @@ namespace android.sax
 	internal sealed partial class EndElementListener_ : java.lang.Object, EndElementListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EndElementListener_()
-		{
-			InitJNI();
-		}
 		internal EndElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_.staticClass, global::android.sax.EndElementListener_._end11610);
 		}
-		private static void InitJNI()
+		static EndElementListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.EndElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndElementListener"));
 			global::android.sax.EndElementListener_._end11610 = @__env.GetMethodIDNoThrow(global::android.sax.EndElementListener_.staticClass, "end", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.sax
 	internal partial class EndElementListenerDelegateWrapper : java.lang.Object, EndElementListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EndElementListenerDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected EndElementListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.sax
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.EndElementListenerDelegateWrapper.staticClass, global::android.sax.EndElementListenerDelegateWrapper._EndElementListenerDelegateWrapper11611);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EndElementListenerDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.EndElementListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndElementListenerDelegateWrapper"));
 			global::android.sax.EndElementListenerDelegateWrapper._EndElementListenerDelegateWrapper11611 = @__env.GetMethodIDNoThrow(global::android.sax.EndElementListenerDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class EndElementListenerDelegateWrapper

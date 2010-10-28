@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class System : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static System()
-		{
-			InitJNI();
-		}
 		internal System(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -238,7 +234,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.System.staticClass, _err20811)) as java.io.PrintStream;
 			}
 		}
-		private static void InitJNI()
+		static System()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.System.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/System"));
@@ -270,6 +266,9 @@ namespace java.lang
 			global::java.lang.System._in20809 = @__env.GetStaticFieldIDNoThrow(global::java.lang.System.staticClass, "@in", "Ljava/io/InputStream;");
 			global::java.lang.System._out20810 = @__env.GetStaticFieldIDNoThrow(global::java.lang.System.staticClass, "@out", "Ljava/io/PrintStream;");
 			global::java.lang.System._err20811 = @__env.GetStaticFieldIDNoThrow(global::java.lang.System.staticClass, "err", "Ljava/io/PrintStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

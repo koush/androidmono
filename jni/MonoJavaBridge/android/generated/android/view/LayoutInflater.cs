@@ -4,10 +4,6 @@ namespace android.view
 	public abstract partial class LayoutInflater : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LayoutInflater()
-		{
-			InitJNI();
-		}
 		protected LayoutInflater(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.view
 		internal sealed partial class Factory_ : java.lang.Object, Factory
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Factory_()
-			{
-				InitJNI();
-			}
 			internal Factory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.view
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.Factory_.staticClass, global::android.view.LayoutInflater.Factory_._onCreateView14291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 			}
-			private static void InitJNI()
+			static Factory_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.Factory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater$Factory"));
 				global::android.view.LayoutInflater.Factory_._onCreateView14291 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.Factory_.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.view
 		internal partial class FactoryDelegateWrapper : java.lang.Object, Factory
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FactoryDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected FactoryDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static FactoryDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.FactoryDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater_FactoryDelegateWrapper"));
 				global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class FactoryDelegateWrapper
@@ -96,10 +90,6 @@ namespace android.view
 		internal sealed partial class Filter_ : java.lang.Object, Filter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Filter_()
-			{
-				InitJNI();
-			}
 			internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,11 +102,14 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.LayoutInflater.Filter_.staticClass, global::android.view.LayoutInflater.Filter_._onLoadClass14293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static Filter_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater$Filter"));
 				global::android.view.LayoutInflater.Filter_._onLoadClass14293 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.Filter_.staticClass, "onLoadClass", "(Ljava/lang/Class;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -125,10 +118,6 @@ namespace android.view
 		internal partial class FilterDelegateWrapper : java.lang.Object, Filter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FilterDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected FilterDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -139,11 +128,14 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FilterDelegateWrapper.staticClass, global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static FilterDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.FilterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater_FilterDelegateWrapper"));
 				global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FilterDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class FilterDelegateWrapper
@@ -290,7 +282,7 @@ namespace android.view
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._LayoutInflater14309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LayoutInflater()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.LayoutInflater.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater"));
@@ -310,16 +302,15 @@ namespace android.view
 			global::android.view.LayoutInflater._LayoutInflater14308 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/view/LayoutInflater;Landroid/content/Context;)V");
 			global::android.view.LayoutInflater._LayoutInflater14309 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.LayoutInflater))]
 	internal sealed partial class LayoutInflater_ : android.view.LayoutInflater
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LayoutInflater_()
-		{
-			InitJNI();
-		}
 		internal LayoutInflater_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -332,11 +323,14 @@ namespace android.view
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater_.staticClass, global::android.view.LayoutInflater_._cloneInContext14310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.LayoutInflater;
 		}
-		private static void InitJNI()
+		static LayoutInflater_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.LayoutInflater_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater"));
 			global::android.view.LayoutInflater_._cloneInContext14310 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater_.staticClass, "cloneInContext", "(Landroid/content/Context;)Landroid/view/LayoutInflater;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

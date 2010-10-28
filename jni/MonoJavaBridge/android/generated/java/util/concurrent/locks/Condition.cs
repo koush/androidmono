@@ -16,10 +16,6 @@ namespace java.util.concurrent.locks
 	internal sealed partial class Condition_ : java.lang.Object, Condition
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Condition_()
-		{
-			InitJNI();
-		}
 		internal Condition_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace java.util.concurrent.locks
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._awaitUntil27738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Condition_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.Condition_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/Condition"));
@@ -97,6 +93,9 @@ namespace java.util.concurrent.locks
 			global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27736 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitUninterruptibly", "()V");
 			global::java.util.concurrent.locks.Condition_._awaitNanos27737 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitNanos", "(J)J");
 			global::java.util.concurrent.locks.Condition_._awaitUntil27738 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitUntil", "(Ljava/util/Date;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn
 	public partial class SingleClientConnManager : java.lang.Object, org.apache.http.conn.ClientConnectionManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SingleClientConnManager()
-		{
-			InitJNI();
-		}
 		protected SingleClientConnManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace org.apache.http.impl.conn
 		protected partial class ConnAdapter : org.apache.http.impl.conn.AbstractPooledConnAdapter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ConnAdapter()
-			{
-				InitJNI();
-			}
 			protected ConnAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -29,21 +21,20 @@ namespace org.apache.http.impl.conn
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ConnAdapter()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager$ConnAdapter"));
 				global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;Lorg/apache/http/conn/routing/HttpRoute;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		protected partial class PoolEntry : org.apache.http.impl.conn.AbstractPoolEntry
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PoolEntry()
-			{
-				InitJNI();
-			}
 			protected PoolEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -72,13 +63,16 @@ namespace org.apache.http.impl.conn
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PoolEntry()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager$PoolEntry"));
 				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._shutdown33078 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "shutdown", "()V");
 				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._close33079 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "close", "()V");
 				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown33081;
@@ -201,7 +195,7 @@ namespace org.apache.http.impl.conn
 				return "Invalid use of SingleClientConnManager: connection still allocated.\nMake sure to release the connection before allocating another one.";
 			}
 		}
-		private static void InitJNI()
+		static SingleClientConnManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.SingleClientConnManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager"));
@@ -217,6 +211,9 @@ namespace org.apache.http.impl.conn
 			global::org.apache.http.impl.conn.SingleClientConnManager._assertStillUp33090 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "assertStillUp", "()V");
 			global::org.apache.http.impl.conn.SingleClientConnManager._revokeConnection33091 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "revokeConnection", "()V");
 			global::org.apache.http.impl.conn.SingleClientConnManager._SingleClientConnManager33092 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public partial class PipedReader : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PipedReader()
-		{
-			InitJNI();
-		}
 		protected PipedReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -84,7 +80,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PipedReader.staticClass, global::java.io.PipedReader._PipedReader19394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PipedReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PipedReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PipedReader"));
@@ -97,6 +93,9 @@ namespace java.io
 			global::java.io.PipedReader._PipedReader19392 = @__env.GetMethodIDNoThrow(global::java.io.PipedReader.staticClass, "<init>", "(Ljava/io/PipedWriter;I)V");
 			global::java.io.PipedReader._PipedReader19393 = @__env.GetMethodIDNoThrow(global::java.io.PipedReader.staticClass, "<init>", "()V");
 			global::java.io.PipedReader._PipedReader19394 = @__env.GetMethodIDNoThrow(global::java.io.PipedReader.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

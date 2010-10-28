@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class ServiceState : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServiceState()
-		{
-			InitJNI();
-		}
 		protected ServiceState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -285,7 +281,7 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.telephony.ServiceState.staticClass, _CREATOR11882)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ServiceState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.ServiceState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/ServiceState"));
@@ -311,6 +307,9 @@ namespace android.telephony
 			global::android.telephony.ServiceState._ServiceState11876 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/telephony/ServiceState;)V");
 			global::android.telephony.ServiceState._ServiceState11877 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.telephony.ServiceState._CREATOR11882 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.ServiceState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

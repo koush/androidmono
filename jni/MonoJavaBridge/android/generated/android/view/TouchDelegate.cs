@@ -4,10 +4,6 @@ namespace android.view
 	public partial class TouchDelegate : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TouchDelegate()
-		{
-			InitJNI();
-		}
 		protected TouchDelegate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,12 +51,15 @@ namespace android.view
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static TouchDelegate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.TouchDelegate.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/TouchDelegate"));
 			global::android.view.TouchDelegate._onTouchEvent14602 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
 			global::android.view.TouchDelegate._TouchDelegate14603 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

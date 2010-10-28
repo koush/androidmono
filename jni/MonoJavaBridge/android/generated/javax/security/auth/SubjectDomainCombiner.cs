@@ -4,10 +4,6 @@ namespace javax.security.auth
 	public partial class SubjectDomainCombiner : java.lang.Object, java.security.DomainCombiner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SubjectDomainCombiner()
-		{
-			InitJNI();
-		}
 		protected SubjectDomainCombiner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,13 +39,16 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._SubjectDomainCombiner30197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SubjectDomainCombiner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.SubjectDomainCombiner.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/SubjectDomainCombiner"));
 			global::javax.security.auth.SubjectDomainCombiner._combine30195 = @__env.GetMethodIDNoThrow(global::javax.security.auth.SubjectDomainCombiner.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;");
 			global::javax.security.auth.SubjectDomainCombiner._getSubject30196 = @__env.GetMethodIDNoThrow(global::javax.security.auth.SubjectDomainCombiner.staticClass, "getSubject", "()Ljavax/security/auth/Subject;");
 			global::javax.security.auth.SubjectDomainCombiner._SubjectDomainCombiner30197 = @__env.GetMethodIDNoThrow(global::javax.security.auth.SubjectDomainCombiner.staticClass, "<init>", "(Ljavax/security/auth/Subject;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -9,10 +9,6 @@ namespace java.lang
 	internal sealed partial class Deprecated_ : java.lang.Object, Deprecated
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Deprecated_()
-		{
-			InitJNI();
-		}
 		internal Deprecated_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Deprecated_.staticClass, global::java.lang.Deprecated_._annotationType20087)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Deprecated_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Deprecated_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Deprecated"));
@@ -60,6 +56,9 @@ namespace java.lang
 			global::java.lang.Deprecated_._toString20085 = @__env.GetMethodIDNoThrow(global::java.lang.Deprecated_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.Deprecated_._hashCode20086 = @__env.GetMethodIDNoThrow(global::java.lang.Deprecated_.staticClass, "hashCode", "()I");
 			global::java.lang.Deprecated_._annotationType20087 = @__env.GetMethodIDNoThrow(global::java.lang.Deprecated_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

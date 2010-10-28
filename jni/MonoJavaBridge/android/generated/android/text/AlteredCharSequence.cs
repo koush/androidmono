@@ -4,10 +4,6 @@ namespace android.text
 	public partial class AlteredCharSequence : java.lang.Object, java.lang.CharSequence, GetChars
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlteredCharSequence()
-		{
-			InitJNI();
-		}
 		protected AlteredCharSequence(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.text
 		{
 			return make((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		private static void InitJNI()
+		static AlteredCharSequence()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.AlteredCharSequence.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/AlteredCharSequence"));
@@ -76,6 +72,9 @@ namespace android.text
 			global::android.text.AlteredCharSequence._getChars12670 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "getChars", "(II[CI)V");
 			global::android.text.AlteredCharSequence._subSequence12671 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
 			global::android.text.AlteredCharSequence._make12672 = @__env.GetStaticMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "make", "(Ljava/lang/CharSequence;[CII)Landroid/text/AlteredCharSequence;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

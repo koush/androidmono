@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class PathPermission : android.os.PatternMatcher
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PathPermission()
-		{
-			InitJNI();
-		}
 		protected PathPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PathPermission.staticClass, _CREATOR3982)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PathPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PathPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PathPermission"));
@@ -85,6 +81,9 @@ namespace android.content.pm
 			global::android.content.pm.PathPermission._PathPermission3980 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V");
 			global::android.content.pm.PathPermission._PathPermission3981 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.content.pm.PathPermission._CREATOR3982 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PathPermission.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

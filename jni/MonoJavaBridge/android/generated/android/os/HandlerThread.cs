@@ -4,10 +4,6 @@ namespace android.os
 	public partial class HandlerThread : java.lang.Thread
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HandlerThread()
-		{
-			InitJNI();
-		}
 		protected HandlerThread(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -84,7 +80,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._HandlerThread9894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HandlerThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.HandlerThread.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/HandlerThread"));
@@ -95,6 +91,9 @@ namespace android.os
 			global::android.os.HandlerThread._getThreadId9892 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "getThreadId", "()I");
 			global::android.os.HandlerThread._HandlerThread9893 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.os.HandlerThread._HandlerThread9894 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public partial class NTUserPrincipal : java.lang.Object, java.security.Principal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NTUserPrincipal()
-		{
-			InitJNI();
-		}
 		protected NTUserPrincipal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.NTUserPrincipal.staticClass, global::org.apache.http.auth.NTUserPrincipal._NTUserPrincipal31850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NTUserPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.NTUserPrincipal.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/NTUserPrincipal"));
@@ -104,6 +100,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.NTUserPrincipal._getDomain31848 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.NTUserPrincipal.staticClass, "getDomain", "()Ljava/lang/String;");
 			global::org.apache.http.auth.NTUserPrincipal._getUsername31849 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.NTUserPrincipal.staticClass, "getUsername", "()Ljava/lang/String;");
 			global::org.apache.http.auth.NTUserPrincipal._NTUserPrincipal31850 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.NTUserPrincipal.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

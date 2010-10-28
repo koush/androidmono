@@ -4,10 +4,6 @@ namespace org.xml.sax.helpers
 	public partial class NamespaceSupport : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NamespaceSupport()
-		{
-			InitJNI();
-		}
 		protected NamespaceSupport(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -161,7 +157,7 @@ namespace org.xml.sax.helpers
 				return "http://www.w3.org/xmlns/2000/";
 			}
 		}
-		private static void InitJNI()
+		static NamespaceSupport()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.NamespaceSupport.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/NamespaceSupport"));
@@ -178,6 +174,9 @@ namespace org.xml.sax.helpers
 			global::org.xml.sax.helpers.NamespaceSupport._setNamespaceDeclUris35223 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.NamespaceSupport.staticClass, "setNamespaceDeclUris", "(Z)V");
 			global::org.xml.sax.helpers.NamespaceSupport._isNamespaceDeclUris35224 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.NamespaceSupport.staticClass, "isNamespaceDeclUris", "()Z");
 			global::org.xml.sax.helpers.NamespaceSupport._NamespaceSupport35225 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.NamespaceSupport.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace javax.sql
 	internal sealed partial class RowSetWriter_ : java.lang.Object, RowSetWriter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSetWriter_()
-		{
-			InitJNI();
-		}
 		internal RowSetWriter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.sql
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSetWriter_.staticClass, global::javax.sql.RowSetWriter_._writeData30622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RowSetWriter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetWriter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetWriter"));
 			global::javax.sql.RowSetWriter_._writeData30622 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetWriter_.staticClass, "writeData", "(Ljavax/sql/RowSetInternal;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace java.nio.channels
 	internal sealed partial class InterruptibleChannel_ : java.lang.Object, InterruptibleChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InterruptibleChannel_()
-		{
-			InitJNI();
-		}
 		internal InterruptibleChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,7 +49,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22513);
 		}
-		private static void InitJNI()
+		static InterruptibleChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.InterruptibleChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/InterruptibleChannel"));
@@ -61,6 +57,9 @@ namespace java.nio.channels
 			global::java.nio.channels.InterruptibleChannel_._close22511 = @__env.GetMethodIDNoThrow(global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V");
 			global::java.nio.channels.InterruptibleChannel_._isOpen22512 = @__env.GetMethodIDNoThrow(global::java.nio.channels.InterruptibleChannel_.staticClass, "isOpen", "()Z");
 			global::java.nio.channels.InterruptibleChannel_._close22513 = @__env.GetMethodIDNoThrow(global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -20,10 +20,6 @@ namespace java.util.concurrent
 	internal sealed partial class BlockingQueue_ : java.lang.Object, BlockingQueue
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BlockingQueue_()
-		{
-			InitJNI();
-		}
 		internal BlockingQueue_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -328,7 +324,7 @@ namespace java.util.concurrent
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.BlockingQueue_.staticClass, global::java.util.concurrent.BlockingQueue_._iterator27099)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static BlockingQueue_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.BlockingQueue_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/BlockingQueue"));
@@ -365,6 +361,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.BlockingQueue_._removeAll27097 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BlockingQueue_.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
 			global::java.util.concurrent.BlockingQueue_._retainAll27098 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BlockingQueue_.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.concurrent.BlockingQueue_._iterator27099 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BlockingQueue_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

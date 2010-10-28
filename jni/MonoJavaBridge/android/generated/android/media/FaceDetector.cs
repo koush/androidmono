@@ -4,10 +4,6 @@ namespace android.media
 	public partial class FaceDetector : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FaceDetector()
-		{
-			InitJNI();
-		}
 		protected FaceDetector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.media
 		public partial class Face : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Face()
-			{
-				InitJNI();
-			}
 			protected Face(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -86,7 +78,7 @@ namespace android.media
 					return 2;
 				}
 			}
-			private static void InitJNI()
+			static Face()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.FaceDetector.Face.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/FaceDetector$Face"));
@@ -94,6 +86,9 @@ namespace android.media
 				global::android.media.FaceDetector.Face._getMidPoint7283 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.Face.staticClass, "getMidPoint", "(Landroid/graphics/PointF;)V");
 				global::android.media.FaceDetector.Face._eyesDistance7284 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.Face.staticClass, "eyesDistance", "()F");
 				global::android.media.FaceDetector.Face._pose7285 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.Face.staticClass, "pose", "(I)F");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize7290;
@@ -121,13 +116,16 @@ namespace android.media
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._FaceDetector7292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FaceDetector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.FaceDetector.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/FaceDetector"));
 			global::android.media.FaceDetector._finalize7290 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.staticClass, "finalize", "()V");
 			global::android.media.FaceDetector._findFaces7291 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.staticClass, "findFaces", "(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector/Face;)I");
 			global::android.media.FaceDetector._FaceDetector7292 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.staticClass, "<init>", "(III)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

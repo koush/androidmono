@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class NetworkErrorException : android.accounts.AccountsException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetworkErrorException()
-		{
-			InitJNI();
-		}
 		protected NetworkErrorException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException1383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NetworkErrorException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.NetworkErrorException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/NetworkErrorException"));
@@ -47,6 +43,9 @@ namespace android.accounts
 			global::android.accounts.NetworkErrorException._NetworkErrorException1381 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.accounts.NetworkErrorException._NetworkErrorException1382 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::android.accounts.NetworkErrorException._NetworkErrorException1383 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

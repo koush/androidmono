@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public abstract partial class AbstractHttpClientConnection : java.lang.Object, HttpClientConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpClientConnection()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpClientConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -165,7 +161,7 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.AbstractHttpClientConnection.staticClass, global::org.apache.http.impl.AbstractHttpClientConnection._AbstractHttpClientConnection32599);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpClientConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.AbstractHttpClientConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/AbstractHttpClientConnection"));
@@ -192,16 +188,15 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.AbstractHttpClientConnection._doFlush32598 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpClientConnection.staticClass, "doFlush", "()V");
 			global::org.apache.http.impl.AbstractHttpClientConnection._AbstractHttpClientConnection32599 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpClientConnection.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.AbstractHttpClientConnection))]
 	internal sealed partial class AbstractHttpClientConnection_ : org.apache.http.impl.AbstractHttpClientConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpClientConnection_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpClientConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -259,7 +254,7 @@ namespace org.apache.http.impl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.AbstractHttpClientConnection_.staticClass, global::org.apache.http.impl.AbstractHttpClientConnection_._assertOpen32605);
 		}
-		private static void InitJNI()
+		static AbstractHttpClientConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.AbstractHttpClientConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/AbstractHttpClientConnection"));
@@ -269,6 +264,9 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.AbstractHttpClientConnection_._setSocketTimeout32603 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpClientConnection_.staticClass, "setSocketTimeout", "(I)V");
 			global::org.apache.http.impl.AbstractHttpClientConnection_._getSocketTimeout32604 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpClientConnection_.staticClass, "getSocketTimeout", "()I");
 			global::org.apache.http.impl.AbstractHttpClientConnection_._assertOpen32605 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.AbstractHttpClientConnection_.staticClass, "assertOpen", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

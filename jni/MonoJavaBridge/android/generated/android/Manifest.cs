@@ -4,10 +4,6 @@ namespace android
 	public sealed partial class Manifest : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Manifest()
-		{
-			InitJNI();
-		}
 		internal Manifest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android
 		public sealed partial class permission : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static permission()
-			{
-				InitJNI();
-			}
 			internal permission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -827,21 +819,20 @@ namespace android
 					return "android.permission.WRITE_SYNC_SETTINGS";
 				}
 			}
-			private static void InitJNI()
+			static permission()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.Manifest.permission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission"));
 				global::android.Manifest.permission._permission0 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class permission_group : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static permission_group()
-			{
-				InitJNI();
-			}
 			internal permission_group(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -929,11 +920,14 @@ namespace android
 					return "android.permission-group.SYSTEM_TOOLS";
 				}
 			}
-			private static void InitJNI()
+			static permission_group()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.Manifest.permission_group.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission_group"));
 				global::android.Manifest.permission_group._permission_group115 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission_group.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _Manifest127;
@@ -943,11 +937,14 @@ namespace android
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.staticClass, global::android.Manifest._Manifest127);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Manifest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.Manifest.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest"));
 			global::android.Manifest._Manifest127 = @__env.GetMethodIDNoThrow(global::android.Manifest.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

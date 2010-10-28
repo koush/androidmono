@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public abstract partial class HttpAbstractParamBean : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpAbstractParamBean()
-		{
-			InitJNI();
-		}
 		protected HttpAbstractParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.HttpAbstractParamBean.staticClass, global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpAbstractParamBean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpAbstractParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpAbstractParamBean"));
 			global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpAbstractParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -30,17 +29,16 @@ namespace org.apache.http.@params
 	internal sealed partial class HttpAbstractParamBean_ : org.apache.http.@params.HttpAbstractParamBean
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpAbstractParamBean_()
-		{
-			InitJNI();
-		}
 		internal HttpAbstractParamBean_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static HttpAbstractParamBean_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpAbstractParamBean_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpAbstractParamBean"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

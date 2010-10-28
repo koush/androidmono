@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class PKIXParameters : java.lang.Object, CertPathParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PKIXParameters()
-		{
-			InitJNI();
-		}
 		protected PKIXParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -393,7 +389,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXParameters.staticClass, global::java.security.cert.PKIXParameters._PKIXParameters23679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PKIXParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PKIXParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PKIXParameters"));
@@ -427,6 +423,9 @@ namespace java.security.cert
 			global::java.security.cert.PKIXParameters._getTargetCertConstraints23677 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXParameters.staticClass, "getTargetCertConstraints", "()Ljava/security/cert/CertSelector;");
 			global::java.security.cert.PKIXParameters._PKIXParameters23678 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXParameters.staticClass, "<init>", "(Ljava/util/Set;)V");
 			global::java.security.cert.PKIXParameters._PKIXParameters23679 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXParameters.staticClass, "<init>", "(Ljava/security/KeyStore;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

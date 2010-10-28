@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public abstract partial class AtomicReferenceFieldUpdater : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicReferenceFieldUpdater()
-		{
-			InitJNI();
-		}
 		protected AtomicReferenceFieldUpdater(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater._AtomicReferenceFieldUpdater27674);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicReferenceFieldUpdater()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicReferenceFieldUpdater"));
@@ -56,16 +52,15 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater._newUpdater27673 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass, "newUpdater", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;");
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater._AtomicReferenceFieldUpdater27674 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater))]
 	internal sealed partial class AtomicReferenceFieldUpdater_ : java.util.concurrent.atomic.AtomicReferenceFieldUpdater
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicReferenceFieldUpdater_()
-		{
-			InitJNI();
-		}
 		internal AtomicReferenceFieldUpdater_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +109,7 @@ namespace java.util.concurrent.atomic
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._weakCompareAndSet27679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static AtomicReferenceFieldUpdater_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicReferenceFieldUpdater"));
@@ -123,6 +118,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._lazySet27677 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, "lazySet", "(Ljava/lang/Object;Ljava/lang/Object;)V");
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._compareAndSet27678 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, "compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z");
 			global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._weakCompareAndSet27679 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, "weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

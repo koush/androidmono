@@ -4,10 +4,6 @@ namespace android.util
 	public partial class EventLog : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EventLog()
-		{
-			InitJNI();
-		}
 		protected EventLog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.util
 		public sealed partial class Event : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Event()
-			{
-				InitJNI();
-			}
 			internal Event(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -102,7 +94,7 @@ namespace android.util
 				else
 					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getTimeNanos13753);
 			}
-			private static void InitJNI()
+			static Event()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.util.EventLog.Event.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/EventLog$Event"));
@@ -111,6 +103,9 @@ namespace android.util
 				global::android.util.EventLog.Event._getThreadId13751 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getThreadId", "()I");
 				global::android.util.EventLog.Event._getProcessId13752 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getProcessId", "()I");
 				global::android.util.EventLog.Event._getTimeNanos13753 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getTimeNanos", "()J");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTagName13754;
@@ -162,7 +157,7 @@ namespace android.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLog.staticClass, global::android.util.EventLog._EventLog13761);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EventLog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.EventLog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/EventLog"));
@@ -174,6 +169,9 @@ namespace android.util
 			global::android.util.EventLog._readEvents13759 = @__env.GetStaticMethodIDNoThrow(global::android.util.EventLog.staticClass, "readEvents", "([ILjava/util/Collection;)V");
 			global::android.util.EventLog._getTagCode13760 = @__env.GetStaticMethodIDNoThrow(global::android.util.EventLog.staticClass, "getTagCode", "(Ljava/lang/String;)I");
 			global::android.util.EventLog._EventLog13761 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

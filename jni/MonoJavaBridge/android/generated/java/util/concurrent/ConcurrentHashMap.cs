@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class ConcurrentHashMap : java.util.AbstractMap, ConcurrentMap, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConcurrentHashMap()
-		{
-			InitJNI();
-		}
 		protected ConcurrentHashMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -217,7 +213,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ConcurrentHashMap.staticClass, global::java.util.concurrent.ConcurrentHashMap._ConcurrentHashMap27133);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConcurrentHashMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ConcurrentHashMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ConcurrentHashMap"));
@@ -245,6 +241,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ConcurrentHashMap._ConcurrentHashMap27131 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentHashMap.staticClass, "<init>", "(IF)V");
 			global::java.util.concurrent.ConcurrentHashMap._ConcurrentHashMap27132 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentHashMap.staticClass, "<init>", "(I)V");
 			global::java.util.concurrent.ConcurrentHashMap._ConcurrentHashMap27133 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ConcurrentHashMap.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

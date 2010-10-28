@@ -11,10 +11,6 @@ namespace android.content
 	internal sealed partial class DialogInterface_ : java.lang.Object, DialogInterface
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialogInterface_()
-		{
-			InitJNI();
-		}
 		internal DialogInterface_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_.staticClass, global::android.content.DialogInterface_._dismiss3080);
 		}
-		private static void InitJNI()
+		static DialogInterface_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface"));
 			global::android.content.DialogInterface_._cancel3079 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "cancel", "()V");
 			global::android.content.DialogInterface_._dismiss3080 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "dismiss", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

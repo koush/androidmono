@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class TranslateAnimation : android.view.animation.Animation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TranslateAnimation()
-		{
-			InitJNI();
-		}
 		protected TranslateAnimation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,7 +46,7 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.TranslateAnimation.staticClass, global::android.view.animation.TranslateAnimation._TranslateAnimation15775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TranslateAnimation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.TranslateAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/TranslateAnimation"));
@@ -59,6 +55,9 @@ namespace android.view.animation
 			global::android.view.animation.TranslateAnimation._TranslateAnimation15773 = @__env.GetMethodIDNoThrow(global::android.view.animation.TranslateAnimation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.view.animation.TranslateAnimation._TranslateAnimation15774 = @__env.GetMethodIDNoThrow(global::android.view.animation.TranslateAnimation.staticClass, "<init>", "(FFFF)V");
 			global::android.view.animation.TranslateAnimation._TranslateAnimation15775 = @__env.GetMethodIDNoThrow(global::android.view.animation.TranslateAnimation.staticClass, "<init>", "(IFIFIFIF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

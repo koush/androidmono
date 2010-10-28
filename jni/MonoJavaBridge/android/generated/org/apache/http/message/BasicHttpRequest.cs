@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicHttpRequest : org.apache.http.message.AbstractHttpMessage, HttpRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHttpRequest()
-		{
-			InitJNI();
-		}
 		protected BasicHttpRequest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -64,7 +60,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHttpRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicHttpRequest.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicHttpRequest"));
@@ -73,6 +69,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33576 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33577 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V");
 			global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33578 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Lorg/apache/http/RequestLine;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

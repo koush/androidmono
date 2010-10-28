@@ -10,10 +10,6 @@ namespace android.content
 	internal sealed partial class DialogInterface_OnKeyListener_ : java.lang.Object, DialogInterface_OnKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialogInterface_OnKeyListener_()
-		{
-			InitJNI();
-		}
 		internal DialogInterface_OnKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.content
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.DialogInterface_OnKeyListener_.staticClass, global::android.content.DialogInterface_OnKeyListener_._onKey3073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static DialogInterface_OnKeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnKeyListener"));
 			global::android.content.DialogInterface_OnKeyListener_._onKey3073 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.content
 	internal partial class DialogInterface_OnKeyListenerDelegateWrapper : java.lang.Object, DialogInterface_OnKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DialogInterface_OnKeyListenerDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected DialogInterface_OnKeyListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DialogInterface_OnKeyListenerDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnKeyListenerDelegateWrapper"));
 			global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class DialogInterface_OnKeyListenerDelegateWrapper

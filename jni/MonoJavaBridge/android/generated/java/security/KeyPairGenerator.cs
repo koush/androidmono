@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class KeyPairGenerator : java.security.KeyPairGeneratorSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyPairGenerator()
-		{
-			InitJNI();
-		}
 		protected KeyPairGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -108,7 +104,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._KeyPairGenerator23051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyPairGenerator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyPairGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyPairGenerator"));
@@ -125,23 +121,25 @@ namespace java.security
 			global::java.security.KeyPairGenerator._generateKeyPair23050 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGenerator.staticClass, "generateKeyPair", "()Ljava/security/KeyPair;");
 			global::java.security.KeyPairGenerator._KeyPairGenerator23051 = @__env.GetMethodIDNoThrow(global::java.security.KeyPairGenerator.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.KeyPairGenerator))]
 	internal sealed partial class KeyPairGenerator_ : java.security.KeyPairGenerator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyPairGenerator_()
-		{
-			InitJNI();
-		}
 		internal KeyPairGenerator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static KeyPairGenerator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyPairGenerator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyPairGenerator"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

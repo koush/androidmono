@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public abstract partial class TimeUnit : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimeUnit()
-		{
-			InitJNI();
-		}
 		protected TimeUnit(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -185,7 +181,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _DAYS27520)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		private static void InitJNI()
+		static TimeUnit()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.TimeUnit.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/TimeUnit"));
@@ -210,23 +206,25 @@ namespace java.util.concurrent
 			global::java.util.concurrent.TimeUnit._HOURS27519 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "HOURS", "Ljava/util/concurrent/TimeUnit;");
 			global::java.util.concurrent.TimeUnit._DAYS27520 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "DAYS", "Ljava/util/concurrent/TimeUnit;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.concurrent.TimeUnit))]
 	internal sealed partial class TimeUnit_ : java.util.concurrent.TimeUnit
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TimeUnit_()
-		{
-			InitJNI();
-		}
 		internal TimeUnit_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static TimeUnit_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.TimeUnit_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/TimeUnit"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public partial class SQLiteQueryBuilder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteQueryBuilder()
-		{
-			InitJNI();
-		}
 		protected SQLiteQueryBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -178,7 +174,7 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._SQLiteQueryBuilder4856);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SQLiteQueryBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteQueryBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteQueryBuilder"));
@@ -197,6 +193,9 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteQueryBuilder._buildUnionSubQuery4854 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "buildUnionSubQuery", "(Ljava/lang/String;[Ljava/lang/String;Ljava/util/Set;ILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
 			global::android.database.sqlite.SQLiteQueryBuilder._buildUnionQuery4855 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "buildUnionQuery", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
 			global::android.database.sqlite.SQLiteQueryBuilder._SQLiteQueryBuilder4856 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.os
 	public partial class RemoteCallbackList : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RemoteCallbackList()
-		{
-			InitJNI();
-		}
 		protected RemoteCallbackList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -128,7 +124,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._RemoteCallbackList10194);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RemoteCallbackList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.RemoteCallbackList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RemoteCallbackList"));
@@ -143,6 +139,9 @@ namespace android.os
 			global::android.os.RemoteCallbackList._getBroadcastCookie10192 = @__env.GetMethodIDNoThrow(global::android.os.RemoteCallbackList.staticClass, "getBroadcastCookie", "(I)Ljava/lang/Object;");
 			global::android.os.RemoteCallbackList._finishBroadcast10193 = @__env.GetMethodIDNoThrow(global::android.os.RemoteCallbackList.staticClass, "finishBroadcast", "()V");
 			global::android.os.RemoteCallbackList._RemoteCallbackList10194 = @__env.GetMethodIDNoThrow(global::android.os.RemoteCallbackList.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

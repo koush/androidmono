@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class SimpleExpandableListAdapter : android.widget.BaseExpandableListAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleExpandableListAdapter()
-		{
-			InitJNI();
-		}
 		protected SimpleExpandableListAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -147,7 +143,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SimpleExpandableListAdapter.staticClass, global::android.widget.SimpleExpandableListAdapter._SimpleExpandableListAdapter17801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SimpleExpandableListAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleExpandableListAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleExpandableListAdapter"));
@@ -166,6 +162,9 @@ namespace android.widget
 			global::android.widget.SimpleExpandableListAdapter._SimpleExpandableListAdapter17799 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleExpandableListAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;II[Ljava/lang/String;[ILjava/util/List;I[Ljava/lang/String;[I)V");
 			global::android.widget.SimpleExpandableListAdapter._SimpleExpandableListAdapter17800 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleExpandableListAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;II[Ljava/lang/String;[ILjava/util/List;II[Ljava/lang/String;[I)V");
 			global::android.widget.SimpleExpandableListAdapter._SimpleExpandableListAdapter17801 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleExpandableListAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[ILjava/util/List;I[Ljava/lang/String;[I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

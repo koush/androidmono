@@ -4,10 +4,6 @@ namespace javax.security.auth
 	public sealed partial class Subject : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Subject()
-		{
-			InitJNI();
-		}
 		internal Subject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -175,7 +171,7 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._Subject30194);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Subject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Subject.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Subject"));
@@ -197,6 +193,9 @@ namespace javax.security.auth
 			global::javax.security.auth.Subject._getPrivateCredentials30192 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Subject.staticClass, "getPrivateCredentials", "(Ljava/lang/Class;)Ljava/util/Set;");
 			global::javax.security.auth.Subject._Subject30193 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Subject.staticClass, "<init>", "(ZLjava/util/Set;Ljava/util/Set;Ljava/util/Set;)V");
 			global::javax.security.auth.Subject._Subject30194 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Subject.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

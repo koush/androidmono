@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class ListResourceBundle : java.util.ListResourceBundleScopeChangeShim
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListResourceBundle()
-		{
-			InitJNI();
-		}
 		protected ListResourceBundle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._ListResourceBundle26446);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ListResourceBundle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ListResourceBundle.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ListResourceBundle"));
@@ -57,16 +53,15 @@ namespace java.util
 			global::java.util.ListResourceBundle._getContents26445 = @__env.GetMethodIDNoThrow(global::java.util.ListResourceBundle.staticClass, "getContents", "()[[Ljava/lang/Object;");
 			global::java.util.ListResourceBundle._ListResourceBundle26446 = @__env.GetMethodIDNoThrow(global::java.util.ListResourceBundle.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.ListResourceBundle))]
 	internal sealed partial class ListResourceBundle_ : java.util.ListResourceBundle
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListResourceBundle_()
-		{
-			InitJNI();
-		}
 		internal ListResourceBundle_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -79,11 +74,14 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle_.staticClass, global::java.util.ListResourceBundle_._getContents26447)) as java.lang.Object[][];
 		}
-		private static void InitJNI()
+		static ListResourceBundle_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ListResourceBundle_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ListResourceBundle"));
 			global::java.util.ListResourceBundle_._getContents26447 = @__env.GetMethodIDNoThrow(global::java.util.ListResourceBundle_.staticClass, "getContents", "()[[Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

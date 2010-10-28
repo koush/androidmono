@@ -4,10 +4,6 @@ namespace android.test.mock
 	public partial class MockPackageManager : android.content.pm.PackageManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MockPackageManager()
-		{
-			InitJNI();
-		}
 		protected MockPackageManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -588,7 +584,7 @@ namespace android.test.mock
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._MockPackageManager12587);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MockPackageManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.mock.MockPackageManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/mock/MockPackageManager"));
@@ -654,6 +650,9 @@ namespace android.test.mock
 			global::android.test.mock.MockPackageManager._getApplicationEnabledSetting12585 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockPackageManager.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I");
 			global::android.test.mock.MockPackageManager._isSafeMode12586 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockPackageManager.staticClass, "isSafeMode", "()Z");
 			global::android.test.mock.MockPackageManager._MockPackageManager12587 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockPackageManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.os
 	public partial class RemoteException : android.util.AndroidException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RemoteException()
-		{
-			InitJNI();
-		}
 		protected RemoteException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RemoteException.staticClass, global::android.os.RemoteException._RemoteException10195);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RemoteException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.RemoteException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RemoteException"));
 			global::android.os.RemoteException._RemoteException10195 = @__env.GetMethodIDNoThrow(global::android.os.RemoteException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

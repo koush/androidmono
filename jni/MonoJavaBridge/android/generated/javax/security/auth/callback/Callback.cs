@@ -9,17 +9,16 @@ namespace javax.security.auth.callback
 	internal sealed partial class Callback_ : java.lang.Object, Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Callback_()
-		{
-			InitJNI();
-		}
 		internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Callback_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/Callback"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class TextView : android.view.View, android.view.ViewTreeObserver.OnPreDrawListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextView()
-		{
-			InitJNI();
-		}
 		protected TextView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public sealed partial class BufferType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static BufferType()
-			{
-				InitJNI();
-			}
 			internal BufferType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.widget
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.TextView.BufferType>(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _SPANNABLE17971)) as android.widget.TextView.BufferType;
 				}
 			}
-			private static void InitJNI()
+			static BufferType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.BufferType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView$BufferType"));
@@ -70,6 +62,9 @@ namespace android.widget
 				global::android.widget.TextView.BufferType._EDITABLE17969 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.BufferType.staticClass, "EDITABLE", "Landroid/widget/TextView$BufferType;");
 				global::android.widget.TextView.BufferType._NORMAL17970 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.BufferType.staticClass, "NORMAL", "Landroid/widget/TextView$BufferType;");
 				global::android.widget.TextView.BufferType._SPANNABLE17971 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.BufferType.staticClass, "SPANNABLE", "Landroid/widget/TextView$BufferType;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.TextView.OnEditorActionListener_))]
@@ -82,10 +77,6 @@ namespace android.widget
 		internal sealed partial class OnEditorActionListener_ : java.lang.Object, OnEditorActionListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnEditorActionListener_()
-			{
-				InitJNI();
-			}
 			internal OnEditorActionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -98,11 +89,14 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.TextView.OnEditorActionListener_.staticClass, global::android.widget.TextView.OnEditorActionListener_._onEditorAction17972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnEditorActionListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.OnEditorActionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView$OnEditorActionListener"));
 				global::android.widget.TextView.OnEditorActionListener_._onEditorAction17972 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.OnEditorActionListener_.staticClass, "onEditorAction", "(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -111,10 +105,6 @@ namespace android.widget
 		internal partial class OnEditorActionListenerDelegateWrapper : java.lang.Object, OnEditorActionListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnEditorActionListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnEditorActionListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -125,11 +115,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TextView.OnEditorActionListenerDelegateWrapper.staticClass, global::android.widget.TextView.OnEditorActionListenerDelegateWrapper._OnEditorActionListenerDelegateWrapper17973);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnEditorActionListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.OnEditorActionListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView_OnEditorActionListenerDelegateWrapper"));
 				global::android.widget.TextView.OnEditorActionListenerDelegateWrapper._OnEditorActionListenerDelegateWrapper17973 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.OnEditorActionListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnEditorActionListenerDelegateWrapper
@@ -151,10 +144,6 @@ namespace android.widget
 		public partial class SavedState : android.view.View.BaseSavedState
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SavedState()
-			{
-				InitJNI();
-			}
 			protected SavedState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -185,13 +174,16 @@ namespace android.widget
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.widget.TextView.SavedState.staticClass, _CREATOR17976)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static SavedState()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.SavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView$SavedState"));
 				global::android.widget.TextView.SavedState._toString17974 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.SavedState.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.widget.TextView.SavedState._writeToParcel17975 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.SavedState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::android.widget.TextView.SavedState._CREATOR17976 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.SavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _append17977;
@@ -2594,7 +2586,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TextView.staticClass, global::android.widget.TextView._TextView18166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TextView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView"));
@@ -2788,6 +2780,9 @@ namespace android.widget
 			global::android.widget.TextView._TextView18164 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.TextView._TextView18165 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TextView._TextView18166 = @__env.GetMethodIDNoThrow(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

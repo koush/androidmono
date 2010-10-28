@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class RequestWrapper : org.apache.http.message.AbstractHttpMessage, org.apache.http.client.methods.HttpUriRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RequestWrapper()
-		{
-			InitJNI();
-		}
 		protected RequestWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -198,7 +194,7 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.RequestWrapper.staticClass, global::org.apache.http.impl.client.RequestWrapper._RequestWrapper32952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RequestWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.RequestWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/RequestWrapper"));
@@ -217,6 +213,9 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.RequestWrapper._getExecCount32950 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RequestWrapper.staticClass, "getExecCount", "()I");
 			global::org.apache.http.impl.client.RequestWrapper._incrementExecCount32951 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RequestWrapper.staticClass, "incrementExecCount", "()V");
 			global::org.apache.http.impl.client.RequestWrapper._RequestWrapper32952 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RequestWrapper.staticClass, "<init>", "(Lorg/apache/http/HttpRequest;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace java.security
 	internal sealed partial class Key_ : java.lang.Object, Key
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Key_()
-		{
-			InitJNI();
-		}
 		internal Key_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Key_.staticClass, global::java.security.Key_._getFormat23008)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Key_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Key_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Key"));
 			global::java.security.Key_._getEncoded23006 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getEncoded", "()[B");
 			global::java.security.Key_._getAlgorithm23007 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.Key_._getFormat23008 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

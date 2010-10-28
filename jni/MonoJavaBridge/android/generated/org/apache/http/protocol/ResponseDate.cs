@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class ResponseDate : java.lang.Object, HttpResponseInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseDate()
-		{
-			InitJNI();
-		}
 		protected ResponseDate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.ResponseDate.staticClass, global::org.apache.http.protocol.ResponseDate._ResponseDate33953);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResponseDate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.ResponseDate.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/ResponseDate"));
 			global::org.apache.http.protocol.ResponseDate._process33952 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseDate.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.ResponseDate._ResponseDate33953 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseDate.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

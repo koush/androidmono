@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class UriPatternMatcher : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UriPatternMatcher()
-		{
-			InitJNI();
-		}
 		protected UriPatternMatcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._UriPatternMatcher33965);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UriPatternMatcher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.UriPatternMatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/UriPatternMatcher"));
@@ -80,6 +76,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.UriPatternMatcher._setHandlers33963 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.UriPatternMatcher.staticClass, "setHandlers", "(Ljava/util/Map;)V");
 			global::org.apache.http.protocol.UriPatternMatcher._matchUriRequestPattern33964 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.UriPatternMatcher.staticClass, "matchUriRequestPattern", "(Ljava/lang/String;Ljava/lang/String;)Z");
 			global::org.apache.http.protocol.UriPatternMatcher._UriPatternMatcher33965 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.UriPatternMatcher.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

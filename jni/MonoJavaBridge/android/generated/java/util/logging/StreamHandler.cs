@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class StreamHandler : java.util.logging.Handler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StreamHandler()
-		{
-			InitJNI();
-		}
 		protected StreamHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.StreamHandler.staticClass, global::java.util.logging.StreamHandler._StreamHandler28111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StreamHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.StreamHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/StreamHandler"));
@@ -105,6 +101,9 @@ namespace java.util.logging
 			global::java.util.logging.StreamHandler._setOutputStream28109 = @__env.GetMethodIDNoThrow(global::java.util.logging.StreamHandler.staticClass, "setOutputStream", "(Ljava/io/OutputStream;)V");
 			global::java.util.logging.StreamHandler._StreamHandler28110 = @__env.GetMethodIDNoThrow(global::java.util.logging.StreamHandler.staticClass, "<init>", "()V");
 			global::java.util.logging.StreamHandler._StreamHandler28111 = @__env.GetMethodIDNoThrow(global::java.util.logging.StreamHandler.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/util/logging/Formatter;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

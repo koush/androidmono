@@ -17,10 +17,6 @@ namespace android.os
 	internal sealed partial class IBinder_ : java.lang.Object, IBinder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IBinder_()
-		{
-			InitJNI();
-		}
 		internal IBinder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._unlinkToDeath9904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static IBinder_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IBinder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder"));
@@ -108,6 +104,9 @@ namespace android.os
 			global::android.os.IBinder_._transact9902 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_.staticClass, "transact", "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z");
 			global::android.os.IBinder_._linkToDeath9903 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_.staticClass, "linkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)V");
 			global::android.os.IBinder_._unlinkToDeath9904 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_.staticClass, "unlinkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

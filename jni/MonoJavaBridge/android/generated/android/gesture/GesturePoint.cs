@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class GesturePoint : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GesturePoint()
-		{
-			InitJNI();
-		}
 		protected GesturePoint(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.gesture
 				return @__env.GetLongField(this.JvmHandle, _timestamp4965);
 			}
 		}
-		private static void InitJNI()
+		static GesturePoint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GesturePoint.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GesturePoint"));
@@ -63,6 +59,9 @@ namespace android.gesture
 			global::android.gesture.GesturePoint._x4963 = @__env.GetFieldIDNoThrow(global::android.gesture.GesturePoint.staticClass, "x", "F");
 			global::android.gesture.GesturePoint._y4964 = @__env.GetFieldIDNoThrow(global::android.gesture.GesturePoint.staticClass, "y", "F");
 			global::android.gesture.GesturePoint._timestamp4965 = @__env.GetFieldIDNoThrow(global::android.gesture.GesturePoint.staticClass, "timestamp", "J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicHeaderValueParser : java.lang.Object, HeaderValueParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHeaderValueParser()
-		{
-			InitJNI();
-		}
 		protected BasicHeaderValueParser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.message.BasicHeaderValueParser.staticClass, _DEFAULT33567)) as org.apache.http.message.BasicHeaderValueParser;
 			}
 		}
-		private static void InitJNI()
+		static BasicHeaderValueParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicHeaderValueParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicHeaderValueParser"));
@@ -131,6 +127,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicHeaderValueParser._createNameValuePair33565 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderValueParser.staticClass, "createNameValuePair", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/NameValuePair;");
 			global::org.apache.http.message.BasicHeaderValueParser._BasicHeaderValueParser33566 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderValueParser.staticClass, "<init>", "()V");
 			global::org.apache.http.message.BasicHeaderValueParser._DEFAULT33567 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicHeaderValueParser.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicHeaderValueParser;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

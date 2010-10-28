@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class ContentProvider : java.lang.Object, ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProvider()
-		{
-			InitJNI();
-		}
 		protected ContentProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -174,7 +170,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProvider.staticClass, global::android.content.ContentProvider._ContentProvider2655);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContentProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProvider"));
@@ -202,16 +198,15 @@ namespace android.content
 			global::android.content.ContentProvider._attachInfo2654 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider.staticClass, "attachInfo", "(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V");
 			global::android.content.ContentProvider._ContentProvider2655 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.ContentProvider))]
 	internal sealed partial class ContentProvider_ : android.content.ContentProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProvider_()
-		{
-			InitJNI();
-		}
 		internal ContentProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -269,7 +264,7 @@ namespace android.content
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.ContentProvider_.staticClass, global::android.content.ContentProvider_._onCreate2661);
 		}
-		private static void InitJNI()
+		static ContentProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProvider"));
@@ -279,6 +274,9 @@ namespace android.content
 			global::android.content.ContentProvider_._query2659 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider_.staticClass, "query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
 			global::android.content.ContentProvider_._update2660 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider_.staticClass, "update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I");
 			global::android.content.ContentProvider_._onCreate2661 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider_.staticClass, "onCreate", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

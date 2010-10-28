@@ -4,10 +4,6 @@ namespace java.util.logging
 	public partial class XMLFormatter : java.util.logging.Formatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLFormatter()
-		{
-			InitJNI();
-		}
 		protected XMLFormatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.XMLFormatter.staticClass, global::java.util.logging.XMLFormatter._XMLFormatter28115);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static XMLFormatter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.XMLFormatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/XMLFormatter"));
@@ -53,6 +49,9 @@ namespace java.util.logging
 			global::java.util.logging.XMLFormatter._getHead28113 = @__env.GetMethodIDNoThrow(global::java.util.logging.XMLFormatter.staticClass, "getHead", "(Ljava/util/logging/Handler;)Ljava/lang/String;");
 			global::java.util.logging.XMLFormatter._getTail28114 = @__env.GetMethodIDNoThrow(global::java.util.logging.XMLFormatter.staticClass, "getTail", "(Ljava/util/logging/Handler;)Ljava/lang/String;");
 			global::java.util.logging.XMLFormatter._XMLFormatter28115 = @__env.GetMethodIDNoThrow(global::java.util.logging.XMLFormatter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

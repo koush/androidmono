@@ -4,10 +4,6 @@ namespace android.net
 	public partial class ParseException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParseException()
-		{
-			InitJNI();
-		}
 		protected ParseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -23,11 +19,14 @@ namespace android.net
 			{
 			}
 		}
-		private static void InitJNI()
+		static ParseException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.ParseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/ParseException"));
 			global::android.net.ParseException._response7746 = @__env.GetFieldIDNoThrow(global::android.net.ParseException.staticClass, "response", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

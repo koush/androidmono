@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class FileChannel : java.nio.channels.spi.AbstractInterruptibleChannel, ByteChannel, GatheringByteChannel, ScatteringByteChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileChannel()
-		{
-			InitJNI();
-		}
 		protected FileChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.nio.channels
 		public partial class MapMode : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MapMode()
-			{
-				InitJNI();
-			}
 			protected MapMode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -58,7 +50,7 @@ namespace java.nio.channels
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _PRIVATE22451)) as java.nio.channels.FileChannel.MapMode;
 				}
 			}
-			private static void InitJNI()
+			static MapMode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.FileChannel.MapMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel$MapMode"));
@@ -66,6 +58,9 @@ namespace java.nio.channels
 				global::java.nio.channels.FileChannel.MapMode._READ_ONLY22449 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_ONLY", "Ljava/nio/channels/FileChannel$MapMode;");
 				global::java.nio.channels.FileChannel.MapMode._READ_WRITE22450 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_WRITE", "Ljava/nio/channels/FileChannel$MapMode;");
 				global::java.nio.channels.FileChannel.MapMode._PRIVATE22451 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "PRIVATE", "Ljava/nio/channels/FileChannel$MapMode;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _lock22452;
@@ -143,7 +138,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._FileChannel22472);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FileChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel"));
@@ -169,16 +164,15 @@ namespace java.nio.channels
 			global::java.nio.channels.FileChannel._transferFrom22471 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J");
 			global::java.nio.channels.FileChannel._FileChannel22472 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.FileChannel))]
 	internal sealed partial class FileChannel_ : java.nio.channels.FileChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileChannel_()
-		{
-			InitJNI();
-		}
 		internal FileChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -335,7 +329,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.FileChannel_.staticClass, global::java.nio.channels.FileChannel_._implCloseChannel22489);
 		}
-		private static void InitJNI()
+		static FileChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel"));
@@ -356,6 +350,9 @@ namespace java.nio.channels
 			global::java.nio.channels.FileChannel_._transferTo22487 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "transferTo", "(JJLjava/nio/channels/WritableByteChannel;)J");
 			global::java.nio.channels.FileChannel_._transferFrom22488 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J");
 			global::java.nio.channels.FileChannel_._implCloseChannel22489 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "implCloseChannel", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

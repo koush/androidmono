@@ -4,10 +4,6 @@ namespace android.net.wifi
 	public partial class WifiConfiguration : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WifiConfiguration()
-		{
-			InitJNI();
-		}
 		protected WifiConfiguration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net.wifi
 		public partial class AuthAlgorithm : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AuthAlgorithm()
-			{
-				InitJNI();
-			}
 			protected AuthAlgorithm(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -59,21 +51,20 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass, _strings8001)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static AuthAlgorithm()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$AuthAlgorithm"));
 				global::android.net.wifi.WifiConfiguration.AuthAlgorithm._strings8001 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class GroupCipher : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static GroupCipher()
-			{
-				InitJNI();
-			}
 			protected GroupCipher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -121,21 +112,20 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass, _strings8007)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static GroupCipher()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$GroupCipher"));
 				global::android.net.wifi.WifiConfiguration.GroupCipher._strings8007 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class KeyMgmt : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static KeyMgmt()
-			{
-				InitJNI();
-			}
 			protected KeyMgmt(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -183,21 +173,20 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass, _strings8013)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static KeyMgmt()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$KeyMgmt"));
 				global::android.net.wifi.WifiConfiguration.KeyMgmt._strings8013 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class PairwiseCipher : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PairwiseCipher()
-			{
-				InitJNI();
-			}
 			protected PairwiseCipher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -238,21 +227,20 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass, _strings8018)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static PairwiseCipher()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$PairwiseCipher"));
 				global::android.net.wifi.WifiConfiguration.PairwiseCipher._strings8018 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Protocol : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Protocol()
-			{
-				InitJNI();
-			}
 			protected Protocol(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -286,21 +274,20 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.Protocol.staticClass, _strings8022)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static Protocol()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.Protocol.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Protocol"));
 				global::android.net.wifi.WifiConfiguration.Protocol._strings8022 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Protocol.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Status : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Status()
-			{
-				InitJNI();
-			}
 			protected Status(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -334,11 +321,14 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.Status.staticClass, _strings8026)) as java.lang.String[];
 				}
 			}
-			private static void InitJNI()
+			static Status()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.Status.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Status"));
 				global::android.net.wifi.WifiConfiguration.Status._strings8026 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Status.staticClass, "strings", "[Ljava/lang/String;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString8027;
@@ -543,7 +533,7 @@ namespace android.net.wifi
 			{
 			}
 		}
-		private static void InitJNI()
+		static WifiConfiguration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.WifiConfiguration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration"));
@@ -565,6 +555,9 @@ namespace android.net.wifi
 			global::android.net.wifi.WifiConfiguration._allowedAuthAlgorithms8042 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedAuthAlgorithms", "Ljava/util/BitSet;");
 			global::android.net.wifi.WifiConfiguration._allowedPairwiseCiphers8043 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedPairwiseCiphers", "Ljava/util/BitSet;");
 			global::android.net.wifi.WifiConfiguration._allowedGroupCiphers8044 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedGroupCiphers", "Ljava/util/BitSet;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

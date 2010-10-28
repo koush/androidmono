@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Handler : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Handler()
-		{
-			InitJNI();
-		}
 		protected Handler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.os
 		internal sealed partial class Callback_ : java.lang.Object, Callback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Callback_()
-			{
-				InitJNI();
-			}
 			internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.os
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.Callback_.staticClass, global::android.os.Handler.Callback_._handleMessage9853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static Callback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Handler.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler$Callback"));
 				global::android.os.Handler.Callback_._handleMessage9853 = @__env.GetMethodIDNoThrow(global::android.os.Handler.Callback_.staticClass, "handleMessage", "(Landroid/os/Message;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.os
 		internal partial class CallbackDelegateWrapper : java.lang.Object, Callback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected CallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.os
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Handler.CallbackDelegateWrapper.staticClass, global::android.os.Handler.CallbackDelegateWrapper._CallbackDelegateWrapper9854);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Handler.CallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler_CallbackDelegateWrapper"));
 				global::android.os.Handler.CallbackDelegateWrapper._CallbackDelegateWrapper9854 = @__env.GetMethodIDNoThrow(global::android.os.Handler.CallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class CallbackDelegateWrapper
@@ -414,7 +408,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Handler.staticClass, global::android.os.Handler._Handler9887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Handler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Handler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler"));
@@ -451,6 +445,9 @@ namespace android.os
 			global::android.os.Handler._Handler9885 = @__env.GetMethodIDNoThrow(global::android.os.Handler.staticClass, "<init>", "(Landroid/os/Handler$Callback;)V");
 			global::android.os.Handler._Handler9886 = @__env.GetMethodIDNoThrow(global::android.os.Handler.staticClass, "<init>", "(Landroid/os/Looper;)V");
 			global::android.os.Handler._Handler9887 = @__env.GetMethodIDNoThrow(global::android.os.Handler.staticClass, "<init>", "(Landroid/os/Looper;Landroid/os/Handler$Callback;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

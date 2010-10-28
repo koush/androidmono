@@ -4,10 +4,6 @@ namespace javax.sql
 	public partial class ConnectionEvent : java.util.EventObject
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnectionEvent()
-		{
-			InitJNI();
-		}
 		protected ConnectionEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,13 +37,16 @@ namespace javax.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._ConnectionEvent30279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConnectionEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.ConnectionEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/ConnectionEvent"));
 			global::javax.sql.ConnectionEvent._getSQLException30277 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEvent.staticClass, "getSQLException", "()Ljava/sql/SQLException;");
 			global::javax.sql.ConnectionEvent._ConnectionEvent30278 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEvent.staticClass, "<init>", "(Ljavax/sql/PooledConnection;)V");
 			global::javax.sql.ConnectionEvent._ConnectionEvent30279 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEvent.staticClass, "<init>", "(Ljavax/sql/PooledConnection;Ljava/sql/SQLException;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

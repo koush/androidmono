@@ -4,10 +4,6 @@ namespace android.test.mock
 	public partial class MockCursor : java.lang.Object, android.database.Cursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MockCursor()
-		{
-			InitJNI();
-		}
 		protected MockCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -528,7 +524,7 @@ namespace android.test.mock
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._MockCursor12522);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MockCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.mock.MockCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/mock/MockCursor"));
@@ -585,6 +581,9 @@ namespace android.test.mock
 			global::android.test.mock.MockCursor._updateToNull12520 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockCursor.staticClass, "updateToNull", "(I)Z");
 			global::android.test.mock.MockCursor._abortUpdates12521 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockCursor.staticClass, "abortUpdates", "()V");
 			global::android.test.mock.MockCursor._MockCursor12522 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockCursor.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

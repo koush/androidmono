@@ -4,10 +4,6 @@ namespace android.hardware
 	public partial class SensorManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SensorManager()
-		{
-			InitJNI();
-		}
 		protected SensorManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -533,7 +529,7 @@ namespace android.hardware
 				return 131;
 			}
 		}
-		private static void InitJNI()
+		static SensorManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorManager"));
@@ -552,6 +548,9 @@ namespace android.hardware
 			global::android.hardware.SensorManager._unregisterListener6468 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;)V");
 			global::android.hardware.SensorManager._getRotationMatrix6469 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getRotationMatrix", "([F[F[F[F)Z");
 			global::android.hardware.SensorManager._remapCoordinateSystem6470 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "remapCoordinateSystem", "([FII[F)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

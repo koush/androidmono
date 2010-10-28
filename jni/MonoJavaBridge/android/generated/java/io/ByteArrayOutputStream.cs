@@ -4,10 +4,6 @@ namespace java.io
 	public partial class ByteArrayOutputStream : java.io.OutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteArrayOutputStream()
-		{
-			InitJNI();
-		}
 		protected ByteArrayOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -115,7 +111,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ByteArrayOutputStream.staticClass, global::java.io.ByteArrayOutputStream._ByteArrayOutputStream18855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ByteArrayOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ByteArrayOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ByteArrayOutputStream"));
@@ -131,6 +127,9 @@ namespace java.io
 			global::java.io.ByteArrayOutputStream._writeTo18853 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayOutputStream.staticClass, "writeTo", "(Ljava/io/OutputStream;)V");
 			global::java.io.ByteArrayOutputStream._ByteArrayOutputStream18854 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayOutputStream.staticClass, "<init>", "()V");
 			global::java.io.ByteArrayOutputStream._ByteArrayOutputStream18855 = @__env.GetMethodIDNoThrow(global::java.io.ByteArrayOutputStream.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

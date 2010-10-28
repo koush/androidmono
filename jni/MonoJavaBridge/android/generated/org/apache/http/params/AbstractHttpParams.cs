@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public abstract partial class AbstractHttpParams : java.lang.Object, HttpParams
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpParams()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._AbstractHttpParams33728);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.AbstractHttpParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/AbstractHttpParams"));
@@ -136,16 +132,15 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.AbstractHttpParams._isParameterFalse33727 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.AbstractHttpParams.staticClass, "isParameterFalse", "(Ljava/lang/String;)Z");
 			global::org.apache.http.@params.AbstractHttpParams._AbstractHttpParams33728 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.AbstractHttpParams.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.@params.AbstractHttpParams))]
 	internal sealed partial class AbstractHttpParams_ : org.apache.http.@params.AbstractHttpParams
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpParams_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpParams_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -185,7 +180,7 @@ namespace org.apache.http.@params
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams_.staticClass, global::org.apache.http.@params.AbstractHttpParams_._removeParameter33732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static AbstractHttpParams_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.AbstractHttpParams_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/AbstractHttpParams"));
@@ -193,6 +188,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.AbstractHttpParams_._setParameter33730 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.AbstractHttpParams_.staticClass, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams;");
 			global::org.apache.http.@params.AbstractHttpParams_._getParameter33731 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.AbstractHttpParams_.staticClass, "getParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::org.apache.http.@params.AbstractHttpParams_._removeParameter33732 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.AbstractHttpParams_.staticClass, "removeParameter", "(Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

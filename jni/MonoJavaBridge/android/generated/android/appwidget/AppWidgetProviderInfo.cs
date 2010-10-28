@@ -4,10 +4,6 @@ namespace android.appwidget
 	public partial class AppWidgetProviderInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AppWidgetProviderInfo()
-		{
-			InitJNI();
-		}
 		protected AppWidgetProviderInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -157,7 +153,7 @@ namespace android.appwidget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.appwidget.AppWidgetProviderInfo.staticClass, _CREATOR2402)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AppWidgetProviderInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.appwidget.AppWidgetProviderInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetProviderInfo"));
@@ -175,6 +171,9 @@ namespace android.appwidget
 			global::android.appwidget.AppWidgetProviderInfo._label2400 = @__env.GetFieldIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "label", "Ljava/lang/String;");
 			global::android.appwidget.AppWidgetProviderInfo._icon2401 = @__env.GetFieldIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "icon", "I");
 			global::android.appwidget.AppWidgetProviderInfo._CREATOR2402 = @__env.GetStaticFieldIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

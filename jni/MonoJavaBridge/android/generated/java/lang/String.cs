@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class String : java.lang.Object, java.io.Serializable, Comparable, CharSequence
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static String()
-		{
-			InitJNI();
-		}
 		internal String(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -699,7 +695,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.GetStaticObjectField(global::java.lang.String.staticClass, _CASE_INSENSITIVE_ORDER20679)) as java.util.Comparator;
 			}
 		}
-		private static void InitJNI()
+		static String()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.String.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/String"));
@@ -785,6 +781,9 @@ namespace java.lang
 			global::java.lang.String._String20677 = @__env.GetMethodIDNoThrow(global::java.lang.String.staticClass, "<init>", "([BIILjava/nio/charset/Charset;)V");
 			global::java.lang.String._String20678 = @__env.GetMethodIDNoThrow(global::java.lang.String.staticClass, "<init>", "([BLjava/lang/String;)V");
 			global::java.lang.String._CASE_INSENSITIVE_ORDER20679 = @__env.GetStaticFieldIDNoThrow(global::java.lang.String.staticClass, "CASE_INSENSITIVE_ORDER", "Ljava/util/Comparator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

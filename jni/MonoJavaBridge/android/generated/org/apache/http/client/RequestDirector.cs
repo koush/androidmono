@@ -10,10 +10,6 @@ namespace org.apache.http.client
 	internal sealed partial class RequestDirector_ : java.lang.Object, RequestDirector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RequestDirector_()
-		{
-			InitJNI();
-		}
 		internal RequestDirector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.RequestDirector_.staticClass, global::org.apache.http.client.RequestDirector_._execute31901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
 		}
-		private static void InitJNI()
+		static RequestDirector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.RequestDirector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/RequestDirector"));
 			global::org.apache.http.client.RequestDirector_._execute31901 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RequestDirector_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

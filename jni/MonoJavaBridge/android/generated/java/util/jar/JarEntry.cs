@@ -4,10 +4,6 @@ namespace java.util.jar
 	public partial class JarEntry : java.util.zip.ZipEntry
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JarEntry()
-		{
-			InitJNI();
-		}
 		protected JarEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -80,7 +76,7 @@ namespace java.util.jar
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._JarEntry27862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static JarEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.JarEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/JarEntry"));
@@ -90,6 +86,9 @@ namespace java.util.jar
 			global::java.util.jar.JarEntry._JarEntry27860 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.util.jar.JarEntry._JarEntry27861 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "<init>", "(Ljava/util/zip/ZipEntry;)V");
 			global::java.util.jar.JarEntry._JarEntry27862 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "<init>", "(Ljava/util/jar/JarEntry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

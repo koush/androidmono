@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Canvas : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Canvas()
-		{
-			InitJNI();
-		}
 		protected Canvas(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class EdgeType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static EdgeType()
-			{
-				InitJNI();
-			}
 			internal EdgeType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -52,7 +44,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.EdgeType>(@__env.GetStaticObjectField(global::android.graphics.Canvas.EdgeType.staticClass, _BW5115)) as android.graphics.Canvas.EdgeType;
 				}
 			}
-			private static void InitJNI()
+			static EdgeType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Canvas.EdgeType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Canvas$EdgeType"));
@@ -61,15 +53,14 @@ namespace android.graphics
 				global::android.graphics.Canvas.EdgeType._AA5114 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.EdgeType.staticClass, "AA", "Landroid/graphics/Canvas$EdgeType;");
 				global::android.graphics.Canvas.EdgeType._BW5115 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.EdgeType.staticClass, "BW", "Landroid/graphics/Canvas$EdgeType;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class VertexMode : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static VertexMode()
-			{
-				InitJNI();
-			}
 			internal VertexMode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,7 +103,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.VertexMode>(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLE_STRIP5120)) as android.graphics.Canvas.VertexMode;
 				}
 			}
-			private static void InitJNI()
+			static VertexMode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Canvas.VertexMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Canvas$VertexMode"));
@@ -121,6 +112,9 @@ namespace android.graphics
 				global::android.graphics.Canvas.VertexMode._TRIANGLES5118 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLES", "Landroid/graphics/Canvas$VertexMode;");
 				global::android.graphics.Canvas.VertexMode._TRIANGLE_FAN5119 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLE_FAN", "Landroid/graphics/Canvas$VertexMode;");
 				global::android.graphics.Canvas.VertexMode._TRIANGLE_STRIP5120 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLE_STRIP", "Landroid/graphics/Canvas$VertexMode;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5121;
@@ -1027,7 +1021,7 @@ namespace android.graphics
 				return 31;
 			}
 		}
-		private static void InitJNI()
+		static Canvas()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Canvas.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Canvas"));
@@ -1119,6 +1113,9 @@ namespace android.graphics
 			global::android.graphics.Canvas._Canvas5206 = @__env.GetMethodIDNoThrow(global::android.graphics.Canvas.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V");
 			global::android.graphics.Canvas._Canvas5207 = @__env.GetMethodIDNoThrow(global::android.graphics.Canvas.staticClass, "<init>", "(Ljavax/microedition/khronos/opengles/GL;)V");
 			global::android.graphics.Canvas._Canvas5208 = @__env.GetMethodIDNoThrow(global::android.graphics.Canvas.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

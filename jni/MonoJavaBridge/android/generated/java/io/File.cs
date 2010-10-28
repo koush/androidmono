@@ -4,10 +4,6 @@ namespace java.io
 	public partial class File : java.lang.Object, Serializable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static File()
-		{
-			InitJNI();
-		}
 		protected File(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -606,7 +602,7 @@ namespace java.io
 				return ":";
 			}
 		}
-		private static void InitJNI()
+		static File()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.File.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/File"));
@@ -664,6 +660,9 @@ namespace java.io
 			global::java.io.File._File19003 = @__env.GetMethodIDNoThrow(global::java.io.File.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.File._File19004 = @__env.GetMethodIDNoThrow(global::java.io.File.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.io.File._File19005 = @__env.GetMethodIDNoThrow(global::java.io.File.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

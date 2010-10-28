@@ -4,10 +4,6 @@ namespace java.util.prefs
 	public abstract partial class Preferences : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Preferences()
-		{
-			InitJNI();
-		}
 		protected Preferences(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -137,7 +133,7 @@ namespace java.util.prefs
 				return 80;
 			}
 		}
-		private static void InitJNI()
+		static Preferences()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.Preferences.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/Preferences"));
@@ -182,16 +178,15 @@ namespace java.util.prefs
 			global::java.util.prefs.Preferences._importPreferences28225 = @__env.GetStaticMethodIDNoThrow(global::java.util.prefs.Preferences.staticClass, "importPreferences", "(Ljava/io/InputStream;)V");
 			global::java.util.prefs.Preferences._Preferences28226 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.prefs.Preferences))]
 	internal sealed partial class Preferences_ : java.util.prefs.Preferences
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Preferences_()
-		{
-			InitJNI();
-		}
 		internal Preferences_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -501,7 +496,7 @@ namespace java.util.prefs
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_.staticClass, global::java.util.prefs.Preferences_._exportSubtree28263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Preferences_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.Preferences_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/Preferences"));
@@ -539,6 +534,9 @@ namespace java.util.prefs
 			global::java.util.prefs.Preferences_._removeNodeChangeListener28261 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "removeNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V");
 			global::java.util.prefs.Preferences_._exportNode28262 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "exportNode", "(Ljava/io/OutputStream;)V");
 			global::java.util.prefs.Preferences_._exportSubtree28263 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "exportSubtree", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

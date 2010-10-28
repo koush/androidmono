@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public sealed partial class HTTP : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HTTP()
-		{
-			InitJNI();
-		}
 		internal HTTP(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -227,11 +223,14 @@ namespace org.apache.http.protocol
 				return "application/octet-stream";
 			}
 		}
-		private static void InitJNI()
+		static HTTP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HTTP.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HTTP"));
 			global::org.apache.http.protocol.HTTP._isWhitespace33854 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.protocol.HTTP.staticClass, "isWhitespace", "(C)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

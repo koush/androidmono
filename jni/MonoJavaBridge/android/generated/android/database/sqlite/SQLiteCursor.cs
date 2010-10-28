@@ -4,10 +4,6 @@ namespace android.database.sqlite
 	public partial class SQLiteCursor : android.database.AbstractWindowedCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteCursor()
-		{
-			InitJNI();
-		}
 		protected SQLiteCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -161,7 +157,7 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._SQLiteCursor4727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SQLiteCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteCursor"));
@@ -178,6 +174,9 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteCursor._getDatabase4725 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteCursor.staticClass, "getDatabase", "()Landroid/database/sqlite/SQLiteDatabase;");
 			global::android.database.sqlite.SQLiteCursor._setSelectionArguments4726 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteCursor.staticClass, "setSelectionArguments", "([Ljava/lang/String;)V");
 			global::android.database.sqlite.SQLiteCursor._SQLiteCursor4727 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteCursor.staticClass, "<init>", "(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

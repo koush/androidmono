@@ -4,10 +4,6 @@ namespace android.os
 	public partial class ResultReceiver : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResultReceiver()
-		{
-			InitJNI();
-		}
 		protected ResultReceiver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ResultReceiver.staticClass, _CREATOR10201)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ResultReceiver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.ResultReceiver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ResultReceiver"));
@@ -73,6 +69,9 @@ namespace android.os
 			global::android.os.ResultReceiver._onReceiveResult10199 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "onReceiveResult", "(ILandroid/os/Bundle;)V");
 			global::android.os.ResultReceiver._ResultReceiver10200 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "<init>", "(Landroid/os/Handler;)V");
 			global::android.os.ResultReceiver._CREATOR10201 = @__env.GetStaticFieldIDNoThrow(global::android.os.ResultReceiver.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

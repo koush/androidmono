@@ -14,10 +14,6 @@ namespace org.w3c.dom
 	internal sealed partial class NameList_ : java.lang.Object, NameList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NameList_()
-		{
-			InitJNI();
-		}
 		internal NameList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.NameList_.staticClass, global::org.w3c.dom.NameList_._containsNS34675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static NameList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.NameList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/NameList"));
@@ -75,6 +71,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.NameList_._contains34673 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NameList_.staticClass, "contains", "(Ljava/lang/String;)Z");
 			global::org.w3c.dom.NameList_._getNamespaceURI34674 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NameList_.staticClass, "getNamespaceURI", "(I)Ljava/lang/String;");
 			global::org.w3c.dom.NameList_._containsNS34675 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NameList_.staticClass, "containsNS", "(Ljava/lang/String;Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.method
 	public partial class SingleLineTransformationMethod : android.text.method.ReplacementTransformationMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SingleLineTransformationMethod()
-		{
-			InitJNI();
-		}
 		protected SingleLineTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod13394);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SingleLineTransformationMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.SingleLineTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/SingleLineTransformationMethod"));
@@ -71,6 +67,9 @@ namespace android.text.method
 			global::android.text.method.SingleLineTransformationMethod._getOriginal13392 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "getOriginal", "()[C");
 			global::android.text.method.SingleLineTransformationMethod._getReplacement13393 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "getReplacement", "()[C");
 			global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod13394 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

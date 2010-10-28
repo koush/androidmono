@@ -4,10 +4,6 @@ namespace org.apache.http.impl.entity
 	public partial class EntityDeserializer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityDeserializer()
-		{
-			InitJNI();
-		}
 		protected EntityDeserializer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.EntityDeserializer.staticClass, global::org.apache.http.impl.entity.EntityDeserializer._EntityDeserializer33372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EntityDeserializer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.entity.EntityDeserializer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/entity/EntityDeserializer"));
 			global::org.apache.http.impl.entity.EntityDeserializer._doDeserialize33370 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntityDeserializer.staticClass, "doDeserialize", "(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/entity/BasicHttpEntity;");
 			global::org.apache.http.impl.entity.EntityDeserializer._deserialize33371 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntityDeserializer.staticClass, "deserialize", "(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/HttpEntity;");
 			global::org.apache.http.impl.entity.EntityDeserializer._EntityDeserializer33372 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.EntityDeserializer.staticClass, "<init>", "(Lorg/apache/http/entity/ContentLengthStrategy;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

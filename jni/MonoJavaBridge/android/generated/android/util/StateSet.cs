@@ -4,10 +4,6 @@ namespace android.util
 	public partial class StateSet : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StateSet()
-		{
-			InitJNI();
-		}
 		protected StateSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -57,7 +53,7 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.GetStaticObjectField(global::android.util.StateSet.staticClass, _WILD_CARD13884)) as int[];
 			}
 		}
-		private static void InitJNI()
+		static StateSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.StateSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/StateSet"));
@@ -68,6 +64,9 @@ namespace android.util
 			global::android.util.StateSet._trimStateSet13882 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "trimStateSet", "([II)[I");
 			global::android.util.StateSet._StateSet13883 = @__env.GetMethodIDNoThrow(global::android.util.StateSet.staticClass, "<init>", "()V");
 			global::android.util.StateSet._WILD_CARD13884 = @__env.GetStaticFieldIDNoThrow(global::android.util.StateSet.staticClass, "WILD_CARD", "[I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

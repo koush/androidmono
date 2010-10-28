@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class ParcelUuid : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParcelUuid()
-		{
-			InitJNI();
-		}
 		internal ParcelUuid(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -94,7 +90,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ParcelUuid.staticClass, _CREATOR10110)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ParcelUuid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.ParcelUuid.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelUuid"));
@@ -107,6 +103,9 @@ namespace android.os
 			global::android.os.ParcelUuid._getUuid10108 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "getUuid", "()Ljava/util/UUID;");
 			global::android.os.ParcelUuid._ParcelUuid10109 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "<init>", "(Ljava/util/UUID;)V");
 			global::android.os.ParcelUuid._CREATOR10110 = @__env.GetStaticFieldIDNoThrow(global::android.os.ParcelUuid.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

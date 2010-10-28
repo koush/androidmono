@@ -4,10 +4,6 @@ namespace java.text
 	public partial class DateFormatSymbols : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateFormatSymbols()
-		{
-			InitJNI();
-		}
 		protected DateFormatSymbols(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -316,7 +312,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._DateFormatSymbols25423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DateFormatSymbols()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DateFormatSymbols.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormatSymbols"));
@@ -344,6 +340,9 @@ namespace java.text
 			global::java.text.DateFormatSymbols._setLocalPatternChars25421 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setLocalPatternChars", "(Ljava/lang/String;)V");
 			global::java.text.DateFormatSymbols._DateFormatSymbols25422 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "()V");
 			global::java.text.DateFormatSymbols._DateFormatSymbols25423 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "(Ljava/util/Locale;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.net.wifi
 	public partial class WifiManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WifiManager()
-		{
-			InitJNI();
-		}
 		protected WifiManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net.wifi
 		public partial class MulticastLock : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MulticastLock()
-			{
-				InitJNI();
-			}
 			protected MulticastLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -83,7 +75,7 @@ namespace android.net.wifi
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._isHeld8064);
 			}
-			private static void InitJNI()
+			static MulticastLock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiManager.MulticastLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiManager$MulticastLock"));
@@ -94,15 +86,14 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiManager.MulticastLock._setReferenceCounted8063 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.MulticastLock.staticClass, "setReferenceCounted", "(Z)V");
 				global::android.net.wifi.WifiManager.MulticastLock._isHeld8064 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.MulticastLock.staticClass, "isHeld", "()Z");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class WifiLock : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WifiLock()
-			{
-				InitJNI();
-			}
 			protected WifiLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -167,7 +158,7 @@ namespace android.net.wifi
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._isHeld8070);
 			}
-			private static void InitJNI()
+			static WifiLock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiManager.WifiLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiManager$WifiLock"));
@@ -177,6 +168,9 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiManager.WifiLock._release8068 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.WifiLock.staticClass, "release", "()V");
 				global::android.net.wifi.WifiManager.WifiLock._setReferenceCounted8069 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.WifiLock.staticClass, "setReferenceCounted", "(Z)V");
 				global::android.net.wifi.WifiManager.WifiLock._isHeld8070 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.WifiLock.staticClass, "isHeld", "()Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _reconnect8071;
@@ -590,7 +584,7 @@ namespace android.net.wifi
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static WifiManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.WifiManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiManager"));
@@ -617,6 +611,9 @@ namespace android.net.wifi
 			global::android.net.wifi.WifiManager._createWifiLock8091 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;");
 			global::android.net.wifi.WifiManager._createWifiLock8092 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;");
 			global::android.net.wifi.WifiManager._createMulticastLock8093 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "createMulticastLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$MulticastLock;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

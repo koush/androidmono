@@ -4,10 +4,6 @@ namespace android.os
 	public partial class Process : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Process()
-		{
-			InitJNI();
-		}
 		protected Process(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -230,7 +226,7 @@ namespace android.os
 				return 10;
 			}
 		}
-		private static void InitJNI()
+		static Process()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Process.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Process"));
@@ -247,6 +243,9 @@ namespace android.os
 			global::android.os.Process._killProcess10157 = @__env.GetStaticMethodIDNoThrow(global::android.os.Process.staticClass, "killProcess", "(I)V");
 			global::android.os.Process._sendSignal10158 = @__env.GetStaticMethodIDNoThrow(global::android.os.Process.staticClass, "sendSignal", "(II)V");
 			global::android.os.Process._Process10159 = @__env.GetMethodIDNoThrow(global::android.os.Process.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -11,10 +11,6 @@ namespace java.security.cert
 	internal sealed partial class CRLSelector_ : java.lang.Object, CRLSelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CRLSelector_()
-		{
-			InitJNI();
-		}
 		internal CRLSelector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.security.cert
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.CRLSelector_.staticClass, global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CRLSelector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CRLSelector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CRLSelector"));
 			global::java.security.cert.CRLSelector_._clone23477 = @__env.GetMethodIDNoThrow(global::java.security.cert.CRLSelector_.staticClass, "clone", "()Ljava/lang/Object;");
 			global::java.security.cert.CRLSelector_._match23478 = @__env.GetMethodIDNoThrow(global::java.security.cert.CRLSelector_.staticClass, "match", "(Ljava/security/cert/CRL;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

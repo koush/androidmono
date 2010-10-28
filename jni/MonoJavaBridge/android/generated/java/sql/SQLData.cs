@@ -12,10 +12,6 @@ namespace java.sql
 	internal sealed partial class SQLData_ : java.lang.Object, SQLData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLData_()
-		{
-			InitJNI();
-		}
 		internal SQLData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._writeSQL24969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SQLData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLData"));
 			global::java.sql.SQLData_._getSQLTypeName24967 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
 			global::java.sql.SQLData_._readSQL24968 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V");
 			global::java.sql.SQLData_._writeSQL24969 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "writeSQL", "(Ljava/sql/SQLOutput;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

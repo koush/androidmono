@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ToggleButton : android.widget.CompoundButton
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ToggleButton()
-		{
-			InitJNI();
-		}
 		protected ToggleButton(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -148,7 +144,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._ToggleButton18213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ToggleButton()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ToggleButton.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ToggleButton"));
@@ -163,6 +159,9 @@ namespace android.widget
 			global::android.widget.ToggleButton._ToggleButton18211 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.ToggleButton._ToggleButton18212 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.ToggleButton._ToggleButton18213 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

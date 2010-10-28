@@ -11,10 +11,6 @@ namespace android.text.style
 	internal sealed partial class LeadingMarginSpan_ : java.lang.Object, LeadingMarginSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LeadingMarginSpan_()
-		{
-			InitJNI();
-		}
 		internal LeadingMarginSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.text.style
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_.staticClass, global::android.text.style.LeadingMarginSpan_._drawLeadingMargin13520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11));
 		}
-		private static void InitJNI()
+		static LeadingMarginSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.LeadingMarginSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/LeadingMarginSpan"));
 			global::android.text.style.LeadingMarginSpan_._getLeadingMargin13519 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_.staticClass, "getLeadingMargin", "(Z)I");
 			global::android.text.style.LeadingMarginSpan_._drawLeadingMargin13520 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_.staticClass, "drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

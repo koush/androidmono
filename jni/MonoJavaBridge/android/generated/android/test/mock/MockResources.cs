@@ -4,10 +4,6 @@ namespace android.test.mock
 	public partial class MockResources : android.content.res.Resources
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MockResources()
-		{
-			InitJNI();
-		}
 		protected MockResources(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -351,7 +347,7 @@ namespace android.test.mock
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockResources.staticClass, global::android.test.mock.MockResources._MockResources12623);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MockResources()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.mock.MockResources.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/mock/MockResources"));
@@ -391,6 +387,9 @@ namespace android.test.mock
 			global::android.test.mock.MockResources._getResourceTypeName12621 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockResources.staticClass, "getResourceTypeName", "(I)Ljava/lang/String;");
 			global::android.test.mock.MockResources._getResourceEntryName12622 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockResources.staticClass, "getResourceEntryName", "(I)Ljava/lang/String;");
 			global::android.test.mock.MockResources._MockResources12623 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockResources.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

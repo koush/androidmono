@@ -10,10 +10,6 @@ namespace javax.net.ssl
 	internal sealed partial class HandshakeCompletedListener_ : java.lang.Object, HandshakeCompletedListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HandshakeCompletedListener_()
-		{
-			InitJNI();
-		}
 		internal HandshakeCompletedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.net.ssl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_.staticClass, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static HandshakeCompletedListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HandshakeCompletedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HandshakeCompletedListener"));
 			global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedListener_.staticClass, "handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

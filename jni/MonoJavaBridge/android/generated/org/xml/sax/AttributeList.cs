@@ -15,10 +15,6 @@ namespace org.xml.sax
 	internal sealed partial class AttributeList_ : java.lang.Object, AttributeList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributeList_()
-		{
-			InitJNI();
-		}
 		internal AttributeList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.xml.sax
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.AttributeList_.staticClass, global::org.xml.sax.AttributeList_._getType34949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static AttributeList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.AttributeList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/AttributeList"));
@@ -86,6 +82,9 @@ namespace org.xml.sax
 			global::org.xml.sax.AttributeList_._getValue34947 = @__env.GetMethodIDNoThrow(global::org.xml.sax.AttributeList_.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::org.xml.sax.AttributeList_._getType34948 = @__env.GetMethodIDNoThrow(global::org.xml.sax.AttributeList_.staticClass, "getType", "(I)Ljava/lang/String;");
 			global::org.xml.sax.AttributeList_._getType34949 = @__env.GetMethodIDNoThrow(global::org.xml.sax.AttributeList_.staticClass, "getType", "(Ljava/lang/String;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

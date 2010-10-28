@@ -4,10 +4,6 @@ namespace java.io
 	public partial class InputStreamReader : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputStreamReader()
-		{
-			InitJNI();
-		}
 		protected InputStreamReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -91,7 +87,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._InputStreamReader19113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputStreamReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InputStreamReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InputStreamReader"));
@@ -104,6 +100,9 @@ namespace java.io
 			global::java.io.InputStreamReader._InputStreamReader19111 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/lang/String;)V");
 			global::java.io.InputStreamReader._InputStreamReader19112 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V");
 			global::java.io.InputStreamReader._InputStreamReader19113 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/nio/charset/CharsetDecoder;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

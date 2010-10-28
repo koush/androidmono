@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class DefaultRequestDirector : java.lang.Object, org.apache.http.client.RequestDirector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultRequestDirector()
-		{
-			InitJNI();
-		}
 		protected DefaultRequestDirector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.DefaultRequestDirector.staticClass, global::org.apache.http.impl.client.DefaultRequestDirector._DefaultRequestDirector32923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultRequestDirector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.DefaultRequestDirector.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/DefaultRequestDirector"));
@@ -113,6 +109,9 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.DefaultRequestDirector._createTunnelToProxy32921 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultRequestDirector.staticClass, "createTunnelToProxy", "(Lorg/apache/http/conn/routing/HttpRoute;ILorg/apache/http/protocol/HttpContext;)Z");
 			global::org.apache.http.impl.client.DefaultRequestDirector._createConnectRequest32922 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultRequestDirector.staticClass, "createConnectRequest", "(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpRequest;");
 			global::org.apache.http.impl.client.DefaultRequestDirector._DefaultRequestDirector32923 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultRequestDirector.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

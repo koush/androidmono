@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class InflaterInputStream : java.io.FilterInputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InflaterInputStream()
-		{
-			InitJNI();
-		}
 		protected InflaterInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -113,7 +109,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.InflaterInputStream.staticClass, global::java.util.zip.InflaterInputStream._InflaterInputStream28432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InflaterInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.InflaterInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/InflaterInputStream"));
@@ -129,6 +125,9 @@ namespace java.util.zip
 			global::java.util.zip.InflaterInputStream._InflaterInputStream28430 = @__env.GetMethodIDNoThrow(global::java.util.zip.InflaterInputStream.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/util/zip/Inflater;I)V");
 			global::java.util.zip.InflaterInputStream._InflaterInputStream28431 = @__env.GetMethodIDNoThrow(global::java.util.zip.InflaterInputStream.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/util/zip/Inflater;)V");
 			global::java.util.zip.InflaterInputStream._InflaterInputStream28432 = @__env.GetMethodIDNoThrow(global::java.util.zip.InflaterInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

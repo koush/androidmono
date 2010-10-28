@@ -4,10 +4,6 @@ namespace java.util.prefs
 	public partial class InvalidPreferencesFormatException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InvalidPreferencesFormatException()
-		{
-			InitJNI();
-		}
 		protected InvalidPreferencesFormatException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,13 +28,16 @@ namespace java.util.prefs
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.InvalidPreferencesFormatException.staticClass, global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InvalidPreferencesFormatException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.InvalidPreferencesFormatException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/InvalidPreferencesFormatException"));
 			global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28174 = @__env.GetMethodIDNoThrow(global::java.util.prefs.InvalidPreferencesFormatException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28175 = @__env.GetMethodIDNoThrow(global::java.util.prefs.InvalidPreferencesFormatException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28176 = @__env.GetMethodIDNoThrow(global::java.util.prefs.InvalidPreferencesFormatException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

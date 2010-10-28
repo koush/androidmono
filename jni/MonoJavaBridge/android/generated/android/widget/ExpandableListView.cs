@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ExpandableListView : android.widget.ListView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExpandableListView()
-		{
-			InitJNI();
-		}
 		protected ExpandableListView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public partial class ExpandableListContextMenuInfo : java.lang.Object, android.view.ContextMenu_ContextMenuInfo
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ExpandableListContextMenuInfo()
-			{
-				InitJNI();
-			}
 			protected ExpandableListContextMenuInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -65,7 +57,7 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static ExpandableListContextMenuInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.ExpandableListContextMenuInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView$ExpandableListContextMenuInfo"));
@@ -73,6 +65,9 @@ namespace android.widget
 				global::android.widget.ExpandableListView.ExpandableListContextMenuInfo._targetView17023 = @__env.GetFieldIDNoThrow(global::android.widget.ExpandableListView.ExpandableListContextMenuInfo.staticClass, "targetView", "Landroid/view/View;");
 				global::android.widget.ExpandableListView.ExpandableListContextMenuInfo._packedPosition17024 = @__env.GetFieldIDNoThrow(global::android.widget.ExpandableListView.ExpandableListContextMenuInfo.staticClass, "packedPosition", "J");
 				global::android.widget.ExpandableListView.ExpandableListContextMenuInfo._id17025 = @__env.GetFieldIDNoThrow(global::android.widget.ExpandableListView.ExpandableListContextMenuInfo.staticClass, "id", "J");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListView.OnChildClickListener_))]
@@ -85,10 +80,6 @@ namespace android.widget
 		internal sealed partial class OnChildClickListener_ : java.lang.Object, OnChildClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnChildClickListener_()
-			{
-				InitJNI();
-			}
 			internal OnChildClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -101,11 +92,14 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnChildClickListener_.staticClass, global::android.widget.ExpandableListView.OnChildClickListener_._onChildClick17026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			}
-			private static void InitJNI()
+			static OnChildClickListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnChildClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView$OnChildClickListener"));
 				global::android.widget.ExpandableListView.OnChildClickListener_._onChildClick17026 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnChildClickListener_.staticClass, "onChildClick", "(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -114,10 +108,6 @@ namespace android.widget
 		internal partial class OnChildClickListenerDelegateWrapper : java.lang.Object, OnChildClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnChildClickListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnChildClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -128,11 +118,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ExpandableListView.OnChildClickListenerDelegateWrapper.staticClass, global::android.widget.ExpandableListView.OnChildClickListenerDelegateWrapper._OnChildClickListenerDelegateWrapper17027);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnChildClickListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnChildClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView_OnChildClickListenerDelegateWrapper"));
 				global::android.widget.ExpandableListView.OnChildClickListenerDelegateWrapper._OnChildClickListenerDelegateWrapper17027 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnChildClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnChildClickListenerDelegateWrapper
@@ -160,10 +153,6 @@ namespace android.widget
 		internal sealed partial class OnGroupClickListener_ : java.lang.Object, OnGroupClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupClickListener_()
-			{
-				InitJNI();
-			}
 			internal OnGroupClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -176,11 +165,14 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupClickListener_.staticClass, global::android.widget.ExpandableListView.OnGroupClickListener_._onGroupClick17028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			private static void InitJNI()
+			static OnGroupClickListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView$OnGroupClickListener"));
 				global::android.widget.ExpandableListView.OnGroupClickListener_._onGroupClick17028 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupClickListener_.staticClass, "onGroupClick", "(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -189,10 +181,6 @@ namespace android.widget
 		internal partial class OnGroupClickListenerDelegateWrapper : java.lang.Object, OnGroupClickListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupClickListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnGroupClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -203,11 +191,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ExpandableListView.OnGroupClickListenerDelegateWrapper.staticClass, global::android.widget.ExpandableListView.OnGroupClickListenerDelegateWrapper._OnGroupClickListenerDelegateWrapper17029);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnGroupClickListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView_OnGroupClickListenerDelegateWrapper"));
 				global::android.widget.ExpandableListView.OnGroupClickListenerDelegateWrapper._OnGroupClickListenerDelegateWrapper17029 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnGroupClickListenerDelegateWrapper
@@ -235,10 +226,6 @@ namespace android.widget
 		internal sealed partial class OnGroupCollapseListener_ : java.lang.Object, OnGroupCollapseListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupCollapseListener_()
-			{
-				InitJNI();
-			}
 			internal OnGroupCollapseListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -251,11 +238,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupCollapseListener_.staticClass, global::android.widget.ExpandableListView.OnGroupCollapseListener_._onGroupCollapse17030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnGroupCollapseListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupCollapseListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView$OnGroupCollapseListener"));
 				global::android.widget.ExpandableListView.OnGroupCollapseListener_._onGroupCollapse17030 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupCollapseListener_.staticClass, "onGroupCollapse", "(I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -264,10 +254,6 @@ namespace android.widget
 		internal partial class OnGroupCollapseListenerDelegateWrapper : java.lang.Object, OnGroupCollapseListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupCollapseListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnGroupCollapseListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -278,11 +264,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ExpandableListView.OnGroupCollapseListenerDelegateWrapper.staticClass, global::android.widget.ExpandableListView.OnGroupCollapseListenerDelegateWrapper._OnGroupCollapseListenerDelegateWrapper17031);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnGroupCollapseListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupCollapseListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView_OnGroupCollapseListenerDelegateWrapper"));
 				global::android.widget.ExpandableListView.OnGroupCollapseListenerDelegateWrapper._OnGroupCollapseListenerDelegateWrapper17031 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupCollapseListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnGroupCollapseListenerDelegateWrapper
@@ -310,10 +299,6 @@ namespace android.widget
 		internal sealed partial class OnGroupExpandListener_ : java.lang.Object, OnGroupExpandListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupExpandListener_()
-			{
-				InitJNI();
-			}
 			internal OnGroupExpandListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -326,11 +311,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupExpandListener_.staticClass, global::android.widget.ExpandableListView.OnGroupExpandListener_._onGroupExpand17032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnGroupExpandListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupExpandListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView$OnGroupExpandListener"));
 				global::android.widget.ExpandableListView.OnGroupExpandListener_._onGroupExpand17032 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupExpandListener_.staticClass, "onGroupExpand", "(I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -339,10 +327,6 @@ namespace android.widget
 		internal partial class OnGroupExpandListenerDelegateWrapper : java.lang.Object, OnGroupExpandListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGroupExpandListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnGroupExpandListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -353,11 +337,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ExpandableListView.OnGroupExpandListenerDelegateWrapper.staticClass, global::android.widget.ExpandableListView.OnGroupExpandListenerDelegateWrapper._OnGroupExpandListenerDelegateWrapper17033);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnGroupExpandListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ExpandableListView.OnGroupExpandListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView_OnGroupExpandListenerDelegateWrapper"));
 				global::android.widget.ExpandableListView.OnGroupExpandListenerDelegateWrapper._OnGroupExpandListenerDelegateWrapper17033 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.OnGroupExpandListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnGroupExpandListenerDelegateWrapper
@@ -791,7 +778,7 @@ namespace android.widget
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static ExpandableListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ExpandableListView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ExpandableListView"));
@@ -830,6 +817,9 @@ namespace android.widget
 			global::android.widget.ExpandableListView._ExpandableListView17066 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.ExpandableListView._ExpandableListView17067 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.ExpandableListView._ExpandableListView17068 = @__env.GetMethodIDNoThrow(global::android.widget.ExpandableListView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

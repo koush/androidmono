@@ -4,10 +4,6 @@ namespace android.app
 	public partial class AlarmManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlarmManager()
-		{
-			InitJNI();
-		}
 		protected AlarmManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -142,7 +138,7 @@ namespace android.app
 				return 86400000L;
 			}
 		}
-		private static void InitJNI()
+		static AlarmManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.AlarmManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AlarmManager"));
@@ -152,6 +148,9 @@ namespace android.app
 			global::android.app.AlarmManager._cancel1661 = @__env.GetMethodIDNoThrow(global::android.app.AlarmManager.staticClass, "cancel", "(Landroid/app/PendingIntent;)V");
 			global::android.app.AlarmManager._setRepeating1662 = @__env.GetMethodIDNoThrow(global::android.app.AlarmManager.staticClass, "setRepeating", "(IJJLandroid/app/PendingIntent;)V");
 			global::android.app.AlarmManager._setInexactRepeating1663 = @__env.GetMethodIDNoThrow(global::android.app.AlarmManager.staticClass, "setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

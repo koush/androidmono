@@ -10,10 +10,6 @@ namespace java.net
 	internal sealed partial class ContentHandlerFactory_ : java.lang.Object, ContentHandlerFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentHandlerFactory_()
-		{
-			InitJNI();
-		}
 		internal ContentHandlerFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_.staticClass, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
 		}
-		private static void InitJNI()
+		static ContentHandlerFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ContentHandlerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ContentHandlerFactory"));
 			global::java.net.ContentHandlerFactory_._createContentHandler21365 = @__env.GetMethodIDNoThrow(global::java.net.ContentHandlerFactory_.staticClass, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

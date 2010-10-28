@@ -4,10 +4,6 @@ namespace org.apache.http.conn.@params
 	public partial class ConnRouteParams : java.lang.Object, ConnRoutePNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnRouteParams()
-		{
-			InitJNI();
-		}
 		protected ConnRouteParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace org.apache.http.conn.@params
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.GetStaticObjectField(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, _NO_ROUTE32214)) as org.apache.http.conn.routing.HttpRoute;
 			}
 		}
-		private static void InitJNI()
+		static ConnRouteParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnRouteParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnRouteParams"));
@@ -77,6 +73,9 @@ namespace org.apache.http.conn.@params
 			global::org.apache.http.conn.@params.ConnRouteParams._getForcedRoute32212 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, "getForcedRoute", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/conn/routing/HttpRoute;");
 			global::org.apache.http.conn.@params.ConnRouteParams._NO_HOST32213 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, "NO_HOST", "Lorg/apache/http/HttpHost;");
 			global::org.apache.http.conn.@params.ConnRouteParams._NO_ROUTE32214 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, "NO_ROUTE", "Lorg/apache/http/conn/routing/HttpRoute;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

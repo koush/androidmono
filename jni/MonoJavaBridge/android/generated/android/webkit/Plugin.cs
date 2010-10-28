@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class Plugin : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Plugin()
-		{
-			InitJNI();
-		}
 		protected Plugin(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.webkit
 		internal sealed partial class PreferencesClickHandler_ : java.lang.Object, PreferencesClickHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PreferencesClickHandler_()
-			{
-				InitJNI();
-			}
 			internal PreferencesClickHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.Plugin.PreferencesClickHandler_.staticClass, global::android.webkit.Plugin.PreferencesClickHandler_._handleClickEvent16065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static PreferencesClickHandler_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.Plugin.PreferencesClickHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin$PreferencesClickHandler"));
 				global::android.webkit.Plugin.PreferencesClickHandler_._handleClickEvent16065 = @__env.GetMethodIDNoThrow(global::android.webkit.Plugin.PreferencesClickHandler_.staticClass, "handleClickEvent", "(Landroid/content/Context;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.webkit
 		internal partial class PreferencesClickHandlerDelegateWrapper : java.lang.Object, PreferencesClickHandler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static PreferencesClickHandlerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected PreferencesClickHandlerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper.staticClass, global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper._PreferencesClickHandlerDelegateWrapper16066);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static PreferencesClickHandlerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin_PreferencesClickHandlerDelegateWrapper"));
 				global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper._PreferencesClickHandlerDelegateWrapper16066 = @__env.GetMethodIDNoThrow(global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class PreferencesClickHandlerDelegateWrapper
@@ -247,7 +241,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.Plugin.staticClass, global::android.webkit.Plugin._Plugin16078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Plugin()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.Plugin.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin"));
@@ -263,6 +257,9 @@ namespace android.webkit
 			global::android.webkit.Plugin._setClickHandler16076 = @__env.GetMethodIDNoThrow(global::android.webkit.Plugin.staticClass, "setClickHandler", "(Landroid/webkit/Plugin$PreferencesClickHandler;)V");
 			global::android.webkit.Plugin._dispatchClickEvent16077 = @__env.GetMethodIDNoThrow(global::android.webkit.Plugin.staticClass, "dispatchClickEvent", "(Landroid/content/Context;)V");
 			global::android.webkit.Plugin._Plugin16078 = @__env.GetMethodIDNoThrow(global::android.webkit.Plugin.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

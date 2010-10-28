@@ -10,10 +10,6 @@ namespace java.util.logging
 	internal sealed partial class Filter_ : java.lang.Object, Filter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Filter_()
-		{
-			InitJNI();
-		}
 		internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util.logging
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_.staticClass, global::java.util.logging.Filter_._isLoggable27952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Filter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Filter"));
 			global::java.util.logging.Filter_._isLoggable27952 = @__env.GetMethodIDNoThrow(global::java.util.logging.Filter_.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

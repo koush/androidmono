@@ -4,10 +4,6 @@ namespace android.net.wifi
 	public partial class WifiInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WifiInfo()
-		{
-			InitJNI();
-		}
 		protected WifiInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -195,7 +191,7 @@ namespace android.net.wifi
 				return "Mbps";
 			}
 		}
-		private static void InitJNI()
+		static WifiInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.WifiInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiInfo"));
@@ -212,6 +208,9 @@ namespace android.net.wifi
 			global::android.net.wifi.WifiInfo._getIpAddress8055 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiInfo.staticClass, "getIpAddress", "()I");
 			global::android.net.wifi.WifiInfo._getHiddenSSID8056 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiInfo.staticClass, "getHiddenSSID", "()Z");
 			global::android.net.wifi.WifiInfo._getDetailedStateOf8057 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiInfo.staticClass, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

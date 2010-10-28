@@ -4,10 +4,6 @@ namespace android.test.suitebuilder
 	public partial class TestSuiteBuilder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestSuiteBuilder()
-		{
-			InitJNI();
-		}
 		protected TestSuiteBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.test.suitebuilder
 		public partial class FailedToCreateTests : junit.framework.TestCase
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FailedToCreateTests()
-			{
-				InitJNI();
-			}
 			protected FailedToCreateTests(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -38,12 +30,15 @@ namespace android.test.suitebuilder
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests.staticClass, global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests._FailedToCreateTests12636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static FailedToCreateTests()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/suitebuilder/TestSuiteBuilder$FailedToCreateTests"));
 				global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests._testSuiteConstructionFailed12635 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests.staticClass, "testSuiteConstructionFailed", "()V");
 				global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests._FailedToCreateTests12636 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _build12637;
@@ -139,7 +134,7 @@ namespace android.test.suitebuilder
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.suitebuilder.TestSuiteBuilder.staticClass, global::android.test.suitebuilder.TestSuiteBuilder._TestSuiteBuilder12646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestSuiteBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.suitebuilder.TestSuiteBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/suitebuilder/TestSuiteBuilder"));
@@ -153,6 +148,9 @@ namespace android.test.suitebuilder
 			global::android.test.suitebuilder.TestSuiteBuilder._getSuiteName12644 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestSuiteBuilder.staticClass, "getSuiteName", "()Ljava/lang/String;");
 			global::android.test.suitebuilder.TestSuiteBuilder._TestSuiteBuilder12645 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestSuiteBuilder.staticClass, "<init>", "(Ljava/lang/Class;)V");
 			global::android.test.suitebuilder.TestSuiteBuilder._TestSuiteBuilder12646 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestSuiteBuilder.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/ClassLoader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

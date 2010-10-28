@@ -9,10 +9,6 @@ namespace javax.microedition.khronos.egl
 	internal sealed partial class EGL11_ : java.lang.Object, EGL11
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EGL11_()
-		{
-			InitJNI();
-		}
 		internal EGL11_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -232,7 +228,7 @@ namespace javax.microedition.khronos.egl
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.microedition.khronos.egl.EGL11_.staticClass, global::javax.microedition.khronos.egl.EGL11_._eglWaitNative28949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static EGL11_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGL11_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGL11"));
@@ -260,6 +256,9 @@ namespace javax.microedition.khronos.egl
 			global::javax.microedition.khronos.egl.EGL11_._eglTerminate28947 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGL11_.staticClass, "eglTerminate", "(Ljavax/microedition/khronos/egl/EGLDisplay;)Z");
 			global::javax.microedition.khronos.egl.EGL11_._eglWaitGL28948 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGL11_.staticClass, "eglWaitGL", "()Z");
 			global::javax.microedition.khronos.egl.EGL11_._eglWaitNative28949 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGL11_.staticClass, "eglWaitNative", "(ILjava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

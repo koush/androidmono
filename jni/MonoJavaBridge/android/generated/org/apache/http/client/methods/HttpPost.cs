@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public partial class HttpPost : org.apache.http.client.methods.HttpEntityEnclosingRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpPost()
-		{
-			InitJNI();
-		}
 		protected HttpPost(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.client.methods
 				return "POST";
 			}
 		}
-		private static void InitJNI()
+		static HttpPost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpPost.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpPost"));
@@ -63,6 +59,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpPost._HttpPost31937 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPost.staticClass, "<init>", "()V");
 			global::org.apache.http.client.methods.HttpPost._HttpPost31938 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPost.staticClass, "<init>", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpPost._HttpPost31939 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpPost.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

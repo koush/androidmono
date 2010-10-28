@@ -4,10 +4,6 @@ namespace android.os
 	public partial class StatFs : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StatFs()
-		{
-			InitJNI();
-		}
 		protected StatFs(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.StatFs.staticClass, global::android.os.StatFs._StatFs10208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StatFs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.StatFs.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/StatFs"));
@@ -111,6 +107,9 @@ namespace android.os
 			global::android.os.StatFs._getFreeBlocks10206 = @__env.GetMethodIDNoThrow(global::android.os.StatFs.staticClass, "getFreeBlocks", "()I");
 			global::android.os.StatFs._getAvailableBlocks10207 = @__env.GetMethodIDNoThrow(global::android.os.StatFs.staticClass, "getAvailableBlocks", "()I");
 			global::android.os.StatFs._StatFs10208 = @__env.GetMethodIDNoThrow(global::android.os.StatFs.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

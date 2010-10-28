@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Boolean : java.lang.Object, java.io.Serializable, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Boolean()
-		{
-			InitJNI();
-		}
 		internal Boolean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -136,7 +132,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _TYPE19740)) as java.lang.Class;
 			}
 		}
-		private static void InitJNI()
+		static Boolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Boolean.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Boolean"));
@@ -156,6 +152,9 @@ namespace java.lang
 			global::java.lang.Boolean._TRUE19738 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TRUE", "Ljava/lang/Boolean;");
 			global::java.lang.Boolean._FALSE19739 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "FALSE", "Ljava/lang/Boolean;");
 			global::java.lang.Boolean._TYPE19740 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TYPE", "Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

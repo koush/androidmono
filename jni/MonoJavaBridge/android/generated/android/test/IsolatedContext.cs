@@ -4,10 +4,6 @@ namespace android.test
 	public partial class IsolatedContext : android.content.ContextWrapper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IsolatedContext()
-		{
-			InitJNI();
-		}
 		protected IsolatedContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,7 +125,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.IsolatedContext.staticClass, global::android.test.IsolatedContext._IsolatedContext12230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IsolatedContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.IsolatedContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/IsolatedContext"));
@@ -144,6 +140,9 @@ namespace android.test
 			global::android.test.IsolatedContext._checkUriPermission12228 = @__env.GetMethodIDNoThrow(global::android.test.IsolatedContext.staticClass, "checkUriPermission", "(Landroid/net/Uri;III)I");
 			global::android.test.IsolatedContext._getAndClearBroadcastIntents12229 = @__env.GetMethodIDNoThrow(global::android.test.IsolatedContext.staticClass, "getAndClearBroadcastIntents", "()Ljava/util/List;");
 			global::android.test.IsolatedContext._IsolatedContext12230 = @__env.GetMethodIDNoThrow(global::android.test.IsolatedContext.staticClass, "<init>", "(Landroid/content/ContentResolver;Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

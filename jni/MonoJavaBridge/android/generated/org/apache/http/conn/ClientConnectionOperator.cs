@@ -12,10 +12,6 @@ namespace org.apache.http.conn
 	internal sealed partial class ClientConnectionOperator_ : java.lang.Object, ClientConnectionOperator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientConnectionOperator_()
-		{
-			InitJNI();
-		}
 		internal ClientConnectionOperator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http.conn
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionOperator_.staticClass, global::org.apache.http.conn.ClientConnectionOperator_._updateSecureConnection32085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static ClientConnectionOperator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ClientConnectionOperator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ClientConnectionOperator"));
 			global::org.apache.http.conn.ClientConnectionOperator_._openConnection32083 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionOperator_.staticClass, "openConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
 			global::org.apache.http.conn.ClientConnectionOperator_._createConnection32084 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionOperator_.staticClass, "createConnection", "()Lorg/apache/http/conn/OperatedClientConnection;");
 			global::org.apache.http.conn.ClientConnectionOperator_._updateSecureConnection32085 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionOperator_.staticClass, "updateSecureConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

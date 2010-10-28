@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BufferedHeader : java.lang.Object, FormattedHeader, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BufferedHeader()
-		{
-			InitJNI();
-		}
 		protected BufferedHeader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._BufferedHeader33673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BufferedHeader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BufferedHeader.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BufferedHeader"));
@@ -128,6 +124,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BufferedHeader._getBuffer33671 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;");
 			global::org.apache.http.message.BufferedHeader._getValuePos33672 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getValuePos", "()I");
 			global::org.apache.http.message.BufferedHeader._BufferedHeader33673 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "<init>", "(Lorg/apache/http/util/CharArrayBuffer;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

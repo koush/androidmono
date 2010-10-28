@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class HttpDateGenerator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpDateGenerator()
-		{
-			InitJNI();
-		}
 		protected HttpDateGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.protocol.HttpDateGenerator.staticClass, _GMT33892)) as java.util.TimeZone;
 			}
 		}
-		private static void InitJNI()
+		static HttpDateGenerator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpDateGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpDateGenerator"));
 			global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "getCurrentDate", "()Ljava/lang/String;");
 			global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33890 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "<init>", "()V");
 			global::org.apache.http.protocol.HttpDateGenerator._GMT33892 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "GMT", "Ljava/util/TimeZone;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

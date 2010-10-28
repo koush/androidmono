@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class TabStopSpan_Standard : java.lang.Object, TabStopSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TabStopSpan_Standard()
-		{
-			InitJNI();
-		}
 		protected TabStopSpan_Standard(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard13597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TabStopSpan_Standard()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.TabStopSpan_Standard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/TabStopSpan$Standard"));
 			global::android.text.style.TabStopSpan_Standard._getTabStop13596 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "getTabStop", "()I");
 			global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard13597 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

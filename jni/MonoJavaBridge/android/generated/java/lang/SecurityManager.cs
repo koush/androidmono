@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class SecurityManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecurityManager()
-		{
-			InitJNI();
-		}
 		protected SecurityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -415,7 +411,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.SecurityManager.staticClass, global::java.lang.SecurityManager._SecurityManager20505);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecurityManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.SecurityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/SecurityManager"));
@@ -461,6 +457,9 @@ namespace java.lang
 			global::java.lang.SecurityManager._checkAwtEventQueueAccess20503 = @__env.GetMethodIDNoThrow(global::java.lang.SecurityManager.staticClass, "checkAwtEventQueueAccess", "()V");
 			global::java.lang.SecurityManager._checkPackageDefinition20504 = @__env.GetMethodIDNoThrow(global::java.lang.SecurityManager.staticClass, "checkPackageDefinition", "(Ljava/lang/String;)V");
 			global::java.lang.SecurityManager._SecurityManager20505 = @__env.GetMethodIDNoThrow(global::java.lang.SecurityManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

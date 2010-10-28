@@ -19,10 +19,6 @@ namespace java.security.acl
 	internal sealed partial class AclEntry_ : java.lang.Object, AclEntry
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AclEntry_()
-		{
-			InitJNI();
-		}
 		internal AclEntry_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace java.security.acl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._setNegativePermissions23450);
 		}
-		private static void InitJNI()
+		static AclEntry_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.acl.AclEntry_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/acl/AclEntry"));
@@ -130,6 +126,9 @@ namespace java.security.acl
 			global::java.security.acl.AclEntry_._getPrincipal23448 = @__env.GetMethodIDNoThrow(global::java.security.acl.AclEntry_.staticClass, "getPrincipal", "()Ljava/security/Principal;");
 			global::java.security.acl.AclEntry_._setPrincipal23449 = @__env.GetMethodIDNoThrow(global::java.security.acl.AclEntry_.staticClass, "setPrincipal", "(Ljava/security/Principal;)Z");
 			global::java.security.acl.AclEntry_._setNegativePermissions23450 = @__env.GetMethodIDNoThrow(global::java.security.acl.AclEntry_.staticClass, "setNegativePermissions", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

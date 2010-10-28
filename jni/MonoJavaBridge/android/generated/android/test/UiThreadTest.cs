@@ -9,10 +9,6 @@ namespace android.test
 	internal sealed partial class UiThreadTest_ : java.lang.Object, UiThreadTest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UiThreadTest_()
-		{
-			InitJNI();
-		}
 		internal UiThreadTest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.test
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_.staticClass, global::android.test.UiThreadTest_._annotationType12360)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static UiThreadTest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.UiThreadTest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/UiThreadTest"));
@@ -60,6 +56,9 @@ namespace android.test
 			global::android.test.UiThreadTest_._toString12358 = @__env.GetMethodIDNoThrow(global::android.test.UiThreadTest_.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.test.UiThreadTest_._hashCode12359 = @__env.GetMethodIDNoThrow(global::android.test.UiThreadTest_.staticClass, "hashCode", "()I");
 			global::android.test.UiThreadTest_._annotationType12360 = @__env.GetMethodIDNoThrow(global::android.test.UiThreadTest_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

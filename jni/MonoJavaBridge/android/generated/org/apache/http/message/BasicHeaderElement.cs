@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicHeaderElement : java.lang.Object, HeaderElement, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHeaderElement()
-		{
-			InitJNI();
-		}
 		protected BasicHeaderElement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -143,7 +139,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHeaderElement.staticClass, global::org.apache.http.message.BasicHeaderElement._BasicHeaderElement33522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHeaderElement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicHeaderElement.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicHeaderElement"));
@@ -159,6 +155,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicHeaderElement._getParameterByName33520 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderElement.staticClass, "getParameterByName", "(Ljava/lang/String;)Lorg/apache/http/NameValuePair;");
 			global::org.apache.http.message.BasicHeaderElement._BasicHeaderElement33521 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.apache.http.message.BasicHeaderElement._BasicHeaderElement33522 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;[Lorg/apache/http/NameValuePair;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

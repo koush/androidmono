@@ -180,10 +180,6 @@ namespace java.sql
 	internal sealed partial class DatabaseMetaData_ : java.lang.Object, DatabaseMetaData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatabaseMetaData_()
-		{
-			InitJNI();
-		}
 		internal DatabaseMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1726,7 +1722,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getFunctionColumns24547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.sql.ResultSet;
 		}
-		private static void InitJNI()
+		static DatabaseMetaData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DatabaseMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DatabaseMetaData"));
@@ -1901,6 +1897,9 @@ namespace java.sql
 			global::java.sql.DatabaseMetaData_._getClientInfoProperties24545 = @__env.GetMethodIDNoThrow(global::java.sql.DatabaseMetaData_.staticClass, "getClientInfoProperties", "()Ljava/sql/ResultSet;");
 			global::java.sql.DatabaseMetaData_._getFunctions24546 = @__env.GetMethodIDNoThrow(global::java.sql.DatabaseMetaData_.staticClass, "getFunctions", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;");
 			global::java.sql.DatabaseMetaData_._getFunctionColumns24547 = @__env.GetMethodIDNoThrow(global::java.sql.DatabaseMetaData_.staticClass, "getFunctionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

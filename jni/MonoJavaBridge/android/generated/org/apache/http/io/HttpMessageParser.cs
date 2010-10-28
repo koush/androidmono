@@ -10,10 +10,6 @@ namespace org.apache.http.io
 	internal sealed partial class HttpMessageParser_ : java.lang.Object, HttpMessageParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpMessageParser_()
-		{
-			InitJNI();
-		}
 		internal HttpMessageParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.io
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageParser_.staticClass, global::org.apache.http.io.HttpMessageParser_._parse33467)) as org.apache.http.HttpMessage;
 		}
-		private static void InitJNI()
+		static HttpMessageParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.HttpMessageParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/HttpMessageParser"));
 			global::org.apache.http.io.HttpMessageParser_._parse33467 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageParser_.staticClass, "parse", "()Lorg/apache/http/HttpMessage;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

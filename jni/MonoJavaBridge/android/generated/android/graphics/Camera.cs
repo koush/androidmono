@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Camera : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Camera()
-		{
-			InitJNI();
-		}
 		protected Camera(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -108,7 +104,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Camera.staticClass, global::android.graphics.Camera._Camera5111);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Camera()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Camera.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Camera"));
@@ -123,6 +119,9 @@ namespace android.graphics
 			global::android.graphics.Camera._applyToCanvas5109 = @__env.GetMethodIDNoThrow(global::android.graphics.Camera.staticClass, "applyToCanvas", "(Landroid/graphics/Canvas;)V");
 			global::android.graphics.Camera._dotWithNormal5110 = @__env.GetMethodIDNoThrow(global::android.graphics.Camera.staticClass, "dotWithNormal", "(FFF)F");
 			global::android.graphics.Camera._Camera5111 = @__env.GetMethodIDNoThrow(global::android.graphics.Camera.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.xml.transform.stream
 	public partial class StreamResult : java.lang.Object, Result
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StreamResult()
-		{
-			InitJNI();
-		}
 		protected StreamResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,7 +145,7 @@ namespace javax.xml.transform.stream
 				return "http://javax.xml.transform.stream.StreamResult/feature";
 			}
 		}
-		private static void InitJNI()
+		static StreamResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.stream.StreamResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/stream/StreamResult"));
@@ -165,6 +161,9 @@ namespace javax.xml.transform.stream
 			global::javax.xml.transform.stream.StreamResult._StreamResult31159 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/Writer;)V");
 			global::javax.xml.transform.stream.StreamResult._StreamResult31160 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.transform.stream.StreamResult._StreamResult31161 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/File;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

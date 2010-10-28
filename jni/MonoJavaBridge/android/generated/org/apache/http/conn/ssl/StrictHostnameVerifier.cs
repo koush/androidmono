@@ -4,10 +4,6 @@ namespace org.apache.http.conn.ssl
 	public partial class StrictHostnameVerifier : org.apache.http.conn.ssl.AbstractVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StrictHostnameVerifier()
-		{
-			InitJNI();
-		}
 		protected StrictHostnameVerifier(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.conn.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.StrictHostnameVerifier._StrictHostnameVerifier32358);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StrictHostnameVerifier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/StrictHostnameVerifier"));
 			global::org.apache.http.conn.ssl.StrictHostnameVerifier._toString32356 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;");
 			global::org.apache.http.conn.ssl.StrictHostnameVerifier._verify32357 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
 			global::org.apache.http.conn.ssl.StrictHostnameVerifier._StrictHostnameVerifier32358 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

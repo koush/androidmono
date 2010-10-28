@@ -9,17 +9,16 @@ namespace java.io
 	internal sealed partial class ObjectStreamConstants_ : java.lang.Object, ObjectStreamConstants
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectStreamConstants_()
-		{
-			InitJNI();
-		}
 		internal ObjectStreamConstants_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ObjectStreamConstants_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectStreamConstants_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectStreamConstants"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

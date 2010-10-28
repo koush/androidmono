@@ -10,10 +10,6 @@ namespace java.security
 	internal sealed partial class DomainCombiner_ : java.lang.Object, DomainCombiner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DomainCombiner_()
-		{
-			InitJNI();
-		}
 		internal DomainCombiner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.ProtectionDomain>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.DomainCombiner_.staticClass, global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.ProtectionDomain[];
 		}
-		private static void InitJNI()
+		static DomainCombiner_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.DomainCombiner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/DomainCombiner"));
 			global::java.security.DomainCombiner_._combine22952 = @__env.GetMethodIDNoThrow(global::java.security.DomainCombiner_.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

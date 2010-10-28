@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class FloatBuffer : java.nio.Buffer, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FloatBuffer()
-		{
-			InitJNI();
-		}
 		protected FloatBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -166,7 +162,7 @@ namespace java.nio
 		public abstract global::java.nio.FloatBuffer compact();
 		internal static global::MonoJavaBridge.MethodId _order22230;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI()
+		static FloatBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.FloatBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/FloatBuffer"));
@@ -197,16 +193,15 @@ namespace java.nio
 			global::java.nio.FloatBuffer._compact22229 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "compact", "()Ljava/nio/FloatBuffer;");
 			global::java.nio.FloatBuffer._order22230 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.FloatBuffer))]
 	internal sealed partial class FloatBuffer_ : java.nio.FloatBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FloatBuffer_()
-		{
-			InitJNI();
-		}
 		internal FloatBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -309,7 +304,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.FloatBuffer_.staticClass, global::java.nio.FloatBuffer_._isReadOnly22241);
 		}
-		private static void InitJNI()
+		static FloatBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.FloatBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/FloatBuffer"));
@@ -324,6 +319,9 @@ namespace java.nio
 			global::java.nio.FloatBuffer_._compact22239 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "compact", "()Ljava/nio/FloatBuffer;");
 			global::java.nio.FloatBuffer_._order22240 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
 			global::java.nio.FloatBuffer_._isReadOnly22241 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

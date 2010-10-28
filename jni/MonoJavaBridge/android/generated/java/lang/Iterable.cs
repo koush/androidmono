@@ -10,10 +10,6 @@ namespace java.lang
 	internal sealed partial class Iterable_ : java.lang.Object, Iterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Iterable_()
-		{
-			InitJNI();
-		}
 		internal Iterable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,11 +26,14 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Iterable_.staticClass, global::java.lang.Iterable_._iterator20240)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static Iterable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Iterable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Iterable"));
 			global::java.lang.Iterable_._iterator20240 = @__env.GetMethodIDNoThrow(global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

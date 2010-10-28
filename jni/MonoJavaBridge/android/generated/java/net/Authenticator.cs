@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class Authenticator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Authenticator()
-		{
-			InitJNI();
-		}
 		protected Authenticator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.net
 		public sealed partial class RequestorType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RequestorType()
-			{
-				InitJNI();
-			}
 			internal RequestorType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -52,7 +44,7 @@ namespace java.net
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Authenticator.RequestorType>(@__env.GetStaticObjectField(global::java.net.Authenticator.RequestorType.staticClass, _SERVER21332)) as java.net.Authenticator.RequestorType;
 				}
 			}
-			private static void InitJNI()
+			static RequestorType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.net.Authenticator.RequestorType.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Authenticator$RequestorType"));
@@ -60,6 +52,9 @@ namespace java.net
 				global::java.net.Authenticator.RequestorType._valueOf21330 = @__env.GetStaticMethodIDNoThrow(global::java.net.Authenticator.RequestorType.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/net/Authenticator$RequestorType;");
 				global::java.net.Authenticator.RequestorType._PROXY21331 = @__env.GetStaticFieldIDNoThrow(global::java.net.Authenticator.RequestorType.staticClass, "PROXY", "Ljava/net/Authenticator$RequestorType;");
 				global::java.net.Authenticator.RequestorType._SERVER21332 = @__env.GetStaticFieldIDNoThrow(global::java.net.Authenticator.RequestorType.staticClass, "SERVER", "Ljava/net/Authenticator$RequestorType;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault21333;
@@ -174,7 +169,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.Authenticator.staticClass, global::java.net.Authenticator._Authenticator21346);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Authenticator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Authenticator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Authenticator"));
@@ -193,23 +188,25 @@ namespace java.net
 			global::java.net.Authenticator._getRequestorType21345 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestorType", "()Ljava/net/Authenticator$RequestorType;");
 			global::java.net.Authenticator._Authenticator21346 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.Authenticator))]
 	internal sealed partial class Authenticator_ : java.net.Authenticator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Authenticator_()
-		{
-			InitJNI();
-		}
 		internal Authenticator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Authenticator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Authenticator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Authenticator"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

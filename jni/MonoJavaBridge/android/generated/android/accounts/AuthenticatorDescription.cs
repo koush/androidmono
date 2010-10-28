@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class AuthenticatorDescription : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthenticatorDescription()
-		{
-			InitJNI();
-		}
 		protected AuthenticatorDescription(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -132,7 +128,7 @@ namespace android.accounts
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.accounts.AuthenticatorDescription.staticClass, _CREATOR1375)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AuthenticatorDescription()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AuthenticatorDescription.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AuthenticatorDescription"));
@@ -150,6 +146,9 @@ namespace android.accounts
 			global::android.accounts.AuthenticatorDescription._accountPreferencesId1373 = @__env.GetFieldIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "accountPreferencesId", "I");
 			global::android.accounts.AuthenticatorDescription._packageName1374 = @__env.GetFieldIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "packageName", "Ljava/lang/String;");
 			global::android.accounts.AuthenticatorDescription._CREATOR1375 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

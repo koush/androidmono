@@ -4,10 +4,6 @@ namespace android.location
 	public abstract partial class LocationProvider : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocationProvider()
-		{
-			InitJNI();
-		}
 		protected LocationProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace android.location
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static LocationProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.LocationProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationProvider"));
@@ -84,16 +80,15 @@ namespace android.location
 			global::android.location.LocationProvider._supportsBearing6977 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider.staticClass, "supportsBearing", "()Z");
 			global::android.location.LocationProvider._meetsCriteria6978 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.location.LocationProvider))]
 	internal sealed partial class LocationProvider_ : android.location.LocationProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocationProvider_()
-		{
-			InitJNI();
-		}
 		internal LocationProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -178,7 +173,7 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._supportsBearing6990);
 		}
-		private static void InitJNI()
+		static LocationProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.LocationProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationProvider"));
@@ -191,6 +186,9 @@ namespace android.location
 			global::android.location.LocationProvider_._supportsAltitude6988 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsAltitude", "()Z");
 			global::android.location.LocationProvider_._supportsSpeed6989 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsSpeed", "()Z");
 			global::android.location.LocationProvider_._supportsBearing6990 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsBearing", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

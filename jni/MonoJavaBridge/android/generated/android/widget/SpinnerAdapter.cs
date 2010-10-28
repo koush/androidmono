@@ -10,10 +10,6 @@ namespace android.widget
 	internal sealed partial class SpinnerAdapter_ : java.lang.Object, SpinnerAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpinnerAdapter_()
-		{
-			InitJNI();
-		}
 		internal SpinnerAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getViewTypeCount17855);
 		}
-		private static void InitJNI()
+		static SpinnerAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SpinnerAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SpinnerAdapter"));
@@ -131,6 +127,9 @@ namespace android.widget
 			global::android.widget.SpinnerAdapter_._getView17853 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
 			global::android.widget.SpinnerAdapter_._getItemViewType17854 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getItemViewType", "(I)I");
 			global::android.widget.SpinnerAdapter_._getViewTypeCount17855 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getViewTypeCount", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

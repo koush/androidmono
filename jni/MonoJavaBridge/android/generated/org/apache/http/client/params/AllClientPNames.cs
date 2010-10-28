@@ -9,17 +9,16 @@ namespace org.apache.http.client.@params
 	internal sealed partial class AllClientPNames_ : java.lang.Object, AllClientPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AllClientPNames_()
-		{
-			InitJNI();
-		}
 		internal AllClientPNames_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AllClientPNames_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.@params.AllClientPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/AllClientPNames"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

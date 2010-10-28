@@ -10,10 +10,6 @@ namespace java.util.concurrent
 	internal sealed partial class Callable_ : java.lang.Object, Callable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Callable_()
-		{
-			InitJNI();
-		}
 		internal Callable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util.concurrent
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.Callable_.staticClass, global::java.util.concurrent.Callable_._call27102)) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static Callable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Callable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Callable"));
 			global::java.util.concurrent.Callable_._call27102 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Callable_.staticClass, "call", "()Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

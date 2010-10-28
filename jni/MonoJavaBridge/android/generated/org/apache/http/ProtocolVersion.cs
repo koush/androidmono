@@ -4,10 +4,6 @@ namespace org.apache.http
 	public partial class ProtocolVersion : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProtocolVersion()
-		{
-			InitJNI();
-		}
 		protected ProtocolVersion(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -147,7 +143,7 @@ namespace org.apache.http
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._ProtocolVersion31758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ProtocolVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ProtocolVersion.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ProtocolVersion"));
@@ -164,6 +160,9 @@ namespace org.apache.http
 			global::org.apache.http.ProtocolVersion._greaterEquals31756 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "greaterEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
 			global::org.apache.http.ProtocolVersion._lessEquals31757 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "lessEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
 			global::org.apache.http.ProtocolVersion._ProtocolVersion31758 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "<init>", "(Ljava/lang/String;II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

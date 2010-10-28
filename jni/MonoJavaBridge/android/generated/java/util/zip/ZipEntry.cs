@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class ZipEntry : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ZipEntry()
-		{
-			InitJNI();
-		}
 		protected ZipEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -294,7 +290,7 @@ namespace java.util.zip
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static ZipEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.ZipEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/ZipEntry"));
@@ -319,6 +315,9 @@ namespace java.util.zip
 			global::java.util.zip.ZipEntry._getComment28451 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipEntry.staticClass, "getComment", "()Ljava/lang/String;");
 			global::java.util.zip.ZipEntry._ZipEntry28452 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipEntry.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.util.zip.ZipEntry._ZipEntry28453 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipEntry.staticClass, "<init>", "(Ljava/util/zip/ZipEntry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

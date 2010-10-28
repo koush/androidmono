@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class ComposeShader : android.graphics.Shader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ComposeShader()
-		{
-			InitJNI();
-		}
 		protected ComposeShader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposeShader.staticClass, global::android.graphics.ComposeShader._ComposeShader5260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ComposeShader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ComposeShader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ComposeShader"));
 			global::android.graphics.ComposeShader._ComposeShader5259 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/Xfermode;)V");
 			global::android.graphics.ComposeShader._ComposeShader5260 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/PorterDuff$Mode;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

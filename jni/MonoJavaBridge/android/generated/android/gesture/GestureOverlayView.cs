@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class GestureOverlayView : android.widget.FrameLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureOverlayView()
-		{
-			InitJNI();
-		}
 		protected GestureOverlayView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,10 +20,6 @@ namespace android.gesture
 		internal sealed partial class OnGestureListener_ : java.lang.Object, OnGestureListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGestureListener_()
-			{
-				InitJNI();
-			}
 			internal OnGestureListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -67,7 +59,7 @@ namespace android.gesture
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnGestureListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGestureListener"));
@@ -75,6 +67,9 @@ namespace android.gesture
 				global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4902 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
 				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4903 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
 				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_))]
@@ -87,10 +82,6 @@ namespace android.gesture
 		internal sealed partial class OnGesturePerformedListener_ : java.lang.Object, OnGesturePerformedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGesturePerformedListener_()
-			{
-				InitJNI();
-			}
 			internal OnGesturePerformedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -103,11 +94,14 @@ namespace android.gesture
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnGesturePerformedListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGesturePerformedListener"));
 				global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, "onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -116,10 +110,6 @@ namespace android.gesture
 		internal partial class OnGesturePerformedListenerDelegateWrapper : java.lang.Object, OnGesturePerformedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGesturePerformedListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnGesturePerformedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -130,11 +120,14 @@ namespace android.gesture
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnGesturePerformedListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView_OnGesturePerformedListenerDelegateWrapper"));
 				global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnGesturePerformedListenerDelegateWrapper
@@ -163,10 +156,6 @@ namespace android.gesture
 		internal sealed partial class OnGesturingListener_ : java.lang.Object, OnGesturingListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnGesturingListener_()
-			{
-				InitJNI();
-			}
 			internal OnGesturingListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -188,12 +177,15 @@ namespace android.gesture
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnGesturingListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGesturingListener"));
 				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4907 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V");
 				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingEnded", "(Landroid/gesture/GestureOverlayView;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _clear4909;
@@ -803,7 +795,7 @@ namespace android.gesture
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static GestureOverlayView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureOverlayView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView"));
@@ -855,6 +847,9 @@ namespace android.gesture
 			global::android.gesture.GestureOverlayView._GestureOverlayView4954 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.gesture.GestureOverlayView._GestureOverlayView4955 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.gesture.GestureOverlayView._GestureOverlayView4956 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

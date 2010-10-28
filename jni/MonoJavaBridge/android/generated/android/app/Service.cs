@@ -4,10 +4,6 @@ namespace android.app
 	public abstract partial class Service : android.content.ContextWrapper, android.content.ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Service()
-		{
-			InitJNI();
-		}
 		protected Service(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -222,7 +218,7 @@ namespace android.app
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static Service()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Service.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Service"));
@@ -246,16 +242,15 @@ namespace android.app
 			global::android.app.Service._dump2153 = @__env.GetMethodIDNoThrow(global::android.app.Service.staticClass, "dump", "(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V");
 			global::android.app.Service._Service2154 = @__env.GetMethodIDNoThrow(global::android.app.Service.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.app.Service))]
 	internal sealed partial class Service_ : android.app.Service
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Service_()
-		{
-			InitJNI();
-		}
 		internal Service_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -268,11 +263,14 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Service_.staticClass, global::android.app.Service_._onBind2162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IBinder;
 		}
-		private static void InitJNI()
+		static Service_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Service_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Service"));
 			global::android.app.Service_._onBind2162 = @__env.GetMethodIDNoThrow(global::android.app.Service_.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

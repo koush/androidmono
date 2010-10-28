@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class WebChromeClient : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebChromeClient()
-		{
-			InitJNI();
-		}
 		protected WebChromeClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.webkit
 		internal sealed partial class CustomViewCallback_ : java.lang.Object, CustomViewCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CustomViewCallback_()
-			{
-				InitJNI();
-			}
 			internal CustomViewCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.webkit
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16128);
 			}
-			private static void InitJNI()
+			static CustomViewCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient$CustomViewCallback"));
 				global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16128 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, "onCustomViewHidden", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.webkit
 		internal partial class CustomViewCallbackDelegateWrapper : java.lang.Object, CustomViewCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CustomViewCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected CustomViewCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass, global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper._CustomViewCallbackDelegateWrapper16129);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CustomViewCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient_CustomViewCallbackDelegateWrapper"));
 				global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper._CustomViewCallbackDelegateWrapper16129 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class CustomViewCallbackDelegateWrapper
@@ -334,7 +328,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._WebChromeClient16153);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static WebChromeClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebChromeClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient"));
@@ -362,6 +356,9 @@ namespace android.webkit
 			global::android.webkit.WebChromeClient._getVideoLoadingProgressView16151 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVideoLoadingProgressView", "()Landroid/view/View;");
 			global::android.webkit.WebChromeClient._getVisitedHistory16152 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVisitedHistory", "(Landroid/webkit/ValueCallback;)V");
 			global::android.webkit.WebChromeClient._WebChromeClient16153 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.xml.sax
 	public partial class SAXParseException : org.xml.sax.SAXException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SAXParseException()
-		{
-			InitJNI();
-		}
 		protected SAXParseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -103,7 +99,7 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._SAXParseException35046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SAXParseException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.SAXParseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/SAXParseException"));
@@ -115,6 +111,9 @@ namespace org.xml.sax
 			global::org.xml.sax.SAXParseException._SAXParseException35044 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "<init>", "(Ljava/lang/String;Lorg/xml/sax/Locator;Ljava/lang/Exception;)V");
 			global::org.xml.sax.SAXParseException._SAXParseException35045 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V");
 			global::org.xml.sax.SAXParseException._SAXParseException35046 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Exception;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

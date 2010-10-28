@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLES11 : android.opengl.GLES10
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLES11()
-		{
-			InitJNI();
-		}
 		protected GLES11(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1286,7 +1282,7 @@ namespace android.opengl
 				return 35001;
 			}
 		}
-		private static void InitJNI()
+		static GLES11()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES11.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES11"));
@@ -1360,6 +1356,9 @@ namespace android.opengl
 			global::android.opengl.GLES11._glTexParameterxv8581 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(IILjava/nio/IntBuffer;)V");
 			global::android.opengl.GLES11._glTexParameterxv8582 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(II[II)V");
 			global::android.opengl.GLES11._GLES118583 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

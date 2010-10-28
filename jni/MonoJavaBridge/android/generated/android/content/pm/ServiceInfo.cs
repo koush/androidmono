@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class ServiceInfo : android.content.pm.ComponentInfo, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServiceInfo()
-		{
-			InitJNI();
-		}
 		protected ServiceInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.ServiceInfo.staticClass, _CREATOR4053)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ServiceInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ServiceInfo"));
@@ -98,6 +94,9 @@ namespace android.content.pm
 			global::android.content.pm.ServiceInfo._ServiceInfo4051 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "<init>", "(Landroid/content/pm/ServiceInfo;)V");
 			global::android.content.pm.ServiceInfo._permission4052 = @__env.GetFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "permission", "Ljava/lang/String;");
 			global::android.content.pm.ServiceInfo._CREATOR4053 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

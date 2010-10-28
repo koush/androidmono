@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public partial class ExtractedText : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExtractedText()
-		{
-			InitJNI();
-		}
 		protected ExtractedText(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -143,7 +139,7 @@ namespace android.view.inputmethod
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.ExtractedText.staticClass, _CREATOR15853)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ExtractedText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.ExtractedText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/ExtractedText"));
@@ -158,6 +154,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.ExtractedText._selectionEnd15849 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedText.staticClass, "selectionEnd", "I");
 			global::android.view.inputmethod.ExtractedText._flags15852 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedText.staticClass, "flags", "I");
 			global::android.view.inputmethod.ExtractedText._CREATOR15853 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.ExtractedText.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

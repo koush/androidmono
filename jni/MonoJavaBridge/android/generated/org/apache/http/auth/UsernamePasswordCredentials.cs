@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public partial class UsernamePasswordCredentials : java.lang.Object, Credentials
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UsernamePasswordCredentials()
-		{
-			InitJNI();
-		}
 		protected UsernamePasswordCredentials(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.UsernamePasswordCredentials.staticClass, global::org.apache.http.auth.UsernamePasswordCredentials._UsernamePasswordCredentials31858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UsernamePasswordCredentials()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.UsernamePasswordCredentials.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/UsernamePasswordCredentials"));
@@ -112,6 +108,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.UsernamePasswordCredentials._getUserPrincipal31856 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.UsernamePasswordCredentials.staticClass, "getUserPrincipal", "()Ljava/security/Principal;");
 			global::org.apache.http.auth.UsernamePasswordCredentials._UsernamePasswordCredentials31857 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.UsernamePasswordCredentials.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.apache.http.auth.UsernamePasswordCredentials._UsernamePasswordCredentials31858 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.UsernamePasswordCredentials.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

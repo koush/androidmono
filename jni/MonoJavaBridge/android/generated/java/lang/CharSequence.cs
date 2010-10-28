@@ -13,10 +13,6 @@ namespace java.lang
 	internal sealed partial class CharSequence_ : java.lang.Object, CharSequence
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharSequence_()
-		{
-			InitJNI();
-		}
 		internal CharSequence_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.CharSequence_.staticClass, global::java.lang.CharSequence_._subSequence19764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		private static void InitJNI()
+		static CharSequence_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.CharSequence_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/CharSequence"));
@@ -64,6 +60,9 @@ namespace java.lang
 			global::java.lang.CharSequence_._length19762 = @__env.GetMethodIDNoThrow(global::java.lang.CharSequence_.staticClass, "length", "()I");
 			global::java.lang.CharSequence_._charAt19763 = @__env.GetMethodIDNoThrow(global::java.lang.CharSequence_.staticClass, "charAt", "(I)C");
 			global::java.lang.CharSequence_._subSequence19764 = @__env.GetMethodIDNoThrow(global::java.lang.CharSequence_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

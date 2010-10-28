@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class PackageItemInfo : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PackageItemInfo()
-		{
-			InitJNI();
-		}
 		protected PackageItemInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content.pm
 		public partial class DisplayNameComparator : java.lang.Object, java.util.Comparator
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DisplayNameComparator()
-			{
-				InitJNI();
-			}
 			protected DisplayNameComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,13 +39,16 @@ namespace android.content.pm
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass, global::android.content.pm.PackageItemInfo.DisplayNameComparator._DisplayNameComparator3777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static DisplayNameComparator()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageItemInfo$DisplayNameComparator"));
 				global::android.content.pm.PackageItemInfo.DisplayNameComparator._compare3775 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/PackageItemInfo;Landroid/content/pm/PackageItemInfo;)I");
 				global::android.content.pm.PackageItemInfo.DisplayNameComparator._compare3776 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
 				global::android.content.pm.PackageItemInfo.DisplayNameComparator._DisplayNameComparator3777 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass, "<init>", "(Landroid/content/pm/PackageManager;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3778;
@@ -211,7 +206,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		private static void InitJNI()
+		static PackageItemInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageItemInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageItemInfo"));
@@ -230,6 +225,9 @@ namespace android.content.pm
 			global::android.content.pm.PackageItemInfo._nonLocalizedLabel3790 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "nonLocalizedLabel", "Ljava/lang/CharSequence;");
 			global::android.content.pm.PackageItemInfo._icon3791 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "icon", "I");
 			global::android.content.pm.PackageItemInfo._metaData3792 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "metaData", "Landroid/os/Bundle;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

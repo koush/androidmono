@@ -12,10 +12,6 @@ namespace javax.sql
 	internal sealed partial class RowSetListener_ : java.lang.Object, RowSetListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSetListener_()
-		{
-			InitJNI();
-		}
 		internal RowSetListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace javax.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._cursorMoved30582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RowSetListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetListener"));
 			global::javax.sql.RowSetListener_._rowSetChanged30580 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V");
 			global::javax.sql.RowSetListener_._rowChanged30581 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowChanged", "(Ljavax/sql/RowSetEvent;)V");
 			global::javax.sql.RowSetListener_._cursorMoved30582 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

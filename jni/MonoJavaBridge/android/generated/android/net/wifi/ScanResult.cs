@@ -4,10 +4,6 @@ namespace android.net.wifi
 	public partial class ScanResult : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScanResult()
-		{
-			InitJNI();
-		}
 		protected ScanResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -98,7 +94,7 @@ namespace android.net.wifi
 			{
 			}
 		}
-		private static void InitJNI()
+		static ScanResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.ScanResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/ScanResult"));
@@ -110,6 +106,9 @@ namespace android.net.wifi
 			global::android.net.wifi.ScanResult._capabilities7978 = @__env.GetFieldIDNoThrow(global::android.net.wifi.ScanResult.staticClass, "capabilities", "Ljava/lang/String;");
 			global::android.net.wifi.ScanResult._level7979 = @__env.GetFieldIDNoThrow(global::android.net.wifi.ScanResult.staticClass, "level", "I");
 			global::android.net.wifi.ScanResult._frequency7980 = @__env.GetFieldIDNoThrow(global::android.net.wifi.ScanResult.staticClass, "frequency", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

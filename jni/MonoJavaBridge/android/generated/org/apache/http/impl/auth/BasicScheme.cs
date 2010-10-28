@@ -4,10 +4,6 @@ namespace org.apache.http.impl.auth
 	public partial class BasicScheme : org.apache.http.impl.auth.RFC2617Scheme
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicScheme()
-		{
-			InitJNI();
-		}
 		protected BasicScheme(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.apache.http.impl.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.BasicScheme.staticClass, global::org.apache.http.impl.auth.BasicScheme._BasicScheme32724);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicScheme()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.BasicScheme.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/BasicScheme"));
@@ -87,6 +83,9 @@ namespace org.apache.http.impl.auth
 			global::org.apache.http.impl.auth.BasicScheme._authenticate32722 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.BasicScheme.staticClass, "authenticate", "(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;");
 			global::org.apache.http.impl.auth.BasicScheme._authenticate32723 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.impl.auth.BasicScheme.staticClass, "authenticate", "(Lorg/apache/http/auth/Credentials;Ljava/lang/String;Z)Lorg/apache/http/Header;");
 			global::org.apache.http.impl.auth.BasicScheme._BasicScheme32724 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.BasicScheme.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

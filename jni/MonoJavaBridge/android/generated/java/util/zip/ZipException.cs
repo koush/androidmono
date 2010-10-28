@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class ZipException : java.io.IOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ZipException()
-		{
-			InitJNI();
-		}
 		protected ZipException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.ZipException.staticClass, global::java.util.zip.ZipException._ZipException28457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ZipException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.ZipException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/ZipException"));
 			global::java.util.zip.ZipException._ZipException28456 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipException.staticClass, "<init>", "()V");
 			global::java.util.zip.ZipException._ZipException28457 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

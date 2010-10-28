@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn.tsccm
 	public partial class RefQueueWorker : java.lang.Object, java.lang.Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RefQueueWorker()
-		{
-			InitJNI();
-		}
 		protected RefQueueWorker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.RefQueueWorker.staticClass, global::org.apache.http.impl.conn.tsccm.RefQueueWorker._RefQueueWorker33157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RefQueueWorker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.RefQueueWorker.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/RefQueueWorker"));
@@ -53,6 +49,9 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.RefQueueWorker._shutdown33155 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.RefQueueWorker.staticClass, "shutdown", "()V");
 			global::org.apache.http.impl.conn.tsccm.RefQueueWorker._toString33156 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.RefQueueWorker.staticClass, "toString", "()Ljava/lang/String;");
 			global::org.apache.http.impl.conn.tsccm.RefQueueWorker._RefQueueWorker33157 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.RefQueueWorker.staticClass, "<init>", "(Ljava/lang/ref/ReferenceQueue;Lorg/apache/http/impl/conn/tsccm/RefQueueHandler;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

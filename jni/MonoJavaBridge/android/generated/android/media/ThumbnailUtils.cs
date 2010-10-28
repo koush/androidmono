@@ -4,10 +4,6 @@ namespace android.media
 	public partial class ThumbnailUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ThumbnailUtils()
-		{
-			InitJNI();
-		}
 		protected ThumbnailUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace android.media
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static ThumbnailUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.ThumbnailUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ThumbnailUtils"));
@@ -51,6 +47,9 @@ namespace android.media
 			global::android.media.ThumbnailUtils._extractThumbnail7507 = @__env.GetStaticMethodIDNoThrow(global::android.media.ThumbnailUtils.staticClass, "extractThumbnail", "(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;");
 			global::android.media.ThumbnailUtils._extractThumbnail7508 = @__env.GetStaticMethodIDNoThrow(global::android.media.ThumbnailUtils.staticClass, "extractThumbnail", "(Landroid/graphics/Bitmap;III)Landroid/graphics/Bitmap;");
 			global::android.media.ThumbnailUtils._ThumbnailUtils7509 = @__env.GetMethodIDNoThrow(global::android.media.ThumbnailUtils.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

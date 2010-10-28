@@ -4,10 +4,6 @@ namespace java.util
 	public partial class WeakHashMap : java.util.AbstractMap, Map
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WeakHashMap()
-		{
-			InitJNI();
-		}
 		protected WeakHashMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -147,7 +143,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.WeakHashMap.staticClass, global::java.util.WeakHashMap._WeakHashMap27024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static WeakHashMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.WeakHashMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/WeakHashMap"));
@@ -167,6 +163,9 @@ namespace java.util
 			global::java.util.WeakHashMap._WeakHashMap27022 = @__env.GetMethodIDNoThrow(global::java.util.WeakHashMap.staticClass, "<init>", "(I)V");
 			global::java.util.WeakHashMap._WeakHashMap27023 = @__env.GetMethodIDNoThrow(global::java.util.WeakHashMap.staticClass, "<init>", "()V");
 			global::java.util.WeakHashMap._WeakHashMap27024 = @__env.GetMethodIDNoThrow(global::java.util.WeakHashMap.staticClass, "<init>", "(Ljava/util/Map;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

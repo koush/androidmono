@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class WebViewDatabase : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebViewDatabase()
-		{
-			InitJNI();
-		}
 		protected WebViewDatabase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace android.webkit
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasFormData16466);
 		}
-		private static void InitJNI()
+		static WebViewDatabase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebViewDatabase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebViewDatabase"));
@@ -82,6 +78,9 @@ namespace android.webkit
 			global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword16464 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewDatabase.staticClass, "hasHttpAuthUsernamePassword", "()Z");
 			global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword16465 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewDatabase.staticClass, "clearHttpAuthUsernamePassword", "()V");
 			global::android.webkit.WebViewDatabase._hasFormData16466 = @__env.GetMethodIDNoThrow(global::android.webkit.WebViewDatabase.staticClass, "hasFormData", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

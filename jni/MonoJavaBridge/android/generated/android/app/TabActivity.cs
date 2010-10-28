@@ -4,10 +4,6 @@ namespace android.app
 	public partial class TabActivity : android.app.ActivityGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TabActivity()
-		{
-			InitJNI();
-		}
 		protected TabActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -117,7 +113,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TabActivity.staticClass, global::android.app.TabActivity._TabActivity2172);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TabActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.TabActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/TabActivity"));
@@ -131,6 +127,9 @@ namespace android.app
 			global::android.app.TabActivity._getTabHost2170 = @__env.GetMethodIDNoThrow(global::android.app.TabActivity.staticClass, "getTabHost", "()Landroid/widget/TabHost;");
 			global::android.app.TabActivity._getTabWidget2171 = @__env.GetMethodIDNoThrow(global::android.app.TabActivity.staticClass, "getTabWidget", "()Landroid/widget/TabWidget;");
 			global::android.app.TabActivity._TabActivity2172 = @__env.GetMethodIDNoThrow(global::android.app.TabActivity.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -16,10 +16,6 @@ namespace org.w3c.dom
 	internal sealed partial class Attr_ : java.lang.Object, Attr
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Attr_()
-		{
-			InitJNI();
-		}
 		internal Attr_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -419,7 +415,7 @@ namespace org.w3c.dom
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Attr_.staticClass, global::org.w3c.dom.Attr_._isEqualNode34196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Attr_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.Attr_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/Attr"));
@@ -467,6 +463,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.Attr_._isDefaultNamespace34194 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Attr_.staticClass, "isDefaultNamespace", "(Ljava/lang/String;)Z");
 			global::org.w3c.dom.Attr_._lookupNamespaceURI34195 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Attr_.staticClass, "lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::org.w3c.dom.Attr_._isEqualNode34196 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.Attr_.staticClass, "isEqualNode", "(Lorg/w3c/dom/Node;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

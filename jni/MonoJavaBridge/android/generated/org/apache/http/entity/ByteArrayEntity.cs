@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class ByteArrayEntity : org.apache.http.entity.AbstractHttpEntity, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteArrayEntity()
-		{
-			InitJNI();
-		}
 		protected ByteArrayEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.ByteArrayEntity.staticClass, global::org.apache.http.entity.ByteArrayEntity._ByteArrayEntity32528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ByteArrayEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.ByteArrayEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/ByteArrayEntity"));
@@ -97,6 +93,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.ByteArrayEntity._isRepeatable32526 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.ByteArrayEntity.staticClass, "isRepeatable", "()Z");
 			global::org.apache.http.entity.ByteArrayEntity._isStreaming32527 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.ByteArrayEntity.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.entity.ByteArrayEntity._ByteArrayEntity32528 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.ByteArrayEntity.staticClass, "<init>", "([B)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

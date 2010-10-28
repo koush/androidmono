@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class PKCS8EncodedKeySpec : java.security.spec.EncodedKeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PKCS8EncodedKeySpec()
-		{
-			InitJNI();
-		}
 		protected PKCS8EncodedKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,13 +46,16 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.PKCS8EncodedKeySpec.staticClass, global::java.security.spec.PKCS8EncodedKeySpec._PKCS8EncodedKeySpec24038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PKCS8EncodedKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.PKCS8EncodedKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/PKCS8EncodedKeySpec"));
 			global::java.security.spec.PKCS8EncodedKeySpec._getEncoded24036 = @__env.GetMethodIDNoThrow(global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getEncoded", "()[B");
 			global::java.security.spec.PKCS8EncodedKeySpec._getFormat24037 = @__env.GetMethodIDNoThrow(global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::java.security.spec.PKCS8EncodedKeySpec._PKCS8EncodedKeySpec24038 = @__env.GetMethodIDNoThrow(global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "<init>", "([B)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

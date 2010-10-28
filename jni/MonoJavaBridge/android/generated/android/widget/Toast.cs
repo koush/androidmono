@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class Toast : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Toast()
-		{
-			InitJNI();
-		}
 		protected Toast(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -244,7 +240,7 @@ namespace android.widget
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static Toast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Toast.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Toast"));
@@ -266,6 +262,9 @@ namespace android.widget
 			global::android.widget.Toast._makeText18198 = @__env.GetStaticMethodIDNoThrow(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;");
 			global::android.widget.Toast._makeText18199 = @__env.GetStaticMethodIDNoThrow(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;II)Landroid/widget/Toast;");
 			global::android.widget.Toast._Toast18200 = @__env.GetMethodIDNoThrow(global::android.widget.Toast.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

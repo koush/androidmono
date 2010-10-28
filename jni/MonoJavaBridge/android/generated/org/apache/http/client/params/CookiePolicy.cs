@@ -4,10 +4,6 @@ namespace org.apache.http.client.@params
 	public sealed partial class CookiePolicy : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookiePolicy()
-		{
-			InitJNI();
-		}
 		internal CookiePolicy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,10 +42,13 @@ namespace org.apache.http.client.@params
 				return "best-match";
 			}
 		}
-		private static void InitJNI()
+		static CookiePolicy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.@params.CookiePolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/CookiePolicy"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

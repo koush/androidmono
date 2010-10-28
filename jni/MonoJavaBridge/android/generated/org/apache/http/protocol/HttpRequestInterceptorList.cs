@@ -16,10 +16,6 @@ namespace org.apache.http.protocol
 	internal sealed partial class HttpRequestInterceptorList_ : java.lang.Object, HttpRequestInterceptorList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestInterceptorList_()
-		{
-			InitJNI();
-		}
 		internal HttpRequestInterceptorList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._setInterceptors33917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static HttpRequestInterceptorList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestInterceptorList"));
@@ -97,6 +93,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.HttpRequestInterceptorList_._clearRequestInterceptors33915 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, "clearRequestInterceptors", "()V");
 			global::org.apache.http.protocol.HttpRequestInterceptorList_._removeRequestInterceptorByClass33916 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, "removeRequestInterceptorByClass", "(Ljava/lang/Class;)V");
 			global::org.apache.http.protocol.HttpRequestInterceptorList_._setInterceptors33917 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, "setInterceptors", "(Ljava/util/List;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

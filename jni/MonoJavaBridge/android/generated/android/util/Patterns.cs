@@ -4,10 +4,6 @@ namespace android.util
 	public partial class Patterns : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Patterns()
-		{
-			InitJNI();
-		}
 		protected Patterns(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -98,7 +94,7 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _PHONE13829)) as java.util.regex.Pattern;
 			}
 		}
-		private static void InitJNI()
+		static Patterns()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Patterns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Patterns"));
@@ -110,6 +106,9 @@ namespace android.util
 			global::android.util.Patterns._DOMAIN_NAME13827 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "DOMAIN_NAME", "Ljava/util/regex/Pattern;");
 			global::android.util.Patterns._EMAIL_ADDRESS13828 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "EMAIL_ADDRESS", "Ljava/util/regex/Pattern;");
 			global::android.util.Patterns._PHONE13829 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "PHONE", "Ljava/util/regex/Pattern;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

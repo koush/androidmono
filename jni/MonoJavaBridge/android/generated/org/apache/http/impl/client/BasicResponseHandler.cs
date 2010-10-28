@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class BasicResponseHandler : java.lang.Object, org.apache.http.client.ResponseHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicResponseHandler()
-		{
-			InitJNI();
-		}
 		protected BasicResponseHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.BasicResponseHandler.staticClass, global::org.apache.http.impl.client.BasicResponseHandler._BasicResponseHandler32869);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicResponseHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.BasicResponseHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/BasicResponseHandler"));
 			global::org.apache.http.impl.client.BasicResponseHandler._handleResponse32868 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicResponseHandler.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;");
 			global::org.apache.http.impl.client.BasicResponseHandler._BasicResponseHandler32869 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicResponseHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

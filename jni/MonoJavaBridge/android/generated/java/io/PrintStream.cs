@@ -4,10 +4,6 @@ namespace java.io
 	public partial class PrintStream : java.io.FilterOutputStream, java.lang.Appendable, Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PrintStream()
-		{
-			InitJNI();
-		}
 		protected PrintStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -365,7 +361,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PrintStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PrintStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PrintStream"));
@@ -409,6 +405,9 @@ namespace java.io
 			global::java.io.PrintStream._PrintStream19439 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;)V");
 			global::java.io.PrintStream._PrintStream19440 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
 			global::java.io.PrintStream._PrintStream19441 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class Reader : java.lang.Object, java.lang.Readable, Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Reader()
-		{
-			InitJNI();
-		}
 		protected Reader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Reader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Reader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Reader"));
@@ -118,16 +114,15 @@ namespace java.io
 			global::java.io.Reader._Reader19563 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "()V");
 			global::java.io.Reader._Reader19564 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "(Ljava/lang/Object;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.Reader))]
 	internal sealed partial class Reader_ : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Reader_()
-		{
-			InitJNI();
-		}
 		internal Reader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,12 +144,15 @@ namespace java.io
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader_.staticClass, global::java.io.Reader_._read19566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static Reader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Reader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Reader"));
 			global::java.io.Reader_._close19565 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "close", "()V");
 			global::java.io.Reader_._read19566 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "read", "([CII)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

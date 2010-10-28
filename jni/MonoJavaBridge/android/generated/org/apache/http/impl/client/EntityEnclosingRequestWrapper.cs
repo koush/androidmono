@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public partial class EntityEnclosingRequestWrapper : org.apache.http.impl.client.RequestWrapper, HttpEntityEnclosingRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EntityEnclosingRequestWrapper()
-		{
-			InitJNI();
-		}
 		protected EntityEnclosingRequestWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.EntityEnclosingRequestWrapper.staticClass, global::org.apache.http.impl.client.EntityEnclosingRequestWrapper._EntityEnclosingRequestWrapper32933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static EntityEnclosingRequestWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.EntityEnclosingRequestWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/EntityEnclosingRequestWrapper"));
@@ -74,6 +70,9 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.EntityEnclosingRequestWrapper._setEntity32931 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.EntityEnclosingRequestWrapper.staticClass, "setEntity", "(Lorg/apache/http/HttpEntity;)V");
 			global::org.apache.http.impl.client.EntityEnclosingRequestWrapper._expectContinue32932 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.EntityEnclosingRequestWrapper.staticClass, "expectContinue", "()Z");
 			global::org.apache.http.impl.client.EntityEnclosingRequestWrapper._EntityEnclosingRequestWrapper32933 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.EntityEnclosingRequestWrapper.staticClass, "<init>", "(Lorg/apache/http/HttpEntityEnclosingRequest;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

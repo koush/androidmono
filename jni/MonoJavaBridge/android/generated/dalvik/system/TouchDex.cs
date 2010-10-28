@@ -4,10 +4,6 @@ namespace dalvik.system
 	public partial class TouchDex : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TouchDex()
-		{
-			InitJNI();
-		}
 		protected TouchDex(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,13 +26,16 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.TouchDex.staticClass, global::dalvik.system.TouchDex._TouchDex18614);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TouchDex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.TouchDex.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/TouchDex"));
 			global::dalvik.system.TouchDex._main18612 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.TouchDex.staticClass, "main", "([Ljava/lang/String;)V");
 			global::dalvik.system.TouchDex._start18613 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.TouchDex.staticClass, "start", "(Ljava/lang/String;)I");
 			global::dalvik.system.TouchDex._TouchDex18614 = @__env.GetMethodIDNoThrow(global::dalvik.system.TouchDex.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

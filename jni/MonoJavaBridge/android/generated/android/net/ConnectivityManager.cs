@@ -4,10 +4,6 @@ namespace android.net
 	public partial class ConnectivityManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnectivityManager()
-		{
-			InitJNI();
-		}
 		protected ConnectivityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -242,7 +238,7 @@ namespace android.net
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static ConnectivityManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.ConnectivityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/ConnectivityManager"));
@@ -256,6 +252,9 @@ namespace android.net
 			global::android.net.ConnectivityManager._stopUsingNetworkFeature7625 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "stopUsingNetworkFeature", "(ILjava/lang/String;)I");
 			global::android.net.ConnectivityManager._requestRouteToHost7626 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "requestRouteToHost", "(II)Z");
 			global::android.net.ConnectivityManager._getBackgroundDataSetting7627 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getBackgroundDataSetting", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

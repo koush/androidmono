@@ -27,10 +27,6 @@ namespace android.view
 	internal sealed partial class ViewParent_ : java.lang.Object, ViewParent
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewParent_()
-		{
-			InitJNI();
-		}
 		internal ViewParent_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._childDrawableStateChanged15205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ViewParent_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewParent_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewParent"));
@@ -218,6 +214,9 @@ namespace android.view
 			global::android.view.ViewParent_._getChildVisibleRect15203 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z");
 			global::android.view.ViewParent_._requestTransparentRegion15204 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestTransparentRegion", "(Landroid/view/View;)V");
 			global::android.view.ViewParent_._childDrawableStateChanged15205 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "childDrawableStateChanged", "(Landroid/view/View;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

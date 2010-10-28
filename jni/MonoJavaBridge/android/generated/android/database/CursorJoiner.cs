@@ -4,10 +4,6 @@ namespace android.database
 	public sealed partial class CursorJoiner : java.lang.Object, java.util.Iterator, java.lang.Iterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CursorJoiner()
-		{
-			InitJNI();
-		}
 		internal CursorJoiner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.database
 		public sealed partial class Result : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Result()
-			{
-				InitJNI();
-			}
 			internal Result(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.database
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.database.CursorJoiner.Result>(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _RIGHT4520)) as android.database.CursorJoiner.Result;
 				}
 			}
-			private static void InitJNI()
+			static Result()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.CursorJoiner.Result.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorJoiner$Result"));
@@ -70,6 +62,9 @@ namespace android.database
 				global::android.database.CursorJoiner.Result._BOTH4518 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorJoiner.Result.staticClass, "BOTH", "Landroid/database/CursorJoiner$Result;");
 				global::android.database.CursorJoiner.Result._LEFT4519 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorJoiner.Result.staticClass, "LEFT", "Landroid/database/CursorJoiner$Result;");
 				global::android.database.CursorJoiner.Result._RIGHT4520 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorJoiner.Result.staticClass, "RIGHT", "Landroid/database/CursorJoiner$Result;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
@@ -119,7 +114,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._CursorJoiner4525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CursorJoiner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CursorJoiner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorJoiner"));
@@ -128,6 +123,9 @@ namespace android.database
 			global::android.database.CursorJoiner._next4523 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "next", "()Ljava/lang/Object;");
 			global::android.database.CursorJoiner._remove4524 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "remove", "()V");
 			global::android.database.CursorJoiner._CursorJoiner4525 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "<init>", "(Landroid/database/Cursor;[Ljava/lang/String;Landroid/database/Cursor;[Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

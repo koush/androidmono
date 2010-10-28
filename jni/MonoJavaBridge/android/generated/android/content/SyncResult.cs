@@ -4,10 +4,6 @@ namespace android.content
 	public sealed partial class SyncResult : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SyncResult()
-		{
-			InitJNI();
-		}
 		internal SyncResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -219,7 +215,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.SyncResult.staticClass, _CREATOR3571)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static SyncResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncResult"));
@@ -244,6 +240,9 @@ namespace android.content
 			global::android.content.SyncResult._stats3569 = @__env.GetFieldIDNoThrow(global::android.content.SyncResult.staticClass, "stats", "Landroid/content/SyncStats;");
 			global::android.content.SyncResult._ALREADY_IN_PROGRESS3570 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncResult.staticClass, "ALREADY_IN_PROGRESS", "Landroid/content/SyncResult;");
 			global::android.content.SyncResult._CREATOR3571 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncResult.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

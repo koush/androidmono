@@ -4,10 +4,6 @@ namespace dalvik.system
 	public partial class Zygote : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Zygote()
-		{
-			InitJNI();
-		}
 		protected Zygote(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -69,7 +65,7 @@ namespace dalvik.system
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static Zygote()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.Zygote.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/Zygote"));
@@ -78,6 +74,9 @@ namespace dalvik.system
 			global::dalvik.system.Zygote._forkAndSpecialize18677 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkAndSpecialize", "(II[IZ[[I)I");
 			global::dalvik.system.Zygote._forkSystemServer18678 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[II[[I)I");
 			global::dalvik.system.Zygote._forkSystemServer18679 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[IZ[[I)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

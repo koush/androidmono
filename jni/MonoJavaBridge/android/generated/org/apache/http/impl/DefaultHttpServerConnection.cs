@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class DefaultHttpServerConnection : org.apache.http.impl.SocketHttpServerConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultHttpServerConnection()
-		{
-			InitJNI();
-		}
 		protected DefaultHttpServerConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32649);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultHttpServerConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.DefaultHttpServerConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/DefaultHttpServerConnection"));
 			global::org.apache.http.impl.DefaultHttpServerConnection._toString32647 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "toString", "()Ljava/lang/String;");
 			global::org.apache.http.impl.DefaultHttpServerConnection._bind32648 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "bind", "(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V");
 			global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32649 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

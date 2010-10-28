@@ -4,10 +4,6 @@ namespace javax.xml.parsers
 	public partial class FactoryConfigurationError : java.lang.Error
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FactoryConfigurationError()
-		{
-			InitJNI();
-		}
 		protected FactoryConfigurationError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace javax.xml.parsers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FactoryConfigurationError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.FactoryConfigurationError.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/FactoryConfigurationError"));
@@ -81,6 +77,9 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30886 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30887 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30888 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

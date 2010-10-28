@@ -12,10 +12,6 @@ namespace android.widget
 	internal sealed partial class Checkable_ : java.lang.Object, Checkable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Checkable_()
-		{
-			InitJNI();
-		}
 		internal Checkable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._setChecked16845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Checkable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Checkable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Checkable"));
 			global::android.widget.Checkable_._toggle16843 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "toggle", "()V");
 			global::android.widget.Checkable_._isChecked16844 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "isChecked", "()Z");
 			global::android.widget.Checkable_._setChecked16845 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

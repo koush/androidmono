@@ -4,10 +4,6 @@ namespace java.util.jar
 	public partial class JarFile : java.util.zip.ZipFile
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JarFile()
-		{
-			InitJNI();
-		}
 		protected JarFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -105,7 +101,7 @@ namespace java.util.jar
 				return "META-INF/MANIFEST.MF";
 			}
 		}
-		private static void InitJNI()
+		static JarFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.JarFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/JarFile"));
@@ -119,6 +115,9 @@ namespace java.util.jar
 			global::java.util.jar.JarFile._JarFile27872 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarFile.staticClass, "<init>", "(Ljava/io/File;)V");
 			global::java.util.jar.JarFile._JarFile27873 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarFile.staticClass, "<init>", "(Ljava/io/File;Z)V");
 			global::java.util.jar.JarFile._JarFile27874 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarFile.staticClass, "<init>", "(Ljava/io/File;ZI)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

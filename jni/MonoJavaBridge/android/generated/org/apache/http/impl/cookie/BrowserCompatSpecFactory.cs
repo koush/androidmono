@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BrowserCompatSpecFactory : java.lang.Object, org.apache.http.cookie.CookieSpecFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BrowserCompatSpecFactory()
-		{
-			InitJNI();
-		}
 		protected BrowserCompatSpecFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._BrowserCompatSpecFactory33285);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BrowserCompatSpecFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BrowserCompatSpecFactory"));
 			global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._newInstance33284 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;");
 			global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._BrowserCompatSpecFactory33285 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

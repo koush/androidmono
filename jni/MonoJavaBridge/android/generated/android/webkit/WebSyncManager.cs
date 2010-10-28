@@ -4,10 +4,6 @@ namespace android.webkit
 	public abstract partial class WebSyncManager : java.lang.Object, java.lang.Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebSyncManager()
-		{
-			InitJNI();
-		}
 		protected WebSyncManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -81,7 +77,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._WebSyncManager16303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static WebSyncManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebSyncManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebSyncManager"));
@@ -94,23 +90,25 @@ namespace android.webkit
 			global::android.webkit.WebSyncManager._onSyncInit16302 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "onSyncInit", "()V");
 			global::android.webkit.WebSyncManager._WebSyncManager16303 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.webkit.WebSyncManager))]
 	internal sealed partial class WebSyncManager_ : android.webkit.WebSyncManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebSyncManager_()
-		{
-			InitJNI();
-		}
 		internal WebSyncManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static WebSyncManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebSyncManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebSyncManager"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

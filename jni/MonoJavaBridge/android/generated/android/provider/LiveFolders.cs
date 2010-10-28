@@ -4,10 +4,6 @@ namespace android.provider
 	public sealed partial class LiveFolders : java.lang.Object, BaseColumns
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LiveFolders()
-		{
-			InitJNI();
-		}
 		internal LiveFolders(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,10 +98,13 @@ namespace android.provider
 				return "android.intent.action.CREATE_LIVE_FOLDER";
 			}
 		}
-		private static void InitJNI()
+		static LiveFolders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.LiveFolders.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/LiveFolders"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

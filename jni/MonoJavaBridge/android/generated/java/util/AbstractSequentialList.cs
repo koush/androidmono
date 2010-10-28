@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractSequentialList : java.util.AbstractList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSequentialList()
-		{
-			InitJNI();
-		}
 		protected AbstractSequentialList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -78,7 +74,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractSequentialList.staticClass, global::java.util.AbstractSequentialList._AbstractSequentialList25739);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractSequentialList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractSequentialList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractSequentialList"));
@@ -91,16 +87,15 @@ namespace java.util
 			global::java.util.AbstractSequentialList._listIterator25738 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSequentialList.staticClass, "listIterator", "(I)Ljava/util/ListIterator;");
 			global::java.util.AbstractSequentialList._AbstractSequentialList25739 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSequentialList.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractSequentialList))]
 	internal sealed partial class AbstractSequentialList_ : java.util.AbstractSequentialList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSequentialList_()
-		{
-			InitJNI();
-		}
 		internal AbstractSequentialList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -122,12 +117,15 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.AbstractSequentialList_.staticClass, global::java.util.AbstractSequentialList_._size25741);
 		}
-		private static void InitJNI()
+		static AbstractSequentialList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractSequentialList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractSequentialList"));
 			global::java.util.AbstractSequentialList_._listIterator25740 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSequentialList_.staticClass, "listIterator", "(I)Ljava/util/ListIterator;");
 			global::java.util.AbstractSequentialList_._size25741 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSequentialList_.staticClass, "size", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

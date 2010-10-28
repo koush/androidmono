@@ -4,10 +4,6 @@ namespace org.apache.http.conn.routing
 	public sealed partial class RouteInfo_TunnelType : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RouteInfo_TunnelType()
-		{
-			InitJNI();
-		}
 		internal RouteInfo_TunnelType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -41,7 +37,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.GetStaticObjectField(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, _TUNNELLED32255)) as org.apache.http.conn.routing.RouteInfo_TunnelType;
 			}
 		}
-		private static void InitJNI()
+		static RouteInfo_TunnelType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/RouteInfo$TunnelType"));
@@ -49,6 +45,9 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf32253 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "valueOf", "(Ljava/lang/String;)Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType._PLAIN32254 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "PLAIN", "Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType._TUNNELLED32255 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "TUNNELLED", "Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

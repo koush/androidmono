@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class NoClassDefFoundError : java.lang.LinkageError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NoClassDefFoundError()
-		{
-			InitJNI();
-		}
 		protected NoClassDefFoundError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError20343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NoClassDefFoundError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.NoClassDefFoundError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/NoClassDefFoundError"));
 			global::java.lang.NoClassDefFoundError._NoClassDefFoundError20342 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "()V");
 			global::java.lang.NoClassDefFoundError._NoClassDefFoundError20343 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

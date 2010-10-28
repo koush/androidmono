@@ -4,10 +4,6 @@ namespace android.os
 	public partial class MemoryFile : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MemoryFile()
-		{
-			InitJNI();
-		}
 		protected MemoryFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -113,7 +109,7 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.MemoryFile.staticClass, global::android.os.MemoryFile._MemoryFile9933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MemoryFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.MemoryFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/MemoryFile"));
@@ -127,6 +123,9 @@ namespace android.os
 			global::android.os.MemoryFile._isPurgingAllowed9931 = @__env.GetMethodIDNoThrow(global::android.os.MemoryFile.staticClass, "isPurgingAllowed", "()Z");
 			global::android.os.MemoryFile._allowPurging9932 = @__env.GetMethodIDNoThrow(global::android.os.MemoryFile.staticClass, "allowPurging", "(Z)Z");
 			global::android.os.MemoryFile._MemoryFile9933 = @__env.GetMethodIDNoThrow(global::android.os.MemoryFile.staticClass, "<init>", "(Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

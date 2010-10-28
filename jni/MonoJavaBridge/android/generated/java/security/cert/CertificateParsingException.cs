@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class CertificateParsingException : java.security.cert.CertificateException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertificateParsingException()
-		{
-			InitJNI();
-		}
 		protected CertificateParsingException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,7 +35,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertificateParsingException.staticClass, global::java.security.cert.CertificateParsingException._CertificateParsingException23613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertificateParsingException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertificateParsingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertificateParsingException"));
@@ -47,6 +43,9 @@ namespace java.security.cert
 			global::java.security.cert.CertificateParsingException._CertificateParsingException23611 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateParsingException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.security.cert.CertificateParsingException._CertificateParsingException23612 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateParsingException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.security.cert.CertificateParsingException._CertificateParsingException23613 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateParsingException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

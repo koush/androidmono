@@ -9,17 +9,16 @@ namespace javax.microedition.khronos.opengles
 	internal sealed partial class GL_ : java.lang.Object, GL
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GL_()
-		{
-			InitJNI();
-		}
 		internal GL_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static GL_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

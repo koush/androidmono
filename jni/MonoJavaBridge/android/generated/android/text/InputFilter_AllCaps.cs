@@ -4,10 +4,6 @@ namespace android.text
 	public partial class InputFilter_AllCaps : java.lang.Object, InputFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputFilter_AllCaps()
-		{
-			InitJNI();
-		}
 		protected InputFilter_AllCaps(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -31,12 +27,15 @@ namespace android.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.InputFilter_AllCaps.staticClass, global::android.text.InputFilter_AllCaps._InputFilter_AllCaps12782);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputFilter_AllCaps()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.InputFilter_AllCaps.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/InputFilter$AllCaps"));
 			global::android.text.InputFilter_AllCaps._filter12781 = @__env.GetMethodIDNoThrow(global::android.text.InputFilter_AllCaps.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;");
 			global::android.text.InputFilter_AllCaps._InputFilter_AllCaps12782 = @__env.GetMethodIDNoThrow(global::android.text.InputFilter_AllCaps.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

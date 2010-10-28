@@ -4,10 +4,6 @@ namespace java.util
 	public partial class SimpleTimeZone : java.util.TimeZone
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleTimeZone()
-		{
-			InitJNI();
-		}
 		protected SimpleTimeZone(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -269,7 +265,7 @@ namespace java.util
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static SimpleTimeZone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.SimpleTimeZone.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/SimpleTimeZone"));
@@ -297,6 +293,9 @@ namespace java.util
 			global::java.util.SimpleTimeZone._SimpleTimeZone26753 = @__env.GetMethodIDNoThrow(global::java.util.SimpleTimeZone.staticClass, "<init>", "(ILjava/lang/String;IIIIIIIII)V");
 			global::java.util.SimpleTimeZone._SimpleTimeZone26754 = @__env.GetMethodIDNoThrow(global::java.util.SimpleTimeZone.staticClass, "<init>", "(ILjava/lang/String;IIIIIIIIIII)V");
 			global::java.util.SimpleTimeZone._SimpleTimeZone26755 = @__env.GetMethodIDNoThrow(global::java.util.SimpleTimeZone.staticClass, "<init>", "(ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

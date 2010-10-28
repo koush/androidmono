@@ -4,10 +4,6 @@ namespace android.hardware
 	public partial class SensorEvent : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SensorEvent()
-		{
-			InitJNI();
-		}
 		protected SensorEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace android.hardware
 			{
 			}
 		}
-		private static void InitJNI()
+		static SensorEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorEvent"));
@@ -64,6 +60,9 @@ namespace android.hardware
 			global::android.hardware.SensorEvent._sensor6449 = @__env.GetFieldIDNoThrow(global::android.hardware.SensorEvent.staticClass, "sensor", "Landroid/hardware/Sensor;");
 			global::android.hardware.SensorEvent._accuracy6450 = @__env.GetFieldIDNoThrow(global::android.hardware.SensorEvent.staticClass, "accuracy", "I");
 			global::android.hardware.SensorEvent._timestamp6451 = @__env.GetFieldIDNoThrow(global::android.hardware.SensorEvent.staticClass, "timestamp", "J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

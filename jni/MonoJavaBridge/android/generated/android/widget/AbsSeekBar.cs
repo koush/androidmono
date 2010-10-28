@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class AbsSeekBar : android.widget.ProgressBar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSeekBar()
-		{
-			InitJNI();
-		}
 		protected AbsSeekBar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,7 +145,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._AbsSeekBar16584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbsSeekBar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsSeekBar.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsSeekBar"));
@@ -170,23 +166,25 @@ namespace android.widget
 			global::android.widget.AbsSeekBar._AbsSeekBar16583 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.AbsSeekBar._AbsSeekBar16584 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsSeekBar))]
 	internal sealed partial class AbsSeekBar_ : android.widget.AbsSeekBar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSeekBar_()
-		{
-			InitJNI();
-		}
 		internal AbsSeekBar_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AbsSeekBar_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsSeekBar_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsSeekBar"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

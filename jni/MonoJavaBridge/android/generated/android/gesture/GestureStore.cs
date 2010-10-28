@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class GestureStore : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GestureStore()
-		{
-			InitJNI();
-		}
 		protected GestureStore(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -210,7 +206,7 @@ namespace android.gesture
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static GestureStore()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureStore.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureStore"));
@@ -230,6 +226,9 @@ namespace android.gesture
 			global::android.gesture.GestureStore._removeEntry4979 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStore.staticClass, "removeEntry", "(Ljava/lang/String;)V");
 			global::android.gesture.GestureStore._getGestures4980 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStore.staticClass, "getGestures", "(Ljava/lang/String;)Ljava/util/ArrayList;");
 			global::android.gesture.GestureStore._GestureStore4981 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStore.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

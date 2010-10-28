@@ -4,10 +4,6 @@ namespace android.text
 	public partial class TextUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextUtils()
-		{
-			InitJNI();
-		}
 		protected TextUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.text
 		internal sealed partial class EllipsizeCallback_ : java.lang.Object, EllipsizeCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static EllipsizeCallback_()
-			{
-				InitJNI();
-			}
 			internal EllipsizeCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.text
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextUtils.EllipsizeCallback_.staticClass, global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static EllipsizeCallback_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.EllipsizeCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$EllipsizeCallback"));
 				global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.EllipsizeCallback_.staticClass, "ellipsized", "(II)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.text
 		internal partial class EllipsizeCallbackDelegateWrapper : java.lang.Object, EllipsizeCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static EllipsizeCallbackDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected EllipsizeCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static EllipsizeCallbackDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils_EllipsizeCallbackDelegateWrapper"));
 				global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class EllipsizeCallbackDelegateWrapper
@@ -90,10 +84,6 @@ namespace android.text
 		public partial class SimpleStringSplitter : java.lang.Object, StringSplitter, java.util.Iterator
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SimpleStringSplitter()
-			{
-				InitJNI();
-			}
 			protected SimpleStringSplitter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -160,7 +150,7 @@ namespace android.text
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SimpleStringSplitter()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.SimpleStringSplitter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$SimpleStringSplitter"));
@@ -170,6 +160,9 @@ namespace android.text
 				global::android.text.TextUtils.SimpleStringSplitter._remove13047 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "remove", "()V");
 				global::android.text.TextUtils.SimpleStringSplitter._setString13048 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "setString", "(Ljava/lang/String;)V");
 				global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "<init>", "(C)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.TextUtils.StringSplitter_))]
@@ -182,10 +175,6 @@ namespace android.text
 		internal sealed partial class StringSplitter_ : java.lang.Object, StringSplitter
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static StringSplitter_()
-			{
-				InitJNI();
-			}
 			internal StringSplitter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -211,22 +200,21 @@ namespace android.text
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.TextUtils.StringSplitter_.staticClass, global::android.text.TextUtils.StringSplitter_._iterator13051)) as java.util.Iterator;
 			}
-			private static void InitJNI()
+			static StringSplitter_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.StringSplitter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$StringSplitter"));
 				global::android.text.TextUtils.StringSplitter_._setString13050 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.StringSplitter_.staticClass, "setString", "(Ljava/lang/String;)V");
 				global::android.text.TextUtils.StringSplitter_._iterator13051 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.StringSplitter_.staticClass, "iterator", "()Ljava/util/Iterator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class TruncateAt : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static TruncateAt()
-			{
-				InitJNI();
-			}
 			internal TruncateAt(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -278,7 +266,7 @@ namespace android.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _START13057)) as android.text.TextUtils.TruncateAt;
 				}
 			}
-			private static void InitJNI()
+			static TruncateAt()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.TruncateAt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$TruncateAt"));
@@ -288,6 +276,9 @@ namespace android.text
 				global::android.text.TextUtils.TruncateAt._MARQUEE13055 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MARQUEE", "Landroid/text/TextUtils$TruncateAt;");
 				global::android.text.TextUtils.TruncateAt._MIDDLE13056 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MIDDLE", "Landroid/text/TextUtils$TruncateAt;");
 				global::android.text.TextUtils.TruncateAt._START13057 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "START", "Landroid/text/TextUtils$TruncateAt;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals13058;
@@ -666,7 +657,7 @@ namespace android.text
 				return 16384;
 			}
 		}
-		private static void InitJNI()
+		static TextUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.TextUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils"));
@@ -708,6 +699,9 @@ namespace android.text
 			global::android.text.TextUtils._isDigitsOnly13093 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isDigitsOnly", "(Ljava/lang/CharSequence;)Z");
 			global::android.text.TextUtils._getCapsMode13094 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getCapsMode", "(Ljava/lang/CharSequence;II)I");
 			global::android.text.TextUtils._CHAR_SEQUENCE_CREATOR13095 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.staticClass, "CHAR_SEQUENCE_CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

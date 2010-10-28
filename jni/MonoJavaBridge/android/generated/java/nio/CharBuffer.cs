@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class CharBuffer : java.nio.Buffer, java.lang.Comparable, java.lang.Appendable, java.lang.CharSequence, java.lang.Readable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharBuffer()
-		{
-			InitJNI();
-		}
 		protected CharBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -268,7 +264,7 @@ namespace java.nio
 		public abstract global::java.nio.CharBuffer compact();
 		internal static global::MonoJavaBridge.MethodId _order22155;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI()
+		static CharBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.CharBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/CharBuffer"));
@@ -310,16 +306,15 @@ namespace java.nio
 			global::java.nio.CharBuffer._compact22154 = @__env.GetMethodIDNoThrow(global::java.nio.CharBuffer.staticClass, "compact", "()Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer._order22155 = @__env.GetMethodIDNoThrow(global::java.nio.CharBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.CharBuffer))]
 	internal sealed partial class CharBuffer_ : java.nio.CharBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharBuffer_()
-		{
-			InitJNI();
-		}
 		internal CharBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -431,7 +426,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.CharBuffer_.staticClass, global::java.nio.CharBuffer_._isReadOnly22167);
 		}
-		private static void InitJNI()
+		static CharBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.CharBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/CharBuffer"));
@@ -447,6 +442,9 @@ namespace java.nio
 			global::java.nio.CharBuffer_._compact22165 = @__env.GetMethodIDNoThrow(global::java.nio.CharBuffer_.staticClass, "compact", "()Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer_._order22166 = @__env.GetMethodIDNoThrow(global::java.nio.CharBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
 			global::java.nio.CharBuffer_._isReadOnly22167 = @__env.GetMethodIDNoThrow(global::java.nio.CharBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

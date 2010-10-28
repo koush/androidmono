@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class RemoteViews : java.lang.Object, android.os.Parcelable, android.view.LayoutInflater.Filter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RemoteViews()
-		{
-			InitJNI();
-		}
 		protected RemoteViews(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public partial class ActionException : java.lang.RuntimeException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ActionException()
-			{
-				InitJNI();
-			}
 			protected ActionException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -36,12 +28,15 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RemoteViews.ActionException.staticClass, global::android.widget.RemoteViews.ActionException._ActionException17616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ActionException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.RemoteViews.ActionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RemoteViews$ActionException"));
 				global::android.widget.RemoteViews.ActionException._ActionException17615 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.ActionException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 				global::android.widget.RemoteViews.ActionException._ActionException17616 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.ActionException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.RemoteViews.RemoteView_))]
@@ -53,10 +48,6 @@ namespace android.widget
 		internal sealed partial class RemoteView_ : java.lang.Object, RemoteView
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RemoteView_()
-			{
-				InitJNI();
-			}
 			internal RemoteView_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -96,7 +87,7 @@ namespace android.widget
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RemoteViews.RemoteView_.staticClass, global::android.widget.RemoteViews.RemoteView_._annotationType17620)) as java.lang.Class;
 			}
-			private static void InitJNI()
+			static RemoteView_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.RemoteViews.RemoteView_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RemoteViews$RemoteView"));
@@ -104,6 +95,9 @@ namespace android.widget
 				global::android.widget.RemoteViews.RemoteView_._toString17618 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.RemoteView_.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.widget.RemoteViews.RemoteView_._hashCode17619 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.RemoteView_.staticClass, "hashCode", "()I");
 				global::android.widget.RemoteViews.RemoteView_._annotationType17620 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.RemoteView_.staticClass, "annotationType", "()Ljava/lang/Class;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new global::java.lang.String Package
@@ -430,7 +424,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.widget.RemoteViews.staticClass, _CREATOR17654)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static RemoteViews()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.RemoteViews.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RemoteViews"));
@@ -468,6 +462,9 @@ namespace android.widget
 			global::android.widget.RemoteViews._RemoteViews17652 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::android.widget.RemoteViews._RemoteViews17653 = @__env.GetMethodIDNoThrow(global::android.widget.RemoteViews.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.widget.RemoteViews._CREATOR17654 = @__env.GetStaticFieldIDNoThrow(global::android.widget.RemoteViews.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

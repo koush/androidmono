@@ -18,10 +18,6 @@ namespace android.speech
 	internal sealed partial class RecognitionListener_ : java.lang.Object, RecognitionListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RecognitionListener_()
-		{
-			InitJNI();
-		}
 		internal RecognitionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace android.speech
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onPartialResults11654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RecognitionListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognitionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognitionListener"));
@@ -119,6 +115,9 @@ namespace android.speech
 			global::android.speech.RecognitionListener_._onEndOfSpeech11652 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onEndOfSpeech", "()V");
 			global::android.speech.RecognitionListener_._onResults11653 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onResults", "(Landroid/os/Bundle;)V");
 			global::android.speech.RecognitionListener_._onPartialResults11654 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onPartialResults", "(Landroid/os/Bundle;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

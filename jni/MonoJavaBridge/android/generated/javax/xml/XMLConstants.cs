@@ -4,10 +4,6 @@ namespace javax.xml
 	public sealed partial class XMLConstants : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLConstants()
-		{
-			InitJNI();
-		}
 		internal XMLConstants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,12 +95,15 @@ namespace javax.xml
 				return "http://javax.xml.XMLConstants/feature/secure-processing";
 			}
 		}
-		private static void InitJNI()
+		static XMLConstants()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.XMLConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/XMLConstants"));
 			global::javax.xml.XMLConstants._NULL_NS_URI30623 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "NULL_NS_URI", "Ljava/lang/String;");
 			global::javax.xml.XMLConstants._DEFAULT_NS_PREFIX30624 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "DEFAULT_NS_PREFIX", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

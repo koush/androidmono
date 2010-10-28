@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class DESKeySpec : java.lang.Object, java.security.spec.KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DESKeySpec()
-		{
-			InitJNI();
-		}
 		protected DESKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -60,7 +56,7 @@ namespace javax.crypto.spec
 				return 8;
 			}
 		}
-		private static void InitJNI()
+		static DESKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.DESKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/DESKeySpec"));
@@ -69,6 +65,9 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.DESKeySpec._isWeak28758 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "isWeak", "([BI)Z");
 			global::javax.crypto.spec.DESKeySpec._DESKeySpec28759 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([B)V");
 			global::javax.crypto.spec.DESKeySpec._DESKeySpec28760 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([BI)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

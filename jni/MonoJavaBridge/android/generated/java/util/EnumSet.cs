@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class EnumSet : java.util.AbstractSet, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EnumSet()
-		{
-			InitJNI();
-		}
 		protected EnumSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -92,7 +88,7 @@ namespace java.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.EnumSet.staticClass, global::java.util.EnumSet._complementOf26168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.EnumSet;
 		}
-		private static void InitJNI()
+		static EnumSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EnumSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EnumSet"));
@@ -110,16 +106,15 @@ namespace java.util
 			global::java.util.EnumSet._allOf26167 = @__env.GetStaticMethodIDNoThrow(global::java.util.EnumSet.staticClass, "allOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;");
 			global::java.util.EnumSet._complementOf26168 = @__env.GetStaticMethodIDNoThrow(global::java.util.EnumSet.staticClass, "complementOf", "(Ljava/util/EnumSet;)Ljava/util/EnumSet;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.EnumSet))]
 	internal sealed partial class EnumSet_ : java.util.EnumSet
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EnumSet_()
-		{
-			InitJNI();
-		}
 		internal EnumSet_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -145,12 +140,15 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.EnumSet_.staticClass, global::java.util.EnumSet_._iterator26170)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static EnumSet_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EnumSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EnumSet"));
 			global::java.util.EnumSet_._size26169 = @__env.GetMethodIDNoThrow(global::java.util.EnumSet_.staticClass, "size", "()I");
 			global::java.util.EnumSet_._iterator26170 = @__env.GetMethodIDNoThrow(global::java.util.EnumSet_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

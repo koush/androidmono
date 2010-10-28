@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLDebugHelper : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLDebugHelper()
-		{
-			InitJNI();
-		}
 		protected GLDebugHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -58,13 +54,16 @@ namespace android.opengl
 				return 28672;
 			}
 		}
-		private static void InitJNI()
+		static GLDebugHelper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLDebugHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLDebugHelper"));
 			global::android.opengl.GLDebugHelper._wrap8143 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLDebugHelper.staticClass, "wrap", "(Ljavax/microedition/khronos/opengles/GL;ILjava/io/Writer;)Ljavax/microedition/khronos/opengles/GL;");
 			global::android.opengl.GLDebugHelper._wrap8144 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLDebugHelper.staticClass, "wrap", "(Ljavax/microedition/khronos/egl/EGL;ILjava/io/Writer;)Ljavax/microedition/khronos/egl/EGL;");
 			global::android.opengl.GLDebugHelper._GLDebugHelper8145 = @__env.GetMethodIDNoThrow(global::android.opengl.GLDebugHelper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

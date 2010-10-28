@@ -13,10 +13,6 @@ namespace java.util.concurrent
 	internal sealed partial class ScheduledExecutorService_ : java.lang.Object, ScheduledExecutorService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScheduledExecutorService_()
-		{
-			InitJNI();
-		}
 		internal ScheduledExecutorService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -173,7 +169,7 @@ namespace java.util.concurrent
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_.staticClass, global::java.util.concurrent.ScheduledExecutorService_._execute27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ScheduledExecutorService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ScheduledExecutorService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ScheduledExecutorService"));
@@ -194,6 +190,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ScheduledExecutorService_._isShutdown27382 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isShutdown", "()Z");
 			global::java.util.concurrent.ScheduledExecutorService_._isTerminated27383 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isTerminated", "()Z");
 			global::java.util.concurrent.ScheduledExecutorService_._execute27384 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "execute", "(Ljava/lang/Runnable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class LayerRasterizer : android.graphics.Rasterizer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LayerRasterizer()
-		{
-			InitJNI();
-		}
 		protected LayerRasterizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._LayerRasterizer5294);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LayerRasterizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.LayerRasterizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/LayerRasterizer"));
 			global::android.graphics.LayerRasterizer._addLayer5292 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V");
 			global::android.graphics.LayerRasterizer._addLayer5293 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V");
 			global::android.graphics.LayerRasterizer._LayerRasterizer5294 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

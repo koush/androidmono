@@ -12,10 +12,6 @@ namespace android.database.sqlite
 	internal sealed partial class SQLiteTransactionListener_ : java.lang.Object, SQLiteTransactionListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SQLiteTransactionListener_()
-		{
-			InitJNI();
-		}
 		internal SQLiteTransactionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
 		}
-		private static void InitJNI()
+		static SQLiteTransactionListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteTransactionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteTransactionListener"));
 			global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onBegin", "()V");
 			global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onCommit", "()V");
 			global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onRollback", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

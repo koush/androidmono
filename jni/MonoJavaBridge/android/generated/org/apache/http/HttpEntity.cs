@@ -18,10 +18,6 @@ namespace org.apache.http
 	internal sealed partial class HttpEntity_ : java.lang.Object, HttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpEntity_()
-		{
-			InitJNI();
-		}
 		internal HttpEntity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace org.apache.http
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntity_.staticClass, global::org.apache.http.HttpEntity_._consumeContent31550);
 		}
-		private static void InitJNI()
+		static HttpEntity_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpEntity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpEntity"));
@@ -119,6 +115,9 @@ namespace org.apache.http
 			global::org.apache.http.HttpEntity_._isChunked31548 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntity_.staticClass, "isChunked", "()Z");
 			global::org.apache.http.HttpEntity_._isStreaming31549 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntity_.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.HttpEntity_._consumeContent31550 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntity_.staticClass, "consumeContent", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn.tsccm
 	public abstract partial class AbstractConnPool : java.lang.Object, RefQueueHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractConnPool()
-		{
-			InitJNI();
-		}
 		protected AbstractConnPool(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,7 +85,7 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._AbstractConnPool33117);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractConnPool()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/AbstractConnPool"));
@@ -106,16 +102,15 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool._closeConnection33116 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, "closeConnection", "(Lorg/apache/http/conn/OperatedClientConnection;)V");
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool._AbstractConnPool33117 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.conn.tsccm.AbstractConnPool))]
 	internal sealed partial class AbstractConnPool_ : org.apache.http.impl.conn.tsccm.AbstractConnPool
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractConnPool_()
-		{
-			InitJNI();
-		}
 		internal AbstractConnPool_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +150,7 @@ namespace org.apache.http.impl.conn.tsccm
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._deleteClosedConnections33121);
 		}
-		private static void InitJNI()
+		static AbstractConnPool_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/AbstractConnPool"));
@@ -163,6 +158,9 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._requestPoolEntry33119 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, "requestPoolEntry", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/impl/conn/tsccm/PoolEntryRequest;");
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._handleLostEntry33120 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, "handleLostEntry", "(Lorg/apache/http/conn/routing/HttpRoute;)V");
 			global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._deleteClosedConnections33121 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, "deleteClosedConnections", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

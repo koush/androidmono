@@ -4,10 +4,6 @@ namespace android.test
 	public partial class ViewAsserts : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewAsserts()
-		{
-			InitJNI();
-		}
 		protected ViewAsserts(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace android.test
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupNotContains12378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static ViewAsserts()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ViewAsserts.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ViewAsserts"));
@@ -141,6 +137,9 @@ namespace android.test
 			global::android.test.ViewAsserts._assertGroupIntegrity12376 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupIntegrity", "(Landroid/view/ViewGroup;)V");
 			global::android.test.ViewAsserts._assertGroupContains12377 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
 			global::android.test.ViewAsserts._assertGroupNotContains12378 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupNotContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

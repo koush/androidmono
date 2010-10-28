@@ -132,10 +132,6 @@ namespace javax.microedition.khronos.opengles
 	internal sealed partial class GL10_ : java.lang.Object, GL10
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GL10_()
-		{
-			InitJNI();
-		}
 		internal GL10_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1246,7 +1242,7 @@ namespace javax.microedition.khronos.opengles
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10_.staticClass, global::javax.microedition.khronos.opengles.GL10_._glViewport29080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static GL10_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL10_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL10"));
@@ -1373,6 +1369,9 @@ namespace javax.microedition.khronos.opengles
 			global::javax.microedition.khronos.opengles.GL10_._glTranslatex29078 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL10_.staticClass, "glTranslatex", "(III)V");
 			global::javax.microedition.khronos.opengles.GL10_._glVertexPointer29079 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL10_.staticClass, "glVertexPointer", "(IIILjava/nio/Buffer;)V");
 			global::javax.microedition.khronos.opengles.GL10_._glViewport29080 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.opengles.GL10_.staticClass, "glViewport", "(IIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content.res
 	public partial class AssetFileDescriptor : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AssetFileDescriptor()
-		{
-			InitJNI();
-		}
 		protected AssetFileDescriptor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content.res
 		public partial class AutoCloseInputStream : android.os.ParcelFileDescriptor.AutoCloseInputStream
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoCloseInputStream()
-			{
-				InitJNI();
-			}
 			protected AutoCloseInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -101,7 +93,7 @@ namespace android.content.res
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._AutoCloseInputStream4073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AutoCloseInputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetFileDescriptor$AutoCloseInputStream"));
@@ -115,15 +107,14 @@ namespace android.content.res
 				global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported4072 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "markSupported", "()Z");
 				global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._AutoCloseInputStream4073 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "<init>", "(Landroid/content/res/AssetFileDescriptor;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class AutoCloseOutputStream : android.os.ParcelFileDescriptor.AutoCloseOutputStream
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AutoCloseOutputStream()
-			{
-				InitJNI();
-			}
 			protected AutoCloseOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -161,7 +152,7 @@ namespace android.content.res
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream4077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AutoCloseOutputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetFileDescriptor$AutoCloseOutputStream"));
@@ -169,6 +160,9 @@ namespace android.content.res
 				global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4075 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "([B)V");
 				global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4076 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "(I)V");
 				global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream4077 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "<init>", "(Landroid/content/res/AssetFileDescriptor;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString4078;
@@ -328,7 +322,7 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.res.AssetFileDescriptor.staticClass, _CREATOR4091)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AssetFileDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.AssetFileDescriptor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetFileDescriptor"));
@@ -345,6 +339,9 @@ namespace android.content.res
 			global::android.content.res.AssetFileDescriptor._createOutputStream4088 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "createOutputStream", "()Ljava/io/FileOutputStream;");
 			global::android.content.res.AssetFileDescriptor._AssetFileDescriptor4089 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;JJ)V");
 			global::android.content.res.AssetFileDescriptor._CREATOR4091 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

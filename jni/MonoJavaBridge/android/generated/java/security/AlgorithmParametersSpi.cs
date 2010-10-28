@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class AlgorithmParametersSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlgorithmParametersSpi()
-		{
-			InitJNI();
-		}
 		protected AlgorithmParametersSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,7 +28,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParametersSpi.staticClass, global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22883);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AlgorithmParametersSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AlgorithmParametersSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AlgorithmParametersSpi"));
@@ -45,16 +41,15 @@ namespace java.security
 			global::java.security.AlgorithmParametersSpi._engineToString22882 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi.staticClass, "engineToString", "()Ljava/lang/String;");
 			global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22883 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.AlgorithmParametersSpi))]
 	internal sealed partial class AlgorithmParametersSpi_ : java.security.AlgorithmParametersSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AlgorithmParametersSpi_()
-		{
-			InitJNI();
-		}
 		internal AlgorithmParametersSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -121,7 +116,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineToString22890)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static AlgorithmParametersSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AlgorithmParametersSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AlgorithmParametersSpi"));
@@ -132,6 +127,9 @@ namespace java.security
 			global::java.security.AlgorithmParametersSpi_._engineGetEncoded22888 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "()[B");
 			global::java.security.AlgorithmParametersSpi_._engineGetEncoded22889 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "(Ljava/lang/String;)[B");
 			global::java.security.AlgorithmParametersSpi_._engineToString22890 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi_.staticClass, "engineToString", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

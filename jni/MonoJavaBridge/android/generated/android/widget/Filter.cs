@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class Filter : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Filter()
-		{
-			InitJNI();
-		}
 		protected Filter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class FilterListener_ : java.lang.Object, FilterListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FilterListener_()
-			{
-				InitJNI();
-			}
 			internal FilterListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Filter.FilterListener_.staticClass, global::android.widget.Filter.FilterListener_._onFilterComplete17074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static FilterListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterListener"));
 				global::android.widget.Filter.FilterListener_._onFilterComplete17074 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListener_.staticClass, "onFilterComplete", "(I)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class FilterListenerDelegateWrapper : java.lang.Object, FilterListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FilterListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected FilterListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterListenerDelegateWrapper.staticClass, global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static FilterListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter_FilterListenerDelegateWrapper"));
 				global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class FilterListenerDelegateWrapper
@@ -90,10 +84,6 @@ namespace android.widget
 		protected partial class FilterResults : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FilterResults()
-			{
-				InitJNI();
-			}
 			protected FilterResults(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -128,13 +118,16 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI()
+			static FilterResults()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterResults.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterResults"));
 				global::android.widget.Filter.FilterResults._FilterResults17076 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "<init>", "()V");
 				global::android.widget.Filter.FilterResults._values17077 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "values", "Ljava/lang/Object;");
 				global::android.widget.Filter.FilterResults._count17078 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "count", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _filter17079;
@@ -183,7 +176,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.staticClass, global::android.widget.Filter._Filter17084);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Filter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
@@ -194,16 +187,15 @@ namespace android.widget
 			global::android.widget.Filter._convertResultToString17083 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
 			global::android.widget.Filter._Filter17084 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.Filter))]
 	internal sealed partial class Filter_ : android.widget.Filter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Filter_()
-		{
-			InitJNI();
-		}
 		internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -233,12 +225,15 @@ namespace android.widget
 		{
 			publishResults((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		private static void InitJNI()
+		static Filter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
 			global::android.widget.Filter_._performFiltering17085 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
 			global::android.widget.Filter_._publishResults17086 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

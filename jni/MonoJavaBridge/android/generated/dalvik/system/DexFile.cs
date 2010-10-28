@@ -4,10 +4,6 @@ namespace dalvik.system
 	public sealed partial class DexFile : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DexFile()
-		{
-			InitJNI();
-		}
 		internal DexFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -80,7 +76,7 @@ namespace dalvik.system
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.DexFile.staticClass, global::dalvik.system.DexFile._DexFile18596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DexFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.DexFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/DexFile"));
@@ -92,6 +88,9 @@ namespace dalvik.system
 			global::dalvik.system.DexFile._isDexOptNeeded18594 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.DexFile.staticClass, "isDexOptNeeded", "(Ljava/lang/String;)Z");
 			global::dalvik.system.DexFile._DexFile18595 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexFile.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::dalvik.system.DexFile._DexFile18596 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexFile.staticClass, "<init>", "(Ljava/io/File;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

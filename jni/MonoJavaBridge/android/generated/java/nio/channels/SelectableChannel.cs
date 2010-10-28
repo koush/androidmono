@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class SelectableChannel : java.nio.channels.spi.AbstractInterruptibleChannel, Channel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SelectableChannel()
-		{
-			InitJNI();
-		}
 		protected SelectableChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.SelectableChannel.staticClass, global::java.nio.channels.SelectableChannel._SelectableChannel22565);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SelectableChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.SelectableChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/SelectableChannel"));
@@ -58,16 +54,15 @@ namespace java.nio.channels
 			global::java.nio.channels.SelectableChannel._configureBlocking22564 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SelectableChannel.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;");
 			global::java.nio.channels.SelectableChannel._SelectableChannel22565 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SelectableChannel.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.SelectableChannel))]
 	internal sealed partial class SelectableChannel_ : java.nio.channels.SelectableChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SelectableChannel_()
-		{
-			InitJNI();
-		}
 		internal SelectableChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +147,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.SelectableChannel_.staticClass, global::java.nio.channels.SelectableChannel_._implCloseChannel22574);
 		}
-		private static void InitJNI()
+		static SelectableChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.SelectableChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/SelectableChannel"));
@@ -165,6 +160,9 @@ namespace java.nio.channels
 			global::java.nio.channels.SelectableChannel_._blockingLock22572 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SelectableChannel_.staticClass, "blockingLock", "()Ljava/lang/Object;");
 			global::java.nio.channels.SelectableChannel_._configureBlocking22573 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SelectableChannel_.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;");
 			global::java.nio.channels.SelectableChannel_._implCloseChannel22574 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SelectableChannel_.staticClass, "implCloseChannel", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

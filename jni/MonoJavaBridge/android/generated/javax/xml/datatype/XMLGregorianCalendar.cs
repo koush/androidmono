@@ -4,10 +4,6 @@ namespace javax.xml.datatype
 	public abstract partial class XMLGregorianCalendar : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLGregorianCalendar()
-		{
-			InitJNI();
-		}
 		protected XMLGregorianCalendar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -145,7 +141,7 @@ namespace javax.xml.datatype
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.XMLGregorianCalendar.staticClass, global::javax.xml.datatype.XMLGregorianCalendar._XMLGregorianCalendar30786);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static XMLGregorianCalendar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.XMLGregorianCalendar.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/XMLGregorianCalendar"));
@@ -190,16 +186,15 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.XMLGregorianCalendar._toGregorianCalendar30785 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.XMLGregorianCalendar.staticClass, "toGregorianCalendar", "(Ljava/util/TimeZone;Ljava/util/Locale;Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/util/GregorianCalendar;");
 			global::javax.xml.datatype.XMLGregorianCalendar._XMLGregorianCalendar30786 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.XMLGregorianCalendar.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.datatype.XMLGregorianCalendar))]
 	internal sealed partial class XMLGregorianCalendar_ : javax.xml.datatype.XMLGregorianCalendar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XMLGregorianCalendar_()
-		{
-			InitJNI();
-		}
 		internal XMLGregorianCalendar_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -491,7 +486,7 @@ namespace javax.xml.datatype
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.XMLGregorianCalendar_.staticClass, global::javax.xml.datatype.XMLGregorianCalendar_._toGregorianCalendar30818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.GregorianCalendar;
 		}
-		private static void InitJNI()
+		static XMLGregorianCalendar_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.XMLGregorianCalendar_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/XMLGregorianCalendar"));
@@ -527,6 +522,9 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.XMLGregorianCalendar_._toXMLFormat30816 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.XMLGregorianCalendar_.staticClass, "toXMLFormat", "()Ljava/lang/String;");
 			global::javax.xml.datatype.XMLGregorianCalendar_._toGregorianCalendar30817 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.XMLGregorianCalendar_.staticClass, "toGregorianCalendar", "()Ljava/util/GregorianCalendar;");
 			global::javax.xml.datatype.XMLGregorianCalendar_._toGregorianCalendar30818 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.XMLGregorianCalendar_.staticClass, "toGregorianCalendar", "(Ljava/util/TimeZone;Ljava/util/Locale;Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/util/GregorianCalendar;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace java.lang
 	internal sealed partial class Appendable_ : java.lang.Object, Appendable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Appendable_()
-		{
-			InitJNI();
-		}
 		internal Appendable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Appendable_.staticClass, global::java.lang.Appendable_._append19709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 		}
-		private static void InitJNI()
+		static Appendable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Appendable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Appendable"));
 			global::java.lang.Appendable_._append19707 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
 			global::java.lang.Appendable_._append19708 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
 			global::java.lang.Appendable_._append19709 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(C)Ljava/lang/Appendable;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

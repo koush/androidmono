@@ -4,10 +4,6 @@ namespace android.inputmethodservice
 	public abstract partial class AbstractInputMethodService : android.app.Service, android.view.KeyEvent.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractInputMethodService()
-		{
-			InitJNI();
-		}
 		protected AbstractInputMethodService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.inputmethodservice
 		public abstract partial class AbstractInputMethodImpl : java.lang.Object, android.view.inputmethod.InputMethod
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AbstractInputMethodImpl()
-			{
-				InitJNI();
-			}
 			protected AbstractInputMethodImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -74,7 +66,7 @@ namespace android.inputmethodservice
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._AbstractInputMethodImpl6537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AbstractInputMethodImpl()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService$AbstractInputMethodImpl"));
@@ -90,16 +82,15 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._revokeSession6536 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, "revokeSession", "(Landroid/view/inputmethod/InputMethodSession;)V");
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._AbstractInputMethodImpl6537 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, "<init>", "(Landroid/inputmethodservice/AbstractInputMethodService;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl))]
 		internal sealed partial class AbstractInputMethodImpl_ : android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AbstractInputMethodImpl_()
-			{
-				InitJNI();
-			}
 			internal AbstractInputMethodImpl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -166,7 +157,7 @@ namespace android.inputmethodservice
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._hideSoftInput6544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static AbstractInputMethodImpl_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService$AbstractInputMethodImpl"));
@@ -178,15 +169,14 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._showSoftInput6543 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, "showSoftInput", "(ILandroid/os/ResultReceiver;)V");
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._hideSoftInput6544 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, "hideSoftInput", "(ILandroid/os/ResultReceiver;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass(typeof(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_))]
 		public abstract partial class AbstractInputMethodSessionImpl : java.lang.Object, android.view.inputmethod.InputMethodSession
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AbstractInputMethodSessionImpl()
-			{
-				InitJNI();
-			}
 			protected AbstractInputMethodSessionImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -273,7 +263,7 @@ namespace android.inputmethodservice
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._AbstractInputMethodSessionImpl6558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static AbstractInputMethodSessionImpl()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl"));
@@ -292,16 +282,15 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._revokeSelf6557 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, "revokeSelf", "()V");
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._AbstractInputMethodSessionImpl6558 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, "<init>", "(Landroid/inputmethodservice/AbstractInputMethodService;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl))]
 		internal sealed partial class AbstractInputMethodSessionImpl_ : android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AbstractInputMethodSessionImpl_()
-			{
-				InitJNI();
-			}
 			internal AbstractInputMethodSessionImpl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -368,7 +357,7 @@ namespace android.inputmethodservice
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._toggleSoftInput6565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static AbstractInputMethodSessionImpl_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl"));
@@ -379,6 +368,9 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._updateExtractedText6563 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, "updateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V");
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._appPrivateCommand6564 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, "appPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V");
 				global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._toggleSoftInput6565 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, "toggleSoftInput", "(II)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown6566;
@@ -436,7 +428,7 @@ namespace android.inputmethodservice
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._AbstractInputMethodService6576);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractInputMethodService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.AbstractInputMethodService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService"));
@@ -452,16 +444,15 @@ namespace android.inputmethodservice
 			global::android.inputmethodservice.AbstractInputMethodService._onCreateInputMethodSessionInterface6575 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.staticClass, "onCreateInputMethodSessionInterface", "()Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;");
 			global::android.inputmethodservice.AbstractInputMethodService._AbstractInputMethodService6576 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.inputmethodservice.AbstractInputMethodService))]
 	internal sealed partial class AbstractInputMethodService_ : android.inputmethodservice.AbstractInputMethodService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractInputMethodService_()
-		{
-			InitJNI();
-		}
 		internal AbstractInputMethodService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -519,7 +510,7 @@ namespace android.inputmethodservice
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onCreateInputMethodSessionInterface6582)) as android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl;
 		}
-		private static void InitJNI()
+		static AbstractInputMethodService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.AbstractInputMethodService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/AbstractInputMethodService"));
@@ -529,6 +520,9 @@ namespace android.inputmethodservice
 			global::android.inputmethodservice.AbstractInputMethodService_._onKeyMultiple6580 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService_.staticClass, "onKeyMultiple", "(IILandroid/view/KeyEvent;)Z");
 			global::android.inputmethodservice.AbstractInputMethodService_._onCreateInputMethodInterface6581 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService_.staticClass, "onCreateInputMethodInterface", "()Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodImpl;");
 			global::android.inputmethodservice.AbstractInputMethodService_._onCreateInputMethodSessionInterface6582 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.AbstractInputMethodService_.staticClass, "onCreateInputMethodSessionInterface", "()Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

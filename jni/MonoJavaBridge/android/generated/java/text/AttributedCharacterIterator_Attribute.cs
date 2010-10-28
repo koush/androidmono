@@ -4,10 +4,6 @@ namespace java.text
 	public partial class AttributedCharacterIterator_Attribute : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributedCharacterIterator_Attribute()
-		{
-			InitJNI();
-		}
 		protected AttributedCharacterIterator_Attribute(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.AttributedCharacterIterator_Attribute.staticClass, _INPUT_METHOD_SEGMENT25168)) as java.text.AttributedCharacterIterator_Attribute;
 			}
 		}
-		private static void InitJNI()
+		static AttributedCharacterIterator_Attribute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.AttributedCharacterIterator_Attribute.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/AttributedCharacterIterator$Attribute"));
@@ -110,6 +106,9 @@ namespace java.text
 			global::java.text.AttributedCharacterIterator_Attribute._LANGUAGE25166 = @__env.GetStaticFieldIDNoThrow(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "LANGUAGE", "Ljava/text/AttributedCharacterIterator$Attribute;");
 			global::java.text.AttributedCharacterIterator_Attribute._READING25167 = @__env.GetStaticFieldIDNoThrow(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "READING", "Ljava/text/AttributedCharacterIterator$Attribute;");
 			global::java.text.AttributedCharacterIterator_Attribute._INPUT_METHOD_SEGMENT25168 = @__env.GetStaticFieldIDNoThrow(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "INPUT_METHOD_SEGMENT", "Ljava/text/AttributedCharacterIterator$Attribute;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

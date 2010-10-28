@@ -4,10 +4,6 @@ namespace android.net
 	public partial class NetworkInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetworkInfo()
-		{
-			InitJNI();
-		}
 		protected NetworkInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net
 		public sealed partial class DetailedState : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DetailedState()
-			{
-				InitJNI();
-			}
 			internal DetailedState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -124,7 +116,7 @@ namespace android.net
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(@__env.GetStaticObjectField(global::android.net.NetworkInfo.DetailedState.staticClass, _SUSPENDED7721)) as android.net.NetworkInfo.DetailedState;
 				}
 			}
-			private static void InitJNI()
+			static DetailedState()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.NetworkInfo.DetailedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo$DetailedState"));
@@ -141,15 +133,14 @@ namespace android.net
 				global::android.net.NetworkInfo.DetailedState._SCANNING7720 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "SCANNING", "Landroid/net/NetworkInfo$DetailedState;");
 				global::android.net.NetworkInfo.DetailedState._SUSPENDED7721 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "SUSPENDED", "Landroid/net/NetworkInfo$DetailedState;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class State : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static State()
-			{
-				InitJNI();
-			}
 			internal State(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -219,7 +210,7 @@ namespace android.net
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.State>(@__env.GetStaticObjectField(global::android.net.NetworkInfo.State.staticClass, _UNKNOWN7729)) as android.net.NetworkInfo.State;
 				}
 			}
-			private static void InitJNI()
+			static State()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.NetworkInfo.State.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo$State"));
@@ -231,6 +222,9 @@ namespace android.net
 				global::android.net.NetworkInfo.State._DISCONNECTING7727 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "DISCONNECTING", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._SUSPENDED7728 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "SUSPENDED", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._UNKNOWN7729 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "UNKNOWN", "Landroid/net/NetworkInfo$State;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7730;
@@ -419,7 +413,7 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getExtraInfo7745)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static NetworkInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.NetworkInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo"));
@@ -439,6 +433,9 @@ namespace android.net
 			global::android.net.NetworkInfo._isRoaming7743 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isRoaming", "()Z");
 			global::android.net.NetworkInfo._getDetailedState7744 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getDetailedState", "()Landroid/net/NetworkInfo$DetailedState;");
 			global::android.net.NetworkInfo._getExtraInfo7745 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getExtraInfo", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

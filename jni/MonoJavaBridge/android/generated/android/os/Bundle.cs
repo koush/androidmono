@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class Bundle : java.lang.Object, Parcelable, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Bundle()
-		{
-			InitJNI();
-		}
 		internal Bundle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -797,7 +793,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.Bundle.staticClass, _CREATOR9681)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Bundle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Bundle.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Bundle"));
@@ -888,6 +884,9 @@ namespace android.os
 			global::android.os.Bundle._Bundle9679 = @__env.GetMethodIDNoThrow(global::android.os.Bundle.staticClass, "<init>", "()V");
 			global::android.os.Bundle._EMPTY9680 = @__env.GetStaticFieldIDNoThrow(global::android.os.Bundle.staticClass, "EMPTY", "Landroid/os/Bundle;");
 			global::android.os.Bundle._CREATOR9681 = @__env.GetStaticFieldIDNoThrow(global::android.os.Bundle.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

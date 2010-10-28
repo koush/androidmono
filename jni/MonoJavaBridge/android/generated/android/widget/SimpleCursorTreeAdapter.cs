@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class SimpleCursorTreeAdapter : android.widget.ResourceCursorTreeAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleCursorTreeAdapter()
-		{
-			InitJNI();
-		}
 		protected SimpleCursorTreeAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class ViewBinder_ : java.lang.Object, ViewBinder
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ViewBinder_()
-			{
-				InitJNI();
-			}
 			internal ViewBinder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SimpleCursorTreeAdapter.ViewBinder_.staticClass, global::android.widget.SimpleCursorTreeAdapter.ViewBinder_._setViewValue17775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static ViewBinder_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter$ViewBinder"));
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinder_._setViewValue17775 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleCursorTreeAdapter.ViewBinder_.staticClass, "setViewValue", "(Landroid/view/View;Landroid/database/Cursor;I)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class ViewBinderDelegateWrapper : java.lang.Object, ViewBinder
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ViewBinderDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected ViewBinderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper.staticClass, global::android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper._ViewBinderDelegateWrapper17776);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ViewBinderDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter_ViewBinderDelegateWrapper"));
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper._ViewBinderDelegateWrapper17776 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class ViewBinderDelegateWrapper
@@ -165,7 +159,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SimpleCursorTreeAdapter.staticClass, global::android.widget.SimpleCursorTreeAdapter._SimpleCursorTreeAdapter17785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SimpleCursorTreeAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleCursorTreeAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter"));
@@ -179,16 +173,15 @@ namespace android.widget
 			global::android.widget.SimpleCursorTreeAdapter._SimpleCursorTreeAdapter17784 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleCursorTreeAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;I[Ljava/lang/String;[II[Ljava/lang/String;[I)V");
 			global::android.widget.SimpleCursorTreeAdapter._SimpleCursorTreeAdapter17785 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleCursorTreeAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;II[Ljava/lang/String;[III[Ljava/lang/String;[I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.SimpleCursorTreeAdapter))]
 	internal sealed partial class SimpleCursorTreeAdapter_ : android.widget.SimpleCursorTreeAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SimpleCursorTreeAdapter_()
-		{
-			InitJNI();
-		}
 		internal SimpleCursorTreeAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -201,11 +194,14 @@ namespace android.widget
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SimpleCursorTreeAdapter_.staticClass, global::android.widget.SimpleCursorTreeAdapter_._getChildrenCursor17786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
-		private static void InitJNI()
+		static SimpleCursorTreeAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleCursorTreeAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter"));
 			global::android.widget.SimpleCursorTreeAdapter_._getChildrenCursor17786 = @__env.GetMethodIDNoThrow(global::android.widget.SimpleCursorTreeAdapter_.staticClass, "getChildrenCursor", "(Landroid/database/Cursor;)Landroid/database/Cursor;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

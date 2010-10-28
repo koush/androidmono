@@ -4,10 +4,6 @@ namespace android.app
 	public sealed partial class PendingIntent : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PendingIntent()
-		{
-			InitJNI();
-		}
 		internal PendingIntent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.app
 		public partial class CanceledException : android.util.AndroidException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CanceledException()
-			{
-				InitJNI();
-			}
 			protected CanceledException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -43,13 +35,16 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.PendingIntent.CanceledException.staticClass, global::android.app.PendingIntent.CanceledException._CanceledException2011, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CanceledException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.CanceledException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent$CanceledException"));
 				global::android.app.PendingIntent.CanceledException._CanceledException2009 = @__env.GetMethodIDNoThrow(global::android.app.PendingIntent.CanceledException.staticClass, "<init>", "()V");
 				global::android.app.PendingIntent.CanceledException._CanceledException2010 = @__env.GetMethodIDNoThrow(global::android.app.PendingIntent.CanceledException.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::android.app.PendingIntent.CanceledException._CanceledException2011 = @__env.GetMethodIDNoThrow(global::android.app.PendingIntent.CanceledException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.PendingIntent.OnFinished_))]
@@ -62,10 +57,6 @@ namespace android.app
 		internal sealed partial class OnFinished_ : java.lang.Object, OnFinished
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFinished_()
-			{
-				InitJNI();
-			}
 			internal OnFinished_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -78,11 +69,14 @@ namespace android.app
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.PendingIntent.OnFinished_.staticClass, global::android.app.PendingIntent.OnFinished_._onSendFinished2012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			}
-			private static void InitJNI()
+			static OnFinished_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.OnFinished_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent$OnFinished"));
 				global::android.app.PendingIntent.OnFinished_._onSendFinished2012 = @__env.GetMethodIDNoThrow(global::android.app.PendingIntent.OnFinished_.staticClass, "onSendFinished", "(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -91,10 +85,6 @@ namespace android.app
 		internal partial class OnFinishedDelegateWrapper : java.lang.Object, OnFinished
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnFinishedDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnFinishedDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -105,11 +95,14 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.PendingIntent.OnFinishedDelegateWrapper.staticClass, global::android.app.PendingIntent.OnFinishedDelegateWrapper._OnFinishedDelegateWrapper2013);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnFinishedDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.OnFinishedDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent_OnFinishedDelegateWrapper"));
 				global::android.app.PendingIntent.OnFinishedDelegateWrapper._OnFinishedDelegateWrapper2013 = @__env.GetMethodIDNoThrow(global::android.app.PendingIntent.OnFinishedDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnFinishedDelegateWrapper
@@ -333,7 +326,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.PendingIntent.staticClass, _CREATOR2036)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PendingIntent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.PendingIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent"));
@@ -356,6 +349,9 @@ namespace android.app
 			global::android.app.PendingIntent._writePendingIntentOrNullToParcel2030 = @__env.GetStaticMethodIDNoThrow(global::android.app.PendingIntent.staticClass, "writePendingIntentOrNullToParcel", "(Landroid/app/PendingIntent;Landroid/os/Parcel;)V");
 			global::android.app.PendingIntent._readPendingIntentOrNullFromParcel2031 = @__env.GetStaticMethodIDNoThrow(global::android.app.PendingIntent.staticClass, "readPendingIntentOrNullFromParcel", "(Landroid/os/Parcel;)Landroid/app/PendingIntent;");
 			global::android.app.PendingIntent._CREATOR2036 = @__env.GetStaticFieldIDNoThrow(global::android.app.PendingIntent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

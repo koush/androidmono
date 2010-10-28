@@ -11,10 +11,6 @@ namespace java.nio.channels
 	internal sealed partial class Channel_ : java.lang.Object, Channel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Channel_()
-		{
-			InitJNI();
-		}
 		internal Channel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,13 +41,16 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.Channel_.staticClass, global::java.nio.channels.Channel_._close22408);
 		}
-		private static void InitJNI()
+		static Channel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Channel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Channel"));
 			global::java.nio.channels.Channel_._close22406 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "close", "()V");
 			global::java.nio.channels.Channel_._isOpen22407 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "isOpen", "()Z");
 			global::java.nio.channels.Channel_._close22408 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

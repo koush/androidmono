@@ -4,10 +4,6 @@ namespace java.io
 	public partial class StringWriter : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StringWriter()
-		{
-			InitJNI();
-		}
 		protected StringWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -139,7 +135,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.StringWriter.staticClass, global::java.io.StringWriter._StringWriter19629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StringWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.StringWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/StringWriter"));
@@ -156,6 +152,9 @@ namespace java.io
 			global::java.io.StringWriter._getBuffer19627 = @__env.GetMethodIDNoThrow(global::java.io.StringWriter.staticClass, "getBuffer", "()Ljava/lang/StringBuffer;");
 			global::java.io.StringWriter._StringWriter19628 = @__env.GetMethodIDNoThrow(global::java.io.StringWriter.staticClass, "<init>", "()V");
 			global::java.io.StringWriter._StringWriter19629 = @__env.GetMethodIDNoThrow(global::java.io.StringWriter.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

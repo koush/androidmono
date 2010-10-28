@@ -10,10 +10,6 @@ namespace org.apache.http
 	internal sealed partial class ConnectionReuseStrategy_ : java.lang.Object, ConnectionReuseStrategy
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnectionReuseStrategy_()
-		{
-			InitJNI();
-		}
 		internal ConnectionReuseStrategy_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.ConnectionReuseStrategy_.staticClass, global::org.apache.http.ConnectionReuseStrategy_._keepAlive31491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static ConnectionReuseStrategy_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ConnectionReuseStrategy_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ConnectionReuseStrategy"));
 			global::org.apache.http.ConnectionReuseStrategy_._keepAlive31491 = @__env.GetMethodIDNoThrow(global::org.apache.http.ConnectionReuseStrategy_.staticClass, "keepAlive", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

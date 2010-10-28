@@ -4,10 +4,6 @@ namespace java.util
 	public sealed partial class Scanner : java.lang.Object, Iterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Scanner()
-		{
-			InitJNI();
-		}
 		internal Scanner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -562,7 +558,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Scanner.staticClass, global::java.util.Scanner._Scanner26700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Scanner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Scanner.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Scanner"));
@@ -629,6 +625,9 @@ namespace java.util
 			global::java.util.Scanner._Scanner26698 = @__env.GetMethodIDNoThrow(global::java.util.Scanner.staticClass, "<init>", "(Ljava/io/InputStream;Ljava/lang/String;)V");
 			global::java.util.Scanner._Scanner26699 = @__env.GetMethodIDNoThrow(global::java.util.Scanner.staticClass, "<init>", "(Ljava/io/InputStream;)V");
 			global::java.util.Scanner._Scanner26700 = @__env.GetMethodIDNoThrow(global::java.util.Scanner.staticClass, "<init>", "(Ljava/lang/Readable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

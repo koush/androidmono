@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class RSAKeyGenParameterSpec : java.lang.Object, AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAKeyGenParameterSpec()
-		{
-			InitJNI();
-		}
 		protected RSAKeyGenParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, _F424051)) as java.math.BigInteger;
 			}
 		}
-		private static void InitJNI()
+		static RSAKeyGenParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAKeyGenParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAKeyGenParameterSpec"));
@@ -77,6 +73,9 @@ namespace java.security.spec
 			global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24049 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "<init>", "(ILjava/math/BigInteger;)V");
 			global::java.security.spec.RSAKeyGenParameterSpec._F024050 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "F0", "Ljava/math/BigInteger;");
 			global::java.security.spec.RSAKeyGenParameterSpec._F424051 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "F4", "Ljava/math/BigInteger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

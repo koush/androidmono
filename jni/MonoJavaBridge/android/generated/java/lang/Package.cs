@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class Package : java.lang.Object, java.lang.reflect.AnnotatedElement
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Package()
-		{
-			InitJNI();
-		}
 		protected Package(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -237,7 +233,7 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith20402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Package()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Package.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Package"));
@@ -259,6 +255,9 @@ namespace java.lang
 			global::java.lang.Package._getImplementationVersion20400 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getImplementationVersion", "()Ljava/lang/String;");
 			global::java.lang.Package._getImplementationVendor20401 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getImplementationVendor", "()Ljava/lang/String;");
 			global::java.lang.Package._isCompatibleWith20402 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "isCompatibleWith", "(Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

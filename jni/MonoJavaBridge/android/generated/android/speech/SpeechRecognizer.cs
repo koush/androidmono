@@ -4,10 +4,6 @@ namespace android.speech
 	public partial class SpeechRecognizer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpeechRecognizer()
-		{
-			InitJNI();
-		}
 		protected SpeechRecognizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -151,7 +147,7 @@ namespace android.speech
 				return 9;
 			}
 		}
-		private static void InitJNI()
+		static SpeechRecognizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.SpeechRecognizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/SpeechRecognizer"));
@@ -163,6 +159,9 @@ namespace android.speech
 			global::android.speech.SpeechRecognizer._createSpeechRecognizer11706 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;)Landroid/speech/SpeechRecognizer;");
 			global::android.speech.SpeechRecognizer._createSpeechRecognizer11707 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/speech/SpeechRecognizer;");
 			global::android.speech.SpeechRecognizer._setRecognitionListener11708 = @__env.GetMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "setRecognitionListener", "(Landroid/speech/RecognitionListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

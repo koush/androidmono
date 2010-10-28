@@ -4,10 +4,6 @@ namespace javax.xml.transform
 	public abstract partial class Transformer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Transformer()
-		{
-			InitJNI();
-		}
 		protected Transformer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -51,7 +47,7 @@ namespace javax.xml.transform
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.Transformer.staticClass, global::javax.xml.transform.Transformer._Transformer30972);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Transformer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Transformer.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Transformer"));
@@ -70,16 +66,15 @@ namespace javax.xml.transform
 			global::javax.xml.transform.Transformer._getErrorListener30971 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Transformer.staticClass, "getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
 			global::javax.xml.transform.Transformer._Transformer30972 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Transformer.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.transform.Transformer))]
 	internal sealed partial class Transformer_ : javax.xml.transform.Transformer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Transformer_()
-		{
-			InitJNI();
-		}
 		internal Transformer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -191,7 +186,7 @@ namespace javax.xml.transform
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.ErrorListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Transformer_.staticClass, global::javax.xml.transform.Transformer_._getErrorListener30984)) as javax.xml.transform.ErrorListener;
 		}
-		private static void InitJNI()
+		static Transformer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Transformer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Transformer"));
@@ -207,6 +202,9 @@ namespace javax.xml.transform
 			global::javax.xml.transform.Transformer_._getOutputProperty30982 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Transformer_.staticClass, "getOutputProperty", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::javax.xml.transform.Transformer_._setErrorListener30983 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Transformer_.staticClass, "setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V");
 			global::javax.xml.transform.Transformer_._getErrorListener30984 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Transformer_.staticClass, "getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

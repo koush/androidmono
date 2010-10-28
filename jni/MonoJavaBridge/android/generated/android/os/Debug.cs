@@ -4,10 +4,6 @@ namespace android.os
 	public sealed partial class Debug : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Debug()
-		{
-			InitJNI();
-		}
 		internal Debug(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.os
 		public partial class InstructionCount : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static InstructionCount()
-			{
-				InitJNI();
-			}
 			protected InstructionCount(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -65,7 +57,7 @@ namespace android.os
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._InstructionCount9700);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static InstructionCount()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Debug.InstructionCount.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug$InstructionCount"));
@@ -75,15 +67,14 @@ namespace android.os
 				global::android.os.Debug.InstructionCount._globalMethodInvocations9699 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "globalMethodInvocations", "()I");
 				global::android.os.Debug.InstructionCount._InstructionCount9700 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MemoryInfo : java.lang.Object, Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MemoryInfo()
-			{
-				InitJNI();
-			}
 			protected MemoryInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -286,7 +277,7 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.Debug.MemoryInfo.staticClass, _CREATOR9717)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static MemoryInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Debug.MemoryInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug$MemoryInfo"));
@@ -307,6 +298,9 @@ namespace android.os
 				global::android.os.Debug.MemoryInfo._otherPrivateDirty9715 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "otherPrivateDirty", "I");
 				global::android.os.Debug.MemoryInfo._otherSharedDirty9716 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "otherSharedDirty", "I");
 				global::android.os.Debug.MemoryInfo._CREATOR9717 = @__env.GetStaticFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMemoryInfo9718;
@@ -904,7 +898,7 @@ namespace android.os
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static Debug()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Debug.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug"));
@@ -971,6 +965,9 @@ namespace android.os
 			global::android.os.Debug._getBinderProxyObjectCount9778 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderProxyObjectCount", "()I");
 			global::android.os.Debug._getBinderDeathObjectCount9779 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderDeathObjectCount", "()I");
 			global::android.os.Debug._dumpService9780 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "dumpService", "(Ljava/lang/String;Ljava/io/FileDescriptor;[Ljava/lang/String;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

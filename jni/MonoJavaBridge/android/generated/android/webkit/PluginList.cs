@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class PluginList : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PluginList()
-		{
-			InitJNI();
-		}
 		protected PluginList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginList.staticClass, global::android.webkit.PluginList._PluginList16089);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PluginList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginList"));
@@ -80,6 +76,9 @@ namespace android.webkit
 			global::android.webkit.PluginList._removePlugin16087 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "removePlugin", "(Landroid/webkit/Plugin;)V");
 			global::android.webkit.PluginList._pluginClicked16088 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "pluginClicked", "(Landroid/content/Context;I)V");
 			global::android.webkit.PluginList._PluginList16089 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

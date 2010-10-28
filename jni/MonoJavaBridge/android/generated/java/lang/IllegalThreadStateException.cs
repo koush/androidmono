@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class IllegalThreadStateException : java.lang.IllegalArgumentException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IllegalThreadStateException()
-		{
-			InitJNI();
-		}
 		protected IllegalThreadStateException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalThreadStateException.staticClass, global::java.lang.IllegalThreadStateException._IllegalThreadStateException20184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IllegalThreadStateException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.IllegalThreadStateException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/IllegalThreadStateException"));
 			global::java.lang.IllegalThreadStateException._IllegalThreadStateException20183 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalThreadStateException.staticClass, "<init>", "()V");
 			global::java.lang.IllegalThreadStateException._IllegalThreadStateException20184 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalThreadStateException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

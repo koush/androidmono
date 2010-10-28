@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Paint : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Paint()
-		{
-			InitJNI();
-		}
 		protected Paint(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics
 		public sealed partial class Align : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Align()
-			{
-				InitJNI();
-			}
 			internal Align(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _RIGHT5390)) as android.graphics.Paint.Align;
 				}
 			}
-			private static void InitJNI()
+			static Align()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.Align.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$Align"));
@@ -71,15 +63,14 @@ namespace android.graphics
 				global::android.graphics.Paint.Align._LEFT5389 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Align.staticClass, "LEFT", "Landroid/graphics/Paint$Align;");
 				global::android.graphics.Paint.Align._RIGHT5390 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Align.staticClass, "RIGHT", "Landroid/graphics/Paint$Align;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Cap : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Cap()
-			{
-				InitJNI();
-			}
 			internal Cap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -122,7 +113,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _SQUARE5395)) as android.graphics.Paint.Cap;
 				}
 			}
-			private static void InitJNI()
+			static Cap()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.Cap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$Cap"));
@@ -132,15 +123,14 @@ namespace android.graphics
 				global::android.graphics.Paint.Cap._ROUND5394 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Cap.staticClass, "ROUND", "Landroid/graphics/Paint$Cap;");
 				global::android.graphics.Paint.Cap._SQUARE5395 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Cap.staticClass, "SQUARE", "Landroid/graphics/Paint$Cap;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class FontMetrics : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FontMetrics()
-			{
-				InitJNI();
-			}
 			protected FontMetrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -211,7 +201,7 @@ namespace android.graphics
 				{
 				}
 			}
-			private static void InitJNI()
+			static FontMetrics()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.FontMetrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$FontMetrics"));
@@ -222,15 +212,14 @@ namespace android.graphics
 				global::android.graphics.Paint.FontMetrics._bottom5400 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetrics.staticClass, "bottom", "F");
 				global::android.graphics.Paint.FontMetrics._leading5401 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetrics.staticClass, "leading", "F");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class FontMetricsInt : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FontMetricsInt()
-			{
-				InitJNI();
-			}
 			protected FontMetricsInt(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -310,7 +299,7 @@ namespace android.graphics
 				{
 				}
 			}
-			private static void InitJNI()
+			static FontMetricsInt()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.FontMetricsInt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$FontMetricsInt"));
@@ -322,15 +311,14 @@ namespace android.graphics
 				global::android.graphics.Paint.FontMetricsInt._bottom5407 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetricsInt.staticClass, "bottom", "I");
 				global::android.graphics.Paint.FontMetricsInt._leading5408 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetricsInt.staticClass, "leading", "I");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Join : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Join()
-			{
-				InitJNI();
-			}
 			internal Join(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -373,7 +361,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _ROUND5413)) as android.graphics.Paint.Join;
 				}
 			}
-			private static void InitJNI()
+			static Join()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.Join.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$Join"));
@@ -383,15 +371,14 @@ namespace android.graphics
 				global::android.graphics.Paint.Join._MITER5412 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Join.staticClass, "MITER", "Landroid/graphics/Paint$Join;");
 				global::android.graphics.Paint.Join._ROUND5413 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Join.staticClass, "ROUND", "Landroid/graphics/Paint$Join;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Style : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Style()
-			{
-				InitJNI();
-			}
 			internal Style(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -434,7 +421,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _STROKE5418)) as android.graphics.Paint.Style;
 				}
 			}
-			private static void InitJNI()
+			static Style()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Paint.Style.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint$Style"));
@@ -443,6 +430,9 @@ namespace android.graphics
 				global::android.graphics.Paint.Style._FILL5416 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "FILL", "Landroid/graphics/Paint$Style;");
 				global::android.graphics.Paint.Style._FILL_AND_STROKE5417 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "FILL_AND_STROKE", "Landroid/graphics/Paint$Style;");
 				global::android.graphics.Paint.Style._STROKE5418 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "STROKE", "Landroid/graphics/Paint$Style;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5419;
@@ -1549,7 +1539,7 @@ namespace android.graphics
 				return 256;
 			}
 		}
-		private static void InitJNI()
+		static Paint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Paint.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint"));
@@ -1639,6 +1629,9 @@ namespace android.graphics
 			global::android.graphics.Paint._Paint5502 = @__env.GetMethodIDNoThrow(global::android.graphics.Paint.staticClass, "<init>", "()V");
 			global::android.graphics.Paint._Paint5503 = @__env.GetMethodIDNoThrow(global::android.graphics.Paint.staticClass, "<init>", "(I)V");
 			global::android.graphics.Paint._Paint5504 = @__env.GetMethodIDNoThrow(global::android.graphics.Paint.staticClass, "<init>", "(Landroid/graphics/Paint;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

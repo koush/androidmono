@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class ObjectStreamException : java.io.IOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectStreamException()
-		{
-			InitJNI();
-		}
 		protected ObjectStreamException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamException.staticClass, global::java.io.ObjectStreamException._ObjectStreamException19337);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ObjectStreamException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectStreamException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectStreamException"));
 			global::java.io.ObjectStreamException._ObjectStreamException19336 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.ObjectStreamException._ObjectStreamException19337 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -38,17 +37,16 @@ namespace java.io
 	internal sealed partial class ObjectStreamException_ : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ObjectStreamException_()
-		{
-			InitJNI();
-		}
 		internal ObjectStreamException_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ObjectStreamException_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectStreamException_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectStreamException"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

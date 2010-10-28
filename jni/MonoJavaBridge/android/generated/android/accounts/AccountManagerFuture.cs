@@ -14,10 +14,6 @@ namespace android.accounts
 	internal sealed partial class AccountManagerFuture_ : java.lang.Object, AccountManagerFuture
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccountManagerFuture_()
-		{
-			InitJNI();
-		}
 		internal AccountManagerFuture_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace android.accounts
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._getResult1357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static AccountManagerFuture_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerFuture_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerFuture"));
@@ -75,6 +71,9 @@ namespace android.accounts
 			global::android.accounts.AccountManagerFuture_._isDone1355 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "isDone", "()Z");
 			global::android.accounts.AccountManagerFuture_._getResult1356 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "getResult", "()Ljava/lang/Object;");
 			global::android.accounts.AccountManagerFuture_._getResult1357 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "getResult", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

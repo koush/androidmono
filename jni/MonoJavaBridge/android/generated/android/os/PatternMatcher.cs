@@ -4,10 +4,6 @@ namespace android.os
 	public partial class PatternMatcher : java.lang.Object, Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PatternMatcher()
-		{
-			InitJNI();
-		}
 		protected PatternMatcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -123,7 +119,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.PatternMatcher.staticClass, _CREATOR10128)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PatternMatcher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.PatternMatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PatternMatcher"));
@@ -136,6 +132,9 @@ namespace android.os
 			global::android.os.PatternMatcher._PatternMatcher10123 = @__env.GetMethodIDNoThrow(global::android.os.PatternMatcher.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::android.os.PatternMatcher._PatternMatcher10124 = @__env.GetMethodIDNoThrow(global::android.os.PatternMatcher.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.os.PatternMatcher._CREATOR10128 = @__env.GetStaticFieldIDNoThrow(global::android.os.PatternMatcher.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

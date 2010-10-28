@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class SSLProtocolException : javax.net.ssl.SSLException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLProtocolException()
-		{
-			InitJNI();
-		}
 		protected SSLProtocolException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLProtocolException.staticClass, global::javax.net.ssl.SSLProtocolException._SSLProtocolException29995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLProtocolException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLProtocolException"));
 			global::javax.net.ssl.SSLProtocolException._SSLProtocolException29995 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

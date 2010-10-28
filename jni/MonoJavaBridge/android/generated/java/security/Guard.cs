@@ -10,10 +10,6 @@ namespace java.security
 	internal sealed partial class Guard_ : java.lang.Object, Guard
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Guard_()
-		{
-			InitJNI();
-		}
 		internal Guard_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.security
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Guard_.staticClass, global::java.security.Guard_._checkGuard22957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Guard_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Guard_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Guard"));
 			global::java.security.Guard_._checkGuard22957 = @__env.GetMethodIDNoThrow(global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

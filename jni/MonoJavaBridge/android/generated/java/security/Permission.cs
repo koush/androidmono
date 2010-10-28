@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class Permission : java.lang.Object, Guard, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Permission()
-		{
-			InitJNI();
-		}
 		protected Permission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Permission.staticClass, global::java.security.Permission._Permission23210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Permission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Permission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Permission"));
@@ -76,16 +72,15 @@ namespace java.security
 			global::java.security.Permission._checkGuard23209 = @__env.GetMethodIDNoThrow(global::java.security.Permission.staticClass, "checkGuard", "(Ljava/lang/Object;)V");
 			global::java.security.Permission._Permission23210 = @__env.GetMethodIDNoThrow(global::java.security.Permission.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Permission))]
 	internal sealed partial class Permission_ : java.security.Permission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Permission_()
-		{
-			InitJNI();
-		}
 		internal Permission_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -125,7 +120,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Permission_.staticClass, global::java.security.Permission_._getActions23214)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Permission_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Permission_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Permission"));
@@ -133,6 +128,9 @@ namespace java.security
 			global::java.security.Permission_._hashCode23212 = @__env.GetMethodIDNoThrow(global::java.security.Permission_.staticClass, "hashCode", "()I");
 			global::java.security.Permission_._implies23213 = @__env.GetMethodIDNoThrow(global::java.security.Permission_.staticClass, "implies", "(Ljava/security/Permission;)Z");
 			global::java.security.Permission_._getActions23214 = @__env.GetMethodIDNoThrow(global::java.security.Permission_.staticClass, "getActions", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

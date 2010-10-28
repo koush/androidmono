@@ -4,10 +4,6 @@ namespace android.media
 	public partial class SoundPool : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SoundPool()
-		{
-			InitJNI();
-		}
 		protected SoundPool(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.media
 		internal sealed partial class OnLoadCompleteListener_ : java.lang.Object, OnLoadCompleteListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnLoadCompleteListener_()
-			{
-				InitJNI();
-			}
 			internal OnLoadCompleteListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete7485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnLoadCompleteListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.SoundPool.OnLoadCompleteListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool$OnLoadCompleteListener"));
 				global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete7485 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, "onLoadComplete", "(Landroid/media/SoundPool;II)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.media
 		internal partial class OnLoadCompleteListenerDelegateWrapper : java.lang.Object, OnLoadCompleteListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnLoadCompleteListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnLoadCompleteListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.media
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._OnLoadCompleteListenerDelegateWrapper7486);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnLoadCompleteListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool_OnLoadCompleteListenerDelegateWrapper"));
 				global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._OnLoadCompleteListenerDelegateWrapper7486 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnLoadCompleteListenerDelegateWrapper
@@ -259,7 +253,7 @@ namespace android.media
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.staticClass, global::android.media.SoundPool._SoundPool7505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SoundPool()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.SoundPool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool"));
@@ -282,6 +276,9 @@ namespace android.media
 			global::android.media.SoundPool._setRate7503 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setRate", "(IF)V");
 			global::android.media.SoundPool._setOnLoadCompleteListener7504 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V");
 			global::android.media.SoundPool._SoundPool7505 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "<init>", "(III)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

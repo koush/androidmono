@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class QuickContactBadge : android.widget.ImageView, android.view.View.OnClickListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static QuickContactBadge()
-		{
-			InitJNI();
-		}
 		protected QuickContactBadge(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.QuickContactBadge.staticClass, global::android.widget.QuickContactBadge._QuickContactBadge17531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static QuickContactBadge()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.QuickContactBadge.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/QuickContactBadge"));
@@ -113,6 +109,9 @@ namespace android.widget
 			global::android.widget.QuickContactBadge._QuickContactBadge17529 = @__env.GetMethodIDNoThrow(global::android.widget.QuickContactBadge.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.QuickContactBadge._QuickContactBadge17530 = @__env.GetMethodIDNoThrow(global::android.widget.QuickContactBadge.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.QuickContactBadge._QuickContactBadge17531 = @__env.GetMethodIDNoThrow(global::android.widget.QuickContactBadge.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

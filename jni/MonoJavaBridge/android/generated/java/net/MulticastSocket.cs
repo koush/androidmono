@@ -4,10 +4,6 @@ namespace java.net
 	public partial class MulticastSocket : java.net.DatagramSocket
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MulticastSocket()
-		{
-			InitJNI();
-		}
 		protected MulticastSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -231,7 +227,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.MulticastSocket.staticClass, global::java.net.MulticastSocket._MulticastSocket21628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MulticastSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.MulticastSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/MulticastSocket"));
@@ -254,6 +250,9 @@ namespace java.net
 			global::java.net.MulticastSocket._MulticastSocket21626 = @__env.GetMethodIDNoThrow(global::java.net.MulticastSocket.staticClass, "<init>", "()V");
 			global::java.net.MulticastSocket._MulticastSocket21627 = @__env.GetMethodIDNoThrow(global::java.net.MulticastSocket.staticClass, "<init>", "(I)V");
 			global::java.net.MulticastSocket._MulticastSocket21628 = @__env.GetMethodIDNoThrow(global::java.net.MulticastSocket.staticClass, "<init>", "(Ljava/net/SocketAddress;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

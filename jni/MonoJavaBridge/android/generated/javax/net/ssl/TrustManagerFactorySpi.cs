@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public abstract partial class TrustManagerFactorySpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TrustManagerFactorySpi()
-		{
-			InitJNI();
-		}
 		protected TrustManagerFactorySpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,7 +20,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.TrustManagerFactorySpi.staticClass, global::javax.net.ssl.TrustManagerFactorySpi._TrustManagerFactorySpi30135);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TrustManagerFactorySpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.TrustManagerFactorySpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/TrustManagerFactorySpi"));
@@ -33,16 +29,15 @@ namespace javax.net.ssl
 			global::javax.net.ssl.TrustManagerFactorySpi._engineGetTrustManagers30134 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi.staticClass, "engineGetTrustManagers", "()[Ljavax/net/ssl/TrustManager;");
 			global::javax.net.ssl.TrustManagerFactorySpi._TrustManagerFactorySpi30135 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.TrustManagerFactorySpi))]
 	internal sealed partial class TrustManagerFactorySpi_ : javax.net.ssl.TrustManagerFactorySpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TrustManagerFactorySpi_()
-		{
-			InitJNI();
-		}
 		internal TrustManagerFactorySpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,13 +68,16 @@ namespace javax.net.ssl
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.net.ssl.TrustManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138)) as javax.net.ssl.TrustManager[];
 		}
-		private static void InitJNI()
+		static TrustManagerFactorySpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.TrustManagerFactorySpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/TrustManagerFactorySpi"));
 			global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljava/security/KeyStore;)V");
 			global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30137 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljavax/net/ssl/ManagerFactoryParameters;)V");
 			global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineGetTrustManagers", "()[Ljavax/net/ssl/TrustManager;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

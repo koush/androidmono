@@ -4,10 +4,6 @@ namespace java.io
 	public sealed partial class FilePermission : java.security.Permission, Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilePermission()
-		{
-			InitJNI();
-		}
 		internal FilePermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilePermission.staticClass, global::java.io.FilePermission._FilePermission19048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FilePermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilePermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilePermission"));
@@ -80,6 +76,9 @@ namespace java.io
 			global::java.io.FilePermission._getActions19046 = @__env.GetMethodIDNoThrow(global::java.io.FilePermission.staticClass, "getActions", "()Ljava/lang/String;");
 			global::java.io.FilePermission._newPermissionCollection19047 = @__env.GetMethodIDNoThrow(global::java.io.FilePermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;");
 			global::java.io.FilePermission._FilePermission19048 = @__env.GetMethodIDNoThrow(global::java.io.FilePermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

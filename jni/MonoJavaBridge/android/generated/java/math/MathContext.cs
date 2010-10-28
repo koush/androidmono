@@ -4,10 +4,6 @@ namespace java.math
 	public sealed partial class MathContext : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MathContext()
-		{
-			InitJNI();
-		}
 		internal MathContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -127,7 +123,7 @@ namespace java.math
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL12821317)) as java.math.MathContext;
 			}
 		}
-		private static void InitJNI()
+		static MathContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.MathContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/MathContext"));
@@ -143,6 +139,9 @@ namespace java.math
 			global::java.math.MathContext._DECIMAL3221315 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL32", "Ljava/math/MathContext;");
 			global::java.math.MathContext._DECIMAL6421316 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL64", "Ljava/math/MathContext;");
 			global::java.math.MathContext._DECIMAL12821317 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL128", "Ljava/math/MathContext;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl
 	public partial class DefaultConnectionReuseStrategy : java.lang.Object, ConnectionReuseStrategy
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultConnectionReuseStrategy()
-		{
-			InitJNI();
-		}
 		protected DefaultConnectionReuseStrategy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._DefaultConnectionReuseStrategy32635);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultConnectionReuseStrategy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/DefaultConnectionReuseStrategy"));
 			global::org.apache.http.impl.DefaultConnectionReuseStrategy._keepAlive32633 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, "keepAlive", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
 			global::org.apache.http.impl.DefaultConnectionReuseStrategy._createTokenIterator32634 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, "createTokenIterator", "(Lorg/apache/http/HeaderIterator;)Lorg/apache/http/TokenIterator;");
 			global::org.apache.http.impl.DefaultConnectionReuseStrategy._DefaultConnectionReuseStrategy32635 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

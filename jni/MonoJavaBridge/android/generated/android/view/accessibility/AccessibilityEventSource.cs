@@ -11,10 +11,6 @@ namespace android.view.accessibility
 	internal sealed partial class AccessibilityEventSource_ : java.lang.Object, AccessibilityEventSource
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityEventSource_()
-		{
-			InitJNI();
-		}
 		internal AccessibilityEventSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.view.accessibility
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static AccessibilityEventSource_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.accessibility.AccessibilityEventSource_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityEventSource"));
 			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEvent", "(I)V");
 			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

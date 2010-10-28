@@ -4,10 +4,6 @@ namespace javax.xml.validation
 	public abstract partial class SchemaFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SchemaFactory()
-		{
-			InitJNI();
-		}
 		protected SchemaFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -107,7 +103,7 @@ namespace javax.xml.validation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._SchemaFactory31201);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SchemaFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.SchemaFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/SchemaFactory"));
@@ -129,16 +125,15 @@ namespace javax.xml.validation
 			global::javax.xml.validation.SchemaFactory._newSchema31200 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactory.staticClass, "newSchema", "(Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;");
 			global::javax.xml.validation.SchemaFactory._SchemaFactory31201 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.validation.SchemaFactory))]
 	internal sealed partial class SchemaFactory_ : javax.xml.validation.SchemaFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SchemaFactory_()
-		{
-			InitJNI();
-		}
 		internal SchemaFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -205,7 +200,7 @@ namespace javax.xml.validation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._newSchema31208)) as javax.xml.validation.Schema;
 		}
-		private static void InitJNI()
+		static SchemaFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.SchemaFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/SchemaFactory"));
@@ -216,6 +211,9 @@ namespace javax.xml.validation
 			global::javax.xml.validation.SchemaFactory_._isSchemaLanguageSupported31206 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactory_.staticClass, "isSchemaLanguageSupported", "(Ljava/lang/String;)Z");
 			global::javax.xml.validation.SchemaFactory_._newSchema31207 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactory_.staticClass, "newSchema", "([Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;");
 			global::javax.xml.validation.SchemaFactory_._newSchema31208 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactory_.staticClass, "newSchema", "()Ljavax/xml/validation/Schema;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

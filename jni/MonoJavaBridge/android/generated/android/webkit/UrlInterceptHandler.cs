@@ -11,10 +11,6 @@ namespace android.webkit
 	internal sealed partial class UrlInterceptHandler_ : java.lang.Object, UrlInterceptHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UrlInterceptHandler_()
-		{
-			InitJNI();
-		}
 		internal UrlInterceptHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.webkit
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.PluginData>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_.staticClass, global::android.webkit.UrlInterceptHandler_._getPluginData16113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
 		}
-		private static void InitJNI()
+		static UrlInterceptHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.UrlInterceptHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/UrlInterceptHandler"));
 			global::android.webkit.UrlInterceptHandler_._service16112 = @__env.GetMethodIDNoThrow(global::android.webkit.UrlInterceptHandler_.staticClass, "service", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
 			global::android.webkit.UrlInterceptHandler_._getPluginData16113 = @__env.GetMethodIDNoThrow(global::android.webkit.UrlInterceptHandler_.staticClass, "getPluginData", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

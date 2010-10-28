@@ -10,10 +10,6 @@ namespace java.lang.reflect
 	internal sealed partial class GenericDeclaration_ : java.lang.Object, GenericDeclaration
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GenericDeclaration_()
-		{
-			InitJNI();
-		}
 		internal GenericDeclaration_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericDeclaration_.staticClass, global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082)) as java.lang.reflect.TypeVariable[];
 		}
-		private static void InitJNI()
+		static GenericDeclaration_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.GenericDeclaration_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/GenericDeclaration"));
 			global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericDeclaration_.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

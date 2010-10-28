@@ -4,10 +4,6 @@ namespace android.accessibilityservice
 	public partial class AccessibilityServiceInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityServiceInfo()
-		{
-			InitJNI();
-		}
 		protected AccessibilityServiceInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -147,7 +143,7 @@ namespace android.accessibilityservice
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, _CREATOR1260)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static AccessibilityServiceInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accessibilityservice.AccessibilityServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accessibilityservice/AccessibilityServiceInfo"));
@@ -160,6 +156,9 @@ namespace android.accessibilityservice
 			global::android.accessibilityservice.AccessibilityServiceInfo._notificationTimeout1258 = @__env.GetFieldIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "notificationTimeout", "J");
 			global::android.accessibilityservice.AccessibilityServiceInfo._flags1259 = @__env.GetFieldIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "flags", "I");
 			global::android.accessibilityservice.AccessibilityServiceInfo._CREATOR1260 = @__env.GetStaticFieldIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

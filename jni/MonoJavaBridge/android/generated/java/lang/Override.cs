@@ -9,10 +9,6 @@ namespace java.lang
 	internal sealed partial class Override_ : java.lang.Object, Override
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Override_()
-		{
-			InitJNI();
-		}
 		internal Override_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Override_.staticClass, global::java.lang.Override_._annotationType20384)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Override_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Override_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Override"));
@@ -60,6 +56,9 @@ namespace java.lang
 			global::java.lang.Override_._toString20382 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.lang.Override_._hashCode20383 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "hashCode", "()I");
 			global::java.lang.Override_._annotationType20384 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

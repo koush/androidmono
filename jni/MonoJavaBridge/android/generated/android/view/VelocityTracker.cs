@@ -4,10 +4,6 @@ namespace android.view
 	public sealed partial class VelocityTracker : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static VelocityTracker()
-		{
-			InitJNI();
-		}
 		internal VelocityTracker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -112,7 +108,7 @@ namespace android.view
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._getYVelocity14617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static VelocityTracker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.VelocityTracker.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/VelocityTracker"));
@@ -126,6 +122,9 @@ namespace android.view
 			global::android.view.VelocityTracker._getXVelocity14615 = @__env.GetMethodIDNoThrow(global::android.view.VelocityTracker.staticClass, "getXVelocity", "(I)F");
 			global::android.view.VelocityTracker._getYVelocity14616 = @__env.GetMethodIDNoThrow(global::android.view.VelocityTracker.staticClass, "getYVelocity", "()F");
 			global::android.view.VelocityTracker._getYVelocity14617 = @__env.GetMethodIDNoThrow(global::android.view.VelocityTracker.staticClass, "getYVelocity", "(I)F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

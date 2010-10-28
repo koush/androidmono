@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public partial class AuthState : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthState()
-		{
-			InitJNI();
-		}
 		protected AuthState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -132,7 +128,7 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthState.staticClass, global::org.apache.http.auth.AuthState._AuthState31817);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AuthState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.AuthState.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/AuthState"));
@@ -146,6 +142,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.AuthState._getAuthScope31815 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthState.staticClass, "getAuthScope", "()Lorg/apache/http/auth/AuthScope;");
 			global::org.apache.http.auth.AuthState._setAuthScope31816 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthState.staticClass, "setAuthScope", "(Lorg/apache/http/auth/AuthScope;)V");
 			global::org.apache.http.auth.AuthState._AuthState31817 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthState.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

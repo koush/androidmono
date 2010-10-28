@@ -4,10 +4,6 @@ namespace android.accounts
 	public abstract partial class AbstractAccountAuthenticator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractAccountAuthenticator()
-		{
-			InitJNI();
-		}
 		protected AbstractAccountAuthenticator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -50,7 +46,7 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AbstractAccountAuthenticator.staticClass, global::android.accounts.AbstractAccountAuthenticator._AbstractAccountAuthenticator1270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractAccountAuthenticator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AbstractAccountAuthenticator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AbstractAccountAuthenticator"));
@@ -65,16 +61,15 @@ namespace android.accounts
 			global::android.accounts.AbstractAccountAuthenticator._getAccountRemovalAllowed1269 = @__env.GetMethodIDNoThrow(global::android.accounts.AbstractAccountAuthenticator.staticClass, "getAccountRemovalAllowed", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;)Landroid/os/Bundle;");
 			global::android.accounts.AbstractAccountAuthenticator._AbstractAccountAuthenticator1270 = @__env.GetMethodIDNoThrow(global::android.accounts.AbstractAccountAuthenticator.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.AbstractAccountAuthenticator))]
 	internal sealed partial class AbstractAccountAuthenticator_ : android.accounts.AbstractAccountAuthenticator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractAccountAuthenticator_()
-		{
-			InitJNI();
-		}
 		internal AbstractAccountAuthenticator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -141,7 +136,7 @@ namespace android.accounts
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AbstractAccountAuthenticator_.staticClass, global::android.accounts.AbstractAccountAuthenticator_._hasFeatures1277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.os.Bundle;
 		}
-		private static void InitJNI()
+		static AbstractAccountAuthenticator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AbstractAccountAuthenticator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AbstractAccountAuthenticator"));
@@ -152,6 +147,9 @@ namespace android.accounts
 			global::android.accounts.AbstractAccountAuthenticator_._getAuthTokenLabel1275 = @__env.GetMethodIDNoThrow(global::android.accounts.AbstractAccountAuthenticator_.staticClass, "getAuthTokenLabel", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::android.accounts.AbstractAccountAuthenticator_._updateCredentials1276 = @__env.GetMethodIDNoThrow(global::android.accounts.AbstractAccountAuthenticator_.staticClass, "updateCredentials", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;");
 			global::android.accounts.AbstractAccountAuthenticator_._hasFeatures1277 = @__env.GetMethodIDNoThrow(global::android.accounts.AbstractAccountAuthenticator_.staticClass, "hasFeatures", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;[Ljava/lang/String;)Landroid/os/Bundle;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content.pm
 	public sealed partial class ProviderInfo : android.content.pm.ComponentInfo, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProviderInfo()
-		{
-			InitJNI();
-		}
 		internal ProviderInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -169,7 +165,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.ProviderInfo.staticClass, _CREATOR4021)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ProviderInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ProviderInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ProviderInfo"));
@@ -188,6 +184,9 @@ namespace android.content.pm
 			global::android.content.pm.ProviderInfo._initOrder4019 = @__env.GetFieldIDNoThrow(global::android.content.pm.ProviderInfo.staticClass, "initOrder", "I");
 			global::android.content.pm.ProviderInfo._isSyncable4020 = @__env.GetFieldIDNoThrow(global::android.content.pm.ProviderInfo.staticClass, "isSyncable", "Z");
 			global::android.content.pm.ProviderInfo._CREATOR4021 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ProviderInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

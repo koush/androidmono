@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class DateSorter : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateSorter()
-		{
-			InitJNI();
-		}
 		protected DateSorter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.webkit
 				return 5;
 			}
 		}
-		private static void InitJNI()
+		static DateSorter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.DateSorter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/DateSorter"));
@@ -60,6 +56,9 @@ namespace android.webkit
 			global::android.webkit.DateSorter._getLabel16036 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "getLabel", "(I)Ljava/lang/String;");
 			global::android.webkit.DateSorter._getBoundary16037 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "getBoundary", "(I)J");
 			global::android.webkit.DateSorter._DateSorter16038 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

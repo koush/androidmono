@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class ZipFile : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ZipFile()
-		{
-			InitJNI();
-		}
 		protected ZipFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -116,7 +112,7 @@ namespace java.util.zip
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static ZipFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.ZipFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/ZipFile"));
@@ -130,6 +126,9 @@ namespace java.util.zip
 			global::java.util.zip.ZipFile._ZipFile28465 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipFile.staticClass, "<init>", "(Ljava/io/File;)V");
 			global::java.util.zip.ZipFile._ZipFile28466 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipFile.staticClass, "<init>", "(Ljava/io/File;I)V");
 			global::java.util.zip.ZipFile._ZipFile28467 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipFile.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -13,10 +13,6 @@ namespace org.xml.sax.ext
 	internal sealed partial class DeclHandler_ : java.lang.Object, DeclHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DeclHandler_()
-		{
-			InitJNI();
-		}
 		internal DeclHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.xml.sax.ext
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DeclHandler_.staticClass, global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static DeclHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.DeclHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/DeclHandler"));
@@ -64,6 +60,9 @@ namespace org.xml.sax.ext
 			global::org.xml.sax.ext.DeclHandler_._attributeDecl35109 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.ext.DeclHandler_._internalEntityDecl35110 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

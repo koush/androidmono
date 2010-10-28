@@ -4,10 +4,6 @@ namespace android.app
 	public abstract partial class LauncherActivity : android.app.ListActivity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LauncherActivity()
-		{
-			InitJNI();
-		}
 		protected LauncherActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.app
 		public partial class IconResizer : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static IconResizer()
-			{
-				InitJNI();
-			}
 			protected IconResizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -38,22 +30,21 @@ namespace android.app
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._IconResizer1927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static IconResizer()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.LauncherActivity.IconResizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity$IconResizer"));
 				global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "createIconThumbnail", "(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;");
 				global::android.app.LauncherActivity.IconResizer._IconResizer1927 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "<init>", "(Landroid/app/LauncherActivity;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class ListItem : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ListItem()
-			{
-				InitJNI();
-			}
 			protected ListItem(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -136,7 +127,7 @@ namespace android.app
 				{
 				}
 			}
-			private static void InitJNI()
+			static ListItem()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.LauncherActivity.ListItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity$ListItem"));
@@ -147,6 +138,9 @@ namespace android.app
 				global::android.app.LauncherActivity.ListItem._packageName1932 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "packageName", "Ljava/lang/String;");
 				global::android.app.LauncherActivity.ListItem._className1933 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "className", "Ljava/lang/String;");
 				global::android.app.LauncherActivity.ListItem._extras1934 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "extras", "Landroid/os/Bundle;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1935;
@@ -228,7 +222,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._LauncherActivity1943);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LauncherActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LauncherActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity"));
@@ -242,23 +236,25 @@ namespace android.app
 			global::android.app.LauncherActivity._makeListItems1942 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "makeListItems", "()Ljava/util/List;");
 			global::android.app.LauncherActivity._LauncherActivity1943 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.app.LauncherActivity))]
 	internal sealed partial class LauncherActivity_ : android.app.LauncherActivity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LauncherActivity_()
-		{
-			InitJNI();
-		}
 		internal LauncherActivity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static LauncherActivity_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LauncherActivity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

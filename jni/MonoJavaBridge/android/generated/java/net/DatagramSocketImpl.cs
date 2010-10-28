@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class DatagramSocketImpl : java.lang.Object, SocketOptions
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramSocketImpl()
-		{
-			InitJNI();
-		}
 		protected DatagramSocketImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -88,7 +84,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._DatagramSocketImpl21447);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DatagramSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramSocketImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramSocketImpl"));
@@ -115,16 +111,15 @@ namespace java.net
 			global::java.net.DatagramSocketImpl._leaveGroup21446 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl.staticClass, "leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V");
 			global::java.net.DatagramSocketImpl._DatagramSocketImpl21447 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.DatagramSocketImpl))]
 	internal sealed partial class DatagramSocketImpl_ : java.net.DatagramSocketImpl
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramSocketImpl_()
-		{
-			InitJNI();
-		}
 		internal DatagramSocketImpl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -281,7 +276,7 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocketImpl_.staticClass, global::java.net.DatagramSocketImpl_._leaveGroup21464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static DatagramSocketImpl_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramSocketImpl_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramSocketImpl"));
@@ -302,6 +297,9 @@ namespace java.net
 			global::java.net.DatagramSocketImpl_._leave21462 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl_.staticClass, "leave", "(Ljava/net/InetAddress;)V");
 			global::java.net.DatagramSocketImpl_._joinGroup21463 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl_.staticClass, "joinGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V");
 			global::java.net.DatagramSocketImpl_._leaveGroup21464 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl_.staticClass, "leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

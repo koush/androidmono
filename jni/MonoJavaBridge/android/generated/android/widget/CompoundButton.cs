@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class CompoundButton : android.widget.Button, Checkable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CompoundButton()
-		{
-			InitJNI();
-		}
 		protected CompoundButton(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.widget
 		internal sealed partial class OnCheckedChangeListener_ : java.lang.Object, OnCheckedChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCheckedChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnCheckedChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.widget
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CompoundButton.OnCheckedChangeListener_.staticClass, global::android.widget.CompoundButton.OnCheckedChangeListener_._onCheckedChanged16874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnCheckedChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.CompoundButton.OnCheckedChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CompoundButton$OnCheckedChangeListener"));
 				global::android.widget.CompoundButton.OnCheckedChangeListener_._onCheckedChanged16874 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.OnCheckedChangeListener_.staticClass, "onCheckedChanged", "(Landroid/widget/CompoundButton;Z)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.widget
 		internal partial class OnCheckedChangeListenerDelegateWrapper : java.lang.Object, OnCheckedChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnCheckedChangeListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnCheckedChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.widget
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._OnCheckedChangeListenerDelegateWrapper16875);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnCheckedChangeListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CompoundButton_OnCheckedChangeListenerDelegateWrapper"));
 				global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._OnCheckedChangeListenerDelegateWrapper16875 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnCheckedChangeListenerDelegateWrapper
@@ -237,7 +231,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._CompoundButton16892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CompoundButton()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.CompoundButton.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CompoundButton"));
@@ -259,23 +253,25 @@ namespace android.widget
 			global::android.widget.CompoundButton._CompoundButton16891 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.CompoundButton._CompoundButton16892 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.CompoundButton))]
 	internal sealed partial class CompoundButton_ : android.widget.CompoundButton
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CompoundButton_()
-		{
-			InitJNI();
-		}
 		internal CompoundButton_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static CompoundButton_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.CompoundButton_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/CompoundButton"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

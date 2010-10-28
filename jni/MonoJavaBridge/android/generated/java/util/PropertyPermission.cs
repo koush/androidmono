@@ -4,10 +4,6 @@ namespace java.util
 	public sealed partial class PropertyPermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PropertyPermission()
-		{
-			InitJNI();
-		}
 		internal PropertyPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.PropertyPermission.staticClass, global::java.util.PropertyPermission._PropertyPermission26578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PropertyPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.PropertyPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/PropertyPermission"));
@@ -80,6 +76,9 @@ namespace java.util
 			global::java.util.PropertyPermission._getActions26576 = @__env.GetMethodIDNoThrow(global::java.util.PropertyPermission.staticClass, "getActions", "()Ljava/lang/String;");
 			global::java.util.PropertyPermission._newPermissionCollection26577 = @__env.GetMethodIDNoThrow(global::java.util.PropertyPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;");
 			global::java.util.PropertyPermission._PropertyPermission26578 = @__env.GetMethodIDNoThrow(global::java.util.PropertyPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

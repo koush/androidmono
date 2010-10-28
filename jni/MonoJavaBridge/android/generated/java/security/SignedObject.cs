@@ -4,10 +4,6 @@ namespace java.security
 	public sealed partial class SignedObject : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SignedObject()
-		{
-			InitJNI();
-		}
 		internal SignedObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignedObject.staticClass, global::java.security.SignedObject._SignedObject23402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SignedObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SignedObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SignedObject"));
@@ -84,6 +80,9 @@ namespace java.security
 			global::java.security.SignedObject._verify23400 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/security/Signature;)Z");
 			global::java.security.SignedObject._getAlgorithm23401 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.SignedObject._SignedObject23402 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "<init>", "(Ljava/io/Serializable;Ljava/security/PrivateKey;Ljava/security/Signature;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

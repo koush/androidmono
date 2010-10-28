@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Typeface : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Typeface()
-		{
-			InitJNI();
-		}
 		protected Typeface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -163,7 +159,7 @@ namespace android.graphics
 				return 3;
 			}
 		}
-		private static void InitJNI()
+		static Typeface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Typeface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Typeface"));
@@ -182,6 +178,9 @@ namespace android.graphics
 			global::android.graphics.Typeface._SANS_SERIF5818 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Typeface.staticClass, "SANS_SERIF", "Landroid/graphics/Typeface;");
 			global::android.graphics.Typeface._SERIF5819 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Typeface.staticClass, "SERIF", "Landroid/graphics/Typeface;");
 			global::android.graphics.Typeface._MONOSPACE5820 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Typeface.staticClass, "MONOSPACE", "Landroid/graphics/Typeface;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class IconMarginSpan : java.lang.Object, LeadingMarginSpan, LineHeightSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IconMarginSpan()
-		{
-			InitJNI();
-		}
 		protected IconMarginSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -60,7 +56,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._IconMarginSpan13493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IconMarginSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.IconMarginSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/IconMarginSpan"));
@@ -69,6 +65,9 @@ namespace android.text.style
 			global::android.text.style.IconMarginSpan._chooseHeight13491 = @__env.GetMethodIDNoThrow(global::android.text.style.IconMarginSpan.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
 			global::android.text.style.IconMarginSpan._IconMarginSpan13492 = @__env.GetMethodIDNoThrow(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V");
 			global::android.text.style.IconMarginSpan._IconMarginSpan13493 = @__env.GetMethodIDNoThrow(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

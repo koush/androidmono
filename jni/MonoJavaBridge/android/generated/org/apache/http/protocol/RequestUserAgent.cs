@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class RequestUserAgent : java.lang.Object, HttpRequestInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RequestUserAgent()
-		{
-			InitJNI();
-		}
 		protected RequestUserAgent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.RequestUserAgent.staticClass, global::org.apache.http.protocol.RequestUserAgent._RequestUserAgent33947);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RequestUserAgent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.RequestUserAgent.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/RequestUserAgent"));
 			global::org.apache.http.protocol.RequestUserAgent._process33946 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestUserAgent.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.RequestUserAgent._RequestUserAgent33947 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestUserAgent.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

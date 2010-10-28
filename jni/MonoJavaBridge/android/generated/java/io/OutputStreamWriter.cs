@@ -4,10 +4,6 @@ namespace java.io
 	public partial class OutputStreamWriter : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OutputStreamWriter()
-		{
-			InitJNI();
-		}
 		protected OutputStreamWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._OutputStreamWriter19368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static OutputStreamWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.OutputStreamWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/OutputStreamWriter"));
@@ -114,6 +110,9 @@ namespace java.io
 			global::java.io.OutputStreamWriter._OutputStreamWriter19366 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
 			global::java.io.OutputStreamWriter._OutputStreamWriter19367 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V");
 			global::java.io.OutputStreamWriter._OutputStreamWriter19368 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

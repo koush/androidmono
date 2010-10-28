@@ -4,10 +4,6 @@ namespace java.io
 	public partial class CharArrayReader : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharArrayReader()
-		{
-			InitJNI();
-		}
 		protected CharArrayReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.CharArrayReader.staticClass, global::java.io.CharArrayReader._CharArrayReader18865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CharArrayReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.CharArrayReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/CharArrayReader"));
@@ -111,6 +107,9 @@ namespace java.io
 			global::java.io.CharArrayReader._ready18863 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayReader.staticClass, "ready", "()Z");
 			global::java.io.CharArrayReader._CharArrayReader18864 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayReader.staticClass, "<init>", "([C)V");
 			global::java.io.CharArrayReader._CharArrayReader18865 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayReader.staticClass, "<init>", "([CII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

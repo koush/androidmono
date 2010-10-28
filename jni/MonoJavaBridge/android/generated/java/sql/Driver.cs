@@ -15,10 +15,6 @@ namespace java.sql
 	internal sealed partial class Driver_ : java.lang.Object, Driver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Driver_()
-		{
-			InitJNI();
-		}
 		internal Driver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace java.sql
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.Driver_.staticClass, global::java.sql.Driver_._jdbcCompliant24625);
 		}
-		private static void InitJNI()
+		static Driver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Driver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Driver"));
@@ -86,6 +82,9 @@ namespace java.sql
 			global::java.sql.Driver_._getMajorVersion24623 = @__env.GetMethodIDNoThrow(global::java.sql.Driver_.staticClass, "getMajorVersion", "()I");
 			global::java.sql.Driver_._getMinorVersion24624 = @__env.GetMethodIDNoThrow(global::java.sql.Driver_.staticClass, "getMinorVersion", "()I");
 			global::java.sql.Driver_._jdbcCompliant24625 = @__env.GetMethodIDNoThrow(global::java.sql.Driver_.staticClass, "jdbcCompliant", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -27,10 +27,6 @@ namespace android.view.inputmethod
 	internal sealed partial class InputConnection_ : java.lang.Object, InputConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputConnection_()
-		{
-			InitJNI();
-		}
 		internal InputConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace android.view.inputmethod
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._performPrivateCommand15889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static InputConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputConnection"));
@@ -218,6 +214,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputConnection_._clearMetaKeyStates15887 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "clearMetaKeyStates", "(I)Z");
 			global::android.view.inputmethod.InputConnection_._reportFullscreenMode15888 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "reportFullscreenMode", "(Z)Z");
 			global::android.view.inputmethod.InputConnection_._performPrivateCommand15889 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

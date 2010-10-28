@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class LabeledIntent : android.content.Intent
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LabeledIntent()
-		{
-			InitJNI();
-		}
 		protected LabeledIntent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -148,7 +144,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.LabeledIntent.staticClass, _CREATOR3752)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static LabeledIntent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.LabeledIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/LabeledIntent"));
@@ -165,6 +161,9 @@ namespace android.content.pm
 			global::android.content.pm.LabeledIntent._LabeledIntent3750 = @__env.GetMethodIDNoThrow(global::android.content.pm.LabeledIntent.staticClass, "<init>", "(Ljava/lang/String;II)V");
 			global::android.content.pm.LabeledIntent._LabeledIntent3751 = @__env.GetMethodIDNoThrow(global::android.content.pm.LabeledIntent.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/CharSequence;I)V");
 			global::android.content.pm.LabeledIntent._CREATOR3752 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.LabeledIntent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

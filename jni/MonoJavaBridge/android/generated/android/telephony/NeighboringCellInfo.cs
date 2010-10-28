@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class NeighboringCellInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NeighboringCellInfo()
-		{
-			InitJNI();
-		}
 		protected NeighboringCellInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -195,7 +191,7 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.telephony.NeighboringCellInfo.staticClass, _CREATOR11792)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static NeighboringCellInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.NeighboringCellInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/NeighboringCellInfo"));
@@ -214,6 +210,9 @@ namespace android.telephony
 			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo11788 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(ILjava/lang/String;I)V");
 			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo11789 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.telephony.NeighboringCellInfo._CREATOR11792 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

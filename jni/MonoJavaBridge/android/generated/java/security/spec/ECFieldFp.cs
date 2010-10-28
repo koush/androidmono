@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class ECFieldFp : java.lang.Object, ECField
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECFieldFp()
-		{
-			InitJNI();
-		}
 		protected ECFieldFp(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace java.security.spec
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._ECFieldFp23992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ECFieldFp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECFieldFp.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECFieldFp"));
@@ -77,6 +73,9 @@ namespace java.security.spec
 			global::java.security.spec.ECFieldFp._getP23990 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getP", "()Ljava/math/BigInteger;");
 			global::java.security.spec.ECFieldFp._getFieldSize23991 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getFieldSize", "()I");
 			global::java.security.spec.ECFieldFp._ECFieldFp23992 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "<init>", "(Ljava/math/BigInteger;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

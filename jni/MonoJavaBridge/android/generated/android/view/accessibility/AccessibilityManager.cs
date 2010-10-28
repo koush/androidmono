@@ -4,10 +4,6 @@ namespace android.view.accessibility
 	public sealed partial class AccessibilityManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibilityManager()
-		{
-			InitJNI();
-		}
 		internal AccessibilityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.view.accessibility
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList15562)) as java.util.List;
 		}
-		private static void InitJNI()
+		static AccessibilityManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.accessibility.AccessibilityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityManager"));
@@ -62,6 +58,9 @@ namespace android.view.accessibility
 			global::android.view.accessibility.AccessibilityManager._isEnabled15560 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "isEnabled", "()Z");
 			global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent15561 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V");
 			global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList15562 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "getAccessibilityServiceList", "()Ljava/util/List;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class RegionIterator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RegionIterator()
-		{
-			InitJNI();
-		}
 		protected RegionIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.RegionIterator.staticClass, global::android.graphics.RegionIterator._RegionIterator5793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RegionIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.RegionIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/RegionIterator"));
 			global::android.graphics.RegionIterator._finalize5791 = @__env.GetMethodIDNoThrow(global::android.graphics.RegionIterator.staticClass, "finalize", "()V");
 			global::android.graphics.RegionIterator._next5792 = @__env.GetMethodIDNoThrow(global::android.graphics.RegionIterator.staticClass, "next", "(Landroid/graphics/Rect;)Z");
 			global::android.graphics.RegionIterator._RegionIterator5793 = @__env.GetMethodIDNoThrow(global::android.graphics.RegionIterator.staticClass, "<init>", "(Landroid/graphics/Region;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

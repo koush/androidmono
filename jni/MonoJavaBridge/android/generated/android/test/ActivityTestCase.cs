@@ -4,10 +4,6 @@ namespace android.test
 	public abstract partial class ActivityTestCase : android.test.InstrumentationTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityTestCase()
-		{
-			InitJNI();
-		}
 		protected ActivityTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._ActivityTestCase12127);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ActivityTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ActivityTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ActivityTestCase"));
@@ -54,23 +50,25 @@ namespace android.test
 			global::android.test.ActivityTestCase._scrubClass12126 = @__env.GetMethodIDNoThrow(global::android.test.ActivityTestCase.staticClass, "scrubClass", "(Ljava/lang/Class;)V");
 			global::android.test.ActivityTestCase._ActivityTestCase12127 = @__env.GetMethodIDNoThrow(global::android.test.ActivityTestCase.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.ActivityTestCase))]
 	internal sealed partial class ActivityTestCase_ : android.test.ActivityTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityTestCase_()
-		{
-			InitJNI();
-		}
 		internal ActivityTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ActivityTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ActivityTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ActivityTestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

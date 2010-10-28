@@ -4,10 +4,6 @@ namespace android.net.wifi
 	public sealed partial class SupplicantState : java.lang.Enum, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SupplicantState()
-		{
-			InitJNI();
-		}
 		internal SupplicantState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -146,7 +142,7 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _UNINITIALIZED7996)) as android.net.wifi.SupplicantState;
 			}
 		}
-		private static void InitJNI()
+		static SupplicantState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.SupplicantState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/SupplicantState"));
@@ -166,6 +162,9 @@ namespace android.net.wifi
 			global::android.net.wifi.SupplicantState._INVALID7994 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "INVALID", "Landroid/net/wifi/SupplicantState;");
 			global::android.net.wifi.SupplicantState._SCANNING7995 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "SCANNING", "Landroid/net/wifi/SupplicantState;");
 			global::android.net.wifi.SupplicantState._UNINITIALIZED7996 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "UNINITIALIZED", "Landroid/net/wifi/SupplicantState;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

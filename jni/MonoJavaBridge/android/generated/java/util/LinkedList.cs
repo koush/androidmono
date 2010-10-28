@@ -4,10 +4,6 @@ namespace java.util
 	public partial class LinkedList : java.util.AbstractSequentialList, List, java.lang.Cloneable, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LinkedList()
-		{
-			InitJNI();
-		}
 		protected LinkedList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -390,7 +386,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedList.staticClass, global::java.util.LinkedList._LinkedList26388);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LinkedList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.LinkedList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/LinkedList"));
@@ -435,6 +431,9 @@ namespace java.util
 			global::java.util.LinkedList._descendingIterator26386 = @__env.GetMethodIDNoThrow(global::java.util.LinkedList.staticClass, "descendingIterator", "()Ljava/util/Iterator;");
 			global::java.util.LinkedList._LinkedList26387 = @__env.GetMethodIDNoThrow(global::java.util.LinkedList.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::java.util.LinkedList._LinkedList26388 = @__env.GetMethodIDNoThrow(global::java.util.LinkedList.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

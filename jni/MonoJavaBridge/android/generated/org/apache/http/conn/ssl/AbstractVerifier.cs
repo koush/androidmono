@@ -4,10 +4,6 @@ namespace org.apache.http.conn.ssl
 	public abstract partial class AbstractVerifier : java.lang.Object, X509HostnameVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractVerifier()
-		{
-			InitJNI();
-		}
 		protected AbstractVerifier(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -80,7 +76,7 @@ namespace org.apache.http.conn.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._AbstractVerifier32331);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractVerifier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.AbstractVerifier.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/AbstractVerifier"));
@@ -95,16 +91,15 @@ namespace org.apache.http.conn.ssl
 			global::org.apache.http.conn.ssl.AbstractVerifier._countDots32330 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, "countDots", "(Ljava/lang/String;)I");
 			global::org.apache.http.conn.ssl.AbstractVerifier._AbstractVerifier32331 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.conn.ssl.AbstractVerifier))]
 	internal sealed partial class AbstractVerifier_ : org.apache.http.conn.ssl.AbstractVerifier
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractVerifier_()
-		{
-			InitJNI();
-		}
 		internal AbstractVerifier_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -117,11 +112,14 @@ namespace org.apache.http.conn.ssl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ssl.AbstractVerifier_.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier_._verify32332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static AbstractVerifier_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.AbstractVerifier_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/AbstractVerifier"));
 			global::org.apache.http.conn.ssl.AbstractVerifier_._verify32332 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.AbstractVerifier_.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

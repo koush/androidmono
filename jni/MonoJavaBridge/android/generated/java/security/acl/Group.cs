@@ -13,10 +13,6 @@ namespace java.security.acl
 	internal sealed partial class Group_ : java.lang.Object, Group
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Group_()
-		{
-			InitJNI();
-		}
 		internal Group_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -92,7 +88,7 @@ namespace java.security.acl
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Group_.staticClass, global::java.security.acl.Group_._getName23459)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Group_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.acl.Group_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/acl/Group"));
@@ -104,6 +100,9 @@ namespace java.security.acl
 			global::java.security.acl.Group_._toString23457 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.security.acl.Group_._hashCode23458 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "hashCode", "()I");
 			global::java.security.acl.Group_._getName23459 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "getName", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

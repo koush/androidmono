@@ -4,10 +4,6 @@ namespace java.awt.font
 	public sealed partial class TextAttribute : java.text.AttributedCharacterIterator_Attribute
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextAttribute()
-		{
-			InitJNI();
-		}
 		internal TextAttribute(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -542,7 +538,7 @@ namespace java.awt.font
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING_LOOSE18772)) as java.lang.Float;
 			}
 		}
-		private static void InitJNI()
+		static TextAttribute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.awt.font.TextAttribute.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/awt/font/TextAttribute"));
@@ -605,6 +601,9 @@ namespace java.awt.font
 			global::java.awt.font.TextAttribute._TRACKING18770 = @__env.GetStaticFieldIDNoThrow(global::java.awt.font.TextAttribute.staticClass, "TRACKING", "Ljava/awt/font/TextAttribute;");
 			global::java.awt.font.TextAttribute._TRACKING_TIGHT18771 = @__env.GetStaticFieldIDNoThrow(global::java.awt.font.TextAttribute.staticClass, "TRACKING_TIGHT", "Ljava/lang/Float;");
 			global::java.awt.font.TextAttribute._TRACKING_LOOSE18772 = @__env.GetStaticFieldIDNoThrow(global::java.awt.font.TextAttribute.staticClass, "TRACKING_LOOSE", "Ljava/lang/Float;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

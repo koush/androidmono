@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public partial class HttpEntityWrapper : java.lang.Object, HttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpEntityWrapper()
-		{
-			InitJNI();
-		}
 		protected HttpEntityWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -127,7 +123,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._HttpEntityWrapper32556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpEntityWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.HttpEntityWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/HttpEntityWrapper"));
@@ -141,6 +137,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.HttpEntityWrapper._isStreaming32554 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.HttpEntityWrapper.staticClass, "isStreaming", "()Z");
 			global::org.apache.http.entity.HttpEntityWrapper._consumeContent32555 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.HttpEntityWrapper.staticClass, "consumeContent", "()V");
 			global::org.apache.http.entity.HttpEntityWrapper._HttpEntityWrapper32556 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.HttpEntityWrapper.staticClass, "<init>", "(Lorg/apache/http/HttpEntity;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

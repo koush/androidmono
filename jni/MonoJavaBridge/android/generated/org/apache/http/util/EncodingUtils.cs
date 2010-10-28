@@ -4,10 +4,6 @@ namespace org.apache.http.util
 	public sealed partial class EncodingUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EncodingUtils()
-		{
-			InitJNI();
-		}
 		internal EncodingUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace org.apache.http.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getAsciiString34009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static EncodingUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.EncodingUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/EncodingUtils"));
@@ -57,6 +53,9 @@ namespace org.apache.http.util
 			global::org.apache.http.util.EncodingUtils._getAsciiBytes34007 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EncodingUtils.staticClass, "getAsciiBytes", "(Ljava/lang/String;)[B");
 			global::org.apache.http.util.EncodingUtils._getAsciiString34008 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EncodingUtils.staticClass, "getAsciiString", "([BII)Ljava/lang/String;");
 			global::org.apache.http.util.EncodingUtils._getAsciiString34009 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EncodingUtils.staticClass, "getAsciiString", "([B)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

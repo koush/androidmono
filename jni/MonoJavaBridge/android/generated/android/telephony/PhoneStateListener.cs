@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class PhoneStateListener : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PhoneStateListener()
-		{
-			InitJNI();
-		}
 		protected PhoneStateListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -178,7 +174,7 @@ namespace android.telephony
 				return 256;
 			}
 		}
-		private static void InitJNI()
+		static PhoneStateListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.PhoneStateListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/PhoneStateListener"));
@@ -193,6 +189,9 @@ namespace android.telephony
 			global::android.telephony.PhoneStateListener._onDataActivity11844 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneStateListener.staticClass, "onDataActivity", "(I)V");
 			global::android.telephony.PhoneStateListener._onSignalStrengthsChanged11845 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneStateListener.staticClass, "onSignalStrengthsChanged", "(Landroid/telephony/SignalStrength;)V");
 			global::android.telephony.PhoneStateListener._PhoneStateListener11846 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneStateListener.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

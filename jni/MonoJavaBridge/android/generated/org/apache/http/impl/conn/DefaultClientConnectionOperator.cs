@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn
 	public partial class DefaultClientConnectionOperator : java.lang.Object, org.apache.http.conn.ClientConnectionOperator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DefaultClientConnectionOperator()
-		{
-			InitJNI();
-		}
 		protected DefaultClientConnectionOperator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace org.apache.http.impl.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, global::org.apache.http.impl.conn.DefaultClientConnectionOperator._DefaultClientConnectionOperator33043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DefaultClientConnectionOperator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/DefaultClientConnectionOperator"));
@@ -63,6 +59,9 @@ namespace org.apache.http.impl.conn
 			global::org.apache.http.impl.conn.DefaultClientConnectionOperator._updateSecureConnection33041 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "updateSecureConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
 			global::org.apache.http.impl.conn.DefaultClientConnectionOperator._prepareSocket33042 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "prepareSocket", "(Ljava/net/Socket;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
 			global::org.apache.http.impl.conn.DefaultClientConnectionOperator._DefaultClientConnectionOperator33043 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "<init>", "(Lorg/apache/http/conn/scheme/SchemeRegistry;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

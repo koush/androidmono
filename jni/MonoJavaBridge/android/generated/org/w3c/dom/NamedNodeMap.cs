@@ -17,10 +17,6 @@ namespace org.w3c.dom
 	internal sealed partial class NamedNodeMap_ : java.lang.Object, NamedNodeMap
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NamedNodeMap_()
-		{
-			InitJNI();
-		}
 		internal NamedNodeMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.NamedNodeMap_.staticClass, global::org.w3c.dom.NamedNodeMap_._removeNamedItemNS34683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Node;
 		}
-		private static void InitJNI()
+		static NamedNodeMap_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.NamedNodeMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/NamedNodeMap"));
@@ -108,6 +104,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.NamedNodeMap_._getNamedItemNS34681 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NamedNodeMap_.staticClass, "getNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;");
 			global::org.w3c.dom.NamedNodeMap_._setNamedItemNS34682 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NamedNodeMap_.staticClass, "setNamedItemNS", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;");
 			global::org.w3c.dom.NamedNodeMap_._removeNamedItemNS34683 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NamedNodeMap_.staticClass, "removeNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

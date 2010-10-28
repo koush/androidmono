@@ -13,10 +13,6 @@ namespace android.location
 	internal sealed partial class LocationListener_ : java.lang.Object, LocationListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocationListener_()
-		{
-			InitJNI();
-		}
 		internal LocationListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationListener_.staticClass, global::android.location.LocationListener_._onProviderDisabled6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LocationListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.LocationListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationListener"));
@@ -64,6 +60,9 @@ namespace android.location
 			global::android.location.LocationListener_._onLocationChanged6930 = @__env.GetMethodIDNoThrow(global::android.location.LocationListener_.staticClass, "onLocationChanged", "(Landroid/location/Location;)V");
 			global::android.location.LocationListener_._onProviderEnabled6931 = @__env.GetMethodIDNoThrow(global::android.location.LocationListener_.staticClass, "onProviderEnabled", "(Ljava/lang/String;)V");
 			global::android.location.LocationListener_._onProviderDisabled6932 = @__env.GetMethodIDNoThrow(global::android.location.LocationListener_.staticClass, "onProviderDisabled", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

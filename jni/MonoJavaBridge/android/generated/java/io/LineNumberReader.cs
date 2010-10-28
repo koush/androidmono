@@ -4,10 +4,6 @@ namespace java.io
 	public partial class LineNumberReader : java.io.BufferedReader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LineNumberReader()
-		{
-			InitJNI();
-		}
 		protected LineNumberReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -108,7 +104,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._LineNumberReader19140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LineNumberReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.LineNumberReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/LineNumberReader"));
@@ -122,6 +118,9 @@ namespace java.io
 			global::java.io.LineNumberReader._setLineNumber19138 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberReader.staticClass, "setLineNumber", "(I)V");
 			global::java.io.LineNumberReader._LineNumberReader19139 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberReader.staticClass, "<init>", "(Ljava/io/Reader;I)V");
 			global::java.io.LineNumberReader._LineNumberReader19140 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberReader.staticClass, "<init>", "(Ljava/io/Reader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

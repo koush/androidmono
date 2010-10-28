@@ -11,10 +11,6 @@ namespace android.widget
 	internal sealed partial class ListAdapter_ : java.lang.Object, ListAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ListAdapter_()
-		{
-			InitJNI();
-		}
 		internal ListAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -126,7 +122,7 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ListAdapter_.staticClass, global::android.widget.ListAdapter_._getViewTypeCount17335);
 		}
-		private static void InitJNI()
+		static ListAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ListAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ListAdapter"));
@@ -142,6 +138,9 @@ namespace android.widget
 			global::android.widget.ListAdapter_._getView17333 = @__env.GetMethodIDNoThrow(global::android.widget.ListAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
 			global::android.widget.ListAdapter_._getItemViewType17334 = @__env.GetMethodIDNoThrow(global::android.widget.ListAdapter_.staticClass, "getItemViewType", "(I)I");
 			global::android.widget.ListAdapter_._getViewTypeCount17335 = @__env.GetMethodIDNoThrow(global::android.widget.ListAdapter_.staticClass, "getViewTypeCount", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

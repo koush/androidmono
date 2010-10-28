@@ -11,10 +11,6 @@ namespace org.apache.http.impl.auth
 	internal sealed partial class NTLMEngine_ : java.lang.Object, NTLMEngine
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NTLMEngine_()
-		{
-			InitJNI();
-		}
 		internal NTLMEngine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http.impl.auth
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.auth.NTLMEngine_.staticClass, global::org.apache.http.impl.auth.NTLMEngine_._generateType3Msg32738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static NTLMEngine_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.NTLMEngine_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/NTLMEngine"));
 			global::org.apache.http.impl.auth.NTLMEngine_._generateType1Msg32737 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngine_.staticClass, "generateType1Msg", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
 			global::org.apache.http.impl.auth.NTLMEngine_._generateType3Msg32738 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngine_.staticClass, "generateType3Msg", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

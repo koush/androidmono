@@ -10,10 +10,6 @@ namespace android.text.style
 	internal sealed partial class TabStopSpan_ : java.lang.Object, TabStopSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TabStopSpan_()
-		{
-			InitJNI();
-		}
 		internal TabStopSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.text.style
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_.staticClass, global::android.text.style.TabStopSpan_._getTabStop13598);
 		}
-		private static void InitJNI()
+		static TabStopSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.TabStopSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/TabStopSpan"));
 			global::android.text.style.TabStopSpan_._getTabStop13598 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_.staticClass, "getTabStop", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

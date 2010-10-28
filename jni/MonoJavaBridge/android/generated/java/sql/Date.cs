@@ -4,10 +4,6 @@ namespace java.sql
 	public partial class Date : java.util.Date
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Date()
-		{
-			InitJNI();
-		}
 		protected Date(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -143,7 +139,7 @@ namespace java.sql
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.Date.staticClass, global::java.sql.Date._Date24619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Date()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Date.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Date"));
@@ -158,6 +154,9 @@ namespace java.sql
 			global::java.sql.Date._setSeconds24617 = @__env.GetMethodIDNoThrow(global::java.sql.Date.staticClass, "setSeconds", "(I)V");
 			global::java.sql.Date._Date24618 = @__env.GetMethodIDNoThrow(global::java.sql.Date.staticClass, "<init>", "(III)V");
 			global::java.sql.Date._Date24619 = @__env.GetMethodIDNoThrow(global::java.sql.Date.staticClass, "<init>", "(J)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace org.apache.http.protocol
 	internal sealed partial class HttpContext_ : java.lang.Object, HttpContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpContext_()
-		{
-			InitJNI();
-		}
 		internal HttpContext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpContext_.staticClass, global::org.apache.http.protocol.HttpContext_._setAttribute33887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static HttpContext_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpContext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpContext"));
 			global::org.apache.http.protocol.HttpContext_._getAttribute33885 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpContext_.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::org.apache.http.protocol.HttpContext_._removeAttribute33886 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpContext_.staticClass, "removeAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::org.apache.http.protocol.HttpContext_._setAttribute33887 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpContext_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

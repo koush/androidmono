@@ -4,10 +4,6 @@ namespace android.widget
 	public abstract partial class AbsSpinner : android.widget.AdapterView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSpinner()
-		{
-			InitJNI();
-		}
 		protected AbsSpinner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -149,7 +145,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._AbsSpinner16600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbsSpinner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsSpinner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsSpinner"));
@@ -170,23 +166,25 @@ namespace android.widget
 			global::android.widget.AbsSpinner._AbsSpinner16599 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.AbsSpinner._AbsSpinner16600 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsSpinner))]
 	internal sealed partial class AbsSpinner_ : android.widget.AbsSpinner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbsSpinner_()
-		{
-			InitJNI();
-		}
 		internal AbsSpinner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AbsSpinner_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsSpinner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsSpinner"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

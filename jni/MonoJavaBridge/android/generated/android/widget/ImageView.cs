@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ImageView : android.view.View
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ImageView()
-		{
-			InitJNI();
-		}
 		protected ImageView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.widget
 		public sealed partial class ScaleType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ScaleType()
-			{
-				InitJNI();
-			}
 			internal ScaleType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -106,7 +98,7 @@ namespace android.widget
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _MATRIX17261)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			private static void InitJNI()
+			static ScaleType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ImageView.ScaleType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ImageView$ScaleType"));
@@ -120,6 +112,9 @@ namespace android.widget
 				global::android.widget.ImageView.ScaleType._FIT_START17259 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_START", "Landroid/widget/ImageView$ScaleType;");
 				global::android.widget.ImageView.ScaleType._FIT_XY17260 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_XY", "Landroid/widget/ImageView$ScaleType;");
 				global::android.widget.ImageView.ScaleType._MATRIX17261 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "MATRIX", "Landroid/widget/ImageView$ScaleType;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new global::android.graphics.drawable.Drawable Drawable
@@ -499,7 +494,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._ImageView17293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ImageView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ImageView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ImageView"));
@@ -535,6 +530,9 @@ namespace android.widget
 			global::android.widget.ImageView._ImageView17291 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.ImageView._ImageView17292 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.ImageView._ImageView17293 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

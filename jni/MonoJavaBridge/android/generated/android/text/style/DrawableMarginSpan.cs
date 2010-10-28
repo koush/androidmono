@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class DrawableMarginSpan : java.lang.Object, LeadingMarginSpan, LineHeightSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DrawableMarginSpan()
-		{
-			InitJNI();
-		}
 		protected DrawableMarginSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -60,7 +56,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.DrawableMarginSpan.staticClass, global::android.text.style.DrawableMarginSpan._DrawableMarginSpan13472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DrawableMarginSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DrawableMarginSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DrawableMarginSpan"));
@@ -69,6 +65,9 @@ namespace android.text.style
 			global::android.text.style.DrawableMarginSpan._chooseHeight13470 = @__env.GetMethodIDNoThrow(global::android.text.style.DrawableMarginSpan.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
 			global::android.text.style.DrawableMarginSpan._DrawableMarginSpan13471 = @__env.GetMethodIDNoThrow(global::android.text.style.DrawableMarginSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;)V");
 			global::android.text.style.DrawableMarginSpan._DrawableMarginSpan13472 = @__env.GetMethodIDNoThrow(global::android.text.style.DrawableMarginSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

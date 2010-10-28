@@ -22,10 +22,6 @@ namespace java.sql
 	internal sealed partial class Clob_ : java.lang.Object, Clob
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Clob_()
-		{
-			InitJNI();
-		}
 		internal Clob_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -146,7 +142,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Clob_.staticClass, global::java.sql.Clob_._getSubString24319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Clob_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Clob_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Clob"));
@@ -163,6 +159,9 @@ namespace java.sql
 			global::java.sql.Clob_._setAsciiStream24317 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setAsciiStream", "(J)Ljava/io/OutputStream;");
 			global::java.sql.Clob_._setCharacterStream24318 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setCharacterStream", "(J)Ljava/io/Writer;");
 			global::java.sql.Clob_._getSubString24319 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "getSubString", "(JI)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

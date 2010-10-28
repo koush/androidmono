@@ -11,10 +11,6 @@ namespace java.nio.channels
 	internal sealed partial class ScatteringByteChannel_ : java.lang.Object, ScatteringByteChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ScatteringByteChannel_()
-		{
-			InitJNI();
-		}
 		internal ScatteringByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._close22555);
 		}
-		private static void InitJNI()
+		static ScatteringByteChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ScatteringByteChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ScatteringByteChannel"));
@@ -82,6 +78,9 @@ namespace java.nio.channels
 			global::java.nio.channels.ScatteringByteChannel_._close22553 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V");
 			global::java.nio.channels.ScatteringByteChannel_._isOpen22554 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "isOpen", "()Z");
 			global::java.nio.channels.ScatteringByteChannel_._close22555 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

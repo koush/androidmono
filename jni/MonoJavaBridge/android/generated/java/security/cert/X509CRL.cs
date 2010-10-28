@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class X509CRL : java.security.cert.CRL, X509Extension
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CRL()
-		{
-			InitJNI();
-		}
 		protected X509CRL(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CRL.staticClass, global::java.security.cert.X509CRL._X509CRL23723);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509CRL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CRL.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CRL"));
@@ -118,16 +114,15 @@ namespace java.security.cert
 			global::java.security.cert.X509CRL._getTBSCertList23722 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRL.staticClass, "getTBSCertList", "()[B");
 			global::java.security.cert.X509CRL._X509CRL23723 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRL.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.X509CRL))]
 	internal sealed partial class X509CRL_ : java.security.cert.X509CRL
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CRL_()
-		{
-			InitJNI();
-		}
 		internal X509CRL_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -311,7 +306,7 @@ namespace java.security.cert
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._isRevoked23743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static X509CRL_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CRL_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CRL"));
@@ -335,6 +330,9 @@ namespace java.security.cert
 			global::java.security.cert.X509CRL_._getTBSCertList23741 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRL_.staticClass, "getTBSCertList", "()[B");
 			global::java.security.cert.X509CRL_._toString23742 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRL_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.security.cert.X509CRL_._isRevoked23743 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRL_.staticClass, "isRevoked", "(Ljava/security/cert/Certificate;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.conn.scheme
 	public sealed partial class PlainSocketFactory : java.lang.Object, SocketFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PlainSocketFactory()
-		{
-			InitJNI();
-		}
 		internal PlainSocketFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -83,7 +79,7 @@ namespace org.apache.http.conn.scheme
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._PlainSocketFactory32301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PlainSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/PlainSocketFactory"));
@@ -95,6 +91,9 @@ namespace org.apache.http.conn.scheme
 			global::org.apache.http.conn.scheme.PlainSocketFactory._isSecure32299 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, "isSecure", "(Ljava/net/Socket;)Z");
 			global::org.apache.http.conn.scheme.PlainSocketFactory._PlainSocketFactory32300 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, "<init>", "()V");
 			global::org.apache.http.conn.scheme.PlainSocketFactory._PlainSocketFactory32301 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, "<init>", "(Lorg/apache/http/conn/scheme/HostNameResolver;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

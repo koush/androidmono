@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class CacheManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CacheManager()
-		{
-			InitJNI();
-		}
 		internal CacheManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.webkit
 		public partial class CacheResult : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CacheResult()
-			{
-				InitJNI();
-			}
 			protected CacheResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -263,7 +255,7 @@ namespace android.webkit
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._CacheResult16004);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static CacheResult()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.CacheManager.CacheResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager$CacheResult"));
@@ -283,6 +275,9 @@ namespace android.webkit
 				global::android.webkit.CacheManager.CacheResult._getContentDisposition16002 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentDisposition", "()Ljava/lang/String;");
 				global::android.webkit.CacheManager.CacheResult._setInputStream16003 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "setInputStream", "(Ljava/io/InputStream;)V");
 				global::android.webkit.CacheManager.CacheResult._CacheResult16004 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public static global::java.io.File CacheFileBaseDir
@@ -335,7 +330,7 @@ namespace android.webkit
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._CacheManager16011);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CacheManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CacheManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager"));
@@ -346,6 +341,9 @@ namespace android.webkit
 			global::android.webkit.CacheManager._getCacheFile16009 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "getCacheFile", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
 			global::android.webkit.CacheManager._saveCacheFile16010 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "saveCacheFile", "(Ljava/lang/String;Landroid/webkit/CacheManager$CacheResult;)V");
 			global::android.webkit.CacheManager._CacheManager16011 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

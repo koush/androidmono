@@ -4,10 +4,6 @@ namespace java.math
 	public partial class BigDecimal : java.lang.Number, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BigDecimal()
-		{
-			InitJNI();
-		}
 		protected BigDecimal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -746,7 +742,7 @@ namespace java.math
 				return 7;
 			}
 		}
-		private static void InitJNI()
+		static BigDecimal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.BigDecimal.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/BigDecimal"));
@@ -830,6 +826,9 @@ namespace java.math
 			global::java.math.BigDecimal._ZERO21241 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ZERO", "Ljava/math/BigDecimal;");
 			global::java.math.BigDecimal._ONE21242 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ONE", "Ljava/math/BigDecimal;");
 			global::java.math.BigDecimal._TEN21243 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "TEN", "Ljava/math/BigDecimal;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

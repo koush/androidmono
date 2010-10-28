@@ -15,10 +15,6 @@ namespace java.util.concurrent.locks
 	internal sealed partial class Lock_ : java.lang.Object, Lock
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Lock_()
-		{
-			InitJNI();
-		}
 		internal Lock_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace java.util.concurrent.locks
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Condition>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._newCondition27744)) as java.util.concurrent.locks.Condition;
 		}
-		private static void InitJNI()
+		static Lock_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.Lock_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/Lock"));
@@ -86,6 +82,9 @@ namespace java.util.concurrent.locks
 			global::java.util.concurrent.locks.Lock_._tryLock27742 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "()Z");
 			global::java.util.concurrent.locks.Lock_._tryLock27743 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z");
 			global::java.util.concurrent.locks.Lock_._newCondition27744 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

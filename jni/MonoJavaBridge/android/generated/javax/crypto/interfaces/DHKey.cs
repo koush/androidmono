@@ -10,10 +10,6 @@ namespace javax.crypto.interfaces
 	internal sealed partial class DHKey_ : java.lang.Object, DHKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DHKey_()
-		{
-			InitJNI();
-		}
 		internal DHKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.crypto.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_.staticClass, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
 		}
-		private static void InitJNI()
+		static DHKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.DHKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/DHKey"));
 			global::javax.crypto.interfaces.DHKey_._getParams28736 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

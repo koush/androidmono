@@ -10,10 +10,6 @@ namespace android.widget
 	internal sealed partial class WrapperListAdapter_ : java.lang.Object, WrapperListAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WrapperListAdapter_()
-		{
-			InitJNI();
-		}
 		internal WrapperListAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -134,7 +130,7 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.WrapperListAdapter_.staticClass, global::android.widget.WrapperListAdapter_._getViewTypeCount18300);
 		}
-		private static void InitJNI()
+		static WrapperListAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.WrapperListAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/WrapperListAdapter"));
@@ -151,6 +147,9 @@ namespace android.widget
 			global::android.widget.WrapperListAdapter_._getView18298 = @__env.GetMethodIDNoThrow(global::android.widget.WrapperListAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
 			global::android.widget.WrapperListAdapter_._getItemViewType18299 = @__env.GetMethodIDNoThrow(global::android.widget.WrapperListAdapter_.staticClass, "getItemViewType", "(I)I");
 			global::android.widget.WrapperListAdapter_._getViewTypeCount18300 = @__env.GetMethodIDNoThrow(global::android.widget.WrapperListAdapter_.staticClass, "getViewTypeCount", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

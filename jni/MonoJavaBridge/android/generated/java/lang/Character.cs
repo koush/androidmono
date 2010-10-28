@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Character : java.lang.Object, java.io.Serializable, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Character()
-		{
-			InitJNI();
-		}
 		internal Character(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.lang
 		public partial class Subset : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Subset()
-			{
-				InitJNI();
-			}
 			protected Subset(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -56,7 +48,7 @@ namespace java.lang
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._Subset19768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Subset()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Character.Subset.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character$Subset"));
@@ -65,15 +57,14 @@ namespace java.lang
 				global::java.lang.Character.Subset._hashCode19767 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "hashCode", "()I");
 				global::java.lang.Character.Subset._Subset19768 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "<init>", "(Ljava/lang/String;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class UnicodeBlock : java.lang.Character.Subset
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static UnicodeBlock()
-			{
-				InitJNI();
-			}
 			internal UnicodeBlock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1229,7 +1220,7 @@ namespace java.lang
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LOW_SURROGATES19897)) as java.lang.Character.UnicodeBlock;
 				}
 			}
-			private static void InitJNI()
+			static UnicodeBlock()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Character.UnicodeBlock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character$UnicodeBlock"));
@@ -1362,6 +1353,9 @@ namespace java.lang
 				global::java.lang.Character.UnicodeBlock._HIGH_SURROGATES19895 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "HIGH_SURROGATES", "Ljava/lang/Character$UnicodeBlock;");
 				global::java.lang.Character.UnicodeBlock._HIGH_PRIVATE_USE_SURROGATES19896 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "HIGH_PRIVATE_USE_SURROGATES", "Ljava/lang/Character$UnicodeBlock;");
 				global::java.lang.Character.UnicodeBlock._LOW_SURROGATES19897 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "LOW_SURROGATES", "Ljava/lang/Character$UnicodeBlock;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaIdentifierStart19898;
@@ -1873,7 +1867,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Character.staticClass, global::java.lang.Character._Character19976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Character()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Character.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character"));
@@ -1956,6 +1950,9 @@ namespace java.lang
 			global::java.lang.Character._isMirrored19974 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(I)Z");
 			global::java.lang.Character._isMirrored19975 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(C)Z");
 			global::java.lang.Character._Character19976 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "<init>", "(C)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

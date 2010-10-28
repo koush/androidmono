@@ -12,10 +12,6 @@ namespace java.lang.reflect
 	internal sealed partial class TypeVariable_ : java.lang.Object, TypeVariable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TypeVariable_()
-		{
-			InitJNI();
-		}
 		internal TypeVariable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.GenericDeclaration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getGenericDeclaration21157)) as java.lang.reflect.GenericDeclaration;
 		}
-		private static void InitJNI()
+		static TypeVariable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.TypeVariable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/TypeVariable"));
 			global::java.lang.reflect.TypeVariable_._getName21155 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.TypeVariable_.staticClass, "getName", "()Ljava/lang/String;");
 			global::java.lang.reflect.TypeVariable_._getBounds21156 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.TypeVariable_.staticClass, "getBounds", "()[Ljava/lang/reflect/Type;");
 			global::java.lang.reflect.TypeVariable_._getGenericDeclaration21157 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.TypeVariable_.staticClass, "getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.media
 	public partial class CamcorderProfile : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CamcorderProfile()
-		{
-			InitJNI();
-		}
 		protected CamcorderProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -175,7 +171,7 @@ namespace android.media
 			{
 			}
 		}
-		private static void InitJNI()
+		static CamcorderProfile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.CamcorderProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CamcorderProfile"));
@@ -192,6 +188,9 @@ namespace android.media
 			global::android.media.CamcorderProfile._audioBitRate7238 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioBitRate", "I");
 			global::android.media.CamcorderProfile._audioSampleRate7239 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioSampleRate", "I");
 			global::android.media.CamcorderProfile._audioChannels7240 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioChannels", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

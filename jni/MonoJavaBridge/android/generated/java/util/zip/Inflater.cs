@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class Inflater : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Inflater()
-		{
-			InitJNI();
-		}
 		protected Inflater(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -243,7 +239,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._Inflater28420);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Inflater()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.Inflater.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/Inflater"));
@@ -267,6 +263,9 @@ namespace java.util.zip
 			global::java.util.zip.Inflater._getTotalOut28418 = @__env.GetMethodIDNoThrow(global::java.util.zip.Inflater.staticClass, "getTotalOut", "()I");
 			global::java.util.zip.Inflater._Inflater28419 = @__env.GetMethodIDNoThrow(global::java.util.zip.Inflater.staticClass, "<init>", "(Z)V");
 			global::java.util.zip.Inflater._Inflater28420 = @__env.GetMethodIDNoThrow(global::java.util.zip.Inflater.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

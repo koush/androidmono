@@ -9,10 +9,6 @@ namespace android.test.suitebuilder.annotation
 	internal sealed partial class SmallTest_ : java.lang.Object, SmallTest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SmallTest_()
-		{
-			InitJNI();
-		}
 		internal SmallTest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.test.suitebuilder.annotation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.SmallTest_.staticClass, global::android.test.suitebuilder.annotation.SmallTest_._annotationType12658)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static SmallTest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.suitebuilder.annotation.SmallTest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/suitebuilder/annotation/SmallTest"));
@@ -60,6 +56,9 @@ namespace android.test.suitebuilder.annotation
 			global::android.test.suitebuilder.annotation.SmallTest_._toString12656 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.SmallTest_.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.test.suitebuilder.annotation.SmallTest_._hashCode12657 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.SmallTest_.staticClass, "hashCode", "()I");
 			global::android.test.suitebuilder.annotation.SmallTest_._annotationType12658 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.SmallTest_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

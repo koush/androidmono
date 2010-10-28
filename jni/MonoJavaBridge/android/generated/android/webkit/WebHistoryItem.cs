@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class WebHistoryItem : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WebHistoryItem()
-		{
-			InitJNI();
-		}
 		protected WebHistoryItem(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -100,7 +96,7 @@ namespace android.webkit
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getFavicon16159)) as android.graphics.Bitmap;
 		}
-		private static void InitJNI()
+		static WebHistoryItem()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebHistoryItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebHistoryItem"));
@@ -110,6 +106,9 @@ namespace android.webkit
 			global::android.webkit.WebHistoryItem._getUrl16157 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;");
 			global::android.webkit.WebHistoryItem._getOriginalUrl16158 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;");
 			global::android.webkit.WebHistoryItem._getFavicon16159 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

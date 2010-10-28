@@ -15,10 +15,6 @@ namespace javax.net.ssl
 	internal sealed partial class SSLSessionContext_ : java.lang.Object, SSLSessionContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLSessionContext_()
-		{
-			InitJNI();
-		}
 		internal SSLSessionContext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace javax.net.ssl
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068);
 		}
-		private static void InitJNI()
+		static SSLSessionContext_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLSessionContext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLSessionContext"));
@@ -86,6 +82,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30066 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionTimeout", "()I");
 			global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30067 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "setSessionCacheSize", "(I)V");
 			global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionCacheSize", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

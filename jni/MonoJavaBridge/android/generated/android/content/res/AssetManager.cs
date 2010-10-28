@@ -4,10 +4,6 @@ namespace android.content.res
 	public sealed partial class AssetManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AssetManager()
-		{
-			InitJNI();
-		}
 		internal AssetManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content.res
 		public sealed partial class AssetInputStream : java.io.InputStream
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AssetInputStream()
-			{
-				InitJNI();
-			}
 			internal AssetInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -119,7 +111,7 @@ namespace android.content.res
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._getAssetInt4101);
 			}
-			private static void InitJNI()
+			static AssetInputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.AssetManager.AssetInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetManager$AssetInputStream"));
@@ -133,6 +125,9 @@ namespace android.content.res
 				global::android.content.res.AssetManager.AssetInputStream._available4099 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "available", "()I");
 				global::android.content.res.AssetManager.AssetInputStream._markSupported4100 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "markSupported", "()Z");
 				global::android.content.res.AssetManager.AssetInputStream._getAssetInt4101 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "getAssetInt", "()I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _list4102;
@@ -260,7 +255,7 @@ namespace android.content.res
 				return 3;
 			}
 		}
-		private static void InitJNI()
+		static AssetManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.AssetManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetManager"));
@@ -274,6 +269,9 @@ namespace android.content.res
 			global::android.content.res.AssetManager._openXmlResourceParser4109 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;");
 			global::android.content.res.AssetManager._openXmlResourceParser4110 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;");
 			global::android.content.res.AssetManager._getLocales4111 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "getLocales", "()[Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

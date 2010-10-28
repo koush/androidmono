@@ -4,10 +4,6 @@ namespace android.net
 	public partial class LocalSocketAddress : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocalSocketAddress()
-		{
-			InitJNI();
-		}
 		protected LocalSocketAddress(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.net
 		public sealed partial class Namespace : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Namespace()
-			{
-				InitJNI();
-			}
 			internal Namespace(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -61,7 +53,7 @@ namespace android.net
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _RESERVED7696)) as android.net.LocalSocketAddress.Namespace;
 				}
 			}
-			private static void InitJNI()
+			static Namespace()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.LocalSocketAddress.Namespace.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalSocketAddress$Namespace"));
@@ -70,6 +62,9 @@ namespace android.net
 				global::android.net.LocalSocketAddress.Namespace._ABSTRACT7694 = @__env.GetStaticFieldIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "ABSTRACT", "Landroid/net/LocalSocketAddress$Namespace;");
 				global::android.net.LocalSocketAddress.Namespace._FILESYSTEM7695 = @__env.GetStaticFieldIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "FILESYSTEM", "Landroid/net/LocalSocketAddress$Namespace;");
 				global::android.net.LocalSocketAddress.Namespace._RESERVED7696 = @__env.GetStaticFieldIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "RESERVED", "Landroid/net/LocalSocketAddress$Namespace;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new global::java.lang.String Name
@@ -111,7 +106,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._LocalSocketAddress7700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LocalSocketAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.LocalSocketAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalSocketAddress"));
@@ -119,6 +114,9 @@ namespace android.net
 			global::android.net.LocalSocketAddress._getNamespace7698 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocketAddress.staticClass, "getNamespace", "()Landroid/net/LocalSocketAddress$Namespace;");
 			global::android.net.LocalSocketAddress._LocalSocketAddress7699 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocketAddress.staticClass, "<init>", "(Ljava/lang/String;Landroid/net/LocalSocketAddress$Namespace;)V");
 			global::android.net.LocalSocketAddress._LocalSocketAddress7700 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocketAddress.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

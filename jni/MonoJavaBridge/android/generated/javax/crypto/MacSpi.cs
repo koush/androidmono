@@ -4,10 +4,6 @@ namespace javax.crypto
 	public abstract partial class MacSpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MacSpi()
-		{
-			InitJNI();
-		}
 		protected MacSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -48,7 +44,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.MacSpi.staticClass, global::javax.crypto.MacSpi._MacSpi28698);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MacSpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.MacSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/MacSpi"));
@@ -62,16 +58,15 @@ namespace javax.crypto
 			global::javax.crypto.MacSpi._engineGetMacLength28697 = @__env.GetMethodIDNoThrow(global::javax.crypto.MacSpi.staticClass, "engineGetMacLength", "()I");
 			global::javax.crypto.MacSpi._MacSpi28698 = @__env.GetMethodIDNoThrow(global::javax.crypto.MacSpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.MacSpi))]
 	internal sealed partial class MacSpi_ : javax.crypto.MacSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MacSpi_()
-		{
-			InitJNI();
-		}
 		internal MacSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -129,7 +124,7 @@ namespace javax.crypto
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineGetMacLength28704);
 		}
-		private static void InitJNI()
+		static MacSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.MacSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/MacSpi"));
@@ -139,6 +134,9 @@ namespace javax.crypto
 			global::javax.crypto.MacSpi_._engineReset28702 = @__env.GetMethodIDNoThrow(global::javax.crypto.MacSpi_.staticClass, "engineReset", "()V");
 			global::javax.crypto.MacSpi_._engineDoFinal28703 = @__env.GetMethodIDNoThrow(global::javax.crypto.MacSpi_.staticClass, "engineDoFinal", "()[B");
 			global::javax.crypto.MacSpi_._engineGetMacLength28704 = @__env.GetMethodIDNoThrow(global::javax.crypto.MacSpi_.staticClass, "engineGetMacLength", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

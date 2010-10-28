@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn
 	public partial class ProxySelectorRoutePlanner : java.lang.Object, org.apache.http.conn.routing.HttpRoutePlanner
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProxySelectorRoutePlanner()
-		{
-			InitJNI();
-		}
 		protected ProxySelectorRoutePlanner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -83,7 +79,7 @@ namespace org.apache.http.impl.conn
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._ProxySelectorRoutePlanner33076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ProxySelectorRoutePlanner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/ProxySelectorRoutePlanner"));
@@ -94,6 +90,9 @@ namespace org.apache.http.impl.conn
 			global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._determineProxy33074 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, "determineProxy", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpHost;");
 			global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._chooseProxy33075 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, "chooseProxy", "(Ljava/util/List;Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Ljava/net/Proxy;");
 			global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._ProxySelectorRoutePlanner33076 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, "<init>", "(Lorg/apache/http/conn/scheme/SchemeRegistry;Ljava/net/ProxySelector;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

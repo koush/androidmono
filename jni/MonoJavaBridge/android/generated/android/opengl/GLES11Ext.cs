@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLES11Ext : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLES11Ext()
-		{
-			InitJNI();
-		}
 		protected GLES11Ext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1459,7 +1455,7 @@ namespace android.opengl
 				return 32993;
 			}
 		}
-		private static void InitJNI()
+		static GLES11Ext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES11Ext.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES11Ext"));
@@ -1584,6 +1580,9 @@ namespace android.opengl
 			global::android.opengl.GLES11Ext._glGetTexGenxvOES8824 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11Ext.staticClass, "glGetTexGenxvOES", "(II[II)V");
 			global::android.opengl.GLES11Ext._glGetTexGenxvOES8825 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11Ext.staticClass, "glGetTexGenxvOES", "(IILjava/nio/IntBuffer;)V");
 			global::android.opengl.GLES11Ext._GLES11Ext8826 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES11Ext.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public sealed partial class AUTH : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AUTH()
-		{
-			InitJNI();
-		}
 		internal AUTH(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -39,10 +35,13 @@ namespace org.apache.http.auth
 				return "Proxy-Authorization";
 			}
 		}
-		private static void InitJNI()
+		static AUTH()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.AUTH.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/AUTH"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.location
 	public sealed partial class GpsSatellite : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GpsSatellite()
-		{
-			InitJNI();
-		}
 		internal GpsSatellite(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._usedInFix6874);
 		}
-		private static void InitJNI()
+		static GpsSatellite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.GpsSatellite.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsSatellite"));
@@ -113,6 +109,9 @@ namespace android.location
 			global::android.location.GpsSatellite._hasEphemeris6872 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "hasEphemeris", "()Z");
 			global::android.location.GpsSatellite._hasAlmanac6873 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "hasAlmanac", "()Z");
 			global::android.location.GpsSatellite._usedInFix6874 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "usedInFix", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

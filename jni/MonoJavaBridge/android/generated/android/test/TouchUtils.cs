@@ -4,10 +4,6 @@ namespace android.test
 	public partial class TouchUtils : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TouchUtils()
-		{
-			InitJNI();
-		}
 		protected TouchUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -204,7 +200,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.TouchUtils.staticClass, global::android.test.TouchUtils._TouchUtils12356);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TouchUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.TouchUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/TouchUtils"));
@@ -240,6 +236,9 @@ namespace android.test
 			global::android.test.TouchUtils._drag12354 = @__env.GetStaticMethodIDNoThrow(global::android.test.TouchUtils.staticClass, "drag", "(Landroid/test/ActivityInstrumentationTestCase;FFFFI)V");
 			global::android.test.TouchUtils._drag12355 = @__env.GetStaticMethodIDNoThrow(global::android.test.TouchUtils.staticClass, "drag", "(Landroid/test/InstrumentationTestCase;FFFFI)V");
 			global::android.test.TouchUtils._TouchUtils12356 = @__env.GetMethodIDNoThrow(global::android.test.TouchUtils.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

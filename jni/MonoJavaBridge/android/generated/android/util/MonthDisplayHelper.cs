@@ -4,10 +4,6 @@ namespace android.util
 	public partial class MonthDisplayHelper : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MonthDisplayHelper()
-		{
-			InitJNI();
-		}
 		protected MonthDisplayHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -184,7 +180,7 @@ namespace android.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._MonthDisplayHelper13812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MonthDisplayHelper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.MonthDisplayHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/MonthDisplayHelper"));
@@ -203,6 +199,9 @@ namespace android.util
 			global::android.util.MonthDisplayHelper._isWithinCurrentMonth13810 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "isWithinCurrentMonth", "(II)Z");
 			global::android.util.MonthDisplayHelper._MonthDisplayHelper13811 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(III)V");
 			global::android.util.MonthDisplayHelper._MonthDisplayHelper13812 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

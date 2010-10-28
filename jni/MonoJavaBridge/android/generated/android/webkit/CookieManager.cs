@@ -4,10 +4,6 @@ namespace android.webkit
 	public sealed partial class CookieManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookieManager()
-		{
-			InitJNI();
-		}
 		internal CookieManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace android.webkit
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeExpiredCookie16032);
 		}
-		private static void InitJNI()
+		static CookieManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CookieManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CookieManager"));
@@ -109,6 +105,9 @@ namespace android.webkit
 			global::android.webkit.CookieManager._removeAllCookie16030 = @__env.GetMethodIDNoThrow(global::android.webkit.CookieManager.staticClass, "removeAllCookie", "()V");
 			global::android.webkit.CookieManager._hasCookies16031 = @__env.GetMethodIDNoThrow(global::android.webkit.CookieManager.staticClass, "hasCookies", "()Z");
 			global::android.webkit.CookieManager._removeExpiredCookie16032 = @__env.GetMethodIDNoThrow(global::android.webkit.CookieManager.staticClass, "removeExpiredCookie", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

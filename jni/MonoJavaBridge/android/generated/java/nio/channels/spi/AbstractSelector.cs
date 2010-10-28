@@ -4,10 +4,6 @@ namespace java.nio.channels.spi
 	public abstract partial class AbstractSelector : java.nio.channels.Selector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSelector()
-		{
-			InitJNI();
-		}
 		protected AbstractSelector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -85,7 +81,7 @@ namespace java.nio.channels.spi
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.AbstractSelector.staticClass, global::java.nio.channels.spi.AbstractSelector._AbstractSelector22699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractSelector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.AbstractSelector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/AbstractSelector"));
@@ -100,16 +96,15 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.AbstractSelector._deregister22698 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelector.staticClass, "deregister", "(Ljava/nio/channels/spi/AbstractSelectionKey;)V");
 			global::java.nio.channels.spi.AbstractSelector._AbstractSelector22699 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelector.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.spi.AbstractSelector))]
 	internal sealed partial class AbstractSelector_ : java.nio.channels.spi.AbstractSelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSelector_()
-		{
-			InitJNI();
-		}
 		internal AbstractSelector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -185,7 +180,7 @@ namespace java.nio.channels.spi
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelector_.staticClass, global::java.nio.channels.spi.AbstractSelector_._wakeup22707)) as java.nio.channels.Selector;
 		}
-		private static void InitJNI()
+		static AbstractSelector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.AbstractSelector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/AbstractSelector"));
@@ -197,6 +192,9 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.AbstractSelector_._selectedKeys22705 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelector_.staticClass, "selectedKeys", "()Ljava/util/Set;");
 			global::java.nio.channels.spi.AbstractSelector_._selectNow22706 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelector_.staticClass, "selectNow", "()I");
 			global::java.nio.channels.spi.AbstractSelector_._wakeup22707 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelector_.staticClass, "wakeup", "()Ljava/nio/channels/Selector;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

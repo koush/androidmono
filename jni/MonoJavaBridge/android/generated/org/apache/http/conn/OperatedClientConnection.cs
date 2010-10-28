@@ -15,10 +15,6 @@ namespace org.apache.http.conn
 	internal sealed partial class OperatedClientConnection_ : java.lang.Object, OperatedClientConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OperatedClientConnection_()
-		{
-			InitJNI();
-		}
 		internal OperatedClientConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -229,7 +225,7 @@ namespace org.apache.http.conn
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.OperatedClientConnection_.staticClass, global::org.apache.http.conn.OperatedClientConnection_._getRemotePort32172);
 		}
-		private static void InitJNI()
+		static OperatedClientConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.OperatedClientConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/OperatedClientConnection"));
@@ -256,6 +252,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.OperatedClientConnection_._getLocalPort32170 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.OperatedClientConnection_.staticClass, "getLocalPort", "()I");
 			global::org.apache.http.conn.OperatedClientConnection_._getRemoteAddress32171 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.OperatedClientConnection_.staticClass, "getRemoteAddress", "()Ljava/net/InetAddress;");
 			global::org.apache.http.conn.OperatedClientConnection_._getRemotePort32172 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.OperatedClientConnection_.staticClass, "getRemotePort", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

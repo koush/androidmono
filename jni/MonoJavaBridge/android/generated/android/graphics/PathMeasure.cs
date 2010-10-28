@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class PathMeasure : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PathMeasure()
-		{
-			InitJNI();
-		}
 		protected PathMeasure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -118,7 +114,7 @@ namespace android.graphics
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static PathMeasure()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PathMeasure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathMeasure"));
@@ -132,6 +128,9 @@ namespace android.graphics
 			global::android.graphics.PathMeasure._nextContour5580 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "nextContour", "()Z");
 			global::android.graphics.PathMeasure._PathMeasure5581 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "<init>", "()V");
 			global::android.graphics.PathMeasure._PathMeasure5582 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "<init>", "(Landroid/graphics/Path;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

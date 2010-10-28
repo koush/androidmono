@@ -4,10 +4,6 @@ namespace java.security.spec
 	public partial class MGF1ParameterSpec : java.lang.Object, AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MGF1ParameterSpec()
-		{
-			InitJNI();
-		}
 		protected MGF1ParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.spec.MGF1ParameterSpec.staticClass, _SHA51224035)) as java.security.spec.MGF1ParameterSpec;
 			}
 		}
-		private static void InitJNI()
+		static MGF1ParameterSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.MGF1ParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/MGF1ParameterSpec"));
@@ -80,6 +76,9 @@ namespace java.security.spec
 			global::java.security.spec.MGF1ParameterSpec._SHA25624033 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA256", "Ljava/security/spec/MGF1ParameterSpec;");
 			global::java.security.spec.MGF1ParameterSpec._SHA38424034 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA384", "Ljava/security/spec/MGF1ParameterSpec;");
 			global::java.security.spec.MGF1ParameterSpec._SHA51224035 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA512", "Ljava/security/spec/MGF1ParameterSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

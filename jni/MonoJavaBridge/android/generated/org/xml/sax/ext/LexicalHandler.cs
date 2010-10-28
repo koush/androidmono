@@ -16,10 +16,6 @@ namespace org.xml.sax.ext
 	internal sealed partial class LexicalHandler_ : java.lang.Object, LexicalHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LexicalHandler_()
-		{
-			InitJNI();
-		}
 		internal LexicalHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.xml.sax.ext
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._endDTD35136);
 		}
-		private static void InitJNI()
+		static LexicalHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.LexicalHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/LexicalHandler"));
@@ -97,6 +93,9 @@ namespace org.xml.sax.ext
 			global::org.xml.sax.ext.LexicalHandler_._endEntity35134 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.LexicalHandler_.staticClass, "endEntity", "(Ljava/lang/String;)V");
 			global::org.xml.sax.ext.LexicalHandler_._startDTD35135 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.LexicalHandler_.staticClass, "startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::org.xml.sax.ext.LexicalHandler_._endDTD35136 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.LexicalHandler_.staticClass, "endDTD", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

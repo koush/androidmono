@@ -13,10 +13,6 @@ namespace org.apache.http.client.methods
 	internal sealed partial class HttpUriRequest_ : java.lang.Object, HttpUriRequest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpUriRequest_()
-		{
-			InitJNI();
-		}
 		internal HttpUriRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -218,7 +214,7 @@ namespace org.apache.http.client.methods
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_.staticClass, global::org.apache.http.client.methods.HttpUriRequest_._headerIterator31984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HeaderIterator;
 		}
-		private static void InitJNI()
+		static HttpUriRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpUriRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpUriRequest"));
@@ -244,6 +240,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpUriRequest_._removeHeaders31982 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpUriRequest_.staticClass, "removeHeaders", "(Ljava/lang/String;)V");
 			global::org.apache.http.client.methods.HttpUriRequest_._headerIterator31983 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpUriRequest_.staticClass, "headerIterator", "()Lorg/apache/http/HeaderIterator;");
 			global::org.apache.http.client.methods.HttpUriRequest_._headerIterator31984 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpUriRequest_.staticClass, "headerIterator", "(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

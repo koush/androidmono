@@ -18,10 +18,6 @@ namespace android.view.inputmethod
 	internal sealed partial class InputMethodSession_ : java.lang.Object, InputMethodSession
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMethodSession_()
-		{
-			InitJNI();
-		}
 		internal InputMethodSession_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace android.view.inputmethod
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_.staticClass, global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static InputMethodSession_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethodSession_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethodSession"));
@@ -119,6 +115,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputMethodSession_._updateExtractedText15986 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "updateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V");
 			global::android.view.inputmethod.InputMethodSession_._appPrivateCommand15987 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "appPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V");
 			global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "toggleSoftInput", "(II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

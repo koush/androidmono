@@ -4,10 +4,6 @@ namespace android.media
 	public partial class AudioTrack : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AudioTrack()
-		{
-			InitJNI();
-		}
 		protected AudioTrack(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -22,10 +18,6 @@ namespace android.media
 		internal sealed partial class OnPlaybackPositionUpdateListener_ : java.lang.Object, OnPlaybackPositionUpdateListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnPlaybackPositionUpdateListener_()
-			{
-				InitJNI();
-			}
 			internal OnPlaybackPositionUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,12 +39,15 @@ namespace android.media
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_.staticClass, global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_._onPeriodicNotification7178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static OnPlaybackPositionUpdateListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioTrack$OnPlaybackPositionUpdateListener"));
 				global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_._onMarkerReached7177 = @__env.GetMethodIDNoThrow(global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_.staticClass, "onMarkerReached", "(Landroid/media/AudioTrack;)V");
 				global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_._onPeriodicNotification7178 = @__env.GetMethodIDNoThrow(global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_.staticClass, "onPeriodicNotification", "(Landroid/media/AudioTrack;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize7179;
@@ -565,7 +560,7 @@ namespace android.media
 				return -3;
 			}
 		}
-		private static void InitJNI()
+		static AudioTrack()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioTrack.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioTrack"));
@@ -604,6 +599,9 @@ namespace android.media
 			global::android.media.AudioTrack._pause7211 = @__env.GetMethodIDNoThrow(global::android.media.AudioTrack.staticClass, "pause", "()V");
 			global::android.media.AudioTrack._reloadStaticData7212 = @__env.GetMethodIDNoThrow(global::android.media.AudioTrack.staticClass, "reloadStaticData", "()I");
 			global::android.media.AudioTrack._AudioTrack7213 = @__env.GetMethodIDNoThrow(global::android.media.AudioTrack.staticClass, "<init>", "(IIIIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

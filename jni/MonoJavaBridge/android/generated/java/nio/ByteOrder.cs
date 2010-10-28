@@ -4,10 +4,6 @@ namespace java.nio
 	public sealed partial class ByteOrder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ByteOrder()
-		{
-			InitJNI();
-		}
 		internal ByteOrder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -44,7 +40,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.GetStaticObjectField(global::java.nio.ByteOrder.staticClass, _LITTLE_ENDIAN22118)) as java.nio.ByteOrder;
 			}
 		}
-		private static void InitJNI()
+		static ByteOrder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ByteOrder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ByteOrder"));
@@ -52,6 +48,9 @@ namespace java.nio
 			global::java.nio.ByteOrder._nativeOrder22116 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "nativeOrder", "()Ljava/nio/ByteOrder;");
 			global::java.nio.ByteOrder._BIG_ENDIAN22117 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "BIG_ENDIAN", "Ljava/nio/ByteOrder;");
 			global::java.nio.ByteOrder._LITTLE_ENDIAN22118 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "LITTLE_ENDIAN", "Ljava/nio/ByteOrder;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

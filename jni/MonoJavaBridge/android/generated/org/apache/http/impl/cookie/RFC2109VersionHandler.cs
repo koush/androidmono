@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class RFC2109VersionHandler : org.apache.http.impl.cookie.AbstractCookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RFC2109VersionHandler()
-		{
-			InitJNI();
-		}
 		protected RFC2109VersionHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, global::org.apache.http.impl.cookie.RFC2109VersionHandler._RFC2109VersionHandler33338);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RFC2109VersionHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/RFC2109VersionHandler"));
 			global::org.apache.http.impl.cookie.RFC2109VersionHandler._parse33336 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.RFC2109VersionHandler._validate33337 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
 			global::org.apache.http.impl.cookie.RFC2109VersionHandler._RFC2109VersionHandler33338 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

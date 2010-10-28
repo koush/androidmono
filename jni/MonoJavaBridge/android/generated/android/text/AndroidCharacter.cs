@@ -4,10 +4,6 @@ namespace android.text
 	public partial class AndroidCharacter : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AndroidCharacter()
-		{
-			InitJNI();
-		}
 		protected AndroidCharacter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace android.text
 				return 5;
 			}
 		}
-		private static void InitJNI()
+		static AndroidCharacter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.AndroidCharacter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/AndroidCharacter"));
@@ -100,6 +96,9 @@ namespace android.text
 			global::android.text.AndroidCharacter._getEastAsianWidths12676 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getEastAsianWidths", "([CII[B)V");
 			global::android.text.AndroidCharacter._getMirror12677 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getMirror", "(C)C");
 			global::android.text.AndroidCharacter._AndroidCharacter12678 = @__env.GetMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

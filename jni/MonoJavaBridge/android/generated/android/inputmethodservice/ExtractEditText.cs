@@ -4,10 +4,6 @@ namespace android.inputmethodservice
 	public partial class ExtractEditText : android.widget.EditText
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExtractEditText()
-		{
-			InitJNI();
-		}
 		protected ExtractEditText(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -138,7 +134,7 @@ namespace android.inputmethodservice
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText6596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ExtractEditText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.ExtractEditText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/ExtractEditText"));
@@ -156,6 +152,9 @@ namespace android.inputmethodservice
 			global::android.inputmethodservice.ExtractEditText._ExtractEditText6594 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.inputmethodservice.ExtractEditText._ExtractEditText6595 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.inputmethodservice.ExtractEditText._ExtractEditText6596 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

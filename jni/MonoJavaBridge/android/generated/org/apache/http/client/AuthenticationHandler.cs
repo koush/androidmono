@@ -12,10 +12,6 @@ namespace org.apache.http.client
 	internal sealed partial class AuthenticationHandler_ : java.lang.Object, AuthenticationHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthenticationHandler_()
-		{
-			InitJNI();
-		}
 		internal AuthenticationHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.apache.http.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.AuthScheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.AuthenticationHandler_.staticClass, global::org.apache.http.client.AuthenticationHandler_._selectScheme31866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.auth.AuthScheme;
 		}
-		private static void InitJNI()
+		static AuthenticationHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.AuthenticationHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/AuthenticationHandler"));
 			global::org.apache.http.client.AuthenticationHandler_._isAuthenticationRequested31864 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.AuthenticationHandler_.staticClass, "isAuthenticationRequested", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
 			global::org.apache.http.client.AuthenticationHandler_._getChallenges31865 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.AuthenticationHandler_.staticClass, "getChallenges", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/util/Map;");
 			global::org.apache.http.client.AuthenticationHandler_._selectScheme31866 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.AuthenticationHandler_.staticClass, "selectScheme", "(Ljava/util/Map;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/auth/AuthScheme;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

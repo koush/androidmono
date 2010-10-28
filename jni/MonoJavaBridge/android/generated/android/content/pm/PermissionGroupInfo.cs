@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class PermissionGroupInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PermissionGroupInfo()
-		{
-			InitJNI();
-		}
 		protected PermissionGroupInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -94,7 +90,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PermissionGroupInfo.staticClass, _CREATOR3991)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PermissionGroupInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PermissionGroupInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PermissionGroupInfo"));
@@ -107,6 +103,9 @@ namespace android.content.pm
 			global::android.content.pm.PermissionGroupInfo._descriptionRes3989 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "descriptionRes", "I");
 			global::android.content.pm.PermissionGroupInfo._nonLocalizedDescription3990 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "nonLocalizedDescription", "Ljava/lang/CharSequence;");
 			global::android.content.pm.PermissionGroupInfo._CREATOR3991 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

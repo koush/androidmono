@@ -4,10 +4,6 @@ namespace android.view
 	public abstract partial class ViewGroup : android.view.View, ViewParent, ViewManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewGroup()
-		{
-			InitJNI();
-		}
 		protected ViewGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view
 		public partial class LayoutParams : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static LayoutParams()
-			{
-				InitJNI();
-			}
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -109,7 +101,7 @@ namespace android.view
 				{
 				}
 			}
-			private static void InitJNI()
+			static LayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewGroup.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup$LayoutParams"));
@@ -121,15 +113,14 @@ namespace android.view
 				global::android.view.ViewGroup.LayoutParams._height15042 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.LayoutParams.staticClass, "height", "I");
 				global::android.view.ViewGroup.LayoutParams._layoutAnimationParameters15043 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.LayoutParams.staticClass, "layoutAnimationParameters", "Landroid/view/animation/LayoutAnimationController$AnimationParameters;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MarginLayoutParams : android.view.ViewGroup.LayoutParams
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MarginLayoutParams()
-			{
-				InitJNI();
-			}
 			protected MarginLayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -218,7 +209,7 @@ namespace android.view
 				{
 				}
 			}
-			private static void InitJNI()
+			static MarginLayoutParams()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewGroup.MarginLayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup$MarginLayoutParams"));
@@ -232,6 +223,9 @@ namespace android.view
 				global::android.view.ViewGroup.MarginLayoutParams._rightMargin15051 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.MarginLayoutParams.staticClass, "rightMargin", "I");
 				global::android.view.ViewGroup.MarginLayoutParams._bottomMargin15052 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.MarginLayoutParams.staticClass, "bottomMargin", "I");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewGroup.OnHierarchyChangeListener_))]
 		public partial interface OnHierarchyChangeListener  : global::MonoJavaBridge.IJavaObject 
@@ -244,10 +238,6 @@ namespace android.view
 		internal sealed partial class OnHierarchyChangeListener_ : java.lang.Object, OnHierarchyChangeListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnHierarchyChangeListener_()
-			{
-				InitJNI();
-			}
 			internal OnHierarchyChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -269,12 +259,15 @@ namespace android.view
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewGroup.OnHierarchyChangeListener_.staticClass, global::android.view.ViewGroup.OnHierarchyChangeListener_._onChildViewRemoved15054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI()
+			static OnHierarchyChangeListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewGroup.OnHierarchyChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup$OnHierarchyChangeListener"));
 				global::android.view.ViewGroup.OnHierarchyChangeListener_._onChildViewAdded15053 = @__env.GetMethodIDNoThrow(global::android.view.ViewGroup.OnHierarchyChangeListener_.staticClass, "onChildViewAdded", "(Landroid/view/View;Landroid/view/View;)V");
 				global::android.view.ViewGroup.OnHierarchyChangeListener_._onChildViewRemoved15054 = @__env.GetMethodIDNoThrow(global::android.view.ViewGroup.OnHierarchyChangeListener_.staticClass, "onChildViewRemoved", "(Landroid/view/View;Landroid/view/View;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _debug15055;
@@ -1408,7 +1401,7 @@ namespace android.view
 				return 3;
 			}
 		}
-		private static void InitJNI()
+		static ViewGroup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup"));
@@ -1535,16 +1528,15 @@ namespace android.view
 			global::android.view.ViewGroup._ViewGroup15175 = @__env.GetMethodIDNoThrow(global::android.view.ViewGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.view.ViewGroup._ViewGroup15176 = @__env.GetMethodIDNoThrow(global::android.view.ViewGroup.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ViewGroup))]
 	internal sealed partial class ViewGroup_ : android.view.ViewGroup
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewGroup_()
-		{
-			InitJNI();
-		}
 		internal ViewGroup_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -1557,11 +1549,14 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewGroup_.staticClass, global::android.view.ViewGroup_._onLayout15184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		private static void InitJNI()
+		static ViewGroup_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewGroup_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup"));
 			global::android.view.ViewGroup_._onLayout15184 = @__env.GetMethodIDNoThrow(global::android.view.ViewGroup_.staticClass, "onLayout", "(ZIIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

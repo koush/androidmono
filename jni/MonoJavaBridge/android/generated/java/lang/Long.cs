@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Long : java.lang.Number, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Long()
-		{
-			InitJNI();
-		}
 		internal Long(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -298,7 +294,7 @@ namespace java.lang
 				return 64;
 			}
 		}
-		private static void InitJNI()
+		static Long()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Long.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Long"));
@@ -340,6 +336,9 @@ namespace java.lang
 			global::java.lang.Long._Long20278 = @__env.GetMethodIDNoThrow(global::java.lang.Long.staticClass, "<init>", "(J)V");
 			global::java.lang.Long._Long20279 = @__env.GetMethodIDNoThrow(global::java.lang.Long.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.Long._TYPE20282 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Long.staticClass, "TYPE", "Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

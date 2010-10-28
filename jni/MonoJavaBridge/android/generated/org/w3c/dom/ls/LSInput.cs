@@ -25,10 +25,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSInput_ : java.lang.Object, LSInput
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSInput_()
-		{
-			InitJNI();
-		}
 		internal LSInput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -176,7 +172,7 @@ namespace org.w3c.dom.ls
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.ls.LSInput_.staticClass, global::org.w3c.dom.ls.LSInput_._setCertifiedText34907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LSInput_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSInput_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSInput"));
@@ -196,6 +192,9 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.LSInput_._setBaseURI34905 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSInput_.staticClass, "setBaseURI", "(Ljava/lang/String;)V");
 			global::org.w3c.dom.ls.LSInput_._getCertifiedText34906 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSInput_.staticClass, "getCertifiedText", "()Z");
 			global::org.w3c.dom.ls.LSInput_._setCertifiedText34907 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSInput_.staticClass, "setCertifiedText", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

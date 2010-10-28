@@ -4,10 +4,6 @@ namespace android.service.wallpaper
 	public abstract partial class WallpaperService : android.app.Service
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WallpaperService()
-		{
-			InitJNI();
-		}
 		protected WallpaperService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.service.wallpaper
 		public partial class Engine : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Engine()
-			{
-				InitJNI();
-			}
 			protected Engine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -201,7 +193,7 @@ namespace android.service.wallpaper
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._Engine11637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static Engine()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.service.wallpaper.WallpaperService.Engine.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService$Engine"));
@@ -222,6 +214,9 @@ namespace android.service.wallpaper
 				global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged11635 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onDesiredSizeChanged", "(II)V");
 				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed11636 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
 				global::android.service.wallpaper.WallpaperService.Engine._Engine11637 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "<init>", "(Landroid/service/wallpaper/WallpaperService;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onBind11638;
@@ -274,7 +269,7 @@ namespace android.service.wallpaper
 				return "android.service.wallpaper";
 			}
 		}
-		private static void InitJNI()
+		static WallpaperService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.service.wallpaper.WallpaperService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService"));
@@ -284,16 +279,15 @@ namespace android.service.wallpaper
 			global::android.service.wallpaper.WallpaperService._onCreateEngine11641 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
 			global::android.service.wallpaper.WallpaperService._WallpaperService11642 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.service.wallpaper.WallpaperService))]
 	internal sealed partial class WallpaperService_ : android.service.wallpaper.WallpaperService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WallpaperService_()
-		{
-			InitJNI();
-		}
 		internal WallpaperService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -306,11 +300,14 @@ namespace android.service.wallpaper
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService_.staticClass, global::android.service.wallpaper.WallpaperService_._onCreateEngine11645)) as android.service.wallpaper.WallpaperService.Engine;
 		}
-		private static void InitJNI()
+		static WallpaperService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.service.wallpaper.WallpaperService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService"));
 			global::android.service.wallpaper.WallpaperService_._onCreateEngine11645 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService_.staticClass, "onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

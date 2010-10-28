@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class StringBuilder : java.lang.AbstractStringBuilder, java.io.Serializable, CharSequence
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StringBuilder()
-		{
-			InitJNI();
-		}
 		internal StringBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -397,7 +393,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StringBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.StringBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/StringBuilder"));
@@ -443,6 +439,9 @@ namespace java.lang
 			global::java.lang.StringBuilder._StringBuilder20773 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "()V");
 			global::java.lang.StringBuilder._StringBuilder20774 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.StringBuilder._StringBuilder20775 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/CharSequence;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

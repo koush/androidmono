@@ -4,10 +4,6 @@ namespace java.util
 	public partial class FormattableFlags : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FormattableFlags()
-		{
-			InitJNI();
-		}
 		protected FormattableFlags(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,10 +28,13 @@ namespace java.util
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static FormattableFlags()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.FormattableFlags.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/FormattableFlags"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

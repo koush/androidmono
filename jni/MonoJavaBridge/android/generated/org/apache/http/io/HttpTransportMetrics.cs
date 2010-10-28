@@ -11,10 +11,6 @@ namespace org.apache.http.io
 	internal sealed partial class HttpTransportMetrics_ : java.lang.Object, HttpTransportMetrics
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpTransportMetrics_()
-		{
-			InitJNI();
-		}
 		internal HttpTransportMetrics_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.apache.http.io
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_.staticClass, global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470);
 		}
-		private static void InitJNI()
+		static HttpTransportMetrics_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.HttpTransportMetrics_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/HttpTransportMetrics"));
 			global::org.apache.http.io.HttpTransportMetrics_._reset33469 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpTransportMetrics_.staticClass, "reset", "()V");
 			global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpTransportMetrics_.staticClass, "getBytesTransferred", "()J");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

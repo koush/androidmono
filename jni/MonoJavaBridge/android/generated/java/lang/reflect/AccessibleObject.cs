@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public partial class AccessibleObject : java.lang.Object, AnnotatedElement
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccessibleObject()
-		{
-			InitJNI();
-		}
 		protected AccessibleObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,7 +95,7 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._AccessibleObject21006);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AccessibleObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.AccessibleObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/AccessibleObject"));
@@ -111,6 +107,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.AccessibleObject._setAccessible21004 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "setAccessible", "(Z)V");
 			global::java.lang.reflect.AccessibleObject._isAccessible21005 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "isAccessible", "()Z");
 			global::java.lang.reflect.AccessibleObject._AccessibleObject21006 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

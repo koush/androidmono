@@ -11,10 +11,6 @@ namespace junit.runner
 	internal sealed partial class TestSuiteLoader_ : java.lang.Object, TestSuiteLoader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestSuiteLoader_()
-		{
-			InitJNI();
-		}
 		internal TestSuiteLoader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace junit.runner
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._reload31470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static TestSuiteLoader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.TestSuiteLoader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/TestSuiteLoader"));
 			global::junit.runner.TestSuiteLoader_._load31469 = @__env.GetMethodIDNoThrow(global::junit.runner.TestSuiteLoader_.staticClass, "load", "(Ljava/lang/String;)Ljava/lang/Class;");
 			global::junit.runner.TestSuiteLoader_._reload31470 = @__env.GetMethodIDNoThrow(global::junit.runner.TestSuiteLoader_.staticClass, "reload", "(Ljava/lang/Class;)Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

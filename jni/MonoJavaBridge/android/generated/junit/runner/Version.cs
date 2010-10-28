@@ -4,10 +4,6 @@ namespace junit.runner
 	public partial class Version : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Version()
-		{
-			InitJNI();
-		}
 		protected Version(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -17,11 +13,14 @@ namespace junit.runner
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.Version.staticClass, global::junit.runner.Version._id31471)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Version()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.Version.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/Version"));
 			global::junit.runner.Version._id31471 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.Version.staticClass, "id", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

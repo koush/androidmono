@@ -4,10 +4,6 @@ namespace android.app
 	public partial class LocalActivityManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocalActivityManager()
-		{
-			InitJNI();
-		}
 		protected LocalActivityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -140,7 +136,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._LocalActivityManager1967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LocalActivityManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LocalActivityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LocalActivityManager"));
@@ -157,6 +153,9 @@ namespace android.app
 			global::android.app.LocalActivityManager._removeAllActivities1965 = @__env.GetMethodIDNoThrow(global::android.app.LocalActivityManager.staticClass, "removeAllActivities", "()V");
 			global::android.app.LocalActivityManager._dispatchDestroy1966 = @__env.GetMethodIDNoThrow(global::android.app.LocalActivityManager.staticClass, "dispatchDestroy", "(Z)V");
 			global::android.app.LocalActivityManager._LocalActivityManager1967 = @__env.GetMethodIDNoThrow(global::android.app.LocalActivityManager.staticClass, "<init>", "(Landroid/app/Activity;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

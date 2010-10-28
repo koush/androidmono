@@ -10,10 +10,6 @@ namespace java.util.prefs
 	internal sealed partial class PreferenceChangeListener_ : java.lang.Object, PreferenceChangeListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceChangeListener_()
-		{
-			InitJNI();
-		}
 		internal PreferenceChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util.prefs
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.PreferenceChangeListener_.staticClass, global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static PreferenceChangeListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.PreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/PreferenceChangeListener"));
 			global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeListener_.staticClass, "preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

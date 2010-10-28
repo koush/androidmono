@@ -4,10 +4,6 @@ namespace java.io
 	public partial class InvalidClassException : java.io.ObjectStreamException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InvalidClassException()
-		{
-			InitJNI();
-		}
 		protected InvalidClassException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,7 +49,7 @@ namespace java.io
 			{
 			}
 		}
-		private static void InitJNI()
+		static InvalidClassException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InvalidClassException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InvalidClassException"));
@@ -61,6 +57,9 @@ namespace java.io
 			global::java.io.InvalidClassException._InvalidClassException19118 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.io.InvalidClassException._InvalidClassException19119 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.io.InvalidClassException._classname19120 = @__env.GetFieldIDNoThrow(global::java.io.InvalidClassException.staticClass, "classname", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

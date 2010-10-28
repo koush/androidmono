@@ -4,10 +4,6 @@ namespace java.security
 	public partial class DigestOutputStream : java.io.FilterOutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DigestOutputStream()
-		{
-			InitJNI();
-		}
 		protected DigestOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -83,7 +79,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.DigestOutputStream.staticClass, global::java.security.DigestOutputStream._DigestOutputStream22951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DigestOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.DigestOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/DigestOutputStream"));
@@ -94,6 +90,9 @@ namespace java.security
 			global::java.security.DigestOutputStream._getMessageDigest22949 = @__env.GetMethodIDNoThrow(global::java.security.DigestOutputStream.staticClass, "getMessageDigest", "()Ljava/security/MessageDigest;");
 			global::java.security.DigestOutputStream._setMessageDigest22950 = @__env.GetMethodIDNoThrow(global::java.security.DigestOutputStream.staticClass, "setMessageDigest", "(Ljava/security/MessageDigest;)V");
 			global::java.security.DigestOutputStream._DigestOutputStream22951 = @__env.GetMethodIDNoThrow(global::java.security.DigestOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/security/MessageDigest;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

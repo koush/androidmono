@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class FilterWriter : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterWriter()
-		{
-			InitJNI();
-		}
 		protected FilterWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilterWriter.staticClass, global::java.io.FilterWriter._FilterWriter19088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static FilterWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilterWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilterWriter"));
@@ -74,23 +70,25 @@ namespace java.io
 			global::java.io.FilterWriter._close19087 = @__env.GetMethodIDNoThrow(global::java.io.FilterWriter.staticClass, "close", "()V");
 			global::java.io.FilterWriter._FilterWriter19088 = @__env.GetMethodIDNoThrow(global::java.io.FilterWriter.staticClass, "<init>", "(Ljava/io/Writer;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.FilterWriter))]
 	internal sealed partial class FilterWriter_ : java.io.FilterWriter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FilterWriter_()
-		{
-			InitJNI();
-		}
 		internal FilterWriter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static FilterWriter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilterWriter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilterWriter"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

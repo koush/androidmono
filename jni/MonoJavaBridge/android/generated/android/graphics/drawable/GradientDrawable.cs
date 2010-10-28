@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class GradientDrawable : android.graphics.drawable.Drawable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GradientDrawable()
-		{
-			InitJNI();
-		}
 		protected GradientDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics.drawable
 		public sealed partial class Orientation : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Orientation()
-			{
-				InitJNI();
-			}
 			internal Orientation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -106,7 +98,7 @@ namespace android.graphics.drawable
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TR_BL6028)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
-			private static void InitJNI()
+			static Orientation()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.GradientDrawable.Orientation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/GradientDrawable$Orientation"));
@@ -120,6 +112,9 @@ namespace android.graphics.drawable
 				global::android.graphics.drawable.GradientDrawable.Orientation._TL_BR6026 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "TL_BR", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._TOP_BOTTOM6027 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "TOP_BOTTOM", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._TR_BL6028 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "TR_BL", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _setSize6029;
@@ -515,7 +510,7 @@ namespace android.graphics.drawable
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static GradientDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.GradientDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/GradientDrawable"));
@@ -546,6 +541,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.GradientDrawable._setUseLevel6053 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setUseLevel", "(Z)V");
 			global::android.graphics.drawable.GradientDrawable._GradientDrawable6054 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V");
 			global::android.graphics.drawable.GradientDrawable._GradientDrawable6055 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

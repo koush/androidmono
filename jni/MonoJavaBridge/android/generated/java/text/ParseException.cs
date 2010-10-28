@@ -4,10 +4,6 @@ namespace java.text
 	public partial class ParseException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParseException()
-		{
-			InitJNI();
-		}
 		protected ParseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.ParseException.staticClass, global::java.text.ParseException._ParseException25612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ParseException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.ParseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/ParseException"));
 			global::java.text.ParseException._getErrorOffset25611 = @__env.GetMethodIDNoThrow(global::java.text.ParseException.staticClass, "getErrorOffset", "()I");
 			global::java.text.ParseException._ParseException25612 = @__env.GetMethodIDNoThrow(global::java.text.ParseException.staticClass, "<init>", "(Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

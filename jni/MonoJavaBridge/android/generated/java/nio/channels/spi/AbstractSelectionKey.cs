@@ -4,10 +4,6 @@ namespace java.nio.channels.spi
 	public abstract partial class AbstractSelectionKey : java.nio.channels.SelectionKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSelectionKey()
-		{
-			InitJNI();
-		}
 		protected AbstractSelectionKey(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,7 +32,7 @@ namespace java.nio.channels.spi
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.AbstractSelectionKey.staticClass, global::java.nio.channels.spi.AbstractSelectionKey._AbstractSelectionKey22684);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractSelectionKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.AbstractSelectionKey.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/AbstractSelectionKey"));
@@ -44,16 +40,15 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.AbstractSelectionKey._cancel22683 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectionKey.staticClass, "cancel", "()V");
 			global::java.nio.channels.spi.AbstractSelectionKey._AbstractSelectionKey22684 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectionKey.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.spi.AbstractSelectionKey))]
 	internal sealed partial class AbstractSelectionKey_ : java.nio.channels.spi.AbstractSelectionKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractSelectionKey_()
-		{
-			InitJNI();
-		}
 		internal AbstractSelectionKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +97,7 @@ namespace java.nio.channels.spi
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectionKey_.staticClass, global::java.nio.channels.spi.AbstractSelectionKey_._readyOps22689);
 		}
-		private static void InitJNI()
+		static AbstractSelectionKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.AbstractSelectionKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/AbstractSelectionKey"));
@@ -111,6 +106,9 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.AbstractSelectionKey_._interestOps22687 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectionKey_.staticClass, "interestOps", "()I");
 			global::java.nio.channels.spi.AbstractSelectionKey_._interestOps22688 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectionKey_.staticClass, "interestOps", "(I)Ljava/nio/channels/SelectionKey;");
 			global::java.nio.channels.spi.AbstractSelectionKey_._readyOps22689 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectionKey_.staticClass, "readyOps", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

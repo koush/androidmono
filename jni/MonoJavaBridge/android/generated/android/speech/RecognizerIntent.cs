@@ -4,10 +4,6 @@ namespace android.speech
 	public partial class RecognizerIntent : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RecognizerIntent()
-		{
-			InitJNI();
-		}
 		protected RecognizerIntent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -199,11 +195,14 @@ namespace android.speech
 				return "android.speech.extra.SUPPORTED_LANGUAGES";
 			}
 		}
-		private static void InitJNI()
+		static RecognizerIntent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognizerIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognizerIntent"));
 			global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674 = @__env.GetStaticMethodIDNoThrow(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

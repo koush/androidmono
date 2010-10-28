@@ -11,10 +11,6 @@ namespace java.security.acl
 	internal sealed partial class Permission_ : java.lang.Object, Permission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Permission_()
-		{
-			InitJNI();
-		}
 		internal Permission_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.security.acl
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Permission_.staticClass, global::java.security.acl.Permission_._toString23466)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Permission_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.acl.Permission_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/acl/Permission"));
 			global::java.security.acl.Permission_._equals23465 = @__env.GetMethodIDNoThrow(global::java.security.acl.Permission_.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			global::java.security.acl.Permission_._toString23466 = @__env.GetMethodIDNoThrow(global::java.security.acl.Permission_.staticClass, "toString", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

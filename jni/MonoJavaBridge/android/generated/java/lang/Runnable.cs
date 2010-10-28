@@ -10,10 +10,6 @@ namespace java.lang
 	internal sealed partial class Runnable_ : java.lang.Object, Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Runnable_()
-		{
-			InitJNI();
-		}
 		internal Runnable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.lang
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Runnable_.staticClass, global::java.lang.Runnable_._run20428);
 		}
-		private static void InitJNI()
+		static Runnable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Runnable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Runnable"));
 			global::java.lang.Runnable_._run20428 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace java.lang
 	internal partial class RunnableDelegateWrapper : java.lang.Object, Runnable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RunnableDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected RunnableDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RunnableDelegateWrapper.staticClass, global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RunnableDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.RunnableDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("internal/java/lang/RunnableDelegateWrapper"));
 			global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429 = @__env.GetMethodIDNoThrow(global::java.lang.RunnableDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class RunnableDelegateWrapper

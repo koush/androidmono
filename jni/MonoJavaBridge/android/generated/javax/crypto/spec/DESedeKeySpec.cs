@@ -4,10 +4,6 @@ namespace javax.crypto.spec
 	public partial class DESedeKeySpec : java.lang.Object, java.security.spec.KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DESedeKeySpec()
-		{
-			InitJNI();
-		}
 		protected DESedeKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace javax.crypto.spec
 				return 24;
 			}
 		}
-		private static void InitJNI()
+		static DESedeKeySpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.DESedeKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/DESedeKeySpec"));
@@ -62,6 +58,9 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.DESedeKeySpec._isParityAdjusted28763 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESedeKeySpec.staticClass, "isParityAdjusted", "([BI)Z");
 			global::javax.crypto.spec.DESedeKeySpec._DESedeKeySpec28764 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESedeKeySpec.staticClass, "<init>", "([B)V");
 			global::javax.crypto.spec.DESedeKeySpec._DESedeKeySpec28765 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESedeKeySpec.staticClass, "<init>", "([BI)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

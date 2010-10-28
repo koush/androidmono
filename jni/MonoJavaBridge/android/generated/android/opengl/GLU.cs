@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLU : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLU()
-		{
-			InitJNI();
-		}
 		protected GLU(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLU.staticClass, global::android.opengl.GLU._GLU9464);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static GLU()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLU.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLU"));
@@ -65,6 +61,9 @@ namespace android.opengl
 			global::android.opengl.GLU._gluProject9462 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLU.staticClass, "gluProject", "(FFF[FI[FI[II[FI)I");
 			global::android.opengl.GLU._gluUnProject9463 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLU.staticClass, "gluUnProject", "(FFF[FI[FI[II[FI)I");
 			global::android.opengl.GLU._GLU9464 = @__env.GetMethodIDNoThrow(global::android.opengl.GLU.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

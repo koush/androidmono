@@ -4,10 +4,6 @@ namespace org.xml.sax.helpers
 	public partial class ParserAdapter : java.lang.Object, XMLReader, DocumentHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ParserAdapter()
-		{
-			InitJNI();
-		}
 		protected ParserAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -274,7 +270,7 @@ namespace org.xml.sax.helpers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.ParserAdapter.staticClass, global::org.xml.sax.helpers.ParserAdapter._ParserAdapter35251);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ParserAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.ParserAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/ParserAdapter"));
@@ -302,6 +298,9 @@ namespace org.xml.sax.helpers
 			global::org.xml.sax.helpers.ParserAdapter._getErrorHandler35249 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.ParserAdapter.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
 			global::org.xml.sax.helpers.ParserAdapter._ParserAdapter35250 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.ParserAdapter.staticClass, "<init>", "(Lorg/xml/sax/Parser;)V");
 			global::org.xml.sax.helpers.ParserAdapter._ParserAdapter35251 = @__env.GetMethodIDNoThrow(global::org.xml.sax.helpers.ParserAdapter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

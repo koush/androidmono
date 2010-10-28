@@ -4,10 +4,6 @@ namespace android.view
 	public partial class ViewDebug : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ViewDebug()
-		{
-			InitJNI();
-		}
 		protected ViewDebug(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.view
 		internal sealed partial class CapturedViewProperty_ : java.lang.Object, CapturedViewProperty
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static CapturedViewProperty_()
-			{
-				InitJNI();
-			}
 			internal CapturedViewProperty_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -73,7 +65,7 @@ namespace android.view
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981)) as java.lang.Class;
 			}
-			private static void InitJNI()
+			static CapturedViewProperty_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.CapturedViewProperty_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$CapturedViewProperty"));
@@ -82,6 +74,9 @@ namespace android.view
 				global::android.view.ViewDebug.CapturedViewProperty_._toString14979 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "hashCode", "()I");
 				global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "annotationType", "()Ljava/lang/Class;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.ExportedProperty_))]
@@ -99,10 +94,6 @@ namespace android.view
 		internal sealed partial class ExportedProperty_ : java.lang.Object, ExportedProperty
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ExportedProperty_()
-			{
-				InitJNI();
-			}
 			internal ExportedProperty_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -196,7 +187,7 @@ namespace android.view
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._annotationType14991)) as java.lang.Class;
 			}
-			private static void InitJNI()
+			static ExportedProperty_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.ExportedProperty_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$ExportedProperty"));
@@ -210,6 +201,9 @@ namespace android.view
 				global::android.view.ViewDebug.ExportedProperty_._toString14989 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.view.ViewDebug.ExportedProperty_._hashCode14990 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "hashCode", "()I");
 				global::android.view.ViewDebug.ExportedProperty_._annotationType14991 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "annotationType", "()Ljava/lang/Class;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.FlagToString_))]
@@ -225,10 +219,6 @@ namespace android.view
 		internal sealed partial class FlagToString_ : java.lang.Object, FlagToString
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static FlagToString_()
-			{
-				InitJNI();
-			}
 			internal FlagToString_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -304,7 +294,7 @@ namespace android.view
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._annotationType14999)) as java.lang.Class;
 			}
-			private static void InitJNI()
+			static FlagToString_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.FlagToString_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$FlagToString"));
@@ -317,15 +307,14 @@ namespace android.view
 				global::android.view.ViewDebug.FlagToString_._hashCode14998 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "hashCode", "()I");
 				global::android.view.ViewDebug.FlagToString_._annotationType14999 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "annotationType", "()Ljava/lang/Class;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class HierarchyTraceType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static HierarchyTraceType()
-			{
-				InitJNI();
-			}
 			internal HierarchyTraceType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -413,7 +402,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _REQUEST_LAYOUT15009)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
-			private static void InitJNI()
+			static HierarchyTraceType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.HierarchyTraceType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$HierarchyTraceType"));
@@ -428,6 +417,9 @@ namespace android.view
 				global::android.view.ViewDebug.HierarchyTraceType._ON_MEASURE15008 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "ON_MEASURE", "Landroid/view/ViewDebug$HierarchyTraceType;");
 				global::android.view.ViewDebug.HierarchyTraceType._REQUEST_LAYOUT15009 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "REQUEST_LAYOUT", "Landroid/view/ViewDebug$HierarchyTraceType;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.IntToString_))]
 		public partial interface IntToString : java.lang.annotation.Annotation
@@ -440,10 +432,6 @@ namespace android.view
 		internal sealed partial class IntToString_ : java.lang.Object, IntToString
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static IntToString_()
-			{
-				InitJNI();
-			}
 			internal IntToString_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -501,7 +489,7 @@ namespace android.view
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._annotationType15015)) as java.lang.Class;
 			}
-			private static void InitJNI()
+			static IntToString_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.IntToString_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$IntToString"));
@@ -512,15 +500,14 @@ namespace android.view
 				global::android.view.ViewDebug.IntToString_._hashCode15014 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "hashCode", "()I");
 				global::android.view.ViewDebug.IntToString_._annotationType15015 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "annotationType", "()Ljava/lang/Class;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class RecyclerTraceType : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RecyclerTraceType()
-			{
-				InitJNI();
-			}
 			internal RecyclerTraceType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -590,7 +577,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _RECYCLE_FROM_SCRAP_HEAP15023)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
-			private static void InitJNI()
+			static RecyclerTraceType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.RecyclerTraceType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$RecyclerTraceType"));
@@ -602,6 +589,9 @@ namespace android.view
 				global::android.view.ViewDebug.RecyclerTraceType._NEW_VIEW15021 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "NEW_VIEW", "Landroid/view/ViewDebug$RecyclerTraceType;");
 				global::android.view.ViewDebug.RecyclerTraceType._RECYCLE_FROM_ACTIVE_HEAP15022 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "RECYCLE_FROM_ACTIVE_HEAP", "Landroid/view/ViewDebug$RecyclerTraceType;");
 				global::android.view.ViewDebug.RecyclerTraceType._RECYCLE_FROM_SCRAP_HEAP15023 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "RECYCLE_FROM_SCRAP_HEAP", "Landroid/view/ViewDebug$RecyclerTraceType;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _trace15024;
@@ -667,7 +657,7 @@ namespace android.view
 				return false;
 			}
 		}
-		private static void InitJNI()
+		static ViewDebug()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewDebug.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug"));
@@ -679,6 +669,9 @@ namespace android.view
 			global::android.view.ViewDebug._stopHierarchyTracing15029 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewDebug.staticClass, "stopHierarchyTracing", "()V");
 			global::android.view.ViewDebug._dumpCapturedView15030 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewDebug.staticClass, "dumpCapturedView", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::android.view.ViewDebug._ViewDebug15031 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

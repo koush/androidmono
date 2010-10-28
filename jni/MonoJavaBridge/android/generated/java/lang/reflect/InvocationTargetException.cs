@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public partial class InvocationTargetException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InvocationTargetException()
-		{
-			InitJNI();
-		}
 		protected InvocationTargetException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -64,7 +60,7 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._InvocationTargetException21089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InvocationTargetException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.InvocationTargetException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/InvocationTargetException"));
@@ -73,6 +69,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.InvocationTargetException._InvocationTargetException21087 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.InvocationTargetException.staticClass, "<init>", "()V");
 			global::java.lang.reflect.InvocationTargetException._InvocationTargetException21088 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.InvocationTargetException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::java.lang.reflect.InvocationTargetException._InvocationTargetException21089 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.InvocationTargetException.staticClass, "<init>", "(Ljava/lang/Throwable;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

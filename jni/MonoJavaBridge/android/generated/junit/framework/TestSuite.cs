@@ -4,10 +4,6 @@ namespace junit.framework
 	public partial class TestSuite : java.lang.Object, Test
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestSuite()
-		{
-			InitJNI();
-		}
 		protected TestSuite(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -161,7 +157,7 @@ namespace junit.framework
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._TestSuite31434);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestSuite.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestSuite"));
@@ -182,6 +178,9 @@ namespace junit.framework
 			global::junit.framework.TestSuite._TestSuite31432 = @__env.GetMethodIDNoThrow(global::junit.framework.TestSuite.staticClass, "<init>", "(Ljava/lang/Class;)V");
 			global::junit.framework.TestSuite._TestSuite31433 = @__env.GetMethodIDNoThrow(global::junit.framework.TestSuite.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::junit.framework.TestSuite._TestSuite31434 = @__env.GetMethodIDNoThrow(global::junit.framework.TestSuite.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.app
 	public partial class ActivityManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityManager()
-		{
-			InitJNI();
-		}
 		protected ActivityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.app
 		public partial class MemoryInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MemoryInfo()
-			{
-				InitJNI();
-			}
 			protected MemoryInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -101,7 +93,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.MemoryInfo.staticClass, _CREATOR1560)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static MemoryInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.MemoryInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$MemoryInfo"));
@@ -114,15 +106,14 @@ namespace android.app
 				global::android.app.ActivityManager.MemoryInfo._lowMemory1559 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "lowMemory", "Z");
 				global::android.app.ActivityManager.MemoryInfo._CREATOR1560 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class ProcessErrorStateInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ProcessErrorStateInfo()
-			{
-				InitJNI();
-			}
 			protected ProcessErrorStateInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -298,7 +289,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, _CREATOR1577)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static ProcessErrorStateInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$ProcessErrorStateInfo"));
@@ -317,15 +308,14 @@ namespace android.app
 				global::android.app.ActivityManager.ProcessErrorStateInfo._crashData1576 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "crashData", "[B");
 				global::android.app.ActivityManager.ProcessErrorStateInfo._CREATOR1577 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class RecentTaskInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RecentTaskInfo()
-			{
-				InitJNI();
-			}
 			protected RecentTaskInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -408,7 +398,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.RecentTaskInfo.staticClass, _CREATOR1585)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static RecentTaskInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RecentTaskInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RecentTaskInfo"));
@@ -421,15 +411,14 @@ namespace android.app
 				global::android.app.ActivityManager.RecentTaskInfo._origActivity1584 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "origActivity", "Landroid/content/ComponentName;");
 				global::android.app.ActivityManager.RecentTaskInfo._CREATOR1585 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class RunningAppProcessInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RunningAppProcessInfo()
-			{
-				InitJNI();
-			}
 			protected RunningAppProcessInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -647,7 +636,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, _CREATOR1608)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static RunningAppProcessInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningAppProcessInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningAppProcessInfo"));
@@ -667,15 +656,14 @@ namespace android.app
 				global::android.app.ActivityManager.RunningAppProcessInfo._importanceReasonComponent1607 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "importanceReasonComponent", "Landroid/content/ComponentName;");
 				global::android.app.ActivityManager.RunningAppProcessInfo._CREATOR1608 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class RunningServiceInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RunningServiceInfo()
-			{
-				InitJNI();
-			}
 			protected RunningServiceInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -918,7 +906,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.RunningServiceInfo.staticClass, _CREATOR1631)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static RunningServiceInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningServiceInfo"));
@@ -942,15 +930,14 @@ namespace android.app
 				global::android.app.ActivityManager.RunningServiceInfo._clientLabel1630 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "clientLabel", "I");
 				global::android.app.ActivityManager.RunningServiceInfo._CREATOR1631 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class RunningTaskInfo : java.lang.Object, android.os.Parcelable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RunningTaskInfo()
-			{
-				InitJNI();
-			}
 			protected RunningTaskInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1081,7 +1068,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.ActivityManager.RunningTaskInfo.staticClass, _CREATOR1643)) as android.os.Parcelable_Creator;
 				}
 			}
-			private static void InitJNI()
+			static RunningTaskInfo()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningTaskInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningTaskInfo"));
@@ -1097,6 +1084,9 @@ namespace android.app
 				global::android.app.ActivityManager.RunningTaskInfo._numActivities1641 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "numActivities", "I");
 				global::android.app.ActivityManager.RunningTaskInfo._numRunning1642 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "numRunning", "I");
 				global::android.app.ActivityManager.RunningTaskInfo._CREATOR1643 = @__env.GetStaticFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new int MemoryClass
@@ -1248,7 +1238,7 @@ namespace android.app
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static ActivityManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ActivityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager"));
@@ -1265,6 +1255,9 @@ namespace android.app
 			global::android.app.ActivityManager._killBackgroundProcesses1654 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "killBackgroundProcesses", "(Ljava/lang/String;)V");
 			global::android.app.ActivityManager._getDeviceConfigurationInfo1655 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getDeviceConfigurationInfo", "()Landroid/content/pm/ConfigurationInfo;");
 			global::android.app.ActivityManager._isUserAMonkey1656 = @__env.GetStaticMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "isUserAMonkey", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

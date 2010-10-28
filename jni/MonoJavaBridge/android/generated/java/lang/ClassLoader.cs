@@ -4,10 +4,6 @@ namespace java.lang
 	public abstract partial class ClassLoader : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClassLoader()
-		{
-			InitJNI();
-		}
 		protected ClassLoader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -274,7 +270,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassLoader.staticClass, global::java.lang.ClassLoader._ClassLoader20070);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ClassLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ClassLoader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ClassLoader"));
@@ -310,23 +306,25 @@ namespace java.lang
 			global::java.lang.ClassLoader._ClassLoader20069 = @__env.GetMethodIDNoThrow(global::java.lang.ClassLoader.staticClass, "<init>", "(Ljava/lang/ClassLoader;)V");
 			global::java.lang.ClassLoader._ClassLoader20070 = @__env.GetMethodIDNoThrow(global::java.lang.ClassLoader.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.ClassLoader))]
 	internal sealed partial class ClassLoader_ : java.lang.ClassLoader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClassLoader_()
-		{
-			InitJNI();
-		}
 		internal ClassLoader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ClassLoader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ClassLoader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ClassLoader"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

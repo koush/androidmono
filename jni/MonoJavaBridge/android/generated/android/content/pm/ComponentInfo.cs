@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class ComponentInfo : android.content.pm.PackageItemInfo
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ComponentInfo()
-		{
-			InitJNI();
-		}
 		protected ComponentInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +148,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		private static void InitJNI()
+		static ComponentInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ComponentInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ComponentInfo"));
@@ -169,6 +165,9 @@ namespace android.content.pm
 			global::android.content.pm.ComponentInfo._descriptionRes3698 = @__env.GetFieldIDNoThrow(global::android.content.pm.ComponentInfo.staticClass, "descriptionRes", "I");
 			global::android.content.pm.ComponentInfo._enabled3699 = @__env.GetFieldIDNoThrow(global::android.content.pm.ComponentInfo.staticClass, "enabled", "Z");
 			global::android.content.pm.ComponentInfo._exported3700 = @__env.GetFieldIDNoThrow(global::android.content.pm.ComponentInfo.staticClass, "exported", "Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

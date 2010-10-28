@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class HttpAuthHandler : android.os.Handler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpAuthHandler()
-		{
-			InitJNI();
-		}
 		protected HttpAuthHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -47,7 +43,7 @@ namespace android.webkit
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword16054);
 		}
-		private static void InitJNI()
+		static HttpAuthHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.HttpAuthHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/HttpAuthHandler"));
@@ -55,6 +51,9 @@ namespace android.webkit
 			global::android.webkit.HttpAuthHandler._handleMessage16052 = @__env.GetMethodIDNoThrow(global::android.webkit.HttpAuthHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V");
 			global::android.webkit.HttpAuthHandler._proceed16053 = @__env.GetMethodIDNoThrow(global::android.webkit.HttpAuthHandler.staticClass, "proceed", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword16054 = @__env.GetMethodIDNoThrow(global::android.webkit.HttpAuthHandler.staticClass, "useHttpAuthUsernamePassword", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

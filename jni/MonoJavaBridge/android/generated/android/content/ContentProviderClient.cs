@@ -4,10 +4,6 @@ namespace android.content
 	public partial class ContentProviderClient : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProviderClient()
-		{
-			InitJNI();
-		}
 		protected ContentProviderClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -117,7 +113,7 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._getLocalContentProvider2672)) as android.content.ContentProvider;
 		}
-		private static void InitJNI()
+		static ContentProviderClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProviderClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProviderClient"));
@@ -132,6 +128,9 @@ namespace android.content
 			global::android.content.ContentProviderClient._openFile2670 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderClient.staticClass, "openFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;");
 			global::android.content.ContentProviderClient._openAssetFile2671 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderClient.staticClass, "openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
 			global::android.content.ContentProviderClient._getLocalContentProvider2672 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderClient.staticClass, "getLocalContentProvider", "()Landroid/content/ContentProvider;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

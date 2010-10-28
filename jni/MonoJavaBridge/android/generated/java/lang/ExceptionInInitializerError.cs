@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class ExceptionInInitializerError : java.lang.LinkageError
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExceptionInInitializerError()
-		{
-			InitJNI();
-		}
 		protected ExceptionInInitializerError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -64,7 +60,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ExceptionInInitializerError.staticClass, global::java.lang.ExceptionInInitializerError._ExceptionInInitializerError20141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ExceptionInInitializerError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ExceptionInInitializerError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ExceptionInInitializerError"));
@@ -73,6 +69,9 @@ namespace java.lang
 			global::java.lang.ExceptionInInitializerError._ExceptionInInitializerError20139 = @__env.GetMethodIDNoThrow(global::java.lang.ExceptionInInitializerError.staticClass, "<init>", "()V");
 			global::java.lang.ExceptionInInitializerError._ExceptionInInitializerError20140 = @__env.GetMethodIDNoThrow(global::java.lang.ExceptionInInitializerError.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::java.lang.ExceptionInInitializerError._ExceptionInInitializerError20141 = @__env.GetMethodIDNoThrow(global::java.lang.ExceptionInInitializerError.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

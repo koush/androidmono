@@ -10,10 +10,6 @@ namespace android.test
 	internal sealed partial class TestSuiteProvider_ : java.lang.Object, TestSuiteProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestSuiteProvider_()
-		{
-			InitJNI();
-		}
 		internal TestSuiteProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.test
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_.staticClass, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
 		}
-		private static void InitJNI()
+		static TestSuiteProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.TestSuiteProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/TestSuiteProvider"));
 			global::android.test.TestSuiteProvider_._getTestSuite12323 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProvider_.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.test
 	internal partial class TestSuiteProviderDelegateWrapper : java.lang.Object, TestSuiteProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestSuiteProviderDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected TestSuiteProviderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.TestSuiteProviderDelegateWrapper.staticClass, global::android.test.TestSuiteProviderDelegateWrapper._TestSuiteProviderDelegateWrapper12324);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestSuiteProviderDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.TestSuiteProviderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/TestSuiteProviderDelegateWrapper"));
 			global::android.test.TestSuiteProviderDelegateWrapper._TestSuiteProviderDelegateWrapper12324 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProviderDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class TestSuiteProviderDelegateWrapper

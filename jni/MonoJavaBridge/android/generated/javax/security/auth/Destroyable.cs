@@ -11,10 +11,6 @@ namespace javax.security.auth
 	internal sealed partial class Destroyable_ : java.lang.Object, Destroyable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Destroyable_()
-		{
-			InitJNI();
-		}
 		internal Destroyable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace javax.security.auth
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._isDestroyed30168);
 		}
-		private static void InitJNI()
+		static Destroyable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Destroyable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Destroyable"));
 			global::javax.security.auth.Destroyable_._destroy30167 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V");
 			global::javax.security.auth.Destroyable_._isDestroyed30168 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public partial class UnresolvedAddressException : java.lang.IllegalArgumentException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UnresolvedAddressException()
-		{
-			InitJNI();
-		}
 		protected UnresolvedAddressException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.UnresolvedAddressException.staticClass, global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22655);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UnresolvedAddressException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.UnresolvedAddressException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/UnresolvedAddressException"));
 			global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22655 = @__env.GetMethodIDNoThrow(global::java.nio.channels.UnresolvedAddressException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

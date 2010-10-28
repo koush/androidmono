@@ -4,10 +4,6 @@ namespace android.appwidget
 	public partial class AppWidgetManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AppWidgetManager()
-		{
-			InitJNI();
-		}
 		protected AppWidgetManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -171,7 +167,7 @@ namespace android.appwidget
 				return "android.appwidget.provider";
 			}
 		}
-		private static void InitJNI()
+		static AppWidgetManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.appwidget.AppWidgetManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetManager"));
@@ -183,6 +179,9 @@ namespace android.appwidget
 			global::android.appwidget.AppWidgetManager._getInstalledProviders2368 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "getInstalledProviders", "()Ljava/util/List;");
 			global::android.appwidget.AppWidgetManager._bindAppWidgetId2369 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "bindAppWidgetId", "(ILandroid/content/ComponentName;)V");
 			global::android.appwidget.AppWidgetManager._getAppWidgetIds2370 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetIds", "(Landroid/content/ComponentName;)[I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

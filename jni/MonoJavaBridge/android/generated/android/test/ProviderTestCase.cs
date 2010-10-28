@@ -4,10 +4,6 @@ namespace android.test
 	public abstract partial class ProviderTestCase : android.test.InstrumentationTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProviderTestCase()
-		{
-			InitJNI();
-		}
 		protected ProviderTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -60,7 +56,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ProviderTestCase.staticClass, global::android.test.ProviderTestCase._ProviderTestCase12279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ProviderTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ProviderTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ProviderTestCase"));
@@ -71,23 +67,25 @@ namespace android.test
 			global::android.test.ProviderTestCase._newResolverWithContentProviderFromSql12278 = @__env.GetStaticMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "newResolverWithContentProviderFromSql", "(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/ContentResolver;");
 			global::android.test.ProviderTestCase._ProviderTestCase12279 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "<init>", "(Ljava/lang/Class;Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.ProviderTestCase))]
 	internal sealed partial class ProviderTestCase_ : android.test.ProviderTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProviderTestCase_()
-		{
-			InitJNI();
-		}
 		internal ProviderTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ProviderTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ProviderTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ProviderTestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

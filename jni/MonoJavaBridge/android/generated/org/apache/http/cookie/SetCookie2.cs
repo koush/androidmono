@@ -12,10 +12,6 @@ namespace org.apache.http.cookie
 	internal sealed partial class SetCookie2_ : java.lang.Object, SetCookie2
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SetCookie2_()
-		{
-			InitJNI();
-		}
 		internal SetCookie2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -217,7 +213,7 @@ namespace org.apache.http.cookie
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.cookie.SetCookie2_.staticClass, global::org.apache.http.cookie.SetCookie2_._isExpired32480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static SetCookie2_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.SetCookie2_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/SetCookie2"));
@@ -243,6 +239,9 @@ namespace org.apache.http.cookie
 			global::org.apache.http.cookie.SetCookie2_._getExpiryDate32478 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.SetCookie2_.staticClass, "getExpiryDate", "()Ljava/util/Date;");
 			global::org.apache.http.cookie.SetCookie2_._getPorts32479 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.SetCookie2_.staticClass, "getPorts", "()[I");
 			global::org.apache.http.cookie.SetCookie2_._isExpired32480 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.SetCookie2_.staticClass, "isExpired", "(Ljava/util/Date;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

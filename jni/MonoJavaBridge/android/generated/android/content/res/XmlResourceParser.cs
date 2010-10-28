@@ -10,10 +10,6 @@ namespace android.content.res
 	internal sealed partial class XmlResourceParser_ : java.lang.Object, XmlResourceParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XmlResourceParser_()
-		{
-			InitJNI();
-		}
 		internal XmlResourceParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -557,7 +553,7 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.XmlResourceParser_.staticClass, global::android.content.res.XmlResourceParser_._getStyleAttribute4343);
 		}
-		private static void InitJNI()
+		static XmlResourceParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.XmlResourceParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/XmlResourceParser"));
@@ -621,6 +617,9 @@ namespace android.content.res
 			global::android.content.res.XmlResourceParser_._getClassAttribute4341 = @__env.GetMethodIDNoThrow(global::android.content.res.XmlResourceParser_.staticClass, "getClassAttribute", "()Ljava/lang/String;");
 			global::android.content.res.XmlResourceParser_._getIdAttributeResourceValue4342 = @__env.GetMethodIDNoThrow(global::android.content.res.XmlResourceParser_.staticClass, "getIdAttributeResourceValue", "(I)I");
 			global::android.content.res.XmlResourceParser_._getStyleAttribute4343 = @__env.GetMethodIDNoThrow(global::android.content.res.XmlResourceParser_.staticClass, "getStyleAttribute", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

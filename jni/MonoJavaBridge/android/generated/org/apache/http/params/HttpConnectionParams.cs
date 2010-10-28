@@ -4,10 +4,6 @@ namespace org.apache.http.@params
 	public sealed partial class HttpConnectionParams : java.lang.Object, CoreConnectionPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpConnectionParams()
-		{
-			InitJNI();
-		}
 		internal HttpConnectionParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -83,7 +79,7 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.@params.HttpConnectionParams.staticClass, global::org.apache.http.@params.HttpConnectionParams._isStaleCheckingEnabled33784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static HttpConnectionParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpConnectionParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpConnectionParams"));
@@ -99,6 +95,9 @@ namespace org.apache.http.@params
 			global::org.apache.http.@params.HttpConnectionParams._getLinger33782 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParams.staticClass, "getLinger", "(Lorg/apache/http/params/HttpParams;)I");
 			global::org.apache.http.@params.HttpConnectionParams._getConnectionTimeout33783 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParams.staticClass, "getConnectionTimeout", "(Lorg/apache/http/params/HttpParams;)I");
 			global::org.apache.http.@params.HttpConnectionParams._isStaleCheckingEnabled33784 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpConnectionParams.staticClass, "isStaleCheckingEnabled", "(Lorg/apache/http/params/HttpParams;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

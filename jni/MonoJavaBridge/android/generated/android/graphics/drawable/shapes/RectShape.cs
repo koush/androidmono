@@ -4,10 +4,6 @@ namespace android.graphics.drawable.shapes
 	public partial class RectShape : android.graphics.drawable.shapes.Shape
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RectShape()
-		{
-			InitJNI();
-		}
 		protected RectShape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._RectShape6252);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RectShape()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.RectShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/RectShape"));
@@ -63,6 +59,9 @@ namespace android.graphics.drawable.shapes
 			global::android.graphics.drawable.shapes.RectShape._rect6250 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RectShape.staticClass, "rect", "()Landroid/graphics/RectF;");
 			global::android.graphics.drawable.shapes.RectShape._onResize6251 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RectShape.staticClass, "onResize", "(FF)V");
 			global::android.graphics.drawable.shapes.RectShape._RectShape6252 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RectShape.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

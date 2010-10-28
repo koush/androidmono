@@ -10,10 +10,6 @@ namespace java.util.concurrent
 	internal sealed partial class Delayed_ : java.lang.Object, Delayed
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Delayed_()
-		{
-			InitJNI();
-		}
 		internal Delayed_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,12 +31,15 @@ namespace java.util.concurrent
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.Delayed_.staticClass, global::java.util.concurrent.Delayed_._compareTo27253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Delayed_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Delayed_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Delayed"));
 			global::java.util.concurrent.Delayed_._getDelay27252 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "getDelay", "(Ljava/util/concurrent/TimeUnit;)J");
 			global::java.util.concurrent.Delayed_._compareTo27253 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

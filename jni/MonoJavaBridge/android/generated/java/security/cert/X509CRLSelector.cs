@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class X509CRLSelector : java.lang.Object, CRLSelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static X509CRLSelector()
-		{
-			InitJNI();
-		}
 		protected X509CRLSelector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -252,7 +248,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._X509CRLSelector23784);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static X509CRLSelector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509CRLSelector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509CRLSelector"));
@@ -275,6 +271,9 @@ namespace java.security.cert
 			global::java.security.cert.X509CRLSelector._getDateAndTime23782 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLSelector.staticClass, "getDateAndTime", "()Ljava/util/Date;");
 			global::java.security.cert.X509CRLSelector._getCertificateChecking23783 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLSelector.staticClass, "getCertificateChecking", "()Ljava/security/cert/X509Certificate;");
 			global::java.security.cert.X509CRLSelector._X509CRLSelector23784 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509CRLSelector.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

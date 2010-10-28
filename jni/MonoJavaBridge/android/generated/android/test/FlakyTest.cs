@@ -10,10 +10,6 @@ namespace android.test
 	internal sealed partial class FlakyTest_ : java.lang.Object, FlakyTest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FlakyTest_()
-		{
-			InitJNI();
-		}
 		internal FlakyTest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace android.test
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.FlakyTest_.staticClass, global::android.test.FlakyTest_._annotationType12185)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static FlakyTest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.FlakyTest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/FlakyTest"));
@@ -71,6 +67,9 @@ namespace android.test
 			global::android.test.FlakyTest_._toString12183 = @__env.GetMethodIDNoThrow(global::android.test.FlakyTest_.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.test.FlakyTest_._hashCode12184 = @__env.GetMethodIDNoThrow(global::android.test.FlakyTest_.staticClass, "hashCode", "()I");
 			global::android.test.FlakyTest_._annotationType12185 = @__env.GetMethodIDNoThrow(global::android.test.FlakyTest_.staticClass, "annotationType", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

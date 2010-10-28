@@ -47,10 +47,6 @@ namespace android.database
 	internal sealed partial class Cursor_ : java.lang.Object, Cursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Cursor_()
-		{
-			InitJNI();
-		}
 		internal Cursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -396,7 +392,7 @@ namespace android.database
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._respond4513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
-		private static void InitJNI()
+		static Cursor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.Cursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/Cursor"));
@@ -438,6 +434,9 @@ namespace android.database
 			global::android.database.Cursor_._setNotificationUri4511 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V");
 			global::android.database.Cursor_._getWantsAllOnMoveCalls4512 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getWantsAllOnMoveCalls", "()Z");
 			global::android.database.Cursor_._respond4513 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "respond", "(Landroid/os/Bundle;)Landroid/os/Bundle;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.io
 	public partial class CharArrayWriter : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharArrayWriter()
-		{
-			InitJNI();
-		}
 		protected CharArrayWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -150,7 +146,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.CharArrayWriter.staticClass, global::java.io.CharArrayWriter._CharArrayWriter18880);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CharArrayWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.CharArrayWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/CharArrayWriter"));
@@ -169,6 +165,9 @@ namespace java.io
 			global::java.io.CharArrayWriter._writeTo18878 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayWriter.staticClass, "writeTo", "(Ljava/io/Writer;)V");
 			global::java.io.CharArrayWriter._CharArrayWriter18879 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayWriter.staticClass, "<init>", "(I)V");
 			global::java.io.CharArrayWriter._CharArrayWriter18880 = @__env.GetMethodIDNoThrow(global::java.io.CharArrayWriter.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

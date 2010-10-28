@@ -4,10 +4,6 @@ namespace java.util
 	public sealed partial class Currency : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Currency()
-		{
-			InitJNI();
-		}
 		internal Currency(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,7 +85,7 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getDefaultFractionDigits26086);
 		}
-		private static void InitJNI()
+		static Currency()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Currency.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Currency"));
@@ -100,6 +96,9 @@ namespace java.util
 			global::java.util.Currency._getSymbol26084 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getSymbol", "(Ljava/util/Locale;)Ljava/lang/String;");
 			global::java.util.Currency._getSymbol26085 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getSymbol", "()Ljava/lang/String;");
 			global::java.util.Currency._getDefaultFractionDigits26086 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getDefaultFractionDigits", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

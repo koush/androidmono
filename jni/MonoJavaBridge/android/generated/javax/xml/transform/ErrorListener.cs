@@ -12,10 +12,6 @@ namespace javax.xml.transform
 	internal sealed partial class ErrorListener_ : java.lang.Object, ErrorListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ErrorListener_()
-		{
-			InitJNI();
-		}
 		internal ErrorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace javax.xml.transform
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.ErrorListener_.staticClass, global::javax.xml.transform.ErrorListener_._warning30936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ErrorListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.ErrorListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/ErrorListener"));
 			global::javax.xml.transform.ErrorListener_._fatalError30934 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.ErrorListener_.staticClass, "fatalError", "(Ljavax/xml/transform/TransformerException;)V");
 			global::javax.xml.transform.ErrorListener_._error30935 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.ErrorListener_.staticClass, "error", "(Ljavax/xml/transform/TransformerException;)V");
 			global::javax.xml.transform.ErrorListener_._warning30936 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.ErrorListener_.staticClass, "warning", "(Ljavax/xml/transform/TransformerException;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.media
 	public partial class ToneGenerator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ToneGenerator()
-		{
-			InitJNI();
-		}
 		protected ToneGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -770,7 +766,7 @@ namespace android.media
 				return 0;
 			}
 		}
-		private static void InitJNI()
+		static ToneGenerator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.ToneGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ToneGenerator"));
@@ -780,6 +776,9 @@ namespace android.media
 			global::android.media.ToneGenerator._startTone7514 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "startTone", "(II)Z");
 			global::android.media.ToneGenerator._stopTone7515 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "stopTone", "()V");
 			global::android.media.ToneGenerator._ToneGenerator7516 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "<init>", "(II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

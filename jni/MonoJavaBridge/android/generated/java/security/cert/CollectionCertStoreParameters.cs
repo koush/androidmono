@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class CollectionCertStoreParameters : java.lang.Object, CertStoreParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CollectionCertStoreParameters()
-		{
-			InitJNI();
-		}
 		protected CollectionCertStoreParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,7 +55,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._CollectionCertStoreParameters23618);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CollectionCertStoreParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CollectionCertStoreParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CollectionCertStoreParameters"));
@@ -68,6 +64,9 @@ namespace java.security.cert
 			global::java.security.cert.CollectionCertStoreParameters._getCollection23616 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "getCollection", "()Ljava/util/Collection;");
 			global::java.security.cert.CollectionCertStoreParameters._CollectionCertStoreParameters23617 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::java.security.cert.CollectionCertStoreParameters._CollectionCertStoreParameters23618 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

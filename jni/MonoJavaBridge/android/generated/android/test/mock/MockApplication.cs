@@ -4,10 +4,6 @@ namespace android.test.mock
 	public partial class MockApplication : android.app.Application
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MockApplication()
-		{
-			InitJNI();
-		}
 		protected MockApplication(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.test.mock
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._MockApplication12382);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MockApplication()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.mock.MockApplication.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/mock/MockApplication"));
@@ -53,6 +49,9 @@ namespace android.test.mock
 			global::android.test.mock.MockApplication._onConfigurationChanged12380 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockApplication.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
 			global::android.test.mock.MockApplication._onTerminate12381 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockApplication.staticClass, "onTerminate", "()V");
 			global::android.test.mock.MockApplication._MockApplication12382 = @__env.GetMethodIDNoThrow(global::android.test.mock.MockApplication.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

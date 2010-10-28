@@ -4,10 +4,6 @@ namespace org.xmlpull.v1
 	public partial class XmlPullParserFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XmlPullParserFactory()
-		{
-			InitJNI();
-		}
 		protected XmlPullParserFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -123,7 +119,7 @@ namespace org.xmlpull.v1
 				return "org.xmlpull.v1.XmlPullParserFactory";
 			}
 		}
-		private static void InitJNI()
+		static XmlPullParserFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.XmlPullParserFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlPullParserFactory"));
@@ -138,6 +134,9 @@ namespace org.xmlpull.v1
 			global::org.xmlpull.v1.XmlPullParserFactory._setNamespaceAware35379 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserFactory.staticClass, "setNamespaceAware", "(Z)V");
 			global::org.xmlpull.v1.XmlPullParserFactory._setValidating35380 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserFactory.staticClass, "setValidating", "(Z)V");
 			global::org.xmlpull.v1.XmlPullParserFactory._XmlPullParserFactory35381 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserFactory.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

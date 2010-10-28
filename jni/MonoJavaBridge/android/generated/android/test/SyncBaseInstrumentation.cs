@@ -4,10 +4,6 @@ namespace android.test
 	public partial class SyncBaseInstrumentation : android.test.InstrumentationTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SyncBaseInstrumentation()
-		{
-			InitJNI();
-		}
 		protected SyncBaseInstrumentation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._SyncBaseInstrumentation12322);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SyncBaseInstrumentation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.SyncBaseInstrumentation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/SyncBaseInstrumentation"));
@@ -53,6 +49,9 @@ namespace android.test
 			global::android.test.SyncBaseInstrumentation._syncProvider12320 = @__env.GetMethodIDNoThrow(global::android.test.SyncBaseInstrumentation.staticClass, "syncProvider", "(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V");
 			global::android.test.SyncBaseInstrumentation._cancelSyncsandDisableAutoSync12321 = @__env.GetMethodIDNoThrow(global::android.test.SyncBaseInstrumentation.staticClass, "cancelSyncsandDisableAutoSync", "()V");
 			global::android.test.SyncBaseInstrumentation._SyncBaseInstrumentation12322 = @__env.GetMethodIDNoThrow(global::android.test.SyncBaseInstrumentation.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

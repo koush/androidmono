@@ -10,10 +10,6 @@ namespace javax.xml.transform
 	internal sealed partial class URIResolver_ : java.lang.Object, URIResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static URIResolver_()
-		{
-			InitJNI();
-		}
 		internal URIResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace javax.xml.transform
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Source>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.URIResolver_.staticClass, global::javax.xml.transform.URIResolver_._resolve31039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.transform.Source;
 		}
-		private static void InitJNI()
+		static URIResolver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.URIResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/URIResolver"));
 			global::javax.xml.transform.URIResolver_._resolve31039 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.URIResolver_.staticClass, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

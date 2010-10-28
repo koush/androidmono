@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class ClipDrawable : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClipDrawable()
-		{
-			InitJNI();
-		}
 		protected ClipDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -251,7 +247,7 @@ namespace android.graphics.drawable
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static ClipDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.ClipDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ClipDrawable"));
@@ -274,6 +270,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.ClipDrawable._scheduleDrawable5902 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ClipDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
 			global::android.graphics.drawable.ClipDrawable._unscheduleDrawable5903 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ClipDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
 			global::android.graphics.drawable.ClipDrawable._ClipDrawable5904 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ClipDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;II)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

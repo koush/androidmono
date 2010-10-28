@@ -4,10 +4,6 @@ namespace java.nio
 	public abstract partial class MappedByteBuffer : java.nio.ByteBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MappedByteBuffer()
-		{
-			InitJNI();
-		}
 		protected MappedByteBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,7 +34,7 @@ namespace java.nio
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.MappedByteBuffer.staticClass, global::java.nio.MappedByteBuffer._force22319)) as java.nio.MappedByteBuffer;
 		}
-		private static void InitJNI()
+		static MappedByteBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.MappedByteBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/MappedByteBuffer"));
@@ -46,16 +42,15 @@ namespace java.nio
 			global::java.nio.MappedByteBuffer._isLoaded22318 = @__env.GetMethodIDNoThrow(global::java.nio.MappedByteBuffer.staticClass, "isLoaded", "()Z");
 			global::java.nio.MappedByteBuffer._force22319 = @__env.GetMethodIDNoThrow(global::java.nio.MappedByteBuffer.staticClass, "force", "()Ljava/nio/MappedByteBuffer;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.MappedByteBuffer))]
 	internal sealed partial class MappedByteBuffer_ : java.nio.MappedByteBuffer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MappedByteBuffer_()
-		{
-			InitJNI();
-		}
 		internal MappedByteBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -419,7 +414,7 @@ namespace java.nio
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.MappedByteBuffer_.staticClass, global::java.nio.MappedByteBuffer_._isReadOnly22359);
 		}
-		private static void InitJNI()
+		static MappedByteBuffer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.MappedByteBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/MappedByteBuffer"));
@@ -463,6 +458,9 @@ namespace java.nio
 			global::java.nio.MappedByteBuffer_._asFloatBuffer22357 = @__env.GetMethodIDNoThrow(global::java.nio.MappedByteBuffer_.staticClass, "asFloatBuffer", "()Ljava/nio/FloatBuffer;");
 			global::java.nio.MappedByteBuffer_._asDoubleBuffer22358 = @__env.GetMethodIDNoThrow(global::java.nio.MappedByteBuffer_.staticClass, "asDoubleBuffer", "()Ljava/nio/DoubleBuffer;");
 			global::java.nio.MappedByteBuffer_._isReadOnly22359 = @__env.GetMethodIDNoThrow(global::java.nio.MappedByteBuffer_.staticClass, "isReadOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

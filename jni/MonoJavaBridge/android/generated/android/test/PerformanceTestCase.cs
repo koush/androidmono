@@ -11,10 +11,6 @@ namespace android.test
 	internal sealed partial class PerformanceTestCase_ : java.lang.Object, PerformanceTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PerformanceTestCase_()
-		{
-			InitJNI();
-		}
 		internal PerformanceTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace android.test
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
 		}
-		private static void InitJNI()
+		static PerformanceTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.PerformanceTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/PerformanceTestCase"));
 			global::android.test.PerformanceTestCase_._startPerformance12272 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "startPerformance", "(Landroid/test/PerformanceTestCase$Intermediates;)I");
 			global::android.test.PerformanceTestCase_._isPerformanceOnly12273 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "isPerformanceOnly", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

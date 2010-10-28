@@ -10,10 +10,6 @@ namespace org.apache.http.entity
 	internal sealed partial class ContentProducer_ : java.lang.Object, ContentProducer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContentProducer_()
-		{
-			InitJNI();
-		}
 		internal ContentProducer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.entity
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.entity.ContentProducer_.staticClass, global::org.apache.http.entity.ContentProducer_._writeTo32532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static ContentProducer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.ContentProducer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/ContentProducer"));
 			global::org.apache.http.entity.ContentProducer_._writeTo32532 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.ContentProducer_.staticClass, "writeTo", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

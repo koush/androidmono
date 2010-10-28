@@ -4,10 +4,6 @@ namespace android.telephony.gsm
 	public sealed partial class SmsManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SmsManager()
-		{
-			InitJNI();
-		}
 		internal SmsManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -123,7 +119,7 @@ namespace android.telephony.gsm
 				return 4;
 			}
 		}
-		private static void InitJNI()
+		static SmsManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.SmsManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsManager"));
@@ -132,6 +128,9 @@ namespace android.telephony.gsm
 			global::android.telephony.gsm.SmsManager._divideMessage12049 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsManager.staticClass, "divideMessage", "(Ljava/lang/String;)Ljava/util/ArrayList;");
 			global::android.telephony.gsm.SmsManager._sendMultipartTextMessage12050 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsManager.staticClass, "sendMultipartTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V");
 			global::android.telephony.gsm.SmsManager._sendDataMessage12051 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsManager.staticClass, "sendDataMessage", "(Ljava/lang/String;Ljava/lang/String;S[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

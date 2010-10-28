@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class Pipe : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Pipe()
-		{
-			InitJNI();
-		}
 		protected Pipe(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.nio.channels
 		public abstract partial class SinkChannel : java.nio.channels.spi.AbstractSelectableChannel, WritableByteChannel, GatheringByteChannel
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SinkChannel()
-			{
-				InitJNI();
-			}
 			protected SinkChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -44,7 +36,7 @@ namespace java.nio.channels
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.Pipe.SinkChannel.staticClass, global::java.nio.channels.Pipe.SinkChannel._SinkChannel22524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SinkChannel()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.Pipe.SinkChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe$SinkChannel"));
@@ -54,16 +46,15 @@ namespace java.nio.channels
 				global::java.nio.channels.Pipe.SinkChannel._validOps22523 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SinkChannel.staticClass, "validOps", "()I");
 				global::java.nio.channels.Pipe.SinkChannel._SinkChannel22524 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SinkChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.Pipe.SinkChannel))]
 		internal sealed partial class SinkChannel_ : java.nio.channels.Pipe.SinkChannel
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SinkChannel_()
-			{
-				InitJNI();
-			}
 			internal SinkChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,7 +103,7 @@ namespace java.nio.channels
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.Pipe.SinkChannel_.staticClass, global::java.nio.channels.Pipe.SinkChannel_._implConfigureBlocking22529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static SinkChannel_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.Pipe.SinkChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe$SinkChannel"));
@@ -122,15 +113,14 @@ namespace java.nio.channels
 				global::java.nio.channels.Pipe.SinkChannel_._implCloseSelectableChannel22528 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SinkChannel_.staticClass, "implCloseSelectableChannel", "()V");
 				global::java.nio.channels.Pipe.SinkChannel_._implConfigureBlocking22529 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SinkChannel_.staticClass, "implConfigureBlocking", "(Z)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass(typeof(global::java.nio.channels.Pipe.SourceChannel_))]
 		public abstract partial class SourceChannel : java.nio.channels.spi.AbstractSelectableChannel, ReadableByteChannel, ScatteringByteChannel
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SourceChannel()
-			{
-				InitJNI();
-			}
 			protected SourceChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -156,7 +146,7 @@ namespace java.nio.channels
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.Pipe.SourceChannel.staticClass, global::java.nio.channels.Pipe.SourceChannel._SourceChannel22534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SourceChannel()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.Pipe.SourceChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe$SourceChannel"));
@@ -166,16 +156,15 @@ namespace java.nio.channels
 				global::java.nio.channels.Pipe.SourceChannel._validOps22533 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SourceChannel.staticClass, "validOps", "()I");
 				global::java.nio.channels.Pipe.SourceChannel._SourceChannel22534 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SourceChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.Pipe.SourceChannel))]
 		internal sealed partial class SourceChannel_ : java.nio.channels.Pipe.SourceChannel
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SourceChannel_()
-			{
-				InitJNI();
-			}
 			internal SourceChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -224,7 +213,7 @@ namespace java.nio.channels
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.Pipe.SourceChannel_.staticClass, global::java.nio.channels.Pipe.SourceChannel_._implConfigureBlocking22539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI()
+			static SourceChannel_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.Pipe.SourceChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe$SourceChannel"));
@@ -233,6 +222,9 @@ namespace java.nio.channels
 				global::java.nio.channels.Pipe.SourceChannel_._read22537 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SourceChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;)J");
 				global::java.nio.channels.Pipe.SourceChannel_._implCloseSelectableChannel22538 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SourceChannel_.staticClass, "implCloseSelectableChannel", "()V");
 				global::java.nio.channels.Pipe.SourceChannel_._implConfigureBlocking22539 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.SourceChannel_.staticClass, "implConfigureBlocking", "(Z)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _open22540;
@@ -252,7 +244,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.Pipe.staticClass, global::java.nio.channels.Pipe._Pipe22543);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Pipe()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Pipe.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe"));
@@ -261,16 +253,15 @@ namespace java.nio.channels
 			global::java.nio.channels.Pipe._sink22542 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.staticClass, "sink", "()Ljava/nio/channels/Pipe$SinkChannel;");
 			global::java.nio.channels.Pipe._Pipe22543 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.Pipe))]
 	internal sealed partial class Pipe_ : java.nio.channels.Pipe
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Pipe_()
-		{
-			InitJNI();
-		}
 		internal Pipe_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -292,12 +283,15 @@ namespace java.nio.channels
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.Pipe_.staticClass, global::java.nio.channels.Pipe_._sink22545)) as java.nio.channels.Pipe.SinkChannel;
 		}
-		private static void InitJNI()
+		static Pipe_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Pipe_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Pipe"));
 			global::java.nio.channels.Pipe_._source22544 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe_.staticClass, "source", "()Ljava/nio/channels/Pipe$SourceChannel;");
 			global::java.nio.channels.Pipe_._sink22545 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Pipe_.staticClass, "sink", "()Ljava/nio/channels/Pipe$SinkChannel;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

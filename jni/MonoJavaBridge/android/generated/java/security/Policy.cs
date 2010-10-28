@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class Policy : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Policy()
-		{
-			InitJNI();
-		}
 		protected Policy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.Policy.staticClass, _UNSUPPORTED_EMPTY_COLLECTION23238)) as java.security.PermissionCollection;
 			}
 		}
-		private static void InitJNI()
+		static Policy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Policy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Policy"));
@@ -108,23 +104,25 @@ namespace java.security
 			global::java.security.Policy._Policy23237 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "<init>", "()V");
 			global::java.security.Policy._UNSUPPORTED_EMPTY_COLLECTION23238 = @__env.GetStaticFieldIDNoThrow(global::java.security.Policy.staticClass, "UNSUPPORTED_EMPTY_COLLECTION", "Ljava/security/PermissionCollection;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Policy))]
 	internal sealed partial class Policy_ : java.security.Policy
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Policy_()
-		{
-			InitJNI();
-		}
 		internal Policy_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Policy_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Policy_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Policy"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

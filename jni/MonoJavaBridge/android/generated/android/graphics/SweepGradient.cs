@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class SweepGradient : android.graphics.Shader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SweepGradient()
-		{
-			InitJNI();
-		}
 		protected SweepGradient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.SweepGradient.staticClass, global::android.graphics.SweepGradient._SweepGradient5805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SweepGradient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.SweepGradient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/SweepGradient"));
 			global::android.graphics.SweepGradient._SweepGradient5804 = @__env.GetMethodIDNoThrow(global::android.graphics.SweepGradient.staticClass, "<init>", "(FF[I[F)V");
 			global::android.graphics.SweepGradient._SweepGradient5805 = @__env.GetMethodIDNoThrow(global::android.graphics.SweepGradient.staticClass, "<init>", "(FFII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

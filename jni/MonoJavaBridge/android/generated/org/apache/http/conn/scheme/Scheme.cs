@@ -4,10 +4,6 @@ namespace org.apache.http.conn.scheme
 	public sealed partial class Scheme : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Scheme()
-		{
-			InitJNI();
-		}
 		internal Scheme(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -111,7 +107,7 @@ namespace org.apache.http.conn.scheme
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._Scheme32310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Scheme()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.Scheme.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/Scheme"));
@@ -124,6 +120,9 @@ namespace org.apache.http.conn.scheme
 			global::org.apache.http.conn.scheme.Scheme._isLayered32308 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "isLayered", "()Z");
 			global::org.apache.http.conn.scheme.Scheme._resolvePort32309 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "resolvePort", "(I)I");
 			global::org.apache.http.conn.scheme.Scheme._Scheme32310 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "<init>", "(Ljava/lang/String;Lorg/apache/http/conn/scheme/SocketFactory;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

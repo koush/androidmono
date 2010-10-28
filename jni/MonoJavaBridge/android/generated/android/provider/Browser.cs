@@ -4,10 +4,6 @@ namespace android.provider
 	public partial class Browser : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Browser()
-		{
-			InitJNI();
-		}
 		protected Browser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.provider
 		public partial class BookmarkColumns : java.lang.Object, BaseColumns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static BookmarkColumns()
-			{
-				InitJNI();
-			}
 			protected BookmarkColumns(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -78,21 +70,20 @@ namespace android.provider
 					return "favicon";
 				}
 			}
-			private static void InitJNI()
+			static BookmarkColumns()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Browser.BookmarkColumns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Browser$BookmarkColumns"));
 				global::android.provider.Browser.BookmarkColumns._BookmarkColumns10474 = @__env.GetMethodIDNoThrow(global::android.provider.Browser.BookmarkColumns.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SearchColumns : java.lang.Object, BaseColumns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SearchColumns()
-			{
-				InitJNI();
-			}
 			protected SearchColumns(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -124,11 +115,14 @@ namespace android.provider
 					return "date";
 				}
 			}
-			private static void InitJNI()
+			static SearchColumns()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Browser.SearchColumns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Browser$SearchColumns"));
 				global::android.provider.Browser.SearchColumns._SearchColumns10482 = @__env.GetMethodIDNoThrow(global::android.provider.Browser.SearchColumns.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _saveBookmark10486;
@@ -363,7 +357,7 @@ namespace android.provider
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static Browser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.Browser.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Browser"));
@@ -386,6 +380,9 @@ namespace android.provider
 			global::android.provider.Browser._TRUNCATE_HISTORY_PROJECTION10512 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "TRUNCATE_HISTORY_PROJECTION", "[Ljava/lang/String;");
 			global::android.provider.Browser._SEARCHES_URI10515 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "SEARCHES_URI", "Landroid/net/Uri;");
 			global::android.provider.Browser._SEARCHES_PROJECTION10516 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "SEARCHES_PROJECTION", "[Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

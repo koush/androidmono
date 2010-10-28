@@ -4,10 +4,6 @@ namespace java.io
 	public abstract partial class Writer : java.lang.Object, java.lang.Appendable, Closeable, Flushable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Writer()
-		{
-			InitJNI();
-		}
 		protected Writer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Writer.staticClass, global::java.io.Writer._Writer19650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Writer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Writer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Writer"));
@@ -119,16 +115,15 @@ namespace java.io
 			global::java.io.Writer._Writer19649 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "()V");
 			global::java.io.Writer._Writer19650 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "(Ljava/lang/Object;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.Writer))]
 	internal sealed partial class Writer_ : java.io.Writer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Writer_()
-		{
-			InitJNI();
-		}
 		internal Writer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,13 +154,16 @@ namespace java.io
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Writer_.staticClass, global::java.io.Writer_._close19653);
 		}
-		private static void InitJNI()
+		static Writer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Writer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Writer"));
 			global::java.io.Writer_._write19651 = @__env.GetMethodIDNoThrow(global::java.io.Writer_.staticClass, "write", "([CII)V");
 			global::java.io.Writer_._flush19652 = @__env.GetMethodIDNoThrow(global::java.io.Writer_.staticClass, "flush", "()V");
 			global::java.io.Writer_._close19653 = @__env.GetMethodIDNoThrow(global::java.io.Writer_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.lang
 	public abstract partial class Process : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Process()
-		{
-			InitJNI();
-		}
 		protected Process(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -30,7 +26,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Process.staticClass, global::java.lang.Process._Process20409);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Process()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Process.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Process"));
@@ -42,16 +38,15 @@ namespace java.lang
 			global::java.lang.Process._exitValue20408 = @__env.GetMethodIDNoThrow(global::java.lang.Process.staticClass, "exitValue", "()I");
 			global::java.lang.Process._Process20409 = @__env.GetMethodIDNoThrow(global::java.lang.Process.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.Process))]
 	internal sealed partial class Process_ : java.lang.Process
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Process_()
-		{
-			InitJNI();
-		}
 		internal Process_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,7 +104,7 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._exitValue20415);
 		}
-		private static void InitJNI()
+		static Process_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Process_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Process"));
@@ -119,6 +114,9 @@ namespace java.lang
 			global::java.lang.Process_._getErrorStream20413 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "getErrorStream", "()Ljava/io/InputStream;");
 			global::java.lang.Process_._waitFor20414 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "waitFor", "()I");
 			global::java.lang.Process_._exitValue20415 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "exitValue", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

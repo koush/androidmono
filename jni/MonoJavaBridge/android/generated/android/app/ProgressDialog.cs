@@ -4,10 +4,6 @@ namespace android.app
 	public partial class ProgressDialog : android.app.AlertDialog
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ProgressDialog()
-		{
-			InitJNI();
-		}
 		protected ProgressDialog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -304,7 +300,7 @@ namespace android.app
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static ProgressDialog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ProgressDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ProgressDialog"));
@@ -331,6 +327,9 @@ namespace android.app
 			global::android.app.ProgressDialog._setProgressStyle2057 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setProgressStyle", "(I)V");
 			global::android.app.ProgressDialog._ProgressDialog2058 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.app.ProgressDialog._ProgressDialog2059 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

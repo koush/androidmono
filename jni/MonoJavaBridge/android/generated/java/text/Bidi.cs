@@ -4,10 +4,6 @@ namespace java.text
 	public sealed partial class Bidi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Bidi()
-		{
-			InitJNI();
-		}
 		internal Bidi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -210,7 +206,7 @@ namespace java.text
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static Bidi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Bidi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Bidi"));
@@ -232,6 +228,9 @@ namespace java.text
 			global::java.text.Bidi._Bidi25214 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::java.text.Bidi._Bidi25215 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "<init>", "(Ljava/text/AttributedCharacterIterator;)V");
 			global::java.text.Bidi._Bidi25216 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "<init>", "([CI[BIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

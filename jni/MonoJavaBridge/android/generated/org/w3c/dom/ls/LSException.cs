@@ -4,10 +4,6 @@ namespace org.w3c.dom.ls
 	public partial class LSException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSException()
-		{
-			InitJNI();
-		}
 		protected LSException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -44,12 +40,15 @@ namespace org.w3c.dom.ls
 				return 82;
 			}
 		}
-		private static void InitJNI()
+		static LSException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSException"));
 			global::org.w3c.dom.ls.LSException._LSException34888 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "<init>", "(SLjava/lang/String;)V");
 			global::org.w3c.dom.ls.LSException._code34889 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "code", "S");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

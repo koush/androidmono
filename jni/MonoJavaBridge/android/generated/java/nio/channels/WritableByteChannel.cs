@@ -10,10 +10,6 @@ namespace java.nio.channels
 	internal sealed partial class WritableByteChannel_ : java.lang.Object, WritableByteChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WritableByteChannel_()
-		{
-			InitJNI();
-		}
 		internal WritableByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,7 +49,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.WritableByteChannel_.staticClass, global::java.nio.channels.WritableByteChannel_._close22660);
 		}
-		private static void InitJNI()
+		static WritableByteChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.WritableByteChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/WritableByteChannel"));
@@ -61,6 +57,9 @@ namespace java.nio.channels
 			global::java.nio.channels.WritableByteChannel_._close22658 = @__env.GetMethodIDNoThrow(global::java.nio.channels.WritableByteChannel_.staticClass, "close", "()V");
 			global::java.nio.channels.WritableByteChannel_._isOpen22659 = @__env.GetMethodIDNoThrow(global::java.nio.channels.WritableByteChannel_.staticClass, "isOpen", "()Z");
 			global::java.nio.channels.WritableByteChannel_._close22660 = @__env.GetMethodIDNoThrow(global::java.nio.channels.WritableByteChannel_.staticClass, "close", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

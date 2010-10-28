@@ -10,10 +10,6 @@ namespace android.accounts
 	internal sealed partial class OnAccountsUpdateListener_ : java.lang.Object, OnAccountsUpdateListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OnAccountsUpdateListener_()
-		{
-			InitJNI();
-		}
 		internal OnAccountsUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace android.accounts
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.OnAccountsUpdateListener_.staticClass, global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static OnAccountsUpdateListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OnAccountsUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OnAccountsUpdateListener"));
 			global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 
@@ -39,10 +38,6 @@ namespace android.accounts
 	internal partial class OnAccountsUpdateListenerDelegateWrapper : java.lang.Object, OnAccountsUpdateListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OnAccountsUpdateListenerDelegateWrapper()
-		{
-			InitJNI();
-		}
 		protected OnAccountsUpdateListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +48,14 @@ namespace android.accounts
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static OnAccountsUpdateListenerDelegateWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OnAccountsUpdateListenerDelegateWrapper"));
 			global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 	internal partial class OnAccountsUpdateListenerDelegateWrapper

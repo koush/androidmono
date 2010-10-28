@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class CheckedOutputStream : java.io.FilterOutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CheckedOutputStream()
-		{
-			InitJNI();
-		}
 		protected CheckedOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.CheckedOutputStream.staticClass, global::java.util.zip.CheckedOutputStream._CheckedOutputStream28347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CheckedOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.CheckedOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/CheckedOutputStream"));
@@ -60,6 +56,9 @@ namespace java.util.zip
 			global::java.util.zip.CheckedOutputStream._write28345 = @__env.GetMethodIDNoThrow(global::java.util.zip.CheckedOutputStream.staticClass, "write", "([BII)V");
 			global::java.util.zip.CheckedOutputStream._getChecksum28346 = @__env.GetMethodIDNoThrow(global::java.util.zip.CheckedOutputStream.staticClass, "getChecksum", "()Ljava/util/zip/Checksum;");
 			global::java.util.zip.CheckedOutputStream._CheckedOutputStream28347 = @__env.GetMethodIDNoThrow(global::java.util.zip.CheckedOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/util/zip/Checksum;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

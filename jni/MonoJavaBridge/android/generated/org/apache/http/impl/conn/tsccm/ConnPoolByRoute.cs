@@ -4,10 +4,6 @@ namespace org.apache.http.impl.conn.tsccm
 	public partial class ConnPoolByRoute : org.apache.http.impl.conn.tsccm.AbstractConnPool
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ConnPoolByRoute()
-		{
-			InitJNI();
-		}
 		protected ConnPoolByRoute(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -180,7 +176,7 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.ConnPoolByRoute.staticClass, global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute._ConnPoolByRoute33150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ConnPoolByRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/ConnPoolByRoute"));
@@ -203,6 +199,9 @@ namespace org.apache.http.impl.conn.tsccm
 			global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute._deleteLeastUsedEntry33148 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute.staticClass, "deleteLeastUsedEntry", "()V");
 			global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute._notifyWaitingThread33149 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute.staticClass, "notifyWaitingThread", "(Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;)V");
 			global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute._ConnPoolByRoute33150 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.ConnPoolByRoute.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

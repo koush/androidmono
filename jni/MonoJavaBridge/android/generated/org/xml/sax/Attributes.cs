@@ -21,10 +21,6 @@ namespace org.xml.sax
 	internal sealed partial class Attributes_ : java.lang.Object, Attributes
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Attributes_()
-		{
-			InitJNI();
-		}
 		internal Attributes_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -136,7 +132,7 @@ namespace org.xml.sax
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.Attributes_.staticClass, global::org.xml.sax.Attributes_._getURI34961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Attributes_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.Attributes_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/Attributes"));
@@ -152,6 +148,9 @@ namespace org.xml.sax
 			global::org.xml.sax.Attributes_._getQName34959 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Attributes_.staticClass, "getQName", "(I)Ljava/lang/String;");
 			global::org.xml.sax.Attributes_._getLocalName34960 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Attributes_.staticClass, "getLocalName", "(I)Ljava/lang/String;");
 			global::org.xml.sax.Attributes_._getURI34961 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Attributes_.staticClass, "getURI", "(I)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

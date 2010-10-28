@@ -9,17 +9,16 @@ namespace java.util
 	internal sealed partial class RandomAccess_ : java.lang.Object, RandomAccess
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RandomAccess_()
-		{
-			InitJNI();
-		}
 		internal RandomAccess_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static RandomAccess_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.RandomAccess_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/RandomAccess"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.util
 	public partial class GregorianCalendar : java.util.Calendar
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GregorianCalendar()
-		{
-			InitJNI();
-		}
 		protected GregorianCalendar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -267,7 +263,7 @@ namespace java.util
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static GregorianCalendar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.GregorianCalendar.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/GregorianCalendar"));
@@ -297,6 +293,9 @@ namespace java.util
 			global::java.util.GregorianCalendar._GregorianCalendar26236 = @__env.GetMethodIDNoThrow(global::java.util.GregorianCalendar.staticClass, "<init>", "(III)V");
 			global::java.util.GregorianCalendar._GregorianCalendar26237 = @__env.GetMethodIDNoThrow(global::java.util.GregorianCalendar.staticClass, "<init>", "(IIIII)V");
 			global::java.util.GregorianCalendar._GregorianCalendar26238 = @__env.GetMethodIDNoThrow(global::java.util.GregorianCalendar.staticClass, "<init>", "(IIIIII)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

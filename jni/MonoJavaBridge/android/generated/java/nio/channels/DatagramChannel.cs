@@ -4,10 +4,6 @@ namespace java.nio.channels
 	public abstract partial class DatagramChannel : java.nio.channels.spi.AbstractSelectableChannel, ByteChannel, ScatteringByteChannel, GatheringByteChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramChannel()
-		{
-			InitJNI();
-		}
 		protected DatagramChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -71,7 +67,7 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._DatagramChannel22435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DatagramChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.DatagramChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/DatagramChannel"));
@@ -91,16 +87,15 @@ namespace java.nio.channels
 			global::java.nio.channels.DatagramChannel._validOps22434 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "validOps", "()I");
 			global::java.nio.channels.DatagramChannel._DatagramChannel22435 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.DatagramChannel))]
 	internal sealed partial class DatagramChannel_ : java.nio.channels.DatagramChannel
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatagramChannel_()
-		{
-			InitJNI();
-		}
 		internal DatagramChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -212,7 +207,7 @@ namespace java.nio.channels
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.DatagramChannel_.staticClass, global::java.nio.channels.DatagramChannel_._implConfigureBlocking22447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static DatagramChannel_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.DatagramChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/DatagramChannel"));
@@ -228,6 +223,9 @@ namespace java.nio.channels
 			global::java.nio.channels.DatagramChannel_._receive22445 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel_.staticClass, "receive", "(Ljava/nio/ByteBuffer;)Ljava/net/SocketAddress;");
 			global::java.nio.channels.DatagramChannel_._implCloseSelectableChannel22446 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel_.staticClass, "implCloseSelectableChannel", "()V");
 			global::java.nio.channels.DatagramChannel_._implConfigureBlocking22447 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel_.staticClass, "implConfigureBlocking", "(Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

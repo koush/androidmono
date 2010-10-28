@@ -4,10 +4,6 @@ namespace android.net
 	public partial class SSLCertificateSocketFactory : javax.net.ssl.SSLSocketFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLCertificateSocketFactory()
-		{
-			InitJNI();
-		}
 		protected SSLCertificateSocketFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -128,7 +124,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._SSLCertificateSocketFactory7765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLCertificateSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.SSLCertificateSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/SSLCertificateSocketFactory"));
@@ -145,6 +141,9 @@ namespace android.net
 			global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites7763 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "getDefaultCipherSuites", "()[Ljava/lang/String;");
 			global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites7764 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "getSupportedCipherSuites", "()[Ljava/lang/String;");
 			global::android.net.SSLCertificateSocketFactory._SSLCertificateSocketFactory7765 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "<init>", "(I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

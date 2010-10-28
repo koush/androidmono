@@ -4,10 +4,6 @@ namespace java.util.concurrent.atomic
 	public partial class AtomicLong : java.lang.Number, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AtomicLong()
-		{
-			InitJNI();
-		}
 		protected AtomicLong(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -192,7 +188,7 @@ namespace java.util.concurrent.atomic
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicLong.staticClass, global::java.util.concurrent.atomic.AtomicLong._AtomicLong27604);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AtomicLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.atomic.AtomicLong.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/atomic/AtomicLong"));
@@ -215,6 +211,9 @@ namespace java.util.concurrent.atomic
 			global::java.util.concurrent.atomic.AtomicLong._addAndGet27602 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLong.staticClass, "addAndGet", "(J)J");
 			global::java.util.concurrent.atomic.AtomicLong._AtomicLong27603 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLong.staticClass, "<init>", "(J)V");
 			global::java.util.concurrent.atomic.AtomicLong._AtomicLong27604 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicLong.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

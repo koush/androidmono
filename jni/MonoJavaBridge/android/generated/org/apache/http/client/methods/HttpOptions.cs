@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public partial class HttpOptions : org.apache.http.client.methods.HttpRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpOptions()
-		{
-			InitJNI();
-		}
 		protected HttpOptions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -64,7 +60,7 @@ namespace org.apache.http.client.methods
 				return "OPTIONS";
 			}
 		}
-		private static void InitJNI()
+		static HttpOptions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpOptions.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpOptions"));
@@ -73,6 +69,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpOptions._HttpOptions31932 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpOptions.staticClass, "<init>", "()V");
 			global::org.apache.http.client.methods.HttpOptions._HttpOptions31933 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpOptions.staticClass, "<init>", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpOptions._HttpOptions31934 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpOptions.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

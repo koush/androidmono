@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class RotateDrawable : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RotateDrawable()
-		{
-			InitJNI();
-		}
 		protected RotateDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -262,7 +258,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._RotateDrawable6176);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RotateDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.RotateDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/RotateDrawable"));
@@ -287,6 +283,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.RotateDrawable._scheduleDrawable6174 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
 			global::android.graphics.drawable.RotateDrawable._unscheduleDrawable6175 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
 			global::android.graphics.drawable.RotateDrawable._RotateDrawable6176 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

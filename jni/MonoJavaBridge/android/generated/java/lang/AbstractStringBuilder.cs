@@ -4,10 +4,6 @@ namespace java.lang
 	public abstract partial class AbstractStringBuilder : java.lang.Object, Appendable, CharSequence
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractStringBuilder()
-		{
-			InitJNI();
-		}
 		protected AbstractStringBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -470,7 +466,7 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.AbstractStringBuilder.staticClass, global::java.lang.AbstractStringBuilder._reverse19705)) as java.lang.AbstractStringBuilder;
 		}
-		private static void InitJNI()
+		static AbstractStringBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.AbstractStringBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/AbstractStringBuilder"));
@@ -525,16 +521,15 @@ namespace java.lang
 			global::java.lang.AbstractStringBuilder._insert19704 = @__env.GetMethodIDNoThrow(global::java.lang.AbstractStringBuilder.staticClass, "insert", "(IZ)Ljava/lang/AbstractStringBuilder;");
 			global::java.lang.AbstractStringBuilder._reverse19705 = @__env.GetMethodIDNoThrow(global::java.lang.AbstractStringBuilder.staticClass, "reverse", "()Ljava/lang/AbstractStringBuilder;");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.AbstractStringBuilder))]
 	internal sealed partial class AbstractStringBuilder_ : java.lang.AbstractStringBuilder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractStringBuilder_()
-		{
-			InitJNI();
-		}
 		internal AbstractStringBuilder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -547,11 +542,14 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.AbstractStringBuilder_.staticClass, global::java.lang.AbstractStringBuilder_._toString19706)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static AbstractStringBuilder_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.AbstractStringBuilder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/AbstractStringBuilder"));
 			global::java.lang.AbstractStringBuilder_._toString19706 = @__env.GetMethodIDNoThrow(global::java.lang.AbstractStringBuilder_.staticClass, "toString", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

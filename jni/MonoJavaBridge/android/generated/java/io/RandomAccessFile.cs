@@ -4,10 +4,6 @@ namespace java.io
 	public partial class RandomAccessFile : java.lang.Object, DataOutput, DataInput, Closeable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RandomAccessFile()
-		{
-			InitJNI();
-		}
 		protected RandomAccessFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -397,7 +393,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile19552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RandomAccessFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.RandomAccessFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/RandomAccessFile"));
@@ -442,6 +438,9 @@ namespace java.io
 			global::java.io.RandomAccessFile._seek19550 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "seek", "(J)V");
 			global::java.io.RandomAccessFile._RandomAccessFile19551 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.io.RandomAccessFile._RandomAccessFile19552 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

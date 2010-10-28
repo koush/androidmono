@@ -34,10 +34,6 @@ namespace java.util
 	internal sealed partial class List_ : java.lang.Object, List
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static List_()
-		{
-			InitJNI();
-		}
 		internal List_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -414,7 +410,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.List_.staticClass, global::java.util.List_._iterator26429)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static List_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.List_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/List"));
@@ -459,6 +455,9 @@ namespace java.util
 			global::java.util.List_._removeAll26427 = @__env.GetMethodIDNoThrow(global::java.util.List_.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
 			global::java.util.List_._retainAll26428 = @__env.GetMethodIDNoThrow(global::java.util.List_.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.List_._iterator26429 = @__env.GetMethodIDNoThrow(global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

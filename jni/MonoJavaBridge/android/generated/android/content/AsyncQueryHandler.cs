@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class AsyncQueryHandler : android.os.Handler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AsyncQueryHandler()
-		{
-			InitJNI();
-		}
 		protected AsyncQueryHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content
 		protected sealed partial class WorkerArgs : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WorkerArgs()
-			{
-				InitJNI();
-			}
 			internal WorkerArgs(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -130,7 +122,7 @@ namespace android.content
 				{
 				}
 			}
-			private static void InitJNI()
+			static WorkerArgs()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.AsyncQueryHandler.WorkerArgs.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler$WorkerArgs"));
@@ -144,15 +136,14 @@ namespace android.content
 				global::android.content.AsyncQueryHandler.WorkerArgs._cookie2574 = @__env.GetFieldIDNoThrow(global::android.content.AsyncQueryHandler.WorkerArgs.staticClass, "cookie", "Ljava/lang/Object;");
 				global::android.content.AsyncQueryHandler.WorkerArgs._values2575 = @__env.GetFieldIDNoThrow(global::android.content.AsyncQueryHandler.WorkerArgs.staticClass, "values", "Landroid/content/ContentValues;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		protected partial class WorkerHandler : android.os.Handler
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static WorkerHandler()
-			{
-				InitJNI();
-			}
 			protected WorkerHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -172,12 +163,15 @@ namespace android.content
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.AsyncQueryHandler.WorkerHandler.staticClass, global::android.content.AsyncQueryHandler.WorkerHandler._WorkerHandler2577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static WorkerHandler()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.AsyncQueryHandler.WorkerHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler$WorkerHandler"));
 				global::android.content.AsyncQueryHandler.WorkerHandler._handleMessage2576 = @__env.GetMethodIDNoThrow(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V");
 				global::android.content.AsyncQueryHandler.WorkerHandler._WorkerHandler2577 = @__env.GetMethodIDNoThrow(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "<init>", "(Landroid/content/AsyncQueryHandler;Landroid/os/Looper;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _handleMessage2578;
@@ -286,7 +280,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.AsyncQueryHandler.staticClass, global::android.content.AsyncQueryHandler._AsyncQueryHandler2589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AsyncQueryHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AsyncQueryHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler"));
@@ -303,23 +297,25 @@ namespace android.content
 			global::android.content.AsyncQueryHandler._onDeleteComplete2588 = @__env.GetMethodIDNoThrow(global::android.content.AsyncQueryHandler.staticClass, "onDeleteComplete", "(ILjava/lang/Object;I)V");
 			global::android.content.AsyncQueryHandler._AsyncQueryHandler2589 = @__env.GetMethodIDNoThrow(global::android.content.AsyncQueryHandler.staticClass, "<init>", "(Landroid/content/ContentResolver;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.AsyncQueryHandler))]
 	internal sealed partial class AsyncQueryHandler_ : android.content.AsyncQueryHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AsyncQueryHandler_()
-		{
-			InitJNI();
-		}
 		internal AsyncQueryHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static AsyncQueryHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AsyncQueryHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -12,10 +12,6 @@ namespace android.graphics.drawable
 	internal sealed partial class Animatable_ : java.lang.Object, Animatable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Animatable_()
-		{
-			InitJNI();
-		}
 		internal Animatable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.Animatable_.staticClass, global::android.graphics.drawable.Animatable_._isRunning5836);
 		}
-		private static void InitJNI()
+		static Animatable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.Animatable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Animatable"));
 			global::android.graphics.drawable.Animatable_._start5834 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.Animatable_.staticClass, "start", "()V");
 			global::android.graphics.drawable.Animatable_._stop5835 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.Animatable_.staticClass, "stop", "()V");
 			global::android.graphics.drawable.Animatable_._isRunning5836 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.Animatable_.staticClass, "isRunning", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.impl.io
 	public partial class HttpRequestWriter : org.apache.http.impl.io.AbstractMessageWriter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestWriter()
-		{
-			InitJNI();
-		}
 		protected HttpRequestWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.HttpRequestWriter.staticClass, global::org.apache.http.impl.io.HttpRequestWriter._HttpRequestWriter33443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpRequestWriter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.HttpRequestWriter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/HttpRequestWriter"));
 			global::org.apache.http.impl.io.HttpRequestWriter._writeHeadLine33442 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpRequestWriter.staticClass, "writeHeadLine", "(Lorg/apache/http/HttpMessage;)V");
 			global::org.apache.http.impl.io.HttpRequestWriter._HttpRequestWriter33443 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpRequestWriter.staticClass, "<init>", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/message/LineFormatter;Lorg/apache/http/params/HttpParams;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class LayoutAnimationController : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LayoutAnimationController()
-		{
-			InitJNI();
-		}
 		protected LayoutAnimationController(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view.animation
 		public partial class AnimationParameters : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AnimationParameters()
-			{
-				InitJNI();
-			}
 			protected AnimationParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -53,13 +45,16 @@ namespace android.view.animation
 				{
 				}
 			}
-			private static void InitJNI()
+			static AnimationParameters()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LayoutAnimationController$AnimationParameters"));
 				global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters15712 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "<init>", "()V");
 				global::android.view.animation.LayoutAnimationController.AnimationParameters._count15713 = @__env.GetFieldIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "count", "I");
 				global::android.view.animation.LayoutAnimationController.AnimationParameters._index15714 = @__env.GetFieldIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "index", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _start15715;
@@ -296,7 +291,7 @@ namespace android.view.animation
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static LayoutAnimationController()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.LayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LayoutAnimationController"));
@@ -319,6 +314,9 @@ namespace android.view.animation
 			global::android.view.animation.LayoutAnimationController._LayoutAnimationController15731 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;F)V");
 			global::android.view.animation.LayoutAnimationController._LayoutAnimationController15732 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.view.animation.LayoutAnimationController._LayoutAnimationController15733 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

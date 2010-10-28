@@ -4,10 +4,6 @@ namespace java.util.regex
 	public sealed partial class Matcher : java.lang.Object, MatchResult
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Matcher()
-		{
-			InitJNI();
-		}
 		internal Matcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -291,7 +287,7 @@ namespace java.util.regex
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Matcher>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._useAnchoringBounds28303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.regex.Matcher;
 		}
-		private static void InitJNI()
+		static Matcher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.regex.Matcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/Matcher"));
@@ -326,6 +322,9 @@ namespace java.util.regex
 			global::java.util.regex.Matcher._useTransparentBounds28301 = @__env.GetMethodIDNoThrow(global::java.util.regex.Matcher.staticClass, "useTransparentBounds", "(Z)Ljava/util/regex/Matcher;");
 			global::java.util.regex.Matcher._hasAnchoringBounds28302 = @__env.GetMethodIDNoThrow(global::java.util.regex.Matcher.staticClass, "hasAnchoringBounds", "()Z");
 			global::java.util.regex.Matcher._useAnchoringBounds28303 = @__env.GetMethodIDNoThrow(global::java.util.regex.Matcher.staticClass, "useAnchoringBounds", "(Z)Ljava/util/regex/Matcher;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

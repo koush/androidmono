@@ -4,10 +4,6 @@ namespace android.text
 	public partial class SpannableString : android.text.SpannableStringInternal, java.lang.CharSequence, GetChars, Spannable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SpannableString()
-		{
-			InitJNI();
-		}
 		protected SpannableString(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace android.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.SpannableString.staticClass, global::android.text.SpannableString._SpannableString12948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SpannableString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.SpannableString.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableString"));
@@ -64,6 +60,9 @@ namespace android.text
 			global::android.text.SpannableString._setSpan12946 = @__env.GetMethodIDNoThrow(global::android.text.SpannableString.staticClass, "setSpan", "(Ljava/lang/Object;III)V");
 			global::android.text.SpannableString._removeSpan12947 = @__env.GetMethodIDNoThrow(global::android.text.SpannableString.staticClass, "removeSpan", "(Ljava/lang/Object;)V");
 			global::android.text.SpannableString._SpannableString12948 = @__env.GetMethodIDNoThrow(global::android.text.SpannableString.staticClass, "<init>", "(Ljava/lang/CharSequence;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

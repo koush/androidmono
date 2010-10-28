@@ -31,10 +31,6 @@ namespace android.util
 	internal sealed partial class AttributeSet_ : java.lang.Object, AttributeSet
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AttributeSet_()
-		{
-			InitJNI();
-		}
 		internal AttributeSet_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -236,7 +232,7 @@ namespace android.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.AttributeSet_.staticClass, global::android.util.AttributeSet_._getStyleAttribute13699);
 		}
-		private static void InitJNI()
+		static AttributeSet_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.AttributeSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/AttributeSet"));
@@ -262,6 +258,9 @@ namespace android.util
 			global::android.util.AttributeSet_._getClassAttribute13697 = @__env.GetMethodIDNoThrow(global::android.util.AttributeSet_.staticClass, "getClassAttribute", "()Ljava/lang/String;");
 			global::android.util.AttributeSet_._getIdAttributeResourceValue13698 = @__env.GetMethodIDNoThrow(global::android.util.AttributeSet_.staticClass, "getIdAttributeResourceValue", "(I)I");
 			global::android.util.AttributeSet_._getStyleAttribute13699 = @__env.GetMethodIDNoThrow(global::android.util.AttributeSet_.staticClass, "getStyleAttribute", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

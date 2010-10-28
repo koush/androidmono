@@ -4,10 +4,6 @@ namespace org.apache.http.client.methods
 	public partial class HttpGet : org.apache.http.client.methods.HttpRequestBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpGet()
-		{
-			InitJNI();
-		}
 		protected HttpGet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -55,7 +51,7 @@ namespace org.apache.http.client.methods
 				return "GET";
 			}
 		}
-		private static void InitJNI()
+		static HttpGet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpGet.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpGet"));
@@ -63,6 +59,9 @@ namespace org.apache.http.client.methods
 			global::org.apache.http.client.methods.HttpGet._HttpGet31921 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpGet.staticClass, "<init>", "()V");
 			global::org.apache.http.client.methods.HttpGet._HttpGet31922 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpGet.staticClass, "<init>", "(Ljava/net/URI;)V");
 			global::org.apache.http.client.methods.HttpGet._HttpGet31923 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpGet.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

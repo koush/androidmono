@@ -4,10 +4,6 @@ namespace android.content.res
 	public partial class ColorStateList : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ColorStateList()
-		{
-			InitJNI();
-		}
 		protected ColorStateList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,7 +105,7 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.res.ColorStateList.staticClass, _CREATOR4126)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ColorStateList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.ColorStateList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/ColorStateList"));
@@ -124,6 +120,9 @@ namespace android.content.res
 			global::android.content.res.ColorStateList._getDefaultColor4124 = @__env.GetMethodIDNoThrow(global::android.content.res.ColorStateList.staticClass, "getDefaultColor", "()I");
 			global::android.content.res.ColorStateList._ColorStateList4125 = @__env.GetMethodIDNoThrow(global::android.content.res.ColorStateList.staticClass, "<init>", "([[I[I)V");
 			global::android.content.res.ColorStateList._CREATOR4126 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.ColorStateList.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

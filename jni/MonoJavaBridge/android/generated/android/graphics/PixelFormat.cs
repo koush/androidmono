@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class PixelFormat : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PixelFormat()
-		{
-			InitJNI();
-		}
 		protected PixelFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -180,7 +176,7 @@ namespace android.graphics
 			{
 			}
 		}
-		private static void InitJNI()
+		static PixelFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PixelFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PixelFormat"));
@@ -189,6 +185,9 @@ namespace android.graphics
 			global::android.graphics.PixelFormat._PixelFormat5597 = @__env.GetMethodIDNoThrow(global::android.graphics.PixelFormat.staticClass, "<init>", "()V");
 			global::android.graphics.PixelFormat._bytesPerPixel5616 = @__env.GetFieldIDNoThrow(global::android.graphics.PixelFormat.staticClass, "bytesPerPixel", "I");
 			global::android.graphics.PixelFormat._bitsPerPixel5617 = @__env.GetFieldIDNoThrow(global::android.graphics.PixelFormat.staticClass, "bitsPerPixel", "I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

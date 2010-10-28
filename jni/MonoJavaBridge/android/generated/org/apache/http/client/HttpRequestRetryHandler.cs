@@ -10,10 +10,6 @@ namespace org.apache.http.client
 	internal sealed partial class HttpRequestRetryHandler_ : java.lang.Object, HttpRequestRetryHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestRetryHandler_()
-		{
-			InitJNI();
-		}
 		internal HttpRequestRetryHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.client
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.client.HttpRequestRetryHandler_.staticClass, global::org.apache.http.client.HttpRequestRetryHandler_._retryRequest31891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI()
+		static HttpRequestRetryHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.HttpRequestRetryHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/HttpRequestRetryHandler"));
 			global::org.apache.http.client.HttpRequestRetryHandler_._retryRequest31891 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpRequestRetryHandler_.staticClass, "retryRequest", "(Ljava/io/IOException;ILorg/apache/http/protocol/HttpContext;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

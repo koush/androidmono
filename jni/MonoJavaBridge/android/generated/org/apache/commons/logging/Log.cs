@@ -27,10 +27,6 @@ namespace org.apache.commons.logging
 	internal sealed partial class Log_ : java.lang.Object, Log
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Log_()
-		{
-			InitJNI();
-		}
 		internal Log_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -196,7 +192,7 @@ namespace org.apache.commons.logging
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._fatal31489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Log_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.commons.logging.Log_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/commons/logging/Log"));
@@ -218,6 +214,9 @@ namespace org.apache.commons.logging
 			global::org.apache.commons.logging.Log_._warn31487 = @__env.GetMethodIDNoThrow(global::org.apache.commons.logging.Log_.staticClass, "warn", "(Ljava/lang/Object;)V");
 			global::org.apache.commons.logging.Log_._fatal31488 = @__env.GetMethodIDNoThrow(global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;)V");
 			global::org.apache.commons.logging.Log_._fatal31489 = @__env.GetMethodIDNoThrow(global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

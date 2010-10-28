@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class ResponseConnControl : java.lang.Object, HttpResponseInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseConnControl()
-		{
-			InitJNI();
-		}
 		protected ResponseConnControl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.ResponseConnControl.staticClass, global::org.apache.http.protocol.ResponseConnControl._ResponseConnControl33949);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResponseConnControl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.ResponseConnControl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/ResponseConnControl"));
 			global::org.apache.http.protocol.ResponseConnControl._process33948 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseConnControl.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.ResponseConnControl._ResponseConnControl33949 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.ResponseConnControl.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

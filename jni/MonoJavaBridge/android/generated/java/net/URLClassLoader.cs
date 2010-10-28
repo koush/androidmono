@@ -4,10 +4,6 @@ namespace java.net
 	public partial class URLClassLoader : java.security.SecureClassLoader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static URLClassLoader()
-		{
-			InitJNI();
-		}
 		protected URLClassLoader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +110,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._URLClassLoader21919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static URLClassLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.URLClassLoader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/URLClassLoader"));
@@ -130,6 +126,9 @@ namespace java.net
 			global::java.net.URLClassLoader._URLClassLoader21917 = @__env.GetMethodIDNoThrow(global::java.net.URLClassLoader.staticClass, "<init>", "([Ljava/net/URL;Ljava/lang/ClassLoader;)V");
 			global::java.net.URLClassLoader._URLClassLoader21918 = @__env.GetMethodIDNoThrow(global::java.net.URLClassLoader.staticClass, "<init>", "([Ljava/net/URL;)V");
 			global::java.net.URLClassLoader._URLClassLoader21919 = @__env.GetMethodIDNoThrow(global::java.net.URLClassLoader.staticClass, "<init>", "([Ljava/net/URL;Ljava/lang/ClassLoader;Ljava/net/URLStreamHandlerFactory;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

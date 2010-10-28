@@ -4,10 +4,6 @@ namespace javax.crypto
 	public partial class Cipher : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Cipher()
-		{
-			InitJNI();
-		}
 		protected Cipher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -400,7 +396,7 @@ namespace javax.crypto
 				return 3;
 			}
 		}
-		private static void InitJNI()
+		static Cipher()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.Cipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/Cipher"));
@@ -439,6 +435,9 @@ namespace javax.crypto
 			global::javax.crypto.Cipher._getMaxAllowedParameterSpec28523 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getMaxAllowedParameterSpec", "(Ljava/lang/String;)Ljava/security/spec/AlgorithmParameterSpec;");
 			global::javax.crypto.Cipher._getOutputSize28524 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getOutputSize", "(I)I");
 			global::javax.crypto.Cipher._Cipher28525 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "<init>", "(Ljavax/crypto/CipherSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -10,10 +10,6 @@ namespace org.apache.http
 	internal sealed partial class ReasonPhraseCatalog_ : java.lang.Object, ReasonPhraseCatalog
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReasonPhraseCatalog_()
-		{
-			InitJNI();
-		}
 		internal ReasonPhraseCatalog_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.ReasonPhraseCatalog_.staticClass, global::org.apache.http.ReasonPhraseCatalog_._getReason31759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static ReasonPhraseCatalog_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ReasonPhraseCatalog_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ReasonPhraseCatalog"));
 			global::org.apache.http.ReasonPhraseCatalog_._getReason31759 = @__env.GetMethodIDNoThrow(global::org.apache.http.ReasonPhraseCatalog_.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

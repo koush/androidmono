@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class RotateAnimation : android.view.animation.Animation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RotateAnimation()
-		{
-			InitJNI();
-		}
 		protected RotateAnimation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -57,7 +53,7 @@ namespace android.view.animation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.RotateAnimation.staticClass, global::android.view.animation.RotateAnimation._RotateAnimation15749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RotateAnimation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.RotateAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/RotateAnimation"));
@@ -67,6 +63,9 @@ namespace android.view.animation
 			global::android.view.animation.RotateAnimation._RotateAnimation15747 = @__env.GetMethodIDNoThrow(global::android.view.animation.RotateAnimation.staticClass, "<init>", "(FF)V");
 			global::android.view.animation.RotateAnimation._RotateAnimation15748 = @__env.GetMethodIDNoThrow(global::android.view.animation.RotateAnimation.staticClass, "<init>", "(FFFF)V");
 			global::android.view.animation.RotateAnimation._RotateAnimation15749 = @__env.GetMethodIDNoThrow(global::android.view.animation.RotateAnimation.staticClass, "<init>", "(FFIFIF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

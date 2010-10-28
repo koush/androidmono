@@ -16,10 +16,6 @@ namespace org.apache.http.auth
 	internal sealed partial class AuthScheme_ : java.lang.Object, AuthScheme
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AuthScheme_()
-		{
-			InitJNI();
-		}
 		internal AuthScheme_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http.auth
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._authenticate31783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.Header;
 		}
-		private static void InitJNI()
+		static AuthScheme_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.AuthScheme_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/AuthScheme"));
@@ -97,6 +93,9 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.AuthScheme_._isConnectionBased31781 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScheme_.staticClass, "isConnectionBased", "()Z");
 			global::org.apache.http.auth.AuthScheme_._isComplete31782 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScheme_.staticClass, "isComplete", "()Z");
 			global::org.apache.http.auth.AuthScheme_._authenticate31783 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScheme_.staticClass, "authenticate", "(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

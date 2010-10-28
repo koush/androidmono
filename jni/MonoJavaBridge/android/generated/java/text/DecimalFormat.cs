@@ -4,10 +4,6 @@ namespace java.text
 	public partial class DecimalFormat : java.text.NumberFormat
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DecimalFormat()
-		{
-			InitJNI();
-		}
 		protected DecimalFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -567,7 +563,7 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25468);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DecimalFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DecimalFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DecimalFormat"));
@@ -616,6 +612,9 @@ namespace java.text
 			global::java.text.DecimalFormat._DecimalFormat25466 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.text.DecimalFormat._DecimalFormat25467 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V");
 			global::java.text.DecimalFormat._DecimalFormat25468 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

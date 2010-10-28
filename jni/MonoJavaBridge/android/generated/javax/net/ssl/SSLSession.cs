@@ -30,10 +30,6 @@ namespace javax.net.ssl
 	internal sealed partial class SSLSession_ : java.lang.Object, SSLSession
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLSession_()
-		{
-			InitJNI();
-		}
 		internal SSLSession_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -226,7 +222,7 @@ namespace javax.net.ssl
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.net.ssl.SSLSession_.staticClass, global::javax.net.ssl.SSLSession_._getApplicationBufferSize30057);
 		}
-		private static void InitJNI()
+		static SSLSession_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLSession_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLSession"));
@@ -251,6 +247,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLSession_._getPeerPort30055 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSession_.staticClass, "getPeerPort", "()I");
 			global::javax.net.ssl.SSLSession_._getPacketBufferSize30056 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSession_.staticClass, "getPacketBufferSize", "()I");
 			global::javax.net.ssl.SSLSession_._getApplicationBufferSize30057 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSession_.staticClass, "getApplicationBufferSize", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

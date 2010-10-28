@@ -118,10 +118,6 @@ namespace javax.sql
 	internal sealed partial class RowSet_ : java.lang.Object, RowSet
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RowSet_()
-		{
-			InitJNI();
-		}
 		internal RowSet_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -2681,7 +2677,7 @@ namespace javax.sql
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNCharacterStream30573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static RowSet_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSet"));
@@ -2969,6 +2965,9 @@ namespace javax.sql
 			global::javax.sql.RowSet_._updateNCharacterStream30571 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSet_.staticClass, "updateNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;J)V");
 			global::javax.sql.RowSet_._updateNCharacterStream30572 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSet_.staticClass, "updateNCharacterStream", "(ILjava/io/Reader;J)V");
 			global::javax.sql.RowSet_._updateNCharacterStream30573 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSet_.staticClass, "updateNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

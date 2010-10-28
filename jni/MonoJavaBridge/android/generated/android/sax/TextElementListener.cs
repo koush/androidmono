@@ -9,10 +9,6 @@ namespace android.sax
 	internal sealed partial class TextElementListener_ : java.lang.Object, TextElementListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TextElementListener_()
-		{
-			InitJNI();
-		}
 		internal TextElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,12 +30,15 @@ namespace android.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.TextElementListener_.staticClass, global::android.sax.TextElementListener_._end11620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TextElementListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.TextElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/TextElementListener"));
 			global::android.sax.TextElementListener_._start11619 = @__env.GetMethodIDNoThrow(global::android.sax.TextElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V");
 			global::android.sax.TextElementListener_._end11620 = @__env.GetMethodIDNoThrow(global::android.sax.TextElementListener_.staticClass, "end", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

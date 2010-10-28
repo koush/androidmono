@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class RFC2965CommentUrlAttributeHandler : java.lang.Object, org.apache.http.cookie.CookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RFC2965CommentUrlAttributeHandler()
-		{
-			InitJNI();
-		}
 		protected RFC2965CommentUrlAttributeHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler._RFC2965CommentUrlAttributeHandler33342);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RFC2965CommentUrlAttributeHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/RFC2965CommentUrlAttributeHandler"));
@@ -53,6 +49,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler._match33340 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
 			global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler._validate33341 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
 			global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler._RFC2965CommentUrlAttributeHandler33342 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

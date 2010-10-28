@@ -10,10 +10,6 @@ namespace org.apache.http.client
 	internal sealed partial class ResponseHandler_ : java.lang.Object, ResponseHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResponseHandler_()
-		{
-			InitJNI();
-		}
 		internal ResponseHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.ResponseHandler_.staticClass, global::org.apache.http.client.ResponseHandler_._handleResponse31902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static ResponseHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.ResponseHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/ResponseHandler"));
 			global::org.apache.http.client.ResponseHandler_._handleResponse31902 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ResponseHandler_.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

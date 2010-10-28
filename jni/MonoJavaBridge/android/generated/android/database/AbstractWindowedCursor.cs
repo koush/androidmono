@@ -4,10 +4,6 @@ namespace android.database
 	public abstract partial class AbstractWindowedCursor : android.database.AbstractCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractWindowedCursor()
-		{
-			InitJNI();
-		}
 		protected AbstractWindowedCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -171,7 +167,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._AbstractWindowedCursor4420);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractWindowedCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.AbstractWindowedCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractWindowedCursor"));
@@ -194,16 +190,15 @@ namespace android.database
 			global::android.database.AbstractWindowedCursor._hasWindow4419 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "hasWindow", "()Z");
 			global::android.database.AbstractWindowedCursor._AbstractWindowedCursor4420 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.AbstractWindowedCursor))]
 	internal sealed partial class AbstractWindowedCursor_ : android.database.AbstractWindowedCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractWindowedCursor_()
-		{
-			InitJNI();
-		}
 		internal AbstractWindowedCursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -225,12 +220,15 @@ namespace android.database
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor_.staticClass, global::android.database.AbstractWindowedCursor_._getColumnNames4422)) as java.lang.String[];
 		}
-		private static void InitJNI()
+		static AbstractWindowedCursor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.AbstractWindowedCursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractWindowedCursor"));
 			global::android.database.AbstractWindowedCursor_._getCount4421 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor_.staticClass, "getCount", "()I");
 			global::android.database.AbstractWindowedCursor_._getColumnNames4422 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor_.staticClass, "getColumnNames", "()[Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

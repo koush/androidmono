@@ -17,10 +17,6 @@ namespace android.content
 	internal sealed partial class SharedPreferences_Editor_ : java.lang.Object, SharedPreferences_Editor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SharedPreferences_Editor_()
-		{
-			InitJNI();
-		}
 		internal SharedPreferences_Editor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace android.content
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._commit3519);
 		}
-		private static void InitJNI()
+		static SharedPreferences_Editor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_Editor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences$Editor"));
@@ -108,6 +104,9 @@ namespace android.content
 			global::android.content.SharedPreferences_Editor_._remove3517 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "remove", "(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
 			global::android.content.SharedPreferences_Editor_._putString3518 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putString", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
 			global::android.content.SharedPreferences_Editor_._commit3519 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "commit", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.app.backup
 	public partial class BackupDataInput : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackupDataInput()
-		{
-			InitJNI();
-		}
 		protected BackupDataInput(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace android.app.backup
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupDataInput.staticClass, global::android.app.backup.BackupDataInput._skipEntityData2313);
 		}
-		private static void InitJNI()
+		static BackupDataInput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.BackupDataInput.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/BackupDataInput"));
@@ -79,6 +75,9 @@ namespace android.app.backup
 			global::android.app.backup.BackupDataInput._getDataSize2311 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInput.staticClass, "getDataSize", "()I");
 			global::android.app.backup.BackupDataInput._readEntityData2312 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInput.staticClass, "readEntityData", "([BII)I");
 			global::android.app.backup.BackupDataInput._skipEntityData2313 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupDataInput.staticClass, "skipEntityData", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

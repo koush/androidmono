@@ -4,10 +4,6 @@ namespace java.security
 	public sealed partial class CodeSigner : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CodeSigner()
-		{
-			InitJNI();
-		}
 		internal CodeSigner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -77,7 +73,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSigner.staticClass, global::java.security.CodeSigner._CodeSigner22924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CodeSigner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.CodeSigner.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/CodeSigner"));
@@ -87,6 +83,9 @@ namespace java.security
 			global::java.security.CodeSigner._getSignerCertPath22922 = @__env.GetMethodIDNoThrow(global::java.security.CodeSigner.staticClass, "getSignerCertPath", "()Ljava/security/cert/CertPath;");
 			global::java.security.CodeSigner._getTimestamp22923 = @__env.GetMethodIDNoThrow(global::java.security.CodeSigner.staticClass, "getTimestamp", "()Ljava/security/Timestamp;");
 			global::java.security.CodeSigner._CodeSigner22924 = @__env.GetMethodIDNoThrow(global::java.security.CodeSigner.staticClass, "<init>", "(Ljava/security/cert/CertPath;Ljava/security/Timestamp;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

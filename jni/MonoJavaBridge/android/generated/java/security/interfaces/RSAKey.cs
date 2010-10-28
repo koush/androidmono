@@ -10,10 +10,6 @@ namespace java.security.interfaces
 	internal sealed partial class RSAKey_ : java.lang.Object, RSAKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RSAKey_()
-		{
-			InitJNI();
-		}
 		internal RSAKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAKey_.staticClass, global::java.security.interfaces.RSAKey_._getModulus23926)) as java.math.BigInteger;
 		}
-		private static void InitJNI()
+		static RSAKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.RSAKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/RSAKey"));
 			global::java.security.interfaces.RSAKey_._getModulus23926 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

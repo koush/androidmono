@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class CacheResponse : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CacheResponse()
-		{
-			InitJNI();
-		}
 		protected CacheResponse(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -22,7 +18,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.CacheResponse.staticClass, global::java.net.CacheResponse._CacheResponse21356);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CacheResponse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheResponse"));
@@ -30,16 +26,15 @@ namespace java.net
 			global::java.net.CacheResponse._getBody21355 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse.staticClass, "getBody", "()Ljava/io/InputStream;");
 			global::java.net.CacheResponse._CacheResponse21356 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.CacheResponse))]
 	internal sealed partial class CacheResponse_ : java.net.CacheResponse
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CacheResponse_()
-		{
-			InitJNI();
-		}
 		internal CacheResponse_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,12 +56,15 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.CacheResponse_.staticClass, global::java.net.CacheResponse_._getBody21358)) as java.io.InputStream;
 		}
-		private static void InitJNI()
+		static CacheResponse_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheResponse_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheResponse"));
 			global::java.net.CacheResponse_._getHeaders21357 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;");
 			global::java.net.CacheResponse_._getBody21358 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

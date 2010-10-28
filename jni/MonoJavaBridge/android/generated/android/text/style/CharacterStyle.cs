@@ -4,10 +4,6 @@ namespace android.text.style
 	public abstract partial class CharacterStyle : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharacterStyle()
-		{
-			InitJNI();
-		}
 		protected CharacterStyle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,7 +31,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._CharacterStyle13462);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CharacterStyle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.CharacterStyle.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/CharacterStyle"));
@@ -44,16 +40,15 @@ namespace android.text.style
 			global::android.text.style.CharacterStyle._getUnderlying13461 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "getUnderlying", "()Landroid/text/style/CharacterStyle;");
 			global::android.text.style.CharacterStyle._CharacterStyle13462 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.CharacterStyle))]
 	internal sealed partial class CharacterStyle_ : android.text.style.CharacterStyle
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CharacterStyle_()
-		{
-			InitJNI();
-		}
 		internal CharacterStyle_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,11 +61,14 @@ namespace android.text.style
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_.staticClass, global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CharacterStyle_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.CharacterStyle_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/CharacterStyle"));
 			global::android.text.style.CharacterStyle_._updateDrawState13463 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -17,10 +17,6 @@ namespace android.text.method
 	internal sealed partial class MovementMethod_ : java.lang.Object, MovementMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MovementMethod_()
-		{
-			InitJNI();
-		}
 		internal MovementMethod_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -96,7 +92,7 @@ namespace android.text.method
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._canSelectArbitrarily13342);
 		}
-		private static void InitJNI()
+		static MovementMethod_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.MovementMethod_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/MovementMethod"));
@@ -108,6 +104,9 @@ namespace android.text.method
 			global::android.text.method.MovementMethod_._onKeyOther13340 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onKeyOther", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/KeyEvent;)Z");
 			global::android.text.method.MovementMethod_._onTakeFocus13341 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
 			global::android.text.method.MovementMethod_._canSelectArbitrarily13342 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "canSelectArbitrarily", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

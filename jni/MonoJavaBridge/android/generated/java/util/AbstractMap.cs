@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractMap : java.lang.Object, Map
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractMap()
-		{
-			InitJNI();
-		}
 		protected AbstractMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -155,7 +151,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractMap.staticClass, global::java.util.AbstractMap._AbstractMap25716);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractMap"));
@@ -177,16 +173,15 @@ namespace java.util
 			global::java.util.AbstractMap._containsKey25715 = @__env.GetMethodIDNoThrow(global::java.util.AbstractMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
 			global::java.util.AbstractMap._AbstractMap25716 = @__env.GetMethodIDNoThrow(global::java.util.AbstractMap.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractMap))]
 	internal sealed partial class AbstractMap_ : java.util.AbstractMap
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractMap_()
-		{
-			InitJNI();
-		}
 		internal AbstractMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -199,11 +194,14 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.AbstractMap_.staticClass, global::java.util.AbstractMap_._entrySet25717)) as java.util.Set;
 		}
-		private static void InitJNI()
+		static AbstractMap_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractMap"));
 			global::java.util.AbstractMap_._entrySet25717 = @__env.GetMethodIDNoThrow(global::java.util.AbstractMap_.staticClass, "entrySet", "()Ljava/util/Set;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

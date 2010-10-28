@@ -4,10 +4,6 @@ namespace android.gesture
 	public partial class OrientedBoundingBox : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static OrientedBoundingBox()
-		{
-			InitJNI();
-		}
 		protected OrientedBoundingBox(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -65,7 +61,7 @@ namespace android.gesture
 				return @__env.GetFloatField(this.JvmHandle, _centerY5005);
 			}
 		}
-		private static void InitJNI()
+		static OrientedBoundingBox()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.OrientedBoundingBox.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/OrientedBoundingBox"));
@@ -75,6 +71,9 @@ namespace android.gesture
 			global::android.gesture.OrientedBoundingBox._orientation5003 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "orientation", "F");
 			global::android.gesture.OrientedBoundingBox._centerX5004 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerX", "F");
 			global::android.gesture.OrientedBoundingBox._centerY5005 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerY", "F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

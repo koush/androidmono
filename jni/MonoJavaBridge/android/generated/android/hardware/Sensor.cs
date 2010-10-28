@@ -4,10 +4,6 @@ namespace android.hardware
 	public partial class Sensor : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Sensor()
-		{
-			InitJNI();
-		}
 		protected Sensor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -186,7 +182,7 @@ namespace android.hardware
 				return -1;
 			}
 		}
-		private static void InitJNI()
+		static Sensor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.Sensor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Sensor"));
@@ -197,6 +193,9 @@ namespace android.hardware
 			global::android.hardware.Sensor._getMaximumRange6436 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getMaximumRange", "()F");
 			global::android.hardware.Sensor._getResolution6437 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getResolution", "()F");
 			global::android.hardware.Sensor._getPower6438 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getPower", "()F");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

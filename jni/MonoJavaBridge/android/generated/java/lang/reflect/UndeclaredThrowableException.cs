@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public partial class UndeclaredThrowableException : java.lang.RuntimeException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static UndeclaredThrowableException()
-		{
-			InitJNI();
-		}
 		protected UndeclaredThrowableException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -57,7 +53,7 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.UndeclaredThrowableException.staticClass, global::java.lang.reflect.UndeclaredThrowableException._UndeclaredThrowableException21161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static UndeclaredThrowableException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.UndeclaredThrowableException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/UndeclaredThrowableException"));
@@ -65,6 +61,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.UndeclaredThrowableException._getUndeclaredThrowable21159 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.UndeclaredThrowableException.staticClass, "getUndeclaredThrowable", "()Ljava/lang/Throwable;");
 			global::java.lang.reflect.UndeclaredThrowableException._UndeclaredThrowableException21160 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.UndeclaredThrowableException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::java.lang.reflect.UndeclaredThrowableException._UndeclaredThrowableException21161 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.UndeclaredThrowableException.staticClass, "<init>", "(Ljava/lang/Throwable;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace javax.xml.validation
 	public abstract partial class Validator : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Validator()
-		{
-			InitJNI();
-		}
 		protected Validator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace javax.xml.validation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._Validator31232);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Validator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.Validator.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/Validator"));
@@ -92,16 +88,15 @@ namespace javax.xml.validation
 			global::javax.xml.validation.Validator._getResourceResolver31231 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator.staticClass, "getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
 			global::javax.xml.validation.Validator._Validator31232 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.validation.Validator))]
 	internal sealed partial class Validator_ : javax.xml.validation.Validator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Validator_()
-		{
-			InitJNI();
-		}
 		internal Validator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,7 +154,7 @@ namespace javax.xml.validation
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSResourceResolver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._getResourceResolver31238)) as org.w3c.dom.ls.LSResourceResolver;
 		}
-		private static void InitJNI()
+		static Validator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.Validator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/Validator"));
@@ -169,6 +164,9 @@ namespace javax.xml.validation
 			global::javax.xml.validation.Validator_._getErrorHandler31236 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator_.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
 			global::javax.xml.validation.Validator_._setResourceResolver31237 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator_.staticClass, "setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V");
 			global::javax.xml.validation.Validator_._getResourceResolver31238 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator_.staticClass, "getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

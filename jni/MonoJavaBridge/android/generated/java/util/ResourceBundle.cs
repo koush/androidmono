@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class ResourceBundle : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResourceBundle()
-		{
-			InitJNI();
-		}
 		protected ResourceBundle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -124,7 +120,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ResourceBundle.staticClass, global::java.util.ResourceBundle._ResourceBundle26635);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ResourceBundle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ResourceBundle.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ResourceBundle"));
@@ -145,16 +141,15 @@ namespace java.util
 			global::java.util.ResourceBundle._handleKeySet26634 = @__env.GetMethodIDNoThrow(global::java.util.ResourceBundle.staticClass, "handleKeySet", "()Ljava/util/Set;");
 			global::java.util.ResourceBundle._ResourceBundle26635 = @__env.GetMethodIDNoThrow(global::java.util.ResourceBundle.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.ResourceBundle))]
 	internal sealed partial class ResourceBundle_ : java.util.ResourceBundle
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ResourceBundle_()
-		{
-			InitJNI();
-		}
 		internal ResourceBundle_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -176,12 +171,15 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ResourceBundle_.staticClass, global::java.util.ResourceBundle_._handleGetObject26637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static ResourceBundle_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ResourceBundle_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ResourceBundle"));
 			global::java.util.ResourceBundle_._getKeys26636 = @__env.GetMethodIDNoThrow(global::java.util.ResourceBundle_.staticClass, "getKeys", "()Ljava/util/Enumeration;");
 			global::java.util.ResourceBundle_._handleGetObject26637 = @__env.GetMethodIDNoThrow(global::java.util.ResourceBundle_.staticClass, "handleGetObject", "(Ljava/lang/String;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

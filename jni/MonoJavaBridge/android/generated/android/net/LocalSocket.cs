@@ -4,10 +4,6 @@ namespace android.net
 	public partial class LocalSocket : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LocalSocket()
-		{
-			InitJNI();
-		}
 		protected LocalSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -341,7 +337,7 @@ namespace android.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalSocket.staticClass, global::android.net.LocalSocket._LocalSocket7691);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LocalSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.LocalSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalSocket"));
@@ -372,6 +368,9 @@ namespace android.net
 			global::android.net.LocalSocket._getAncillaryFileDescriptors7689 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocket.staticClass, "getAncillaryFileDescriptors", "()[Ljava/io/FileDescriptor;");
 			global::android.net.LocalSocket._getPeerCredentials7690 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocket.staticClass, "getPeerCredentials", "()Landroid/net/Credentials;");
 			global::android.net.LocalSocket._LocalSocket7691 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocket.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

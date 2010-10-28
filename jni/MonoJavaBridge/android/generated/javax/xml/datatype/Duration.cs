@@ -4,10 +4,6 @@ namespace javax.xml.datatype
 	public abstract partial class Duration : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Duration()
-		{
-			InitJNI();
-		}
 		protected Duration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -182,7 +178,7 @@ namespace javax.xml.datatype
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._Duration30736);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Duration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.Duration.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/Duration"));
@@ -214,16 +210,15 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.Duration._isShorterThan30735 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.Duration.staticClass, "isShorterThan", "(Ljavax/xml/datatype/Duration;)Z");
 			global::javax.xml.datatype.Duration._Duration30736 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.Duration.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.datatype.Duration))]
 	internal sealed partial class Duration_ : javax.xml.datatype.Duration
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Duration_()
-		{
-			InitJNI();
-		}
 		internal Duration_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -317,7 +312,7 @@ namespace javax.xml.datatype
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._normalizeWith30746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.datatype.Duration;
 		}
-		private static void InitJNI()
+		static Duration_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.Duration_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/Duration"));
@@ -331,6 +326,9 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.Duration_._getSign30744 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.Duration_.staticClass, "getSign", "()I");
 			global::javax.xml.datatype.Duration_._addTo30745 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.Duration_.staticClass, "addTo", "(Ljava/util/Calendar;)V");
 			global::javax.xml.datatype.Duration_._normalizeWith30746 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.Duration_.staticClass, "normalizeWith", "(Ljava/util/Calendar;)Ljavax/xml/datatype/Duration;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

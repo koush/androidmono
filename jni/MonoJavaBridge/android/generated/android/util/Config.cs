@@ -4,10 +4,6 @@ namespace android.util
 	public sealed partial class Config : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Config()
-		{
-			InitJNI();
-		}
 		internal Config(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -53,11 +49,14 @@ namespace android.util
 				return true;
 			}
 		}
-		private static void InitJNI()
+		static Config()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Config.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Config"));
 			global::android.util.Config._Config13726 = @__env.GetMethodIDNoThrow(global::android.util.Config.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class Visibility : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Visibility()
-		{
-			InitJNI();
-		}
 		protected Visibility(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,7 +32,7 @@ namespace android.opengl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._Visibility9493);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Visibility()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.Visibility.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/Visibility"));
@@ -44,6 +40,9 @@ namespace android.opengl
 			global::android.opengl.Visibility._frustumCullSpheres9491 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "frustumCullSpheres", "([FI[FII[III)I");
 			global::android.opengl.Visibility._computeBoundingSphere9492 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "computeBoundingSphere", "([FII[FI)V");
 			global::android.opengl.Visibility._Visibility9493 = @__env.GetMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public partial class EditorInfo : java.lang.Object, android.text.InputType, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static EditorInfo()
-		{
-			InitJNI();
-		}
 		protected EditorInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -310,7 +306,7 @@ namespace android.view.inputmethod
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.EditorInfo.staticClass, _CREATOR15840)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static EditorInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.EditorInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/EditorInfo"));
@@ -333,6 +329,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.EditorInfo._fieldName15838 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "fieldName", "Ljava/lang/String;");
 			global::android.view.inputmethod.EditorInfo._extras15839 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "extras", "Landroid/os/Bundle;");
 			global::android.view.inputmethod.EditorInfo._CREATOR15840 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

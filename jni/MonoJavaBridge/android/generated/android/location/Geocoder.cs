@@ -4,10 +4,6 @@ namespace android.location
 	public sealed partial class Geocoder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Geocoder()
-		{
-			InitJNI();
-		}
 		internal Geocoder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace android.location
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Geocoder.staticClass, global::android.location.Geocoder._Geocoder6867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Geocoder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.Geocoder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Geocoder"));
@@ -61,6 +57,9 @@ namespace android.location
 			global::android.location.Geocoder._getFromLocationName6865 = @__env.GetMethodIDNoThrow(global::android.location.Geocoder.staticClass, "getFromLocationName", "(Ljava/lang/String;IDDDD)Ljava/util/List;");
 			global::android.location.Geocoder._Geocoder6866 = @__env.GetMethodIDNoThrow(global::android.location.Geocoder.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/Locale;)V");
 			global::android.location.Geocoder._Geocoder6867 = @__env.GetMethodIDNoThrow(global::android.location.Geocoder.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

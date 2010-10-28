@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class HttpRequestExecutor : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestExecutor()
-		{
-			InitJNI();
-		}
 		protected HttpRequestExecutor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._HttpRequestExecutor33902);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpRequestExecutor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestExecutor.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestExecutor"));
@@ -83,6 +79,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.HttpRequestExecutor._doReceiveResponse33900 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "doReceiveResponse", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpClientConnection;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
 			global::org.apache.http.protocol.HttpRequestExecutor._postProcess33901 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "postProcess", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/protocol/HttpContext;)V");
 			global::org.apache.http.protocol.HttpRequestExecutor._HttpRequestExecutor33902 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

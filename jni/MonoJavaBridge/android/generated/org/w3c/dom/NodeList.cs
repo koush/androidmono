@@ -11,10 +11,6 @@ namespace org.w3c.dom
 	internal sealed partial class NodeList_ : java.lang.Object, NodeList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NodeList_()
-		{
-			InitJNI();
-		}
 		internal NodeList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.NodeList_.staticClass, global::org.w3c.dom.NodeList_._item34740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
 		}
-		private static void InitJNI()
+		static NodeList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.NodeList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/NodeList"));
 			global::org.w3c.dom.NodeList_._getLength34739 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NodeList_.staticClass, "getLength", "()I");
 			global::org.w3c.dom.NodeList_._item34740 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NodeList_.staticClass, "item", "(I)Lorg/w3c/dom/Node;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

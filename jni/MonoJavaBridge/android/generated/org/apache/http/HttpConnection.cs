@@ -16,10 +16,6 @@ namespace org.apache.http
 	internal sealed partial class HttpConnection_ : java.lang.Object, HttpConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpConnection_()
-		{
-			InitJNI();
-		}
 		internal HttpConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.apache.http
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._getSocketTimeout31535);
 		}
-		private static void InitJNI()
+		static HttpConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpConnection"));
@@ -97,6 +93,9 @@ namespace org.apache.http
 			global::org.apache.http.HttpConnection_._isStale31533 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnection_.staticClass, "isStale", "()Z");
 			global::org.apache.http.HttpConnection_._setSocketTimeout31534 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnection_.staticClass, "setSocketTimeout", "(I)V");
 			global::org.apache.http.HttpConnection_._getSocketTimeout31535 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnection_.staticClass, "getSocketTimeout", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

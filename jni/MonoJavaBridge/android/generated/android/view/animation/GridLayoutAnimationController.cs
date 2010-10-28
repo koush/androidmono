@@ -4,10 +4,6 @@ namespace android.view.animation
 	public partial class GridLayoutAnimationController : android.view.animation.LayoutAnimationController
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GridLayoutAnimationController()
-		{
-			InitJNI();
-		}
 		protected GridLayoutAnimationController(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view.animation
 		public new partial class AnimationParameters : android.view.animation.LayoutAnimationController.AnimationParameters
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static AnimationParameters()
-			{
-				InitJNI();
-			}
 			protected AnimationParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -77,7 +69,7 @@ namespace android.view.animation
 				{
 				}
 			}
-			private static void InitJNI()
+			static AnimationParameters()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/GridLayoutAnimationController$AnimationParameters"));
@@ -86,6 +78,9 @@ namespace android.view.animation
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._row15685 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "row", "I");
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._columnsCount15686 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "columnsCount", "I");
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._rowsCount15687 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "rowsCount", "I");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _willOverlap15688;
@@ -306,7 +301,7 @@ namespace android.view.animation
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static GridLayoutAnimationController()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.GridLayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/GridLayoutAnimationController"));
@@ -323,6 +318,9 @@ namespace android.view.animation
 			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15698 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
 			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15699 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;FF)V");
 			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15700 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

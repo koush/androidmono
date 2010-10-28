@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public abstract partial class HttpsURLConnection : java.net.HttpURLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpsURLConnection()
-		{
-			InitJNI();
-		}
 		protected HttpsURLConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -102,7 +98,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.HttpsURLConnection.staticClass, global::javax.net.ssl.HttpsURLConnection._HttpsURLConnection29855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static HttpsURLConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HttpsURLConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HttpsURLConnection"));
@@ -121,16 +117,15 @@ namespace javax.net.ssl
 			global::javax.net.ssl.HttpsURLConnection._getSSLSocketFactory29854 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HttpsURLConnection.staticClass, "getSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
 			global::javax.net.ssl.HttpsURLConnection._HttpsURLConnection29855 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HttpsURLConnection.staticClass, "<init>", "(Ljava/net/URL;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.HttpsURLConnection))]
 	internal sealed partial class HttpsURLConnection_ : javax.net.ssl.HttpsURLConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpsURLConnection_()
-		{
-			InitJNI();
-		}
 		internal HttpsURLConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -188,7 +183,7 @@ namespace javax.net.ssl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.HttpsURLConnection_.staticClass, global::javax.net.ssl.HttpsURLConnection_._connect29861);
 		}
-		private static void InitJNI()
+		static HttpsURLConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HttpsURLConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HttpsURLConnection"));
@@ -198,6 +193,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.HttpsURLConnection_._disconnect29859 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HttpsURLConnection_.staticClass, "disconnect", "()V");
 			global::javax.net.ssl.HttpsURLConnection_._usingProxy29860 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HttpsURLConnection_.staticClass, "usingProxy", "()Z");
 			global::javax.net.ssl.HttpsURLConnection_._connect29861 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HttpsURLConnection_.staticClass, "connect", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

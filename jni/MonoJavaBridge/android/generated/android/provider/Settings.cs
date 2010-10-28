@@ -4,10 +4,6 @@ namespace android.provider
 	public sealed partial class Settings : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Settings()
-		{
-			InitJNI();
-		}
 		internal Settings(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.provider
 		public partial class NameValueTable : java.lang.Object, BaseColumns
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static NameValueTable()
-			{
-				InitJNI();
-			}
 			protected NameValueTable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -55,7 +47,7 @@ namespace android.provider
 					return "value";
 				}
 			}
-			private static void InitJNI()
+			static NameValueTable()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.NameValueTable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$NameValueTable"));
@@ -63,15 +55,14 @@ namespace android.provider
 				global::android.provider.Settings.NameValueTable._getUriFor11340 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.NameValueTable.staticClass, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;");
 				global::android.provider.Settings.NameValueTable._NameValueTable11341 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.NameValueTable.staticClass, "<init>", "()V");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Secure : android.provider.Settings.NameValueTable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Secure()
-			{
-				InitJNI();
-			}
 			internal Secure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -546,7 +537,7 @@ namespace android.provider
 					return "allowed_geolocation_origins";
 				}
 			}
-			private static void InitJNI()
+			static Secure()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.Secure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$Secure"));
@@ -567,15 +558,14 @@ namespace android.provider
 				global::android.provider.Settings.Secure._Secure11358 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "<init>", "()V");
 				global::android.provider.Settings.Secure._CONTENT_URI11360 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.Secure.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SettingNotFoundException : android.util.AndroidException
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SettingNotFoundException()
-			{
-				InitJNI();
-			}
 			protected SettingNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -586,21 +576,20 @@ namespace android.provider
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.SettingNotFoundException.staticClass, global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException11413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static SettingNotFoundException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.SettingNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$SettingNotFoundException"));
 				global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException11413 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.SettingNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class System : android.provider.Settings.NameValueTable
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static System()
-			{
-				InitJNI();
-			}
 			internal System(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -1452,7 +1441,7 @@ namespace android.provider
 					return "wifi_watchdog_ping_timeout_ms";
 				}
 			}
-			private static void InitJNI()
+			static System()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.System.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$System"));
@@ -1478,6 +1467,9 @@ namespace android.provider
 				global::android.provider.Settings.System._DEFAULT_RINGTONE_URI11481 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.System.staticClass, "DEFAULT_RINGTONE_URI", "Landroid/net/Uri;");
 				global::android.provider.Settings.System._DEFAULT_NOTIFICATION_URI11483 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.System.staticClass, "DEFAULT_NOTIFICATION_URI", "Landroid/net/Uri;");
 				global::android.provider.Settings.System._DEFAULT_ALARM_ALERT_URI11485 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.System.staticClass, "DEFAULT_ALARM_ALERT_URI", "Landroid/net/Uri;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _Settings11536;
@@ -1704,11 +1696,14 @@ namespace android.provider
 				return "settings";
 			}
 		}
-		private static void InitJNI()
+		static Settings()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.Settings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings"));
 			global::android.provider.Settings._Settings11536 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

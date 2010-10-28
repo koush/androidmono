@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class DateFormat : java.text.Format
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateFormat()
-		{
-			InitJNI();
-		}
 		protected DateFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.text
 		public new partial class Field : java.text.Format.Field
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Field()
-			{
-				InitJNI();
-			}
 			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -222,7 +214,7 @@ namespace java.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _TIME_ZONE25345)) as java.text.DateFormat.Field;
 				}
 			}
-			private static void InitJNI()
+			static Field()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.text.DateFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormat$Field"));
@@ -248,6 +240,9 @@ namespace java.text
 				global::java.text.DateFormat.Field._HOUR125343 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR1", "Ljava/text/DateFormat$Field;");
 				global::java.text.DateFormat.Field._HOUR025344 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR0", "Ljava/text/DateFormat$Field;");
 				global::java.text.DateFormat.Field._TIME_ZONE25345 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "TIME_ZONE", "Ljava/text/DateFormat$Field;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25346;
@@ -623,7 +618,7 @@ namespace java.text
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static DateFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DateFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormat"));
@@ -657,16 +652,15 @@ namespace java.text
 			global::java.text.DateFormat._getNumberFormat25373 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "getNumberFormat", "()Ljava/text/NumberFormat;");
 			global::java.text.DateFormat._DateFormat25374 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.DateFormat))]
 	internal sealed partial class DateFormat_ : java.text.DateFormat
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateFormat_()
-		{
-			InitJNI();
-		}
 		internal DateFormat_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -688,12 +682,15 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormat_.staticClass, global::java.text.DateFormat_._parse25399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Date;
 		}
-		private static void InitJNI()
+		static DateFormat_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DateFormat_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormat"));
 			global::java.text.DateFormat_._format25398 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat_.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.DateFormat_._parse25399 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content
 	public partial class PeriodicSync : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PeriodicSync()
-		{
-			InitJNI();
-		}
 		protected PeriodicSync(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -90,7 +86,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.PeriodicSync.staticClass, _CREATOR3498)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static PeriodicSync()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.PeriodicSync.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/PeriodicSync"));
@@ -103,6 +99,9 @@ namespace android.content
 			global::android.content.PeriodicSync._extras3496 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "extras", "Landroid/os/Bundle;");
 			global::android.content.PeriodicSync._period3497 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "period", "J");
 			global::android.content.PeriodicSync._CREATOR3498 = @__env.GetStaticFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

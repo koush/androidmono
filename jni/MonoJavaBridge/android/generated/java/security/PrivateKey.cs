@@ -9,10 +9,6 @@ namespace java.security
 	internal sealed partial class PrivateKey_ : java.lang.Object, PrivateKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PrivateKey_()
-		{
-			InitJNI();
-		}
 		internal PrivateKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,13 +39,16 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.PrivateKey_.staticClass, global::java.security.PrivateKey_._getFormat23245)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static PrivateKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PrivateKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PrivateKey"));
 			global::java.security.PrivateKey_._getEncoded23243 = @__env.GetMethodIDNoThrow(global::java.security.PrivateKey_.staticClass, "getEncoded", "()[B");
 			global::java.security.PrivateKey_._getAlgorithm23244 = @__env.GetMethodIDNoThrow(global::java.security.PrivateKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.PrivateKey_._getFormat23245 = @__env.GetMethodIDNoThrow(global::java.security.PrivateKey_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

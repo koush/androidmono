@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class ColorMatrix : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ColorMatrix()
-		{
-			InitJNI();
-		}
 		protected ColorMatrix(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -154,7 +150,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._ColorMatrix5255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ColorMatrix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ColorMatrix.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ColorMatrix"));
@@ -173,6 +169,9 @@ namespace android.graphics
 			global::android.graphics.ColorMatrix._ColorMatrix5253 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "()V");
 			global::android.graphics.ColorMatrix._ColorMatrix5254 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "([F)V");
 			global::android.graphics.ColorMatrix._ColorMatrix5255 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.lang.annotation
 	public partial class AnnotationFormatError : java.lang.Error
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AnnotationFormatError()
-		{
-			InitJNI();
-		}
 		protected AnnotationFormatError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,13 +28,16 @@ namespace java.lang.annotation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.annotation.AnnotationFormatError.staticClass, global::java.lang.annotation.AnnotationFormatError._AnnotationFormatError20944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AnnotationFormatError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.AnnotationFormatError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/AnnotationFormatError"));
 			global::java.lang.annotation.AnnotationFormatError._AnnotationFormatError20942 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationFormatError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.annotation.AnnotationFormatError._AnnotationFormatError20943 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationFormatError.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.lang.annotation.AnnotationFormatError._AnnotationFormatError20944 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationFormatError.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

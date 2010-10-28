@@ -4,10 +4,6 @@ namespace org.apache.http.impl.entity
 	public partial class StrictContentLengthStrategy : java.lang.Object, org.apache.http.entity.ContentLengthStrategy
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StrictContentLengthStrategy()
-		{
-			InitJNI();
-		}
 		protected StrictContentLengthStrategy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.StrictContentLengthStrategy._StrictContentLengthStrategy33379);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static StrictContentLengthStrategy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/entity/StrictContentLengthStrategy"));
 			global::org.apache.http.impl.entity.StrictContentLengthStrategy._determineLength33378 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J");
 			global::org.apache.http.impl.entity.StrictContentLengthStrategy._StrictContentLengthStrategy33379 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

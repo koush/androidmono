@@ -10,10 +10,6 @@ namespace org.apache.http.conn.routing
 	internal sealed partial class HttpRouteDirector_ : java.lang.Object, HttpRouteDirector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRouteDirector_()
-		{
-			InitJNI();
-		}
 		internal HttpRouteDirector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.conn.routing
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass, global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static HttpRouteDirector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/HttpRouteDirector"));
 			global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass, "nextStep", "(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

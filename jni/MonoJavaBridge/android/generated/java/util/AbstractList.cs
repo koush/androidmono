@@ -4,10 +4,6 @@ namespace java.util
 	public abstract partial class AbstractList : java.util.AbstractCollection, List
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractList()
-		{
-			InitJNI();
-		}
 		protected AbstractList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,7 +155,7 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.AbstractList.staticClass, global::java.util.AbstractList._AbstractList25697);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractList"));
@@ -181,16 +177,15 @@ namespace java.util
 			global::java.util.AbstractList._listIterator25696 = @__env.GetMethodIDNoThrow(global::java.util.AbstractList.staticClass, "listIterator", "()Ljava/util/ListIterator;");
 			global::java.util.AbstractList._AbstractList25697 = @__env.GetMethodIDNoThrow(global::java.util.AbstractList.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.AbstractList))]
 	internal sealed partial class AbstractList_ : java.util.AbstractList
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractList_()
-		{
-			InitJNI();
-		}
 		internal AbstractList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -212,12 +207,15 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.AbstractList_.staticClass, global::java.util.AbstractList_._size25699);
 		}
-		private static void InitJNI()
+		static AbstractList_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.AbstractList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/AbstractList"));
 			global::java.util.AbstractList_._get25698 = @__env.GetMethodIDNoThrow(global::java.util.AbstractList_.staticClass, "get", "(I)Ljava/lang/Object;");
 			global::java.util.AbstractList_._size25699 = @__env.GetMethodIDNoThrow(global::java.util.AbstractList_.staticClass, "size", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

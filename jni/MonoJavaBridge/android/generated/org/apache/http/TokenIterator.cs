@@ -11,10 +11,6 @@ namespace org.apache.http
 	internal sealed partial class TokenIterator_ : java.lang.Object, TokenIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TokenIterator_()
-		{
-			InitJNI();
-		}
 		internal TokenIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace org.apache.http
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.TokenIterator_.staticClass, global::org.apache.http.TokenIterator_._remove31770);
 		}
-		private static void InitJNI()
+		static TokenIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.TokenIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/TokenIterator"));
@@ -72,6 +68,9 @@ namespace org.apache.http
 			global::org.apache.http.TokenIterator_._hasNext31768 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
 			global::org.apache.http.TokenIterator_._next31769 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "next", "()Ljava/lang/Object;");
 			global::org.apache.http.TokenIterator_._remove31770 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "remove", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

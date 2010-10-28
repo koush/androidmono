@@ -4,10 +4,6 @@ namespace android.app.backup
 	public partial class BackupAgentHelper : android.app.backup.BackupAgent
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BackupAgentHelper()
-		{
-			InitJNI();
-		}
 		protected BackupAgentHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace android.app.backup
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupAgentHelper.staticClass, global::android.app.backup.BackupAgentHelper._BackupAgentHelper2308);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BackupAgentHelper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.BackupAgentHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/BackupAgentHelper"));
@@ -53,6 +49,9 @@ namespace android.app.backup
 			global::android.app.backup.BackupAgentHelper._onRestore2306 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupAgentHelper.staticClass, "onRestore", "(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V");
 			global::android.app.backup.BackupAgentHelper._addHelper2307 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupAgentHelper.staticClass, "addHelper", "(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V");
 			global::android.app.backup.BackupAgentHelper._BackupAgentHelper2308 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupAgentHelper.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class DrawableContainer : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DrawableContainer()
-		{
-			InitJNI();
-		}
 		protected DrawableContainer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics.drawable
 		public abstract partial class DrawableContainerState : android.graphics.drawable.Drawable.ConstantState
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DrawableContainerState()
-			{
-				InitJNI();
-			}
 			protected DrawableContainerState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -166,7 +158,7 @@ namespace android.graphics.drawable
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._canConstantState5992);
 			}
-			private static void InitJNI()
+			static DrawableContainerState()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer$DrawableContainerState"));
@@ -187,16 +179,15 @@ namespace android.graphics.drawable
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState._growArray5991 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "growArray", "(II)V");
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState._canConstantState5992 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "canConstantState", "()Z");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.graphics.drawable.DrawableContainer.DrawableContainerState))]
 		internal sealed partial class DrawableContainerState_ : android.graphics.drawable.DrawableContainer.DrawableContainerState
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static DrawableContainerState_()
-			{
-				InitJNI();
-			}
 			internal DrawableContainerState_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -209,11 +200,14 @@ namespace android.graphics.drawable
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState_._newDrawable5993)) as android.graphics.drawable.Drawable;
 			}
-			private static void InitJNI()
+			static DrawableContainerState_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer$DrawableContainerState"));
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState_._newDrawable5993 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass, "newDrawable", "()Landroid/graphics/drawable/Drawable;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5994;
@@ -524,7 +518,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._DrawableContainer6018);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DrawableContainer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.DrawableContainer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer"));
@@ -553,6 +547,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.DrawableContainer._selectDrawable6016 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.staticClass, "selectDrawable", "(I)Z");
 			global::android.graphics.drawable.DrawableContainer._setConstantState6017 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.staticClass, "setConstantState", "(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;)V");
 			global::android.graphics.drawable.DrawableContainer._DrawableContainer6018 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

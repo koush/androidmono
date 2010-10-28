@@ -4,10 +4,6 @@ namespace android.app
 	public abstract partial class IntentService : android.app.Service
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IntentService()
-		{
-			InitJNI();
-		}
 		protected IntentService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -74,7 +70,7 @@ namespace android.app
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.IntentService.staticClass, global::android.app.IntentService._IntentService1917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static IntentService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.IntentService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/IntentService"));
@@ -87,16 +83,15 @@ namespace android.app
 			global::android.app.IntentService._onHandleIntent1916 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onHandleIntent", "(Landroid/content/Intent;)V");
 			global::android.app.IntentService._IntentService1917 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.app.IntentService))]
 	internal sealed partial class IntentService_ : android.app.IntentService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static IntentService_()
-		{
-			InitJNI();
-		}
 		internal IntentService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,11 +104,14 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.IntentService_.staticClass, global::android.app.IntentService_._onHandleIntent1918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static IntentService_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.IntentService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/IntentService"));
 			global::android.app.IntentService_._onHandleIntent1918 = @__env.GetMethodIDNoThrow(global::android.app.IntentService_.staticClass, "onHandleIntent", "(Landroid/content/Intent;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

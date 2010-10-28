@@ -4,10 +4,6 @@ namespace java.security
 	public partial class NoSuchProviderException : java.security.GeneralSecurityException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NoSuchProviderException()
-		{
-			InitJNI();
-		}
 		protected NoSuchProviderException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.NoSuchProviderException.staticClass, global::java.security.NoSuchProviderException._NoSuchProviderException23201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NoSuchProviderException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.NoSuchProviderException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/NoSuchProviderException"));
 			global::java.security.NoSuchProviderException._NoSuchProviderException23200 = @__env.GetMethodIDNoThrow(global::java.security.NoSuchProviderException.staticClass, "<init>", "()V");
 			global::java.security.NoSuchProviderException._NoSuchProviderException23201 = @__env.GetMethodIDNoThrow(global::java.security.NoSuchProviderException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

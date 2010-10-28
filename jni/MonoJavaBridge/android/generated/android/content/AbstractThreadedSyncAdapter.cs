@@ -4,10 +4,6 @@ namespace android.content
 	public abstract partial class AbstractThreadedSyncAdapter : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractThreadedSyncAdapter()
-		{
-			InitJNI();
-		}
 		protected AbstractThreadedSyncAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace android.content
 				return 2743;
 			}
 		}
-		private static void InitJNI()
+		static AbstractThreadedSyncAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AbstractThreadedSyncAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AbstractThreadedSyncAdapter"));
@@ -64,16 +60,15 @@ namespace android.content
 			global::android.content.AbstractThreadedSyncAdapter._onSyncCanceled2561 = @__env.GetMethodIDNoThrow(global::android.content.AbstractThreadedSyncAdapter.staticClass, "onSyncCanceled", "()V");
 			global::android.content.AbstractThreadedSyncAdapter._AbstractThreadedSyncAdapter2562 = @__env.GetMethodIDNoThrow(global::android.content.AbstractThreadedSyncAdapter.staticClass, "<init>", "(Landroid/content/Context;Z)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.AbstractThreadedSyncAdapter))]
 	internal sealed partial class AbstractThreadedSyncAdapter_ : android.content.AbstractThreadedSyncAdapter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractThreadedSyncAdapter_()
-		{
-			InitJNI();
-		}
 		internal AbstractThreadedSyncAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,11 +81,14 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.AbstractThreadedSyncAdapter_.staticClass, global::android.content.AbstractThreadedSyncAdapter_._onPerformSync2564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		private static void InitJNI()
+		static AbstractThreadedSyncAdapter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AbstractThreadedSyncAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AbstractThreadedSyncAdapter"));
 			global::android.content.AbstractThreadedSyncAdapter_._onPerformSync2564 = @__env.GetMethodIDNoThrow(global::android.content.AbstractThreadedSyncAdapter_.staticClass, "onPerformSync", "(Landroid/accounts/Account;Landroid/os/Bundle;Ljava/lang/String;Landroid/content/ContentProviderClient;Landroid/content/SyncResult;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.preference
 	public abstract partial class PreferenceActivity : android.app.ListActivity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceActivity()
-		{
-			InitJNI();
-		}
 		protected PreferenceActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -157,7 +153,7 @@ namespace android.preference
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._PreferenceActivity10408);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PreferenceActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceActivity"));
@@ -178,23 +174,25 @@ namespace android.preference
 			global::android.preference.PreferenceActivity._onPreferenceTreeClick10407 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z");
 			global::android.preference.PreferenceActivity._PreferenceActivity10408 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.preference.PreferenceActivity))]
 	internal sealed partial class PreferenceActivity_ : android.preference.PreferenceActivity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceActivity_()
-		{
-			InitJNI();
-		}
 		internal PreferenceActivity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static PreferenceActivity_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceActivity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceActivity"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

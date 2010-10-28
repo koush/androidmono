@@ -4,10 +4,6 @@ namespace java.util.jar
 	public partial class Attributes : java.lang.Object, Map, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Attributes()
-		{
-			InitJNI();
-		}
 		protected Attributes(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace java.util.jar
 		public partial class Name : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static Name()
-			{
-				InitJNI();
-			}
 			protected Name(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -209,7 +201,7 @@ namespace java.util.jar
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.jar.Attributes.Name.staticClass, _SPECIFICATION_VENDOR27835)) as java.util.jar.Attributes.Name;
 				}
 			}
-			private static void InitJNI()
+			static Name()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.jar.Attributes.Name.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Attributes$Name"));
@@ -234,6 +226,9 @@ namespace java.util.jar
 				global::java.util.jar.Attributes.Name._SPECIFICATION_TITLE27833 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "SPECIFICATION_TITLE", "Ljava/util/jar/Attributes$Name;");
 				global::java.util.jar.Attributes.Name._SPECIFICATION_VERSION27834 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "SPECIFICATION_VERSION", "Ljava/util/jar/Attributes$Name;");
 				global::java.util.jar.Attributes.Name._SPECIFICATION_VENDOR27835 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "SPECIFICATION_VENDOR", "Ljava/util/jar/Attributes$Name;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _get27836;
@@ -419,7 +414,7 @@ namespace java.util.jar
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._Attributes27856);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Attributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.Attributes.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Attributes"));
@@ -444,6 +439,9 @@ namespace java.util.jar
 			global::java.util.jar.Attributes._Attributes27854 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(I)V");
 			global::java.util.jar.Attributes._Attributes27855 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(Ljava/util/jar/Attributes;)V");
 			global::java.util.jar.Attributes._Attributes27856 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.method
 	public abstract partial class ReplacementTransformationMethod : java.lang.Object, TransformationMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReplacementTransformationMethod()
-		{
-			InitJNI();
-		}
 		protected ReplacementTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -48,7 +44,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod13374);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ReplacementTransformationMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ReplacementTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ReplacementTransformationMethod"));
@@ -58,16 +54,15 @@ namespace android.text.method
 			global::android.text.method.ReplacementTransformationMethod._getReplacement13373 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "getReplacement", "()[C");
 			global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod13374 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.ReplacementTransformationMethod))]
 	internal sealed partial class ReplacementTransformationMethod_ : android.text.method.ReplacementTransformationMethod
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ReplacementTransformationMethod_()
-		{
-			InitJNI();
-		}
 		internal ReplacementTransformationMethod_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -89,12 +84,15 @@ namespace android.text.method
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod_.staticClass, global::android.text.method.ReplacementTransformationMethod_._getReplacement13376)) as char[];
 		}
-		private static void InitJNI()
+		static ReplacementTransformationMethod_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ReplacementTransformationMethod_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ReplacementTransformationMethod"));
 			global::android.text.method.ReplacementTransformationMethod_._getOriginal13375 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod_.staticClass, "getOriginal", "()[C");
 			global::android.text.method.ReplacementTransformationMethod_._getReplacement13376 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod_.staticClass, "getReplacement", "()[C");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

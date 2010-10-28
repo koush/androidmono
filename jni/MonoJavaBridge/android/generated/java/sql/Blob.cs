@@ -20,10 +20,6 @@ namespace java.sql
 	internal sealed partial class Blob_ : java.lang.Object, Blob
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Blob_()
-		{
-			InitJNI();
-		}
 		internal Blob_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -126,7 +122,7 @@ namespace java.sql
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._setBinaryStream24112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
 		}
-		private static void InitJNI()
+		static Blob_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Blob_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Blob"));
@@ -141,6 +137,9 @@ namespace java.sql
 			global::java.sql.Blob_._setBytes24110 = @__env.GetMethodIDNoThrow(global::java.sql.Blob_.staticClass, "setBytes", "(J[BII)I");
 			global::java.sql.Blob_._setBytes24111 = @__env.GetMethodIDNoThrow(global::java.sql.Blob_.staticClass, "setBytes", "(J[B)I");
 			global::java.sql.Blob_._setBinaryStream24112 = @__env.GetMethodIDNoThrow(global::java.sql.Blob_.staticClass, "setBinaryStream", "(J)Ljava/io/OutputStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

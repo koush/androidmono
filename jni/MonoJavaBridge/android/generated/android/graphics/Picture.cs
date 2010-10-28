@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Picture : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Picture()
-		{
-			InitJNI();
-		}
 		protected Picture(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -108,7 +104,7 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Picture.staticClass, global::android.graphics.Picture._Picture5594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Picture()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Picture.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Picture"));
@@ -122,6 +118,9 @@ namespace android.graphics
 			global::android.graphics.Picture._writeToStream5592 = @__env.GetMethodIDNoThrow(global::android.graphics.Picture.staticClass, "writeToStream", "(Ljava/io/OutputStream;)V");
 			global::android.graphics.Picture._Picture5593 = @__env.GetMethodIDNoThrow(global::android.graphics.Picture.staticClass, "<init>", "()V");
 			global::android.graphics.Picture._Picture5594 = @__env.GetMethodIDNoThrow(global::android.graphics.Picture.staticClass, "<init>", "(Landroid/graphics/Picture;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

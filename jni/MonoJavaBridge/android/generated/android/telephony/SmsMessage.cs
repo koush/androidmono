@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class SmsMessage : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SmsMessage()
-		{
-			InitJNI();
-		}
 		protected SmsMessage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.telephony
 		public sealed partial class MessageClass : java.lang.Enum
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static MessageClass()
-			{
-				InitJNI();
-			}
 			internal MessageClass(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -79,7 +71,7 @@ namespace android.telephony
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.telephony.SmsMessage.MessageClass>(@__env.GetStaticObjectField(global::android.telephony.SmsMessage.MessageClass.staticClass, _UNKNOWN11916)) as android.telephony.SmsMessage.MessageClass;
 				}
 			}
-			private static void InitJNI()
+			static MessageClass()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.SmsMessage.MessageClass.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/SmsMessage$MessageClass"));
@@ -91,15 +83,14 @@ namespace android.telephony
 				global::android.telephony.SmsMessage.MessageClass._CLASS_311915 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.SmsMessage.MessageClass.staticClass, "CLASS_3", "Landroid/telephony/SmsMessage$MessageClass;");
 				global::android.telephony.SmsMessage.MessageClass._UNKNOWN11916 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.SmsMessage.MessageClass.staticClass, "UNKNOWN", "Landroid/telephony/SmsMessage$MessageClass;");
 			}
+			internal static void InitJNI()
+			{
+			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SubmitPdu : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static SubmitPdu()
-			{
-				InitJNI();
-			}
 			protected SubmitPdu(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -136,13 +127,16 @@ namespace android.telephony
 				{
 				}
 			}
-			private static void InitJNI()
+			static SubmitPdu()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.SmsMessage.SubmitPdu.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/SmsMessage$SubmitPdu"));
 				global::android.telephony.SmsMessage.SubmitPdu._toString11917 = @__env.GetMethodIDNoThrow(global::android.telephony.SmsMessage.SubmitPdu.staticClass, "toString", "()Ljava/lang/String;");
 				global::android.telephony.SmsMessage.SubmitPdu._encodedScAddress11918 = @__env.GetFieldIDNoThrow(global::android.telephony.SmsMessage.SubmitPdu.staticClass, "encodedScAddress", "[B");
 				global::android.telephony.SmsMessage.SubmitPdu._encodedMessage11919 = @__env.GetFieldIDNoThrow(global::android.telephony.SmsMessage.SubmitPdu.staticClass, "encodedMessage", "[B");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		public new byte[] UserData
@@ -594,7 +588,7 @@ namespace android.telephony
 				return 153;
 			}
 		}
-		private static void InitJNI()
+		static SmsMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.SmsMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/SmsMessage"));
@@ -630,6 +624,9 @@ namespace android.telephony
 			global::android.telephony.SmsMessage._getIndexOnIcc11949 = @__env.GetMethodIDNoThrow(global::android.telephony.SmsMessage.staticClass, "getIndexOnIcc", "()I");
 			global::android.telephony.SmsMessage._isStatusReportMessage11950 = @__env.GetMethodIDNoThrow(global::android.telephony.SmsMessage.staticClass, "isStatusReportMessage", "()Z");
 			global::android.telephony.SmsMessage._isReplyPathPresent11951 = @__env.GetMethodIDNoThrow(global::android.telephony.SmsMessage.staticClass, "isReplyPathPresent", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

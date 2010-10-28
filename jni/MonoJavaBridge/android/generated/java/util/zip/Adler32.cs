@@ -4,10 +4,6 @@ namespace java.util.zip
 	public partial class Adler32 : java.lang.Object, Checksum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Adler32()
-		{
-			InitJNI();
-		}
 		protected Adler32(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -70,7 +66,7 @@ namespace java.util.zip
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._Adler3228332);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Adler32()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.Adler32.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/Adler32"));
@@ -80,6 +76,9 @@ namespace java.util.zip
 			global::java.util.zip.Adler32._update28330 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "update", "([BII)V");
 			global::java.util.zip.Adler32._update28331 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "update", "(I)V");
 			global::java.util.zip.Adler32._Adler3228332 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

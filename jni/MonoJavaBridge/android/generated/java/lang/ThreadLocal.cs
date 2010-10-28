@@ -4,10 +4,6 @@ namespace java.lang
 	public partial class ThreadLocal : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ThreadLocal()
-		{
-			InitJNI();
-		}
 		protected ThreadLocal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -54,7 +50,7 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._ThreadLocal20905);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ThreadLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ThreadLocal.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ThreadLocal"));
@@ -63,6 +59,9 @@ namespace java.lang
 			global::java.lang.ThreadLocal._set20903 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadLocal.staticClass, "set", "(Ljava/lang/Object;)V");
 			global::java.lang.ThreadLocal._initialValue20904 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadLocal.staticClass, "initialValue", "()Ljava/lang/Object;");
 			global::java.lang.ThreadLocal._ThreadLocal20905 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadLocal.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

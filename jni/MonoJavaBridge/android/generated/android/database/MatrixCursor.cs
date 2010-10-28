@@ -4,10 +4,6 @@ namespace android.database
 	public partial class MatrixCursor : android.database.AbstractCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MatrixCursor()
-		{
-			InitJNI();
-		}
 		protected MatrixCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.database
 		public partial class RowBuilder : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static RowBuilder()
-			{
-				InitJNI();
-			}
 			protected RowBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -31,11 +23,14 @@ namespace android.database
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.RowBuilder.staticClass, global::android.database.MatrixCursor.RowBuilder._add4662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.MatrixCursor.RowBuilder;
 			}
-			private static void InitJNI()
+			static RowBuilder()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.MatrixCursor.RowBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/MatrixCursor$RowBuilder"));
 				global::android.database.MatrixCursor.RowBuilder._add4662 = @__env.GetMethodIDNoThrow(global::android.database.MatrixCursor.RowBuilder.staticClass, "add", "(Ljava/lang/Object;)Landroid/database/MatrixCursor$RowBuilder;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort4663;
@@ -174,7 +169,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._MatrixCursor4676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MatrixCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.MatrixCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/MatrixCursor"));
@@ -192,6 +187,9 @@ namespace android.database
 			global::android.database.MatrixCursor._addRow4674 = @__env.GetMethodIDNoThrow(global::android.database.MatrixCursor.staticClass, "addRow", "([Ljava/lang/Object;)V");
 			global::android.database.MatrixCursor._MatrixCursor4675 = @__env.GetMethodIDNoThrow(global::android.database.MatrixCursor.staticClass, "<init>", "([Ljava/lang/String;)V");
 			global::android.database.MatrixCursor._MatrixCursor4676 = @__env.GetMethodIDNoThrow(global::android.database.MatrixCursor.staticClass, "<init>", "([Ljava/lang/String;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

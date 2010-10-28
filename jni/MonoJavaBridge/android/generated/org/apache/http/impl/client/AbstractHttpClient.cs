@@ -4,10 +4,6 @@ namespace org.apache.http.impl.client
 	public abstract partial class AbstractHttpClient : java.lang.Object, org.apache.http.client.HttpClient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpClient()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpClient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -511,7 +507,7 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._AbstractHttpClient32838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpClient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.AbstractHttpClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/AbstractHttpClient"));
@@ -585,16 +581,15 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.AbstractHttpClient._determineParams32837 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.AbstractHttpClient.staticClass, "determineParams", "(Lorg/apache/http/HttpRequest;)Lorg/apache/http/params/HttpParams;");
 			global::org.apache.http.impl.client.AbstractHttpClient._AbstractHttpClient32838 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.AbstractHttpClient.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.client.AbstractHttpClient))]
 	internal sealed partial class AbstractHttpClient_ : org.apache.http.impl.client.AbstractHttpClient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpClient_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpClient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -751,7 +746,7 @@ namespace org.apache.http.impl.client
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.client.UserTokenHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createUserTokenHandler32855)) as org.apache.http.client.UserTokenHandler;
 		}
-		private static void InitJNI()
+		static AbstractHttpClient_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.AbstractHttpClient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/AbstractHttpClient"));
@@ -772,6 +767,9 @@ namespace org.apache.http.impl.client
 			global::org.apache.http.impl.client.AbstractHttpClient_._createCredentialsProvider32853 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, "createCredentialsProvider", "()Lorg/apache/http/client/CredentialsProvider;");
 			global::org.apache.http.impl.client.AbstractHttpClient_._createHttpRoutePlanner32854 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, "createHttpRoutePlanner", "()Lorg/apache/http/conn/routing/HttpRoutePlanner;");
 			global::org.apache.http.impl.client.AbstractHttpClient_._createUserTokenHandler32855 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, "createUserTokenHandler", "()Lorg/apache/http/client/UserTokenHandler;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

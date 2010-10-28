@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class AccountManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AccountManager()
-		{
-			InitJNI();
-		}
 		protected AccountManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -486,7 +482,7 @@ namespace android.accounts
 				return "android.accounts.LOGIN_ACCOUNTS_CHANGED";
 			}
 		}
-		private static void InitJNI()
+		static AccountManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManager"));
@@ -516,6 +512,9 @@ namespace android.accounts
 			global::android.accounts.AccountManager._getAuthTokenByFeatures1322 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManager.staticClass, "getAuthTokenByFeatures", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/Bundle;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;");
 			global::android.accounts.AccountManager._addOnAccountsUpdatedListener1323 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManager.staticClass, "addOnAccountsUpdatedListener", "(Landroid/accounts/OnAccountsUpdateListener;Landroid/os/Handler;Z)V");
 			global::android.accounts.AccountManager._removeOnAccountsUpdatedListener1324 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManager.staticClass, "removeOnAccountsUpdatedListener", "(Landroid/accounts/OnAccountsUpdateListener;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

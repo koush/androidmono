@@ -4,10 +4,6 @@ namespace java.net
 	public partial class SocketTimeoutException : java.io.InterruptedIOException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SocketTimeoutException()
-		{
-			InitJNI();
-		}
 		protected SocketTimeoutException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketTimeoutException.staticClass, global::java.net.SocketTimeoutException._SocketTimeoutException21838);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SocketTimeoutException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketTimeoutException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketTimeoutException"));
 			global::java.net.SocketTimeoutException._SocketTimeoutException21837 = @__env.GetMethodIDNoThrow(global::java.net.SocketTimeoutException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.net.SocketTimeoutException._SocketTimeoutException21838 = @__env.GetMethodIDNoThrow(global::java.net.SocketTimeoutException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

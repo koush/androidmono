@@ -10,10 +10,6 @@ namespace java.security.interfaces
 	internal sealed partial class DSAPublicKey_ : java.lang.Object, DSAPublicKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DSAPublicKey_()
-		{
-			InitJNI();
-		}
 		internal DSAPublicKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_.staticClass, global::java.security.interfaces.DSAPublicKey_._getFormat23911)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static DSAPublicKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.DSAPublicKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/DSAPublicKey"));
@@ -71,6 +67,9 @@ namespace java.security.interfaces
 			global::java.security.interfaces.DSAPublicKey_._getEncoded23909 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getEncoded", "()[B");
 			global::java.security.interfaces.DSAPublicKey_._getAlgorithm23910 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.interfaces.DSAPublicKey_._getFormat23911 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

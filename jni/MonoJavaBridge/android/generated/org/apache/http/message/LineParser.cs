@@ -14,10 +14,6 @@ namespace org.apache.http.message
 	internal sealed partial class LineParser_ : java.lang.Object, LineParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LineParser_()
-		{
-			InitJNI();
-		}
 		internal LineParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.StatusLine>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.LineParser_.staticClass, global::org.apache.http.message.LineParser_._parseStatusLine33706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.StatusLine;
 		}
-		private static void InitJNI()
+		static LineParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.LineParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/LineParser"));
@@ -75,6 +71,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.LineParser_._hasProtocolVersion33704 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineParser_.staticClass, "hasProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Z");
 			global::org.apache.http.message.LineParser_._parseRequestLine33705 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineParser_.staticClass, "parseRequestLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/RequestLine;");
 			global::org.apache.http.message.LineParser_._parseStatusLine33706 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.LineParser_.staticClass, "parseStatusLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/StatusLine;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

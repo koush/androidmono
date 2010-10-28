@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class RFC2965DiscardAttributeHandler : java.lang.Object, org.apache.http.cookie.CookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RFC2965DiscardAttributeHandler()
-		{
-			InitJNI();
-		}
 		protected RFC2965DiscardAttributeHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -45,7 +41,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler._RFC2965DiscardAttributeHandler33346);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RFC2965DiscardAttributeHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/RFC2965DiscardAttributeHandler"));
@@ -53,6 +49,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler._match33344 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
 			global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler._validate33345 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
 			global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler._RFC2965DiscardAttributeHandler33346 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

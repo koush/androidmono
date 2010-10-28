@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class SSLContext : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLContext()
-		{
-			InitJNI();
-		}
 		protected SSLContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -182,7 +178,7 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._SSLContext29896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLContext"));
@@ -201,6 +197,9 @@ namespace javax.net.ssl
 			global::javax.net.ssl.SSLContext._getServerSessionContext29894 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContext.staticClass, "getServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
 			global::javax.net.ssl.SSLContext._getClientSessionContext29895 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContext.staticClass, "getClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
 			global::javax.net.ssl.SSLContext._SSLContext29896 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContext.staticClass, "<init>", "(Ljavax/net/ssl/SSLContextSpi;Ljava/security/Provider;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

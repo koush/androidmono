@@ -4,10 +4,6 @@ namespace android.database
 	public abstract partial class DataSetObserver : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataSetObserver()
-		{
-			InitJNI();
-		}
 		protected DataSetObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,7 +32,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._DataSetObserver4603);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DataSetObserver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.DataSetObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DataSetObserver"));
@@ -44,23 +40,25 @@ namespace android.database
 			global::android.database.DataSetObserver._onInvalidated4602 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V");
 			global::android.database.DataSetObserver._DataSetObserver4603 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.DataSetObserver))]
 	internal sealed partial class DataSetObserver_ : android.database.DataSetObserver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DataSetObserver_()
-		{
-			InitJNI();
-		}
 		internal DataSetObserver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static DataSetObserver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.DataSetObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DataSetObserver"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

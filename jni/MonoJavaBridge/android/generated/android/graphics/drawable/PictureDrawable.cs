@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class PictureDrawable : android.graphics.drawable.Drawable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PictureDrawable()
-		{
-			InitJNI();
-		}
 		protected PictureDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -168,7 +164,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._PictureDrawable6155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PictureDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.PictureDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/PictureDrawable"));
@@ -183,6 +179,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.PictureDrawable._getPicture6153 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PictureDrawable.staticClass, "getPicture", "()Landroid/graphics/Picture;");
 			global::android.graphics.drawable.PictureDrawable._setPicture6154 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PictureDrawable.staticClass, "setPicture", "(Landroid/graphics/Picture;)V");
 			global::android.graphics.drawable.PictureDrawable._PictureDrawable6155 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.PictureDrawable.staticClass, "<init>", "(Landroid/graphics/Picture;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

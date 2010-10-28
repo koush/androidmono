@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class PKIXCertPathChecker : java.lang.Object, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PKIXCertPathChecker()
-		{
-			InitJNI();
-		}
 		protected PKIXCertPathChecker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -35,7 +31,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXCertPathChecker.staticClass, global::java.security.cert.PKIXCertPathChecker._PKIXCertPathChecker23639);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static PKIXCertPathChecker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PKIXCertPathChecker.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PKIXCertPathChecker"));
@@ -46,16 +42,15 @@ namespace java.security.cert
 			global::java.security.cert.PKIXCertPathChecker._getSupportedExtensions23638 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker.staticClass, "getSupportedExtensions", "()Ljava/util/Set;");
 			global::java.security.cert.PKIXCertPathChecker._PKIXCertPathChecker23639 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.PKIXCertPathChecker))]
 	internal sealed partial class PKIXCertPathChecker_ : java.security.cert.PKIXCertPathChecker
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PKIXCertPathChecker_()
-		{
-			InitJNI();
-		}
 		internal PKIXCertPathChecker_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +90,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_.staticClass, global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643)) as java.util.Set;
 		}
-		private static void InitJNI()
+		static PKIXCertPathChecker_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PKIXCertPathChecker_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PKIXCertPathChecker"));
@@ -103,6 +98,9 @@ namespace java.security.cert
 			global::java.security.cert.PKIXCertPathChecker_._check23641 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "check", "(Ljava/security/cert/Certificate;Ljava/util/Collection;)V");
 			global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23642 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "isForwardCheckingSupported", "()Z");
 			global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "getSupportedExtensions", "()Ljava/util/Set;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

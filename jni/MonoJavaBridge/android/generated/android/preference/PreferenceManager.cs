@@ -4,10 +4,6 @@ namespace android.preference
 	public partial class PreferenceManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static PreferenceManager()
-		{
-			InitJNI();
-		}
 		protected PreferenceManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -21,10 +17,6 @@ namespace android.preference
 		internal sealed partial class OnActivityDestroyListener_ : java.lang.Object, OnActivityDestroyListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityDestroyListener_()
-			{
-				InitJNI();
-			}
 			internal OnActivityDestroyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -37,11 +29,14 @@ namespace android.preference
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceManager.OnActivityDestroyListener_.staticClass, global::android.preference.PreferenceManager.OnActivityDestroyListener_._onActivityDestroy10432);
 			}
-			private static void InitJNI()
+			static OnActivityDestroyListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityDestroyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityDestroyListener"));
 				global::android.preference.PreferenceManager.OnActivityDestroyListener_._onActivityDestroy10432 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityDestroyListener_.staticClass, "onActivityDestroy", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -50,10 +45,6 @@ namespace android.preference
 		internal partial class OnActivityDestroyListenerDelegateWrapper : java.lang.Object, OnActivityDestroyListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityDestroyListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnActivityDestroyListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -64,11 +55,14 @@ namespace android.preference
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper.staticClass, global::android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper._OnActivityDestroyListenerDelegateWrapper10433);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnActivityDestroyListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityDestroyListenerDelegateWrapper"));
 				global::android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper._OnActivityDestroyListenerDelegateWrapper10433 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnActivityDestroyListenerDelegateWrapper
@@ -96,10 +90,6 @@ namespace android.preference
 		internal sealed partial class OnActivityResultListener_ : java.lang.Object, OnActivityResultListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityResultListener_()
-			{
-				InitJNI();
-			}
 			internal OnActivityResultListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -112,11 +102,14 @@ namespace android.preference
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.PreferenceManager.OnActivityResultListener_.staticClass, global::android.preference.PreferenceManager.OnActivityResultListener_._onActivityResult10434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI()
+			static OnActivityResultListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityResultListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityResultListener"));
 				global::android.preference.PreferenceManager.OnActivityResultListener_._onActivityResult10434 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityResultListener_.staticClass, "onActivityResult", "(IILandroid/content/Intent;)Z");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -125,10 +118,6 @@ namespace android.preference
 		internal partial class OnActivityResultListenerDelegateWrapper : java.lang.Object, OnActivityResultListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityResultListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnActivityResultListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -139,11 +128,14 @@ namespace android.preference
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper.staticClass, global::android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper._OnActivityResultListenerDelegateWrapper10435);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnActivityResultListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityResultListenerDelegateWrapper"));
 				global::android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper._OnActivityResultListenerDelegateWrapper10435 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnActivityResultListenerDelegateWrapper
@@ -171,10 +163,6 @@ namespace android.preference
 		internal sealed partial class OnActivityStopListener_ : java.lang.Object, OnActivityStopListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityStopListener_()
-			{
-				InitJNI();
-			}
 			internal OnActivityStopListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -187,11 +175,14 @@ namespace android.preference
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceManager.OnActivityStopListener_.staticClass, global::android.preference.PreferenceManager.OnActivityStopListener_._onActivityStop10436);
 			}
-			private static void InitJNI()
+			static OnActivityStopListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityStopListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityStopListener"));
 				global::android.preference.PreferenceManager.OnActivityStopListener_._onActivityStop10436 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityStopListener_.staticClass, "onActivityStop", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -200,10 +191,6 @@ namespace android.preference
 		internal partial class OnActivityStopListenerDelegateWrapper : java.lang.Object, OnActivityStopListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnActivityStopListenerDelegateWrapper()
-			{
-				InitJNI();
-			}
 			protected OnActivityStopListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -214,11 +201,14 @@ namespace android.preference
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper.staticClass, global::android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper._OnActivityStopListenerDelegateWrapper10437);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OnActivityStopListenerDelegateWrapper()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityStopListenerDelegateWrapper"));
 				global::android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper._OnActivityStopListenerDelegateWrapper10437 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal partial class OnActivityStopListenerDelegateWrapper
@@ -364,7 +354,7 @@ namespace android.preference
 				return "_has_set_default_values";
 			}
 		}
-		private static void InitJNI()
+		static PreferenceManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager"));
@@ -378,6 +368,9 @@ namespace android.preference
 			global::android.preference.PreferenceManager._findPreference10445 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;");
 			global::android.preference.PreferenceManager._setDefaultValues10446 = @__env.GetStaticMethodIDNoThrow(global::android.preference.PreferenceManager.staticClass, "setDefaultValues", "(Landroid/content/Context;IZ)V");
 			global::android.preference.PreferenceManager._setDefaultValues10447 = @__env.GetStaticMethodIDNoThrow(global::android.preference.PreferenceManager.staticClass, "setDefaultValues", "(Landroid/content/Context;Ljava/lang/String;IIZ)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

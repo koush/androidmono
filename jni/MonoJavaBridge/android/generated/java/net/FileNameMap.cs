@@ -10,10 +10,6 @@ namespace java.net
 	internal sealed partial class FileNameMap_ : java.lang.Object, FileNameMap
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileNameMap_()
-		{
-			InitJNI();
-		}
 		internal FileNameMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.FileNameMap_.staticClass, global::java.net.FileNameMap_._getContentTypeFor21466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		private static void InitJNI()
+		static FileNameMap_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.FileNameMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/FileNameMap"));
 			global::java.net.FileNameMap_._getContentTypeFor21466 = @__env.GetMethodIDNoThrow(global::java.net.FileNameMap_.staticClass, "getContentTypeFor", "(Ljava/lang/String;)Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

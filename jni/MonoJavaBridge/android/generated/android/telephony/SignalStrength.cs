@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class SignalStrength : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SignalStrength()
-		{
-			InitJNI();
-		}
 		protected SignalStrength(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -177,7 +173,7 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._isGsm11895);
 		}
-		private static void InitJNI()
+		static SignalStrength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.SignalStrength.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/SignalStrength"));
@@ -194,6 +190,9 @@ namespace android.telephony
 			global::android.telephony.SignalStrength._getEvdoEcio11893 = @__env.GetMethodIDNoThrow(global::android.telephony.SignalStrength.staticClass, "getEvdoEcio", "()I");
 			global::android.telephony.SignalStrength._getEvdoSnr11894 = @__env.GetMethodIDNoThrow(global::android.telephony.SignalStrength.staticClass, "getEvdoSnr", "()I");
 			global::android.telephony.SignalStrength._isGsm11895 = @__env.GetMethodIDNoThrow(global::android.telephony.SignalStrength.staticClass, "isGsm", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

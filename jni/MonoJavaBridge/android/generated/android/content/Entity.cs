@@ -4,10 +4,6 @@ namespace android.content
 	public sealed partial class Entity : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Entity()
-		{
-			InitJNI();
-		}
 		internal Entity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.content
 		public partial class NamedContentValues : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static NamedContentValues()
-			{
-				InitJNI();
-			}
 			protected NamedContentValues(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -47,13 +39,16 @@ namespace android.content
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ContentValues>(@__env.GetObjectField(this.JvmHandle, _values3089)) as android.content.ContentValues;
 				}
 			}
-			private static void InitJNI()
+			static NamedContentValues()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.Entity.NamedContentValues.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Entity$NamedContentValues"));
 				global::android.content.Entity.NamedContentValues._NamedContentValues3087 = @__env.GetMethodIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "<init>", "(Landroid/net/Uri;Landroid/content/ContentValues;)V");
 				global::android.content.Entity.NamedContentValues._uri3088 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "uri", "Landroid/net/Uri;");
 				global::android.content.Entity.NamedContentValues._values3089 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "values", "Landroid/content/ContentValues;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString3090;
@@ -113,7 +108,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Entity.staticClass, global::android.content.Entity._Entity3094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Entity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.Entity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Entity"));
@@ -122,6 +117,9 @@ namespace android.content
 			global::android.content.Entity._getSubValues3092 = @__env.GetMethodIDNoThrow(global::android.content.Entity.staticClass, "getSubValues", "()Ljava/util/ArrayList;");
 			global::android.content.Entity._addSubValue3093 = @__env.GetMethodIDNoThrow(global::android.content.Entity.staticClass, "addSubValue", "(Landroid/net/Uri;Landroid/content/ContentValues;)V");
 			global::android.content.Entity._Entity3094 = @__env.GetMethodIDNoThrow(global::android.content.Entity.staticClass, "<init>", "(Landroid/content/ContentValues;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

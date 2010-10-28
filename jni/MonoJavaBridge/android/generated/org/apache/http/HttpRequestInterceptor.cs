@@ -10,10 +10,6 @@ namespace org.apache.http
 	internal sealed partial class HttpRequestInterceptor_ : java.lang.Object, HttpRequestInterceptor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpRequestInterceptor_()
-		{
-			InitJNI();
-		}
 		internal HttpRequestInterceptor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpRequestInterceptor_.staticClass, global::org.apache.http.HttpRequestInterceptor_._process31637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static HttpRequestInterceptor_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpRequestInterceptor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpRequestInterceptor"));
 			global::org.apache.http.HttpRequestInterceptor_._process31637 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpRequestInterceptor_.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

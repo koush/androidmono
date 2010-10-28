@@ -4,10 +4,6 @@ namespace junit.framework
 	public abstract partial class TestCase : junit.framework.Assert, Test
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestCase()
-		{
-			InitJNI();
-		}
 		protected TestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -124,7 +120,7 @@ namespace junit.framework
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestCase.staticClass, global::junit.framework.TestCase._TestCase31389);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestCase"));
@@ -142,23 +138,25 @@ namespace junit.framework
 			global::junit.framework.TestCase._TestCase31388 = @__env.GetMethodIDNoThrow(global::junit.framework.TestCase.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::junit.framework.TestCase._TestCase31389 = @__env.GetMethodIDNoThrow(global::junit.framework.TestCase.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::junit.framework.TestCase))]
 	internal sealed partial class TestCase_ : junit.framework.TestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TestCase_()
-		{
-			InitJNI();
-		}
 		internal TestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static TestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

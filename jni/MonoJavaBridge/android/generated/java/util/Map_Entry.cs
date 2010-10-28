@@ -14,10 +14,6 @@ namespace java.util
 	internal sealed partial class Map_Entry_ : java.lang.Object, Map_Entry
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Map_Entry_()
-		{
-			InitJNI();
-		}
 		internal Map_Entry_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -66,7 +62,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._setValue26501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI()
+		static Map_Entry_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Map_Entry_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Map$Entry"));
@@ -75,6 +71,9 @@ namespace java.util
 			global::java.util.Map_Entry_._getValue26499 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getValue", "()Ljava/lang/Object;");
 			global::java.util.Map_Entry_._getKey26500 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getKey", "()Ljava/lang/Object;");
 			global::java.util.Map_Entry_._setValue26501 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "setValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

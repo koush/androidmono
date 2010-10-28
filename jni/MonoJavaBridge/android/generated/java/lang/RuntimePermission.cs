@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class RuntimePermission : java.security.BasicPermission
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RuntimePermission()
-		{
-			InitJNI();
-		}
 		internal RuntimePermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimePermission.staticClass, global::java.lang.RuntimePermission._RuntimePermission20459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RuntimePermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.RuntimePermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/RuntimePermission"));
 			global::java.lang.RuntimePermission._RuntimePermission20458 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimePermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.RuntimePermission._RuntimePermission20459 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimePermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

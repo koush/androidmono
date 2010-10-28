@@ -10,10 +10,6 @@ namespace java.lang
 	internal sealed partial class Readable_ : java.lang.Object, Readable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Readable_()
-		{
-			InitJNI();
-		}
 		internal Readable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Readable_.staticClass, global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Readable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Readable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Readable"));
 			global::java.lang.Readable_._read20427 = @__env.GetMethodIDNoThrow(global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

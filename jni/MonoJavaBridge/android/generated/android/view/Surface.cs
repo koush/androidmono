@@ -4,10 +4,6 @@ namespace android.view
 	public partial class Surface : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Surface()
-		{
-			InitJNI();
-		}
 		protected Surface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.view
 		public partial class OutOfResourcesException : java.lang.Exception
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OutOfResourcesException()
-			{
-				InitJNI();
-			}
 			protected OutOfResourcesException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -36,12 +28,15 @@ namespace android.view
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Surface.OutOfResourcesException.staticClass, global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static OutOfResourcesException()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.Surface.OutOfResourcesException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Surface$OutOfResourcesException"));
 				global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14521 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "()V");
 				global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14522 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize14523;
@@ -409,7 +404,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.Surface.staticClass, _CREATOR14564)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Surface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Surface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Surface"));
@@ -436,6 +431,9 @@ namespace android.view
 			global::android.view.Surface._unfreeze14543 = @__env.GetMethodIDNoThrow(global::android.view.Surface.staticClass, "unfreeze", "()V");
 			global::android.view.Surface._setFreezeTint14544 = @__env.GetMethodIDNoThrow(global::android.view.Surface.staticClass, "setFreezeTint", "(I)V");
 			global::android.view.Surface._CREATOR14564 = @__env.GetStaticFieldIDNoThrow(global::android.view.Surface.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

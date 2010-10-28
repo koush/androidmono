@@ -10,10 +10,6 @@ namespace java.lang
 	internal sealed partial class Comparable_ : java.lang.Object, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Comparable_()
-		{
-			InitJNI();
-		}
 		internal Comparable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Comparable_.staticClass, global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Comparable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Comparable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Comparable"));
 			global::java.lang.Comparable_._compareTo20078 = @__env.GetMethodIDNoThrow(global::java.lang.Comparable_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

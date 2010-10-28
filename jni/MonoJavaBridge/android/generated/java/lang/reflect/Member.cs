@@ -13,10 +13,6 @@ namespace java.lang.reflect
 	internal sealed partial class Member_ : java.lang.Object, Member
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Member_()
-		{
-			InitJNI();
-		}
 		internal Member_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Member_.staticClass, global::java.lang.reflect.Member_._getDeclaringClass21094)) as java.lang.Class;
 		}
-		private static void InitJNI()
+		static Member_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Member_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Member"));
@@ -64,6 +60,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Member_._getName21092 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Member_.staticClass, "getName", "()Ljava/lang/String;");
 			global::java.lang.reflect.Member_._isSynthetic21093 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Member_.staticClass, "isSynthetic", "()Z");
 			global::java.lang.reflect.Member_._getDeclaringClass21094 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Member_.staticClass, "getDeclaringClass", "()Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

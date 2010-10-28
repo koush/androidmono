@@ -4,10 +4,6 @@ namespace org.apache.http.auth
 	public partial class InvalidCredentialsException : org.apache.http.auth.AuthenticationException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InvalidCredentialsException()
-		{
-			InitJNI();
-		}
 		protected InvalidCredentialsException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -32,13 +28,16 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.InvalidCredentialsException.staticClass, global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InvalidCredentialsException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.InvalidCredentialsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/InvalidCredentialsException"));
 			global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31828 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.InvalidCredentialsException.staticClass, "<init>", "()V");
 			global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31829 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.InvalidCredentialsException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31830 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.InvalidCredentialsException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

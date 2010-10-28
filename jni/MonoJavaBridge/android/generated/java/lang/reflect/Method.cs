@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public sealed partial class Method : java.lang.reflect.AccessibleObject, GenericDeclaration, Member
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Method()
-		{
-			InitJNI();
-		}
 		internal Method(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -300,7 +296,7 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Method.staticClass, global::java.lang.reflect.Method._getParameterAnnotations21118)) as java.lang.annotation.Annotation[][];
 		}
-		private static void InitJNI()
+		static Method()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Method.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Method"));
@@ -326,6 +322,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Method._isVarArgs21116 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Method.staticClass, "isVarArgs", "()Z");
 			global::java.lang.reflect.Method._getDefaultValue21117 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Method.staticClass, "getDefaultValue", "()Ljava/lang/Object;");
 			global::java.lang.reflect.Method._getParameterAnnotations21118 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Method.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

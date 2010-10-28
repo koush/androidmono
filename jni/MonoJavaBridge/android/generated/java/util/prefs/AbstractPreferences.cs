@@ -4,10 +4,6 @@ namespace java.util.prefs
 	public abstract partial class AbstractPreferences : java.util.prefs.Preferences
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractPreferences()
-		{
-			InitJNI();
-		}
 		protected AbstractPreferences(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -369,7 +365,7 @@ namespace java.util.prefs
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.AbstractPreferences.staticClass, global::java.util.prefs.AbstractPreferences._AbstractPreferences28162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractPreferences()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.AbstractPreferences.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/AbstractPreferences"));
@@ -421,16 +417,15 @@ namespace java.util.prefs
 			global::java.util.prefs.AbstractPreferences._exportSubtree28161 = @__env.GetMethodIDNoThrow(global::java.util.prefs.AbstractPreferences.staticClass, "exportSubtree", "(Ljava/io/OutputStream;)V");
 			global::java.util.prefs.AbstractPreferences._AbstractPreferences28162 = @__env.GetMethodIDNoThrow(global::java.util.prefs.AbstractPreferences.staticClass, "<init>", "(Ljava/util/prefs/AbstractPreferences;Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.prefs.AbstractPreferences))]
 	internal sealed partial class AbstractPreferences_ : java.util.prefs.AbstractPreferences
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractPreferences_()
-		{
-			InitJNI();
-		}
 		internal AbstractPreferences_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -515,7 +510,7 @@ namespace java.util.prefs
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.AbstractPreferences_.staticClass, global::java.util.prefs.AbstractPreferences_._flushSpi28171);
 		}
-		private static void InitJNI()
+		static AbstractPreferences_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.AbstractPreferences_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/AbstractPreferences"));
@@ -528,6 +523,9 @@ namespace java.util.prefs
 			global::java.util.prefs.AbstractPreferences_._childSpi28169 = @__env.GetMethodIDNoThrow(global::java.util.prefs.AbstractPreferences_.staticClass, "childSpi", "(Ljava/lang/String;)Ljava/util/prefs/AbstractPreferences;");
 			global::java.util.prefs.AbstractPreferences_._syncSpi28170 = @__env.GetMethodIDNoThrow(global::java.util.prefs.AbstractPreferences_.staticClass, "syncSpi", "()V");
 			global::java.util.prefs.AbstractPreferences_._flushSpi28171 = @__env.GetMethodIDNoThrow(global::java.util.prefs.AbstractPreferences_.staticClass, "flushSpi", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

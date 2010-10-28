@@ -4,10 +4,6 @@ namespace android.opengl
 	public partial class GLES10 : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static GLES10()
-		{
-			InitJNI();
-		}
 		protected GLES10(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -2415,7 +2411,7 @@ namespace android.opengl
 				return 0;
 			}
 		}
-		private static void InitJNI()
+		static GLES10()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES10.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES10"));
@@ -2543,6 +2539,9 @@ namespace android.opengl
 			global::android.opengl.GLES10._glVertexPointer8271 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glVertexPointer", "(IIILjava/nio/Buffer;)V");
 			global::android.opengl.GLES10._glViewport8272 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glViewport", "(IIII)V");
 			global::android.opengl.GLES10._GLES108273 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

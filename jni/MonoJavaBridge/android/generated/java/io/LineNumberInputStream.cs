@@ -4,10 +4,6 @@ namespace java.io
 	public partial class LineNumberInputStream : java.io.FilterInputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LineNumberInputStream()
-		{
-			InitJNI();
-		}
 		protected LineNumberInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.LineNumberInputStream.staticClass, global::java.io.LineNumberInputStream._LineNumberInputStream19130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LineNumberInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.LineNumberInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/LineNumberInputStream"));
@@ -114,6 +110,9 @@ namespace java.io
 			global::java.io.LineNumberInputStream._available19128 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberInputStream.staticClass, "available", "()I");
 			global::java.io.LineNumberInputStream._setLineNumber19129 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberInputStream.staticClass, "setLineNumber", "(I)V");
 			global::java.io.LineNumberInputStream._LineNumberInputStream19130 = @__env.GetMethodIDNoThrow(global::java.io.LineNumberInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

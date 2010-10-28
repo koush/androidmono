@@ -4,10 +4,6 @@ namespace android.telephony
 	public partial class TelephonyManager : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TelephonyManager()
-		{
-			InitJNI();
-		}
 		protected TelephonyManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -653,7 +649,7 @@ namespace android.telephony
 				return 3;
 			}
 		}
-		private static void InitJNI()
+		static TelephonyManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.TelephonyManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/TelephonyManager"));
@@ -684,6 +680,9 @@ namespace android.telephony
 			global::android.telephony.TelephonyManager._EXTRA_STATE_IDLE11986 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.TelephonyManager.staticClass, "EXTRA_STATE_IDLE", "Ljava/lang/String;");
 			global::android.telephony.TelephonyManager._EXTRA_STATE_RINGING11987 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.TelephonyManager.staticClass, "EXTRA_STATE_RINGING", "Ljava/lang/String;");
 			global::android.telephony.TelephonyManager._EXTRA_STATE_OFFHOOK11988 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.TelephonyManager.staticClass, "EXTRA_STATE_OFFHOOK", "Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

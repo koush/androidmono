@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class ArrayAdapter : android.widget.BaseAdapter, Filterable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ArrayAdapter()
-		{
-			InitJNI();
-		}
 		protected ArrayAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -238,7 +234,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ArrayAdapter.staticClass, global::android.widget.ArrayAdapter._ArrayAdapter16724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ArrayAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ArrayAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ArrayAdapter"));
@@ -265,6 +261,9 @@ namespace android.widget
 			global::android.widget.ArrayAdapter._ArrayAdapter16722 = @__env.GetMethodIDNoThrow(global::android.widget.ArrayAdapter.staticClass, "<init>", "(Landroid/content/Context;II[Ljava/lang/Object;)V");
 			global::android.widget.ArrayAdapter._ArrayAdapter16723 = @__env.GetMethodIDNoThrow(global::android.widget.ArrayAdapter.staticClass, "<init>", "(Landroid/content/Context;ILjava/util/List;)V");
 			global::android.widget.ArrayAdapter._ArrayAdapter16724 = @__env.GetMethodIDNoThrow(global::android.widget.ArrayAdapter.staticClass, "<init>", "(Landroid/content/Context;IILjava/util/List;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

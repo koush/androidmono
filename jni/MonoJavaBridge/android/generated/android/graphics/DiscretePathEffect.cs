@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class DiscretePathEffect : android.graphics.PathEffect
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DiscretePathEffect()
-		{
-			InitJNI();
-		}
 		protected DiscretePathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DiscretePathEffect.staticClass, global::android.graphics.DiscretePathEffect._DiscretePathEffect5263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DiscretePathEffect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.DiscretePathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/DiscretePathEffect"));
 			global::android.graphics.DiscretePathEffect._DiscretePathEffect5263 = @__env.GetMethodIDNoThrow(global::android.graphics.DiscretePathEffect.staticClass, "<init>", "(FF)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

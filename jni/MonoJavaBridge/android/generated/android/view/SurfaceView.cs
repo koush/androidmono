@@ -4,10 +4,6 @@ namespace android.view
 	public partial class SurfaceView : android.view.View
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SurfaceView()
-		{
-			InitJNI();
-		}
 		protected SurfaceView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -168,7 +164,7 @@ namespace android.view
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView14601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SurfaceView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SurfaceView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SurfaceView"));
@@ -187,6 +183,9 @@ namespace android.view
 			global::android.view.SurfaceView._SurfaceView14599 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.view.SurfaceView._SurfaceView14600 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.view.SurfaceView._SurfaceView14601 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

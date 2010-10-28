@@ -4,10 +4,6 @@ namespace javax.xml.xpath
 	public partial class XPathException : java.lang.Exception
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathException()
-		{
-			InitJNI();
-		}
 		protected XPathException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -68,7 +64,7 @@ namespace javax.xml.xpath
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._XPathException31303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static XPathException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathException"));
@@ -78,6 +74,9 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathException._getCause31301 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "getCause", "()Ljava/lang/Throwable;");
 			global::javax.xml.xpath.XPathException._XPathException31302 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.xpath.XPathException._XPathException31303 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

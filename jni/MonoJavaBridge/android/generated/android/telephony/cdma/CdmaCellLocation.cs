@@ -4,10 +4,6 @@ namespace android.telephony.cdma
 	public partial class CdmaCellLocation : android.telephony.CellLocation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CdmaCellLocation()
-		{
-			InitJNI();
-		}
 		protected CdmaCellLocation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -168,7 +164,7 @@ namespace android.telephony.cdma
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._CdmaCellLocation12036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CdmaCellLocation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.cdma.CdmaCellLocation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/cdma/CdmaCellLocation"));
@@ -186,6 +182,9 @@ namespace android.telephony.cdma
 			global::android.telephony.cdma.CdmaCellLocation._fillInNotifierBundle12034 = @__env.GetMethodIDNoThrow(global::android.telephony.cdma.CdmaCellLocation.staticClass, "fillInNotifierBundle", "(Landroid/os/Bundle;)V");
 			global::android.telephony.cdma.CdmaCellLocation._CdmaCellLocation12035 = @__env.GetMethodIDNoThrow(global::android.telephony.cdma.CdmaCellLocation.staticClass, "<init>", "()V");
 			global::android.telephony.cdma.CdmaCellLocation._CdmaCellLocation12036 = @__env.GetMethodIDNoThrow(global::android.telephony.cdma.CdmaCellLocation.staticClass, "<init>", "(Landroid/os/Bundle;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

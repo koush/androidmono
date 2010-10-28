@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BestMatchSpec : java.lang.Object, org.apache.http.cookie.CookieSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BestMatchSpec()
-		{
-			InitJNI();
-		}
 		protected BestMatchSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -93,7 +89,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BestMatchSpec.staticClass, global::org.apache.http.impl.cookie.BestMatchSpec._BestMatchSpec33275);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BestMatchSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BestMatchSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BestMatchSpec"));
@@ -105,6 +101,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.BestMatchSpec._getVersionHeader33273 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BestMatchSpec.staticClass, "getVersionHeader", "()Lorg/apache/http/Header;");
 			global::org.apache.http.impl.cookie.BestMatchSpec._BestMatchSpec33274 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BestMatchSpec.staticClass, "<init>", "([Ljava/lang/String;Z)V");
 			global::org.apache.http.impl.cookie.BestMatchSpec._BestMatchSpec33275 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BestMatchSpec.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.bluetooth
 	public sealed partial class BluetoothDevice : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BluetoothDevice()
-		{
-			InitJNI();
-		}
 		internal BluetoothDevice(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -257,7 +253,7 @@ namespace android.bluetooth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.bluetooth.BluetoothDevice.staticClass, _CREATOR2549)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static BluetoothDevice()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.bluetooth.BluetoothDevice.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothDevice"));
@@ -272,6 +268,9 @@ namespace android.bluetooth
 			global::android.bluetooth.BluetoothDevice._getBluetoothClass2530 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothDevice.staticClass, "getBluetoothClass", "()Landroid/bluetooth/BluetoothClass;");
 			global::android.bluetooth.BluetoothDevice._createRfcommSocketToServiceRecord2531 = @__env.GetMethodIDNoThrow(global::android.bluetooth.BluetoothDevice.staticClass, "createRfcommSocketToServiceRecord", "(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;");
 			global::android.bluetooth.BluetoothDevice._CREATOR2549 = @__env.GetStaticFieldIDNoThrow(global::android.bluetooth.BluetoothDevice.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

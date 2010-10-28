@@ -13,10 +13,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMImplementation_ : java.lang.Object, DOMImplementation
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMImplementation_()
-		{
-			InitJNI();
-		}
 		internal DOMImplementation_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementation_.staticClass, global::org.w3c.dom.DOMImplementation_._createDocument34372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.w3c.dom.Document;
 		}
-		private static void InitJNI()
+		static DOMImplementation_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMImplementation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMImplementation"));
@@ -64,6 +60,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DOMImplementation_._hasFeature34370 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementation_.staticClass, "hasFeature", "(Ljava/lang/String;Ljava/lang/String;)Z");
 			global::org.w3c.dom.DOMImplementation_._createDocumentType34371 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementation_.staticClass, "createDocumentType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/DocumentType;");
 			global::org.w3c.dom.DOMImplementation_._createDocument34372 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementation_.staticClass, "createDocument", "(Ljava/lang/String;Ljava/lang/String;Lorg/w3c/dom/DocumentType;)Lorg/w3c/dom/Document;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

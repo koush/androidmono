@@ -4,10 +4,6 @@ namespace android.webkit
 	public partial class JsResult : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JsResult()
-		{
-			InitJNI();
-		}
 		protected JsResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -38,13 +34,16 @@ namespace android.webkit
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp16058);
 		}
-		private static void InitJNI()
+		static JsResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.JsResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/JsResult"));
 			global::android.webkit.JsResult._cancel16056 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "cancel", "()V");
 			global::android.webkit.JsResult._confirm16057 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "confirm", "()V");
 			global::android.webkit.JsResult._wakeUp16058 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "wakeUp", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

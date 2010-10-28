@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class LDAPCertStoreParameters : java.lang.Object, CertStoreParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LDAPCertStoreParameters()
-		{
-			InitJNI();
-		}
 		protected LDAPCertStoreParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -82,7 +78,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.LDAPCertStoreParameters.staticClass, global::java.security.cert.LDAPCertStoreParameters._LDAPCertStoreParameters23625);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LDAPCertStoreParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.LDAPCertStoreParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/LDAPCertStoreParameters"));
@@ -93,6 +89,9 @@ namespace java.security.cert
 			global::java.security.cert.LDAPCertStoreParameters._LDAPCertStoreParameters23623 = @__env.GetMethodIDNoThrow(global::java.security.cert.LDAPCertStoreParameters.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::java.security.cert.LDAPCertStoreParameters._LDAPCertStoreParameters23624 = @__env.GetMethodIDNoThrow(global::java.security.cert.LDAPCertStoreParameters.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.security.cert.LDAPCertStoreParameters._LDAPCertStoreParameters23625 = @__env.GetMethodIDNoThrow(global::java.security.cert.LDAPCertStoreParameters.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

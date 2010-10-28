@@ -4,10 +4,6 @@ namespace org.apache.http
 	public sealed partial class HttpVersion : org.apache.http.ProtocolVersion, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static HttpVersion()
-		{
-			InitJNI();
-		}
 		internal HttpVersion(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -61,7 +57,7 @@ namespace org.apache.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpVersion>(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_1_131733)) as org.apache.http.HttpVersion;
 			}
 		}
-		private static void InitJNI()
+		static HttpVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpVersion.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpVersion"));
@@ -70,6 +66,9 @@ namespace org.apache.http
 			global::org.apache.http.HttpVersion._HTTP_0_931731 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_0_9", "Lorg/apache/http/HttpVersion;");
 			global::org.apache.http.HttpVersion._HTTP_1_031732 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_0", "Lorg/apache/http/HttpVersion;");
 			global::org.apache.http.HttpVersion._HTTP_1_131733 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_1", "Lorg/apache/http/HttpVersion;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

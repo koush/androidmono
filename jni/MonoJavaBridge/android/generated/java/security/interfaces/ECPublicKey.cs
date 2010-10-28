@@ -10,10 +10,6 @@ namespace java.security.interfaces
 	internal sealed partial class ECPublicKey_ : java.lang.Object, ECPublicKey
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ECPublicKey_()
-		{
-			InitJNI();
-		}
 		internal ECPublicKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECPublicKey_.staticClass, global::java.security.interfaces.ECPublicKey_._getParams23924)) as java.security.spec.ECParameterSpec;
 		}
-		private static void InitJNI()
+		static ECPublicKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.ECPublicKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/ECPublicKey"));
@@ -71,6 +67,9 @@ namespace java.security.interfaces
 			global::java.security.interfaces.ECPublicKey_._getAlgorithm23922 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.ECPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			global::java.security.interfaces.ECPublicKey_._getFormat23923 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.ECPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;");
 			global::java.security.interfaces.ECPublicKey_._getParams23924 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.ECPublicKey_.staticClass, "getParams", "()Ljava/security/spec/ECParameterSpec;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

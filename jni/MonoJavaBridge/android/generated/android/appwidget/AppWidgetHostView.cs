@@ -4,10 +4,6 @@ namespace android.appwidget
 	public partial class AppWidgetHostView : android.widget.FrameLayout
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AppWidgetHostView()
-		{
-			InitJNI();
-		}
 		protected AppWidgetHostView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -152,7 +148,7 @@ namespace android.appwidget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.appwidget.AppWidgetHostView.staticClass, global::android.appwidget.AppWidgetHostView._AppWidgetHostView2362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AppWidgetHostView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.appwidget.AppWidgetHostView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetHostView"));
@@ -169,6 +165,9 @@ namespace android.appwidget
 			global::android.appwidget.AppWidgetHostView._getErrorView2360 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHostView.staticClass, "getErrorView", "()Landroid/view/View;");
 			global::android.appwidget.AppWidgetHostView._AppWidgetHostView2361 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHostView.staticClass, "<init>", "(Landroid/content/Context;II)V");
 			global::android.appwidget.AppWidgetHostView._AppWidgetHostView2362 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHostView.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

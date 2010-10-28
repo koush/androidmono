@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class NetscapeDraftSpec : org.apache.http.impl.cookie.CookieSpecBase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NetscapeDraftSpec()
-		{
-			InitJNI();
-		}
 		protected NetscapeDraftSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -75,7 +71,7 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpec._NetscapeDraftSpec33318);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NetscapeDraftSpec()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/NetscapeDraftSpec"));
@@ -85,6 +81,9 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.NetscapeDraftSpec._getVersionHeader33316 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, "getVersionHeader", "()Lorg/apache/http/Header;");
 			global::org.apache.http.impl.cookie.NetscapeDraftSpec._NetscapeDraftSpec33317 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, "<init>", "([Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.NetscapeDraftSpec._NetscapeDraftSpec33318 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

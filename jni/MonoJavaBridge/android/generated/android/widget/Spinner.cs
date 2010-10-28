@@ -4,10 +4,6 @@ namespace android.widget
 	public partial class Spinner : android.widget.AbsSpinner, android.content.DialogInterface_OnClickListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Spinner()
-		{
-			InitJNI();
-		}
 		protected Spinner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -153,7 +149,7 @@ namespace android.widget
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Spinner.staticClass, global::android.widget.Spinner._Spinner17844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Spinner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Spinner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Spinner"));
@@ -169,6 +165,9 @@ namespace android.widget
 			global::android.widget.Spinner._Spinner17842 = @__env.GetMethodIDNoThrow(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.Spinner._Spinner17843 = @__env.GetMethodIDNoThrow(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.Spinner._Spinner17844 = @__env.GetMethodIDNoThrow(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

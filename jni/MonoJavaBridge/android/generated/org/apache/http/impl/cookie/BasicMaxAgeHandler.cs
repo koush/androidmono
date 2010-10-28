@@ -4,10 +4,6 @@ namespace org.apache.http.impl.cookie
 	public partial class BasicMaxAgeHandler : org.apache.http.impl.cookie.AbstractCookieAttributeHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicMaxAgeHandler()
-		{
-			InitJNI();
-		}
 		protected BasicMaxAgeHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -27,12 +23,15 @@ namespace org.apache.http.impl.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.BasicMaxAgeHandler.staticClass, global::org.apache.http.impl.cookie.BasicMaxAgeHandler._BasicMaxAgeHandler33260);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicMaxAgeHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.cookie.BasicMaxAgeHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/BasicMaxAgeHandler"));
 			global::org.apache.http.impl.cookie.BasicMaxAgeHandler._parse33259 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicMaxAgeHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
 			global::org.apache.http.impl.cookie.BasicMaxAgeHandler._BasicMaxAgeHandler33260 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BasicMaxAgeHandler.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

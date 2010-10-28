@@ -10,10 +10,6 @@ namespace java.util.concurrent
 	internal sealed partial class RejectedExecutionHandler_ : java.lang.Object, RejectedExecutionHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RejectedExecutionHandler_()
-		{
-			InitJNI();
-		}
 		internal RejectedExecutionHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util.concurrent
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.RejectedExecutionHandler_.staticClass, global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static RejectedExecutionHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.RejectedExecutionHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/RejectedExecutionHandler"));
 			global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27367 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.RejectedExecutionHandler_.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

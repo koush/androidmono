@@ -4,10 +4,6 @@ namespace java.lang.reflect
 	public sealed partial class Constructor : java.lang.reflect.AccessibleObject, GenericDeclaration, Member
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Constructor()
-		{
-			InitJNI();
-		}
 		internal Constructor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -243,7 +239,7 @@ namespace java.lang.reflect
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getParameterAnnotations21049)) as java.lang.annotation.Annotation[][];
 		}
-		private static void InitJNI()
+		static Constructor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Constructor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Constructor"));
@@ -265,6 +261,9 @@ namespace java.lang.reflect
 			global::java.lang.reflect.Constructor._getGenericExceptionTypes21047 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;");
 			global::java.lang.reflect.Constructor._isVarArgs21048 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "isVarArgs", "()Z");
 			global::java.lang.reflect.Constructor._getParameterAnnotations21049 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

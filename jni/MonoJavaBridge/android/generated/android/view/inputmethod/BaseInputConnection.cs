@@ -4,10 +4,6 @@ namespace android.view.inputmethod
 	public partial class BaseInputConnection : java.lang.Object, InputConnection
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BaseInputConnection()
-		{
-			InitJNI();
-		}
 		protected BaseInputConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -235,7 +231,7 @@ namespace android.view.inputmethod
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.BaseInputConnection.staticClass, global::android.view.inputmethod.BaseInputConnection._BaseInputConnection15799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BaseInputConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.BaseInputConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/BaseInputConnection"));
@@ -263,6 +259,9 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.BaseInputConnection._getComposingSpanEnd15797 = @__env.GetStaticMethodIDNoThrow(global::android.view.inputmethod.BaseInputConnection.staticClass, "getComposingSpanEnd", "(Landroid/text/Spannable;)I");
 			global::android.view.inputmethod.BaseInputConnection._getEditable15798 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.BaseInputConnection.staticClass, "getEditable", "()Landroid/text/Editable;");
 			global::android.view.inputmethod.BaseInputConnection._BaseInputConnection15799 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.BaseInputConnection.staticClass, "<init>", "(Landroid/view/View;Z)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

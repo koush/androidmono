@@ -4,10 +4,6 @@ namespace android.content
 	public partial class ContextWrapper : android.content.Context
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContextWrapper()
-		{
-			InitJNI();
-		}
 		protected ContextWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -812,7 +808,7 @@ namespace android.content
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._ContextWrapper3066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ContextWrapper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContextWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContextWrapper"));
@@ -890,6 +886,9 @@ namespace android.content
 			global::android.content.ContextWrapper._createPackageContext3064 = @__env.GetMethodIDNoThrow(global::android.content.ContextWrapper.staticClass, "createPackageContext", "(Ljava/lang/String;I)Landroid/content/Context;");
 			global::android.content.ContextWrapper._isRestricted3065 = @__env.GetMethodIDNoThrow(global::android.content.ContextWrapper.staticClass, "isRestricted", "()Z");
 			global::android.content.ContextWrapper._ContextWrapper3066 = @__env.GetMethodIDNoThrow(global::android.content.ContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

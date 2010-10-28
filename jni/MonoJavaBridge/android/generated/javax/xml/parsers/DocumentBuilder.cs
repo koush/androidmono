@@ -4,10 +4,6 @@ namespace javax.xml.parsers
 	public abstract partial class DocumentBuilder : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentBuilder()
-		{
-			InitJNI();
-		}
 		protected DocumentBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -95,7 +91,7 @@ namespace javax.xml.parsers
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._DocumentBuilder30846);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DocumentBuilder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.DocumentBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/DocumentBuilder"));
@@ -115,16 +111,15 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.DocumentBuilder._isXIncludeAware30845 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilder.staticClass, "isXIncludeAware", "()Z");
 			global::javax.xml.parsers.DocumentBuilder._DocumentBuilder30846 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilder.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.parsers.DocumentBuilder))]
 	internal sealed partial class DocumentBuilder_ : javax.xml.parsers.DocumentBuilder
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DocumentBuilder_()
-		{
-			InitJNI();
-		}
 		internal DocumentBuilder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -191,7 +186,7 @@ namespace javax.xml.parsers
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._getDOMImplementation30853)) as org.w3c.dom.DOMImplementation;
 		}
-		private static void InitJNI()
+		static DocumentBuilder_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.DocumentBuilder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/DocumentBuilder"));
@@ -202,6 +197,9 @@ namespace javax.xml.parsers
 			global::javax.xml.parsers.DocumentBuilder_._isValidating30851 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilder_.staticClass, "isValidating", "()Z");
 			global::javax.xml.parsers.DocumentBuilder_._newDocument30852 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilder_.staticClass, "newDocument", "()Lorg/w3c/dom/Document;");
 			global::javax.xml.parsers.DocumentBuilder_._getDOMImplementation30853 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilder_.staticClass, "getDOMImplementation", "()Lorg/w3c/dom/DOMImplementation;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

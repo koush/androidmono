@@ -4,10 +4,6 @@ namespace android.text.method
 	public abstract partial class NumberKeyListener : android.text.method.BaseKeyListener, InputFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NumberKeyListener()
-		{
-			InitJNI();
-		}
 		protected NumberKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -57,7 +53,7 @@ namespace android.text.method
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._NumberKeyListener13355);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static NumberKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.NumberKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/NumberKeyListener"));
@@ -68,16 +64,15 @@ namespace android.text.method
 			global::android.text.method.NumberKeyListener._getAcceptedChars13354 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.NumberKeyListener._NumberKeyListener13355 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.NumberKeyListener))]
 	internal sealed partial class NumberKeyListener_ : android.text.method.NumberKeyListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static NumberKeyListener_()
-		{
-			InitJNI();
-		}
 		internal NumberKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -99,12 +94,15 @@ namespace android.text.method
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.NumberKeyListener_.staticClass, global::android.text.method.NumberKeyListener_._getInputType13357);
 		}
-		private static void InitJNI()
+		static NumberKeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.NumberKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/NumberKeyListener"));
 			global::android.text.method.NumberKeyListener_._getAcceptedChars13356 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.NumberKeyListener_._getInputType13357 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getInputType", "()I");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

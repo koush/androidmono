@@ -4,10 +4,6 @@ namespace java.util
 	public partial class InputMismatchException : java.util.NoSuchElementException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InputMismatchException()
-		{
-			InitJNI();
-		}
 		protected InputMismatchException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -25,12 +21,15 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static InputMismatchException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.InputMismatchException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/InputMismatchException"));
 			global::java.util.InputMismatchException._InputMismatchException26328 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "()V");
 			global::java.util.InputMismatchException._InputMismatchException26329 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

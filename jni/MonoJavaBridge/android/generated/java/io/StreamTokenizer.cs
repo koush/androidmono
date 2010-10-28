@@ -4,10 +4,6 @@ namespace java.io
 	public partial class StreamTokenizer : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StreamTokenizer()
-		{
-			InitJNI();
-		}
 		protected StreamTokenizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -233,7 +229,7 @@ namespace java.io
 			{
 			}
 		}
-		private static void InitJNI()
+		static StreamTokenizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.StreamTokenizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/StreamTokenizer"));
@@ -258,6 +254,9 @@ namespace java.io
 			global::java.io.StreamTokenizer._ttype19595 = @__env.GetFieldIDNoThrow(global::java.io.StreamTokenizer.staticClass, "ttype", "I");
 			global::java.io.StreamTokenizer._sval19600 = @__env.GetFieldIDNoThrow(global::java.io.StreamTokenizer.staticClass, "sval", "Ljava/lang/String;");
 			global::java.io.StreamTokenizer._nval19601 = @__env.GetFieldIDNoThrow(global::java.io.StreamTokenizer.staticClass, "nval", "D");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.nio.channels.spi
 	public abstract partial class SelectorProvider : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SelectorProvider()
-		{
-			InitJNI();
-		}
 		protected SelectorProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,7 +39,7 @@ namespace java.nio.channels.spi
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.SelectorProvider.staticClass, global::java.nio.channels.spi.SelectorProvider._SelectorProvider22715);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SelectorProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.SelectorProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/SelectorProvider"));
@@ -56,16 +52,15 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.SelectorProvider._openPipe22714 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.SelectorProvider.staticClass, "openPipe", "()Ljava/nio/channels/Pipe;");
 			global::java.nio.channels.spi.SelectorProvider._SelectorProvider22715 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.SelectorProvider.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.spi.SelectorProvider))]
 	internal sealed partial class SelectorProvider_ : java.nio.channels.spi.SelectorProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SelectorProvider_()
-		{
-			InitJNI();
-		}
 		internal SelectorProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -114,7 +109,7 @@ namespace java.nio.channels.spi
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.spi.SelectorProvider_.staticClass, global::java.nio.channels.spi.SelectorProvider_._openPipe22720)) as java.nio.channels.Pipe;
 		}
-		private static void InitJNI()
+		static SelectorProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.spi.SelectorProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/spi/SelectorProvider"));
@@ -123,6 +118,9 @@ namespace java.nio.channels.spi
 			global::java.nio.channels.spi.SelectorProvider_._openSocketChannel22718 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.SelectorProvider_.staticClass, "openSocketChannel", "()Ljava/nio/channels/SocketChannel;");
 			global::java.nio.channels.spi.SelectorProvider_._openSelector22719 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.SelectorProvider_.staticClass, "openSelector", "()Ljava/nio/channels/spi/AbstractSelector;");
 			global::java.nio.channels.spi.SelectorProvider_._openPipe22720 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.SelectorProvider_.staticClass, "openPipe", "()Ljava/nio/channels/Pipe;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

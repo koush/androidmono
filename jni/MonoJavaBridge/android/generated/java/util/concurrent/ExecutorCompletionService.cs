@@ -4,10 +4,6 @@ namespace java.util.concurrent
 	public partial class ExecutorCompletionService : java.lang.Object, CompletionService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ExecutorCompletionService()
-		{
-			InitJNI();
-		}
 		protected ExecutorCompletionService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -74,7 +70,7 @@ namespace java.util.concurrent
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.ExecutorCompletionService.staticClass, global::java.util.concurrent.ExecutorCompletionService._ExecutorCompletionService27268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ExecutorCompletionService()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.ExecutorCompletionService.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/ExecutorCompletionService"));
@@ -85,6 +81,9 @@ namespace java.util.concurrent
 			global::java.util.concurrent.ExecutorCompletionService._take27266 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ExecutorCompletionService.staticClass, "take", "()Ljava/util/concurrent/Future;");
 			global::java.util.concurrent.ExecutorCompletionService._ExecutorCompletionService27267 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ExecutorCompletionService.staticClass, "<init>", "(Ljava/util/concurrent/Executor;)V");
 			global::java.util.concurrent.ExecutorCompletionService._ExecutorCompletionService27268 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ExecutorCompletionService.staticClass, "<init>", "(Ljava/util/concurrent/Executor;Ljava/util/concurrent/BlockingQueue;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

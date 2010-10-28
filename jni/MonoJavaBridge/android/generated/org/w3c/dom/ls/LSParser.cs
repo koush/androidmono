@@ -18,10 +18,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSParser_ : java.lang.Object, LSParser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSParser_()
-		{
-			InitJNI();
-		}
 		internal LSParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -106,7 +102,7 @@ namespace org.w3c.dom.ls
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParser_.staticClass, global::org.w3c.dom.ls.LSParser_._parseWithContext34924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.w3c.dom.Node;
 		}
-		private static void InitJNI()
+		static LSParser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSParser"));
@@ -119,6 +115,9 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.LSParser_._getBusy34922 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParser_.staticClass, "getBusy", "()Z");
 			global::org.w3c.dom.ls.LSParser_._parseURI34923 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParser_.staticClass, "parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;");
 			global::org.w3c.dom.ls.LSParser_._parseWithContext34924 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParser_.staticClass, "parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

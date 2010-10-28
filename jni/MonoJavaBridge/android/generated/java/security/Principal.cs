@@ -13,10 +13,6 @@ namespace java.security
 	internal sealed partial class Principal_ : java.lang.Object, Principal
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Principal_()
-		{
-			InitJNI();
-		}
 		internal Principal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace java.security
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._getName23242)) as java.lang.String;
 		}
-		private static void InitJNI()
+		static Principal_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Principal_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Principal"));
@@ -64,6 +60,9 @@ namespace java.security
 			global::java.security.Principal_._toString23240 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.security.Principal_._hashCode23241 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "hashCode", "()I");
 			global::java.security.Principal_._getName23242 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

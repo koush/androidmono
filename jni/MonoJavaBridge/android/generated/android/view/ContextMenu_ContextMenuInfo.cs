@@ -9,17 +9,16 @@ namespace android.view
 	internal sealed partial class ContextMenu_ContextMenuInfo_ : java.lang.Object, ContextMenu_ContextMenuInfo
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ContextMenu_ContextMenuInfo_()
-		{
-			InitJNI();
-		}
 		internal ContextMenu_ContextMenuInfo_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ContextMenu_ContextMenuInfo_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ContextMenu_ContextMenuInfo_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextMenu$ContextMenuInfo"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

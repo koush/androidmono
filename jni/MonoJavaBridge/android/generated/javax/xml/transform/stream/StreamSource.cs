@@ -4,10 +4,6 @@ namespace javax.xml.transform.stream
 	public partial class StreamSource : java.lang.Object, Source
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static StreamSource()
-		{
-			InitJNI();
-		}
 		protected StreamSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -192,7 +188,7 @@ namespace javax.xml.transform.stream
 				return "http://javax.xml.transform.stream.StreamSource/feature";
 			}
 		}
-		private static void InitJNI()
+		static StreamSource()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.stream.StreamSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/stream/StreamSource"));
@@ -212,6 +208,9 @@ namespace javax.xml.transform.stream
 			global::javax.xml.transform.stream.StreamSource._StreamSource31176 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamSource.staticClass, "<init>", "(Ljava/io/Reader;Ljava/lang/String;)V");
 			global::javax.xml.transform.stream.StreamSource._StreamSource31177 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamSource.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::javax.xml.transform.stream.StreamSource._StreamSource31178 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamSource.staticClass, "<init>", "(Ljava/io/File;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics.drawable
 	public partial class ShapeDrawable : android.graphics.drawable.Drawable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ShapeDrawable()
-		{
-			InitJNI();
-		}
 		protected ShapeDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -15,10 +11,6 @@ namespace android.graphics.drawable
 		public abstract partial class ShaderFactory : java.lang.Object
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ShaderFactory()
-			{
-				InitJNI();
-			}
 			protected ShaderFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -31,12 +23,15 @@ namespace android.graphics.drawable
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ShapeDrawable.ShaderFactory.staticClass, global::android.graphics.drawable.ShapeDrawable.ShaderFactory._ShaderFactory6199);
 				Init(@__env, handle);
 			}
-			private static void InitJNI()
+			static ShaderFactory()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.ShapeDrawable.ShaderFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ShapeDrawable$ShaderFactory"));
 				global::android.graphics.drawable.ShapeDrawable.ShaderFactory._resize6198 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.ShaderFactory.staticClass, "resize", "(II)Landroid/graphics/Shader;");
 				global::android.graphics.drawable.ShapeDrawable.ShaderFactory._ShaderFactory6199 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.ShaderFactory.staticClass, "<init>", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 
@@ -44,10 +39,6 @@ namespace android.graphics.drawable
 		internal sealed partial class ShaderFactory_ : android.graphics.drawable.ShapeDrawable.ShaderFactory
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static ShaderFactory_()
-			{
-				InitJNI();
-			}
 			internal ShaderFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -60,11 +51,14 @@ namespace android.graphics.drawable
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.ShaderFactory_.staticClass, global::android.graphics.drawable.ShapeDrawable.ShaderFactory_._resize6200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Shader;
 			}
-			private static void InitJNI()
+			static ShaderFactory_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.ShapeDrawable.ShaderFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ShapeDrawable$ShaderFactory"));
 				global::android.graphics.drawable.ShapeDrawable.ShaderFactory_._resize6200 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.ShaderFactory_.staticClass, "resize", "(II)Landroid/graphics/Shader;");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate6201;
@@ -386,7 +380,7 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._ShapeDrawable6226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ShapeDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.ShapeDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ShapeDrawable"));
@@ -416,6 +410,9 @@ namespace android.graphics.drawable
 			global::android.graphics.drawable.ShapeDrawable._setIntrinsicHeight6224 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.staticClass, "setIntrinsicHeight", "(I)V");
 			global::android.graphics.drawable.ShapeDrawable._ShapeDrawable6225 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.staticClass, "<init>", "()V");
 			global::android.graphics.drawable.ShapeDrawable._ShapeDrawable6226 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ShapeDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/shapes/Shape;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

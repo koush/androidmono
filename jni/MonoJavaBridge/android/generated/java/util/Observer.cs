@@ -10,10 +10,6 @@ namespace java.util
 	internal sealed partial class Observer_ : java.lang.Object, Observer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Observer_()
-		{
-			InitJNI();
-		}
 		internal Observer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Observer_.staticClass, global::java.util.Observer_._update26537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static Observer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Observer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Observer"));
 			global::java.util.Observer_._update26537 = @__env.GetMethodIDNoThrow(global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

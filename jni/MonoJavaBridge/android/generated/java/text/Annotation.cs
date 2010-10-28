@@ -4,10 +4,6 @@ namespace java.text
 	public partial class Annotation : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Annotation()
-		{
-			InitJNI();
-		}
 		protected Annotation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -43,13 +39,16 @@ namespace java.text
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Annotation.staticClass, global::java.text.Annotation._Annotation25159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Annotation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Annotation.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Annotation"));
 			global::java.text.Annotation._toString25157 = @__env.GetMethodIDNoThrow(global::java.text.Annotation.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.text.Annotation._getValue25158 = @__env.GetMethodIDNoThrow(global::java.text.Annotation.staticClass, "getValue", "()Ljava/lang/Object;");
 			global::java.text.Annotation._Annotation25159 = @__env.GetMethodIDNoThrow(global::java.text.Annotation.staticClass, "<init>", "(Ljava/lang/Object;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

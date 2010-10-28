@@ -4,10 +4,6 @@ namespace javax.crypto
 	public abstract partial class SecretKeyFactorySpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecretKeyFactorySpi()
-		{
-			InitJNI();
-		}
 		protected SecretKeyFactorySpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -24,7 +20,7 @@ namespace javax.crypto
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.SecretKeyFactorySpi.staticClass, global::javax.crypto.SecretKeyFactorySpi._SecretKeyFactorySpi28730);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecretKeyFactorySpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.SecretKeyFactorySpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/SecretKeyFactorySpi"));
@@ -33,16 +29,15 @@ namespace javax.crypto
 			global::javax.crypto.SecretKeyFactorySpi._engineGenerateSecret28729 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi.staticClass, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;");
 			global::javax.crypto.SecretKeyFactorySpi._SecretKeyFactorySpi28730 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.SecretKeyFactorySpi))]
 	internal sealed partial class SecretKeyFactorySpi_ : javax.crypto.SecretKeyFactorySpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecretKeyFactorySpi_()
-		{
-			InitJNI();
-		}
 		internal SecretKeyFactorySpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -73,13 +68,16 @@ namespace javax.crypto
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.SecretKeyFactorySpi_.staticClass, global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.crypto.SecretKey;
 		}
-		private static void InitJNI()
+		static SecretKeyFactorySpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.SecretKeyFactorySpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/SecretKeyFactorySpi"));
 			global::javax.crypto.SecretKeyFactorySpi_._engineGetKeySpec28731 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
 			global::javax.crypto.SecretKeyFactorySpi_._engineTranslateKey28732 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;");
 			global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

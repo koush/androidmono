@@ -12,10 +12,6 @@ namespace org.w3c.dom.ls
 	internal sealed partial class LSParserFilter_ : java.lang.Object, LSParserFilter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LSParserFilter_()
-		{
-			InitJNI();
-		}
 		internal LSParserFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace org.w3c.dom.ls
 			else
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static LSParserFilter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSParserFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSParserFilter"));
 			global::org.w3c.dom.ls.LSParserFilter_._startElement34930 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParserFilter_.staticClass, "startElement", "(Lorg/w3c/dom/Element;)S");
 			global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34931 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParserFilter_.staticClass, "getWhatToShow", "()I");
 			global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSParserFilter_.staticClass, "acceptNode", "(Lorg/w3c/dom/Node;)S");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

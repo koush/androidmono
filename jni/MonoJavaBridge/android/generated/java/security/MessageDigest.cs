@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class MessageDigest : java.security.MessageDigestSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MessageDigest()
-		{
-			InitJNI();
-		}
 		protected MessageDigest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,7 +155,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._MessageDigest23178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MessageDigest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.MessageDigest.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/MessageDigest"));
@@ -182,16 +178,15 @@ namespace java.security
 			global::java.security.MessageDigest._getDigestLength23177 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getDigestLength", "()I");
 			global::java.security.MessageDigest._MessageDigest23178 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.MessageDigest))]
 	internal sealed partial class MessageDigest_ : java.security.MessageDigest
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MessageDigest_()
-		{
-			InitJNI();
-		}
 		internal MessageDigest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -231,7 +226,7 @@ namespace java.security
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.MessageDigest_.staticClass, global::java.security.MessageDigest_._engineReset23182);
 		}
-		private static void InitJNI()
+		static MessageDigest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.MessageDigest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/MessageDigest"));
@@ -239,6 +234,9 @@ namespace java.security
 			global::java.security.MessageDigest_._engineUpdate23180 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineUpdate", "([BII)V");
 			global::java.security.MessageDigest_._engineDigest23181 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineDigest", "()[B");
 			global::java.security.MessageDigest_._engineReset23182 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineReset", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicListHeaderIterator : java.lang.Object, HeaderIterator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicListHeaderIterator()
-		{
-			InitJNI();
-		}
 		protected BasicListHeaderIterator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -72,7 +68,7 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicListHeaderIterator.staticClass, global::org.apache.http.message.BasicListHeaderIterator._BasicListHeaderIterator33631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicListHeaderIterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicListHeaderIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicListHeaderIterator"));
@@ -83,6 +79,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicListHeaderIterator._nextHeader33629 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicListHeaderIterator.staticClass, "nextHeader", "()Lorg/apache/http/Header;");
 			global::org.apache.http.message.BasicListHeaderIterator._filterHeader33630 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicListHeaderIterator.staticClass, "filterHeader", "(I)Z");
 			global::org.apache.http.message.BasicListHeaderIterator._BasicListHeaderIterator33631 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicListHeaderIterator.staticClass, "<init>", "(Ljava/util/List;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

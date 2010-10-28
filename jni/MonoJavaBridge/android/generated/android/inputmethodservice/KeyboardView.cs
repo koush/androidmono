@@ -4,10 +4,6 @@ namespace android.inputmethodservice
 	public partial class KeyboardView : android.view.View, android.view.View.OnClickListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static KeyboardView()
-		{
-			InitJNI();
-		}
 		protected KeyboardView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -28,10 +24,6 @@ namespace android.inputmethodservice
 		internal sealed partial class OnKeyboardActionListener_ : java.lang.Object, OnKeyboardActionListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			static OnKeyboardActionListener_()
-			{
-				InitJNI();
-			}
 			internal OnKeyboardActionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
@@ -107,7 +99,7 @@ namespace android.inputmethodservice
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeUp6764);
 			}
-			private static void InitJNI()
+			static OnKeyboardActionListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/KeyboardView$OnKeyboardActionListener"));
@@ -119,6 +111,9 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeRight6762 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeRight", "()V");
 				global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeDown6763 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeDown", "()V");
 				global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeUp6764 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeUp", "()V");
+			}
+			internal static void InitJNI()
+			{
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _closing6765;
@@ -433,7 +428,7 @@ namespace android.inputmethodservice
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, global::android.inputmethodservice.KeyboardView._KeyboardView6794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static KeyboardView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.KeyboardView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/KeyboardView"));
@@ -467,6 +462,9 @@ namespace android.inputmethodservice
 			global::android.inputmethodservice.KeyboardView._handleBack6792 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "handleBack", "()Z");
 			global::android.inputmethodservice.KeyboardView._KeyboardView6793 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.inputmethodservice.KeyboardView._KeyboardView6794 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

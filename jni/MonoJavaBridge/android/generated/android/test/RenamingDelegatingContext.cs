@@ -4,10 +4,6 @@ namespace android.test
 	public partial class RenamingDelegatingContext : android.content.ContextWrapper
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RenamingDelegatingContext()
-		{
-			InitJNI();
-		}
 		protected RenamingDelegatingContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -163,7 +159,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._RenamingDelegatingContext12301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static RenamingDelegatingContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.RenamingDelegatingContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/RenamingDelegatingContext"));
@@ -183,6 +179,9 @@ namespace android.test
 			global::android.test.RenamingDelegatingContext._getDatabasePrefix12299 = @__env.GetMethodIDNoThrow(global::android.test.RenamingDelegatingContext.staticClass, "getDatabasePrefix", "()Ljava/lang/String;");
 			global::android.test.RenamingDelegatingContext._RenamingDelegatingContext12300 = @__env.GetMethodIDNoThrow(global::android.test.RenamingDelegatingContext.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/Context;Ljava/lang/String;)V");
 			global::android.test.RenamingDelegatingContext._RenamingDelegatingContext12301 = @__env.GetMethodIDNoThrow(global::android.test.RenamingDelegatingContext.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

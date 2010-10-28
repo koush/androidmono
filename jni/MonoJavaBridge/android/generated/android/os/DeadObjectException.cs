@@ -4,10 +4,6 @@ namespace android.os
 	public partial class DeadObjectException : android.os.RemoteException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DeadObjectException()
-		{
-			InitJNI();
-		}
 		protected DeadObjectException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace android.os
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DeadObjectException.staticClass, global::android.os.DeadObjectException._DeadObjectException9695);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static DeadObjectException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.DeadObjectException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DeadObjectException"));
 			global::android.os.DeadObjectException._DeadObjectException9695 = @__env.GetMethodIDNoThrow(global::android.os.DeadObjectException.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

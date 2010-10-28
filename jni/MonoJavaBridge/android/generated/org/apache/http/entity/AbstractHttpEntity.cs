@@ -4,10 +4,6 @@ namespace org.apache.http.entity
 	public abstract partial class AbstractHttpEntity : java.lang.Object, HttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpEntity()
-		{
-			InitJNI();
-		}
 		protected AbstractHttpEntity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,7 +105,7 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.AbstractHttpEntity.staticClass, global::org.apache.http.entity.AbstractHttpEntity._AbstractHttpEntity32500);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static AbstractHttpEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.AbstractHttpEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/AbstractHttpEntity"));
@@ -129,16 +125,15 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.AbstractHttpEntity._setChunked32499 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.AbstractHttpEntity.staticClass, "setChunked", "(Z)V");
 			global::org.apache.http.entity.AbstractHttpEntity._AbstractHttpEntity32500 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.AbstractHttpEntity.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.entity.AbstractHttpEntity))]
 	internal sealed partial class AbstractHttpEntity_ : org.apache.http.entity.AbstractHttpEntity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static AbstractHttpEntity_()
-		{
-			InitJNI();
-		}
 		internal AbstractHttpEntity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -187,7 +182,7 @@ namespace org.apache.http.entity
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.entity.AbstractHttpEntity_.staticClass, global::org.apache.http.entity.AbstractHttpEntity_._isStreaming32505);
 		}
-		private static void InitJNI()
+		static AbstractHttpEntity_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.AbstractHttpEntity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/AbstractHttpEntity"));
@@ -196,6 +191,9 @@ namespace org.apache.http.entity
 			global::org.apache.http.entity.AbstractHttpEntity_._getContentLength32503 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.AbstractHttpEntity_.staticClass, "getContentLength", "()J");
 			global::org.apache.http.entity.AbstractHttpEntity_._isRepeatable32504 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.AbstractHttpEntity_.staticClass, "isRepeatable", "()Z");
 			global::org.apache.http.entity.AbstractHttpEntity_._isStreaming32505 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.AbstractHttpEntity_.staticClass, "isStreaming", "()Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

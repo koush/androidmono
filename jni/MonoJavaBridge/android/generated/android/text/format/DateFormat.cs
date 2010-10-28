@@ -4,10 +4,6 @@ namespace android.text.format
 	public partial class DateFormat : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DateFormat()
-		{
-			InitJNI();
-		}
 		protected DateFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -168,7 +164,7 @@ namespace android.text.format
 				return 'y';
 			}
 		}
-		private static void InitJNI()
+		static DateFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.format.DateFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/DateFormat"));
@@ -182,6 +178,9 @@ namespace android.text.format
 			global::android.text.format.DateFormat._getMediumDateFormat13109 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.DateFormat.staticClass, "getMediumDateFormat", "(Landroid/content/Context;)Ljava/text/DateFormat;");
 			global::android.text.format.DateFormat._getDateFormatOrder13110 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.DateFormat.staticClass, "getDateFormatOrder", "(Landroid/content/Context;)[C");
 			global::android.text.format.DateFormat._DateFormat13111 = @__env.GetMethodIDNoThrow(global::android.text.format.DateFormat.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

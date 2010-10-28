@@ -16,10 +16,6 @@ namespace org.xml.sax
 	internal sealed partial class Parser_ : java.lang.Object, Parser
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Parser_()
-		{
-			InitJNI();
-		}
 		internal Parser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -86,7 +82,7 @@ namespace org.xml.sax
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.Parser_.staticClass, global::org.xml.sax.Parser_._setDocumentHandler35026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Parser_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.Parser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/Parser"));
@@ -97,6 +93,9 @@ namespace org.xml.sax
 			global::org.xml.sax.Parser_._setDTDHandler35024 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Parser_.staticClass, "setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V");
 			global::org.xml.sax.Parser_._setErrorHandler35025 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Parser_.staticClass, "setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V");
 			global::org.xml.sax.Parser_._setDocumentHandler35026 = @__env.GetMethodIDNoThrow(global::org.xml.sax.Parser_.staticClass, "setDocumentHandler", "(Lorg/xml/sax/DocumentHandler;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

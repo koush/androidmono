@@ -4,10 +4,6 @@ namespace java.lang
 	public sealed partial class Short : java.lang.Number, Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Short()
-		{
-			InitJNI();
-		}
 		internal Short(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -202,7 +198,7 @@ namespace java.lang
 				return 16;
 			}
 		}
-		private static void InitJNI()
+		static Short()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Short.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Short"));
@@ -228,6 +224,9 @@ namespace java.lang
 			global::java.lang.Short._Short20525 = @__env.GetMethodIDNoThrow(global::java.lang.Short.staticClass, "<init>", "(S)V");
 			global::java.lang.Short._Short20526 = @__env.GetMethodIDNoThrow(global::java.lang.Short.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.lang.Short._TYPE20529 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Short.staticClass, "TYPE", "Ljava/lang/Class;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

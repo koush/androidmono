@@ -4,10 +4,6 @@ namespace android.content.res
 	public sealed partial class Configuration : java.lang.Object, android.os.Parcelable, java.lang.Comparable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Configuration()
-		{
-			InitJNI();
-		}
 		internal Configuration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -628,7 +624,7 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.res.Configuration.staticClass, _CREATOR4200)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Configuration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.Configuration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Configuration"));
@@ -662,6 +658,9 @@ namespace android.content.res
 			global::android.content.res.Configuration._orientation4189 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "orientation", "I");
 			global::android.content.res.Configuration._uiMode4199 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "uiMode", "I");
 			global::android.content.res.Configuration._CREATOR4200 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -23,10 +23,6 @@ namespace java.util
 	internal sealed partial class Map_ : java.lang.Object, Map
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Map_()
-		{
-			InitJNI();
-		}
 		internal Map_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -156,7 +152,7 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Map_.staticClass, global::java.util.Map_._containsKey26515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Map_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Map_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Map"));
@@ -174,6 +170,9 @@ namespace java.util
 			global::java.util.Map_._keySet26513 = @__env.GetMethodIDNoThrow(global::java.util.Map_.staticClass, "keySet", "()Ljava/util/Set;");
 			global::java.util.Map_._containsValue26514 = @__env.GetMethodIDNoThrow(global::java.util.Map_.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
 			global::java.util.Map_._containsKey26515 = @__env.GetMethodIDNoThrow(global::java.util.Map_.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

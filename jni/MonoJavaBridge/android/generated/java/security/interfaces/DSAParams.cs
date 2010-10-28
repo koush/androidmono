@@ -12,10 +12,6 @@ namespace java.security.interfaces
 	internal sealed partial class DSAParams_ : java.lang.Object, DSAParams
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DSAParams_()
-		{
-			InitJNI();
-		}
 		internal DSAParams_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -46,13 +42,16 @@ namespace java.security.interfaces
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAParams_.staticClass, global::java.security.interfaces.DSAParams_._getG23900)) as java.math.BigInteger;
 		}
-		private static void InitJNI()
+		static DSAParams_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.DSAParams_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/DSAParams"));
 			global::java.security.interfaces.DSAParams_._getP23898 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAParams_.staticClass, "getP", "()Ljava/math/BigInteger;");
 			global::java.security.interfaces.DSAParams_._getQ23899 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAParams_.staticClass, "getQ", "()Ljava/math/BigInteger;");
 			global::java.security.interfaces.DSAParams_._getG23900 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAParams_.staticClass, "getG", "()Ljava/math/BigInteger;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

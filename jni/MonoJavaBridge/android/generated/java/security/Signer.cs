@@ -4,10 +4,6 @@ namespace java.security
 	public abstract partial class Signer : java.security.Identity
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Signer()
-		{
-			InitJNI();
-		}
 		protected Signer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -59,7 +55,7 @@ namespace java.security
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Signer.staticClass, global::java.security.Signer._Signer23408);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Signer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Signer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Signer"));
@@ -70,23 +66,25 @@ namespace java.security
 			global::java.security.Signer._Signer23407 = @__env.GetMethodIDNoThrow(global::java.security.Signer.staticClass, "<init>", "(Ljava/lang/String;Ljava/security/IdentityScope;)V");
 			global::java.security.Signer._Signer23408 = @__env.GetMethodIDNoThrow(global::java.security.Signer.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Signer))]
 	internal sealed partial class Signer_ : java.security.Signer
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Signer_()
-		{
-			InitJNI();
-		}
 		internal Signer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static Signer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Signer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Signer"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace org.apache.http.protocol
 	public partial class BasicHttpContext : java.lang.Object, HttpContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicHttpContext()
-		{
-			InitJNI();
-		}
 		protected BasicHttpContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -52,7 +48,7 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.BasicHttpContext.staticClass, global::org.apache.http.protocol.BasicHttpContext._BasicHttpContext33819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static BasicHttpContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.BasicHttpContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/BasicHttpContext"));
@@ -61,6 +57,9 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.BasicHttpContext._setAttribute33817 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpContext.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
 			global::org.apache.http.protocol.BasicHttpContext._BasicHttpContext33818 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpContext.staticClass, "<init>", "()V");
 			global::org.apache.http.protocol.BasicHttpContext._BasicHttpContext33819 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.BasicHttpContext.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpContext;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

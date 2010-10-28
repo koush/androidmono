@@ -4,10 +4,6 @@ namespace android.test
 	public abstract partial class ServiceTestCase : android.test.AndroidTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServiceTestCase()
-		{
-			InitJNI();
-		}
 		protected ServiceTestCase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -117,7 +113,7 @@ namespace android.test
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._ServiceTestCase12313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static ServiceTestCase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ServiceTestCase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ServiceTestCase"));
@@ -134,23 +130,25 @@ namespace android.test
 			global::android.test.ServiceTestCase._testServiceTestCaseSetUpProperly12312 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "testServiceTestCaseSetUpProperly", "()V");
 			global::android.test.ServiceTestCase._ServiceTestCase12313 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "<init>", "(Ljava/lang/Class;)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.ServiceTestCase))]
 	internal sealed partial class ServiceTestCase_ : android.test.ServiceTestCase
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ServiceTestCase_()
-		{
-			InitJNI();
-		}
 		internal ServiceTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI()
+		static ServiceTestCase_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ServiceTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ServiceTestCase"));
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

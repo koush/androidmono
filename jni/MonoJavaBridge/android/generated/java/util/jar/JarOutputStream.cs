@@ -4,10 +4,6 @@ namespace java.util.jar
 	public partial class JarOutputStream : java.util.zip.ZipOutputStream
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static JarOutputStream()
-		{
-			InitJNI();
-		}
 		protected JarOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -34,13 +30,16 @@ namespace java.util.jar
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarOutputStream.staticClass, global::java.util.jar.JarOutputStream._JarOutputStream27885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static JarOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.JarOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/JarOutputStream"));
 			global::java.util.jar.JarOutputStream._putNextEntry27883 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarOutputStream.staticClass, "putNextEntry", "(Ljava/util/zip/ZipEntry;)V");
 			global::java.util.jar.JarOutputStream._JarOutputStream27884 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/util/jar/Manifest;)V");
 			global::java.util.jar.JarOutputStream._JarOutputStream27885 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class URLStreamHandler : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static URLStreamHandler()
-		{
-			InitJNI();
-		}
 		protected URLStreamHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -119,7 +115,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLStreamHandler.staticClass, global::java.net.URLStreamHandler._URLStreamHandler21988);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static URLStreamHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.URLStreamHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/URLStreamHandler"));
@@ -137,16 +133,15 @@ namespace java.net
 			global::java.net.URLStreamHandler._setURL21987 = @__env.GetMethodIDNoThrow(global::java.net.URLStreamHandler.staticClass, "setURL", "(Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V");
 			global::java.net.URLStreamHandler._URLStreamHandler21988 = @__env.GetMethodIDNoThrow(global::java.net.URLStreamHandler.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.URLStreamHandler))]
 	internal sealed partial class URLStreamHandler_ : java.net.URLStreamHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static URLStreamHandler_()
-		{
-			InitJNI();
-		}
 		internal URLStreamHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -159,11 +154,14 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLStreamHandler_.staticClass, global::java.net.URLStreamHandler_._openConnection21989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLConnection;
 		}
-		private static void InitJNI()
+		static URLStreamHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.URLStreamHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/URLStreamHandler"));
 			global::java.net.URLStreamHandler_._openConnection21989 = @__env.GetMethodIDNoThrow(global::java.net.URLStreamHandler_.staticClass, "openConnection", "(Ljava/net/URL;)Ljava/net/URLConnection;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

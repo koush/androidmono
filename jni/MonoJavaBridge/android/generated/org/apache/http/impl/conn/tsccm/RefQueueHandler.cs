@@ -10,10 +10,6 @@ namespace org.apache.http.impl.conn.tsccm
 	internal sealed partial class RefQueueHandler_ : java.lang.Object, RefQueueHandler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RefQueueHandler_()
-		{
-			InitJNI();
-		}
 		internal RefQueueHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace org.apache.http.impl.conn.tsccm
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static RefQueueHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/RefQueueHandler"));
 			global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass, "handleReference", "(Ljava/lang/ref/Reference;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

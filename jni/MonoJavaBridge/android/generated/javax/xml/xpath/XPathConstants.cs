@@ -4,10 +4,6 @@ namespace javax.xml.xpath
 	public partial class XPathConstants : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static XPathConstants()
-		{
-			InitJNI();
-		}
 		protected XPathConstants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -63,7 +59,7 @@ namespace javax.xml.xpath
 				return "http://java.sun.com/jaxp/xpath/dom";
 			}
 		}
-		private static void InitJNI()
+		static XPathConstants()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathConstants"));
@@ -72,6 +68,9 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathConstants._BOOLEAN31294 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "BOOLEAN", "Ljavax/xml/namespace/QName;");
 			global::javax.xml.xpath.XPathConstants._NODESET31295 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODESET", "Ljavax/xml/namespace/QName;");
 			global::javax.xml.xpath.XPathConstants._NODE31296 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODE", "Ljavax/xml/namespace/QName;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

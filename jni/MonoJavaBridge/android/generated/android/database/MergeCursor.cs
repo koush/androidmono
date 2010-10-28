@@ -4,10 +4,6 @@ namespace android.database
 	public partial class MergeCursor : android.database.AbstractCursor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static MergeCursor()
-		{
-			InitJNI();
-		}
 		protected MergeCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -194,7 +190,7 @@ namespace android.database
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.MergeCursor.staticClass, global::android.database.MergeCursor._MergeCursor4695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static MergeCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.MergeCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/MergeCursor"));
@@ -217,6 +213,9 @@ namespace android.database
 			global::android.database.MergeCursor._unregisterDataSetObserver4693 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
 			global::android.database.MergeCursor._onMove4694 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "onMove", "(II)Z");
 			global::android.database.MergeCursor._MergeCursor4695 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "<init>", "([Landroid/database/Cursor;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

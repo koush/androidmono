@@ -4,10 +4,6 @@ namespace javax.xml.datatype
 	public abstract partial class DatatypeFactory : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatatypeFactory()
-		{
-			InitJNI();
-		}
 		protected DatatypeFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -184,7 +180,7 @@ namespace javax.xml.datatype
 				return "com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl";
 			}
 		}
-		private static void InitJNI()
+		static DatatypeFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.DatatypeFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeFactory"));
@@ -213,16 +209,15 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.DatatypeFactory._newXMLGregorianCalendarTime30699 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeFactory.staticClass, "newXMLGregorianCalendarTime", "(IIIII)Ljavax/xml/datatype/XMLGregorianCalendar;");
 			global::javax.xml.datatype.DatatypeFactory._DatatypeFactory30700 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeFactory.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.datatype.DatatypeFactory))]
 	internal sealed partial class DatatypeFactory_ : javax.xml.datatype.DatatypeFactory
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DatatypeFactory_()
-		{
-			InitJNI();
-		}
 		internal DatatypeFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -289,7 +284,7 @@ namespace javax.xml.datatype
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeFactory_.staticClass, global::javax.xml.datatype.DatatypeFactory_._newXMLGregorianCalendar30709)) as javax.xml.datatype.XMLGregorianCalendar;
 		}
-		private static void InitJNI()
+		static DatatypeFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.DatatypeFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeFactory"));
@@ -300,6 +295,9 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.DatatypeFactory_._newXMLGregorianCalendar30707 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeFactory_.staticClass, "newXMLGregorianCalendar", "(Ljava/util/GregorianCalendar;)Ljavax/xml/datatype/XMLGregorianCalendar;");
 			global::javax.xml.datatype.DatatypeFactory_._newXMLGregorianCalendar30708 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeFactory_.staticClass, "newXMLGregorianCalendar", "(Ljava/math/BigInteger;IIIIILjava/math/BigDecimal;I)Ljavax/xml/datatype/XMLGregorianCalendar;");
 			global::javax.xml.datatype.DatatypeFactory_._newXMLGregorianCalendar30709 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeFactory_.staticClass, "newXMLGregorianCalendar", "()Ljavax/xml/datatype/XMLGregorianCalendar;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

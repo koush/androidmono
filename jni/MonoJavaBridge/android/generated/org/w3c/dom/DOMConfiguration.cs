@@ -13,10 +13,6 @@ namespace org.w3c.dom
 	internal sealed partial class DOMConfiguration_ : java.lang.Object, DOMConfiguration
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DOMConfiguration_()
-		{
-			InitJNI();
-		}
 		internal DOMConfiguration_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -56,7 +52,7 @@ namespace org.w3c.dom
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMStringList>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._getParameterNames34339)) as org.w3c.dom.DOMStringList;
 		}
-		private static void InitJNI()
+		static DOMConfiguration_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMConfiguration_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMConfiguration"));
@@ -64,6 +60,9 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DOMConfiguration_._getParameter34337 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMConfiguration_.staticClass, "getParameter", "(Ljava/lang/String;)Ljava/lang/Object;");
 			global::org.w3c.dom.DOMConfiguration_._canSetParameter34338 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMConfiguration_.staticClass, "canSetParameter", "(Ljava/lang/String;Ljava/lang/Object;)Z");
 			global::org.w3c.dom.DOMConfiguration_._getParameterNames34339 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMConfiguration_.staticClass, "getParameterNames", "()Lorg/w3c/dom/DOMStringList;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class SumPathEffect : android.graphics.PathEffect
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SumPathEffect()
-		{
-			InitJNI();
-		}
 		protected SumPathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace android.graphics
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.SumPathEffect.staticClass, global::android.graphics.SumPathEffect._SumPathEffect5803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SumPathEffect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.SumPathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/SumPathEffect"));
 			global::android.graphics.SumPathEffect._SumPathEffect5803 = @__env.GetMethodIDNoThrow(global::android.graphics.SumPathEffect.staticClass, "<init>", "(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

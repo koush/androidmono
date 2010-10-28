@@ -10,10 +10,6 @@ namespace java.util
 	internal sealed partial class Formattable_ : java.lang.Object, Formattable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Formattable_()
-		{
-			InitJNI();
-		}
 		internal Formattable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,11 +22,14 @@ namespace java.util
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Formattable_.staticClass, global::java.util.Formattable_._formatTo26182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI()
+		static Formattable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Formattable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Formattable"));
 			global::java.util.Formattable_._formatTo26182 = @__env.GetMethodIDNoThrow(global::java.util.Formattable_.staticClass, "formatTo", "(Ljava/util/Formatter;III)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.math
 	public sealed partial class RoundingMode : java.lang.Enum
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RoundingMode()
-		{
-			InitJNI();
-		}
 		internal RoundingMode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -101,7 +97,7 @@ namespace java.math
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _UNNECESSARY21328)) as java.math.RoundingMode;
 			}
 		}
-		private static void InitJNI()
+		static RoundingMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.RoundingMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/RoundingMode"));
@@ -116,6 +112,9 @@ namespace java.math
 			global::java.math.RoundingMode._HALF_DOWN21326 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_DOWN", "Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._HALF_EVEN21327 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_EVEN", "Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._UNNECESSARY21328 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UNNECESSARY", "Ljava/math/RoundingMode;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

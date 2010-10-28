@@ -11,10 +11,6 @@ namespace java.security.cert
 	internal sealed partial class CertSelector_ : java.lang.Object, CertSelector
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertSelector_()
-		{
-			InitJNI();
-		}
 		internal CertSelector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,12 +32,15 @@ namespace java.security.cert
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.CertSelector_.staticClass, global::java.security.cert.CertSelector_._match23533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static CertSelector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertSelector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertSelector"));
 			global::java.security.cert.CertSelector_._clone23532 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertSelector_.staticClass, "clone", "()Ljava/lang/Object;");
 			global::java.security.cert.CertSelector_._match23533 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertSelector_.staticClass, "match", "(Ljava/security/cert/Certificate;)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

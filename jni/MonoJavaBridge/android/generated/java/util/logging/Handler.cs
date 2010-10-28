@@ -4,10 +4,6 @@ namespace java.util.logging
 	public abstract partial class Handler : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Handler()
-		{
-			InitJNI();
-		}
 		protected Handler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -132,7 +128,7 @@ namespace java.util.logging
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.Handler.staticClass, global::java.util.logging.Handler._Handler27974);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Handler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Handler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Handler"));
@@ -153,16 +149,15 @@ namespace java.util.logging
 			global::java.util.logging.Handler._reportError27973 = @__env.GetMethodIDNoThrow(global::java.util.logging.Handler.staticClass, "reportError", "(Ljava/lang/String;Ljava/lang/Exception;I)V");
 			global::java.util.logging.Handler._Handler27974 = @__env.GetMethodIDNoThrow(global::java.util.logging.Handler.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.logging.Handler))]
 	internal sealed partial class Handler_ : java.util.logging.Handler
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Handler_()
-		{
-			InitJNI();
-		}
 		internal Handler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -193,13 +188,16 @@ namespace java.util.logging
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler_.staticClass, global::java.util.logging.Handler_._publish27977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static Handler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Handler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Handler"));
 			global::java.util.logging.Handler_._flush27975 = @__env.GetMethodIDNoThrow(global::java.util.logging.Handler_.staticClass, "flush", "()V");
 			global::java.util.logging.Handler_._close27976 = @__env.GetMethodIDNoThrow(global::java.util.logging.Handler_.staticClass, "close", "()V");
 			global::java.util.logging.Handler_._publish27977 = @__env.GetMethodIDNoThrow(global::java.util.logging.Handler_.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

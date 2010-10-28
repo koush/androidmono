@@ -4,10 +4,6 @@ namespace java.security.cert
 	public partial class CertPathValidatorException : java.security.GeneralSecurityException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertPathValidatorException()
-		{
-			InitJNI();
-		}
 		protected CertPathValidatorException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -78,7 +74,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._CertPathValidatorException23527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertPathValidatorException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathValidatorException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathValidatorException"));
@@ -89,6 +85,9 @@ namespace java.security.cert
 			global::java.security.cert.CertPathValidatorException._CertPathValidatorException23525 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::java.security.cert.CertPathValidatorException._CertPathValidatorException23526 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::java.security.cert.CertPathValidatorException._CertPathValidatorException23527 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/security/cert/CertPath;I)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

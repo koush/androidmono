@@ -4,10 +4,6 @@ namespace javax.xml.validation
 	public abstract partial class TypeInfoProvider : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TypeInfoProvider()
-		{
-			InitJNI();
-		}
 		protected TypeInfoProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -26,7 +22,7 @@ namespace javax.xml.validation
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.TypeInfoProvider.staticClass, global::javax.xml.validation.TypeInfoProvider._TypeInfoProvider31216);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static TypeInfoProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.TypeInfoProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/TypeInfoProvider"));
@@ -36,16 +32,15 @@ namespace javax.xml.validation
 			global::javax.xml.validation.TypeInfoProvider._isSpecified31215 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.TypeInfoProvider.staticClass, "isSpecified", "(I)Z");
 			global::javax.xml.validation.TypeInfoProvider._TypeInfoProvider31216 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.TypeInfoProvider.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.validation.TypeInfoProvider))]
 	internal sealed partial class TypeInfoProvider_ : javax.xml.validation.TypeInfoProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static TypeInfoProvider_()
-		{
-			InitJNI();
-		}
 		internal TypeInfoProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -85,7 +80,7 @@ namespace javax.xml.validation
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_.staticClass, global::javax.xml.validation.TypeInfoProvider_._isSpecified31220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI()
+		static TypeInfoProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.validation.TypeInfoProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/validation/TypeInfoProvider"));
@@ -93,6 +88,9 @@ namespace javax.xml.validation
 			global::javax.xml.validation.TypeInfoProvider_._getAttributeTypeInfo31218 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.TypeInfoProvider_.staticClass, "getAttributeTypeInfo", "(I)Lorg/w3c/dom/TypeInfo;");
 			global::javax.xml.validation.TypeInfoProvider_._isIdAttribute31219 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.TypeInfoProvider_.staticClass, "isIdAttribute", "(I)Z");
 			global::javax.xml.validation.TypeInfoProvider_._isSpecified31220 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.TypeInfoProvider_.staticClass, "isSpecified", "(I)Z");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

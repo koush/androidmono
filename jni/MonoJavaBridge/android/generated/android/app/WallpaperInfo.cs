@@ -4,10 +4,6 @@ namespace android.app
 	public sealed partial class WallpaperInfo : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static WallpaperInfo()
-		{
-			InitJNI();
-		}
 		internal WallpaperInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -192,7 +188,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.WallpaperInfo.staticClass, _CREATOR2211)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static WallpaperInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.WallpaperInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/WallpaperInfo"));
@@ -212,6 +208,9 @@ namespace android.app
 			global::android.app.WallpaperInfo._getSettingsActivity2209 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperInfo.staticClass, "getSettingsActivity", "()Ljava/lang/String;");
 			global::android.app.WallpaperInfo._WallpaperInfo2210 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperInfo.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V");
 			global::android.app.WallpaperInfo._CREATOR2211 = @__env.GetStaticFieldIDNoThrow(global::android.app.WallpaperInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

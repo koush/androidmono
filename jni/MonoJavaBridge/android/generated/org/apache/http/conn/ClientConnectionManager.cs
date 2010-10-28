@@ -15,10 +15,6 @@ namespace org.apache.http.conn
 	internal sealed partial class ClientConnectionManager_ : java.lang.Object, ClientConnectionManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ClientConnectionManager_()
-		{
-			InitJNI();
-		}
 		internal ClientConnectionManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace org.apache.http.conn
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_.staticClass, global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081);
 		}
-		private static void InitJNI()
+		static ClientConnectionManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ClientConnectionManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ClientConnectionManager"));
@@ -86,6 +82,9 @@ namespace org.apache.http.conn
 			global::org.apache.http.conn.ClientConnectionManager_._releaseConnection32079 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "releaseConnection", "(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V");
 			global::org.apache.http.conn.ClientConnectionManager_._closeIdleConnections32080 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeIdleConnections", "(JLjava/util/concurrent/TimeUnit;)V");
 			global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeExpiredConnections", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

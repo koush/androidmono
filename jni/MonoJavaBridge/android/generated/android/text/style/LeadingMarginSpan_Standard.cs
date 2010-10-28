@@ -4,10 +4,6 @@ namespace android.text.style
 	public partial class LeadingMarginSpan_Standard : java.lang.Object, LeadingMarginSpan, ParcelableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static LeadingMarginSpan_Standard()
-		{
-			InitJNI();
-		}
 		protected LeadingMarginSpan_Standard(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -88,7 +84,7 @@ namespace android.text.style
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.LeadingMarginSpan_Standard.staticClass, global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard13518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static LeadingMarginSpan_Standard()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.LeadingMarginSpan_Standard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/LeadingMarginSpan$Standard"));
@@ -100,6 +96,9 @@ namespace android.text.style
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard13516 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(II)V");
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard13517 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(I)V");
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard13518 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

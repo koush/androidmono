@@ -4,10 +4,6 @@ namespace java.net
 	public partial class InetAddress : java.lang.Object, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static InetAddress()
-		{
-			InitJNI();
-		}
 		protected InetAddress(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -247,7 +243,7 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getLocalHost21585)) as java.net.InetAddress;
 		}
-		private static void InitJNI()
+		static InetAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.InetAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/InetAddress"));
@@ -275,6 +271,9 @@ namespace java.net
 			global::java.net.InetAddress._getByAddress21583 = @__env.GetStaticMethodIDNoThrow(global::java.net.InetAddress.staticClass, "getByAddress", "(Ljava/lang/String;[B)Ljava/net/InetAddress;");
 			global::java.net.InetAddress._getAllByName21584 = @__env.GetStaticMethodIDNoThrow(global::java.net.InetAddress.staticClass, "getAllByName", "(Ljava/lang/String;)[Ljava/net/InetAddress;");
 			global::java.net.InetAddress._getLocalHost21585 = @__env.GetStaticMethodIDNoThrow(global::java.net.InetAddress.staticClass, "getLocalHost", "()Ljava/net/InetAddress;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

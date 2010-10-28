@@ -4,10 +4,6 @@ namespace junit.framework
 	public partial class Assert : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Assert()
-		{
-			InitJNI();
-		}
 		protected Assert(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -222,7 +218,7 @@ namespace junit.framework
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.Assert.staticClass, global::junit.framework.Assert._Assert31369);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static Assert()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.Assert.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/Assert"));
@@ -261,6 +257,9 @@ namespace junit.framework
 			global::junit.framework.Assert._assertNotSame31367 = @__env.GetStaticMethodIDNoThrow(global::junit.framework.Assert.staticClass, "assertNotSame", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V");
 			global::junit.framework.Assert._assertNotSame31368 = @__env.GetStaticMethodIDNoThrow(global::junit.framework.Assert.staticClass, "assertNotSame", "(Ljava/lang/Object;Ljava/lang/Object;)V");
 			global::junit.framework.Assert._Assert31369 = @__env.GetMethodIDNoThrow(global::junit.framework.Assert.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

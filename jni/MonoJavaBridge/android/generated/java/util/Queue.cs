@@ -15,10 +15,6 @@ namespace java.util
 	internal sealed partial class Queue_ : java.lang.Object, Queue
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Queue_()
-		{
-			InitJNI();
-		}
 		internal Queue_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -224,7 +220,7 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Queue_.staticClass, global::java.util.Queue_._iterator26607)) as java.util.Iterator;
 		}
-		private static void InitJNI()
+		static Queue_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Queue_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Queue"));
@@ -250,6 +246,9 @@ namespace java.util
 			global::java.util.Queue_._removeAll26605 = @__env.GetMethodIDNoThrow(global::java.util.Queue_.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
 			global::java.util.Queue_._retainAll26606 = @__env.GetMethodIDNoThrow(global::java.util.Queue_.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
 			global::java.util.Queue_._iterator26607 = @__env.GetMethodIDNoThrow(global::java.util.Queue_.staticClass, "iterator", "()Ljava/util/Iterator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

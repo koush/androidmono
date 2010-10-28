@@ -4,10 +4,6 @@ namespace java.net
 	public abstract partial class SecureCacheResponse : java.net.CacheResponse
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecureCacheResponse()
-		{
-			InitJNI();
-		}
 		protected SecureCacheResponse(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -28,7 +24,7 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SecureCacheResponse.staticClass, global::java.net.SecureCacheResponse._SecureCacheResponse21690);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SecureCacheResponse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SecureCacheResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SecureCacheResponse"));
@@ -39,16 +35,15 @@ namespace java.net
 			global::java.net.SecureCacheResponse._getLocalPrincipal21689 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
 			global::java.net.SecureCacheResponse._SecureCacheResponse21690 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.SecureCacheResponse))]
 	internal sealed partial class SecureCacheResponse_ : java.net.SecureCacheResponse
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SecureCacheResponse_()
-		{
-			InitJNI();
-		}
 		internal SecureCacheResponse_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -115,7 +110,7 @@ namespace java.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getBody21697)) as java.io.InputStream;
 		}
-		private static void InitJNI()
+		static SecureCacheResponse_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SecureCacheResponse_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SecureCacheResponse"));
@@ -126,6 +121,9 @@ namespace java.net
 			global::java.net.SecureCacheResponse_._getLocalPrincipal21695 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
 			global::java.net.SecureCacheResponse_._getHeaders21696 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;");
 			global::java.net.SecureCacheResponse_._getBody21697 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

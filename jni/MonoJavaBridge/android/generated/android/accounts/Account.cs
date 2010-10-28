@@ -4,10 +4,6 @@ namespace android.accounts
 	public partial class Account : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Account()
-		{
-			InitJNI();
-		}
 		protected Account(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -97,7 +93,7 @@ namespace android.accounts
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.accounts.Account.staticClass, _CREATOR1287)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static Account()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.Account.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/Account"));
@@ -111,6 +107,9 @@ namespace android.accounts
 			global::android.accounts.Account._name1285 = @__env.GetFieldIDNoThrow(global::android.accounts.Account.staticClass, "name", "Ljava/lang/String;");
 			global::android.accounts.Account._type1286 = @__env.GetFieldIDNoThrow(global::android.accounts.Account.staticClass, "type", "Ljava/lang/String;");
 			global::android.accounts.Account._CREATOR1287 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.Account.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.text.style
 	public abstract partial class DynamicDrawableSpan : android.text.style.ReplacementSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DynamicDrawableSpan()
-		{
-			InitJNI();
-		}
 		protected DynamicDrawableSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -76,7 +72,7 @@ namespace android.text.style
 				return 1;
 			}
 		}
-		private static void InitJNI()
+		static DynamicDrawableSpan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
@@ -87,16 +83,15 @@ namespace android.text.style
 			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13477 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "()V");
 			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13478 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "(I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.DynamicDrawableSpan))]
 	internal sealed partial class DynamicDrawableSpan_ : android.text.style.DynamicDrawableSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static DynamicDrawableSpan_()
-		{
-			InitJNI();
-		}
 		internal DynamicDrawableSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -109,11 +104,14 @@ namespace android.text.style
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.DynamicDrawableSpan_.staticClass, global::android.text.style.DynamicDrawableSpan_._getDrawable13481)) as android.graphics.drawable.Drawable;
 		}
-		private static void InitJNI()
+		static DynamicDrawableSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
 			global::android.text.style.DynamicDrawableSpan_._getDrawable13481 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan_.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

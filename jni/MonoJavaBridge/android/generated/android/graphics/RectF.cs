@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class RectF : java.lang.Object, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static RectF()
-		{
-			InitJNI();
-		}
 		protected RectF(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -363,7 +359,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.graphics.RectF.staticClass, _CREATOR5747)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static RectF()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.RectF.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/RectF"));
@@ -406,6 +402,9 @@ namespace android.graphics
 			global::android.graphics.RectF._right5745 = @__env.GetFieldIDNoThrow(global::android.graphics.RectF.staticClass, "right", "F");
 			global::android.graphics.RectF._bottom5746 = @__env.GetFieldIDNoThrow(global::android.graphics.RectF.staticClass, "bottom", "F");
 			global::android.graphics.RectF._CREATOR5747 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.RectF.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

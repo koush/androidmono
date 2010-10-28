@@ -4,10 +4,6 @@ namespace javax.net.ssl
 	public partial class SSLHandshakeException : javax.net.ssl.SSLException
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static SSLHandshakeException()
-		{
-			InitJNI();
-		}
 		protected SSLHandshakeException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -18,11 +14,14 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLHandshakeException.staticClass, global::javax.net.ssl.SSLHandshakeException._SSLHandshakeException29990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static SSLHandshakeException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLHandshakeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLHandshakeException"));
 			global::javax.net.ssl.SSLHandshakeException._SSLHandshakeException29990 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLHandshakeException.staticClass, "<init>", "(Ljava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.content.pm
 	public partial class ActivityInfo : android.content.pm.ComponentInfo, android.os.Parcelable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static ActivityInfo()
-		{
-			InitJNI();
-		}
 		protected ActivityInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -415,7 +411,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.ActivityInfo.staticClass, _CREATOR3641)) as android.os.Parcelable_Creator;
 			}
 		}
-		private static void InitJNI()
+		static ActivityInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ActivityInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ActivityInfo"));
@@ -436,6 +432,9 @@ namespace android.content.pm
 			global::android.content.pm.ActivityInfo._configChanges3639 = @__env.GetFieldIDNoThrow(global::android.content.pm.ActivityInfo.staticClass, "configChanges", "I");
 			global::android.content.pm.ActivityInfo._softInputMode3640 = @__env.GetFieldIDNoThrow(global::android.content.pm.ActivityInfo.staticClass, "softInputMode", "I");
 			global::android.content.pm.ActivityInfo._CREATOR3641 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ActivityInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

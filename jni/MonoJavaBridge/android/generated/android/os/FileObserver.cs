@@ -4,10 +4,6 @@ namespace android.os
 	public abstract partial class FileObserver : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileObserver()
-		{
-			InitJNI();
-		}
 		protected FileObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -145,7 +141,7 @@ namespace android.os
 				return 4095;
 			}
 		}
-		private static void InitJNI()
+		static FileObserver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
@@ -156,16 +152,15 @@ namespace android.os
 			global::android.os.FileObserver._FileObserver9837 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::android.os.FileObserver._FileObserver9838 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;I)V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.FileObserver))]
 	internal sealed partial class FileObserver_ : android.os.FileObserver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static FileObserver_()
-		{
-			InitJNI();
-		}
 		internal FileObserver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -178,11 +173,14 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver_.staticClass, global::android.os.FileObserver_._onEvent9852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI()
+		static FileObserver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
 			global::android.os.FileObserver_._onEvent9852 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver_.staticClass, "onEvent", "(ILjava/lang/String;)V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace android.graphics
 	public partial class Color : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Color()
-		{
-			InitJNI();
-		}
 		protected Color(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -168,7 +164,7 @@ namespace android.graphics
 				return 0;
 			}
 		}
-		private static void InitJNI()
+		static Color()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Color.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Color"));
@@ -184,6 +180,9 @@ namespace android.graphics
 			global::android.graphics.Color._HSVToColor5224 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "([F)I");
 			global::android.graphics.Color._HSVToColor5225 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "(I[F)I");
 			global::android.graphics.Color._Color5226 = @__env.GetMethodIDNoThrow(global::android.graphics.Color.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

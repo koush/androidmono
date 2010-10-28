@@ -4,10 +4,6 @@ namespace org.apache.http.cookie
 	public partial class CookiePathComparator : java.lang.Object, java.io.Serializable, java.util.Comparator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CookiePathComparator()
-		{
-			InitJNI();
-		}
 		protected CookiePathComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -36,13 +32,16 @@ namespace org.apache.http.cookie
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._CookiePathComparator32418);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CookiePathComparator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.CookiePathComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/CookiePathComparator"));
 			global::org.apache.http.cookie.CookiePathComparator._compare32416 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I");
 			global::org.apache.http.cookie.CookiePathComparator._compare32417 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
 			global::org.apache.http.cookie.CookiePathComparator._CookiePathComparator32418 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookiePathComparator.staticClass, "<init>", "()V");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

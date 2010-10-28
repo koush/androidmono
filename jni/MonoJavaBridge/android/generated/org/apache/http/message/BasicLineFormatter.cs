@@ -4,10 +4,6 @@ namespace org.apache.http.message
 	public partial class BasicLineFormatter : java.lang.Object, LineFormatter
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static BasicLineFormatter()
-		{
-			InitJNI();
-		}
 		protected BasicLineFormatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -132,7 +128,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.message.BasicLineFormatter.staticClass, _DEFAULT33608)) as org.apache.http.message.BasicLineFormatter;
 			}
 		}
-		private static void InitJNI()
+		static BasicLineFormatter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicLineFormatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicLineFormatter"));
@@ -151,6 +147,9 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicLineFormatter._doFormatHeader33606 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineFormatter.staticClass, "doFormatHeader", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/Header;)V");
 			global::org.apache.http.message.BasicLineFormatter._BasicLineFormatter33607 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineFormatter.staticClass, "<init>", "()V");
 			global::org.apache.http.message.BasicLineFormatter._DEFAULT33608 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicLineFormatter.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicLineFormatter;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

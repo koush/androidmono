@@ -4,10 +4,6 @@ namespace java.text
 	public abstract partial class Collator : java.lang.Object, java.util.Comparator, java.lang.Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Collator()
-		{
-			InitJNI();
-		}
 		protected Collator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -163,7 +159,7 @@ namespace java.text
 				return 2;
 			}
 		}
-		private static void InitJNI()
+		static Collator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Collator.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Collator"));
@@ -183,16 +179,15 @@ namespace java.text
 			global::java.text.Collator._setDecomposition25312 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "setDecomposition", "(I)V");
 			global::java.text.Collator._Collator25313 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.Collator))]
 	internal sealed partial class Collator_ : java.text.Collator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static Collator_()
-		{
-			InitJNI();
-		}
 		internal Collator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -223,13 +218,16 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Collator_.staticClass, global::java.text.Collator_._getCollationKey25323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationKey;
 		}
-		private static void InitJNI()
+		static Collator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.Collator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/Collator"));
 			global::java.text.Collator_._hashCode25321 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "hashCode", "()I");
 			global::java.text.Collator_._compare25322 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I");
 			global::java.text.Collator_._getCollationKey25323 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "getCollationKey", "(Ljava/lang/String;)Ljava/text/CollationKey;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }

@@ -4,10 +4,6 @@ namespace java.security.cert
 	public abstract partial class CertificateFactorySpi : java.lang.Object
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertificateFactorySpi()
-		{
-			InitJNI();
-		}
 		protected CertificateFactorySpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -62,7 +58,7 @@ namespace java.security.cert
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertificateFactorySpi.staticClass, global::java.security.cert.CertificateFactorySpi._CertificateFactorySpi23603);
 			Init(@__env, handle);
 		}
-		private static void InitJNI()
+		static CertificateFactorySpi()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertificateFactorySpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertificateFactorySpi"));
@@ -76,16 +72,15 @@ namespace java.security.cert
 			global::java.security.cert.CertificateFactorySpi._engineGenerateCRLs23602 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateFactorySpi.staticClass, "engineGenerateCRLs", "(Ljava/io/InputStream;)Ljava/util/Collection;");
 			global::java.security.cert.CertificateFactorySpi._CertificateFactorySpi23603 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateFactorySpi.staticClass, "<init>", "()V");
 		}
+		internal static void InitJNI()
+		{
+		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.CertificateFactorySpi))]
 	internal sealed partial class CertificateFactorySpi_ : java.security.cert.CertificateFactorySpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-		static CertificateFactorySpi_()
-		{
-			InitJNI();
-		}
 		internal CertificateFactorySpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
@@ -125,7 +120,7 @@ namespace java.security.cert
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi_.staticClass, global::java.security.cert.CertificateFactorySpi_._engineGenerateCRLs23607, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
-		private static void InitJNI()
+		static CertificateFactorySpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertificateFactorySpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertificateFactorySpi"));
@@ -133,6 +128,9 @@ namespace java.security.cert
 			global::java.security.cert.CertificateFactorySpi_._engineGenerateCertificates23605 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateFactorySpi_.staticClass, "engineGenerateCertificates", "(Ljava/io/InputStream;)Ljava/util/Collection;");
 			global::java.security.cert.CertificateFactorySpi_._engineGenerateCRL23606 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateFactorySpi_.staticClass, "engineGenerateCRL", "(Ljava/io/InputStream;)Ljava/security/cert/CRL;");
 			global::java.security.cert.CertificateFactorySpi_._engineGenerateCRLs23607 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertificateFactorySpi_.staticClass, "engineGenerateCRLs", "(Ljava/io/InputStream;)Ljava/util/Collection;");
+		}
+		internal static void InitJNI()
+		{
 		}
 	}
 }
