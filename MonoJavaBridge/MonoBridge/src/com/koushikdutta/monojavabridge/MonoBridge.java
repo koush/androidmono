@@ -18,7 +18,7 @@ public class MonoBridge {
 		{
 			try
 			{
-				System.load("/data/data/com.koushikdutta.mono/libmono.so");
+				System.load("/data/data/com.koushikdutta.mono/lib/libmono.so");
 			}
 			catch (Exception ex)
 			{

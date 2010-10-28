@@ -314,7 +314,7 @@ namespace MonoJavaBridge
                 reportCall = myReportException.MakeGenericMethod(methodInfo.ReturnType);
             else
                 reportCall = myReportExceptionNoResult;
-            return Expression.Call(reportCall, Expression.Constant(methodInfo, typeof(MethodInfo)), obj, Expression.NewArrayInit(typeof(object), from arg in args select Expression.Convert(arg, typeof(object))));
+            return Expression.Call(reportCall, Expression.Constant(methodInfo, typeof(MethodInfo)), obj, Expression.NewArrayInit(typeof(object), (from arg in args select Expression.Convert(arg, typeof(object))).ToArray()));
         }
 #endif
 

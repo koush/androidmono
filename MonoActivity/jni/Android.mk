@@ -281,18 +281,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := mono
 LOCAL_ARM_MODE := arm
 LOCAL_PATH := $(BASE_PATH)
-LOCAL_SRC_FILES := MonoJavaBridge/MonoJavaInterop/MonoJavaInterop.c  PlatformPatches/missing.c
+LOCAL_SRC_FILES := MonoJavaInterop/MonoJavaInterop.c  PlatformPatches/missing.c
 LOCAL_PRELINK_MODULE := false
 LOCAL_CFLAGS += $(MONO_CFLAGS)
 LOCAL_STATIC_LIBRARIES := monoutils eglib monoruntime gc wapi monoruntimearm gcarm wapiarm mini miniarm
 LOCAL_LDFLAGS := -Wall -L$(TARGET_OUT) -lwapiarm -lgcarm -lmonoruntimearm -lmonoutils -leglib -lmonoruntime -lgc -lwapi -lmini -lminiarm
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_PATH := $(BASE_PATH)
-LOCAL_ARM_MODE := arm
-LOCAL_MODULE := fwdstdin
-LOCAL_SRC_FILES := fwdstdin/main.c
-LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -lc
-include $(BUILD_EXECUTABLE)
