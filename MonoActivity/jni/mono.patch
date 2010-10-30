@@ -23,15 +23,3 @@ index 71d7f26..7375b64 100644
  #endif
  
  static gpointer mono_jit_compile_method_with_opt (MonoMethod *method, guint32 opt, MonoException **ex);
-diff --git a/mono/utils/mono-compiler.h b/mono/utils/mono-compiler.h
-index b4346df..dae7aba 100644
---- a/mono/utils/mono-compiler.h
-+++ b/mono/utils/mono-compiler.h
-@@ -147,6 +147,7 @@
-  */
- #undef MONO_THREAD_VAR_OFFSET
- #define MONO_THREAD_VAR_OFFSET(var,offset) (offset) = -1
-+
- #endif
- 
- #else /* no HAVE_KW_THREAD */
