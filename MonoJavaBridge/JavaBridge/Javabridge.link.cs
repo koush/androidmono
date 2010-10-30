@@ -410,62 +410,52 @@ namespace MonoJavaBridge
         public static void Link(IntPtr classHandle, IntPtr methodNameHandle, IntPtr methodSignatureHandle, IntPtr methodParametersHandle)
         {
             JNIEnv env = JNIEnv.GetEnvForVm(myVM);
-
-            var methodName = env.ConvertToString(methodNameHandle);
-            var methodSig = env.ConvertToString(methodSignatureHandle);
-            var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
-            string classCanonicalName = GetClassCanonicalName(env, classHandle);
-            if (classCanonicalName.StartsWith("internal."))
-                classCanonicalName = classCanonicalName.Substring("internal.".Length);
-            Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
-            Type type = FindType(classCanonicalName);
-            if (type == null)
+            try
             {
-                type = FindType(classCanonicalName.Replace('_', '+'));
+                var methodName = env.ConvertToString(methodNameHandle);
+                var methodSig = env.ConvertToString(methodSignatureHandle);
+                var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
+                string classCanonicalName = GetClassCanonicalName(env, classHandle);
+                if (classCanonicalName.StartsWith("internal."))
+                    classCanonicalName = classCanonicalName.Substring("internal.".Length);
+                Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
+                Type type = FindType(classCanonicalName);
                 if (type == null)
                 {
-                    env.ThrowNew(myJavaExceptionClass, "Unable to find class: " + classCanonicalName);
-                    return;
+                    type = FindType(classCanonicalName.Replace('_', '+'));
+                    if (type == null)
+                        throw new Exception("Unable to find class: " + classCanonicalName);
                 }
-            }
-            
-            //Console.WriteLine("Found clr type: {0}", type);
-            
-            Type[] parameterTypes = null;
-            if (!string.IsNullOrEmpty(methodPars))
-            {
-                var parameterTypeStrings = methodPars.Split(',');
-                parameterTypes = new Type[parameterTypeStrings.Length];
-                for (int i = 0; i < parameterTypeStrings.Length; i++)
+
+                Type[] parameterTypes = null;
+                if (!string.IsNullOrEmpty(methodPars))
                 {
-                    parameterTypes[i] = FindType(parameterTypeStrings[i]);
-                    if (parameterTypes[i] == null)
-                        Console.WriteLine("Could not find {0}", parameterTypeStrings[i]);
-                    //else 
-                    //    Console.WriteLine("Found type {0}", parameterTypes[i]);
+                    var parameterTypeStrings = methodPars.Split(',');
+                    parameterTypes = new Type[parameterTypeStrings.Length];
+                    for (int i = 0; i < parameterTypeStrings.Length; i++)
+                    {
+                        parameterTypes[i] = FindType(parameterTypeStrings[i]);
+                        if (parameterTypes[i] == null)
+                            throw new Exception("Could not find parameter type: " + parameterTypeStrings[i]);
+                    }
                 }
+
+                var method = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance, null, parameterTypes ?? new Type[] {}, null);
+                Console.WriteLine("Linking Method: {0} to {1}", method, methodSig);
+                var del = MakeWrapper(method);
+                myLinks.Add(del);
+
+                JNINativeMethod m = JNINativeMethod.Create(del, methodName, methodSig);
+                m.Register(classHandle, env);
+                Console.WriteLine("Registration complete");
             }
-            
-            var method = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance, null, parameterTypes ?? new Type[] {}, null);
-            Console.WriteLine("Linking Method: {0} to {1}", method, methodSig);
-            var del = MakeWrapper(method);
-            myLinks.Add(del);
-            
-            JNINativeMethod m = JNINativeMethod.Create(del, methodName, methodSig);
-            m.Register(classHandle, env);
-            Console.WriteLine("Registration complete");
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR: " + ex.Message);
+                env.ThrowNew(myJavaExceptionClass, ex.Message);
+            }
         }
         static List<Delegate> myLinks = new List<Delegate>();
-
-        /*
-        public static void Attach(java.lang.Object o, IJvmProxy obj)
-        {
-            Console.WriteLine("attaching {0}", o);
-            var env = JNIEnv.ThreadEnv;
-            var handle = GCHandle.Alloc(o, GCHandleType.WeakTrackResurrection);
-            env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
-        }
-        */
     }
 }
 
