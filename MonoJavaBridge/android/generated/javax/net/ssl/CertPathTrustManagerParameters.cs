@@ -17,10 +17,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getParameters29829;
 		public virtual global::java.security.cert.CertPathParameters getParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.CertPathTrustManagerParameters._getParameters29829.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.CertPathTrustManagerParameters._getParameters29829 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.CertPathTrustManagerParameters.staticClass, "getParameters", "()Ljava/security/cert/CertPathParameters;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.cert.CertPathParameters>(this, global::javax.net.ssl.CertPathTrustManagerParameters.staticClass, global::javax.net.ssl.CertPathTrustManagerParameters._getParameters29829) as java.security.cert.CertPathParameters;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.cert.CertPathParameters>(this, global::javax.net.ssl.CertPathTrustManagerParameters.staticClass, "getParameters", "()Ljava/security/cert/CertPathParameters;", ref global::javax.net.ssl.CertPathTrustManagerParameters._getParameters29829) as java.security.cert.CertPathParameters;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertPathTrustManagerParameters29830;
 		public CertPathTrustManagerParameters(java.security.cert.CertPathParameters arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

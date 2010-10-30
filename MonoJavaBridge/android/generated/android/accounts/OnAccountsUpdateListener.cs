@@ -16,10 +16,7 @@ namespace android.accounts
 		internal static global::MonoJavaBridge.MethodId _onAccountsUpdated1384;
 		void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384.native == global::System.IntPtr.Zero)
-				global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V", ref global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static OnAccountsUpdateListener_()
 		{

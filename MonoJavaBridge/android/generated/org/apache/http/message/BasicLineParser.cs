@@ -18,18 +18,12 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _parseHeader33610;
 		public virtual global::org.apache.http.Header parseHeader(org.apache.http.util.CharArrayBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._parseHeader33610.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._parseHeader33610 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "parseHeader", "(Lorg/apache/http/util/CharArrayBuffer;)Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._parseHeader33610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.message.BasicLineParser.staticClass, "parseHeader", "(Lorg/apache/http/util/CharArrayBuffer;)Lorg/apache/http/Header;", ref global::org.apache.http.message.BasicLineParser._parseHeader33610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseProtocolVersion33611;
 		public virtual global::org.apache.http.ProtocolVersion parseProtocolVersion(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._parseProtocolVersion33611.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._parseProtocolVersion33611 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "parseProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._parseProtocolVersion33611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, "parseProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicLineParser._parseProtocolVersion33611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseProtocolVersion33612;
 		public static global::org.apache.http.ProtocolVersion parseProtocolVersion(java.lang.String arg0, org.apache.http.message.LineParser arg1)
@@ -42,18 +36,12 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _hasProtocolVersion33613;
 		public virtual bool hasProtocolVersion(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._hasProtocolVersion33613.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._hasProtocolVersion33613 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "hasProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._hasProtocolVersion33613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, "hasProtocolVersion", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Z", ref global::org.apache.http.message.BasicLineParser._hasProtocolVersion33613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parseRequestLine33614;
 		public virtual global::org.apache.http.RequestLine parseRequestLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._parseRequestLine33614.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._parseRequestLine33614 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "parseRequestLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/RequestLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._parseRequestLine33614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.RequestLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, "parseRequestLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/RequestLine;", ref global::org.apache.http.message.BasicLineParser._parseRequestLine33614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.RequestLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseRequestLine33615;
 		public static global::org.apache.http.RequestLine parseRequestLine(java.lang.String arg0, org.apache.http.message.LineParser arg1)
@@ -66,10 +54,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _parseStatusLine33616;
 		public virtual global::org.apache.http.StatusLine parseStatusLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._parseStatusLine33616.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._parseStatusLine33616 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "parseStatusLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/StatusLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._parseStatusLine33616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.StatusLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, "parseStatusLine", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/StatusLine;", ref global::org.apache.http.message.BasicLineParser._parseStatusLine33616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.StatusLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseStatusLine33617;
 		public static global::org.apache.http.StatusLine parseStatusLine(java.lang.String arg0, org.apache.http.message.LineParser arg1)
@@ -82,34 +67,22 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _createProtocolVersion33618;
 		protected virtual global::org.apache.http.ProtocolVersion createProtocolVersion(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._createProtocolVersion33618.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._createProtocolVersion33618 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "createProtocolVersion", "(II)Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._createProtocolVersion33618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, "createProtocolVersion", "(II)Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicLineParser._createProtocolVersion33618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _createRequestLine33619;
 		protected virtual global::org.apache.http.RequestLine createRequestLine(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._createRequestLine33619.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._createRequestLine33619 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "createRequestLine", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/RequestLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._createRequestLine33619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.apache.http.RequestLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, "createRequestLine", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/RequestLine;", ref global::org.apache.http.message.BasicLineParser._createRequestLine33619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.apache.http.RequestLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _createStatusLine33620;
 		protected virtual global::org.apache.http.StatusLine createStatusLine(org.apache.http.ProtocolVersion arg0, int arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._createStatusLine33620.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._createStatusLine33620 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "createStatusLine", "(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)Lorg/apache/http/StatusLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._createStatusLine33620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.apache.http.StatusLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicLineParser.staticClass, "createStatusLine", "(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)Lorg/apache/http/StatusLine;", ref global::org.apache.http.message.BasicLineParser._createStatusLine33620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.apache.http.StatusLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _skipWhitespace33621;
 		protected virtual void skipWhitespace(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicLineParser._skipWhitespace33621.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicLineParser._skipWhitespace33621 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "skipWhitespace", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, global::org.apache.http.message.BasicLineParser._skipWhitespace33621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicLineParser.staticClass, "skipWhitespace", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)V", ref global::org.apache.http.message.BasicLineParser._skipWhitespace33621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicLineParser33622;
 		public BasicLineParser(org.apache.http.ProtocolVersion arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

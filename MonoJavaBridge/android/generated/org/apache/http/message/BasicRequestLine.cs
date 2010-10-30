@@ -10,18 +10,12 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _toString33639;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicRequestLine._toString33639.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicRequestLine._toString33639 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._toString33639) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.message.BasicRequestLine._toString33639) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone33640;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicRequestLine._clone33640.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicRequestLine._clone33640 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._clone33640) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicRequestLine.staticClass, "clone", "()Ljava/lang/Object;", ref global::org.apache.http.message.BasicRequestLine._clone33640) as java.lang.Object;
 		}
 		public new global::java.lang.String Method
 		{
@@ -33,10 +27,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getMethod33641;
 		public virtual global::java.lang.String getMethod()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicRequestLine._getMethod33641.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicRequestLine._getMethod33641 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "getMethod", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._getMethod33641) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.message.BasicRequestLine._getMethod33641) as java.lang.String;
 		}
 		public new global::org.apache.http.ProtocolVersion ProtocolVersion
 		{
@@ -48,10 +39,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion33642;
 		public virtual global::org.apache.http.ProtocolVersion getProtocolVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicRequestLine._getProtocolVersion33642.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicRequestLine._getProtocolVersion33642 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._getProtocolVersion33642) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicRequestLine.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicRequestLine._getProtocolVersion33642) as org.apache.http.ProtocolVersion;
 		}
 		public new global::java.lang.String Uri
 		{
@@ -63,10 +51,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getUri33643;
 		public virtual global::java.lang.String getUri()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicRequestLine._getUri33643.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicRequestLine._getUri33643 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicRequestLine.staticClass, "getUri", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._getUri33643) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicRequestLine.staticClass, "getUri", "()Ljava/lang/String;", ref global::org.apache.http.message.BasicRequestLine._getUri33643) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicRequestLine33644;
 		public BasicRequestLine(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

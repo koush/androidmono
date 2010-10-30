@@ -10,50 +10,32 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _onBind1910;
 		public override global::android.os.IBinder onBind(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._onBind1910.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._onBind1910 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onBind1910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.app.IntentService.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;", ref global::android.app.IntentService._onBind1910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1911;
 		public override void onCreate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._onCreate1911.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._onCreate1911 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onCreate", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onCreate1911);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, "onCreate", "()V", ref global::android.app.IntentService._onCreate1911);
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart1912;
 		public override void onStart(android.content.Intent arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._onStart1912.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._onStart1912 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onStart", "(Landroid/content/Intent;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStart1912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, "onStart", "(Landroid/content/Intent;I)V", ref global::android.app.IntentService._onStart1912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStartCommand1913;
 		public override int onStartCommand(android.content.Intent arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._onStartCommand1913.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._onStartCommand1913 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onStartCommand", "(Landroid/content/Intent;II)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStartCommand1913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.IntentService.staticClass, "onStartCommand", "(Landroid/content/Intent;II)I", ref global::android.app.IntentService._onStartCommand1913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onDestroy1914;
 		public override void onDestroy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._onDestroy1914.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._onDestroy1914 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "onDestroy", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onDestroy1914);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, "onDestroy", "()V", ref global::android.app.IntentService._onDestroy1914);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIntentRedelivery1915;
 		public virtual void setIntentRedelivery(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService._setIntentRedelivery1915.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService._setIntentRedelivery1915 = @__env.GetMethodIDNoThrow(global::android.app.IntentService.staticClass, "setIntentRedelivery", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._setIntentRedelivery1915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService.staticClass, "setIntentRedelivery", "(Z)V", ref global::android.app.IntentService._setIntentRedelivery1915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onHandleIntent1916;
 		protected abstract void onHandleIntent(android.content.Intent arg0);
@@ -86,10 +68,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _onHandleIntent1918;
 		protected override void onHandleIntent(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.IntentService_._onHandleIntent1918.native == global::System.IntPtr.Zero)
-				global::android.app.IntentService_._onHandleIntent1918 = @__env.GetMethodIDNoThrow(global::android.app.IntentService_.staticClass, "onHandleIntent", "(Landroid/content/Intent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.app.IntentService_._onHandleIntent1918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.IntentService_.staticClass, "onHandleIntent", "(Landroid/content/Intent;)V", ref global::android.app.IntentService_._onHandleIntent1918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static IntentService_()
 		{

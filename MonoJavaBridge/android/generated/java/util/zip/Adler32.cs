@@ -17,42 +17,27 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getValue28327;
 		public virtual long getValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.Adler32._getValue28327.native == global::System.IntPtr.Zero)
-				global::java.util.zip.Adler32._getValue28327 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "getValue", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._getValue28327);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.Adler32.staticClass, "getValue", "()J", ref global::java.util.zip.Adler32._getValue28327);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28328;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.Adler32._reset28328.native == global::System.IntPtr.Zero)
-				global::java.util.zip.Adler32._reset28328 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "reset", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._reset28328);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, "reset", "()V", ref global::java.util.zip.Adler32._reset28328);
 		}
 		internal static global::MonoJavaBridge.MethodId _update28329;
 		public virtual void update(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.Adler32._update28329.native == global::System.IntPtr.Zero)
-				global::java.util.zip.Adler32._update28329 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "update", "([B)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, "update", "([B)V", ref global::java.util.zip.Adler32._update28329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28330;
 		public virtual void update(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.Adler32._update28330.native == global::System.IntPtr.Zero)
-				global::java.util.zip.Adler32._update28330 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "update", "([BII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, "update", "([BII)V", ref global::java.util.zip.Adler32._update28330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28331;
 		public virtual void update(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.Adler32._update28331.native == global::System.IntPtr.Zero)
-				global::java.util.zip.Adler32._update28331 = @__env.GetMethodIDNoThrow(global::java.util.zip.Adler32.staticClass, "update", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.Adler32.staticClass, "update", "(I)V", ref global::java.util.zip.Adler32._update28331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Adler3228332;
 		public Adler32() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

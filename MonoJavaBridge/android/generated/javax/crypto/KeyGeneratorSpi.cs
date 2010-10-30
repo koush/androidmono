@@ -44,34 +44,22 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _engineInit28668;
 		protected override void engineInit(java.security.SecureRandom arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyGeneratorSpi_._engineInit28668.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyGeneratorSpi_._engineInit28668 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(Ljava/security/SecureRandom;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_._engineInit28668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(Ljava/security/SecureRandom;)V", ref global::javax.crypto.KeyGeneratorSpi_._engineInit28668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28669;
 		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyGeneratorSpi_._engineInit28669.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyGeneratorSpi_._engineInit28669 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_._engineInit28669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", ref global::javax.crypto.KeyGeneratorSpi_._engineInit28669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28670;
 		protected override void engineInit(int arg0, java.security.SecureRandom arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyGeneratorSpi_._engineInit28670.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyGeneratorSpi_._engineInit28670 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(ILjava/security/SecureRandom;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_._engineInit28670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineInit", "(ILjava/security/SecureRandom;)V", ref global::javax.crypto.KeyGeneratorSpi_._engineInit28670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateKey28671;
 		protected override global::javax.crypto.SecretKey engineGenerateKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyGeneratorSpi_._engineGenerateKey28671.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyGeneratorSpi_._engineGenerateKey28671 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineGenerateKey", "()Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_._engineGenerateKey28671)) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.KeyGeneratorSpi_.staticClass, "engineGenerateKey", "()Ljavax/crypto/SecretKey;", ref global::javax.crypto.KeyGeneratorSpi_._engineGenerateKey28671) as javax.crypto.SecretKey;
 		}
 		static KeyGeneratorSpi_()
 		{

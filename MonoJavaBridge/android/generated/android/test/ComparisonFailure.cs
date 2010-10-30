@@ -17,10 +17,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getMessage12179;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ComparisonFailure._getMessage12179.native == global::System.IntPtr.Zero)
-				global::android.test.ComparisonFailure._getMessage12179 = @__env.GetMethodIDNoThrow(global::android.test.ComparisonFailure.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.ComparisonFailure.staticClass, global::android.test.ComparisonFailure._getMessage12179) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.ComparisonFailure.staticClass, "getMessage", "()Ljava/lang/String;", ref global::android.test.ComparisonFailure._getMessage12179) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ComparisonFailure12180;
 		public ComparisonFailure(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

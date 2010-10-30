@@ -18,26 +18,17 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getEncoded23006;
 		byte[] java.security.Key.getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Key_._getEncoded23006.native == global::System.IntPtr.Zero)
-				global::java.security.Key_._getEncoded23006 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getEncoded23006)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.Key_.staticClass, "getEncoded", "()[B", ref global::java.security.Key_._getEncoded23006) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23007;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Key_._getAlgorithm23007.native == global::System.IntPtr.Zero)
-				global::java.security.Key_._getAlgorithm23007 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getAlgorithm23007)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.Key_._getAlgorithm23007) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23008;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Key_._getFormat23008.native == global::System.IntPtr.Zero)
-				global::java.security.Key_._getFormat23008 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getFormat23008)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.Key_._getFormat23008) as java.lang.String;
 		}
 		static Key_()
 		{

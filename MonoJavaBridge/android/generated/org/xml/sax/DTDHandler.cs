@@ -17,18 +17,12 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _unparsedEntityDecl34973;
 		void org.xml.sax.DTDHandler.unparsedEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.DTDHandler_._unparsedEntityDecl34973.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.DTDHandler_._unparsedEntityDecl34973 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_._unparsedEntityDecl34973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.DTDHandler_.staticClass, "unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::org.xml.sax.DTDHandler_._unparsedEntityDecl34973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _notationDecl34974;
 		void org.xml.sax.DTDHandler.notationDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.DTDHandler_._notationDecl34974.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.DTDHandler_._notationDecl34974 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_._notationDecl34974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.DTDHandler_.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::org.xml.sax.DTDHandler_._notationDecl34974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static DTDHandler_()
 		{

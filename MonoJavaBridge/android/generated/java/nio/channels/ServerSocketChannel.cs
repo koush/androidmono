@@ -22,10 +22,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _validOps22623;
 		public sealed override int validOps()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ServerSocketChannel._validOps22623.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ServerSocketChannel._validOps22623 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel.staticClass, "validOps", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._validOps22623);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ServerSocketChannel.staticClass, "validOps", "()I", ref global::java.nio.channels.ServerSocketChannel._validOps22623);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServerSocketChannel22624;
 		protected ServerSocketChannel(java.nio.channels.spi.SelectorProvider arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -56,34 +53,22 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _accept22625;
 		public override global::java.nio.channels.SocketChannel accept()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ServerSocketChannel_._accept22625.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ServerSocketChannel_._accept22625 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "accept", "()Ljava/nio/channels/SocketChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_._accept22625)) as java.nio.channels.SocketChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.ServerSocketChannel_.staticClass, "accept", "()Ljava/nio/channels/SocketChannel;", ref global::java.nio.channels.ServerSocketChannel_._accept22625) as java.nio.channels.SocketChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _socket22626;
 		public override global::java.net.ServerSocket socket()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ServerSocketChannel_._socket22626.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ServerSocketChannel_._socket22626 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "socket", "()Ljava/net/ServerSocket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_._socket22626)) as java.net.ServerSocket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.ServerSocketChannel_.staticClass, "socket", "()Ljava/net/ServerSocket;", ref global::java.nio.channels.ServerSocketChannel_._socket22626) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22627;
 		protected override void implCloseSelectableChannel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22627.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22627 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "implCloseSelectableChannel", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22627);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ServerSocketChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22627);
 		}
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22628;
 		protected override void implConfigureBlocking(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ServerSocketChannel_.staticClass, "implConfigureBlocking", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ServerSocketChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.ServerSocketChannel_._implConfigureBlocking22628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ServerSocketChannel_()
 		{

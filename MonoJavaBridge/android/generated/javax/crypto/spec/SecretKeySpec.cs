@@ -10,18 +10,12 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _equals28824;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.SecretKeySpec._equals28824.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.SecretKeySpec._equals28824 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._equals28824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.SecretKeySpec.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.crypto.spec.SecretKeySpec._equals28824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode28825;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.SecretKeySpec._hashCode28825.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.SecretKeySpec._hashCode28825 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._hashCode28825);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.SecretKeySpec.staticClass, "hashCode", "()I", ref global::javax.crypto.spec.SecretKeySpec._hashCode28825);
 		}
 		public new byte[] Encoded
 		{
@@ -33,10 +27,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getEncoded28826;
 		public virtual byte[] getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.SecretKeySpec._getEncoded28826.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.SecretKeySpec._getEncoded28826 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._getEncoded28826) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, "getEncoded", "()[B", ref global::javax.crypto.spec.SecretKeySpec._getEncoded28826) as byte[];
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -48,10 +39,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28827;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.SecretKeySpec._getAlgorithm28827.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.SecretKeySpec._getAlgorithm28827 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._getAlgorithm28827) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.SecretKeySpec._getAlgorithm28827) as java.lang.String;
 		}
 		public new global::java.lang.String Format
 		{
@@ -63,10 +51,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getFormat28828;
 		public virtual global::java.lang.String getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.SecretKeySpec._getFormat28828.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.SecretKeySpec._getFormat28828 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.SecretKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, global::javax.crypto.spec.SecretKeySpec._getFormat28828) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.SecretKeySpec.staticClass, "getFormat", "()Ljava/lang/String;", ref global::javax.crypto.spec.SecretKeySpec._getFormat28828) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SecretKeySpec28829;
 		public SecretKeySpec(byte[] arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

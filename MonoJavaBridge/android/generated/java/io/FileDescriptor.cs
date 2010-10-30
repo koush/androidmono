@@ -10,18 +10,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _valid19010;
 		public bool valid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.FileDescriptor._valid19010.native == global::System.IntPtr.Zero)
-				global::java.io.FileDescriptor._valid19010 = @__env.GetMethodIDNoThrow(global::java.io.FileDescriptor.staticClass, "valid", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid19010);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.FileDescriptor.staticClass, "valid", "()Z", ref global::java.io.FileDescriptor._valid19010);
 		}
 		internal static global::MonoJavaBridge.MethodId _sync19011;
 		public void sync()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.FileDescriptor._sync19011.native == global::System.IntPtr.Zero)
-				global::java.io.FileDescriptor._sync19011 = @__env.GetMethodIDNoThrow(global::java.io.FileDescriptor.staticClass, "sync", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync19011);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FileDescriptor.staticClass, "sync", "()V", ref global::java.io.FileDescriptor._sync19011);
 		}
 		internal static global::MonoJavaBridge.MethodId _FileDescriptor19012;
 		public FileDescriptor() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,20 +10,14 @@ namespace javax.security.cert
 		internal static global::MonoJavaBridge.MethodId _equals30224;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate._equals30224.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate._equals30224 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.cert.Certificate.staticClass, global::javax.security.cert.Certificate._equals30224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.cert.Certificate.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.security.cert.Certificate._equals30224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString30225;
 		public abstract global::java.lang.String toString();
 		internal static global::MonoJavaBridge.MethodId _hashCode30226;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate._hashCode30226.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate._hashCode30226 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.security.cert.Certificate.staticClass, global::javax.security.cert.Certificate._hashCode30226);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.security.cert.Certificate.staticClass, "hashCode", "()I", ref global::javax.security.cert.Certificate._hashCode30226);
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded30227;
 		public abstract byte[] getEncoded();
@@ -62,42 +56,27 @@ namespace javax.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString30232;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate_._toString30232.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate_._toString30232 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.cert.Certificate_._toString30232)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.security.cert.Certificate_.staticClass, "toString", "()Ljava/lang/String;", ref global::javax.security.cert.Certificate_._toString30232) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded30233;
 		public override byte[] getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate_._getEncoded30233.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate_._getEncoded30233 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate_.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.cert.Certificate_._getEncoded30233)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.security.cert.Certificate_.staticClass, "getEncoded", "()[B", ref global::javax.security.cert.Certificate_._getEncoded30233) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _verify30234;
 		public override void verify(java.security.PublicKey arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate_._verify30234.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate_._verify30234 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.cert.Certificate_._verify30234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V", ref global::javax.security.cert.Certificate_._verify30234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify30235;
 		public override void verify(java.security.PublicKey arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate_._verify30235.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate_._verify30235 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.cert.Certificate_._verify30235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", ref global::javax.security.cert.Certificate_._verify30235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicKey30236;
 		public override global::java.security.PublicKey getPublicKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate_._getPublicKey30236.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate_._getPublicKey30236 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.cert.Certificate_._getPublicKey30236)) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::javax.security.cert.Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;", ref global::javax.security.cert.Certificate_._getPublicKey30236) as java.security.PublicKey;
 		}
 		static Certificate_()
 		{

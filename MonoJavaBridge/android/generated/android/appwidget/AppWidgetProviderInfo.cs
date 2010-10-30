@@ -10,26 +10,17 @@ namespace android.appwidget
 		internal static global::MonoJavaBridge.MethodId _toString2389;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetProviderInfo._toString2389.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetProviderInfo._toString2389 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._toString2389) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.appwidget.AppWidgetProviderInfo._toString2389) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2390;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetProviderInfo._writeToParcel2390.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetProviderInfo._writeToParcel2390 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._writeToParcel2390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.appwidget.AppWidgetProviderInfo._writeToParcel2390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents2391;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetProviderInfo._describeContents2391.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetProviderInfo._describeContents2391 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._describeContents2391);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, "describeContents", "()I", ref global::android.appwidget.AppWidgetProviderInfo._describeContents2391);
 		}
 		internal static global::MonoJavaBridge.MethodId _AppWidgetProviderInfo2392;
 		public AppWidgetProviderInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

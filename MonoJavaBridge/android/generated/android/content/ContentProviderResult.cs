@@ -10,26 +10,17 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _toString2697;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentProviderResult._toString2697.native == global::System.IntPtr.Zero)
-				global::android.content.ContentProviderResult._toString2697 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString2697) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProviderResult.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.ContentProviderResult._toString2697) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2698;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentProviderResult._writeToParcel2698.native == global::System.IntPtr.Zero)
-				global::android.content.ContentProviderResult._writeToParcel2698 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._writeToParcel2698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProviderResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.ContentProviderResult._writeToParcel2698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents2699;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentProviderResult._describeContents2699.native == global::System.IntPtr.Zero)
-				global::android.content.ContentProviderResult._describeContents2699 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._describeContents2699);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProviderResult.staticClass, "describeContents", "()I", ref global::android.content.ContentProviderResult._describeContents2699);
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentProviderResult2700;
 		public ContentProviderResult(android.net.Uri arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

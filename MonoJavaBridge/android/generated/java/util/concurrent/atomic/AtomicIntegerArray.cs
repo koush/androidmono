@@ -10,114 +10,72 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _get27551;
 		public virtual int get(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._get27551.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._get27551 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "get", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._get27551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "get", "(I)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._get27551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27552;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._toString27552.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._toString27552 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._toString27552) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.concurrent.atomic.AtomicIntegerArray._toString27552) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _length27553;
 		public virtual int length()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._length27553.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._length27553 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "length", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._length27553);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "length", "()I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._length27553);
 		}
 		internal static global::MonoJavaBridge.MethodId _set27554;
 		public virtual void set(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._set27554.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._set27554 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "set", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._set27554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "set", "(II)V", ref global::java.util.concurrent.atomic.AtomicIntegerArray._set27554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndAdd27555;
 		public virtual int getAndAdd(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._getAndAdd27555.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._getAndAdd27555 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndAdd", "(II)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._getAndAdd27555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndAdd", "(II)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._getAndAdd27555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _lazySet27556;
 		public virtual void lazySet(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._lazySet27556.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._lazySet27556 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "lazySet", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._lazySet27556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "lazySet", "(II)V", ref global::java.util.concurrent.atomic.AtomicIntegerArray._lazySet27556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndSet27557;
 		public virtual int getAndSet(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._getAndSet27557.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._getAndSet27557 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndSet", "(II)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._getAndSet27557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndSet", "(II)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._getAndSet27557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareAndSet27558;
 		public virtual bool compareAndSet(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._compareAndSet27558.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._compareAndSet27558 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "compareAndSet", "(III)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._compareAndSet27558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "compareAndSet", "(III)Z", ref global::java.util.concurrent.atomic.AtomicIntegerArray._compareAndSet27558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _weakCompareAndSet27559;
 		public virtual bool weakCompareAndSet(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._weakCompareAndSet27559.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._weakCompareAndSet27559 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "weakCompareAndSet", "(III)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._weakCompareAndSet27559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "weakCompareAndSet", "(III)Z", ref global::java.util.concurrent.atomic.AtomicIntegerArray._weakCompareAndSet27559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndIncrement27560;
 		public virtual int getAndIncrement(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._getAndIncrement27560.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._getAndIncrement27560 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndIncrement", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._getAndIncrement27560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndIncrement", "(I)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._getAndIncrement27560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndDecrement27561;
 		public virtual int getAndDecrement(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._getAndDecrement27561.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._getAndDecrement27561 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndDecrement", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._getAndDecrement27561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "getAndDecrement", "(I)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._getAndDecrement27561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementAndGet27562;
 		public virtual int incrementAndGet(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._incrementAndGet27562.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._incrementAndGet27562 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "incrementAndGet", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._incrementAndGet27562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "incrementAndGet", "(I)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._incrementAndGet27562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _decrementAndGet27563;
 		public virtual int decrementAndGet(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._decrementAndGet27563.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._decrementAndGet27563 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "decrementAndGet", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._decrementAndGet27563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "decrementAndGet", "(I)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._decrementAndGet27563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addAndGet27564;
 		public virtual int addAndGet(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicIntegerArray._addAndGet27564.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicIntegerArray._addAndGet27564 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "addAndGet", "(II)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, global::java.util.concurrent.atomic.AtomicIntegerArray._addAndGet27564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicIntegerArray.staticClass, "addAndGet", "(II)I", ref global::java.util.concurrent.atomic.AtomicIntegerArray._addAndGet27564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _AtomicIntegerArray27565;
 		public AtomicIntegerArray(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

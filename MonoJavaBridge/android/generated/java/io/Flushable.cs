@@ -16,10 +16,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _flush19089;
 		void java.io.Flushable.flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.Flushable_._flush19089.native == global::System.IntPtr.Zero)
-				global::java.io.Flushable_._flush19089 = @__env.GetMethodIDNoThrow(global::java.io.Flushable_.staticClass, "flush", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Flushable_._flush19089);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Flushable_.staticClass, "flush", "()V", ref global::java.io.Flushable_._flush19089);
 		}
 		static Flushable_()
 		{

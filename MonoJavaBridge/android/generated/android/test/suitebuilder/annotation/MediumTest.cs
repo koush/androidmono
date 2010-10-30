@@ -15,34 +15,22 @@ namespace android.test.suitebuilder.annotation
 		internal static global::MonoJavaBridge.MethodId _equals12651;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.MediumTest_._equals12651.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.MediumTest_._equals12651 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.MediumTest_._equals12651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.test.suitebuilder.annotation.MediumTest_._equals12651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12652;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.MediumTest_._toString12652.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.MediumTest_._toString12652 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.MediumTest_._toString12652)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.test.suitebuilder.annotation.MediumTest_._toString12652) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12653;
 		int java.lang.annotation.Annotation.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.MediumTest_._hashCode12653.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.MediumTest_._hashCode12653 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.MediumTest_._hashCode12653);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "hashCode", "()I", ref global::android.test.suitebuilder.annotation.MediumTest_._hashCode12653);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType12654;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.MediumTest_._annotationType12654.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.MediumTest_._annotationType12654 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "annotationType", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.MediumTest_._annotationType12654)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.test.suitebuilder.annotation.MediumTest_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.test.suitebuilder.annotation.MediumTest_._annotationType12654) as java.lang.Class;
 		}
 		static MediumTest_()
 		{

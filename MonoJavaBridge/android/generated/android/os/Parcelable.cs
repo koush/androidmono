@@ -17,18 +17,12 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _writeToParcel10113;
 		void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Parcelable_._writeToParcel10113.native == global::System.IntPtr.Zero)
-				global::android.os.Parcelable_._writeToParcel10113 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.os.Parcelable_._writeToParcel10113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.Parcelable_._writeToParcel10113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents10114;
 		int android.os.Parcelable.describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Parcelable_._describeContents10114.native == global::System.IntPtr.Zero)
-				global::android.os.Parcelable_._describeContents10114 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "describeContents", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.os.Parcelable_._describeContents10114);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Parcelable_.staticClass, "describeContents", "()I", ref global::android.os.Parcelable_._describeContents10114);
 		}
 		static Parcelable_()
 		{

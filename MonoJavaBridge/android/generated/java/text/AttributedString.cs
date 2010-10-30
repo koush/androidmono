@@ -17,50 +17,32 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getIterator25188;
 		public virtual global::java.text.AttributedCharacterIterator getIterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._getIterator25188.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._getIterator25188 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "getIterator", "()Ljava/text/AttributedCharacterIterator;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._getIterator25188) as java.text.AttributedCharacterIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, "getIterator", "()Ljava/text/AttributedCharacterIterator;", ref global::java.text.AttributedString._getIterator25188) as java.text.AttributedCharacterIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIterator25189;
 		public virtual global::java.text.AttributedCharacterIterator getIterator(java.text.AttributedCharacterIterator_Attribute[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._getIterator25189.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._getIterator25189 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._getIterator25189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.text.AttributedCharacterIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, "getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", ref global::java.text.AttributedString._getIterator25189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.text.AttributedCharacterIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIterator25190;
 		public virtual global::java.text.AttributedCharacterIterator getIterator(java.text.AttributedCharacterIterator_Attribute[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._getIterator25190.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._getIterator25190 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;II)Ljava/text/AttributedCharacterIterator;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._getIterator25190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.text.AttributedCharacterIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.AttributedString.staticClass, "getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;II)Ljava/text/AttributedCharacterIterator;", ref global::java.text.AttributedString._getIterator25190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.text.AttributedCharacterIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _addAttribute25191;
 		public virtual void addAttribute(java.text.AttributedCharacterIterator_Attribute arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._addAttribute25191.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._addAttribute25191 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._addAttribute25191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, "addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;II)V", ref global::java.text.AttributedString._addAttribute25191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _addAttribute25192;
 		public virtual void addAttribute(java.text.AttributedCharacterIterator_Attribute arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._addAttribute25192.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._addAttribute25192 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._addAttribute25192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, "addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;)V", ref global::java.text.AttributedString._addAttribute25192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addAttributes25193;
 		public virtual void addAttributes(java.util.Map arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.AttributedString._addAttributes25193.native == global::System.IntPtr.Zero)
-				global::java.text.AttributedString._addAttributes25193 = @__env.GetMethodIDNoThrow(global::java.text.AttributedString.staticClass, "addAttributes", "(Ljava/util/Map;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, global::java.text.AttributedString._addAttributes25193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.AttributedString.staticClass, "addAttributes", "(Ljava/util/Map;II)V", ref global::java.text.AttributedString._addAttributes25193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _AttributedString25194;
 		public AttributedString(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

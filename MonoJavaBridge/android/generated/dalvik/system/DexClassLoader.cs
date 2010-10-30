@@ -10,34 +10,22 @@ namespace dalvik.system
 		internal static global::MonoJavaBridge.MethodId _getPackage18584;
 		protected override global::java.lang.Package getPackage(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.DexClassLoader._getPackage18584.native == global::System.IntPtr.Zero)
-				global::dalvik.system.DexClassLoader._getPackage18584 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::dalvik.system.DexClassLoader.staticClass, global::dalvik.system.DexClassLoader._getPackage18584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Package;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::dalvik.system.DexClassLoader.staticClass, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;", ref global::dalvik.system.DexClassLoader._getPackage18584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Package;
 		}
 		internal static global::MonoJavaBridge.MethodId _findClass18585;
 		protected override global::java.lang.Class findClass(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.DexClassLoader._findClass18585.native == global::System.IntPtr.Zero)
-				global::dalvik.system.DexClassLoader._findClass18585 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::dalvik.system.DexClassLoader.staticClass, global::dalvik.system.DexClassLoader._findClass18585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::dalvik.system.DexClassLoader.staticClass, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;", ref global::dalvik.system.DexClassLoader._findClass18585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResource18586;
 		protected override global::java.net.URL findResource(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.DexClassLoader._findResource18586.native == global::System.IntPtr.Zero)
-				global::dalvik.system.DexClassLoader._findResource18586 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "findResource", "(Ljava/lang/String;)Ljava/net/URL;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::dalvik.system.DexClassLoader.staticClass, global::dalvik.system.DexClassLoader._findResource18586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::dalvik.system.DexClassLoader.staticClass, "findResource", "(Ljava/lang/String;)Ljava/net/URL;", ref global::dalvik.system.DexClassLoader._findResource18586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _findLibrary18587;
 		protected override global::java.lang.String findLibrary(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.DexClassLoader._findLibrary18587.native == global::System.IntPtr.Zero)
-				global::dalvik.system.DexClassLoader._findLibrary18587 = @__env.GetMethodIDNoThrow(global::dalvik.system.DexClassLoader.staticClass, "findLibrary", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.system.DexClassLoader.staticClass, global::dalvik.system.DexClassLoader._findLibrary18587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.system.DexClassLoader.staticClass, "findLibrary", "(Ljava/lang/String;)Ljava/lang/String;", ref global::dalvik.system.DexClassLoader._findLibrary18587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _DexClassLoader18588;
 		public DexClassLoader(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.ClassLoader arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -32,10 +32,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13267;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DateKeyListener._getInputType13267.native == global::System.IntPtr.Zero)
-				global::android.text.method.DateKeyListener._getInputType13267 = @__env.GetMethodIDNoThrow(global::android.text.method.DateKeyListener.staticClass, "getInputType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInputType13267);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DateKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.DateKeyListener._getInputType13267);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -47,10 +44,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13268;
 		protected override char[] getAcceptedChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DateKeyListener._getAcceptedChars13268.native == global::System.IntPtr.Zero)
-				global::android.text.method.DateKeyListener._getAcceptedChars13268 = @__env.GetMethodIDNoThrow(global::android.text.method.DateKeyListener.staticClass, "getAcceptedChars", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getAcceptedChars13268) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DateKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.DateKeyListener._getAcceptedChars13268) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DateKeyListener13269;
 		public DateKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

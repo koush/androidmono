@@ -24,74 +24,47 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent15980;
 		void android.view.inputmethod.InputMethodSession.dispatchKeyEvent(int arg0, android.view.KeyEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._dispatchKeyEvent15980.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._dispatchKeyEvent15980 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "dispatchKeyEvent", "(ILandroid/view/KeyEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._dispatchKeyEvent15980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "dispatchKeyEvent", "(ILandroid/view/KeyEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", ref global::android.view.inputmethod.InputMethodSession_._dispatchKeyEvent15980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchTrackballEvent15981;
 		void android.view.inputmethod.InputMethodSession.dispatchTrackballEvent(int arg0, android.view.MotionEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._dispatchTrackballEvent15981.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._dispatchTrackballEvent15981 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "dispatchTrackballEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._dispatchTrackballEvent15981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "dispatchTrackballEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", ref global::android.view.inputmethod.InputMethodSession_._dispatchTrackballEvent15981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _finishInput15982;
 		void android.view.inputmethod.InputMethodSession.finishInput()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._finishInput15982.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._finishInput15982 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "finishInput", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._finishInput15982);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "finishInput", "()V", ref global::android.view.inputmethod.InputMethodSession_._finishInput15982);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateSelection15983;
 		void android.view.inputmethod.InputMethodSession.updateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._updateSelection15983.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._updateSelection15983 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "updateSelection", "(IIIIII)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._updateSelection15983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "updateSelection", "(IIIIII)V", ref global::android.view.inputmethod.InputMethodSession_._updateSelection15983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCursor15984;
 		void android.view.inputmethod.InputMethodSession.updateCursor(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._updateCursor15984.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._updateCursor15984 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "updateCursor", "(Landroid/graphics/Rect;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._updateCursor15984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "updateCursor", "(Landroid/graphics/Rect;)V", ref global::android.view.inputmethod.InputMethodSession_._updateCursor15984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _displayCompletions15985;
 		void android.view.inputmethod.InputMethodSession.displayCompletions(android.view.inputmethod.CompletionInfo[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._displayCompletions15985.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._displayCompletions15985 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "displayCompletions", "([Landroid/view/inputmethod/CompletionInfo;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._displayCompletions15985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "displayCompletions", "([Landroid/view/inputmethod/CompletionInfo;)V", ref global::android.view.inputmethod.InputMethodSession_._displayCompletions15985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateExtractedText15986;
 		void android.view.inputmethod.InputMethodSession.updateExtractedText(int arg0, android.view.inputmethod.ExtractedText arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._updateExtractedText15986.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._updateExtractedText15986 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "updateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._updateExtractedText15986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "updateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V", ref global::android.view.inputmethod.InputMethodSession_._updateExtractedText15986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _appPrivateCommand15987;
 		void android.view.inputmethod.InputMethodSession.appPrivateCommand(java.lang.String arg0, android.os.Bundle arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._appPrivateCommand15987.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._appPrivateCommand15987 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "appPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._appPrivateCommand15987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "appPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", ref global::android.view.inputmethod.InputMethodSession_._appPrivateCommand15987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _toggleSoftInput15988;
 		void android.view.inputmethod.InputMethodSession.toggleSoftInput(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_.staticClass, "toggleSoftInput", "(II)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_.staticClass, "toggleSoftInput", "(II)V", ref global::android.view.inputmethod.InputMethodSession_._toggleSoftInput15988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static InputMethodSession_()
 		{

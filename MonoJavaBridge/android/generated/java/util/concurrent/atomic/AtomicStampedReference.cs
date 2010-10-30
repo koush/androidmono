@@ -10,34 +10,22 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _get27680;
 		public virtual global::java.lang.Object get(int[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._get27680.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._get27680 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "get", "([I)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._get27680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "get", "([I)Ljava/lang/Object;", ref global::java.util.concurrent.atomic.AtomicStampedReference._get27680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _set27681;
 		public virtual void set(java.lang.Object arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._set27681.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._set27681 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "set", "(Ljava/lang/Object;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._set27681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "set", "(Ljava/lang/Object;I)V", ref global::java.util.concurrent.atomic.AtomicStampedReference._set27681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareAndSet27682;
 		public virtual bool compareAndSet(java.lang.Object arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._compareAndSet27682.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._compareAndSet27682 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._compareAndSet27682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", ref global::java.util.concurrent.atomic.AtomicStampedReference._compareAndSet27682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _weakCompareAndSet27683;
 		public virtual bool weakCompareAndSet(java.lang.Object arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._weakCompareAndSet27683.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._weakCompareAndSet27683 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._weakCompareAndSet27683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", ref global::java.util.concurrent.atomic.AtomicStampedReference._weakCompareAndSet27683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new global::java.lang.Object Reference
 		{
@@ -49,10 +37,7 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _getReference27684;
 		public virtual global::java.lang.Object getReference()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._getReference27684.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._getReference27684 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "getReference", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._getReference27684) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "getReference", "()Ljava/lang/Object;", ref global::java.util.concurrent.atomic.AtomicStampedReference._getReference27684) as java.lang.Object;
 		}
 		public new int Stamp
 		{
@@ -64,18 +49,12 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _getStamp27685;
 		public virtual int getStamp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._getStamp27685.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._getStamp27685 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "getStamp", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._getStamp27685);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "getStamp", "()I", ref global::java.util.concurrent.atomic.AtomicStampedReference._getStamp27685);
 		}
 		internal static global::MonoJavaBridge.MethodId _attemptStamp27686;
 		public virtual bool attemptStamp(java.lang.Object arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.atomic.AtomicStampedReference._attemptStamp27686.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.atomic.AtomicStampedReference._attemptStamp27686 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "attemptStamp", "(Ljava/lang/Object;I)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, global::java.util.concurrent.atomic.AtomicStampedReference._attemptStamp27686, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.atomic.AtomicStampedReference.staticClass, "attemptStamp", "(Ljava/lang/Object;I)Z", ref global::java.util.concurrent.atomic.AtomicStampedReference._attemptStamp27686, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _AtomicStampedReference27687;
 		public AtomicStampedReference(java.lang.Object arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

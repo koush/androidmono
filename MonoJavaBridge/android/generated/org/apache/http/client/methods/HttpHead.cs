@@ -17,10 +17,7 @@ namespace org.apache.http.client.methods
 		internal static global::MonoJavaBridge.MethodId _getMethod31925;
 		public override global::java.lang.String getMethod()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpHead._getMethod31925.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpHead._getMethod31925 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "getMethod", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._getMethod31925) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpHead.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpHead._getMethod31925) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpHead31926;
 		public HttpHead() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

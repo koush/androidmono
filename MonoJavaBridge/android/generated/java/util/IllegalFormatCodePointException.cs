@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26312;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IllegalFormatCodePointException._getMessage26312.native == global::System.IntPtr.Zero)
-				global::java.util.IllegalFormatCodePointException._getMessage26312 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatCodePointException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatCodePointException.staticClass, global::java.util.IllegalFormatCodePointException._getMessage26312) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatCodePointException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.IllegalFormatCodePointException._getMessage26312) as java.lang.String;
 		}
 		public new int CodePoint
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getCodePoint26313;
 		public virtual int getCodePoint()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IllegalFormatCodePointException._getCodePoint26313.native == global::System.IntPtr.Zero)
-				global::java.util.IllegalFormatCodePointException._getCodePoint26313 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatCodePointException.staticClass, "getCodePoint", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatCodePointException.staticClass, global::java.util.IllegalFormatCodePointException._getCodePoint26313);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatCodePointException.staticClass, "getCodePoint", "()I", ref global::java.util.IllegalFormatCodePointException._getCodePoint26313);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatCodePointException26314;
 		public IllegalFormatCodePointException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

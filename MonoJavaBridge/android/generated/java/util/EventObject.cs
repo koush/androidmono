@@ -10,10 +10,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _toString26175;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EventObject._toString26175.native == global::System.IntPtr.Zero)
-				global::java.util.EventObject._toString26175 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._toString26175) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.EventObject.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.EventObject._toString26175) as java.lang.String;
 		}
 		public new global::java.lang.Object Source
 		{
@@ -25,10 +22,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getSource26176;
 		public virtual global::java.lang.Object getSource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EventObject._getSource26176.native == global::System.IntPtr.Zero)
-				global::java.util.EventObject._getSource26176 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "getSource", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._getSource26176) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EventObject.staticClass, "getSource", "()Ljava/lang/Object;", ref global::java.util.EventObject._getSource26176) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventObject26177;
 		public EventObject(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

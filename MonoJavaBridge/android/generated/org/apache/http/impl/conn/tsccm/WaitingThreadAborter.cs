@@ -10,10 +10,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _abort33192;
 		public virtual void abort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._abort33192.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._abort33192 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, "abort", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._abort33192);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, "abort", "()V", ref global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._abort33192);
 		}
 		public new global::org.apache.http.impl.conn.tsccm.WaitingThread WaitingThread
 		{
@@ -25,10 +22,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _setWaitingThread33193;
 		public virtual void setWaitingThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._setWaitingThread33193.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._setWaitingThread33193 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, "setWaitingThread", "(Lorg/apache/http/impl/conn/tsccm/WaitingThread;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._setWaitingThread33193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, "setWaitingThread", "(Lorg/apache/http/impl/conn/tsccm/WaitingThread;)V", ref global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._setWaitingThread33193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _WaitingThreadAborter33194;
 		public WaitingThreadAborter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

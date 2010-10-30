@@ -15,42 +15,27 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _read22400;
 		int java.nio.channels.ReadableByteChannel.read(java.nio.ByteBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ByteChannel_._read22400.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ByteChannel_._read22400 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.ByteChannel_._read22400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ByteChannel_._read22400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close22401;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ByteChannel_._close22401.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ByteChannel_._close22401 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ByteChannel_.staticClass, "close", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ByteChannel_._close22401);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ByteChannel_._close22401);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen22402;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ByteChannel_._isOpen22402.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ByteChannel_._isOpen22402 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ByteChannel_.staticClass, "isOpen", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.ByteChannel_._isOpen22402);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.ByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.ByteChannel_._isOpen22402);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22403;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ByteChannel_._close22403.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ByteChannel_._close22403 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ByteChannel_.staticClass, "close", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ByteChannel_._close22403);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ByteChannel_._close22403);
 		}
 		internal static global::MonoJavaBridge.MethodId _write22404;
 		int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.ByteChannel_._write22404.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.ByteChannel_._write22404 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ByteChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.ByteChannel_._write22404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ByteChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ByteChannel_._write22404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ByteChannel_()
 		{

@@ -50,58 +50,37 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _get26129;
 		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._get26129.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._get26129 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Dictionary_._get26129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Dictionary_.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.Dictionary_._get26129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _put26130;
 		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._put26130.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._put26130 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Dictionary_._put26130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Dictionary_.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.Dictionary_._put26130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty26131;
 		public override bool isEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._isEmpty26131.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._isEmpty26131 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "isEmpty", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Dictionary_._isEmpty26131);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Dictionary_.staticClass, "isEmpty", "()Z", ref global::java.util.Dictionary_._isEmpty26131);
 		}
 		internal static global::MonoJavaBridge.MethodId _size26132;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._size26132.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._size26132 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "size", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.Dictionary_._size26132);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Dictionary_.staticClass, "size", "()I", ref global::java.util.Dictionary_._size26132);
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26133;
 		public override global::java.lang.Object remove(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._remove26133.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._remove26133 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Dictionary_._remove26133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Dictionary_.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.Dictionary_._remove26133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _elements26134;
 		public override global::java.util.Enumeration elements()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._elements26134.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._elements26134 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "elements", "()Ljava/util/Enumeration;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Dictionary_._elements26134)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.util.Dictionary_.staticClass, "elements", "()Ljava/util/Enumeration;", ref global::java.util.Dictionary_._elements26134) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _keys26135;
 		public override global::java.util.Enumeration keys()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Dictionary_._keys26135.native == global::System.IntPtr.Zero)
-				global::java.util.Dictionary_._keys26135 = @__env.GetMethodIDNoThrow(global::java.util.Dictionary_.staticClass, "keys", "()Ljava/util/Enumeration;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Dictionary_._keys26135)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.util.Dictionary_.staticClass, "keys", "()Ljava/util/Enumeration;", ref global::java.util.Dictionary_._keys26135) as java.util.Enumeration;
 		}
 		static Dictionary_()
 		{

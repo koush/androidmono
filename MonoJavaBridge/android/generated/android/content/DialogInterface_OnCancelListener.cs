@@ -16,10 +16,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onCancel3067;
 		void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnCancelListener_._onCancel3067.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnCancelListener_._onCancel3067 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnCancelListener_.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnCancelListener_._onCancel3067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_OnCancelListener_.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V", ref global::android.content.DialogInterface_OnCancelListener_._onCancel3067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DialogInterface_OnCancelListener_()
 		{

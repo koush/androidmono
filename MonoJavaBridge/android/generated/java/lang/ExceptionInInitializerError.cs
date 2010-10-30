@@ -17,10 +17,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getCause20137;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.ExceptionInInitializerError._getCause20137.native == global::System.IntPtr.Zero)
-				global::java.lang.ExceptionInInitializerError._getCause20137 = @__env.GetMethodIDNoThrow(global::java.lang.ExceptionInInitializerError.staticClass, "getCause", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ExceptionInInitializerError.staticClass, global::java.lang.ExceptionInInitializerError._getCause20137) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ExceptionInInitializerError.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::java.lang.ExceptionInInitializerError._getCause20137) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable Exception
 		{
@@ -32,10 +29,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getException20138;
 		public virtual global::java.lang.Throwable getException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.ExceptionInInitializerError._getException20138.native == global::System.IntPtr.Zero)
-				global::java.lang.ExceptionInInitializerError._getException20138 = @__env.GetMethodIDNoThrow(global::java.lang.ExceptionInInitializerError.staticClass, "getException", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ExceptionInInitializerError.staticClass, global::java.lang.ExceptionInInitializerError._getException20138) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ExceptionInInitializerError.staticClass, "getException", "()Ljava/lang/Throwable;", ref global::java.lang.ExceptionInInitializerError._getException20138) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _ExceptionInInitializerError20139;
 		public ExceptionInInitializerError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

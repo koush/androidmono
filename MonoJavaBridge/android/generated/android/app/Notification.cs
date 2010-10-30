@@ -10,34 +10,22 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _toString1968;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.Notification._toString1968.native == global::System.IntPtr.Zero)
-				global::android.app.Notification._toString1968 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.app.Notification.staticClass, global::android.app.Notification._toString1968) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.app.Notification.staticClass, "toString", "()Ljava/lang/String;", ref global::android.app.Notification._toString1968) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1969;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.Notification._writeToParcel1969.native == global::System.IntPtr.Zero)
-				global::android.app.Notification._writeToParcel1969 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._writeToParcel1969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Notification.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.app.Notification._writeToParcel1969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents1970;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.Notification._describeContents1970.native == global::System.IntPtr.Zero)
-				global::android.app.Notification._describeContents1970 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._describeContents1970);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.Notification.staticClass, "describeContents", "()I", ref global::android.app.Notification._describeContents1970);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLatestEventInfo1971;
 		public virtual void setLatestEventInfo(android.content.Context arg0, java.lang.CharSequence arg1, java.lang.CharSequence arg2, android.app.PendingIntent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.Notification._setLatestEventInfo1971.native == global::System.IntPtr.Zero)
-				global::android.app.Notification._setLatestEventInfo1971 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "setLatestEventInfo", "(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._setLatestEventInfo1971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Notification.staticClass, "setLatestEventInfo", "(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V", ref global::android.app.Notification._setLatestEventInfo1971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void setLatestEventInfo(android.content.Context arg0, string arg1, string arg2, android.app.PendingIntent arg3)
 		{

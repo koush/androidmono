@@ -16,10 +16,7 @@ namespace org.apache.http
 		internal static global::MonoJavaBridge.MethodId _process31667;
 		void org.apache.http.HttpResponseInterceptor.process(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpResponseInterceptor_._process31667.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpResponseInterceptor_._process31667 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpResponseInterceptor_.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpResponseInterceptor_._process31667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpResponseInterceptor_.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.HttpResponseInterceptor_._process31667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static HttpResponseInterceptor_()
 		{

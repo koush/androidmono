@@ -17,26 +17,17 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getLoader12198;
 		public virtual global::java.lang.ClassLoader getLoader()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._getLoader12198.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._getLoader12198 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getLoader", "()Ljava/lang/ClassLoader;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getLoader12198) as java.lang.ClassLoader;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "getLoader", "()Ljava/lang/ClassLoader;", ref global::android.test.InstrumentationTestRunner._getLoader12198) as java.lang.ClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate12199;
 		public override void onCreate(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._onCreate12199.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._onCreate12199 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onCreate12199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "onCreate", "(Landroid/os/Bundle;)V", ref global::android.test.InstrumentationTestRunner._onCreate12199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart12200;
 		public override void onStart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._onStart12200.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._onStart12200 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onStart", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onStart12200);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "onStart", "()V", ref global::android.test.InstrumentationTestRunner._onStart12200);
 		}
 		protected new global::android.test.AndroidTestRunner AndroidTestRunner
 		{
@@ -48,10 +39,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getAndroidTestRunner12201;
 		protected virtual global::android.test.AndroidTestRunner getAndroidTestRunner()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._getAndroidTestRunner12201.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._getAndroidTestRunner12201 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAndroidTestRunner", "()Landroid/test/AndroidTestRunner;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAndroidTestRunner12201) as android.test.AndroidTestRunner;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "getAndroidTestRunner", "()Landroid/test/AndroidTestRunner;", ref global::android.test.InstrumentationTestRunner._getAndroidTestRunner12201) as android.test.AndroidTestRunner;
 		}
 		public new global::junit.framework.TestSuite TestSuite
 		{
@@ -63,10 +51,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getTestSuite12202;
 		public virtual global::junit.framework.TestSuite getTestSuite()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._getTestSuite12202.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._getTestSuite12202 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getTestSuite12202) as junit.framework.TestSuite;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;", ref global::android.test.InstrumentationTestRunner._getTestSuite12202) as junit.framework.TestSuite;
 		}
 		public new global::junit.framework.TestSuite AllTests
 		{
@@ -78,10 +63,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getAllTests12203;
 		public virtual global::junit.framework.TestSuite getAllTests()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestRunner._getAllTests12203.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestRunner._getAllTests12203 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAllTests", "()Ljunit/framework/TestSuite;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAllTests12203) as junit.framework.TestSuite;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.InstrumentationTestRunner.staticClass, "getAllTests", "()Ljunit/framework/TestSuite;", ref global::android.test.InstrumentationTestRunner._getAllTests12203) as junit.framework.TestSuite;
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestRunner12204;
 		public InstrumentationTestRunner() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

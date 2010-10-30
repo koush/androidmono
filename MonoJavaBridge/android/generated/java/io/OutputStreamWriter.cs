@@ -10,42 +10,27 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _write19359;
 		public override void write(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._write19359.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._write19359 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "write", "([CII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, "write", "([CII)V", ref global::java.io.OutputStreamWriter._write19359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19360;
 		public override void write(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._write19360.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._write19360 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "write", "(Ljava/lang/String;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, "write", "(Ljava/lang/String;II)V", ref global::java.io.OutputStreamWriter._write19360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19361;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._write19361.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._write19361 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "write", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, "write", "(I)V", ref global::java.io.OutputStreamWriter._write19361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush19362;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._flush19362.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._flush19362 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "flush", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._flush19362);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, "flush", "()V", ref global::java.io.OutputStreamWriter._flush19362);
 		}
 		internal static global::MonoJavaBridge.MethodId _close19363;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._close19363.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._close19363 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._close19363);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStreamWriter.staticClass, "close", "()V", ref global::java.io.OutputStreamWriter._close19363);
 		}
 		public new global::java.lang.String Encoding
 		{
@@ -57,10 +42,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getEncoding19364;
 		public virtual global::java.lang.String getEncoding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStreamWriter._getEncoding19364.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStreamWriter._getEncoding19364 = @__env.GetMethodIDNoThrow(global::java.io.OutputStreamWriter.staticClass, "getEncoding", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._getEncoding19364) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.OutputStreamWriter.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::java.io.OutputStreamWriter._getEncoding19364) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _OutputStreamWriter19365;
 		public OutputStreamWriter(java.io.OutputStream arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

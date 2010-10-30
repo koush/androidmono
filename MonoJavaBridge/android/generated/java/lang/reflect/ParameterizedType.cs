@@ -18,26 +18,17 @@ namespace java.lang.reflect
 		internal static global::MonoJavaBridge.MethodId _getActualTypeArguments21145;
 		global::java.lang.reflect.Type[] java.lang.reflect.ParameterizedType.getActualTypeArguments()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21145.native == global::System.IntPtr.Zero)
-				global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21145 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getActualTypeArguments", "()[Ljava/lang/reflect/Type;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21145)) as java.lang.reflect.Type[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.ParameterizedType_.staticClass, "getActualTypeArguments", "()[Ljava/lang/reflect/Type;", ref global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21145) as java.lang.reflect.Type[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getRawType21146;
 		global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getRawType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.reflect.ParameterizedType_._getRawType21146.native == global::System.IntPtr.Zero)
-				global::java.lang.reflect.ParameterizedType_._getRawType21146 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getRawType", "()Ljava/lang/reflect/Type;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_._getRawType21146)) as java.lang.reflect.Type;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.ParameterizedType_.staticClass, "getRawType", "()Ljava/lang/reflect/Type;", ref global::java.lang.reflect.ParameterizedType_._getRawType21146) as java.lang.reflect.Type;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOwnerType21147;
 		global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getOwnerType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.reflect.ParameterizedType_._getOwnerType21147.native == global::System.IntPtr.Zero)
-				global::java.lang.reflect.ParameterizedType_._getOwnerType21147 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ParameterizedType_.staticClass, "getOwnerType", "()Ljava/lang/reflect/Type;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_._getOwnerType21147)) as java.lang.reflect.Type;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.ParameterizedType_.staticClass, "getOwnerType", "()Ljava/lang/reflect/Type;", ref global::java.lang.reflect.ParameterizedType_._getOwnerType21147) as java.lang.reflect.Type;
 		}
 		static ParameterizedType_()
 		{

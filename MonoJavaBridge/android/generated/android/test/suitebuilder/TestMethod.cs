@@ -10,26 +10,17 @@ namespace android.test.suitebuilder
 		internal static global::MonoJavaBridge.MethodId _equals12624;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._equals12624.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._equals12624 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._equals12624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.test.suitebuilder.TestMethod._equals12624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12625;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._toString12625.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._toString12625 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._toString12625) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, "toString", "()Ljava/lang/String;", ref global::android.test.suitebuilder.TestMethod._toString12625) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12626;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._hashCode12626.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._hashCode12626 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._hashCode12626);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, "hashCode", "()I", ref global::android.test.suitebuilder.TestMethod._hashCode12626);
 		}
 		public new global::java.lang.String Name
 		{
@@ -41,10 +32,7 @@ namespace android.test.suitebuilder
 		internal static global::MonoJavaBridge.MethodId _getName12627;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._getName12627.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._getName12627 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._getName12627) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, "getName", "()Ljava/lang/String;", ref global::android.test.suitebuilder.TestMethod._getName12627) as java.lang.String;
 		}
 		public new global::java.lang.Class EnclosingClass
 		{
@@ -56,26 +44,17 @@ namespace android.test.suitebuilder
 		internal static global::MonoJavaBridge.MethodId _getEnclosingClass12628;
 		public virtual global::java.lang.Class getEnclosingClass()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._getEnclosingClass12628.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._getEnclosingClass12628 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "getEnclosingClass", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._getEnclosingClass12628) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.test.suitebuilder.TestMethod.staticClass, "getEnclosingClass", "()Ljava/lang/Class;", ref global::android.test.suitebuilder.TestMethod._getEnclosingClass12628) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnnotation12629;
 		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._getAnnotation12629.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._getAnnotation12629 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._getAnnotation12629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::android.test.suitebuilder.TestMethod.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", ref global::android.test.suitebuilder.TestMethod._getAnnotation12629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
 		}
 		internal static global::MonoJavaBridge.MethodId _createTest12630;
 		public virtual global::junit.framework.TestCase createTest()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._createTest12630.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._createTest12630 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "createTest", "()Ljunit/framework/TestCase;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._createTest12630) as junit.framework.TestCase;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.suitebuilder.TestMethod.staticClass, "createTest", "()Ljunit/framework/TestCase;", ref global::android.test.suitebuilder.TestMethod._createTest12630) as junit.framework.TestCase;
 		}
 		public new global::java.lang.String EnclosingClassname
 		{
@@ -87,10 +66,7 @@ namespace android.test.suitebuilder
 		internal static global::MonoJavaBridge.MethodId _getEnclosingClassname12631;
 		public virtual global::java.lang.String getEnclosingClassname()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.TestMethod._getEnclosingClassname12631.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.TestMethod._getEnclosingClassname12631 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.TestMethod.staticClass, "getEnclosingClassname", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, global::android.test.suitebuilder.TestMethod._getEnclosingClassname12631) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.TestMethod.staticClass, "getEnclosingClassname", "()Ljava/lang/String;", ref global::android.test.suitebuilder.TestMethod._getEnclosingClassname12631) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TestMethod12632;
 		public TestMethod(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

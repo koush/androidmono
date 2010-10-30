@@ -62,146 +62,92 @@ namespace javax.xml.transform.sax
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31094;
 		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Source arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31094.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31094 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/sax/TransformerHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.sax.TransformerHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.sax.TransformerHandler>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/sax/TransformerHandler;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31095;
 		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Templates arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31095.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31095 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "(Ljavax/xml/transform/Templates;)Ljavax/xml/transform/sax/TransformerHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.sax.TransformerHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.sax.TransformerHandler>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "(Ljavax/xml/transform/Templates;)Ljavax/xml/transform/sax/TransformerHandler;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31096;
 		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31096.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31096 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "()Ljavax/xml/transform/sax/TransformerHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31096)) as javax.xml.transform.sax.TransformerHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.sax.TransformerHandler>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformerHandler", "()Ljavax/xml/transform/sax/TransformerHandler;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31096) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTemplatesHandler31097;
 		public override global::javax.xml.transform.sax.TemplatesHandler newTemplatesHandler()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplatesHandler31097.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplatesHandler31097 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTemplatesHandler", "()Ljavax/xml/transform/sax/TemplatesHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TemplatesHandler>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplatesHandler31097)) as javax.xml.transform.sax.TemplatesHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.sax.TemplatesHandler>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTemplatesHandler", "()Ljavax/xml/transform/sax/TemplatesHandler;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplatesHandler31097) as javax.xml.transform.sax.TemplatesHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newXMLFilter31098;
 		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Source arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31098.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31098 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newXMLFilter", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/XMLFilter;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLFilter>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLFilter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLFilter>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newXMLFilter", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/XMLFilter;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.xml.sax.XMLFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _newXMLFilter31099;
 		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Templates arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31099.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31099 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLFilter>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLFilter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLFilter>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.xml.sax.XMLFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttribute31100;
 		public override global::java.lang.Object getAttribute(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._getAttribute31100.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._getAttribute31100 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._getAttribute31100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._getAttribute31100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature31101;
 		public override void setFeature(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._setFeature31101.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._setFeature31101 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._setFeature31101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V", ref global::javax.xml.transform.sax.SAXTransformerFactory_._setFeature31101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31102;
 		public override bool getFeature(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._getFeature31102.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._getFeature31102 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._getFeature31102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z", ref global::javax.xml.transform.sax.SAXTransformerFactory_._getFeature31102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute31103;
 		public override void setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._setAttribute31103.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._setAttribute31103 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._setAttribute31103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.transform.sax.SAXTransformerFactory_._setAttribute31103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformer31104;
 		public override global::javax.xml.transform.Transformer newTransformer()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31104.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31104 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31104)) as javax.xml.transform.Transformer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31104) as javax.xml.transform.Transformer;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformer31105;
 		public override global::javax.xml.transform.Transformer newTransformer(javax.xml.transform.Source arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31105.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31105 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformer", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Transformer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.Transformer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTransformer", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Transformer;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.transform.Transformer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setURIResolver31106;
 		public override void setURIResolver(javax.xml.transform.URIResolver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._setURIResolver31106.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._setURIResolver31106 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setURIResolver", "(Ljavax/xml/transform/URIResolver;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._setURIResolver31106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", ref global::javax.xml.transform.sax.SAXTransformerFactory_._setURIResolver31106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getURIResolver31107;
 		public override global::javax.xml.transform.URIResolver getURIResolver()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._getURIResolver31107.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._getURIResolver31107 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getURIResolver", "()Ljavax/xml/transform/URIResolver;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.URIResolver>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._getURIResolver31107)) as javax.xml.transform.URIResolver;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.URIResolver>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getURIResolver", "()Ljavax/xml/transform/URIResolver;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._getURIResolver31107) as javax.xml.transform.URIResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorListener31108;
 		public override void setErrorListener(javax.xml.transform.ErrorListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._setErrorListener31108.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._setErrorListener31108 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._setErrorListener31108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V", ref global::javax.xml.transform.sax.SAXTransformerFactory_._setErrorListener31108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorListener31109;
 		public override global::javax.xml.transform.ErrorListener getErrorListener()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31109.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31109 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.ErrorListener>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31109)) as javax.xml.transform.ErrorListener;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.ErrorListener>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getErrorListener", "()Ljavax/xml/transform/ErrorListener;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31109) as javax.xml.transform.ErrorListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTemplates31110;
 		public override global::javax.xml.transform.Templates newTemplates(javax.xml.transform.Source arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31110.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31110 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTemplates", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Templates;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Templates>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.Templates;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.Templates>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "newTemplates", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Templates;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.transform.Templates;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAssociatedStylesheet31111;
 		public override global::javax.xml.transform.Source getAssociatedStylesheet(javax.xml.transform.Source arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getAssociatedStylesheet", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Source>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as javax.xml.transform.Source;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.Source>(this, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, "getAssociatedStylesheet", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", ref global::javax.xml.transform.sax.SAXTransformerFactory_._getAssociatedStylesheet31111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as javax.xml.transform.Source;
 		}
 		static SAXTransformerFactory_()
 		{

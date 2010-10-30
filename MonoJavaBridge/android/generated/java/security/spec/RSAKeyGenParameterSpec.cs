@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getPublicExponent24047;
 		public virtual global::java.math.BigInteger getPublicExponent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047.native == global::System.IntPtr.Zero)
-				global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;", ref global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047) as java.math.BigInteger;
 		}
 		public new int Keysize
 		{
@@ -32,10 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getKeysize24048;
 		public virtual int getKeysize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048.native == global::System.IntPtr.Zero)
-				global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getKeysize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getKeysize", "()I", ref global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048);
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAKeyGenParameterSpec24049;
 		public RSAKeyGenParameterSpec(int arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

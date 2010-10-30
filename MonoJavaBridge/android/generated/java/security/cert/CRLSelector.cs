@@ -17,18 +17,12 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _clone23477;
 		global::java.lang.Object java.security.cert.CRLSelector.clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CRLSelector_._clone23477.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CRLSelector_._clone23477 = @__env.GetMethodIDNoThrow(global::java.security.cert.CRLSelector_.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._clone23477)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CRLSelector_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CRLSelector_._clone23477) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _match23478;
 		bool java.security.cert.CRLSelector.match(java.security.cert.CRL arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CRLSelector_._match23478.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CRLSelector_._match23478 = @__env.GetMethodIDNoThrow(global::java.security.cert.CRLSelector_.staticClass, "match", "(Ljava/security/cert/CRL;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.CRLSelector_.staticClass, "match", "(Ljava/security/cert/CRL;)Z", ref global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CRLSelector_()
 		{

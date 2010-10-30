@@ -10,38 +10,26 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25299;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._equals25299.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._equals25299 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._equals25299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Collator.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.Collator._equals25299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25300;
 		public virtual bool equals(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._equals25300.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._equals25300 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "equals", "(Ljava/lang/String;Ljava/lang/String;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._equals25300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Collator.staticClass, "equals", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::java.text.Collator._equals25300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25301;
 		public abstract int hashCode();
 		internal static global::MonoJavaBridge.MethodId _clone25302;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._clone25302.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._clone25302 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._clone25302) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Collator.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.Collator._clone25302) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _compare25303;
 		public abstract int compare(java.lang.String arg0, java.lang.String arg1);
 		internal static global::MonoJavaBridge.MethodId _compare25304;
 		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._compare25304.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._compare25304 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._compare25304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::java.text.Collator._compare25304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25305;
 		public static global::java.text.Collator getInstance()
@@ -72,34 +60,22 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getDecomposition25309;
 		public virtual int getDecomposition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._getDecomposition25309.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._getDecomposition25309 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "getDecomposition", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._getDecomposition25309);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, "getDecomposition", "()I", ref global::java.text.Collator._getDecomposition25309);
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrength25310;
 		public virtual int getStrength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._getStrength25310.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._getStrength25310 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "getStrength", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._getStrength25310);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator.staticClass, "getStrength", "()I", ref global::java.text.Collator._getStrength25310);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrength25311;
 		public virtual void setStrength(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._setStrength25311.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._setStrength25311 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "setStrength", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._setStrength25311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.Collator.staticClass, "setStrength", "(I)V", ref global::java.text.Collator._setStrength25311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDecomposition25312;
 		public virtual void setDecomposition(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator._setDecomposition25312.native == global::System.IntPtr.Zero)
-				global::java.text.Collator._setDecomposition25312 = @__env.GetMethodIDNoThrow(global::java.text.Collator.staticClass, "setDecomposition", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.Collator.staticClass, global::java.text.Collator._setDecomposition25312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.Collator.staticClass, "setDecomposition", "(I)V", ref global::java.text.Collator._setDecomposition25312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Collator25313;
 		protected Collator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -179,26 +155,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _hashCode25321;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator_._hashCode25321.native == global::System.IntPtr.Zero)
-				global::java.text.Collator_._hashCode25321 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.text.Collator_._hashCode25321);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator_.staticClass, "hashCode", "()I", ref global::java.text.Collator_._hashCode25321);
 		}
 		internal static global::MonoJavaBridge.MethodId _compare25322;
 		public override int compare(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator_._compare25322.native == global::System.IntPtr.Zero)
-				global::java.text.Collator_._compare25322 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.text.Collator_._compare25322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Collator_.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::java.text.Collator_._compare25322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCollationKey25323;
 		public override global::java.text.CollationKey getCollationKey(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Collator_._getCollationKey25323.native == global::System.IntPtr.Zero)
-				global::java.text.Collator_._getCollationKey25323 = @__env.GetMethodIDNoThrow(global::java.text.Collator_.staticClass, "getCollationKey", "(Ljava/lang/String;)Ljava/text/CollationKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.Collator_._getCollationKey25323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationKey;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Collator_.staticClass, "getCollationKey", "(Ljava/lang/String;)Ljava/text/CollationKey;", ref global::java.text.Collator_._getCollationKey25323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.text.CollationKey;
 		}
 		static Collator_()
 		{

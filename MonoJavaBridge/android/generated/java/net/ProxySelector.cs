@@ -56,18 +56,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _select21676;
 		public override global::java.util.List select(java.net.URI arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ProxySelector_._select21676.native == global::System.IntPtr.Zero)
-				global::java.net.ProxySelector_._select21676 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector_.staticClass, "select", "(Ljava/net/URI;)Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ProxySelector_._select21676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.net.ProxySelector_.staticClass, "select", "(Ljava/net/URI;)Ljava/util/List;", ref global::java.net.ProxySelector_._select21676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectFailed21677;
 		public override void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ProxySelector_._connectFailed21677.native == global::System.IntPtr.Zero)
-				global::java.net.ProxySelector_._connectFailed21677 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector_.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.net.ProxySelector_._connectFailed21677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.ProxySelector_.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", ref global::java.net.ProxySelector_._connectFailed21677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static ProxySelector_()
 		{

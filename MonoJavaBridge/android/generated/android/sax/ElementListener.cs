@@ -15,18 +15,12 @@ namespace android.sax
 		internal static global::MonoJavaBridge.MethodId _start11608;
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.ElementListener_._start11608.native == global::System.IntPtr.Zero)
-				global::android.sax.ElementListener_._start11608 = @__env.GetMethodIDNoThrow(global::android.sax.ElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.ElementListener_._start11608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.ElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.ElementListener_._start11608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _end11609;
 		void android.sax.EndElementListener.end()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.ElementListener_._end11609.native == global::System.IntPtr.Zero)
-				global::android.sax.ElementListener_._end11609 = @__env.GetMethodIDNoThrow(global::android.sax.ElementListener_.staticClass, "end", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.ElementListener_._end11609);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.ElementListener_.staticClass, "end", "()V", ref global::android.sax.ElementListener_._end11609);
 		}
 		static ElementListener_()
 		{

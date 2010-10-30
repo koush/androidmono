@@ -17,10 +17,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getIV28783;
 		public virtual byte[] getIV()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.IvParameterSpec._getIV28783.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.IvParameterSpec._getIV28783 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.IvParameterSpec.staticClass, "getIV", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.IvParameterSpec.staticClass, global::javax.crypto.spec.IvParameterSpec._getIV28783) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.IvParameterSpec.staticClass, "getIV", "()[B", ref global::javax.crypto.spec.IvParameterSpec._getIV28783) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _IvParameterSpec28784;
 		public IvParameterSpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

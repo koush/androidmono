@@ -18,26 +18,17 @@ namespace android.database.sqlite
 		internal static global::MonoJavaBridge.MethodId _onBegin4861;
 		void android.database.sqlite.SQLiteTransactionListener.onBegin()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onBegin", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onBegin", "()V", ref global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCommit4862;
 		void android.database.sqlite.SQLiteTransactionListener.onCommit()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onCommit", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onCommit", "()V", ref global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862);
 		}
 		internal static global::MonoJavaBridge.MethodId _onRollback4863;
 		void android.database.sqlite.SQLiteTransactionListener.onRollback()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onRollback", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, "onRollback", "()V", ref global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
 		}
 		static SQLiteTransactionListener_()
 		{

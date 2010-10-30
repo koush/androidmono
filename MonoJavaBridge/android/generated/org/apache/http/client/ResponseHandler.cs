@@ -16,10 +16,7 @@ namespace org.apache.http.client
 		internal static global::MonoJavaBridge.MethodId _handleResponse31902;
 		global::java.lang.Object org.apache.http.client.ResponseHandler.handleResponse(org.apache.http.HttpResponse arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.ResponseHandler_._handleResponse31902.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.ResponseHandler_._handleResponse31902 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ResponseHandler_.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.ResponseHandler_._handleResponse31902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.client.ResponseHandler_.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;", ref global::org.apache.http.client.ResponseHandler_._handleResponse31902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		static ResponseHandler_()
 		{

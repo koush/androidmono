@@ -16,42 +16,27 @@ namespace java.security.interfaces
 		internal static global::MonoJavaBridge.MethodId _getY23907;
 		global::java.math.BigInteger java.security.interfaces.DSAPublicKey.getY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAPublicKey_._getY23907.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAPublicKey_._getY23907 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getY", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_._getY23907)) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.interfaces.DSAPublicKey_.staticClass, "getY", "()Ljava/math/BigInteger;", ref global::java.security.interfaces.DSAPublicKey_._getY23907) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams23908;
 		global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAPublicKey_._getParams23908.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAPublicKey_._getParams23908 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_._getParams23908)) as java.security.interfaces.DSAParams;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.interfaces.DSAParams>(this, global::java.security.interfaces.DSAPublicKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;", ref global::java.security.interfaces.DSAPublicKey_._getParams23908) as java.security.interfaces.DSAParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded23909;
 		byte[] java.security.Key.getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAPublicKey_._getEncoded23909.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAPublicKey_._getEncoded23909 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_._getEncoded23909)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.interfaces.DSAPublicKey_.staticClass, "getEncoded", "()[B", ref global::java.security.interfaces.DSAPublicKey_._getEncoded23909) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23910;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAPublicKey_._getAlgorithm23910.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAPublicKey_._getAlgorithm23910 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_._getAlgorithm23910)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.interfaces.DSAPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.interfaces.DSAPublicKey_._getAlgorithm23910) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23911;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAPublicKey_._getFormat23911.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAPublicKey_._getFormat23911 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAPublicKey_._getFormat23911)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.interfaces.DSAPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.interfaces.DSAPublicKey_._getFormat23911) as java.lang.String;
 		}
 		static DSAPublicKey_()
 		{

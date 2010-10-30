@@ -16,10 +16,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getTestSuite12323;
 		global::junit.framework.TestSuite android.test.TestSuiteProvider.getTestSuite()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.TestSuiteProvider_._getTestSuite12323.native == global::System.IntPtr.Zero)
-				global::android.test.TestSuiteProvider_._getTestSuite12323 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProvider_.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.TestSuiteProvider_.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;", ref global::android.test.TestSuiteProvider_._getTestSuite12323) as junit.framework.TestSuite;
 		}
 		static TestSuiteProvider_()
 		{

@@ -25,10 +25,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _newSpannable12931;
 		public virtual global::android.text.Spannable newSpannable(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Spannable_Factory._newSpannable12931.native == global::System.IntPtr.Zero)
-				global::android.text.Spannable_Factory._newSpannable12931 = @__env.GetMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "newSpannable", "(Ljava/lang/CharSequence;)Landroid/text/Spannable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Spannable>(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Spannable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Spannable>(this, global::android.text.Spannable_Factory.staticClass, "newSpannable", "(Ljava/lang/CharSequence;)Landroid/text/Spannable;", ref global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Spannable;
 		}
 		public android.text.Spannable newSpannable(string arg0)
 		{

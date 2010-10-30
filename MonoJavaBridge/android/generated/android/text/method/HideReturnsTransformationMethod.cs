@@ -32,10 +32,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getOriginal13291;
 		protected override char[] getOriginal()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.HideReturnsTransformationMethod._getOriginal13291.native == global::System.IntPtr.Zero)
-				global::android.text.method.HideReturnsTransformationMethod._getOriginal13291 = @__env.GetMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "getOriginal", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._getOriginal13291) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getOriginal", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._getOriginal13291) as char[];
 		}
 		protected new char[] Replacement
 		{
@@ -47,10 +44,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getReplacement13292;
 		protected override char[] getReplacement()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.HideReturnsTransformationMethod._getReplacement13292.native == global::System.IntPtr.Zero)
-				global::android.text.method.HideReturnsTransformationMethod._getReplacement13292 = @__env.GetMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "getReplacement", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._getReplacement13292) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getReplacement", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._getReplacement13292) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _HideReturnsTransformationMethod13293;
 		public HideReturnsTransformationMethod() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

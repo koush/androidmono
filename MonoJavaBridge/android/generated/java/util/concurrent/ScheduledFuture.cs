@@ -15,58 +15,37 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getDelay27385;
 		long java.util.concurrent.Delayed.getDelay(java.util.concurrent.TimeUnit arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._getDelay27385.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._getDelay27385 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "getDelay", "(Ljava/util/concurrent/TimeUnit;)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._getDelay27385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "getDelay", "(Ljava/util/concurrent/TimeUnit;)J", ref global::java.util.concurrent.ScheduledFuture_._getDelay27385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo27386;
 		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._compareTo27386.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._compareTo27386 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._compareTo27386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.util.concurrent.ScheduledFuture_._compareTo27386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _get27387;
 		global::java.lang.Object java.util.concurrent.Future.get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._get27387.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._get27387 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "get", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._get27387)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "get", "()Ljava/lang/Object;", ref global::java.util.concurrent.ScheduledFuture_._get27387) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _get27388;
 		global::java.lang.Object java.util.concurrent.Future.get(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._get27388.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._get27388 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._get27388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", ref global::java.util.concurrent.ScheduledFuture_._get27388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel27389;
 		bool java.util.concurrent.Future.cancel(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._cancel27389.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._cancel27389 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "cancel", "(Z)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._cancel27389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "cancel", "(Z)Z", ref global::java.util.concurrent.ScheduledFuture_._cancel27389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled27390;
 		bool java.util.concurrent.Future.isCancelled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._isCancelled27390.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._isCancelled27390 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "isCancelled", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._isCancelled27390);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "isCancelled", "()Z", ref global::java.util.concurrent.ScheduledFuture_._isCancelled27390);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone27391;
 		bool java.util.concurrent.Future.isDone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledFuture_._isDone27391.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledFuture_._isDone27391 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledFuture_.staticClass, "isDone", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_._isDone27391);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledFuture_.staticClass, "isDone", "()Z", ref global::java.util.concurrent.ScheduledFuture_._isDone27391);
 		}
 		static ScheduledFuture_()
 		{

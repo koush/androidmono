@@ -16,10 +16,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _onDownloadStart16040;
 		void android.webkit.DownloadListener.onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.DownloadListener_._onDownloadStart16040.native == global::System.IntPtr.Zero)
-				global::android.webkit.DownloadListener_._onDownloadStart16040 = @__env.GetMethodIDNoThrow(global::android.webkit.DownloadListener_.staticClass, "onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.DownloadListener_._onDownloadStart16040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.DownloadListener_.staticClass, "onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V", ref global::android.webkit.DownloadListener_._onDownloadStart16040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		static DownloadListener_()
 		{

@@ -10,18 +10,12 @@ namespace java.lang.annotation
 		internal static global::MonoJavaBridge.MethodId _element20945;
 		public virtual global::java.lang.reflect.Method element()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.annotation.AnnotationTypeMismatchException._element20945.native == global::System.IntPtr.Zero)
-				global::java.lang.annotation.AnnotationTypeMismatchException._element20945 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "element", "()Ljava/lang/reflect/Method;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.reflect.Method>(this, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._element20945) as java.lang.reflect.Method;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.reflect.Method>(this, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "element", "()Ljava/lang/reflect/Method;", ref global::java.lang.annotation.AnnotationTypeMismatchException._element20945) as java.lang.reflect.Method;
 		}
 		internal static global::MonoJavaBridge.MethodId _foundType20946;
 		public virtual global::java.lang.String foundType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.annotation.AnnotationTypeMismatchException._foundType20946.native == global::System.IntPtr.Zero)
-				global::java.lang.annotation.AnnotationTypeMismatchException._foundType20946 = @__env.GetMethodIDNoThrow(global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "foundType", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._foundType20946) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, "foundType", "()Ljava/lang/String;", ref global::java.lang.annotation.AnnotationTypeMismatchException._foundType20946) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _AnnotationTypeMismatchException20947;
 		public AnnotationTypeMismatchException(java.lang.reflect.Method arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

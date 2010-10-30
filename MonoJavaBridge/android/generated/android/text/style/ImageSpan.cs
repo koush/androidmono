@@ -17,10 +17,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getDrawable13494;
 		public override global::android.graphics.drawable.Drawable getDrawable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ImageSpan._getDrawable13494.native == global::System.IntPtr.Zero)
-				global::android.text.style.ImageSpan._getDrawable13494 = @__env.GetMethodIDNoThrow(global::android.text.style.ImageSpan.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.ImageSpan.staticClass, global::android.text.style.ImageSpan._getDrawable13494) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.ImageSpan.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;", ref global::android.text.style.ImageSpan._getDrawable13494) as android.graphics.drawable.Drawable;
 		}
 		public new global::java.lang.String Source
 		{
@@ -32,10 +29,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getSource13495;
 		public virtual global::java.lang.String getSource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ImageSpan._getSource13495.native == global::System.IntPtr.Zero)
-				global::android.text.style.ImageSpan._getSource13495 = @__env.GetMethodIDNoThrow(global::android.text.style.ImageSpan.staticClass, "getSource", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.ImageSpan.staticClass, global::android.text.style.ImageSpan._getSource13495) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.ImageSpan.staticClass, "getSource", "()Ljava/lang/String;", ref global::android.text.style.ImageSpan._getSource13495) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageSpan13496;
 		public ImageSpan(android.graphics.Bitmap arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

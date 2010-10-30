@@ -24,10 +24,7 @@ namespace android.util
 			internal static global::MonoJavaBridge.MethodId _getData13749;
 			public global::java.lang.Object getData()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.util.EventLog.Event._getData13749.native == global::System.IntPtr.Zero)
-					global::android.util.EventLog.Event._getData13749 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getData", "()Ljava/lang/Object;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getData13749)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLog.Event.staticClass, "getData", "()Ljava/lang/Object;", ref global::android.util.EventLog.Event._getData13749) as java.lang.Object;
 			}
 			public new int Tag
 			{
@@ -39,10 +36,7 @@ namespace android.util
 			internal static global::MonoJavaBridge.MethodId _getTag13750;
 			public int getTag()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.util.EventLog.Event._getTag13750.native == global::System.IntPtr.Zero)
-					global::android.util.EventLog.Event._getTag13750 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getTag", "()I");
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getTag13750);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.EventLog.Event.staticClass, "getTag", "()I", ref global::android.util.EventLog.Event._getTag13750);
 			}
 			public new int ThreadId
 			{
@@ -54,10 +48,7 @@ namespace android.util
 			internal static global::MonoJavaBridge.MethodId _getThreadId13751;
 			public int getThreadId()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.util.EventLog.Event._getThreadId13751.native == global::System.IntPtr.Zero)
-					global::android.util.EventLog.Event._getThreadId13751 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getThreadId", "()I");
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getThreadId13751);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.EventLog.Event.staticClass, "getThreadId", "()I", ref global::android.util.EventLog.Event._getThreadId13751);
 			}
 			public new int ProcessId
 			{
@@ -69,10 +60,7 @@ namespace android.util
 			internal static global::MonoJavaBridge.MethodId _getProcessId13752;
 			public int getProcessId()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.util.EventLog.Event._getProcessId13752.native == global::System.IntPtr.Zero)
-					global::android.util.EventLog.Event._getProcessId13752 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getProcessId", "()I");
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getProcessId13752);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.EventLog.Event.staticClass, "getProcessId", "()I", ref global::android.util.EventLog.Event._getProcessId13752);
 			}
 			public new long TimeNanos
 			{
@@ -84,10 +72,7 @@ namespace android.util
 			internal static global::MonoJavaBridge.MethodId _getTimeNanos13753;
 			public long getTimeNanos()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.util.EventLog.Event._getTimeNanos13753.native == global::System.IntPtr.Zero)
-					global::android.util.EventLog.Event._getTimeNanos13753 = @__env.GetMethodIDNoThrow(global::android.util.EventLog.Event.staticClass, "getTimeNanos", "()J");
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.util.EventLog.Event.staticClass, global::android.util.EventLog.Event._getTimeNanos13753);
+				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.util.EventLog.Event.staticClass, "getTimeNanos", "()J", ref global::android.util.EventLog.Event._getTimeNanos13753);
 			}
 			static Event()
 			{

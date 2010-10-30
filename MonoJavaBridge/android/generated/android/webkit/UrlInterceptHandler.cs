@@ -17,18 +17,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _service16112;
 		global::android.webkit.CacheManager.CacheResult android.webkit.UrlInterceptHandler.service(java.lang.String arg0, java.util.Map arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.UrlInterceptHandler_._service16112.native == global::System.IntPtr.Zero)
-				global::android.webkit.UrlInterceptHandler_._service16112 = @__env.GetMethodIDNoThrow(global::android.webkit.UrlInterceptHandler_.staticClass, "service", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_._service16112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.CacheManager.CacheResult;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.UrlInterceptHandler_.staticClass, "service", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;", ref global::android.webkit.UrlInterceptHandler_._service16112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.webkit.CacheManager.CacheResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPluginData16113;
 		global::android.webkit.PluginData android.webkit.UrlInterceptHandler.getPluginData(java.lang.String arg0, java.util.Map arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.UrlInterceptHandler_._getPluginData16113.native == global::System.IntPtr.Zero)
-				global::android.webkit.UrlInterceptHandler_._getPluginData16113 = @__env.GetMethodIDNoThrow(global::android.webkit.UrlInterceptHandler_.staticClass, "getPluginData", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.PluginData>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_._getPluginData16113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.PluginData>(this, global::android.webkit.UrlInterceptHandler_.staticClass, "getPluginData", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;", ref global::android.webkit.UrlInterceptHandler_._getPluginData16113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.webkit.PluginData;
 		}
 		static UrlInterceptHandler_()
 		{

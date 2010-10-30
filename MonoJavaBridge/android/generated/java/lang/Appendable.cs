@@ -18,26 +18,17 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _append19707;
 		global::java.lang.Appendable java.lang.Appendable.append(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Appendable_._append19707.native == global::System.IntPtr.Zero)
-				global::java.lang.Appendable_._append19707 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Appendable_._append19707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", ref global::java.lang.Appendable_._append19707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
 		}
 		internal static global::MonoJavaBridge.MethodId _append19708;
 		global::java.lang.Appendable java.lang.Appendable.append(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Appendable_._append19708.native == global::System.IntPtr.Zero)
-				global::java.lang.Appendable_._append19708 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Appendable_._append19708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.lang.Appendable_.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", ref global::java.lang.Appendable_._append19708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Appendable;
 		}
 		internal static global::MonoJavaBridge.MethodId _append19709;
 		global::java.lang.Appendable java.lang.Appendable.append(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Appendable_._append19709.native == global::System.IntPtr.Zero)
-				global::java.lang.Appendable_._append19709 = @__env.GetMethodIDNoThrow(global::java.lang.Appendable_.staticClass, "append", "(C)Ljava/lang/Appendable;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Appendable_._append19709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.lang.Appendable_.staticClass, "append", "(C)Ljava/lang/Appendable;", ref global::java.lang.Appendable_._append19709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
 		}
 		static Appendable_()
 		{

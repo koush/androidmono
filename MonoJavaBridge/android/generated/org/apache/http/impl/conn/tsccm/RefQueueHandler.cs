@@ -16,10 +16,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _handleReference33153;
 		void org.apache.http.impl.conn.tsccm.RefQueueHandler.handleReference(java.lang.@ref.Reference arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass, "handleReference", "(Ljava/lang/ref/Reference;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass, "handleReference", "(Ljava/lang/ref/Reference;)V", ref global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RefQueueHandler_()
 		{

@@ -10,10 +10,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _toString15800;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._toString15800.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._toString15800 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._toString15800)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.inputmethod.CompletionInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.inputmethod.CompletionInfo._toString15800) as java.lang.String;
 		}
 		public new long Id
 		{
@@ -25,10 +22,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _getId15801;
 		public long getId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._getId15801.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._getId15801 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "getId", "()J");
-			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._getId15801);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.inputmethod.CompletionInfo.staticClass, "getId", "()J", ref global::android.view.inputmethod.CompletionInfo._getId15801);
 		}
 		public new int Position
 		{
@@ -40,10 +34,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _getPosition15802;
 		public int getPosition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._getPosition15802.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._getPosition15802 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "getPosition", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._getPosition15802);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.CompletionInfo.staticClass, "getPosition", "()I", ref global::android.view.inputmethod.CompletionInfo._getPosition15802);
 		}
 		public new string Text
 		{
@@ -55,26 +46,17 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _getText15803;
 		public global::java.lang.CharSequence getText()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._getText15803.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._getText15803 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "getText", "()Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._getText15803)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.CompletionInfo.staticClass, "getText", "()Ljava/lang/CharSequence;", ref global::android.view.inputmethod.CompletionInfo._getText15803) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15804;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._writeToParcel15804.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._writeToParcel15804 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._writeToParcel15804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.CompletionInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.inputmethod.CompletionInfo._writeToParcel15804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15805;
 		public int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._describeContents15805.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._describeContents15805 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "describeContents", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._describeContents15805);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.CompletionInfo.staticClass, "describeContents", "()I", ref global::android.view.inputmethod.CompletionInfo._describeContents15805);
 		}
 		public new string Label
 		{
@@ -86,10 +68,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _getLabel15806;
 		public global::java.lang.CharSequence getLabel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.CompletionInfo._getLabel15806.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.CompletionInfo._getLabel15806 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.CompletionInfo.staticClass, "getLabel", "()Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.CompletionInfo.staticClass, global::android.view.inputmethod.CompletionInfo._getLabel15806)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.CompletionInfo.staticClass, "getLabel", "()Ljava/lang/CharSequence;", ref global::android.view.inputmethod.CompletionInfo._getLabel15806) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _CompletionInfo15807;
 		public CompletionInfo(long arg0, int arg1, java.lang.CharSequence arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

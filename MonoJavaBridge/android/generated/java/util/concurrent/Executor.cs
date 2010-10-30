@@ -16,10 +16,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _execute27261;
 		void java.util.concurrent.Executor.execute(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Executor_._execute27261.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Executor_._execute27261 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Executor_.staticClass, "execute", "(Ljava/lang/Runnable;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.Executor_.staticClass, "execute", "(Ljava/lang/Runnable;)V", ref global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Executor_()
 		{

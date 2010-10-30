@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26178;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.FormatFlagsConversionMismatchException._getMessage26178.native == global::System.IntPtr.Zero)
-				global::java.util.FormatFlagsConversionMismatchException._getMessage26178 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._getMessage26178) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.FormatFlagsConversionMismatchException._getMessage26178) as java.lang.String;
 		}
 		public new global::java.lang.String Flags
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getFlags26179;
 		public virtual global::java.lang.String getFlags()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.FormatFlagsConversionMismatchException._getFlags26179.native == global::System.IntPtr.Zero)
-				global::java.util.FormatFlagsConversionMismatchException._getFlags26179 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "getFlags", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._getFlags26179) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, "getFlags", "()Ljava/lang/String;", ref global::java.util.FormatFlagsConversionMismatchException._getFlags26179) as java.lang.String;
 		}
 		public new char Conversion
 		{
@@ -47,10 +41,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getConversion26180;
 		public virtual char getConversion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.FormatFlagsConversionMismatchException._getConversion26180.native == global::System.IntPtr.Zero)
-				global::java.util.FormatFlagsConversionMismatchException._getConversion26180 = @__env.GetMethodIDNoThrow(global::java.util.FormatFlagsConversionMismatchException.staticClass, "getConversion", "()C");
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._getConversion26180);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.util.FormatFlagsConversionMismatchException.staticClass, "getConversion", "()C", ref global::java.util.FormatFlagsConversionMismatchException._getConversion26180);
 		}
 		internal static global::MonoJavaBridge.MethodId _FormatFlagsConversionMismatchException26181;
 		public FormatFlagsConversionMismatchException(java.lang.String arg0, char arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

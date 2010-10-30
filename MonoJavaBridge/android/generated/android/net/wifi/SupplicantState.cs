@@ -26,18 +26,12 @@ namespace android.net.wifi
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7983;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.SupplicantState._writeToParcel7983.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.SupplicantState._writeToParcel7983 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._writeToParcel7983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.SupplicantState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.wifi.SupplicantState._writeToParcel7983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7984;
 		public int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.SupplicantState._describeContents7984.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.SupplicantState._describeContents7984 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "describeContents", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._describeContents7984);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.SupplicantState.staticClass, "describeContents", "()I", ref global::android.net.wifi.SupplicantState._describeContents7984);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidState7985;
 		public static bool isValidState(android.net.wifi.SupplicantState arg0)

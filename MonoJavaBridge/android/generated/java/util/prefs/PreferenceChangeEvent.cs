@@ -17,10 +17,7 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _getKey28182;
 		public virtual global::java.lang.String getKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferenceChangeEvent._getKey28182.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferenceChangeEvent._getKey28182 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeEvent.staticClass, "getKey", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, global::java.util.prefs.PreferenceChangeEvent._getKey28182) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, "getKey", "()Ljava/lang/String;", ref global::java.util.prefs.PreferenceChangeEvent._getKey28182) as java.lang.String;
 		}
 		public new global::java.lang.String NewValue
 		{
@@ -32,10 +29,7 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _getNewValue28183;
 		public virtual global::java.lang.String getNewValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferenceChangeEvent._getNewValue28183.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferenceChangeEvent._getNewValue28183 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeEvent.staticClass, "getNewValue", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, global::java.util.prefs.PreferenceChangeEvent._getNewValue28183) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, "getNewValue", "()Ljava/lang/String;", ref global::java.util.prefs.PreferenceChangeEvent._getNewValue28183) as java.lang.String;
 		}
 		public new global::java.util.prefs.Preferences Node
 		{
@@ -47,10 +41,7 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _getNode28184;
 		public virtual global::java.util.prefs.Preferences getNode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferenceChangeEvent._getNode28184.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferenceChangeEvent._getNode28184 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeEvent.staticClass, "getNode", "()Ljava/util/prefs/Preferences;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, global::java.util.prefs.PreferenceChangeEvent._getNode28184) as java.util.prefs.Preferences;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.PreferenceChangeEvent.staticClass, "getNode", "()Ljava/util/prefs/Preferences;", ref global::java.util.prefs.PreferenceChangeEvent._getNode28184) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceChangeEvent28185;
 		public PreferenceChangeEvent(java.util.prefs.Preferences arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

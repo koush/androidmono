@@ -10,18 +10,12 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _enumType20126;
 		public virtual global::java.lang.Class enumType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.EnumConstantNotPresentException._enumType20126.native == global::System.IntPtr.Zero)
-				global::java.lang.EnumConstantNotPresentException._enumType20126 = @__env.GetMethodIDNoThrow(global::java.lang.EnumConstantNotPresentException.staticClass, "enumType", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._enumType20126) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.EnumConstantNotPresentException.staticClass, "enumType", "()Ljava/lang/Class;", ref global::java.lang.EnumConstantNotPresentException._enumType20126) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _constantName20127;
 		public virtual global::java.lang.String constantName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.EnumConstantNotPresentException._constantName20127.native == global::System.IntPtr.Zero)
-				global::java.lang.EnumConstantNotPresentException._constantName20127 = @__env.GetMethodIDNoThrow(global::java.lang.EnumConstantNotPresentException.staticClass, "constantName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._constantName20127) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.EnumConstantNotPresentException.staticClass, "constantName", "()Ljava/lang/String;", ref global::java.lang.EnumConstantNotPresentException._constantName20127) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _EnumConstantNotPresentException20128;
 		public EnumConstantNotPresentException(java.lang.Class arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

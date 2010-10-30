@@ -15,34 +15,22 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _equals20381;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Override_._equals20381.native == global::System.IntPtr.Zero)
-				global::java.lang.Override_._equals20381 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Override_._equals20381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Override_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.Override_._equals20381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20382;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Override_._toString20382.native == global::System.IntPtr.Zero)
-				global::java.lang.Override_._toString20382 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Override_._toString20382)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Override_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.Override_._toString20382) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20383;
 		int java.lang.annotation.Annotation.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Override_._hashCode20383.native == global::System.IntPtr.Zero)
-				global::java.lang.Override_._hashCode20383 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Override_._hashCode20383);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Override_.staticClass, "hashCode", "()I", ref global::java.lang.Override_._hashCode20383);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType20384;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Override_._annotationType20384.native == global::System.IntPtr.Zero)
-				global::java.lang.Override_._annotationType20384 = @__env.GetMethodIDNoThrow(global::java.lang.Override_.staticClass, "annotationType", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Override_._annotationType20384)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.Override_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::java.lang.Override_._annotationType20384) as java.lang.Class;
 		}
 		static Override_()
 		{

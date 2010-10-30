@@ -18,10 +18,7 @@ namespace javax.net
 		internal static global::MonoJavaBridge.MethodId _createSocket29819;
 		public virtual global::java.net.Socket createSocket()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.SocketFactory._createSocket29819.native == global::System.IntPtr.Zero)
-				global::javax.net.SocketFactory._createSocket29819 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory.staticClass, "createSocket", "()Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._createSocket29819) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory.staticClass, "createSocket", "()Ljava/net/Socket;", ref global::javax.net.SocketFactory._createSocket29819) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29820;
 		public abstract global::java.net.Socket createSocket(java.lang.String arg0, int arg1);
@@ -60,34 +57,22 @@ namespace javax.net
 		internal static global::MonoJavaBridge.MethodId _createSocket29825;
 		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.SocketFactory_._createSocket29825.native == global::System.IntPtr.Zero)
-				global::javax.net.SocketFactory_._createSocket29825 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_._createSocket29825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", ref global::javax.net.SocketFactory_._createSocket29825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29826;
 		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.SocketFactory_._createSocket29826.native == global::System.IntPtr.Zero)
-				global::javax.net.SocketFactory_._createSocket29826 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_._createSocket29826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;", ref global::javax.net.SocketFactory_._createSocket29826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29827;
 		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.SocketFactory_._createSocket29827.native == global::System.IntPtr.Zero)
-				global::javax.net.SocketFactory_._createSocket29827 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_._createSocket29827, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;", ref global::javax.net.SocketFactory_._createSocket29827, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29828;
 		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.SocketFactory_._createSocket29828.native == global::System.IntPtr.Zero)
-				global::javax.net.SocketFactory_._createSocket29828 = @__env.GetMethodIDNoThrow(global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_._createSocket29828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.SocketFactory_.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;", ref global::javax.net.SocketFactory_._createSocket29828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
 		static SocketFactory_()
 		{

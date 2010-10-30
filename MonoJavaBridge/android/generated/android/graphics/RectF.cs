@@ -10,90 +10,57 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _toString5709;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._toString5709.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._toString5709 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._toString5709) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.graphics.RectF.staticClass, "toString", "()Ljava/lang/String;", ref global::android.graphics.RectF._toString5709) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _offset5710;
 		public virtual void offset(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._offset5710.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._offset5710 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "offset", "(FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._offset5710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "offset", "(FF)V", ref global::android.graphics.RectF._offset5710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty5711;
 		public virtual bool isEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._isEmpty5711.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._isEmpty5711 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "isEmpty", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._isEmpty5711);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "isEmpty", "()Z", ref global::android.graphics.RectF._isEmpty5711);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains5712;
 		public virtual bool contains(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._contains5712.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._contains5712 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "contains", "(FFFF)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains5712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "contains", "(FFFF)Z", ref global::android.graphics.RectF._contains5712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _contains5713;
 		public virtual bool contains(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._contains5713.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._contains5713 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "contains", "(FF)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains5713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "contains", "(FF)Z", ref global::android.graphics.RectF._contains5713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _contains5714;
 		public virtual bool contains(android.graphics.RectF arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._contains5714.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._contains5714 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "contains", "(Landroid/graphics/RectF;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains5714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "contains", "(Landroid/graphics/RectF;)Z", ref global::android.graphics.RectF._contains5714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _set5715;
 		public virtual void set(android.graphics.RectF arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._set5715.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._set5715 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "set", "(Landroid/graphics/RectF;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set5715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "set", "(Landroid/graphics/RectF;)V", ref global::android.graphics.RectF._set5715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _set5716;
 		public virtual void set(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._set5716.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._set5716 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "set", "(FFFF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set5716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "set", "(FFFF)V", ref global::android.graphics.RectF._set5716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _set5717;
 		public virtual void set(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._set5717.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._set5717 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "set", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set5717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "set", "(Landroid/graphics/Rect;)V", ref global::android.graphics.RectF._set5717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sort5718;
 		public virtual void sort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._sort5718.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._sort5718 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "sort", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._sort5718);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "sort", "()V", ref global::android.graphics.RectF._sort5718);
 		}
 		internal static global::MonoJavaBridge.MethodId _round5719;
 		public virtual void round(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._round5719.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._round5719 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "round", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._round5719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "round", "(Landroid/graphics/Rect;)V", ref global::android.graphics.RectF._round5719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _intersects5720;
 		public static bool intersects(android.graphics.RectF arg0, android.graphics.RectF arg1)
@@ -106,146 +73,92 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _intersects5721;
 		public virtual bool intersects(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._intersects5721.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._intersects5721 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "intersects", "(FFFF)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersects5721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "intersects", "(FFFF)Z", ref global::android.graphics.RectF._intersects5721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _union5722;
 		public virtual void union(android.graphics.RectF arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._union5722.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._union5722 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "union", "(Landroid/graphics/RectF;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union5722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "union", "(Landroid/graphics/RectF;)V", ref global::android.graphics.RectF._union5722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _union5723;
 		public virtual void union(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._union5723.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._union5723 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "union", "(FFFF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union5723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "union", "(FFFF)V", ref global::android.graphics.RectF._union5723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _union5724;
 		public virtual void union(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._union5724.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._union5724 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "union", "(FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union5724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "union", "(FF)V", ref global::android.graphics.RectF._union5724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _centerX5725;
 		public virtual float centerX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._centerX5725.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._centerX5725 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "centerX", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._centerX5725);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, "centerX", "()F", ref global::android.graphics.RectF._centerX5725);
 		}
 		internal static global::MonoJavaBridge.MethodId _centerY5726;
 		public virtual float centerY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._centerY5726.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._centerY5726 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "centerY", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._centerY5726);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, "centerY", "()F", ref global::android.graphics.RectF._centerY5726);
 		}
 		internal static global::MonoJavaBridge.MethodId _height5727;
 		public virtual float height()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._height5727.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._height5727 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "height", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._height5727);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, "height", "()F", ref global::android.graphics.RectF._height5727);
 		}
 		internal static global::MonoJavaBridge.MethodId _width5728;
 		public virtual float width()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._width5728.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._width5728 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "width", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._width5728);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.RectF.staticClass, "width", "()F", ref global::android.graphics.RectF._width5728);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel5729;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._writeToParcel5729.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._writeToParcel5729 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._writeToParcel5729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.graphics.RectF._writeToParcel5729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents5730;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._describeContents5730.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._describeContents5730 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._describeContents5730);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.RectF.staticClass, "describeContents", "()I", ref global::android.graphics.RectF._describeContents5730);
 		}
 		internal static global::MonoJavaBridge.MethodId _readFromParcel5731;
 		public virtual void readFromParcel(android.os.Parcel arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._readFromParcel5731.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._readFromParcel5731 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._readFromParcel5731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V", ref global::android.graphics.RectF._readFromParcel5731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setEmpty5732;
 		public virtual void setEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._setEmpty5732.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._setEmpty5732 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "setEmpty", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._setEmpty5732);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "setEmpty", "()V", ref global::android.graphics.RectF._setEmpty5732);
 		}
 		internal static global::MonoJavaBridge.MethodId _offsetTo5733;
 		public virtual void offsetTo(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._offsetTo5733.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._offsetTo5733 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "offsetTo", "(FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._offsetTo5733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "offsetTo", "(FF)V", ref global::android.graphics.RectF._offsetTo5733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _inset5734;
 		public virtual void inset(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._inset5734.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._inset5734 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "inset", "(FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._inset5734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "inset", "(FF)V", ref global::android.graphics.RectF._inset5734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _intersect5735;
 		public virtual bool intersect(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._intersect5735.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._intersect5735 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "intersect", "(FFFF)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersect5735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "intersect", "(FFFF)Z", ref global::android.graphics.RectF._intersect5735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _intersect5736;
 		public virtual bool intersect(android.graphics.RectF arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._intersect5736.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._intersect5736 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "intersect", "(Landroid/graphics/RectF;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersect5736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "intersect", "(Landroid/graphics/RectF;)Z", ref global::android.graphics.RectF._intersect5736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIntersect5737;
 		public virtual bool setIntersect(android.graphics.RectF arg0, android.graphics.RectF arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._setIntersect5737.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._setIntersect5737 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "setIntersect", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._setIntersect5737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RectF.staticClass, "setIntersect", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z", ref global::android.graphics.RectF._setIntersect5737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _roundOut5738;
 		public virtual void roundOut(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.RectF._roundOut5738.native == global::System.IntPtr.Zero)
-				global::android.graphics.RectF._roundOut5738 = @__env.GetMethodIDNoThrow(global::android.graphics.RectF.staticClass, "roundOut", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._roundOut5738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RectF.staticClass, "roundOut", "(Landroid/graphics/Rect;)V", ref global::android.graphics.RectF._roundOut5738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _RectF5739;
 		public RectF() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

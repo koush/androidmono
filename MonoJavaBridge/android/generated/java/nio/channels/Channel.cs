@@ -17,26 +17,17 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _close22406;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.Channel_._close22406.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.Channel_._close22406 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "close", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.Channel_._close22406);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.Channel_.staticClass, "close", "()V", ref global::java.nio.channels.Channel_._close22406);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen22407;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.Channel_._isOpen22407.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.Channel_._isOpen22407 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "isOpen", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.Channel_._isOpen22407);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.Channel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.Channel_._isOpen22407);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22408;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.Channel_._close22408.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.Channel_._close22408 = @__env.GetMethodIDNoThrow(global::java.nio.channels.Channel_.staticClass, "close", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.Channel_._close22408);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.Channel_.staticClass, "close", "()V", ref global::java.nio.channels.Channel_._close22408);
 		}
 		static Channel_()
 		{

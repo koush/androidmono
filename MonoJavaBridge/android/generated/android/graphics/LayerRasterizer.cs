@@ -10,18 +10,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _addLayer5292;
 		public virtual void addLayer(android.graphics.Paint arg0, float arg1, float arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.LayerRasterizer._addLayer5292.native == global::System.IntPtr.Zero)
-				global::android.graphics.LayerRasterizer._addLayer5292 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer5292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V", ref global::android.graphics.LayerRasterizer._addLayer5292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addLayer5293;
 		public virtual void addLayer(android.graphics.Paint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.LayerRasterizer._addLayer5293.native == global::System.IntPtr.Zero)
-				global::android.graphics.LayerRasterizer._addLayer5293 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer5293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V", ref global::android.graphics.LayerRasterizer._addLayer5293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LayerRasterizer5294;
 		public LayerRasterizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

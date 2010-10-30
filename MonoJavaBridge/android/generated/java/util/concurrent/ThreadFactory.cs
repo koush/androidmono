@@ -16,10 +16,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _newThread27455;
 		global::java.lang.Thread java.util.concurrent.ThreadFactory.newThread(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ThreadFactory_._newThread27455.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ThreadFactory_._newThread27455 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ThreadFactory_.staticClass, "newThread", "(Ljava/lang/Runnable;)Ljava/lang/Thread;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadFactory_._newThread27455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ThreadFactory_.staticClass, "newThread", "(Ljava/lang/Runnable;)Ljava/lang/Thread;", ref global::java.util.concurrent.ThreadFactory_._newThread27455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Thread;
 		}
 		static ThreadFactory_()
 		{

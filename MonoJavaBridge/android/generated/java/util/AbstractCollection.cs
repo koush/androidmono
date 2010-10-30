@@ -10,68 +10,44 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _add25664;
 		public virtual bool add(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._add25664.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._add25664 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "add", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._add25664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "add", "(Ljava/lang/Object;)Z", ref global::java.util.AbstractCollection._add25664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25665;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._toString25665.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._toString25665 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toString25665) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.AbstractCollection.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.AbstractCollection._toString25665) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear25666;
 		public virtual void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._clear25666.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._clear25666 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "clear", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._clear25666);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.AbstractCollection.staticClass, "clear", "()V", ref global::java.util.AbstractCollection._clear25666);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty25667;
 		public virtual bool isEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._isEmpty25667.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._isEmpty25667 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "isEmpty", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._isEmpty25667);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "isEmpty", "()Z", ref global::java.util.AbstractCollection._isEmpty25667);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains25668;
 		public virtual bool contains(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._contains25668.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._contains25668 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "contains", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._contains25668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "contains", "(Ljava/lang/Object;)Z", ref global::java.util.AbstractCollection._contains25668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addAll25669;
 		public virtual bool addAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._addAll25669.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._addAll25669 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "addAll", "(Ljava/util/Collection;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._addAll25669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "addAll", "(Ljava/util/Collection;)Z", ref global::java.util.AbstractCollection._addAll25669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _size25670;
 		public abstract int size();
 		internal static global::MonoJavaBridge.MethodId _toArray25671;
 		public virtual global::java.lang.Object[] toArray(java.lang.Object[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._toArray25671.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._toArray25671 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toArray25671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.AbstractCollection.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", ref global::java.util.AbstractCollection._toArray25671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _toArray25672;
 		public virtual global::java.lang.Object[] toArray()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._toArray25672.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._toArray25672 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "toArray", "()[Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toArray25672) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.AbstractCollection.staticClass, "toArray", "()[Ljava/lang/Object;", ref global::java.util.AbstractCollection._toArray25672) as java.lang.Object[];
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -82,34 +58,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _remove25674;
 		public virtual bool remove(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._remove25674.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._remove25674 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "remove", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._remove25674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "remove", "(Ljava/lang/Object;)Z", ref global::java.util.AbstractCollection._remove25674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _containsAll25675;
 		public virtual bool containsAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._containsAll25675.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._containsAll25675 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "containsAll", "(Ljava/util/Collection;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._containsAll25675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "containsAll", "(Ljava/util/Collection;)Z", ref global::java.util.AbstractCollection._containsAll25675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAll25676;
 		public virtual bool removeAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._removeAll25676.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._removeAll25676 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._removeAll25676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.AbstractCollection._removeAll25676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _retainAll25677;
 		public virtual bool retainAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection._retainAll25677.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection._retainAll25677 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection.staticClass, "retainAll", "(Ljava/util/Collection;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._retainAll25677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractCollection.staticClass, "retainAll", "(Ljava/util/Collection;)Z", ref global::java.util.AbstractCollection._retainAll25677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractCollection25678;
 		protected AbstractCollection() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -140,10 +104,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _size25679;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection_._size25679.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection_._size25679 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection_.staticClass, "size", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.AbstractCollection_._size25679);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.AbstractCollection_.staticClass, "size", "()I", ref global::java.util.AbstractCollection_._size25679);
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -152,10 +113,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _iterator25680;
 		public override global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractCollection_._iterator25680.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractCollection_._iterator25680 = @__env.GetMethodIDNoThrow(global::java.util.AbstractCollection_.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.AbstractCollection_._iterator25680)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.AbstractCollection_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.AbstractCollection_._iterator25680) as java.util.Iterator;
 		}
 		static AbstractCollection_()
 		{

@@ -10,26 +10,17 @@ namespace java.lang.@ref
 		internal static global::MonoJavaBridge.MethodId _remove20990;
 		public virtual global::java.lang.@ref.Reference remove(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.@ref.ReferenceQueue._remove20990.native == global::System.IntPtr.Zero)
-				global::java.lang.@ref.ReferenceQueue._remove20990 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "remove", "(J)Ljava/lang/ref/Reference;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._remove20990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.@ref.Reference;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, "remove", "(J)Ljava/lang/ref/Reference;", ref global::java.lang.@ref.ReferenceQueue._remove20990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove20991;
 		public virtual global::java.lang.@ref.Reference remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.@ref.ReferenceQueue._remove20991.native == global::System.IntPtr.Zero)
-				global::java.lang.@ref.ReferenceQueue._remove20991 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "remove", "()Ljava/lang/ref/Reference;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._remove20991) as java.lang.@ref.Reference;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, "remove", "()Ljava/lang/ref/Reference;", ref global::java.lang.@ref.ReferenceQueue._remove20991) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _poll20992;
 		public virtual global::java.lang.@ref.Reference poll()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.@ref.ReferenceQueue._poll20992.native == global::System.IntPtr.Zero)
-				global::java.lang.@ref.ReferenceQueue._poll20992 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.ReferenceQueue.staticClass, "poll", "()Ljava/lang/ref/Reference;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._poll20992) as java.lang.@ref.Reference;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.ReferenceQueue.staticClass, "poll", "()Ljava/lang/ref/Reference;", ref global::java.lang.@ref.ReferenceQueue._poll20992) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _ReferenceQueue20993;
 		public ReferenceQueue() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

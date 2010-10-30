@@ -10,34 +10,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _get26335;
 		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.LinkedHashMap._get26335.native == global::System.IntPtr.Zero)
-				global::java.util.LinkedHashMap._get26335 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.LinkedHashMap.staticClass, global::java.util.LinkedHashMap._get26335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.LinkedHashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.LinkedHashMap._get26335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear26336;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.LinkedHashMap._clear26336.native == global::System.IntPtr.Zero)
-				global::java.util.LinkedHashMap._clear26336 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "clear", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.LinkedHashMap.staticClass, global::java.util.LinkedHashMap._clear26336);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.LinkedHashMap.staticClass, "clear", "()V", ref global::java.util.LinkedHashMap._clear26336);
 		}
 		internal static global::MonoJavaBridge.MethodId _containsValue26337;
 		public override bool containsValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.LinkedHashMap._containsValue26337.native == global::System.IntPtr.Zero)
-				global::java.util.LinkedHashMap._containsValue26337 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.LinkedHashMap.staticClass, global::java.util.LinkedHashMap._containsValue26337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.LinkedHashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z", ref global::java.util.LinkedHashMap._containsValue26337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeEldestEntry26338;
 		protected virtual bool removeEldestEntry(java.util.Map_Entry arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.LinkedHashMap._removeEldestEntry26338.native == global::System.IntPtr.Zero)
-				global::java.util.LinkedHashMap._removeEldestEntry26338 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashMap.staticClass, "removeEldestEntry", "(Ljava/util/Map$Entry;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.LinkedHashMap.staticClass, global::java.util.LinkedHashMap._removeEldestEntry26338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.LinkedHashMap.staticClass, "removeEldestEntry", "(Ljava/util/Map$Entry;)Z", ref global::java.util.LinkedHashMap._removeEldestEntry26338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkedHashMap26339;
 		public LinkedHashMap(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

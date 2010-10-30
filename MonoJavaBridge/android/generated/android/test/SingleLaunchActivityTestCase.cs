@@ -10,34 +10,22 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getActivity12314;
 		public virtual global::android.app.Activity getActivity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.SingleLaunchActivityTestCase._getActivity12314.native == global::System.IntPtr.Zero)
-				global::android.test.SingleLaunchActivityTestCase._getActivity12314 = @__env.GetMethodIDNoThrow(global::android.test.SingleLaunchActivityTestCase.staticClass, "getActivity", "()Landroid/app/Activity;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._getActivity12314) as android.app.Activity;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, "getActivity", "()Landroid/app/Activity;", ref global::android.test.SingleLaunchActivityTestCase._getActivity12314) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12315;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.SingleLaunchActivityTestCase._setUp12315.native == global::System.IntPtr.Zero)
-				global::android.test.SingleLaunchActivityTestCase._setUp12315 = @__env.GetMethodIDNoThrow(global::android.test.SingleLaunchActivityTestCase.staticClass, "setUp", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._setUp12315);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, "setUp", "()V", ref global::android.test.SingleLaunchActivityTestCase._setUp12315);
 		}
 		internal static global::MonoJavaBridge.MethodId _tearDown12316;
 		protected override void tearDown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.SingleLaunchActivityTestCase._tearDown12316.native == global::System.IntPtr.Zero)
-				global::android.test.SingleLaunchActivityTestCase._tearDown12316 = @__env.GetMethodIDNoThrow(global::android.test.SingleLaunchActivityTestCase.staticClass, "tearDown", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._tearDown12316);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, "tearDown", "()V", ref global::android.test.SingleLaunchActivityTestCase._tearDown12316);
 		}
 		internal static global::MonoJavaBridge.MethodId _testActivityTestCaseSetUpProperly12317;
 		public virtual void testActivityTestCaseSetUpProperly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.SingleLaunchActivityTestCase._testActivityTestCaseSetUpProperly12317.native == global::System.IntPtr.Zero)
-				global::android.test.SingleLaunchActivityTestCase._testActivityTestCaseSetUpProperly12317 = @__env.GetMethodIDNoThrow(global::android.test.SingleLaunchActivityTestCase.staticClass, "testActivityTestCaseSetUpProperly", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._testActivityTestCaseSetUpProperly12317);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SingleLaunchActivityTestCase.staticClass, "testActivityTestCaseSetUpProperly", "()V", ref global::android.test.SingleLaunchActivityTestCase._testActivityTestCaseSetUpProperly12317);
 		}
 		internal static global::MonoJavaBridge.MethodId _SingleLaunchActivityTestCase12318;
 		public SingleLaunchActivityTestCase(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

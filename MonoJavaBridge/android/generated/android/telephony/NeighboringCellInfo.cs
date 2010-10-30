@@ -10,26 +10,17 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _toString11776;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._toString11776.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._toString11776 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._toString11776) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.NeighboringCellInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.telephony.NeighboringCellInfo._toString11776) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel11777;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._writeToParcel11777.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._writeToParcel11777 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._writeToParcel11777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.telephony.NeighboringCellInfo._writeToParcel11777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents11778;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._describeContents11778.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._describeContents11778 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._describeContents11778);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "describeContents", "()I", ref global::android.telephony.NeighboringCellInfo._describeContents11778);
 		}
 		public new int Rssi
 		{
@@ -45,10 +36,7 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _getRssi11779;
 		public virtual int getRssi()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._getRssi11779.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._getRssi11779 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getRssi", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getRssi11779);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "getRssi", "()I", ref global::android.telephony.NeighboringCellInfo._getRssi11779);
 		}
 		public new int Lac
 		{
@@ -60,10 +48,7 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _getLac11780;
 		public virtual int getLac()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._getLac11780.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._getLac11780 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getLac", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getLac11780);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "getLac", "()I", ref global::android.telephony.NeighboringCellInfo._getLac11780);
 		}
 		public new int Cid
 		{
@@ -79,10 +64,7 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _getCid11781;
 		public virtual int getCid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._getCid11781.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._getCid11781 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getCid", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getCid11781);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "getCid", "()I", ref global::android.telephony.NeighboringCellInfo._getCid11781);
 		}
 		public new int Psc
 		{
@@ -94,10 +76,7 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _getPsc11782;
 		public virtual int getPsc()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._getPsc11782.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._getPsc11782 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getPsc", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getPsc11782);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "getPsc", "()I", ref global::android.telephony.NeighboringCellInfo._getPsc11782);
 		}
 		public new int NetworkType
 		{
@@ -109,26 +88,17 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _getNetworkType11783;
 		public virtual int getNetworkType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._getNetworkType11783.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._getNetworkType11783 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getNetworkType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getNetworkType11783);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "getNetworkType", "()I", ref global::android.telephony.NeighboringCellInfo._getNetworkType11783);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCid11784;
 		public virtual void setCid(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._setCid11784.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._setCid11784 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "setCid", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setCid11784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "setCid", "(I)V", ref global::android.telephony.NeighboringCellInfo._setCid11784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setRssi11785;
 		public virtual void setRssi(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.NeighboringCellInfo._setRssi11785.native == global::System.IntPtr.Zero)
-				global::android.telephony.NeighboringCellInfo._setRssi11785 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "setRssi", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setRssi11785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, "setRssi", "(I)V", ref global::android.telephony.NeighboringCellInfo._setRssi11785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _NeighboringCellInfo11786;
 		public NeighboringCellInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

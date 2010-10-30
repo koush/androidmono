@@ -16,10 +16,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _compareTo20078;
 		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Comparable_._compareTo20078.native == global::System.IntPtr.Zero)
-				global::java.lang.Comparable_._compareTo20078 = @__env.GetMethodIDNoThrow(global::java.lang.Comparable_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Comparable_.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Comparable_()
 		{

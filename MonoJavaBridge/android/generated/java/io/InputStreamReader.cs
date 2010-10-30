@@ -10,26 +10,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19105;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStreamReader._close19105.native == global::System.IntPtr.Zero)
-				global::java.io.InputStreamReader._close19105 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._close19105);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStreamReader.staticClass, "close", "()V", ref global::java.io.InputStreamReader._close19105);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19106;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStreamReader._read19106.native == global::System.IntPtr.Zero)
-				global::java.io.InputStreamReader._read19106 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "read", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19106);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, "read", "()I", ref global::java.io.InputStreamReader._read19106);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19107;
 		public override int read(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStreamReader._read19107.native == global::System.IntPtr.Zero)
-				global::java.io.InputStreamReader._read19107 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "read", "([CII)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, "read", "([CII)I", ref global::java.io.InputStreamReader._read19107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::java.lang.String Encoding
 		{
@@ -41,18 +32,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getEncoding19108;
 		public virtual global::java.lang.String getEncoding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStreamReader._getEncoding19108.native == global::System.IntPtr.Zero)
-				global::java.io.InputStreamReader._getEncoding19108 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "getEncoding", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._getEncoding19108) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.InputStreamReader.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::java.io.InputStreamReader._getEncoding19108) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ready19109;
 		public override bool ready()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStreamReader._ready19109.native == global::System.IntPtr.Zero)
-				global::java.io.InputStreamReader._ready19109 = @__env.GetMethodIDNoThrow(global::java.io.InputStreamReader.staticClass, "ready", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._ready19109);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.InputStreamReader.staticClass, "ready", "()Z", ref global::java.io.InputStreamReader._ready19109);
 		}
 		internal static global::MonoJavaBridge.MethodId _InputStreamReader19110;
 		public InputStreamReader(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

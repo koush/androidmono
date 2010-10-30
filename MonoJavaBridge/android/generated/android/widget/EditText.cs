@@ -10,10 +10,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setText16992;
 		public override void setText(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._setText16992.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._setText16992 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setText", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setText16992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "setText", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V", ref global::android.widget.EditText._setText16992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void setText(string arg0, android.widget.TextView.BufferType arg1)
 		{
@@ -22,10 +19,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _selectAll16993;
 		public virtual void selectAll()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._selectAll16993.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._selectAll16993 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "selectAll", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._selectAll16993);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "selectAll", "()V", ref global::android.widget.EditText._selectAll16993);
 		}
 		public new global::android.text.Editable Text
 		{
@@ -37,10 +31,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getText16994;
 		public virtual global::android.text.Editable getText()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._getText16994.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._getText16994 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getText", "()Landroid/text/Editable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Editable>(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getText16994) as android.text.Editable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Editable>(this, global::android.widget.EditText.staticClass, "getText", "()Landroid/text/Editable;", ref global::android.widget.EditText._getText16994) as android.text.Editable;
 		}
 		public new int Selection
 		{
@@ -52,18 +43,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setSelection16995;
 		public virtual void setSelection(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._setSelection16995.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._setSelection16995 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setSelection", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection16995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "setSelection", "(I)V", ref global::android.widget.EditText._setSelection16995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelection16996;
 		public virtual void setSelection(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._setSelection16996.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._setSelection16996 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setSelection", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection16996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "setSelection", "(II)V", ref global::android.widget.EditText._setSelection16996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		protected new bool DefaultEditable
 		{
@@ -75,10 +60,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getDefaultEditable16997;
 		protected override bool getDefaultEditable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._getDefaultEditable16997.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._getDefaultEditable16997 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getDefaultEditable", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultEditable16997);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.EditText.staticClass, "getDefaultEditable", "()Z", ref global::android.widget.EditText._getDefaultEditable16997);
 		}
 		protected new global::android.text.method.MovementMethod DefaultMovementMethod
 		{
@@ -90,10 +72,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getDefaultMovementMethod16998;
 		protected override global::android.text.method.MovementMethod getDefaultMovementMethod()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._getDefaultMovementMethod16998.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._getDefaultMovementMethod16998 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getDefaultMovementMethod", "()Landroid/text/method/MovementMethod;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.method.MovementMethod>(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultMovementMethod16998) as android.text.method.MovementMethod;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.method.MovementMethod>(this, global::android.widget.EditText.staticClass, "getDefaultMovementMethod", "()Landroid/text/method/MovementMethod;", ref global::android.widget.EditText._getDefaultMovementMethod16998) as android.text.method.MovementMethod;
 		}
 		public new global::android.text.TextUtils.TruncateAt Ellipsize
 		{
@@ -105,18 +84,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setEllipsize16999;
 		public override void setEllipsize(android.text.TextUtils.TruncateAt arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._setEllipsize16999.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._setEllipsize16999 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setEllipsize16999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V", ref global::android.widget.EditText._setEllipsize16999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendSelection17000;
 		public virtual void extendSelection(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.EditText._extendSelection17000.native == global::System.IntPtr.Zero)
-				global::android.widget.EditText._extendSelection17000 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "extendSelection", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._extendSelection17000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.EditText.staticClass, "extendSelection", "(I)V", ref global::android.widget.EditText._extendSelection17000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _EditText17001;
 		public EditText(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

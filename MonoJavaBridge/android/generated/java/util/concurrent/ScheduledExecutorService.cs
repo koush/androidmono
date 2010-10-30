@@ -19,138 +19,87 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _schedule27368;
 		global::java.util.concurrent.ScheduledFuture java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._schedule27368.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._schedule27368 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ScheduledFuture>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._schedule27368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.concurrent.ScheduledFuture;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.ScheduledFuture>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", ref global::java.util.concurrent.ScheduledExecutorService_._schedule27368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.concurrent.ScheduledFuture;
 		}
 		internal static global::MonoJavaBridge.MethodId _schedule27369;
 		global::java.util.concurrent.ScheduledFuture java.util.concurrent.ScheduledExecutorService.schedule(java.util.concurrent.Callable arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._schedule27369.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._schedule27369 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ScheduledFuture>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._schedule27369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.concurrent.ScheduledFuture;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.ScheduledFuture>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", ref global::java.util.concurrent.ScheduledExecutorService_._schedule27369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.concurrent.ScheduledFuture;
 		}
 		internal static global::MonoJavaBridge.MethodId _scheduleAtFixedRate27370;
 		global::java.util.concurrent.ScheduledFuture java.util.concurrent.ScheduledExecutorService.scheduleAtFixedRate(java.lang.Runnable arg0, long arg1, long arg2, java.util.concurrent.TimeUnit arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._scheduleAtFixedRate27370.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._scheduleAtFixedRate27370 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ScheduledFuture>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._scheduleAtFixedRate27370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.concurrent.ScheduledFuture;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.ScheduledFuture>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", ref global::java.util.concurrent.ScheduledExecutorService_._scheduleAtFixedRate27370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.util.concurrent.ScheduledFuture;
 		}
 		internal static global::MonoJavaBridge.MethodId _scheduleWithFixedDelay27371;
 		global::java.util.concurrent.ScheduledFuture java.util.concurrent.ScheduledExecutorService.scheduleWithFixedDelay(java.lang.Runnable arg0, long arg1, long arg2, java.util.concurrent.TimeUnit arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._scheduleWithFixedDelay27371.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._scheduleWithFixedDelay27371 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ScheduledFuture>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._scheduleWithFixedDelay27371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.concurrent.ScheduledFuture;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.ScheduledFuture>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", ref global::java.util.concurrent.ScheduledExecutorService_._scheduleWithFixedDelay27371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.util.concurrent.ScheduledFuture;
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown27372;
 		void java.util.concurrent.ExecutorService.shutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._shutdown27372.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._shutdown27372 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "shutdown", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._shutdown27372);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "shutdown", "()V", ref global::java.util.concurrent.ScheduledExecutorService_._shutdown27372);
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitTermination27373;
 		bool java.util.concurrent.ExecutorService.awaitTermination(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._awaitTermination27373.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._awaitTermination27373 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "awaitTermination", "(JLjava/util/concurrent/TimeUnit;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._awaitTermination27373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "awaitTermination", "(JLjava/util/concurrent/TimeUnit;)Z", ref global::java.util.concurrent.ScheduledExecutorService_._awaitTermination27373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _submit27374;
 		global::java.util.concurrent.Future java.util.concurrent.ExecutorService.submit(java.lang.Runnable arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._submit27374.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._submit27374 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._submit27374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.concurrent.Future;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.Future>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", ref global::java.util.concurrent.ScheduledExecutorService_._submit27374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _submit27375;
 		global::java.util.concurrent.Future java.util.concurrent.ExecutorService.submit(java.util.concurrent.Callable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._submit27375.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._submit27375 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._submit27375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.Future;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.Future>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", ref global::java.util.concurrent.ScheduledExecutorService_._submit27375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _submit27376;
 		global::java.util.concurrent.Future java.util.concurrent.ExecutorService.submit(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._submit27376.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._submit27376 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._submit27376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.Future;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.Future>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "submit", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;", ref global::java.util.concurrent.ScheduledExecutorService_._submit27376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _invokeAny27377;
 		global::java.lang.Object java.util.concurrent.ExecutorService.invokeAny(java.util.Collection arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._invokeAny27377.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._invokeAny27377 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAny", "(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._invokeAny27377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAny", "(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", ref global::java.util.concurrent.ScheduledExecutorService_._invokeAny27377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _invokeAny27378;
 		global::java.lang.Object java.util.concurrent.ExecutorService.invokeAny(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._invokeAny27378.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._invokeAny27378 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAny", "(Ljava/util/Collection;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._invokeAny27378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAny", "(Ljava/util/Collection;)Ljava/lang/Object;", ref global::java.util.concurrent.ScheduledExecutorService_._invokeAny27378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _invokeAll27379;
 		global::java.util.List java.util.concurrent.ExecutorService.invokeAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._invokeAll27379.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._invokeAll27379 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAll", "(Ljava/util/Collection;)Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._invokeAll27379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAll", "(Ljava/util/Collection;)Ljava/util/List;", ref global::java.util.concurrent.ScheduledExecutorService_._invokeAll27379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _invokeAll27380;
 		global::java.util.List java.util.concurrent.ExecutorService.invokeAll(java.util.Collection arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._invokeAll27380.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._invokeAll27380 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAll", "(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._invokeAll27380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "invokeAll", "(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/util/List;", ref global::java.util.concurrent.ScheduledExecutorService_._invokeAll27380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdownNow27381;
 		global::java.util.List java.util.concurrent.ExecutorService.shutdownNow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._shutdownNow27381.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._shutdownNow27381 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "shutdownNow", "()Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._shutdownNow27381)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "shutdownNow", "()Ljava/util/List;", ref global::java.util.concurrent.ScheduledExecutorService_._shutdownNow27381) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShutdown27382;
 		bool java.util.concurrent.ExecutorService.isShutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._isShutdown27382.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._isShutdown27382 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isShutdown", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._isShutdown27382);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isShutdown", "()Z", ref global::java.util.concurrent.ScheduledExecutorService_._isShutdown27382);
 		}
 		internal static global::MonoJavaBridge.MethodId _isTerminated27383;
 		bool java.util.concurrent.ExecutorService.isTerminated()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._isTerminated27383.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._isTerminated27383 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isTerminated", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._isTerminated27383);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "isTerminated", "()Z", ref global::java.util.concurrent.ScheduledExecutorService_._isTerminated27383);
 		}
 		internal static global::MonoJavaBridge.MethodId _execute27384;
 		void java.util.concurrent.Executor.execute(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.ScheduledExecutorService_._execute27384.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.ScheduledExecutorService_._execute27384 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.ScheduledExecutorService_.staticClass, "execute", "(Ljava/lang/Runnable;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ScheduledExecutorService_._execute27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ScheduledExecutorService_.staticClass, "execute", "(Ljava/lang/Runnable;)V", ref global::java.util.concurrent.ScheduledExecutorService_._execute27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ScheduledExecutorService_()
 		{

@@ -17,18 +17,12 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _hasMoreElements26171;
 		bool java.util.Enumeration.hasMoreElements()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Enumeration_._hasMoreElements26171.native == global::System.IntPtr.Zero)
-				global::java.util.Enumeration_._hasMoreElements26171 = @__env.GetMethodIDNoThrow(global::java.util.Enumeration_.staticClass, "hasMoreElements", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Enumeration_._hasMoreElements26171);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Enumeration_.staticClass, "hasMoreElements", "()Z", ref global::java.util.Enumeration_._hasMoreElements26171);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextElement26172;
 		global::java.lang.Object java.util.Enumeration.nextElement()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Enumeration_._nextElement26172.native == global::System.IntPtr.Zero)
-				global::java.util.Enumeration_._nextElement26172 = @__env.GetMethodIDNoThrow(global::java.util.Enumeration_.staticClass, "nextElement", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Enumeration_._nextElement26172)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Enumeration_.staticClass, "nextElement", "()Ljava/lang/Object;", ref global::java.util.Enumeration_._nextElement26172) as java.lang.Object;
 		}
 		static Enumeration_()
 		{

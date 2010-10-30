@@ -10,26 +10,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _equals25742;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractSet._equals25742.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractSet._equals25742 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractSet.staticClass, global::java.util.AbstractSet._equals25742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractSet.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.AbstractSet._equals25742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25743;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractSet._hashCode25743.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractSet._hashCode25743 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.AbstractSet.staticClass, global::java.util.AbstractSet._hashCode25743);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.AbstractSet.staticClass, "hashCode", "()I", ref global::java.util.AbstractSet._hashCode25743);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAll25744;
 		public override bool removeAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractSet._removeAll25744.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractSet._removeAll25744 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet.staticClass, "removeAll", "(Ljava/util/Collection;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractSet.staticClass, global::java.util.AbstractSet._removeAll25744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.AbstractSet.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.AbstractSet._removeAll25744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractSet25745;
 		protected AbstractSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -60,10 +51,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _size25746;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractSet_._size25746.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractSet_._size25746 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet_.staticClass, "size", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.AbstractSet_._size25746);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.AbstractSet_.staticClass, "size", "()I", ref global::java.util.AbstractSet_._size25746);
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -72,10 +60,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _iterator25747;
 		public override global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.AbstractSet_._iterator25747.native == global::System.IntPtr.Zero)
-				global::java.util.AbstractSet_._iterator25747 = @__env.GetMethodIDNoThrow(global::java.util.AbstractSet_.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.AbstractSet_._iterator25747)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.AbstractSet_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.AbstractSet_._iterator25747) as java.util.Iterator;
 		}
 		static AbstractSet_()
 		{

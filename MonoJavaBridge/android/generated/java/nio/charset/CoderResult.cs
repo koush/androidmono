@@ -10,50 +10,32 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _toString22797;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._toString22797.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._toString22797 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._toString22797) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.CoderResult.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.charset.CoderResult._toString22797) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _length22798;
 		public virtual int length()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._length22798.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._length22798 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "length", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._length22798);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.CoderResult.staticClass, "length", "()I", ref global::java.nio.charset.CoderResult._length22798);
 		}
 		internal static global::MonoJavaBridge.MethodId _throwException22799;
 		public virtual void throwException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._throwException22799.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._throwException22799 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "throwException", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._throwException22799);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CoderResult.staticClass, "throwException", "()V", ref global::java.nio.charset.CoderResult._throwException22799);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnderflow22800;
 		public virtual bool isUnderflow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._isUnderflow22800.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._isUnderflow22800 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "isUnderflow", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow22800);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, "isUnderflow", "()Z", ref global::java.nio.charset.CoderResult._isUnderflow22800);
 		}
 		internal static global::MonoJavaBridge.MethodId _isError22801;
 		public virtual bool isError()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._isError22801.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._isError22801 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "isError", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError22801);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, "isError", "()Z", ref global::java.nio.charset.CoderResult._isError22801);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOverflow22802;
 		public virtual bool isOverflow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._isOverflow22802.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._isOverflow22802 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "isOverflow", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow22802);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, "isOverflow", "()Z", ref global::java.nio.charset.CoderResult._isOverflow22802);
 		}
 		internal static global::MonoJavaBridge.MethodId _malformedForLength22803;
 		public static global::java.nio.charset.CoderResult malformedForLength(int arg0)
@@ -66,18 +48,12 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _isMalformed22804;
 		public virtual bool isMalformed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._isMalformed22804.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._isMalformed22804 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "isMalformed", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed22804);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, "isMalformed", "()Z", ref global::java.nio.charset.CoderResult._isMalformed22804);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnmappable22805;
 		public virtual bool isUnmappable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CoderResult._isUnmappable22805.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CoderResult._isUnmappable22805 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "isUnmappable", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable22805);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, "isUnmappable", "()Z", ref global::java.nio.charset.CoderResult._isUnmappable22805);
 		}
 		internal static global::MonoJavaBridge.MethodId _unmappableForLength22806;
 		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0)

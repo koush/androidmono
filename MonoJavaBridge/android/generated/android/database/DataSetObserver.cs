@@ -10,18 +10,12 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _onChanged4601;
 		public virtual void onChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.DataSetObserver._onChanged4601.native == global::System.IntPtr.Zero)
-				global::android.database.DataSetObserver._onChanged4601 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onChanged", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onChanged4601);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onChanged", "()V", ref global::android.database.DataSetObserver._onChanged4601);
 		}
 		internal static global::MonoJavaBridge.MethodId _onInvalidated4602;
 		public virtual void onInvalidated()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.DataSetObserver._onInvalidated4602.native == global::System.IntPtr.Zero)
-				global::android.database.DataSetObserver._onInvalidated4602 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onInvalidated4602);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V", ref global::android.database.DataSetObserver._onInvalidated4602);
 		}
 		internal static global::MonoJavaBridge.MethodId _DataSetObserver4603;
 		public DataSetObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

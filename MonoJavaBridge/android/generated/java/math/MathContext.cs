@@ -10,26 +10,17 @@ namespace java.math
 		internal static global::MonoJavaBridge.MethodId _equals21306;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.math.MathContext._equals21306.native == global::System.IntPtr.Zero)
-				global::java.math.MathContext._equals21306 = @__env.GetMethodIDNoThrow(global::java.math.MathContext.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._equals21306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.math.MathContext.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.math.MathContext._equals21306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21307;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.math.MathContext._toString21307.native == global::System.IntPtr.Zero)
-				global::java.math.MathContext._toString21307 = @__env.GetMethodIDNoThrow(global::java.math.MathContext.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._toString21307)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.math.MathContext.staticClass, "toString", "()Ljava/lang/String;", ref global::java.math.MathContext._toString21307) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21308;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.math.MathContext._hashCode21308.native == global::System.IntPtr.Zero)
-				global::java.math.MathContext._hashCode21308 = @__env.GetMethodIDNoThrow(global::java.math.MathContext.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._hashCode21308);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.math.MathContext.staticClass, "hashCode", "()I", ref global::java.math.MathContext._hashCode21308);
 		}
 		public new int Precision
 		{
@@ -41,10 +32,7 @@ namespace java.math
 		internal static global::MonoJavaBridge.MethodId _getPrecision21309;
 		public int getPrecision()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.math.MathContext._getPrecision21309.native == global::System.IntPtr.Zero)
-				global::java.math.MathContext._getPrecision21309 = @__env.GetMethodIDNoThrow(global::java.math.MathContext.staticClass, "getPrecision", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._getPrecision21309);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.math.MathContext.staticClass, "getPrecision", "()I", ref global::java.math.MathContext._getPrecision21309);
 		}
 		public new global::java.math.RoundingMode RoundingMode
 		{
@@ -56,10 +44,7 @@ namespace java.math
 		internal static global::MonoJavaBridge.MethodId _getRoundingMode21310;
 		public global::java.math.RoundingMode getRoundingMode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.math.MathContext._getRoundingMode21310.native == global::System.IntPtr.Zero)
-				global::java.math.MathContext._getRoundingMode21310 = @__env.GetMethodIDNoThrow(global::java.math.MathContext.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._getRoundingMode21310)) as java.math.RoundingMode;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.math.RoundingMode>(this, global::java.math.MathContext.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;", ref global::java.math.MathContext._getRoundingMode21310) as java.math.RoundingMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _MathContext21311;
 		public MathContext(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

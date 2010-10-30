@@ -10,26 +10,17 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _toString23403;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Signer._toString23403.native == global::System.IntPtr.Zero)
-				global::java.security.Signer._toString23403 = @__env.GetMethodIDNoThrow(global::java.security.Signer.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Signer.staticClass, global::java.security.Signer._toString23403) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Signer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Signer._toString23403) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivateKey23404;
 		public virtual global::java.security.PrivateKey getPrivateKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Signer._getPrivateKey23404.native == global::System.IntPtr.Zero)
-				global::java.security.Signer._getPrivateKey23404 = @__env.GetMethodIDNoThrow(global::java.security.Signer.staticClass, "getPrivateKey", "()Ljava/security/PrivateKey;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.Signer.staticClass, global::java.security.Signer._getPrivateKey23404) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.Signer.staticClass, "getPrivateKey", "()Ljava/security/PrivateKey;", ref global::java.security.Signer._getPrivateKey23404) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyPair23405;
 		public virtual void setKeyPair(java.security.KeyPair arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Signer._setKeyPair23405.native == global::System.IntPtr.Zero)
-				global::java.security.Signer._setKeyPair23405 = @__env.GetMethodIDNoThrow(global::java.security.Signer.staticClass, "setKeyPair", "(Ljava/security/KeyPair;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Signer.staticClass, global::java.security.Signer._setKeyPair23405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Signer.staticClass, "setKeyPair", "(Ljava/security/KeyPair;)V", ref global::java.security.Signer._setKeyPair23405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Signer23406;
 		public Signer(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

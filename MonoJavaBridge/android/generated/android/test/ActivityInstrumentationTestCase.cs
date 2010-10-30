@@ -10,34 +10,22 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getActivity12110;
 		public virtual global::android.app.Activity getActivity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityInstrumentationTestCase._getActivity12110.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityInstrumentationTestCase._getActivity12110 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "getActivity", "()Landroid/app/Activity;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, global::android.test.ActivityInstrumentationTestCase._getActivity12110) as android.app.Activity;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, "getActivity", "()Landroid/app/Activity;", ref global::android.test.ActivityInstrumentationTestCase._getActivity12110) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12111;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityInstrumentationTestCase._setUp12111.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityInstrumentationTestCase._setUp12111 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "setUp", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, global::android.test.ActivityInstrumentationTestCase._setUp12111);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, "setUp", "()V", ref global::android.test.ActivityInstrumentationTestCase._setUp12111);
 		}
 		internal static global::MonoJavaBridge.MethodId _tearDown12112;
 		protected override void tearDown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityInstrumentationTestCase._tearDown12112.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityInstrumentationTestCase._tearDown12112 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "tearDown", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, global::android.test.ActivityInstrumentationTestCase._tearDown12112);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, "tearDown", "()V", ref global::android.test.ActivityInstrumentationTestCase._tearDown12112);
 		}
 		internal static global::MonoJavaBridge.MethodId _testActivityTestCaseSetUpProperly12113;
 		public virtual void testActivityTestCaseSetUpProperly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityInstrumentationTestCase._testActivityTestCaseSetUpProperly12113.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityInstrumentationTestCase._testActivityTestCaseSetUpProperly12113 = @__env.GetMethodIDNoThrow(global::android.test.ActivityInstrumentationTestCase.staticClass, "testActivityTestCaseSetUpProperly", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, global::android.test.ActivityInstrumentationTestCase._testActivityTestCaseSetUpProperly12113);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityInstrumentationTestCase.staticClass, "testActivityTestCaseSetUpProperly", "()V", ref global::android.test.ActivityInstrumentationTestCase._testActivityTestCaseSetUpProperly12113);
 		}
 		internal static global::MonoJavaBridge.MethodId _ActivityInstrumentationTestCase12114;
 		public ActivityInstrumentationTestCase(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

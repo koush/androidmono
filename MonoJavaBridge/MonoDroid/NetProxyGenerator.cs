@@ -698,7 +698,7 @@ namespace MonoDroid
             }
             
             StringBuilder ret = new StringBuilder();
-            if (method.IsConstructor || method.Type.IsSealed || method.Static)
+            if (method.IsConstructor || method.Static) //  || method.Type.IsSealed
             {
                 if (method.Return.EndsWith("[]"))
                     ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", method.Return.Substring(0, method.Return.Length - 2));
@@ -869,6 +869,8 @@ namespace MonoDroid
             
             String initJni = null;
             string methodId = null;
+            string signature = null;
+            String methodIdLookup = null;
             if (!method.Type.IsInterface)
             {
                 if (!method.Static && method.Parameters.Count == 0 && ((method.Name == "iterator" && method.Scope == "public") || method.Name == "java.lang.Iterable.iterator"))
@@ -884,12 +886,12 @@ namespace MonoDroid
                     WriteLine("}");
                 }
                 
-                string signature = GetMethodSignature(method);
+                signature = GetMethodSignature(method);
                 if (method.Name.LastIndexOf('.') == -1)
                     methodId = method.Name;
                 else
                     methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
-                string methodIdLookup = methodId;
+                methodIdLookup = methodId;
                 methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
                 initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : methodIdLookup, signature, method.Static ? "Static" : string.Empty);
                 //myInitJni.Add(initJni);
@@ -936,12 +938,14 @@ namespace MonoDroid
                     WriteLine();
                 WriteLine("{");
                 myIndent++;
-                //if (method.IsConstructor || method.Type.IsSealed || method.Static)
+                if (method.IsConstructor || method.Static)
+                {
                     WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
-                WriteLine("if (global::{0}.{1}.native == global::System.IntPtr.Zero)", method.Type.Name, methodId);
-                myIndent++;
-                WriteLine(initJni);
-                myIndent--;
+                    WriteLine("if (global::{0}.{1}.native == global::System.IntPtr.Zero)", method.Type.Name, methodId);
+                    myIndent++;
+                    WriteLine(initJni);
+                    myIndent--;
+                }
                 var statement = GetMethodStatement(method);
                 StringBuilder parBuilder = new StringBuilder();
                 if (method.Static || method.IsConstructor)
@@ -970,7 +974,7 @@ namespace MonoDroid
                 }
                 else
                 {
-                    if (method.Type.IsSealed)
+                    if (false)//method.Type.IsSealed)
                     {
                         if (method.Type.WrappedInterface != null)
                             WriteLine(statement, string.Empty, parBuilder);
@@ -979,7 +983,7 @@ namespace MonoDroid
                     }
                     else
                     {
-                        var s = string.Format(statement, string.Empty, string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this, global::{0}.staticClass, "), method.Type.Name));
+                        var s = string.Format(statement, string.Empty, string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this, global::{0}.staticClass, \"{1}\", \"{2}\", ref "), method.Type.Name, methodIdLookup, signature));
                         s = s.Replace("@__env.", "global::MonoJavaBridge.JavaBridge.");
                         WriteLine(s);
                     }

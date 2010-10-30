@@ -10,34 +10,22 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _cleanup10214;
 		public virtual void cleanup(android.os.IBinder arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher._cleanup10214.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher._cleanup10214 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "cleanup", "(Landroid/os/IBinder;Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._cleanup10214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, "cleanup", "(Landroid/os/IBinder;Z)V", ref global::android.os.TokenWatcher._cleanup10214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _acquire10215;
 		public virtual void acquire(android.os.IBinder arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher._acquire10215.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher._acquire10215 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "acquire", "(Landroid/os/IBinder;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._acquire10215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, "acquire", "(Landroid/os/IBinder;Ljava/lang/String;)V", ref global::android.os.TokenWatcher._acquire10215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _release10216;
 		public virtual void release(android.os.IBinder arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher._release10216.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher._release10216 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "release", "(Landroid/os/IBinder;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._release10216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, "release", "(Landroid/os/IBinder;)V", ref global::android.os.TokenWatcher._release10216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dump10217;
 		public virtual void dump()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher._dump10217.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher._dump10217 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "dump", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._dump10217);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher.staticClass, "dump", "()V", ref global::android.os.TokenWatcher._dump10217);
 		}
 		internal static global::MonoJavaBridge.MethodId _acquired10218;
 		public abstract void acquired();
@@ -46,10 +34,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _isAcquired10220;
 		public virtual bool isAcquired()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher._isAcquired10220.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher._isAcquired10220 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher.staticClass, "isAcquired", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._isAcquired10220);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.TokenWatcher.staticClass, "isAcquired", "()Z", ref global::android.os.TokenWatcher._isAcquired10220);
 		}
 		internal static global::MonoJavaBridge.MethodId _TokenWatcher10221;
 		public TokenWatcher(android.os.Handler arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -80,18 +65,12 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _acquired10222;
 		public override void acquired()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher_._acquired10222.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher_._acquired10222 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher_.staticClass, "acquired", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.os.TokenWatcher_._acquired10222);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher_.staticClass, "acquired", "()V", ref global::android.os.TokenWatcher_._acquired10222);
 		}
 		internal static global::MonoJavaBridge.MethodId _released10223;
 		public override void released()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.TokenWatcher_._released10223.native == global::System.IntPtr.Zero)
-				global::android.os.TokenWatcher_._released10223 = @__env.GetMethodIDNoThrow(global::android.os.TokenWatcher_.staticClass, "released", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.os.TokenWatcher_._released10223);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.TokenWatcher_.staticClass, "released", "()V", ref global::android.os.TokenWatcher_._released10223);
 		}
 		static TokenWatcher_()
 		{

@@ -17,18 +17,12 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _equals26076;
 		bool java.util.Comparator.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Comparator_._equals26076.native == global::System.IntPtr.Zero)
-				global::java.util.Comparator_._equals26076 = @__env.GetMethodIDNoThrow(global::java.util.Comparator_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Comparator_._equals26076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Comparator_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.Comparator_._equals26076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compare26077;
 		int java.util.Comparator.compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Comparator_._compare26077.native == global::System.IntPtr.Zero)
-				global::java.util.Comparator_._compare26077 = @__env.GetMethodIDNoThrow(global::java.util.Comparator_.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.Comparator_._compare26077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Comparator_.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::java.util.Comparator_._compare26077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Comparator_()
 		{

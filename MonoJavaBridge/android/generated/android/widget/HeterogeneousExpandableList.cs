@@ -19,34 +19,22 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getChildType17201;
 		int android.widget.HeterogeneousExpandableList.getChildType(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HeterogeneousExpandableList_._getChildType17201.native == global::System.IntPtr.Zero)
-				global::android.widget.HeterogeneousExpandableList_._getChildType17201 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildType", "(II)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getChildType17201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildType", "(II)I", ref global::android.widget.HeterogeneousExpandableList_._getChildType17201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getChildTypeCount17202;
 		int android.widget.HeterogeneousExpandableList.getChildTypeCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202.native == global::System.IntPtr.Zero)
-				global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202);
 		}
 		internal static global::MonoJavaBridge.MethodId _getGroupType17203;
 		int android.widget.HeterogeneousExpandableList.getGroupType(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HeterogeneousExpandableList_._getGroupType17203.native == global::System.IntPtr.Zero)
-				global::android.widget.HeterogeneousExpandableList_._getGroupType17203 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getGroupType17203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I", ref global::android.widget.HeterogeneousExpandableList_._getGroupType17203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getGroupTypeCount17204;
 		int android.widget.HeterogeneousExpandableList.getGroupTypeCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204.native == global::System.IntPtr.Zero)
-				global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204);
 		}
 		static HeterogeneousExpandableList_()
 		{

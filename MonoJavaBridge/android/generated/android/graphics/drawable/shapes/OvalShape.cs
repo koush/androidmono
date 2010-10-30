@@ -10,10 +10,7 @@ namespace android.graphics.drawable.shapes
 		internal static global::MonoJavaBridge.MethodId _draw6242;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.shapes.OvalShape._draw6242.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.shapes.OvalShape._draw6242 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw6242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V", ref global::android.graphics.drawable.shapes.OvalShape._draw6242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _OvalShape6243;
 		public OvalShape() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

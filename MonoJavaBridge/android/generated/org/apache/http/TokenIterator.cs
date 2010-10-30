@@ -17,42 +17,27 @@ namespace org.apache.http
 		internal static global::MonoJavaBridge.MethodId _hasNext31766;
 		bool org.apache.http.TokenIterator.hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.TokenIterator_._hasNext31766.native == global::System.IntPtr.Zero)
-				global::org.apache.http.TokenIterator_._hasNext31766 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._hasNext31766);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.TokenIterator_._hasNext31766);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken31767;
 		global::java.lang.String org.apache.http.TokenIterator.nextToken()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.TokenIterator_._nextToken31767.native == global::System.IntPtr.Zero)
-				global::org.apache.http.TokenIterator_._nextToken31767 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "nextToken", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._nextToken31767)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.TokenIterator_.staticClass, "nextToken", "()Ljava/lang/String;", ref global::org.apache.http.TokenIterator_._nextToken31767) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext31768;
 		bool java.util.Iterator.hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.TokenIterator_._hasNext31768.native == global::System.IntPtr.Zero)
-				global::org.apache.http.TokenIterator_._hasNext31768 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._hasNext31768);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.TokenIterator_._hasNext31768);
 		}
 		internal static global::MonoJavaBridge.MethodId _next31769;
 		global::java.lang.Object java.util.Iterator.next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.TokenIterator_._next31769.native == global::System.IntPtr.Zero)
-				global::org.apache.http.TokenIterator_._next31769 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "next", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._next31769)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.TokenIterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::org.apache.http.TokenIterator_._next31769) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove31770;
 		void java.util.Iterator.remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.TokenIterator_._remove31770.native == global::System.IntPtr.Zero)
-				global::org.apache.http.TokenIterator_._remove31770 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "remove", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._remove31770);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.TokenIterator_.staticClass, "remove", "()V", ref global::org.apache.http.TokenIterator_._remove31770);
 		}
 		static TokenIterator_()
 		{

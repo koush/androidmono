@@ -10,106 +10,67 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _hasNext33651;
 		public virtual bool hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._hasNext33651.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._hasNext33651 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "hasNext", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._hasNext33651);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "hasNext", "()Z", ref global::org.apache.http.message.BasicTokenIterator._hasNext33651);
 		}
 		internal static global::MonoJavaBridge.MethodId _next33652;
 		public virtual global::java.lang.Object next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._next33652.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._next33652 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "next", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._next33652) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "next", "()Ljava/lang/Object;", ref global::org.apache.http.message.BasicTokenIterator._next33652) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove33653;
 		public virtual void remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._remove33653.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._remove33653 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "remove", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._remove33653);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "remove", "()V", ref global::org.apache.http.message.BasicTokenIterator._remove33653);
 		}
 		internal static global::MonoJavaBridge.MethodId _isWhitespace33654;
 		protected virtual bool isWhitespace(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._isWhitespace33654.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._isWhitespace33654 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isWhitespace", "(C)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._isWhitespace33654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "isWhitespace", "(C)Z", ref global::org.apache.http.message.BasicTokenIterator._isWhitespace33654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken33655;
 		public virtual global::java.lang.String nextToken()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._nextToken33655.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._nextToken33655 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "nextToken", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._nextToken33655) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "nextToken", "()Ljava/lang/String;", ref global::org.apache.http.message.BasicTokenIterator._nextToken33655) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findTokenStart33656;
 		protected virtual int findTokenStart(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._findTokenStart33656.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._findTokenStart33656 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenStart", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._findTokenStart33656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenStart", "(I)I", ref global::org.apache.http.message.BasicTokenIterator._findTokenStart33656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _findTokenEnd33657;
 		protected virtual int findTokenEnd(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._findTokenEnd33657.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._findTokenEnd33657 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenEnd", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._findTokenEnd33657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenEnd", "(I)I", ref global::org.apache.http.message.BasicTokenIterator._findTokenEnd33657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _findNext33658;
 		protected virtual int findNext(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._findNext33658.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._findNext33658 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "findNext", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._findNext33658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "findNext", "(I)I", ref global::org.apache.http.message.BasicTokenIterator._findNext33658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _createToken33659;
 		protected virtual global::java.lang.String createToken(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._createToken33659.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._createToken33659 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "createToken", "(Ljava/lang/String;II)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._createToken33659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "createToken", "(Ljava/lang/String;II)Ljava/lang/String;", ref global::org.apache.http.message.BasicTokenIterator._createToken33659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findTokenSeparator33660;
 		protected virtual int findTokenSeparator(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._findTokenSeparator33660.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._findTokenSeparator33660 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenSeparator", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._findTokenSeparator33660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "findTokenSeparator", "(I)I", ref global::org.apache.http.message.BasicTokenIterator._findTokenSeparator33660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTokenSeparator33661;
 		protected virtual bool isTokenSeparator(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._isTokenSeparator33661.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._isTokenSeparator33661 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isTokenSeparator", "(C)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._isTokenSeparator33661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "isTokenSeparator", "(C)Z", ref global::org.apache.http.message.BasicTokenIterator._isTokenSeparator33661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTokenChar33662;
 		protected virtual bool isTokenChar(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._isTokenChar33662.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._isTokenChar33662 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isTokenChar", "(C)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._isTokenChar33662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "isTokenChar", "(C)Z", ref global::org.apache.http.message.BasicTokenIterator._isTokenChar33662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isHttpSeparator33663;
 		protected virtual bool isHttpSeparator(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicTokenIterator._isHttpSeparator33663.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicTokenIterator._isHttpSeparator33663 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicTokenIterator.staticClass, "isHttpSeparator", "(C)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, global::org.apache.http.message.BasicTokenIterator._isHttpSeparator33663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicTokenIterator.staticClass, "isHttpSeparator", "(C)Z", ref global::org.apache.http.message.BasicTokenIterator._isHttpSeparator33663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicTokenIterator33664;
 		public BasicTokenIterator(org.apache.http.HeaderIterator arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

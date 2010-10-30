@@ -10,130 +10,82 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _toString19577;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._toString19577.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._toString19577 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._toString19577) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.StreamTokenizer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.io.StreamTokenizer._toString19577) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken19578;
 		public virtual int nextToken()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._nextToken19578.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._nextToken19578 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "nextToken", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._nextToken19578);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.StreamTokenizer.staticClass, "nextToken", "()I", ref global::java.io.StreamTokenizer._nextToken19578);
 		}
 		internal static global::MonoJavaBridge.MethodId _pushBack19579;
 		public virtual void pushBack()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._pushBack19579.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._pushBack19579 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "pushBack", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._pushBack19579);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "pushBack", "()V", ref global::java.io.StreamTokenizer._pushBack19579);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetSyntax19580;
 		public virtual void resetSyntax()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._resetSyntax19580.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._resetSyntax19580 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "resetSyntax", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._resetSyntax19580);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "resetSyntax", "()V", ref global::java.io.StreamTokenizer._resetSyntax19580);
 		}
 		internal static global::MonoJavaBridge.MethodId _wordChars19581;
 		public virtual void wordChars(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._wordChars19581.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._wordChars19581 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "wordChars", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._wordChars19581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "wordChars", "(II)V", ref global::java.io.StreamTokenizer._wordChars19581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _whitespaceChars19582;
 		public virtual void whitespaceChars(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._whitespaceChars19582.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._whitespaceChars19582 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "whitespaceChars", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._whitespaceChars19582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "whitespaceChars", "(II)V", ref global::java.io.StreamTokenizer._whitespaceChars19582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ordinaryChars19583;
 		public virtual void ordinaryChars(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._ordinaryChars19583.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._ordinaryChars19583 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "ordinaryChars", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._ordinaryChars19583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "ordinaryChars", "(II)V", ref global::java.io.StreamTokenizer._ordinaryChars19583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ordinaryChar19584;
 		public virtual void ordinaryChar(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._ordinaryChar19584.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._ordinaryChar19584 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "ordinaryChar", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._ordinaryChar19584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "ordinaryChar", "(I)V", ref global::java.io.StreamTokenizer._ordinaryChar19584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _commentChar19585;
 		public virtual void commentChar(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._commentChar19585.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._commentChar19585 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "commentChar", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._commentChar19585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "commentChar", "(I)V", ref global::java.io.StreamTokenizer._commentChar19585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _quoteChar19586;
 		public virtual void quoteChar(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._quoteChar19586.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._quoteChar19586 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "quoteChar", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._quoteChar19586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "quoteChar", "(I)V", ref global::java.io.StreamTokenizer._quoteChar19586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parseNumbers19587;
 		public virtual void parseNumbers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._parseNumbers19587.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._parseNumbers19587 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "parseNumbers", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._parseNumbers19587);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "parseNumbers", "()V", ref global::java.io.StreamTokenizer._parseNumbers19587);
 		}
 		internal static global::MonoJavaBridge.MethodId _eolIsSignificant19588;
 		public virtual void eolIsSignificant(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._eolIsSignificant19588.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._eolIsSignificant19588 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "eolIsSignificant", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._eolIsSignificant19588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "eolIsSignificant", "(Z)V", ref global::java.io.StreamTokenizer._eolIsSignificant19588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _slashStarComments19589;
 		public virtual void slashStarComments(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._slashStarComments19589.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._slashStarComments19589 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "slashStarComments", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._slashStarComments19589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "slashStarComments", "(Z)V", ref global::java.io.StreamTokenizer._slashStarComments19589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _slashSlashComments19590;
 		public virtual void slashSlashComments(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._slashSlashComments19590.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._slashSlashComments19590 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "slashSlashComments", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._slashSlashComments19590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "slashSlashComments", "(Z)V", ref global::java.io.StreamTokenizer._slashSlashComments19590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lowerCaseMode19591;
 		public virtual void lowerCaseMode(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._lowerCaseMode19591.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._lowerCaseMode19591 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "lowerCaseMode", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._lowerCaseMode19591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StreamTokenizer.staticClass, "lowerCaseMode", "(Z)V", ref global::java.io.StreamTokenizer._lowerCaseMode19591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lineno19592;
 		public virtual int lineno()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.StreamTokenizer._lineno19592.native == global::System.IntPtr.Zero)
-				global::java.io.StreamTokenizer._lineno19592 = @__env.GetMethodIDNoThrow(global::java.io.StreamTokenizer.staticClass, "lineno", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._lineno19592);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.StreamTokenizer.staticClass, "lineno", "()I", ref global::java.io.StreamTokenizer._lineno19592);
 		}
 		internal static global::MonoJavaBridge.MethodId _StreamTokenizer19593;
 		public StreamTokenizer(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

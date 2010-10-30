@@ -10,18 +10,12 @@ namespace org.apache.http.cookie
 		internal static global::MonoJavaBridge.MethodId _compare32416;
 		public virtual int compare(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.Cookie arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.cookie.CookiePathComparator._compare32416.native == global::System.IntPtr.Zero)
-				global::org.apache.http.cookie.CookiePathComparator._compare32416 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._compare32416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I", ref global::org.apache.http.cookie.CookiePathComparator._compare32416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compare32417;
 		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.cookie.CookiePathComparator._compare32417.native == global::System.IntPtr.Zero)
-				global::org.apache.http.cookie.CookiePathComparator._compare32417 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._compare32417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookiePathComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::org.apache.http.cookie.CookiePathComparator._compare32417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _CookiePathComparator32418;
 		public CookiePathComparator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

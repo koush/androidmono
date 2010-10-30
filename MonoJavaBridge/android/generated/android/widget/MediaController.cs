@@ -32,82 +32,52 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _start17398;
 			void android.widget.MediaController.MediaPlayerControl.start()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._start17398.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._start17398 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "start", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._start17398);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "start", "()V", ref global::android.widget.MediaController.MediaPlayerControl_._start17398);
 			}
 			internal static global::MonoJavaBridge.MethodId _getDuration17399;
 			int android.widget.MediaController.MediaPlayerControl.getDuration()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._getDuration17399.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._getDuration17399 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getDuration", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._getDuration17399);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getDuration", "()I", ref global::android.widget.MediaController.MediaPlayerControl_._getDuration17399);
 			}
 			internal static global::MonoJavaBridge.MethodId _pause17400;
 			void android.widget.MediaController.MediaPlayerControl.pause()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._pause17400.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._pause17400 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "pause", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._pause17400);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "pause", "()V", ref global::android.widget.MediaController.MediaPlayerControl_._pause17400);
 			}
 			internal static global::MonoJavaBridge.MethodId _isPlaying17401;
 			bool android.widget.MediaController.MediaPlayerControl.isPlaying()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._isPlaying17401.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._isPlaying17401 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "isPlaying", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._isPlaying17401);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "isPlaying", "()Z", ref global::android.widget.MediaController.MediaPlayerControl_._isPlaying17401);
 			}
 			internal static global::MonoJavaBridge.MethodId _seekTo17402;
 			void android.widget.MediaController.MediaPlayerControl.seekTo(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._seekTo17402.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._seekTo17402 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "seekTo", "(I)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._seekTo17402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "seekTo", "(I)V", ref global::android.widget.MediaController.MediaPlayerControl_._seekTo17402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _getCurrentPosition17403;
 			int android.widget.MediaController.MediaPlayerControl.getCurrentPosition()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._getCurrentPosition17403.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._getCurrentPosition17403 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getCurrentPosition", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._getCurrentPosition17403);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getCurrentPosition", "()I", ref global::android.widget.MediaController.MediaPlayerControl_._getCurrentPosition17403);
 			}
 			internal static global::MonoJavaBridge.MethodId _getBufferPercentage17404;
 			int android.widget.MediaController.MediaPlayerControl.getBufferPercentage()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._getBufferPercentage17404.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._getBufferPercentage17404 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getBufferPercentage", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._getBufferPercentage17404);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "getBufferPercentage", "()I", ref global::android.widget.MediaController.MediaPlayerControl_._getBufferPercentage17404);
 			}
 			internal static global::MonoJavaBridge.MethodId _canPause17405;
 			bool android.widget.MediaController.MediaPlayerControl.canPause()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._canPause17405.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._canPause17405 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canPause", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._canPause17405);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canPause", "()Z", ref global::android.widget.MediaController.MediaPlayerControl_._canPause17405);
 			}
 			internal static global::MonoJavaBridge.MethodId _canSeekBackward17406;
 			bool android.widget.MediaController.MediaPlayerControl.canSeekBackward()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._canSeekBackward17406.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._canSeekBackward17406 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekBackward", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._canSeekBackward17406);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekBackward", "()Z", ref global::android.widget.MediaController.MediaPlayerControl_._canSeekBackward17406);
 			}
 			internal static global::MonoJavaBridge.MethodId _canSeekForward17407;
 			bool android.widget.MediaController.MediaPlayerControl.canSeekForward()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407.native == global::System.IntPtr.Zero)
-					global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekForward", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.MediaPlayerControl_.staticClass, "canSeekForward", "()Z", ref global::android.widget.MediaController.MediaPlayerControl_._canSeekForward17407);
 			}
 			static MediaPlayerControl_()
 			{
@@ -128,74 +98,47 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setEnabled17408;
 		public override void setEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._setEnabled17408.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._setEnabled17408 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "setEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setEnabled17408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "setEnabled", "(Z)V", ref global::android.widget.MediaController._setEnabled17408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent17409;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._onTouchEvent17409.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._onTouchEvent17409 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTouchEvent17409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.MediaController._onTouchEvent17409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTrackballEvent17410;
 		public override bool onTrackballEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._onTrackballEvent17410.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._onTrackballEvent17410 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "onTrackballEvent", "(Landroid/view/MotionEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTrackballEvent17410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, "onTrackballEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.MediaController._onTrackballEvent17410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent17411;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._dispatchKeyEvent17411.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._dispatchKeyEvent17411 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._dispatchKeyEvent17411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.MediaController._dispatchKeyEvent17411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onFinishInflate17412;
 		public virtual void onFinishInflate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._onFinishInflate17412.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._onFinishInflate17412 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "onFinishInflate", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onFinishInflate17412);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "onFinishInflate", "()V", ref global::android.widget.MediaController._onFinishInflate17412);
 		}
 		internal static global::MonoJavaBridge.MethodId _isShowing17413;
 		public virtual bool isShowing()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._isShowing17413.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._isShowing17413 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "isShowing", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._isShowing17413);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.MediaController.staticClass, "isShowing", "()Z", ref global::android.widget.MediaController._isShowing17413);
 		}
 		internal static global::MonoJavaBridge.MethodId _show17414;
 		public virtual void show(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._show17414.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._show17414 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "show", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show17414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "show", "(I)V", ref global::android.widget.MediaController._show17414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _show17415;
 		public virtual void show()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._show17415.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._show17415 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "show", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show17415);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "show", "()V", ref global::android.widget.MediaController._show17415);
 		}
 		internal static global::MonoJavaBridge.MethodId _hide17416;
 		public virtual void hide()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._hide17416.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._hide17416 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "hide", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._hide17416);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "hide", "()V", ref global::android.widget.MediaController._hide17416);
 		}
 		public new global::android.widget.MediaController.MediaPlayerControl MediaPlayer
 		{
@@ -207,10 +150,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setMediaPlayer17417;
 		public virtual void setMediaPlayer(android.widget.MediaController.MediaPlayerControl arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._setMediaPlayer17417.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._setMediaPlayer17417 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "setMediaPlayer", "(Landroid/widget/MediaController$MediaPlayerControl;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setMediaPlayer17417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "setMediaPlayer", "(Landroid/widget/MediaController$MediaPlayerControl;)V", ref global::android.widget.MediaController._setMediaPlayer17417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.view.View AnchorView
 		{
@@ -222,18 +162,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setAnchorView17418;
 		public virtual void setAnchorView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._setAnchorView17418.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._setAnchorView17418 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "setAnchorView", "(Landroid/view/View;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setAnchorView17418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "setAnchorView", "(Landroid/view/View;)V", ref global::android.widget.MediaController._setAnchorView17418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPrevNextListeners17419;
 		public virtual void setPrevNextListeners(android.view.View.OnClickListener arg0, android.view.View.OnClickListener arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.MediaController._setPrevNextListeners17419.native == global::System.IntPtr.Zero)
-				global::android.widget.MediaController._setPrevNextListeners17419 = @__env.GetMethodIDNoThrow(global::android.widget.MediaController.staticClass, "setPrevNextListeners", "(Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setPrevNextListeners17419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.MediaController.staticClass, "setPrevNextListeners", "(Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V", ref global::android.widget.MediaController._setPrevNextListeners17419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void setPrevNextListeners(global::android.view.View.OnClickListenerDelegate arg0, global::android.view.View.OnClickListenerDelegate arg1)
 		{

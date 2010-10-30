@@ -17,10 +17,7 @@ namespace java.nio.channels
 			internal static global::MonoJavaBridge.MethodId _toString22448;
 			public override global::java.lang.String toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.nio.channels.FileChannel.MapMode._toString22448.native == global::System.IntPtr.Zero)
-					global::java.nio.channels.FileChannel.MapMode._toString22448 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.channels.FileChannel.MapMode.staticClass, global::java.nio.channels.FileChannel.MapMode._toString22448) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.channels.FileChannel.MapMode.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.channels.FileChannel.MapMode._toString22448) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.FieldId _READ_ONLY22449;
 			public static global::java.nio.channels.FileChannel.MapMode READ_ONLY
@@ -66,10 +63,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _lock22453;
 		public virtual global::java.nio.channels.FileLock @lock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel._lock22453.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel._lock22453 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "@lock", "()Ljava/nio/channels/FileLock;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._lock22453) as java.nio.channels.FileLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel.staticClass, "@lock", "()Ljava/nio/channels/FileLock;", ref global::java.nio.channels.FileChannel._lock22453) as java.nio.channels.FileLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _size22454;
 		public abstract long size();
@@ -86,20 +80,14 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _write22460;
 		public virtual long write(java.nio.ByteBuffer[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel._write22460.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel._write22460 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._write22460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.FileChannel._write22460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _map22461;
 		public abstract global::java.nio.MappedByteBuffer map(java.nio.channels.FileChannel.MapMode arg0, long arg1, long arg2);
 		internal static global::MonoJavaBridge.MethodId _read22462;
 		public virtual long read(java.nio.ByteBuffer[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel._read22462.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel._read22462 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._read22462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.FileChannel._read22462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read22463;
 		public abstract long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
@@ -110,10 +98,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _tryLock22466;
 		public virtual global::java.nio.channels.FileLock tryLock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel._tryLock22466.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel._tryLock22466 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel.staticClass, "tryLock", "()Ljava/nio/channels/FileLock;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._tryLock22466) as java.nio.channels.FileLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel.staticClass, "tryLock", "()Ljava/nio/channels/FileLock;", ref global::java.nio.channels.FileChannel._tryLock22466) as java.nio.channels.FileLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock22467;
 		public abstract global::java.nio.channels.FileLock tryLock(long arg0, long arg1, bool arg2);
@@ -154,138 +139,87 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _lock22473;
 		public override global::java.nio.channels.FileLock @lock(long arg0, long arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._lock22473.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._lock22473 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "@lock", "(JJZ)Ljava/nio/channels/FileLock;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._lock22473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.channels.FileLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel_.staticClass, "@lock", "(JJZ)Ljava/nio/channels/FileLock;", ref global::java.nio.channels.FileChannel_._lock22473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.channels.FileLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _size22474;
 		public override long size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._size22474.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._size22474 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "size", "()J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._size22474);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "size", "()J", ref global::java.nio.channels.FileChannel_._size22474);
 		}
 		internal static global::MonoJavaBridge.MethodId _position22475;
 		public override long position()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._position22475.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._position22475 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "position", "()J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._position22475);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "position", "()J", ref global::java.nio.channels.FileChannel_._position22475);
 		}
 		internal static global::MonoJavaBridge.MethodId _position22476;
 		public override global::java.nio.channels.FileChannel position(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._position22476.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._position22476 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "position", "(J)Ljava/nio/channels/FileChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._position22476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.channels.FileChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel_.staticClass, "position", "(J)Ljava/nio/channels/FileChannel;", ref global::java.nio.channels.FileChannel_._position22476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.FileChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _write22477;
 		public override int write(java.nio.ByteBuffer arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._write22477.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._write22477 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;J)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._write22477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.FileChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;J)I", ref global::java.nio.channels.FileChannel_._write22477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _write22478;
 		public override int write(java.nio.ByteBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._write22478.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._write22478 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._write22478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.FileChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.FileChannel_._write22478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write22479;
 		public override long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._write22479.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._write22479 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._write22479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.FileChannel_._write22479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _map22480;
 		public override global::java.nio.MappedByteBuffer map(java.nio.channels.FileChannel.MapMode arg0, long arg1, long arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._map22480.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._map22480 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "map", "(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._map22480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.MappedByteBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel_.staticClass, "map", "(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;", ref global::java.nio.channels.FileChannel_._map22480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.MappedByteBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _read22481;
 		public override long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._read22481.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._read22481 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._read22481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.FileChannel_._read22481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read22482;
 		public override int read(java.nio.ByteBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._read22482.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._read22482 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._read22482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.FileChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.FileChannel_._read22482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read22483;
 		public override int read(java.nio.ByteBuffer arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._read22483.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._read22483 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;J)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._read22483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.FileChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;J)I", ref global::java.nio.channels.FileChannel_._read22483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock22484;
 		public override global::java.nio.channels.FileLock tryLock(long arg0, long arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._tryLock22484.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._tryLock22484 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "tryLock", "(JJZ)Ljava/nio/channels/FileLock;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._tryLock22484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.channels.FileLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel_.staticClass, "tryLock", "(JJZ)Ljava/nio/channels/FileLock;", ref global::java.nio.channels.FileChannel_._tryLock22484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.channels.FileLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _truncate22485;
 		public override global::java.nio.channels.FileChannel truncate(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._truncate22485.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._truncate22485 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "truncate", "(J)Ljava/nio/channels/FileChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._truncate22485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.channels.FileChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileChannel_.staticClass, "truncate", "(J)Ljava/nio/channels/FileChannel;", ref global::java.nio.channels.FileChannel_._truncate22485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.FileChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _force22486;
 		public override void force(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._force22486.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._force22486 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "force", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._force22486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.FileChannel_.staticClass, "force", "(Z)V", ref global::java.nio.channels.FileChannel_._force22486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _transferTo22487;
 		public override long transferTo(long arg0, long arg1, java.nio.channels.WritableByteChannel arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._transferTo22487.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._transferTo22487 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "transferTo", "(JJLjava/nio/channels/WritableByteChannel;)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._transferTo22487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "transferTo", "(JJLjava/nio/channels/WritableByteChannel;)J", ref global::java.nio.channels.FileChannel_._transferTo22487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _transferFrom22488;
 		public override long transferFrom(java.nio.channels.ReadableByteChannel arg0, long arg1, long arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._transferFrom22488.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._transferFrom22488 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._transferFrom22488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileChannel_.staticClass, "transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J", ref global::java.nio.channels.FileChannel_._transferFrom22488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseChannel22489;
 		protected override void implCloseChannel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileChannel_._implCloseChannel22489.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileChannel_._implCloseChannel22489 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileChannel_.staticClass, "implCloseChannel", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.FileChannel_._implCloseChannel22489);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.FileChannel_.staticClass, "implCloseChannel", "()V", ref global::java.nio.channels.FileChannel_._implCloseChannel22489);
 		}
 		static FileChannel_()
 		{

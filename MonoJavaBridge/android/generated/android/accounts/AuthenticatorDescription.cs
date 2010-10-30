@@ -10,42 +10,27 @@ namespace android.accounts
 		internal static global::MonoJavaBridge.MethodId _equals1362;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AuthenticatorDescription._equals1362.native == global::System.IntPtr.Zero)
-				global::android.accounts.AuthenticatorDescription._equals1362 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._equals1362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.accounts.AuthenticatorDescription._equals1362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString1363;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AuthenticatorDescription._toString1363.native == global::System.IntPtr.Zero)
-				global::android.accounts.AuthenticatorDescription._toString1363 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._toString1363) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.accounts.AuthenticatorDescription.staticClass, "toString", "()Ljava/lang/String;", ref global::android.accounts.AuthenticatorDescription._toString1363) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode1364;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AuthenticatorDescription._hashCode1364.native == global::System.IntPtr.Zero)
-				global::android.accounts.AuthenticatorDescription._hashCode1364 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._hashCode1364);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, "hashCode", "()I", ref global::android.accounts.AuthenticatorDescription._hashCode1364);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1365;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AuthenticatorDescription._writeToParcel1365.native == global::System.IntPtr.Zero)
-				global::android.accounts.AuthenticatorDescription._writeToParcel1365 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._writeToParcel1365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.accounts.AuthenticatorDescription._writeToParcel1365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents1366;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AuthenticatorDescription._describeContents1366.native == global::System.IntPtr.Zero)
-				global::android.accounts.AuthenticatorDescription._describeContents1366 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._describeContents1366);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, "describeContents", "()I", ref global::android.accounts.AuthenticatorDescription._describeContents1366);
 		}
 		internal static global::MonoJavaBridge.MethodId _newKey1367;
 		public static global::android.accounts.AuthenticatorDescription newKey(java.lang.String arg0)

@@ -17,10 +17,7 @@ namespace android.sax
 		internal static global::MonoJavaBridge.MethodId _getContentHandler11614;
 		public virtual global::org.xml.sax.ContentHandler getContentHandler()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.RootElement._getContentHandler11614.native == global::System.IntPtr.Zero)
-				global::android.sax.RootElement._getContentHandler11614 = @__env.GetMethodIDNoThrow(global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.ContentHandler>(this, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler11614) as org.xml.sax.ContentHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.ContentHandler>(this, global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;", ref global::android.sax.RootElement._getContentHandler11614) as org.xml.sax.ContentHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _RootElement11615;
 		public RootElement(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

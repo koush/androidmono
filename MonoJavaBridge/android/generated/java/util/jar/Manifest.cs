@@ -10,58 +10,37 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _equals27886;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._equals27886.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._equals27886 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._equals27886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Manifest.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.jar.Manifest._equals27886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode27887;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._hashCode27887.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._hashCode27887 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._hashCode27887);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.jar.Manifest.staticClass, "hashCode", "()I", ref global::java.util.jar.Manifest._hashCode27887);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone27888;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._clone27888.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._clone27888 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._clone27888) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.jar.Manifest._clone27888) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear27889;
 		public virtual void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._clear27889.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._clear27889 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "clear", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._clear27889);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, "clear", "()V", ref global::java.util.jar.Manifest._clear27889);
 		}
 		internal static global::MonoJavaBridge.MethodId _write27890;
 		public virtual void write(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._write27890.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._write27890 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "write", "(Ljava/io/OutputStream;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._write27890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, "write", "(Ljava/io/OutputStream;)V", ref global::java.util.jar.Manifest._write27890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read27891;
 		public virtual void read(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._read27891.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._read27891 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "read", "(Ljava/io/InputStream;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._read27891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Manifest.staticClass, "read", "(Ljava/io/InputStream;)V", ref global::java.util.jar.Manifest._read27891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes27892;
 		public virtual global::java.util.jar.Attributes getAttributes(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._getAttributes27892.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._getAttributes27892 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "getAttributes", "(Ljava/lang/String;)Ljava/util/jar/Attributes;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._getAttributes27892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, "getAttributes", "(Ljava/lang/String;)Ljava/util/jar/Attributes;", ref global::java.util.jar.Manifest._getAttributes27892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.jar.Attributes;
 		}
 		public new global::java.util.jar.Attributes MainAttributes
 		{
@@ -73,10 +52,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getMainAttributes27893;
 		public virtual global::java.util.jar.Attributes getMainAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._getMainAttributes27893.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._getMainAttributes27893 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "getMainAttributes", "()Ljava/util/jar/Attributes;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._getMainAttributes27893) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Manifest.staticClass, "getMainAttributes", "()Ljava/util/jar/Attributes;", ref global::java.util.jar.Manifest._getMainAttributes27893) as java.util.jar.Attributes;
 		}
 		public new global::java.util.Map Entries
 		{
@@ -88,10 +64,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getEntries27894;
 		public virtual global::java.util.Map getEntries()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.Manifest._getEntries27894.native == global::System.IntPtr.Zero)
-				global::java.util.jar.Manifest._getEntries27894 = @__env.GetMethodIDNoThrow(global::java.util.jar.Manifest.staticClass, "getEntries", "()Ljava/util/Map;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::java.util.jar.Manifest.staticClass, global::java.util.jar.Manifest._getEntries27894) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::java.util.jar.Manifest.staticClass, "getEntries", "()Ljava/util/Map;", ref global::java.util.jar.Manifest._getEntries27894) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _Manifest27895;
 		public Manifest(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,18 +10,12 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _equals28808;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._equals28808.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._equals28808 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._equals28808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.crypto.spec.RC2ParameterSpec._equals28808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode28809;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._hashCode28809.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._hashCode28809 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._hashCode28809);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "hashCode", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._hashCode28809);
 		}
 		public new byte[] IV
 		{
@@ -33,10 +27,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getIV28810;
 		public virtual byte[] getIV()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._getIV28810.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._getIV28810 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getIV", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._getIV28810) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getIV", "()[B", ref global::javax.crypto.spec.RC2ParameterSpec._getIV28810) as byte[];
 		}
 		public new int EffectiveKeyBits
 		{
@@ -48,10 +39,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getEffectiveKeyBits28811;
 		public virtual int getEffectiveKeyBits()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._getEffectiveKeyBits28811.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._getEffectiveKeyBits28811 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getEffectiveKeyBits", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._getEffectiveKeyBits28811);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getEffectiveKeyBits", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._getEffectiveKeyBits28811);
 		}
 		internal static global::MonoJavaBridge.MethodId _RC2ParameterSpec28812;
 		public RC2ParameterSpec(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

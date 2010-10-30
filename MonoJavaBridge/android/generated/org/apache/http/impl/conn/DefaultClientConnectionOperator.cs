@@ -10,34 +10,22 @@ namespace org.apache.http.impl.conn
 		internal static global::MonoJavaBridge.MethodId _openConnection33039;
 		public virtual void openConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, java.net.InetAddress arg2, org.apache.http.protocol.HttpContext arg3, org.apache.http.@params.HttpParams arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.DefaultClientConnectionOperator._openConnection33039.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.DefaultClientConnectionOperator._openConnection33039 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "openConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, global::org.apache.http.impl.conn.DefaultClientConnectionOperator._openConnection33039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "openConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.impl.conn.DefaultClientConnectionOperator._openConnection33039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _createConnection33040;
 		public virtual global::org.apache.http.conn.OperatedClientConnection createConnection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.DefaultClientConnectionOperator._createConnection33040.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.DefaultClientConnectionOperator._createConnection33040 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "createConnection", "()Lorg/apache/http/conn/OperatedClientConnection;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.OperatedClientConnection>(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, global::org.apache.http.impl.conn.DefaultClientConnectionOperator._createConnection33040) as org.apache.http.conn.OperatedClientConnection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.OperatedClientConnection>(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "createConnection", "()Lorg/apache/http/conn/OperatedClientConnection;", ref global::org.apache.http.impl.conn.DefaultClientConnectionOperator._createConnection33040) as org.apache.http.conn.OperatedClientConnection;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateSecureConnection33041;
 		public virtual void updateSecureConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, org.apache.http.protocol.HttpContext arg2, org.apache.http.@params.HttpParams arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.DefaultClientConnectionOperator._updateSecureConnection33041.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.DefaultClientConnectionOperator._updateSecureConnection33041 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "updateSecureConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, global::org.apache.http.impl.conn.DefaultClientConnectionOperator._updateSecureConnection33041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "updateSecureConnection", "(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.impl.conn.DefaultClientConnectionOperator._updateSecureConnection33041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _prepareSocket33042;
 		protected virtual void prepareSocket(java.net.Socket arg0, org.apache.http.protocol.HttpContext arg1, org.apache.http.@params.HttpParams arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.DefaultClientConnectionOperator._prepareSocket33042.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.DefaultClientConnectionOperator._prepareSocket33042 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "prepareSocket", "(Ljava/net/Socket;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, global::org.apache.http.impl.conn.DefaultClientConnectionOperator._prepareSocket33042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.DefaultClientConnectionOperator.staticClass, "prepareSocket", "(Ljava/net/Socket;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.impl.conn.DefaultClientConnectionOperator._prepareSocket33042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultClientConnectionOperator33043;
 		public DefaultClientConnectionOperator(org.apache.http.conn.scheme.SchemeRegistry arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

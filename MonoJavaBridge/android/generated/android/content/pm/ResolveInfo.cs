@@ -17,18 +17,12 @@ namespace android.content.pm
 			internal static global::MonoJavaBridge.MethodId _compare4022;
 			public virtual int compare(android.content.pm.ResolveInfo arg0, android.content.pm.ResolveInfo arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4022.native == global::System.IntPtr.Zero)
-					global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4022 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)I", ref global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _compare4023;
 			public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4023.native == global::System.IntPtr.Zero)
-					global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4023 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::android.content.pm.ResolveInfo.DisplayNameComparator._compare4023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _DisplayNameComparator4024;
 			public DisplayNameComparator(android.content.pm.PackageManager arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -51,18 +45,12 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString4025;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._toString4025.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._toString4025 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._toString4025) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ResolveInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.ResolveInfo._toString4025) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump4026;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._dump4026.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._dump4026 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._dump4026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ResolveInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.pm.ResolveInfo._dump4026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
@@ -71,34 +59,22 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _writeToParcel4027;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._writeToParcel4027.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._writeToParcel4027 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._writeToParcel4027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ResolveInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.ResolveInfo._writeToParcel4027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents4028;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._describeContents4028.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._describeContents4028 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._describeContents4028);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.ResolveInfo._describeContents4028);
 		}
 		internal static global::MonoJavaBridge.MethodId _loadLabel4029;
 		public virtual global::java.lang.CharSequence loadLabel(android.content.pm.PackageManager arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._loadLabel4029.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._loadLabel4029 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._loadLabel4029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ResolveInfo.staticClass, "loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", ref global::android.content.pm.ResolveInfo._loadLabel4029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadIcon4030;
 		public virtual global::android.graphics.drawable.Drawable loadIcon(android.content.pm.PackageManager arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._loadIcon4030.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._loadIcon4030 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "loadIcon", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._loadIcon4030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.ResolveInfo.staticClass, "loadIcon", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.ResolveInfo._loadIcon4030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 		}
 		public new int IconResource
 		{
@@ -110,10 +86,7 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _getIconResource4031;
 		public virtual int getIconResource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ResolveInfo._getIconResource4031.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ResolveInfo._getIconResource4031 = @__env.GetMethodIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "getIconResource", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._getIconResource4031);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ResolveInfo.staticClass, "getIconResource", "()I", ref global::android.content.pm.ResolveInfo._getIconResource4031);
 		}
 		internal static global::MonoJavaBridge.MethodId _ResolveInfo4032;
 		public ResolveInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

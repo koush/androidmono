@@ -17,10 +17,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getNumSuccessfulYieldPoints3483;
 		public virtual int getNumSuccessfulYieldPoints()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints3483.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints3483 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints3483);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I", ref global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints3483);
 		}
 		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3484;
 		public OperationApplicationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

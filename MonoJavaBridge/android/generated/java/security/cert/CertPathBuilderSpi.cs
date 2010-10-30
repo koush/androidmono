@@ -38,10 +38,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _engineBuild23511;
 		public override global::java.security.cert.CertPathBuilderResult engineBuild(java.security.cert.CertPathParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathBuilderSpi_._engineBuild23511.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathBuilderSpi_._engineBuild23511 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderSpi_.staticClass, "engineBuild", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.CertPathBuilderResult>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderSpi_._engineBuild23511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPathBuilderResult;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.cert.CertPathBuilderResult>(this, global::java.security.cert.CertPathBuilderSpi_.staticClass, "engineBuild", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;", ref global::java.security.cert.CertPathBuilderSpi_._engineBuild23511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.cert.CertPathBuilderResult;
 		}
 		static CertPathBuilderSpi_()
 		{

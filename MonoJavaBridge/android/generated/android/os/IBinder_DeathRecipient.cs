@@ -16,10 +16,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _binderDied9895;
 		void android.os.IBinder_DeathRecipient.binderDied()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.IBinder_DeathRecipient_._binderDied9895.native == global::System.IntPtr.Zero)
-				global::android.os.IBinder_DeathRecipient_._binderDied9895 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.os.IBinder_DeathRecipient_._binderDied9895);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V", ref global::android.os.IBinder_DeathRecipient_._binderDied9895);
 		}
 		static IBinder_DeathRecipient_()
 		{

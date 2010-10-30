@@ -10,34 +10,22 @@ namespace org.apache.http.impl.cookie
 		internal static global::MonoJavaBridge.MethodId _parse33347;
 		public virtual void parse(org.apache.http.cookie.SetCookie arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._parse33347.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._parse33347 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._parse33347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V", ref global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._parse33347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _match33348;
 		public virtual bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._match33348.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._match33348 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._match33348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._match33348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _validate33349;
 		public virtual void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._validate33349.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._validate33349 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._validate33349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._validate33349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _domainMatch33350;
 		public virtual bool domainMatch(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._domainMatch33350.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._domainMatch33350 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "domainMatch", "(Ljava/lang/String;Ljava/lang/String;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._domainMatch33350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler.staticClass, "domainMatch", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::org.apache.http.impl.cookie.RFC2965DomainAttributeHandler._domainMatch33350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RFC2965DomainAttributeHandler33351;
 		public RFC2965DomainAttributeHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

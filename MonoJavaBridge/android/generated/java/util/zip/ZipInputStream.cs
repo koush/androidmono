@@ -10,34 +10,22 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _close28470;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._close28470.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._close28470 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._close28470);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipInputStream.staticClass, "close", "()V", ref global::java.util.zip.ZipInputStream._close28470);
 		}
 		internal static global::MonoJavaBridge.MethodId _read28471;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._read28471.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._read28471 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "read", "([BII)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._read28471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipInputStream.staticClass, "read", "([BII)I", ref global::java.util.zip.ZipInputStream._read28471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _skip28472;
 		public override long skip(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._skip28472.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._skip28472 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "skip", "(J)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._skip28472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipInputStream.staticClass, "skip", "(J)J", ref global::java.util.zip.ZipInputStream._skip28472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _available28473;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._available28473.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._available28473 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "available", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._available28473);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipInputStream.staticClass, "available", "()I", ref global::java.util.zip.ZipInputStream._available28473);
 		}
 		public new global::java.util.zip.ZipEntry NextEntry
 		{
@@ -49,26 +37,17 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getNextEntry28474;
 		public virtual global::java.util.zip.ZipEntry getNextEntry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._getNextEntry28474.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._getNextEntry28474 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "getNextEntry", "()Ljava/util/zip/ZipEntry;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._getNextEntry28474) as java.util.zip.ZipEntry;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipInputStream.staticClass, "getNextEntry", "()Ljava/util/zip/ZipEntry;", ref global::java.util.zip.ZipInputStream._getNextEntry28474) as java.util.zip.ZipEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _createZipEntry28475;
 		protected virtual global::java.util.zip.ZipEntry createZipEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._createZipEntry28475.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._createZipEntry28475 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "createZipEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._createZipEntry28475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.zip.ZipEntry;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipInputStream.staticClass, "createZipEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;", ref global::java.util.zip.ZipInputStream._createZipEntry28475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.zip.ZipEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _closeEntry28476;
 		public virtual void closeEntry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.ZipInputStream._closeEntry28476.native == global::System.IntPtr.Zero)
-				global::java.util.zip.ZipInputStream._closeEntry28476 = @__env.GetMethodIDNoThrow(global::java.util.zip.ZipInputStream.staticClass, "closeEntry", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipInputStream.staticClass, global::java.util.zip.ZipInputStream._closeEntry28476);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipInputStream.staticClass, "closeEntry", "()V", ref global::java.util.zip.ZipInputStream._closeEntry28476);
 		}
 		internal static global::MonoJavaBridge.MethodId _ZipInputStream28477;
 		public ZipInputStream(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

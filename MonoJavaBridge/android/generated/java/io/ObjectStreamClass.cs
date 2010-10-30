@@ -10,10 +10,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _toString19298;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._toString19298.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._toString19298 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._toString19298) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.ObjectStreamClass.staticClass, "toString", "()Ljava/lang/String;", ref global::java.io.ObjectStreamClass._toString19298) as java.lang.String;
 		}
 		public new global::java.lang.String Name
 		{
@@ -25,10 +22,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getName19299;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._getName19299.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._getName19299 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._getName19299) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.ObjectStreamClass.staticClass, "getName", "()Ljava/lang/String;", ref global::java.io.ObjectStreamClass._getName19299) as java.lang.String;
 		}
 		public new global::java.io.ObjectStreamField[] Fields
 		{
@@ -40,18 +34,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getFields19300;
 		public virtual global::java.io.ObjectStreamField[] getFields()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._getFields19300.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._getFields19300 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "getFields", "()[Ljava/io/ObjectStreamField;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.io.ObjectStreamField>(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._getFields19300) as java.io.ObjectStreamField[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.io.ObjectStreamField>(this, global::java.io.ObjectStreamClass.staticClass, "getFields", "()[Ljava/io/ObjectStreamField;", ref global::java.io.ObjectStreamClass._getFields19300) as java.io.ObjectStreamField[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getField19301;
 		public virtual global::java.io.ObjectStreamField getField(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._getField19301.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._getField19301 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._getField19301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.ObjectStreamField;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamClass.staticClass, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;", ref global::java.io.ObjectStreamClass._getField19301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.ObjectStreamField;
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup19302;
 		public static global::java.io.ObjectStreamClass lookup(java.lang.Class arg0)
@@ -79,18 +67,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getSerialVersionUID19304;
 		public virtual long getSerialVersionUID()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._getSerialVersionUID19304.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._getSerialVersionUID19304 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "getSerialVersionUID", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._getSerialVersionUID19304);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.ObjectStreamClass.staticClass, "getSerialVersionUID", "()J", ref global::java.io.ObjectStreamClass._getSerialVersionUID19304);
 		}
 		internal static global::MonoJavaBridge.MethodId _forClass19305;
 		public virtual global::java.lang.Class forClass()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectStreamClass._forClass19305.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectStreamClass._forClass19305 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamClass.staticClass, "forClass", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.io.ObjectStreamClass.staticClass, global::java.io.ObjectStreamClass._forClass19305) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.io.ObjectStreamClass.staticClass, "forClass", "()Ljava/lang/Class;", ref global::java.io.ObjectStreamClass._forClass19305) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.FieldId _NO_FIELDS19306;
 		public static global::java.io.ObjectStreamField[] NO_FIELDS

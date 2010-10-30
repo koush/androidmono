@@ -16,10 +16,7 @@ namespace android.accounts
 		internal static global::MonoJavaBridge.MethodId _run1351;
 		void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.AccountManagerCallback_._run1351.native == global::System.IntPtr.Zero)
-				global::android.accounts.AccountManagerCallback_._run1351 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallback_.staticClass, "run", "(Landroid/accounts/AccountManagerFuture;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountManagerCallback_._run1351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.AccountManagerCallback_.staticClass, "run", "(Landroid/accounts/AccountManagerFuture;)V", ref global::android.accounts.AccountManagerCallback_._run1351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AccountManagerCallback_()
 		{

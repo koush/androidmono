@@ -22,58 +22,37 @@ namespace java.util.concurrent.locks
 		internal static global::MonoJavaBridge.MethodId _await27732;
 		void java.util.concurrent.locks.Condition.await()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._await27732.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._await27732 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "await", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._await27732);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "await", "()V", ref global::java.util.concurrent.locks.Condition_._await27732);
 		}
 		internal static global::MonoJavaBridge.MethodId _await27733;
 		bool java.util.concurrent.locks.Condition.await(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._await27733.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._await27733 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "await", "(JLjava/util/concurrent/TimeUnit;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._await27733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "await", "(JLjava/util/concurrent/TimeUnit;)Z", ref global::java.util.concurrent.locks.Condition_._await27733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _signal27734;
 		void java.util.concurrent.locks.Condition.signal()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._signal27734.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._signal27734 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "signal", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._signal27734);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "signal", "()V", ref global::java.util.concurrent.locks.Condition_._signal27734);
 		}
 		internal static global::MonoJavaBridge.MethodId _signalAll27735;
 		void java.util.concurrent.locks.Condition.signalAll()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._signalAll27735.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._signalAll27735 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "signalAll", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._signalAll27735);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "signalAll", "()V", ref global::java.util.concurrent.locks.Condition_._signalAll27735);
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitUninterruptibly27736;
 		void java.util.concurrent.locks.Condition.awaitUninterruptibly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27736.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27736 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitUninterruptibly", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27736);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "awaitUninterruptibly", "()V", ref global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27736);
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitNanos27737;
 		long java.util.concurrent.locks.Condition.awaitNanos(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._awaitNanos27737.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._awaitNanos27737 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitNanos", "(J)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._awaitNanos27737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "awaitNanos", "(J)J", ref global::java.util.concurrent.locks.Condition_._awaitNanos27737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitUntil27738;
 		bool java.util.concurrent.locks.Condition.awaitUntil(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Condition_._awaitUntil27738.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Condition_._awaitUntil27738 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Condition_.staticClass, "awaitUntil", "(Ljava/util/Date;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_._awaitUntil27738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Condition_.staticClass, "awaitUntil", "(Ljava/util/Date;)Z", ref global::java.util.concurrent.locks.Condition_._awaitUntil27738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Condition_()
 		{

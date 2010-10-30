@@ -19,34 +19,22 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _hasUnsupportedCriticalExtension23891;
 		bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23891.native == global::System.IntPtr.Zero)
-				global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23891 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "hasUnsupportedCriticalExtension", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23891);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.X509Extension_.staticClass, "hasUnsupportedCriticalExtension", "()Z", ref global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23891);
 		}
 		internal static global::MonoJavaBridge.MethodId _getCriticalExtensionOIDs23892;
 		global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892.native == global::System.IntPtr.Zero)
-				global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNonCriticalExtensionOIDs23893;
 		global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893.native == global::System.IntPtr.Zero)
-				global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtensionValue23894;
 		byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.X509Extension_._getExtensionValue23894.native == global::System.IntPtr.Zero)
-				global::java.security.cert.X509Extension_._getExtensionValue23894 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getExtensionValue23894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B", ref global::java.security.cert.X509Extension_._getExtensionValue23894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		static X509Extension_()
 		{

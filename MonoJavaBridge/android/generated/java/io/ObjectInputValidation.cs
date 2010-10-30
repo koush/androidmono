@@ -16,10 +16,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _validateObject19223;
 		void java.io.ObjectInputValidation.validateObject()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.ObjectInputValidation_._validateObject19223.native == global::System.IntPtr.Zero)
-				global::java.io.ObjectInputValidation_._validateObject19223 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputValidation_.staticClass, "validateObject", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_._validateObject19223);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.ObjectInputValidation_.staticClass, "validateObject", "()V", ref global::java.io.ObjectInputValidation_._validateObject19223);
 		}
 		static ObjectInputValidation_()
 		{

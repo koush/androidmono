@@ -10,10 +10,7 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _isDataAvailable33464;
 		public override bool isDataAvailable(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.SocketInputBuffer._isDataAvailable33464.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.SocketInputBuffer._isDataAvailable33464 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.SocketInputBuffer.staticClass, "isDataAvailable", "(I)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.io.SocketInputBuffer.staticClass, global::org.apache.http.impl.io.SocketInputBuffer._isDataAvailable33464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.io.SocketInputBuffer.staticClass, "isDataAvailable", "(I)Z", ref global::org.apache.http.impl.io.SocketInputBuffer._isDataAvailable33464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketInputBuffer33465;
 		public SocketInputBuffer(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

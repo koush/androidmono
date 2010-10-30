@@ -12,20 +12,14 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _compareTo25293;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationKey._compareTo25293.native == global::System.IntPtr.Zero)
-				global::java.text.CollationKey._compareTo25293 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationKey.staticClass, global::java.text.CollationKey._compareTo25293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationKey.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.text.CollationKey._compareTo25293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toByteArray25294;
 		public abstract byte[] toByteArray();
 		internal static global::MonoJavaBridge.MethodId _getSourceString25295;
 		public virtual global::java.lang.String getSourceString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationKey._getSourceString25295.native == global::System.IntPtr.Zero)
-				global::java.text.CollationKey._getSourceString25295 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey.staticClass, "getSourceString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.CollationKey.staticClass, global::java.text.CollationKey._getSourceString25295) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.CollationKey.staticClass, "getSourceString", "()Ljava/lang/String;", ref global::java.text.CollationKey._getSourceString25295) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _CollationKey25296;
 		protected CollationKey(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -56,18 +50,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _compareTo25297;
 		public override int compareTo(java.text.CollationKey arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationKey_._compareTo25297.native == global::System.IntPtr.Zero)
-				global::java.text.CollationKey_._compareTo25297 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey_.staticClass, "compareTo", "(Ljava/text/CollationKey;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.text.CollationKey_._compareTo25297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationKey_.staticClass, "compareTo", "(Ljava/text/CollationKey;)I", ref global::java.text.CollationKey_._compareTo25297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toByteArray25298;
 		public override byte[] toByteArray()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationKey_._toByteArray25298.native == global::System.IntPtr.Zero)
-				global::java.text.CollationKey_._toByteArray25298 = @__env.GetMethodIDNoThrow(global::java.text.CollationKey_.staticClass, "toByteArray", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.CollationKey_._toByteArray25298)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.text.CollationKey_.staticClass, "toByteArray", "()[B", ref global::java.text.CollationKey_._toByteArray25298) as byte[];
 		}
 		static CollationKey_()
 		{

@@ -10,42 +10,27 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _write33434;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.ContentLengthOutputStream._write33434.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.ContentLengthOutputStream._write33434 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "([BII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, global::org.apache.http.impl.io.ContentLengthOutputStream._write33434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "([BII)V", ref global::org.apache.http.impl.io.ContentLengthOutputStream._write33434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write33435;
 		public override void write(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.ContentLengthOutputStream._write33435.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.ContentLengthOutputStream._write33435 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "([B)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, global::org.apache.http.impl.io.ContentLengthOutputStream._write33435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "([B)V", ref global::org.apache.http.impl.io.ContentLengthOutputStream._write33435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write33436;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.ContentLengthOutputStream._write33436.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.ContentLengthOutputStream._write33436 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, global::org.apache.http.impl.io.ContentLengthOutputStream._write33436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "write", "(I)V", ref global::org.apache.http.impl.io.ContentLengthOutputStream._write33436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush33437;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.ContentLengthOutputStream._flush33437.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.ContentLengthOutputStream._flush33437 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "flush", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, global::org.apache.http.impl.io.ContentLengthOutputStream._flush33437);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "flush", "()V", ref global::org.apache.http.impl.io.ContentLengthOutputStream._flush33437);
 		}
 		internal static global::MonoJavaBridge.MethodId _close33438;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.ContentLengthOutputStream._close33438.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.ContentLengthOutputStream._close33438 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, global::org.apache.http.impl.io.ContentLengthOutputStream._close33438);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.ContentLengthOutputStream.staticClass, "close", "()V", ref global::org.apache.http.impl.io.ContentLengthOutputStream._close33438);
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentLengthOutputStream33439;
 		public ContentLengthOutputStream(org.apache.http.io.SessionOutputBuffer arg0, long arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

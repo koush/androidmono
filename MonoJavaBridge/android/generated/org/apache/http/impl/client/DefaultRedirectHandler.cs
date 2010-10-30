@@ -10,18 +10,12 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _isRedirectRequested32911;
 		public virtual bool isRedirectRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.DefaultRedirectHandler._isRedirectRequested32911.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.DefaultRedirectHandler._isRedirectRequested32911 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, "isRedirectRequested", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, global::org.apache.http.impl.client.DefaultRedirectHandler._isRedirectRequested32911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, "isRedirectRequested", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z", ref global::org.apache.http.impl.client.DefaultRedirectHandler._isRedirectRequested32911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocationURI32912;
 		public virtual global::java.net.URI getLocationURI(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.DefaultRedirectHandler._getLocationURI32912.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.DefaultRedirectHandler._getLocationURI32912 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, "getLocationURI", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, global::org.apache.http.impl.client.DefaultRedirectHandler._getLocationURI32912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::org.apache.http.impl.client.DefaultRedirectHandler.staticClass, "getLocationURI", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;", ref global::org.apache.http.impl.client.DefaultRedirectHandler._getLocationURI32912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultRedirectHandler32913;
 		public DefaultRedirectHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

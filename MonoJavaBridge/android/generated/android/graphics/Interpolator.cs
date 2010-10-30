@@ -72,26 +72,17 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5280;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._finalize5280.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._finalize5280 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._finalize5280);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "finalize", "()V", ref global::android.graphics.Interpolator._finalize5280);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset5281;
 		public virtual void reset(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._reset5281.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._reset5281 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "reset", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._reset5281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "reset", "(II)V", ref global::android.graphics.Interpolator._reset5281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset5282;
 		public virtual void reset(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._reset5282.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._reset5282 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "reset", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._reset5282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "reset", "(I)V", ref global::android.graphics.Interpolator._reset5282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int KeyFrameCount
 		{
@@ -103,10 +94,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getKeyFrameCount5283;
 		public virtual int getKeyFrameCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._getKeyFrameCount5283.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._getKeyFrameCount5283 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "getKeyFrameCount", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._getKeyFrameCount5283);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Interpolator.staticClass, "getKeyFrameCount", "()I", ref global::android.graphics.Interpolator._getKeyFrameCount5283);
 		}
 		public new int ValueCount
 		{
@@ -118,50 +106,32 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getValueCount5284;
 		public virtual int getValueCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._getValueCount5284.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._getValueCount5284 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "getValueCount", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._getValueCount5284);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Interpolator.staticClass, "getValueCount", "()I", ref global::android.graphics.Interpolator._getValueCount5284);
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyFrame5285;
 		public virtual void setKeyFrame(int arg0, int arg1, float[] arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._setKeyFrame5285.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._setKeyFrame5285 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "setKeyFrame", "(II[F)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setKeyFrame5285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "setKeyFrame", "(II[F)V", ref global::android.graphics.Interpolator._setKeyFrame5285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyFrame5286;
 		public virtual void setKeyFrame(int arg0, int arg1, float[] arg2, float[] arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._setKeyFrame5286.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._setKeyFrame5286 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "setKeyFrame", "(II[F[F)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setKeyFrame5286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "setKeyFrame", "(II[F[F)V", ref global::android.graphics.Interpolator._setKeyFrame5286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setRepeatMirror5287;
 		public virtual void setRepeatMirror(float arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._setRepeatMirror5287.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._setRepeatMirror5287 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "setRepeatMirror", "(FZ)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setRepeatMirror5287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Interpolator.staticClass, "setRepeatMirror", "(FZ)V", ref global::android.graphics.Interpolator._setRepeatMirror5287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _timeToValues5288;
 		public virtual global::android.graphics.Interpolator.Result timeToValues(int arg0, float[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._timeToValues5288.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._timeToValues5288 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "timeToValues", "(I[F)Landroid/graphics/Interpolator$Result;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Interpolator.Result>(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.graphics.Interpolator.Result;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Interpolator.Result>(this, global::android.graphics.Interpolator.staticClass, "timeToValues", "(I[F)Landroid/graphics/Interpolator$Result;", ref global::android.graphics.Interpolator._timeToValues5288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.graphics.Interpolator.Result;
 		}
 		internal static global::MonoJavaBridge.MethodId _timeToValues5289;
 		public virtual global::android.graphics.Interpolator.Result timeToValues(float[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Interpolator._timeToValues5289.native == global::System.IntPtr.Zero)
-				global::android.graphics.Interpolator._timeToValues5289 = @__env.GetMethodIDNoThrow(global::android.graphics.Interpolator.staticClass, "timeToValues", "([F)Landroid/graphics/Interpolator$Result;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Interpolator.Result>(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Interpolator.Result;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Interpolator.Result>(this, global::android.graphics.Interpolator.staticClass, "timeToValues", "([F)Landroid/graphics/Interpolator$Result;", ref global::android.graphics.Interpolator._timeToValues5289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Interpolator.Result;
 		}
 		internal static global::MonoJavaBridge.MethodId _Interpolator5290;
 		public Interpolator(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

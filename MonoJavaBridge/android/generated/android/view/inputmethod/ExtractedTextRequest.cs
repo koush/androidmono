@@ -10,18 +10,12 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15854;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15855;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.ExtractedTextRequest._describeContents15855.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.ExtractedTextRequest._describeContents15855 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._describeContents15855);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, "describeContents", "()I", ref global::android.view.inputmethod.ExtractedTextRequest._describeContents15855);
 		}
 		internal static global::MonoJavaBridge.MethodId _ExtractedTextRequest15856;
 		public ExtractedTextRequest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

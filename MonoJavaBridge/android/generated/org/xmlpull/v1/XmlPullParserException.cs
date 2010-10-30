@@ -10,10 +10,7 @@ namespace org.xmlpull.v1
 		internal static global::MonoJavaBridge.MethodId _printStackTrace35365;
 		public override void printStackTrace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._printStackTrace35365.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._printStackTrace35365 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "printStackTrace", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._printStackTrace35365);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "printStackTrace", "()V", ref global::org.xmlpull.v1.XmlPullParserException._printStackTrace35365);
 		}
 		public new int LineNumber
 		{
@@ -25,10 +22,7 @@ namespace org.xmlpull.v1
 		internal static global::MonoJavaBridge.MethodId _getLineNumber35366;
 		public virtual int getLineNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._getLineNumber35366.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._getLineNumber35366 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "getLineNumber", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._getLineNumber35366);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getLineNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._getLineNumber35366);
 		}
 		public new int ColumnNumber
 		{
@@ -40,10 +34,7 @@ namespace org.xmlpull.v1
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber35367;
 		public virtual int getColumnNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._getColumnNumber35367.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._getColumnNumber35367 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "getColumnNumber", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._getColumnNumber35367);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getColumnNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._getColumnNumber35367);
 		}
 		public new global::java.lang.Throwable Detail
 		{
@@ -55,10 +46,7 @@ namespace org.xmlpull.v1
 		internal static global::MonoJavaBridge.MethodId _getDetail35368;
 		public virtual global::java.lang.Throwable getDetail()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._getDetail35368.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._getDetail35368 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "getDetail", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._getDetail35368) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getDetail", "()Ljava/lang/Throwable;", ref global::org.xmlpull.v1.XmlPullParserException._getDetail35368) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _XmlPullParserException35369;
 		public XmlPullParserException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

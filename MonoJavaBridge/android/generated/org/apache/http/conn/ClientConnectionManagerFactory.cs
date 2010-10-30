@@ -16,10 +16,7 @@ namespace org.apache.http.conn
 		internal static global::MonoJavaBridge.MethodId _newInstance32082;
 		global::org.apache.http.conn.ClientConnectionManager org.apache.http.conn.ClientConnectionManagerFactory.newInstance(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.scheme.SchemeRegistry arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ClientConnectionManagerFactory_._newInstance32082.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ClientConnectionManagerFactory_._newInstance32082 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManagerFactory_.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionManager;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManagerFactory_._newInstance32082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ClientConnectionManager;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionManager>(this, global::org.apache.http.conn.ClientConnectionManagerFactory_.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionManager;", ref global::org.apache.http.conn.ClientConnectionManagerFactory_._newInstance32082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.conn.ClientConnectionManager;
 		}
 		static ClientConnectionManagerFactory_()
 		{

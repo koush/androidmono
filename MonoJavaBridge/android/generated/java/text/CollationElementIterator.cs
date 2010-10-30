@@ -10,26 +10,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _next25280;
 		public int next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._next25280.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._next25280 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "next", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._next25280);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationElementIterator.staticClass, "next", "()I", ref global::java.text.CollationElementIterator._next25280);
 		}
 		internal static global::MonoJavaBridge.MethodId _previous25281;
 		public int previous()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._previous25281.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._previous25281 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "previous", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._previous25281);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationElementIterator.staticClass, "previous", "()I", ref global::java.text.CollationElementIterator._previous25281);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset25282;
 		public void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._reset25282.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._reset25282 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "reset", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._reset25282);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.CollationElementIterator.staticClass, "reset", "()V", ref global::java.text.CollationElementIterator._reset25282);
 		}
 		public new int Offset
 		{
@@ -45,34 +36,22 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getOffset25283;
 		public int getOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._getOffset25283.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._getOffset25283 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "getOffset", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._getOffset25283);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationElementIterator.staticClass, "getOffset", "()I", ref global::java.text.CollationElementIterator._getOffset25283);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOffset25284;
 		public void setOffset(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._setOffset25284.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._setOffset25284 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "setOffset", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._setOffset25284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.CollationElementIterator.staticClass, "setOffset", "(I)V", ref global::java.text.CollationElementIterator._setOffset25284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setText25285;
 		public void setText(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._setText25285.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._setText25285 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "setText", "(Ljava/lang/String;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._setText25285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.CollationElementIterator.staticClass, "setText", "(Ljava/lang/String;)V", ref global::java.text.CollationElementIterator._setText25285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setText25286;
 		public void setText(java.text.CharacterIterator arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._setText25286.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._setText25286 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "setText", "(Ljava/text/CharacterIterator;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._setText25286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.CollationElementIterator.staticClass, "setText", "(Ljava/text/CharacterIterator;)V", ref global::java.text.CollationElementIterator._setText25286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _primaryOrder25287;
 		public static int primaryOrder(int arg0)
@@ -101,10 +80,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getMaxExpansion25290;
 		public int getMaxExpansion(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.CollationElementIterator._getMaxExpansion25290.native == global::System.IntPtr.Zero)
-				global::java.text.CollationElementIterator._getMaxExpansion25290 = @__env.GetMethodIDNoThrow(global::java.text.CollationElementIterator.staticClass, "getMaxExpansion", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CollationElementIterator.staticClass, global::java.text.CollationElementIterator._getMaxExpansion25290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CollationElementIterator.staticClass, "getMaxExpansion", "(I)I", ref global::java.text.CollationElementIterator._getMaxExpansion25290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int NULLORDER
 		{

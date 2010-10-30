@@ -10,18 +10,12 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13613;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._writeToParcel13613.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._writeToParcel13613 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._writeToParcel13613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.TypefaceSpan._writeToParcel13613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents13614;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._describeContents13614.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._describeContents13614 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._describeContents13614);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, "describeContents", "()I", ref global::android.text.style.TypefaceSpan._describeContents13614);
 		}
 		public new int SpanTypeId
 		{
@@ -33,26 +27,17 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13615;
 		public virtual int getSpanTypeId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._getSpanTypeId13615.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._getSpanTypeId13615 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "getSpanTypeId", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._getSpanTypeId13615);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.TypefaceSpan._getSpanTypeId13615);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13616;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._updateDrawState13616.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._updateDrawState13616 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._updateDrawState13616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.TypefaceSpan._updateDrawState13616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateMeasureState13617;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._updateMeasureState13617.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._updateMeasureState13617 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._updateMeasureState13617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.TypefaceSpan._updateMeasureState13617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Family
 		{
@@ -64,10 +49,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getFamily13618;
 		public virtual global::java.lang.String getFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.TypefaceSpan._getFamily13618.native == global::System.IntPtr.Zero)
-				global::android.text.style.TypefaceSpan._getFamily13618 = @__env.GetMethodIDNoThrow(global::android.text.style.TypefaceSpan.staticClass, "getFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._getFamily13618) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.TypefaceSpan.staticClass, "getFamily", "()Ljava/lang/String;", ref global::android.text.style.TypefaceSpan._getFamily13618) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TypefaceSpan13619;
 		public TypefaceSpan(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,18 +17,12 @@ namespace java.security.acl
 		internal static global::MonoJavaBridge.MethodId _equals23465;
 		bool java.security.acl.Permission.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Permission_._equals23465.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Permission_._equals23465 = @__env.GetMethodIDNoThrow(global::java.security.acl.Permission_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Permission_._equals23465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.acl.Permission_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.acl.Permission_._equals23465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23466;
 		global::java.lang.String java.security.acl.Permission.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Permission_._toString23466.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Permission_._toString23466 = @__env.GetMethodIDNoThrow(global::java.security.acl.Permission_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.Permission_._toString23466)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.acl.Permission_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.acl.Permission_._toString23466) as java.lang.String;
 		}
 		static Permission_()
 		{

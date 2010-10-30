@@ -17,18 +17,12 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _clone23507;
 		global::java.lang.Object java.security.cert.CertPathBuilderResult.clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathBuilderResult_._clone23507.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathBuilderResult_._clone23507 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderResult_._clone23507)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilderResult_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CertPathBuilderResult_._clone23507) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertPath23508;
 		global::java.security.cert.CertPath java.security.cert.CertPathBuilderResult.getCertPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathBuilderResult_._getCertPath23508.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathBuilderResult_._getCertPath23508 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderResult_._getCertPath23508)) as java.security.cert.CertPath;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilderResult_.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;", ref global::java.security.cert.CertPathBuilderResult_._getCertPath23508) as java.security.cert.CertPath;
 		}
 		static CertPathBuilderResult_()
 		{

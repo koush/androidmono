@@ -10,18 +10,12 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString23614;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CollectionCertStoreParameters._toString23614.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CollectionCertStoreParameters._toString23614 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._toString23614) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.cert.CollectionCertStoreParameters._toString23614) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23615;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CollectionCertStoreParameters._clone23615.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CollectionCertStoreParameters._clone23615 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._clone23615) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CollectionCertStoreParameters._clone23615) as java.lang.Object;
 		}
 		public new global::java.util.Collection Collection
 		{
@@ -33,10 +27,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCollection23616;
 		public virtual global::java.util.Collection getCollection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CollectionCertStoreParameters._getCollection23616.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CollectionCertStoreParameters._getCollection23616 = @__env.GetMethodIDNoThrow(global::java.security.cert.CollectionCertStoreParameters.staticClass, "getCollection", "()Ljava/util/Collection;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._getCollection23616) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.security.cert.CollectionCertStoreParameters.staticClass, "getCollection", "()Ljava/util/Collection;", ref global::java.security.cert.CollectionCertStoreParameters._getCollection23616) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _CollectionCertStoreParameters23617;
 		public CollectionCertStoreParameters(java.util.Collection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

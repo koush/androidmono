@@ -17,18 +17,12 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _childAdded28180;
 		void java.util.prefs.NodeChangeListener.childAdded(java.util.prefs.NodeChangeEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.NodeChangeListener_._childAdded28180.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.NodeChangeListener_._childAdded28180 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childAdded28180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V", ref global::java.util.prefs.NodeChangeListener_._childAdded28180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _childRemoved28181;
 		void java.util.prefs.NodeChangeListener.childRemoved(java.util.prefs.NodeChangeEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.NodeChangeListener_._childRemoved28181.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.NodeChangeListener_._childRemoved28181 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childRemoved28181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V", ref global::java.util.prefs.NodeChangeListener_._childRemoved28181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static NodeChangeListener_()
 		{

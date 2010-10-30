@@ -16,10 +16,7 @@ namespace org.w3c.dom
 		internal static global::MonoJavaBridge.MethodId _handleError34349;
 		bool org.w3c.dom.DOMErrorHandler.handleError(org.w3c.dom.DOMError arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMErrorHandler_._handleError34349.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMErrorHandler_._handleError34349 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMErrorHandler_.staticClass, "handleError", "(Lorg/w3c/dom/DOMError;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DOMErrorHandler_.staticClass, "handleError", "(Lorg/w3c/dom/DOMError;)Z", ref global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DOMErrorHandler_()
 		{

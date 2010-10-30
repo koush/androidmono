@@ -21,50 +21,32 @@ namespace org.apache.http
 		internal static global::MonoJavaBridge.MethodId _getName31500;
 		global::java.lang.String org.apache.http.HeaderElement.getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getName31500.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getName31500 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getName31500)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.HeaderElement_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.HeaderElement_._getName31500) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue31501;
 		global::java.lang.String org.apache.http.HeaderElement.getValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getValue31501.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getValue31501 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getValue", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getValue31501)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.HeaderElement_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.HeaderElement_._getValue31501) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameters31502;
 		global::org.apache.http.NameValuePair[] org.apache.http.HeaderElement.getParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getParameters31502.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getParameters31502 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameters", "()[Lorg/apache/http/NameValuePair;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameters31502)) as org.apache.http.NameValuePair[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.NameValuePair>(this, global::org.apache.http.HeaderElement_.staticClass, "getParameters", "()[Lorg/apache/http/NameValuePair;", ref global::org.apache.http.HeaderElement_._getParameters31502) as org.apache.http.NameValuePair[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameter31503;
 		global::org.apache.http.NameValuePair org.apache.http.HeaderElement.getParameter(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getParameter31503.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getParameter31503 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameter", "(I)Lorg/apache/http/NameValuePair;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameter31503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.NameValuePair>(this, global::org.apache.http.HeaderElement_.staticClass, "getParameter", "(I)Lorg/apache/http/NameValuePair;", ref global::org.apache.http.HeaderElement_._getParameter31503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.NameValuePair;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterCount31504;
 		int org.apache.http.HeaderElement.getParameterCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getParameterCount31504.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getParameterCount31504 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameterCount", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameterCount31504);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HeaderElement_.staticClass, "getParameterCount", "()I", ref global::org.apache.http.HeaderElement_._getParameterCount31504);
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterByName31505;
 		global::org.apache.http.NameValuePair org.apache.http.HeaderElement.getParameterByName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HeaderElement_._getParameterByName31505.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HeaderElement_._getParameterByName31505 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameterByName", "(Ljava/lang/String;)Lorg/apache/http/NameValuePair;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameterByName31505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.NameValuePair>(this, global::org.apache.http.HeaderElement_.staticClass, "getParameterByName", "(Ljava/lang/String;)Lorg/apache/http/NameValuePair;", ref global::org.apache.http.HeaderElement_._getParameterByName31505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.NameValuePair;
 		}
 		static HeaderElement_()
 		{

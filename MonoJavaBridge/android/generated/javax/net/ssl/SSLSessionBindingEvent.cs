@@ -17,10 +17,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getName30058;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionBindingEvent._getName30058.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionBindingEvent._getName30058 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingEvent.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSessionBindingEvent.staticClass, global::javax.net.ssl.SSLSessionBindingEvent._getName30058) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSessionBindingEvent.staticClass, "getName", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSessionBindingEvent._getName30058) as java.lang.String;
 		}
 		public new global::javax.net.ssl.SSLSession Session
 		{
@@ -32,10 +29,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getSession30059;
 		public virtual global::javax.net.ssl.SSLSession getSession()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionBindingEvent._getSession30059.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionBindingEvent._getSession30059 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingEvent.staticClass, "getSession", "()Ljavax/net/ssl/SSLSession;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.net.ssl.SSLSession>(this, global::javax.net.ssl.SSLSessionBindingEvent.staticClass, global::javax.net.ssl.SSLSessionBindingEvent._getSession30059) as javax.net.ssl.SSLSession;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.net.ssl.SSLSession>(this, global::javax.net.ssl.SSLSessionBindingEvent.staticClass, "getSession", "()Ljavax/net/ssl/SSLSession;", ref global::javax.net.ssl.SSLSessionBindingEvent._getSession30059) as javax.net.ssl.SSLSession;
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLSessionBindingEvent30060;
 		public SSLSessionBindingEvent(javax.net.ssl.SSLSession arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

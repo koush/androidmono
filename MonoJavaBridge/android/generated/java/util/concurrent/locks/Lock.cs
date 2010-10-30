@@ -21,50 +21,32 @@ namespace java.util.concurrent.locks
 		internal static global::MonoJavaBridge.MethodId _lock27739;
 		void java.util.concurrent.locks.Lock.@lock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._lock27739.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._lock27739 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "@lock", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._lock27739);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "@lock", "()V", ref global::java.util.concurrent.locks.Lock_._lock27739);
 		}
 		internal static global::MonoJavaBridge.MethodId _unlock27740;
 		void java.util.concurrent.locks.Lock.unlock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._unlock27740.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._unlock27740 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "unlock", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._unlock27740);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "unlock", "()V", ref global::java.util.concurrent.locks.Lock_._unlock27740);
 		}
 		internal static global::MonoJavaBridge.MethodId _lockInterruptibly27741;
 		void java.util.concurrent.locks.Lock.lockInterruptibly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._lockInterruptibly27741.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._lockInterruptibly27741 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "lockInterruptibly", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._lockInterruptibly27741);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "lockInterruptibly", "()V", ref global::java.util.concurrent.locks.Lock_._lockInterruptibly27741);
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock27742;
 		bool java.util.concurrent.locks.Lock.tryLock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._tryLock27742.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._tryLock27742 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._tryLock27742);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "()Z", ref global::java.util.concurrent.locks.Lock_._tryLock27742);
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock27743;
 		bool java.util.concurrent.locks.Lock.tryLock(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._tryLock27743.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._tryLock27743 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._tryLock27743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", ref global::java.util.concurrent.locks.Lock_._tryLock27743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newCondition27744;
 		global::java.util.concurrent.locks.Condition java.util.concurrent.locks.Lock.newCondition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.Lock_._newCondition27744.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.Lock_._newCondition27744 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.Lock_.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Condition>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_._newCondition27744)) as java.util.concurrent.locks.Condition;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.locks.Condition>(this, global::java.util.concurrent.locks.Lock_.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;", ref global::java.util.concurrent.locks.Lock_._newCondition27744) as java.util.concurrent.locks.Condition;
 		}
 		static Lock_()
 		{

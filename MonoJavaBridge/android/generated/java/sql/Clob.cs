@@ -28,106 +28,67 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _length24307;
 		long java.sql.Clob.length()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._length24307.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._length24307 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "length", "()J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Clob_._length24307);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.sql.Clob_.staticClass, "length", "()J", ref global::java.sql.Clob_._length24307);
 		}
 		internal static global::MonoJavaBridge.MethodId _position24308;
 		long java.sql.Clob.position(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._position24308.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._position24308 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "position", "(Ljava/lang/String;J)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Clob_._position24308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.sql.Clob_.staticClass, "position", "(Ljava/lang/String;J)J", ref global::java.sql.Clob_._position24308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _position24309;
 		long java.sql.Clob.position(java.sql.Clob arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._position24309.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._position24309 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "position", "(Ljava/sql/Clob;J)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Clob_._position24309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.sql.Clob_.staticClass, "position", "(Ljava/sql/Clob;J)J", ref global::java.sql.Clob_._position24309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _truncate24310;
 		void java.sql.Clob.truncate(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._truncate24310.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._truncate24310 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "truncate", "(J)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Clob_._truncate24310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Clob_.staticClass, "truncate", "(J)V", ref global::java.sql.Clob_._truncate24310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setString24311;
 		int java.sql.Clob.setString(long arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._setString24311.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._setString24311 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setString", "(JLjava/lang/String;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Clob_._setString24311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Clob_.staticClass, "setString", "(JLjava/lang/String;)I", ref global::java.sql.Clob_._setString24311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setString24312;
 		int java.sql.Clob.setString(long arg0, java.lang.String arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._setString24312.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._setString24312 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setString", "(JLjava/lang/String;II)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Clob_._setString24312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Clob_.staticClass, "setString", "(JLjava/lang/String;II)I", ref global::java.sql.Clob_._setString24312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _free24313;
 		void java.sql.Clob.free()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._free24313.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._free24313 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "free", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Clob_._free24313);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Clob_.staticClass, "free", "()V", ref global::java.sql.Clob_._free24313);
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiStream24314;
 		global::java.io.InputStream java.sql.Clob.getAsciiStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._getAsciiStream24314.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._getAsciiStream24314 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "getAsciiStream", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._getAsciiStream24314)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Clob_.staticClass, "getAsciiStream", "()Ljava/io/InputStream;", ref global::java.sql.Clob_._getAsciiStream24314) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream24315;
 		global::java.io.Reader java.sql.Clob.getCharacterStream(long arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._getCharacterStream24315.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._getCharacterStream24315 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "getCharacterStream", "(JJ)Ljava/io/Reader;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._getCharacterStream24315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.Reader;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Clob_.staticClass, "getCharacterStream", "(JJ)Ljava/io/Reader;", ref global::java.sql.Clob_._getCharacterStream24315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream24316;
 		global::java.io.Reader java.sql.Clob.getCharacterStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._getCharacterStream24316.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._getCharacterStream24316 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "getCharacterStream", "()Ljava/io/Reader;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._getCharacterStream24316)) as java.io.Reader;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Clob_.staticClass, "getCharacterStream", "()Ljava/io/Reader;", ref global::java.sql.Clob_._getCharacterStream24316) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAsciiStream24317;
 		global::java.io.OutputStream java.sql.Clob.setAsciiStream(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._setAsciiStream24317.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._setAsciiStream24317 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setAsciiStream", "(J)Ljava/io/OutputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._setAsciiStream24317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Clob_.staticClass, "setAsciiStream", "(J)Ljava/io/OutputStream;", ref global::java.sql.Clob_._setAsciiStream24317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream24318;
 		global::java.io.Writer java.sql.Clob.setCharacterStream(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._setCharacterStream24318.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._setCharacterStream24318 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "setCharacterStream", "(J)Ljava/io/Writer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._setCharacterStream24318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.Writer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Clob_.staticClass, "setCharacterStream", "(J)Ljava/io/Writer;", ref global::java.sql.Clob_._setCharacterStream24318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.Writer;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubString24319;
 		global::java.lang.String java.sql.Clob.getSubString(long arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Clob_._getSubString24319.native == global::System.IntPtr.Zero)
-				global::java.sql.Clob_._getSubString24319 = @__env.GetMethodIDNoThrow(global::java.sql.Clob_.staticClass, "getSubString", "(JI)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Clob_._getSubString24319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.Clob_.staticClass, "getSubString", "(JI)Ljava/lang/String;", ref global::java.sql.Clob_._getSubString24319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		static Clob_()
 		{

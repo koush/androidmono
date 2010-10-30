@@ -34,114 +34,72 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _init28494;
 		public virtual void init(int arg0, java.security.cert.Certificate arg1, java.security.SecureRandom arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28494.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28494 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/cert/Certificate;Ljava/security/SecureRandom;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/cert/Certificate;Ljava/security/SecureRandom;)V", ref global::javax.crypto.Cipher._init28494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28495;
 		public virtual void init(int arg0, java.security.Key arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28495.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28495 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;)V", ref global::javax.crypto.Cipher._init28495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28496;
 		public virtual void init(int arg0, java.security.Key arg1, java.security.SecureRandom arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28496.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28496 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/SecureRandom;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/SecureRandom;)V", ref global::javax.crypto.Cipher._init28496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28497;
 		public virtual void init(int arg0, java.security.Key arg1, java.security.spec.AlgorithmParameterSpec arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28497.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28497 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V", ref global::javax.crypto.Cipher._init28497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28498;
 		public virtual void init(int arg0, java.security.Key arg1, java.security.spec.AlgorithmParameterSpec arg2, java.security.SecureRandom arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28498.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28498 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", ref global::javax.crypto.Cipher._init28498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28499;
 		public virtual void init(int arg0, java.security.Key arg1, java.security.AlgorithmParameters arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28499.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28499 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/AlgorithmParameters;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/AlgorithmParameters;)V", ref global::javax.crypto.Cipher._init28499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28500;
 		public virtual void init(int arg0, java.security.Key arg1, java.security.AlgorithmParameters arg2, java.security.SecureRandom arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28500.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28500 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/AlgorithmParameters;Ljava/security/SecureRandom;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/Key;Ljava/security/AlgorithmParameters;Ljava/security/SecureRandom;)V", ref global::javax.crypto.Cipher._init28500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _init28501;
 		public virtual void init(int arg0, java.security.cert.Certificate arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._init28501.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._init28501 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/cert/Certificate;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._init28501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.Cipher.staticClass, "init", "(ILjava/security/cert/Certificate;)V", ref global::javax.crypto.Cipher._init28501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap28502;
 		public virtual byte[] wrap(java.security.Key arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._wrap28502.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._wrap28502 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "wrap", "(Ljava/security/Key;)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._wrap28502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "wrap", "(Ljava/security/Key;)[B", ref global::javax.crypto.Cipher._wrap28502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _update28503;
 		public virtual int update(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._update28503.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._update28503 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "update", "([BII[BI)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._update28503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "update", "([BII[BI)I", ref global::javax.crypto.Cipher._update28503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28504;
 		public virtual int update(byte[] arg0, int arg1, int arg2, byte[] arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._update28504.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._update28504 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "update", "([BII[B)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._update28504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "update", "([BII[B)I", ref global::javax.crypto.Cipher._update28504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28505;
 		public virtual byte[] update(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._update28505.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._update28505 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "update", "([BII)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._update28505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "update", "([BII)[B", ref global::javax.crypto.Cipher._update28505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _update28506;
 		public virtual byte[] update(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._update28506.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._update28506 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "update", "([B)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._update28506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "update", "([B)[B", ref global::javax.crypto.Cipher._update28506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _update28507;
 		public virtual int update(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._update28507.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._update28507 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "update", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._update28507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "update", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I", ref global::javax.crypto.Cipher._update28507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -153,10 +111,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28508;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getAlgorithm28508.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getAlgorithm28508 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getAlgorithm28508) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.Cipher.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.Cipher._getAlgorithm28508) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -168,10 +123,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getProvider28509;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getProvider28509.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getProvider28509 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getProvider28509) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::javax.crypto.Cipher._getProvider28509) as java.security.Provider;
 		}
 		public new global::java.security.AlgorithmParameters Parameters
 		{
@@ -183,10 +135,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getParameters28510;
 		public virtual global::java.security.AlgorithmParameters getParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getParameters28510.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getParameters28510 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getParameters", "()Ljava/security/AlgorithmParameters;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getParameters28510) as java.security.AlgorithmParameters;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, "getParameters", "()Ljava/security/AlgorithmParameters;", ref global::javax.crypto.Cipher._getParameters28510) as java.security.AlgorithmParameters;
 		}
 		public new int BlockSize
 		{
@@ -198,74 +147,47 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getBlockSize28511;
 		public virtual int getBlockSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getBlockSize28511.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getBlockSize28511 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getBlockSize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getBlockSize28511);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "getBlockSize", "()I", ref global::javax.crypto.Cipher._getBlockSize28511);
 		}
 		internal static global::MonoJavaBridge.MethodId _unwrap28512;
 		public virtual global::java.security.Key unwrap(byte[] arg0, java.lang.String arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._unwrap28512.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._unwrap28512 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "unwrap", "([BLjava/lang/String;I)Ljava/security/Key;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._unwrap28512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::javax.crypto.Cipher.staticClass, "unwrap", "([BLjava/lang/String;I)Ljava/security/Key;", ref global::javax.crypto.Cipher._unwrap28512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.security.Key;
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28513;
 		public virtual byte[] doFinal(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28513.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28513 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "([B)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "doFinal", "([B)[B", ref global::javax.crypto.Cipher._doFinal28513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28514;
 		public virtual byte[] doFinal(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28514.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28514 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "([BII)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "doFinal", "([BII)[B", ref global::javax.crypto.Cipher._doFinal28514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28515;
 		public virtual int doFinal(byte[] arg0, int arg1, int arg2, byte[] arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28515.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28515 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "([BII[B)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "doFinal", "([BII[B)I", ref global::javax.crypto.Cipher._doFinal28515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28516;
 		public virtual int doFinal(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28516.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28516 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "([BII[BI)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "doFinal", "([BII[BI)I", ref global::javax.crypto.Cipher._doFinal28516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28517;
 		public virtual int doFinal(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28517.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28517 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "doFinal", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I", ref global::javax.crypto.Cipher._doFinal28517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28518;
 		public virtual int doFinal(byte[] arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28518.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28518 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "([BI)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "doFinal", "([BI)I", ref global::javax.crypto.Cipher._doFinal28518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFinal28519;
 		public virtual byte[] doFinal()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._doFinal28519.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._doFinal28519 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "doFinal", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._doFinal28519) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "doFinal", "()[B", ref global::javax.crypto.Cipher._doFinal28519) as byte[];
 		}
 		public new global::javax.crypto.ExemptionMechanism ExemptionMechanism
 		{
@@ -277,10 +199,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getExemptionMechanism28520;
 		public virtual global::javax.crypto.ExemptionMechanism getExemptionMechanism()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getExemptionMechanism28520.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getExemptionMechanism28520 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getExemptionMechanism", "()Ljavax/crypto/ExemptionMechanism;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getExemptionMechanism28520) as javax.crypto.ExemptionMechanism;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.Cipher.staticClass, "getExemptionMechanism", "()Ljavax/crypto/ExemptionMechanism;", ref global::javax.crypto.Cipher._getExemptionMechanism28520) as javax.crypto.ExemptionMechanism;
 		}
 		public new byte[] IV
 		{
@@ -292,10 +211,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getIV28521;
 		public virtual byte[] getIV()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getIV28521.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getIV28521 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getIV", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getIV28521) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.Cipher.staticClass, "getIV", "()[B", ref global::javax.crypto.Cipher._getIV28521) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxAllowedKeyLength28522;
 		public static int getMaxAllowedKeyLength(java.lang.String arg0)
@@ -316,10 +232,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getOutputSize28524;
 		public virtual int getOutputSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.Cipher._getOutputSize28524.native == global::System.IntPtr.Zero)
-				global::javax.crypto.Cipher._getOutputSize28524 = @__env.GetMethodIDNoThrow(global::javax.crypto.Cipher.staticClass, "getOutputSize", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, global::javax.crypto.Cipher._getOutputSize28524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.Cipher.staticClass, "getOutputSize", "(I)I", ref global::javax.crypto.Cipher._getOutputSize28524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Cipher28525;
 		protected Cipher(javax.crypto.CipherSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

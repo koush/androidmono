@@ -17,10 +17,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getInputStream16079;
 		public global::java.io.InputStream getInputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.PluginData._getInputStream16079.native == global::System.IntPtr.Zero)
-				global::android.webkit.PluginData._getInputStream16079 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getInputStream16079)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::android.webkit.PluginData._getInputStream16079) as java.io.InputStream;
 		}
 		public new long ContentLength
 		{
@@ -32,10 +29,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getContentLength16080;
 		public long getContentLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.PluginData._getContentLength16080.native == global::System.IntPtr.Zero)
-				global::android.webkit.PluginData._getContentLength16080 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getContentLength", "()J");
-			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getContentLength16080);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.webkit.PluginData.staticClass, "getContentLength", "()J", ref global::android.webkit.PluginData._getContentLength16080);
 		}
 		public new global::java.util.Map Headers
 		{
@@ -47,10 +41,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getHeaders16081;
 		public global::java.util.Map getHeaders()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.PluginData._getHeaders16081.native == global::System.IntPtr.Zero)
-				global::android.webkit.PluginData._getHeaders16081 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getHeaders16081)) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::android.webkit.PluginData._getHeaders16081) as java.util.Map;
 		}
 		public new int StatusCode
 		{
@@ -62,10 +53,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getStatusCode16082;
 		public int getStatusCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.PluginData._getStatusCode16082.native == global::System.IntPtr.Zero)
-				global::android.webkit.PluginData._getStatusCode16082 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "getStatusCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getStatusCode16082);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.PluginData.staticClass, "getStatusCode", "()I", ref global::android.webkit.PluginData._getStatusCode16082);
 		}
 		internal static global::MonoJavaBridge.MethodId _PluginData16083;
 		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

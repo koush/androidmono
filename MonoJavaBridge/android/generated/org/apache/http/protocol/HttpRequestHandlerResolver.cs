@@ -16,10 +16,7 @@ namespace org.apache.http.protocol
 		internal static global::MonoJavaBridge.MethodId _lookup33910;
 		global::org.apache.http.protocol.HttpRequestHandler org.apache.http.protocol.HttpRequestHandlerResolver.lookup(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass, "lookup", "(Ljava/lang/String;)Lorg/apache/http/protocol/HttpRequestHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpRequestHandler>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.protocol.HttpRequestHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.protocol.HttpRequestHandler>(this, global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass, "lookup", "(Ljava/lang/String;)Lorg/apache/http/protocol/HttpRequestHandler;", ref global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.protocol.HttpRequestHandler;
 		}
 		static HttpRequestHandlerResolver_()
 		{

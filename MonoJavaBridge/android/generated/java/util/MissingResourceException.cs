@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getKey26522;
 		public virtual global::java.lang.String getKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.MissingResourceException._getKey26522.native == global::System.IntPtr.Zero)
-				global::java.util.MissingResourceException._getKey26522 = @__env.GetMethodIDNoThrow(global::java.util.MissingResourceException.staticClass, "getKey", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingResourceException.staticClass, global::java.util.MissingResourceException._getKey26522) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingResourceException.staticClass, "getKey", "()Ljava/lang/String;", ref global::java.util.MissingResourceException._getKey26522) as java.lang.String;
 		}
 		public new global::java.lang.String ClassName
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getClassName26523;
 		public virtual global::java.lang.String getClassName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.MissingResourceException._getClassName26523.native == global::System.IntPtr.Zero)
-				global::java.util.MissingResourceException._getClassName26523 = @__env.GetMethodIDNoThrow(global::java.util.MissingResourceException.staticClass, "getClassName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingResourceException.staticClass, global::java.util.MissingResourceException._getClassName26523) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingResourceException.staticClass, "getClassName", "()Ljava/lang/String;", ref global::java.util.MissingResourceException._getClassName26523) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MissingResourceException26524;
 		public MissingResourceException(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

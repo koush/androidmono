@@ -17,10 +17,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getLineNumber35039;
 		public virtual int getLineNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXParseException._getLineNumber35039.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXParseException._getLineNumber35039 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "getLineNumber", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getLineNumber35039);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, "getLineNumber", "()I", ref global::org.xml.sax.SAXParseException._getLineNumber35039);
 		}
 		public new global::java.lang.String PublicId
 		{
@@ -32,10 +29,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getPublicId35040;
 		public virtual global::java.lang.String getPublicId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXParseException._getPublicId35040.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXParseException._getPublicId35040 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "getPublicId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getPublicId35040) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXParseException.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.SAXParseException._getPublicId35040) as java.lang.String;
 		}
 		public new global::java.lang.String SystemId
 		{
@@ -47,10 +41,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getSystemId35041;
 		public virtual global::java.lang.String getSystemId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXParseException._getSystemId35041.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXParseException._getSystemId35041 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "getSystemId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getSystemId35041) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXParseException.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.SAXParseException._getSystemId35041) as java.lang.String;
 		}
 		public new int ColumnNumber
 		{
@@ -62,10 +53,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber35042;
 		public virtual int getColumnNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXParseException._getColumnNumber35042.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXParseException._getColumnNumber35042 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXParseException.staticClass, "getColumnNumber", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getColumnNumber35042);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, "getColumnNumber", "()I", ref global::org.xml.sax.SAXParseException._getColumnNumber35042);
 		}
 		internal static global::MonoJavaBridge.MethodId _SAXParseException35043;
 		public SAXParseException(java.lang.String arg0, org.xml.sax.Locator arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

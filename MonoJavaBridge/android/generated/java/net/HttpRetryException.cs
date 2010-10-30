@@ -17,10 +17,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getLocation21467;
 		public virtual global::java.lang.String getLocation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.HttpRetryException._getLocation21467.native == global::System.IntPtr.Zero)
-				global::java.net.HttpRetryException._getLocation21467 = @__env.GetMethodIDNoThrow(global::java.net.HttpRetryException.staticClass, "getLocation", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.HttpRetryException.staticClass, global::java.net.HttpRetryException._getLocation21467) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.HttpRetryException.staticClass, "getLocation", "()Ljava/lang/String;", ref global::java.net.HttpRetryException._getLocation21467) as java.lang.String;
 		}
 		public new global::java.lang.String Reason
 		{
@@ -32,18 +29,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getReason21468;
 		public virtual global::java.lang.String getReason()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.HttpRetryException._getReason21468.native == global::System.IntPtr.Zero)
-				global::java.net.HttpRetryException._getReason21468 = @__env.GetMethodIDNoThrow(global::java.net.HttpRetryException.staticClass, "getReason", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.HttpRetryException.staticClass, global::java.net.HttpRetryException._getReason21468) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.HttpRetryException.staticClass, "getReason", "()Ljava/lang/String;", ref global::java.net.HttpRetryException._getReason21468) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _responseCode21469;
 		public virtual int responseCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.HttpRetryException._responseCode21469.native == global::System.IntPtr.Zero)
-				global::java.net.HttpRetryException._responseCode21469 = @__env.GetMethodIDNoThrow(global::java.net.HttpRetryException.staticClass, "responseCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.HttpRetryException.staticClass, global::java.net.HttpRetryException._responseCode21469);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.HttpRetryException.staticClass, "responseCode", "()I", ref global::java.net.HttpRetryException._responseCode21469);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpRetryException21470;
 		public HttpRetryException(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

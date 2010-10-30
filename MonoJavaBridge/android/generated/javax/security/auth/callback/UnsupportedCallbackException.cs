@@ -17,10 +17,7 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _getCallback30205;
 		public virtual global::javax.security.auth.callback.Callback getCallback()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.UnsupportedCallbackException.staticClass, "getCallback", "()Ljavax/security/auth/callback/Callback;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.security.auth.callback.Callback>(this, global::javax.security.auth.callback.UnsupportedCallbackException.staticClass, global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205) as javax.security.auth.callback.Callback;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.security.auth.callback.Callback>(this, global::javax.security.auth.callback.UnsupportedCallbackException.staticClass, "getCallback", "()Ljavax/security/auth/callback/Callback;", ref global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205) as javax.security.auth.callback.Callback;
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedCallbackException30206;
 		public UnsupportedCallbackException(javax.security.auth.callback.Callback arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

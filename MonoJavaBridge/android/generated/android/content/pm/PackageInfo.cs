@@ -10,26 +10,17 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3753;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PackageInfo._toString3753.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PackageInfo._toString3753 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString3753) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.PackageInfo._toString3753) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3754;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PackageInfo._writeToParcel3754.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PackageInfo._writeToParcel3754 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel3754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.PackageInfo._writeToParcel3754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3755;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PackageInfo._describeContents3755.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PackageInfo._describeContents3755 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents3755);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.PackageInfo._describeContents3755);
 		}
 		internal static global::MonoJavaBridge.MethodId _PackageInfo3756;
 		public PackageInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

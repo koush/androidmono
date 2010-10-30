@@ -10,10 +10,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _clone23634;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathChecker._clone23634.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathChecker._clone23634 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.PKIXCertPathChecker.staticClass, global::java.security.cert.PKIXCertPathChecker._clone23634) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.PKIXCertPathChecker.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.PKIXCertPathChecker._clone23634) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _init23635;
 		public abstract void init(bool arg0);
@@ -52,34 +49,22 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _init23640;
 		public override void init(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathChecker_._init23640.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathChecker_._init23640 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "init", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_._init23640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.cert.PKIXCertPathChecker_.staticClass, "init", "(Z)V", ref global::java.security.cert.PKIXCertPathChecker_._init23640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _check23641;
 		public override void check(java.security.cert.Certificate arg0, java.util.Collection arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathChecker_._check23641.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathChecker_._check23641 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "check", "(Ljava/security/cert/Certificate;Ljava/util/Collection;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_._check23641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.cert.PKIXCertPathChecker_.staticClass, "check", "(Ljava/security/cert/Certificate;Ljava/util/Collection;)V", ref global::java.security.cert.PKIXCertPathChecker_._check23641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isForwardCheckingSupported23642;
 		public override bool isForwardCheckingSupported()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23642.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23642 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "isForwardCheckingSupported", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23642);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.PKIXCertPathChecker_.staticClass, "isForwardCheckingSupported", "()Z", ref global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23642);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedExtensions23643;
 		public override global::java.util.Set getSupportedExtensions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathChecker_.staticClass, "getSupportedExtensions", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.PKIXCertPathChecker_.staticClass, "getSupportedExtensions", "()Ljava/util/Set;", ref global::java.security.cert.PKIXCertPathChecker_._getSupportedExtensions23643) as java.util.Set;
 		}
 		static PKIXCertPathChecker_()
 		{

@@ -17,18 +17,12 @@ namespace org.w3c.dom
 		internal static global::MonoJavaBridge.MethodId _getLength34739;
 		int org.w3c.dom.NodeList.getLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.NodeList_._getLength34739.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.NodeList_._getLength34739 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NodeList_.staticClass, "getLength", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.NodeList_._getLength34739);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.NodeList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.NodeList_._getLength34739);
 		}
 		internal static global::MonoJavaBridge.MethodId _item34740;
 		global::org.w3c.dom.Node org.w3c.dom.NodeList.item(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.NodeList_._item34740.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.NodeList_._item34740 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.NodeList_.staticClass, "item", "(I)Lorg/w3c/dom/Node;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.NodeList_._item34740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.NodeList_.staticClass, "item", "(I)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.NodeList_._item34740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
 		}
 		static NodeList_()
 		{

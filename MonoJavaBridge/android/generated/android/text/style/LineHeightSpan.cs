@@ -16,10 +16,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _chooseHeight13524;
 		void android.text.style.LineHeightSpan.chooseHeight(java.lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.LineHeightSpan_._chooseHeight13524.native == global::System.IntPtr.Zero)
-				global::android.text.style.LineHeightSpan_._chooseHeight13524 = @__env.GetMethodIDNoThrow(global::android.text.style.LineHeightSpan_.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.LineHeightSpan_._chooseHeight13524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.LineHeightSpan_.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", ref global::android.text.style.LineHeightSpan_._chooseHeight13524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		static LineHeightSpan_()
 		{

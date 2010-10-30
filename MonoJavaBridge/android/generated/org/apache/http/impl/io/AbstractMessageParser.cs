@@ -10,10 +10,7 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _parse33380;
 		public virtual global::org.apache.http.HttpMessage parse()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.AbstractMessageParser._parse33380.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.AbstractMessageParser._parse33380 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.AbstractMessageParser.staticClass, "parse", "()Lorg/apache/http/HttpMessage;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.impl.io.AbstractMessageParser.staticClass, global::org.apache.http.impl.io.AbstractMessageParser._parse33380) as org.apache.http.HttpMessage;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.impl.io.AbstractMessageParser.staticClass, "parse", "()Lorg/apache/http/HttpMessage;", ref global::org.apache.http.impl.io.AbstractMessageParser._parse33380) as org.apache.http.HttpMessage;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseHead33381;
 		protected abstract global::org.apache.http.HttpMessage parseHead(org.apache.http.io.SessionInputBuffer arg0);
@@ -54,10 +51,7 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _parseHead33384;
 		protected override global::org.apache.http.HttpMessage parseHead(org.apache.http.io.SessionInputBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.AbstractMessageParser_._parseHead33384.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.AbstractMessageParser_._parseHead33384 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.AbstractMessageParser_.staticClass, "parseHead", "(Lorg/apache/http/io/SessionInputBuffer;)Lorg/apache/http/HttpMessage;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageParser_._parseHead33384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpMessage;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.impl.io.AbstractMessageParser_.staticClass, "parseHead", "(Lorg/apache/http/io/SessionInputBuffer;)Lorg/apache/http/HttpMessage;", ref global::org.apache.http.impl.io.AbstractMessageParser_._parseHead33384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.HttpMessage;
 		}
 		static AbstractMessageParser_()
 		{

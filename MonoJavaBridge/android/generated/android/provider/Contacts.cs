@@ -53,10 +53,7 @@ namespace android.provider
 			internal static global::MonoJavaBridge.MethodId _addPostalLocation10544;
 			public void addPostalLocation(android.content.Context arg0, long arg1, double arg2, double arg3)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.ContactMethods._addPostalLocation10544.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.ContactMethods._addPostalLocation10544 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V");
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._addPostalLocation10544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V", ref global::android.provider.Contacts.ContactMethods._addPostalLocation10544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			public static global::java.lang.String POSTAL_LOCATION_LATITUDE
 			{

@@ -23,10 +23,7 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _onTabChanged17856;
 			void android.widget.TabHost.OnTabChangeListener.onTabChanged(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.OnTabChangeListener_._onTabChanged17856.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.OnTabChangeListener_._onTabChanged17856 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.OnTabChangeListener_.staticClass, "onTabChanged", "(Ljava/lang/String;)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.TabHost.OnTabChangeListener_._onTabChanged17856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.OnTabChangeListener_.staticClass, "onTabChanged", "(Ljava/lang/String;)V", ref global::android.widget.TabHost.OnTabChangeListener_._onTabChanged17856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnTabChangeListener_()
 			{
@@ -95,10 +92,7 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _createTabContent17858;
 			global::android.view.View android.widget.TabHost.TabContentFactory.createTabContent(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabContentFactory_._createTabContent17858.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabContentFactory_._createTabContent17858 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabContentFactory_.staticClass, "createTabContent", "(Ljava/lang/String;)Landroid/view/View;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TabHost.TabContentFactory_._createTabContent17858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabContentFactory_.staticClass, "createTabContent", "(Ljava/lang/String;)Landroid/view/View;", ref global::android.widget.TabHost.TabContentFactory_._createTabContent17858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.view.View;
 			}
 			static TabContentFactory_()
 			{
@@ -168,18 +162,12 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _getTag17860;
 			public virtual global::java.lang.String getTag()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._getTag17860.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._getTag17860 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "getTag", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._getTag17860) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.widget.TabHost.TabSpec.staticClass, "getTag", "()Ljava/lang/String;", ref global::android.widget.TabHost.TabSpec._getTag17860) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _setIndicator17861;
 			public virtual global::android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0, android.graphics.drawable.Drawable arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setIndicator17861.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setIndicator17861 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator17861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setIndicator17861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.widget.TabHost.TabSpec;
 			}
 			public android.widget.TabHost.TabSpec setIndicator(string arg0, android.graphics.drawable.Drawable arg1)
 			{
@@ -188,18 +176,12 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _setIndicator17862;
 			public virtual global::android.widget.TabHost.TabSpec setIndicator(android.view.View arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setIndicator17862.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setIndicator17862 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Landroid/view/View;)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator17862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Landroid/view/View;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setIndicator17862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 			}
 			internal static global::MonoJavaBridge.MethodId _setIndicator17863;
 			public virtual global::android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setIndicator17863.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setIndicator17863 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Ljava/lang/CharSequence;)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator17863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setIndicator", "(Ljava/lang/CharSequence;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setIndicator17863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 			}
 			public android.widget.TabHost.TabSpec setIndicator(string arg0)
 			{
@@ -208,18 +190,12 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _setContent17864;
 			public virtual global::android.widget.TabHost.TabSpec setContent(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setContent17864.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setContent17864 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(I)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent17864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(I)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setContent17864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 			}
 			internal static global::MonoJavaBridge.MethodId _setContent17865;
 			public virtual global::android.widget.TabHost.TabSpec setContent(android.widget.TabHost.TabContentFactory arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setContent17865.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setContent17865 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(Landroid/widget/TabHost$TabContentFactory;)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent17865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(Landroid/widget/TabHost$TabContentFactory;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setContent17865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 			}
 			public android.widget.TabHost.TabSpec setContent(global::android.widget.TabHost.TabContentFactoryDelegate arg0)
 			{
@@ -228,10 +204,7 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _setContent17866;
 			public virtual global::android.widget.TabHost.TabSpec setContent(android.content.Intent arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.TabHost.TabSpec._setContent17866.native == global::System.IntPtr.Zero)
-					global::android.widget.TabHost.TabSpec._setContent17866 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(Landroid/content/Intent;)Landroid/widget/TabHost$TabSpec;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent17866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.TabSpec.staticClass, "setContent", "(Landroid/content/Intent;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost.TabSpec._setContent17866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 			}
 			static TabSpec()
 			{
@@ -252,58 +225,37 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setup17867;
 		public virtual void setup(android.app.LocalActivityManager arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._setup17867.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._setup17867 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "setup", "(Landroid/app/LocalActivityManager;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setup17867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "setup", "(Landroid/app/LocalActivityManager;)V", ref global::android.widget.TabHost._setup17867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setup17868;
 		public virtual void setup()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._setup17868.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._setup17868 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "setup", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setup17868);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "setup", "()V", ref global::android.widget.TabHost._setup17868);
 		}
 		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow17869;
 		protected override void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._onAttachedToWindow17869.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._onAttachedToWindow17869 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "onAttachedToWindow", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onAttachedToWindow17869);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "onAttachedToWindow", "()V", ref global::android.widget.TabHost._onAttachedToWindow17869);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow17870;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._onDetachedFromWindow17870.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._onDetachedFromWindow17870 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "onDetachedFromWindow", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onDetachedFromWindow17870);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "onDetachedFromWindow", "()V", ref global::android.widget.TabHost._onDetachedFromWindow17870);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent17871;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._dispatchKeyEvent17871.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._dispatchKeyEvent17871 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._dispatchKeyEvent17871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.TabHost.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.TabHost._dispatchKeyEvent17871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchWindowFocusChanged17872;
 		public override void dispatchWindowFocusChanged(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._dispatchWindowFocusChanged17872.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._dispatchWindowFocusChanged17872 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "dispatchWindowFocusChanged", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._dispatchWindowFocusChanged17872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "dispatchWindowFocusChanged", "(Z)V", ref global::android.widget.TabHost._dispatchWindowFocusChanged17872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchModeChanged17873;
 		public virtual void onTouchModeChanged(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._onTouchModeChanged17873.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._onTouchModeChanged17873 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "onTouchModeChanged", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onTouchModeChanged17873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "onTouchModeChanged", "(Z)V", ref global::android.widget.TabHost._onTouchModeChanged17873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.TabWidget TabWidget
 		{
@@ -315,34 +267,22 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getTabWidget17874;
 		public virtual global::android.widget.TabWidget getTabWidget()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getTabWidget17874.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getTabWidget17874 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getTabWidget", "()Landroid/widget/TabWidget;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getTabWidget17874) as android.widget.TabWidget;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, "getTabWidget", "()Landroid/widget/TabWidget;", ref global::android.widget.TabHost._getTabWidget17874) as android.widget.TabWidget;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTabSpec17875;
 		public virtual global::android.widget.TabHost.TabSpec newTabSpec(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._newTabSpec17875.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._newTabSpec17875 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "newTabSpec", "(Ljava/lang/String;)Landroid/widget/TabHost$TabSpec;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._newTabSpec17875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, "newTabSpec", "(Ljava/lang/String;)Landroid/widget/TabHost$TabSpec;", ref global::android.widget.TabHost._newTabSpec17875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.widget.TabHost.TabSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _addTab17876;
 		public virtual void addTab(android.widget.TabHost.TabSpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._addTab17876.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._addTab17876 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "addTab", "(Landroid/widget/TabHost$TabSpec;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._addTab17876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "addTab", "(Landroid/widget/TabHost$TabSpec;)V", ref global::android.widget.TabHost._addTab17876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearAllTabs17877;
 		public virtual void clearAllTabs()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._clearAllTabs17877.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._clearAllTabs17877 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "clearAllTabs", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._clearAllTabs17877);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "clearAllTabs", "()V", ref global::android.widget.TabHost._clearAllTabs17877);
 		}
 		public new int CurrentTab
 		{
@@ -358,10 +298,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrentTab17878;
 		public virtual int getCurrentTab()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getCurrentTab17878.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getCurrentTab17878 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getCurrentTab", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTab17878);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.TabHost.staticClass, "getCurrentTab", "()I", ref global::android.widget.TabHost._getCurrentTab17878);
 		}
 		public new global::java.lang.String CurrentTabTag
 		{
@@ -373,10 +310,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrentTabTag17879;
 		public virtual global::java.lang.String getCurrentTabTag()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getCurrentTabTag17879.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getCurrentTabTag17879 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getCurrentTabTag", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTabTag17879) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.widget.TabHost.staticClass, "getCurrentTabTag", "()Ljava/lang/String;", ref global::android.widget.TabHost._getCurrentTabTag17879) as java.lang.String;
 		}
 		public new global::android.view.View CurrentTabView
 		{
@@ -388,10 +322,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrentTabView17880;
 		public virtual global::android.view.View getCurrentTabView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getCurrentTabView17880.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getCurrentTabView17880 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getCurrentTabView", "()Landroid/view/View;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTabView17880) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, "getCurrentTabView", "()Landroid/view/View;", ref global::android.widget.TabHost._getCurrentTabView17880) as android.view.View;
 		}
 		public new global::android.view.View CurrentView
 		{
@@ -403,10 +334,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrentView17881;
 		public virtual global::android.view.View getCurrentView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getCurrentView17881.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getCurrentView17881 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getCurrentView", "()Landroid/view/View;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentView17881) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, "getCurrentView", "()Landroid/view/View;", ref global::android.widget.TabHost._getCurrentView17881) as android.view.View;
 		}
 		public new global::java.lang.String CurrentTabByTag
 		{
@@ -418,10 +346,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setCurrentTabByTag17882;
 		public virtual void setCurrentTabByTag(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._setCurrentTabByTag17882.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._setCurrentTabByTag17882 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "setCurrentTabByTag", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setCurrentTabByTag17882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "setCurrentTabByTag", "(Ljava/lang/String;)V", ref global::android.widget.TabHost._setCurrentTabByTag17882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.FrameLayout TabContentView
 		{
@@ -433,18 +358,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getTabContentView17883;
 		public virtual global::android.widget.FrameLayout getTabContentView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._getTabContentView17883.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._getTabContentView17883 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "getTabContentView", "()Landroid/widget/FrameLayout;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getTabContentView17883) as android.widget.FrameLayout;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TabHost.staticClass, "getTabContentView", "()Landroid/widget/FrameLayout;", ref global::android.widget.TabHost._getTabContentView17883) as android.widget.FrameLayout;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCurrentTab17884;
 		public virtual void setCurrentTab(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._setCurrentTab17884.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._setCurrentTab17884 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "setCurrentTab", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setCurrentTab17884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "setCurrentTab", "(I)V", ref global::android.widget.TabHost._setCurrentTab17884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.TabHost.OnTabChangeListener OnTabChangedListener
 		{
@@ -456,10 +375,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnTabChangedListener17885;
 		public virtual void setOnTabChangedListener(android.widget.TabHost.OnTabChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TabHost._setOnTabChangedListener17885.native == global::System.IntPtr.Zero)
-				global::android.widget.TabHost._setOnTabChangedListener17885 = @__env.GetMethodIDNoThrow(global::android.widget.TabHost.staticClass, "setOnTabChangedListener", "(Landroid/widget/TabHost$OnTabChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setOnTabChangedListener17885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TabHost.staticClass, "setOnTabChangedListener", "(Landroid/widget/TabHost$OnTabChangeListener;)V", ref global::android.widget.TabHost._setOnTabChangedListener17885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnTabChangedListener(global::android.widget.TabHost.OnTabChangeListenerDelegate arg0)
 		{

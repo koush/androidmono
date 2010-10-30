@@ -20,42 +20,27 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _setInternalIterations12267;
 		void android.test.PerformanceTestCase_Intermediates.setInternalIterations(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_Intermediates_._setInternalIterations12267.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_Intermediates_._setInternalIterations12267 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "setInternalIterations", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_._setInternalIterations12267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.PerformanceTestCase_Intermediates_.staticClass, "setInternalIterations", "(I)V", ref global::android.test.PerformanceTestCase_Intermediates_._setInternalIterations12267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startTiming12268;
 		void android.test.PerformanceTestCase_Intermediates.startTiming(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_Intermediates_._startTiming12268.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_Intermediates_._startTiming12268 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "startTiming", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_._startTiming12268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.PerformanceTestCase_Intermediates_.staticClass, "startTiming", "(Z)V", ref global::android.test.PerformanceTestCase_Intermediates_._startTiming12268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addIntermediate12269;
 		void android.test.PerformanceTestCase_Intermediates.addIntermediate(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12269.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12269 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;)V", ref global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addIntermediate12270;
 		void android.test.PerformanceTestCase_Intermediates.addIntermediate(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12270.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12270 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;J)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.PerformanceTestCase_Intermediates_.staticClass, "addIntermediate", "(Ljava/lang/String;J)V", ref global::android.test.PerformanceTestCase_Intermediates_._addIntermediate12270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _finishTiming12271;
 		void android.test.PerformanceTestCase_Intermediates.finishTiming(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_Intermediates_.staticClass, "finishTiming", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.PerformanceTestCase_Intermediates_.staticClass, "finishTiming", "(Z)V", ref global::android.test.PerformanceTestCase_Intermediates_._finishTiming12271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static PerformanceTestCase_Intermediates_()
 		{

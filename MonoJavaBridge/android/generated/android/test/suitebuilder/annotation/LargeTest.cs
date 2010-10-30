@@ -15,34 +15,22 @@ namespace android.test.suitebuilder.annotation
 		internal static global::MonoJavaBridge.MethodId _equals12647;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.LargeTest_._equals12647.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.LargeTest_._equals12647 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.LargeTest_._equals12647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.test.suitebuilder.annotation.LargeTest_._equals12647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12648;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.LargeTest_._toString12648.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.LargeTest_._toString12648 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.LargeTest_._toString12648)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.test.suitebuilder.annotation.LargeTest_._toString12648) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12649;
 		int java.lang.annotation.Annotation.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.LargeTest_._hashCode12649.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.LargeTest_._hashCode12649 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.LargeTest_._hashCode12649);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "hashCode", "()I", ref global::android.test.suitebuilder.annotation.LargeTest_._hashCode12649);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType12650;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.suitebuilder.annotation.LargeTest_._annotationType12650.native == global::System.IntPtr.Zero)
-				global::android.test.suitebuilder.annotation.LargeTest_._annotationType12650 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "annotationType", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.LargeTest_._annotationType12650)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.test.suitebuilder.annotation.LargeTest_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.test.suitebuilder.annotation.LargeTest_._annotationType12650) as java.lang.Class;
 		}
 		static LargeTest_()
 		{

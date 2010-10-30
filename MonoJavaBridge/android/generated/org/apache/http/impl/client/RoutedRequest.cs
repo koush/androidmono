@@ -17,10 +17,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getRoute32953;
 		public virtual global::org.apache.http.conn.routing.HttpRoute getRoute()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.RoutedRequest._getRoute32953.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.RoutedRequest._getRoute32953 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RoutedRequest.staticClass, "getRoute", "()Lorg/apache/http/conn/routing/HttpRoute;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.conn.routing.HttpRoute>(this, global::org.apache.http.impl.client.RoutedRequest.staticClass, global::org.apache.http.impl.client.RoutedRequest._getRoute32953) as org.apache.http.conn.routing.HttpRoute;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.conn.routing.HttpRoute>(this, global::org.apache.http.impl.client.RoutedRequest.staticClass, "getRoute", "()Lorg/apache/http/conn/routing/HttpRoute;", ref global::org.apache.http.impl.client.RoutedRequest._getRoute32953) as org.apache.http.conn.routing.HttpRoute;
 		}
 		public new global::org.apache.http.impl.client.RequestWrapper Request
 		{
@@ -32,10 +29,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getRequest32954;
 		public virtual global::org.apache.http.impl.client.RequestWrapper getRequest()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.RoutedRequest._getRequest32954.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.RoutedRequest._getRequest32954 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RoutedRequest.staticClass, "getRequest", "()Lorg/apache/http/impl/client/RequestWrapper;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.client.RoutedRequest.staticClass, global::org.apache.http.impl.client.RoutedRequest._getRequest32954) as org.apache.http.impl.client.RequestWrapper;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.client.RoutedRequest.staticClass, "getRequest", "()Lorg/apache/http/impl/client/RequestWrapper;", ref global::org.apache.http.impl.client.RoutedRequest._getRequest32954) as org.apache.http.impl.client.RequestWrapper;
 		}
 		internal static global::MonoJavaBridge.MethodId _RoutedRequest32955;
 		public RoutedRequest(org.apache.http.impl.client.RequestWrapper arg0, org.apache.http.conn.routing.HttpRoute arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

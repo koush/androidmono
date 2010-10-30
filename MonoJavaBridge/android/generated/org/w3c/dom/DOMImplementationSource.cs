@@ -17,18 +17,12 @@ namespace org.w3c.dom
 		internal static global::MonoJavaBridge.MethodId _getDOMImplementation34375;
 		global::org.w3c.dom.DOMImplementation org.w3c.dom.DOMImplementationSource.getDOMImplementation(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMImplementationSource_._getDOMImplementation34375.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMImplementationSource_._getDOMImplementation34375 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationSource_.staticClass, "getDOMImplementation", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementation;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationSource_._getDOMImplementation34375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementation;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMImplementation>(this, global::org.w3c.dom.DOMImplementationSource_.staticClass, "getDOMImplementation", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementation;", ref global::org.w3c.dom.DOMImplementationSource_._getDOMImplementation34375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.DOMImplementation;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDOMImplementationList34376;
 		global::org.w3c.dom.DOMImplementationList org.w3c.dom.DOMImplementationSource.getDOMImplementationList(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMImplementationSource_._getDOMImplementationList34376.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMImplementationSource_._getDOMImplementationList34376 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationSource_.staticClass, "getDOMImplementationList", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementationList;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementationList>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationSource_._getDOMImplementationList34376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementationList;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMImplementationList>(this, global::org.w3c.dom.DOMImplementationSource_.staticClass, "getDOMImplementationList", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementationList;", ref global::org.w3c.dom.DOMImplementationSource_._getDOMImplementationList34376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.DOMImplementationList;
 		}
 		static DOMImplementationSource_()
 		{

@@ -10,10 +10,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _putNextEntry27883;
 		public override void putNextEntry(java.util.zip.ZipEntry arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.JarOutputStream._putNextEntry27883.native == global::System.IntPtr.Zero)
-				global::java.util.jar.JarOutputStream._putNextEntry27883 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarOutputStream.staticClass, "putNextEntry", "(Ljava/util/zip/ZipEntry;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.JarOutputStream.staticClass, global::java.util.jar.JarOutputStream._putNextEntry27883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.JarOutputStream.staticClass, "putNextEntry", "(Ljava/util/zip/ZipEntry;)V", ref global::java.util.jar.JarOutputStream._putNextEntry27883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _JarOutputStream27884;
 		public JarOutputStream(java.io.OutputStream arg0, java.util.jar.Manifest arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

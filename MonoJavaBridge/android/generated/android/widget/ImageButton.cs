@@ -10,10 +10,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _onSetAlpha17243;
 		protected override bool onSetAlpha(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ImageButton._onSetAlpha17243.native == global::System.IntPtr.Zero)
-				global::android.widget.ImageButton._onSetAlpha17243 = @__env.GetMethodIDNoThrow(global::android.widget.ImageButton.staticClass, "onSetAlpha", "(I)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageButton.staticClass, global::android.widget.ImageButton._onSetAlpha17243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageButton.staticClass, "onSetAlpha", "(I)Z", ref global::android.widget.ImageButton._onSetAlpha17243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageButton17244;
 		public ImageButton(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,18 +10,12 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _write28397;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.GZIPOutputStream._write28397.native == global::System.IntPtr.Zero)
-				global::java.util.zip.GZIPOutputStream._write28397 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPOutputStream.staticClass, "write", "([BII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPOutputStream.staticClass, global::java.util.zip.GZIPOutputStream._write28397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPOutputStream.staticClass, "write", "([BII)V", ref global::java.util.zip.GZIPOutputStream._write28397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _finish28398;
 		public override void finish()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.GZIPOutputStream._finish28398.native == global::System.IntPtr.Zero)
-				global::java.util.zip.GZIPOutputStream._finish28398 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPOutputStream.staticClass, "finish", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPOutputStream.staticClass, global::java.util.zip.GZIPOutputStream._finish28398);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPOutputStream.staticClass, "finish", "()V", ref global::java.util.zip.GZIPOutputStream._finish28398);
 		}
 		internal static global::MonoJavaBridge.MethodId _GZIPOutputStream28399;
 		public GZIPOutputStream(java.io.OutputStream arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,18 +17,12 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _getManager33128;
 		protected override global::org.apache.http.conn.ClientConnectionManager getManager()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getManager33128.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getManager33128 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "getManager", "()Lorg/apache/http/conn/ClientConnectionManager;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionManager>(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getManager33128) as org.apache.http.conn.ClientConnectionManager;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionManager>(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "getManager", "()Lorg/apache/http/conn/ClientConnectionManager;", ref global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getManager33128) as org.apache.http.conn.ClientConnectionManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _detach33129;
 		protected override void detach()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._detach33129.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._detach33129 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "detach", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._detach33129);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "detach", "()V", ref global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._detach33129);
 		}
 		protected new global::org.apache.http.impl.conn.AbstractPoolEntry PoolEntry
 		{
@@ -40,10 +34,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _getPoolEntry33130;
 		protected virtual global::org.apache.http.impl.conn.AbstractPoolEntry getPoolEntry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33130.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33130 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "getPoolEntry", "()Lorg/apache/http/impl/conn/AbstractPoolEntry;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33130) as org.apache.http.impl.conn.AbstractPoolEntry;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, "getPoolEntry", "()Lorg/apache/http/impl/conn/AbstractPoolEntry;", ref global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33130) as org.apache.http.impl.conn.AbstractPoolEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicPooledConnAdapter33131;
 		protected BasicPooledConnAdapter(org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager arg0, org.apache.http.impl.conn.AbstractPoolEntry arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

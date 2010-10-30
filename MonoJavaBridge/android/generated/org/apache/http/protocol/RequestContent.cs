@@ -10,10 +10,7 @@ namespace org.apache.http.protocol
 		internal static global::MonoJavaBridge.MethodId _process33938;
 		public virtual void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.RequestContent._process33938.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.RequestContent._process33938 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestContent.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.RequestContent.staticClass, global::org.apache.http.protocol.RequestContent._process33938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.RequestContent.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.protocol.RequestContent._process33938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RequestContent33939;
 		public RequestContent() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

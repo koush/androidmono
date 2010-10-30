@@ -17,10 +17,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getMessage19117;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InvalidClassException._getMessage19117.native == global::System.IntPtr.Zero)
-				global::java.io.InvalidClassException._getMessage19117 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.InvalidClassException.staticClass, global::java.io.InvalidClassException._getMessage19117) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.InvalidClassException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.io.InvalidClassException._getMessage19117) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidClassException19118;
 		public InvalidClassException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

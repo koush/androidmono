@@ -10,34 +10,22 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _equals23419;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._equals23419.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._equals23419 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._equals23419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.UnresolvedPermission.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.UnresolvedPermission._equals23419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23420;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._toString23420.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._toString23420 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._toString23420)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.UnresolvedPermission.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.UnresolvedPermission._toString23420) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23421;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._hashCode23421.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._hashCode23421 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._hashCode23421);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.UnresolvedPermission.staticClass, "hashCode", "()I", ref global::java.security.UnresolvedPermission._hashCode23421);
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23422;
 		public sealed override bool implies(java.security.Permission arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._implies23422.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._implies23422 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "implies", "(Ljava/security/Permission;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._implies23422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.UnresolvedPermission.staticClass, "implies", "(Ljava/security/Permission;)Z", ref global::java.security.UnresolvedPermission._implies23422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Actions
 		{
@@ -49,18 +37,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getActions23423;
 		public sealed override global::java.lang.String getActions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._getActions23423.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._getActions23423 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "getActions", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._getActions23423)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.UnresolvedPermission.staticClass, "getActions", "()Ljava/lang/String;", ref global::java.security.UnresolvedPermission._getActions23423) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _newPermissionCollection23424;
 		public sealed override global::java.security.PermissionCollection newPermissionCollection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._newPermissionCollection23424.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._newPermissionCollection23424 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._newPermissionCollection23424)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.UnresolvedPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;", ref global::java.security.UnresolvedPermission._newPermissionCollection23424) as java.security.PermissionCollection;
 		}
 		public new global::java.lang.String UnresolvedType
 		{
@@ -72,10 +54,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getUnresolvedType23425;
 		public global::java.lang.String getUnresolvedType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._getUnresolvedType23425.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._getUnresolvedType23425 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "getUnresolvedType", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._getUnresolvedType23425)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.UnresolvedPermission.staticClass, "getUnresolvedType", "()Ljava/lang/String;", ref global::java.security.UnresolvedPermission._getUnresolvedType23425) as java.lang.String;
 		}
 		public new global::java.lang.String UnresolvedName
 		{
@@ -87,10 +66,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getUnresolvedName23426;
 		public global::java.lang.String getUnresolvedName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._getUnresolvedName23426.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._getUnresolvedName23426 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "getUnresolvedName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._getUnresolvedName23426)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.UnresolvedPermission.staticClass, "getUnresolvedName", "()Ljava/lang/String;", ref global::java.security.UnresolvedPermission._getUnresolvedName23426) as java.lang.String;
 		}
 		public new global::java.lang.String UnresolvedActions
 		{
@@ -102,10 +78,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getUnresolvedActions23427;
 		public global::java.lang.String getUnresolvedActions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._getUnresolvedActions23427.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._getUnresolvedActions23427 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "getUnresolvedActions", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._getUnresolvedActions23427)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.UnresolvedPermission.staticClass, "getUnresolvedActions", "()Ljava/lang/String;", ref global::java.security.UnresolvedPermission._getUnresolvedActions23427) as java.lang.String;
 		}
 		public new global::java.security.cert.Certificate[] UnresolvedCerts
 		{
@@ -117,10 +90,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getUnresolvedCerts23428;
 		public global::java.security.cert.Certificate[] getUnresolvedCerts()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.UnresolvedPermission._getUnresolvedCerts23428.native == global::System.IntPtr.Zero)
-				global::java.security.UnresolvedPermission._getUnresolvedCerts23428 = @__env.GetMethodIDNoThrow(global::java.security.UnresolvedPermission.staticClass, "getUnresolvedCerts", "()[Ljava/security/cert/Certificate;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.UnresolvedPermission.staticClass, global::java.security.UnresolvedPermission._getUnresolvedCerts23428)) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.security.UnresolvedPermission.staticClass, "getUnresolvedCerts", "()[Ljava/security/cert/Certificate;", ref global::java.security.UnresolvedPermission._getUnresolvedCerts23428) as java.security.cert.Certificate[];
 		}
 		internal static global::MonoJavaBridge.MethodId _UnresolvedPermission23429;
 		public UnresolvedPermission(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.security.cert.Certificate[] arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

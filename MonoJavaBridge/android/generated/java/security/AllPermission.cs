@@ -10,26 +10,17 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _equals22891;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AllPermission._equals22891.native == global::System.IntPtr.Zero)
-				global::java.security.AllPermission._equals22891 = @__env.GetMethodIDNoThrow(global::java.security.AllPermission.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.AllPermission.staticClass, global::java.security.AllPermission._equals22891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.AllPermission.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.AllPermission._equals22891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22892;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AllPermission._hashCode22892.native == global::System.IntPtr.Zero)
-				global::java.security.AllPermission._hashCode22892 = @__env.GetMethodIDNoThrow(global::java.security.AllPermission.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.AllPermission.staticClass, global::java.security.AllPermission._hashCode22892);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.AllPermission.staticClass, "hashCode", "()I", ref global::java.security.AllPermission._hashCode22892);
 		}
 		internal static global::MonoJavaBridge.MethodId _implies22893;
 		public sealed override bool implies(java.security.Permission arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AllPermission._implies22893.native == global::System.IntPtr.Zero)
-				global::java.security.AllPermission._implies22893 = @__env.GetMethodIDNoThrow(global::java.security.AllPermission.staticClass, "implies", "(Ljava/security/Permission;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.AllPermission.staticClass, global::java.security.AllPermission._implies22893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.AllPermission.staticClass, "implies", "(Ljava/security/Permission;)Z", ref global::java.security.AllPermission._implies22893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Actions
 		{
@@ -41,18 +32,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getActions22894;
 		public sealed override global::java.lang.String getActions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AllPermission._getActions22894.native == global::System.IntPtr.Zero)
-				global::java.security.AllPermission._getActions22894 = @__env.GetMethodIDNoThrow(global::java.security.AllPermission.staticClass, "getActions", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AllPermission.staticClass, global::java.security.AllPermission._getActions22894)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.AllPermission.staticClass, "getActions", "()Ljava/lang/String;", ref global::java.security.AllPermission._getActions22894) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _newPermissionCollection22895;
 		public sealed override global::java.security.PermissionCollection newPermissionCollection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AllPermission._newPermissionCollection22895.native == global::System.IntPtr.Zero)
-				global::java.security.AllPermission._newPermissionCollection22895 = @__env.GetMethodIDNoThrow(global::java.security.AllPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AllPermission.staticClass, global::java.security.AllPermission._newPermissionCollection22895)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.AllPermission.staticClass, "newPermissionCollection", "()Ljava/security/PermissionCollection;", ref global::java.security.AllPermission._newPermissionCollection22895) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _AllPermission22896;
 		public AllPermission() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -32,10 +32,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13415;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TimeKeyListener._getInputType13415.native == global::System.IntPtr.Zero)
-				global::android.text.method.TimeKeyListener._getInputType13415 = @__env.GetMethodIDNoThrow(global::android.text.method.TimeKeyListener.staticClass, "getInputType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.TimeKeyListener.staticClass, global::android.text.method.TimeKeyListener._getInputType13415);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.TimeKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.TimeKeyListener._getInputType13415);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -47,10 +44,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13416;
 		protected override char[] getAcceptedChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TimeKeyListener._getAcceptedChars13416.native == global::System.IntPtr.Zero)
-				global::android.text.method.TimeKeyListener._getAcceptedChars13416 = @__env.GetMethodIDNoThrow(global::android.text.method.TimeKeyListener.staticClass, "getAcceptedChars", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.TimeKeyListener.staticClass, global::android.text.method.TimeKeyListener._getAcceptedChars13416) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.TimeKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.TimeKeyListener._getAcceptedChars13416) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeKeyListener13417;
 		public TimeKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

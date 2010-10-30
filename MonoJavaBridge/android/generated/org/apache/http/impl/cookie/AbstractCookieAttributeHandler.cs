@@ -12,18 +12,12 @@ namespace org.apache.http.impl.cookie
 		internal static global::MonoJavaBridge.MethodId _match33196;
 		public virtual bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._match33196.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._match33196 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._match33196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._match33196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _validate33197;
 		public virtual void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._validate33197.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._validate33197 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._validate33197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler._validate33197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractCookieAttributeHandler33198;
 		public AbstractCookieAttributeHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -54,10 +48,7 @@ namespace org.apache.http.impl.cookie
 		internal static global::MonoJavaBridge.MethodId _parse33199;
 		public override void parse(org.apache.http.cookie.SetCookie arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V", ref global::org.apache.http.impl.cookie.AbstractCookieAttributeHandler_._parse33199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static AbstractCookieAttributeHandler_()
 		{

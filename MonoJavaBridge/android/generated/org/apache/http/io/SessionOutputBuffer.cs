@@ -22,58 +22,37 @@ namespace org.apache.http.io
 		internal static global::MonoJavaBridge.MethodId _write33478;
 		void org.apache.http.io.SessionOutputBuffer.write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._write33478.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._write33478 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "([BII)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._write33478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "([BII)V", ref global::org.apache.http.io.SessionOutputBuffer_._write33478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write33479;
 		void org.apache.http.io.SessionOutputBuffer.write(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._write33479.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._write33479 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "([B)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._write33479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "([B)V", ref global::org.apache.http.io.SessionOutputBuffer_._write33479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write33480;
 		void org.apache.http.io.SessionOutputBuffer.write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._write33480.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._write33480 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._write33480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "write", "(I)V", ref global::org.apache.http.io.SessionOutputBuffer_._write33480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush33481;
 		void org.apache.http.io.SessionOutputBuffer.flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._flush33481.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._flush33481 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "flush", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._flush33481);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "flush", "()V", ref global::org.apache.http.io.SessionOutputBuffer_._flush33481);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics33482;
 		global::org.apache.http.io.HttpTransportMetrics org.apache.http.io.SessionOutputBuffer.getMetrics()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._getMetrics33482.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._getMetrics33482 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.io.HttpTransportMetrics>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._getMetrics33482)) as org.apache.http.io.HttpTransportMetrics;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.io.HttpTransportMetrics>(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;", ref global::org.apache.http.io.SessionOutputBuffer_._getMetrics33482) as org.apache.http.io.HttpTransportMetrics;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeLine33483;
 		void org.apache.http.io.SessionOutputBuffer.writeLine(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._writeLine33483.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._writeLine33483 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._writeLine33483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Ljava/lang/String;)V", ref global::org.apache.http.io.SessionOutputBuffer_._writeLine33483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeLine33484;
 		void org.apache.http.io.SessionOutputBuffer.writeLine(org.apache.http.util.CharArrayBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionOutputBuffer_._writeLine33484.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionOutputBuffer_._writeLine33484 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Lorg/apache/http/util/CharArrayBuffer;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.SessionOutputBuffer_._writeLine33484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.SessionOutputBuffer_.staticClass, "writeLine", "(Lorg/apache/http/util/CharArrayBuffer;)V", ref global::org.apache.http.io.SessionOutputBuffer_._writeLine33484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SessionOutputBuffer_()
 		{

@@ -10,34 +10,22 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19567;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.SequenceInputStream._close19567.native == global::System.IntPtr.Zero)
-				global::java.io.SequenceInputStream._close19567 = @__env.GetMethodIDNoThrow(global::java.io.SequenceInputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._close19567);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.SequenceInputStream.staticClass, "close", "()V", ref global::java.io.SequenceInputStream._close19567);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19568;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.SequenceInputStream._read19568.native == global::System.IntPtr.Zero)
-				global::java.io.SequenceInputStream._read19568 = @__env.GetMethodIDNoThrow(global::java.io.SequenceInputStream.staticClass, "read", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19568);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, "read", "()I", ref global::java.io.SequenceInputStream._read19568);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19569;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.SequenceInputStream._read19569.native == global::System.IntPtr.Zero)
-				global::java.io.SequenceInputStream._read19569 = @__env.GetMethodIDNoThrow(global::java.io.SequenceInputStream.staticClass, "read", "([BII)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, "read", "([BII)I", ref global::java.io.SequenceInputStream._read19569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _available19570;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.SequenceInputStream._available19570.native == global::System.IntPtr.Zero)
-				global::java.io.SequenceInputStream._available19570 = @__env.GetMethodIDNoThrow(global::java.io.SequenceInputStream.staticClass, "available", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._available19570);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, "available", "()I", ref global::java.io.SequenceInputStream._available19570);
 		}
 		internal static global::MonoJavaBridge.MethodId _SequenceInputStream19571;
 		public SequenceInputStream(java.util.Enumeration arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -40,18 +40,12 @@ namespace java.nio.charset.spi
 		internal static global::MonoJavaBridge.MethodId _charsetForName22826;
 		public override global::java.nio.charset.Charset charsetForName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.spi.CharsetProvider_._charsetForName22826.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.spi.CharsetProvider_._charsetForName22826 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.spi.CharsetProvider_._charsetForName22826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.Charset;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;", ref global::java.nio.charset.spi.CharsetProvider_._charsetForName22826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.Charset;
 		}
 		internal static global::MonoJavaBridge.MethodId _charsets22827;
 		public override global::java.util.Iterator charsets()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.spi.CharsetProvider_._charsets22827.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.spi.CharsetProvider_._charsets22827 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsets", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.spi.CharsetProvider_._charsets22827)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsets", "()Ljava/util/Iterator;", ref global::java.nio.charset.spi.CharsetProvider_._charsets22827) as java.util.Iterator;
 		}
 		static CharsetProvider_()
 		{

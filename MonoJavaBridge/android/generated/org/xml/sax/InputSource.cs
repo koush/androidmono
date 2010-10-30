@@ -21,18 +21,12 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getEncoding35002;
 		public virtual global::java.lang.String getEncoding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._getEncoding35002.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._getEncoding35002 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "getEncoding", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getEncoding35002) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.xml.sax.InputSource._getEncoding35002) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEncoding35003;
 		public virtual void setEncoding(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._setEncoding35003.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._setEncoding35003 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "setEncoding", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setEncoding35003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, "setEncoding", "(Ljava/lang/String;)V", ref global::org.xml.sax.InputSource._setEncoding35003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String PublicId
 		{
@@ -48,10 +42,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getPublicId35004;
 		public virtual global::java.lang.String getPublicId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._getPublicId35004.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._getPublicId35004 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "getPublicId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getPublicId35004) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.InputSource._getPublicId35004) as java.lang.String;
 		}
 		public new global::java.lang.String SystemId
 		{
@@ -67,10 +58,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getSystemId35005;
 		public virtual global::java.lang.String getSystemId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._getSystemId35005.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._getSystemId35005 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "getSystemId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getSystemId35005) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.InputSource.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.InputSource._getSystemId35005) as java.lang.String;
 		}
 		public new global::java.io.Reader CharacterStream
 		{
@@ -86,42 +74,27 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream35006;
 		public virtual global::java.io.Reader getCharacterStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._getCharacterStream35006.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._getCharacterStream35006 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "getCharacterStream", "()Ljava/io/Reader;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getCharacterStream35006) as java.io.Reader;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.InputSource.staticClass, "getCharacterStream", "()Ljava/io/Reader;", ref global::org.xml.sax.InputSource._getCharacterStream35006) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream35007;
 		public virtual void setCharacterStream(java.io.Reader arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._setCharacterStream35007.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._setCharacterStream35007 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "setCharacterStream", "(Ljava/io/Reader;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setCharacterStream35007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, "setCharacterStream", "(Ljava/io/Reader;)V", ref global::org.xml.sax.InputSource._setCharacterStream35007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId35008;
 		public virtual void setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._setSystemId35008.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._setSystemId35008 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "setSystemId", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setSystemId35008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::org.xml.sax.InputSource._setSystemId35008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPublicId35009;
 		public virtual void setPublicId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._setPublicId35009.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._setPublicId35009 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "setPublicId", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setPublicId35009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, "setPublicId", "(Ljava/lang/String;)V", ref global::org.xml.sax.InputSource._setPublicId35009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByteStream35010;
 		public virtual void setByteStream(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._setByteStream35010.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._setByteStream35010 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "setByteStream", "(Ljava/io/InputStream;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setByteStream35010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.InputSource.staticClass, "setByteStream", "(Ljava/io/InputStream;)V", ref global::org.xml.sax.InputSource._setByteStream35010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.io.InputStream ByteStream
 		{
@@ -137,10 +110,7 @@ namespace org.xml.sax
 		internal static global::MonoJavaBridge.MethodId _getByteStream35011;
 		public virtual global::java.io.InputStream getByteStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.InputSource._getByteStream35011.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.InputSource._getByteStream35011 = @__env.GetMethodIDNoThrow(global::org.xml.sax.InputSource.staticClass, "getByteStream", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getByteStream35011) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.InputSource.staticClass, "getByteStream", "()Ljava/io/InputStream;", ref global::org.xml.sax.InputSource._getByteStream35011) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _InputSource35012;
 		public InputSource(java.io.Reader arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getEncoded24077;
 		public override byte[] getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.X509EncodedKeySpec._getEncoded24077.native == global::System.IntPtr.Zero)
-				global::java.security.spec.X509EncodedKeySpec._getEncoded24077 = @__env.GetMethodIDNoThrow(global::java.security.spec.X509EncodedKeySpec.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.X509EncodedKeySpec.staticClass, global::java.security.spec.X509EncodedKeySpec._getEncoded24077) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.X509EncodedKeySpec.staticClass, "getEncoded", "()[B", ref global::java.security.spec.X509EncodedKeySpec._getEncoded24077) as byte[];
 		}
 		public new global::java.lang.String Format
 		{
@@ -32,10 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getFormat24078;
 		public sealed override global::java.lang.String getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.X509EncodedKeySpec._getFormat24078.native == global::System.IntPtr.Zero)
-				global::java.security.spec.X509EncodedKeySpec._getFormat24078 = @__env.GetMethodIDNoThrow(global::java.security.spec.X509EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.X509EncodedKeySpec.staticClass, global::java.security.spec.X509EncodedKeySpec._getFormat24078) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.X509EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.spec.X509EncodedKeySpec._getFormat24078) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _X509EncodedKeySpec24079;
 		public X509EncodedKeySpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

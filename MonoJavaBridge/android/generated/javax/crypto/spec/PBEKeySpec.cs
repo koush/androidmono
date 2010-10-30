@@ -17,18 +17,12 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getPassword28792;
 		public virtual char[] getPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PBEKeySpec._getPassword28792.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PBEKeySpec._getPassword28792 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEKeySpec.staticClass, "getPassword", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getPassword28792) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::javax.crypto.spec.PBEKeySpec.staticClass, "getPassword", "()[C", ref global::javax.crypto.spec.PBEKeySpec._getPassword28792) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPassword28793;
 		public virtual void clearPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PBEKeySpec._clearPassword28793.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PBEKeySpec._clearPassword28793 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEKeySpec.staticClass, "clearPassword", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._clearPassword28793);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, "clearPassword", "()V", ref global::javax.crypto.spec.PBEKeySpec._clearPassword28793);
 		}
 		public new int IterationCount
 		{
@@ -40,10 +34,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getIterationCount28794;
 		public virtual int getIterationCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PBEKeySpec._getIterationCount28794.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PBEKeySpec._getIterationCount28794 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEKeySpec.staticClass, "getIterationCount", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getIterationCount28794);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, "getIterationCount", "()I", ref global::javax.crypto.spec.PBEKeySpec._getIterationCount28794);
 		}
 		public new byte[] Salt
 		{
@@ -55,10 +46,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getSalt28795;
 		public virtual byte[] getSalt()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PBEKeySpec._getSalt28795.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PBEKeySpec._getSalt28795 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEKeySpec.staticClass, "getSalt", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getSalt28795) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.PBEKeySpec.staticClass, "getSalt", "()[B", ref global::javax.crypto.spec.PBEKeySpec._getSalt28795) as byte[];
 		}
 		public new int KeyLength
 		{
@@ -70,10 +58,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getKeyLength28796;
 		public virtual int getKeyLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PBEKeySpec._getKeyLength28796.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PBEKeySpec._getKeyLength28796 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEKeySpec.staticClass, "getKeyLength", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getKeyLength28796);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, "getKeyLength", "()I", ref global::javax.crypto.spec.PBEKeySpec._getKeyLength28796);
 		}
 		internal static global::MonoJavaBridge.MethodId _PBEKeySpec28797;
 		public PBEKeySpec(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

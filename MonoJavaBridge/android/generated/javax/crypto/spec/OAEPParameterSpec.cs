@@ -17,10 +17,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm28786;
 		public virtual global::java.lang.String getDigestAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786) as java.lang.String;
 		}
 		public new global::java.lang.String MGFAlgorithm
 		{
@@ -32,10 +29,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getMGFAlgorithm28787;
 		public virtual global::java.lang.String getMGFAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787) as java.lang.String;
 		}
 		public new global::java.security.spec.AlgorithmParameterSpec MGFParameters
 		{
@@ -47,10 +41,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getMGFParameters28788;
 		public virtual global::java.security.spec.AlgorithmParameterSpec getMGFParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.AlgorithmParameterSpec>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788) as java.security.spec.AlgorithmParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.AlgorithmParameterSpec>(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;", ref global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788) as java.security.spec.AlgorithmParameterSpec;
 		}
 		public new global::javax.crypto.spec.PSource PSource
 		{
@@ -62,10 +53,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getPSource28789;
 		public virtual global::javax.crypto.spec.PSource getPSource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.OAEPParameterSpec._getPSource28789.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.OAEPParameterSpec._getPSource28789 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getPSource", "()Ljavax/crypto/spec/PSource;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getPSource28789) as javax.crypto.spec.PSource;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getPSource", "()Ljavax/crypto/spec/PSource;", ref global::javax.crypto.spec.OAEPParameterSpec._getPSource28789) as javax.crypto.spec.PSource;
 		}
 		internal static global::MonoJavaBridge.MethodId _OAEPParameterSpec28790;
 		public OAEPParameterSpec(java.lang.String arg0, java.lang.String arg1, java.security.spec.AlgorithmParameterSpec arg2, javax.crypto.spec.PSource arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

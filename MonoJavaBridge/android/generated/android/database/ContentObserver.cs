@@ -10,26 +10,17 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _deliverSelfNotifications4431;
 		public virtual bool deliverSelfNotifications()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.ContentObserver._deliverSelfNotifications4431.native == global::System.IntPtr.Zero)
-				global::android.database.ContentObserver._deliverSelfNotifications4431 = @__env.GetMethodIDNoThrow(global::android.database.ContentObserver.staticClass, "deliverSelfNotifications", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._deliverSelfNotifications4431);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.ContentObserver.staticClass, "deliverSelfNotifications", "()Z", ref global::android.database.ContentObserver._deliverSelfNotifications4431);
 		}
 		internal static global::MonoJavaBridge.MethodId _onChange4432;
 		public virtual void onChange(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.ContentObserver._onChange4432.native == global::System.IntPtr.Zero)
-				global::android.database.ContentObserver._onChange4432 = @__env.GetMethodIDNoThrow(global::android.database.ContentObserver.staticClass, "onChange", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._onChange4432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObserver.staticClass, "onChange", "(Z)V", ref global::android.database.ContentObserver._onChange4432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchChange4433;
 		public virtual void dispatchChange(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.ContentObserver._dispatchChange4433.native == global::System.IntPtr.Zero)
-				global::android.database.ContentObserver._dispatchChange4433 = @__env.GetMethodIDNoThrow(global::android.database.ContentObserver.staticClass, "dispatchChange", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._dispatchChange4433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObserver.staticClass, "dispatchChange", "(Z)V", ref global::android.database.ContentObserver._dispatchChange4433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentObserver4434;
 		public ContentObserver(android.os.Handler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

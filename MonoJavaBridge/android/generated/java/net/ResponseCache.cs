@@ -56,18 +56,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _get21683;
 		public override global::java.net.CacheResponse get(java.net.URI arg0, java.lang.String arg1, java.util.Map arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ResponseCache_._get21683.native == global::System.IntPtr.Zero)
-				global::java.net.ResponseCache_._get21683 = @__env.GetMethodIDNoThrow(global::java.net.ResponseCache_.staticClass, "get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ResponseCache_._get21683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.net.CacheResponse;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ResponseCache_.staticClass, "get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;", ref global::java.net.ResponseCache_._get21683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.net.CacheResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _put21684;
 		public override global::java.net.CacheRequest put(java.net.URI arg0, java.net.URLConnection arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ResponseCache_._put21684.native == global::System.IntPtr.Zero)
-				global::java.net.ResponseCache_._put21684 = @__env.GetMethodIDNoThrow(global::java.net.ResponseCache_.staticClass, "put", "(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ResponseCache_._put21684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.CacheRequest;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ResponseCache_.staticClass, "put", "(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;", ref global::java.net.ResponseCache_._put21684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.CacheRequest;
 		}
 		static ResponseCache_()
 		{

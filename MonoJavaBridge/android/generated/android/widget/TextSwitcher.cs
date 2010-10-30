@@ -17,10 +17,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setText17962;
 		public virtual void setText(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TextSwitcher._setText17962.native == global::System.IntPtr.Zero)
-				global::android.widget.TextSwitcher._setText17962 = @__env.GetMethodIDNoThrow(global::android.widget.TextSwitcher.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, global::android.widget.TextSwitcher._setText17962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, "setText", "(Ljava/lang/CharSequence;)V", ref global::android.widget.TextSwitcher._setText17962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setText(string arg0)
 		{
@@ -29,10 +26,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _addView17963;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TextSwitcher._addView17963.native == global::System.IntPtr.Zero)
-				global::android.widget.TextSwitcher._addView17963 = @__env.GetMethodIDNoThrow(global::android.widget.TextSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, global::android.widget.TextSwitcher._addView17963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V", ref global::android.widget.TextSwitcher._addView17963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::java.lang.CharSequence CurrentText
 		{
@@ -44,10 +38,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setCurrentText17964;
 		public virtual void setCurrentText(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.TextSwitcher._setCurrentText17964.native == global::System.IntPtr.Zero)
-				global::android.widget.TextSwitcher._setCurrentText17964 = @__env.GetMethodIDNoThrow(global::android.widget.TextSwitcher.staticClass, "setCurrentText", "(Ljava/lang/CharSequence;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, global::android.widget.TextSwitcher._setCurrentText17964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TextSwitcher.staticClass, "setCurrentText", "(Ljava/lang/CharSequence;)V", ref global::android.widget.TextSwitcher._setCurrentText17964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setCurrentText(string arg0)
 		{

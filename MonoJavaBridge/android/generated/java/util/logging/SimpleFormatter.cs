@@ -10,10 +10,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _format28098;
 		public override global::java.lang.String format(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.SimpleFormatter._format28098.native == global::System.IntPtr.Zero)
-				global::java.util.logging.SimpleFormatter._format28098 = @__env.GetMethodIDNoThrow(global::java.util.logging.SimpleFormatter.staticClass, "format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.SimpleFormatter.staticClass, global::java.util.logging.SimpleFormatter._format28098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.SimpleFormatter.staticClass, "format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", ref global::java.util.logging.SimpleFormatter._format28098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SimpleFormatter28099;
 		public SimpleFormatter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

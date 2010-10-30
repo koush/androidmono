@@ -20,10 +20,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getUnderlying13461;
 		public virtual global::android.text.style.CharacterStyle getUnderlying()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.CharacterStyle._getUnderlying13461.native == global::System.IntPtr.Zero)
-				global::android.text.style.CharacterStyle._getUnderlying13461 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "getUnderlying", "()Landroid/text/style/CharacterStyle;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying13461) as android.text.style.CharacterStyle;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.CharacterStyle.staticClass, "getUnderlying", "()Landroid/text/style/CharacterStyle;", ref global::android.text.style.CharacterStyle._getUnderlying13461) as android.text.style.CharacterStyle;
 		}
 		internal static global::MonoJavaBridge.MethodId _CharacterStyle13462;
 		public CharacterStyle() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -54,10 +51,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13463;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.CharacterStyle_._updateDrawState13463.native == global::System.IntPtr.Zero)
-				global::android.text.style.CharacterStyle_._updateDrawState13463 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.CharacterStyle_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CharacterStyle_()
 		{

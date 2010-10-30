@@ -16,10 +16,7 @@ namespace android.sax
 		internal static global::MonoJavaBridge.MethodId _start11617;
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.StartElementListener_._start11617.native == global::System.IntPtr.Zero)
-				global::android.sax.StartElementListener_._start11617 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static StartElementListener_()
 		{

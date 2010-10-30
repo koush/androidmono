@@ -40,18 +40,12 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _newValidator31183;
 		public override global::javax.xml.validation.Validator newValidator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.validation.Schema_._newValidator31183.native == global::System.IntPtr.Zero)
-				global::javax.xml.validation.Schema_._newValidator31183 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Schema_.staticClass, "newValidator", "()Ljavax/xml/validation/Validator;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.Schema_._newValidator31183)) as javax.xml.validation.Validator;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidator", "()Ljavax/xml/validation/Validator;", ref global::javax.xml.validation.Schema_._newValidator31183) as javax.xml.validation.Validator;
 		}
 		internal static global::MonoJavaBridge.MethodId _newValidatorHandler31184;
 		public override global::javax.xml.validation.ValidatorHandler newValidatorHandler()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.validation.Schema_._newValidatorHandler31184.native == global::System.IntPtr.Zero)
-				global::javax.xml.validation.Schema_._newValidatorHandler31184 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Schema_.staticClass, "newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.Schema_._newValidatorHandler31184)) as javax.xml.validation.ValidatorHandler;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;", ref global::javax.xml.validation.Schema_._newValidatorHandler31184) as javax.xml.validation.ValidatorHandler;
 		}
 		static Schema_()
 		{

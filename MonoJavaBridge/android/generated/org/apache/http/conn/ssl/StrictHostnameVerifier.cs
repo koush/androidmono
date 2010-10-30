@@ -10,18 +10,12 @@ namespace org.apache.http.conn.ssl
 		internal static global::MonoJavaBridge.MethodId _toString32356;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ssl.StrictHostnameVerifier._toString32356.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ssl.StrictHostnameVerifier._toString32356 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.StrictHostnameVerifier._toString32356) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.conn.ssl.StrictHostnameVerifier._toString32356) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32357;
 		public sealed override void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ssl.StrictHostnameVerifier._verify32357.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ssl.StrictHostnameVerifier._verify32357 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.StrictHostnameVerifier._verify32357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ssl.StrictHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V", ref global::org.apache.http.conn.ssl.StrictHostnameVerifier._verify32357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _StrictHostnameVerifier32358;
 		public StrictHostnameVerifier() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,10 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5571;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.PathEffect._finalize5571.native == global::System.IntPtr.Zero)
-				global::android.graphics.PathEffect._finalize5571 = @__env.GetMethodIDNoThrow(global::android.graphics.PathEffect.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PathEffect.staticClass, global::android.graphics.PathEffect._finalize5571);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PathEffect.staticClass, "finalize", "()V", ref global::android.graphics.PathEffect._finalize5571);
 		}
 		internal static global::MonoJavaBridge.MethodId _PathEffect5572;
 		public PathEffect() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

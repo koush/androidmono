@@ -10,34 +10,22 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getProvider12274;
 		public virtual global::android.content.ContentProvider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ProviderTestCase._getProvider12274.native == global::System.IntPtr.Zero)
-				global::android.test.ProviderTestCase._getProvider12274 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "getProvider", "()Landroid/content/ContentProvider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, global::android.test.ProviderTestCase._getProvider12274) as android.content.ContentProvider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, "getProvider", "()Landroid/content/ContentProvider;", ref global::android.test.ProviderTestCase._getProvider12274) as android.content.ContentProvider;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12275;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ProviderTestCase._setUp12275.native == global::System.IntPtr.Zero)
-				global::android.test.ProviderTestCase._setUp12275 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "setUp", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ProviderTestCase.staticClass, global::android.test.ProviderTestCase._setUp12275);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ProviderTestCase.staticClass, "setUp", "()V", ref global::android.test.ProviderTestCase._setUp12275);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContentResolver12276;
 		public virtual global::android.test.mock.MockContentResolver getMockContentResolver()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ProviderTestCase._getMockContentResolver12276.native == global::System.IntPtr.Zero)
-				global::android.test.ProviderTestCase._getMockContentResolver12276 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "getMockContentResolver", "()Landroid/test/mock/MockContentResolver;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, global::android.test.ProviderTestCase._getMockContentResolver12276) as android.test.mock.MockContentResolver;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, "getMockContentResolver", "()Landroid/test/mock/MockContentResolver;", ref global::android.test.ProviderTestCase._getMockContentResolver12276) as android.test.mock.MockContentResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContext12277;
 		public virtual global::android.test.IsolatedContext getMockContext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ProviderTestCase._getMockContext12277.native == global::System.IntPtr.Zero)
-				global::android.test.ProviderTestCase._getMockContext12277 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase.staticClass, "getMockContext", "()Landroid/test/IsolatedContext;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, global::android.test.ProviderTestCase._getMockContext12277) as android.test.IsolatedContext;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase.staticClass, "getMockContext", "()Landroid/test/IsolatedContext;", ref global::android.test.ProviderTestCase._getMockContext12277) as android.test.IsolatedContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _newResolverWithContentProviderFromSql12278;
 		public static global::android.content.ContentResolver newResolverWithContentProviderFromSql(android.content.Context arg0, java.lang.Class arg1, java.lang.String arg2, java.lang.String arg3, int arg4, java.lang.String arg5)

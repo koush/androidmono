@@ -23,10 +23,7 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _onCancel2062;
 			void android.app.SearchManager.OnCancelListener.onCancel()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.app.SearchManager.OnCancelListener_._onCancel2062.native == global::System.IntPtr.Zero)
-					global::android.app.SearchManager.OnCancelListener_._onCancel2062 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnCancelListener_.staticClass, "onCancel", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.SearchManager.OnCancelListener_._onCancel2062);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.OnCancelListener_.staticClass, "onCancel", "()V", ref global::android.app.SearchManager.OnCancelListener_._onCancel2062);
 			}
 			static OnCancelListener_()
 			{
@@ -95,10 +92,7 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _onDismiss2064;
 			void android.app.SearchManager.OnDismissListener.onDismiss()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.app.SearchManager.OnDismissListener_._onDismiss2064.native == global::System.IntPtr.Zero)
-					global::android.app.SearchManager.OnDismissListener_._onDismiss2064 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.OnDismissListener_.staticClass, "onDismiss", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.SearchManager.OnDismissListener_._onDismiss2064);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.OnDismissListener_.staticClass, "onDismiss", "()V", ref global::android.app.SearchManager.OnDismissListener_._onDismiss2064);
 			}
 			static OnDismissListener_()
 			{
@@ -154,26 +148,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _startSearch2066;
 		public virtual void startSearch(java.lang.String arg0, bool arg1, android.content.ComponentName arg2, android.os.Bundle arg3, bool arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._startSearch2066.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._startSearch2066 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "startSearch", "(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._startSearch2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "startSearch", "(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;Z)V", ref global::android.app.SearchManager._startSearch2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _triggerSearch2067;
 		public virtual void triggerSearch(java.lang.String arg0, android.content.ComponentName arg1, android.os.Bundle arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._triggerSearch2067.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._triggerSearch2067 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "triggerSearch", "(Ljava/lang/String;Landroid/content/ComponentName;Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._triggerSearch2067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "triggerSearch", "(Ljava/lang/String;Landroid/content/ComponentName;Landroid/os/Bundle;)V", ref global::android.app.SearchManager._triggerSearch2067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnCancelListener2068;
 		public virtual void setOnCancelListener(android.app.SearchManager.OnCancelListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._setOnCancelListener2068.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._setOnCancelListener2068 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "setOnCancelListener", "(Landroid/app/SearchManager$OnCancelListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._setOnCancelListener2068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "setOnCancelListener", "(Landroid/app/SearchManager$OnCancelListener;)V", ref global::android.app.SearchManager._setOnCancelListener2068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnCancelListener(global::android.app.SearchManager.OnCancelListenerDelegate arg0)
 		{
@@ -182,10 +167,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOnDismissListener2069;
 		public virtual void setOnDismissListener(android.app.SearchManager.OnDismissListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._setOnDismissListener2069.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._setOnDismissListener2069 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "setOnDismissListener", "(Landroid/app/SearchManager$OnDismissListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._setOnDismissListener2069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "setOnDismissListener", "(Landroid/app/SearchManager$OnDismissListener;)V", ref global::android.app.SearchManager._setOnDismissListener2069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnDismissListener(global::android.app.SearchManager.OnDismissListenerDelegate arg0)
 		{
@@ -194,34 +176,22 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _onCancel2070;
 		public virtual void onCancel(android.content.DialogInterface arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._onCancel2070.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._onCancel2070 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onCancel2070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V", ref global::android.app.SearchManager._onCancel2070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onDismiss2071;
 		public virtual void onDismiss(android.content.DialogInterface arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._onDismiss2071.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._onDismiss2071 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onDismiss2071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V", ref global::android.app.SearchManager._onDismiss2071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopSearch2072;
 		public virtual void stopSearch()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._stopSearch2072.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._stopSearch2072 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "stopSearch", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._stopSearch2072);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.SearchManager.staticClass, "stopSearch", "()V", ref global::android.app.SearchManager._stopSearch2072);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchableInfo2073;
 		public virtual global::android.app.SearchableInfo getSearchableInfo(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._getSearchableInfo2073.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._getSearchableInfo2073 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "getSearchableInfo", "(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.app.SearchableInfo>(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._getSearchableInfo2073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.SearchableInfo;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.app.SearchableInfo>(this, global::android.app.SearchManager.staticClass, "getSearchableInfo", "(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;", ref global::android.app.SearchManager._getSearchableInfo2073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.SearchableInfo;
 		}
 		public new global::java.util.List SearchablesInGlobalSearch
 		{
@@ -233,10 +203,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getSearchablesInGlobalSearch2074;
 		public virtual global::java.util.List getSearchablesInGlobalSearch()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.SearchManager._getSearchablesInGlobalSearch2074.native == global::System.IntPtr.Zero)
-				global::android.app.SearchManager._getSearchablesInGlobalSearch2074 = @__env.GetMethodIDNoThrow(global::android.app.SearchManager.staticClass, "getSearchablesInGlobalSearch", "()Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._getSearchablesInGlobalSearch2074) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.SearchManager.staticClass, "getSearchablesInGlobalSearch", "()Ljava/util/List;", ref global::android.app.SearchManager._getSearchablesInGlobalSearch2074) as java.util.List;
 		}
 		public static char MENU_KEY
 		{

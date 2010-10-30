@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26519;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.MissingFormatWidthException._getMessage26519.native == global::System.IntPtr.Zero)
-				global::java.util.MissingFormatWidthException._getMessage26519 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getMessage26519) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.MissingFormatWidthException._getMessage26519) as java.lang.String;
 		}
 		public new global::java.lang.String FormatSpecifier
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getFormatSpecifier26520;
 		public virtual global::java.lang.String getFormatSpecifier()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.MissingFormatWidthException._getFormatSpecifier26520.native == global::System.IntPtr.Zero)
-				global::java.util.MissingFormatWidthException._getFormatSpecifier26520 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getFormatSpecifier", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getFormatSpecifier26520) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.MissingFormatWidthException.staticClass, "getFormatSpecifier", "()Ljava/lang/String;", ref global::java.util.MissingFormatWidthException._getFormatSpecifier26520) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MissingFormatWidthException26521;
 		public MissingFormatWidthException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

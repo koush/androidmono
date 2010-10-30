@@ -16,42 +16,27 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _value20779;
 		global::java.lang.String[] java.lang.SuppressWarnings.value()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.SuppressWarnings_._value20779.native == global::System.IntPtr.Zero)
-				global::java.lang.SuppressWarnings_._value20779 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "value", "()[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.SuppressWarnings_._value20779)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.lang.SuppressWarnings_.staticClass, "value", "()[Ljava/lang/String;", ref global::java.lang.SuppressWarnings_._value20779) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _equals20780;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.SuppressWarnings_._equals20780.native == global::System.IntPtr.Zero)
-				global::java.lang.SuppressWarnings_._equals20780 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.SuppressWarnings_._equals20780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.SuppressWarnings_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.SuppressWarnings_._equals20780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20781;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.SuppressWarnings_._toString20781.native == global::System.IntPtr.Zero)
-				global::java.lang.SuppressWarnings_._toString20781 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.SuppressWarnings_._toString20781)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.SuppressWarnings_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.SuppressWarnings_._toString20781) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20782;
 		int java.lang.annotation.Annotation.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.SuppressWarnings_._hashCode20782.native == global::System.IntPtr.Zero)
-				global::java.lang.SuppressWarnings_._hashCode20782 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.SuppressWarnings_._hashCode20782);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.SuppressWarnings_.staticClass, "hashCode", "()I", ref global::java.lang.SuppressWarnings_._hashCode20782);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType20783;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.SuppressWarnings_._annotationType20783.native == global::System.IntPtr.Zero)
-				global::java.lang.SuppressWarnings_._annotationType20783 = @__env.GetMethodIDNoThrow(global::java.lang.SuppressWarnings_.staticClass, "annotationType", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.SuppressWarnings_._annotationType20783)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.SuppressWarnings_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::java.lang.SuppressWarnings_._annotationType20783) as java.lang.Class;
 		}
 		static SuppressWarnings_()
 		{

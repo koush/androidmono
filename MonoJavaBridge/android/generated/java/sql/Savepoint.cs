@@ -17,18 +17,12 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getSavepointId25043;
 		int java.sql.Savepoint.getSavepointId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Savepoint_._getSavepointId25043.native == global::System.IntPtr.Zero)
-				global::java.sql.Savepoint_._getSavepointId25043 = @__env.GetMethodIDNoThrow(global::java.sql.Savepoint_.staticClass, "getSavepointId", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Savepoint_._getSavepointId25043);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Savepoint_.staticClass, "getSavepointId", "()I", ref global::java.sql.Savepoint_._getSavepointId25043);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSavepointName25044;
 		global::java.lang.String java.sql.Savepoint.getSavepointName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Savepoint_._getSavepointName25044.native == global::System.IntPtr.Zero)
-				global::java.sql.Savepoint_._getSavepointName25044 = @__env.GetMethodIDNoThrow(global::java.sql.Savepoint_.staticClass, "getSavepointName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Savepoint_._getSavepointName25044)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.Savepoint_.staticClass, "getSavepointName", "()Ljava/lang/String;", ref global::java.sql.Savepoint_._getSavepointName25044) as java.lang.String;
 		}
 		static Savepoint_()
 		{

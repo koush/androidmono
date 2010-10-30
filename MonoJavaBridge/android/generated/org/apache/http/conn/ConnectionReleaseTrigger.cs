@@ -17,18 +17,12 @@ namespace org.apache.http.conn
 		internal static global::MonoJavaBridge.MethodId _releaseConnection32093;
 		void org.apache.http.conn.ConnectionReleaseTrigger.releaseConnection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, "releaseConnection", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, "releaseConnection", "()V", ref global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortConnection32094;
 		void org.apache.http.conn.ConnectionReleaseTrigger.abortConnection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, "abortConnection", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, "abortConnection", "()V", ref global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094);
 		}
 		static ConnectionReleaseTrigger_()
 		{

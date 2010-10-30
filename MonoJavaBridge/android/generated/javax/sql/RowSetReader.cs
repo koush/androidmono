@@ -16,10 +16,7 @@ namespace javax.sql
 		internal static global::MonoJavaBridge.MethodId _readData30621;
 		void javax.sql.RowSetReader.readData(javax.sql.RowSetInternal arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.sql.RowSetReader_._readData30621.native == global::System.IntPtr.Zero)
-				global::javax.sql.RowSetReader_._readData30621 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetReader_.staticClass, "readData", "(Ljavax/sql/RowSetInternal;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetReader_.staticClass, "readData", "(Ljavax/sql/RowSetInternal;)V", ref global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetReader_()
 		{

@@ -10,26 +10,17 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _equals32302;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._equals32302.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._equals32302 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._equals32302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::org.apache.http.conn.scheme.Scheme._equals32302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString32303;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._toString32303.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._toString32303 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._toString32303)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.conn.scheme.Scheme._toString32303) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode32304;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._hashCode32304.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._hashCode32304 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._hashCode32304);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "hashCode", "()I", ref global::org.apache.http.conn.scheme.Scheme._hashCode32304);
 		}
 		public new global::java.lang.String Name
 		{
@@ -41,10 +32,7 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _getName32305;
 		public global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._getName32305.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._getName32305 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._getName32305)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.conn.scheme.Scheme._getName32305) as java.lang.String;
 		}
 		public new int DefaultPort
 		{
@@ -56,10 +44,7 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _getDefaultPort32306;
 		public int getDefaultPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._getDefaultPort32306.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._getDefaultPort32306 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "getDefaultPort", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._getDefaultPort32306);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "getDefaultPort", "()I", ref global::org.apache.http.conn.scheme.Scheme._getDefaultPort32306);
 		}
 		public new global::org.apache.http.conn.scheme.SocketFactory SocketFactory
 		{
@@ -71,26 +56,17 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _getSocketFactory32307;
 		public global::org.apache.http.conn.scheme.SocketFactory getSocketFactory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._getSocketFactory32307.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._getSocketFactory32307 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "getSocketFactory", "()Lorg/apache/http/conn/scheme/SocketFactory;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.scheme.SocketFactory>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._getSocketFactory32307)) as org.apache.http.conn.scheme.SocketFactory;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.scheme.SocketFactory>(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "getSocketFactory", "()Lorg/apache/http/conn/scheme/SocketFactory;", ref global::org.apache.http.conn.scheme.Scheme._getSocketFactory32307) as org.apache.http.conn.scheme.SocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _isLayered32308;
 		public bool isLayered()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._isLayered32308.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._isLayered32308 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "isLayered", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._isLayered32308);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "isLayered", "()Z", ref global::org.apache.http.conn.scheme.Scheme._isLayered32308);
 		}
 		internal static global::MonoJavaBridge.MethodId _resolvePort32309;
 		public int resolvePort(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.Scheme._resolvePort32309.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.Scheme._resolvePort32309 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.Scheme.staticClass, "resolvePort", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.scheme.Scheme.staticClass, global::org.apache.http.conn.scheme.Scheme._resolvePort32309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.conn.scheme.Scheme.staticClass, "resolvePort", "(I)I", ref global::org.apache.http.conn.scheme.Scheme._resolvePort32309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Scheme32310;
 		public Scheme(java.lang.String arg0, org.apache.http.conn.scheme.SocketFactory arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

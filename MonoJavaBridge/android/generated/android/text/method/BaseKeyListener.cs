@@ -12,26 +12,17 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _onKeyDown13257;
 		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.BaseKeyListener._onKeyDown13257.native == global::System.IntPtr.Zero)
-				global::android.text.method.BaseKeyListener._onKeyDown13257 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, global::android.text.method.BaseKeyListener._onKeyDown13257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.BaseKeyListener._onKeyDown13257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyOther13258;
 		public virtual bool onKeyOther(android.view.View arg0, android.text.Editable arg1, android.view.KeyEvent arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.BaseKeyListener._onKeyOther13258.native == global::System.IntPtr.Zero)
-				global::android.text.method.BaseKeyListener._onKeyOther13258 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener.staticClass, "onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, global::android.text.method.BaseKeyListener._onKeyOther13258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, "onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z", ref global::android.text.method.BaseKeyListener._onKeyOther13258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _backspace13259;
 		public virtual bool backspace(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.BaseKeyListener._backspace13259.native == global::System.IntPtr.Zero)
-				global::android.text.method.BaseKeyListener._backspace13259 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener.staticClass, "backspace", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, global::android.text.method.BaseKeyListener._backspace13259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.BaseKeyListener.staticClass, "backspace", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.BaseKeyListener._backspace13259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _BaseKeyListener13260;
 		public BaseKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -62,10 +53,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13261;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.BaseKeyListener_._getInputType13261.native == global::System.IntPtr.Zero)
-				global::android.text.method.BaseKeyListener_._getInputType13261 = @__env.GetMethodIDNoThrow(global::android.text.method.BaseKeyListener_.staticClass, "getInputType", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.BaseKeyListener_._getInputType13261);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.BaseKeyListener_.staticClass, "getInputType", "()I", ref global::android.text.method.BaseKeyListener_._getInputType13261);
 		}
 		static BaseKeyListener_()
 		{

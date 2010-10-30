@@ -17,26 +17,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getDuration17713;
 		public virtual int getDuration()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getDuration17713.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getDuration17713 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getDuration", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getDuration17713);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getDuration", "()I", ref global::android.widget.Scroller._getDuration17713);
 		}
 		internal static global::MonoJavaBridge.MethodId _isFinished17714;
 		public virtual bool isFinished()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._isFinished17714.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._isFinished17714 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "isFinished", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._isFinished17714);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Scroller.staticClass, "isFinished", "()Z", ref global::android.widget.Scroller._isFinished17714);
 		}
 		internal static global::MonoJavaBridge.MethodId _forceFinished17715;
 		public virtual void forceFinished(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._forceFinished17715.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._forceFinished17715 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "forceFinished", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._forceFinished17715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "forceFinished", "(Z)V", ref global::android.widget.Scroller._forceFinished17715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CurrX
 		{
@@ -48,10 +39,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrX17716;
 		public virtual int getCurrX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getCurrX17716.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getCurrX17716 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getCurrX", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getCurrX17716);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getCurrX", "()I", ref global::android.widget.Scroller._getCurrX17716);
 		}
 		public new int CurrY
 		{
@@ -63,10 +51,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrY17717;
 		public virtual int getCurrY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getCurrY17717.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getCurrY17717 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getCurrY", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getCurrY17717);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getCurrY", "()I", ref global::android.widget.Scroller._getCurrY17717);
 		}
 		public new int StartX
 		{
@@ -78,10 +63,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getStartX17718;
 		public virtual int getStartX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getStartX17718.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getStartX17718 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getStartX", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getStartX17718);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getStartX", "()I", ref global::android.widget.Scroller._getStartX17718);
 		}
 		public new int StartY
 		{
@@ -93,10 +75,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getStartY17719;
 		public virtual int getStartY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getStartY17719.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getStartY17719 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getStartY", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getStartY17719);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getStartY", "()I", ref global::android.widget.Scroller._getStartY17719);
 		}
 		public new int FinalX
 		{
@@ -112,10 +91,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getFinalX17720;
 		public virtual int getFinalX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getFinalX17720.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getFinalX17720 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getFinalX", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getFinalX17720);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getFinalX", "()I", ref global::android.widget.Scroller._getFinalX17720);
 		}
 		public new int FinalY
 		{
@@ -131,82 +107,52 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getFinalY17721;
 		public virtual int getFinalY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._getFinalY17721.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._getFinalY17721 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "getFinalY", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getFinalY17721);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "getFinalY", "()I", ref global::android.widget.Scroller._getFinalY17721);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeScrollOffset17722;
 		public virtual bool computeScrollOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._computeScrollOffset17722.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._computeScrollOffset17722 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "computeScrollOffset", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._computeScrollOffset17722);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Scroller.staticClass, "computeScrollOffset", "()Z", ref global::android.widget.Scroller._computeScrollOffset17722);
 		}
 		internal static global::MonoJavaBridge.MethodId _startScroll17723;
 		public virtual void startScroll(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._startScroll17723.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._startScroll17723 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "startScroll", "(IIII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._startScroll17723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "startScroll", "(IIII)V", ref global::android.widget.Scroller._startScroll17723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _startScroll17724;
 		public virtual void startScroll(int arg0, int arg1, int arg2, int arg3, int arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._startScroll17724.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._startScroll17724 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "startScroll", "(IIIII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._startScroll17724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "startScroll", "(IIIII)V", ref global::android.widget.Scroller._startScroll17724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _fling17725;
 		public virtual void fling(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._fling17725.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._fling17725 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "fling", "(IIIIIIII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._fling17725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "fling", "(IIIIIIII)V", ref global::android.widget.Scroller._fling17725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
 		internal static global::MonoJavaBridge.MethodId _abortAnimation17726;
 		public virtual void abortAnimation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._abortAnimation17726.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._abortAnimation17726 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "abortAnimation", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._abortAnimation17726);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "abortAnimation", "()V", ref global::android.widget.Scroller._abortAnimation17726);
 		}
 		internal static global::MonoJavaBridge.MethodId _extendDuration17727;
 		public virtual void extendDuration(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._extendDuration17727.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._extendDuration17727 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "extendDuration", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._extendDuration17727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "extendDuration", "(I)V", ref global::android.widget.Scroller._extendDuration17727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _timePassed17728;
 		public virtual int timePassed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._timePassed17728.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._timePassed17728 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "timePassed", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._timePassed17728);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Scroller.staticClass, "timePassed", "()I", ref global::android.widget.Scroller._timePassed17728);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFinalX17729;
 		public virtual void setFinalX(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._setFinalX17729.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._setFinalX17729 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "setFinalX", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._setFinalX17729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "setFinalX", "(I)V", ref global::android.widget.Scroller._setFinalX17729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFinalY17730;
 		public virtual void setFinalY(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.Scroller._setFinalY17730.native == global::System.IntPtr.Zero)
-				global::android.widget.Scroller._setFinalY17730 = @__env.GetMethodIDNoThrow(global::android.widget.Scroller.staticClass, "setFinalY", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._setFinalY17730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Scroller.staticClass, "setFinalY", "(I)V", ref global::android.widget.Scroller._setFinalY17730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Scroller17731;
 		public Scroller(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

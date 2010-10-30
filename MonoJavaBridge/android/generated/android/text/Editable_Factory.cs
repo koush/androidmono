@@ -25,10 +25,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _newEditable12740;
 		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Editable_Factory._newEditable12740.native == global::System.IntPtr.Zero)
-				global::android.text.Editable_Factory._newEditable12740 = @__env.GetMethodIDNoThrow(global::android.text.Editable_Factory.staticClass, "newEditable", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Editable>(this, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable12740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Editable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Editable>(this, global::android.text.Editable_Factory.staticClass, "newEditable", "(Ljava/lang/CharSequence;)Landroid/text/Editable;", ref global::android.text.Editable_Factory._newEditable12740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Editable;
 		}
 		public android.text.Editable newEditable(string arg0)
 		{

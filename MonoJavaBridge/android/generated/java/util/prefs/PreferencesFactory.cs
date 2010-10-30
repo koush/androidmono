@@ -17,18 +17,12 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _userRoot28264;
 		global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.userRoot()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferencesFactory_._userRoot28264.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferencesFactory_._userRoot28264 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "userRoot", "()Ljava/util/prefs/Preferences;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._userRoot28264)) as java.util.prefs.Preferences;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.PreferencesFactory_.staticClass, "userRoot", "()Ljava/util/prefs/Preferences;", ref global::java.util.prefs.PreferencesFactory_._userRoot28264) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _systemRoot28265;
 		global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.systemRoot()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferencesFactory_._systemRoot28265.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferencesFactory_._systemRoot28265 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "systemRoot", "()Ljava/util/prefs/Preferences;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._systemRoot28265)) as java.util.prefs.Preferences;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.PreferencesFactory_.staticClass, "systemRoot", "()Ljava/util/prefs/Preferences;", ref global::java.util.prefs.PreferencesFactory_._systemRoot28265) as java.util.prefs.Preferences;
 		}
 		static PreferencesFactory_()
 		{

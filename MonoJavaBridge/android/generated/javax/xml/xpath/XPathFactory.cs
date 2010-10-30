@@ -86,50 +86,32 @@ namespace javax.xml.xpath
 		internal static global::MonoJavaBridge.MethodId _setFeature31322;
 		public override void setFeature(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._setFeature31322.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._setFeature31322 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._setFeature31322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V", ref global::javax.xml.xpath.XPathFactory_._setFeature31322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31323;
 		public override bool getFeature(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._getFeature31323.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._getFeature31323 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._getFeature31323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.xpath.XPathFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z", ref global::javax.xml.xpath.XPathFactory_._getFeature31323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setXPathVariableResolver31324;
 		public override void setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._setXPathVariableResolver31324.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._setXPathVariableResolver31324 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._setXPathVariableResolver31324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathFactory_.staticClass, "setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", ref global::javax.xml.xpath.XPathFactory_._setXPathVariableResolver31324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setXPathFunctionResolver31325;
 		public override void setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31325.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31325 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathFactory_.staticClass, "setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", ref global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isObjectModelSupported31326;
 		public override bool isObjectModelSupported(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31326.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31326 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "isObjectModelSupported", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.xpath.XPathFactory_.staticClass, "isObjectModelSupported", "(Ljava/lang/String;)Z", ref global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _newXPath31327;
 		public override global::javax.xml.xpath.XPath newXPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactory_._newXPath31327.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactory_._newXPath31327 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactory_.staticClass, "newXPath", "()Ljavax/xml/xpath/XPath;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPath>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_._newXPath31327)) as javax.xml.xpath.XPath;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPath>(this, global::javax.xml.xpath.XPathFactory_.staticClass, "newXPath", "()Ljavax/xml/xpath/XPath;", ref global::javax.xml.xpath.XPathFactory_._newXPath31327) as javax.xml.xpath.XPath;
 		}
 		static XPathFactory_()
 		{

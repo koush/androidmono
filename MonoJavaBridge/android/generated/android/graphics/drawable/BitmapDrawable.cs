@@ -10,18 +10,12 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _inflate5852;
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._inflate5852.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._inflate5852 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._inflate5852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V", ref global::android.graphics.drawable.BitmapDrawable._inflate5852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5853;
 		public override void draw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._draw5853.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._draw5853 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._draw5853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.graphics.drawable.BitmapDrawable._draw5853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ChangingConfigurations
 		{
@@ -33,10 +27,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations5854;
 		public override int getChangingConfigurations()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getChangingConfigurations5854.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getChangingConfigurations5854 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getChangingConfigurations", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getChangingConfigurations5854);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getChangingConfigurations", "()I", ref global::android.graphics.drawable.BitmapDrawable._getChangingConfigurations5854);
 		}
 		public new bool Dither
 		{
@@ -48,10 +39,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setDither5855;
 		public override void setDither(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setDither5855.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setDither5855 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setDither", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setDither5855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setDither", "(Z)V", ref global::android.graphics.drawable.BitmapDrawable._setDither5855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool FilterBitmap
 		{
@@ -63,10 +51,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setFilterBitmap5856;
 		public override void setFilterBitmap(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setFilterBitmap5856.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setFilterBitmap5856 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setFilterBitmap", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setFilterBitmap5856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setFilterBitmap", "(Z)V", ref global::android.graphics.drawable.BitmapDrawable._setFilterBitmap5856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Alpha
 		{
@@ -78,10 +63,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setAlpha5857;
 		public override void setAlpha(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setAlpha5857.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setAlpha5857 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setAlpha", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setAlpha5857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setAlpha", "(I)V", ref global::android.graphics.drawable.BitmapDrawable._setAlpha5857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.ColorFilter ColorFilter
 		{
@@ -93,10 +75,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setColorFilter5858;
 		public override void setColorFilter(android.graphics.ColorFilter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setColorFilter5858.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setColorFilter5858 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setColorFilter5858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V", ref global::android.graphics.drawable.BitmapDrawable._setColorFilter5858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Opacity
 		{
@@ -108,18 +87,12 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getOpacity5859;
 		public override int getOpacity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getOpacity5859.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getOpacity5859 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getOpacity", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getOpacity5859);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getOpacity", "()I", ref global::android.graphics.drawable.BitmapDrawable._getOpacity5859);
 		}
 		internal static global::MonoJavaBridge.MethodId _onBoundsChange5860;
 		protected override void onBoundsChange(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._onBoundsChange5860.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._onBoundsChange5860 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._onBoundsChange5860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V", ref global::android.graphics.drawable.BitmapDrawable._onBoundsChange5860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int IntrinsicWidth
 		{
@@ -131,10 +104,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth5861;
 		public override int getIntrinsicWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth5861.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth5861 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getIntrinsicWidth", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth5861);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getIntrinsicWidth", "()I", ref global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth5861);
 		}
 		public new int IntrinsicHeight
 		{
@@ -146,18 +116,12 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight5862;
 		public override int getIntrinsicHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getIntrinsicHeight5862.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getIntrinsicHeight5862 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getIntrinsicHeight", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getIntrinsicHeight5862);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getIntrinsicHeight", "()I", ref global::android.graphics.drawable.BitmapDrawable._getIntrinsicHeight5862);
 		}
 		internal static global::MonoJavaBridge.MethodId _mutate5863;
 		public override global::android.graphics.drawable.Drawable mutate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._mutate5863.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._mutate5863 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._mutate5863) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.BitmapDrawable._mutate5863) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
 		{
@@ -169,18 +133,12 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getConstantState5864;
 		public sealed override global::android.graphics.drawable.Drawable.ConstantState getConstantState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getConstantState5864.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getConstantState5864 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getConstantState5864) as android.graphics.drawable.Drawable.ConstantState;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;", ref global::android.graphics.drawable.BitmapDrawable._getConstantState5864) as android.graphics.drawable.Drawable.ConstantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _setGravity5865;
 		public virtual void setGravity(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setGravity5865.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setGravity5865 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setGravity", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setGravity5865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setGravity", "(I)V", ref global::android.graphics.drawable.BitmapDrawable._setGravity5865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Paint Paint
 		{
@@ -192,10 +150,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getPaint5866;
 		public virtual global::android.graphics.Paint getPaint()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getPaint5866.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getPaint5866 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getPaint", "()Landroid/graphics/Paint;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getPaint5866) as android.graphics.Paint;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getPaint", "()Landroid/graphics/Paint;", ref global::android.graphics.drawable.BitmapDrawable._getPaint5866) as android.graphics.Paint;
 		}
 		public new int Gravity
 		{
@@ -211,10 +166,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getGravity5867;
 		public virtual int getGravity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getGravity5867.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getGravity5867 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getGravity", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getGravity5867);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getGravity", "()I", ref global::android.graphics.drawable.BitmapDrawable._getGravity5867);
 		}
 		public new bool AntiAlias
 		{
@@ -226,10 +178,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setAntiAlias5868;
 		public virtual void setAntiAlias(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setAntiAlias5868.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setAntiAlias5868 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setAntiAlias", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setAntiAlias5868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setAntiAlias", "(Z)V", ref global::android.graphics.drawable.BitmapDrawable._setAntiAlias5868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Bitmap Bitmap
 		{
@@ -241,34 +190,22 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getBitmap5869;
 		public virtual global::android.graphics.Bitmap getBitmap()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getBitmap5869.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getBitmap5869 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getBitmap", "()Landroid/graphics/Bitmap;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getBitmap5869) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getBitmap", "()Landroid/graphics/Bitmap;", ref global::android.graphics.drawable.BitmapDrawable._getBitmap5869) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5870;
 		public virtual void setTargetDensity(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTargetDensity5870.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTargetDensity5870 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(Landroid/graphics/Canvas;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity5870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(Landroid/graphics/Canvas;)V", ref global::android.graphics.drawable.BitmapDrawable._setTargetDensity5870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5871;
 		public virtual void setTargetDensity(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTargetDensity5871.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTargetDensity5871 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(Landroid/util/DisplayMetrics;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity5871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(Landroid/util/DisplayMetrics;)V", ref global::android.graphics.drawable.BitmapDrawable._setTargetDensity5871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5872;
 		public virtual void setTargetDensity(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTargetDensity5872.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTargetDensity5872 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity5872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTargetDensity", "(I)V", ref global::android.graphics.drawable.BitmapDrawable._setTargetDensity5872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Shader.TileMode TileModeX
 		{
@@ -284,10 +221,7 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getTileModeX5873;
 		public virtual global::android.graphics.Shader.TileMode getTileModeX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getTileModeX5873.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getTileModeX5873 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getTileModeX", "()Landroid/graphics/Shader$TileMode;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Shader.TileMode>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeX5873) as android.graphics.Shader.TileMode;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Shader.TileMode>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getTileModeX", "()Landroid/graphics/Shader$TileMode;", ref global::android.graphics.drawable.BitmapDrawable._getTileModeX5873) as android.graphics.Shader.TileMode;
 		}
 		public new global::android.graphics.Shader.TileMode TileModeY
 		{
@@ -303,34 +237,22 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getTileModeY5874;
 		public virtual global::android.graphics.Shader.TileMode getTileModeY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._getTileModeY5874.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._getTileModeY5874 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "getTileModeY", "()Landroid/graphics/Shader$TileMode;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Shader.TileMode>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeY5874) as android.graphics.Shader.TileMode;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Shader.TileMode>(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "getTileModeY", "()Landroid/graphics/Shader$TileMode;", ref global::android.graphics.drawable.BitmapDrawable._getTileModeY5874) as android.graphics.Shader.TileMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeX5875;
 		public virtual void setTileModeX(android.graphics.Shader.TileMode arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTileModeX5875.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTileModeX5875 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeX", "(Landroid/graphics/Shader$TileMode;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeX5875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeX", "(Landroid/graphics/Shader$TileMode;)V", ref global::android.graphics.drawable.BitmapDrawable._setTileModeX5875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeY5876;
 		public virtual void setTileModeY(android.graphics.Shader.TileMode arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTileModeY5876.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTileModeY5876 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeY", "(Landroid/graphics/Shader$TileMode;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeY5876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeY", "(Landroid/graphics/Shader$TileMode;)V", ref global::android.graphics.drawable.BitmapDrawable._setTileModeY5876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeXY5877;
 		public virtual void setTileModeXY(android.graphics.Shader.TileMode arg0, android.graphics.Shader.TileMode arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.BitmapDrawable._setTileModeXY5877.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.BitmapDrawable._setTileModeXY5877 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeXY", "(Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeXY5877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.BitmapDrawable.staticClass, "setTileModeXY", "(Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V", ref global::android.graphics.drawable.BitmapDrawable._setTileModeXY5877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5878;
 		public BitmapDrawable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -12,130 +12,82 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _peekService2591;
 		public virtual global::android.os.IBinder peekService(android.content.Context arg0, android.content.Intent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._peekService2591.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._peekService2591 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "peekService", "(Landroid/content/Context;Landroid/content/Intent;)Landroid/os/IBinder;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._peekService2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.content.BroadcastReceiver.staticClass, "peekService", "(Landroid/content/Context;Landroid/content/Intent;)Landroid/os/IBinder;", ref global::android.content.BroadcastReceiver._peekService2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultCode2592;
 		public virtual void setResultCode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setResultCode2592.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setResultCode2592 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setResultCode", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultCode2592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setResultCode", "(I)V", ref global::android.content.BroadcastReceiver._setResultCode2592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultCode2593;
 		public virtual int getResultCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._getResultCode2593.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._getResultCode2593 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getResultCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultCode2593);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.BroadcastReceiver.staticClass, "getResultCode", "()I", ref global::android.content.BroadcastReceiver._getResultCode2593);
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultData2594;
 		public virtual void setResultData(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setResultData2594.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setResultData2594 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setResultData", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultData2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setResultData", "(Ljava/lang/String;)V", ref global::android.content.BroadcastReceiver._setResultData2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultData2595;
 		public virtual global::java.lang.String getResultData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._getResultData2595.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._getResultData2595 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getResultData", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultData2595) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.BroadcastReceiver.staticClass, "getResultData", "()Ljava/lang/String;", ref global::android.content.BroadcastReceiver._getResultData2595) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultExtras2596;
 		public virtual void setResultExtras(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setResultExtras2596.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setResultExtras2596 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setResultExtras", "(Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultExtras2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setResultExtras", "(Landroid/os/Bundle;)V", ref global::android.content.BroadcastReceiver._setResultExtras2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultExtras2597;
 		public virtual global::android.os.Bundle getResultExtras(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._getResultExtras2597.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._getResultExtras2597 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getResultExtras", "(Z)Landroid/os/Bundle;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultExtras2597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.BroadcastReceiver.staticClass, "getResultExtras", "(Z)Landroid/os/Bundle;", ref global::android.content.BroadcastReceiver._getResultExtras2597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResult2598;
 		public virtual void setResult(int arg0, java.lang.String arg1, android.os.Bundle arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setResult2598.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setResult2598 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setResult", "(ILjava/lang/String;Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResult2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setResult", "(ILjava/lang/String;Landroid/os/Bundle;)V", ref global::android.content.BroadcastReceiver._setResult2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAbortBroadcast2599;
 		public virtual bool getAbortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._getAbortBroadcast2599.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._getAbortBroadcast2599 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getAbortBroadcast", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getAbortBroadcast2599);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, "getAbortBroadcast", "()Z", ref global::android.content.BroadcastReceiver._getAbortBroadcast2599);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortBroadcast2600;
 		public virtual void abortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._abortBroadcast2600.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._abortBroadcast2600 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "abortBroadcast", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._abortBroadcast2600);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "abortBroadcast", "()V", ref global::android.content.BroadcastReceiver._abortBroadcast2600);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearAbortBroadcast2601;
 		public virtual void clearAbortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._clearAbortBroadcast2601.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._clearAbortBroadcast2601 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "clearAbortBroadcast", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._clearAbortBroadcast2601);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "clearAbortBroadcast", "()V", ref global::android.content.BroadcastReceiver._clearAbortBroadcast2601);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOrderedBroadcast2602;
 		public virtual bool isOrderedBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._isOrderedBroadcast2602.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._isOrderedBroadcast2602 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "isOrderedBroadcast", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isOrderedBroadcast2602);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, "isOrderedBroadcast", "()Z", ref global::android.content.BroadcastReceiver._isOrderedBroadcast2602);
 		}
 		internal static global::MonoJavaBridge.MethodId _isInitialStickyBroadcast2603;
 		public virtual bool isInitialStickyBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "isInitialStickyBroadcast", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, "isInitialStickyBroadcast", "()Z", ref global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOrderedHint2604;
 		public virtual void setOrderedHint(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setOrderedHint2604.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setOrderedHint2604 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setOrderedHint", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setOrderedHint2604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setOrderedHint", "(Z)V", ref global::android.content.BroadcastReceiver._setOrderedHint2604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDebugUnregister2605;
 		public virtual void setDebugUnregister(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._setDebugUnregister2605.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._setDebugUnregister2605 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "setDebugUnregister", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setDebugUnregister2605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, "setDebugUnregister", "(Z)V", ref global::android.content.BroadcastReceiver._setDebugUnregister2605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDebugUnregister2606;
 		public virtual bool getDebugUnregister()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver._getDebugUnregister2606.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver._getDebugUnregister2606 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver.staticClass, "getDebugUnregister", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getDebugUnregister2606);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, "getDebugUnregister", "()Z", ref global::android.content.BroadcastReceiver._getDebugUnregister2606);
 		}
 		internal static global::MonoJavaBridge.MethodId _BroadcastReceiver2607;
 		public BroadcastReceiver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -166,10 +118,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onReceive2608;
 		public override void onReceive(android.content.Context arg0, android.content.Intent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.BroadcastReceiver_._onReceive2608.native == global::System.IntPtr.Zero)
-				global::android.content.BroadcastReceiver_._onReceive2608 = @__env.GetMethodIDNoThrow(global::android.content.BroadcastReceiver_.staticClass, "onReceive", "(Landroid/content/Context;Landroid/content/Intent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver_.staticClass, "onReceive", "(Landroid/content/Context;Landroid/content/Intent;)V", ref global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static BroadcastReceiver_()
 		{

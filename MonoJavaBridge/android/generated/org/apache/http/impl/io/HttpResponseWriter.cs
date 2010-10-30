@@ -10,10 +10,7 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _writeHeadLine33446;
 		protected override void writeHeadLine(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.HttpResponseWriter._writeHeadLine33446.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.HttpResponseWriter._writeHeadLine33446 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.HttpResponseWriter.staticClass, "writeHeadLine", "(Lorg/apache/http/HttpMessage;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.HttpResponseWriter.staticClass, global::org.apache.http.impl.io.HttpResponseWriter._writeHeadLine33446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.HttpResponseWriter.staticClass, "writeHeadLine", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.impl.io.HttpResponseWriter._writeHeadLine33446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpResponseWriter33447;
 		public HttpResponseWriter(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.message.LineFormatter arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,26 +10,17 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _equals3490;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.PeriodicSync._equals3490.native == global::System.IntPtr.Zero)
-				global::android.content.PeriodicSync._equals3490 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._equals3490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.PeriodicSync.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.content.PeriodicSync._equals3490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3491;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.PeriodicSync._writeToParcel3491.native == global::System.IntPtr.Zero)
-				global::android.content.PeriodicSync._writeToParcel3491 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._writeToParcel3491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.PeriodicSync.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.PeriodicSync._writeToParcel3491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3492;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.PeriodicSync._describeContents3492.native == global::System.IntPtr.Zero)
-				global::android.content.PeriodicSync._describeContents3492 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._describeContents3492);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.PeriodicSync.staticClass, "describeContents", "()I", ref global::android.content.PeriodicSync._describeContents3492);
 		}
 		internal static global::MonoJavaBridge.MethodId _PeriodicSync3493;
 		public PeriodicSync(android.accounts.Account arg0, java.lang.String arg1, android.os.Bundle arg2, long arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

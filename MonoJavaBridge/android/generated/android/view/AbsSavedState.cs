@@ -10,26 +10,17 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13970;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.AbsSavedState._writeToParcel13970.native == global::System.IntPtr.Zero)
-				global::android.view.AbsSavedState._writeToParcel13970 = @__env.GetMethodIDNoThrow(global::android.view.AbsSavedState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._writeToParcel13970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.AbsSavedState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.AbsSavedState._writeToParcel13970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents13971;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.AbsSavedState._describeContents13971.native == global::System.IntPtr.Zero)
-				global::android.view.AbsSavedState._describeContents13971 = @__env.GetMethodIDNoThrow(global::android.view.AbsSavedState.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._describeContents13971);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.AbsSavedState.staticClass, "describeContents", "()I", ref global::android.view.AbsSavedState._describeContents13971);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuperState13972;
 		public virtual global::android.os.Parcelable getSuperState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.AbsSavedState._getSuperState13972.native == global::System.IntPtr.Zero)
-				global::android.view.AbsSavedState._getSuperState13972 = @__env.GetMethodIDNoThrow(global::android.view.AbsSavedState.staticClass, "getSuperState", "()Landroid/os/Parcelable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._getSuperState13972) as android.os.Parcelable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.view.AbsSavedState.staticClass, "getSuperState", "()Landroid/os/Parcelable;", ref global::android.view.AbsSavedState._getSuperState13972) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _AbsSavedState13973;
 		protected AbsSavedState(android.os.Parcelable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

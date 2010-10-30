@@ -10,26 +10,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getIndex16035;
 		public virtual int getIndex(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.DateSorter._getIndex16035.native == global::System.IntPtr.Zero)
-				global::android.webkit.DateSorter._getIndex16035 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "getIndex", "(J)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getIndex16035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.DateSorter.staticClass, "getIndex", "(J)I", ref global::android.webkit.DateSorter._getIndex16035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLabel16036;
 		public virtual global::java.lang.String getLabel(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.DateSorter._getLabel16036.native == global::System.IntPtr.Zero)
-				global::android.webkit.DateSorter._getLabel16036 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "getLabel", "(I)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getLabel16036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.DateSorter.staticClass, "getLabel", "(I)Ljava/lang/String;", ref global::android.webkit.DateSorter._getLabel16036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoundary16037;
 		public virtual long getBoundary(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.DateSorter._getBoundary16037.native == global::System.IntPtr.Zero)
-				global::android.webkit.DateSorter._getBoundary16037 = @__env.GetMethodIDNoThrow(global::android.webkit.DateSorter.staticClass, "getBoundary", "(I)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getBoundary16037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.webkit.DateSorter.staticClass, "getBoundary", "(I)J", ref global::android.webkit.DateSorter._getBoundary16037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DateSorter16038;
 		public DateSorter(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

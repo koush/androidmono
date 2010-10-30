@@ -17,10 +17,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getCertificates27857;
 		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.JarEntry._getCertificates27857.native == global::System.IntPtr.Zero)
-				global::java.util.jar.JarEntry._getCertificates27857 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCertificates27857) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.util.jar.JarEntry.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;", ref global::java.util.jar.JarEntry._getCertificates27857) as java.security.cert.Certificate[];
 		}
 		public new global::java.security.CodeSigner[] CodeSigners
 		{
@@ -32,10 +29,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getCodeSigners27858;
 		public virtual global::java.security.CodeSigner[] getCodeSigners()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.JarEntry._getCodeSigners27858.native == global::System.IntPtr.Zero)
-				global::java.util.jar.JarEntry._getCodeSigners27858 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.CodeSigner>(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCodeSigners27858) as java.security.CodeSigner[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.CodeSigner>(this, global::java.util.jar.JarEntry.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;", ref global::java.util.jar.JarEntry._getCodeSigners27858) as java.security.CodeSigner[];
 		}
 		public new global::java.util.jar.Attributes Attributes
 		{
@@ -47,10 +41,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getAttributes27859;
 		public virtual global::java.util.jar.Attributes getAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.jar.JarEntry._getAttributes27859.native == global::System.IntPtr.Zero)
-				global::java.util.jar.JarEntry._getAttributes27859 = @__env.GetMethodIDNoThrow(global::java.util.jar.JarEntry.staticClass, "getAttributes", "()Ljava/util/jar/Attributes;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getAttributes27859) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarEntry.staticClass, "getAttributes", "()Ljava/util/jar/Attributes;", ref global::java.util.jar.JarEntry._getAttributes27859) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarEntry27860;
 		public JarEntry(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

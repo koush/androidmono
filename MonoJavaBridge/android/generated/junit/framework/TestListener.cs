@@ -19,34 +19,22 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _addError31397;
 		void junit.framework.TestListener.addError(junit.framework.Test arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.TestListener_._addError31397.native == global::System.IntPtr.Zero)
-				global::junit.framework.TestListener_._addError31397 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestListener_._addError31397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestListener_.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.framework.TestListener_._addError31397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addFailure31398;
 		void junit.framework.TestListener.addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.TestListener_._addFailure31398.native == global::System.IntPtr.Zero)
-				global::junit.framework.TestListener_._addFailure31398 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestListener_._addFailure31398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestListener_.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V", ref global::junit.framework.TestListener_._addFailure31398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _endTest31399;
 		void junit.framework.TestListener.endTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.TestListener_._endTest31399.native == global::System.IntPtr.Zero)
-				global::junit.framework.TestListener_._endTest31399 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "endTest", "(Ljunit/framework/Test;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestListener_._endTest31399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestListener_.staticClass, "endTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestListener_._endTest31399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startTest31400;
 		void junit.framework.TestListener.startTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.TestListener_._startTest31400.native == global::System.IntPtr.Zero)
-				global::junit.framework.TestListener_._startTest31400 = @__env.GetMethodIDNoThrow(global::junit.framework.TestListener_.staticClass, "startTest", "(Ljunit/framework/Test;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestListener_._startTest31400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestListener_.staticClass, "startTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestListener_._startTest31400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static TestListener_()
 		{

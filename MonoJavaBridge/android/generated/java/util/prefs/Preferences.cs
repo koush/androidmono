@@ -165,274 +165,172 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _name28230;
 		public override global::java.lang.String name()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._name28230.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._name28230 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "name", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._name28230)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "name", "()Ljava/lang/String;", ref global::java.util.prefs.Preferences_._name28230) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _parent28231;
 		public override global::java.util.prefs.Preferences parent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._parent28231.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._parent28231 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "parent", "()Ljava/util/prefs/Preferences;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._parent28231)) as java.util.prefs.Preferences;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.Preferences_.staticClass, "parent", "()Ljava/util/prefs/Preferences;", ref global::java.util.prefs.Preferences_._parent28231) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _get28232;
 		public override global::java.lang.String get(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._get28232.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._get28232 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._get28232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::java.util.prefs.Preferences_._get28232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _put28233;
 		public override void put(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._put28233.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._put28233 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "put", "(Ljava/lang/String;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._put28233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "put", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::java.util.prefs.Preferences_._put28233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString28234;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._toString28234.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._toString28234 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._toString28234)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.prefs.Preferences_._toString28234) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean28235;
 		public override bool getBoolean(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getBoolean28235.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getBoolean28235 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getBoolean", "(Ljava/lang/String;Z)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getBoolean28235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.prefs.Preferences_.staticClass, "getBoolean", "(Ljava/lang/String;Z)Z", ref global::java.util.prefs.Preferences_._getBoolean28235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _putBoolean28236;
 		public override void putBoolean(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putBoolean28236.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putBoolean28236 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putBoolean", "(Ljava/lang/String;Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putBoolean28236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putBoolean", "(Ljava/lang/String;Z)V", ref global::java.util.prefs.Preferences_._putBoolean28236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt28237;
 		public override int getInt(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getInt28237.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getInt28237 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getInt", "(Ljava/lang/String;I)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getInt28237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.prefs.Preferences_.staticClass, "getInt", "(Ljava/lang/String;I)I", ref global::java.util.prefs.Preferences_._getInt28237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _putInt28238;
 		public override void putInt(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putInt28238.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putInt28238 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putInt", "(Ljava/lang/String;I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putInt28238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putInt", "(Ljava/lang/String;I)V", ref global::java.util.prefs.Preferences_._putInt28238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong28239;
 		public override long getLong(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getLong28239.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getLong28239 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getLong", "(Ljava/lang/String;J)J");
-			return @__env.CallLongMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getLong28239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.prefs.Preferences_.staticClass, "getLong", "(Ljava/lang/String;J)J", ref global::java.util.prefs.Preferences_._getLong28239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _putLong28240;
 		public override void putLong(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putLong28240.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putLong28240 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putLong", "(Ljava/lang/String;J)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putLong28240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putLong", "(Ljava/lang/String;J)V", ref global::java.util.prefs.Preferences_._putLong28240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat28241;
 		public override float getFloat(java.lang.String arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getFloat28241.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getFloat28241 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getFloat", "(Ljava/lang/String;F)F");
-			return @__env.CallFloatMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getFloat28241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.util.prefs.Preferences_.staticClass, "getFloat", "(Ljava/lang/String;F)F", ref global::java.util.prefs.Preferences_._getFloat28241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _putFloat28242;
 		public override void putFloat(java.lang.String arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putFloat28242.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putFloat28242 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putFloat", "(Ljava/lang/String;F)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putFloat28242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putFloat", "(Ljava/lang/String;F)V", ref global::java.util.prefs.Preferences_._putFloat28242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble28243;
 		public override double getDouble(java.lang.String arg0, double arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getDouble28243.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getDouble28243 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getDouble", "(Ljava/lang/String;D)D");
-			return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getDouble28243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.util.prefs.Preferences_.staticClass, "getDouble", "(Ljava/lang/String;D)D", ref global::java.util.prefs.Preferences_._getDouble28243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _putDouble28244;
 		public override void putDouble(java.lang.String arg0, double arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putDouble28244.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putDouble28244 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putDouble", "(Ljava/lang/String;D)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putDouble28244, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putDouble", "(Ljava/lang/String;D)V", ref global::java.util.prefs.Preferences_._putDouble28244, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _clear28245;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._clear28245.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._clear28245 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "clear", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._clear28245);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "clear", "()V", ref global::java.util.prefs.Preferences_._clear28245);
 		}
 		internal static global::MonoJavaBridge.MethodId _remove28246;
 		public override void remove(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._remove28246.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._remove28246 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "remove", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._remove28246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "remove", "(Ljava/lang/String;)V", ref global::java.util.prefs.Preferences_._remove28246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _keys28247;
 		public override global::java.lang.String[] keys()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._keys28247.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._keys28247 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "keys", "()[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._keys28247)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "keys", "()[Ljava/lang/String;", ref global::java.util.prefs.Preferences_._keys28247) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _flush28248;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._flush28248.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._flush28248 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "flush", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._flush28248);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "flush", "()V", ref global::java.util.prefs.Preferences_._flush28248);
 		}
 		internal static global::MonoJavaBridge.MethodId _sync28249;
 		public override void sync()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._sync28249.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._sync28249 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "sync", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._sync28249);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "sync", "()V", ref global::java.util.prefs.Preferences_._sync28249);
 		}
 		internal static global::MonoJavaBridge.MethodId _putByteArray28250;
 		public override void putByteArray(java.lang.String arg0, byte[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._putByteArray28250.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._putByteArray28250 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "putByteArray", "(Ljava/lang/String;[B)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._putByteArray28250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "putByteArray", "(Ljava/lang/String;[B)V", ref global::java.util.prefs.Preferences_._putByteArray28250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByteArray28251;
 		public override byte[] getByteArray(java.lang.String arg0, byte[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._getByteArray28251.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._getByteArray28251 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "getByteArray", "(Ljava/lang/String;[B)[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._getByteArray28251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.util.prefs.Preferences_.staticClass, "getByteArray", "(Ljava/lang/String;[B)[B", ref global::java.util.prefs.Preferences_._getByteArray28251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _node28252;
 		public override global::java.util.prefs.Preferences node(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._node28252.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._node28252 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "node", "(Ljava/lang/String;)Ljava/util/prefs/Preferences;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._node28252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.prefs.Preferences;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.prefs.Preferences_.staticClass, "node", "(Ljava/lang/String;)Ljava/util/prefs/Preferences;", ref global::java.util.prefs.Preferences_._node28252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _absolutePath28253;
 		public override global::java.lang.String absolutePath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._absolutePath28253.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._absolutePath28253 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "absolutePath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._absolutePath28253)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "absolutePath", "()Ljava/lang/String;", ref global::java.util.prefs.Preferences_._absolutePath28253) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _childrenNames28254;
 		public override global::java.lang.String[] childrenNames()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._childrenNames28254.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._childrenNames28254 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "childrenNames", "()[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.Preferences_._childrenNames28254)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.prefs.Preferences_.staticClass, "childrenNames", "()[Ljava/lang/String;", ref global::java.util.prefs.Preferences_._childrenNames28254) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _nodeExists28255;
 		public override bool nodeExists(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._nodeExists28255.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._nodeExists28255 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "nodeExists", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.prefs.Preferences_._nodeExists28255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.prefs.Preferences_.staticClass, "nodeExists", "(Ljava/lang/String;)Z", ref global::java.util.prefs.Preferences_._nodeExists28255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeNode28256;
 		public override void removeNode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._removeNode28256.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._removeNode28256 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "removeNode", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._removeNode28256);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "removeNode", "()V", ref global::java.util.prefs.Preferences_._removeNode28256);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUserNode28257;
 		public override bool isUserNode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._isUserNode28257.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._isUserNode28257 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "isUserNode", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.prefs.Preferences_._isUserNode28257);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.prefs.Preferences_.staticClass, "isUserNode", "()Z", ref global::java.util.prefs.Preferences_._isUserNode28257);
 		}
 		internal static global::MonoJavaBridge.MethodId _addPreferenceChangeListener28258;
 		public override void addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._addPreferenceChangeListener28258.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._addPreferenceChangeListener28258 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "addPreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._addPreferenceChangeListener28258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "addPreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V", ref global::java.util.prefs.Preferences_._addPreferenceChangeListener28258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePreferenceChangeListener28259;
 		public override void removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._removePreferenceChangeListener28259.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._removePreferenceChangeListener28259 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "removePreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._removePreferenceChangeListener28259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "removePreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V", ref global::java.util.prefs.Preferences_._removePreferenceChangeListener28259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addNodeChangeListener28260;
 		public override void addNodeChangeListener(java.util.prefs.NodeChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._addNodeChangeListener28260.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._addNodeChangeListener28260 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "addNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._addNodeChangeListener28260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "addNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V", ref global::java.util.prefs.Preferences_._addNodeChangeListener28260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeNodeChangeListener28261;
 		public override void removeNodeChangeListener(java.util.prefs.NodeChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._removeNodeChangeListener28261.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._removeNodeChangeListener28261 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "removeNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._removeNodeChangeListener28261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "removeNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V", ref global::java.util.prefs.Preferences_._removeNodeChangeListener28261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _exportNode28262;
 		public override void exportNode(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._exportNode28262.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._exportNode28262 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "exportNode", "(Ljava/io/OutputStream;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._exportNode28262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "exportNode", "(Ljava/io/OutputStream;)V", ref global::java.util.prefs.Preferences_._exportNode28262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _exportSubtree28263;
 		public override void exportSubtree(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.Preferences_._exportSubtree28263.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.Preferences_._exportSubtree28263 = @__env.GetMethodIDNoThrow(global::java.util.prefs.Preferences_.staticClass, "exportSubtree", "(Ljava/io/OutputStream;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.Preferences_._exportSubtree28263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.Preferences_.staticClass, "exportSubtree", "(Ljava/io/OutputStream;)V", ref global::java.util.prefs.Preferences_._exportSubtree28263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Preferences_()
 		{

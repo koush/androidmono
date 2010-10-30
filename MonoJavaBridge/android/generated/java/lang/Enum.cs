@@ -10,66 +10,42 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _name20114;
 		public virtual global::java.lang.String name()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._name20114.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._name20114 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "name", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._name20114) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Enum.staticClass, "name", "()Ljava/lang/String;", ref global::java.lang.Enum._name20114) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize20115;
 		protected sealed override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._finalize20115.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._finalize20115 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._finalize20115);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Enum.staticClass, "finalize", "()V", ref global::java.lang.Enum._finalize20115);
 		}
 		internal static global::MonoJavaBridge.MethodId _equals20116;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._equals20116.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._equals20116 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._equals20116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Enum.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.Enum._equals20116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20117;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._toString20117.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._toString20117 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._toString20117) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Enum.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.Enum._toString20117) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20118;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._hashCode20118.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._hashCode20118 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._hashCode20118);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, "hashCode", "()I", ref global::java.lang.Enum._hashCode20118);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone20119;
 		protected sealed override global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._clone20119.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._clone20119 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._clone20119) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Enum.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.lang.Enum._clone20119) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20120;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._compareTo20120.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._compareTo20120 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._compareTo20120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.lang.Enum._compareTo20120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20121;
 		public virtual int compareTo(java.lang.Enum arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._compareTo20121.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._compareTo20121 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "compareTo", "(Ljava/lang/Enum;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._compareTo20121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, "compareTo", "(Ljava/lang/Enum;)I", ref global::java.lang.Enum._compareTo20121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20122;
 		public static global::java.lang.Enum valueOf(java.lang.Class arg0, java.lang.String arg1)
@@ -82,18 +58,12 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getDeclaringClass20123;
 		public virtual global::java.lang.Class getDeclaringClass()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._getDeclaringClass20123.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._getDeclaringClass20123 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "getDeclaringClass", "()Ljava/lang/Class;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._getDeclaringClass20123) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.Enum.staticClass, "getDeclaringClass", "()Ljava/lang/Class;", ref global::java.lang.Enum._getDeclaringClass20123) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _ordinal20124;
 		public virtual int ordinal()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Enum._ordinal20124.native == global::System.IntPtr.Zero)
-				global::java.lang.Enum._ordinal20124 = @__env.GetMethodIDNoThrow(global::java.lang.Enum.staticClass, "ordinal", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._ordinal20124);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Enum.staticClass, "ordinal", "()I", ref global::java.lang.Enum._ordinal20124);
 		}
 		internal static global::MonoJavaBridge.MethodId _Enum20125;
 		protected Enum(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

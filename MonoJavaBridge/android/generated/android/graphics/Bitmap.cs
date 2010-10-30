@@ -134,34 +134,22 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _copy5024;
 		public global::android.graphics.Bitmap copy(android.graphics.Bitmap.Config arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._copy5024.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._copy5024 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "copy", "(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copy5024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.graphics.Bitmap.staticClass, "copy", "(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;", ref global::android.graphics.Bitmap._copy5024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _recycle5025;
 		public void recycle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._recycle5025.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._recycle5025 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "recycle", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._recycle5025);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "recycle", "()V", ref global::android.graphics.Bitmap._recycle5025);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel5026;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._writeToParcel5026.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._writeToParcel5026 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._writeToParcel5026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.graphics.Bitmap._writeToParcel5026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents5027;
 		public int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._describeContents5027.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._describeContents5027 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "describeContents", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._describeContents5027);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "describeContents", "()I", ref global::android.graphics.Bitmap._describeContents5027);
 		}
 		public new int Density
 		{
@@ -177,50 +165,32 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getDensity5028;
 		public int getDensity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getDensity5028.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getDensity5028 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getDensity", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getDensity5028);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getDensity", "()I", ref global::android.graphics.Bitmap._getDensity5028);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDensity5029;
 		public void setDensity(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._setDensity5029.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._setDensity5029 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "setDensity", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setDensity5029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "setDensity", "(I)V", ref global::android.graphics.Bitmap._setDensity5029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isRecycled5030;
 		public bool isRecycled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._isRecycled5030.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._isRecycled5030 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "isRecycled", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._isRecycled5030);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Bitmap.staticClass, "isRecycled", "()Z", ref global::android.graphics.Bitmap._isRecycled5030);
 		}
 		internal static global::MonoJavaBridge.MethodId _copyPixelsToBuffer5031;
 		public void copyPixelsToBuffer(java.nio.Buffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._copyPixelsToBuffer5031.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._copyPixelsToBuffer5031 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "copyPixelsToBuffer", "(Ljava/nio/Buffer;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copyPixelsToBuffer5031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "copyPixelsToBuffer", "(Ljava/nio/Buffer;)V", ref global::android.graphics.Bitmap._copyPixelsToBuffer5031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _copyPixelsFromBuffer5032;
 		public void copyPixelsFromBuffer(java.nio.Buffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._copyPixelsFromBuffer5032.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._copyPixelsFromBuffer5032 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "copyPixelsFromBuffer", "(Ljava/nio/Buffer;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copyPixelsFromBuffer5032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "copyPixelsFromBuffer", "(Ljava/nio/Buffer;)V", ref global::android.graphics.Bitmap._copyPixelsFromBuffer5032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isMutable5033;
 		public bool isMutable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._isMutable5033.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._isMutable5033 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "isMutable", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._isMutable5033);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Bitmap.staticClass, "isMutable", "()Z", ref global::android.graphics.Bitmap._isMutable5033);
 		}
 		internal static global::MonoJavaBridge.MethodId _createScaledBitmap5034;
 		public static global::android.graphics.Bitmap createScaledBitmap(android.graphics.Bitmap arg0, int arg1, int arg2, bool arg3)
@@ -288,18 +258,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getNinePatchChunk5041;
 		public byte[] getNinePatchChunk()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getNinePatchChunk5041.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getNinePatchChunk5041 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getNinePatchChunk", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getNinePatchChunk5041)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.graphics.Bitmap.staticClass, "getNinePatchChunk", "()[B", ref global::android.graphics.Bitmap._getNinePatchChunk5041) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _compress5042;
 		public bool compress(android.graphics.Bitmap.CompressFormat arg0, int arg1, java.io.OutputStream arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._compress5042.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._compress5042 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "compress", "(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._compress5042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Bitmap.staticClass, "compress", "(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z", ref global::android.graphics.Bitmap._compress5042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new int Width
 		{
@@ -311,10 +275,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getWidth5043;
 		public int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getWidth5043.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getWidth5043 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getWidth", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getWidth5043);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getWidth", "()I", ref global::android.graphics.Bitmap._getWidth5043);
 		}
 		public new int Height
 		{
@@ -326,58 +287,37 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getHeight5044;
 		public int getHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getHeight5044.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getHeight5044 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getHeight", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getHeight5044);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getHeight", "()I", ref global::android.graphics.Bitmap._getHeight5044);
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledWidth5045;
 		public int getScaledWidth(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledWidth5045.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledWidth5045 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(Landroid/graphics/Canvas;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth5045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(Landroid/graphics/Canvas;)I", ref global::android.graphics.Bitmap._getScaledWidth5045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledWidth5046;
 		public int getScaledWidth(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledWidth5046.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledWidth5046 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(Landroid/util/DisplayMetrics;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth5046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(Landroid/util/DisplayMetrics;)I", ref global::android.graphics.Bitmap._getScaledWidth5046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledWidth5047;
 		public int getScaledWidth(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledWidth5047.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledWidth5047 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth5047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledWidth", "(I)I", ref global::android.graphics.Bitmap._getScaledWidth5047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledHeight5048;
 		public int getScaledHeight(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledHeight5048.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledHeight5048 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight5048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(I)I", ref global::android.graphics.Bitmap._getScaledHeight5048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledHeight5049;
 		public int getScaledHeight(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledHeight5049.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledHeight5049 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(Landroid/graphics/Canvas;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight5049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(Landroid/graphics/Canvas;)I", ref global::android.graphics.Bitmap._getScaledHeight5049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaledHeight5050;
 		public int getScaledHeight(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getScaledHeight5050.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getScaledHeight5050 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(Landroid/util/DisplayMetrics;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight5050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getScaledHeight", "(Landroid/util/DisplayMetrics;)I", ref global::android.graphics.Bitmap._getScaledHeight5050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int RowBytes
 		{
@@ -389,90 +329,57 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getRowBytes5051;
 		public int getRowBytes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getRowBytes5051.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getRowBytes5051 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getRowBytes", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getRowBytes5051);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getRowBytes", "()I", ref global::android.graphics.Bitmap._getRowBytes5051);
 		}
 		internal static global::MonoJavaBridge.MethodId _getConfig5052;
 		public global::android.graphics.Bitmap.Config getConfig()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getConfig5052.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getConfig5052 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getConfig", "()Landroid/graphics/Bitmap$Config;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap.Config>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getConfig5052)) as android.graphics.Bitmap.Config;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap.Config>(this, global::android.graphics.Bitmap.staticClass, "getConfig", "()Landroid/graphics/Bitmap$Config;", ref global::android.graphics.Bitmap._getConfig5052) as android.graphics.Bitmap.Config;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasAlpha5053;
 		public bool hasAlpha()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._hasAlpha5053.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._hasAlpha5053 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "hasAlpha", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._hasAlpha5053);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Bitmap.staticClass, "hasAlpha", "()Z", ref global::android.graphics.Bitmap._hasAlpha5053);
 		}
 		internal static global::MonoJavaBridge.MethodId _eraseColor5054;
 		public void eraseColor(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._eraseColor5054.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._eraseColor5054 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "eraseColor", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._eraseColor5054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "eraseColor", "(I)V", ref global::android.graphics.Bitmap._eraseColor5054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPixel5055;
 		public int getPixel(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getPixel5055.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getPixel5055 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getPixel", "(II)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getPixel5055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Bitmap.staticClass, "getPixel", "(II)I", ref global::android.graphics.Bitmap._getPixel5055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPixels5056;
 		public void getPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._getPixels5056.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._getPixels5056 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "getPixels", "([IIIIIII)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getPixels5056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "getPixels", "([IIIIIII)V", ref global::android.graphics.Bitmap._getPixels5056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPixel5057;
 		public void setPixel(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._setPixel5057.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._setPixel5057 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "setPixel", "(III)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setPixel5057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "setPixel", "(III)V", ref global::android.graphics.Bitmap._setPixel5057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPixels5058;
 		public void setPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._setPixels5058.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._setPixels5058 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "setPixels", "([IIIIIII)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setPixels5058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "setPixels", "([IIIIIII)V", ref global::android.graphics.Bitmap._setPixels5058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 		}
 		internal static global::MonoJavaBridge.MethodId _extractAlpha5059;
 		public global::android.graphics.Bitmap extractAlpha()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._extractAlpha5059.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._extractAlpha5059 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "extractAlpha", "()Landroid/graphics/Bitmap;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._extractAlpha5059)) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.graphics.Bitmap.staticClass, "extractAlpha", "()Landroid/graphics/Bitmap;", ref global::android.graphics.Bitmap._extractAlpha5059) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _extractAlpha5060;
 		public global::android.graphics.Bitmap extractAlpha(android.graphics.Paint arg0, int[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._extractAlpha5060.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._extractAlpha5060 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "extractAlpha", "(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._extractAlpha5060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.graphics.Bitmap.staticClass, "extractAlpha", "(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;", ref global::android.graphics.Bitmap._extractAlpha5060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _prepareToDraw5061;
 		public void prepareToDraw()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Bitmap._prepareToDraw5061.native == global::System.IntPtr.Zero)
-				global::android.graphics.Bitmap._prepareToDraw5061 = @__env.GetMethodIDNoThrow(global::android.graphics.Bitmap.staticClass, "prepareToDraw", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._prepareToDraw5061);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Bitmap.staticClass, "prepareToDraw", "()V", ref global::android.graphics.Bitmap._prepareToDraw5061);
 		}
 		public static int DENSITY_NONE
 		{

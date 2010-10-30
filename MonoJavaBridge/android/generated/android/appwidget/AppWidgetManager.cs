@@ -18,34 +18,22 @@ namespace android.appwidget
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetInfo2364;
 		public virtual global::android.appwidget.AppWidgetProviderInfo getAppWidgetInfo(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._getAppWidgetInfo2364.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._getAppWidgetInfo2364 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetInfo", "(I)Landroid/appwidget/AppWidgetProviderInfo;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getAppWidgetInfo2364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.appwidget.AppWidgetProviderInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetInfo", "(I)Landroid/appwidget/AppWidgetProviderInfo;", ref global::android.appwidget.AppWidgetManager._getAppWidgetInfo2364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.appwidget.AppWidgetProviderInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2365;
 		public virtual void updateAppWidget(android.content.ComponentName arg0, android.widget.RemoteViews arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._updateAppWidget2365.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._updateAppWidget2365 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget2365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V", ref global::android.appwidget.AppWidgetManager._updateAppWidget2365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2366;
 		public virtual void updateAppWidget(int[] arg0, android.widget.RemoteViews arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._updateAppWidget2366.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._updateAppWidget2366 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "([ILandroid/widget/RemoteViews;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget2366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "([ILandroid/widget/RemoteViews;)V", ref global::android.appwidget.AppWidgetManager._updateAppWidget2366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2367;
 		public virtual void updateAppWidget(int arg0, android.widget.RemoteViews arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._updateAppWidget2367.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._updateAppWidget2367 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(ILandroid/widget/RemoteViews;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget2367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(ILandroid/widget/RemoteViews;)V", ref global::android.appwidget.AppWidgetManager._updateAppWidget2367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.util.List InstalledProviders
 		{
@@ -57,26 +45,17 @@ namespace android.appwidget
 		internal static global::MonoJavaBridge.MethodId _getInstalledProviders2368;
 		public virtual global::java.util.List getInstalledProviders()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._getInstalledProviders2368.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._getInstalledProviders2368 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "getInstalledProviders", "()Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getInstalledProviders2368) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.appwidget.AppWidgetManager.staticClass, "getInstalledProviders", "()Ljava/util/List;", ref global::android.appwidget.AppWidgetManager._getInstalledProviders2368) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _bindAppWidgetId2369;
 		public virtual void bindAppWidgetId(int arg0, android.content.ComponentName arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._bindAppWidgetId2369.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._bindAppWidgetId2369 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "bindAppWidgetId", "(ILandroid/content/ComponentName;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._bindAppWidgetId2369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, "bindAppWidgetId", "(ILandroid/content/ComponentName;)V", ref global::android.appwidget.AppWidgetManager._bindAppWidgetId2369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetIds2370;
 		public virtual int[] getAppWidgetIds(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.appwidget.AppWidgetManager._getAppWidgetIds2370.native == global::System.IntPtr.Zero)
-				global::android.appwidget.AppWidgetManager._getAppWidgetIds2370 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetIds", "(Landroid/content/ComponentName;)[I");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getAppWidgetIds2370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetIds", "(Landroid/content/ComponentName;)[I", ref global::android.appwidget.AppWidgetManager._getAppWidgetIds2370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
 		public static global::java.lang.String ACTION_APPWIDGET_PICK
 		{

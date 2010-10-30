@@ -44,34 +44,22 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineGeneratePublic23029;
 		protected override global::java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactorySpi_._engineGeneratePublic23029.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactorySpi_._engineGeneratePublic23029 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineGeneratePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactorySpi_._engineGeneratePublic23029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::java.security.KeyFactorySpi_.staticClass, "engineGeneratePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;", ref global::java.security.KeyFactorySpi_._engineGeneratePublic23029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PublicKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGeneratePrivate23030;
 		protected override global::java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactorySpi_._engineGeneratePrivate23030.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactorySpi_._engineGeneratePrivate23030 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineGeneratePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactorySpi_._engineGeneratePrivate23030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.KeyFactorySpi_.staticClass, "engineGeneratePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;", ref global::java.security.KeyFactorySpi_._engineGeneratePrivate23030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetKeySpec23031;
 		protected override global::java.security.spec.KeySpec engineGetKeySpec(java.security.Key arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactorySpi_._engineGetKeySpec23031.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactorySpi_._engineGetKeySpec23031 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.KeySpec>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactorySpi_._engineGetKeySpec23031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.spec.KeySpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::java.security.KeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", ref global::java.security.KeyFactorySpi_._engineGetKeySpec23031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineTranslateKey23032;
 		protected override global::java.security.Key engineTranslateKey(java.security.Key arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactorySpi_._engineTranslateKey23032.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactorySpi_._engineTranslateKey23032 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljava/security/Key;)Ljava/security/Key;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactorySpi_._engineTranslateKey23032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::java.security.KeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljava/security/Key;)Ljava/security/Key;", ref global::java.security.KeyFactorySpi_._engineTranslateKey23032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.Key;
 		}
 		static KeyFactorySpi_()
 		{

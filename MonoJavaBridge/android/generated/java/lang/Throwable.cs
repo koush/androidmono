@@ -10,34 +10,22 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _printStackTrace20906;
 		public virtual void printStackTrace(java.io.PrintStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._printStackTrace20906.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._printStackTrace20906 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V", ref global::java.lang.Throwable._printStackTrace20906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace20907;
 		public virtual void printStackTrace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._printStackTrace20907.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._printStackTrace20907 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20907);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, "printStackTrace", "()V", ref global::java.lang.Throwable._printStackTrace20907);
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace20908;
 		public virtual void printStackTrace(java.io.PrintWriter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._printStackTrace20908.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._printStackTrace20908 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V", ref global::java.lang.Throwable._printStackTrace20908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _fillInStackTrace20909;
 		public virtual global::java.lang.Throwable fillInStackTrace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._fillInStackTrace20909.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._fillInStackTrace20909 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "fillInStackTrace", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._fillInStackTrace20909) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, "fillInStackTrace", "()Ljava/lang/Throwable;", ref global::java.lang.Throwable._fillInStackTrace20909) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable Cause
 		{
@@ -49,26 +37,17 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getCause20910;
 		public virtual global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._getCause20910.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._getCause20910 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getCause", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getCause20910) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::java.lang.Throwable._getCause20910) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _initCause20911;
 		public virtual global::java.lang.Throwable initCause(java.lang.Throwable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._initCause20911.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._initCause20911 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._initCause20911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Throwable.staticClass, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", ref global::java.lang.Throwable._initCause20911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20912;
 		public virtual global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._toString20912.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._toString20912 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._toString20912) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.Throwable._toString20912) as java.lang.String;
 		}
 		public new global::java.lang.String Message
 		{
@@ -80,10 +59,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getMessage20913;
 		public virtual global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._getMessage20913.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._getMessage20913 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getMessage20913) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.lang.Throwable._getMessage20913) as java.lang.String;
 		}
 		public new global::java.lang.String LocalizedMessage
 		{
@@ -95,10 +71,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getLocalizedMessage20914;
 		public virtual global::java.lang.String getLocalizedMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._getLocalizedMessage20914.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._getLocalizedMessage20914 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getLocalizedMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getLocalizedMessage20914) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Throwable.staticClass, "getLocalizedMessage", "()Ljava/lang/String;", ref global::java.lang.Throwable._getLocalizedMessage20914) as java.lang.String;
 		}
 		public new global::java.lang.StackTraceElement[] StackTrace
 		{
@@ -114,18 +87,12 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getStackTrace20915;
 		public virtual global::java.lang.StackTraceElement[] getStackTrace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._getStackTrace20915.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._getStackTrace20915 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.StackTraceElement>(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getStackTrace20915) as java.lang.StackTraceElement[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.StackTraceElement>(this, global::java.lang.Throwable.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;", ref global::java.lang.Throwable._getStackTrace20915) as java.lang.StackTraceElement[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setStackTrace20916;
 		public virtual void setStackTrace(java.lang.StackTraceElement[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Throwable._setStackTrace20916.native == global::System.IntPtr.Zero)
-				global::java.lang.Throwable._setStackTrace20916 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "setStackTrace", "([Ljava/lang/StackTraceElement;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._setStackTrace20916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Throwable.staticClass, "setStackTrace", "([Ljava/lang/StackTraceElement;)V", ref global::java.lang.Throwable._setStackTrace20916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Throwable20917;
 		public Throwable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

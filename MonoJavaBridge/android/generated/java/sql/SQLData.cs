@@ -18,26 +18,17 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getSQLTypeName24967;
 		global::java.lang.String java.sql.SQLData.getSQLTypeName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLData_._getSQLTypeName24967.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLData_._getSQLTypeName24967 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLData_._getSQLTypeName24967)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.SQLData_.staticClass, "getSQLTypeName", "()Ljava/lang/String;", ref global::java.sql.SQLData_._getSQLTypeName24967) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readSQL24968;
 		void java.sql.SQLData.readSQL(java.sql.SQLInput arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLData_._readSQL24968.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLData_._readSQL24968 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._readSQL24968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLData_.staticClass, "readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V", ref global::java.sql.SQLData_._readSQL24968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeSQL24969;
 		void java.sql.SQLData.writeSQL(java.sql.SQLOutput arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLData_._writeSQL24969.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLData_._writeSQL24969 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "writeSQL", "(Ljava/sql/SQLOutput;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._writeSQL24969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLData_.staticClass, "writeSQL", "(Ljava/sql/SQLOutput;)V", ref global::java.sql.SQLData_._writeSQL24969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SQLData_()
 		{

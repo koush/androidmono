@@ -10,18 +10,12 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _close7659;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalServerSocket._close7659.native == global::System.IntPtr.Zero)
-				global::android.net.LocalServerSocket._close7659 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._close7659);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.LocalServerSocket.staticClass, "close", "()V", ref global::android.net.LocalServerSocket._close7659);
 		}
 		internal static global::MonoJavaBridge.MethodId _accept7660;
 		public virtual global::android.net.LocalSocket accept()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalServerSocket._accept7660.native == global::System.IntPtr.Zero)
-				global::android.net.LocalServerSocket._accept7660 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "accept", "()Landroid/net/LocalSocket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._accept7660) as android.net.LocalSocket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.LocalServerSocket.staticClass, "accept", "()Landroid/net/LocalSocket;", ref global::android.net.LocalServerSocket._accept7660) as android.net.LocalSocket;
 		}
 		public new global::java.io.FileDescriptor FileDescriptor
 		{
@@ -33,10 +27,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor7661;
 		public virtual global::java.io.FileDescriptor getFileDescriptor()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalServerSocket._getFileDescriptor7661.native == global::System.IntPtr.Zero)
-				global::android.net.LocalServerSocket._getFileDescriptor7661 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getFileDescriptor7661) as java.io.FileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.net.LocalServerSocket.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::android.net.LocalServerSocket._getFileDescriptor7661) as java.io.FileDescriptor;
 		}
 		public new global::android.net.LocalSocketAddress LocalSocketAddress
 		{
@@ -48,10 +39,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress7662;
 		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalServerSocket._getLocalSocketAddress7662.native == global::System.IntPtr.Zero)
-				global::android.net.LocalServerSocket._getLocalSocketAddress7662 = @__env.GetMethodIDNoThrow(global::android.net.LocalServerSocket.staticClass, "getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getLocalSocketAddress7662) as android.net.LocalSocketAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.LocalServerSocket.staticClass, "getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;", ref global::android.net.LocalServerSocket._getLocalSocketAddress7662) as android.net.LocalSocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalServerSocket7663;
 		public LocalServerSocket(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

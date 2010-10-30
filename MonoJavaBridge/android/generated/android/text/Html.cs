@@ -23,10 +23,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _getDrawable12774;
 			global::android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.Html.ImageGetter_._getDrawable12774.native == global::System.IntPtr.Zero)
-					global::android.text.Html.ImageGetter_._getDrawable12774 = @__env.GetMethodIDNoThrow(global::android.text.Html.ImageGetter_.staticClass, "getDrawable", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Html.ImageGetter_._getDrawable12774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.Html.ImageGetter_.staticClass, "getDrawable", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", ref global::android.text.Html.ImageGetter_._getDrawable12774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 			}
 			static ImageGetter_()
 			{
@@ -95,10 +92,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _handleTag12776;
 			void android.text.Html.TagHandler.handleTag(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.Html.TagHandler_._handleTag12776.native == global::System.IntPtr.Zero)
-					global::android.text.Html.TagHandler_._handleTag12776 = @__env.GetMethodIDNoThrow(global::android.text.Html.TagHandler_.staticClass, "handleTag", "(ZLjava/lang/String;Landroid/text/Editable;Lorg/xml/sax/XMLReader;)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Html.TagHandler_._handleTag12776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.Html.TagHandler_.staticClass, "handleTag", "(ZLjava/lang/String;Landroid/text/Editable;Lorg/xml/sax/XMLReader;)V", ref global::android.text.Html.TagHandler_._handleTag12776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			static TagHandler_()
 			{

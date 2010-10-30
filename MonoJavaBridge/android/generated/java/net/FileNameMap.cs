@@ -16,10 +16,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getContentTypeFor21466;
 		global::java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.FileNameMap_._getContentTypeFor21466.native == global::System.IntPtr.Zero)
-				global::java.net.FileNameMap_._getContentTypeFor21466 = @__env.GetMethodIDNoThrow(global::java.net.FileNameMap_.staticClass, "getContentTypeFor", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.FileNameMap_._getContentTypeFor21466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.FileNameMap_.staticClass, "getContentTypeFor", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.net.FileNameMap_._getContentTypeFor21466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		static FileNameMap_()
 		{

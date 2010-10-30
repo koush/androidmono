@@ -10,26 +10,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25613;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._equals25613.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._equals25613 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._equals25613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.ParsePosition.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.ParsePosition._equals25613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25614;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._toString25614.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._toString25614 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._toString25614) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.ParsePosition.staticClass, "toString", "()Ljava/lang/String;", ref global::java.text.ParsePosition._toString25614) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25615;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._hashCode25615.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._hashCode25615 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._hashCode25615);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, "hashCode", "()I", ref global::java.text.ParsePosition._hashCode25615);
 		}
 		public new int Index
 		{
@@ -45,26 +36,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getIndex25616;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._getIndex25616.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._getIndex25616 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "getIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getIndex25616);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, "getIndex", "()I", ref global::java.text.ParsePosition._getIndex25616);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIndex25617;
 		public virtual void setIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._setIndex25617.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._setIndex25617 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "setIndex", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setIndex25617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, "setIndex", "(I)V", ref global::java.text.ParsePosition._setIndex25617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorIndex25618;
 		public virtual void setErrorIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._setErrorIndex25618.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._setErrorIndex25618 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "setErrorIndex", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setErrorIndex25618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, "setErrorIndex", "(I)V", ref global::java.text.ParsePosition._setErrorIndex25618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ErrorIndex
 		{
@@ -80,10 +62,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getErrorIndex25619;
 		public virtual int getErrorIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.ParsePosition._getErrorIndex25619.native == global::System.IntPtr.Zero)
-				global::java.text.ParsePosition._getErrorIndex25619 = @__env.GetMethodIDNoThrow(global::java.text.ParsePosition.staticClass, "getErrorIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getErrorIndex25619);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, "getErrorIndex", "()I", ref global::java.text.ParsePosition._getErrorIndex25619);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParsePosition25620;
 		public ParsePosition(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

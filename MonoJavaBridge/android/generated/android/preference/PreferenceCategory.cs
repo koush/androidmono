@@ -10,18 +10,12 @@ namespace android.preference
 		internal static global::MonoJavaBridge.MethodId _isEnabled10409;
 		public override bool isEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.preference.PreferenceCategory._isEnabled10409.native == global::System.IntPtr.Zero)
-				global::android.preference.PreferenceCategory._isEnabled10409 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceCategory.staticClass, "isEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._isEnabled10409);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, "isEnabled", "()Z", ref global::android.preference.PreferenceCategory._isEnabled10409);
 		}
 		internal static global::MonoJavaBridge.MethodId _onPrepareAddPreference10410;
 		protected override bool onPrepareAddPreference(android.preference.Preference arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.preference.PreferenceCategory._onPrepareAddPreference10410.native == global::System.IntPtr.Zero)
-				global::android.preference.PreferenceCategory._onPrepareAddPreference10410 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceCategory.staticClass, "onPrepareAddPreference", "(Landroid/preference/Preference;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._onPrepareAddPreference10410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, "onPrepareAddPreference", "(Landroid/preference/Preference;)Z", ref global::android.preference.PreferenceCategory._onPrepareAddPreference10410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceCategory10411;
 		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

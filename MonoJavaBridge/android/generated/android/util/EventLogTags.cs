@@ -46,18 +46,12 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _get13764;
 		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.EventLogTags._get13764.native == global::System.IntPtr.Zero)
-				global::android.util.EventLogTags._get13764 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;", ref global::android.util.EventLogTags._get13764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _get13765;
 		public virtual global::android.util.EventLogTags.Description get(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.EventLogTags._get13765.native == global::System.IntPtr.Zero)
-				global::android.util.EventLogTags._get13765 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;", ref global::android.util.EventLogTags._get13765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventLogTags13766;
 		public EventLogTags() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

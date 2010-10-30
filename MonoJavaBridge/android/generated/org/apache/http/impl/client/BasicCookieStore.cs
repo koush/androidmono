@@ -10,26 +10,17 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _toString32856;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._toString32856.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._toString32856 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._toString32856) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.impl.client.BasicCookieStore._toString32856) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear32857;
 		public virtual void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._clear32857.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._clear32857 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "clear", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._clear32857);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "clear", "()V", ref global::org.apache.http.impl.client.BasicCookieStore._clear32857);
 		}
 		internal static global::MonoJavaBridge.MethodId _addCookie32858;
 		public virtual void addCookie(org.apache.http.cookie.Cookie arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._addCookie32858.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._addCookie32858 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "addCookie", "(Lorg/apache/http/cookie/Cookie;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._addCookie32858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "addCookie", "(Lorg/apache/http/cookie/Cookie;)V", ref global::org.apache.http.impl.client.BasicCookieStore._addCookie32858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.List Cookies
 		{
@@ -41,26 +32,17 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getCookies32859;
 		public virtual global::java.util.List getCookies()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._getCookies32859.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._getCookies32859 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "getCookies", "()Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._getCookies32859) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "getCookies", "()Ljava/util/List;", ref global::org.apache.http.impl.client.BasicCookieStore._getCookies32859) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearExpired32860;
 		public virtual bool clearExpired(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._clearExpired32860.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._clearExpired32860 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "clearExpired", "(Ljava/util/Date;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._clearExpired32860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "clearExpired", "(Ljava/util/Date;)Z", ref global::org.apache.http.impl.client.BasicCookieStore._clearExpired32860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addCookies32861;
 		public virtual void addCookies(org.apache.http.cookie.Cookie[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.BasicCookieStore._addCookies32861.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.BasicCookieStore._addCookies32861 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.BasicCookieStore.staticClass, "addCookies", "([Lorg/apache/http/cookie/Cookie;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, global::org.apache.http.impl.client.BasicCookieStore._addCookies32861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.BasicCookieStore.staticClass, "addCookies", "([Lorg/apache/http/cookie/Cookie;)V", ref global::org.apache.http.impl.client.BasicCookieStore._addCookies32861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicCookieStore32862;
 		public BasicCookieStore() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

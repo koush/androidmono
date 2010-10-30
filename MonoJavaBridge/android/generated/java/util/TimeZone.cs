@@ -10,10 +10,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _clone26834;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._clone26834.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._clone26834 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._clone26834) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TimeZone.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.TimeZone._clone26834) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault26835;
 		public static global::java.util.TimeZone getDefault()
@@ -26,10 +23,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getOffset26836;
 		public virtual int getOffset(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getOffset26836.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getOffset26836 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getOffset", "(J)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getOffset26836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone.staticClass, "getOffset", "(J)I", ref global::java.util.TimeZone._getOffset26836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getOffset26837;
 		public abstract int getOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
@@ -44,34 +38,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26839;
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1, java.util.Locale arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getDisplayName26839.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getDisplayName26839 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName26839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, "getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;", ref global::java.util.TimeZone._getDisplayName26839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26840;
 		public virtual global::java.lang.String getDisplayName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getDisplayName26840.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getDisplayName26840 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName26840) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, "getDisplayName", "()Ljava/lang/String;", ref global::java.util.TimeZone._getDisplayName26840) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26841;
 		public virtual global::java.lang.String getDisplayName(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getDisplayName26841.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getDisplayName26841 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName26841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", ref global::java.util.TimeZone._getDisplayName26841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26842;
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getDisplayName26842.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getDisplayName26842 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZI)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName26842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, "getDisplayName", "(ZI)Ljava/lang/String;", ref global::java.util.TimeZone._getDisplayName26842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeZone26843;
 		public static global::java.util.TimeZone getTimeZone(java.lang.String arg0)
@@ -86,36 +68,24 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getID26845;
 		public virtual global::java.lang.String getID()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getID26845.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getID26845 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getID", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getID26845) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.TimeZone.staticClass, "getID", "()Ljava/lang/String;", ref global::java.util.TimeZone._getID26845) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasSameRules26846;
 		public virtual bool hasSameRules(java.util.TimeZone arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._hasSameRules26846.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._hasSameRules26846 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "hasSameRules", "(Ljava/util/TimeZone;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._hasSameRules26846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TimeZone.staticClass, "hasSameRules", "(Ljava/util/TimeZone;)Z", ref global::java.util.TimeZone._hasSameRules26846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setRawOffset26847;
 		public abstract void setRawOffset(int arg0);
 		internal static global::MonoJavaBridge.MethodId _setID26848;
 		public virtual void setID(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._setID26848.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._setID26848 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "setID", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._setID26848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.TimeZone.staticClass, "setID", "(Ljava/lang/String;)V", ref global::java.util.TimeZone._setID26848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDSTSavings26849;
 		public virtual int getDSTSavings()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone._getDSTSavings26849.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone._getDSTSavings26849 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDSTSavings", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDSTSavings26849);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone.staticClass, "getDSTSavings", "()I", ref global::java.util.TimeZone._getDSTSavings26849);
 		}
 		internal static global::MonoJavaBridge.MethodId _useDaylightTime26850;
 		public abstract bool useDaylightTime();
@@ -180,42 +150,27 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getOffset26857;
 		public override int getOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone_._getOffset26857.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone_._getOffset26857 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "getOffset", "(IIIIII)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone_._getOffset26857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone_.staticClass, "getOffset", "(IIIIII)I", ref global::java.util.TimeZone_._getOffset26857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _getRawOffset26858;
 		public override int getRawOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone_._getRawOffset26858.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone_._getRawOffset26858 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "getRawOffset", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone_._getRawOffset26858);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TimeZone_.staticClass, "getRawOffset", "()I", ref global::java.util.TimeZone_._getRawOffset26858);
 		}
 		internal static global::MonoJavaBridge.MethodId _setRawOffset26859;
 		public override void setRawOffset(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone_._setRawOffset26859.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone_._setRawOffset26859 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "setRawOffset", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.TimeZone_._setRawOffset26859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.TimeZone_.staticClass, "setRawOffset", "(I)V", ref global::java.util.TimeZone_._setRawOffset26859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _useDaylightTime26860;
 		public override bool useDaylightTime()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone_._useDaylightTime26860.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone_._useDaylightTime26860 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "useDaylightTime", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimeZone_._useDaylightTime26860);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TimeZone_.staticClass, "useDaylightTime", "()Z", ref global::java.util.TimeZone_._useDaylightTime26860);
 		}
 		internal static global::MonoJavaBridge.MethodId _inDaylightTime26861;
 		public override bool inDaylightTime(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.TimeZone_._inDaylightTime26861.native == global::System.IntPtr.Zero)
-				global::java.util.TimeZone_._inDaylightTime26861 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimeZone_._inDaylightTime26861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TimeZone_.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z", ref global::java.util.TimeZone_._inDaylightTime26861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static TimeZone_()
 		{

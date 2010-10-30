@@ -10,10 +10,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _clone26156;
 		public virtual global::java.util.EnumSet clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EnumSet._clone26156.native == global::System.IntPtr.Zero)
-				global::java.util.EnumSet._clone26156 = @__env.GetMethodIDNoThrow(global::java.util.EnumSet.staticClass, "clone", "()Ljava/util/EnumSet;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EnumSet.staticClass, global::java.util.EnumSet._clone26156) as java.util.EnumSet;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EnumSet.staticClass, "clone", "()Ljava/util/EnumSet;", ref global::java.util.EnumSet._clone26156) as java.util.EnumSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _copyOf26157;
 		public static global::java.util.EnumSet copyOf(java.util.EnumSet arg0)
@@ -131,10 +128,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _size26169;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EnumSet_._size26169.native == global::System.IntPtr.Zero)
-				global::java.util.EnumSet_._size26169 = @__env.GetMethodIDNoThrow(global::java.util.EnumSet_.staticClass, "size", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.util.EnumSet_._size26169);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.EnumSet_.staticClass, "size", "()I", ref global::java.util.EnumSet_._size26169);
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -143,10 +137,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _iterator26170;
 		public override global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EnumSet_._iterator26170.native == global::System.IntPtr.Zero)
-				global::java.util.EnumSet_._iterator26170 = @__env.GetMethodIDNoThrow(global::java.util.EnumSet_.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.EnumSet_._iterator26170)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.EnumSet_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.EnumSet_._iterator26170) as java.util.Iterator;
 		}
 		static EnumSet_()
 		{

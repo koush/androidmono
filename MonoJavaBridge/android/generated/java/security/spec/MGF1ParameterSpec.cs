@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm24030;
 		public virtual global::java.lang.String getDigestAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030.native == global::System.IntPtr.Zero)
-				global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030 = @__env.GetMethodIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.MGF1ParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;", ref global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MGF1ParameterSpec24031;
 		public MGF1ParameterSpec(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

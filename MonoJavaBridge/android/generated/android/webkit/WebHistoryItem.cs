@@ -10,10 +10,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _clone16154;
 		protected virtual global::android.webkit.WebHistoryItem clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._clone16154.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._clone16154 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._clone16154) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebHistoryItem._clone16154) as android.webkit.WebHistoryItem;
 		}
 		public new int Id
 		{
@@ -25,10 +22,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getId16155;
 		public virtual int getId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._getId16155.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._getId16155 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getId", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getId16155);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebHistoryItem.staticClass, "getId", "()I", ref global::android.webkit.WebHistoryItem._getId16155);
 		}
 		public new global::java.lang.String Title
 		{
@@ -40,10 +34,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getTitle16156;
 		public virtual global::java.lang.String getTitle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._getTitle16156.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._getTitle16156 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getTitle16156) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getTitle16156) as java.lang.String;
 		}
 		public new global::java.lang.String Url
 		{
@@ -55,10 +46,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUrl16157;
 		public virtual global::java.lang.String getUrl()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._getUrl16157.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._getUrl16157 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getUrl16157) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getUrl16157) as java.lang.String;
 		}
 		public new global::java.lang.String OriginalUrl
 		{
@@ -70,10 +58,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getOriginalUrl16158;
 		public virtual global::java.lang.String getOriginalUrl()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._getOriginalUrl16158.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._getOriginalUrl16158 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getOriginalUrl16158) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getOriginalUrl16158) as java.lang.String;
 		}
 		public new global::android.graphics.Bitmap Favicon
 		{
@@ -85,10 +70,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getFavicon16159;
 		public virtual global::android.graphics.Bitmap getFavicon()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebHistoryItem._getFavicon16159.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebHistoryItem._getFavicon16159 = @__env.GetMethodIDNoThrow(global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.webkit.WebHistoryItem.staticClass, global::android.webkit.WebHistoryItem._getFavicon16159) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;", ref global::android.webkit.WebHistoryItem._getFavicon16159) as android.graphics.Bitmap;
 		}
 		static WebHistoryItem()
 		{

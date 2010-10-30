@@ -40,18 +40,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getHeaders21357;
 		public override global::java.util.Map getHeaders()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.CacheResponse_._getHeaders21357.native == global::System.IntPtr.Zero)
-				global::java.net.CacheResponse_._getHeaders21357 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.CacheResponse_._getHeaders21357)) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::java.net.CacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::java.net.CacheResponse_._getHeaders21357) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBody21358;
 		public override global::java.io.InputStream getBody()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.CacheResponse_._getBody21358.native == global::System.IntPtr.Zero)
-				global::java.net.CacheResponse_._getBody21358 = @__env.GetMethodIDNoThrow(global::java.net.CacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.CacheResponse_._getBody21358)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.CacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;", ref global::java.net.CacheResponse_._getBody21358) as java.io.InputStream;
 		}
 		static CacheResponse_()
 		{

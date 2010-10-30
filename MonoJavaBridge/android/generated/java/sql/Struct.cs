@@ -18,26 +18,17 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getAttributes25092;
 		global::java.lang.Object[] java.sql.Struct.getAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Struct_._getAttributes25092.native == global::System.IntPtr.Zero)
-				global::java.sql.Struct_._getAttributes25092 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getAttributes", "()[Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Struct_._getAttributes25092)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.sql.Struct_.staticClass, "getAttributes", "()[Ljava/lang/Object;", ref global::java.sql.Struct_._getAttributes25092) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes25093;
 		global::java.lang.Object[] java.sql.Struct.getAttributes(java.util.Map arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Struct_._getAttributes25093.native == global::System.IntPtr.Zero)
-				global::java.sql.Struct_._getAttributes25093 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Struct_._getAttributes25093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.sql.Struct_.staticClass, "getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;", ref global::java.sql.Struct_._getAttributes25093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getSQLTypeName25094;
 		global::java.lang.String java.sql.Struct.getSQLTypeName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.Struct_._getSQLTypeName25094.native == global::System.IntPtr.Zero)
-				global::java.sql.Struct_._getSQLTypeName25094 = @__env.GetMethodIDNoThrow(global::java.sql.Struct_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Struct_._getSQLTypeName25094)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.Struct_.staticClass, "getSQLTypeName", "()Ljava/lang/String;", ref global::java.sql.Struct_._getSQLTypeName25094) as java.lang.String;
 		}
 		static Struct_()
 		{

@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26957;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.UnknownFormatConversionException._getMessage26957.native == global::System.IntPtr.Zero)
-				global::java.util.UnknownFormatConversionException._getMessage26957 = @__env.GetMethodIDNoThrow(global::java.util.UnknownFormatConversionException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatConversionException.staticClass, global::java.util.UnknownFormatConversionException._getMessage26957) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatConversionException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.UnknownFormatConversionException._getMessage26957) as java.lang.String;
 		}
 		public new global::java.lang.String Conversion
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getConversion26958;
 		public virtual global::java.lang.String getConversion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.UnknownFormatConversionException._getConversion26958.native == global::System.IntPtr.Zero)
-				global::java.util.UnknownFormatConversionException._getConversion26958 = @__env.GetMethodIDNoThrow(global::java.util.UnknownFormatConversionException.staticClass, "getConversion", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatConversionException.staticClass, global::java.util.UnknownFormatConversionException._getConversion26958) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatConversionException.staticClass, "getConversion", "()Ljava/lang/String;", ref global::java.util.UnknownFormatConversionException._getConversion26958) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _UnknownFormatConversionException26959;
 		public UnknownFormatConversionException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

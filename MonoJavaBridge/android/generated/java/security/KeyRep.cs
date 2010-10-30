@@ -72,10 +72,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _readResolve23063;
 		protected virtual global::java.lang.Object readResolve()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyRep._readResolve23063.native == global::System.IntPtr.Zero)
-				global::java.security.KeyRep._readResolve23063 = @__env.GetMethodIDNoThrow(global::java.security.KeyRep.staticClass, "readResolve", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyRep.staticClass, global::java.security.KeyRep._readResolve23063) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyRep.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.security.KeyRep._readResolve23063) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyRep23064;
 		public KeyRep(java.security.KeyRep.Type arg0, java.lang.String arg1, java.lang.String arg2, byte[] arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

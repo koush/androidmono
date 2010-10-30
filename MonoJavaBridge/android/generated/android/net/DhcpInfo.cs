@@ -10,26 +10,17 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _toString7648;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.DhcpInfo._toString7648.native == global::System.IntPtr.Zero)
-				global::android.net.DhcpInfo._toString7648 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._toString7648) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.DhcpInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.DhcpInfo._toString7648) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7649;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.DhcpInfo._writeToParcel7649.native == global::System.IntPtr.Zero)
-				global::android.net.DhcpInfo._writeToParcel7649 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._writeToParcel7649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.DhcpInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.DhcpInfo._writeToParcel7649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7650;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.DhcpInfo._describeContents7650.native == global::System.IntPtr.Zero)
-				global::android.net.DhcpInfo._describeContents7650 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._describeContents7650);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.DhcpInfo.staticClass, "describeContents", "()I", ref global::android.net.DhcpInfo._describeContents7650);
 		}
 		internal static global::MonoJavaBridge.MethodId _DhcpInfo7651;
 		public DhcpInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

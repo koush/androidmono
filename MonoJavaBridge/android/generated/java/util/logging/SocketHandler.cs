@@ -10,18 +10,12 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _close28100;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.SocketHandler._close28100.native == global::System.IntPtr.Zero)
-				global::java.util.logging.SocketHandler._close28100 = @__env.GetMethodIDNoThrow(global::java.util.logging.SocketHandler.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._close28100);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, "close", "()V", ref global::java.util.logging.SocketHandler._close28100);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish28101;
 		public override void publish(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.SocketHandler._publish28101.native == global::System.IntPtr.Zero)
-				global::java.util.logging.SocketHandler._publish28101 = @__env.GetMethodIDNoThrow(global::java.util.logging.SocketHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._publish28101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V", ref global::java.util.logging.SocketHandler._publish28101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketHandler28102;
 		public SocketHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

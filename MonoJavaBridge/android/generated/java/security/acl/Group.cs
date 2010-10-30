@@ -19,66 +19,42 @@ namespace java.security.acl
 		internal static global::MonoJavaBridge.MethodId _members23452;
 		global::java.util.Enumeration java.security.acl.Group.members()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._members23452.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._members23452 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "members", "()Ljava/util/Enumeration;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.Group_._members23452)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.security.acl.Group_.staticClass, "members", "()Ljava/util/Enumeration;", ref global::java.security.acl.Group_._members23452) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _addMember23453;
 		bool java.security.acl.Group.addMember(java.security.Principal arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._addMember23453.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._addMember23453 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "addMember", "(Ljava/security/Principal;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Group_._addMember23453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.acl.Group_.staticClass, "addMember", "(Ljava/security/Principal;)Z", ref global::java.security.acl.Group_._addMember23453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeMember23454;
 		bool java.security.acl.Group.removeMember(java.security.Principal arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._removeMember23454.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._removeMember23454 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "removeMember", "(Ljava/security/Principal;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Group_._removeMember23454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.acl.Group_.staticClass, "removeMember", "(Ljava/security/Principal;)Z", ref global::java.security.acl.Group_._removeMember23454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isMember23455;
 		bool java.security.acl.Group.isMember(java.security.Principal arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._isMember23455.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._isMember23455 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "isMember", "(Ljava/security/Principal;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Group_._isMember23455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.acl.Group_.staticClass, "isMember", "(Ljava/security/Principal;)Z", ref global::java.security.acl.Group_._isMember23455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23456;
 		bool java.security.Principal.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._equals23456.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._equals23456 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Group_._equals23456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.acl.Group_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.acl.Group_._equals23456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23457;
 		global::java.lang.String java.security.Principal.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._toString23457.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._toString23457 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.Group_._toString23457)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.acl.Group_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.acl.Group_._toString23457) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23458;
 		int java.security.Principal.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._hashCode23458.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._hashCode23458 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.security.acl.Group_._hashCode23458);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.acl.Group_.staticClass, "hashCode", "()I", ref global::java.security.acl.Group_._hashCode23458);
 		}
 		internal static global::MonoJavaBridge.MethodId _getName23459;
 		global::java.lang.String java.security.Principal.getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.acl.Group_._getName23459.native == global::System.IntPtr.Zero)
-				global::java.security.acl.Group_._getName23459 = @__env.GetMethodIDNoThrow(global::java.security.acl.Group_.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.Group_._getName23459)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.acl.Group_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.acl.Group_._getName23459) as java.lang.String;
 		}
 		static Group_()
 		{

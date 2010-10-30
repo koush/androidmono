@@ -16,10 +16,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _createDatagramSocketImpl21465;
 		global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;", ref global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465) as java.net.DatagramSocketImpl;
 		}
 		static DatagramSocketImplFactory_()
 		{

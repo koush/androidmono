@@ -16,10 +16,7 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _handle30198;
 		void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.callback.CallbackHandler_._handle30198.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.callback.CallbackHandler_._handle30198 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V", ref global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CallbackHandler_()
 		{

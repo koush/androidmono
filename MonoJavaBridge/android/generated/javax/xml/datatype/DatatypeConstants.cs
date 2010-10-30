@@ -17,10 +17,7 @@ namespace javax.xml.datatype
 			internal static global::MonoJavaBridge.MethodId _toString30639;
 			public sealed override global::java.lang.String toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::javax.xml.datatype.DatatypeConstants.Field._toString30639.native == global::System.IntPtr.Zero)
-					global::javax.xml.datatype.DatatypeConstants.Field._toString30639 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._toString30639)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "toString", "()Ljava/lang/String;", ref global::javax.xml.datatype.DatatypeConstants.Field._toString30639) as java.lang.String;
 			}
 			public new int Id
 			{
@@ -32,10 +29,7 @@ namespace javax.xml.datatype
 			internal static global::MonoJavaBridge.MethodId _getId30640;
 			public int getId()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::javax.xml.datatype.DatatypeConstants.Field._getId30640.native == global::System.IntPtr.Zero)
-					global::javax.xml.datatype.DatatypeConstants.Field._getId30640 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "getId", "()I");
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._getId30640);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "getId", "()I", ref global::javax.xml.datatype.DatatypeConstants.Field._getId30640);
 			}
 			static Field()
 			{

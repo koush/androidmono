@@ -23,10 +23,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onGlobalFocusChanged15220;
 			void android.view.ViewTreeObserver.OnGlobalFocusChangeListener.onGlobalFocusChanged(android.view.View arg0, android.view.View arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_._onGlobalFocusChanged15220.native == global::System.IntPtr.Zero)
-					global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_._onGlobalFocusChanged15220 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_.staticClass, "onGlobalFocusChanged", "(Landroid/view/View;Landroid/view/View;)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_._onGlobalFocusChanged15220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_.staticClass, "onGlobalFocusChanged", "(Landroid/view/View;Landroid/view/View;)V", ref global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_._onGlobalFocusChanged15220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnGlobalFocusChangeListener_()
 			{
@@ -95,10 +92,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onGlobalLayout15222;
 			void android.view.ViewTreeObserver.OnGlobalLayoutListener.onGlobalLayout()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewTreeObserver.OnGlobalLayoutListener_._onGlobalLayout15222.native == global::System.IntPtr.Zero)
-					global::android.view.ViewTreeObserver.OnGlobalLayoutListener_._onGlobalLayout15222 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.OnGlobalLayoutListener_.staticClass, "onGlobalLayout", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.OnGlobalLayoutListener_._onGlobalLayout15222);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.OnGlobalLayoutListener_.staticClass, "onGlobalLayout", "()V", ref global::android.view.ViewTreeObserver.OnGlobalLayoutListener_._onGlobalLayout15222);
 			}
 			static OnGlobalLayoutListener_()
 			{
@@ -167,10 +161,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onPreDraw15224;
 			bool android.view.ViewTreeObserver.OnPreDrawListener.onPreDraw()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewTreeObserver.OnPreDrawListener_._onPreDraw15224.native == global::System.IntPtr.Zero)
-					global::android.view.ViewTreeObserver.OnPreDrawListener_._onPreDraw15224 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.OnPreDrawListener_.staticClass, "onPreDraw", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewTreeObserver.OnPreDrawListener_._onPreDraw15224);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewTreeObserver.OnPreDrawListener_.staticClass, "onPreDraw", "()Z", ref global::android.view.ViewTreeObserver.OnPreDrawListener_._onPreDraw15224);
 			}
 			static OnPreDrawListener_()
 			{
@@ -239,10 +230,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onScrollChanged15226;
 			void android.view.ViewTreeObserver.OnScrollChangedListener.onScrollChanged()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewTreeObserver.OnScrollChangedListener_._onScrollChanged15226.native == global::System.IntPtr.Zero)
-					global::android.view.ViewTreeObserver.OnScrollChangedListener_._onScrollChanged15226 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.OnScrollChangedListener_.staticClass, "onScrollChanged", "()V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.OnScrollChangedListener_._onScrollChanged15226);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.OnScrollChangedListener_.staticClass, "onScrollChanged", "()V", ref global::android.view.ViewTreeObserver.OnScrollChangedListener_._onScrollChanged15226);
 			}
 			static OnScrollChangedListener_()
 			{
@@ -311,10 +299,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onTouchModeChanged15228;
 			void android.view.ViewTreeObserver.OnTouchModeChangeListener.onTouchModeChanged(bool arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewTreeObserver.OnTouchModeChangeListener_._onTouchModeChanged15228.native == global::System.IntPtr.Zero)
-					global::android.view.ViewTreeObserver.OnTouchModeChangeListener_._onTouchModeChanged15228 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.OnTouchModeChangeListener_.staticClass, "onTouchModeChanged", "(Z)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.OnTouchModeChangeListener_._onTouchModeChanged15228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.OnTouchModeChangeListener_.staticClass, "onTouchModeChanged", "(Z)V", ref global::android.view.ViewTreeObserver.OnTouchModeChangeListener_._onTouchModeChanged15228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnTouchModeChangeListener_()
 			{
@@ -370,18 +355,12 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _isAlive15230;
 		public bool isAlive()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._isAlive15230.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._isAlive15230 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "isAlive", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._isAlive15230);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewTreeObserver.staticClass, "isAlive", "()Z", ref global::android.view.ViewTreeObserver._isAlive15230);
 		}
 		internal static global::MonoJavaBridge.MethodId _addOnGlobalFocusChangeListener15231;
 		public void addOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._addOnGlobalFocusChangeListener15231.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._addOnGlobalFocusChangeListener15231 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "addOnGlobalFocusChangeListener", "(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._addOnGlobalFocusChangeListener15231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "addOnGlobalFocusChangeListener", "(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V", ref global::android.view.ViewTreeObserver._addOnGlobalFocusChangeListener15231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnGlobalFocusChangeListener(global::android.view.ViewTreeObserver.OnGlobalFocusChangeListenerDelegate arg0)
 		{
@@ -390,10 +369,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _removeOnGlobalFocusChangeListener15232;
 		public void removeOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._removeOnGlobalFocusChangeListener15232.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._removeOnGlobalFocusChangeListener15232 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "removeOnGlobalFocusChangeListener", "(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._removeOnGlobalFocusChangeListener15232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "removeOnGlobalFocusChangeListener", "(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V", ref global::android.view.ViewTreeObserver._removeOnGlobalFocusChangeListener15232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeOnGlobalFocusChangeListener(global::android.view.ViewTreeObserver.OnGlobalFocusChangeListenerDelegate arg0)
 		{
@@ -402,10 +378,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _addOnGlobalLayoutListener15233;
 		public void addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._addOnGlobalLayoutListener15233.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._addOnGlobalLayoutListener15233 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "addOnGlobalLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._addOnGlobalLayoutListener15233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "addOnGlobalLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V", ref global::android.view.ViewTreeObserver._addOnGlobalLayoutListener15233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnGlobalLayoutListener(global::android.view.ViewTreeObserver.OnGlobalLayoutListenerDelegate arg0)
 		{
@@ -414,10 +387,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _removeGlobalOnLayoutListener15234;
 		public void removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._removeGlobalOnLayoutListener15234.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._removeGlobalOnLayoutListener15234 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "removeGlobalOnLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._removeGlobalOnLayoutListener15234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "removeGlobalOnLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V", ref global::android.view.ViewTreeObserver._removeGlobalOnLayoutListener15234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeGlobalOnLayoutListener(global::android.view.ViewTreeObserver.OnGlobalLayoutListenerDelegate arg0)
 		{
@@ -426,10 +396,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _addOnPreDrawListener15235;
 		public void addOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._addOnPreDrawListener15235.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._addOnPreDrawListener15235 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "addOnPreDrawListener", "(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._addOnPreDrawListener15235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "addOnPreDrawListener", "(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V", ref global::android.view.ViewTreeObserver._addOnPreDrawListener15235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnPreDrawListener(global::android.view.ViewTreeObserver.OnPreDrawListenerDelegate arg0)
 		{
@@ -438,10 +405,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _removeOnPreDrawListener15236;
 		public void removeOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._removeOnPreDrawListener15236.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._removeOnPreDrawListener15236 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "removeOnPreDrawListener", "(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._removeOnPreDrawListener15236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "removeOnPreDrawListener", "(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V", ref global::android.view.ViewTreeObserver._removeOnPreDrawListener15236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeOnPreDrawListener(global::android.view.ViewTreeObserver.OnPreDrawListenerDelegate arg0)
 		{
@@ -450,10 +414,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _addOnScrollChangedListener15237;
 		public void addOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._addOnScrollChangedListener15237.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._addOnScrollChangedListener15237 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "addOnScrollChangedListener", "(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._addOnScrollChangedListener15237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "addOnScrollChangedListener", "(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V", ref global::android.view.ViewTreeObserver._addOnScrollChangedListener15237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnScrollChangedListener(global::android.view.ViewTreeObserver.OnScrollChangedListenerDelegate arg0)
 		{
@@ -462,10 +423,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _removeOnScrollChangedListener15238;
 		public void removeOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._removeOnScrollChangedListener15238.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._removeOnScrollChangedListener15238 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "removeOnScrollChangedListener", "(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._removeOnScrollChangedListener15238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "removeOnScrollChangedListener", "(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V", ref global::android.view.ViewTreeObserver._removeOnScrollChangedListener15238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeOnScrollChangedListener(global::android.view.ViewTreeObserver.OnScrollChangedListenerDelegate arg0)
 		{
@@ -474,10 +432,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _addOnTouchModeChangeListener15239;
 		public void addOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._addOnTouchModeChangeListener15239.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._addOnTouchModeChangeListener15239 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "addOnTouchModeChangeListener", "(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._addOnTouchModeChangeListener15239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "addOnTouchModeChangeListener", "(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V", ref global::android.view.ViewTreeObserver._addOnTouchModeChangeListener15239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnTouchModeChangeListener(global::android.view.ViewTreeObserver.OnTouchModeChangeListenerDelegate arg0)
 		{
@@ -486,10 +441,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _removeOnTouchModeChangeListener15240;
 		public void removeOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._removeOnTouchModeChangeListener15240.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._removeOnTouchModeChangeListener15240 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "removeOnTouchModeChangeListener", "(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._removeOnTouchModeChangeListener15240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "removeOnTouchModeChangeListener", "(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V", ref global::android.view.ViewTreeObserver._removeOnTouchModeChangeListener15240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeOnTouchModeChangeListener(global::android.view.ViewTreeObserver.OnTouchModeChangeListenerDelegate arg0)
 		{
@@ -498,18 +450,12 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _dispatchOnGlobalLayout15241;
 		public void dispatchOnGlobalLayout()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._dispatchOnGlobalLayout15241.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._dispatchOnGlobalLayout15241 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "dispatchOnGlobalLayout", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._dispatchOnGlobalLayout15241);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewTreeObserver.staticClass, "dispatchOnGlobalLayout", "()V", ref global::android.view.ViewTreeObserver._dispatchOnGlobalLayout15241);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchOnPreDraw15242;
 		public bool dispatchOnPreDraw()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewTreeObserver._dispatchOnPreDraw15242.native == global::System.IntPtr.Zero)
-				global::android.view.ViewTreeObserver._dispatchOnPreDraw15242 = @__env.GetMethodIDNoThrow(global::android.view.ViewTreeObserver.staticClass, "dispatchOnPreDraw", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewTreeObserver.staticClass, global::android.view.ViewTreeObserver._dispatchOnPreDraw15242);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewTreeObserver.staticClass, "dispatchOnPreDraw", "()Z", ref global::android.view.ViewTreeObserver._dispatchOnPreDraw15242);
 		}
 		static ViewTreeObserver()
 		{

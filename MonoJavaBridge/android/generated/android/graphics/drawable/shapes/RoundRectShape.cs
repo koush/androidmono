@@ -10,26 +10,17 @@ namespace android.graphics.drawable.shapes
 		internal static global::MonoJavaBridge.MethodId _clone6253;
 		public virtual global::android.graphics.drawable.shapes.RoundRectShape clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.shapes.RoundRectShape._clone6253.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.shapes.RoundRectShape._clone6253 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "clone", "()Landroid/graphics/drawable/shapes/RoundRectShape;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, global::android.graphics.drawable.shapes.RoundRectShape._clone6253) as android.graphics.drawable.shapes.RoundRectShape;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "clone", "()Landroid/graphics/drawable/shapes/RoundRectShape;", ref global::android.graphics.drawable.shapes.RoundRectShape._clone6253) as android.graphics.drawable.shapes.RoundRectShape;
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6254;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.shapes.RoundRectShape._draw6254.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.shapes.RoundRectShape._draw6254 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, global::android.graphics.drawable.shapes.RoundRectShape._draw6254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V", ref global::android.graphics.drawable.shapes.RoundRectShape._draw6254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onResize6255;
 		protected override void onResize(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.shapes.RoundRectShape._onResize6255.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.shapes.RoundRectShape._onResize6255 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "onResize", "(FF)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, global::android.graphics.drawable.shapes.RoundRectShape._onResize6255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RoundRectShape.staticClass, "onResize", "(FF)V", ref global::android.graphics.drawable.shapes.RoundRectShape._onResize6255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RoundRectShape6256;
 		public RoundRectShape(float[] arg0, android.graphics.RectF arg1, float[] arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

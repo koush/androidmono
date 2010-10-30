@@ -16,10 +16,7 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _resolve32289;
 		global::java.net.InetAddress org.apache.http.conn.scheme.HostNameResolver.resolve(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.HostNameResolver_._resolve32289.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.HostNameResolver_._resolve32289 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.HostNameResolver_._resolve32289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;", ref global::org.apache.http.conn.scheme.HostNameResolver_._resolve32289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.InetAddress;
 		}
 		static HostNameResolver_()
 		{

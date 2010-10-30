@@ -10,10 +10,7 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _toString13895;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._toString13895.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._toString13895 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._toString13895) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;", ref global::android.util.TypedValue._toString13895) as java.lang.String;
 		}
 		public new float Float
 		{
@@ -25,10 +22,7 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _getFloat13896;
 		public virtual float getFloat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._getFloat13896.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._getFloat13896 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFloat", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFloat13896);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, "getFloat", "()F", ref global::android.util.TypedValue._getFloat13896);
 		}
 		public new global::android.util.TypedValue To
 		{
@@ -40,26 +34,17 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _setTo13897;
 		public virtual void setTo(android.util.TypedValue arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._setTo13897.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._setTo13897 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._setTo13897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V", ref global::android.util.TypedValue._setTo13897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDimension13898;
 		public virtual float getDimension(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._getDimension13898.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._getDimension13898 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getDimension13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F", ref global::android.util.TypedValue._getDimension13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFraction13899;
 		public virtual float getFraction(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._getFraction13899.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._getFraction13899 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFraction13899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, "getFraction", "(FF)F", ref global::android.util.TypedValue._getFraction13899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToFloat13900;
 		public static float complexToFloat(int arg0)
@@ -120,10 +105,7 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _coerceToString13907;
 		public virtual global::java.lang.CharSequence coerceToString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TypedValue._coerceToString13907.native == global::System.IntPtr.Zero)
-				global::android.util.TypedValue._coerceToString13907 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13907) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;", ref global::android.util.TypedValue._coerceToString13907) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _coerceToString13908;
 		public static global::java.lang.String coerceToString(int arg0, int arg1)

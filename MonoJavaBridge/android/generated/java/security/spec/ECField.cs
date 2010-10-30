@@ -16,10 +16,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getFieldSize23978;
 		int java.security.spec.ECField.getFieldSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.ECField_._getFieldSize23978.native == global::System.IntPtr.Zero)
-				global::java.security.spec.ECField_._getFieldSize23978 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECField_.staticClass, "getFieldSize", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECField_._getFieldSize23978);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECField_.staticClass, "getFieldSize", "()I", ref global::java.security.spec.ECField_._getFieldSize23978);
 		}
 		static ECField_()
 		{

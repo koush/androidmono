@@ -17,26 +17,17 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion33579;
 		public override global::org.apache.http.ProtocolVersion getProtocolVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._getProtocolVersion33579.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._getProtocolVersion33579 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._getProtocolVersion33579) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicHttpResponse._getProtocolVersion33579) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLocale33580;
 		public virtual void setLocale(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setLocale33580.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setLocale33580 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setLocale", "(Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setLocale33580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setLocale", "(Ljava/util/Locale;)V", ref global::org.apache.http.message.BasicHttpResponse._setLocale33580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getReason33581;
 		protected virtual global::java.lang.String getReason(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._getReason33581.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._getReason33581 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "getReason", "(I)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._getReason33581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "getReason", "(I)Ljava/lang/String;", ref global::org.apache.http.message.BasicHttpResponse._getReason33581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		public new global::java.util.Locale Locale
 		{
@@ -52,10 +43,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getLocale33582;
 		public virtual global::java.util.Locale getLocale()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._getLocale33582.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._getLocale33582 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "getLocale", "()Ljava/util/Locale;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._getLocale33582) as java.util.Locale;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "getLocale", "()Ljava/util/Locale;", ref global::org.apache.http.message.BasicHttpResponse._getLocale33582) as java.util.Locale;
 		}
 		public new global::org.apache.http.StatusLine StatusLine
 		{
@@ -71,34 +59,22 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getStatusLine33583;
 		public virtual global::org.apache.http.StatusLine getStatusLine()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._getStatusLine33583.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._getStatusLine33583 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "getStatusLine", "()Lorg/apache/http/StatusLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._getStatusLine33583) as org.apache.http.StatusLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.StatusLine>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "getStatusLine", "()Lorg/apache/http/StatusLine;", ref global::org.apache.http.message.BasicHttpResponse._getStatusLine33583) as org.apache.http.StatusLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStatusLine33584;
 		public virtual void setStatusLine(org.apache.http.StatusLine arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setStatusLine33584.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setStatusLine33584 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/StatusLine;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setStatusLine33584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/StatusLine;)V", ref global::org.apache.http.message.BasicHttpResponse._setStatusLine33584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStatusLine33585;
 		public virtual void setStatusLine(org.apache.http.ProtocolVersion arg0, int arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setStatusLine33585.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setStatusLine33585 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setStatusLine33585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V", ref global::org.apache.http.message.BasicHttpResponse._setStatusLine33585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStatusLine33586;
 		public virtual void setStatusLine(org.apache.http.ProtocolVersion arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setStatusLine33586.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setStatusLine33586 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/ProtocolVersion;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setStatusLine33586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusLine", "(Lorg/apache/http/ProtocolVersion;I)V", ref global::org.apache.http.message.BasicHttpResponse._setStatusLine33586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int StatusCode
 		{
@@ -110,10 +86,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _setStatusCode33587;
 		public virtual void setStatusCode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setStatusCode33587.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setStatusCode33587 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusCode", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setStatusCode33587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setStatusCode", "(I)V", ref global::org.apache.http.message.BasicHttpResponse._setStatusCode33587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String ReasonPhrase
 		{
@@ -125,10 +98,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _setReasonPhrase33588;
 		public virtual void setReasonPhrase(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setReasonPhrase33588.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setReasonPhrase33588 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setReasonPhrase", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setReasonPhrase33588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setReasonPhrase", "(Ljava/lang/String;)V", ref global::org.apache.http.message.BasicHttpResponse._setReasonPhrase33588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.HttpEntity Entity
 		{
@@ -144,18 +114,12 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getEntity33589;
 		public virtual global::org.apache.http.HttpEntity getEntity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._getEntity33589.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._getEntity33589 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "getEntity", "()Lorg/apache/http/HttpEntity;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpEntity>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._getEntity33589) as org.apache.http.HttpEntity;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpEntity>(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "getEntity", "()Lorg/apache/http/HttpEntity;", ref global::org.apache.http.message.BasicHttpResponse._getEntity33589) as org.apache.http.HttpEntity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntity33590;
 		public virtual void setEntity(org.apache.http.HttpEntity arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpResponse._setEntity33590.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpResponse._setEntity33590 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpResponse.staticClass, "setEntity", "(Lorg/apache/http/HttpEntity;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, global::org.apache.http.message.BasicHttpResponse._setEntity33590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHttpResponse.staticClass, "setEntity", "(Lorg/apache/http/HttpEntity;)V", ref global::org.apache.http.message.BasicHttpResponse._setEntity33590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHttpResponse33591;
 		public BasicHttpResponse(org.apache.http.StatusLine arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

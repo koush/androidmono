@@ -10,26 +10,17 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getActivity12124;
 		protected virtual global::android.app.Activity getActivity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityTestCase._getActivity12124.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityTestCase._getActivity12124 = @__env.GetMethodIDNoThrow(global::android.test.ActivityTestCase.staticClass, "getActivity", "()Landroid/app/Activity;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._getActivity12124) as android.app.Activity;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ActivityTestCase.staticClass, "getActivity", "()Landroid/app/Activity;", ref global::android.test.ActivityTestCase._getActivity12124) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setActivity12125;
 		protected virtual void setActivity(android.app.Activity arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityTestCase._setActivity12125.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityTestCase._setActivity12125 = @__env.GetMethodIDNoThrow(global::android.test.ActivityTestCase.staticClass, "setActivity", "(Landroid/app/Activity;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._setActivity12125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityTestCase.staticClass, "setActivity", "(Landroid/app/Activity;)V", ref global::android.test.ActivityTestCase._setActivity12125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _scrubClass12126;
 		protected virtual void scrubClass(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ActivityTestCase._scrubClass12126.native == global::System.IntPtr.Zero)
-				global::android.test.ActivityTestCase._scrubClass12126 = @__env.GetMethodIDNoThrow(global::android.test.ActivityTestCase.staticClass, "scrubClass", "(Ljava/lang/Class;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._scrubClass12126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ActivityTestCase.staticClass, "scrubClass", "(Ljava/lang/Class;)V", ref global::android.test.ActivityTestCase._scrubClass12126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ActivityTestCase12127;
 		public ActivityTestCase() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

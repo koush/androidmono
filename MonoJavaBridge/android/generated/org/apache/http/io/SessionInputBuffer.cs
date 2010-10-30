@@ -22,58 +22,37 @@ namespace org.apache.http.io
 		internal static global::MonoJavaBridge.MethodId _readLine33471;
 		int org.apache.http.io.SessionInputBuffer.readLine(org.apache.http.util.CharArrayBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._readLine33471.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._readLine33471 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "readLine", "(Lorg/apache/http/util/CharArrayBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._readLine33471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "readLine", "(Lorg/apache/http/util/CharArrayBuffer;)I", ref global::org.apache.http.io.SessionInputBuffer_._readLine33471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine33472;
 		global::java.lang.String org.apache.http.io.SessionInputBuffer.readLine()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._readLine33472.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._readLine33472 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "readLine", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._readLine33472)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "readLine", "()Ljava/lang/String;", ref global::org.apache.http.io.SessionInputBuffer_._readLine33472) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _read33473;
 		int org.apache.http.io.SessionInputBuffer.read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._read33473.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._read33473 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "([BII)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._read33473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "([BII)I", ref global::org.apache.http.io.SessionInputBuffer_._read33473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read33474;
 		int org.apache.http.io.SessionInputBuffer.read(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._read33474.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._read33474 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "([B)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._read33474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "([B)I", ref global::org.apache.http.io.SessionInputBuffer_._read33474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read33475;
 		int org.apache.http.io.SessionInputBuffer.read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._read33475.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._read33475 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._read33475);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "read", "()I", ref global::org.apache.http.io.SessionInputBuffer_._read33475);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics33476;
 		global::org.apache.http.io.HttpTransportMetrics org.apache.http.io.SessionInputBuffer.getMetrics()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._getMetrics33476.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._getMetrics33476 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.io.HttpTransportMetrics>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._getMetrics33476)) as org.apache.http.io.HttpTransportMetrics;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.io.HttpTransportMetrics>(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;", ref global::org.apache.http.io.SessionInputBuffer_._getMetrics33476) as org.apache.http.io.HttpTransportMetrics;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDataAvailable33477;
 		bool org.apache.http.io.SessionInputBuffer.isDataAvailable(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.SessionInputBuffer_.staticClass, "isDataAvailable", "(I)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.io.SessionInputBuffer_.staticClass, "isDataAvailable", "(I)Z", ref global::org.apache.http.io.SessionInputBuffer_._isDataAvailable33477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SessionInputBuffer_()
 		{

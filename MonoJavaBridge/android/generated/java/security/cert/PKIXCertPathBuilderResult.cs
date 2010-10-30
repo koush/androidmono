@@ -10,10 +10,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString23631;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathBuilderResult._toString23631.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathBuilderResult._toString23631 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._toString23631) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.cert.PKIXCertPathBuilderResult._toString23631) as java.lang.String;
 		}
 		public new global::java.security.cert.CertPath CertPath
 		{
@@ -25,10 +22,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCertPath23632;
 		public virtual global::java.security.cert.CertPath getCertPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23632.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23632 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23632) as java.security.cert.CertPath;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;", ref global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23632) as java.security.cert.CertPath;
 		}
 		internal static global::MonoJavaBridge.MethodId _PKIXCertPathBuilderResult23633;
 		public PKIXCertPathBuilderResult(java.security.cert.CertPath arg0, java.security.cert.TrustAnchor arg1, java.security.cert.PolicyNode arg2, java.security.PublicKey arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

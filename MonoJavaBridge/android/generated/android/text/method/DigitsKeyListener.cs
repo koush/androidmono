@@ -41,10 +41,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _filter13285;
 		public override global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DigitsKeyListener._filter13285.native == global::System.IntPtr.Zero)
-				global::android.text.method.DigitsKeyListener._filter13285 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.method.DigitsKeyListener.staticClass, global::android.text.method.DigitsKeyListener._filter13285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.method.DigitsKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;", ref global::android.text.method.DigitsKeyListener._filter13285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence filter(string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
@@ -60,10 +57,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13286;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DigitsKeyListener._getInputType13286.native == global::System.IntPtr.Zero)
-				global::android.text.method.DigitsKeyListener._getInputType13286 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "getInputType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DigitsKeyListener.staticClass, global::android.text.method.DigitsKeyListener._getInputType13286);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DigitsKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.DigitsKeyListener._getInputType13286);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -75,10 +69,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13287;
 		protected override char[] getAcceptedChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DigitsKeyListener._getAcceptedChars13287.native == global::System.IntPtr.Zero)
-				global::android.text.method.DigitsKeyListener._getAcceptedChars13287 = @__env.GetMethodIDNoThrow(global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DigitsKeyListener.staticClass, global::android.text.method.DigitsKeyListener._getAcceptedChars13287) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.DigitsKeyListener._getAcceptedChars13287) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DigitsKeyListener13288;
 		public DigitsKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

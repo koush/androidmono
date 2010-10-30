@@ -18,26 +18,17 @@ namespace org.apache.http.conn
 		internal static global::MonoJavaBridge.MethodId _eofDetected32107;
 		bool org.apache.http.conn.EofSensorWatcher.eofDetected(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "eofDetected", "(Ljava/io/InputStream;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "eofDetected", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamClosed32108;
 		bool org.apache.http.conn.EofSensorWatcher.streamClosed(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamClosed", "(Ljava/io/InputStream;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamClosed", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamAbort32109;
 		bool org.apache.http.conn.EofSensorWatcher.streamAbort(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static EofSensorWatcher_()
 		{

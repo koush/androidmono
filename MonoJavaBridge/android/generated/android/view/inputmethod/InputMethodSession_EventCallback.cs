@@ -16,10 +16,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _finishedEvent15978;
 		void android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent15978.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent15978 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_EventCallback_.staticClass, "finishedEvent", "(IZ)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent15978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethodSession_EventCallback_.staticClass, "finishedEvent", "(IZ)V", ref global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent15978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static InputMethodSession_EventCallback_()
 		{

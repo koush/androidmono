@@ -12,10 +12,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13465;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ClickableSpan._updateDrawState13465.native == global::System.IntPtr.Zero)
-				global::android.text.style.ClickableSpan._updateDrawState13465 = @__env.GetMethodIDNoThrow(global::android.text.style.ClickableSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._updateDrawState13465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ClickableSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.ClickableSpan._updateDrawState13465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ClickableSpan13466;
 		public ClickableSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -46,10 +43,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _onClick13467;
 		public override void onClick(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ClickableSpan_._onClick13467.native == global::System.IntPtr.Zero)
-				global::android.text.style.ClickableSpan_._onClick13467 = @__env.GetMethodIDNoThrow(global::android.text.style.ClickableSpan_.staticClass, "onClick", "(Landroid/view/View;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan_._onClick13467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ClickableSpan_.staticClass, "onClick", "(Landroid/view/View;)V", ref global::android.text.style.ClickableSpan_._onClick13467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ClickableSpan_()
 		{

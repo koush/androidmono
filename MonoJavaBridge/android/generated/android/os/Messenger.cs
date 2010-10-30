@@ -10,42 +10,27 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _equals9966;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._equals9966.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._equals9966 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals9966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.os.Messenger._equals9966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode9967;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._hashCode9967.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._hashCode9967 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode9967);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Messenger.staticClass, "hashCode", "()I", ref global::android.os.Messenger._hashCode9967);
 		}
 		internal static global::MonoJavaBridge.MethodId _send9968;
 		public void send(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._send9968.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._send9968 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "send", "(Landroid/os/Message;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._send9968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Messenger.staticClass, "send", "(Landroid/os/Message;)V", ref global::android.os.Messenger._send9968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel9969;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._writeToParcel9969.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._writeToParcel9969 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._writeToParcel9969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Messenger.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.Messenger._writeToParcel9969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents9970;
 		public int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._describeContents9970.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._describeContents9970 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "describeContents", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._describeContents9970);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Messenger.staticClass, "describeContents", "()I", ref global::android.os.Messenger._describeContents9970);
 		}
 		public new global::android.os.IBinder Binder
 		{
@@ -57,10 +42,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getBinder9971;
 		public global::android.os.IBinder getBinder()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Messenger._getBinder9971.native == global::System.IntPtr.Zero)
-				global::android.os.Messenger._getBinder9971 = @__env.GetMethodIDNoThrow(global::android.os.Messenger.staticClass, "getBinder", "()Landroid/os/IBinder;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._getBinder9971)) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.os.Messenger.staticClass, "getBinder", "()Landroid/os/IBinder;", ref global::android.os.Messenger._getBinder9971) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeMessengerOrNullToParcel9972;
 		public static void writeMessengerOrNullToParcel(android.os.Messenger arg0, android.os.Parcel arg1)

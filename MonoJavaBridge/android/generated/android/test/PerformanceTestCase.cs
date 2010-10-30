@@ -17,18 +17,12 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _startPerformance12272;
 		int android.test.PerformanceTestCase.startPerformance(android.test.PerformanceTestCase_Intermediates arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_._startPerformance12272.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_._startPerformance12272 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "startPerformance", "(Landroid/test/PerformanceTestCase$Intermediates;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.PerformanceTestCase_.staticClass, "startPerformance", "(Landroid/test/PerformanceTestCase$Intermediates;)I", ref global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isPerformanceOnly12273;
 		bool android.test.PerformanceTestCase.isPerformanceOnly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.PerformanceTestCase_._isPerformanceOnly12273.native == global::System.IntPtr.Zero)
-				global::android.test.PerformanceTestCase_._isPerformanceOnly12273 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "isPerformanceOnly", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.PerformanceTestCase_.staticClass, "isPerformanceOnly", "()Z", ref global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
 		}
 		static PerformanceTestCase_()
 		{

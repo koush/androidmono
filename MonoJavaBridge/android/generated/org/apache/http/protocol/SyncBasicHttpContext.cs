@@ -10,26 +10,17 @@ namespace org.apache.http.protocol
 		internal static global::MonoJavaBridge.MethodId _getAttribute33956;
 		public override global::java.lang.Object getAttribute(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.SyncBasicHttpContext._getAttribute33956.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.SyncBasicHttpContext._getAttribute33956 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, global::org.apache.http.protocol.SyncBasicHttpContext._getAttribute33956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.apache.http.protocol.SyncBasicHttpContext._getAttribute33956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAttribute33957;
 		public override global::java.lang.Object removeAttribute(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.SyncBasicHttpContext._removeAttribute33957.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.SyncBasicHttpContext._removeAttribute33957 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "removeAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, global::org.apache.http.protocol.SyncBasicHttpContext._removeAttribute33957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "removeAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.apache.http.protocol.SyncBasicHttpContext._removeAttribute33957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute33958;
 		public override void setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.SyncBasicHttpContext._setAttribute33958.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.SyncBasicHttpContext._setAttribute33958 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, global::org.apache.http.protocol.SyncBasicHttpContext._setAttribute33958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.SyncBasicHttpContext.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::org.apache.http.protocol.SyncBasicHttpContext._setAttribute33958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncBasicHttpContext33959;
 		public SyncBasicHttpContext(org.apache.http.protocol.HttpContext arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

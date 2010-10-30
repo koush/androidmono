@@ -10,18 +10,12 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _equals19725;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._equals19725.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._equals19725 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._equals19725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Boolean.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.Boolean._equals19725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19726;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._toString19726.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._toString19726 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._toString19726)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Boolean.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.Boolean._toString19726) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19727;
 		public static global::java.lang.String toString(bool arg0)
@@ -34,26 +28,17 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _hashCode19728;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._hashCode19728.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._hashCode19728 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._hashCode19728);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Boolean.staticClass, "hashCode", "()I", ref global::java.lang.Boolean._hashCode19728);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19729;
 		public int compareTo(java.lang.Boolean arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._compareTo19729.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._compareTo19729 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "compareTo", "(Ljava/lang/Boolean;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._compareTo19729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Boolean.staticClass, "compareTo", "(Ljava/lang/Boolean;)I", ref global::java.lang.Boolean._compareTo19729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19730;
 		public int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._compareTo19730.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._compareTo19730 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._compareTo19730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Boolean.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.lang.Boolean._compareTo19730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean19731;
 		public static bool getBoolean(java.lang.String arg0)
@@ -82,10 +67,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _booleanValue19734;
 		public bool booleanValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Boolean._booleanValue19734.native == global::System.IntPtr.Zero)
-				global::java.lang.Boolean._booleanValue19734 = @__env.GetMethodIDNoThrow(global::java.lang.Boolean.staticClass, "booleanValue", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Boolean.staticClass, global::java.lang.Boolean._booleanValue19734);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Boolean.staticClass, "booleanValue", "()Z", ref global::java.lang.Boolean._booleanValue19734);
 		}
 		internal static global::MonoJavaBridge.MethodId _parseBoolean19735;
 		public static bool parseBoolean(java.lang.String arg0)

@@ -10,18 +10,12 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _equals24012;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._equals24012.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._equals24012 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._equals24012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.spec.EllipticCurve.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.spec.EllipticCurve._equals24012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode24013;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._hashCode24013.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._hashCode24013 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._hashCode24013);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.EllipticCurve.staticClass, "hashCode", "()I", ref global::java.security.spec.EllipticCurve._hashCode24013);
 		}
 		public new global::java.security.spec.ECField Field
 		{
@@ -33,10 +27,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getField24014;
 		public virtual global::java.security.spec.ECField getField()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._getField24014.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._getField24014 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "getField", "()Ljava/security/spec/ECField;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.ECField>(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._getField24014) as java.security.spec.ECField;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.ECField>(this, global::java.security.spec.EllipticCurve.staticClass, "getField", "()Ljava/security/spec/ECField;", ref global::java.security.spec.EllipticCurve._getField24014) as java.security.spec.ECField;
 		}
 		public new byte[] Seed
 		{
@@ -48,10 +39,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getSeed24015;
 		public virtual byte[] getSeed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._getSeed24015.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._getSeed24015 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "getSeed", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._getSeed24015) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.EllipticCurve.staticClass, "getSeed", "()[B", ref global::java.security.spec.EllipticCurve._getSeed24015) as byte[];
 		}
 		public new global::java.math.BigInteger A
 		{
@@ -63,10 +51,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getA24016;
 		public virtual global::java.math.BigInteger getA()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._getA24016.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._getA24016 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "getA", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._getA24016) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.EllipticCurve.staticClass, "getA", "()Ljava/math/BigInteger;", ref global::java.security.spec.EllipticCurve._getA24016) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger B
 		{
@@ -78,10 +63,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getB24017;
 		public virtual global::java.math.BigInteger getB()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.EllipticCurve._getB24017.native == global::System.IntPtr.Zero)
-				global::java.security.spec.EllipticCurve._getB24017 = @__env.GetMethodIDNoThrow(global::java.security.spec.EllipticCurve.staticClass, "getB", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.EllipticCurve.staticClass, global::java.security.spec.EllipticCurve._getB24017) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.EllipticCurve.staticClass, "getB", "()Ljava/math/BigInteger;", ref global::java.security.spec.EllipticCurve._getB24017) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _EllipticCurve24018;
 		public EllipticCurve(java.security.spec.ECField arg0, java.math.BigInteger arg1, java.math.BigInteger arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

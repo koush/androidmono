@@ -48,50 +48,32 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _destroy20410;
 		public override void destroy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._destroy20410.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._destroy20410 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "destroy", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Process_._destroy20410);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Process_.staticClass, "destroy", "()V", ref global::java.lang.Process_._destroy20410);
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream20411;
 		public override global::java.io.InputStream getInputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._getInputStream20411.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._getInputStream20411 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "getInputStream", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getInputStream20411)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Process_.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::java.lang.Process_._getInputStream20411) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream20412;
 		public override global::java.io.OutputStream getOutputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._getOutputStream20412.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._getOutputStream20412 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "getOutputStream", "()Ljava/io/OutputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getOutputStream20412)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Process_.staticClass, "getOutputStream", "()Ljava/io/OutputStream;", ref global::java.lang.Process_._getOutputStream20412) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorStream20413;
 		public override global::java.io.InputStream getErrorStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._getErrorStream20413.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._getErrorStream20413 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "getErrorStream", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getErrorStream20413)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Process_.staticClass, "getErrorStream", "()Ljava/io/InputStream;", ref global::java.lang.Process_._getErrorStream20413) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _waitFor20414;
 		public override int waitFor()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._waitFor20414.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._waitFor20414 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "waitFor", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._waitFor20414);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Process_.staticClass, "waitFor", "()I", ref global::java.lang.Process_._waitFor20414);
 		}
 		internal static global::MonoJavaBridge.MethodId _exitValue20415;
 		public override int exitValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Process_._exitValue20415.native == global::System.IntPtr.Zero)
-				global::java.lang.Process_._exitValue20415 = @__env.GetMethodIDNoThrow(global::java.lang.Process_.staticClass, "exitValue", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._exitValue20415);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Process_.staticClass, "exitValue", "()I", ref global::java.lang.Process_._exitValue20415);
 		}
 		static Process_()
 		{

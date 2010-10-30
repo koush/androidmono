@@ -10,10 +10,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getListener26173;
 		public virtual global::java.util.EventListener getListener()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.EventListenerProxy._getListener26173.native == global::System.IntPtr.Zero)
-				global::java.util.EventListenerProxy._getListener26173 = @__env.GetMethodIDNoThrow(global::java.util.EventListenerProxy.staticClass, "getListener", "()Ljava/util/EventListener;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.EventListener>(this, global::java.util.EventListenerProxy.staticClass, global::java.util.EventListenerProxy._getListener26173) as java.util.EventListener;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.EventListener>(this, global::java.util.EventListenerProxy.staticClass, "getListener", "()Ljava/util/EventListener;", ref global::java.util.EventListenerProxy._getListener26173) as java.util.EventListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventListenerProxy26174;
 		public EventListenerProxy(java.util.EventListener arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

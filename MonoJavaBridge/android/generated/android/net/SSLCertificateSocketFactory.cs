@@ -42,50 +42,32 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _createSocket7757;
 		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7757.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7757 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket7758;
 		public override global::java.net.Socket createSocket()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7758.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7758 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "()Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7758) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "()Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7758) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket7759;
 		public override global::java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7759.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7759 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket7760;
 		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7760.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7760 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket7761;
 		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7761.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7761 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket7762;
 		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._createSocket7762.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._createSocket7762 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket7762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.SSLCertificateSocketFactory.staticClass, "createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;", ref global::android.net.SSLCertificateSocketFactory._createSocket7762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
 		public new global::java.lang.String[] DefaultCipherSuites
 		{
@@ -97,10 +79,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getDefaultCipherSuites7763;
 		public override global::java.lang.String[] getDefaultCipherSuites()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites7763.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites7763 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "getDefaultCipherSuites", "()[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites7763) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.net.SSLCertificateSocketFactory.staticClass, "getDefaultCipherSuites", "()[Ljava/lang/String;", ref global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites7763) as java.lang.String[];
 		}
 		public new global::java.lang.String[] SupportedCipherSuites
 		{
@@ -112,10 +91,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites7764;
 		public override global::java.lang.String[] getSupportedCipherSuites()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites7764.native == global::System.IntPtr.Zero)
-				global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites7764 = @__env.GetMethodIDNoThrow(global::android.net.SSLCertificateSocketFactory.staticClass, "getSupportedCipherSuites", "()[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites7764) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.net.SSLCertificateSocketFactory.staticClass, "getSupportedCipherSuites", "()[Ljava/lang/String;", ref global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites7764) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLCertificateSocketFactory7765;
 		public SSLCertificateSocketFactory(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

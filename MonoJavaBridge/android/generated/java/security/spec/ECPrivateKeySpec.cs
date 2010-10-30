@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getParams24006;
 		public virtual global::java.security.spec.ECParameterSpec getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.ECPrivateKeySpec._getParams24006.native == global::System.IntPtr.Zero)
-				global::java.security.spec.ECPrivateKeySpec._getParams24006 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPrivateKeySpec.staticClass, "getParams", "()Ljava/security/spec/ECParameterSpec;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPrivateKeySpec.staticClass, global::java.security.spec.ECPrivateKeySpec._getParams24006) as java.security.spec.ECParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPrivateKeySpec.staticClass, "getParams", "()Ljava/security/spec/ECParameterSpec;", ref global::java.security.spec.ECPrivateKeySpec._getParams24006) as java.security.spec.ECParameterSpec;
 		}
 		public new global::java.math.BigInteger S
 		{
@@ -32,10 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getS24007;
 		public virtual global::java.math.BigInteger getS()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.ECPrivateKeySpec._getS24007.native == global::System.IntPtr.Zero)
-				global::java.security.spec.ECPrivateKeySpec._getS24007 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPrivateKeySpec.staticClass, "getS", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPrivateKeySpec.staticClass, global::java.security.spec.ECPrivateKeySpec._getS24007) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPrivateKeySpec.staticClass, "getS", "()Ljava/math/BigInteger;", ref global::java.security.spec.ECPrivateKeySpec._getS24007) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECPrivateKeySpec24008;
 		public ECPrivateKeySpec(java.math.BigInteger arg0, java.security.spec.ECParameterSpec arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

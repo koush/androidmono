@@ -17,18 +17,12 @@ namespace org.apache.http.client.methods
 		internal static global::MonoJavaBridge.MethodId _getMethod31930;
 		public override global::java.lang.String getMethod()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpOptions._getMethod31930.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpOptions._getMethod31930 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpOptions.staticClass, "getMethod", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpOptions.staticClass, global::org.apache.http.client.methods.HttpOptions._getMethod31930) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpOptions.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpOptions._getMethod31930) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllowedMethods31931;
 		public virtual global::java.util.Set getAllowedMethods(org.apache.http.HttpResponse arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpOptions._getAllowedMethods31931.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpOptions._getAllowedMethods31931 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpOptions.staticClass, "getAllowedMethods", "(Lorg/apache/http/HttpResponse;)Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::org.apache.http.client.methods.HttpOptions.staticClass, global::org.apache.http.client.methods.HttpOptions._getAllowedMethods31931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::org.apache.http.client.methods.HttpOptions.staticClass, "getAllowedMethods", "(Lorg/apache/http/HttpResponse;)Ljava/util/Set;", ref global::org.apache.http.client.methods.HttpOptions._getAllowedMethods31931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpOptions31932;
 		public HttpOptions() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

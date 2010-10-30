@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getModulus24071;
 		public virtual global::java.math.BigInteger getModulus()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.RSAPrivateKeySpec._getModulus24071.native == global::System.IntPtr.Zero)
-				global::java.security.spec.RSAPrivateKeySpec._getModulus24071 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateKeySpec.staticClass, "getModulus", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAPrivateKeySpec.staticClass, global::java.security.spec.RSAPrivateKeySpec._getModulus24071) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAPrivateKeySpec.staticClass, "getModulus", "()Ljava/math/BigInteger;", ref global::java.security.spec.RSAPrivateKeySpec._getModulus24071) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger PrivateExponent
 		{
@@ -32,10 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getPrivateExponent24072;
 		public virtual global::java.math.BigInteger getPrivateExponent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.RSAPrivateKeySpec._getPrivateExponent24072.native == global::System.IntPtr.Zero)
-				global::java.security.spec.RSAPrivateKeySpec._getPrivateExponent24072 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPrivateKeySpec.staticClass, "getPrivateExponent", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAPrivateKeySpec.staticClass, global::java.security.spec.RSAPrivateKeySpec._getPrivateExponent24072) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAPrivateKeySpec.staticClass, "getPrivateExponent", "()Ljava/math/BigInteger;", ref global::java.security.spec.RSAPrivateKeySpec._getPrivateExponent24072) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAPrivateKeySpec24073;
 		public RSAPrivateKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

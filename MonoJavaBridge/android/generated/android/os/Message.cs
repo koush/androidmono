@@ -10,10 +10,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _toString9934;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._toString9934.native == global::System.IntPtr.Zero)
-				global::android.os.Message._toString9934 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._toString9934)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.os.Message.staticClass, "toString", "()Ljava/lang/String;", ref global::android.os.Message._toString9934) as java.lang.String;
 		}
 		public new global::android.os.Bundle Data
 		{
@@ -29,10 +26,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getData9935;
 		public global::android.os.Bundle getData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._getData9935.native == global::System.IntPtr.Zero)
-				global::android.os.Message._getData9935 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "getData", "()Landroid/os/Bundle;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getData9935)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.os.Message.staticClass, "getData", "()Landroid/os/Bundle;", ref global::android.os.Message._getData9935) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9936;
 		public static global::android.os.Message obtain(android.os.Handler arg0, java.lang.Runnable arg1)
@@ -105,34 +99,22 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _recycle9944;
 		public void recycle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._recycle9944.native == global::System.IntPtr.Zero)
-				global::android.os.Message._recycle9944 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "recycle", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._recycle9944);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "recycle", "()V", ref global::android.os.Message._recycle9944);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel9945;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._writeToParcel9945.native == global::System.IntPtr.Zero)
-				global::android.os.Message._writeToParcel9945 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._writeToParcel9945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.Message._writeToParcel9945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents9946;
 		public int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._describeContents9946.native == global::System.IntPtr.Zero)
-				global::android.os.Message._describeContents9946 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "describeContents", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._describeContents9946);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Message.staticClass, "describeContents", "()I", ref global::android.os.Message._describeContents9946);
 		}
 		internal static global::MonoJavaBridge.MethodId _setData9947;
 		public void setData(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._setData9947.native == global::System.IntPtr.Zero)
-				global::android.os.Message._setData9947 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "setData", "(Landroid/os/Bundle;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._setData9947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "setData", "(Landroid/os/Bundle;)V", ref global::android.os.Message._setData9947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.RunnableDelegate Callback
 		{
@@ -144,18 +126,12 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getCallback9948;
 		public global::java.lang.Runnable getCallback()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._getCallback9948.native == global::System.IntPtr.Zero)
-				global::android.os.Message._getCallback9948 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "getCallback", "()Ljava/lang/Runnable;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Runnable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getCallback9948)) as java.lang.Runnable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Runnable>(this, global::android.os.Message.staticClass, "getCallback", "()Ljava/lang/Runnable;", ref global::android.os.Message._getCallback9948) as java.lang.Runnable;
 		}
 		internal static global::MonoJavaBridge.MethodId _copyFrom9949;
 		public void copyFrom(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._copyFrom9949.native == global::System.IntPtr.Zero)
-				global::android.os.Message._copyFrom9949 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "copyFrom", "(Landroid/os/Message;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._copyFrom9949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "copyFrom", "(Landroid/os/Message;)V", ref global::android.os.Message._copyFrom9949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long When
 		{
@@ -167,18 +143,12 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getWhen9950;
 		public long getWhen()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._getWhen9950.native == global::System.IntPtr.Zero)
-				global::android.os.Message._getWhen9950 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "getWhen", "()J");
-			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getWhen9950);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.os.Message.staticClass, "getWhen", "()J", ref global::android.os.Message._getWhen9950);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTarget9951;
 		public void setTarget(android.os.Handler arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._setTarget9951.native == global::System.IntPtr.Zero)
-				global::android.os.Message._setTarget9951 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "setTarget", "(Landroid/os/Handler;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._setTarget9951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "setTarget", "(Landroid/os/Handler;)V", ref global::android.os.Message._setTarget9951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.os.Handler Target
 		{
@@ -194,26 +164,17 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getTarget9952;
 		public global::android.os.Handler getTarget()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._getTarget9952.native == global::System.IntPtr.Zero)
-				global::android.os.Message._getTarget9952 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "getTarget", "()Landroid/os/Handler;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getTarget9952)) as android.os.Handler;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.Message.staticClass, "getTarget", "()Landroid/os/Handler;", ref global::android.os.Message._getTarget9952) as android.os.Handler;
 		}
 		internal static global::MonoJavaBridge.MethodId _peekData9953;
 		public global::android.os.Bundle peekData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._peekData9953.native == global::System.IntPtr.Zero)
-				global::android.os.Message._peekData9953 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "peekData", "()Landroid/os/Bundle;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._peekData9953)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.os.Message.staticClass, "peekData", "()Landroid/os/Bundle;", ref global::android.os.Message._peekData9953) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _sendToTarget9954;
 		public void sendToTarget()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.Message._sendToTarget9954.native == global::System.IntPtr.Zero)
-				global::android.os.Message._sendToTarget9954 = @__env.GetMethodIDNoThrow(global::android.os.Message.staticClass, "sendToTarget", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._sendToTarget9954);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Message.staticClass, "sendToTarget", "()V", ref global::android.os.Message._sendToTarget9954);
 		}
 		internal static global::MonoJavaBridge.MethodId _Message9955;
 		public Message() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

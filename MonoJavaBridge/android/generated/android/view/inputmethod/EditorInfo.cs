@@ -10,10 +10,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _dump15810;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.EditorInfo._dump15810.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.EditorInfo._dump15810 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._dump15810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.view.inputmethod.EditorInfo._dump15810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
@@ -22,18 +19,12 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15811;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.EditorInfo._writeToParcel15811.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.EditorInfo._writeToParcel15811 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._writeToParcel15811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.inputmethod.EditorInfo._writeToParcel15811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15812;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.EditorInfo._describeContents15812.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.EditorInfo._describeContents15812 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._describeContents15812);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I", ref global::android.view.inputmethod.EditorInfo._describeContents15812);
 		}
 		internal static global::MonoJavaBridge.MethodId _EditorInfo15813;
 		public EditorInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

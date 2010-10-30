@@ -10,50 +10,32 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _push28089;
 		public virtual void push()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._push28089.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._push28089 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "push", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._push28089);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, "push", "()V", ref global::java.util.logging.MemoryHandler._push28089);
 		}
 		internal static global::MonoJavaBridge.MethodId _flush28090;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._flush28090.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._flush28090 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "flush", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._flush28090);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, "flush", "()V", ref global::java.util.logging.MemoryHandler._flush28090);
 		}
 		internal static global::MonoJavaBridge.MethodId _close28091;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._close28091.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._close28091 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._close28091);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, "close", "()V", ref global::java.util.logging.MemoryHandler._close28091);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLoggable28092;
 		public override bool isLoggable(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._isLoggable28092.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._isLoggable28092 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._isLoggable28092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.logging.MemoryHandler.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z", ref global::java.util.logging.MemoryHandler._isLoggable28092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _publish28093;
 		public override void publish(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._publish28093.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._publish28093 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._publish28093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V", ref global::java.util.logging.MemoryHandler._publish28093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPushLevel28094;
 		public virtual void setPushLevel(java.util.logging.Level arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._setPushLevel28094.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._setPushLevel28094 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "setPushLevel", "(Ljava/util/logging/Level;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._setPushLevel28094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.MemoryHandler.staticClass, "setPushLevel", "(Ljava/util/logging/Level;)V", ref global::java.util.logging.MemoryHandler._setPushLevel28094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.logging.Level PushLevel
 		{
@@ -69,10 +51,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getPushLevel28095;
 		public virtual global::java.util.logging.Level getPushLevel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.MemoryHandler._getPushLevel28095.native == global::System.IntPtr.Zero)
-				global::java.util.logging.MemoryHandler._getPushLevel28095 = @__env.GetMethodIDNoThrow(global::java.util.logging.MemoryHandler.staticClass, "getPushLevel", "()Ljava/util/logging/Level;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._getPushLevel28095) as java.util.logging.Level;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.logging.MemoryHandler.staticClass, "getPushLevel", "()Ljava/util/logging/Level;", ref global::java.util.logging.MemoryHandler._getPushLevel28095) as java.util.logging.Level;
 		}
 		internal static global::MonoJavaBridge.MethodId _MemoryHandler28096;
 		public MemoryHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

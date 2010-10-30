@@ -10,18 +10,12 @@ namespace android.accessibilityservice
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1246;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel1246.native == global::System.IntPtr.Zero)
-				global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel1246 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel1246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel1246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents1247;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accessibilityservice.AccessibilityServiceInfo._describeContents1247.native == global::System.IntPtr.Zero)
-				global::android.accessibilityservice.AccessibilityServiceInfo._describeContents1247 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents1247);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "describeContents", "()I", ref global::android.accessibilityservice.AccessibilityServiceInfo._describeContents1247);
 		}
 		internal static global::MonoJavaBridge.MethodId _AccessibilityServiceInfo1248;
 		public AccessibilityServiceInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

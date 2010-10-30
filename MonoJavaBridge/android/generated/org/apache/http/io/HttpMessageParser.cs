@@ -16,10 +16,7 @@ namespace org.apache.http.io
 		internal static global::MonoJavaBridge.MethodId _parse33467;
 		global::org.apache.http.HttpMessage org.apache.http.io.HttpMessageParser.parse()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.HttpMessageParser_._parse33467.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.HttpMessageParser_._parse33467 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageParser_.staticClass, "parse", "()Lorg/apache/http/HttpMessage;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageParser_._parse33467)) as org.apache.http.HttpMessage;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.io.HttpMessageParser_.staticClass, "parse", "()Lorg/apache/http/HttpMessage;", ref global::org.apache.http.io.HttpMessageParser_._parse33467) as org.apache.http.HttpMessage;
 		}
 		static HttpMessageParser_()
 		{

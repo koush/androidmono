@@ -113,26 +113,17 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _release13404;
 		public virtual void release()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._release13404.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._release13404 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "release", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._release13404);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, "release", "()V", ref global::android.text.method.TextKeyListener._release13404);
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown13405;
 		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onKeyDown13405.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onKeyDown13405 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onKeyDown13405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.TextKeyListener._onKeyDown13405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp13406;
 		public override bool onKeyUp(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onKeyUp13406.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onKeyUp13406 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onKeyUp13406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, "onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.TextKeyListener._onKeyUp13406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new int InputType
 		{
@@ -144,42 +135,27 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13407;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._getInputType13407.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._getInputType13407 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "getInputType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._getInputType13407);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.TextKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.TextKeyListener._getInputType13407);
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyOther13408;
 		public override bool onKeyOther(android.view.View arg0, android.text.Editable arg1, android.view.KeyEvent arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onKeyOther13408.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onKeyOther13408 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onKeyOther13408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.TextKeyListener.staticClass, "onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z", ref global::android.text.method.TextKeyListener._onKeyOther13408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSpanAdded13409;
 		public virtual void onSpanAdded(android.text.Spannable arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onSpanAdded13409.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onSpanAdded13409 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onSpanAdded", "(Landroid/text/Spannable;Ljava/lang/Object;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onSpanAdded13409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, "onSpanAdded", "(Landroid/text/Spannable;Ljava/lang/Object;II)V", ref global::android.text.method.TextKeyListener._onSpanAdded13409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSpanRemoved13410;
 		public virtual void onSpanRemoved(android.text.Spannable arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onSpanRemoved13410.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onSpanRemoved13410 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onSpanRemoved", "(Landroid/text/Spannable;Ljava/lang/Object;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onSpanRemoved13410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, "onSpanRemoved", "(Landroid/text/Spannable;Ljava/lang/Object;II)V", ref global::android.text.method.TextKeyListener._onSpanRemoved13410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSpanChanged13411;
 		public virtual void onSpanChanged(android.text.Spannable arg0, java.lang.Object arg1, int arg2, int arg3, int arg4, int arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.TextKeyListener._onSpanChanged13411.native == global::System.IntPtr.Zero)
-				global::android.text.method.TextKeyListener._onSpanChanged13411 = @__env.GetMethodIDNoThrow(global::android.text.method.TextKeyListener.staticClass, "onSpanChanged", "(Landroid/text/Spannable;Ljava/lang/Object;IIII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, global::android.text.method.TextKeyListener._onSpanChanged13411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.TextKeyListener.staticClass, "onSpanChanged", "(Landroid/text/Spannable;Ljava/lang/Object;IIII)V", ref global::android.text.method.TextKeyListener._onSpanChanged13411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _shouldCap13412;
 		public static bool shouldCap(android.text.method.TextKeyListener.Capitalize arg0, java.lang.CharSequence arg1, int arg2)

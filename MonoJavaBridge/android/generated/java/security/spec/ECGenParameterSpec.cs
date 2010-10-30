@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getName23993;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.ECGenParameterSpec._getName23993.native == global::System.IntPtr.Zero)
-				global::java.security.spec.ECGenParameterSpec._getName23993 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECGenParameterSpec.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.ECGenParameterSpec.staticClass, global::java.security.spec.ECGenParameterSpec._getName23993) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.ECGenParameterSpec.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.spec.ECGenParameterSpec._getName23993) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECGenParameterSpec23994;
 		public ECGenParameterSpec(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

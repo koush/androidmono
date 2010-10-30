@@ -10,10 +10,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getUserToken32927;
 		public virtual global::java.lang.Object getUserToken(org.apache.http.protocol.HttpContext arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.DefaultUserTokenHandler._getUserToken32927.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.DefaultUserTokenHandler._getUserToken32927 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultUserTokenHandler.staticClass, "getUserToken", "(Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.client.DefaultUserTokenHandler.staticClass, global::org.apache.http.impl.client.DefaultUserTokenHandler._getUserToken32927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.client.DefaultUserTokenHandler.staticClass, "getUserToken", "(Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;", ref global::org.apache.http.impl.client.DefaultUserTokenHandler._getUserToken32927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultUserTokenHandler32928;
 		public DefaultUserTokenHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -42,26 +42,17 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _engineInit30136;
 		protected override void engineInit(java.security.KeyStore arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljava/security/KeyStore;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljava/security/KeyStore;)V", ref global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit30137;
 		protected override void engineInit(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30137.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30137 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljavax/net/ssl/ManagerFactoryParameters;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineInit", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", ref global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetTrustManagers30138;
 		protected override global::javax.net.ssl.TrustManager[] engineGetTrustManagers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineGetTrustManagers", "()[Ljavax/net/ssl/TrustManager;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.net.ssl.TrustManager>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138)) as javax.net.ssl.TrustManager[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.net.ssl.TrustManager>(this, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, "engineGetTrustManagers", "()[Ljavax/net/ssl/TrustManager;", ref global::javax.net.ssl.TrustManagerFactorySpi_._engineGetTrustManagers30138) as javax.net.ssl.TrustManager[];
 		}
 		static TrustManagerFactorySpi_()
 		{

@@ -10,10 +10,7 @@ namespace org.apache.http.impl.cookie
 		internal static global::MonoJavaBridge.MethodId _newInstance33284;
 		public virtual global::org.apache.http.cookie.CookieSpec newInstance(org.apache.http.@params.HttpParams arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._newInstance33284.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._newInstance33284 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieSpec>(this, global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._newInstance33284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieSpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieSpec>(this, global::org.apache.http.impl.cookie.BrowserCompatSpecFactory.staticClass, "newInstance", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;", ref global::org.apache.http.impl.cookie.BrowserCompatSpecFactory._newInstance33284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _BrowserCompatSpecFactory33285;
 		public BrowserCompatSpecFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

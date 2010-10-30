@@ -10,58 +10,37 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _equals5619;
 		public virtual bool equals(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._equals5619.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._equals5619 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "equals", "(II)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals5619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Point.staticClass, "equals", "(II)Z", ref global::android.graphics.Point._equals5619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals5620;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._equals5620.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._equals5620 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals5620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Point.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.graphics.Point._equals5620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString5621;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._toString5621.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._toString5621 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._toString5621) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.graphics.Point.staticClass, "toString", "()Ljava/lang/String;", ref global::android.graphics.Point._toString5621) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode5622;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._hashCode5622.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._hashCode5622 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._hashCode5622);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Point.staticClass, "hashCode", "()I", ref global::android.graphics.Point._hashCode5622);
 		}
 		internal static global::MonoJavaBridge.MethodId _offset5623;
 		public virtual void offset(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._offset5623.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._offset5623 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "offset", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._offset5623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, "offset", "(II)V", ref global::android.graphics.Point._offset5623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _set5624;
 		public virtual void set(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._set5624.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._set5624 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "set", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._set5624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, "set", "(II)V", ref global::android.graphics.Point._set5624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _negate5625;
 		public virtual void negate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Point._negate5625.native == global::System.IntPtr.Zero)
-				global::android.graphics.Point._negate5625 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "negate", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._negate5625);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Point.staticClass, "negate", "()V", ref global::android.graphics.Point._negate5625);
 		}
 		internal static global::MonoJavaBridge.MethodId _Point5626;
 		public Point(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

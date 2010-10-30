@@ -17,10 +17,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion33574;
 		public override global::org.apache.http.ProtocolVersion getProtocolVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpRequest._getProtocolVersion33574.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpRequest._getProtocolVersion33574 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._getProtocolVersion33574) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicHttpRequest._getProtocolVersion33574) as org.apache.http.ProtocolVersion;
 		}
 		public new global::org.apache.http.RequestLine RequestLine
 		{
@@ -32,10 +29,7 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getRequestLine33575;
 		public virtual global::org.apache.http.RequestLine getRequestLine()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpRequest._getRequestLine33575.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpRequest._getRequestLine33575 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "getRequestLine", "()Lorg/apache/http/RequestLine;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._getRequestLine33575) as org.apache.http.RequestLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getRequestLine", "()Lorg/apache/http/RequestLine;", ref global::org.apache.http.message.BasicHttpRequest._getRequestLine33575) as org.apache.http.RequestLine;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHttpRequest33576;
 		public BasicHttpRequest(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

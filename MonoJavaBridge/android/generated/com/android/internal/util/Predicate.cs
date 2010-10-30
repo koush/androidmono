@@ -16,10 +16,7 @@ namespace com.android.@internal.util
 		internal static global::MonoJavaBridge.MethodId _apply18336;
 		bool com.android.@internal.util.Predicate.apply(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::com.android.@internal.util.Predicate_._apply18336.native == global::System.IntPtr.Zero)
-				global::com.android.@internal.util.Predicate_._apply18336 = @__env.GetMethodIDNoThrow(global::com.android.@internal.util.Predicate_.staticClass, "apply", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::com.android.@internal.util.Predicate_.staticClass, "apply", "(Ljava/lang/Object;)Z", ref global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Predicate_()
 		{

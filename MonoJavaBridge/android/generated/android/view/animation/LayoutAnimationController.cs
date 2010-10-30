@@ -61,10 +61,7 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _start15715;
 		public virtual void start()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._start15715.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._start15715 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "start", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._start15715);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "start", "()V", ref global::android.view.animation.LayoutAnimationController._start15715);
 		}
 		public new global::android.view.animation.Animation Animation
 		{
@@ -80,26 +77,17 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _getAnimation15716;
 		public virtual global::android.view.animation.Animation getAnimation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getAnimation15716.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getAnimation15716 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimation", "()Landroid/view/animation/Animation;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimation15716) as android.view.animation.Animation;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getAnimation", "()Landroid/view/animation/Animation;", ref global::android.view.animation.LayoutAnimationController._getAnimation15716) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAnimation15717;
 		public virtual void setAnimation(android.content.Context arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setAnimation15717.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setAnimation15717 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/content/Context;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation15717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/content/Context;I)V", ref global::android.view.animation.LayoutAnimationController._setAnimation15717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAnimation15718;
 		public virtual void setAnimation(android.view.animation.Animation arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setAnimation15718.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setAnimation15718 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/view/animation/Animation;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation15718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.LayoutAnimationController._setAnimation15718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Order
 		{
@@ -115,34 +103,22 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _getOrder15719;
 		public virtual int getOrder()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getOrder15719.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getOrder15719 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getOrder", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getOrder15719);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getOrder", "()I", ref global::android.view.animation.LayoutAnimationController._getOrder15719);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone15720;
 		public virtual bool isDone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._isDone15720.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._isDone15720 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "isDone", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._isDone15720);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "isDone", "()Z", ref global::android.view.animation.LayoutAnimationController._isDone15720);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOrder15721;
 		public virtual void setOrder(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setOrder15721.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setOrder15721 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setOrder", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setOrder15721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setOrder", "(I)V", ref global::android.view.animation.LayoutAnimationController._setOrder15721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterpolator15722;
 		public virtual void setInterpolator(android.view.animation.Interpolator arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setInterpolator15722.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setInterpolator15722 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator15722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V", ref global::android.view.animation.LayoutAnimationController._setInterpolator15722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setInterpolator(global::android.view.animation.InterpolatorDelegate arg0)
 		{
@@ -151,10 +127,7 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _setInterpolator15723;
 		public virtual void setInterpolator(android.content.Context arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setInterpolator15723.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setInterpolator15723 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/content/Context;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator15723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/content/Context;I)V", ref global::android.view.animation.LayoutAnimationController._setInterpolator15723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.view.animation.InterpolatorDelegate Interpolator
 		{
@@ -170,10 +143,7 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _getInterpolator15724;
 		public virtual global::android.view.animation.Interpolator getInterpolator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getInterpolator15724.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getInterpolator15724 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.animation.Interpolator>(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getInterpolator15724) as android.view.animation.Interpolator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.animation.Interpolator>(this, global::android.view.animation.LayoutAnimationController.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;", ref global::android.view.animation.LayoutAnimationController._getInterpolator15724) as android.view.animation.Interpolator;
 		}
 		public new float Delay
 		{
@@ -189,50 +159,32 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _getDelay15725;
 		public virtual float getDelay()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getDelay15725.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getDelay15725 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getDelay", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelay15725);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getDelay", "()F", ref global::android.view.animation.LayoutAnimationController._getDelay15725);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDelay15726;
 		public virtual void setDelay(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._setDelay15726.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._setDelay15726 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setDelay", "(F)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setDelay15726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "setDelay", "(F)V", ref global::android.view.animation.LayoutAnimationController._setDelay15726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _willOverlap15727;
 		public virtual bool willOverlap()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._willOverlap15727.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._willOverlap15727 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "willOverlap", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._willOverlap15727);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "willOverlap", "()Z", ref global::android.view.animation.LayoutAnimationController._willOverlap15727);
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnimationForView15728;
 		public virtual global::android.view.animation.Animation getAnimationForView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getAnimationForView15728.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getAnimationForView15728 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimationForView", "(Landroid/view/View;)Landroid/view/animation/Animation;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimationForView15728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.view.animation.Animation;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getAnimationForView", "(Landroid/view/View;)Landroid/view/animation/Animation;", ref global::android.view.animation.LayoutAnimationController._getAnimationForView15728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDelayForView15729;
 		protected virtual long getDelayForView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getDelayForView15729.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getDelayForView15729 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelayForView15729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J", ref global::android.view.animation.LayoutAnimationController._getDelayForView15729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransformedIndex15730;
 		protected virtual int getTransformedIndex(android.view.animation.LayoutAnimationController.AnimationParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.LayoutAnimationController._getTransformedIndex15730.native == global::System.IntPtr.Zero)
-				global::android.view.animation.LayoutAnimationController._getTransformedIndex15730 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getTransformedIndex", "(Landroid/view/animation/LayoutAnimationController$AnimationParameters;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getTransformedIndex15730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, "getTransformedIndex", "(Landroid/view/animation/LayoutAnimationController$AnimationParameters;)I", ref global::android.view.animation.LayoutAnimationController._getTransformedIndex15730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController15731;
 		public LayoutAnimationController(android.view.animation.Animation arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

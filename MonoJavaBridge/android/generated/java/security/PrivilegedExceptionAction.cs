@@ -16,10 +16,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _run23252;
 		global::java.lang.Object java.security.PrivilegedExceptionAction.run()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.PrivilegedExceptionAction_._run23252.native == global::System.IntPtr.Zero)
-				global::java.security.PrivilegedExceptionAction_._run23252 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedExceptionAction_.staticClass, "run", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.PrivilegedExceptionAction_._run23252)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedExceptionAction_.staticClass, "run", "()Ljava/lang/Object;", ref global::java.security.PrivilegedExceptionAction_._run23252) as java.lang.Object;
 		}
 		static PrivilegedExceptionAction_()
 		{

@@ -23,10 +23,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _ellipsized13042;
 			void android.text.TextUtils.EllipsizeCallback.ellipsized(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.EllipsizeCallback_.staticClass, "ellipsized", "(II)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.EllipsizeCallback_.staticClass, "ellipsized", "(II)V", ref global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static EllipsizeCallback_()
 			{
@@ -93,34 +90,22 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _iterator13044;
 			public virtual global::java.util.Iterator iterator()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._iterator13044.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._iterator13044 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "iterator", "()Ljava/util/Iterator;");
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._iterator13044) as java.util.Iterator;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.SimpleStringSplitter._iterator13044) as java.util.Iterator;
 			}
 			internal static global::MonoJavaBridge.MethodId _hasNext13045;
 			public virtual bool hasNext()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._hasNext13045.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._hasNext13045 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "hasNext", "()Z");
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._hasNext13045);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "hasNext", "()Z", ref global::android.text.TextUtils.SimpleStringSplitter._hasNext13045);
 			}
 			internal static global::MonoJavaBridge.MethodId _next13046;
 			public virtual global::java.lang.Object next()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._next13046.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._next13046 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "next", "()Ljava/lang/Object;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._next13046) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "next", "()Ljava/lang/Object;", ref global::android.text.TextUtils.SimpleStringSplitter._next13046) as java.lang.Object;
 			}
 			internal static global::MonoJavaBridge.MethodId _remove13047;
 			public virtual void remove()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._remove13047.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._remove13047 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "remove", "()V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._remove13047);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "remove", "()V", ref global::android.text.TextUtils.SimpleStringSplitter._remove13047);
 			}
 			public new global::java.lang.String String
 			{
@@ -132,10 +117,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _setString13048;
 			public virtual void setString(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._setString13048.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._setString13048 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "setString", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._setString13048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.SimpleStringSplitter._setString13048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _SimpleStringSplitter13049;
 			public SimpleStringSplitter(char arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -171,10 +153,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _setString13050;
 			void android.text.TextUtils.StringSplitter.setString(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.StringSplitter_._setString13050.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.StringSplitter_._setString13050 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.StringSplitter_.staticClass, "setString", "(Ljava/lang/String;)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.TextUtils.StringSplitter_._setString13050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.StringSplitter_.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.StringSplitter_._setString13050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public global::System.Collections.IEnumerator GetEnumerator()
 			{
@@ -183,10 +162,7 @@ namespace android.text
 			internal static global::MonoJavaBridge.MethodId _iterator13051;
 			global::java.util.Iterator java.lang.Iterable.iterator()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.StringSplitter_._iterator13051.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.StringSplitter_._iterator13051 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.StringSplitter_.staticClass, "iterator", "()Ljava/util/Iterator;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.TextUtils.StringSplitter_._iterator13051)) as java.util.Iterator;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.StringSplitter_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.StringSplitter_._iterator13051) as java.util.Iterator;
 			}
 			static StringSplitter_()
 			{

@@ -10,90 +10,57 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getService12302;
 		public virtual global::android.app.Service getService()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._getService12302.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._getService12302 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "getService", "()Landroid/app/Service;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._getService12302) as android.app.Service;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, "getService", "()Landroid/app/Service;", ref global::android.test.ServiceTestCase._getService12302) as android.app.Service;
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplication12303;
 		public virtual global::android.app.Application getApplication()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._getApplication12303.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._getApplication12303 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "getApplication", "()Landroid/app/Application;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._getApplication12303) as android.app.Application;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, "getApplication", "()Landroid/app/Application;", ref global::android.test.ServiceTestCase._getApplication12303) as android.app.Application;
 		}
 		internal static global::MonoJavaBridge.MethodId _startService12304;
 		protected virtual void startService(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._startService12304.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._startService12304 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "startService", "(Landroid/content/Intent;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._startService12304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "startService", "(Landroid/content/Intent;)V", ref global::android.test.ServiceTestCase._startService12304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _bindService12305;
 		protected virtual global::android.os.IBinder bindService(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._bindService12305.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._bindService12305 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "bindService", "(Landroid/content/Intent;)Landroid/os/IBinder;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._bindService12305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.test.ServiceTestCase.staticClass, "bindService", "(Landroid/content/Intent;)Landroid/os/IBinder;", ref global::android.test.ServiceTestCase._bindService12305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12306;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._setUp12306.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._setUp12306 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "setUp", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._setUp12306);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "setUp", "()V", ref global::android.test.ServiceTestCase._setUp12306);
 		}
 		internal static global::MonoJavaBridge.MethodId _tearDown12307;
 		protected override void tearDown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._tearDown12307.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._tearDown12307 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "tearDown", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._tearDown12307);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "tearDown", "()V", ref global::android.test.ServiceTestCase._tearDown12307);
 		}
 		internal static global::MonoJavaBridge.MethodId _setApplication12308;
 		public virtual void setApplication(android.app.Application arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._setApplication12308.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._setApplication12308 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "setApplication", "(Landroid/app/Application;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._setApplication12308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "setApplication", "(Landroid/app/Application;)V", ref global::android.test.ServiceTestCase._setApplication12308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemContext12309;
 		public virtual global::android.content.Context getSystemContext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._getSystemContext12309.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._getSystemContext12309 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "getSystemContext", "()Landroid/content/Context;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._getSystemContext12309) as android.content.Context;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ServiceTestCase.staticClass, "getSystemContext", "()Landroid/content/Context;", ref global::android.test.ServiceTestCase._getSystemContext12309) as android.content.Context;
 		}
 		internal static global::MonoJavaBridge.MethodId _setupService12310;
 		protected virtual void setupService()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._setupService12310.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._setupService12310 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "setupService", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._setupService12310);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "setupService", "()V", ref global::android.test.ServiceTestCase._setupService12310);
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdownService12311;
 		protected virtual void shutdownService()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._shutdownService12311.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._shutdownService12311 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "shutdownService", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._shutdownService12311);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "shutdownService", "()V", ref global::android.test.ServiceTestCase._shutdownService12311);
 		}
 		internal static global::MonoJavaBridge.MethodId _testServiceTestCaseSetUpProperly12312;
 		public virtual void testServiceTestCaseSetUpProperly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.ServiceTestCase._testServiceTestCaseSetUpProperly12312.native == global::System.IntPtr.Zero)
-				global::android.test.ServiceTestCase._testServiceTestCaseSetUpProperly12312 = @__env.GetMethodIDNoThrow(global::android.test.ServiceTestCase.staticClass, "testServiceTestCaseSetUpProperly", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, global::android.test.ServiceTestCase._testServiceTestCaseSetUpProperly12312);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ServiceTestCase.staticClass, "testServiceTestCaseSetUpProperly", "()V", ref global::android.test.ServiceTestCase._testServiceTestCaseSetUpProperly12312);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServiceTestCase12313;
 		public ServiceTestCase(java.lang.Class arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

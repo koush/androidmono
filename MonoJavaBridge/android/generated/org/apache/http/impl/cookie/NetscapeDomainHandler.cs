@@ -10,18 +10,12 @@ namespace org.apache.http.impl.cookie
 		internal static global::MonoJavaBridge.MethodId _match33307;
 		public override bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.NetscapeDomainHandler._match33307.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.NetscapeDomainHandler._match33307 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, global::org.apache.http.impl.cookie.NetscapeDomainHandler._match33307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.NetscapeDomainHandler._match33307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _validate33308;
 		public override void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.NetscapeDomainHandler._validate33308.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.NetscapeDomainHandler._validate33308 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, global::org.apache.http.impl.cookie.NetscapeDomainHandler._validate33308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.NetscapeDomainHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.NetscapeDomainHandler._validate33308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _NetscapeDomainHandler33309;
 		public NetscapeDomainHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

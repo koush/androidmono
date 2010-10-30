@@ -16,10 +16,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _onReceiveValue16121;
 		void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.ValueCallback_._onReceiveValue16121.native == global::System.IntPtr.Zero)
-				global::android.webkit.ValueCallback_._onReceiveValue16121 = @__env.GetMethodIDNoThrow(global::android.webkit.ValueCallback_.staticClass, "onReceiveValue", "(Ljava/lang/Object;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.ValueCallback_.staticClass, "onReceiveValue", "(Ljava/lang/Object;)V", ref global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ValueCallback_()
 		{

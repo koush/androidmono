@@ -26,10 +26,7 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _close7925;
 		public void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._close7925.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._close7925 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "close", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._close7925);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "close", "()V", ref global::android.net.http.AndroidHttpClient._close7925);
 		}
 		public new global::org.apache.http.@params.HttpParams Params
 		{
@@ -41,74 +38,47 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _getParams7926;
 		public global::org.apache.http.@params.HttpParams getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._getParams7926.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._getParams7926 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._getParams7926)) as org.apache.http.@params.HttpParams;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.@params.HttpParams>(this, global::android.net.http.AndroidHttpClient.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;", ref global::android.net.http.AndroidHttpClient._getParams7926) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7927;
 		public global::org.apache.http.HttpResponse execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7927.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7927 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;", ref global::android.net.http.AndroidHttpClient._execute7927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7928;
 		public global::org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7928.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7928 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;", ref global::android.net.http.AndroidHttpClient._execute7928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7929;
 		public global::org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7929.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7929 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;", ref global::android.net.http.AndroidHttpClient._execute7929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7930;
 		public global::org.apache.http.HttpResponse execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7930.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7930 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;", ref global::android.net.http.AndroidHttpClient._execute7930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7931;
 		public global::java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.client.ResponseHandler arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7931.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7931 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;", ref global::android.net.http.AndroidHttpClient._execute7931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7932;
 		public global::java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.client.ResponseHandler arg1, org.apache.http.protocol.HttpContext arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7932.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7932 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;", ref global::android.net.http.AndroidHttpClient._execute7932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7933;
 		public global::java.lang.Object execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.client.ResponseHandler arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7933.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7933 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;", ref global::android.net.http.AndroidHttpClient._execute7933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute7934;
 		public global::java.lang.Object execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.client.ResponseHandler arg2, org.apache.http.protocol.HttpContext arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._execute7934.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._execute7934 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._execute7934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;", ref global::android.net.http.AndroidHttpClient._execute7934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _modifyRequestToAcceptGzipResponse7935;
 		public static void modifyRequestToAcceptGzipResponse(org.apache.http.HttpRequest arg0)
@@ -136,10 +106,7 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _getConnectionManager7937;
 		public global::org.apache.http.conn.ClientConnectionManager getConnectionManager()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._getConnectionManager7937.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._getConnectionManager7937 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "getConnectionManager", "()Lorg/apache/http/conn/ClientConnectionManager;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._getConnectionManager7937)) as org.apache.http.conn.ClientConnectionManager;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionManager>(this, global::android.net.http.AndroidHttpClient.staticClass, "getConnectionManager", "()Lorg/apache/http/conn/ClientConnectionManager;", ref global::android.net.http.AndroidHttpClient._getConnectionManager7937) as org.apache.http.conn.ClientConnectionManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCompressedEntity7938;
 		public static global::org.apache.http.entity.AbstractHttpEntity getCompressedEntity(byte[] arg0, android.content.ContentResolver arg1)
@@ -160,18 +127,12 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _enableCurlLogging7940;
 		public void enableCurlLogging(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._enableCurlLogging7940.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._enableCurlLogging7940 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "enableCurlLogging", "(Ljava/lang/String;I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._enableCurlLogging7940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "enableCurlLogging", "(Ljava/lang/String;I)V", ref global::android.net.http.AndroidHttpClient._enableCurlLogging7940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _disableCurlLogging7941;
 		public void disableCurlLogging()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.http.AndroidHttpClient._disableCurlLogging7941.native == global::System.IntPtr.Zero)
-				global::android.net.http.AndroidHttpClient._disableCurlLogging7941 = @__env.GetMethodIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "disableCurlLogging", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._disableCurlLogging7941);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.http.AndroidHttpClient.staticClass, "disableCurlLogging", "()V", ref global::android.net.http.AndroidHttpClient._disableCurlLogging7941);
 		}
 		internal static global::MonoJavaBridge.MethodId _parseDate7942;
 		public static long parseDate(java.lang.String arg0)

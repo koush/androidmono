@@ -17,18 +17,12 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged2609;
 		void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentCallbacks_._onConfigurationChanged2609.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentCallbacks_._onConfigurationChanged2609 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", ref global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onLowMemory2610;
 		void android.content.ComponentCallbacks.onLowMemory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentCallbacks_._onLowMemory2610.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentCallbacks_._onLowMemory2610 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onLowMemory2610);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V", ref global::android.content.ComponentCallbacks_._onLowMemory2610);
 		}
 		static ComponentCallbacks_()
 		{

@@ -10,18 +10,12 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _close28392;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.GZIPInputStream._close28392.native == global::System.IntPtr.Zero)
-				global::java.util.zip.GZIPInputStream._close28392 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPInputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPInputStream.staticClass, global::java.util.zip.GZIPInputStream._close28392);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.GZIPInputStream.staticClass, "close", "()V", ref global::java.util.zip.GZIPInputStream._close28392);
 		}
 		internal static global::MonoJavaBridge.MethodId _read28393;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.zip.GZIPInputStream._read28393.native == global::System.IntPtr.Zero)
-				global::java.util.zip.GZIPInputStream._read28393 = @__env.GetMethodIDNoThrow(global::java.util.zip.GZIPInputStream.staticClass, "read", "([BII)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.GZIPInputStream.staticClass, global::java.util.zip.GZIPInputStream._read28393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.GZIPInputStream.staticClass, "read", "([BII)I", ref global::java.util.zip.GZIPInputStream._read28393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _GZIPInputStream28394;
 		public GZIPInputStream(java.io.InputStream arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

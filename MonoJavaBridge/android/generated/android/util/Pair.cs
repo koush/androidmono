@@ -10,18 +10,12 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _equals13813;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.Pair._equals13813.native == global::System.IntPtr.Zero)
-				global::android.util.Pair._equals13813 = @__env.GetMethodIDNoThrow(global::android.util.Pair.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._equals13813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.util.Pair.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.util.Pair._equals13813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode13814;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.Pair._hashCode13814.native == global::System.IntPtr.Zero)
-				global::android.util.Pair._hashCode13814 = @__env.GetMethodIDNoThrow(global::android.util.Pair.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._hashCode13814);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Pair.staticClass, "hashCode", "()I", ref global::android.util.Pair._hashCode13814);
 		}
 		internal static global::MonoJavaBridge.MethodId _create13815;
 		public static global::android.util.Pair create(java.lang.Object arg0, java.lang.Object arg1)

@@ -12,10 +12,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getContent21362;
 		public virtual global::java.lang.Object getContent(java.net.URLConnection arg0, java.lang.Class[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ContentHandler._getContent21362.native == global::System.IntPtr.Zero)
-				global::java.net.ContentHandler._getContent21362 = @__env.GetMethodIDNoThrow(global::java.net.ContentHandler.staticClass, "getContent", "(Ljava/net/URLConnection;[Ljava/lang/Class;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ContentHandler.staticClass, global::java.net.ContentHandler._getContent21362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ContentHandler.staticClass, "getContent", "(Ljava/net/URLConnection;[Ljava/lang/Class;)Ljava/lang/Object;", ref global::java.net.ContentHandler._getContent21362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentHandler21363;
 		public ContentHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -46,10 +43,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getContent21364;
 		public override global::java.lang.Object getContent(java.net.URLConnection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ContentHandler_._getContent21364.native == global::System.IntPtr.Zero)
-				global::java.net.ContentHandler_._getContent21364 = @__env.GetMethodIDNoThrow(global::java.net.ContentHandler_.staticClass, "getContent", "(Ljava/net/URLConnection;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ContentHandler_._getContent21364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ContentHandler_.staticClass, "getContent", "(Ljava/net/URLConnection;)Ljava/lang/Object;", ref global::java.net.ContentHandler_._getContent21364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		static ContentHandler_()
 		{

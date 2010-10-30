@@ -17,10 +17,7 @@ namespace java.text
 			internal static global::MonoJavaBridge.MethodId _readResolve25324;
 			protected override global::java.lang.Object readResolve()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.text.DateFormat.Field._readResolve25324.native == global::System.IntPtr.Zero)
-					global::java.text.DateFormat.Field._readResolve25324 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;");
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.Field.staticClass, global::java.text.DateFormat.Field._readResolve25324) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.text.DateFormat.Field._readResolve25324) as java.lang.Object;
 			}
 			internal static global::MonoJavaBridge.MethodId _ofCalendarField25325;
 			public static global::java.text.DateFormat.Field ofCalendarField(int arg0)
@@ -40,10 +37,7 @@ namespace java.text
 			internal static global::MonoJavaBridge.MethodId _getCalendarField25326;
 			public virtual int getCalendarField()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.text.DateFormat.Field._getCalendarField25326.native == global::System.IntPtr.Zero)
-					global::java.text.DateFormat.Field._getCalendarField25326 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.Field.staticClass, "getCalendarField", "()I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormat.Field.staticClass, global::java.text.DateFormat.Field._getCalendarField25326);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormat.Field.staticClass, "getCalendarField", "()I", ref global::java.text.DateFormat.Field._getCalendarField25326);
 			}
 			internal static global::MonoJavaBridge.MethodId _Field25327;
 			protected Field(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -246,44 +240,29 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25346;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._equals25346.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._equals25346 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._equals25346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.DateFormat._equals25346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25347;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._hashCode25347.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._hashCode25347 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._hashCode25347);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormat.staticClass, "hashCode", "()I", ref global::java.text.DateFormat._hashCode25347);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone25348;
 		public override global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._clone25348.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._clone25348 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._clone25348) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.DateFormat._clone25348) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25349;
 		public sealed override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._format25349.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._format25349 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._format25349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.DateFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.DateFormat._format25349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25350;
 		public abstract global::java.lang.StringBuffer format(java.util.Date arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
 		internal static global::MonoJavaBridge.MethodId _format25351;
 		public virtual global::java.lang.String format(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._format25351.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._format25351 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._format25351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;)Ljava/lang/String;", ref global::java.text.DateFormat._format25351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25352;
 		public static global::java.text.DateFormat getInstance()
@@ -296,10 +275,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _parse25353;
 		public virtual global::java.util.Date parse(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._parse25353.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._parse25353 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/util/Date;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._parse25353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.Date;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/util/Date;", ref global::java.text.DateFormat._parse25353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse25354;
 		public abstract global::java.util.Date parse(java.lang.String arg0, java.text.ParsePosition arg1);
@@ -314,18 +290,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getTimeZone25356;
 		public virtual global::java.util.TimeZone getTimeZone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._getTimeZone25356.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._getTimeZone25356 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "getTimeZone", "()Ljava/util/TimeZone;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getTimeZone25356) as java.util.TimeZone;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "getTimeZone", "()Ljava/util/TimeZone;", ref global::java.text.DateFormat._getTimeZone25356) as java.util.TimeZone;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimeZone25357;
 		public virtual void setTimeZone(java.util.TimeZone arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._setTimeZone25357.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._setTimeZone25357 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setTimeZone25357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V", ref global::java.text.DateFormat._setTimeZone25357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDateTimeInstance25358;
 		public static global::java.text.DateFormat getDateTimeInstance(int arg0, int arg1, java.util.Locale arg2)
@@ -354,26 +324,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _setLenient25361;
 		public virtual void setLenient(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._setLenient25361.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._setLenient25361 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "setLenient", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setLenient25361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, "setLenient", "(Z)V", ref global::java.text.DateFormat._setLenient25361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLenient25362;
 		public virtual bool isLenient()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._isLenient25362.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._isLenient25362 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "isLenient", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._isLenient25362);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormat.staticClass, "isLenient", "()Z", ref global::java.text.DateFormat._isLenient25362);
 		}
 		internal static global::MonoJavaBridge.MethodId _parseObject25363;
 		public override global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._parseObject25363.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._parseObject25363 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._parseObject25363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", ref global::java.text.DateFormat._parseObject25363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeInstance25364;
 		public static global::java.text.DateFormat getTimeInstance(int arg0, java.util.Locale arg1)
@@ -426,34 +387,22 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _setCalendar25370;
 		public virtual void setCalendar(java.util.Calendar arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._setCalendar25370.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._setCalendar25370 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "setCalendar", "(Ljava/util/Calendar;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setCalendar25370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, "setCalendar", "(Ljava/util/Calendar;)V", ref global::java.text.DateFormat._setCalendar25370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCalendar25371;
 		public virtual global::java.util.Calendar getCalendar()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._getCalendar25371.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._getCalendar25371 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "getCalendar", "()Ljava/util/Calendar;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getCalendar25371) as java.util.Calendar;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "getCalendar", "()Ljava/util/Calendar;", ref global::java.text.DateFormat._getCalendar25371) as java.util.Calendar;
 		}
 		internal static global::MonoJavaBridge.MethodId _setNumberFormat25372;
 		public virtual void setNumberFormat(java.text.NumberFormat arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._setNumberFormat25372.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._setNumberFormat25372 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "setNumberFormat", "(Ljava/text/NumberFormat;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setNumberFormat25372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormat.staticClass, "setNumberFormat", "(Ljava/text/NumberFormat;)V", ref global::java.text.DateFormat._setNumberFormat25372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNumberFormat25373;
 		public virtual global::java.text.NumberFormat getNumberFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat._getNumberFormat25373.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat._getNumberFormat25373 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.staticClass, "getNumberFormat", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getNumberFormat25373) as java.text.NumberFormat;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.staticClass, "getNumberFormat", "()Ljava/text/NumberFormat;", ref global::java.text.DateFormat._getNumberFormat25373) as java.text.NumberFormat;
 		}
 		internal static global::MonoJavaBridge.MethodId _DateFormat25374;
 		protected DateFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -645,18 +594,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _format25398;
 		public override global::java.lang.StringBuffer format(java.util.Date arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat_._format25398.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat_._format25398 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat_.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormat_._format25398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.DateFormat_.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.DateFormat_._format25398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse25399;
 		public override global::java.util.Date parse(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.DateFormat_._parse25399.native == global::System.IntPtr.Zero)
-				global::java.text.DateFormat_._parse25399 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormat_._parse25399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Date;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;", ref global::java.text.DateFormat_._parse25399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.Date;
 		}
 		static DateFormat_()
 		{

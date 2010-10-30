@@ -21,50 +21,32 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getSession30063;
 		global::javax.net.ssl.SSLSession javax.net.ssl.SSLSessionContext.getSession(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._getSession30063.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._getSession30063 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getSession", "([B)Ljavax/net/ssl/SSLSession;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSession>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._getSession30063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.net.ssl.SSLSession;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.net.ssl.SSLSession>(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "getSession", "([B)Ljavax/net/ssl/SSLSession;", ref global::javax.net.ssl.SSLSessionContext_._getSession30063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.net.ssl.SSLSession;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIds30064;
 		global::java.util.Enumeration javax.net.ssl.SSLSessionContext.getIds()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._getIds30064.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._getIds30064 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getIds", "()Ljava/util/Enumeration;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._getIds30064)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "getIds", "()Ljava/util/Enumeration;", ref global::javax.net.ssl.SSLSessionContext_._getIds30064) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSessionTimeout30065;
 		void javax.net.ssl.SSLSessionContext.setSessionTimeout(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._setSessionTimeout30065.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._setSessionTimeout30065 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "setSessionTimeout", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._setSessionTimeout30065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "setSessionTimeout", "(I)V", ref global::javax.net.ssl.SSLSessionContext_._setSessionTimeout30065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSessionTimeout30066;
 		int javax.net.ssl.SSLSessionContext.getSessionTimeout()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30066.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30066 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionTimeout", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30066);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionTimeout", "()I", ref global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30066);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSessionCacheSize30067;
 		void javax.net.ssl.SSLSessionContext.setSessionCacheSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30067.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30067 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "setSessionCacheSize", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "setSessionCacheSize", "(I)V", ref global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSessionCacheSize30068;
 		int javax.net.ssl.SSLSessionContext.getSessionCacheSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionCacheSize", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSessionContext_.staticClass, "getSessionCacheSize", "()I", ref global::javax.net.ssl.SSLSessionContext_._getSessionCacheSize30068);
 		}
 		static SSLSessionContext_()
 		{

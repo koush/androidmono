@@ -34,132 +34,84 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _isNamespaceAware30860;
 		public virtual bool isNamespaceAware()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isNamespaceAware30860.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isNamespaceAware30860 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isNamespaceAware", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isNamespaceAware30860);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isNamespaceAware", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isNamespaceAware30860);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidating30861;
 		public virtual bool isValidating()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isValidating30861.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isValidating30861 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isValidating", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isValidating30861);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isValidating", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isValidating30861);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchema30862;
 		public virtual global::javax.xml.validation.Schema getSchema()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._getSchema30862.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._getSchema30862 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "getSchema", "()Ljavax/xml/validation/Schema;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._getSchema30862) as javax.xml.validation.Schema;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "getSchema", "()Ljavax/xml/validation/Schema;", ref global::javax.xml.parsers.DocumentBuilderFactory._getSchema30862) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _isXIncludeAware30863;
 		public virtual bool isXIncludeAware()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isXIncludeAware30863.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isXIncludeAware30863 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isXIncludeAware", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isXIncludeAware30863);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isXIncludeAware", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isXIncludeAware30863);
 		}
 		internal static global::MonoJavaBridge.MethodId _newDocumentBuilder30864;
 		public abstract global::javax.xml.parsers.DocumentBuilder newDocumentBuilder();
 		internal static global::MonoJavaBridge.MethodId _setNamespaceAware30865;
 		public virtual void setNamespaceAware(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setNamespaceAware30865.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setNamespaceAware30865 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setNamespaceAware", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setNamespaceAware30865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setNamespaceAware", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setNamespaceAware30865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setValidating30866;
 		public virtual void setValidating(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setValidating30866.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setValidating30866 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setValidating", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setValidating30866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setValidating", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setValidating30866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIgnoringElementContentWhitespace30867;
 		public virtual void setIgnoringElementContentWhitespace(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringElementContentWhitespace30867.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringElementContentWhitespace30867 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setIgnoringElementContentWhitespace", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringElementContentWhitespace30867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setIgnoringElementContentWhitespace", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringElementContentWhitespace30867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setExpandEntityReferences30868;
 		public virtual void setExpandEntityReferences(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setExpandEntityReferences30868.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setExpandEntityReferences30868 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setExpandEntityReferences", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setExpandEntityReferences30868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setExpandEntityReferences", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setExpandEntityReferences30868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIgnoringComments30869;
 		public virtual void setIgnoringComments(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringComments30869.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringComments30869 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setIgnoringComments", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringComments30869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setIgnoringComments", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setIgnoringComments30869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCoalescing30870;
 		public virtual void setCoalescing(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setCoalescing30870.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setCoalescing30870 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setCoalescing", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setCoalescing30870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setCoalescing", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setCoalescing30870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIgnoringElementContentWhitespace30871;
 		public virtual bool isIgnoringElementContentWhitespace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringElementContentWhitespace30871.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringElementContentWhitespace30871 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isIgnoringElementContentWhitespace", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringElementContentWhitespace30871);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isIgnoringElementContentWhitespace", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringElementContentWhitespace30871);
 		}
 		internal static global::MonoJavaBridge.MethodId _isExpandEntityReferences30872;
 		public virtual bool isExpandEntityReferences()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isExpandEntityReferences30872.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isExpandEntityReferences30872 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isExpandEntityReferences", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isExpandEntityReferences30872);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isExpandEntityReferences", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isExpandEntityReferences30872);
 		}
 		internal static global::MonoJavaBridge.MethodId _isIgnoringComments30873;
 		public virtual bool isIgnoringComments()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringComments30873.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringComments30873 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isIgnoringComments", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringComments30873);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isIgnoringComments", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isIgnoringComments30873);
 		}
 		internal static global::MonoJavaBridge.MethodId _isCoalescing30874;
 		public virtual bool isCoalescing()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._isCoalescing30874.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._isCoalescing30874 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isCoalescing", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._isCoalescing30874);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "isCoalescing", "()Z", ref global::javax.xml.parsers.DocumentBuilderFactory._isCoalescing30874);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSchema30875;
 		public virtual void setSchema(javax.xml.validation.Schema arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setSchema30875.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setSchema30875 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setSchema", "(Ljavax/xml/validation/Schema;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setSchema30875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setSchema", "(Ljavax/xml/validation/Schema;)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setSchema30875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setXIncludeAware30876;
 		public virtual void setXIncludeAware(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory._setXIncludeAware30876.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory._setXIncludeAware30876 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setXIncludeAware", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, global::javax.xml.parsers.DocumentBuilderFactory._setXIncludeAware30876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory.staticClass, "setXIncludeAware", "(Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory._setXIncludeAware30876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DocumentBuilderFactory30877;
 		protected DocumentBuilderFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -190,42 +142,27 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _getAttribute30878;
 		public override global::java.lang.Object getAttribute(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory_._getAttribute30878.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory_._getAttribute30878 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_._getAttribute30878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.parsers.DocumentBuilderFactory_._getAttribute30878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature30879;
 		public override void setFeature(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory_._setFeature30879.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory_._setFeature30879 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_._setFeature30879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "setFeature", "(Ljava/lang/String;Z)V", ref global::javax.xml.parsers.DocumentBuilderFactory_._setFeature30879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature30880;
 		public override bool getFeature(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory_._getFeature30880.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory_._getFeature30880 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_._getFeature30880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "getFeature", "(Ljava/lang/String;)Z", ref global::javax.xml.parsers.DocumentBuilderFactory_._getFeature30880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute30881;
 		public override void setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory_._setAttribute30881.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory_._setAttribute30881 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_._setAttribute30881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.parsers.DocumentBuilderFactory_._setAttribute30881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newDocumentBuilder30882;
 		public override global::javax.xml.parsers.DocumentBuilder newDocumentBuilder()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "newDocumentBuilder", "()Ljavax/xml/parsers/DocumentBuilder;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882)) as javax.xml.parsers.DocumentBuilder;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.DocumentBuilderFactory_.staticClass, "newDocumentBuilder", "()Ljavax/xml/parsers/DocumentBuilder;", ref global::javax.xml.parsers.DocumentBuilderFactory_._newDocumentBuilder30882) as javax.xml.parsers.DocumentBuilder;
 		}
 		static DocumentBuilderFactory_()
 		{

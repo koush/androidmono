@@ -17,10 +17,7 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _getMessage22815;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.MalformedInputException._getMessage22815.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.MalformedInputException._getMessage22815 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getMessage22815) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.MalformedInputException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.nio.charset.MalformedInputException._getMessage22815) as java.lang.String;
 		}
 		public new int InputLength
 		{
@@ -32,10 +29,7 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _getInputLength22816;
 		public virtual int getInputLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.MalformedInputException._getInputLength22816.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.MalformedInputException._getInputLength22816 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getInputLength", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getInputLength22816);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.MalformedInputException.staticClass, "getInputLength", "()I", ref global::java.nio.charset.MalformedInputException._getInputLength22816);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedInputException22817;
 		public MalformedInputException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

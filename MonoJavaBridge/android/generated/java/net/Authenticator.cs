@@ -94,74 +94,47 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRequestingHost21337;
 		protected virtual global::java.lang.String getRequestingHost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingHost21337.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingHost21337 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingHost", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingHost21337) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, "getRequestingHost", "()Ljava/lang/String;", ref global::java.net.Authenticator._getRequestingHost21337) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingSite21338;
 		protected virtual global::java.net.InetAddress getRequestingSite()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingSite21338.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingSite21338 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingSite", "()Ljava/net/InetAddress;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingSite21338) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Authenticator.staticClass, "getRequestingSite", "()Ljava/net/InetAddress;", ref global::java.net.Authenticator._getRequestingSite21338) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingPort21339;
 		protected virtual int getRequestingPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingPort21339.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingPort21339 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingPort", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingPort21339);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Authenticator.staticClass, "getRequestingPort", "()I", ref global::java.net.Authenticator._getRequestingPort21339);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingProtocol21340;
 		protected virtual global::java.lang.String getRequestingProtocol()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingProtocol21340.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingProtocol21340 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingProtocol", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingProtocol21340) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, "getRequestingProtocol", "()Ljava/lang/String;", ref global::java.net.Authenticator._getRequestingProtocol21340) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingPrompt21341;
 		protected virtual global::java.lang.String getRequestingPrompt()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingPrompt21341.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingPrompt21341 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingPrompt", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingPrompt21341) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, "getRequestingPrompt", "()Ljava/lang/String;", ref global::java.net.Authenticator._getRequestingPrompt21341) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingScheme21342;
 		protected virtual global::java.lang.String getRequestingScheme()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingScheme21342.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingScheme21342 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingScheme", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingScheme21342) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Authenticator.staticClass, "getRequestingScheme", "()Ljava/lang/String;", ref global::java.net.Authenticator._getRequestingScheme21342) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPasswordAuthentication21343;
 		protected virtual global::java.net.PasswordAuthentication getPasswordAuthentication()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getPasswordAuthentication21343.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getPasswordAuthentication21343 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getPasswordAuthentication", "()Ljava/net/PasswordAuthentication;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.PasswordAuthentication>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getPasswordAuthentication21343) as java.net.PasswordAuthentication;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.PasswordAuthentication>(this, global::java.net.Authenticator.staticClass, "getPasswordAuthentication", "()Ljava/net/PasswordAuthentication;", ref global::java.net.Authenticator._getPasswordAuthentication21343) as java.net.PasswordAuthentication;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestingURL21344;
 		protected virtual global::java.net.URL getRequestingURL()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestingURL21344.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestingURL21344 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestingURL", "()Ljava/net/URL;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestingURL21344) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::java.net.Authenticator.staticClass, "getRequestingURL", "()Ljava/net/URL;", ref global::java.net.Authenticator._getRequestingURL21344) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestorType21345;
 		protected virtual global::java.net.Authenticator.RequestorType getRequestorType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Authenticator._getRequestorType21345.native == global::System.IntPtr.Zero)
-				global::java.net.Authenticator._getRequestorType21345 = @__env.GetMethodIDNoThrow(global::java.net.Authenticator.staticClass, "getRequestorType", "()Ljava/net/Authenticator$RequestorType;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.Authenticator.RequestorType>(this, global::java.net.Authenticator.staticClass, global::java.net.Authenticator._getRequestorType21345) as java.net.Authenticator.RequestorType;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.Authenticator.RequestorType>(this, global::java.net.Authenticator.staticClass, "getRequestorType", "()Ljava/net/Authenticator$RequestorType;", ref global::java.net.Authenticator._getRequestorType21345) as java.net.Authenticator.RequestorType;
 		}
 		internal static global::MonoJavaBridge.MethodId _Authenticator21346;
 		public Authenticator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

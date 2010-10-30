@@ -34,18 +34,12 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _init30125;
 		public virtual void init(java.security.KeyStore arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactory._init30125.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactory._init30125 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactory.staticClass, "init", "(Ljava/security/KeyStore;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, "init", "(Ljava/security/KeyStore;)V", ref global::javax.net.ssl.TrustManagerFactory._init30125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _init30126;
 		public virtual void init(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactory._init30126.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactory._init30126 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactory.staticClass, "init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, "init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", ref global::javax.net.ssl.TrustManagerFactory._init30126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -57,10 +51,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm30127;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.TrustManagerFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -72,10 +63,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getProvider30128;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactory._getProvider30128.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactory._getProvider30128 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactory.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getProvider30128) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::javax.net.ssl.TrustManagerFactory._getProvider30128) as java.security.Provider;
 		}
 		public static global::java.lang.String DefaultAlgorithm
 		{
@@ -102,10 +90,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getTrustManagers30130;
 		public virtual global::javax.net.ssl.TrustManager[] getTrustManagers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.TrustManagerFactory.staticClass, "getTrustManagers", "()[Ljavax/net/ssl/TrustManager;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.net.ssl.TrustManager>(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130) as javax.net.ssl.TrustManager[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.net.ssl.TrustManager>(this, global::javax.net.ssl.TrustManagerFactory.staticClass, "getTrustManagers", "()[Ljavax/net/ssl/TrustManager;", ref global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130) as javax.net.ssl.TrustManager[];
 		}
 		internal static global::MonoJavaBridge.MethodId _TrustManagerFactory30131;
 		protected TrustManagerFactory(javax.net.ssl.TrustManagerFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -23,10 +23,7 @@ namespace android.text.util
 			internal static global::MonoJavaBridge.MethodId _acceptMatch13634;
 			bool android.text.util.Linkify.MatchFilter.acceptMatch(java.lang.CharSequence arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.util.Linkify.MatchFilter_._acceptMatch13634.native == global::System.IntPtr.Zero)
-					global::android.text.util.Linkify.MatchFilter_._acceptMatch13634 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.MatchFilter_.staticClass, "acceptMatch", "(Ljava/lang/CharSequence;II)Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.util.Linkify.MatchFilter_._acceptMatch13634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.util.Linkify.MatchFilter_.staticClass, "acceptMatch", "(Ljava/lang/CharSequence;II)Z", ref global::android.text.util.Linkify.MatchFilter_._acceptMatch13634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static MatchFilter_()
 			{
@@ -95,10 +92,7 @@ namespace android.text.util
 			internal static global::MonoJavaBridge.MethodId _transformUrl13636;
 			global::java.lang.String android.text.util.Linkify.TransformFilter.transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.util.Linkify.TransformFilter_._transformUrl13636.native == global::System.IntPtr.Zero)
-					global::android.text.util.Linkify.TransformFilter_._transformUrl13636 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.TransformFilter_.staticClass, "transformUrl", "(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.util.Linkify.TransformFilter_._transformUrl13636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Linkify.TransformFilter_.staticClass, "transformUrl", "(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;", ref global::android.text.util.Linkify.TransformFilter_._transformUrl13636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 			}
 			static TransformFilter_()
 			{

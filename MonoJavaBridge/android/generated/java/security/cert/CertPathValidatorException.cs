@@ -17,10 +17,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getIndex23521;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathValidatorException._getIndex23521.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathValidatorException._getIndex23521 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorException.staticClass, "getIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getIndex23521);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, "getIndex", "()I", ref global::java.security.cert.CertPathValidatorException._getIndex23521);
 		}
 		public new global::java.security.cert.CertPath CertPath
 		{
@@ -32,10 +29,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCertPath23522;
 		public virtual global::java.security.cert.CertPath getCertPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathValidatorException._getCertPath23522.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathValidatorException._getCertPath23522 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorException.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getCertPath23522) as java.security.cert.CertPath;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;", ref global::java.security.cert.CertPathValidatorException._getCertPath23522) as java.security.cert.CertPath;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertPathValidatorException23523;
 		public CertPathValidatorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

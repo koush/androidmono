@@ -23,42 +23,27 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _retrieveReturn14977;
 			bool android.view.ViewDebug.CapturedViewProperty.retrieveReturn()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.CapturedViewProperty_._retrieveReturn14977.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.CapturedViewProperty_._retrieveReturn14977 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "retrieveReturn", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._retrieveReturn14977);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "retrieveReturn", "()Z", ref global::android.view.ViewDebug.CapturedViewProperty_._retrieveReturn14977);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14978;
 			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.CapturedViewProperty_._equals14978.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.CapturedViewProperty_._equals14978 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._equals14978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.view.ViewDebug.CapturedViewProperty_._equals14978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14979;
 			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.CapturedViewProperty_._toString14979.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.CapturedViewProperty_._toString14979 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._toString14979)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.ViewDebug.CapturedViewProperty_._toString14979) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14980;
 			int java.lang.annotation.Annotation.hashCode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "hashCode", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "hashCode", "()I", ref global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14981;
 			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "annotationType", "()Ljava/lang/Class;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.view.ViewDebug.CapturedViewProperty_._annotationType14981) as java.lang.Class;
 			}
 			static CapturedViewProperty_()
 			{
@@ -90,82 +75,52 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _prefix14982;
 			global::java.lang.String android.view.ViewDebug.ExportedProperty.prefix()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._prefix14982.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._prefix14982 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "prefix", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._prefix14982)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "prefix", "()Ljava/lang/String;", ref global::android.view.ViewDebug.ExportedProperty_._prefix14982) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _resolveId14983;
 			bool android.view.ViewDebug.ExportedProperty.resolveId()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._resolveId14983.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._resolveId14983 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "resolveId", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._resolveId14983);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "resolveId", "()Z", ref global::android.view.ViewDebug.ExportedProperty_._resolveId14983);
 			}
 			internal static global::MonoJavaBridge.MethodId _mapping14984;
 			global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.mapping()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._mapping14984.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._mapping14984 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "mapping", "()[Landroid/view/ViewDebug/IntToString;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.IntToString>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._mapping14984)) as android.view.ViewDebug.IntToString[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.view.ViewDebug.IntToString>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "mapping", "()[Landroid/view/ViewDebug/IntToString;", ref global::android.view.ViewDebug.ExportedProperty_._mapping14984) as android.view.ViewDebug.IntToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _indexMapping14985;
 			global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.indexMapping()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._indexMapping14985.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._indexMapping14985 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "indexMapping", "()[Landroid/view/ViewDebug/IntToString;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.IntToString>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._indexMapping14985)) as android.view.ViewDebug.IntToString[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.view.ViewDebug.IntToString>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "indexMapping", "()[Landroid/view/ViewDebug/IntToString;", ref global::android.view.ViewDebug.ExportedProperty_._indexMapping14985) as android.view.ViewDebug.IntToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _flagMapping14986;
 			global::android.view.ViewDebug.FlagToString[] android.view.ViewDebug.ExportedProperty.flagMapping()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._flagMapping14986.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._flagMapping14986 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "flagMapping", "()[Landroid/view/ViewDebug/FlagToString;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.FlagToString>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._flagMapping14986)) as android.view.ViewDebug.FlagToString[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.view.ViewDebug.FlagToString>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "flagMapping", "()[Landroid/view/ViewDebug/FlagToString;", ref global::android.view.ViewDebug.ExportedProperty_._flagMapping14986) as android.view.ViewDebug.FlagToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _deepExport14987;
 			bool android.view.ViewDebug.ExportedProperty.deepExport()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._deepExport14987.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._deepExport14987 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "deepExport", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._deepExport14987);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "deepExport", "()Z", ref global::android.view.ViewDebug.ExportedProperty_._deepExport14987);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14988;
 			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._equals14988.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._equals14988 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._equals14988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.view.ViewDebug.ExportedProperty_._equals14988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14989;
 			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._toString14989.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._toString14989 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._toString14989)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.ViewDebug.ExportedProperty_._toString14989) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14990;
 			int java.lang.annotation.Annotation.hashCode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._hashCode14990.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._hashCode14990 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "hashCode", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._hashCode14990);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "hashCode", "()I", ref global::android.view.ViewDebug.ExportedProperty_._hashCode14990);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14991;
 			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.ExportedProperty_._annotationType14991.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.ExportedProperty_._annotationType14991 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.ExportedProperty_.staticClass, "annotationType", "()Ljava/lang/Class;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._annotationType14991)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.view.ViewDebug.ExportedProperty_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.view.ViewDebug.ExportedProperty_._annotationType14991) as java.lang.Class;
 			}
 			static ExportedProperty_()
 			{
@@ -195,66 +150,42 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _name14992;
 			global::java.lang.String android.view.ViewDebug.FlagToString.name()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._name14992.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._name14992 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "name", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._name14992)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.FlagToString_.staticClass, "name", "()Ljava/lang/String;", ref global::android.view.ViewDebug.FlagToString_._name14992) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14993;
 			int android.view.ViewDebug.FlagToString.equals()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._equals14993.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._equals14993 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "equals", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._equals14993);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.FlagToString_.staticClass, "equals", "()I", ref global::android.view.ViewDebug.FlagToString_._equals14993);
 			}
 			internal static global::MonoJavaBridge.MethodId _mask14994;
 			int android.view.ViewDebug.FlagToString.mask()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._mask14994.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._mask14994 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "mask", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._mask14994);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.FlagToString_.staticClass, "mask", "()I", ref global::android.view.ViewDebug.FlagToString_._mask14994);
 			}
 			internal static global::MonoJavaBridge.MethodId _outputIf14995;
 			bool android.view.ViewDebug.FlagToString.outputIf()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._outputIf14995.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._outputIf14995 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "outputIf", "()Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._outputIf14995);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.FlagToString_.staticClass, "outputIf", "()Z", ref global::android.view.ViewDebug.FlagToString_._outputIf14995);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14996;
 			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._equals14996.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._equals14996 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._equals14996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.FlagToString_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.view.ViewDebug.FlagToString_._equals14996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14997;
 			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._toString14997.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._toString14997 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._toString14997)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.FlagToString_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.ViewDebug.FlagToString_._toString14997) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14998;
 			int java.lang.annotation.Annotation.hashCode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._hashCode14998.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._hashCode14998 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "hashCode", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._hashCode14998);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.FlagToString_.staticClass, "hashCode", "()I", ref global::android.view.ViewDebug.FlagToString_._hashCode14998);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14999;
 			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.FlagToString_._annotationType14999.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.FlagToString_._annotationType14999 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.FlagToString_.staticClass, "annotationType", "()Ljava/lang/Class;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._annotationType14999)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.view.ViewDebug.FlagToString_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.view.ViewDebug.FlagToString_._annotationType14999) as java.lang.Class;
 			}
 			static FlagToString_()
 			{
@@ -394,50 +325,32 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _from15010;
 			int android.view.ViewDebug.IntToString.from()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._from15010.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._from15010 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "from", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._from15010);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.IntToString_.staticClass, "from", "()I", ref global::android.view.ViewDebug.IntToString_._from15010);
 			}
 			internal static global::MonoJavaBridge.MethodId _to15011;
 			global::java.lang.String android.view.ViewDebug.IntToString.to()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._to15011.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._to15011 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "to", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._to15011)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.IntToString_.staticClass, "to", "()Ljava/lang/String;", ref global::android.view.ViewDebug.IntToString_._to15011) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals15012;
 			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._equals15012.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._equals15012 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._equals15012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewDebug.IntToString_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.view.ViewDebug.IntToString_._equals15012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString15013;
 			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._toString15013.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._toString15013 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._toString15013)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.ViewDebug.IntToString_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.ViewDebug.IntToString_._toString15013) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode15014;
 			int java.lang.annotation.Annotation.hashCode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._hashCode15014.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._hashCode15014 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "hashCode", "()I");
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._hashCode15014);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewDebug.IntToString_.staticClass, "hashCode", "()I", ref global::android.view.ViewDebug.IntToString_._hashCode15014);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType15015;
 			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewDebug.IntToString_._annotationType15015.native == global::System.IntPtr.Zero)
-					global::android.view.ViewDebug.IntToString_._annotationType15015 = @__env.GetMethodIDNoThrow(global::android.view.ViewDebug.IntToString_.staticClass, "annotationType", "()Ljava/lang/Class;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._annotationType15015)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::android.view.ViewDebug.IntToString_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::android.view.ViewDebug.IntToString_._annotationType15015) as java.lang.Class;
 			}
 			static IntToString_()
 			{

@@ -10,34 +10,22 @@ namespace java.beans
 		internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener18785;
 		public virtual void addPropertyChangeListener(java.beans.PropertyChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._addPropertyChangeListener18785.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._addPropertyChangeListener18785 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._addPropertyChangeListener18785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", ref global::java.beans.PropertyChangeSupport._addPropertyChangeListener18785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener18786;
 		public virtual void addPropertyChangeListener(java.lang.String arg0, java.beans.PropertyChangeListener arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._addPropertyChangeListener18786.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._addPropertyChangeListener18786 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._addPropertyChangeListener18786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", ref global::java.beans.PropertyChangeSupport._addPropertyChangeListener18786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener18787;
 		public virtual void removePropertyChangeListener(java.beans.PropertyChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._removePropertyChangeListener18787.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._removePropertyChangeListener18787 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._removePropertyChangeListener18787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", ref global::java.beans.PropertyChangeSupport._removePropertyChangeListener18787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener18788;
 		public virtual void removePropertyChangeListener(java.lang.String arg0, java.beans.PropertyChangeListener arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._removePropertyChangeListener18788.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._removePropertyChangeListener18788 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._removePropertyChangeListener18788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", ref global::java.beans.PropertyChangeSupport._removePropertyChangeListener18788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.beans.PropertyChangeListener[] PropertyChangeListeners
 		{
@@ -49,82 +37,52 @@ namespace java.beans
 		internal static global::MonoJavaBridge.MethodId _getPropertyChangeListeners18789;
 		public virtual global::java.beans.PropertyChangeListener[] getPropertyChangeListeners()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18789.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18789 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.beans.PropertyChangeListener>(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18789) as java.beans.PropertyChangeListener[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.beans.PropertyChangeListener>(this, global::java.beans.PropertyChangeSupport.staticClass, "getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;", ref global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18789) as java.beans.PropertyChangeListener[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getPropertyChangeListeners18790;
 		public virtual global::java.beans.PropertyChangeListener[] getPropertyChangeListeners(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18790.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18790 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.beans.PropertyChangeListener>(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.beans.PropertyChangeListener[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.beans.PropertyChangeListener>(this, global::java.beans.PropertyChangeSupport.staticClass, "getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", ref global::java.beans.PropertyChangeSupport._getPropertyChangeListeners18790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.beans.PropertyChangeListener[];
 		}
 		internal static global::MonoJavaBridge.MethodId _firePropertyChange18791;
 		public virtual void firePropertyChange(java.lang.String arg0, bool arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._firePropertyChange18791.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._firePropertyChange18791 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;ZZ)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._firePropertyChange18791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;ZZ)V", ref global::java.beans.PropertyChangeSupport._firePropertyChange18791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _firePropertyChange18792;
 		public virtual void firePropertyChange(java.beans.PropertyChangeEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._firePropertyChange18792.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._firePropertyChange18792 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/beans/PropertyChangeEvent;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._firePropertyChange18792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/beans/PropertyChangeEvent;)V", ref global::java.beans.PropertyChangeSupport._firePropertyChange18792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _firePropertyChange18793;
 		public virtual void firePropertyChange(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._firePropertyChange18793.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._firePropertyChange18793 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._firePropertyChange18793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;II)V", ref global::java.beans.PropertyChangeSupport._firePropertyChange18793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _firePropertyChange18794;
 		public virtual void firePropertyChange(java.lang.String arg0, java.lang.Object arg1, java.lang.Object arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._firePropertyChange18794.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._firePropertyChange18794 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._firePropertyChange18794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", ref global::java.beans.PropertyChangeSupport._firePropertyChange18794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _fireIndexedPropertyChange18795;
 		public virtual void fireIndexedPropertyChange(java.lang.String arg0, int arg1, bool arg2, bool arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18795.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18795 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;IZZ)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;IZZ)V", ref global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _fireIndexedPropertyChange18796;
 		public virtual void fireIndexedPropertyChange(java.lang.String arg0, int arg1, java.lang.Object arg2, java.lang.Object arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18796.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18796 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;)V", ref global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _fireIndexedPropertyChange18797;
 		public virtual void fireIndexedPropertyChange(java.lang.String arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18797.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18797 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;III)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "fireIndexedPropertyChange", "(Ljava/lang/String;III)V", ref global::java.beans.PropertyChangeSupport._fireIndexedPropertyChange18797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasListeners18798;
 		public virtual bool hasListeners(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.beans.PropertyChangeSupport._hasListeners18798.native == global::System.IntPtr.Zero)
-				global::java.beans.PropertyChangeSupport._hasListeners18798 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeSupport.staticClass, "hasListeners", "(Ljava/lang/String;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.beans.PropertyChangeSupport.staticClass, global::java.beans.PropertyChangeSupport._hasListeners18798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.beans.PropertyChangeSupport.staticClass, "hasListeners", "(Ljava/lang/String;)Z", ref global::java.beans.PropertyChangeSupport._hasListeners18798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyChangeSupport18799;
 		public PropertyChangeSupport(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

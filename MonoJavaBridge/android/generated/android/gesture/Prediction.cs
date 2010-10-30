@@ -10,10 +10,7 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _toString5006;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.Prediction._toString5006.native == global::System.IntPtr.Zero)
-				global::android.gesture.Prediction._toString5006 = @__env.GetMethodIDNoThrow(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString5006) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;", ref global::android.gesture.Prediction._toString5006) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.FieldId _name5007;
 		public global::java.lang.String name

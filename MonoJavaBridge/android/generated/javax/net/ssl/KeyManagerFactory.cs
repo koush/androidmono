@@ -34,18 +34,12 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _init29865;
 		public virtual void init(java.security.KeyStore arg0, char[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.KeyManagerFactory._init29865.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.KeyManagerFactory._init29865 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyManagerFactory.staticClass, "init", "(Ljava/security/KeyStore;[C)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, global::javax.net.ssl.KeyManagerFactory._init29865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, "init", "(Ljava/security/KeyStore;[C)V", ref global::javax.net.ssl.KeyManagerFactory._init29865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _init29866;
 		public virtual void init(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.KeyManagerFactory._init29866.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.KeyManagerFactory._init29866 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyManagerFactory.staticClass, "init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, global::javax.net.ssl.KeyManagerFactory._init29866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, "init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", ref global::javax.net.ssl.KeyManagerFactory._init29866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -57,10 +51,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm29867;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.KeyManagerFactory._getAlgorithm29867.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.KeyManagerFactory._getAlgorithm29867 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyManagerFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.KeyManagerFactory.staticClass, global::javax.net.ssl.KeyManagerFactory._getAlgorithm29867) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.KeyManagerFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.net.ssl.KeyManagerFactory._getAlgorithm29867) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -72,10 +63,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getProvider29868;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.KeyManagerFactory._getProvider29868.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.KeyManagerFactory._getProvider29868 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyManagerFactory.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, global::javax.net.ssl.KeyManagerFactory._getProvider29868) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.KeyManagerFactory.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::javax.net.ssl.KeyManagerFactory._getProvider29868) as java.security.Provider;
 		}
 		public static global::java.lang.String DefaultAlgorithm
 		{
@@ -102,10 +90,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getKeyManagers29870;
 		public virtual global::javax.net.ssl.KeyManager[] getKeyManagers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.KeyManagerFactory._getKeyManagers29870.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.KeyManagerFactory._getKeyManagers29870 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.KeyManagerFactory.staticClass, "getKeyManagers", "()[Ljavax/net/ssl/KeyManager;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.net.ssl.KeyManager>(this, global::javax.net.ssl.KeyManagerFactory.staticClass, global::javax.net.ssl.KeyManagerFactory._getKeyManagers29870) as javax.net.ssl.KeyManager[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.net.ssl.KeyManager>(this, global::javax.net.ssl.KeyManagerFactory.staticClass, "getKeyManagers", "()[Ljavax/net/ssl/KeyManager;", ref global::javax.net.ssl.KeyManagerFactory._getKeyManagers29870) as javax.net.ssl.KeyManager[];
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyManagerFactory29871;
 		protected KeyManagerFactory(javax.net.ssl.KeyManagerFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

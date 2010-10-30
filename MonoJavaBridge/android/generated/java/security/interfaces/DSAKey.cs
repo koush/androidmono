@@ -16,10 +16,7 @@ namespace java.security.interfaces
 		internal static global::MonoJavaBridge.MethodId _getParams23895;
 		global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.interfaces.DSAKey_._getParams23895.native == global::System.IntPtr.Zero)
-				global::java.security.interfaces.DSAKey_._getParams23895 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.interfaces.DSAParams>(this, global::java.security.interfaces.DSAKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;", ref global::java.security.interfaces.DSAKey_._getParams23895) as java.security.interfaces.DSAParams;
 		}
 		static DSAKey_()
 		{

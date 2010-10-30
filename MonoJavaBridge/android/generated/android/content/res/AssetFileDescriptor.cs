@@ -17,66 +17,42 @@ namespace android.content.res
 			internal static global::MonoJavaBridge.MethodId _mark4065;
 			public override void mark(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark4065.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark4065 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "mark", "(I)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark4065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "mark", "(I)V", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark4065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _reset4066;
 			public override void reset()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset4066.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset4066 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "reset", "()V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset4066);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "reset", "()V", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset4066);
 			}
 			internal static global::MonoJavaBridge.MethodId _read4067;
 			public override int read(byte[] arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4067.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4067 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "([BII)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "([BII)I", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			internal static global::MonoJavaBridge.MethodId _read4068;
 			public override int read(byte[] arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4068.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4068 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "([B)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "([B)I", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _read4069;
 			public override int read()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4069.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4069 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "()I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4069);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "read", "()I", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read4069);
 			}
 			internal static global::MonoJavaBridge.MethodId _skip4070;
 			public override long skip(long arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip4070.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip4070 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "skip", "(J)J");
-				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip4070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "skip", "(J)J", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip4070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _available4071;
 			public override int available()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available4071.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available4071 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "available", "()I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available4071);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "available", "()I", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available4071);
 			}
 			internal static global::MonoJavaBridge.MethodId _markSupported4072;
 			public override bool markSupported()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported4072.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported4072 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "markSupported", "()Z");
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported4072);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, "markSupported", "()Z", ref global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported4072);
 			}
 			internal static global::MonoJavaBridge.MethodId _AutoCloseInputStream4073;
 			public AutoCloseInputStream(android.content.res.AssetFileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -106,26 +82,17 @@ namespace android.content.res
 			internal static global::MonoJavaBridge.MethodId _write4074;
 			public override void write(byte[] arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4074.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4074 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "([BII)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "([BII)V", ref global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			internal static global::MonoJavaBridge.MethodId _write4075;
 			public override void write(byte[] arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4075.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4075 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "([B)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "([B)V", ref global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _write4076;
 			public override void write(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4076.native == global::System.IntPtr.Zero)
-					global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4076 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "(I)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "write", "(I)V", ref global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write4076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _AutoCloseOutputStream4077;
 			public AutoCloseOutputStream(android.content.res.AssetFileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -148,10 +115,7 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _toString4078;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._toString4078.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._toString4078 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._toString4078) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.res.AssetFileDescriptor.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.res.AssetFileDescriptor._toString4078) as java.lang.String;
 		}
 		public new long Length
 		{
@@ -163,34 +127,22 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _getLength4079;
 		public virtual long getLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._getLength4079.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._getLength4079 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "getLength", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getLength4079);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "getLength", "()J", ref global::android.content.res.AssetFileDescriptor._getLength4079);
 		}
 		internal static global::MonoJavaBridge.MethodId _close4080;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._close4080.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._close4080 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._close4080);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "close", "()V", ref global::android.content.res.AssetFileDescriptor._close4080);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel4081;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._writeToParcel4081.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._writeToParcel4081 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._writeToParcel4081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.res.AssetFileDescriptor._writeToParcel4081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents4082;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._describeContents4082.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._describeContents4082 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._describeContents4082);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "describeContents", "()I", ref global::android.content.res.AssetFileDescriptor._describeContents4082);
 		}
 		public new global::java.io.FileDescriptor FileDescriptor
 		{
@@ -202,10 +154,7 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor4083;
 		public virtual global::java.io.FileDescriptor getFileDescriptor()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._getFileDescriptor4083.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._getFileDescriptor4083 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getFileDescriptor4083) as java.io.FileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.content.res.AssetFileDescriptor.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::android.content.res.AssetFileDescriptor._getFileDescriptor4083) as java.io.FileDescriptor;
 		}
 		public new long StartOffset
 		{
@@ -217,10 +166,7 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _getStartOffset4084;
 		public virtual long getStartOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._getStartOffset4084.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._getStartOffset4084 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "getStartOffset", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getStartOffset4084);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "getStartOffset", "()J", ref global::android.content.res.AssetFileDescriptor._getStartOffset4084);
 		}
 		public new global::android.os.ParcelFileDescriptor ParcelFileDescriptor
 		{
@@ -232,10 +178,7 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _getParcelFileDescriptor4085;
 		public virtual global::android.os.ParcelFileDescriptor getParcelFileDescriptor()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor4085.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor4085 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "getParcelFileDescriptor", "()Landroid/os/ParcelFileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor4085) as android.os.ParcelFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "getParcelFileDescriptor", "()Landroid/os/ParcelFileDescriptor;", ref global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor4085) as android.os.ParcelFileDescriptor;
 		}
 		public new long DeclaredLength
 		{
@@ -247,26 +190,17 @@ namespace android.content.res
 		internal static global::MonoJavaBridge.MethodId _getDeclaredLength4086;
 		public virtual long getDeclaredLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._getDeclaredLength4086.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._getDeclaredLength4086 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "getDeclaredLength", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getDeclaredLength4086);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "getDeclaredLength", "()J", ref global::android.content.res.AssetFileDescriptor._getDeclaredLength4086);
 		}
 		internal static global::MonoJavaBridge.MethodId _createInputStream4087;
 		public virtual global::java.io.FileInputStream createInputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._createInputStream4087.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._createInputStream4087 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "createInputStream", "()Ljava/io/FileInputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._createInputStream4087) as java.io.FileInputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "createInputStream", "()Ljava/io/FileInputStream;", ref global::android.content.res.AssetFileDescriptor._createInputStream4087) as java.io.FileInputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _createOutputStream4088;
 		public virtual global::java.io.FileOutputStream createOutputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.res.AssetFileDescriptor._createOutputStream4088.native == global::System.IntPtr.Zero)
-				global::android.content.res.AssetFileDescriptor._createOutputStream4088 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetFileDescriptor.staticClass, "createOutputStream", "()Ljava/io/FileOutputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._createOutputStream4088) as java.io.FileOutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, "createOutputStream", "()Ljava/io/FileOutputStream;", ref global::android.content.res.AssetFileDescriptor._createOutputStream4088) as java.io.FileOutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _AssetFileDescriptor4089;
 		public AssetFileDescriptor(android.os.ParcelFileDescriptor arg0, long arg1, long arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

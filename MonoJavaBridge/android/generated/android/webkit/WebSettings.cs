@@ -351,34 +351,22 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDatabasePath16196;
 		public virtual global::java.lang.String getDatabasePath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDatabasePath16196.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDatabasePath16196 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDatabasePath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabasePath16196) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getDatabasePath", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getDatabasePath16196) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextSize16197;
 		public virtual global::android.webkit.WebSettings.TextSize getTextSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getTextSize16197.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getTextSize16197 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getTextSize", "()Landroid/webkit/WebSettings$TextSize;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.TextSize>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getTextSize16197) as android.webkit.WebSettings.TextSize;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.TextSize>(this, global::android.webkit.WebSettings.staticClass, "getTextSize", "()Landroid/webkit/WebSettings$TextSize;", ref global::android.webkit.WebSettings._getTextSize16197) as android.webkit.WebSettings.TextSize;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextSize16198;
 		public virtual void setTextSize(android.webkit.WebSettings.TextSize arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setTextSize16198.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setTextSize16198 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setTextSize", "(Landroid/webkit/WebSettings$TextSize;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setTextSize16198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setTextSize", "(Landroid/webkit/WebSettings$TextSize;)V", ref global::android.webkit.WebSettings._setTextSize16198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNavDump16199;
 		public virtual void setNavDump(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setNavDump16199.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setNavDump16199 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setNavDump", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setNavDump16199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setNavDump", "(Z)V", ref global::android.webkit.WebSettings._setNavDump16199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool NavDump
 		{
@@ -394,34 +382,22 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getNavDump16200;
 		public virtual bool getNavDump()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getNavDump16200.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getNavDump16200 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getNavDump", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getNavDump16200);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getNavDump", "()Z", ref global::android.webkit.WebSettings._getNavDump16200);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSupportZoom16201;
 		public virtual void setSupportZoom(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSupportZoom16201.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSupportZoom16201 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSupportZoom", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSupportZoom16201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSupportZoom", "(Z)V", ref global::android.webkit.WebSettings._setSupportZoom16201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _supportZoom16202;
 		public virtual bool supportZoom()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._supportZoom16202.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._supportZoom16202 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "supportZoom", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._supportZoom16202);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "supportZoom", "()Z", ref global::android.webkit.WebSettings._supportZoom16202);
 		}
 		internal static global::MonoJavaBridge.MethodId _setBuiltInZoomControls16203;
 		public virtual void setBuiltInZoomControls(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setBuiltInZoomControls16203.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setBuiltInZoomControls16203 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setBuiltInZoomControls", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setBuiltInZoomControls16203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setBuiltInZoomControls", "(Z)V", ref global::android.webkit.WebSettings._setBuiltInZoomControls16203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool BuiltInZoomControls
 		{
@@ -437,18 +413,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getBuiltInZoomControls16204;
 		public virtual bool getBuiltInZoomControls()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getBuiltInZoomControls16204.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getBuiltInZoomControls16204 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getBuiltInZoomControls", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getBuiltInZoomControls16204);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getBuiltInZoomControls", "()Z", ref global::android.webkit.WebSettings._getBuiltInZoomControls16204);
 		}
 		internal static global::MonoJavaBridge.MethodId _setAllowFileAccess16205;
 		public virtual void setAllowFileAccess(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setAllowFileAccess16205.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setAllowFileAccess16205 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setAllowFileAccess", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAllowFileAccess16205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setAllowFileAccess", "(Z)V", ref global::android.webkit.WebSettings._setAllowFileAccess16205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool AllowFileAccess
 		{
@@ -464,18 +434,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getAllowFileAccess16206;
 		public virtual bool getAllowFileAccess()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getAllowFileAccess16206.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getAllowFileAccess16206 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getAllowFileAccess", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getAllowFileAccess16206);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getAllowFileAccess", "()Z", ref global::android.webkit.WebSettings._getAllowFileAccess16206);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLoadWithOverviewMode16207;
 		public virtual void setLoadWithOverviewMode(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setLoadWithOverviewMode16207.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setLoadWithOverviewMode16207 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setLoadWithOverviewMode", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLoadWithOverviewMode16207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setLoadWithOverviewMode", "(Z)V", ref global::android.webkit.WebSettings._setLoadWithOverviewMode16207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool LoadWithOverviewMode
 		{
@@ -491,18 +455,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getLoadWithOverviewMode16208;
 		public virtual bool getLoadWithOverviewMode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getLoadWithOverviewMode16208.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getLoadWithOverviewMode16208 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getLoadWithOverviewMode", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLoadWithOverviewMode16208);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getLoadWithOverviewMode", "()Z", ref global::android.webkit.WebSettings._getLoadWithOverviewMode16208);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSaveFormData16209;
 		public virtual void setSaveFormData(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSaveFormData16209.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSaveFormData16209 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSaveFormData", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSaveFormData16209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSaveFormData", "(Z)V", ref global::android.webkit.WebSettings._setSaveFormData16209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool SaveFormData
 		{
@@ -518,18 +476,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSaveFormData16210;
 		public virtual bool getSaveFormData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getSaveFormData16210.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getSaveFormData16210 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getSaveFormData", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSaveFormData16210);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getSaveFormData", "()Z", ref global::android.webkit.WebSettings._getSaveFormData16210);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSavePassword16211;
 		public virtual void setSavePassword(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSavePassword16211.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSavePassword16211 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSavePassword", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSavePassword16211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSavePassword", "(Z)V", ref global::android.webkit.WebSettings._setSavePassword16211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool SavePassword
 		{
@@ -545,18 +497,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSavePassword16212;
 		public virtual bool getSavePassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getSavePassword16212.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getSavePassword16212 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getSavePassword", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSavePassword16212);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getSavePassword", "()Z", ref global::android.webkit.WebSettings._getSavePassword16212);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultZoom16213;
 		public virtual void setDefaultZoom(android.webkit.WebSettings.ZoomDensity arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDefaultZoom16213.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDefaultZoom16213 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDefaultZoom", "(Landroid/webkit/WebSettings$ZoomDensity;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultZoom16213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDefaultZoom", "(Landroid/webkit/WebSettings$ZoomDensity;)V", ref global::android.webkit.WebSettings._setDefaultZoom16213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.webkit.WebSettings.ZoomDensity DefaultZoom
 		{
@@ -572,18 +518,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDefaultZoom16214;
 		public virtual global::android.webkit.WebSettings.ZoomDensity getDefaultZoom()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDefaultZoom16214.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDefaultZoom16214 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDefaultZoom", "()Landroid/webkit/WebSettings$ZoomDensity;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.ZoomDensity>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultZoom16214) as android.webkit.WebSettings.ZoomDensity;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.ZoomDensity>(this, global::android.webkit.WebSettings.staticClass, "getDefaultZoom", "()Landroid/webkit/WebSettings$ZoomDensity;", ref global::android.webkit.WebSettings._getDefaultZoom16214) as android.webkit.WebSettings.ZoomDensity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLightTouchEnabled16215;
 		public virtual void setLightTouchEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setLightTouchEnabled16215.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setLightTouchEnabled16215 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setLightTouchEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLightTouchEnabled16215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setLightTouchEnabled", "(Z)V", ref global::android.webkit.WebSettings._setLightTouchEnabled16215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool LightTouchEnabled
 		{
@@ -599,18 +539,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getLightTouchEnabled16216;
 		public virtual bool getLightTouchEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getLightTouchEnabled16216.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getLightTouchEnabled16216 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getLightTouchEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLightTouchEnabled16216);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getLightTouchEnabled", "()Z", ref global::android.webkit.WebSettings._getLightTouchEnabled16216);
 		}
 		internal static global::MonoJavaBridge.MethodId _setUseDoubleTree16217;
 		public virtual void setUseDoubleTree(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setUseDoubleTree16217.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setUseDoubleTree16217 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setUseDoubleTree", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUseDoubleTree16217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setUseDoubleTree", "(Z)V", ref global::android.webkit.WebSettings._setUseDoubleTree16217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool UseDoubleTree
 		{
@@ -626,18 +560,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUseDoubleTree16218;
 		public virtual bool getUseDoubleTree()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getUseDoubleTree16218.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getUseDoubleTree16218 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getUseDoubleTree", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUseDoubleTree16218);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getUseDoubleTree", "()Z", ref global::android.webkit.WebSettings._getUseDoubleTree16218);
 		}
 		internal static global::MonoJavaBridge.MethodId _setUserAgent16219;
 		public virtual void setUserAgent(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setUserAgent16219.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setUserAgent16219 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setUserAgent", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUserAgent16219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setUserAgent", "(I)V", ref global::android.webkit.WebSettings._setUserAgent16219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int UserAgent
 		{
@@ -653,18 +581,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUserAgent16220;
 		public virtual int getUserAgent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getUserAgent16220.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getUserAgent16220 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getUserAgent", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgent16220);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getUserAgent", "()I", ref global::android.webkit.WebSettings._getUserAgent16220);
 		}
 		internal static global::MonoJavaBridge.MethodId _setUseWideViewPort16221;
 		public virtual void setUseWideViewPort(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setUseWideViewPort16221.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setUseWideViewPort16221 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setUseWideViewPort", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUseWideViewPort16221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setUseWideViewPort", "(Z)V", ref global::android.webkit.WebSettings._setUseWideViewPort16221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool UseWideViewPort
 		{
@@ -680,50 +602,32 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUseWideViewPort16222;
 		public virtual bool getUseWideViewPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getUseWideViewPort16222.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getUseWideViewPort16222 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getUseWideViewPort", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUseWideViewPort16222);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getUseWideViewPort", "()Z", ref global::android.webkit.WebSettings._getUseWideViewPort16222);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSupportMultipleWindows16223;
 		public virtual void setSupportMultipleWindows(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSupportMultipleWindows16223.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSupportMultipleWindows16223 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSupportMultipleWindows", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSupportMultipleWindows16223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSupportMultipleWindows", "(Z)V", ref global::android.webkit.WebSettings._setSupportMultipleWindows16223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _supportMultipleWindows16224;
 		public virtual bool supportMultipleWindows()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._supportMultipleWindows16224.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._supportMultipleWindows16224 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "supportMultipleWindows", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._supportMultipleWindows16224);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "supportMultipleWindows", "()Z", ref global::android.webkit.WebSettings._supportMultipleWindows16224);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLayoutAlgorithm16225;
 		public virtual void setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setLayoutAlgorithm16225.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setLayoutAlgorithm16225 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setLayoutAlgorithm", "(Landroid/webkit/WebSettings$LayoutAlgorithm;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLayoutAlgorithm16225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setLayoutAlgorithm", "(Landroid/webkit/WebSettings$LayoutAlgorithm;)V", ref global::android.webkit.WebSettings._setLayoutAlgorithm16225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLayoutAlgorithm16226;
 		public virtual global::android.webkit.WebSettings.LayoutAlgorithm getLayoutAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getLayoutAlgorithm16226.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getLayoutAlgorithm16226 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getLayoutAlgorithm", "()Landroid/webkit/WebSettings$LayoutAlgorithm;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.LayoutAlgorithm>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLayoutAlgorithm16226) as android.webkit.WebSettings.LayoutAlgorithm;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.LayoutAlgorithm>(this, global::android.webkit.WebSettings.staticClass, "getLayoutAlgorithm", "()Landroid/webkit/WebSettings$LayoutAlgorithm;", ref global::android.webkit.WebSettings._getLayoutAlgorithm16226) as android.webkit.WebSettings.LayoutAlgorithm;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStandardFontFamily16227;
 		public virtual void setStandardFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setStandardFontFamily16227.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setStandardFontFamily16227 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setStandardFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setStandardFontFamily16227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setStandardFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setStandardFontFamily16227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String StandardFontFamily
 		{
@@ -739,18 +643,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getStandardFontFamily16228;
 		public virtual global::java.lang.String getStandardFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getStandardFontFamily16228.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getStandardFontFamily16228 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getStandardFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getStandardFontFamily16228) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getStandardFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getStandardFontFamily16228) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFixedFontFamily16229;
 		public virtual void setFixedFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setFixedFontFamily16229.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setFixedFontFamily16229 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setFixedFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setFixedFontFamily16229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setFixedFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setFixedFontFamily16229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String FixedFontFamily
 		{
@@ -766,18 +664,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getFixedFontFamily16230;
 		public virtual global::java.lang.String getFixedFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getFixedFontFamily16230.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getFixedFontFamily16230 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getFixedFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFixedFontFamily16230) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getFixedFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getFixedFontFamily16230) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSansSerifFontFamily16231;
 		public virtual void setSansSerifFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSansSerifFontFamily16231.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSansSerifFontFamily16231 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSansSerifFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSansSerifFontFamily16231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSansSerifFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setSansSerifFontFamily16231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String SansSerifFontFamily
 		{
@@ -793,18 +685,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSansSerifFontFamily16232;
 		public virtual global::java.lang.String getSansSerifFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getSansSerifFontFamily16232.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getSansSerifFontFamily16232 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getSansSerifFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSansSerifFontFamily16232) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getSansSerifFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getSansSerifFontFamily16232) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSerifFontFamily16233;
 		public virtual void setSerifFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setSerifFontFamily16233.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setSerifFontFamily16233 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setSerifFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSerifFontFamily16233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setSerifFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setSerifFontFamily16233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String SerifFontFamily
 		{
@@ -820,18 +706,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSerifFontFamily16234;
 		public virtual global::java.lang.String getSerifFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getSerifFontFamily16234.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getSerifFontFamily16234 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getSerifFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSerifFontFamily16234) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getSerifFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getSerifFontFamily16234) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCursiveFontFamily16235;
 		public virtual void setCursiveFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setCursiveFontFamily16235.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setCursiveFontFamily16235 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setCursiveFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setCursiveFontFamily16235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setCursiveFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setCursiveFontFamily16235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String CursiveFontFamily
 		{
@@ -847,18 +727,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCursiveFontFamily16236;
 		public virtual global::java.lang.String getCursiveFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getCursiveFontFamily16236.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getCursiveFontFamily16236 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getCursiveFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCursiveFontFamily16236) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getCursiveFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getCursiveFontFamily16236) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFantasyFontFamily16237;
 		public virtual void setFantasyFontFamily(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setFantasyFontFamily16237.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setFantasyFontFamily16237 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setFantasyFontFamily", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setFantasyFontFamily16237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setFantasyFontFamily", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setFantasyFontFamily16237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String FantasyFontFamily
 		{
@@ -874,18 +748,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getFantasyFontFamily16238;
 		public virtual global::java.lang.String getFantasyFontFamily()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getFantasyFontFamily16238.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getFantasyFontFamily16238 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getFantasyFontFamily", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFantasyFontFamily16238) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getFantasyFontFamily", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getFantasyFontFamily16238) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setMinimumFontSize16239;
 		public virtual void setMinimumFontSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setMinimumFontSize16239.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setMinimumFontSize16239 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setMinimumFontSize", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setMinimumFontSize16239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setMinimumFontSize", "(I)V", ref global::android.webkit.WebSettings._setMinimumFontSize16239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MinimumFontSize
 		{
@@ -901,18 +769,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getMinimumFontSize16240;
 		public virtual int getMinimumFontSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getMinimumFontSize16240.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getMinimumFontSize16240 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getMinimumFontSize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getMinimumFontSize16240);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getMinimumFontSize", "()I", ref global::android.webkit.WebSettings._getMinimumFontSize16240);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMinimumLogicalFontSize16241;
 		public virtual void setMinimumLogicalFontSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setMinimumLogicalFontSize16241.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setMinimumLogicalFontSize16241 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setMinimumLogicalFontSize", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setMinimumLogicalFontSize16241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setMinimumLogicalFontSize", "(I)V", ref global::android.webkit.WebSettings._setMinimumLogicalFontSize16241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MinimumLogicalFontSize
 		{
@@ -928,18 +790,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getMinimumLogicalFontSize16242;
 		public virtual int getMinimumLogicalFontSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getMinimumLogicalFontSize16242.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getMinimumLogicalFontSize16242 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getMinimumLogicalFontSize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getMinimumLogicalFontSize16242);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getMinimumLogicalFontSize", "()I", ref global::android.webkit.WebSettings._getMinimumLogicalFontSize16242);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultFontSize16243;
 		public virtual void setDefaultFontSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDefaultFontSize16243.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDefaultFontSize16243 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDefaultFontSize", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultFontSize16243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDefaultFontSize", "(I)V", ref global::android.webkit.WebSettings._setDefaultFontSize16243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DefaultFontSize
 		{
@@ -955,18 +811,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDefaultFontSize16244;
 		public virtual int getDefaultFontSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDefaultFontSize16244.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDefaultFontSize16244 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDefaultFontSize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultFontSize16244);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getDefaultFontSize", "()I", ref global::android.webkit.WebSettings._getDefaultFontSize16244);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultFixedFontSize16245;
 		public virtual void setDefaultFixedFontSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDefaultFixedFontSize16245.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDefaultFixedFontSize16245 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDefaultFixedFontSize", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultFixedFontSize16245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDefaultFixedFontSize", "(I)V", ref global::android.webkit.WebSettings._setDefaultFixedFontSize16245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DefaultFixedFontSize
 		{
@@ -982,18 +832,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDefaultFixedFontSize16246;
 		public virtual int getDefaultFixedFontSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDefaultFixedFontSize16246.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDefaultFixedFontSize16246 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDefaultFixedFontSize", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultFixedFontSize16246);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getDefaultFixedFontSize", "()I", ref global::android.webkit.WebSettings._getDefaultFixedFontSize16246);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLoadsImagesAutomatically16247;
 		public virtual void setLoadsImagesAutomatically(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setLoadsImagesAutomatically16247.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setLoadsImagesAutomatically16247 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setLoadsImagesAutomatically", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLoadsImagesAutomatically16247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setLoadsImagesAutomatically", "(Z)V", ref global::android.webkit.WebSettings._setLoadsImagesAutomatically16247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool LoadsImagesAutomatically
 		{
@@ -1009,18 +853,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getLoadsImagesAutomatically16248;
 		public virtual bool getLoadsImagesAutomatically()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getLoadsImagesAutomatically16248.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getLoadsImagesAutomatically16248 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getLoadsImagesAutomatically", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLoadsImagesAutomatically16248);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getLoadsImagesAutomatically", "()Z", ref global::android.webkit.WebSettings._getLoadsImagesAutomatically16248);
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlockNetworkImage16249;
 		public virtual void setBlockNetworkImage(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setBlockNetworkImage16249.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setBlockNetworkImage16249 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setBlockNetworkImage", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setBlockNetworkImage16249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setBlockNetworkImage", "(Z)V", ref global::android.webkit.WebSettings._setBlockNetworkImage16249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool BlockNetworkImage
 		{
@@ -1036,18 +874,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getBlockNetworkImage16250;
 		public virtual bool getBlockNetworkImage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getBlockNetworkImage16250.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getBlockNetworkImage16250 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getBlockNetworkImage", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getBlockNetworkImage16250);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getBlockNetworkImage", "()Z", ref global::android.webkit.WebSettings._getBlockNetworkImage16250);
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlockNetworkLoads16251;
 		public virtual void setBlockNetworkLoads(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setBlockNetworkLoads16251.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setBlockNetworkLoads16251 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setBlockNetworkLoads", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setBlockNetworkLoads16251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setBlockNetworkLoads", "(Z)V", ref global::android.webkit.WebSettings._setBlockNetworkLoads16251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool BlockNetworkLoads
 		{
@@ -1063,50 +895,32 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getBlockNetworkLoads16252;
 		public virtual bool getBlockNetworkLoads()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getBlockNetworkLoads16252.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getBlockNetworkLoads16252 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getBlockNetworkLoads", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getBlockNetworkLoads16252);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getBlockNetworkLoads", "()Z", ref global::android.webkit.WebSettings._getBlockNetworkLoads16252);
 		}
 		internal static global::MonoJavaBridge.MethodId _setJavaScriptEnabled16253;
 		public virtual void setJavaScriptEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setJavaScriptEnabled16253.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setJavaScriptEnabled16253 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setJavaScriptEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setJavaScriptEnabled16253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setJavaScriptEnabled", "(Z)V", ref global::android.webkit.WebSettings._setJavaScriptEnabled16253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPluginsEnabled16254;
 		public virtual void setPluginsEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setPluginsEnabled16254.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setPluginsEnabled16254 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setPluginsEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setPluginsEnabled16254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setPluginsEnabled", "(Z)V", ref global::android.webkit.WebSettings._setPluginsEnabled16254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPluginState16255;
 		public virtual void setPluginState(android.webkit.WebSettings.PluginState arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setPluginState16255.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setPluginState16255 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setPluginState", "(Landroid/webkit/WebSettings$PluginState;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setPluginState16255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setPluginState", "(Landroid/webkit/WebSettings$PluginState;)V", ref global::android.webkit.WebSettings._setPluginState16255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPluginsPath16256;
 		public virtual void setPluginsPath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setPluginsPath16256.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setPluginsPath16256 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setPluginsPath", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setPluginsPath16256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setPluginsPath", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setPluginsPath16256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDatabasePath16257;
 		public virtual void setDatabasePath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDatabasePath16257.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDatabasePath16257 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDatabasePath", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDatabasePath16257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDatabasePath", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setDatabasePath16257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String GeolocationDatabasePath
 		{
@@ -1118,10 +932,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setGeolocationDatabasePath16258;
 		public virtual void setGeolocationDatabasePath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setGeolocationDatabasePath16258.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setGeolocationDatabasePath16258 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setGeolocationDatabasePath", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setGeolocationDatabasePath16258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setGeolocationDatabasePath", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setGeolocationDatabasePath16258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool AppCacheEnabled
 		{
@@ -1133,10 +944,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setAppCacheEnabled16259;
 		public virtual void setAppCacheEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setAppCacheEnabled16259.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setAppCacheEnabled16259 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setAppCacheEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCacheEnabled16259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setAppCacheEnabled", "(Z)V", ref global::android.webkit.WebSettings._setAppCacheEnabled16259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String AppCachePath
 		{
@@ -1148,10 +956,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setAppCachePath16260;
 		public virtual void setAppCachePath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setAppCachePath16260.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setAppCachePath16260 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setAppCachePath", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCachePath16260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setAppCachePath", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setAppCachePath16260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long AppCacheMaxSize
 		{
@@ -1163,26 +968,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setAppCacheMaxSize16261;
 		public virtual void setAppCacheMaxSize(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setAppCacheMaxSize16261.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setAppCacheMaxSize16261 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setAppCacheMaxSize", "(J)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCacheMaxSize16261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setAppCacheMaxSize", "(J)V", ref global::android.webkit.WebSettings._setAppCacheMaxSize16261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDatabaseEnabled16262;
 		public virtual void setDatabaseEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDatabaseEnabled16262.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDatabaseEnabled16262 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDatabaseEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDatabaseEnabled16262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDatabaseEnabled", "(Z)V", ref global::android.webkit.WebSettings._setDatabaseEnabled16262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDomStorageEnabled16263;
 		public virtual void setDomStorageEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDomStorageEnabled16263.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDomStorageEnabled16263 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDomStorageEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDomStorageEnabled16263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDomStorageEnabled", "(Z)V", ref global::android.webkit.WebSettings._setDomStorageEnabled16263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool DomStorageEnabled
 		{
@@ -1198,10 +994,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDomStorageEnabled16264;
 		public virtual bool getDomStorageEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDomStorageEnabled16264.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDomStorageEnabled16264 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDomStorageEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDomStorageEnabled16264);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getDomStorageEnabled", "()Z", ref global::android.webkit.WebSettings._getDomStorageEnabled16264);
 		}
 		public new bool DatabaseEnabled
 		{
@@ -1217,10 +1010,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDatabaseEnabled16265;
 		public virtual bool getDatabaseEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDatabaseEnabled16265.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDatabaseEnabled16265 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDatabaseEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabaseEnabled16265);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getDatabaseEnabled", "()Z", ref global::android.webkit.WebSettings._getDatabaseEnabled16265);
 		}
 		public new bool GeolocationEnabled
 		{
@@ -1232,10 +1022,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setGeolocationEnabled16266;
 		public virtual void setGeolocationEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setGeolocationEnabled16266.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setGeolocationEnabled16266 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setGeolocationEnabled", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setGeolocationEnabled16266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setGeolocationEnabled", "(Z)V", ref global::android.webkit.WebSettings._setGeolocationEnabled16266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool JavaScriptEnabled
 		{
@@ -1251,10 +1038,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getJavaScriptEnabled16267;
 		public virtual bool getJavaScriptEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getJavaScriptEnabled16267.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getJavaScriptEnabled16267 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getJavaScriptEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getJavaScriptEnabled16267);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getJavaScriptEnabled", "()Z", ref global::android.webkit.WebSettings._getJavaScriptEnabled16267);
 		}
 		public new bool PluginsEnabled
 		{
@@ -1270,18 +1054,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getPluginsEnabled16268;
 		public virtual bool getPluginsEnabled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getPluginsEnabled16268.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getPluginsEnabled16268 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getPluginsEnabled", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsEnabled16268);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getPluginsEnabled", "()Z", ref global::android.webkit.WebSettings._getPluginsEnabled16268);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPluginState16269;
 		public virtual global::android.webkit.WebSettings.PluginState getPluginState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getPluginState16269.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getPluginState16269 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getPluginState", "()Landroid/webkit/WebSettings$PluginState;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.PluginState>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginState16269) as android.webkit.WebSettings.PluginState;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.WebSettings.PluginState>(this, global::android.webkit.WebSettings.staticClass, "getPluginState", "()Landroid/webkit/WebSettings$PluginState;", ref global::android.webkit.WebSettings._getPluginState16269) as android.webkit.WebSettings.PluginState;
 		}
 		public new global::java.lang.String PluginsPath
 		{
@@ -1297,18 +1075,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getPluginsPath16270;
 		public virtual global::java.lang.String getPluginsPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getPluginsPath16270.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getPluginsPath16270 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getPluginsPath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsPath16270) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getPluginsPath", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getPluginsPath16270) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setJavaScriptCanOpenWindowsAutomatically16271;
 		public virtual void setJavaScriptCanOpenWindowsAutomatically(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically16271.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically16271 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setJavaScriptCanOpenWindowsAutomatically", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically16271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setJavaScriptCanOpenWindowsAutomatically", "(Z)V", ref global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically16271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool JavaScriptCanOpenWindowsAutomatically
 		{
@@ -1324,18 +1096,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getJavaScriptCanOpenWindowsAutomatically16272;
 		public virtual bool getJavaScriptCanOpenWindowsAutomatically()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically16272.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically16272 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getJavaScriptCanOpenWindowsAutomatically", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically16272);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebSettings.staticClass, "getJavaScriptCanOpenWindowsAutomatically", "()Z", ref global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically16272);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultTextEncodingName16273;
 		public virtual void setDefaultTextEncodingName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setDefaultTextEncodingName16273.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setDefaultTextEncodingName16273 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setDefaultTextEncodingName", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultTextEncodingName16273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setDefaultTextEncodingName", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setDefaultTextEncodingName16273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String DefaultTextEncodingName
 		{
@@ -1351,18 +1117,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getDefaultTextEncodingName16274;
 		public virtual global::java.lang.String getDefaultTextEncodingName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getDefaultTextEncodingName16274.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getDefaultTextEncodingName16274 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getDefaultTextEncodingName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultTextEncodingName16274) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getDefaultTextEncodingName", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getDefaultTextEncodingName16274) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUserAgentString16275;
 		public virtual void setUserAgentString(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setUserAgentString16275.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setUserAgentString16275 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setUserAgentString", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUserAgentString16275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setUserAgentString", "(Ljava/lang/String;)V", ref global::android.webkit.WebSettings._setUserAgentString16275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String UserAgentString
 		{
@@ -1378,10 +1138,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUserAgentString16276;
 		public virtual global::java.lang.String getUserAgentString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getUserAgentString16276.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getUserAgentString16276 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getUserAgentString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgentString16276) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebSettings.staticClass, "getUserAgentString", "()Ljava/lang/String;", ref global::android.webkit.WebSettings._getUserAgentString16276) as java.lang.String;
 		}
 		public new bool NeedInitialFocus
 		{
@@ -1393,26 +1150,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setNeedInitialFocus16277;
 		public virtual void setNeedInitialFocus(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setNeedInitialFocus16277.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setNeedInitialFocus16277 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setNeedInitialFocus", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setNeedInitialFocus16277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setNeedInitialFocus", "(Z)V", ref global::android.webkit.WebSettings._setNeedInitialFocus16277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setRenderPriority16278;
 		public virtual void setRenderPriority(android.webkit.WebSettings.RenderPriority arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setRenderPriority16278.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setRenderPriority16278 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setRenderPriority", "(Landroid/webkit/WebSettings$RenderPriority;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setRenderPriority16278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setRenderPriority", "(Landroid/webkit/WebSettings$RenderPriority;)V", ref global::android.webkit.WebSettings._setRenderPriority16278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCacheMode16279;
 		public virtual void setCacheMode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._setCacheMode16279.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._setCacheMode16279 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "setCacheMode", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setCacheMode16279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebSettings.staticClass, "setCacheMode", "(I)V", ref global::android.webkit.WebSettings._setCacheMode16279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CacheMode
 		{
@@ -1428,10 +1176,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCacheMode16280;
 		public virtual int getCacheMode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebSettings._getCacheMode16280.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebSettings._getCacheMode16280 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSettings.staticClass, "getCacheMode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCacheMode16280);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebSettings.staticClass, "getCacheMode", "()I", ref global::android.webkit.WebSettings._getCacheMode16280);
 		}
 		public static int LOAD_DEFAULT
 		{

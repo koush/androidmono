@@ -17,10 +17,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getPrn6868;
 		public int getPrn()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._getPrn6868.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._getPrn6868 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "getPrn", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getPrn6868);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.GpsSatellite.staticClass, "getPrn", "()I", ref global::android.location.GpsSatellite._getPrn6868);
 		}
 		public new float Snr
 		{
@@ -32,10 +29,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getSnr6869;
 		public float getSnr()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._getSnr6869.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._getSnr6869 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "getSnr", "()F");
-			return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getSnr6869);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getSnr", "()F", ref global::android.location.GpsSatellite._getSnr6869);
 		}
 		public new float Elevation
 		{
@@ -47,10 +41,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getElevation6870;
 		public float getElevation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._getElevation6870.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._getElevation6870 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "getElevation", "()F");
-			return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getElevation6870);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getElevation", "()F", ref global::android.location.GpsSatellite._getElevation6870);
 		}
 		public new float Azimuth
 		{
@@ -62,34 +53,22 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getAzimuth6871;
 		public float getAzimuth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._getAzimuth6871.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._getAzimuth6871 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "getAzimuth", "()F");
-			return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getAzimuth6871);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getAzimuth", "()F", ref global::android.location.GpsSatellite._getAzimuth6871);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasEphemeris6872;
 		public bool hasEphemeris()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._hasEphemeris6872.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._hasEphemeris6872 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "hasEphemeris", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasEphemeris6872);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasEphemeris", "()Z", ref global::android.location.GpsSatellite._hasEphemeris6872);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasAlmanac6873;
 		public bool hasAlmanac()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._hasAlmanac6873.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._hasAlmanac6873 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "hasAlmanac", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasAlmanac6873);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasAlmanac", "()Z", ref global::android.location.GpsSatellite._hasAlmanac6873);
 		}
 		internal static global::MonoJavaBridge.MethodId _usedInFix6874;
 		public bool usedInFix()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.GpsSatellite._usedInFix6874.native == global::System.IntPtr.Zero)
-				global::android.location.GpsSatellite._usedInFix6874 = @__env.GetMethodIDNoThrow(global::android.location.GpsSatellite.staticClass, "usedInFix", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._usedInFix6874);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "usedInFix", "()Z", ref global::android.location.GpsSatellite._usedInFix6874);
 		}
 		static GpsSatellite()
 		{

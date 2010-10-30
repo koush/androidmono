@@ -16,10 +16,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _call27102;
 		global::java.lang.Object java.util.concurrent.Callable.call()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Callable_._call27102.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Callable_._call27102 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Callable_.staticClass, "call", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.Callable_._call27102)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.Callable_.staticClass, "call", "()Ljava/lang/Object;", ref global::java.util.concurrent.Callable_._call27102) as java.lang.Object;
 		}
 		static Callable_()
 		{

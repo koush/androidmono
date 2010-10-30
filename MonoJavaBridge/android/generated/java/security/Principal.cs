@@ -19,34 +19,22 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _equals23239;
 		bool java.security.Principal.equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Principal_._equals23239.native == global::System.IntPtr.Zero)
-				global::java.security.Principal_._equals23239 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.Principal_._equals23239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Principal_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.Principal_._equals23239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23240;
 		global::java.lang.String java.security.Principal.toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Principal_._toString23240.native == global::System.IntPtr.Zero)
-				global::java.security.Principal_._toString23240 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Principal_._toString23240)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Principal_._toString23240) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23241;
 		int java.security.Principal.hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Principal_._hashCode23241.native == global::System.IntPtr.Zero)
-				global::java.security.Principal_._hashCode23241 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "hashCode", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.security.Principal_._hashCode23241);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.Principal_.staticClass, "hashCode", "()I", ref global::java.security.Principal_._hashCode23241);
 		}
 		internal static global::MonoJavaBridge.MethodId _getName23242;
 		global::java.lang.String java.security.Principal.getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Principal_._getName23242.native == global::System.IntPtr.Zero)
-				global::java.security.Principal_._getName23242 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Principal_._getName23242)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.Principal_._getName23242) as java.lang.String;
 		}
 		static Principal_()
 		{

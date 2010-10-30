@@ -10,10 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5825;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Xfermode._finalize5825.native == global::System.IntPtr.Zero)
-				global::android.graphics.Xfermode._finalize5825 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._finalize5825);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Xfermode.staticClass, "finalize", "()V", ref global::android.graphics.Xfermode._finalize5825);
 		}
 		internal static global::MonoJavaBridge.MethodId _Xfermode5826;
 		public Xfermode() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

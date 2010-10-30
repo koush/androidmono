@@ -10,10 +10,7 @@ namespace org.apache.http.impl.entity
 		internal static global::MonoJavaBridge.MethodId _determineLength33376;
 		public virtual long determineLength(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33376.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33376 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LaxContentLengthStrategy33377;
 		public LaxContentLengthStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

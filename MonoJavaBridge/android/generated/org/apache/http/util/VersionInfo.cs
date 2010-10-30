@@ -10,10 +10,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _toString34022;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._toString34022.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._toString34022 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._toString34022) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._toString34022) as java.lang.String;
 		}
 		public new global::java.lang.String Package
 		{
@@ -25,10 +22,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _getPackage34023;
 		public virtual global::java.lang.String getPackage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._getPackage34023.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._getPackage34023 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "getPackage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getPackage34023) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "getPackage", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._getPackage34023) as java.lang.String;
 		}
 		public new global::java.lang.String Timestamp
 		{
@@ -40,10 +34,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _getTimestamp34024;
 		public virtual global::java.lang.String getTimestamp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._getTimestamp34024.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._getTimestamp34024 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "getTimestamp", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getTimestamp34024) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "getTimestamp", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._getTimestamp34024) as java.lang.String;
 		}
 		public new global::java.lang.String Module
 		{
@@ -55,10 +46,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _getModule34025;
 		public virtual global::java.lang.String getModule()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._getModule34025.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._getModule34025 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "getModule", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getModule34025) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "getModule", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._getModule34025) as java.lang.String;
 		}
 		public new global::java.lang.String Release
 		{
@@ -70,10 +58,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _getRelease34026;
 		public virtual global::java.lang.String getRelease()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._getRelease34026.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._getRelease34026 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "getRelease", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getRelease34026) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "getRelease", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._getRelease34026) as java.lang.String;
 		}
 		public new global::java.lang.String Classloader
 		{
@@ -85,10 +70,7 @@ namespace org.apache.http.util
 		internal static global::MonoJavaBridge.MethodId _getClassloader34027;
 		public virtual global::java.lang.String getClassloader()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.VersionInfo._getClassloader34027.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.VersionInfo._getClassloader34027 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.VersionInfo.staticClass, "getClassloader", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getClassloader34027) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.VersionInfo.staticClass, "getClassloader", "()Ljava/lang/String;", ref global::org.apache.http.util.VersionInfo._getClassloader34027) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadVersionInfo34028;
 		public static global::org.apache.http.util.VersionInfo[] loadVersionInfo(java.lang.String[] arg0, java.lang.ClassLoader arg1)

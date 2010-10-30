@@ -48,50 +48,32 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _engineInit28645;
 		protected override void engineInit(java.security.Key arg0, java.security.SecureRandom arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineInit28645.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineInit28645 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/SecureRandom;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineInit28645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/SecureRandom;)V", ref global::javax.crypto.KeyAgreementSpi_._engineInit28645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28646;
 		protected override void engineInit(java.security.Key arg0, java.security.spec.AlgorithmParameterSpec arg1, java.security.SecureRandom arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineInit28646.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineInit28646 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineInit28646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", ref global::javax.crypto.KeyAgreementSpi_._engineInit28646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineDoPhase28647;
 		protected override global::java.security.Key engineDoPhase(java.security.Key arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineDoPhase28647.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineDoPhase28647 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineDoPhase", "(Ljava/security/Key;Z)Ljava/security/Key;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineDoPhase28647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineDoPhase", "(Ljava/security/Key;Z)Ljava/security/Key;", ref global::javax.crypto.KeyAgreementSpi_._engineDoPhase28647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.Key;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSecret28648;
 		protected override byte[] engineGenerateSecret()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28648.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28648 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "()[B");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28648)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "()[B", ref global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28648) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSecret28649;
 		protected override int engineGenerateSecret(byte[] arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28649.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28649 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "([BI)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "([BI)I", ref global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSecret28650;
 		protected override global::javax.crypto.SecretKey engineGenerateSecret(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28650.native == global::System.IntPtr.Zero)
-				global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28650 = @__env.GetMethodIDNoThrow(global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.KeyAgreementSpi_.staticClass, "engineGenerateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;", ref global::javax.crypto.KeyAgreementSpi_._engineGenerateSecret28650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
 		}
 		static KeyAgreementSpi_()
 		{

@@ -19,34 +19,22 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _parseElements33694;
 		global::org.apache.http.HeaderElement[] org.apache.http.message.HeaderValueParser.parseElements(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.HeaderValueParser_._parseElements33694.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.HeaderValueParser_._parseElements33694 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseElements", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/HeaderElement;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.HeaderElement>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueParser_._parseElements33694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HeaderElement[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.message.HeaderValueParser_.staticClass, "parseElements", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.message.HeaderValueParser_._parseElements33694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.HeaderElement[];
 		}
 		internal static global::MonoJavaBridge.MethodId _parseHeaderElement33695;
 		global::org.apache.http.HeaderElement org.apache.http.message.HeaderValueParser.parseHeaderElement(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.HeaderValueParser_._parseHeaderElement33695.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.HeaderValueParser_._parseHeaderElement33695 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseHeaderElement", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderElement>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueParser_._parseHeaderElement33695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HeaderElement;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.message.HeaderValueParser_.staticClass, "parseHeaderElement", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;", ref global::org.apache.http.message.HeaderValueParser_._parseHeaderElement33695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.HeaderElement;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseParameters33696;
 		global::org.apache.http.NameValuePair[] org.apache.http.message.HeaderValueParser.parseParameters(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.HeaderValueParser_._parseParameters33696.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.HeaderValueParser_._parseParameters33696 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseParameters", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/NameValuePair;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueParser_._parseParameters33696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.NameValuePair[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.NameValuePair>(this, global::org.apache.http.message.HeaderValueParser_.staticClass, "parseParameters", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/NameValuePair;", ref global::org.apache.http.message.HeaderValueParser_._parseParameters33696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.NameValuePair[];
 		}
 		internal static global::MonoJavaBridge.MethodId _parseNameValuePair33697;
 		global::org.apache.http.NameValuePair org.apache.http.message.HeaderValueParser.parseNameValuePair(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.HeaderValueParser_.staticClass, "parseNameValuePair", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/NameValuePair;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.NameValuePair;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.NameValuePair>(this, global::org.apache.http.message.HeaderValueParser_.staticClass, "parseNameValuePair", "(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/NameValuePair;", ref global::org.apache.http.message.HeaderValueParser_._parseNameValuePair33697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.NameValuePair;
 		}
 		static HeaderValueParser_()
 		{

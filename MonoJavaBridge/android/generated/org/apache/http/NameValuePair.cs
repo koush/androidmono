@@ -17,18 +17,12 @@ namespace org.apache.http
 		internal static global::MonoJavaBridge.MethodId _getName31738;
 		global::java.lang.String org.apache.http.NameValuePair.getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.NameValuePair_._getName31738.native == global::System.IntPtr.Zero)
-				global::org.apache.http.NameValuePair_._getName31738 = @__env.GetMethodIDNoThrow(global::org.apache.http.NameValuePair_.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.NameValuePair_._getName31738)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._getName31738) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue31739;
 		global::java.lang.String org.apache.http.NameValuePair.getValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.NameValuePair_._getValue31739.native == global::System.IntPtr.Zero)
-				global::org.apache.http.NameValuePair_._getValue31739 = @__env.GetMethodIDNoThrow(global::org.apache.http.NameValuePair_.staticClass, "getValue", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.NameValuePair_._getValue31739)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._getValue31739) as java.lang.String;
 		}
 		static NameValuePair_()
 		{

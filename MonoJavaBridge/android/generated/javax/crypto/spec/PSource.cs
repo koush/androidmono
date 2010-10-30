@@ -24,10 +24,7 @@ namespace javax.crypto.spec
 			internal static global::MonoJavaBridge.MethodId _getValue28803;
 			public byte[] getValue()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::javax.crypto.spec.PSource.PSpecified._getValue28803.native == global::System.IntPtr.Zero)
-					global::javax.crypto.spec.PSource.PSpecified._getValue28803 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "getValue", "()[B");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource.PSpecified.staticClass, global::javax.crypto.spec.PSource.PSpecified._getValue28803)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.PSource.PSpecified.staticClass, "getValue", "()[B", ref global::javax.crypto.spec.PSource.PSpecified._getValue28803) as byte[];
 			}
 			internal static global::MonoJavaBridge.MethodId _PSpecified28804;
 			public PSpecified(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -67,10 +64,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28806;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PSource._getAlgorithm28806.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PSource._getAlgorithm28806 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._getAlgorithm28806) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.PSource.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.PSource._getAlgorithm28806) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PSource28807;
 		protected PSource(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

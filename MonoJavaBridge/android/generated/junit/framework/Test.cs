@@ -17,18 +17,12 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _run31375;
 		void junit.framework.Test.run(junit.framework.TestResult arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.Test_._run31375.native == global::System.IntPtr.Zero)
-				global::junit.framework.Test_._run31375 = @__env.GetMethodIDNoThrow(global::junit.framework.Test_.staticClass, "run", "(Ljunit/framework/TestResult;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.Test_.staticClass, "run", "(Ljunit/framework/TestResult;)V", ref global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _countTestCases31376;
 		int junit.framework.Test.countTestCases()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.Test_._countTestCases31376.native == global::System.IntPtr.Zero)
-				global::junit.framework.Test_._countTestCases31376 = @__env.GetMethodIDNoThrow(global::junit.framework.Test_.staticClass, "countTestCases", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::junit.framework.Test_._countTestCases31376);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.Test_.staticClass, "countTestCases", "()I", ref global::junit.framework.Test_._countTestCases31376);
 		}
 		static Test_()
 		{

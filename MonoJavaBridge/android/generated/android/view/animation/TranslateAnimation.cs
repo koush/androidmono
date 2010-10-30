@@ -10,18 +10,12 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _initialize15771;
 		public override void initialize(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.TranslateAnimation._initialize15771.native == global::System.IntPtr.Zero)
-				global::android.view.animation.TranslateAnimation._initialize15771 = @__env.GetMethodIDNoThrow(global::android.view.animation.TranslateAnimation.staticClass, "initialize", "(IIII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.TranslateAnimation.staticClass, global::android.view.animation.TranslateAnimation._initialize15771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.TranslateAnimation.staticClass, "initialize", "(IIII)V", ref global::android.view.animation.TranslateAnimation._initialize15771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _applyTransformation15772;
 		protected override void applyTransformation(float arg0, android.view.animation.Transformation arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.TranslateAnimation._applyTransformation15772.native == global::System.IntPtr.Zero)
-				global::android.view.animation.TranslateAnimation._applyTransformation15772 = @__env.GetMethodIDNoThrow(global::android.view.animation.TranslateAnimation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.TranslateAnimation.staticClass, global::android.view.animation.TranslateAnimation._applyTransformation15772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.TranslateAnimation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V", ref global::android.view.animation.TranslateAnimation._applyTransformation15772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _TranslateAnimation15773;
 		public TranslateAnimation(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,10 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getEncoded24036;
 		public override byte[] getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.PKCS8EncodedKeySpec._getEncoded24036.native == global::System.IntPtr.Zero)
-				global::java.security.spec.PKCS8EncodedKeySpec._getEncoded24036 = @__env.GetMethodIDNoThrow(global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.PKCS8EncodedKeySpec.staticClass, global::java.security.spec.PKCS8EncodedKeySpec._getEncoded24036) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getEncoded", "()[B", ref global::java.security.spec.PKCS8EncodedKeySpec._getEncoded24036) as byte[];
 		}
 		public new global::java.lang.String Format
 		{
@@ -32,10 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getFormat24037;
 		public sealed override global::java.lang.String getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.spec.PKCS8EncodedKeySpec._getFormat24037.native == global::System.IntPtr.Zero)
-				global::java.security.spec.PKCS8EncodedKeySpec._getFormat24037 = @__env.GetMethodIDNoThrow(global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.PKCS8EncodedKeySpec.staticClass, global::java.security.spec.PKCS8EncodedKeySpec._getFormat24037) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.PKCS8EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.spec.PKCS8EncodedKeySpec._getFormat24037) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PKCS8EncodedKeySpec24038;
 		public PKCS8EncodedKeySpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

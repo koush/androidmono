@@ -21,18 +21,12 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getNextWarning25033;
 		public virtual global::java.sql.SQLWarning getNextWarning()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLWarning._getNextWarning25033.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLWarning._getNextWarning25033 = @__env.GetMethodIDNoThrow(global::java.sql.SQLWarning.staticClass, "getNextWarning", "()Ljava/sql/SQLWarning;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._getNextWarning25033) as java.sql.SQLWarning;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.SQLWarning.staticClass, "getNextWarning", "()Ljava/sql/SQLWarning;", ref global::java.sql.SQLWarning._getNextWarning25033) as java.sql.SQLWarning;
 		}
 		internal static global::MonoJavaBridge.MethodId _setNextWarning25034;
 		public virtual void setNextWarning(java.sql.SQLWarning arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLWarning._setNextWarning25034.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLWarning._setNextWarning25034 = @__env.GetMethodIDNoThrow(global::java.sql.SQLWarning.staticClass, "setNextWarning", "(Ljava/sql/SQLWarning;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._setNextWarning25034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLWarning.staticClass, "setNextWarning", "(Ljava/sql/SQLWarning;)V", ref global::java.sql.SQLWarning._setNextWarning25034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLWarning25035;
 		public SQLWarning(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

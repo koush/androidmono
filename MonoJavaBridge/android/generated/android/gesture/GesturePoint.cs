@@ -10,10 +10,7 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _clone4961;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.GesturePoint._clone4961.native == global::System.IntPtr.Zero)
-				global::android.gesture.GesturePoint._clone4961 = @__env.GetMethodIDNoThrow(global::android.gesture.GesturePoint.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GesturePoint.staticClass, global::android.gesture.GesturePoint._clone4961) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GesturePoint.staticClass, "clone", "()Ljava/lang/Object;", ref global::android.gesture.GesturePoint._clone4961) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _GesturePoint4962;
 		public GesturePoint(float arg0, float arg1, long arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26325;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IllegalFormatWidthException._getMessage26325.native == global::System.IntPtr.Zero)
-				global::java.util.IllegalFormatWidthException._getMessage26325 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getMessage26325) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.IllegalFormatWidthException._getMessage26325) as java.lang.String;
 		}
 		public new int Width
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getWidth26326;
 		public virtual int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IllegalFormatWidthException._getWidth26326.native == global::System.IntPtr.Zero)
-				global::java.util.IllegalFormatWidthException._getWidth26326 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getWidth", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getWidth26326);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatWidthException.staticClass, "getWidth", "()I", ref global::java.util.IllegalFormatWidthException._getWidth26326);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatWidthException26327;
 		public IllegalFormatWidthException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

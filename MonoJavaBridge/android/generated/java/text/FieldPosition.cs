@@ -10,26 +10,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25507;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._equals25507.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._equals25507 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals25507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.FieldPosition._equals25507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25508;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._toString25508.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._toString25508 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString25508) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;", ref global::java.text.FieldPosition._toString25508) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25509;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._hashCode25509.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._hashCode25509 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode25509);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, "hashCode", "()I", ref global::java.text.FieldPosition._hashCode25509);
 		}
 		public new int Field
 		{
@@ -41,10 +32,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getField25510;
 		public virtual int getField()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._getField25510.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._getField25510 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getField", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getField25510);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, "getField", "()I", ref global::java.text.FieldPosition._getField25510);
 		}
 		public new int BeginIndex
 		{
@@ -60,10 +48,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getBeginIndex25511;
 		public virtual int getBeginIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._getBeginIndex25511.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._getBeginIndex25511 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getBeginIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getBeginIndex25511);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, "getBeginIndex", "()I", ref global::java.text.FieldPosition._getBeginIndex25511);
 		}
 		public new int EndIndex
 		{
@@ -79,10 +64,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getEndIndex25512;
 		public virtual int getEndIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._getEndIndex25512.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._getEndIndex25512 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getEndIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getEndIndex25512);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.FieldPosition.staticClass, "getEndIndex", "()I", ref global::java.text.FieldPosition._getEndIndex25512);
 		}
 		public new global::java.text.Format.Field FieldAttribute
 		{
@@ -94,26 +76,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getFieldAttribute25513;
 		public virtual global::java.text.Format.Field getFieldAttribute()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._getFieldAttribute25513.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._getFieldAttribute25513 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getFieldAttribute", "()Ljava/text/Format$Field;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getFieldAttribute25513) as java.text.Format.Field;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.FieldPosition.staticClass, "getFieldAttribute", "()Ljava/text/Format$Field;", ref global::java.text.FieldPosition._getFieldAttribute25513) as java.text.Format.Field;
 		}
 		internal static global::MonoJavaBridge.MethodId _setBeginIndex25514;
 		public virtual void setBeginIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._setBeginIndex25514.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._setBeginIndex25514 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "setBeginIndex", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setBeginIndex25514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.FieldPosition.staticClass, "setBeginIndex", "(I)V", ref global::java.text.FieldPosition._setBeginIndex25514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setEndIndex25515;
 		public virtual void setEndIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.FieldPosition._setEndIndex25515.native == global::System.IntPtr.Zero)
-				global::java.text.FieldPosition._setEndIndex25515 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "setEndIndex", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setEndIndex25515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.FieldPosition.staticClass, "setEndIndex", "(I)V", ref global::java.text.FieldPosition._setEndIndex25515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _FieldPosition25516;
 		public FieldPosition(java.text.Format.Field arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

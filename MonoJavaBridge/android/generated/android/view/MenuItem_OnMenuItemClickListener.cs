@@ -16,10 +16,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _onMenuItemClick14346;
 		bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick14346.native == global::System.IntPtr.Zero)
-				global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick14346 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, "onMenuItemClick", "(Landroid/view/MenuItem;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick14346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, "onMenuItemClick", "(Landroid/view/MenuItem;)Z", ref global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick14346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static MenuItem_OnMenuItemClickListener_()
 		{

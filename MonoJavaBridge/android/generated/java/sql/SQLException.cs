@@ -14,10 +14,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _iterator24970;
 		public virtual global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLException._iterator24970.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLException._iterator24970 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.sql.SQLException.staticClass, global::java.sql.SQLException._iterator24970) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.sql.SQLException.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.sql.SQLException._iterator24970) as java.util.Iterator;
 		}
 		public new global::java.lang.String SQLState
 		{
@@ -29,10 +26,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getSQLState24971;
 		public virtual global::java.lang.String getSQLState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLException._getSQLState24971.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLException._getSQLState24971 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "getSQLState", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.SQLException.staticClass, global::java.sql.SQLException._getSQLState24971) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.SQLException.staticClass, "getSQLState", "()Ljava/lang/String;", ref global::java.sql.SQLException._getSQLState24971) as java.lang.String;
 		}
 		public new int ErrorCode
 		{
@@ -44,10 +38,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getErrorCode24972;
 		public virtual int getErrorCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLException._getErrorCode24972.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLException._getErrorCode24972 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "getErrorCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.SQLException.staticClass, global::java.sql.SQLException._getErrorCode24972);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.SQLException.staticClass, "getErrorCode", "()I", ref global::java.sql.SQLException._getErrorCode24972);
 		}
 		public new global::java.sql.SQLException NextException
 		{
@@ -63,18 +54,12 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getNextException24973;
 		public virtual global::java.sql.SQLException getNextException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLException._getNextException24973.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLException._getNextException24973 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "getNextException", "()Ljava/sql/SQLException;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.SQLException.staticClass, global::java.sql.SQLException._getNextException24973) as java.sql.SQLException;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.SQLException.staticClass, "getNextException", "()Ljava/sql/SQLException;", ref global::java.sql.SQLException._getNextException24973) as java.sql.SQLException;
 		}
 		internal static global::MonoJavaBridge.MethodId _setNextException24974;
 		public virtual void setNextException(java.sql.SQLException arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.sql.SQLException._setNextException24974.native == global::System.IntPtr.Zero)
-				global::java.sql.SQLException._setNextException24974 = @__env.GetMethodIDNoThrow(global::java.sql.SQLException.staticClass, "setNextException", "(Ljava/sql/SQLException;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLException.staticClass, global::java.sql.SQLException._setNextException24974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLException.staticClass, "setNextException", "(Ljava/sql/SQLException;)V", ref global::java.sql.SQLException._setNextException24974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLException24975;
 		public SQLException(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,10 +10,7 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _toString22115;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.ByteOrder._toString22115.native == global::System.IntPtr.Zero)
-				global::java.nio.ByteOrder._toString22115 = @__env.GetMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._toString22115)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.ByteOrder.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.ByteOrder._toString22115) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nativeOrder22116;
 		public static global::java.nio.ByteOrder nativeOrder()

@@ -10,10 +10,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _set13033;
 		public virtual void set(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextPaint._set13033.native == global::System.IntPtr.Zero)
-				global::android.text.TextPaint._set13033 = @__env.GetMethodIDNoThrow(global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextPaint.staticClass, global::android.text.TextPaint._set13033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V", ref global::android.text.TextPaint._set13033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _TextPaint13034;
 		public TextPaint() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

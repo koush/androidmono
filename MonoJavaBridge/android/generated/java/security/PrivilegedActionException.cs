@@ -17,18 +17,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getCause23248;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.PrivilegedActionException._getCause23248.native == global::System.IntPtr.Zero)
-				global::java.security.PrivilegedActionException._getCause23248 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "getCause", "()Ljava/lang/Throwable;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._getCause23248) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedActionException.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::java.security.PrivilegedActionException._getCause23248) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23249;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.PrivilegedActionException._toString23249.native == global::System.IntPtr.Zero)
-				global::java.security.PrivilegedActionException._toString23249 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._toString23249) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PrivilegedActionException.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.PrivilegedActionException._toString23249) as java.lang.String;
 		}
 		public new global::java.lang.Exception Exception
 		{
@@ -40,10 +34,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getException23250;
 		public virtual global::java.lang.Exception getException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.PrivilegedActionException._getException23250.native == global::System.IntPtr.Zero)
-				global::java.security.PrivilegedActionException._getException23250 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedActionException.staticClass, "getException", "()Ljava/lang/Exception;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._getException23250) as java.lang.Exception;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedActionException.staticClass, "getException", "()Ljava/lang/Exception;", ref global::java.security.PrivilegedActionException._getException23250) as java.lang.Exception;
 		}
 		internal static global::MonoJavaBridge.MethodId _PrivilegedActionException23251;
 		public PrivilegedActionException(java.lang.Exception arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

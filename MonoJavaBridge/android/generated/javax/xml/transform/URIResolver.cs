@@ -16,10 +16,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _resolve31039;
 		global::javax.xml.transform.Source javax.xml.transform.URIResolver.resolve(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.URIResolver_._resolve31039.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.URIResolver_._resolve31039 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.URIResolver_.staticClass, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Source>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.URIResolver_._resolve31039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.transform.Source;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.Source>(this, global::javax.xml.transform.URIResolver_.staticClass, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", ref global::javax.xml.transform.URIResolver_._resolve31039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.xml.transform.Source;
 		}
 		static URIResolver_()
 		{

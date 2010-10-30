@@ -16,10 +16,7 @@ namespace java.util.prefs
 		internal static global::MonoJavaBridge.MethodId _preferenceChange28186;
 		void java.util.prefs.PreferenceChangeListener.preferenceChange(java.util.prefs.PreferenceChangeEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186.native == global::System.IntPtr.Zero)
-				global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeListener_.staticClass, "preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.prefs.PreferenceChangeListener_.staticClass, "preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V", ref global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static PreferenceChangeListener_()
 		{

@@ -21,50 +21,32 @@ namespace org.w3c.dom
 		internal static global::MonoJavaBridge.MethodId _getLineNumber34377;
 		int org.w3c.dom.DOMLocator.getLineNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getLineNumber34377.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getLineNumber34377 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getLineNumber", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getLineNumber34377);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMLocator_.staticClass, "getLineNumber", "()I", ref global::org.w3c.dom.DOMLocator_._getLineNumber34377);
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber34378;
 		int org.w3c.dom.DOMLocator.getColumnNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getColumnNumber34378.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getColumnNumber34378 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getColumnNumber", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getColumnNumber34378);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMLocator_.staticClass, "getColumnNumber", "()I", ref global::org.w3c.dom.DOMLocator_._getColumnNumber34378);
 		}
 		internal static global::MonoJavaBridge.MethodId _getUri34379;
 		global::java.lang.String org.w3c.dom.DOMLocator.getUri()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getUri34379.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getUri34379 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getUri", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getUri34379)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMLocator_.staticClass, "getUri", "()Ljava/lang/String;", ref global::org.w3c.dom.DOMLocator_._getUri34379) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRelatedNode34380;
 		global::org.w3c.dom.Node org.w3c.dom.DOMLocator.getRelatedNode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getRelatedNode34380.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getRelatedNode34380 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getRelatedNode", "()Lorg/w3c/dom/Node;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getRelatedNode34380)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DOMLocator_.staticClass, "getRelatedNode", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DOMLocator_._getRelatedNode34380) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getByteOffset34381;
 		int org.w3c.dom.DOMLocator.getByteOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getByteOffset34381.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getByteOffset34381 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getByteOffset", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getByteOffset34381);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMLocator_.staticClass, "getByteOffset", "()I", ref global::org.w3c.dom.DOMLocator_._getByteOffset34381);
 		}
 		internal static global::MonoJavaBridge.MethodId _getUtf16Offset34382;
 		int org.w3c.dom.DOMLocator.getUtf16Offset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.w3c.dom.DOMLocator_._getUtf16Offset34382.native == global::System.IntPtr.Zero)
-				global::org.w3c.dom.DOMLocator_._getUtf16Offset34382 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMLocator_.staticClass, "getUtf16Offset", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMLocator_._getUtf16Offset34382);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMLocator_.staticClass, "getUtf16Offset", "()I", ref global::org.w3c.dom.DOMLocator_._getUtf16Offset34382);
 		}
 		static DOMLocator_()
 		{

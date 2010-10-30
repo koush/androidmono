@@ -17,10 +17,7 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _getCharsetName22821;
 		public virtual global::java.lang.String getCharsetName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.UnsupportedCharsetException._getCharsetName22821.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.UnsupportedCharsetException._getCharsetName22821 = @__env.GetMethodIDNoThrow(global::java.nio.charset.UnsupportedCharsetException.staticClass, "getCharsetName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.UnsupportedCharsetException.staticClass, global::java.nio.charset.UnsupportedCharsetException._getCharsetName22821) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.UnsupportedCharsetException.staticClass, "getCharsetName", "()Ljava/lang/String;", ref global::java.nio.charset.UnsupportedCharsetException._getCharsetName22821) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedCharsetException22822;
 		public UnsupportedCharsetException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

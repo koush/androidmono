@@ -17,18 +17,12 @@ namespace android.content.pm
 			internal static global::MonoJavaBridge.MethodId _compare3642;
 			public virtual int compare(android.content.pm.ApplicationInfo arg0, android.content.pm.ApplicationInfo arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3642.native == global::System.IntPtr.Zero)
-					global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3642 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _compare3643;
 			public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3643.native == global::System.IntPtr.Zero)
-					global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3643 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _DisplayNameComparator3644;
 			public DisplayNameComparator(android.content.pm.PackageManager arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -51,18 +45,12 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3645;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._toString3645.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._toString3645 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._toString3645) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.ApplicationInfo._toString3645) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump3646;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._dump3646.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._dump3646 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._dump3646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.pm.ApplicationInfo._dump3646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
@@ -71,26 +59,17 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3647;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._writeToParcel3647.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._writeToParcel3647 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._writeToParcel3647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.ApplicationInfo._writeToParcel3647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3648;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._describeContents3648.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._describeContents3648 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._describeContents3648);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.ApplicationInfo._describeContents3648);
 		}
 		internal static global::MonoJavaBridge.MethodId _loadDescription3649;
 		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._loadDescription3649.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._loadDescription3649 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._loadDescription3649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", ref global::android.content.pm.ApplicationInfo._loadDescription3649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _ApplicationInfo3650;
 		public ApplicationInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

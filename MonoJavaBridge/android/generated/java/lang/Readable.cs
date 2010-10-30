@@ -16,10 +16,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _read20427;
 		int java.lang.Readable.read(java.nio.CharBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Readable_._read20427.native == global::System.IntPtr.Zero)
-				global::java.lang.Readable_._read20427 = @__env.GetMethodIDNoThrow(global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I", ref global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Readable_()
 		{

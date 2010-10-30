@@ -17,18 +17,12 @@ namespace java.util.concurrent.locks
 		internal static global::MonoJavaBridge.MethodId _readLock27753;
 		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.readLock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.ReadWriteLock_._readLock27753.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.ReadWriteLock_._readLock27753 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "readLock", "()Ljava/util/concurrent/locks/Lock;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._readLock27753)) as java.util.concurrent.locks.Lock;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.locks.Lock>(this, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "readLock", "()Ljava/util/concurrent/locks/Lock;", ref global::java.util.concurrent.locks.ReadWriteLock_._readLock27753) as java.util.concurrent.locks.Lock;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeLock27754;
 		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.writeLock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "writeLock", "()Ljava/util/concurrent/locks/Lock;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754)) as java.util.concurrent.locks.Lock;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.locks.Lock>(this, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "writeLock", "()Ljava/util/concurrent/locks/Lock;", ref global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754) as java.util.concurrent.locks.Lock;
 		}
 		static ReadWriteLock_()
 		{

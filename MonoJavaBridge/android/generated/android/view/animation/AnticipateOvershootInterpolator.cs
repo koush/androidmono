@@ -10,10 +10,7 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _getInterpolation15668;
 		public virtual float getInterpolation(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation15668.native == global::System.IntPtr.Zero)
-				global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation15668 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "getInterpolation", "(F)F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation15668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "getInterpolation", "(F)F", ref global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation15668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AnticipateOvershootInterpolator15669;
 		public AnticipateOvershootInterpolator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

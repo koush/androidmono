@@ -16,10 +16,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onDismiss3071;
 		void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnDismissListener_._onDismiss3071.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnDismissListener_._onDismiss3071 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListener_.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnDismissListener_._onDismiss3071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_OnDismissListener_.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V", ref global::android.content.DialogInterface_OnDismissListener_._onDismiss3071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DialogInterface_OnDismissListener_()
 		{

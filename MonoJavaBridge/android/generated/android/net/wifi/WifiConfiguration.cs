@@ -334,26 +334,17 @@ namespace android.net.wifi
 		internal static global::MonoJavaBridge.MethodId _toString8027;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiConfiguration._toString8027.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiConfiguration._toString8027 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._toString8027) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiConfiguration._toString8027) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel8028;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiConfiguration._writeToParcel8028.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiConfiguration._writeToParcel8028 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._writeToParcel8028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.wifi.WifiConfiguration._writeToParcel8028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents8029;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiConfiguration._describeContents8029.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiConfiguration._describeContents8029 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._describeContents8029);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I", ref global::android.net.wifi.WifiConfiguration._describeContents8029);
 		}
 		internal static global::MonoJavaBridge.MethodId _WifiConfiguration8030;
 		public WifiConfiguration() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,18 +17,12 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _getPassword31826;
 		global::java.lang.String org.apache.http.auth.Credentials.getPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.Credentials_._getPassword31826.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.Credentials_._getPassword31826 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.Credentials_.staticClass, "getPassword", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getPassword31826)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.Credentials_.staticClass, "getPassword", "()Ljava/lang/String;", ref global::org.apache.http.auth.Credentials_._getPassword31826) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserPrincipal31827;
 		global::java.security.Principal org.apache.http.auth.Credentials.getUserPrincipal()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.Credentials_._getUserPrincipal31827.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.Credentials_._getUserPrincipal31827 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.Credentials_.staticClass, "getUserPrincipal", "()Ljava/security/Principal;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getUserPrincipal31827)) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::org.apache.http.auth.Credentials_.staticClass, "getUserPrincipal", "()Ljava/security/Principal;", ref global::org.apache.http.auth.Credentials_._getUserPrincipal31827) as java.security.Principal;
 		}
 		static Credentials_()
 		{

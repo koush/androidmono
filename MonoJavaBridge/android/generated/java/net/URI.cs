@@ -10,50 +10,32 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _equals21839;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._equals21839.native == global::System.IntPtr.Zero)
-				global::java.net.URI._equals21839 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._equals21839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.URI.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.net.URI._equals21839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21840;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._toString21840.native == global::System.IntPtr.Zero)
-				global::java.net.URI._toString21840 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._toString21840)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "toString", "()Ljava/lang/String;", ref global::java.net.URI._toString21840) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21841;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._hashCode21841.native == global::System.IntPtr.Zero)
-				global::java.net.URI._hashCode21841 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._hashCode21841);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URI.staticClass, "hashCode", "()I", ref global::java.net.URI._hashCode21841);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo21842;
 		public int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._compareTo21842.native == global::System.IntPtr.Zero)
-				global::java.net.URI._compareTo21842 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._compareTo21842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URI.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.net.URI._compareTo21842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo21843;
 		public int compareTo(java.net.URI arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._compareTo21843.native == global::System.IntPtr.Zero)
-				global::java.net.URI._compareTo21843 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "compareTo", "(Ljava/net/URI;)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._compareTo21843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URI.staticClass, "compareTo", "(Ljava/net/URI;)I", ref global::java.net.URI._compareTo21843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isAbsolute21844;
 		public bool isAbsolute()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._isAbsolute21844.native == global::System.IntPtr.Zero)
-				global::java.net.URI._isAbsolute21844 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "isAbsolute", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._isAbsolute21844);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.URI.staticClass, "isAbsolute", "()Z", ref global::java.net.URI._isAbsolute21844);
 		}
 		public new global::java.lang.String Path
 		{
@@ -65,50 +47,32 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getPath21845;
 		public global::java.lang.String getPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getPath21845.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getPath21845 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getPath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getPath21845)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getPath", "()Ljava/lang/String;", ref global::java.net.URI._getPath21845) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toURL21846;
 		public global::java.net.URL toURL()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._toURL21846.native == global::System.IntPtr.Zero)
-				global::java.net.URI._toURL21846 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "toURL", "()Ljava/net/URL;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._toURL21846)) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::java.net.URI.staticClass, "toURL", "()Ljava/net/URL;", ref global::java.net.URI._toURL21846) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolve21847;
 		public global::java.net.URI resolve(java.net.URI arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._resolve21847.native == global::System.IntPtr.Zero)
-				global::java.net.URI._resolve21847 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "resolve", "(Ljava/net/URI;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._resolve21847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::java.net.URI.staticClass, "resolve", "(Ljava/net/URI;)Ljava/net/URI;", ref global::java.net.URI._resolve21847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolve21848;
 		public global::java.net.URI resolve(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._resolve21848.native == global::System.IntPtr.Zero)
-				global::java.net.URI._resolve21848 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._resolve21848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::java.net.URI.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/URI;", ref global::java.net.URI._resolve21848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _normalize21849;
 		public global::java.net.URI normalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._normalize21849.native == global::System.IntPtr.Zero)
-				global::java.net.URI._normalize21849 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "normalize", "()Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._normalize21849)) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::java.net.URI.staticClass, "normalize", "()Ljava/net/URI;", ref global::java.net.URI._normalize21849) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpaque21850;
 		public bool isOpaque()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._isOpaque21850.native == global::System.IntPtr.Zero)
-				global::java.net.URI._isOpaque21850 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "isOpaque", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._isOpaque21850);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.URI.staticClass, "isOpaque", "()Z", ref global::java.net.URI._isOpaque21850);
 		}
 		public new global::java.lang.String Scheme
 		{
@@ -120,10 +84,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getScheme21851;
 		public global::java.lang.String getScheme()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getScheme21851.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getScheme21851 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getScheme", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getScheme21851)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getScheme", "()Ljava/lang/String;", ref global::java.net.URI._getScheme21851) as java.lang.String;
 		}
 		public new global::java.lang.String Authority
 		{
@@ -135,10 +96,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getAuthority21852;
 		public global::java.lang.String getAuthority()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getAuthority21852.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getAuthority21852 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getAuthority", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getAuthority21852)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getAuthority", "()Ljava/lang/String;", ref global::java.net.URI._getAuthority21852) as java.lang.String;
 		}
 		public new global::java.lang.String Fragment
 		{
@@ -150,10 +108,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getFragment21853;
 		public global::java.lang.String getFragment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getFragment21853.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getFragment21853 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getFragment", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getFragment21853)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getFragment", "()Ljava/lang/String;", ref global::java.net.URI._getFragment21853) as java.lang.String;
 		}
 		public new global::java.lang.String Query
 		{
@@ -165,10 +120,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getQuery21854;
 		public global::java.lang.String getQuery()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getQuery21854.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getQuery21854 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getQuery", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getQuery21854)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getQuery", "()Ljava/lang/String;", ref global::java.net.URI._getQuery21854) as java.lang.String;
 		}
 		public new global::java.lang.String UserInfo
 		{
@@ -180,10 +132,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getUserInfo21855;
 		public global::java.lang.String getUserInfo()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getUserInfo21855.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getUserInfo21855 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getUserInfo", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getUserInfo21855)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getUserInfo", "()Ljava/lang/String;", ref global::java.net.URI._getUserInfo21855) as java.lang.String;
 		}
 		public new int Port
 		{
@@ -195,10 +144,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getPort21856;
 		public int getPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getPort21856.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getPort21856 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getPort", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getPort21856);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URI.staticClass, "getPort", "()I", ref global::java.net.URI._getPort21856);
 		}
 		public new global::java.lang.String Host
 		{
@@ -210,10 +156,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getHost21857;
 		public global::java.lang.String getHost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getHost21857.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getHost21857 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getHost", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getHost21857)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getHost", "()Ljava/lang/String;", ref global::java.net.URI._getHost21857) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _create21858;
 		public static global::java.net.URI create(java.lang.String arg0)
@@ -233,26 +176,17 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getSchemeSpecificPart21859;
 		public global::java.lang.String getSchemeSpecificPart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getSchemeSpecificPart21859.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getSchemeSpecificPart21859 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getSchemeSpecificPart", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getSchemeSpecificPart21859)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getSchemeSpecificPart", "()Ljava/lang/String;", ref global::java.net.URI._getSchemeSpecificPart21859) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseServerAuthority21860;
 		public global::java.net.URI parseServerAuthority()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._parseServerAuthority21860.native == global::System.IntPtr.Zero)
-				global::java.net.URI._parseServerAuthority21860 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "parseServerAuthority", "()Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._parseServerAuthority21860)) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::java.net.URI.staticClass, "parseServerAuthority", "()Ljava/net/URI;", ref global::java.net.URI._parseServerAuthority21860) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _relativize21861;
 		public global::java.net.URI relativize(java.net.URI arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._relativize21861.native == global::System.IntPtr.Zero)
-				global::java.net.URI._relativize21861 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "relativize", "(Ljava/net/URI;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._relativize21861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URI;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URI>(this, global::java.net.URI.staticClass, "relativize", "(Ljava/net/URI;)Ljava/net/URI;", ref global::java.net.URI._relativize21861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URI;
 		}
 		public new global::java.lang.String RawSchemeSpecificPart
 		{
@@ -264,10 +198,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawSchemeSpecificPart21862;
 		public global::java.lang.String getRawSchemeSpecificPart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawSchemeSpecificPart21862.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawSchemeSpecificPart21862 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawSchemeSpecificPart", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawSchemeSpecificPart21862)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawSchemeSpecificPart", "()Ljava/lang/String;", ref global::java.net.URI._getRawSchemeSpecificPart21862) as java.lang.String;
 		}
 		public new global::java.lang.String RawAuthority
 		{
@@ -279,10 +210,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawAuthority21863;
 		public global::java.lang.String getRawAuthority()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawAuthority21863.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawAuthority21863 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawAuthority", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawAuthority21863)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawAuthority", "()Ljava/lang/String;", ref global::java.net.URI._getRawAuthority21863) as java.lang.String;
 		}
 		public new global::java.lang.String RawUserInfo
 		{
@@ -294,10 +222,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawUserInfo21864;
 		public global::java.lang.String getRawUserInfo()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawUserInfo21864.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawUserInfo21864 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawUserInfo", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawUserInfo21864)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawUserInfo", "()Ljava/lang/String;", ref global::java.net.URI._getRawUserInfo21864) as java.lang.String;
 		}
 		public new global::java.lang.String RawPath
 		{
@@ -309,10 +234,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawPath21865;
 		public global::java.lang.String getRawPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawPath21865.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawPath21865 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawPath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawPath21865)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawPath", "()Ljava/lang/String;", ref global::java.net.URI._getRawPath21865) as java.lang.String;
 		}
 		public new global::java.lang.String RawQuery
 		{
@@ -324,10 +246,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawQuery21866;
 		public global::java.lang.String getRawQuery()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawQuery21866.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawQuery21866 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawQuery", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawQuery21866)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawQuery", "()Ljava/lang/String;", ref global::java.net.URI._getRawQuery21866) as java.lang.String;
 		}
 		public new global::java.lang.String RawFragment
 		{
@@ -339,18 +258,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRawFragment21867;
 		public global::java.lang.String getRawFragment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._getRawFragment21867.native == global::System.IntPtr.Zero)
-				global::java.net.URI._getRawFragment21867 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "getRawFragment", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._getRawFragment21867)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "getRawFragment", "()Ljava/lang/String;", ref global::java.net.URI._getRawFragment21867) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toASCIIString21868;
 		public global::java.lang.String toASCIIString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URI._toASCIIString21868.native == global::System.IntPtr.Zero)
-				global::java.net.URI._toASCIIString21868 = @__env.GetMethodIDNoThrow(global::java.net.URI.staticClass, "toASCIIString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URI.staticClass, global::java.net.URI._toASCIIString21868)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URI.staticClass, "toASCIIString", "()Ljava/lang/String;", ref global::java.net.URI._toASCIIString21868) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _URI21869;
 		public URI(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, int arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

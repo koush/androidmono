@@ -76,34 +76,22 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _iterator4521;
 		public global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.CursorJoiner._iterator4521.native == global::System.IntPtr.Zero)
-				global::android.database.CursorJoiner._iterator4521 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._iterator4521)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.database.CursorJoiner.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.database.CursorJoiner._iterator4521) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext4522;
 		public bool hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.CursorJoiner._hasNext4522.native == global::System.IntPtr.Zero)
-				global::android.database.CursorJoiner._hasNext4522 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "hasNext", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._hasNext4522);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.CursorJoiner.staticClass, "hasNext", "()Z", ref global::android.database.CursorJoiner._hasNext4522);
 		}
 		internal static global::MonoJavaBridge.MethodId _next4523;
 		public global::java.lang.Object next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.CursorJoiner._next4523.native == global::System.IntPtr.Zero)
-				global::android.database.CursorJoiner._next4523 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "next", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._next4523)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.CursorJoiner.staticClass, "next", "()Ljava/lang/Object;", ref global::android.database.CursorJoiner._next4523) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove4524;
 		public void remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.CursorJoiner._remove4524.native == global::System.IntPtr.Zero)
-				global::android.database.CursorJoiner._remove4524 = @__env.GetMethodIDNoThrow(global::android.database.CursorJoiner.staticClass, "remove", "()V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._remove4524);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.CursorJoiner.staticClass, "remove", "()V", ref global::android.database.CursorJoiner._remove4524);
 		}
 		internal static global::MonoJavaBridge.MethodId _CursorJoiner4525;
 		public CursorJoiner(android.database.Cursor arg0, java.lang.String[] arg1, android.database.Cursor arg2, java.lang.String[] arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

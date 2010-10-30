@@ -10,26 +10,17 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _equals31791;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._equals31791.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._equals31791 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._equals31791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.AuthScope.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::org.apache.http.auth.AuthScope._equals31791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString31792;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._toString31792.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._toString31792 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._toString31792) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthScope._toString31792) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode31793;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._hashCode31793.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._hashCode31793 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._hashCode31793);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, "hashCode", "()I", ref global::org.apache.http.auth.AuthScope._hashCode31793);
 		}
 		public new global::java.lang.String Scheme
 		{
@@ -41,10 +32,7 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _getScheme31794;
 		public virtual global::java.lang.String getScheme()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._getScheme31794.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._getScheme31794 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "getScheme", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getScheme31794) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, "getScheme", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthScope._getScheme31794) as java.lang.String;
 		}
 		public new int Port
 		{
@@ -56,10 +44,7 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _getPort31795;
 		public virtual int getPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._getPort31795.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._getPort31795 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "getPort", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getPort31795);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, "getPort", "()I", ref global::org.apache.http.auth.AuthScope._getPort31795);
 		}
 		public new global::java.lang.String Host
 		{
@@ -71,18 +56,12 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _getHost31796;
 		public virtual global::java.lang.String getHost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._getHost31796.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._getHost31796 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "getHost", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getHost31796) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, "getHost", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthScope._getHost31796) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _match31797;
 		public virtual int match(org.apache.http.auth.AuthScope arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._match31797.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._match31797 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "match", "(Lorg/apache/http/auth/AuthScope;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._match31797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.AuthScope.staticClass, "match", "(Lorg/apache/http/auth/AuthScope;)I", ref global::org.apache.http.auth.AuthScope._match31797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Realm
 		{
@@ -94,10 +73,7 @@ namespace org.apache.http.auth
 		internal static global::MonoJavaBridge.MethodId _getRealm31798;
 		public virtual global::java.lang.String getRealm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthScope._getRealm31798.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthScope._getRealm31798 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "getRealm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getRealm31798) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthScope.staticClass, "getRealm", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthScope._getRealm31798) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthScope31799;
 		public AuthScope(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

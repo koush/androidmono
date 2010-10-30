@@ -41,10 +41,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28721;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactory._getAlgorithm28721.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactory._getAlgorithm28721 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKeyFactory.staticClass, global::javax.crypto.SecretKeyFactory._getAlgorithm28721) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKeyFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.SecretKeyFactory._getAlgorithm28721) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -56,34 +53,22 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _getProvider28722;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactory._getProvider28722.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactory._getProvider28722 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactory.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.SecretKeyFactory.staticClass, global::javax.crypto.SecretKeyFactory._getProvider28722) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.SecretKeyFactory.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::javax.crypto.SecretKeyFactory._getProvider28722) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeySpec28723;
 		public virtual global::java.security.spec.KeySpec getKeySpec(javax.crypto.SecretKey arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactory._getKeySpec28723.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactory._getKeySpec28723 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactory.staticClass, "getKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::javax.crypto.SecretKeyFactory.staticClass, global::javax.crypto.SecretKeyFactory._getKeySpec28723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::javax.crypto.SecretKeyFactory.staticClass, "getKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", ref global::javax.crypto.SecretKeyFactory._getKeySpec28723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _translateKey28724;
 		public virtual global::javax.crypto.SecretKey translateKey(javax.crypto.SecretKey arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactory._translateKey28724.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactory._translateKey28724 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactory.staticClass, "translateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactory.staticClass, global::javax.crypto.SecretKeyFactory._translateKey28724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactory.staticClass, "translateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;", ref global::javax.crypto.SecretKeyFactory._translateKey28724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _generateSecret28725;
 		public virtual global::javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactory._generateSecret28725.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactory._generateSecret28725 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactory.staticClass, "generateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactory.staticClass, global::javax.crypto.SecretKeyFactory._generateSecret28725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactory.staticClass, "generateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;", ref global::javax.crypto.SecretKeyFactory._generateSecret28725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _SecretKeyFactory28726;
 		protected SecretKeyFactory(javax.crypto.SecretKeyFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

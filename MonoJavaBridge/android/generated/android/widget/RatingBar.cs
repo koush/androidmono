@@ -23,10 +23,7 @@ namespace android.widget
 			internal static global::MonoJavaBridge.MethodId _onRatingChanged17556;
 			void android.widget.RatingBar.OnRatingBarChangeListener.onRatingChanged(android.widget.RatingBar arg0, float arg1, bool arg2)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.RatingBar.OnRatingBarChangeListener_._onRatingChanged17556.native == global::System.IntPtr.Zero)
-					global::android.widget.RatingBar.OnRatingBarChangeListener_._onRatingChanged17556 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.OnRatingBarChangeListener_.staticClass, "onRatingChanged", "(Landroid/widget/RatingBar;FZ)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RatingBar.OnRatingBarChangeListener_._onRatingChanged17556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.OnRatingBarChangeListener_.staticClass, "onRatingChanged", "(Landroid/widget/RatingBar;FZ)V", ref global::android.widget.RatingBar.OnRatingBarChangeListener_._onRatingChanged17556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnRatingBarChangeListener_()
 			{
@@ -82,18 +79,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _isIndicator17558;
 		public virtual bool isIndicator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._isIndicator17558.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._isIndicator17558 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "isIndicator", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._isIndicator17558);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.RatingBar.staticClass, "isIndicator", "()Z", ref global::android.widget.RatingBar._isIndicator17558);
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure17559;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._onMeasure17559.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._onMeasure17559 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "onMeasure", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._onMeasure17559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "onMeasure", "(II)V", ref global::android.widget.RatingBar._onMeasure17559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int Max
 		{
@@ -105,18 +96,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setMax17560;
 		public override void setMax(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setMax17560.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setMax17560 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setMax", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setMax17560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setMax", "(I)V", ref global::android.widget.RatingBar._setMax17560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnRatingBarChangeListener17561;
 		public virtual void setOnRatingBarChangeListener(android.widget.RatingBar.OnRatingBarChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setOnRatingBarChangeListener17561.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setOnRatingBarChangeListener17561 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setOnRatingBarChangeListener", "(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setOnRatingBarChangeListener17561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setOnRatingBarChangeListener", "(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V", ref global::android.widget.RatingBar._setOnRatingBarChangeListener17561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnRatingBarChangeListener(global::android.widget.RatingBar.OnRatingBarChangeListenerDelegate arg0)
 		{
@@ -125,26 +110,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getOnRatingBarChangeListener17562;
 		public virtual global::android.widget.RatingBar.OnRatingBarChangeListener getOnRatingBarChangeListener()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._getOnRatingBarChangeListener17562.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._getOnRatingBarChangeListener17562 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "getOnRatingBarChangeListener", "()Landroid/widget/RatingBar$OnRatingBarChangeListener;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.RatingBar.OnRatingBarChangeListener>(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getOnRatingBarChangeListener17562) as android.widget.RatingBar.OnRatingBarChangeListener;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.RatingBar.OnRatingBarChangeListener>(this, global::android.widget.RatingBar.staticClass, "getOnRatingBarChangeListener", "()Landroid/widget/RatingBar$OnRatingBarChangeListener;", ref global::android.widget.RatingBar._getOnRatingBarChangeListener17562) as android.widget.RatingBar.OnRatingBarChangeListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _setIsIndicator17563;
 		public virtual void setIsIndicator(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setIsIndicator17563.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setIsIndicator17563 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setIsIndicator", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setIsIndicator17563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setIsIndicator", "(Z)V", ref global::android.widget.RatingBar._setIsIndicator17563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNumStars17564;
 		public virtual void setNumStars(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setNumStars17564.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setNumStars17564 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setNumStars", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setNumStars17564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setNumStars", "(I)V", ref global::android.widget.RatingBar._setNumStars17564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int NumStars
 		{
@@ -160,18 +136,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getNumStars17565;
 		public virtual int getNumStars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._getNumStars17565.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._getNumStars17565 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "getNumStars", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getNumStars17565);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.RatingBar.staticClass, "getNumStars", "()I", ref global::android.widget.RatingBar._getNumStars17565);
 		}
 		internal static global::MonoJavaBridge.MethodId _setRating17566;
 		public virtual void setRating(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setRating17566.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setRating17566 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setRating", "(F)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setRating17566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setRating", "(F)V", ref global::android.widget.RatingBar._setRating17566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float Rating
 		{
@@ -187,18 +157,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getRating17567;
 		public virtual float getRating()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._getRating17567.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._getRating17567 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "getRating", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getRating17567);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.RatingBar.staticClass, "getRating", "()F", ref global::android.widget.RatingBar._getRating17567);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStepSize17568;
 		public virtual void setStepSize(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._setStepSize17568.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._setStepSize17568 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "setStepSize", "(F)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setStepSize17568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RatingBar.staticClass, "setStepSize", "(F)V", ref global::android.widget.RatingBar._setStepSize17568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float StepSize
 		{
@@ -214,10 +178,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getStepSize17569;
 		public virtual float getStepSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.RatingBar._getStepSize17569.native == global::System.IntPtr.Zero)
-				global::android.widget.RatingBar._getStepSize17569 = @__env.GetMethodIDNoThrow(global::android.widget.RatingBar.staticClass, "getStepSize", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getStepSize17569);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.RatingBar.staticClass, "getStepSize", "()F", ref global::android.widget.RatingBar._getStepSize17569);
 		}
 		internal static global::MonoJavaBridge.MethodId _RatingBar17570;
 		public RatingBar(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

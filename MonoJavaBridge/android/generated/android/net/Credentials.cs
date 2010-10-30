@@ -17,10 +17,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getUid7644;
 		public virtual int getUid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Credentials._getUid7644.native == global::System.IntPtr.Zero)
-				global::android.net.Credentials._getUid7644 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "getUid", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getUid7644);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, "getUid", "()I", ref global::android.net.Credentials._getUid7644);
 		}
 		public new int Pid
 		{
@@ -32,10 +29,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getPid7645;
 		public virtual int getPid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Credentials._getPid7645.native == global::System.IntPtr.Zero)
-				global::android.net.Credentials._getPid7645 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "getPid", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getPid7645);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, "getPid", "()I", ref global::android.net.Credentials._getPid7645);
 		}
 		public new int Gid
 		{
@@ -47,10 +41,7 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getGid7646;
 		public virtual int getGid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Credentials._getGid7646.native == global::System.IntPtr.Zero)
-				global::android.net.Credentials._getGid7646 = @__env.GetMethodIDNoThrow(global::android.net.Credentials.staticClass, "getGid", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getGid7646);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Credentials.staticClass, "getGid", "()I", ref global::android.net.Credentials._getGid7646);
 		}
 		internal static global::MonoJavaBridge.MethodId _Credentials7647;
 		public Credentials(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

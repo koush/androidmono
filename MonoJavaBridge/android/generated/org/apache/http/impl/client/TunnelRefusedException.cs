@@ -17,10 +17,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getResponse32956;
 		public virtual global::org.apache.http.HttpResponse getResponse()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.TunnelRefusedException.staticClass, "getResponse", "()Lorg/apache/http/HttpResponse;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::org.apache.http.impl.client.TunnelRefusedException.staticClass, global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::org.apache.http.impl.client.TunnelRefusedException.staticClass, "getResponse", "()Lorg/apache/http/HttpResponse;", ref global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _TunnelRefusedException32957;
 		public TunnelRefusedException(java.lang.String arg0, org.apache.http.HttpResponse arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

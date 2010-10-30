@@ -17,18 +17,12 @@ namespace android.content
 			internal static global::MonoJavaBridge.MethodId _equals3100;
 			public sealed override bool equals(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.FilterComparison._equals3100.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.FilterComparison._equals3100 = @__env.GetMethodIDNoThrow(global::android.content.Intent.FilterComparison.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.Intent.FilterComparison.staticClass, global::android.content.Intent.FilterComparison._equals3100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.FilterComparison.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.content.Intent.FilterComparison._equals3100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode3101;
 			public sealed override int hashCode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.FilterComparison._hashCode3101.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.FilterComparison._hashCode3101 = @__env.GetMethodIDNoThrow(global::android.content.Intent.FilterComparison.staticClass, "hashCode", "()I");
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.Intent.FilterComparison.staticClass, global::android.content.Intent.FilterComparison._hashCode3101);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.FilterComparison.staticClass, "hashCode", "()I", ref global::android.content.Intent.FilterComparison._hashCode3101);
 			}
 			public new global::android.content.Intent Intent
 			{
@@ -40,10 +34,7 @@ namespace android.content
 			internal static global::MonoJavaBridge.MethodId _getIntent3102;
 			public global::android.content.Intent getIntent()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.FilterComparison._getIntent3102.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.FilterComparison._getIntent3102 = @__env.GetMethodIDNoThrow(global::android.content.Intent.FilterComparison.staticClass, "getIntent", "()Landroid/content/Intent;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.FilterComparison.staticClass, global::android.content.Intent.FilterComparison._getIntent3102)) as android.content.Intent;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.FilterComparison.staticClass, "getIntent", "()Landroid/content/Intent;", ref global::android.content.Intent.FilterComparison._getIntent3102) as android.content.Intent;
 			}
 			internal static global::MonoJavaBridge.MethodId _FilterComparison3103;
 			public FilterComparison(android.content.Intent arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -73,26 +64,17 @@ namespace android.content
 			internal static global::MonoJavaBridge.MethodId _toString3104;
 			public override global::java.lang.String toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.ShortcutIconResource._toString3104.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.ShortcutIconResource._toString3104 = @__env.GetMethodIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.ShortcutIconResource.staticClass, global::android.content.Intent.ShortcutIconResource._toString3104) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.ShortcutIconResource.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.Intent.ShortcutIconResource._toString3104) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _writeToParcel3105;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.ShortcutIconResource._writeToParcel3105.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.ShortcutIconResource._writeToParcel3105 = @__env.GetMethodIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.ShortcutIconResource.staticClass, global::android.content.Intent.ShortcutIconResource._writeToParcel3105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.ShortcutIconResource.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.Intent.ShortcutIconResource._writeToParcel3105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents3106;
 			public virtual int describeContents()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Intent.ShortcutIconResource._describeContents3106.native == global::System.IntPtr.Zero)
-					global::android.content.Intent.ShortcutIconResource._describeContents3106 = @__env.GetMethodIDNoThrow(global::android.content.Intent.ShortcutIconResource.staticClass, "describeContents", "()I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.ShortcutIconResource.staticClass, global::android.content.Intent.ShortcutIconResource._describeContents3106);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.ShortcutIconResource.staticClass, "describeContents", "()I", ref global::android.content.Intent.ShortcutIconResource._describeContents3106);
 			}
 			internal static global::MonoJavaBridge.MethodId _fromContext3107;
 			public static global::android.content.Intent.ShortcutIconResource fromContext(android.content.Context arg0, int arg1)
@@ -159,18 +141,12 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _toString3112;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._toString3112.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._toString3112 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._toString3112) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.Intent._toString3112) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone3113;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._clone3113.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._clone3113 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._clone3113) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "clone", "()Ljava/lang/Object;", ref global::android.content.Intent._clone3113) as java.lang.Object;
 		}
 		public new global::java.lang.String Package
 		{
@@ -186,10 +162,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getPackage3114;
 		public virtual global::java.lang.String getPackage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getPackage3114.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getPackage3114 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getPackage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getPackage3114) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getPackage", "()Ljava/lang/String;", ref global::android.content.Intent._getPackage3114) as java.lang.String;
 		}
 		public new global::java.lang.String Type
 		{
@@ -205,18 +178,12 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getType3115;
 		public virtual global::java.lang.String getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getType3115.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getType3115 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getType", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getType3115) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getType", "()Ljava/lang/String;", ref global::android.content.Intent._getType3115) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toURI3116;
 		public virtual global::java.lang.String toURI()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._toURI3116.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._toURI3116 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "toURI", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._toURI3116) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "toURI", "()Ljava/lang/String;", ref global::android.content.Intent._toURI3116) as java.lang.String;
 		}
 		public new global::java.lang.String Scheme
 		{
@@ -228,10 +195,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getScheme3117;
 		public virtual global::java.lang.String getScheme()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getScheme3117.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getScheme3117 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getScheme", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getScheme3117) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getScheme", "()Ljava/lang/String;", ref global::android.content.Intent._getScheme3117) as java.lang.String;
 		}
 		public new global::android.net.Uri Data
 		{
@@ -247,10 +211,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getData3118;
 		public virtual global::android.net.Uri getData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getData3118.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getData3118 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getData", "()Landroid/net/Uri;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getData3118) as android.net.Uri;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "getData", "()Landroid/net/Uri;", ref global::android.content.Intent._getData3118) as android.net.Uri;
 		}
 		public new global::android.content.ComponentName Component
 		{
@@ -266,42 +227,27 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getComponent3119;
 		public virtual global::android.content.ComponentName getComponent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getComponent3119.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getComponent3119 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getComponent", "()Landroid/content/ComponentName;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getComponent3119) as android.content.ComponentName;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.Intent.staticClass, "getComponent", "()Landroid/content/ComponentName;", ref global::android.content.Intent._getComponent3119) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _setClassName3120;
 		public virtual global::android.content.Intent setClassName(android.content.Context arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setClassName3120.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setClassName3120 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setClassName", "(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setClassName3120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setClassName", "(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setClassName3120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setClassName3121;
 		public virtual global::android.content.Intent setClassName(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setClassName3121.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setClassName3121 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setClassName", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setClassName3121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setClassName", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setClassName3121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3122;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._writeToParcel3122.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._writeToParcel3122 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._writeToParcel3122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.Intent._writeToParcel3122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3123;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._describeContents3123.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._describeContents3123 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._describeContents3123);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, "describeContents", "()I", ref global::android.content.Intent._describeContents3123);
 		}
 		internal static global::MonoJavaBridge.MethodId _createChooser3124;
 		public static global::android.content.Intent createChooser(android.content.Intent arg0, java.lang.CharSequence arg1)
@@ -318,10 +264,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _cloneFilter3125;
 		public virtual global::android.content.Intent cloneFilter()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._cloneFilter3125.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._cloneFilter3125 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "cloneFilter", "()Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._cloneFilter3125) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "cloneFilter", "()Landroid/content/Intent;", ref global::android.content.Intent._cloneFilter3125) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntent3126;
 		public static global::android.content.Intent getIntent(java.lang.String arg0)
@@ -361,10 +304,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getAction3129;
 		public virtual global::java.lang.String getAction()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getAction3129.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getAction3129 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getAction", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getAction3129) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getAction", "()Ljava/lang/String;", ref global::android.content.Intent._getAction3129) as java.lang.String;
 		}
 		public new global::java.lang.String DataString
 		{
@@ -376,42 +316,27 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getDataString3130;
 		public virtual global::java.lang.String getDataString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getDataString3130.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getDataString3130 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getDataString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getDataString3130) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getDataString", "()Ljava/lang/String;", ref global::android.content.Intent._getDataString3130) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveType3131;
 		public virtual global::java.lang.String resolveType(android.content.Context arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._resolveType3131.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._resolveType3131 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "resolveType", "(Landroid/content/Context;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._resolveType3131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "resolveType", "(Landroid/content/Context;)Ljava/lang/String;", ref global::android.content.Intent._resolveType3131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveType3132;
 		public virtual global::java.lang.String resolveType(android.content.ContentResolver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._resolveType3132.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._resolveType3132 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "resolveType", "(Landroid/content/ContentResolver;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._resolveType3132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "resolveType", "(Landroid/content/ContentResolver;)Ljava/lang/String;", ref global::android.content.Intent._resolveType3132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveTypeIfNeeded3133;
 		public virtual global::java.lang.String resolveTypeIfNeeded(android.content.ContentResolver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._resolveTypeIfNeeded3133.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._resolveTypeIfNeeded3133 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "resolveTypeIfNeeded", "(Landroid/content/ContentResolver;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._resolveTypeIfNeeded3133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "resolveTypeIfNeeded", "(Landroid/content/ContentResolver;)Ljava/lang/String;", ref global::android.content.Intent._resolveTypeIfNeeded3133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasCategory3134;
 		public virtual bool hasCategory(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._hasCategory3134.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._hasCategory3134 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "hasCategory", "(Ljava/lang/String;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._hasCategory3134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, "hasCategory", "(Ljava/lang/String;)Z", ref global::android.content.Intent._hasCategory3134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Set Categories
 		{
@@ -423,10 +348,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getCategories3135;
 		public virtual global::java.util.Set getCategories()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCategories3135.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCategories3135 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCategories", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCategories3135) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.content.Intent.staticClass, "getCategories", "()Ljava/util/Set;", ref global::android.content.Intent._getCategories3135) as java.util.Set;
 		}
 		public new global::java.lang.ClassLoader ExtrasClassLoader
 		{
@@ -438,250 +360,157 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _setExtrasClassLoader3136;
 		public virtual void setExtrasClassLoader(java.lang.ClassLoader arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setExtrasClassLoader3136.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setExtrasClassLoader3136 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setExtrasClassLoader", "(Ljava/lang/ClassLoader;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setExtrasClassLoader3136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "setExtrasClassLoader", "(Ljava/lang/ClassLoader;)V", ref global::android.content.Intent._setExtrasClassLoader3136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasExtra3137;
 		public virtual bool hasExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._hasExtra3137.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._hasExtra3137 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "hasExtra", "(Ljava/lang/String;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._hasExtra3137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, "hasExtra", "(Ljava/lang/String;)Z", ref global::android.content.Intent._hasExtra3137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasFileDescriptors3138;
 		public virtual bool hasFileDescriptors()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._hasFileDescriptors3138.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._hasFileDescriptors3138 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "hasFileDescriptors", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._hasFileDescriptors3138);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, "hasFileDescriptors", "()Z", ref global::android.content.Intent._hasFileDescriptors3138);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBooleanExtra3139;
 		public virtual bool getBooleanExtra(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getBooleanExtra3139.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getBooleanExtra3139 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getBooleanExtra", "(Ljava/lang/String;Z)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getBooleanExtra3139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, "getBooleanExtra", "(Ljava/lang/String;Z)Z", ref global::android.content.Intent._getBooleanExtra3139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByteExtra3140;
 		public virtual byte getByteExtra(java.lang.String arg0, byte arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getByteExtra3140.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getByteExtra3140 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getByteExtra", "(Ljava/lang/String;B)B");
-			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getByteExtra3140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::android.content.Intent.staticClass, "getByteExtra", "(Ljava/lang/String;B)B", ref global::android.content.Intent._getByteExtra3140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getShortExtra3141;
 		public virtual short getShortExtra(java.lang.String arg0, short arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getShortExtra3141.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getShortExtra3141 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getShortExtra", "(Ljava/lang/String;S)S");
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getShortExtra3141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::android.content.Intent.staticClass, "getShortExtra", "(Ljava/lang/String;S)S", ref global::android.content.Intent._getShortExtra3141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharExtra3142;
 		public virtual char getCharExtra(java.lang.String arg0, char arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCharExtra3142.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCharExtra3142 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCharExtra", "(Ljava/lang/String;C)C");
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCharExtra3142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.content.Intent.staticClass, "getCharExtra", "(Ljava/lang/String;C)C", ref global::android.content.Intent._getCharExtra3142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntExtra3143;
 		public virtual int getIntExtra(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getIntExtra3143.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getIntExtra3143 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getIntExtra", "(Ljava/lang/String;I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getIntExtra3143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, "getIntExtra", "(Ljava/lang/String;I)I", ref global::android.content.Intent._getIntExtra3143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLongExtra3144;
 		public virtual long getLongExtra(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getLongExtra3144.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getLongExtra3144 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getLongExtra", "(Ljava/lang/String;J)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getLongExtra3144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.content.Intent.staticClass, "getLongExtra", "(Ljava/lang/String;J)J", ref global::android.content.Intent._getLongExtra3144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloatExtra3145;
 		public virtual float getFloatExtra(java.lang.String arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getFloatExtra3145.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getFloatExtra3145 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getFloatExtra", "(Ljava/lang/String;F)F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getFloatExtra3145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.content.Intent.staticClass, "getFloatExtra", "(Ljava/lang/String;F)F", ref global::android.content.Intent._getFloatExtra3145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDoubleExtra3146;
 		public virtual double getDoubleExtra(java.lang.String arg0, double arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getDoubleExtra3146.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getDoubleExtra3146 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getDoubleExtra", "(Ljava/lang/String;D)D");
-			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getDoubleExtra3146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.content.Intent.staticClass, "getDoubleExtra", "(Ljava/lang/String;D)D", ref global::android.content.Intent._getDoubleExtra3146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getStringExtra3147;
 		public virtual global::java.lang.String getStringExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getStringExtra3147.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getStringExtra3147 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getStringExtra", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getStringExtra3147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getStringExtra", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.content.Intent._getStringExtra3147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharSequenceExtra3148;
 		public virtual global::java.lang.CharSequence getCharSequenceExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCharSequenceExtra3148.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCharSequenceExtra3148 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCharSequenceExtra", "(Ljava/lang/String;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCharSequenceExtra3148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.Intent.staticClass, "getCharSequenceExtra", "(Ljava/lang/String;)Ljava/lang/CharSequence;", ref global::android.content.Intent._getCharSequenceExtra3148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParcelableExtra3149;
 		public virtual global::android.os.Parcelable getParcelableExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getParcelableExtra3149.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getParcelableExtra3149 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getParcelableExtra", "(Ljava/lang/String;)Landroid/os/Parcelable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getParcelableExtra3149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Parcelable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.content.Intent.staticClass, "getParcelableExtra", "(Ljava/lang/String;)Landroid/os/Parcelable;", ref global::android.content.Intent._getParcelableExtra3149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParcelableArrayExtra3150;
 		public virtual global::android.os.Parcelable[] getParcelableArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getParcelableArrayExtra3150.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getParcelableArrayExtra3150 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getParcelableArrayExtra", "(Ljava/lang/String;)[Landroid/os/Parcelable;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.os.Parcelable>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getParcelableArrayExtra3150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Parcelable[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.os.Parcelable>(this, global::android.content.Intent.staticClass, "getParcelableArrayExtra", "(Ljava/lang/String;)[Landroid/os/Parcelable;", ref global::android.content.Intent._getParcelableArrayExtra3150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Parcelable[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getParcelableArrayListExtra3151;
 		public virtual global::java.util.ArrayList getParcelableArrayListExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getParcelableArrayListExtra3151.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getParcelableArrayListExtra3151 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getParcelableArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getParcelableArrayListExtra3151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "getParcelableArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.content.Intent._getParcelableArrayListExtra3151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSerializableExtra3152;
 		public virtual global::java.io.Serializable getSerializableExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getSerializableExtra3152.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getSerializableExtra3152 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getSerializableExtra", "(Ljava/lang/String;)Ljava/io/Serializable;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.io.Serializable>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getSerializableExtra3152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.Serializable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.io.Serializable>(this, global::android.content.Intent.staticClass, "getSerializableExtra", "(Ljava/lang/String;)Ljava/io/Serializable;", ref global::android.content.Intent._getSerializableExtra3152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.Serializable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntegerArrayListExtra3153;
 		public virtual global::java.util.ArrayList getIntegerArrayListExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getIntegerArrayListExtra3153.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getIntegerArrayListExtra3153 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getIntegerArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getIntegerArrayListExtra3153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "getIntegerArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.content.Intent._getIntegerArrayListExtra3153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getStringArrayListExtra3154;
 		public virtual global::java.util.ArrayList getStringArrayListExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getStringArrayListExtra3154.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getStringArrayListExtra3154 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getStringArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getStringArrayListExtra3154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "getStringArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.content.Intent._getStringArrayListExtra3154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharSequenceArrayListExtra3155;
 		public virtual global::java.util.ArrayList getCharSequenceArrayListExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCharSequenceArrayListExtra3155.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCharSequenceArrayListExtra3155 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCharSequenceArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCharSequenceArrayListExtra3155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "getCharSequenceArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.content.Intent._getCharSequenceArrayListExtra3155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBooleanArrayExtra3156;
 		public virtual bool[] getBooleanArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getBooleanArrayExtra3156.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getBooleanArrayExtra3156 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getBooleanArrayExtra", "(Ljava/lang/String;)[Z");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<bool>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getBooleanArrayExtra3156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as bool[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<bool>(this, global::android.content.Intent.staticClass, "getBooleanArrayExtra", "(Ljava/lang/String;)[Z", ref global::android.content.Intent._getBooleanArrayExtra3156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as bool[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getByteArrayExtra3157;
 		public virtual byte[] getByteArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getByteArrayExtra3157.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getByteArrayExtra3157 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getByteArrayExtra", "(Ljava/lang/String;)[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getByteArrayExtra3157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.content.Intent.staticClass, "getByteArrayExtra", "(Ljava/lang/String;)[B", ref global::android.content.Intent._getByteArrayExtra3157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getShortArrayExtra3158;
 		public virtual short[] getShortArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getShortArrayExtra3158.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getShortArrayExtra3158 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getShortArrayExtra", "(Ljava/lang/String;)[S");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<short>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getShortArrayExtra3158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as short[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<short>(this, global::android.content.Intent.staticClass, "getShortArrayExtra", "(Ljava/lang/String;)[S", ref global::android.content.Intent._getShortArrayExtra3158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as short[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharArrayExtra3159;
 		public virtual char[] getCharArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCharArrayExtra3159.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCharArrayExtra3159 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCharArrayExtra", "(Ljava/lang/String;)[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCharArrayExtra3159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.content.Intent.staticClass, "getCharArrayExtra", "(Ljava/lang/String;)[C", ref global::android.content.Intent._getCharArrayExtra3159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntArrayExtra3160;
 		public virtual int[] getIntArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getIntArrayExtra3160.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getIntArrayExtra3160 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getIntArrayExtra", "(Ljava/lang/String;)[I");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getIntArrayExtra3160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.content.Intent.staticClass, "getIntArrayExtra", "(Ljava/lang/String;)[I", ref global::android.content.Intent._getIntArrayExtra3160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getLongArrayExtra3161;
 		public virtual long[] getLongArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getLongArrayExtra3161.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getLongArrayExtra3161 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getLongArrayExtra", "(Ljava/lang/String;)[J");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<long>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getLongArrayExtra3161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as long[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<long>(this, global::android.content.Intent.staticClass, "getLongArrayExtra", "(Ljava/lang/String;)[J", ref global::android.content.Intent._getLongArrayExtra3161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as long[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloatArrayExtra3162;
 		public virtual float[] getFloatArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getFloatArrayExtra3162.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getFloatArrayExtra3162 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getFloatArrayExtra", "(Ljava/lang/String;)[F");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<float>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getFloatArrayExtra3162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as float[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<float>(this, global::android.content.Intent.staticClass, "getFloatArrayExtra", "(Ljava/lang/String;)[F", ref global::android.content.Intent._getFloatArrayExtra3162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as float[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getDoubleArrayExtra3163;
 		public virtual double[] getDoubleArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getDoubleArrayExtra3163.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getDoubleArrayExtra3163 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getDoubleArrayExtra", "(Ljava/lang/String;)[D");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<double>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getDoubleArrayExtra3163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as double[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<double>(this, global::android.content.Intent.staticClass, "getDoubleArrayExtra", "(Ljava/lang/String;)[D", ref global::android.content.Intent._getDoubleArrayExtra3163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as double[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getStringArrayExtra3164;
 		public virtual global::java.lang.String[] getStringArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getStringArrayExtra3164.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getStringArrayExtra3164 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getStringArrayExtra", "(Ljava/lang/String;)[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getStringArrayExtra3164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "getStringArrayExtra", "(Ljava/lang/String;)[Ljava/lang/String;", ref global::android.content.Intent._getStringArrayExtra3164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharSequenceArrayExtra3165;
 		public virtual global::java.lang.CharSequence[] getCharSequenceArrayExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getCharSequenceArrayExtra3165.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getCharSequenceArrayExtra3165 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getCharSequenceArrayExtra", "(Ljava/lang/String;)[Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.CharSequence>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getCharSequenceArrayExtra3165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.CharSequence>(this, global::android.content.Intent.staticClass, "getCharSequenceArrayExtra", "(Ljava/lang/String;)[Ljava/lang/CharSequence;", ref global::android.content.Intent._getCharSequenceArrayExtra3165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getBundleExtra3166;
 		public virtual global::android.os.Bundle getBundleExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getBundleExtra3166.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getBundleExtra3166 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getBundleExtra", "(Ljava/lang/String;)Landroid/os/Bundle;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getBundleExtra3166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.Intent.staticClass, "getBundleExtra", "(Ljava/lang/String;)Landroid/os/Bundle;", ref global::android.content.Intent._getBundleExtra3166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Bundle;
 		}
 		public new global::android.os.Bundle Extras
 		{
@@ -693,10 +522,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getExtras3167;
 		public virtual global::android.os.Bundle getExtras()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getExtras3167.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getExtras3167 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getExtras", "()Landroid/os/Bundle;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getExtras3167) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.content.Intent.staticClass, "getExtras", "()Landroid/os/Bundle;", ref global::android.content.Intent._getExtras3167) as android.os.Bundle;
 		}
 		public new int Flags
 		{
@@ -712,10 +538,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getFlags3168;
 		public virtual int getFlags()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getFlags3168.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getFlags3168 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getFlags", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._getFlags3168);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, "getFlags", "()I", ref global::android.content.Intent._getFlags3168);
 		}
 		public new global::android.graphics.Rect SourceBounds
 		{
@@ -731,162 +554,102 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getSourceBounds3169;
 		public virtual global::android.graphics.Rect getSourceBounds()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._getSourceBounds3169.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._getSourceBounds3169 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "getSourceBounds", "()Landroid/graphics/Rect;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.content.Intent.staticClass, global::android.content.Intent._getSourceBounds3169) as android.graphics.Rect;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.content.Intent.staticClass, "getSourceBounds", "()Landroid/graphics/Rect;", ref global::android.content.Intent._getSourceBounds3169) as android.graphics.Rect;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveActivity3170;
 		public virtual global::android.content.ComponentName resolveActivity(android.content.pm.PackageManager arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._resolveActivity3170.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._resolveActivity3170 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "resolveActivity", "(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.Intent.staticClass, global::android.content.Intent._resolveActivity3170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ComponentName;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.Intent.staticClass, "resolveActivity", "(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;", ref global::android.content.Intent._resolveActivity3170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveActivityInfo3171;
 		public virtual global::android.content.pm.ActivityInfo resolveActivityInfo(android.content.pm.PackageManager arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._resolveActivityInfo3171.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._resolveActivityInfo3171 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "resolveActivityInfo", "(Landroid/content/pm/PackageManager;I)Landroid/content/pm/ActivityInfo;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._resolveActivityInfo3171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "resolveActivityInfo", "(Landroid/content/pm/PackageManager;I)Landroid/content/pm/ActivityInfo;", ref global::android.content.Intent._resolveActivityInfo3171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAction3172;
 		public virtual global::android.content.Intent setAction(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setAction3172.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setAction3172 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setAction", "(Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setAction3172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setAction", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setAction3172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setData3173;
 		public virtual global::android.content.Intent setData(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setData3173.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setData3173 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setData", "(Landroid/net/Uri;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setData3173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setData", "(Landroid/net/Uri;)Landroid/content/Intent;", ref global::android.content.Intent._setData3173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setType3174;
 		public virtual global::android.content.Intent setType(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setType3174.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setType3174 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setType", "(Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setType3174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setType", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setType3174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDataAndType3175;
 		public virtual global::android.content.Intent setDataAndType(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setDataAndType3175.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setDataAndType3175 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setDataAndType", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setDataAndType3175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setDataAndType", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setDataAndType3175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _addCategory3176;
 		public virtual global::android.content.Intent addCategory(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._addCategory3176.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._addCategory3176 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "addCategory", "(Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._addCategory3176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "addCategory", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._addCategory3176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeCategory3177;
 		public virtual void removeCategory(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._removeCategory3177.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._removeCategory3177 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "removeCategory", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._removeCategory3177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "removeCategory", "(Ljava/lang/String;)V", ref global::android.content.Intent._removeCategory3177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3178;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, bool[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3178.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3178 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Z)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Z)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3179;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3179.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3179 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Z)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Z)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3180;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, byte arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3180.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3180 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;B)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;B)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3181;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, char arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3181.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3181 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;C)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;C)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3182;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, short arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3182.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3182 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;S)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;S)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3183;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3183.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3183 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;I)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;I)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3184;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3184.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3184 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;J)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;J)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3185;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3185.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3185 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;F)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;F)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3186;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, double arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3186.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3186 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;D)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;D)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3187;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3187.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3187 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3188;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, java.lang.CharSequence arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3188.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3188 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		public android.content.Intent putExtra(java.lang.String arg0, string arg1)
 		{
@@ -895,266 +658,167 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _putExtra3189;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, android.os.Parcelable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3189.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3189 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3190;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, android.os.Parcelable[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3190.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3190 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3191;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, java.io.Serializable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3191.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3191 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3192;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, byte[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3192.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3192 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[B)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[B)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3193;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, short[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3193.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3193 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[S)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[S)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3194;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, char[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3194.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3194 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[C)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[C)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3195;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, int[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3195.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3195 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[I)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[I)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3196;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, long[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3196.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3196 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[J)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[J)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3197;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, float[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3197.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3197 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[F)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[F)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3198;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, double[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3198.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3198 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[D)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[D)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3199;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, java.lang.String[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3199.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3199 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3200;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, java.lang.CharSequence[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3200.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3200 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Ljava/lang/CharSequence;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;[Ljava/lang/CharSequence;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtra3201;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, android.os.Bundle arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtra3201.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtra3201 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra3201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtra", "(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;", ref global::android.content.Intent._putExtra3201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putParcelableArrayListExtra3202;
 		public virtual global::android.content.Intent putParcelableArrayListExtra(java.lang.String arg0, java.util.ArrayList arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putParcelableArrayListExtra3202.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putParcelableArrayListExtra3202 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putParcelableArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putParcelableArrayListExtra3202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putParcelableArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", ref global::android.content.Intent._putParcelableArrayListExtra3202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putIntegerArrayListExtra3203;
 		public virtual global::android.content.Intent putIntegerArrayListExtra(java.lang.String arg0, java.util.ArrayList arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putIntegerArrayListExtra3203.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putIntegerArrayListExtra3203 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putIntegerArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putIntegerArrayListExtra3203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putIntegerArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", ref global::android.content.Intent._putIntegerArrayListExtra3203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putStringArrayListExtra3204;
 		public virtual global::android.content.Intent putStringArrayListExtra(java.lang.String arg0, java.util.ArrayList arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putStringArrayListExtra3204.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putStringArrayListExtra3204 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putStringArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putStringArrayListExtra3204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putStringArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", ref global::android.content.Intent._putStringArrayListExtra3204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putCharSequenceArrayListExtra3205;
 		public virtual global::android.content.Intent putCharSequenceArrayListExtra(java.lang.String arg0, java.util.ArrayList arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putCharSequenceArrayListExtra3205.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putCharSequenceArrayListExtra3205 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putCharSequenceArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putCharSequenceArrayListExtra3205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putCharSequenceArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", ref global::android.content.Intent._putCharSequenceArrayListExtra3205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtras3206;
 		public virtual global::android.content.Intent putExtras(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtras3206.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtras3206 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtras", "(Landroid/os/Bundle;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtras3206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtras", "(Landroid/os/Bundle;)Landroid/content/Intent;", ref global::android.content.Intent._putExtras3206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _putExtras3207;
 		public virtual global::android.content.Intent putExtras(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._putExtras3207.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._putExtras3207 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "putExtras", "(Landroid/content/Intent;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtras3207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "putExtras", "(Landroid/content/Intent;)Landroid/content/Intent;", ref global::android.content.Intent._putExtras3207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _replaceExtras3208;
 		public virtual global::android.content.Intent replaceExtras(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._replaceExtras3208.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._replaceExtras3208 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "replaceExtras", "(Landroid/os/Bundle;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._replaceExtras3208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "replaceExtras", "(Landroid/os/Bundle;)Landroid/content/Intent;", ref global::android.content.Intent._replaceExtras3208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _replaceExtras3209;
 		public virtual global::android.content.Intent replaceExtras(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._replaceExtras3209.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._replaceExtras3209 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "replaceExtras", "(Landroid/content/Intent;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._replaceExtras3209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "replaceExtras", "(Landroid/content/Intent;)Landroid/content/Intent;", ref global::android.content.Intent._replaceExtras3209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeExtra3210;
 		public virtual void removeExtra(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._removeExtra3210.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._removeExtra3210 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "removeExtra", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._removeExtra3210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "removeExtra", "(Ljava/lang/String;)V", ref global::android.content.Intent._removeExtra3210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFlags3211;
 		public virtual global::android.content.Intent setFlags(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setFlags3211.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setFlags3211 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setFlags", "(I)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setFlags3211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setFlags", "(I)Landroid/content/Intent;", ref global::android.content.Intent._setFlags3211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _addFlags3212;
 		public virtual global::android.content.Intent addFlags(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._addFlags3212.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._addFlags3212 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "addFlags", "(I)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._addFlags3212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "addFlags", "(I)Landroid/content/Intent;", ref global::android.content.Intent._addFlags3212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPackage3213;
 		public virtual global::android.content.Intent setPackage(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setPackage3213.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setPackage3213 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setPackage", "(Ljava/lang/String;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setPackage3213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setPackage", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.Intent._setPackage3213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setComponent3214;
 		public virtual global::android.content.Intent setComponent(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setComponent3214.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setComponent3214 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setComponent", "(Landroid/content/ComponentName;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setComponent3214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setComponent", "(Landroid/content/ComponentName;)Landroid/content/Intent;", ref global::android.content.Intent._setComponent3214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setClass3215;
 		public virtual global::android.content.Intent setClass(android.content.Context arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setClass3215.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setClass3215 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setClass", "(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setClass3215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Intent.staticClass, "setClass", "(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;", ref global::android.content.Intent._setClass3215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSourceBounds3216;
 		public virtual void setSourceBounds(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._setSourceBounds3216.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._setSourceBounds3216 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "setSourceBounds", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._setSourceBounds3216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "setSourceBounds", "(Landroid/graphics/Rect;)V", ref global::android.content.Intent._setSourceBounds3216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _fillIn3217;
 		public virtual int fillIn(android.content.Intent arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._fillIn3217.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._fillIn3217 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "fillIn", "(Landroid/content/Intent;I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._fillIn3217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, "fillIn", "(Landroid/content/Intent;I)I", ref global::android.content.Intent._fillIn3217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _filterEquals3218;
 		public virtual bool filterEquals(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._filterEquals3218.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._filterEquals3218 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "filterEquals", "(Landroid/content/Intent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._filterEquals3218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.Intent.staticClass, "filterEquals", "(Landroid/content/Intent;)Z", ref global::android.content.Intent._filterEquals3218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _filterHashCode3219;
 		public virtual int filterHashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._filterHashCode3219.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._filterHashCode3219 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "filterHashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._filterHashCode3219);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.Intent.staticClass, "filterHashCode", "()I", ref global::android.content.Intent._filterHashCode3219);
 		}
 		internal static global::MonoJavaBridge.MethodId _toUri3220;
 		public virtual global::java.lang.String toUri(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._toUri3220.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._toUri3220 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "toUri", "(I)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, global::android.content.Intent._toUri3220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Intent.staticClass, "toUri", "(I)Ljava/lang/String;", ref global::android.content.Intent._toUri3220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readFromParcel3221;
 		public virtual void readFromParcel(android.os.Parcel arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Intent._readFromParcel3221.native == global::System.IntPtr.Zero)
-				global::android.content.Intent._readFromParcel3221 = @__env.GetMethodIDNoThrow(global::android.content.Intent.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, global::android.content.Intent._readFromParcel3221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Intent.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V", ref global::android.content.Intent._readFromParcel3221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parseIntent3222;
 		public static global::android.content.Intent parseIntent(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2)

@@ -10,10 +10,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString23687;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyQualifierInfo._toString23687.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyQualifierInfo._toString23687 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyQualifierInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, global::java.security.cert.PolicyQualifierInfo._toString23687) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.cert.PolicyQualifierInfo._toString23687) as java.lang.String;
 		}
 		public new byte[] Encoded
 		{
@@ -25,10 +22,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getEncoded23688;
 		public virtual byte[] getEncoded()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyQualifierInfo._getEncoded23688.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyQualifierInfo._getEncoded23688 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyQualifierInfo.staticClass, "getEncoded", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, global::java.security.cert.PolicyQualifierInfo._getEncoded23688) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, "getEncoded", "()[B", ref global::java.security.cert.PolicyQualifierInfo._getEncoded23688) as byte[];
 		}
 		public new global::java.lang.String PolicyQualifierId
 		{
@@ -40,10 +34,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getPolicyQualifierId23689;
 		public virtual global::java.lang.String getPolicyQualifierId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyQualifierInfo._getPolicyQualifierId23689.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyQualifierInfo._getPolicyQualifierId23689 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyQualifierInfo.staticClass, "getPolicyQualifierId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, global::java.security.cert.PolicyQualifierInfo._getPolicyQualifierId23689) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, "getPolicyQualifierId", "()Ljava/lang/String;", ref global::java.security.cert.PolicyQualifierInfo._getPolicyQualifierId23689) as java.lang.String;
 		}
 		public new byte[] PolicyQualifier
 		{
@@ -55,10 +46,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getPolicyQualifier23690;
 		public virtual byte[] getPolicyQualifier()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyQualifierInfo._getPolicyQualifier23690.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyQualifierInfo._getPolicyQualifier23690 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyQualifierInfo.staticClass, "getPolicyQualifier", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, global::java.security.cert.PolicyQualifierInfo._getPolicyQualifier23690) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.PolicyQualifierInfo.staticClass, "getPolicyQualifier", "()[B", ref global::java.security.cert.PolicyQualifierInfo._getPolicyQualifier23690) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _PolicyQualifierInfo23691;
 		public PolicyQualifierInfo(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

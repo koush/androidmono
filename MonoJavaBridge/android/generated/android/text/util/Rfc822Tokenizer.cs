@@ -34,10 +34,7 @@ namespace android.text.util
 		internal static global::MonoJavaBridge.MethodId _findTokenStart13668;
 		public virtual int findTokenStart(java.lang.CharSequence arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Tokenizer._findTokenStart13668.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Tokenizer._findTokenStart13668 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenStart", "(Ljava/lang/CharSequence;I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenStart13668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenStart", "(Ljava/lang/CharSequence;I)I", ref global::android.text.util.Rfc822Tokenizer._findTokenStart13668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public int findTokenStart(string arg0, int arg1)
 		{
@@ -46,10 +43,7 @@ namespace android.text.util
 		internal static global::MonoJavaBridge.MethodId _findTokenEnd13669;
 		public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Tokenizer._findTokenEnd13669.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Tokenizer._findTokenEnd13669 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenEnd13669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I", ref global::android.text.util.Rfc822Tokenizer._findTokenEnd13669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public int findTokenEnd(string arg0, int arg1)
 		{
@@ -58,10 +52,7 @@ namespace android.text.util
 		internal static global::MonoJavaBridge.MethodId _terminateToken13670;
 		public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Tokenizer._terminateToken13670.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Tokenizer._terminateToken13670 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._terminateToken13670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", ref global::android.text.util.Rfc822Tokenizer._terminateToken13670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence terminateToken(string arg0)
 		{

@@ -16,10 +16,7 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _sessionCreated15912;
 		void android.view.inputmethod.InputMethod_SessionCallback.sessionCreated(android.view.inputmethod.InputMethodSession arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass, "sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass, "sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V", ref global::android.view.inputmethod.InputMethod_SessionCallback_._sessionCreated15912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static InputMethod_SessionCallback_()
 		{

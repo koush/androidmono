@@ -10,26 +10,17 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _reset27221;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._reset27221.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._reset27221 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "reset", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._reset27221);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "reset", "()V", ref global::java.util.concurrent.CyclicBarrier._reset27221);
 		}
 		internal static global::MonoJavaBridge.MethodId _await27222;
 		public virtual int await()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._await27222.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._await27222 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "await", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._await27222);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "await", "()I", ref global::java.util.concurrent.CyclicBarrier._await27222);
 		}
 		internal static global::MonoJavaBridge.MethodId _await27223;
 		public virtual int await(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._await27223.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._await27223 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "await", "(JLjava/util/concurrent/TimeUnit;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._await27223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "await", "(JLjava/util/concurrent/TimeUnit;)I", ref global::java.util.concurrent.CyclicBarrier._await27223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int Parties
 		{
@@ -41,18 +32,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getParties27224;
 		public virtual int getParties()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._getParties27224.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._getParties27224 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "getParties", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._getParties27224);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "getParties", "()I", ref global::java.util.concurrent.CyclicBarrier._getParties27224);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBroken27225;
 		public virtual bool isBroken()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._isBroken27225.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._isBroken27225 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "isBroken", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._isBroken27225);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "isBroken", "()Z", ref global::java.util.concurrent.CyclicBarrier._isBroken27225);
 		}
 		public new int NumberWaiting
 		{
@@ -64,10 +49,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getNumberWaiting27226;
 		public virtual int getNumberWaiting()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.CyclicBarrier._getNumberWaiting27226.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.CyclicBarrier._getNumberWaiting27226 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.CyclicBarrier.staticClass, "getNumberWaiting", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, global::java.util.concurrent.CyclicBarrier._getNumberWaiting27226);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.CyclicBarrier.staticClass, "getNumberWaiting", "()I", ref global::java.util.concurrent.CyclicBarrier._getNumberWaiting27226);
 		}
 		internal static global::MonoJavaBridge.MethodId _CyclicBarrier27227;
 		public CyclicBarrier(int arg0, java.lang.Runnable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

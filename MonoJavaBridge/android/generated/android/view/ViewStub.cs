@@ -23,10 +23,7 @@ namespace android.view
 			internal static global::MonoJavaBridge.MethodId _onInflate15206;
 			void android.view.ViewStub.OnInflateListener.onInflate(android.view.ViewStub arg0, android.view.View arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.ViewStub.OnInflateListener_._onInflate15206.native == global::System.IntPtr.Zero)
-					global::android.view.ViewStub.OnInflateListener_._onInflate15206 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.OnInflateListener_.staticClass, "onInflate", "(Landroid/view/ViewStub;Landroid/view/View;)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub.OnInflateListener_._onInflate15206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.OnInflateListener_.staticClass, "onInflate", "(Landroid/view/ViewStub;Landroid/view/View;)V", ref global::android.view.ViewStub.OnInflateListener_._onInflate15206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnInflateListener_()
 			{
@@ -82,18 +79,12 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _inflate15208;
 		public global::android.view.View inflate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._inflate15208.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._inflate15208 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "inflate", "()Landroid/view/View;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._inflate15208)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.ViewStub.staticClass, "inflate", "()Landroid/view/View;", ref global::android.view.ViewStub._inflate15208) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _draw15209;
 		public sealed override void draw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._draw15209.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._draw15209 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._draw15209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.view.ViewStub._draw15209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Visibility
 		{
@@ -105,18 +96,12 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _setVisibility15210;
 		public sealed override void setVisibility(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._setVisibility15210.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._setVisibility15210 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setVisibility", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setVisibility15210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.staticClass, "setVisibility", "(I)V", ref global::android.view.ViewStub._setVisibility15210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLayoutResource15211;
 		public void setLayoutResource(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._setLayoutResource15211.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._setLayoutResource15211 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setLayoutResource", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setLayoutResource15211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.staticClass, "setLayoutResource", "(I)V", ref global::android.view.ViewStub._setLayoutResource15211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int LayoutResource
 		{
@@ -132,10 +117,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getLayoutResource15212;
 		public int getLayoutResource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._getLayoutResource15212.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._getLayoutResource15212 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "getLayoutResource", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getLayoutResource15212);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewStub.staticClass, "getLayoutResource", "()I", ref global::android.view.ViewStub._getLayoutResource15212);
 		}
 		public new int InflatedId
 		{
@@ -151,26 +133,17 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getInflatedId15213;
 		public int getInflatedId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._getInflatedId15213.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._getInflatedId15213 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "getInflatedId", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getInflatedId15213);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewStub.staticClass, "getInflatedId", "()I", ref global::android.view.ViewStub._getInflatedId15213);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInflatedId15214;
 		public void setInflatedId(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._setInflatedId15214.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._setInflatedId15214 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setInflatedId", "(I)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setInflatedId15214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.staticClass, "setInflatedId", "(I)V", ref global::android.view.ViewStub._setInflatedId15214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnInflateListener15215;
 		public void setOnInflateListener(android.view.ViewStub.OnInflateListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewStub._setOnInflateListener15215.native == global::System.IntPtr.Zero)
-				global::android.view.ViewStub._setOnInflateListener15215 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setOnInflateListener", "(Landroid/view/ViewStub$OnInflateListener;)V");
-			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setOnInflateListener15215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewStub.staticClass, "setOnInflateListener", "(Landroid/view/ViewStub$OnInflateListener;)V", ref global::android.view.ViewStub._setOnInflateListener15215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnInflateListener(global::android.view.ViewStub.OnInflateListenerDelegate arg0)
 		{

@@ -17,10 +17,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getMessage31033;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.TransformerFactoryConfigurationError._getMessage31033.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.TransformerFactoryConfigurationError._getMessage31033 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, global::javax.xml.transform.TransformerFactoryConfigurationError._getMessage31033) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "getMessage", "()Ljava/lang/String;", ref global::javax.xml.transform.TransformerFactoryConfigurationError._getMessage31033) as java.lang.String;
 		}
 		public new global::java.lang.Exception Exception
 		{
@@ -32,10 +29,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getException31034;
 		public virtual global::java.lang.Exception getException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.TransformerFactoryConfigurationError._getException31034.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.TransformerFactoryConfigurationError._getException31034 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "getException", "()Ljava/lang/Exception;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, global::javax.xml.transform.TransformerFactoryConfigurationError._getException31034) as java.lang.Exception;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerFactoryConfigurationError.staticClass, "getException", "()Ljava/lang/Exception;", ref global::javax.xml.transform.TransformerFactoryConfigurationError._getException31034) as java.lang.Exception;
 		}
 		internal static global::MonoJavaBridge.MethodId _TransformerFactoryConfigurationError31035;
 		public TransformerFactoryConfigurationError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,154 +10,97 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _getType2713;
 		public virtual global::java.lang.String getType(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._getType2713.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._getType2713 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "getType", "(Landroid/net/Uri;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._getType2713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentResolver.staticClass, "getType", "(Landroid/net/Uri;)Ljava/lang/String;", ref global::android.content.ContentResolver._getType2713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _delete2714;
 		public virtual int delete(android.net.Uri arg0, java.lang.String arg1, java.lang.String[] arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._delete2714.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._delete2714 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._delete2714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, "delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentResolver._delete2714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _insert2715;
 		public virtual global::android.net.Uri insert(android.net.Uri arg0, android.content.ContentValues arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._insert2715.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._insert2715 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._insert2715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.Uri;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;", ref global::android.content.ContentResolver._insert2715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _query2716;
 		public virtual global::android.database.Cursor query(android.net.Uri arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._query2716.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._query2716 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._query2716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.content.ContentResolver.staticClass, "query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.content.ContentResolver._query2716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4)) as android.database.Cursor;
 		}
 		internal static global::MonoJavaBridge.MethodId _update2717;
 		public virtual int update(android.net.Uri arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._update2717.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._update2717 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._update2717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, "update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentResolver._update2717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _openInputStream2718;
 		public virtual global::java.io.InputStream openInputStream(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._openInputStream2718.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._openInputStream2718 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "openInputStream", "(Landroid/net/Uri;)Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._openInputStream2718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "openInputStream", "(Landroid/net/Uri;)Ljava/io/InputStream;", ref global::android.content.ContentResolver._openInputStream2718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _openOutputStream2719;
 		public virtual global::java.io.OutputStream openOutputStream(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._openOutputStream2719.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._openOutputStream2719 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "openOutputStream", "(Landroid/net/Uri;)Ljava/io/OutputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._openOutputStream2719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "openOutputStream", "(Landroid/net/Uri;)Ljava/io/OutputStream;", ref global::android.content.ContentResolver._openOutputStream2719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _openOutputStream2720;
 		public virtual global::java.io.OutputStream openOutputStream(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._openOutputStream2720.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._openOutputStream2720 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "openOutputStream", "(Landroid/net/Uri;Ljava/lang/String;)Ljava/io/OutputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._openOutputStream2720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "openOutputStream", "(Landroid/net/Uri;Ljava/lang/String;)Ljava/io/OutputStream;", ref global::android.content.ContentResolver._openOutputStream2720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _openFileDescriptor2721;
 		public virtual global::android.os.ParcelFileDescriptor openFileDescriptor(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._openFileDescriptor2721.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._openFileDescriptor2721 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "openFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._openFileDescriptor2721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "openFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", ref global::android.content.ContentResolver._openFileDescriptor2721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
 		}
 		internal static global::MonoJavaBridge.MethodId _openAssetFileDescriptor2722;
 		public virtual global::android.content.res.AssetFileDescriptor openAssetFileDescriptor(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._openAssetFileDescriptor2722.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._openAssetFileDescriptor2722 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "openAssetFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._openAssetFileDescriptor2722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.res.AssetFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "openAssetFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", ref global::android.content.ContentResolver._openAssetFileDescriptor2722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.res.AssetFileDescriptor;
 		}
 		internal static global::MonoJavaBridge.MethodId _applyBatch2723;
 		public virtual global::android.content.ContentProviderResult[] applyBatch(java.lang.String arg0, java.util.ArrayList arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._applyBatch2723.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._applyBatch2723 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "applyBatch", "(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.ContentProviderResult>(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._applyBatch2723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.ContentProviderResult[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.ContentProviderResult>(this, global::android.content.ContentResolver.staticClass, "applyBatch", "(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;", ref global::android.content.ContentResolver._applyBatch2723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.ContentProviderResult[];
 		}
 		internal static global::MonoJavaBridge.MethodId _bulkInsert2724;
 		public virtual int bulkInsert(android.net.Uri arg0, android.content.ContentValues[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._bulkInsert2724.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._bulkInsert2724 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._bulkInsert2724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentResolver.staticClass, "bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I", ref global::android.content.ContentResolver._bulkInsert2724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireContentProviderClient2725;
 		public virtual global::android.content.ContentProviderClient acquireContentProviderClient(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._acquireContentProviderClient2725.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._acquireContentProviderClient2725 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "acquireContentProviderClient", "(Landroid/net/Uri;)Landroid/content/ContentProviderClient;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._acquireContentProviderClient2725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderClient;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "acquireContentProviderClient", "(Landroid/net/Uri;)Landroid/content/ContentProviderClient;", ref global::android.content.ContentResolver._acquireContentProviderClient2725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderClient;
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireContentProviderClient2726;
 		public virtual global::android.content.ContentProviderClient acquireContentProviderClient(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._acquireContentProviderClient2726.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._acquireContentProviderClient2726 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "acquireContentProviderClient", "(Ljava/lang/String;)Landroid/content/ContentProviderClient;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._acquireContentProviderClient2726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderClient;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentResolver.staticClass, "acquireContentProviderClient", "(Ljava/lang/String;)Landroid/content/ContentProviderClient;", ref global::android.content.ContentResolver._acquireContentProviderClient2726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderClient;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerContentObserver2727;
 		public virtual void registerContentObserver(android.net.Uri arg0, bool arg1, android.database.ContentObserver arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._registerContentObserver2727.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._registerContentObserver2727 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "registerContentObserver", "(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._registerContentObserver2727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "registerContentObserver", "(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V", ref global::android.content.ContentResolver._registerContentObserver2727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterContentObserver2728;
 		public virtual void unregisterContentObserver(android.database.ContentObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._unregisterContentObserver2728.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._unregisterContentObserver2728 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "unregisterContentObserver", "(Landroid/database/ContentObserver;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._unregisterContentObserver2728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "unregisterContentObserver", "(Landroid/database/ContentObserver;)V", ref global::android.content.ContentResolver._unregisterContentObserver2728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _notifyChange2729;
 		public virtual void notifyChange(android.net.Uri arg0, android.database.ContentObserver arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._notifyChange2729.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._notifyChange2729 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "notifyChange", "(Landroid/net/Uri;Landroid/database/ContentObserver;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._notifyChange2729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "notifyChange", "(Landroid/net/Uri;Landroid/database/ContentObserver;)V", ref global::android.content.ContentResolver._notifyChange2729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _notifyChange2730;
 		public virtual void notifyChange(android.net.Uri arg0, android.database.ContentObserver arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._notifyChange2730.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._notifyChange2730 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "notifyChange", "(Landroid/net/Uri;Landroid/database/ContentObserver;Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._notifyChange2730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "notifyChange", "(Landroid/net/Uri;Landroid/database/ContentObserver;Z)V", ref global::android.content.ContentResolver._notifyChange2730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _startSync2731;
 		public virtual void startSync(android.net.Uri arg0, android.os.Bundle arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._startSync2731.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._startSync2731 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "startSync", "(Landroid/net/Uri;Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._startSync2731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "startSync", "(Landroid/net/Uri;Landroid/os/Bundle;)V", ref global::android.content.ContentResolver._startSync2731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestSync2732;
 		public static void requestSync(android.accounts.Account arg0, java.lang.String arg1, android.os.Bundle arg2)
@@ -178,10 +121,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _cancelSync2734;
 		public virtual void cancelSync(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentResolver._cancelSync2734.native == global::System.IntPtr.Zero)
-				global::android.content.ContentResolver._cancelSync2734 = @__env.GetMethodIDNoThrow(global::android.content.ContentResolver.staticClass, "cancelSync", "(Landroid/net/Uri;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, global::android.content.ContentResolver._cancelSync2734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentResolver.staticClass, "cancelSync", "(Landroid/net/Uri;)V", ref global::android.content.ContentResolver._cancelSync2734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cancelSync2735;
 		public static void cancelSync(android.accounts.Account arg0, java.lang.String arg1)

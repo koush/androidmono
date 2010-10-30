@@ -10,50 +10,32 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getPermissions23229;
 		public virtual global::java.security.PermissionCollection getPermissions(java.security.CodeSource arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._getPermissions23229.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._getPermissions23229 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;", ref global::java.security.Policy._getPermissions23229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissions23230;
 		public virtual global::java.security.PermissionCollection getPermissions(java.security.ProtectionDomain arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._getPermissions23230.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._getPermissions23230 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "getPermissions", "(Ljava/security/ProtectionDomain;)Ljava/security/PermissionCollection;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, "getPermissions", "(Ljava/security/ProtectionDomain;)Ljava/security/PermissionCollection;", ref global::java.security.Policy._getPermissions23230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23231;
 		public virtual bool implies(java.security.ProtectionDomain arg0, java.security.Permission arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._implies23231.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._implies23231 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "implies", "(Ljava/security/ProtectionDomain;Ljava/security/Permission;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._implies23231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Policy.staticClass, "implies", "(Ljava/security/ProtectionDomain;Ljava/security/Permission;)Z", ref global::java.security.Policy._implies23231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getType23232;
 		public virtual global::java.lang.String getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._getType23232.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._getType23232 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "getType", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Policy.staticClass, global::java.security.Policy._getType23232) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Policy.staticClass, "getType", "()Ljava/lang/String;", ref global::java.security.Policy._getType23232) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23233;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._getProvider23233.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._getProvider23233 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getProvider23233) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::java.security.Policy._getProvider23233) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _refresh23234;
 		public virtual void refresh()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Policy._refresh23234.native == global::System.IntPtr.Zero)
-				global::java.security.Policy._refresh23234 = @__env.GetMethodIDNoThrow(global::java.security.Policy.staticClass, "refresh", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._refresh23234);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Policy.staticClass, "refresh", "()V", ref global::java.security.Policy._refresh23234);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPolicy23235;
 		public static global::java.security.Policy getPolicy()

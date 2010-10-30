@@ -10,26 +10,17 @@ namespace android.provider
 		internal static global::MonoJavaBridge.MethodId _truncateHistory11329;
 		protected virtual void truncateHistory(android.content.ContentResolver arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.provider.SearchRecentSuggestions._truncateHistory11329.native == global::System.IntPtr.Zero)
-				global::android.provider.SearchRecentSuggestions._truncateHistory11329 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._truncateHistory11329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;I)V", ref global::android.provider.SearchRecentSuggestions._truncateHistory11329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearHistory11330;
 		public virtual void clearHistory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.provider.SearchRecentSuggestions._clearHistory11330.native == global::System.IntPtr.Zero)
-				global::android.provider.SearchRecentSuggestions._clearHistory11330 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "clearHistory", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._clearHistory11330);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, "clearHistory", "()V", ref global::android.provider.SearchRecentSuggestions._clearHistory11330);
 		}
 		internal static global::MonoJavaBridge.MethodId _saveRecentQuery11331;
 		public virtual void saveRecentQuery(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.provider.SearchRecentSuggestions._saveRecentQuery11331.native == global::System.IntPtr.Zero)
-				global::android.provider.SearchRecentSuggestions._saveRecentQuery11331 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "saveRecentQuery", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._saveRecentQuery11331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, "saveRecentQuery", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.provider.SearchRecentSuggestions._saveRecentQuery11331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _SearchRecentSuggestions11332;
 		public SearchRecentSuggestions(android.content.Context arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

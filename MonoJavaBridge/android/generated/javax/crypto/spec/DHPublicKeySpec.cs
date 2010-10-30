@@ -17,10 +17,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getP28779;
 		public virtual global::java.math.BigInteger getP()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DHPublicKeySpec._getP28779.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DHPublicKeySpec._getP28779 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getP", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, global::javax.crypto.spec.DHPublicKeySpec._getP28779) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getP", "()Ljava/math/BigInteger;", ref global::javax.crypto.spec.DHPublicKeySpec._getP28779) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger G
 		{
@@ -32,10 +29,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getG28780;
 		public virtual global::java.math.BigInteger getG()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DHPublicKeySpec._getG28780.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DHPublicKeySpec._getG28780 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getG", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, global::javax.crypto.spec.DHPublicKeySpec._getG28780) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getG", "()Ljava/math/BigInteger;", ref global::javax.crypto.spec.DHPublicKeySpec._getG28780) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger Y
 		{
@@ -47,10 +41,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getY28781;
 		public virtual global::java.math.BigInteger getY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DHPublicKeySpec._getY28781.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DHPublicKeySpec._getY28781 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getY", "()Ljava/math/BigInteger;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, global::javax.crypto.spec.DHPublicKeySpec._getY28781) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.DHPublicKeySpec.staticClass, "getY", "()Ljava/math/BigInteger;", ref global::javax.crypto.spec.DHPublicKeySpec._getY28781) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _DHPublicKeySpec28782;
 		public DHPublicKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

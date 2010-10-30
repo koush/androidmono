@@ -10,34 +10,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _equals26450;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._equals26450.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._equals26450 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._equals26450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.Locale._equals26450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString26451;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._toString26451.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._toString26451 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._toString26451)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.Locale._toString26451) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26452;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._hashCode26452.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._hashCode26452 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "hashCode", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode26452);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Locale.staticClass, "hashCode", "()I", ref global::java.util.Locale._hashCode26452);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26453;
 		public global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._clone26453.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._clone26453 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._clone26453)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.Locale._clone26453) as java.lang.Object;
 		}
 		public new global::java.lang.String Language
 		{
@@ -49,10 +37,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getLanguage26454;
 		public global::java.lang.String getLanguage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getLanguage26454.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getLanguage26454 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getLanguage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getLanguage26454)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getLanguage", "()Ljava/lang/String;", ref global::java.util.Locale._getLanguage26454) as java.lang.String;
 		}
 		public static global::java.util.Locale Default
 		{
@@ -136,10 +121,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getCountry26460;
 		public global::java.lang.String getCountry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getCountry26460.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getCountry26460 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getCountry", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getCountry26460)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getCountry", "()Ljava/lang/String;", ref global::java.util.Locale._getCountry26460) as java.lang.String;
 		}
 		public new global::java.lang.String Variant
 		{
@@ -151,10 +133,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getVariant26461;
 		public global::java.lang.String getVariant()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getVariant26461.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getVariant26461 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getVariant", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getVariant26461)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getVariant", "()Ljava/lang/String;", ref global::java.util.Locale._getVariant26461) as java.lang.String;
 		}
 		public new global::java.lang.String ISO3Language
 		{
@@ -166,10 +145,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getISO3Language26462;
 		public global::java.lang.String getISO3Language()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getISO3Language26462.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getISO3Language26462 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Language", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Language26462)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getISO3Language", "()Ljava/lang/String;", ref global::java.util.Locale._getISO3Language26462) as java.lang.String;
 		}
 		public new global::java.lang.String ISO3Country
 		{
@@ -181,18 +157,12 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getISO3Country26463;
 		public global::java.lang.String getISO3Country()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getISO3Country26463.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getISO3Country26463 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Country", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Country26463)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getISO3Country", "()Ljava/lang/String;", ref global::java.util.Locale._getISO3Country26463) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayLanguage26464;
 		public global::java.lang.String getDisplayLanguage(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayLanguage26464.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayLanguage26464 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage26464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;", ref global::java.util.Locale._getDisplayLanguage26464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayLanguage
 		{
@@ -204,18 +174,12 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getDisplayLanguage26465;
 		public global::java.lang.String getDisplayLanguage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayLanguage26465.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayLanguage26465 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage26465)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayLanguage", "()Ljava/lang/String;", ref global::java.util.Locale._getDisplayLanguage26465) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayCountry26466;
 		public global::java.lang.String getDisplayCountry(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayCountry26466.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayCountry26466 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry26466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;", ref global::java.util.Locale._getDisplayCountry26466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayCountry
 		{
@@ -227,10 +191,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getDisplayCountry26467;
 		public global::java.lang.String getDisplayCountry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayCountry26467.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayCountry26467 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry26467)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayCountry", "()Ljava/lang/String;", ref global::java.util.Locale._getDisplayCountry26467) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayVariant
 		{
@@ -242,26 +203,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getDisplayVariant26468;
 		public global::java.lang.String getDisplayVariant()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayVariant26468.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayVariant26468 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26468)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayVariant", "()Ljava/lang/String;", ref global::java.util.Locale._getDisplayVariant26468) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayVariant26469;
 		public global::java.lang.String getDisplayVariant(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayVariant26469.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayVariant26469 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;", ref global::java.util.Locale._getDisplayVariant26469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26470;
 		public global::java.lang.String getDisplayName(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayName26470.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayName26470 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName26470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", ref global::java.util.Locale._getDisplayName26470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayName
 		{
@@ -273,10 +225,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26471;
 		public global::java.lang.String getDisplayName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Locale._getDisplayName26471.native == global::System.IntPtr.Zero)
-				global::java.util.Locale._getDisplayName26471 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName26471)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Locale.staticClass, "getDisplayName", "()Ljava/lang/String;", ref global::java.util.Locale._getDisplayName26471) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Locale26472;
 		public Locale(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

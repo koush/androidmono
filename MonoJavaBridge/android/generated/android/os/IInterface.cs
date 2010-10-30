@@ -16,10 +16,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _asBinder9911;
 		global::android.os.IBinder android.os.IInterface.asBinder()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.IInterface_._asBinder9911.native == global::System.IntPtr.Zero)
-				global::android.os.IInterface_._asBinder9911 = @__env.GetMethodIDNoThrow(global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.IInterface_._asBinder9911)) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;", ref global::android.os.IInterface_._asBinder9911) as android.os.IBinder;
 		}
 		static IInterface_()
 		{

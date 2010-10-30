@@ -16,10 +16,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _handshakeCompleted29840;
 		void javax.net.ssl.HandshakeCompletedListener.handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedListener_.staticClass, "handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.HandshakeCompletedListener_.staticClass, "handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V", ref global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted29840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static HandshakeCompletedListener_()
 		{

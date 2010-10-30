@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26136;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.DuplicateFormatFlagsException._getMessage26136.native == global::System.IntPtr.Zero)
-				global::java.util.DuplicateFormatFlagsException._getMessage26136 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getMessage26136) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.DuplicateFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.DuplicateFormatFlagsException._getMessage26136) as java.lang.String;
 		}
 		public new global::java.lang.String Flags
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getFlags26137;
 		public virtual global::java.lang.String getFlags()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.DuplicateFormatFlagsException._getFlags26137.native == global::System.IntPtr.Zero)
-				global::java.util.DuplicateFormatFlagsException._getFlags26137 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getFlags26137) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.DuplicateFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;", ref global::java.util.DuplicateFormatFlagsException._getFlags26137) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _DuplicateFormatFlagsException26138;
 		public DuplicateFormatFlagsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

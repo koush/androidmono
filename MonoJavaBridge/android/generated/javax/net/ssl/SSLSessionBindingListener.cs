@@ -17,18 +17,12 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _valueBound30061;
 		void javax.net.ssl.SSLSessionBindingListener.valueBound(javax.net.ssl.SSLSessionBindingEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionBindingListener_._valueBound30061.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionBindingListener_._valueBound30061 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionBindingListener_._valueBound30061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", ref global::javax.net.ssl.SSLSessionBindingListener_._valueBound30061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueUnbound30062;
 		void javax.net.ssl.SSLSessionBindingListener.valueUnbound(javax.net.ssl.SSLSessionBindingEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSessionBindingListener_.staticClass, "valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", ref global::javax.net.ssl.SSLSessionBindingListener_._valueUnbound30062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SSLSessionBindingListener_()
 		{

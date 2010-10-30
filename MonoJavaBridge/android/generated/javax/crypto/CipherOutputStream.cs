@@ -10,42 +10,27 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _write28542;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherOutputStream._write28542.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherOutputStream._write28542 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherOutputStream.staticClass, "write", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, "write", "(I)V", ref global::javax.crypto.CipherOutputStream._write28542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write28543;
 		public override void write(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherOutputStream._write28543.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherOutputStream._write28543 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherOutputStream.staticClass, "write", "([B)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, "write", "([B)V", ref global::javax.crypto.CipherOutputStream._write28543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write28544;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherOutputStream._write28544.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherOutputStream._write28544 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherOutputStream.staticClass, "write", "([BII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, "write", "([BII)V", ref global::javax.crypto.CipherOutputStream._write28544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush28545;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherOutputStream._flush28545.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherOutputStream._flush28545 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherOutputStream.staticClass, "flush", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._flush28545);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, "flush", "()V", ref global::javax.crypto.CipherOutputStream._flush28545);
 		}
 		internal static global::MonoJavaBridge.MethodId _close28546;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherOutputStream._close28546.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherOutputStream._close28546 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherOutputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._close28546);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherOutputStream.staticClass, "close", "()V", ref global::javax.crypto.CipherOutputStream._close28546);
 		}
 		internal static global::MonoJavaBridge.MethodId _CipherOutputStream28547;
 		public CipherOutputStream(java.io.OutputStream arg0, javax.crypto.Cipher arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

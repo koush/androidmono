@@ -10,68 +10,44 @@ namespace java.nio.channels.spi
 		internal static global::MonoJavaBridge.MethodId _register22668;
 		public sealed override global::java.nio.channels.SelectionKey register(java.nio.channels.Selector arg0, int arg1, java.lang.Object arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._register22668.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._register22668 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._register22668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.channels.SelectionKey;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;", ref global::java.nio.channels.spi.AbstractSelectableChannel._register22668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.channels.SelectionKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _provider22669;
 		public sealed override global::java.nio.channels.spi.SelectorProvider provider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._provider22669.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._provider22669 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "provider", "()Ljava/nio/channels/spi/SelectorProvider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._provider22669) as java.nio.channels.spi.SelectorProvider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "provider", "()Ljava/nio/channels/spi/SelectorProvider;", ref global::java.nio.channels.spi.AbstractSelectableChannel._provider22669) as java.nio.channels.spi.SelectorProvider;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRegistered22670;
 		public sealed override bool isRegistered()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered22670.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered22670 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isRegistered", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered22670);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isRegistered", "()Z", ref global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered22670);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBlocking22671;
 		public sealed override bool isBlocking()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking22671.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking22671 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isBlocking", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking22671);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isBlocking", "()Z", ref global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking22671);
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseChannel22672;
 		protected sealed override void implCloseChannel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel22672.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel22672 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseChannel", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel22672);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseChannel", "()V", ref global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel22672);
 		}
 		internal static global::MonoJavaBridge.MethodId _keyFor22673;
 		public sealed override global::java.nio.channels.SelectionKey keyFor(java.nio.channels.Selector arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._keyFor22673.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._keyFor22673 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._keyFor22673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.SelectionKey;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;", ref global::java.nio.channels.spi.AbstractSelectableChannel._keyFor22673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.SelectionKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22674;
 		protected abstract void implCloseSelectableChannel();
 		internal static global::MonoJavaBridge.MethodId _blockingLock22675;
 		public sealed override global::java.lang.Object blockingLock()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock22675.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock22675 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "blockingLock", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock22675) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "blockingLock", "()Ljava/lang/Object;", ref global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock22675) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _configureBlocking22676;
 		public sealed override global::java.nio.channels.SelectableChannel configureBlocking(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking22676.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking22676 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking22676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.SelectableChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;", ref global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking22676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.SelectableChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22677;
 		protected abstract void implConfigureBlocking(bool arg0);
@@ -104,26 +80,17 @@ namespace java.nio.channels.spi
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22679;
 		protected override void implCloseSelectableChannel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel_._implCloseSelectableChannel22679.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel_._implCloseSelectableChannel22679 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "implCloseSelectableChannel", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel_._implCloseSelectableChannel22679);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.spi.AbstractSelectableChannel_._implCloseSelectableChannel22679);
 		}
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22680;
 		protected override void implConfigureBlocking(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel_._implConfigureBlocking22680.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel_._implConfigureBlocking22680 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "implConfigureBlocking", "(Z)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel_._implConfigureBlocking22680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.spi.AbstractSelectableChannel_._implConfigureBlocking22680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _validOps22681;
 		public override int validOps()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractSelectableChannel_._validOps22681.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractSelectableChannel_._validOps22681 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "validOps", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel_._validOps22681);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, "validOps", "()I", ref global::java.nio.channels.spi.AbstractSelectableChannel_._validOps22681);
 		}
 		static AbstractSelectableChannel_()
 		{

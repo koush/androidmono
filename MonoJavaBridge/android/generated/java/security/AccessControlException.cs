@@ -17,10 +17,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getPermission22834;
 		public virtual global::java.security.Permission getPermission()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AccessControlException._getPermission22834.native == global::System.IntPtr.Zero)
-				global::java.security.AccessControlException._getPermission22834 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlException.staticClass, "getPermission", "()Ljava/security/Permission;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.AccessControlException.staticClass, global::java.security.AccessControlException._getPermission22834) as java.security.Permission;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.AccessControlException.staticClass, "getPermission", "()Ljava/security/Permission;", ref global::java.security.AccessControlException._getPermission22834) as java.security.Permission;
 		}
 		internal static global::MonoJavaBridge.MethodId _AccessControlException22835;
 		public AccessControlException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

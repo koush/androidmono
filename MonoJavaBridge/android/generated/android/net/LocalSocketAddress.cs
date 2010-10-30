@@ -79,18 +79,12 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getName7697;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalSocketAddress._getName7697.native == global::System.IntPtr.Zero)
-				global::android.net.LocalSocketAddress._getName7697 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocketAddress.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getName7697) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.LocalSocketAddress.staticClass, "getName", "()Ljava/lang/String;", ref global::android.net.LocalSocketAddress._getName7697) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespace7698;
 		public virtual global::android.net.LocalSocketAddress.Namespace getNamespace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.LocalSocketAddress._getNamespace7698.native == global::System.IntPtr.Zero)
-				global::android.net.LocalSocketAddress._getNamespace7698 = @__env.GetMethodIDNoThrow(global::android.net.LocalSocketAddress.staticClass, "getNamespace", "()Landroid/net/LocalSocketAddress$Namespace;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.LocalSocketAddress.Namespace>(this, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getNamespace7698) as android.net.LocalSocketAddress.Namespace;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.LocalSocketAddress.Namespace>(this, global::android.net.LocalSocketAddress.staticClass, "getNamespace", "()Landroid/net/LocalSocketAddress$Namespace;", ref global::android.net.LocalSocketAddress._getNamespace7698) as android.net.LocalSocketAddress.Namespace;
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalSocketAddress7699;
 		public LocalSocketAddress(java.lang.String arg0, android.net.LocalSocketAddress.Namespace arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

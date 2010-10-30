@@ -38,10 +38,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _newFactory31211;
 		public override global::javax.xml.validation.SchemaFactory newFactory(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.validation.SchemaFactoryLoader_._newFactory31211.native == global::System.IntPtr.Zero)
-				global::javax.xml.validation.SchemaFactoryLoader_._newFactory31211 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.SchemaFactoryLoader_.staticClass, "newFactory", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactoryLoader_._newFactory31211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.validation.SchemaFactory;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.SchemaFactoryLoader_.staticClass, "newFactory", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", ref global::javax.xml.validation.SchemaFactoryLoader_._newFactory31211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.validation.SchemaFactory;
 		}
 		static SchemaFactoryLoader_()
 		{

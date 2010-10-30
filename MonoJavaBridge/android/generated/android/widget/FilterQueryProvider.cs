@@ -16,10 +16,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _runQuery17087;
 		global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.FilterQueryProvider_._runQuery17087.native == global::System.IntPtr.Zero)
-				global::android.widget.FilterQueryProvider_._runQuery17087 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;", ref global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.Cursor;
 		}
 		static FilterQueryProvider_()
 		{

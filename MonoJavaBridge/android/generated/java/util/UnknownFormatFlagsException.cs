@@ -17,10 +17,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26960;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.UnknownFormatFlagsException._getMessage26960.native == global::System.IntPtr.Zero)
-				global::java.util.UnknownFormatFlagsException._getMessage26960 = @__env.GetMethodIDNoThrow(global::java.util.UnknownFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatFlagsException.staticClass, global::java.util.UnknownFormatFlagsException._getMessage26960) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.util.UnknownFormatFlagsException._getMessage26960) as java.lang.String;
 		}
 		public new global::java.lang.String Flags
 		{
@@ -32,10 +29,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getFlags26961;
 		public virtual global::java.lang.String getFlags()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.UnknownFormatFlagsException._getFlags26961.native == global::System.IntPtr.Zero)
-				global::java.util.UnknownFormatFlagsException._getFlags26961 = @__env.GetMethodIDNoThrow(global::java.util.UnknownFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatFlagsException.staticClass, global::java.util.UnknownFormatFlagsException._getFlags26961) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.UnknownFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;", ref global::java.util.UnknownFormatFlagsException._getFlags26961) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _UnknownFormatFlagsException26962;
 		public UnknownFormatFlagsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

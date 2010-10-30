@@ -10,26 +10,17 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _equals27978;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._equals27978.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._equals27978 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._equals27978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.logging.Level.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.logging.Level._equals27978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27979;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._toString27979.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._toString27979 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._toString27979) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.logging.Level._toString27979) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode27980;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._hashCode27980.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._hashCode27980 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._hashCode27980);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.logging.Level.staticClass, "hashCode", "()I", ref global::java.util.logging.Level._hashCode27980);
 		}
 		public new global::java.lang.String Name
 		{
@@ -41,18 +32,12 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getName27981;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._getName27981.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._getName27981 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._getName27981) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, "getName", "()Ljava/lang/String;", ref global::java.util.logging.Level._getName27981) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue27982;
 		public virtual int intValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._intValue27982.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._intValue27982 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "intValue", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._intValue27982);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.logging.Level.staticClass, "intValue", "()I", ref global::java.util.logging.Level._intValue27982);
 		}
 		internal static global::MonoJavaBridge.MethodId _parse27983;
 		public static global::java.util.logging.Level parse(java.lang.String arg0)
@@ -72,10 +57,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getResourceBundleName27984;
 		public virtual global::java.lang.String getResourceBundleName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._getResourceBundleName27984.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._getResourceBundleName27984 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "getResourceBundleName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._getResourceBundleName27984) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, "getResourceBundleName", "()Ljava/lang/String;", ref global::java.util.logging.Level._getResourceBundleName27984) as java.lang.String;
 		}
 		public new global::java.lang.String LocalizedName
 		{
@@ -87,10 +69,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getLocalizedName27985;
 		public virtual global::java.lang.String getLocalizedName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.logging.Level._getLocalizedName27985.native == global::System.IntPtr.Zero)
-				global::java.util.logging.Level._getLocalizedName27985 = @__env.GetMethodIDNoThrow(global::java.util.logging.Level.staticClass, "getLocalizedName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, global::java.util.logging.Level._getLocalizedName27985) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.logging.Level.staticClass, "getLocalizedName", "()Ljava/lang/String;", ref global::java.util.logging.Level._getLocalizedName27985) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Level27986;
 		protected Level(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

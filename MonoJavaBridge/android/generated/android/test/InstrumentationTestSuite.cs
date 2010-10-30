@@ -10,18 +10,12 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _runTest12215;
 		public override void runTest(junit.framework.Test arg0, junit.framework.TestResult arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestSuite._runTest12215.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestSuite._runTest12215 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestSuite.staticClass, "runTest", "(Ljunit/framework/Test;Ljunit/framework/TestResult;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._runTest12215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestSuite.staticClass, "runTest", "(Ljunit/framework/Test;Ljunit/framework/TestResult;)V", ref global::android.test.InstrumentationTestSuite._runTest12215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addTestSuite12216;
 		public override void addTestSuite(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.test.InstrumentationTestSuite._addTestSuite12216.native == global::System.IntPtr.Zero)
-				global::android.test.InstrumentationTestSuite._addTestSuite12216 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestSuite.staticClass, "addTestSuite", "(Ljava/lang/Class;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._addTestSuite12216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.InstrumentationTestSuite.staticClass, "addTestSuite", "(Ljava/lang/Class;)V", ref global::android.test.InstrumentationTestSuite._addTestSuite12216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestSuite12217;
 		public InstrumentationTestSuite(android.app.Instrumentation arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

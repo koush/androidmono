@@ -10,18 +10,12 @@ namespace org.apache.http.conn.ssl
 		internal static global::MonoJavaBridge.MethodId _toString32336;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._toString32336.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._toString32336 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._toString32336) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._toString32336) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32337;
 		public sealed override void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._verify32337.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._verify32337 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._verify32337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.staticClass, "verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V", ref global::org.apache.http.conn.ssl.BrowserCompatHostnameVerifier._verify32337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _BrowserCompatHostnameVerifier32338;
 		public BrowserCompatHostnameVerifier() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

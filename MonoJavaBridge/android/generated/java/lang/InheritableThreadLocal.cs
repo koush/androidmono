@@ -10,10 +10,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _childValue20189;
 		protected virtual global::java.lang.Object childValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.InheritableThreadLocal._childValue20189.native == global::System.IntPtr.Zero)
-				global::java.lang.InheritableThreadLocal._childValue20189 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "childValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.InheritableThreadLocal.staticClass, "childValue", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _InheritableThreadLocal20190;
 		public InheritableThreadLocal() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

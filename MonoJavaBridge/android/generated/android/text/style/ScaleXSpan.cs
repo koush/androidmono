@@ -10,18 +10,12 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13560;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._writeToParcel13560.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._writeToParcel13560 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._writeToParcel13560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.ScaleXSpan._writeToParcel13560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents13561;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._describeContents13561.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._describeContents13561 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._describeContents13561);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.ScaleXSpan.staticClass, "describeContents", "()I", ref global::android.text.style.ScaleXSpan._describeContents13561);
 		}
 		public new int SpanTypeId
 		{
@@ -33,26 +27,17 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13562;
 		public virtual int getSpanTypeId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._getSpanTypeId13562.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._getSpanTypeId13562 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "getSpanTypeId", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._getSpanTypeId13562);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.ScaleXSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.ScaleXSpan._getSpanTypeId13562);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13563;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._updateDrawState13563.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._updateDrawState13563 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._updateDrawState13563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.ScaleXSpan._updateDrawState13563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateMeasureState13564;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._updateMeasureState13564.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._updateMeasureState13564 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._updateMeasureState13564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ScaleXSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.ScaleXSpan._updateMeasureState13564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float ScaleX
 		{
@@ -64,10 +49,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getScaleX13565;
 		public virtual float getScaleX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.ScaleXSpan._getScaleX13565.native == global::System.IntPtr.Zero)
-				global::android.text.style.ScaleXSpan._getScaleX13565 = @__env.GetMethodIDNoThrow(global::android.text.style.ScaleXSpan.staticClass, "getScaleX", "()F");
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._getScaleX13565);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.text.style.ScaleXSpan.staticClass, "getScaleX", "()F", ref global::android.text.style.ScaleXSpan._getScaleX13565);
 		}
 		internal static global::MonoJavaBridge.MethodId _ScaleXSpan13566;
 		public ScaleXSpan(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

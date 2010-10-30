@@ -10,26 +10,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _onKeyDown17153;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._onKeyDown17153.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._onKeyDown17153 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyDown17153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.GridView._onKeyDown17153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp17154;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._onKeyUp17154.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._onKeyUp17154 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyUp17154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.GridView._onKeyUp17154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyMultiple17155;
 		public override bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._onKeyMultiple17155.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._onKeyMultiple17155 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "onKeyMultiple", "(IILandroid/view/KeyEvent;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyMultiple17155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.GridView.staticClass, "onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", ref global::android.widget.GridView._onKeyMultiple17155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new int Gravity
 		{
@@ -41,74 +32,47 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setGravity17156;
 		public virtual void setGravity(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setGravity17156.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setGravity17156 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setGravity", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setGravity17156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setGravity", "(I)V", ref global::android.widget.GridView._setGravity17156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onFocusChanged17157;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._onFocusChanged17157.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._onFocusChanged17157 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onFocusChanged17157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V", ref global::android.widget.GridView._onFocusChanged17157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollRange17158;
 		protected override int computeVerticalScrollRange()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._computeVerticalScrollRange17158.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._computeVerticalScrollRange17158 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "computeVerticalScrollRange", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollRange17158);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, "computeVerticalScrollRange", "()I", ref global::android.widget.GridView._computeVerticalScrollRange17158);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollOffset17159;
 		protected override int computeVerticalScrollOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._computeVerticalScrollOffset17159.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._computeVerticalScrollOffset17159 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "computeVerticalScrollOffset", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollOffset17159);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, "computeVerticalScrollOffset", "()I", ref global::android.widget.GridView._computeVerticalScrollOffset17159);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollExtent17160;
 		protected override int computeVerticalScrollExtent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._computeVerticalScrollExtent17160.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._computeVerticalScrollExtent17160 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "computeVerticalScrollExtent", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollExtent17160);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, "computeVerticalScrollExtent", "()I", ref global::android.widget.GridView._computeVerticalScrollExtent17160);
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure17161;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._onMeasure17161.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._onMeasure17161 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "onMeasure", "(II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onMeasure17161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "onMeasure", "(II)V", ref global::android.widget.GridView._onMeasure17161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _attachLayoutAnimationParameters17162;
 		protected override void attachLayoutAnimationParameters(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._attachLayoutAnimationParameters17162.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._attachLayoutAnimationParameters17162 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "attachLayoutAnimationParameters", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;II)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._attachLayoutAnimationParameters17162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "attachLayoutAnimationParameters", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;II)V", ref global::android.widget.GridView._attachLayoutAnimationParameters17162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAdapter17163;
 		public virtual void setAdapter(android.widget.ListAdapter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setAdapter17163.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setAdapter17163 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setAdapter", "(Landroid/widget/ListAdapter;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setAdapter17163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setAdapter", "(Landroid/widget/ListAdapter;)V", ref global::android.widget.GridView._setAdapter17163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAdapter17164;
 		public override void setAdapter(android.widget.Adapter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setAdapter17164.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setAdapter17164 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setAdapter17164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V", ref global::android.widget.GridView._setAdapter17164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.Adapter Adapter
 		{
@@ -124,10 +88,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getAdapter17165;
 		public override global::android.widget.Adapter getAdapter()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._getAdapter17165.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._getAdapter17165 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "getAdapter", "()Landroid/widget/Adapter;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.Adapter>(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._getAdapter17165) as android.widget.Adapter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.Adapter>(this, global::android.widget.GridView.staticClass, "getAdapter", "()Landroid/widget/Adapter;", ref global::android.widget.GridView._getAdapter17165) as android.widget.Adapter;
 		}
 		public new int Selection
 		{
@@ -139,18 +100,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setSelection17166;
 		public override void setSelection(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setSelection17166.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setSelection17166 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setSelection", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setSelection17166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setSelection", "(I)V", ref global::android.widget.GridView._setSelection17166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _layoutChildren17167;
 		protected override void layoutChildren()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._layoutChildren17167.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._layoutChildren17167 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "layoutChildren", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._layoutChildren17167);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "layoutChildren", "()V", ref global::android.widget.GridView._layoutChildren17167);
 		}
 		public new int NumColumns
 		{
@@ -162,10 +117,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setNumColumns17168;
 		public virtual void setNumColumns(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setNumColumns17168.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setNumColumns17168 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setNumColumns", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setNumColumns17168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setNumColumns", "(I)V", ref global::android.widget.GridView._setNumColumns17168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int HorizontalSpacing
 		{
@@ -177,10 +129,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setHorizontalSpacing17169;
 		public virtual void setHorizontalSpacing(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setHorizontalSpacing17169.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setHorizontalSpacing17169 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setHorizontalSpacing", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setHorizontalSpacing17169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setHorizontalSpacing", "(I)V", ref global::android.widget.GridView._setHorizontalSpacing17169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int VerticalSpacing
 		{
@@ -192,18 +141,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setVerticalSpacing17170;
 		public virtual void setVerticalSpacing(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setVerticalSpacing17170.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setVerticalSpacing17170 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setVerticalSpacing", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setVerticalSpacing17170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setVerticalSpacing", "(I)V", ref global::android.widget.GridView._setVerticalSpacing17170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStretchMode17171;
 		public virtual void setStretchMode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setStretchMode17171.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setStretchMode17171 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setStretchMode", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setStretchMode17171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setStretchMode", "(I)V", ref global::android.widget.GridView._setStretchMode17171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int StretchMode
 		{
@@ -219,10 +162,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getStretchMode17172;
 		public virtual int getStretchMode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._getStretchMode17172.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._getStretchMode17172 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "getStretchMode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._getStretchMode17172);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.GridView.staticClass, "getStretchMode", "()I", ref global::android.widget.GridView._getStretchMode17172);
 		}
 		public new int ColumnWidth
 		{
@@ -234,10 +174,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setColumnWidth17173;
 		public virtual void setColumnWidth(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.GridView._setColumnWidth17173.native == global::System.IntPtr.Zero)
-				global::android.widget.GridView._setColumnWidth17173 = @__env.GetMethodIDNoThrow(global::android.widget.GridView.staticClass, "setColumnWidth", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setColumnWidth17173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.GridView.staticClass, "setColumnWidth", "(I)V", ref global::android.widget.GridView._setColumnWidth17173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _GridView17174;
 		public GridView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

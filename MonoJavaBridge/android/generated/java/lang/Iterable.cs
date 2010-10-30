@@ -20,10 +20,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _iterator20240;
 		global::java.util.Iterator java.lang.Iterable.iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Iterable_._iterator20240.native == global::System.IntPtr.Zero)
-				global::java.lang.Iterable_._iterator20240 = @__env.GetMethodIDNoThrow(global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Iterable_._iterator20240)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.lang.Iterable_._iterator20240) as java.util.Iterator;
 		}
 		static Iterable_()
 		{

@@ -16,10 +16,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onKey3073;
 		bool android.content.DialogInterface_OnKeyListener.onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnKeyListener_._onKey3073.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnKeyListener_._onKey3073 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.DialogInterface_OnKeyListener_._onKey3073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z", ref global::android.content.DialogInterface_OnKeyListener_._onKey3073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static DialogInterface_OnKeyListener_()
 		{

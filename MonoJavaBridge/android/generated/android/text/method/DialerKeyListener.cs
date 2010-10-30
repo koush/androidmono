@@ -25,10 +25,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _lookup13277;
 		protected override int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DialerKeyListener._lookup13277.native == global::System.IntPtr.Zero)
-				global::android.text.method.DialerKeyListener._lookup13277 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._lookup13277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I", ref global::android.text.method.DialerKeyListener._lookup13277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int InputType
 		{
@@ -40,10 +37,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13278;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DialerKeyListener._getInputType13278.native == global::System.IntPtr.Zero)
-				global::android.text.method.DialerKeyListener._getInputType13278 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getInputType", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInputType13278);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.DialerKeyListener._getInputType13278);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -55,10 +49,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13279;
 		protected override char[] getAcceptedChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DialerKeyListener._getAcceptedChars13279.native == global::System.IntPtr.Zero)
-				global::android.text.method.DialerKeyListener._getAcceptedChars13279 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getAcceptedChars", "()[C");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getAcceptedChars13279) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DialerKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.DialerKeyListener._getAcceptedChars13279) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DialerKeyListener13280;
 		public DialerKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

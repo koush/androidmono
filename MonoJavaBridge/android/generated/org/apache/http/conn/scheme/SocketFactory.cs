@@ -18,26 +18,17 @@ namespace org.apache.http.conn.scheme
 		internal static global::MonoJavaBridge.MethodId _createSocket32319;
 		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.createSocket()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.SocketFactory_._createSocket32319.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.SocketFactory_._createSocket32319 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "createSocket", "()Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SocketFactory_._createSocket32319)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "createSocket", "()Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.SocketFactory_._createSocket32319) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectSocket32320;
 		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.SocketFactory_._connectSocket32320.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.SocketFactory_._connectSocket32320 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SocketFactory_._connectSocket32320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.SocketFactory_._connectSocket32320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSecure32321;
 		bool org.apache.http.conn.scheme.SocketFactory.isSecure(java.net.Socket arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.scheme.SocketFactory_._isSecure32321.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.scheme.SocketFactory_._isSecure32321 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "isSecure", "(Ljava/net/Socket;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SocketFactory_._isSecure32321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.scheme.SocketFactory_.staticClass, "isSecure", "(Ljava/net/Socket;)Z", ref global::org.apache.http.conn.scheme.SocketFactory_._isSecure32321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SocketFactory_()
 		{

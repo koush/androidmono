@@ -21,18 +21,12 @@ namespace org.xml.sax.ext
 		internal static global::MonoJavaBridge.MethodId _getEncoding35143;
 		public virtual global::java.lang.String getEncoding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.ext.Locator2Impl._getEncoding35143.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.ext.Locator2Impl._getEncoding35143 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.Locator2Impl.staticClass, "getEncoding", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._getEncoding35143) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2Impl.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2Impl._getEncoding35143) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEncoding35144;
 		public virtual void setEncoding(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.ext.Locator2Impl._setEncoding35144.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.ext.Locator2Impl._setEncoding35144 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.Locator2Impl.staticClass, "setEncoding", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._setEncoding35144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.Locator2Impl.staticClass, "setEncoding", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.Locator2Impl._setEncoding35144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String XMLVersion
 		{
@@ -48,18 +42,12 @@ namespace org.xml.sax.ext
 		internal static global::MonoJavaBridge.MethodId _getXMLVersion35145;
 		public virtual global::java.lang.String getXMLVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.ext.Locator2Impl._getXMLVersion35145.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.ext.Locator2Impl._getXMLVersion35145 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.Locator2Impl.staticClass, "getXMLVersion", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._getXMLVersion35145) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2Impl.staticClass, "getXMLVersion", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2Impl._getXMLVersion35145) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setXMLVersion35146;
 		public virtual void setXMLVersion(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.ext.Locator2Impl._setXMLVersion35146.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.ext.Locator2Impl._setXMLVersion35146 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.Locator2Impl.staticClass, "setXMLVersion", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._setXMLVersion35146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.Locator2Impl.staticClass, "setXMLVersion", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.Locator2Impl._setXMLVersion35146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Locator2Impl35147;
 		public Locator2Impl() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

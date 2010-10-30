@@ -10,42 +10,27 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _onCreate2037;
 		protected override void onCreate(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._onCreate2037.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._onCreate2037 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onCreate2037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "onCreate", "(Landroid/os/Bundle;)V", ref global::android.app.ProgressDialog._onCreate2037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart2038;
 		public virtual void onStart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._onStart2038.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._onStart2038 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "onStart", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onStart2038);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "onStart", "()V", ref global::android.app.ProgressDialog._onStart2038);
 		}
 		internal static global::MonoJavaBridge.MethodId _onStop2039;
 		protected override void onStop()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._onStop2039.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._onStop2039 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "onStop", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onStop2039);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "onStop", "()V", ref global::android.app.ProgressDialog._onStop2039);
 		}
 		internal static global::MonoJavaBridge.MethodId _setProgress2040;
 		public virtual void setProgress(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setProgress2040.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setProgress2040 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setProgress", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgress2040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setProgress", "(I)V", ref global::android.app.ProgressDialog._setProgress2040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSecondaryProgress2041;
 		public virtual void setSecondaryProgress(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setSecondaryProgress2041.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setSecondaryProgress2041 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setSecondaryProgress", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setSecondaryProgress2041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setSecondaryProgress", "(I)V", ref global::android.app.ProgressDialog._setSecondaryProgress2041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _show2042;
 		public static global::android.app.ProgressDialog show(android.content.Context arg0, java.lang.CharSequence arg1, java.lang.CharSequence arg2)
@@ -105,10 +90,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setMessage2046;
 		public override void setMessage(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setMessage2046.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setMessage2046 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setMessage", "(Ljava/lang/CharSequence;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setMessage2046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setMessage", "(Ljava/lang/CharSequence;)V", ref global::android.app.ProgressDialog._setMessage2046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setMessage(string arg0)
 		{
@@ -128,10 +110,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getProgress2047;
 		public virtual int getProgress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._getProgress2047.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._getProgress2047 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "getProgress", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getProgress2047);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, "getProgress", "()I", ref global::android.app.ProgressDialog._getProgress2047);
 		}
 		public new int SecondaryProgress
 		{
@@ -147,10 +126,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getSecondaryProgress2048;
 		public virtual int getSecondaryProgress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._getSecondaryProgress2048.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._getSecondaryProgress2048 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "getSecondaryProgress", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getSecondaryProgress2048);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, "getSecondaryProgress", "()I", ref global::android.app.ProgressDialog._getSecondaryProgress2048);
 		}
 		public new int Max
 		{
@@ -166,34 +142,22 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getMax2049;
 		public virtual int getMax()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._getMax2049.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._getMax2049 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "getMax", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getMax2049);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ProgressDialog.staticClass, "getMax", "()I", ref global::android.app.ProgressDialog._getMax2049);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMax2050;
 		public virtual void setMax(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setMax2050.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setMax2050 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setMax", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setMax2050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setMax", "(I)V", ref global::android.app.ProgressDialog._setMax2050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementProgressBy2051;
 		public virtual void incrementProgressBy(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._incrementProgressBy2051.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._incrementProgressBy2051 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "incrementProgressBy", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._incrementProgressBy2051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "incrementProgressBy", "(I)V", ref global::android.app.ProgressDialog._incrementProgressBy2051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementSecondaryProgressBy2052;
 		public virtual void incrementSecondaryProgressBy(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._incrementSecondaryProgressBy2052.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._incrementSecondaryProgressBy2052 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "incrementSecondaryProgressBy", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._incrementSecondaryProgressBy2052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "incrementSecondaryProgressBy", "(I)V", ref global::android.app.ProgressDialog._incrementSecondaryProgressBy2052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable ProgressDrawable
 		{
@@ -205,10 +169,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setProgressDrawable2053;
 		public virtual void setProgressDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setProgressDrawable2053.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setProgressDrawable2053 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgressDrawable2053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.app.ProgressDialog._setProgressDrawable2053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable IndeterminateDrawable
 		{
@@ -220,10 +181,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setIndeterminateDrawable2054;
 		public virtual void setIndeterminateDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setIndeterminateDrawable2054.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setIndeterminateDrawable2054 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setIndeterminateDrawable2054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.app.ProgressDialog._setIndeterminateDrawable2054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool Indeterminate
 		{
@@ -235,18 +193,12 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setIndeterminate2055;
 		public virtual void setIndeterminate(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setIndeterminate2055.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setIndeterminate2055 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setIndeterminate", "(Z)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setIndeterminate2055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setIndeterminate", "(Z)V", ref global::android.app.ProgressDialog._setIndeterminate2055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIndeterminate2056;
 		public virtual bool isIndeterminate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._isIndeterminate2056.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._isIndeterminate2056 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "isIndeterminate", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._isIndeterminate2056);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.ProgressDialog.staticClass, "isIndeterminate", "()Z", ref global::android.app.ProgressDialog._isIndeterminate2056);
 		}
 		public new int ProgressStyle
 		{
@@ -258,10 +210,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setProgressStyle2057;
 		public virtual void setProgressStyle(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.ProgressDialog._setProgressStyle2057.native == global::System.IntPtr.Zero)
-				global::android.app.ProgressDialog._setProgressStyle2057 = @__env.GetMethodIDNoThrow(global::android.app.ProgressDialog.staticClass, "setProgressStyle", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgressStyle2057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ProgressDialog.staticClass, "setProgressStyle", "(I)V", ref global::android.app.ProgressDialog._setProgressStyle2057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ProgressDialog2058;
 		public ProgressDialog(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

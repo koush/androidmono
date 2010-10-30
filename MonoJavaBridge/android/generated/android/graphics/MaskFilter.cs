@@ -10,10 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5298;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.MaskFilter._finalize5298.native == global::System.IntPtr.Zero)
-				global::android.graphics.MaskFilter._finalize5298 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._finalize5298);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.MaskFilter.staticClass, "finalize", "()V", ref global::android.graphics.MaskFilter._finalize5298);
 		}
 		internal static global::MonoJavaBridge.MethodId _MaskFilter5299;
 		public MaskFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

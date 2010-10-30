@@ -16,10 +16,7 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _println13834;
 		void android.util.Printer.println(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.Printer_._println13834.native == global::System.IntPtr.Zero)
-				global::android.util.Printer_._println13834 = @__env.GetMethodIDNoThrow(global::android.util.Printer_.staticClass, "println", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Printer_.staticClass, "println", "(Ljava/lang/String;)V", ref global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Printer_()
 		{

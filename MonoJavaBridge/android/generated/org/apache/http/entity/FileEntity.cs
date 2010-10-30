@@ -10,10 +10,7 @@ namespace org.apache.http.entity
 		internal static global::MonoJavaBridge.MethodId _clone32540;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._clone32540.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._clone32540 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._clone32540) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "clone", "()Ljava/lang/Object;", ref global::org.apache.http.entity.FileEntity._clone32540) as java.lang.Object;
 		}
 		public new global::java.io.InputStream Content
 		{
@@ -25,18 +22,12 @@ namespace org.apache.http.entity
 		internal static global::MonoJavaBridge.MethodId _getContent32541;
 		public override global::java.io.InputStream getContent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._getContent32541.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._getContent32541 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "getContent", "()Ljava/io/InputStream;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._getContent32541) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.FileEntity._getContent32541) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeTo32542;
 		public override void writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._writeTo32542.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._writeTo32542 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._writeTo32542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.FileEntity._writeTo32542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long ContentLength
 		{
@@ -48,26 +39,17 @@ namespace org.apache.http.entity
 		internal static global::MonoJavaBridge.MethodId _getContentLength32543;
 		public override long getContentLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._getContentLength32543.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._getContentLength32543 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "getContentLength", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._getContentLength32543);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.FileEntity._getContentLength32543);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRepeatable32544;
 		public override bool isRepeatable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._isRepeatable32544.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._isRepeatable32544 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "isRepeatable", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._isRepeatable32544);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.FileEntity._isRepeatable32544);
 		}
 		internal static global::MonoJavaBridge.MethodId _isStreaming32545;
 		public override bool isStreaming()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.FileEntity._isStreaming32545.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.FileEntity._isStreaming32545 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.FileEntity.staticClass, "isStreaming", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.FileEntity.staticClass, global::org.apache.http.entity.FileEntity._isStreaming32545);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.FileEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.FileEntity._isStreaming32545);
 		}
 		internal static global::MonoJavaBridge.MethodId _FileEntity32546;
 		public FileEntity(java.io.File arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

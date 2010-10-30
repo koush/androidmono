@@ -22,58 +22,37 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getParent23680;
 		global::java.security.cert.PolicyNode java.security.cert.PolicyNode.getParent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getParent23680.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getParent23680 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getParent", "()Ljava/security/cert/PolicyNode;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.PolicyNode>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getParent23680)) as java.security.cert.PolicyNode;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.cert.PolicyNode>(this, global::java.security.cert.PolicyNode_.staticClass, "getParent", "()Ljava/security/cert/PolicyNode;", ref global::java.security.cert.PolicyNode_._getParent23680) as java.security.cert.PolicyNode;
 		}
 		internal static global::MonoJavaBridge.MethodId _isCritical23681;
 		bool java.security.cert.PolicyNode.isCritical()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._isCritical23681.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._isCritical23681 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "isCritical", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._isCritical23681);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.PolicyNode_.staticClass, "isCritical", "()Z", ref global::java.security.cert.PolicyNode_._isCritical23681);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDepth23682;
 		int java.security.cert.PolicyNode.getDepth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getDepth23682.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getDepth23682 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getDepth", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getDepth23682);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.cert.PolicyNode_.staticClass, "getDepth", "()I", ref global::java.security.cert.PolicyNode_._getDepth23682);
 		}
 		internal static global::MonoJavaBridge.MethodId _getChildren23683;
 		global::java.util.Iterator java.security.cert.PolicyNode.getChildren()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getChildren23683.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getChildren23683 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getChildren", "()Ljava/util/Iterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getChildren23683)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.security.cert.PolicyNode_.staticClass, "getChildren", "()Ljava/util/Iterator;", ref global::java.security.cert.PolicyNode_._getChildren23683) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValidPolicy23684;
 		global::java.lang.String java.security.cert.PolicyNode.getValidPolicy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getValidPolicy23684.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getValidPolicy23684 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getValidPolicy", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getValidPolicy23684)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.PolicyNode_.staticClass, "getValidPolicy", "()Ljava/lang/String;", ref global::java.security.cert.PolicyNode_._getValidPolicy23684) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPolicyQualifiers23685;
 		global::java.util.Set java.security.cert.PolicyNode.getPolicyQualifiers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getPolicyQualifiers23685.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getPolicyQualifiers23685 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getPolicyQualifiers", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getPolicyQualifiers23685)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.PolicyNode_.staticClass, "getPolicyQualifiers", "()Ljava/util/Set;", ref global::java.security.cert.PolicyNode_._getPolicyQualifiers23685) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpectedPolicies23686;
 		global::java.util.Set java.security.cert.PolicyNode.getExpectedPolicies()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.PolicyNode_._getExpectedPolicies23686.native == global::System.IntPtr.Zero)
-				global::java.security.cert.PolicyNode_._getExpectedPolicies23686 = @__env.GetMethodIDNoThrow(global::java.security.cert.PolicyNode_.staticClass, "getExpectedPolicies", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_._getExpectedPolicies23686)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.PolicyNode_.staticClass, "getExpectedPolicies", "()Ljava/util/Set;", ref global::java.security.cert.PolicyNode_._getExpectedPolicies23686) as java.util.Set;
 		}
 		static PolicyNode_()
 		{

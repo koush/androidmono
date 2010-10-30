@@ -10,10 +10,7 @@ namespace javax.security.auth
 		internal static global::MonoJavaBridge.MethodId _combine30195;
 		public virtual global::java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.SubjectDomainCombiner._combine30195.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.SubjectDomainCombiner._combine30195 = @__env.GetMethodIDNoThrow(global::javax.security.auth.SubjectDomainCombiner.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.ProtectionDomain>(this, global::javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._combine30195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.ProtectionDomain[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.ProtectionDomain>(this, global::javax.security.auth.SubjectDomainCombiner.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", ref global::javax.security.auth.SubjectDomainCombiner._combine30195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.ProtectionDomain[];
 		}
 		public new global::javax.security.auth.Subject Subject
 		{
@@ -25,10 +22,7 @@ namespace javax.security.auth
 		internal static global::MonoJavaBridge.MethodId _getSubject30196;
 		public virtual global::javax.security.auth.Subject getSubject()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.SubjectDomainCombiner._getSubject30196.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.SubjectDomainCombiner._getSubject30196 = @__env.GetMethodIDNoThrow(global::javax.security.auth.SubjectDomainCombiner.staticClass, "getSubject", "()Ljavax/security/auth/Subject;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<javax.security.auth.Subject>(this, global::javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._getSubject30196) as javax.security.auth.Subject;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<javax.security.auth.Subject>(this, global::javax.security.auth.SubjectDomainCombiner.staticClass, "getSubject", "()Ljavax/security/auth/Subject;", ref global::javax.security.auth.SubjectDomainCombiner._getSubject30196) as javax.security.auth.Subject;
 		}
 		internal static global::MonoJavaBridge.MethodId _SubjectDomainCombiner30197;
 		public SubjectDomainCombiner(javax.security.auth.Subject arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

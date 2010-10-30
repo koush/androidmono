@@ -16,10 +16,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _clone23512;
 		global::java.lang.Object java.security.cert.CertPathParameters.clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.cert.CertPathParameters_._clone23512.native == global::System.IntPtr.Zero)
-				global::java.security.cert.CertPathParameters_._clone23512 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathParameters_.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathParameters_._clone23512)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathParameters_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CertPathParameters_._clone23512) as java.lang.Object;
 		}
 		static CertPathParameters_()
 		{

@@ -21,10 +21,7 @@ namespace javax.xml.transform.dom
 		internal static global::MonoJavaBridge.MethodId _getSystemId31057;
 		public virtual global::java.lang.String getSystemId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.dom.DOMSource._getSystemId31057.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.dom.DOMSource._getSystemId31057 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "getSystemId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.dom.DOMSource.staticClass, global::javax.xml.transform.dom.DOMSource._getSystemId31057) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.dom.DOMSource.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.dom.DOMSource._getSystemId31057) as java.lang.String;
 		}
 		public new global::org.w3c.dom.Node Node
 		{
@@ -40,26 +37,17 @@ namespace javax.xml.transform.dom
 		internal static global::MonoJavaBridge.MethodId _getNode31058;
 		public virtual global::org.w3c.dom.Node getNode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.dom.DOMSource._getNode31058.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.dom.DOMSource._getNode31058 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "getNode", "()Lorg/w3c/dom/Node;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::javax.xml.transform.dom.DOMSource.staticClass, global::javax.xml.transform.dom.DOMSource._getNode31058) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::javax.xml.transform.dom.DOMSource.staticClass, "getNode", "()Lorg/w3c/dom/Node;", ref global::javax.xml.transform.dom.DOMSource._getNode31058) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId31059;
 		public virtual void setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.dom.DOMSource._setSystemId31059.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.dom.DOMSource._setSystemId31059 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "setSystemId", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMSource.staticClass, global::javax.xml.transform.dom.DOMSource._setSystemId31059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMSource.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.dom.DOMSource._setSystemId31059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNode31060;
 		public virtual void setNode(org.w3c.dom.Node arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.dom.DOMSource._setNode31060.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.dom.DOMSource._setNode31060 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMSource.staticClass, "setNode", "(Lorg/w3c/dom/Node;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMSource.staticClass, global::javax.xml.transform.dom.DOMSource._setNode31060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMSource.staticClass, "setNode", "(Lorg/w3c/dom/Node;)V", ref global::javax.xml.transform.dom.DOMSource._setNode31060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DOMSource31061;
 		public DOMSource() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

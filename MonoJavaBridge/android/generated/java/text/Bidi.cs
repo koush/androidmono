@@ -10,10 +10,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _toString25199;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._toString25199.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._toString25199 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._toString25199)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.Bidi.staticClass, "toString", "()Ljava/lang/String;", ref global::java.text.Bidi._toString25199) as java.lang.String;
 		}
 		public new int Length
 		{
@@ -25,66 +22,42 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getLength25200;
 		public int getLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getLength25200.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getLength25200 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getLength", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getLength25200);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getLength", "()I", ref global::java.text.Bidi._getLength25200);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunStart25201;
 		public int getRunStart(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getRunStart25201.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getRunStart25201 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getRunStart", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getRunStart25201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getRunStart", "(I)I", ref global::java.text.Bidi._getRunStart25201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunLimit25202;
 		public int getRunLimit(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getRunLimit25202.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getRunLimit25202 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getRunLimit", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getRunLimit25202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getRunLimit", "(I)I", ref global::java.text.Bidi._getRunLimit25202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _createLineBidi25203;
 		public global::java.text.Bidi createLineBidi(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._createLineBidi25203.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._createLineBidi25203 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "createLineBidi", "(II)Ljava/text/Bidi;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.text.Bidi>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._createLineBidi25203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.text.Bidi;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.text.Bidi>(this, global::java.text.Bidi.staticClass, "createLineBidi", "(II)Ljava/text/Bidi;", ref global::java.text.Bidi._createLineBidi25203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.text.Bidi;
 		}
 		internal static global::MonoJavaBridge.MethodId _isMixed25204;
 		public bool isMixed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._isMixed25204.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._isMixed25204 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "isMixed", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._isMixed25204);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Bidi.staticClass, "isMixed", "()Z", ref global::java.text.Bidi._isMixed25204);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLeftToRight25205;
 		public bool isLeftToRight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._isLeftToRight25205.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._isLeftToRight25205 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "isLeftToRight", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._isLeftToRight25205);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Bidi.staticClass, "isLeftToRight", "()Z", ref global::java.text.Bidi._isLeftToRight25205);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRightToLeft25206;
 		public bool isRightToLeft()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._isRightToLeft25206.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._isRightToLeft25206 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "isRightToLeft", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._isRightToLeft25206);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Bidi.staticClass, "isRightToLeft", "()Z", ref global::java.text.Bidi._isRightToLeft25206);
 		}
 		internal static global::MonoJavaBridge.MethodId _baseIsLeftToRight25207;
 		public bool baseIsLeftToRight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._baseIsLeftToRight25207.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._baseIsLeftToRight25207 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "baseIsLeftToRight", "()Z");
-			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._baseIsLeftToRight25207);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.Bidi.staticClass, "baseIsLeftToRight", "()Z", ref global::java.text.Bidi._baseIsLeftToRight25207);
 		}
 		public new int BaseLevel
 		{
@@ -96,18 +69,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getBaseLevel25208;
 		public int getBaseLevel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getBaseLevel25208.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getBaseLevel25208 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getBaseLevel", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getBaseLevel25208);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getBaseLevel", "()I", ref global::java.text.Bidi._getBaseLevel25208);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLevelAt25209;
 		public int getLevelAt(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getLevelAt25209.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getLevelAt25209 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getLevelAt", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getLevelAt25209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getLevelAt", "(I)I", ref global::java.text.Bidi._getLevelAt25209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int RunCount
 		{
@@ -119,18 +86,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getRunCount25210;
 		public int getRunCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getRunCount25210.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getRunCount25210 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getRunCount", "()I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getRunCount25210);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getRunCount", "()I", ref global::java.text.Bidi._getRunCount25210);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunLevel25211;
 		public int getRunLevel(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Bidi._getRunLevel25211.native == global::System.IntPtr.Zero)
-				global::java.text.Bidi._getRunLevel25211 = @__env.GetMethodIDNoThrow(global::java.text.Bidi.staticClass, "getRunLevel", "(I)I");
-			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Bidi.staticClass, global::java.text.Bidi._getRunLevel25211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.Bidi.staticClass, "getRunLevel", "(I)I", ref global::java.text.Bidi._getRunLevel25211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresBidi25212;
 		public static bool requiresBidi(char[] arg0, int arg1, int arg2)

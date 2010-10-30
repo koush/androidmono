@@ -17,130 +17,82 @@ namespace android.net
 			internal static global::MonoJavaBridge.MethodId _toString7780;
 			public sealed override global::java.lang.String toString()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._toString7780.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._toString7780 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "toString", "()Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._toString7780)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri.Builder.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.Uri.Builder._toString7780) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _path7781;
 			public global::android.net.Uri.Builder path(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._path7781.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._path7781 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "path", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._path7781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "path", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._path7781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _query7782;
 			public global::android.net.Uri.Builder query(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._query7782.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._query7782 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "query", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._query7782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "query", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._query7782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _authority7783;
 			public global::android.net.Uri.Builder authority(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._authority7783.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._authority7783 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "authority", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._authority7783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "authority", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._authority7783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _scheme7784;
 			public global::android.net.Uri.Builder scheme(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._scheme7784.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._scheme7784 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "scheme", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._scheme7784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "scheme", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._scheme7784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _fragment7785;
 			public global::android.net.Uri.Builder fragment(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._fragment7785.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._fragment7785 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "fragment", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._fragment7785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "fragment", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._fragment7785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _build7786;
 			public global::android.net.Uri build()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._build7786.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._build7786 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "build", "()Landroid/net/Uri;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._build7786)) as android.net.Uri;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.Uri.Builder.staticClass, "build", "()Landroid/net/Uri;", ref global::android.net.Uri.Builder._build7786) as android.net.Uri;
 			}
 			internal static global::MonoJavaBridge.MethodId _opaquePart7787;
 			public global::android.net.Uri.Builder opaquePart(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._opaquePart7787.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._opaquePart7787 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "opaquePart", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._opaquePart7787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "opaquePart", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._opaquePart7787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _encodedOpaquePart7788;
 			public global::android.net.Uri.Builder encodedOpaquePart(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._encodedOpaquePart7788.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._encodedOpaquePart7788 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedOpaquePart", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedOpaquePart7788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "encodedOpaquePart", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._encodedOpaquePart7788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _encodedAuthority7789;
 			public global::android.net.Uri.Builder encodedAuthority(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._encodedAuthority7789.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._encodedAuthority7789 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedAuthority", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedAuthority7789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "encodedAuthority", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._encodedAuthority7789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _encodedPath7790;
 			public global::android.net.Uri.Builder encodedPath(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._encodedPath7790.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._encodedPath7790 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedPath7790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "encodedPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._encodedPath7790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _appendPath7791;
 			public global::android.net.Uri.Builder appendPath(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._appendPath7791.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._appendPath7791 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "appendPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendPath7791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "appendPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._appendPath7791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _appendEncodedPath7792;
 			public global::android.net.Uri.Builder appendEncodedPath(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._appendEncodedPath7792.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._appendEncodedPath7792 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "appendEncodedPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendEncodedPath7792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "appendEncodedPath", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._appendEncodedPath7792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _encodedQuery7793;
 			public global::android.net.Uri.Builder encodedQuery(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._encodedQuery7793.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._encodedQuery7793 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedQuery", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedQuery7793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "encodedQuery", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._encodedQuery7793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _encodedFragment7794;
 			public global::android.net.Uri.Builder encodedFragment(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._encodedFragment7794.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._encodedFragment7794 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "encodedFragment", "(Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedFragment7794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "encodedFragment", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._encodedFragment7794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _appendQueryParameter7795;
 			public global::android.net.Uri.Builder appendQueryParameter(java.lang.String arg0, java.lang.String arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.net.Uri.Builder._appendQueryParameter7795.native == global::System.IntPtr.Zero)
-					global::android.net.Uri.Builder._appendQueryParameter7795 = @__env.GetMethodIDNoThrow(global::android.net.Uri.Builder.staticClass, "appendQueryParameter", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendQueryParameter7795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri.Builder;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri.Builder.staticClass, "appendQueryParameter", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;", ref global::android.net.Uri.Builder._appendQueryParameter7795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.Uri.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _Builder7796;
 			public Builder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -167,36 +119,24 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _equals7799;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._equals7799.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._equals7799 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._equals7799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.net.Uri._equals7799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7800;
 		public abstract global::java.lang.String toString();
 		internal static global::MonoJavaBridge.MethodId _hashCode7801;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._hashCode7801.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._hashCode7801 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._hashCode7801);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, "hashCode", "()I", ref global::android.net.Uri._hashCode7801);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo7802;
 		public virtual int compareTo(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._compareTo7802.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._compareTo7802 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "compareTo", "(Landroid/net/Uri;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._compareTo7802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, "compareTo", "(Landroid/net/Uri;)I", ref global::android.net.Uri._compareTo7802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo7803;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._compareTo7803.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._compareTo7803 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._compareTo7803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::android.net.Uri._compareTo7803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _decode7804;
 		public static global::java.lang.String decode(java.lang.String arg0)
@@ -225,20 +165,14 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _isAbsolute7807;
 		public virtual bool isAbsolute()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._isAbsolute7807.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._isAbsolute7807 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "isAbsolute", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._isAbsolute7807);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, "isAbsolute", "()Z", ref global::android.net.Uri._isAbsolute7807);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath7808;
 		public abstract global::java.lang.String getPath();
 		internal static global::MonoJavaBridge.MethodId _isOpaque7809;
 		public virtual bool isOpaque()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._isOpaque7809.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._isOpaque7809 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "isOpaque", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._isOpaque7809);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri.staticClass, "isOpaque", "()Z", ref global::android.net.Uri._isOpaque7809);
 		}
 		internal static global::MonoJavaBridge.MethodId _getScheme7810;
 		public abstract global::java.lang.String getScheme();
@@ -313,18 +247,12 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getQueryParameters7833;
 		public virtual global::java.util.List getQueryParameters(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._getQueryParameters7833.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._getQueryParameters7833 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "getQueryParameters", "(Ljava/lang/String;)Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.Uri.staticClass, global::android.net.Uri._getQueryParameters7833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.Uri.staticClass, "getQueryParameters", "(Ljava/lang/String;)Ljava/util/List;", ref global::android.net.Uri._getQueryParameters7833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getQueryParameter7834;
 		public virtual global::java.lang.String getQueryParameter(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri._getQueryParameter7834.native == global::System.IntPtr.Zero)
-				global::android.net.Uri._getQueryParameter7834 = @__env.GetMethodIDNoThrow(global::android.net.Uri.staticClass, "getQueryParameter", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri.staticClass, global::android.net.Uri._getQueryParameter7834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri.staticClass, "getQueryParameter", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.net.Uri._getQueryParameter7834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _withAppendedPath7835;
 		public static global::android.net.Uri withAppendedPath(android.net.Uri arg0, java.lang.String arg1)
@@ -374,186 +302,117 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7838;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._writeToParcel7838.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._writeToParcel7838 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.net.Uri_._writeToParcel7838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.Uri_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.Uri_._writeToParcel7838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7839;
 		public override int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._describeContents7839.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._describeContents7839 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "describeContents", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.net.Uri_._describeContents7839);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri_.staticClass, "describeContents", "()I", ref global::android.net.Uri_._describeContents7839);
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7840;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._toString7840.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._toString7840 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._toString7840)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.Uri_._toString7840) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath7841;
 		public override global::java.lang.String getPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getPath7841.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getPath7841 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getPath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getPath7841)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getPath", "()Ljava/lang/String;", ref global::android.net.Uri_._getPath7841) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getScheme7842;
 		public override global::java.lang.String getScheme()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getScheme7842.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getScheme7842 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getScheme", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getScheme7842)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getScheme", "()Ljava/lang/String;", ref global::android.net.Uri_._getScheme7842) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAuthority7843;
 		public override global::java.lang.String getAuthority()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getAuthority7843.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getAuthority7843 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getAuthority", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getAuthority7843)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getAuthority", "()Ljava/lang/String;", ref global::android.net.Uri_._getAuthority7843) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFragment7844;
 		public override global::java.lang.String getFragment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getFragment7844.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getFragment7844 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getFragment", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getFragment7844)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getFragment", "()Ljava/lang/String;", ref global::android.net.Uri_._getFragment7844) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getQuery7845;
 		public override global::java.lang.String getQuery()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getQuery7845.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getQuery7845 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getQuery", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getQuery7845)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getQuery", "()Ljava/lang/String;", ref global::android.net.Uri_._getQuery7845) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserInfo7846;
 		public override global::java.lang.String getUserInfo()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getUserInfo7846.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getUserInfo7846 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getUserInfo", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getUserInfo7846)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getUserInfo", "()Ljava/lang/String;", ref global::android.net.Uri_._getUserInfo7846) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPort7847;
 		public override int getPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getPort7847.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getPort7847 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getPort", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.net.Uri_._getPort7847);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.Uri_.staticClass, "getPort", "()I", ref global::android.net.Uri_._getPort7847);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost7848;
 		public override global::java.lang.String getHost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getHost7848.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getHost7848 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getHost", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getHost7848)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getHost", "()Ljava/lang/String;", ref global::android.net.Uri_._getHost7848) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isHierarchical7849;
 		public override bool isHierarchical()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._isHierarchical7849.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._isHierarchical7849 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "isHierarchical", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.Uri_._isHierarchical7849);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri_.staticClass, "isHierarchical", "()Z", ref global::android.net.Uri_._isHierarchical7849);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRelative7850;
 		public override bool isRelative()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._isRelative7850.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._isRelative7850 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "isRelative", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.Uri_._isRelative7850);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.Uri_.staticClass, "isRelative", "()Z", ref global::android.net.Uri_._isRelative7850);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchemeSpecificPart7851;
 		public override global::java.lang.String getSchemeSpecificPart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getSchemeSpecificPart7851.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getSchemeSpecificPart7851 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getSchemeSpecificPart", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getSchemeSpecificPart7851)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getSchemeSpecificPart", "()Ljava/lang/String;", ref global::android.net.Uri_._getSchemeSpecificPart7851) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedSchemeSpecificPart7852;
 		public override global::java.lang.String getEncodedSchemeSpecificPart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedSchemeSpecificPart7852.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedSchemeSpecificPart7852 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedSchemeSpecificPart", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedSchemeSpecificPart7852)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedSchemeSpecificPart", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedSchemeSpecificPart7852) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedAuthority7853;
 		public override global::java.lang.String getEncodedAuthority()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedAuthority7853.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedAuthority7853 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedAuthority", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedAuthority7853)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedAuthority", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedAuthority7853) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedUserInfo7854;
 		public override global::java.lang.String getEncodedUserInfo()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedUserInfo7854.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedUserInfo7854 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedUserInfo", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedUserInfo7854)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedUserInfo", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedUserInfo7854) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedPath7855;
 		public override global::java.lang.String getEncodedPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedPath7855.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedPath7855 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedPath", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedPath7855)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedPath", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedPath7855) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedQuery7856;
 		public override global::java.lang.String getEncodedQuery()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedQuery7856.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedQuery7856 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedQuery", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedQuery7856)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedQuery", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedQuery7856) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncodedFragment7857;
 		public override global::java.lang.String getEncodedFragment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getEncodedFragment7857.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getEncodedFragment7857 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getEncodedFragment", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getEncodedFragment7857)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getEncodedFragment", "()Ljava/lang/String;", ref global::android.net.Uri_._getEncodedFragment7857) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPathSegments7858;
 		public override global::java.util.List getPathSegments()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getPathSegments7858.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getPathSegments7858 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getPathSegments", "()Ljava/util/List;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getPathSegments7858)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.Uri_.staticClass, "getPathSegments", "()Ljava/util/List;", ref global::android.net.Uri_._getPathSegments7858) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLastPathSegment7859;
 		public override global::java.lang.String getLastPathSegment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._getLastPathSegment7859.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._getLastPathSegment7859 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "getLastPathSegment", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._getLastPathSegment7859)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.Uri_.staticClass, "getLastPathSegment", "()Ljava/lang/String;", ref global::android.net.Uri_._getLastPathSegment7859) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _buildUpon7860;
 		public override global::android.net.Uri.Builder buildUpon()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Uri_._buildUpon7860.native == global::System.IntPtr.Zero)
-				global::android.net.Uri_._buildUpon7860 = @__env.GetMethodIDNoThrow(global::android.net.Uri_.staticClass, "buildUpon", "()Landroid/net/Uri$Builder;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.Uri_._buildUpon7860)) as android.net.Uri.Builder;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.Uri.Builder>(this, global::android.net.Uri_.staticClass, "buildUpon", "()Landroid/net/Uri$Builder;", ref global::android.net.Uri_._buildUpon7860) as android.net.Uri.Builder;
 		}
 		static Uri_()
 		{

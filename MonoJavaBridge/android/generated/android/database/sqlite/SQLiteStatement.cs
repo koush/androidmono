@@ -10,34 +10,22 @@ namespace android.database.sqlite
 		internal static global::MonoJavaBridge.MethodId _execute4857;
 		public virtual void execute()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteStatement._execute4857.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteStatement._execute4857 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "execute", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._execute4857);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "execute", "()V", ref global::android.database.sqlite.SQLiteStatement._execute4857);
 		}
 		internal static global::MonoJavaBridge.MethodId _executeInsert4858;
 		public virtual long executeInsert()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteStatement._executeInsert4858.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteStatement._executeInsert4858 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "executeInsert", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._executeInsert4858);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "executeInsert", "()J", ref global::android.database.sqlite.SQLiteStatement._executeInsert4858);
 		}
 		internal static global::MonoJavaBridge.MethodId _simpleQueryForLong4859;
 		public virtual long simpleQueryForLong()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForLong", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForLong", "()J", ref global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859);
 		}
 		internal static global::MonoJavaBridge.MethodId _simpleQueryForString4860;
 		public virtual global::java.lang.String simpleQueryForString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForString", "()Ljava/lang/String;", ref global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860) as java.lang.String;
 		}
 		static SQLiteStatement()
 		{

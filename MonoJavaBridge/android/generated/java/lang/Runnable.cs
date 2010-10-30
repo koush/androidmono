@@ -16,10 +16,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _run20428;
 		void java.lang.Runnable.run()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Runnable_._run20428.native == global::System.IntPtr.Zero)
-				global::java.lang.Runnable_._run20428 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run20428);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Runnable_.staticClass, "run", "()V", ref global::java.lang.Runnable_._run20428);
 		}
 		static Runnable_()
 		{

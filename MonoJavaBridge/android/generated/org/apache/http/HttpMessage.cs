@@ -32,138 +32,87 @@ namespace org.apache.http
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion31600;
 		global::org.apache.http.ProtocolVersion org.apache.http.HttpMessage.getProtocolVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getProtocolVersion31600.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getProtocolVersion31600 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getProtocolVersion31600)) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpMessage_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.HttpMessage_._getProtocolVersion31600) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams31601;
 		global::org.apache.http.@params.HttpParams org.apache.http.HttpMessage.getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getParams31601.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getParams31601 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getParams31601)) as org.apache.http.@params.HttpParams;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.@params.HttpParams>(this, global::org.apache.http.HttpMessage_.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;", ref global::org.apache.http.HttpMessage_._getParams31601) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _setParams31602;
 		void org.apache.http.HttpMessage.setParams(org.apache.http.@params.HttpParams arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._setParams31602.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._setParams31602 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "setParams", "(Lorg/apache/http/params/HttpParams;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._setParams31602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "setParams", "(Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.HttpMessage_._setParams31602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders31603;
 		global::org.apache.http.Header[] org.apache.http.HttpMessage.getHeaders(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getHeaders31603.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getHeaders31603 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getHeaders", "(Ljava/lang/String;)[Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getHeaders31603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpMessage_.staticClass, "getHeaders", "(Ljava/lang/String;)[Lorg/apache/http/Header;", ref global::org.apache.http.HttpMessage_._getHeaders31603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.Header[];
 		}
 		internal static global::MonoJavaBridge.MethodId _containsHeader31604;
 		bool org.apache.http.HttpMessage.containsHeader(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._containsHeader31604.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._containsHeader31604 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "containsHeader", "(Ljava/lang/String;)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._containsHeader31604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpMessage_.staticClass, "containsHeader", "(Ljava/lang/String;)Z", ref global::org.apache.http.HttpMessage_._containsHeader31604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFirstHeader31605;
 		global::org.apache.http.Header org.apache.http.HttpMessage.getFirstHeader(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getFirstHeader31605.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getFirstHeader31605 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getFirstHeader31605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpMessage_.staticClass, "getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;", ref global::org.apache.http.HttpMessage_._getFirstHeader31605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLastHeader31606;
 		global::org.apache.http.Header org.apache.http.HttpMessage.getLastHeader(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getLastHeader31606.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getLastHeader31606 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getLastHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getLastHeader31606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpMessage_.staticClass, "getLastHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;", ref global::org.apache.http.HttpMessage_._getLastHeader31606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllHeaders31607;
 		global::org.apache.http.Header[] org.apache.http.HttpMessage.getAllHeaders()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._getAllHeaders31607.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._getAllHeaders31607 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "getAllHeaders", "()[Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._getAllHeaders31607)) as org.apache.http.Header[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpMessage_.staticClass, "getAllHeaders", "()[Lorg/apache/http/Header;", ref global::org.apache.http.HttpMessage_._getAllHeaders31607) as org.apache.http.Header[];
 		}
 		internal static global::MonoJavaBridge.MethodId _addHeader31608;
 		void org.apache.http.HttpMessage.addHeader(org.apache.http.Header arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._addHeader31608.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._addHeader31608 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "addHeader", "(Lorg/apache/http/Header;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._addHeader31608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "addHeader", "(Lorg/apache/http/Header;)V", ref global::org.apache.http.HttpMessage_._addHeader31608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addHeader31609;
 		void org.apache.http.HttpMessage.addHeader(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._addHeader31609.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._addHeader31609 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._addHeader31609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::org.apache.http.HttpMessage_._addHeader31609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setHeader31610;
 		void org.apache.http.HttpMessage.setHeader(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._setHeader31610.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._setHeader31610 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._setHeader31610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::org.apache.http.HttpMessage_._setHeader31610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setHeader31611;
 		void org.apache.http.HttpMessage.setHeader(org.apache.http.Header arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._setHeader31611.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._setHeader31611 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "setHeader", "(Lorg/apache/http/Header;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._setHeader31611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "setHeader", "(Lorg/apache/http/Header;)V", ref global::org.apache.http.HttpMessage_._setHeader31611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setHeaders31612;
 		void org.apache.http.HttpMessage.setHeaders(org.apache.http.Header[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._setHeaders31612.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._setHeaders31612 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "setHeaders", "([Lorg/apache/http/Header;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._setHeaders31612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "setHeaders", "([Lorg/apache/http/Header;)V", ref global::org.apache.http.HttpMessage_._setHeaders31612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeHeader31613;
 		void org.apache.http.HttpMessage.removeHeader(org.apache.http.Header arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._removeHeader31613.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._removeHeader31613 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "removeHeader", "(Lorg/apache/http/Header;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._removeHeader31613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "removeHeader", "(Lorg/apache/http/Header;)V", ref global::org.apache.http.HttpMessage_._removeHeader31613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeHeaders31614;
 		void org.apache.http.HttpMessage.removeHeaders(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._removeHeaders31614.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._removeHeaders31614 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "removeHeaders", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._removeHeaders31614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpMessage_.staticClass, "removeHeaders", "(Ljava/lang/String;)V", ref global::org.apache.http.HttpMessage_._removeHeaders31614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _headerIterator31615;
 		global::org.apache.http.HeaderIterator org.apache.http.HttpMessage.headerIterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._headerIterator31615.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._headerIterator31615 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "headerIterator", "()Lorg/apache/http/HeaderIterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._headerIterator31615)) as org.apache.http.HeaderIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HeaderIterator>(this, global::org.apache.http.HttpMessage_.staticClass, "headerIterator", "()Lorg/apache/http/HeaderIterator;", ref global::org.apache.http.HttpMessage_._headerIterator31615) as org.apache.http.HeaderIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _headerIterator31616;
 		global::org.apache.http.HeaderIterator org.apache.http.HttpMessage.headerIterator(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.HttpMessage_._headerIterator31616.native == global::System.IntPtr.Zero)
-				global::org.apache.http.HttpMessage_._headerIterator31616 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpMessage_.staticClass, "headerIterator", "(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpMessage_._headerIterator31616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HeaderIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HeaderIterator>(this, global::org.apache.http.HttpMessage_.staticClass, "headerIterator", "(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;", ref global::org.apache.http.HttpMessage_._headerIterator31616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.HeaderIterator;
 		}
 		static HttpMessage_()
 		{

@@ -16,10 +16,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onStatusChanged3588;
 		void android.content.SyncStatusObserver.onStatusChanged(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.SyncStatusObserver_._onStatusChanged3588.native == global::System.IntPtr.Zero)
-				global::android.content.SyncStatusObserver_._onStatusChanged3588 = @__env.GetMethodIDNoThrow(global::android.content.SyncStatusObserver_.staticClass, "onStatusChanged", "(I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncStatusObserver_._onStatusChanged3588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.SyncStatusObserver_.staticClass, "onStatusChanged", "(I)V", ref global::android.content.SyncStatusObserver_._onStatusChanged3588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SyncStatusObserver_()
 		{

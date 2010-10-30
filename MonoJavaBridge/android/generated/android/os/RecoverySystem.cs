@@ -23,10 +23,7 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _onProgress10178;
 			void android.os.RecoverySystem.ProgressListener.onProgress(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.os.RecoverySystem.ProgressListener_._onProgress10178.native == global::System.IntPtr.Zero)
-					global::android.os.RecoverySystem.ProgressListener_._onProgress10178 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.ProgressListener_.staticClass, "onProgress", "(I)V");
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.RecoverySystem.ProgressListener_.staticClass, "onProgress", "(I)V", ref global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static ProgressListener_()
 			{

@@ -42,26 +42,17 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _engineGetKeySpec28731;
 		protected override global::java.security.spec.KeySpec engineGetKeySpec(javax.crypto.SecretKey arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactorySpi_._engineGetKeySpec28731.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactorySpi_._engineGetKeySpec28731 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.KeySpec>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.SecretKeyFactorySpi_._engineGetKeySpec28731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.spec.KeySpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGetKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", ref global::javax.crypto.SecretKeyFactorySpi_._engineGetKeySpec28731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineTranslateKey28732;
 		protected override global::javax.crypto.SecretKey engineTranslateKey(javax.crypto.SecretKey arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactorySpi_._engineTranslateKey28732.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactorySpi_._engineTranslateKey28732 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.SecretKeyFactorySpi_._engineTranslateKey28732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineTranslateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;", ref global::javax.crypto.SecretKeyFactorySpi_._engineTranslateKey28732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSecret28733;
 		protected override global::javax.crypto.SecretKey engineGenerateSecret(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733.native == global::System.IntPtr.Zero)
-				global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733 = @__env.GetMethodIDNoThrow(global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.crypto.SecretKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::javax.crypto.SecretKeyFactorySpi_.staticClass, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;", ref global::javax.crypto.SecretKeyFactorySpi_._engineGenerateSecret28733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.crypto.SecretKey;
 		}
 		static SecretKeyFactorySpi_()
 		{

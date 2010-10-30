@@ -17,10 +17,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getMessage21874;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URISyntaxException._getMessage21874.native == global::System.IntPtr.Zero)
-				global::java.net.URISyntaxException._getMessage21874 = @__env.GetMethodIDNoThrow(global::java.net.URISyntaxException.staticClass, "getMessage", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getMessage21874) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::java.net.URISyntaxException._getMessage21874) as java.lang.String;
 		}
 		public new int Index
 		{
@@ -32,10 +29,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getIndex21875;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URISyntaxException._getIndex21875.native == global::System.IntPtr.Zero)
-				global::java.net.URISyntaxException._getIndex21875 = @__env.GetMethodIDNoThrow(global::java.net.URISyntaxException.staticClass, "getIndex", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getIndex21875);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URISyntaxException.staticClass, "getIndex", "()I", ref global::java.net.URISyntaxException._getIndex21875);
 		}
 		public new global::java.lang.String Input
 		{
@@ -47,10 +41,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getInput21876;
 		public virtual global::java.lang.String getInput()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URISyntaxException._getInput21876.native == global::System.IntPtr.Zero)
-				global::java.net.URISyntaxException._getInput21876 = @__env.GetMethodIDNoThrow(global::java.net.URISyntaxException.staticClass, "getInput", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getInput21876) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, "getInput", "()Ljava/lang/String;", ref global::java.net.URISyntaxException._getInput21876) as java.lang.String;
 		}
 		public new global::java.lang.String Reason
 		{
@@ -62,10 +53,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getReason21877;
 		public virtual global::java.lang.String getReason()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.URISyntaxException._getReason21877.native == global::System.IntPtr.Zero)
-				global::java.net.URISyntaxException._getReason21877 = @__env.GetMethodIDNoThrow(global::java.net.URISyntaxException.staticClass, "getReason", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getReason21877) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.URISyntaxException.staticClass, "getReason", "()Ljava/lang/String;", ref global::java.net.URISyntaxException._getReason21877) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _URISyntaxException21878;
 		public URISyntaxException(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

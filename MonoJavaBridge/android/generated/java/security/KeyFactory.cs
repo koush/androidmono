@@ -41,10 +41,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23017;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._getAlgorithm23017.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._getAlgorithm23017 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getAlgorithm23017) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.KeyFactory.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.KeyFactory._getAlgorithm23017) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -56,42 +53,27 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getProvider23018;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._getProvider23018.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._getProvider23018 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "getProvider", "()Ljava/security/Provider;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getProvider23018) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::java.security.KeyFactory._getProvider23018) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _generatePublic23019;
 		public virtual global::java.security.PublicKey generatePublic(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._generatePublic23019.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._generatePublic23019 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "generatePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePublic23019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::java.security.KeyFactory.staticClass, "generatePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;", ref global::java.security.KeyFactory._generatePublic23019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PublicKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _generatePrivate23020;
 		public virtual global::java.security.PrivateKey generatePrivate(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._generatePrivate23020.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._generatePrivate23020 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "generatePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePrivate23020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.KeyFactory.staticClass, "generatePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;", ref global::java.security.KeyFactory._generatePrivate23020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeySpec23021;
 		public virtual global::java.security.spec.KeySpec getKeySpec(java.security.Key arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._getKeySpec23021.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._getKeySpec23021 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "getKeySpec", "(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getKeySpec23021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.KeySpec>(this, global::java.security.KeyFactory.staticClass, "getKeySpec", "(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", ref global::java.security.KeyFactory._getKeySpec23021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.spec.KeySpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _translateKey23022;
 		public virtual global::java.security.Key translateKey(java.security.Key arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.KeyFactory._translateKey23022.native == global::System.IntPtr.Zero)
-				global::java.security.KeyFactory._translateKey23022 = @__env.GetMethodIDNoThrow(global::java.security.KeyFactory.staticClass, "translateKey", "(Ljava/security/Key;)Ljava/security/Key;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._translateKey23022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Key>(this, global::java.security.KeyFactory.staticClass, "translateKey", "(Ljava/security/Key;)Ljava/security/Key;", ref global::java.security.KeyFactory._translateKey23022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.Key;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyFactory23023;
 		protected KeyFactory(java.security.KeyFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

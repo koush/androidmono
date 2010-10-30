@@ -10,50 +10,32 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _hasNext33529;
 		public virtual bool hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._hasNext33529.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._hasNext33529 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "hasNext", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._hasNext33529);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "hasNext", "()Z", ref global::org.apache.http.message.BasicHeaderIterator._hasNext33529);
 		}
 		internal static global::MonoJavaBridge.MethodId _next33530;
 		public virtual global::java.lang.Object next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._next33530.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._next33530 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "next", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._next33530) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "next", "()Ljava/lang/Object;", ref global::org.apache.http.message.BasicHeaderIterator._next33530) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove33531;
 		public virtual void remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._remove33531.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._remove33531 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "remove", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._remove33531);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "remove", "()V", ref global::org.apache.http.message.BasicHeaderIterator._remove33531);
 		}
 		internal static global::MonoJavaBridge.MethodId _findNext33532;
 		protected virtual int findNext(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._findNext33532.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._findNext33532 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "findNext", "(I)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._findNext33532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "findNext", "(I)I", ref global::org.apache.http.message.BasicHeaderIterator._findNext33532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextHeader33533;
 		public virtual global::org.apache.http.Header nextHeader()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._nextHeader33533.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._nextHeader33533 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "nextHeader", "()Lorg/apache/http/Header;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._nextHeader33533) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "nextHeader", "()Lorg/apache/http/Header;", ref global::org.apache.http.message.BasicHeaderIterator._nextHeader33533) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _filterHeader33534;
 		protected virtual bool filterHeader(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHeaderIterator._filterHeader33534.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHeaderIterator._filterHeader33534 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHeaderIterator.staticClass, "filterHeader", "(I)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, global::org.apache.http.message.BasicHeaderIterator._filterHeader33534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicHeaderIterator.staticClass, "filterHeader", "(I)Z", ref global::org.apache.http.message.BasicHeaderIterator._filterHeader33534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHeaderIterator33535;
 		public BasicHeaderIterator(org.apache.http.Header[] arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

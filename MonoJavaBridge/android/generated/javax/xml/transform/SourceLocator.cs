@@ -19,34 +19,22 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getLineNumber30953;
 		int javax.xml.transform.SourceLocator.getLineNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.SourceLocator_._getLineNumber30953.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.SourceLocator_._getLineNumber30953 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getLineNumber", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_._getLineNumber30953);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getLineNumber", "()I", ref global::javax.xml.transform.SourceLocator_._getLineNumber30953);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicId30954;
 		global::java.lang.String javax.xml.transform.SourceLocator.getPublicId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.SourceLocator_._getPublicId30954.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.SourceLocator_._getPublicId30954 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getPublicId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_._getPublicId30954)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._getPublicId30954) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId30955;
 		global::java.lang.String javax.xml.transform.SourceLocator.getSystemId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.SourceLocator_._getSystemId30955.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.SourceLocator_._getSystemId30955 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getSystemId", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_._getSystemId30955)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._getSystemId30955) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber30956;
 		int javax.xml.transform.SourceLocator.getColumnNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.SourceLocator_._getColumnNumber30956.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.SourceLocator_._getColumnNumber30956 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.SourceLocator_.staticClass, "getColumnNumber", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_._getColumnNumber30956);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getColumnNumber", "()I", ref global::javax.xml.transform.SourceLocator_._getColumnNumber30956);
 		}
 		static SourceLocator_()
 		{

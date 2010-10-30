@@ -18,26 +18,17 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _addView15185;
 		void android.view.ViewManager.addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewManager_._addView15185.native == global::System.IntPtr.Zero)
-				global::android.view.ViewManager_._addView15185 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewManager_._addView15185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewManager_.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", ref global::android.view.ViewManager_._addView15185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateViewLayout15186;
 		void android.view.ViewManager.updateViewLayout(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewManager_._updateViewLayout15186.native == global::System.IntPtr.Zero)
-				global::android.view.ViewManager_._updateViewLayout15186 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewManager_._updateViewLayout15186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewManager_.staticClass, "updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", ref global::android.view.ViewManager_._updateViewLayout15186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeView15187;
 		void android.view.ViewManager.removeView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewManager_._removeView15187.native == global::System.IntPtr.Zero)
-				global::android.view.ViewManager_._removeView15187 = @__env.GetMethodIDNoThrow(global::android.view.ViewManager_.staticClass, "removeView", "(Landroid/view/View;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewManager_._removeView15187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewManager_.staticClass, "removeView", "(Landroid/view/View;)V", ref global::android.view.ViewManager_._removeView15187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ViewManager_()
 		{

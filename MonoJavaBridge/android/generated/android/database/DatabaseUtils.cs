@@ -17,122 +17,77 @@ namespace android.database
 			internal static global::MonoJavaBridge.MethodId _replace4604;
 			public virtual long replace(android.content.ContentValues arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._replace4604.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._replace4604 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "replace", "(Landroid/content/ContentValues;)J");
-				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._replace4604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "replace", "(Landroid/content/ContentValues;)J", ref global::android.database.DatabaseUtils.InsertHelper._replace4604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _close4605;
 			public virtual void close()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._close4605.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._close4605 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "close", "()V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._close4605);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "close", "()V", ref global::android.database.DatabaseUtils.InsertHelper._close4605);
 			}
 			internal static global::MonoJavaBridge.MethodId _insert4606;
 			public virtual long insert(android.content.ContentValues arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._insert4606.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._insert4606 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "insert", "(Landroid/content/ContentValues;)J");
-				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._insert4606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "insert", "(Landroid/content/ContentValues;)J", ref global::android.database.DatabaseUtils.InsertHelper._insert4606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _execute4607;
 			public virtual long execute()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._execute4607.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._execute4607 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "execute", "()J");
-				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._execute4607);
+				return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "execute", "()J", ref global::android.database.DatabaseUtils.InsertHelper._execute4607);
 			}
 			internal static global::MonoJavaBridge.MethodId _getColumnIndex4608;
 			public virtual int getColumnIndex(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._getColumnIndex4608.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._getColumnIndex4608 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "getColumnIndex", "(Ljava/lang/String;)I");
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex4608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "getColumnIndex", "(Ljava/lang/String;)I", ref global::android.database.DatabaseUtils.InsertHelper._getColumnIndex4608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4609;
 			public virtual void bind(int arg0, bool arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4609.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4609 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IZ)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IZ)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4610;
 			public virtual void bind(int arg0, byte[] arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4610.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4610 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(I[B)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(I[B)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4611;
 			public virtual void bind(int arg0, float arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4611.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4611 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IF)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IF)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4612;
 			public virtual void bind(int arg0, java.lang.String arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4612.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4612 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ILjava/lang/String;)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ILjava/lang/String;)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4613;
 			public virtual void bind(int arg0, long arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4613.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4613 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IJ)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IJ)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4614;
 			public virtual void bind(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4614.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4614 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(II)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(II)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bind4615;
 			public virtual void bind(int arg0, double arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bind4615.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bind4615 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ID)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind4615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ID)V", ref global::android.database.DatabaseUtils.InsertHelper._bind4615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _bindNull4616;
 			public virtual void bindNull(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._bindNull4616.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._bindNull4616 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bindNull", "(I)V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bindNull4616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "bindNull", "(I)V", ref global::android.database.DatabaseUtils.InsertHelper._bindNull4616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _prepareForInsert4617;
 			public virtual void prepareForInsert()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._prepareForInsert4617.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._prepareForInsert4617 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForInsert", "()V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert4617);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForInsert", "()V", ref global::android.database.DatabaseUtils.InsertHelper._prepareForInsert4617);
 			}
 			internal static global::MonoJavaBridge.MethodId _prepareForReplace4618;
 			public virtual void prepareForReplace()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.DatabaseUtils.InsertHelper._prepareForReplace4618.native == global::System.IntPtr.Zero)
-					global::android.database.DatabaseUtils.InsertHelper._prepareForReplace4618 = @__env.GetMethodIDNoThrow(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForReplace", "()V");
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace4618);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForReplace", "()V", ref global::android.database.DatabaseUtils.InsertHelper._prepareForReplace4618);
 			}
 			internal static global::MonoJavaBridge.MethodId _InsertHelper4619;
 			public InsertHelper(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

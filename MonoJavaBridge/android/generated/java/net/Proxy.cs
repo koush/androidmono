@@ -72,42 +72,27 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _type21664;
 		public virtual global::java.net.Proxy.Type type()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Proxy._type21664.native == global::System.IntPtr.Zero)
-				global::java.net.Proxy._type21664 = @__env.GetMethodIDNoThrow(global::java.net.Proxy.staticClass, "type", "()Ljava/net/Proxy$Type;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.Proxy.Type>(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._type21664) as java.net.Proxy.Type;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.Proxy.Type>(this, global::java.net.Proxy.staticClass, "type", "()Ljava/net/Proxy$Type;", ref global::java.net.Proxy._type21664) as java.net.Proxy.Type;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals21665;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Proxy._equals21665.native == global::System.IntPtr.Zero)
-				global::java.net.Proxy._equals21665 = @__env.GetMethodIDNoThrow(global::java.net.Proxy.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._equals21665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Proxy.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.net.Proxy._equals21665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21666;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Proxy._toString21666.native == global::System.IntPtr.Zero)
-				global::java.net.Proxy._toString21666 = @__env.GetMethodIDNoThrow(global::java.net.Proxy.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._toString21666) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.Proxy.staticClass, "toString", "()Ljava/lang/String;", ref global::java.net.Proxy._toString21666) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21667;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Proxy._hashCode21667.native == global::System.IntPtr.Zero)
-				global::java.net.Proxy._hashCode21667 = @__env.GetMethodIDNoThrow(global::java.net.Proxy.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._hashCode21667);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Proxy.staticClass, "hashCode", "()I", ref global::java.net.Proxy._hashCode21667);
 		}
 		internal static global::MonoJavaBridge.MethodId _address21668;
 		public virtual global::java.net.SocketAddress address()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.Proxy._address21668.native == global::System.IntPtr.Zero)
-				global::java.net.Proxy._address21668 = @__env.GetMethodIDNoThrow(global::java.net.Proxy.staticClass, "address", "()Ljava/net/SocketAddress;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._address21668) as java.net.SocketAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Proxy.staticClass, "address", "()Ljava/net/SocketAddress;", ref global::java.net.Proxy._address21668) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _Proxy21669;
 		public Proxy(java.net.Proxy.Type arg0, java.net.SocketAddress arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

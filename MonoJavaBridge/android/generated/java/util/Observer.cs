@@ -16,10 +16,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _update26537;
 		void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Observer_._update26537.native == global::System.IntPtr.Zero)
-				global::java.util.Observer_._update26537 = @__env.GetMethodIDNoThrow(global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.util.Observer_._update26537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V", ref global::java.util.Observer_._update26537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Observer_()
 		{

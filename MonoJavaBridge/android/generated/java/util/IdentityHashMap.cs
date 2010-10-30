@@ -10,122 +10,77 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _get26294;
 		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._get26294.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._get26294 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._get26294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.IdentityHashMap._get26294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _put26295;
 		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._put26295.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._put26295 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._put26295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.IdentityHashMap._put26295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals26296;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._equals26296.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._equals26296 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._equals26296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.IdentityHashMap._equals26296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _values26297;
 		public override global::java.util.Collection values()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._values26297.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._values26297 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "values", "()Ljava/util/Collection;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._values26297) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.util.IdentityHashMap.staticClass, "values", "()Ljava/util/Collection;", ref global::java.util.IdentityHashMap._values26297) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26298;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._hashCode26298.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._hashCode26298 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._hashCode26298);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IdentityHashMap.staticClass, "hashCode", "()I", ref global::java.util.IdentityHashMap._hashCode26298);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26299;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._clone26299.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._clone26299 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "clone", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._clone26299) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.IdentityHashMap._clone26299) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear26300;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._clear26300.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._clear26300 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "clear", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._clear26300);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.IdentityHashMap.staticClass, "clear", "()V", ref global::java.util.IdentityHashMap._clear26300);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty26301;
 		public override bool isEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._isEmpty26301.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._isEmpty26301 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "isEmpty", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._isEmpty26301);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, "isEmpty", "()Z", ref global::java.util.IdentityHashMap._isEmpty26301);
 		}
 		internal static global::MonoJavaBridge.MethodId _size26302;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._size26302.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._size26302 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "size", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._size26302);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IdentityHashMap.staticClass, "size", "()I", ref global::java.util.IdentityHashMap._size26302);
 		}
 		internal static global::MonoJavaBridge.MethodId _entrySet26303;
 		public override global::java.util.Set entrySet()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._entrySet26303.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._entrySet26303 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "entrySet", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._entrySet26303) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.IdentityHashMap.staticClass, "entrySet", "()Ljava/util/Set;", ref global::java.util.IdentityHashMap._entrySet26303) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _putAll26304;
 		public override void putAll(java.util.Map arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._putAll26304.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._putAll26304 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "putAll", "(Ljava/util/Map;)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._putAll26304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.IdentityHashMap.staticClass, "putAll", "(Ljava/util/Map;)V", ref global::java.util.IdentityHashMap._putAll26304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26305;
 		public override global::java.lang.Object remove(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._remove26305.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._remove26305 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._remove26305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IdentityHashMap.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.util.IdentityHashMap._remove26305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _keySet26306;
 		public override global::java.util.Set keySet()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._keySet26306.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._keySet26306 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "keySet", "()Ljava/util/Set;");
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._keySet26306) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.IdentityHashMap.staticClass, "keySet", "()Ljava/util/Set;", ref global::java.util.IdentityHashMap._keySet26306) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _containsValue26307;
 		public override bool containsValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._containsValue26307.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._containsValue26307 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._containsValue26307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z", ref global::java.util.IdentityHashMap._containsValue26307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _containsKey26308;
 		public override bool containsKey(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.IdentityHashMap._containsKey26308.native == global::System.IntPtr.Zero)
-				global::java.util.IdentityHashMap._containsKey26308 = @__env.GetMethodIDNoThrow(global::java.util.IdentityHashMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, global::java.util.IdentityHashMap._containsKey26308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.IdentityHashMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z", ref global::java.util.IdentityHashMap._containsKey26308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _IdentityHashMap26309;
 		public IdentityHashMap(java.util.Map arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

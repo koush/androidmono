@@ -12,28 +12,19 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _get22206;
 		public virtual global::java.nio.FloatBuffer get(float[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._get22206.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._get22206 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "get", "([F)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._get22206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._get22206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _get22207;
 		public virtual global::java.nio.FloatBuffer get(float[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._get22207.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._get22207 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "get", "([FII)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._get22207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._get22207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _get22208;
 		public abstract float get(int arg0);
 		internal static global::MonoJavaBridge.MethodId _put22209;
 		public virtual global::java.nio.FloatBuffer put(java.nio.FloatBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._put22209.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._put22209 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put22209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _put22210;
 		public abstract global::java.nio.FloatBuffer put(float arg0);
@@ -42,84 +33,54 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _put22212;
 		public virtual global::java.nio.FloatBuffer put(float[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._put22212.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._put22212 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "put", "([FII)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put22212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _put22213;
 		public virtual global::java.nio.FloatBuffer put(float[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._put22213.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._put22213 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "put", "([F)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put22213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals22214;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._equals22214.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._equals22214 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._equals22214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.nio.FloatBuffer._equals22214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22215;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._toString22215.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._toString22215 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._toString22215) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.FloatBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.FloatBuffer._toString22215) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22216;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._hashCode22216.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._hashCode22216 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "hashCode", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._hashCode22216);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "hashCode", "()I", ref global::java.nio.FloatBuffer._hashCode22216);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo22217;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._compareTo22217.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._compareTo22217 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._compareTo22217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.nio.FloatBuffer._compareTo22217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo22218;
 		public virtual int compareTo(java.nio.FloatBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._compareTo22218.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._compareTo22218 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/nio/FloatBuffer;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._compareTo22218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/nio/FloatBuffer;)I", ref global::java.nio.FloatBuffer._compareTo22218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDirect22219;
 		public abstract bool isDirect();
 		internal static global::MonoJavaBridge.MethodId _hasArray22220;
 		public sealed override bool hasArray()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._hasArray22220.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._hasArray22220 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "hasArray", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._hasArray22220);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "hasArray", "()Z", ref global::java.nio.FloatBuffer._hasArray22220);
 		}
 		internal static global::MonoJavaBridge.MethodId _array22221;
 		public override global::java.lang.Object array()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._array22221.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._array22221 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "array", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._array22221) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "array", "()Ljava/lang/Object;", ref global::java.nio.FloatBuffer._array22221) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _arrayOffset22222;
 		public sealed override int arrayOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._arrayOffset22222.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._arrayOffset22222 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "arrayOffset", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._arrayOffset22222);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "arrayOffset", "()I", ref global::java.nio.FloatBuffer._arrayOffset22222);
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap22223;
 		public static global::java.nio.FloatBuffer wrap(float[] arg0, int arg1, int arg2)
@@ -175,90 +136,57 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _get22231;
 		public override float get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._get22231.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._get22231 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "get", "()F");
-			return @__env.CallFloatMethod(this.JvmHandle, global::java.nio.FloatBuffer_._get22231);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "()F", ref global::java.nio.FloatBuffer_._get22231);
 		}
 		internal static global::MonoJavaBridge.MethodId _get22232;
 		public override float get(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._get22232.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._get22232 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "get", "(I)F");
-			return @__env.CallFloatMethod(this.JvmHandle, global::java.nio.FloatBuffer_._get22232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "(I)F", ref global::java.nio.FloatBuffer_._get22232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _put22233;
 		public override global::java.nio.FloatBuffer put(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._put22233.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._put22233 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "put", "(F)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._put22233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._put22233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _put22234;
 		public override global::java.nio.FloatBuffer put(int arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._put22234.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._put22234 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "put", "(IF)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._put22234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(IF)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._put22234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDirect22235;
 		public override bool isDirect()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._isDirect22235.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._isDirect22235 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "isDirect", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.FloatBuffer_._isDirect22235);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isDirect", "()Z", ref global::java.nio.FloatBuffer_._isDirect22235);
 		}
 		internal static global::MonoJavaBridge.MethodId _duplicate22236;
 		public override global::java.nio.FloatBuffer duplicate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._duplicate22236.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._duplicate22236 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "duplicate", "()Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._duplicate22236)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "duplicate", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._duplicate22236) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _slice22237;
 		public override global::java.nio.FloatBuffer slice()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._slice22237.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._slice22237 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "slice", "()Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._slice22237)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "slice", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._slice22237) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22238;
 		public override global::java.nio.FloatBuffer asReadOnlyBuffer()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._asReadOnlyBuffer22238.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._asReadOnlyBuffer22238 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._asReadOnlyBuffer22238)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._asReadOnlyBuffer22238) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _compact22239;
 		public override global::java.nio.FloatBuffer compact()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._compact22239.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._compact22239 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "compact", "()Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._compact22239)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "compact", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._compact22239) as java.nio.FloatBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _order22240;
 		public override global::java.nio.ByteOrder order()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._order22240.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._order22240 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.FloatBuffer_._order22240)) as java.nio.ByteOrder;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.nio.ByteOrder>(this, global::java.nio.FloatBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;", ref global::java.nio.FloatBuffer_._order22240) as java.nio.ByteOrder;
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly22241;
 		public override bool isReadOnly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer_._isReadOnly22241.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer_._isReadOnly22241 = @__env.GetMethodIDNoThrow(global::java.nio.FloatBuffer_.staticClass, "isReadOnly", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.FloatBuffer_._isReadOnly22241);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isReadOnly", "()Z", ref global::java.nio.FloatBuffer_._isReadOnly22241);
 		}
 		static FloatBuffer_()
 		{

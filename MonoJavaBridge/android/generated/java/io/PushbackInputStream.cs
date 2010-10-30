@@ -10,90 +10,57 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19486;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._close19486.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._close19486 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "close", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._close19486);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "close", "()V", ref global::java.io.PushbackInputStream._close19486);
 		}
 		internal static global::MonoJavaBridge.MethodId _mark19487;
 		public override void mark(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._mark19487.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._mark19487 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "mark", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._mark19487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "mark", "(I)V", ref global::java.io.PushbackInputStream._mark19487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset19488;
 		public override void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._reset19488.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._reset19488 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "reset", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._reset19488);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "reset", "()V", ref global::java.io.PushbackInputStream._reset19488);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19489;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._read19489.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._read19489 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "read", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._read19489);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, "read", "()I", ref global::java.io.PushbackInputStream._read19489);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19490;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._read19490.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._read19490 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "read", "([BII)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._read19490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, "read", "([BII)I", ref global::java.io.PushbackInputStream._read19490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _skip19491;
 		public override long skip(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._skip19491.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._skip19491 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "skip", "(J)J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._skip19491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.PushbackInputStream.staticClass, "skip", "(J)J", ref global::java.io.PushbackInputStream._skip19491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _available19492;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._available19492.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._available19492 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "available", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._available19492);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PushbackInputStream.staticClass, "available", "()I", ref global::java.io.PushbackInputStream._available19492);
 		}
 		internal static global::MonoJavaBridge.MethodId _markSupported19493;
 		public override bool markSupported()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._markSupported19493.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._markSupported19493 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "markSupported", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._markSupported19493);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.PushbackInputStream.staticClass, "markSupported", "()Z", ref global::java.io.PushbackInputStream._markSupported19493);
 		}
 		internal static global::MonoJavaBridge.MethodId _unread19494;
 		public virtual void unread(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._unread19494.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._unread19494 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "unread", "([B)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._unread19494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "unread", "([B)V", ref global::java.io.PushbackInputStream._unread19494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unread19495;
 		public virtual void unread(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._unread19495.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._unread19495 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "unread", "([BII)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._unread19495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "unread", "([BII)V", ref global::java.io.PushbackInputStream._unread19495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _unread19496;
 		public virtual void unread(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.PushbackInputStream._unread19496.native == global::System.IntPtr.Zero)
-				global::java.io.PushbackInputStream._unread19496 = @__env.GetMethodIDNoThrow(global::java.io.PushbackInputStream.staticClass, "unread", "(I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, global::java.io.PushbackInputStream._unread19496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PushbackInputStream.staticClass, "unread", "(I)V", ref global::java.io.PushbackInputStream._unread19496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PushbackInputStream19497;
 		public PushbackInputStream(java.io.InputStream arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

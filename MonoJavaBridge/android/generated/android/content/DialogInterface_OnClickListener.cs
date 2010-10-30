@@ -16,10 +16,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onClick3069;
 		void android.content.DialogInterface_OnClickListener.onClick(android.content.DialogInterface arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnClickListener_._onClick3069.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnClickListener_._onClick3069 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnClickListener_._onClick3069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_OnClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V", ref global::android.content.DialogInterface_OnClickListener_._onClick3069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static DialogInterface_OnClickListener_()
 		{

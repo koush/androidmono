@@ -10,10 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5239;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorFilter._finalize5239.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorFilter._finalize5239 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorFilter.staticClass, "finalize", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorFilter.staticClass, global::android.graphics.ColorFilter._finalize5239);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorFilter.staticClass, "finalize", "()V", ref global::android.graphics.ColorFilter._finalize5239);
 		}
 		internal static global::MonoJavaBridge.MethodId _ColorFilter5240;
 		public ColorFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

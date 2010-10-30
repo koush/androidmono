@@ -10,26 +10,17 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3716;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._toString3716.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._toString3716 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._toString3716) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._toString3716) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3717;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._writeToParcel3717.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._writeToParcel3717 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._writeToParcel3717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.FeatureInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.FeatureInfo._writeToParcel3717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3718;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._describeContents3718.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._describeContents3718 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "describeContents", "()I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._describeContents3718);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.FeatureInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.FeatureInfo._describeContents3718);
 		}
 		public new global::java.lang.String GlEsVersion
 		{
@@ -41,10 +32,7 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _getGlEsVersion3719;
 		public virtual global::java.lang.String getGlEsVersion()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._getGlEsVersion3719.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._getGlEsVersion3719 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._getGlEsVersion3719) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._getGlEsVersion3719) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _FeatureInfo3720;
 		public FeatureInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

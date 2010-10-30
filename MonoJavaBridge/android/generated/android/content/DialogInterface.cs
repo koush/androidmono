@@ -17,18 +17,12 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _cancel3079;
 		void android.content.DialogInterface.cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_._cancel3079.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_._cancel3079 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "cancel", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_._cancel3079);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "cancel", "()V", ref global::android.content.DialogInterface_._cancel3079);
 		}
 		internal static global::MonoJavaBridge.MethodId _dismiss3080;
 		void android.content.DialogInterface.dismiss()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_._dismiss3080.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_._dismiss3080 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "dismiss", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_._dismiss3080);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "dismiss", "()V", ref global::android.content.DialogInterface_._dismiss3080);
 		}
 		static DialogInterface_()
 		{

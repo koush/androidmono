@@ -17,10 +17,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getKey28762;
 		public virtual byte[] getKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DESedeKeySpec._getKey28762.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DESedeKeySpec._getKey28762 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESedeKeySpec.staticClass, "getKey", "()[B");
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.DESedeKeySpec.staticClass, global::javax.crypto.spec.DESedeKeySpec._getKey28762) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.DESedeKeySpec.staticClass, "getKey", "()[B", ref global::javax.crypto.spec.DESedeKeySpec._getKey28762) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _isParityAdjusted28763;
 		public static bool isParityAdjusted(byte[] arg0, int arg1)

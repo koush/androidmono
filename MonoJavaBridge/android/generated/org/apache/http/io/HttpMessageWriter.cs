@@ -16,10 +16,7 @@ namespace org.apache.http.io
 		internal static global::MonoJavaBridge.MethodId _write33468;
 		void org.apache.http.io.HttpMessageWriter.write(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.io.HttpMessageWriter_._write33468.native == global::System.IntPtr.Zero)
-				global::org.apache.http.io.HttpMessageWriter_._write33468 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageWriter_.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageWriter_._write33468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.HttpMessageWriter_.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.io.HttpMessageWriter_._write33468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static HttpMessageWriter_()
 		{

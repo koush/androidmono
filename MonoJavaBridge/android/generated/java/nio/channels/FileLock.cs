@@ -10,54 +10,36 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _toString22490;
 		public sealed override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._toString22490.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._toString22490 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "toString", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._toString22490) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.channels.FileLock.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.channels.FileLock._toString22490) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _size22491;
 		public virtual long size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._size22491.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._size22491 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "size", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._size22491);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileLock.staticClass, "size", "()J", ref global::java.nio.channels.FileLock._size22491);
 		}
 		internal static global::MonoJavaBridge.MethodId _position22492;
 		public virtual long position()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._position22492.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._position22492 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "position", "()J");
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._position22492);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.FileLock.staticClass, "position", "()J", ref global::java.nio.channels.FileLock._position22492);
 		}
 		internal static global::MonoJavaBridge.MethodId _release22493;
 		public abstract void release();
 		internal static global::MonoJavaBridge.MethodId _channel22494;
 		public virtual global::java.nio.channels.FileChannel channel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._channel22494.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._channel22494 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "channel", "()Ljava/nio/channels/FileChannel;");
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._channel22494) as java.nio.channels.FileChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.FileLock.staticClass, "channel", "()Ljava/nio/channels/FileChannel;", ref global::java.nio.channels.FileLock._channel22494) as java.nio.channels.FileChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShared22495;
 		public virtual bool isShared()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._isShared22495.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._isShared22495 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "isShared", "()Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._isShared22495);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, "isShared", "()Z", ref global::java.nio.channels.FileLock._isShared22495);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValid22496;
 		public abstract bool isValid();
 		internal static global::MonoJavaBridge.MethodId _overlaps22497;
 		public virtual bool overlaps(long arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock._overlaps22497.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock._overlaps22497 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock.staticClass, "overlaps", "(JJ)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._overlaps22497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, "overlaps", "(JJ)Z", ref global::java.nio.channels.FileLock._overlaps22497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _FileLock22498;
 		protected FileLock(java.nio.channels.FileChannel arg0, long arg1, long arg2, bool arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -88,18 +70,12 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _release22499;
 		public override void release()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock_._release22499.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock_._release22499 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock_.staticClass, "release", "()V");
-			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.FileLock_._release22499);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.FileLock_.staticClass, "release", "()V", ref global::java.nio.channels.FileLock_._release22499);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValid22500;
 		public override bool isValid()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.FileLock_._isValid22500.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.FileLock_._isValid22500 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLock_.staticClass, "isValid", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.FileLock_._isValid22500);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.FileLock_.staticClass, "isValid", "()Z", ref global::java.nio.channels.FileLock_._isValid22500);
 		}
 		static FileLock_()
 		{

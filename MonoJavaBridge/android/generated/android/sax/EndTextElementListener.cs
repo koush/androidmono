@@ -16,10 +16,7 @@ namespace android.sax
 		internal static global::MonoJavaBridge.MethodId _end11612;
 		void android.sax.EndTextElementListener.end(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.EndTextElementListener_._end11612.native == global::System.IntPtr.Zero)
-				global::android.sax.EndTextElementListener_._end11612 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListener_.staticClass, "end", "(Ljava/lang/String;)V");
-			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndTextElementListener_._end11612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.EndTextElementListener_.staticClass, "end", "(Ljava/lang/String;)V", ref global::android.sax.EndTextElementListener_._end11612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static EndTextElementListener_()
 		{

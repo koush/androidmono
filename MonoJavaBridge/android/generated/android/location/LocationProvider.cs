@@ -10,10 +10,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getName6968;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider._getName6968.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider._getName6968 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._getName6968) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;", ref global::android.location.LocationProvider._getName6968) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAccuracy6969;
 		public abstract int getAccuracy();
@@ -36,10 +33,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _meetsCriteria6978;
 		public virtual bool meetsCriteria(android.location.Criteria arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider._meetsCriteria6978.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider._meetsCriteria6978 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z");
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._meetsCriteria6978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z", ref global::android.location.LocationProvider._meetsCriteria6978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int OUT_OF_SERVICE
 		{
@@ -82,74 +76,47 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _getAccuracy6982;
 		public override int getAccuracy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._getAccuracy6982.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._getAccuracy6982 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "getAccuracy", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.location.LocationProvider_._getAccuracy6982);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getAccuracy", "()I", ref global::android.location.LocationProvider_._getAccuracy6982);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPowerRequirement6983;
 		public override int getPowerRequirement()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._getPowerRequirement6983.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._getPowerRequirement6983 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "getPowerRequirement", "()I");
-			return @__env.CallIntMethod(this.JvmHandle, global::android.location.LocationProvider_._getPowerRequirement6983);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getPowerRequirement", "()I", ref global::android.location.LocationProvider_._getPowerRequirement6983);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresNetwork6984;
 		public override bool requiresNetwork()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._requiresNetwork6984.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._requiresNetwork6984 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "requiresNetwork", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._requiresNetwork6984);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresNetwork", "()Z", ref global::android.location.LocationProvider_._requiresNetwork6984);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresSatellite6985;
 		public override bool requiresSatellite()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._requiresSatellite6985.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._requiresSatellite6985 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "requiresSatellite", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._requiresSatellite6985);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresSatellite", "()Z", ref global::android.location.LocationProvider_._requiresSatellite6985);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresCell6986;
 		public override bool requiresCell()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._requiresCell6986.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._requiresCell6986 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "requiresCell", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._requiresCell6986);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresCell", "()Z", ref global::android.location.LocationProvider_._requiresCell6986);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasMonetaryCost6987;
 		public override bool hasMonetaryCost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._hasMonetaryCost6987.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._hasMonetaryCost6987 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "hasMonetaryCost", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._hasMonetaryCost6987);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "hasMonetaryCost", "()Z", ref global::android.location.LocationProvider_._hasMonetaryCost6987);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsAltitude6988;
 		public override bool supportsAltitude()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._supportsAltitude6988.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._supportsAltitude6988 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsAltitude", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._supportsAltitude6988);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsAltitude", "()Z", ref global::android.location.LocationProvider_._supportsAltitude6988);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsSpeed6989;
 		public override bool supportsSpeed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._supportsSpeed6989.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._supportsSpeed6989 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsSpeed", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._supportsSpeed6989);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsSpeed", "()Z", ref global::android.location.LocationProvider_._supportsSpeed6989);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsBearing6990;
 		public override bool supportsBearing()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.LocationProvider_._supportsBearing6990.native == global::System.IntPtr.Zero)
-				global::android.location.LocationProvider_._supportsBearing6990 = @__env.GetMethodIDNoThrow(global::android.location.LocationProvider_.staticClass, "supportsBearing", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_._supportsBearing6990);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsBearing", "()Z", ref global::android.location.LocationProvider_._supportsBearing6990);
 		}
 		static LocationProvider_()
 		{

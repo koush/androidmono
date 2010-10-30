@@ -20,42 +20,27 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _get27302;
 		global::java.lang.Object java.util.concurrent.Future.get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Future_._get27302.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Future_._get27302 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Future_.staticClass, "get", "()Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.Future_._get27302)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.Future_.staticClass, "get", "()Ljava/lang/Object;", ref global::java.util.concurrent.Future_._get27302) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _get27303;
 		global::java.lang.Object java.util.concurrent.Future.get(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Future_._get27303.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Future_._get27303 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Future_.staticClass, "get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.Future_._get27303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.Future_.staticClass, "get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", ref global::java.util.concurrent.Future_._get27303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel27304;
 		bool java.util.concurrent.Future.cancel(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Future_._cancel27304.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Future_._cancel27304 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Future_.staticClass, "cancel", "(Z)Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.Future_._cancel27304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.Future_.staticClass, "cancel", "(Z)Z", ref global::java.util.concurrent.Future_._cancel27304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled27305;
 		bool java.util.concurrent.Future.isCancelled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Future_._isCancelled27305.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Future_._isCancelled27305 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Future_.staticClass, "isCancelled", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.Future_._isCancelled27305);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.Future_.staticClass, "isCancelled", "()Z", ref global::java.util.concurrent.Future_._isCancelled27305);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone27306;
 		bool java.util.concurrent.Future.isDone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.concurrent.Future_._isDone27306.native == global::System.IntPtr.Zero)
-				global::java.util.concurrent.Future_._isDone27306 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Future_.staticClass, "isDone", "()Z");
-			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.Future_._isDone27306);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.Future_.staticClass, "isDone", "()Z", ref global::java.util.concurrent.Future_._isDone27306);
 		}
 		static Future_()
 		{

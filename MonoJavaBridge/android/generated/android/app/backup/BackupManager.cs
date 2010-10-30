@@ -10,10 +10,7 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _dataChanged2324;
 		public virtual void dataChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.backup.BackupManager._dataChanged2324.native == global::System.IntPtr.Zero)
-				global::android.app.backup.BackupManager._dataChanged2324 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupManager.staticClass, "dataChanged", "()V");
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._dataChanged2324);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupManager.staticClass, "dataChanged", "()V", ref global::android.app.backup.BackupManager._dataChanged2324);
 		}
 		internal static global::MonoJavaBridge.MethodId _dataChanged2325;
 		public static void dataChanged(java.lang.String arg0)
@@ -26,10 +23,7 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _requestRestore2326;
 		public virtual int requestRestore(android.app.backup.RestoreObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.backup.BackupManager._requestRestore2326.native == global::System.IntPtr.Zero)
-				global::android.app.backup.BackupManager._requestRestore2326 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupManager.staticClass, "requestRestore", "(Landroid/app/backup/RestoreObserver;)I");
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupManager.staticClass, "requestRestore", "(Landroid/app/backup/RestoreObserver;)I", ref global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BackupManager2327;
 		public BackupManager(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
