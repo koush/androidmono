@@ -24,11 +24,7 @@ namespace android.webkit
 			internal static global::MonoJavaBridge.MethodId _getType16304;
 			public virtual int getType()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView.HitTestResult._getType16304);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getType16304);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getType16304);
 			}
 			public new global::java.lang.String Extra
 			{
@@ -40,11 +36,7 @@ namespace android.webkit
 			internal static global::MonoJavaBridge.MethodId _getExtra16305;
 			public virtual global::java.lang.String getExtra()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView.HitTestResult._getExtra16305)) as java.lang.String;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getExtra16305)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getExtra16305)) as java.lang.String;
 			}
 			public static int UNKNOWN_TYPE
 			{
@@ -144,10 +136,7 @@ namespace android.webkit
 			void android.webkit.WebView.PictureListener.onNewPicture(android.webkit.WebView arg0, android.graphics.Picture arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView.PictureListener_._onNewPicture16316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.PictureListener_.staticClass, global::android.webkit.WebView.PictureListener_._onNewPicture16316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView.PictureListener_._onNewPicture16316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static PictureListener_()
 			{
@@ -210,11 +199,7 @@ namespace android.webkit
 			internal static global::MonoJavaBridge.MethodId _setWebView16318;
 			public virtual void setWebView(android.webkit.WebView arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView.WebViewTransport._setWebView16318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._setWebView16318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._setWebView16318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::android.webkit.WebView WebView
 			{
@@ -230,11 +215,7 @@ namespace android.webkit
 			internal static global::MonoJavaBridge.MethodId _getWebView16319;
 			public virtual global::android.webkit.WebView getWebView()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView.WebViewTransport._getWebView16319)) as android.webkit.WebView;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._getWebView16319)) as android.webkit.WebView;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._getWebView16319)) as android.webkit.WebView;
 			}
 			internal static global::MonoJavaBridge.MethodId _WebViewTransport16320;
 			public WebViewTransport(android.webkit.WebView arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -258,29 +239,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _finalize16321;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._finalize16321);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._finalize16321);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._finalize16321);
 		}
 		internal static global::MonoJavaBridge.MethodId _destroy16322;
 		public virtual void destroy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._destroy16322);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._destroy16322);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._destroy16322);
 		}
 		internal static global::MonoJavaBridge.MethodId _freeMemory16323;
 		public virtual void freeMemory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._freeMemory16323);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._freeMemory16323);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._freeMemory16323);
 		}
 		public new global::android.net.http.SslCertificate Certificate
 		{
@@ -296,92 +265,52 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCertificate16324;
 		public virtual global::android.net.http.SslCertificate getCertificate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getCertificate16324)) as android.net.http.SslCertificate;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getCertificate16324)) as android.net.http.SslCertificate;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getCertificate16324)) as android.net.http.SslCertificate;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearCache16325;
 		public virtual void clearCache(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearCache16325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearCache16325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearCache16325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown16326;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._onKeyDown16326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyDown16326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyDown16326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp16327;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._onKeyUp16327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyUp16327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyUp16327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent16328;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._onTouchEvent16328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTouchEvent16328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTouchEvent16328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTrackballEvent16329;
 		public override bool onTrackballEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._onTrackballEvent16329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTrackballEvent16329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTrackballEvent16329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged16330;
 		public override void onWindowFocusChanged(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onWindowFocusChanged16330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onWindowFocusChanged16330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onWindowFocusChanged16330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16331;
 		protected override void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onAttachedToWindow16331);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onAttachedToWindow16331);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onAttachedToWindow16331);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16332;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onDetachedFromWindow16332);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDetachedFromWindow16332);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDetachedFromWindow16332);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent16333;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._dispatchKeyEvent16333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._dispatchKeyEvent16333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._dispatchKeyEvent16333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Title
 		{
@@ -393,65 +322,37 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getTitle16334;
 		public virtual global::java.lang.String getTitle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getTitle16334)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getTitle16334)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getTitle16334)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _performLongClick16335;
 		public override bool performLongClick()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._performLongClick16335);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._performLongClick16335);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._performLongClick16335);
 		}
 		internal static global::MonoJavaBridge.MethodId _onFocusChanged16336;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onFocusChanged16336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onFocusChanged16336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onFocusChanged16336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestFocus16337;
 		public override bool requestFocus(int arg0, android.graphics.Rect arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._requestFocus16337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocus16337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocus16337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateInputConnection16338;
 		public override global::android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._onCreateInputConnection16338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onCreateInputConnection16338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onCreateInputConnection16338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
 		}
 		internal static global::MonoJavaBridge.MethodId _onScrollChanged16339;
 		protected override void onScrollChanged(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onScrollChanged16339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onScrollChanged16339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onScrollChanged16339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSizeChanged16340;
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onSizeChanged16340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onSizeChanged16340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onSizeChanged16340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new global::android.view.ViewGroup.LayoutParams LayoutParams
 		{
@@ -463,20 +364,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setLayoutParams16341;
 		public override void setLayoutParams(android.view.ViewGroup.LayoutParams arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setLayoutParams16341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setLayoutParams16341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setLayoutParams16341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeScroll16342;
 		public override void computeScroll()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._computeScroll16342);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeScroll16342);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeScroll16342);
 		}
 		public new int ScrollBarStyle
 		{
@@ -488,56 +381,32 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setScrollBarStyle16343;
 		public override void setScrollBarStyle(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setScrollBarStyle16343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setScrollBarStyle16343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setScrollBarStyle16343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollRange16344;
 		protected override int computeHorizontalScrollRange()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._computeHorizontalScrollRange16344);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeHorizontalScrollRange16344);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeHorizontalScrollRange16344);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollRange16345;
 		protected override int computeVerticalScrollRange()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._computeVerticalScrollRange16345);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollRange16345);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollRange16345);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollOffset16346;
 		protected override int computeVerticalScrollOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._computeVerticalScrollOffset16346);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollOffset16346);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollOffset16346);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollExtent16347;
 		protected override int computeVerticalScrollExtent()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._computeVerticalScrollExtent16347);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollExtent16347);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollExtent16347);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDraw16348;
 		protected override void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onDraw16348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDraw16348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDraw16348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int BackgroundColor
 		{
@@ -549,38 +418,22 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setBackgroundColor16349;
 		public override void setBackgroundColor(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setBackgroundColor16349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setBackgroundColor16349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setBackgroundColor16349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure16350;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onMeasure16350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onMeasure16350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onMeasure16350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestChildRectangleOnScreen16351;
 		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._requestChildRectangleOnScreen16351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestChildRectangleOnScreen16351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestChildRectangleOnScreen16351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _drawChild16352;
 		protected override bool drawChild(android.graphics.Canvas arg0, android.view.View arg1, long arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._drawChild16352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._drawChild16352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._drawChild16352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new int Progress
 		{
@@ -592,29 +445,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getProgress16353;
 		public virtual int getProgress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._getProgress16353);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getProgress16353);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getProgress16353);
 		}
 		internal static global::MonoJavaBridge.MethodId _onChildViewAdded16354;
 		public virtual void onChildViewAdded(android.view.View arg0, android.view.View arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onChildViewAdded16354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewAdded16354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewAdded16354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onChildViewRemoved16355;
 		public virtual void onChildViewRemoved(android.view.View arg0, android.view.View arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onChildViewRemoved16355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewRemoved16355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewRemoved16355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String Url
 		{
@@ -626,56 +467,32 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getUrl16356;
 		public virtual global::java.lang.String getUrl()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getUrl16356)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getUrl16356)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getUrl16356)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _saveState16357;
 		public virtual global::android.webkit.WebBackForwardList saveState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._saveState16357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._saveState16357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._saveState16357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
 		}
 		internal static global::MonoJavaBridge.MethodId _restoreState16358;
 		public virtual global::android.webkit.WebBackForwardList restoreState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._restoreState16358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restoreState16358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restoreState16358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebBackForwardList;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearHistory16359;
 		public virtual void clearHistory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearHistory16359);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearHistory16359);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearHistory16359);
 		}
 		internal static global::MonoJavaBridge.MethodId _reload16360;
 		public virtual void reload()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._reload16360);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._reload16360);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._reload16360);
 		}
 		internal static global::MonoJavaBridge.MethodId _onGlobalFocusChanged16361;
 		public virtual void onGlobalFocusChanged(android.view.View arg0, android.view.View arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._onGlobalFocusChanged16361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onGlobalFocusChanged16361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onGlobalFocusChanged16361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String OriginalUrl
 		{
@@ -687,11 +504,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getOriginalUrl16362;
 		public virtual global::java.lang.String getOriginalUrl()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getOriginalUrl16362)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getOriginalUrl16362)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getOriginalUrl16362)) as java.lang.String;
 		}
 		public new global::android.graphics.Bitmap Favicon
 		{
@@ -703,11 +516,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getFavicon16363;
 		public virtual global::android.graphics.Bitmap getFavicon()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getFavicon16363)) as android.graphics.Bitmap;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getFavicon16363)) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getFavicon16363)) as android.graphics.Bitmap;
 		}
 		public new bool HorizontalScrollbarOverlay
 		{
@@ -719,11 +528,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setHorizontalScrollbarOverlay16364;
 		public virtual void setHorizontalScrollbarOverlay(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setHorizontalScrollbarOverlay16364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHorizontalScrollbarOverlay16364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHorizontalScrollbarOverlay16364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool VerticalScrollbarOverlay
 		{
@@ -735,65 +540,37 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setVerticalScrollbarOverlay16365;
 		public virtual void setVerticalScrollbarOverlay(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setVerticalScrollbarOverlay16365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setVerticalScrollbarOverlay16365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setVerticalScrollbarOverlay16365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _overlayHorizontalScrollbar16366;
 		public virtual bool overlayHorizontalScrollbar()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._overlayHorizontalScrollbar16366);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayHorizontalScrollbar16366);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayHorizontalScrollbar16366);
 		}
 		internal static global::MonoJavaBridge.MethodId _overlayVerticalScrollbar16367;
 		public virtual bool overlayVerticalScrollbar()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._overlayVerticalScrollbar16367);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayVerticalScrollbar16367);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayVerticalScrollbar16367);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCertificate16368;
 		public virtual void setCertificate(android.net.http.SslCertificate arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setCertificate16368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setCertificate16368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setCertificate16368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _savePassword16369;
 		public virtual void savePassword(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._savePassword16369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePassword16369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePassword16369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setHttpAuthUsernamePassword16370;
 		public virtual void setHttpAuthUsernamePassword(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setHttpAuthUsernamePassword16370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHttpAuthUsernamePassword16370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHttpAuthUsernamePassword16370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getHttpAuthUsernamePassword16371;
 		public virtual global::java.lang.String[] getHttpAuthUsernamePassword(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getHttpAuthUsernamePassword16371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHttpAuthUsernamePassword16371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHttpAuthUsernamePassword16371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _enablePlatformNotifications16372;
 		public static void enablePlatformNotifications()
@@ -817,173 +594,97 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setNetworkAvailable16374;
 		public virtual void setNetworkAvailable(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setNetworkAvailable16374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setNetworkAvailable16374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setNetworkAvailable16374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _savePicture16375;
 		public virtual bool savePicture(android.os.Bundle arg0, java.io.File arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._savePicture16375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePicture16375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePicture16375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _restorePicture16376;
 		public virtual bool restorePicture(android.os.Bundle arg0, java.io.File arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._restorePicture16376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restorePicture16376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restorePicture16376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _loadUrl16377;
 		public virtual void loadUrl(java.lang.String arg0, java.util.Map arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._loadUrl16377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadUrl16377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadUrl16377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _loadUrl16378;
 		public virtual void loadUrl(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._loadUrl16378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadUrl16378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadUrl16378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _postUrl16379;
 		public virtual void postUrl(java.lang.String arg0, byte[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._postUrl16379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._postUrl16379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._postUrl16379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _loadData16380;
 		public virtual void loadData(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._loadData16380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadData16380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadData16380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _loadDataWithBaseURL16381;
 		public virtual void loadDataWithBaseURL(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._loadDataWithBaseURL16381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadDataWithBaseURL16381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadDataWithBaseURL16381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopLoading16382;
 		public virtual void stopLoading()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._stopLoading16382);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._stopLoading16382);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._stopLoading16382);
 		}
 		internal static global::MonoJavaBridge.MethodId _canGoBack16383;
 		public virtual bool canGoBack()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._canGoBack16383);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBack16383);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBack16383);
 		}
 		internal static global::MonoJavaBridge.MethodId _goBack16384;
 		public virtual void goBack()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._goBack16384);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBack16384);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBack16384);
 		}
 		internal static global::MonoJavaBridge.MethodId _canGoForward16385;
 		public virtual bool canGoForward()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._canGoForward16385);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoForward16385);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoForward16385);
 		}
 		internal static global::MonoJavaBridge.MethodId _goForward16386;
 		public virtual void goForward()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._goForward16386);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goForward16386);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goForward16386);
 		}
 		internal static global::MonoJavaBridge.MethodId _canGoBackOrForward16387;
 		public virtual bool canGoBackOrForward(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._canGoBackOrForward16387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBackOrForward16387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBackOrForward16387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _goBackOrForward16388;
 		public virtual void goBackOrForward(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._goBackOrForward16388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBackOrForward16388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBackOrForward16388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _pageUp16389;
 		public virtual bool pageUp(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._pageUp16389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageUp16389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageUp16389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _pageDown16390;
 		public virtual bool pageDown(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._pageDown16390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageDown16390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageDown16390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearView16391;
 		public virtual void clearView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearView16391);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearView16391);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearView16391);
 		}
 		internal static global::MonoJavaBridge.MethodId _capturePicture16392;
 		public virtual global::android.graphics.Picture capturePicture()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._capturePicture16392)) as android.graphics.Picture;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._capturePicture16392)) as android.graphics.Picture;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._capturePicture16392)) as android.graphics.Picture;
 		}
 		public new float Scale
 		{
@@ -995,11 +696,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getScale16393;
 		public virtual float getScale()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.webkit.WebView._getScale16393);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getScale16393);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getScale16393);
 		}
 		public new int InitialScale
 		{
@@ -1011,47 +708,27 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setInitialScale16394;
 		public virtual void setInitialScale(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setInitialScale16394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setInitialScale16394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setInitialScale16394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _invokeZoomPicker16395;
 		public virtual void invokeZoomPicker()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._invokeZoomPicker16395);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._invokeZoomPicker16395);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._invokeZoomPicker16395);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHitTestResult16396;
 		public virtual global::android.webkit.WebView.HitTestResult getHitTestResult()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getHitTestResult16396)) as android.webkit.WebView.HitTestResult;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHitTestResult16396)) as android.webkit.WebView.HitTestResult;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHitTestResult16396)) as android.webkit.WebView.HitTestResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _requestFocusNodeHref16397;
 		public virtual void requestFocusNodeHref(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._requestFocusNodeHref16397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocusNodeHref16397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocusNodeHref16397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestImageRef16398;
 		public virtual void requestImageRef(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._requestImageRef16398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestImageRef16398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestImageRef16398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ContentHeight
 		{
@@ -1063,74 +740,42 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getContentHeight16399;
 		public virtual int getContentHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._getContentHeight16399);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getContentHeight16399);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getContentHeight16399);
 		}
 		internal static global::MonoJavaBridge.MethodId _pauseTimers16400;
 		public virtual void pauseTimers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._pauseTimers16400);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pauseTimers16400);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pauseTimers16400);
 		}
 		internal static global::MonoJavaBridge.MethodId _resumeTimers16401;
 		public virtual void resumeTimers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._resumeTimers16401);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._resumeTimers16401);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._resumeTimers16401);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearFormData16402;
 		public virtual void clearFormData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearFormData16402);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearFormData16402);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearFormData16402);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearSslPreferences16403;
 		public virtual void clearSslPreferences()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearSslPreferences16403);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearSslPreferences16403);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearSslPreferences16403);
 		}
 		internal static global::MonoJavaBridge.MethodId _copyBackForwardList16404;
 		public virtual global::android.webkit.WebBackForwardList copyBackForwardList()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._copyBackForwardList16404)) as android.webkit.WebBackForwardList;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._copyBackForwardList16404)) as android.webkit.WebBackForwardList;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._copyBackForwardList16404)) as android.webkit.WebBackForwardList;
 		}
 		internal static global::MonoJavaBridge.MethodId _findNext16405;
 		public virtual void findNext(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._findNext16405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findNext16405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findNext16405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _findAll16406;
 		public virtual int findAll(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebView._findAll16406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findAll16406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findAll16406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _findAddress16407;
 		public static global::java.lang.String findAddress(java.lang.String arg0)
@@ -1141,20 +786,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _clearMatches16408;
 		public virtual void clearMatches()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._clearMatches16408);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearMatches16408);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearMatches16408);
 		}
 		internal static global::MonoJavaBridge.MethodId _documentHasImages16409;
 		public virtual void documentHasImages(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._documentHasImages16409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._documentHasImages16409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._documentHasImages16409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.webkit.WebViewClient WebViewClient
 		{
@@ -1166,11 +803,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setWebViewClient16410;
 		public virtual void setWebViewClient(android.webkit.WebViewClient arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setWebViewClient16410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebViewClient16410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebViewClient16410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.webkit.DownloadListener DownloadListener
 		{
@@ -1182,11 +815,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setDownloadListener16411;
 		public virtual void setDownloadListener(android.webkit.DownloadListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setDownloadListener16411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setDownloadListener16411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setDownloadListener16411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setDownloadListener(global::android.webkit.DownloadListenerDelegate arg0)
 		{
@@ -1202,20 +831,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setWebChromeClient16412;
 		public virtual void setWebChromeClient(android.webkit.WebChromeClient arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setWebChromeClient16412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebChromeClient16412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebChromeClient16412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPictureListener16413;
 		public virtual void setPictureListener(android.webkit.WebView.PictureListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setPictureListener16413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setPictureListener16413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setPictureListener16413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setPictureListener(global::android.webkit.WebView.PictureListenerDelegate arg0)
 		{
@@ -1224,11 +845,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _addJavascriptInterface16414;
 		public virtual void addJavascriptInterface(java.lang.Object arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._addJavascriptInterface16414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._addJavascriptInterface16414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._addJavascriptInterface16414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.webkit.WebSettings Settings
 		{
@@ -1240,11 +857,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSettings16415;
 		public virtual global::android.webkit.WebSettings getSettings()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getSettings16415)) as android.webkit.WebSettings;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getSettings16415)) as android.webkit.WebSettings;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getSettings16415)) as android.webkit.WebSettings;
 		}
 		public static global::android.webkit.PluginList PluginList
 		{
@@ -1262,20 +875,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _refreshPlugins16417;
 		public virtual void refreshPlugins(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._refreshPlugins16417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._refreshPlugins16417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._refreshPlugins16417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _emulateShiftHeld16418;
 		public virtual void emulateShiftHeld()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._emulateShiftHeld16418);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._emulateShiftHeld16418);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._emulateShiftHeld16418);
 		}
 		public new bool MapTrackballToArrowKeys
 		{
@@ -1287,20 +892,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _setMapTrackballToArrowKeys16419;
 		public virtual void setMapTrackballToArrowKeys(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._setMapTrackballToArrowKeys16419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setMapTrackballToArrowKeys16419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setMapTrackballToArrowKeys16419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flingScroll16420;
 		public virtual void flingScroll(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._flingScroll16420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._flingScroll16420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._flingScroll16420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.view.View ZoomControls
 		{
@@ -1312,38 +909,22 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getZoomControls16421;
 		public virtual global::android.view.View getZoomControls()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebView._getZoomControls16421)) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getZoomControls16421)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getZoomControls16421)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _zoomIn16422;
 		public virtual bool zoomIn()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._zoomIn16422);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomIn16422);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomIn16422);
 		}
 		internal static global::MonoJavaBridge.MethodId _zoomOut16423;
 		public virtual bool zoomOut()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebView._zoomOut16423);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomOut16423);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomOut16423);
 		}
 		internal static global::MonoJavaBridge.MethodId _debugDump16424;
 		public virtual void debugDump()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebView._debugDump16424);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._debugDump16424);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._debugDump16424);
 		}
 		internal static global::MonoJavaBridge.MethodId _WebView16425;
 		public WebView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

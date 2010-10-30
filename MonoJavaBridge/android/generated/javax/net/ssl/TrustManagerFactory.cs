@@ -28,20 +28,12 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _init30125;
 		public virtual void init(java.security.KeyStore arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory._init30125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _init30126;
 		public virtual void init(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory._init30126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._init30126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -53,11 +45,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm30127;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getAlgorithm30127)) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -69,11 +57,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getProvider30128;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory._getProvider30128)) as java.security.Provider;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getProvider30128)) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getProvider30128)) as java.security.Provider;
 		}
 		public static global::java.lang.String DefaultAlgorithm
 		{
@@ -98,11 +82,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getTrustManagers30130;
 		public virtual global::javax.net.ssl.TrustManager[] getTrustManagers()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.net.ssl.TrustManager>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130)) as javax.net.ssl.TrustManager[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.net.ssl.TrustManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130)) as javax.net.ssl.TrustManager[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.net.ssl.TrustManager>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.TrustManagerFactory.staticClass, global::javax.net.ssl.TrustManagerFactory._getTrustManagers30130)) as javax.net.ssl.TrustManager[];
 		}
 		internal static global::MonoJavaBridge.MethodId _TrustManagerFactory30131;
 		protected TrustManagerFactory(javax.net.ssl.TrustManagerFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

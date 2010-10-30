@@ -10,20 +10,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _equals5631;
 		public virtual bool equals(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PointF._equals5631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._equals5631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._equals5631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _offset5632;
 		public virtual void offset(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PointF._offset5632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._offset5632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._offset5632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _length5633;
 		public static float length(float arg0, float arg1)
@@ -34,38 +26,22 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _length5634;
 		public virtual float length()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.graphics.PointF._length5634);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._length5634);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._length5634);
 		}
 		internal static global::MonoJavaBridge.MethodId _set5635;
 		public virtual void set(android.graphics.PointF arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PointF._set5635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._set5635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._set5635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _set5636;
 		public virtual void set(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PointF._set5636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._set5636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._set5636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _negate5637;
 		public virtual void negate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PointF._negate5637);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._negate5637);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.PointF.staticClass, global::android.graphics.PointF._negate5637);
 		}
 		internal static global::MonoJavaBridge.MethodId _PointF5638;
 		public PointF(float arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

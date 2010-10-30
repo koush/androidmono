@@ -10,20 +10,12 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _close28100;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler._close28100);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._close28100);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._close28100);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish28101;
 		public override void publish(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler._publish28101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._publish28101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._publish28101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketHandler28102;
 		public SocketHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

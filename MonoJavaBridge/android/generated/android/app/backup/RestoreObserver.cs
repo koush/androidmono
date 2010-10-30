@@ -10,29 +10,17 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _restoreStarting2333;
 		public virtual void restoreStarting(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver._restoreStarting2333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._restoreStarting2333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._restoreStarting2333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onUpdate2334;
 		public virtual void onUpdate(int arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver._onUpdate2334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._onUpdate2334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._onUpdate2334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _restoreFinished2335;
 		public virtual void restoreFinished(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver._restoreFinished2335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._restoreFinished2335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._restoreFinished2335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _RestoreObserver2336;
 		public RestoreObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

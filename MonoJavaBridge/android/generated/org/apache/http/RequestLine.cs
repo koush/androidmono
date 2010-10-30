@@ -19,28 +19,19 @@ namespace org.apache.http
 		global::java.lang.String org.apache.http.RequestLine.getMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getMethod31760)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_.staticClass, global::org.apache.http.RequestLine_._getMethod31760)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getMethod31760)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion31761;
 		global::org.apache.http.ProtocolVersion org.apache.http.RequestLine.getProtocolVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getProtocolVersion31761)) as org.apache.http.ProtocolVersion;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_.staticClass, global::org.apache.http.RequestLine_._getProtocolVersion31761)) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getProtocolVersion31761)) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUri31762;
 		global::java.lang.String org.apache.http.RequestLine.getUri()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getUri31762)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_.staticClass, global::org.apache.http.RequestLine_._getUri31762)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.RequestLine_._getUri31762)) as java.lang.String;
 		}
 		static RequestLine_()
 		{

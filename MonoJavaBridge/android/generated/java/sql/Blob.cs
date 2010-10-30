@@ -27,100 +27,67 @@ namespace java.sql
 		long java.sql.Blob.length()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._length24102);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._length24102);
+			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._length24102);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytes24103;
 		byte[] java.sql.Blob.getBytes(long arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBytes24103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._getBytes24103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBytes24103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _position24104;
 		long java.sql.Blob.position(byte[] arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._position24104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._position24104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._position24104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _position24105;
 		long java.sql.Blob.position(java.sql.Blob arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._position24105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._position24105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Blob_._position24105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _truncate24106;
 		void java.sql.Blob.truncate(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Blob_._truncate24106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._truncate24106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Blob_._truncate24106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _free24107;
 		void java.sql.Blob.free()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Blob_._free24107);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._free24107);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Blob_._free24107);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBinaryStream24108;
 		global::java.io.InputStream java.sql.Blob.getBinaryStream(long arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBinaryStream24108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._getBinaryStream24108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBinaryStream24108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBinaryStream24109;
 		global::java.io.InputStream java.sql.Blob.getBinaryStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBinaryStream24109)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._getBinaryStream24109)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._getBinaryStream24109)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _setBytes24110;
 		int java.sql.Blob.setBytes(long arg0, byte[] arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Blob_._setBytes24110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._setBytes24110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Blob_._setBytes24110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBytes24111;
 		int java.sql.Blob.setBytes(long arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Blob_._setBytes24111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._setBytes24111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Blob_._setBytes24111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBinaryStream24112;
 		global::java.io.OutputStream java.sql.Blob.setBinaryStream(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._setBinaryStream24112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Blob_.staticClass, global::java.sql.Blob_._setBinaryStream24112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Blob_._setBinaryStream24112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.OutputStream;
 		}
 		static Blob_()
 		{

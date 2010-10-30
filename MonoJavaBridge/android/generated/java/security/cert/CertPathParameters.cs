@@ -17,10 +17,7 @@ namespace java.security.cert
 		global::java.lang.Object java.security.cert.CertPathParameters.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathParameters_._clone23512)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertPathParameters_.staticClass, global::java.security.cert.CertPathParameters_._clone23512)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathParameters_._clone23512)) as java.lang.Object;
 		}
 		static CertPathParameters_()
 		{

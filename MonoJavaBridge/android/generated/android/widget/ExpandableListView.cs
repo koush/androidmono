@@ -87,10 +87,7 @@ namespace android.widget
 			bool android.widget.ExpandableListView.OnChildClickListener.onChildClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, int arg3, long arg4)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnChildClickListener_._onChildClick17026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnChildClickListener_.staticClass, global::android.widget.ExpandableListView.OnChildClickListener_._onChildClick17026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnChildClickListener_._onChildClick17026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			}
 			static OnChildClickListener_()
 			{
@@ -160,10 +157,7 @@ namespace android.widget
 			bool android.widget.ExpandableListView.OnGroupClickListener.onGroupClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, long arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupClickListener_._onGroupClick17028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupClickListener_.staticClass, global::android.widget.ExpandableListView.OnGroupClickListener_._onGroupClick17028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupClickListener_._onGroupClick17028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			static OnGroupClickListener_()
 			{
@@ -233,10 +227,7 @@ namespace android.widget
 			void android.widget.ExpandableListView.OnGroupCollapseListener.onGroupCollapse(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupCollapseListener_._onGroupCollapse17030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupCollapseListener_.staticClass, global::android.widget.ExpandableListView.OnGroupCollapseListener_._onGroupCollapse17030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupCollapseListener_._onGroupCollapse17030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnGroupCollapseListener_()
 			{
@@ -306,10 +297,7 @@ namespace android.widget
 			void android.widget.ExpandableListView.OnGroupExpandListener.onGroupExpand(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupExpandListener_._onGroupExpand17032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupExpandListener_.staticClass, global::android.widget.ExpandableListView.OnGroupExpandListener_._onGroupExpand17032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.OnGroupExpandListener_._onGroupExpand17032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnGroupExpandListener_()
 			{
@@ -365,47 +353,27 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState17034;
 		public override void onRestoreInstanceState(android.os.Parcelable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._onRestoreInstanceState17034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onRestoreInstanceState17034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onRestoreInstanceState17034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState17035;
 		public override global::android.os.Parcelable onSaveInstanceState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView._onSaveInstanceState17035)) as android.os.Parcelable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onSaveInstanceState17035)) as android.os.Parcelable;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onSaveInstanceState17035)) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchDraw17036;
 		protected override void dispatchDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._dispatchDraw17036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._dispatchDraw17036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._dispatchDraw17036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAdapter17037;
 		public override void setAdapter(android.widget.ListAdapter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setAdapter17037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter17037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter17037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAdapter17038;
 		public virtual void setAdapter(android.widget.ExpandableListAdapter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setAdapter17038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter17038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter17038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.AdapterView.OnItemClickListener OnItemClickListener
 		{
@@ -417,11 +385,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnItemClickListener17039;
 		public override void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setOnItemClickListener17039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnItemClickListener17039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnItemClickListener17039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnItemClickListener(global::android.widget.AdapterView.OnItemClickListenerDelegate arg0)
 		{
@@ -430,11 +394,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _performItemClick17040;
 		public override bool performItemClick(android.view.View arg0, int arg1, long arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView._performItemClick17040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._performItemClick17040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._performItemClick17040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::android.widget.ListAdapter Adapter
 		{
@@ -450,11 +410,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getAdapter17041;
 		public virtual global::android.widget.ListAdapter getAdapter()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView._getAdapter17041)) as android.widget.ListAdapter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getAdapter17041)) as android.widget.ListAdapter;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getAdapter17041)) as android.widget.ListAdapter;
 		}
 		public new global::android.widget.ExpandableListAdapter ExpandableListAdapter
 		{
@@ -466,11 +422,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getExpandableListAdapter17042;
 		public virtual global::android.widget.ExpandableListAdapter getExpandableListAdapter()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ExpandableListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView._getExpandableListAdapter17042)) as android.widget.ExpandableListAdapter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ExpandableListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListAdapter17042)) as android.widget.ExpandableListAdapter;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ExpandableListAdapter>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListAdapter17042)) as android.widget.ExpandableListAdapter;
 		}
 		public new long SelectedId
 		{
@@ -482,11 +434,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getSelectedId17043;
 		public virtual long getSelectedId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.ExpandableListView._getSelectedId17043);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedId17043);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedId17043);
 		}
 		public new long SelectedPosition
 		{
@@ -498,20 +446,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getSelectedPosition17044;
 		public virtual long getSelectedPosition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.ExpandableListView._getSelectedPosition17044);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedPosition17044);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedPosition17044);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelectedChild17045;
 		public virtual bool setSelectedChild(int arg0, int arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView._setSelectedChild17045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedChild17045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedChild17045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new int SelectedGroup
 		{
@@ -523,11 +463,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setSelectedGroup17046;
 		public virtual void setSelectedGroup(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setSelectedGroup17046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedGroup17046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedGroup17046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable ChildDivider
 		{
@@ -539,38 +475,22 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setChildDivider17047;
 		public virtual void setChildDivider(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setChildDivider17047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildDivider17047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildDivider17047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _expandGroup17048;
 		public virtual bool expandGroup(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView._expandGroup17048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._expandGroup17048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._expandGroup17048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _collapseGroup17049;
 		public virtual bool collapseGroup(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView._collapseGroup17049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._collapseGroup17049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._collapseGroup17049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnGroupCollapseListener17050;
 		public virtual void setOnGroupCollapseListener(android.widget.ExpandableListView.OnGroupCollapseListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setOnGroupCollapseListener17050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupCollapseListener17050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupCollapseListener17050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnGroupCollapseListener(global::android.widget.ExpandableListView.OnGroupCollapseListenerDelegate arg0)
 		{
@@ -579,11 +499,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnGroupExpandListener17051;
 		public virtual void setOnGroupExpandListener(android.widget.ExpandableListView.OnGroupExpandListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setOnGroupExpandListener17051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupExpandListener17051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupExpandListener17051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnGroupExpandListener(global::android.widget.ExpandableListView.OnGroupExpandListenerDelegate arg0)
 		{
@@ -592,11 +508,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnGroupClickListener17052;
 		public virtual void setOnGroupClickListener(android.widget.ExpandableListView.OnGroupClickListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setOnGroupClickListener17052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupClickListener17052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupClickListener17052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnGroupClickListener(global::android.widget.ExpandableListView.OnGroupClickListenerDelegate arg0)
 		{
@@ -605,11 +517,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnChildClickListener17053;
 		public virtual void setOnChildClickListener(android.widget.ExpandableListView.OnChildClickListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setOnChildClickListener17053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnChildClickListener17053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnChildClickListener17053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnChildClickListener(global::android.widget.ExpandableListView.OnChildClickListenerDelegate arg0)
 		{
@@ -618,29 +526,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getExpandableListPosition17054;
 		public virtual long getExpandableListPosition(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.ExpandableListView._getExpandableListPosition17054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListPosition17054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListPosition17054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFlatListPosition17055;
 		public virtual int getFlatListPosition(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.ExpandableListView._getFlatListPosition17055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getFlatListPosition17055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getFlatListPosition17055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isGroupExpanded17056;
 		public virtual bool isGroupExpanded(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView._isGroupExpanded17056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._isGroupExpanded17056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._isGroupExpanded17056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackedPositionType17057;
 		public static int getPackedPositionType(long arg0)
@@ -682,20 +578,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setChildIndicator17062;
 		public virtual void setChildIndicator(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setChildIndicator17062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicator17062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicator17062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setChildIndicatorBounds17063;
 		public virtual void setChildIndicatorBounds(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setChildIndicatorBounds17063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicatorBounds17063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicatorBounds17063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.graphics.drawable.Drawable GroupIndicator
 		{
@@ -707,20 +595,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setGroupIndicator17064;
 		public virtual void setGroupIndicator(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setGroupIndicator17064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setGroupIndicator17064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setGroupIndicator17064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIndicatorBounds17065;
 		public virtual void setIndicatorBounds(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView._setIndicatorBounds17065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setIndicatorBounds17065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setIndicatorBounds17065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ExpandableListView17066;
 		public ExpandableListView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

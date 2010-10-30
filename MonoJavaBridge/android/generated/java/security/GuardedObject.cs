@@ -17,11 +17,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getObject22958;
 		public virtual global::java.lang.Object getObject()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.GuardedObject._getObject22958)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.GuardedObject.staticClass, global::java.security.GuardedObject._getObject22958)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.GuardedObject.staticClass, global::java.security.GuardedObject._getObject22958)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _GuardedObject22959;
 		public GuardedObject(java.lang.Object arg0, java.security.Guard arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

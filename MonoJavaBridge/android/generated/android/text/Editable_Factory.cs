@@ -23,11 +23,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _newEditable12740;
 		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Editable_Factory._newEditable12740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Editable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable12740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Editable;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable12740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Editable;
 		}
 		public android.text.Editable newEditable(string arg0)
 		{

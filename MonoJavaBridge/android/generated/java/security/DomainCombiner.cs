@@ -17,10 +17,7 @@ namespace java.security
 		global::java.security.ProtectionDomain[] java.security.DomainCombiner.combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.ProtectionDomain>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.ProtectionDomain[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.ProtectionDomain>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.DomainCombiner_.staticClass, global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.ProtectionDomain[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.ProtectionDomain>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.ProtectionDomain[];
 		}
 		static DomainCombiner_()
 		{

@@ -10,11 +10,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _childValue20189;
 		protected virtual global::java.lang.Object childValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _InheritableThreadLocal20190;
 		public InheritableThreadLocal() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

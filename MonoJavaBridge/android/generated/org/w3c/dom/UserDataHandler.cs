@@ -17,10 +17,7 @@ namespace org.w3c.dom
 		void org.w3c.dom.UserDataHandler.handle(short arg0, java.lang.String arg1, java.lang.Object arg2, org.w3c.dom.Node arg3, org.w3c.dom.Node arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.w3c.dom.UserDataHandler_._handle34876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.UserDataHandler_.staticClass, global::org.w3c.dom.UserDataHandler_._handle34876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.w3c.dom.UserDataHandler_._handle34876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		static UserDataHandler_()
 		{

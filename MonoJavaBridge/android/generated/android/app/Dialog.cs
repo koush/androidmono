@@ -17,38 +17,22 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getContext1747;
 		public virtual global::android.content.Context getContext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getContext1747)) as android.content.Context;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getContext1747)) as android.content.Context;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getContext1747)) as android.content.Context;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel1748;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._cancel1748);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._cancel1748);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._cancel1748);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1749;
 		protected virtual void onCreate(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onCreate1749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreate1749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreate1749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart1750;
 		protected virtual void onStart()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onStart1750);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onStart1750);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onStart1750);
 		}
 		public new global::android.view.Window Window
 		{
@@ -60,11 +44,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getWindow1751;
 		public virtual global::android.view.Window getWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getWindow1751)) as android.view.Window;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getWindow1751)) as android.view.Window;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getWindow1751)) as android.view.Window;
 		}
 		public new global::android.view.View CurrentFocus
 		{
@@ -76,452 +56,252 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getCurrentFocus1752;
 		public virtual global::android.view.View getCurrentFocus()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getCurrentFocus1752)) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getCurrentFocus1752)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getCurrentFocus1752)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState1753;
 		public virtual void onRestoreInstanceState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onRestoreInstanceState1753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onRestoreInstanceState1753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onRestoreInstanceState1753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState1754;
 		public virtual global::android.os.Bundle onSaveInstanceState()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._onSaveInstanceState1754)) as android.os.Bundle;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onSaveInstanceState1754)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onSaveInstanceState1754)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _onStop1755;
 		protected virtual void onStop()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onStop1755);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onStop1755);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onStop1755);
 		}
 		internal static global::MonoJavaBridge.MethodId _findViewById1756;
 		public virtual global::android.view.View findViewById(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._findViewById1756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._findViewById1756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._findViewById1756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentView1757;
 		public virtual void setContentView(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setContentView1757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentView1758;
 		public virtual void setContentView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setContentView1758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentView1759;
 		public virtual void setContentView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setContentView1759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setContentView1759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addContentView1760;
 		public virtual void addContentView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._addContentView1760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._addContentView1760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._addContentView1760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown1761;
 		public virtual bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onKeyDown1761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyDown1761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyDown1761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyLongPress1762;
 		public virtual bool onKeyLongPress(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onKeyLongPress1762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyLongPress1762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyLongPress1762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp1763;
 		public virtual bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onKeyUp1763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyUp1763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyUp1763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyMultiple1764;
 		public virtual bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onKeyMultiple1764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyMultiple1764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onKeyMultiple1764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onBackPressed1765;
 		public virtual void onBackPressed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onBackPressed1765);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onBackPressed1765);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onBackPressed1765);
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent1766;
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onTouchEvent1766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onTouchEvent1766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onTouchEvent1766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTrackballEvent1767;
 		public virtual bool onTrackballEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onTrackballEvent1767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onTrackballEvent1767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onTrackballEvent1767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onWindowAttributesChanged1768;
 		public virtual void onWindowAttributesChanged(android.view.WindowManager_LayoutParams arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onWindowAttributesChanged1768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onWindowAttributesChanged1768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onWindowAttributesChanged1768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContentChanged1769;
 		public virtual void onContentChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onContentChanged1769);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContentChanged1769);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContentChanged1769);
 		}
 		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged1770;
 		public virtual void onWindowFocusChanged(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onWindowFocusChanged1770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onWindowFocusChanged1770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onWindowFocusChanged1770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow1771;
 		public virtual void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onAttachedToWindow1771);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onAttachedToWindow1771);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onAttachedToWindow1771);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow1772;
 		public virtual void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onDetachedFromWindow1772);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onDetachedFromWindow1772);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onDetachedFromWindow1772);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent1773;
 		public virtual bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._dispatchKeyEvent1773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchKeyEvent1773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchKeyEvent1773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchTouchEvent1774;
 		public virtual bool dispatchTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._dispatchTouchEvent1774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchTouchEvent1774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchTouchEvent1774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchTrackballEvent1775;
 		public virtual bool dispatchTrackballEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._dispatchTrackballEvent1775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchTrackballEvent1775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchTrackballEvent1775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent1776;
 		public virtual bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._dispatchPopulateAccessibilityEvent1776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchPopulateAccessibilityEvent1776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._dispatchPopulateAccessibilityEvent1776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreatePanelView1777;
 		public virtual global::android.view.View onCreatePanelView(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._onCreatePanelView1777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreatePanelView1777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreatePanelView1777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreatePanelMenu1778;
 		public virtual bool onCreatePanelMenu(int arg0, android.view.Menu arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onCreatePanelMenu1778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreatePanelMenu1778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreatePanelMenu1778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onPreparePanel1779;
 		public virtual bool onPreparePanel(int arg0, android.view.View arg1, android.view.Menu arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onPreparePanel1779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPreparePanel1779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPreparePanel1779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMenuOpened1780;
 		public virtual bool onMenuOpened(int arg0, android.view.Menu arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onMenuOpened1780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onMenuOpened1780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onMenuOpened1780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMenuItemSelected1781;
 		public virtual bool onMenuItemSelected(int arg0, android.view.MenuItem arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onMenuItemSelected1781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onMenuItemSelected1781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onMenuItemSelected1781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onPanelClosed1782;
 		public virtual void onPanelClosed(int arg0, android.view.Menu arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onPanelClosed1782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPanelClosed1782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPanelClosed1782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateOptionsMenu1783;
 		public virtual bool onCreateOptionsMenu(android.view.Menu arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onCreateOptionsMenu1783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreateOptionsMenu1783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreateOptionsMenu1783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onPrepareOptionsMenu1784;
 		public virtual bool onPrepareOptionsMenu(android.view.Menu arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onPrepareOptionsMenu1784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPrepareOptionsMenu1784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onPrepareOptionsMenu1784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onOptionsItemSelected1785;
 		public virtual bool onOptionsItemSelected(android.view.MenuItem arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onOptionsItemSelected1785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onOptionsItemSelected1785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onOptionsItemSelected1785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onOptionsMenuClosed1786;
 		public virtual void onOptionsMenuClosed(android.view.Menu arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onOptionsMenuClosed1786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onOptionsMenuClosed1786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onOptionsMenuClosed1786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _openOptionsMenu1787;
 		public virtual void openOptionsMenu()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._openOptionsMenu1787);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._openOptionsMenu1787);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._openOptionsMenu1787);
 		}
 		internal static global::MonoJavaBridge.MethodId _closeOptionsMenu1788;
 		public virtual void closeOptionsMenu()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._closeOptionsMenu1788);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._closeOptionsMenu1788);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._closeOptionsMenu1788);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateContextMenu1789;
 		public virtual void onCreateContextMenu(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu_ContextMenuInfo arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onCreateContextMenu1789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreateContextMenu1789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onCreateContextMenu1789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _registerForContextMenu1790;
 		public virtual void registerForContextMenu(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._registerForContextMenu1790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._registerForContextMenu1790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._registerForContextMenu1790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterForContextMenu1791;
 		public virtual void unregisterForContextMenu(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._unregisterForContextMenu1791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._unregisterForContextMenu1791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._unregisterForContextMenu1791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _openContextMenu1792;
 		public virtual void openContextMenu(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._openContextMenu1792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._openContextMenu1792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._openContextMenu1792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContextItemSelected1793;
 		public virtual bool onContextItemSelected(android.view.MenuItem arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onContextItemSelected1793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContextItemSelected1793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContextItemSelected1793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContextMenuClosed1794;
 		public virtual void onContextMenuClosed(android.view.Menu arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._onContextMenuClosed1794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContextMenuClosed1794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onContextMenuClosed1794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSearchRequested1795;
 		public virtual bool onSearchRequested()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._onSearchRequested1795);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onSearchRequested1795);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._onSearchRequested1795);
 		}
 		internal static global::MonoJavaBridge.MethodId _takeKeyEvents1796;
 		public virtual void takeKeyEvents(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._takeKeyEvents1796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._takeKeyEvents1796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._takeKeyEvents1796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestWindowFeature1797;
 		public virtual bool requestWindowFeature(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._requestWindowFeature1797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._requestWindowFeature1797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._requestWindowFeature1797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeatureDrawableResource1798;
 		public virtual void setFeatureDrawableResource(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setFeatureDrawableResource1798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableResource1798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableResource1798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeatureDrawableUri1799;
 		public virtual void setFeatureDrawableUri(int arg0, android.net.Uri arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setFeatureDrawableUri1799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableUri1799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableUri1799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeatureDrawable1800;
 		public virtual void setFeatureDrawable(int arg0, android.graphics.drawable.Drawable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setFeatureDrawable1800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawable1800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawable1800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeatureDrawableAlpha1801;
 		public virtual void setFeatureDrawableAlpha(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setFeatureDrawableAlpha1801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableAlpha1801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableAlpha1801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.view.LayoutInflater LayoutInflater
 		{
@@ -533,29 +313,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getLayoutInflater1802;
 		public virtual global::android.view.LayoutInflater getLayoutInflater()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getLayoutInflater1802)) as android.view.LayoutInflater;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getLayoutInflater1802)) as android.view.LayoutInflater;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getLayoutInflater1802)) as android.view.LayoutInflater;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTitle1803;
 		public virtual void setTitle(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setTitle1803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setTitle1803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setTitle1803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTitle1804;
 		public virtual void setTitle(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setTitle1804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setTitle1804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setTitle1804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTitle(string arg0)
 		{
@@ -564,11 +332,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setVolumeControlStream1805;
 		public virtual void setVolumeControlStream(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setVolumeControlStream1805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setVolumeControlStream1805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setVolumeControlStream1805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int VolumeControlStream
 		{
@@ -584,11 +348,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getVolumeControlStream1806;
 		public virtual int getVolumeControlStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.Dialog._getVolumeControlStream1806);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getVolumeControlStream1806);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getVolumeControlStream1806);
 		}
 		public new global::android.content.DialogInterface_OnKeyListener OnKeyListener
 		{
@@ -600,11 +360,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOnKeyListener1807;
 		public virtual void setOnKeyListener(android.content.DialogInterface_OnKeyListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOnKeyListener1807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnKeyListener1807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnKeyListener1807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnKeyListener(global::android.content.DialogInterface_OnKeyListenerDelegate arg0)
 		{
@@ -613,11 +369,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOwnerActivity1808;
 		public virtual void setOwnerActivity(android.app.Activity arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOwnerActivity1808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOwnerActivity1808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOwnerActivity1808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.app.Activity OwnerActivity
 		{
@@ -633,47 +385,27 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getOwnerActivity1809;
 		public virtual global::android.app.Activity getOwnerActivity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getOwnerActivity1809)) as android.app.Activity;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getOwnerActivity1809)) as android.app.Activity;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._getOwnerActivity1809)) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShowing1810;
 		public virtual bool isShowing()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.Dialog._isShowing1810);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._isShowing1810);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._isShowing1810);
 		}
 		internal static global::MonoJavaBridge.MethodId _show1811;
 		public virtual void show()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._show1811);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._show1811);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._show1811);
 		}
 		internal static global::MonoJavaBridge.MethodId _hide1812;
 		public virtual void hide()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._hide1812);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._hide1812);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._hide1812);
 		}
 		internal static global::MonoJavaBridge.MethodId _dismiss1813;
 		public virtual void dismiss()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._dismiss1813);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._dismiss1813);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._dismiss1813);
 		}
 		public new bool Cancelable
 		{
@@ -685,11 +417,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setCancelable1814;
 		public virtual void setCancelable(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setCancelable1814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCancelable1814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCancelable1814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool CanceledOnTouchOutside
 		{
@@ -701,11 +429,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setCanceledOnTouchOutside1815;
 		public virtual void setCanceledOnTouchOutside(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setCanceledOnTouchOutside1815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCanceledOnTouchOutside1815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCanceledOnTouchOutside1815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.content.DialogInterface_OnCancelListener OnCancelListener
 		{
@@ -717,11 +441,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOnCancelListener1816;
 		public virtual void setOnCancelListener(android.content.DialogInterface_OnCancelListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOnCancelListener1816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnCancelListener1816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnCancelListener1816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnCancelListener(global::android.content.DialogInterface_OnCancelListenerDelegate arg0)
 		{
@@ -737,11 +457,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setCancelMessage1817;
 		public virtual void setCancelMessage(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setCancelMessage1817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCancelMessage1817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setCancelMessage1817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.content.DialogInterface_OnDismissListener OnDismissListener
 		{
@@ -753,11 +469,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOnDismissListener1818;
 		public virtual void setOnDismissListener(android.content.DialogInterface_OnDismissListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOnDismissListener1818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnDismissListener1818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnDismissListener1818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnDismissListener(global::android.content.DialogInterface_OnDismissListenerDelegate arg0)
 		{
@@ -773,11 +485,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setOnShowListener1819;
 		public virtual void setOnShowListener(android.content.DialogInterface_OnShowListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOnShowListener1819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnShowListener1819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOnShowListener1819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnShowListener(global::android.content.DialogInterface_OnShowListenerDelegate arg0)
 		{
@@ -793,11 +501,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setDismissMessage1820;
 		public virtual void setDismissMessage(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setDismissMessage1820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setDismissMessage1820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setDismissMessage1820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Dialog1821;
 		public Dialog(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

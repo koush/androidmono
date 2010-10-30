@@ -10,29 +10,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25400;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DateFormatSymbols._equals25400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._equals25400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._equals25400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25401;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DateFormatSymbols._hashCode25401);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._hashCode25401);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._hashCode25401);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone25402;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._clone25402)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._clone25402)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._clone25402)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25403;
 		public static global::java.text.DateFormatSymbols getInstance(java.util.Locale arg0)
@@ -80,20 +68,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getEras25406;
 		public virtual global::java.lang.String[] getEras()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getEras25406)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getEras25406)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getEras25406)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setEras25407;
 		public virtual void setEras(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setEras25407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setEras25407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setEras25407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String[] Months
 		{
@@ -109,11 +89,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getMonths25408;
 		public virtual global::java.lang.String[] getMonths()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getMonths25408)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getMonths25408)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getMonths25408)) as java.lang.String[];
 		}
 		public new global::java.lang.String[] ShortMonths
 		{
@@ -129,11 +105,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getShortMonths25409;
 		public virtual global::java.lang.String[] getShortMonths()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getShortMonths25409)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortMonths25409)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortMonths25409)) as java.lang.String[];
 		}
 		public new global::java.lang.String[] Weekdays
 		{
@@ -149,11 +121,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getWeekdays25410;
 		public virtual global::java.lang.String[] getWeekdays()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getWeekdays25410)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getWeekdays25410)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getWeekdays25410)) as java.lang.String[];
 		}
 		public new global::java.lang.String[] ShortWeekdays
 		{
@@ -169,11 +137,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getShortWeekdays25411;
 		public virtual global::java.lang.String[] getShortWeekdays()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getShortWeekdays25411)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortWeekdays25411)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortWeekdays25411)) as java.lang.String[];
 		}
 		public new global::java.lang.String[] AmPmStrings
 		{
@@ -189,56 +153,32 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getAmPmStrings25412;
 		public virtual global::java.lang.String[] getAmPmStrings()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getAmPmStrings25412)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getAmPmStrings25412)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getAmPmStrings25412)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setMonths25413;
 		public virtual void setMonths(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setMonths25413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setMonths25413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setMonths25413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShortMonths25414;
 		public virtual void setShortMonths(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setShortMonths25414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortMonths25414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortMonths25414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWeekdays25415;
 		public virtual void setWeekdays(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setWeekdays25415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setWeekdays25415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setWeekdays25415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShortWeekdays25416;
 		public virtual void setShortWeekdays(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setShortWeekdays25416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortWeekdays25416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortWeekdays25416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAmPmStrings25417;
 		public virtual void setAmPmStrings(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setAmPmStrings25417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setAmPmStrings25417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setAmPmStrings25417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String[][] ZoneStrings
 		{
@@ -254,20 +194,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getZoneStrings25418;
 		public virtual global::java.lang.String[][] getZoneStrings()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String[]>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getZoneStrings25418)) as java.lang.String[][];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getZoneStrings25418)) as java.lang.String[][];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String[]>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getZoneStrings25418)) as java.lang.String[][];
 		}
 		internal static global::MonoJavaBridge.MethodId _setZoneStrings25419;
 		public virtual void setZoneStrings(java.lang.String[][] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setZoneStrings25419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setZoneStrings25419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setZoneStrings25419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String LocalPatternChars
 		{
@@ -283,20 +215,12 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getLocalPatternChars25420;
 		public virtual global::java.lang.String getLocalPatternChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols._getLocalPatternChars25420)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getLocalPatternChars25420)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getLocalPatternChars25420)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLocalPatternChars25421;
 		public virtual void setLocalPatternChars(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols._setLocalPatternChars25421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setLocalPatternChars25421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setLocalPatternChars25421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DateFormatSymbols25422;
 		public DateFormatSymbols() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

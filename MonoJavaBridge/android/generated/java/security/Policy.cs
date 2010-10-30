@@ -10,56 +10,32 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getPermissions23229;
 		public virtual global::java.security.PermissionCollection getPermissions(java.security.CodeSource arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Policy._getPermissions23229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissions23230;
 		public virtual global::java.security.PermissionCollection getPermissions(java.security.ProtectionDomain arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Policy._getPermissions23230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getPermissions23230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23231;
 		public virtual bool implies(java.security.ProtectionDomain arg0, java.security.Permission arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.Policy._implies23231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._implies23231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._implies23231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getType23232;
 		public virtual global::java.lang.String getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Policy._getType23232)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._getType23232)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getType23232)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23233;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Policy._getProvider23233)) as java.security.Provider;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._getProvider23233)) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._getProvider23233)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _refresh23234;
 		public virtual void refresh()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.Policy._refresh23234);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Policy.staticClass, global::java.security.Policy._refresh23234);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Policy.staticClass, global::java.security.Policy._refresh23234);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPolicy23235;
 		public static global::java.security.Policy getPolicy()

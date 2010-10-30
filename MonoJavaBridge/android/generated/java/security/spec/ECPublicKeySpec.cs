@@ -17,11 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getParams24009;
 		public virtual global::java.security.spec.ECParameterSpec getParams()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getParams24009)) as java.security.spec.ECParameterSpec;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getParams24009)) as java.security.spec.ECParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getParams24009)) as java.security.spec.ECParameterSpec;
 		}
 		public new global::java.security.spec.ECPoint W
 		{
@@ -33,11 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getW24010;
 		public virtual global::java.security.spec.ECPoint getW()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getW24010)) as java.security.spec.ECPoint;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getW24010)) as java.security.spec.ECPoint;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getW24010)) as java.security.spec.ECPoint;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECPublicKeySpec24011;
 		public ECPublicKeySpec(java.security.spec.ECPoint arg0, java.security.spec.ECParameterSpec arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

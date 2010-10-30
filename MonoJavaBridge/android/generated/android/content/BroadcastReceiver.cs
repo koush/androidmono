@@ -12,146 +12,82 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _peekService2591;
 		public virtual global::android.os.IBinder peekService(android.content.Context arg0, android.content.Intent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver._peekService2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.IBinder;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._peekService2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._peekService2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultCode2592;
 		public virtual void setResultCode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setResultCode2592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultCode2592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultCode2592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultCode2593;
 		public virtual int getResultCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.BroadcastReceiver._getResultCode2593);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultCode2593);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultCode2593);
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultData2594;
 		public virtual void setResultData(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setResultData2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultData2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultData2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultData2595;
 		public virtual global::java.lang.String getResultData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver._getResultData2595)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultData2595)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultData2595)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResultExtras2596;
 		public virtual void setResultExtras(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setResultExtras2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultExtras2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultExtras2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultExtras2597;
 		public virtual global::android.os.Bundle getResultExtras(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver._getResultExtras2597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultExtras2597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultExtras2597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResult2598;
 		public virtual void setResult(int arg0, java.lang.String arg1, android.os.Bundle arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setResult2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResult2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResult2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAbortBroadcast2599;
 		public virtual bool getAbortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver._getAbortBroadcast2599);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getAbortBroadcast2599);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getAbortBroadcast2599);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortBroadcast2600;
 		public virtual void abortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._abortBroadcast2600);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._abortBroadcast2600);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._abortBroadcast2600);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearAbortBroadcast2601;
 		public virtual void clearAbortBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._clearAbortBroadcast2601);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._clearAbortBroadcast2601);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._clearAbortBroadcast2601);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOrderedBroadcast2602;
 		public virtual bool isOrderedBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver._isOrderedBroadcast2602);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isOrderedBroadcast2602);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isOrderedBroadcast2602);
 		}
 		internal static global::MonoJavaBridge.MethodId _isInitialStickyBroadcast2603;
 		public virtual bool isInitialStickyBroadcast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isInitialStickyBroadcast2603);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOrderedHint2604;
 		public virtual void setOrderedHint(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setOrderedHint2604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setOrderedHint2604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setOrderedHint2604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDebugUnregister2605;
 		public virtual void setDebugUnregister(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver._setDebugUnregister2605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setDebugUnregister2605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setDebugUnregister2605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDebugUnregister2606;
 		public virtual bool getDebugUnregister()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver._getDebugUnregister2606);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getDebugUnregister2606);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getDebugUnregister2606);
 		}
 		internal static global::MonoJavaBridge.MethodId _BroadcastReceiver2607;
 		public BroadcastReceiver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -199,10 +135,7 @@ namespace android.content
 		public override void onReceive(android.content.Context arg0, android.content.Intent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver_.staticClass, global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.content.BroadcastReceiver_._onReceive2608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static BroadcastReceiver_()
 		{

@@ -10,47 +10,27 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _write28384;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream._write28384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._write28384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._write28384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write28385;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream._write28385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._write28385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._write28385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close28386;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream._close28386);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._close28386);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._close28386);
 		}
 		internal static global::MonoJavaBridge.MethodId _finish28387;
 		public virtual void finish()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream._finish28387);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._finish28387);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._finish28387);
 		}
 		internal static global::MonoJavaBridge.MethodId _deflate28388;
 		protected virtual void deflate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream._deflate28388);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._deflate28388);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.DeflaterOutputStream.staticClass, global::java.util.zip.DeflaterOutputStream._deflate28388);
 		}
 		internal static global::MonoJavaBridge.MethodId _DeflaterOutputStream28389;
 		public DeflaterOutputStream(java.io.OutputStream arg0, java.util.zip.Deflater arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

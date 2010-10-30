@@ -19,28 +19,19 @@ namespace java.security.acl
 		bool java.security.acl.Owner.addOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._addOwner23462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._addOwner23462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._addOwner23462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteOwner23463;
 		bool java.security.acl.Owner.deleteOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._deleteOwner23463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._deleteOwner23463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._deleteOwner23463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isOwner23464;
 		bool java.security.acl.Owner.isOwner(java.security.Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._isOwner23464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._isOwner23464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_._isOwner23464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Owner_()
 		{

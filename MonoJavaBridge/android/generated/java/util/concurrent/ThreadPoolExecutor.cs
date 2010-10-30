@@ -17,11 +17,7 @@ namespace java.util.concurrent
 			internal static global::MonoJavaBridge.MethodId _rejectedExecution27456;
 			public virtual void rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._rejectedExecution27456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._rejectedExecution27456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.AbortPolicy._rejectedExecution27456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public void rejectedExecution(global::java.lang.RunnableDelegate arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
@@ -55,11 +51,7 @@ namespace java.util.concurrent
 			internal static global::MonoJavaBridge.MethodId _rejectedExecution27458;
 			public virtual void rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._rejectedExecution27458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._rejectedExecution27458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy._rejectedExecution27458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public void rejectedExecution(global::java.lang.RunnableDelegate arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
@@ -93,11 +85,7 @@ namespace java.util.concurrent
 			internal static global::MonoJavaBridge.MethodId _rejectedExecution27460;
 			public virtual void rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._rejectedExecution27460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._rejectedExecution27460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy._rejectedExecution27460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public void rejectedExecution(global::java.lang.RunnableDelegate arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
@@ -131,11 +119,7 @@ namespace java.util.concurrent
 			internal static global::MonoJavaBridge.MethodId _rejectedExecution27462;
 			public virtual void rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._rejectedExecution27462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._rejectedExecution27462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy.staticClass, global::java.util.concurrent.ThreadPoolExecutor.DiscardPolicy._rejectedExecution27462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public void rejectedExecution(global::java.lang.RunnableDelegate arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 			{
@@ -162,29 +146,17 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _shutdown27464;
 		public override void shutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._shutdown27464);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._shutdown27464);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._shutdown27464);
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize27465;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._finalize27465);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._finalize27465);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._finalize27465);
 		}
 		internal static global::MonoJavaBridge.MethodId _remove27466;
 		public virtual bool remove(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._remove27466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._remove27466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._remove27466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public bool remove(global::java.lang.RunnableDelegate arg0)
 		{
@@ -193,20 +165,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _awaitTermination27467;
 		public override bool awaitTermination(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._awaitTermination27467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._awaitTermination27467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._awaitTermination27467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _execute27468;
 		public override void execute(java.lang.Runnable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._execute27468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._execute27468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._execute27468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void execute(global::java.lang.RunnableDelegate arg0)
 		{
@@ -215,65 +179,37 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _purge27469;
 		public virtual void purge()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._purge27469);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._purge27469);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._purge27469);
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdownNow27470;
 		public override global::java.util.List shutdownNow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._shutdownNow27470)) as java.util.List;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._shutdownNow27470)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._shutdownNow27470)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShutdown27471;
 		public override bool isShutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._isShutdown27471);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isShutdown27471);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isShutdown27471);
 		}
 		internal static global::MonoJavaBridge.MethodId _isTerminated27472;
 		public override bool isTerminated()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._isTerminated27472);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isTerminated27472);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isTerminated27472);
 		}
 		internal static global::MonoJavaBridge.MethodId _allowCoreThreadTimeOut27473;
 		public virtual void allowCoreThreadTimeOut(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._allowCoreThreadTimeOut27473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._allowCoreThreadTimeOut27473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._allowCoreThreadTimeOut27473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTerminating27474;
 		public virtual bool isTerminating()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._isTerminating27474);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isTerminating27474);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._isTerminating27474);
 		}
 		internal static global::MonoJavaBridge.MethodId _setThreadFactory27475;
 		public virtual void setThreadFactory(java.util.concurrent.ThreadFactory arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._setThreadFactory27475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setThreadFactory27475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setThreadFactory27475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.concurrent.ThreadFactory ThreadFactory
 		{
@@ -289,20 +225,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getThreadFactory27476;
 		public virtual global::java.util.concurrent.ThreadFactory getThreadFactory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ThreadFactory>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getThreadFactory27476)) as java.util.concurrent.ThreadFactory;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ThreadFactory>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getThreadFactory27476)) as java.util.concurrent.ThreadFactory;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.ThreadFactory>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getThreadFactory27476)) as java.util.concurrent.ThreadFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _setRejectedExecutionHandler27477;
 		public virtual void setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._setRejectedExecutionHandler27477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setRejectedExecutionHandler27477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setRejectedExecutionHandler27477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.concurrent.RejectedExecutionHandler RejectedExecutionHandler
 		{
@@ -318,20 +246,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getRejectedExecutionHandler27478;
 		public virtual global::java.util.concurrent.RejectedExecutionHandler getRejectedExecutionHandler()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.RejectedExecutionHandler>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getRejectedExecutionHandler27478)) as java.util.concurrent.RejectedExecutionHandler;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.RejectedExecutionHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getRejectedExecutionHandler27478)) as java.util.concurrent.RejectedExecutionHandler;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.RejectedExecutionHandler>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getRejectedExecutionHandler27478)) as java.util.concurrent.RejectedExecutionHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCorePoolSize27479;
 		public virtual void setCorePoolSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._setCorePoolSize27479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setCorePoolSize27479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setCorePoolSize27479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CorePoolSize
 		{
@@ -347,47 +267,27 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getCorePoolSize27480;
 		public virtual int getCorePoolSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getCorePoolSize27480);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getCorePoolSize27480);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getCorePoolSize27480);
 		}
 		internal static global::MonoJavaBridge.MethodId _prestartCoreThread27481;
 		public virtual bool prestartCoreThread()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._prestartCoreThread27481);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._prestartCoreThread27481);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._prestartCoreThread27481);
 		}
 		internal static global::MonoJavaBridge.MethodId _prestartAllCoreThreads27482;
 		public virtual int prestartAllCoreThreads()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._prestartAllCoreThreads27482);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._prestartAllCoreThreads27482);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._prestartAllCoreThreads27482);
 		}
 		internal static global::MonoJavaBridge.MethodId _allowsCoreThreadTimeOut27483;
 		public virtual bool allowsCoreThreadTimeOut()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._allowsCoreThreadTimeOut27483);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._allowsCoreThreadTimeOut27483);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._allowsCoreThreadTimeOut27483);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaximumPoolSize27484;
 		public virtual void setMaximumPoolSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._setMaximumPoolSize27484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setMaximumPoolSize27484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setMaximumPoolSize27484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaximumPoolSize
 		{
@@ -403,29 +303,17 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getMaximumPoolSize27485;
 		public virtual int getMaximumPoolSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getMaximumPoolSize27485);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getMaximumPoolSize27485);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getMaximumPoolSize27485);
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeepAliveTime27486;
 		public virtual void setKeepAliveTime(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._setKeepAliveTime27486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setKeepAliveTime27486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._setKeepAliveTime27486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeepAliveTime27487;
 		public virtual long getKeepAliveTime(java.util.concurrent.TimeUnit arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getKeepAliveTime27487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getKeepAliveTime27487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getKeepAliveTime27487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.concurrent.BlockingQueue Queue
 		{
@@ -437,11 +325,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getQueue27488;
 		public virtual global::java.util.concurrent.BlockingQueue getQueue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.BlockingQueue>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getQueue27488)) as java.util.concurrent.BlockingQueue;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.BlockingQueue>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getQueue27488)) as java.util.concurrent.BlockingQueue;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.BlockingQueue>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getQueue27488)) as java.util.concurrent.BlockingQueue;
 		}
 		public new int PoolSize
 		{
@@ -453,11 +337,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getPoolSize27489;
 		public virtual int getPoolSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getPoolSize27489);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getPoolSize27489);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getPoolSize27489);
 		}
 		public new int ActiveCount
 		{
@@ -469,11 +349,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getActiveCount27490;
 		public virtual int getActiveCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getActiveCount27490);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getActiveCount27490);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getActiveCount27490);
 		}
 		public new int LargestPoolSize
 		{
@@ -485,11 +361,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getLargestPoolSize27491;
 		public virtual int getLargestPoolSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getLargestPoolSize27491);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getLargestPoolSize27491);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getLargestPoolSize27491);
 		}
 		public new long TaskCount
 		{
@@ -501,11 +373,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getTaskCount27492;
 		public virtual long getTaskCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getTaskCount27492);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getTaskCount27492);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getTaskCount27492);
 		}
 		public new long CompletedTaskCount
 		{
@@ -517,20 +385,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _getCompletedTaskCount27493;
 		public virtual long getCompletedTaskCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._getCompletedTaskCount27493);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getCompletedTaskCount27493);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._getCompletedTaskCount27493);
 		}
 		internal static global::MonoJavaBridge.MethodId _beforeExecute27494;
 		protected virtual void beforeExecute(java.lang.Thread arg0, java.lang.Runnable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._beforeExecute27494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._beforeExecute27494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._beforeExecute27494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		protected void beforeExecute(java.lang.Thread arg0, global::java.lang.RunnableDelegate arg1)
 		{
@@ -539,11 +399,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _afterExecute27495;
 		protected virtual void afterExecute(java.lang.Runnable arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._afterExecute27495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._afterExecute27495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._afterExecute27495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		protected void afterExecute(global::java.lang.RunnableDelegate arg0, java.lang.Throwable arg1)
 		{
@@ -552,11 +408,7 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _terminated27496;
 		protected virtual void terminated()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor._terminated27496);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._terminated27496);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.ThreadPoolExecutor.staticClass, global::java.util.concurrent.ThreadPoolExecutor._terminated27496);
 		}
 		internal static global::MonoJavaBridge.MethodId _ThreadPoolExecutor27497;
 		public ThreadPoolExecutor(int arg0, int arg1, long arg2, java.util.concurrent.TimeUnit arg3, java.util.concurrent.BlockingQueue arg4, java.util.concurrent.ThreadFactory arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

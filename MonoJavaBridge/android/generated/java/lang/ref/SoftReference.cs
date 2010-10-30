@@ -10,11 +10,7 @@ namespace java.lang.@ref
 		internal static global::MonoJavaBridge.MethodId _get20994;
 		public override global::java.lang.Object get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.@ref.SoftReference._get20994)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._get20994)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._get20994)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _SoftReference20995;
 		public SoftReference(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

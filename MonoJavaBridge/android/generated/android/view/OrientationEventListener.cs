@@ -10,29 +10,17 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _enable14448;
 		public virtual void enable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener._enable14448);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._enable14448);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._enable14448);
 		}
 		internal static global::MonoJavaBridge.MethodId _disable14449;
 		public virtual void disable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener._disable14449);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._disable14449);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._disable14449);
 		}
 		internal static global::MonoJavaBridge.MethodId _canDetectOrientation14450;
 		public virtual bool canDetectOrientation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.OrientationEventListener._canDetectOrientation14450);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._canDetectOrientation14450);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._canDetectOrientation14450);
 		}
 		internal static global::MonoJavaBridge.MethodId _onOrientationChanged14451;
 		public abstract void onOrientationChanged(int arg0);
@@ -84,10 +72,7 @@ namespace android.view
 		public override void onOrientationChanged(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener_._onOrientationChanged14455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener_.staticClass, global::android.view.OrientationEventListener_._onOrientationChanged14455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.view.OrientationEventListener_._onOrientationChanged14455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static OrientationEventListener_()
 		{

@@ -17,10 +17,7 @@ namespace android.widget
 		global::android.widget.Filter android.widget.Filterable.getFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Filterable_._getFilter17089)) as android.widget.Filter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Filterable_.staticClass, global::android.widget.Filterable_._getFilter17089)) as android.widget.Filter;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Filterable_._getFilter17089)) as android.widget.Filter;
 		}
 		static Filterable_()
 		{

@@ -10,56 +10,32 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _toString22797;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.CoderResult._toString22797)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._toString22797)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._toString22797)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _length22798;
 		public virtual int length()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.charset.CoderResult._length22798);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._length22798);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._length22798);
 		}
 		internal static global::MonoJavaBridge.MethodId _throwException22799;
 		public virtual void throwException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.charset.CoderResult._throwException22799);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._throwException22799);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._throwException22799);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnderflow22800;
 		public virtual bool isUnderflow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult._isUnderflow22800);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow22800);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow22800);
 		}
 		internal static global::MonoJavaBridge.MethodId _isError22801;
 		public virtual bool isError()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult._isError22801);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError22801);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError22801);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOverflow22802;
 		public virtual bool isOverflow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult._isOverflow22802);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow22802);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow22802);
 		}
 		internal static global::MonoJavaBridge.MethodId _malformedForLength22803;
 		public static global::java.nio.charset.CoderResult malformedForLength(int arg0)
@@ -70,20 +46,12 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _isMalformed22804;
 		public virtual bool isMalformed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult._isMalformed22804);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed22804);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed22804);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnmappable22805;
 		public virtual bool isUnmappable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult._isUnmappable22805);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable22805);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable22805);
 		}
 		internal static global::MonoJavaBridge.MethodId _unmappableForLength22806;
 		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0)

@@ -10,11 +10,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _toString24609;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Date._toString24609)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._toString24609)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._toString24609)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf24610;
 		public static global::java.sql.Date valueOf(java.lang.String arg0)
@@ -32,11 +28,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _setTime24611;
 		public override void setTime(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Date._setTime24611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._setTime24611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._setTime24611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Hours
 		{
@@ -52,11 +44,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getHours24612;
 		public override int getHours()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Date._getHours24612);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._getHours24612);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._getHours24612);
 		}
 		public new int Minutes
 		{
@@ -72,11 +60,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getMinutes24613;
 		public override int getMinutes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Date._getMinutes24613);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._getMinutes24613);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._getMinutes24613);
 		}
 		public new int Seconds
 		{
@@ -92,38 +76,22 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getSeconds24614;
 		public override int getSeconds()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Date._getSeconds24614);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._getSeconds24614);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._getSeconds24614);
 		}
 		internal static global::MonoJavaBridge.MethodId _setHours24615;
 		public override void setHours(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Date._setHours24615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._setHours24615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._setHours24615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setMinutes24616;
 		public override void setMinutes(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Date._setMinutes24616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._setMinutes24616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._setMinutes24616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSeconds24617;
 		public override void setSeconds(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Date._setSeconds24617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Date.staticClass, global::java.sql.Date._setSeconds24617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Date.staticClass, global::java.sql.Date._setSeconds24617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Date24618;
 		public Date(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,11 +17,7 @@ namespace org.apache.http.conn
 		internal static global::MonoJavaBridge.MethodId _getHost32110;
 		public virtual global::org.apache.http.HttpHost getHost()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.HttpHostConnectException._getHost32110)) as org.apache.http.HttpHost;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.HttpHostConnectException.staticClass, global::org.apache.http.conn.HttpHostConnectException._getHost32110)) as org.apache.http.HttpHost;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.HttpHostConnectException.staticClass, global::org.apache.http.conn.HttpHostConnectException._getHost32110)) as org.apache.http.HttpHost;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpHostConnectException32111;
 		public HttpHostConnectException(org.apache.http.HttpHost arg0, java.net.ConnectException arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

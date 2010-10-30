@@ -10,74 +10,42 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _run27307;
 		public virtual void run()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._run27307);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._run27307);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._run27307);
 		}
 		internal static global::MonoJavaBridge.MethodId _get27308;
 		public virtual global::java.lang.Object get(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._get27308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._get27308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._get27308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _get27309;
 		public virtual global::java.lang.Object get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._get27309)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._get27309)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._get27309)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _set27310;
 		protected virtual void set(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._set27310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._set27310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._set27310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel27311;
 		public virtual bool cancel(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._cancel27311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._cancel27311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._cancel27311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled27312;
 		public virtual bool isCancelled()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._isCancelled27312);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._isCancelled27312);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._isCancelled27312);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone27313;
 		public virtual bool isDone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._isDone27313);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._isDone27313);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._isDone27313);
 		}
 		internal static global::MonoJavaBridge.MethodId _done27314;
 		protected virtual void done()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._done27314);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._done27314);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._done27314);
 		}
 		protected new global::java.lang.Throwable Exception
 		{
@@ -89,20 +57,12 @@ namespace java.util.concurrent
 		internal static global::MonoJavaBridge.MethodId _setException27315;
 		protected virtual void setException(java.lang.Throwable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._setException27315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._setException27315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._setException27315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _runAndReset27316;
 		protected virtual bool runAndReset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask._runAndReset27316);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._runAndReset27316);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.FutureTask.staticClass, global::java.util.concurrent.FutureTask._runAndReset27316);
 		}
 		internal static global::MonoJavaBridge.MethodId _FutureTask27317;
 		public FutureTask(java.util.concurrent.Callable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

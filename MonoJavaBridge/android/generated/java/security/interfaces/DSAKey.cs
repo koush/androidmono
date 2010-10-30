@@ -17,10 +17,7 @@ namespace java.security.interfaces
 		global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_.staticClass, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
 		}
 		static DSAKey_()
 		{

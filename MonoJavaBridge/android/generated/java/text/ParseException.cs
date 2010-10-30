@@ -17,11 +17,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getErrorOffset25611;
 		public virtual int getErrorOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.ParseException._getErrorOffset25611);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ParseException.staticClass, global::java.text.ParseException._getErrorOffset25611);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParseException.staticClass, global::java.text.ParseException._getErrorOffset25611);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParseException25612;
 		public ParseException(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

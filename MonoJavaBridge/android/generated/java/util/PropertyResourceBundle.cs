@@ -17,29 +17,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getKeys26579;
 		public override global::java.util.Enumeration getKeys()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle._getKeys26579)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._getKeys26579)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._getKeys26579)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleGetObject26580;
 		public virtual global::java.lang.Object handleGetObject(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle._handleGetObject26580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleGetObject26580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleGetObject26580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleKeySet26581;
 		protected override global::java.util.Set handleKeySet()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle._handleKeySet26581)) as java.util.Set;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleKeySet26581)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleKeySet26581)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyResourceBundle26582;
 		public PropertyResourceBundle(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

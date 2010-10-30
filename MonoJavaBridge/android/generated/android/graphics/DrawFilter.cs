@@ -10,11 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5264;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.DrawFilter._finalize5264);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._finalize5264);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._finalize5264);
 		}
 		internal static global::MonoJavaBridge.MethodId _DrawFilter5265;
 		public DrawFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

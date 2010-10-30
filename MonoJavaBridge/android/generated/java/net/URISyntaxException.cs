@@ -17,11 +17,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getMessage21874;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URISyntaxException._getMessage21874)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getMessage21874)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getMessage21874)) as java.lang.String;
 		}
 		public new int Index
 		{
@@ -33,11 +29,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getIndex21875;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.URISyntaxException._getIndex21875);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getIndex21875);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getIndex21875);
 		}
 		public new global::java.lang.String Input
 		{
@@ -49,11 +41,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getInput21876;
 		public virtual global::java.lang.String getInput()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URISyntaxException._getInput21876)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getInput21876)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getInput21876)) as java.lang.String;
 		}
 		public new global::java.lang.String Reason
 		{
@@ -65,11 +53,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getReason21877;
 		public virtual global::java.lang.String getReason()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URISyntaxException._getReason21877)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getReason21877)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.URISyntaxException.staticClass, global::java.net.URISyntaxException._getReason21877)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _URISyntaxException21878;
 		public URISyntaxException(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

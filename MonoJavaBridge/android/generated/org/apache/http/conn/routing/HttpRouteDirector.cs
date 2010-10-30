@@ -17,10 +17,7 @@ namespace org.apache.http.conn.routing
 		int org.apache.http.conn.routing.HttpRouteDirector.nextStep(org.apache.http.conn.routing.RouteInfo arg0, org.apache.http.conn.routing.RouteInfo arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass, global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static HttpRouteDirector_()
 		{

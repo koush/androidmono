@@ -17,10 +17,7 @@ namespace javax.crypto.interfaces
 		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_.staticClass, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
 		}
 		static DHKey_()
 		{

@@ -10,11 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5666;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Rasterizer._finalize5666);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Rasterizer.staticClass, global::android.graphics.Rasterizer._finalize5666);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Rasterizer.staticClass, global::android.graphics.Rasterizer._finalize5666);
 		}
 		internal static global::MonoJavaBridge.MethodId _Rasterizer5667;
 		public Rasterizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,29 +10,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getKeys26442;
 		public override global::java.util.Enumeration getKeys()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle._getKeys26442)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._getKeys26442)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._getKeys26442)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleGetObject26443;
 		public virtual global::java.lang.Object handleGetObject(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle._handleGetObject26443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._handleGetObject26443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._handleGetObject26443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleKeySet26444;
 		protected override global::java.util.Set handleKeySet()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle._handleKeySet26444)) as java.util.Set;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._handleKeySet26444)) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.ListResourceBundle.staticClass, global::java.util.ListResourceBundle._handleKeySet26444)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getContents26445;
 		protected abstract global::java.lang.Object[][] getContents();
@@ -69,10 +57,7 @@ namespace java.util
 		protected override global::java.lang.Object[][] getContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object[]>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle_._getContents26447)) as java.lang.Object[][];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle_.staticClass, global::java.util.ListResourceBundle_._getContents26447)) as java.lang.Object[][];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object[]>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ListResourceBundle_._getContents26447)) as java.lang.Object[][];
 		}
 		static ListResourceBundle_()
 		{

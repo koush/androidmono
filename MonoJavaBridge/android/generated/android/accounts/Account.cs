@@ -10,47 +10,27 @@ namespace android.accounts
 		internal static global::MonoJavaBridge.MethodId _equals1278;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.accounts.Account._equals1278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals1278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals1278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString1279;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.accounts.Account._toString1279)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString1279)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString1279)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode1280;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.accounts.Account._hashCode1280);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode1280);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode1280);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1281;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.Account._writeToParcel1281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.Account.staticClass, global::android.accounts.Account._writeToParcel1281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._writeToParcel1281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents1282;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.accounts.Account._describeContents1282);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.accounts.Account.staticClass, global::android.accounts.Account._describeContents1282);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._describeContents1282);
 		}
 		internal static global::MonoJavaBridge.MethodId _Account1283;
 		public Account(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

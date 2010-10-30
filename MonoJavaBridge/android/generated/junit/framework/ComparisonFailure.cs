@@ -17,11 +17,7 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _getMessage31372;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.ComparisonFailure._getMessage31372)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.ComparisonFailure.staticClass, global::junit.framework.ComparisonFailure._getMessage31372)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.ComparisonFailure.staticClass, global::junit.framework.ComparisonFailure._getMessage31372)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ComparisonFailure31373;
 		public ComparisonFailure(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -24,10 +24,7 @@ namespace android.os
 			bool android.os.MessageQueue.IdleHandler.queueIdle()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.MessageQueue.IdleHandler_._queueIdle9962);
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.MessageQueue.IdleHandler_.staticClass, global::android.os.MessageQueue.IdleHandler_._queueIdle9962);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.MessageQueue.IdleHandler_._queueIdle9962);
 			}
 			static IdleHandler_()
 			{
@@ -83,11 +80,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _addIdleHandler9964;
 		public virtual void addIdleHandler(android.os.MessageQueue.IdleHandler arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.MessageQueue._addIdleHandler9964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler9964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler9964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addIdleHandler(global::android.os.MessageQueue.IdleHandlerDelegate arg0)
 		{
@@ -96,11 +89,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _removeIdleHandler9965;
 		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.MessageQueue._removeIdleHandler9965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler9965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler9965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeIdleHandler(global::android.os.MessageQueue.IdleHandlerDelegate arg0)
 		{

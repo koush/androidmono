@@ -17,10 +17,7 @@ namespace android.sax
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.StartElementListener_.staticClass, global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static StartElementListener_()
 		{

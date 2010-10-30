@@ -48,37 +48,25 @@ namespace javax.xml.validation
 		public override global::org.w3c.dom.TypeInfo getElementTypeInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._getElementTypeInfo31217)) as org.w3c.dom.TypeInfo;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_.staticClass, global::javax.xml.validation.TypeInfoProvider_._getElementTypeInfo31217)) as org.w3c.dom.TypeInfo;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._getElementTypeInfo31217)) as org.w3c.dom.TypeInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributeTypeInfo31218;
 		public override global::org.w3c.dom.TypeInfo getAttributeTypeInfo(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._getAttributeTypeInfo31218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.TypeInfo;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_.staticClass, global::javax.xml.validation.TypeInfoProvider_._getAttributeTypeInfo31218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.TypeInfo;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.TypeInfo>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._getAttributeTypeInfo31218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.TypeInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _isIdAttribute31219;
 		public override bool isIdAttribute(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._isIdAttribute31219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_.staticClass, global::javax.xml.validation.TypeInfoProvider_._isIdAttribute31219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._isIdAttribute31219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSpecified31220;
 		public override bool isSpecified(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._isSpecified31220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_.staticClass, global::javax.xml.validation.TypeInfoProvider_._isSpecified31220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.xml.validation.TypeInfoProvider_._isSpecified31220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static TypeInfoProvider_()
 		{

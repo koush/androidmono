@@ -17,11 +17,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getUpdateCounts24091;
 		public virtual int[] getUpdateCounts()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException._getUpdateCounts24091)) as int[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._getUpdateCounts24091)) as int[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._getUpdateCounts24091)) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24092;
 		public BatchUpdateException(java.lang.String arg0, java.lang.String arg1, int arg2, int[] arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

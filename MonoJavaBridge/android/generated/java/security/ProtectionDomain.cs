@@ -10,11 +10,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _toString23253;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._toString23253)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._toString23253)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._toString23253)) as java.lang.String;
 		}
 		public new global::java.lang.ClassLoader ClassLoader
 		{
@@ -26,11 +22,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getClassLoader23254;
 		public virtual global::java.lang.ClassLoader getClassLoader()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getClassLoader23254)) as java.lang.ClassLoader;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getClassLoader23254)) as java.lang.ClassLoader;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getClassLoader23254)) as java.lang.ClassLoader;
 		}
 		public new global::java.security.CodeSource CodeSource
 		{
@@ -42,11 +34,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getCodeSource23255;
 		public virtual global::java.security.CodeSource getCodeSource()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getCodeSource23255)) as java.security.CodeSource;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getCodeSource23255)) as java.security.CodeSource;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getCodeSource23255)) as java.security.CodeSource;
 		}
 		public new global::java.security.Principal[] Principals
 		{
@@ -58,11 +46,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getPrincipals23256;
 		public virtual global::java.security.Principal[] getPrincipals()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getPrincipals23256)) as java.security.Principal[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPrincipals23256)) as java.security.Principal[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.Principal>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPrincipals23256)) as java.security.Principal[];
 		}
 		public new global::java.security.PermissionCollection Permissions
 		{
@@ -74,20 +58,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getPermissions23257;
 		public virtual global::java.security.PermissionCollection getPermissions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getPermissions23257)) as java.security.PermissionCollection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPermissions23257)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPermissions23257)) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23258;
 		public virtual bool implies(java.security.Permission arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.ProtectionDomain._implies23258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._implies23258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._implies23258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtectionDomain23259;
 		public ProtectionDomain(java.security.CodeSource arg0, java.security.PermissionCollection arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

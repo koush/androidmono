@@ -10,29 +10,17 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getEntry27865;
 		public override global::java.util.zip.ZipEntry getEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarFile._getEntry27865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getEntry27865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getEntry27865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _entries27866;
 		public override global::java.util.Enumeration entries()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarFile._entries27866)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._entries27866)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._entries27866)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream27867;
 		public override global::java.io.InputStream getInputStream(java.util.zip.ZipEntry arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarFile._getInputStream27867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getInputStream27867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getInputStream27867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		public new global::java.util.jar.Manifest Manifest
 		{
@@ -44,20 +32,12 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getManifest27868;
 		public virtual global::java.util.jar.Manifest getManifest()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarFile._getManifest27868)) as java.util.jar.Manifest;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getManifest27868)) as java.util.jar.Manifest;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getManifest27868)) as java.util.jar.Manifest;
 		}
 		internal static global::MonoJavaBridge.MethodId _getJarEntry27869;
 		public virtual global::java.util.jar.JarEntry getJarEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarFile._getJarEntry27869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.jar.JarEntry;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getJarEntry27869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.jar.JarEntry;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarFile.staticClass, global::java.util.jar.JarFile._getJarEntry27869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.jar.JarEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarFile27870;
 		public JarFile(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

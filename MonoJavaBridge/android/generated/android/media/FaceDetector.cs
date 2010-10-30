@@ -17,38 +17,22 @@ namespace android.media
 			internal static global::MonoJavaBridge.MethodId _confidence7282;
 			public virtual float confidence()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face._confidence7282);
-				else
-					return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence7282);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence7282);
 			}
 			internal static global::MonoJavaBridge.MethodId _getMidPoint7283;
 			public virtual void getMidPoint(android.graphics.PointF arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.media.FaceDetector.Face._getMidPoint7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _eyesDistance7284;
 			public virtual float eyesDistance()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face._eyesDistance7284);
-				else
-					return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance7284);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance7284);
 			}
 			internal static global::MonoJavaBridge.MethodId _pose7285;
 			public virtual float pose(int arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face._pose7285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose7285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose7285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public static float CONFIDENCE_THRESHOLD
 			{
@@ -94,20 +78,12 @@ namespace android.media
 		internal static global::MonoJavaBridge.MethodId _finalize7290;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.media.FaceDetector._finalize7290);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._finalize7290);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._finalize7290);
 		}
 		internal static global::MonoJavaBridge.MethodId _findFaces7291;
 		public virtual int findFaces(android.graphics.Bitmap arg0, android.media.FaceDetector.Face[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.media.FaceDetector._findFaces7291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces7291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces7291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _FaceDetector7292;
 		public FaceDetector(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

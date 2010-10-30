@@ -910,7 +910,8 @@ namespace MonoDroid
                     WriteLine();
                 WriteLine("{");
                 myIndent++;
-                WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
+                if (method.IsConstructor || method.Type.IsSealed || method.Static)
+                    WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
                 var statement = GetMethodStatement(method);
                 StringBuilder parBuilder = new StringBuilder();
                 if (method.Static || method.IsConstructor)
@@ -939,14 +940,40 @@ namespace MonoDroid
                 }
                 else
                 {
-                    WriteLine("if (!IsClrObject)", method.Type.Name);
-                    myIndent++;
-                    WriteLine(statement, string.Empty, parBuilder);
-                    myIndent--;
-                    WriteLine("else");
-                    myIndent++;
-                    WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this.JvmHandle, global::{0}.staticClass, "), method.Type.Name));
-                    myIndent--;
+                    if (method.Type.IsSealed)
+                    {
+                        if (method.Type.WrappedInterface != null)
+                            WriteLine(statement, string.Empty, parBuilder);
+                        else
+                            WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this.JvmHandle, global::{0}.staticClass, "), method.Type.Name));
+                    }
+                    else
+                    {
+                        var s = string.Format(statement, string.Empty, string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this, global::{0}.staticClass, "), method.Type.Name));
+                        s = s.Replace("@__env.", "global::MonoJavaBridge.JavaBridge.");
+                        WriteLine(s);
+                    }
+                    /*
+                    if (!method.Type.IsSealed || method.Type.WrappedInterface != null)
+                    {
+                        if (method.Type.WrappedInterface == null)
+                        {
+                            WriteLine("if (!IsClrObject)", method.Type.Name);
+                            myIndent++;
+                        }
+                        WriteLine(statement, string.Empty, parBuilder);
+                        if (method.Type.WrappedInterface == null)
+                        {
+                            myIndent--;
+                            WriteLine("else");
+                            myIndent++;
+                        }
+                    }
+                    if (method.Type.WrappedInterface == null)
+                        WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this.JvmHandle, global::{0}.staticClass, "), method.Type.Name));
+                    if (!method.Type.IsSealed && method.Type.WrappedInterface == null)
+                        myIndent--;
+                    */
                 }
                 myIndent--;
                 WriteLine("}");

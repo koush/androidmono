@@ -17,10 +17,7 @@ namespace java.lang
 		void java.lang.Runnable.run()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run20428);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Runnable_.staticClass, global::java.lang.Runnable_._run20428);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run20428);
 		}
 		static Runnable_()
 		{

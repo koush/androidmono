@@ -17,11 +17,7 @@ namespace java.lang.reflect
 		internal static global::MonoJavaBridge.MethodId _getCause21085;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.InvocationTargetException._getCause21085)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._getCause21085)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._getCause21085)) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable TargetException
 		{
@@ -33,11 +29,7 @@ namespace java.lang.reflect
 		internal static global::MonoJavaBridge.MethodId _getTargetException21086;
 		public virtual global::java.lang.Throwable getTargetException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.InvocationTargetException._getTargetException21086)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._getTargetException21086)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._getTargetException21086)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _InvocationTargetException21087;
 		protected InvocationTargetException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

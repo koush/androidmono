@@ -18,10 +18,7 @@ namespace java.security
 		public global::java.security.PublicKey getPublic()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyPair._getPublic23037)) as java.security.PublicKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPublic23037)) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPublic23037)) as java.security.PublicKey;
 		}
 		public new global::java.security.PrivateKey Private
 		{
@@ -34,10 +31,7 @@ namespace java.security
 		public global::java.security.PrivateKey getPrivate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyPair._getPrivate23038)) as java.security.PrivateKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPrivate23038)) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPrivate23038)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyPair23039;
 		public KeyPair(java.security.PublicKey arg0, java.security.PrivateKey arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

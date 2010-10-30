@@ -10,38 +10,22 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _draw5375;
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.RectF arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.NinePatch._draw5375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5376;
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Rect arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.NinePatch._draw5376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5377;
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Rect arg1, android.graphics.Paint arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.NinePatch._draw5377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw5377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransparentRegion5378;
 		public virtual global::android.graphics.Region getTransparentRegion(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.NinePatch._getTransparentRegion5378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getTransparentRegion5378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getTransparentRegion5378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region;
 		}
 		public new int Density
 		{
@@ -53,11 +37,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getDensity5379;
 		public virtual int getDensity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.NinePatch._getDensity5379);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getDensity5379);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getDensity5379);
 		}
 		public new int Width
 		{
@@ -69,11 +49,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getWidth5380;
 		public virtual int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.NinePatch._getWidth5380);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getWidth5380);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getWidth5380);
 		}
 		public new int Height
 		{
@@ -85,20 +61,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getHeight5381;
 		public virtual int getHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.NinePatch._getHeight5381);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getHeight5381);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getHeight5381);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasAlpha5382;
 		public virtual bool hasAlpha()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.NinePatch._hasAlpha5382);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._hasAlpha5382);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._hasAlpha5382);
 		}
 		public new global::android.graphics.Paint Paint
 		{
@@ -110,11 +78,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _setPaint5383;
 		public virtual void setPaint(android.graphics.Paint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.NinePatch._setPaint5383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._setPaint5383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._setPaint5383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNinePatchChunk5384;
 		public static bool isNinePatchChunk(byte[] arg0)

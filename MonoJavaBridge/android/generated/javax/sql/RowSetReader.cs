@@ -17,10 +17,7 @@ namespace javax.sql
 		void javax.sql.RowSetReader.readData(javax.sql.RowSetInternal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_.staticClass, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetReader_()
 		{

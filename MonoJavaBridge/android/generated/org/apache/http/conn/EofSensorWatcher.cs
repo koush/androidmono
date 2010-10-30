@@ -19,28 +19,19 @@ namespace org.apache.http.conn
 		bool org.apache.http.conn.EofSensorWatcher.eofDetected(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamClosed32108;
 		bool org.apache.http.conn.EofSensorWatcher.streamClosed(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamAbort32109;
 		bool org.apache.http.conn.EofSensorWatcher.streamAbort(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static EofSensorWatcher_()
 		{

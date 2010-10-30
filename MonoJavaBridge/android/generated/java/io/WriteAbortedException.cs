@@ -17,11 +17,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getCause19635;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.WriteAbortedException._getCause19635)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.WriteAbortedException.staticClass, global::java.io.WriteAbortedException._getCause19635)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.WriteAbortedException.staticClass, global::java.io.WriteAbortedException._getCause19635)) as java.lang.Throwable;
 		}
 		public new global::java.lang.String Message
 		{
@@ -33,11 +29,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getMessage19636;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.WriteAbortedException._getMessage19636)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.WriteAbortedException.staticClass, global::java.io.WriteAbortedException._getMessage19636)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.WriteAbortedException.staticClass, global::java.io.WriteAbortedException._getMessage19636)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _WriteAbortedException19637;
 		public WriteAbortedException(java.lang.String arg0, java.lang.Exception arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

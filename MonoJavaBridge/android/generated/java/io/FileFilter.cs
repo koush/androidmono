@@ -17,10 +17,7 @@ namespace java.io
 		bool java.io.FileFilter.accept(java.io.File arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileFilter_._accept19016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileFilter_.staticClass, global::java.io.FileFilter_._accept19016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileFilter_._accept19016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static FileFilter_()
 		{

@@ -10,29 +10,17 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _notifyChange4427;
 		public virtual void notifyChange(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._notifyChange4427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._notifyChange4427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._notifyChange4427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchChange4428;
 		public virtual void dispatchChange(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._dispatchChange4428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._dispatchChange4428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._dispatchChange4428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _registerObserver4429;
 		public virtual void registerObserver(android.database.ContentObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._registerObserver4429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._registerObserver4429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._registerObserver4429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentObservable4430;
 		public ContentObservable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

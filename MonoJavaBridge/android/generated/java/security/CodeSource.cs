@@ -10,29 +10,17 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _equals22925;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.CodeSource._equals22925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._equals22925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._equals22925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22926;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._toString22926)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._toString22926)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._toString22926)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22927;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.CodeSource._hashCode22927);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._hashCode22927);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._hashCode22927);
 		}
 		public new global::java.net.URL Location
 		{
@@ -44,11 +32,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getLocation22928;
 		public virtual global::java.net.URL getLocation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getLocation22928)) as java.net.URL;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getLocation22928)) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getLocation22928)) as java.net.URL;
 		}
 		public new global::java.security.cert.Certificate[] Certificates
 		{
@@ -60,20 +44,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getCertificates22929;
 		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getCertificates22929)) as java.security.cert.Certificate[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCertificates22929)) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCertificates22929)) as java.security.cert.Certificate[];
 		}
 		internal static global::MonoJavaBridge.MethodId _implies22930;
 		public virtual bool implies(java.security.CodeSource arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.CodeSource._implies22930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._implies22930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._implies22930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.security.CodeSigner[] CodeSigners
 		{
@@ -85,11 +61,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getCodeSigners22931;
 		public virtual global::java.security.CodeSigner[] getCodeSigners()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getCodeSigners22931)) as java.security.CodeSigner[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCodeSigners22931)) as java.security.CodeSigner[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCodeSigners22931)) as java.security.CodeSigner[];
 		}
 		internal static global::MonoJavaBridge.MethodId _CodeSource22932;
 		public CodeSource(java.net.URL arg0, java.security.CodeSigner[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

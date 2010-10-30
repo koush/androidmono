@@ -19,28 +19,19 @@ namespace org.apache.http.client.methods
 		void org.apache.http.client.methods.AbortableHttpRequest.abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906);
 		}
 		internal static global::MonoJavaBridge.MethodId _setConnectionRequest31907;
 		void org.apache.http.client.methods.AbortableHttpRequest.setConnectionRequest(org.apache.http.conn.ClientConnectionRequest arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setReleaseTrigger31908;
 		void org.apache.http.client.methods.AbortableHttpRequest.setReleaseTrigger(org.apache.http.conn.ConnectionReleaseTrigger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AbortableHttpRequest_()
 		{

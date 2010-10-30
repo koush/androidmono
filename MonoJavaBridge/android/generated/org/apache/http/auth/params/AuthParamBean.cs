@@ -17,11 +17,7 @@ namespace org.apache.http.auth.@params
 		internal static global::MonoJavaBridge.MethodId _setCredentialCharset31860;
 		public virtual void setCredentialCharset(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.auth.@params.AuthParamBean._setCredentialCharset31860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.@params.AuthParamBean.staticClass, global::org.apache.http.auth.@params.AuthParamBean._setCredentialCharset31860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.@params.AuthParamBean.staticClass, global::org.apache.http.auth.@params.AuthParamBean._setCredentialCharset31860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthParamBean31861;
 		public AuthParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

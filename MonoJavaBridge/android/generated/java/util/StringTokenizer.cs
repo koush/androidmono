@@ -10,56 +10,32 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _hasMoreElements26825;
 		public virtual bool hasMoreElements()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.StringTokenizer._hasMoreElements26825);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._hasMoreElements26825);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._hasMoreElements26825);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextElement26826;
 		public virtual global::java.lang.Object nextElement()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.StringTokenizer._nextElement26826)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextElement26826)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextElement26826)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _countTokens26827;
 		public virtual int countTokens()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.StringTokenizer._countTokens26827);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._countTokens26827);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._countTokens26827);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasMoreTokens26828;
 		public virtual bool hasMoreTokens()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.StringTokenizer._hasMoreTokens26828);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._hasMoreTokens26828);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._hasMoreTokens26828);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken26829;
 		public virtual global::java.lang.String nextToken()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.StringTokenizer._nextToken26829)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextToken26829)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextToken26829)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken26830;
 		public virtual global::java.lang.String nextToken(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.StringTokenizer._nextToken26830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextToken26830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.StringTokenizer.staticClass, global::java.util.StringTokenizer._nextToken26830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _StringTokenizer26831;
 		public StringTokenizer(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

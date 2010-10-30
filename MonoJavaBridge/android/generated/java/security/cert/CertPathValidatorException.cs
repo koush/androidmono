@@ -17,11 +17,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getIndex23521;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorException._getIndex23521);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getIndex23521);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getIndex23521);
 		}
 		public new global::java.security.cert.CertPath CertPath
 		{
@@ -33,11 +29,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCertPath23522;
 		public virtual global::java.security.cert.CertPath getCertPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorException._getCertPath23522)) as java.security.cert.CertPath;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getCertPath23522)) as java.security.cert.CertPath;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathValidatorException.staticClass, global::java.security.cert.CertPathValidatorException._getCertPath23522)) as java.security.cert.CertPath;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertPathValidatorException23523;
 		public CertPathValidatorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

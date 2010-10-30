@@ -17,10 +17,7 @@ namespace org.apache.http.conn.@params
 		int org.apache.http.conn.@params.ConnPerRoute.getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRoute_.staticClass, global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ConnPerRoute_()
 		{

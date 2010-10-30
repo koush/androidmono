@@ -17,38 +17,22 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _resetAndStart9696;
 			public virtual bool resetAndStart()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.Debug.InstructionCount._resetAndStart9696);
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._resetAndStart9696);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._resetAndStart9696);
 			}
 			internal static global::MonoJavaBridge.MethodId _collect9697;
 			public virtual bool collect()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.Debug.InstructionCount._collect9697);
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._collect9697);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._collect9697);
 			}
 			internal static global::MonoJavaBridge.MethodId _globalTotal9698;
 			public virtual int globalTotal()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.InstructionCount._globalTotal9698);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalTotal9698);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalTotal9698);
 			}
 			internal static global::MonoJavaBridge.MethodId _globalMethodInvocations9699;
 			public virtual int globalMethodInvocations()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.InstructionCount._globalMethodInvocations9699);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalMethodInvocations9699);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalMethodInvocations9699);
 			}
 			internal static global::MonoJavaBridge.MethodId _InstructionCount9700;
 			public InstructionCount() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -81,29 +65,17 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _writeToParcel9701;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._writeToParcel9701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._writeToParcel9701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._writeToParcel9701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents9702;
 			public virtual int describeContents()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._describeContents9702);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._describeContents9702);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._describeContents9702);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel9703;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._readFromParcel9703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._readFromParcel9703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._readFromParcel9703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int TotalPss
 			{
@@ -115,11 +87,7 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalPss9704;
 			public virtual int getTotalPss()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._getTotalPss9704);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPss9704);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPss9704);
 			}
 			public new int TotalPrivateDirty
 			{
@@ -131,11 +99,7 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalPrivateDirty9705;
 			public virtual int getTotalPrivateDirty()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705);
 			}
 			public new int TotalSharedDirty
 			{
@@ -147,11 +111,7 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalSharedDirty9706;
 			public virtual int getTotalSharedDirty()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706);
 			}
 			internal static global::MonoJavaBridge.MethodId _MemoryInfo9707;
 			public MemoryInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

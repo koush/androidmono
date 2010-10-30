@@ -10,56 +10,32 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _toString31390;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestFailure._toString31390)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._toString31390)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._toString31390)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _trace31391;
 		public virtual global::java.lang.String trace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestFailure._trace31391)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._trace31391)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._trace31391)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _failedTest31392;
 		public virtual global::junit.framework.Test failedTest()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestFailure._failedTest31392)) as junit.framework.Test;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._failedTest31392)) as junit.framework.Test;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._failedTest31392)) as junit.framework.Test;
 		}
 		internal static global::MonoJavaBridge.MethodId _thrownException31393;
 		public virtual global::java.lang.Throwable thrownException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestFailure._thrownException31393)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._thrownException31393)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._thrownException31393)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _exceptionMessage31394;
 		public virtual global::java.lang.String exceptionMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestFailure._exceptionMessage31394)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._exceptionMessage31394)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._exceptionMessage31394)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isFailure31395;
 		public virtual bool isFailure()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::junit.framework.TestFailure._isFailure31395);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._isFailure31395);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.framework.TestFailure.staticClass, global::junit.framework.TestFailure._isFailure31395);
 		}
 		internal static global::MonoJavaBridge.MethodId _TestFailure31396;
 		public TestFailure(junit.framework.Test arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

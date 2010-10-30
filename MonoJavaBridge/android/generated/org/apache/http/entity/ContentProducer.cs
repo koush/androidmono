@@ -17,10 +17,7 @@ namespace org.apache.http.entity
 		void org.apache.http.entity.ContentProducer.writeTo(java.io.OutputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.entity.ContentProducer_._writeTo32532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.entity.ContentProducer_.staticClass, global::org.apache.http.entity.ContentProducer_._writeTo32532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.entity.ContentProducer_._writeTo32532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ContentProducer_()
 		{

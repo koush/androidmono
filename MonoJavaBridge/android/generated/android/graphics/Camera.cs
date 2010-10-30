@@ -10,92 +10,52 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5101;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._finalize5101);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._finalize5101);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._finalize5101);
 		}
 		internal static global::MonoJavaBridge.MethodId _save5102;
 		public virtual void save()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._save5102);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._save5102);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._save5102);
 		}
 		internal static global::MonoJavaBridge.MethodId _restore5103;
 		public virtual void restore()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._restore5103);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._restore5103);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._restore5103);
 		}
 		internal static global::MonoJavaBridge.MethodId _translate5104;
 		public virtual void translate(float arg0, float arg1, float arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._translate5104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._translate5104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._translate5104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMatrix5105;
 		public virtual void getMatrix(android.graphics.Matrix arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._getMatrix5105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._getMatrix5105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._getMatrix5105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rotateX5106;
 		public virtual void rotateX(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._rotateX5106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateX5106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateX5106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rotateY5107;
 		public virtual void rotateY(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._rotateY5107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateY5107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateY5107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rotateZ5108;
 		public virtual void rotateZ(float arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._rotateZ5108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateZ5108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateZ5108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _applyToCanvas5109;
 		public virtual void applyToCanvas(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Camera._applyToCanvas5109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._applyToCanvas5109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._applyToCanvas5109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dotWithNormal5110;
 		public virtual float dotWithNormal(float arg0, float arg1, float arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.graphics.Camera._dotWithNormal5110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._dotWithNormal5110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._dotWithNormal5110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _Camera5111;
 		public Camera() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

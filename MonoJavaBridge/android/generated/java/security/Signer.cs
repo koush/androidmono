@@ -10,29 +10,17 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _toString23403;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Signer._toString23403)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Signer.staticClass, global::java.security.Signer._toString23403)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Signer.staticClass, global::java.security.Signer._toString23403)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivateKey23404;
 		public virtual global::java.security.PrivateKey getPrivateKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Signer._getPrivateKey23404)) as java.security.PrivateKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Signer.staticClass, global::java.security.Signer._getPrivateKey23404)) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Signer.staticClass, global::java.security.Signer._getPrivateKey23404)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyPair23405;
 		public virtual void setKeyPair(java.security.KeyPair arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.Signer._setKeyPair23405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Signer.staticClass, global::java.security.Signer._setKeyPair23405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Signer.staticClass, global::java.security.Signer._setKeyPair23405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Signer23406;
 		public Signer(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

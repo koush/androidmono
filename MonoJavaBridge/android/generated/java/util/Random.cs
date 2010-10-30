@@ -10,56 +10,32 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _next26608;
 		protected virtual int next(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._next26608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._next26608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._next26608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextDouble26609;
 		public virtual double nextDouble()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.Random._nextDouble26609);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextDouble26609);
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextDouble26609);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextInt26610;
 		public virtual int nextInt(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._nextInt26610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextInt26610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt26610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextInt26611;
 		public virtual int nextInt()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._nextInt26611);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextInt26611);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt26611);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextLong26612;
 		public virtual long nextLong()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Random._nextLong26612);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextLong26612);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextLong26612);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBytes26613;
 		public virtual void nextBytes(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Random._nextBytes26613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextBytes26613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBytes26613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long Seed
 		{
@@ -71,38 +47,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _setSeed26614;
 		public virtual void setSeed(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Random._setSeed26614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._setSeed26614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._setSeed26614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBoolean26615;
 		public virtual bool nextBoolean()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Random._nextBoolean26615);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextBoolean26615);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBoolean26615);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextFloat26616;
 		public virtual float nextFloat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.util.Random._nextFloat26616);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextFloat26616);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextFloat26616);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextGaussian26617;
 		public virtual double nextGaussian()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.Random._nextGaussian26617);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextGaussian26617);
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextGaussian26617);
 		}
 		internal static global::MonoJavaBridge.MethodId _Random26618;
 		public Random() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

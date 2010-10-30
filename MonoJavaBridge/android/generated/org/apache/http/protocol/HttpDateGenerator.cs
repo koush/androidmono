@@ -17,11 +17,7 @@ namespace org.apache.http.protocol
 		internal static global::MonoJavaBridge.MethodId _getCurrentDate33889;
 		public virtual global::java.lang.String getCurrentDate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDateGenerator33890;
 		public HttpDateGenerator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

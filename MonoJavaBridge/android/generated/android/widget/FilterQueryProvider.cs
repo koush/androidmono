@@ -17,10 +17,7 @@ namespace android.widget
 		global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_.staticClass, global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
 		static FilterQueryProvider_()
 		{

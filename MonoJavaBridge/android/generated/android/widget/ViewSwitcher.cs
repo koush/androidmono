@@ -24,10 +24,7 @@ namespace android.widget
 			global::android.view.View android.widget.ViewSwitcher.ViewFactory.makeView()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher.ViewFactory_._makeView18280)) as android.view.View;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher.ViewFactory_.staticClass, global::android.widget.ViewSwitcher.ViewFactory_._makeView18280)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher.ViewFactory_._makeView18280)) as android.view.View;
 			}
 			static ViewFactory_()
 			{
@@ -83,20 +80,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _reset18282;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher._reset18282);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset18282);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset18282);
 		}
 		internal static global::MonoJavaBridge.MethodId _addView18283;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher._addView18283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView18283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView18283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::android.widget.ViewSwitcher.ViewFactory Factory
 		{
@@ -108,11 +97,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setFactory18284;
 		public virtual void setFactory(android.widget.ViewSwitcher.ViewFactory arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher._setFactory18284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory18284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory18284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setFactory(global::android.widget.ViewSwitcher.ViewFactoryDelegate arg0)
 		{
@@ -128,11 +113,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getNextView18285;
 		public virtual global::android.view.View getNextView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher._getNextView18285)) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView18285)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView18285)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _ViewSwitcher18286;
 		public ViewSwitcher(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

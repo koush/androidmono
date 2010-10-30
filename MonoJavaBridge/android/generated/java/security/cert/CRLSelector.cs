@@ -18,19 +18,13 @@ namespace java.security.cert
 		global::java.lang.Object java.security.cert.CRLSelector.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._clone23477)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CRLSelector_.staticClass, global::java.security.cert.CRLSelector_._clone23477)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._clone23477)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _match23478;
 		bool java.security.cert.CRLSelector.match(java.security.cert.CRL arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.CRLSelector_.staticClass, global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.CRLSelector_._match23478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CRLSelector_()
 		{

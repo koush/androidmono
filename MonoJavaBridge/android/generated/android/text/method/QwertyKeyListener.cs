@@ -16,11 +16,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _onKeyDown13366;
 		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.QwertyKeyListener._onKeyDown13366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.QwertyKeyListener.staticClass, global::android.text.method.QwertyKeyListener._onKeyDown13366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.QwertyKeyListener.staticClass, global::android.text.method.QwertyKeyListener._onKeyDown13366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new int InputType
 		{
@@ -32,11 +28,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13367;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.QwertyKeyListener._getInputType13367);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.QwertyKeyListener.staticClass, global::android.text.method.QwertyKeyListener._getInputType13367);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.QwertyKeyListener.staticClass, global::android.text.method.QwertyKeyListener._getInputType13367);
 		}
 		internal static global::MonoJavaBridge.MethodId _markAsReplaced13368;
 		public static void markAsReplaced(android.text.Spannable arg0, int arg1, int arg2, java.lang.String arg3)

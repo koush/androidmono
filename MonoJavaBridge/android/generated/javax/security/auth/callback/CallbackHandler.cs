@@ -17,10 +17,7 @@ namespace javax.security.auth.callback
 		void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_.staticClass, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CallbackHandler_()
 		{

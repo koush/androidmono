@@ -10,74 +10,42 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close18800;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream._close18800);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._close18800);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._close18800);
 		}
 		internal static global::MonoJavaBridge.MethodId _mark18801;
 		public override void mark(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream._mark18801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._mark18801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._mark18801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset18802;
 		public override void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream._reset18802);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._reset18802);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._reset18802);
 		}
 		internal static global::MonoJavaBridge.MethodId _read18803;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.BufferedInputStream._read18803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._read18803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._read18803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read18804;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.BufferedInputStream._read18804);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._read18804);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._read18804);
 		}
 		internal static global::MonoJavaBridge.MethodId _skip18805;
 		public override long skip(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.BufferedInputStream._skip18805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._skip18805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._skip18805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _available18806;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.BufferedInputStream._available18806);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._available18806);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._available18806);
 		}
 		internal static global::MonoJavaBridge.MethodId _markSupported18807;
 		public override bool markSupported()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.BufferedInputStream._markSupported18807);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._markSupported18807);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.BufferedInputStream.staticClass, global::java.io.BufferedInputStream._markSupported18807);
 		}
 		internal static global::MonoJavaBridge.MethodId _BufferedInputStream18808;
 		public BufferedInputStream(java.io.InputStream arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

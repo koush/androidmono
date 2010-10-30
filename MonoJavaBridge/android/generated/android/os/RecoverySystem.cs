@@ -24,10 +24,7 @@ namespace android.os
 			void android.os.RecoverySystem.ProgressListener.onProgress(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_.staticClass, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static ProgressListener_()
 			{

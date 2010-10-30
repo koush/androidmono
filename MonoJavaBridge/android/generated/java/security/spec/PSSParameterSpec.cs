@@ -17,11 +17,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm24039;
 		public virtual global::java.lang.String getDigestAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec._getDigestAlgorithm24039)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getDigestAlgorithm24039)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getDigestAlgorithm24039)) as java.lang.String;
 		}
 		public new global::java.lang.String MGFAlgorithm
 		{
@@ -33,11 +29,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getMGFAlgorithm24040;
 		public virtual global::java.lang.String getMGFAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec._getMGFAlgorithm24040)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getMGFAlgorithm24040)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getMGFAlgorithm24040)) as java.lang.String;
 		}
 		public new global::java.security.spec.AlgorithmParameterSpec MGFParameters
 		{
@@ -49,11 +41,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getMGFParameters24041;
 		public virtual global::java.security.spec.AlgorithmParameterSpec getMGFParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec._getMGFParameters24041)) as java.security.spec.AlgorithmParameterSpec;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getMGFParameters24041)) as java.security.spec.AlgorithmParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getMGFParameters24041)) as java.security.spec.AlgorithmParameterSpec;
 		}
 		public new int SaltLength
 		{
@@ -65,11 +53,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getSaltLength24042;
 		public virtual int getSaltLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec._getSaltLength24042);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getSaltLength24042);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getSaltLength24042);
 		}
 		public new int TrailerField
 		{
@@ -81,11 +65,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getTrailerField24043;
 		public virtual int getTrailerField()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec._getTrailerField24043);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getTrailerField24043);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.PSSParameterSpec.staticClass, global::java.security.spec.PSSParameterSpec._getTrailerField24043);
 		}
 		internal static global::MonoJavaBridge.MethodId _PSSParameterSpec24044;
 		public PSSParameterSpec(java.lang.String arg0, java.lang.String arg1, java.security.spec.AlgorithmParameterSpec arg2, int arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

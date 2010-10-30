@@ -18,19 +18,13 @@ namespace javax.xml.transform
 		global::java.lang.String javax.xml.transform.Source.getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Source_._getSystemId30951)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Source_.staticClass, global::javax.xml.transform.Source_._getSystemId30951)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Source_._getSystemId30951)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId30952;
 		void javax.xml.transform.Source.setSystemId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.Source_._setSystemId30952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.Source_.staticClass, global::javax.xml.transform.Source_._setSystemId30952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.Source_._setSystemId30952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Source_()
 		{

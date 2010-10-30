@@ -17,10 +17,7 @@ namespace java.io
 		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Closeable_._close18883);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Closeable_.staticClass, global::java.io.Closeable_._close18883);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Closeable_._close18883);
 		}
 		static Closeable_()
 		{

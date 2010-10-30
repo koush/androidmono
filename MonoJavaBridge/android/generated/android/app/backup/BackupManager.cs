@@ -10,11 +10,7 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _dataChanged2324;
 		public virtual void dataChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.BackupManager._dataChanged2324);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._dataChanged2324);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._dataChanged2324);
 		}
 		internal static global::MonoJavaBridge.MethodId _dataChanged2325;
 		public static void dataChanged(java.lang.String arg0)
@@ -25,11 +21,7 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _requestRestore2326;
 		public virtual int requestRestore(android.app.backup.RestoreObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BackupManager2327;
 		public BackupManager(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

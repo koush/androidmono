@@ -17,47 +17,27 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getValue28333;
 		public virtual long getValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.CRC32._getValue28333);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._getValue28333);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._getValue28333);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28334;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.CRC32._reset28334);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._reset28334);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._reset28334);
 		}
 		internal static global::MonoJavaBridge.MethodId _update28335;
 		public virtual void update(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.CRC32._update28335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28336;
 		public virtual void update(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.CRC32._update28336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28337;
 		public virtual void update(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.CRC32._update28337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.CRC32.staticClass, global::java.util.zip.CRC32._update28337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CRC3228338;
 		public CRC32() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

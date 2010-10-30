@@ -17,11 +17,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setChecked18203;
 		public override void setChecked(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._setChecked18203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setChecked18203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setChecked18203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable BackgroundDrawable
 		{
@@ -33,29 +29,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setBackgroundDrawable18204;
 		public override void setBackgroundDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._setBackgroundDrawable18204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setBackgroundDrawable18204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setBackgroundDrawable18204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onFinishInflate18205;
 		protected override void onFinishInflate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._onFinishInflate18205);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._onFinishInflate18205);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._onFinishInflate18205);
 		}
 		internal static global::MonoJavaBridge.MethodId _drawableStateChanged18206;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._drawableStateChanged18206);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._drawableStateChanged18206);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._drawableStateChanged18206);
 		}
 		public new string TextOn
 		{
@@ -71,20 +55,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getTextOn18207;
 		public virtual global::java.lang.CharSequence getTextOn()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ToggleButton._getTextOn18207)) as java.lang.CharSequence;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._getTextOn18207)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._getTextOn18207)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextOn18208;
 		public virtual void setTextOn(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._setTextOn18208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOn18208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOn18208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTextOn(string arg0)
 		{
@@ -104,20 +80,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getTextOff18209;
 		public virtual global::java.lang.CharSequence getTextOff()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ToggleButton._getTextOff18209)) as java.lang.CharSequence;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._getTextOff18209)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._getTextOff18209)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextOff18210;
 		public virtual void setTextOff(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ToggleButton._setTextOff18210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOff18210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOff18210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTextOff(string arg0)
 		{

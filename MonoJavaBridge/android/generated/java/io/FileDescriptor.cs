@@ -11,19 +11,13 @@ namespace java.io
 		public bool valid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor._valid19010);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid19010);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid19010);
 		}
 		internal static global::MonoJavaBridge.MethodId _sync19011;
 		public void sync()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileDescriptor._sync19011);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync19011);
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync19011);
 		}
 		internal static global::MonoJavaBridge.MethodId _FileDescriptor19012;
 		public FileDescriptor() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

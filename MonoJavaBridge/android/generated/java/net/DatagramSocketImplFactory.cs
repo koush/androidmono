@@ -17,10 +17,7 @@ namespace java.net
 		global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_.staticClass, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
 		}
 		static DatagramSocketImplFactory_()
 		{

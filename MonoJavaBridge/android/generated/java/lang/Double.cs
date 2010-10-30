@@ -11,10 +11,7 @@ namespace java.lang
 		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Double._equals20088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._equals20088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._equals20088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20089;
 		public static global::java.lang.String toString(double arg0)
@@ -26,19 +23,13 @@ namespace java.lang
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Double._toString20090)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._toString20090)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._toString20090)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20091;
 		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Double._hashCode20091);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._hashCode20091);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._hashCode20091);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleToRawLongBits20092;
 		public static long doubleToRawLongBits(double arg0)
@@ -62,19 +53,13 @@ namespace java.lang
 		public int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Double._compareTo20095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._compareTo20095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._compareTo20095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20096;
 		public int compareTo(java.lang.Double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Double._compareTo20096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._compareTo20096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._compareTo20096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toHexString20097;
 		public static global::java.lang.String toHexString(double arg0)
@@ -104,10 +89,7 @@ namespace java.lang
 		public bool isNaN()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Double._isNaN20101);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._isNaN20101);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._isNaN20101);
 		}
 		internal static global::MonoJavaBridge.MethodId _isNaN20102;
 		public static bool isNaN(double arg0)
@@ -125,64 +107,43 @@ namespace java.lang
 		public bool isInfinite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Double._isInfinite20104);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._isInfinite20104);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._isInfinite20104);
 		}
 		internal static global::MonoJavaBridge.MethodId _byteValue20105;
 		public sealed override byte byteValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.lang.Double._byteValue20105);
-			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._byteValue20105);
+			return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._byteValue20105);
 		}
 		internal static global::MonoJavaBridge.MethodId _shortValue20106;
 		public sealed override short shortValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.lang.Double._shortValue20106);
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._shortValue20106);
+			return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._shortValue20106);
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue20107;
 		public sealed override int intValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Double._intValue20107);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._intValue20107);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._intValue20107);
 		}
 		internal static global::MonoJavaBridge.MethodId _longValue20108;
 		public sealed override long longValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.lang.Double._longValue20108);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._longValue20108);
+			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._longValue20108);
 		}
 		internal static global::MonoJavaBridge.MethodId _floatValue20109;
 		public sealed override float floatValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.lang.Double._floatValue20109);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._floatValue20109);
+			return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._floatValue20109);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleValue20110;
 		public sealed override double doubleValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.lang.Double._doubleValue20110);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._doubleValue20110);
+			return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._doubleValue20110);
 		}
 		internal static global::MonoJavaBridge.MethodId _parseDouble20111;
 		public static double parseDouble(java.lang.String arg0)

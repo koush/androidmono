@@ -18,19 +18,13 @@ namespace java.util
 		bool java.util.Enumeration.hasMoreElements()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Enumeration_._hasMoreElements26171);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Enumeration_.staticClass, global::java.util.Enumeration_._hasMoreElements26171);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Enumeration_._hasMoreElements26171);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextElement26172;
 		global::java.lang.Object java.util.Enumeration.nextElement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Enumeration_._nextElement26172)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Enumeration_.staticClass, global::java.util.Enumeration_._nextElement26172)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Enumeration_._nextElement26172)) as java.lang.Object;
 		}
 		static Enumeration_()
 		{

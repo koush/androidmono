@@ -17,10 +17,7 @@ namespace java.security.spec
 		int java.security.spec.ECField.getFieldSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECField_._getFieldSize23978);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECField_.staticClass, global::java.security.spec.ECField_._getFieldSize23978);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECField_._getFieldSize23978);
 		}
 		static ECField_()
 		{

@@ -10,65 +10,37 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _start18220;
 		public virtual void start()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._start18220);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._start18220);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._start18220);
 		}
 		internal static global::MonoJavaBridge.MethodId _suspend18221;
 		public virtual void suspend()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._suspend18221);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._suspend18221);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._suspend18221);
 		}
 		internal static global::MonoJavaBridge.MethodId _resume18222;
 		public virtual void resume()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._resume18222);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._resume18222);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._resume18222);
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown18223;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._onKeyDown18223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onKeyDown18223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onKeyDown18223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent18224;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._onTouchEvent18224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTouchEvent18224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTouchEvent18224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTrackballEvent18225;
 		public override bool onTrackballEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._onTrackballEvent18225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTrackballEvent18225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTrackballEvent18225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure18226;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._onMeasure18226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onMeasure18226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onMeasure18226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int Duration
 		{
@@ -80,38 +52,22 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getDuration18227;
 		public virtual int getDuration()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.VideoView._getDuration18227);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getDuration18227);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getDuration18227);
 		}
 		internal static global::MonoJavaBridge.MethodId _pause18228;
 		public virtual void pause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._pause18228);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._pause18228);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._pause18228);
 		}
 		internal static global::MonoJavaBridge.MethodId _isPlaying18229;
 		public virtual bool isPlaying()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._isPlaying18229);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._isPlaying18229);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._isPlaying18229);
 		}
 		internal static global::MonoJavaBridge.MethodId _seekTo18230;
 		public virtual void seekTo(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._seekTo18230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._seekTo18230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._seekTo18230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CurrentPosition
 		{
@@ -123,11 +79,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getCurrentPosition18231;
 		public virtual int getCurrentPosition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.VideoView._getCurrentPosition18231);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getCurrentPosition18231);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getCurrentPosition18231);
 		}
 		public new global::android.media.MediaPlayer.OnPreparedListener OnPreparedListener
 		{
@@ -139,11 +91,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnPreparedListener18232;
 		public virtual void setOnPreparedListener(android.media.MediaPlayer.OnPreparedListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setOnPreparedListener18232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnPreparedListener18232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnPreparedListener18232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnPreparedListener(global::android.media.MediaPlayer.OnPreparedListenerDelegate arg0)
 		{
@@ -159,11 +107,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnCompletionListener18233;
 		public virtual void setOnCompletionListener(android.media.MediaPlayer.OnCompletionListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setOnCompletionListener18233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnCompletionListener18233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnCompletionListener18233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnCompletionListener(global::android.media.MediaPlayer.OnCompletionListenerDelegate arg0)
 		{
@@ -179,11 +123,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setOnErrorListener18234;
 		public virtual void setOnErrorListener(android.media.MediaPlayer.OnErrorListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setOnErrorListener18234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnErrorListener18234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnErrorListener18234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnErrorListener(global::android.media.MediaPlayer.OnErrorListenerDelegate arg0)
 		{
@@ -199,47 +139,27 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getBufferPercentage18235;
 		public virtual int getBufferPercentage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.VideoView._getBufferPercentage18235);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getBufferPercentage18235);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getBufferPercentage18235);
 		}
 		internal static global::MonoJavaBridge.MethodId _canPause18236;
 		public virtual bool canPause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._canPause18236);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canPause18236);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canPause18236);
 		}
 		internal static global::MonoJavaBridge.MethodId _canSeekBackward18237;
 		public virtual bool canSeekBackward()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._canSeekBackward18237);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekBackward18237);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekBackward18237);
 		}
 		internal static global::MonoJavaBridge.MethodId _canSeekForward18238;
 		public virtual bool canSeekForward()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.VideoView._canSeekForward18238);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekForward18238);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekForward18238);
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveAdjustedSize18239;
 		public virtual int resolveAdjustedSize(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.VideoView._resolveAdjustedSize18239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._resolveAdjustedSize18239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._resolveAdjustedSize18239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String VideoPath
 		{
@@ -251,11 +171,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setVideoPath18240;
 		public virtual void setVideoPath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setVideoPath18240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoPath18240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoPath18240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.net.Uri VideoURI
 		{
@@ -267,20 +183,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setVideoURI18241;
 		public virtual void setVideoURI(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setVideoURI18241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoURI18241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoURI18241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopPlayback18242;
 		public virtual void stopPlayback()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._stopPlayback18242);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._stopPlayback18242);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._stopPlayback18242);
 		}
 		public new global::android.widget.MediaController MediaController
 		{
@@ -292,11 +200,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setMediaController18243;
 		public virtual void setMediaController(android.widget.MediaController arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.VideoView._setMediaController18243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setMediaController18243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setMediaController18243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _VideoView18244;
 		public VideoView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

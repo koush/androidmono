@@ -10,11 +10,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _setText12721;
 		public virtual void setText(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.ClipboardManager._setText12721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText12721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText12721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setText(string arg0)
 		{
@@ -34,20 +30,12 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _getText12722;
 		public virtual global::java.lang.CharSequence getText()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasText12723;
 		public virtual bool hasText()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager._hasText12723);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText12723);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText12723);
 		}
 		static ClipboardManager()
 		{

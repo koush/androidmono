@@ -17,10 +17,7 @@ namespace org.apache.http.impl.conn.tsccm
 		void org.apache.http.impl.conn.tsccm.RefQueueHandler.handleReference(java.lang.@ref.Reference arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_.staticClass, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RefQueueHandler_._handleReference33153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RefQueueHandler_()
 		{

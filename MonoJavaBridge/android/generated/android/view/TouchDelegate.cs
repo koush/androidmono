@@ -10,11 +10,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent14602;
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate._onTouchEvent14602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent14602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent14602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _TouchDelegate14603;
 		public TouchDelegate(android.graphics.Rect arg0, android.view.View arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

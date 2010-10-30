@@ -10,29 +10,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _write18810;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream._write18810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._write18810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._write18810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write18811;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream._write18811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._write18811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._write18811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush18812;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream._flush18812);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._flush18812);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.BufferedOutputStream.staticClass, global::java.io.BufferedOutputStream._flush18812);
 		}
 		internal static global::MonoJavaBridge.MethodId _BufferedOutputStream18813;
 		public BufferedOutputStream(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

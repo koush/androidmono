@@ -10,20 +10,12 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _enableCarMode2182;
 		public virtual void enableCarMode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.UiModeManager._enableCarMode2182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._enableCarMode2182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._enableCarMode2182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _disableCarMode2183;
 		public virtual void disableCarMode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.UiModeManager._disableCarMode2183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._disableCarMode2183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._disableCarMode2183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CurrentModeType
 		{
@@ -35,20 +27,12 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getCurrentModeType2184;
 		public virtual int getCurrentModeType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.UiModeManager._getCurrentModeType2184);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getCurrentModeType2184);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getCurrentModeType2184);
 		}
 		internal static global::MonoJavaBridge.MethodId _setNightMode2185;
 		public virtual void setNightMode(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.UiModeManager._setNightMode2185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._setNightMode2185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._setNightMode2185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int NightMode
 		{
@@ -64,11 +48,7 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getNightMode2186;
 		public virtual int getNightMode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.UiModeManager._getNightMode2186);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getNightMode2186);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getNightMode2186);
 		}
 		internal static global::MonoJavaBridge.FieldId _ACTION_ENTER_CAR_MODE2187;
 		public static global::java.lang.String ACTION_ENTER_CAR_MODE

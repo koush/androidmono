@@ -10,47 +10,27 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _equals25107;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.Timestamp._equals25107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._equals25107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._equals25107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25108;
 		public virtual bool equals(java.sql.Timestamp arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.Timestamp._equals25108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._equals25108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._equals25108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25109;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Timestamp._toString25109)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._toString25109)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._toString25109)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo25110;
 		public virtual int compareTo(java.sql.Timestamp arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Timestamp._compareTo25110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._compareTo25110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._compareTo25110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo25111;
 		public override int compareTo(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Timestamp._compareTo25111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._compareTo25111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._compareTo25111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf25112;
 		public static global::java.sql.Timestamp valueOf(java.lang.String arg0)
@@ -61,29 +41,17 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _after25113;
 		public virtual bool after(java.sql.Timestamp arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.Timestamp._after25113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._after25113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._after25113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _before25114;
 		public virtual bool before(java.sql.Timestamp arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.Timestamp._before25114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._before25114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._before25114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime25115;
 		public override void setTime(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Timestamp._setTime25115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._setTime25115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._setTime25115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long Time
 		{
@@ -99,11 +67,7 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getTime25116;
 		public override long getTime()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.sql.Timestamp._getTime25116);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._getTime25116);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._getTime25116);
 		}
 		public new int Nanos
 		{
@@ -119,20 +83,12 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getNanos25117;
 		public virtual int getNanos()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.Timestamp._getNanos25117);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._getNanos25117);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._getNanos25117);
 		}
 		internal static global::MonoJavaBridge.MethodId _setNanos25118;
 		public virtual void setNanos(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Timestamp._setNanos25118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._setNanos25118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Timestamp.staticClass, global::java.sql.Timestamp._setNanos25118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Timestamp25119;
 		public Timestamp(long arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

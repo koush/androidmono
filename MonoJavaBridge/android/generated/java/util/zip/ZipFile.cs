@@ -10,11 +10,7 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _finalize28458;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipFile._finalize28458);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._finalize28458);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._finalize28458);
 		}
 		public new global::java.lang.String Name
 		{
@@ -26,56 +22,32 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getName28459;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile._getName28459)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getName28459)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getName28459)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _size28460;
 		public virtual int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.zip.ZipFile._size28460);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._size28460);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._size28460);
 		}
 		internal static global::MonoJavaBridge.MethodId _close28461;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipFile._close28461);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._close28461);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._close28461);
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntry28462;
 		public virtual global::java.util.zip.ZipEntry getEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile._getEntry28462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getEntry28462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getEntry28462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.zip.ZipEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _entries28463;
 		public virtual global::java.util.Enumeration entries()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile._entries28463)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._entries28463)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._entries28463)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream28464;
 		public virtual global::java.io.InputStream getInputStream(java.util.zip.ZipEntry arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile._getInputStream28464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getInputStream28464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipFile.staticClass, global::java.util.zip.ZipFile._getInputStream28464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _ZipFile28465;
 		public ZipFile(java.io.File arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

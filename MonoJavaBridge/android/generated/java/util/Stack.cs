@@ -10,47 +10,27 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _push26819;
 		public virtual global::java.lang.Object push(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Stack._push26819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Stack.staticClass, global::java.util.Stack._push26819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Stack.staticClass, global::java.util.Stack._push26819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _pop26820;
 		public virtual global::java.lang.Object pop()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Stack._pop26820)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Stack.staticClass, global::java.util.Stack._pop26820)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Stack.staticClass, global::java.util.Stack._pop26820)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _peek26821;
 		public virtual global::java.lang.Object peek()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Stack._peek26821)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Stack.staticClass, global::java.util.Stack._peek26821)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Stack.staticClass, global::java.util.Stack._peek26821)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _empty26822;
 		public virtual bool empty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Stack._empty26822);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Stack.staticClass, global::java.util.Stack._empty26822);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Stack.staticClass, global::java.util.Stack._empty26822);
 		}
 		internal static global::MonoJavaBridge.MethodId _search26823;
 		public virtual int search(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Stack._search26823, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Stack.staticClass, global::java.util.Stack._search26823, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Stack.staticClass, global::java.util.Stack._search26823, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Stack26824;
 		public Stack() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

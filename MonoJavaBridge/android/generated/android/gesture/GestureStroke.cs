@@ -10,11 +10,7 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _clone4986;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke._clone4986)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clone4986)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clone4986)) as java.lang.Object;
 		}
 		public new global::android.graphics.Path Path
 		{
@@ -26,38 +22,22 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _getPath4987;
 		public virtual global::android.graphics.Path getPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke._getPath4987)) as android.graphics.Path;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._getPath4987)) as android.graphics.Path;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._getPath4987)) as android.graphics.Path;
 		}
 		internal static global::MonoJavaBridge.MethodId _toPath4988;
 		public virtual global::android.graphics.Path toPath(float arg0, float arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke._toPath4988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.Path;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._toPath4988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.Path;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._toPath4988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.Path;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPath4989;
 		public virtual void clearPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureStroke._clearPath4989);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clearPath4989);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clearPath4989);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeOrientedBoundingBox4990;
 		public virtual global::android.gesture.OrientedBoundingBox computeOrientedBoundingBox()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke._computeOrientedBoundingBox4990)) as android.gesture.OrientedBoundingBox;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._computeOrientedBoundingBox4990)) as android.gesture.OrientedBoundingBox;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._computeOrientedBoundingBox4990)) as android.gesture.OrientedBoundingBox;
 		}
 		internal static global::MonoJavaBridge.MethodId _GestureStroke4991;
 		public GestureStroke(java.util.ArrayList arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

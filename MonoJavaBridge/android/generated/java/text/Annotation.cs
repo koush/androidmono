@@ -10,11 +10,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _toString25157;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.Annotation._toString25157)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Annotation.staticClass, global::java.text.Annotation._toString25157)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Annotation.staticClass, global::java.text.Annotation._toString25157)) as java.lang.String;
 		}
 		public new global::java.lang.Object Value
 		{
@@ -26,11 +22,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getValue25158;
 		public virtual global::java.lang.Object getValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.Annotation._getValue25158)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.Annotation.staticClass, global::java.text.Annotation._getValue25158)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Annotation.staticClass, global::java.text.Annotation._getValue25158)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _Annotation25159;
 		public Annotation(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

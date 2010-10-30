@@ -19,64 +19,43 @@ namespace dalvik.annotation
 		global::java.lang.String dalvik.annotation.TestTarget.methodName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodName18337)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._methodName18337)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodName18337)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _conceptName18338;
 		global::java.lang.String dalvik.annotation.TestTarget.conceptName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._conceptName18338)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._conceptName18338)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._conceptName18338)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _methodArgs18339;
 		global::java.lang.Class[] dalvik.annotation.TestTarget.methodArgs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodArgs18339)) as java.lang.Class[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._methodArgs18339)) as java.lang.Class[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodArgs18339)) as java.lang.Class[];
 		}
 		internal static global::MonoJavaBridge.MethodId _equals18340;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._equals18340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._equals18340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._equals18340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString18341;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._toString18341)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._toString18341)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._toString18341)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode18342;
 		int java.lang.annotation.Annotation.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._hashCode18342);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._hashCode18342);
+			return @__env.CallIntMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._hashCode18342);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType18343;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._annotationType18343)) as java.lang.Class;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._annotationType18343)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._annotationType18343)) as java.lang.Class;
 		}
 		static TestTarget_()
 		{

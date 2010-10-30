@@ -10,20 +10,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16988;
 		protected override void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DigitalClock._onAttachedToWindow16988);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onAttachedToWindow16988);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onAttachedToWindow16988);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16989;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DigitalClock._onDetachedFromWindow16989);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onDetachedFromWindow16989);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onDetachedFromWindow16989);
 		}
 		internal static global::MonoJavaBridge.MethodId _DigitalClock16990;
 		public DigitalClock(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

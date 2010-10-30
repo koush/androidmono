@@ -10,47 +10,27 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _openFileInput12286;
 		public override global::java.io.FileInputStream openFileInput(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._openFileInput12286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.FileInputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openFileInput12286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.FileInputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openFileInput12286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.FileInputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _openFileOutput12287;
 		public override global::java.io.FileOutputStream openFileOutput(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._openFileOutput12287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.FileOutputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openFileOutput12287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.FileOutputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openFileOutput12287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.FileOutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteFile12288;
 		public override bool deleteFile(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._deleteFile12288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._deleteFile12288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._deleteFile12288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFileStreamPath12289;
 		public override global::java.io.File getFileStreamPath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getFileStreamPath12289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getFileStreamPath12289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getFileStreamPath12289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
 		}
 		internal static global::MonoJavaBridge.MethodId _fileList12290;
 		public override global::java.lang.String[] fileList()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._fileList12290)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._fileList12290)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._fileList12290)) as java.lang.String[];
 		}
 		public new global::java.io.File CacheDir
 		{
@@ -62,20 +42,12 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getCacheDir12291;
 		public override global::java.io.File getCacheDir()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getCacheDir12291)) as java.io.File;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getCacheDir12291)) as java.io.File;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getCacheDir12291)) as java.io.File;
 		}
 		internal static global::MonoJavaBridge.MethodId _openOrCreateDatabase12292;
 		public override global::android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, int arg1, android.database.sqlite.SQLiteDatabase.CursorFactory arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._openOrCreateDatabase12292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openOrCreateDatabase12292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._openOrCreateDatabase12292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
 		}
 		public android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, int arg1, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg2)
 		{
@@ -84,29 +56,17 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _deleteDatabase12293;
 		public override bool deleteDatabase(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._deleteDatabase12293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._deleteDatabase12293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._deleteDatabase12293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDatabasePath12294;
 		public override global::java.io.File getDatabasePath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getDatabasePath12294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePath12294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePath12294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
 		}
 		internal static global::MonoJavaBridge.MethodId _databaseList12295;
 		public override global::java.lang.String[] databaseList()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._databaseList12295)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._databaseList12295)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._databaseList12295)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _providerWithRenamedContext12296;
 		public static global::android.content.ContentProvider providerWithRenamedContext(java.lang.Class arg0, android.content.Context arg1, java.lang.String arg2)
@@ -123,11 +83,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _makeExistingFilesAndDbsAccessible12298;
 		public virtual void makeExistingFilesAndDbsAccessible()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._makeExistingFilesAndDbsAccessible12298);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._makeExistingFilesAndDbsAccessible12298);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._makeExistingFilesAndDbsAccessible12298);
 		}
 		public new global::java.lang.String DatabasePrefix
 		{
@@ -139,11 +95,7 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getDatabasePrefix12299;
 		public virtual global::java.lang.String getDatabasePrefix()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getDatabasePrefix12299)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePrefix12299)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePrefix12299)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _RenamingDelegatingContext12300;
 		public RenamingDelegatingContext(android.content.Context arg0, android.content.Context arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -18,19 +18,13 @@ namespace org.apache.http.conn
 		void org.apache.http.conn.ConnectionReleaseTrigger.releaseConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32093);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortConnection32094;
 		void org.apache.http.conn.ConnectionReleaseTrigger.abortConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_._abortConnection32094);
 		}
 		static ConnectionReleaseTrigger_()
 		{

@@ -17,10 +17,7 @@ namespace java.util.concurrent
 		void java.util.concurrent.Executor.execute(java.lang.Runnable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.Executor_.staticClass, global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.Executor_._execute27261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Executor_()
 		{

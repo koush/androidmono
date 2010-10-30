@@ -10,11 +10,7 @@ namespace org.apache.http.client.protocol
 		internal static global::MonoJavaBridge.MethodId _process32038;
 		public virtual void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.protocol.RequestAddCookies._process32038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.protocol.RequestAddCookies.staticClass, global::org.apache.http.client.protocol.RequestAddCookies._process32038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.protocol.RequestAddCookies.staticClass, global::org.apache.http.client.protocol.RequestAddCookies._process32038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RequestAddCookies32039;
 		public RequestAddCookies() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

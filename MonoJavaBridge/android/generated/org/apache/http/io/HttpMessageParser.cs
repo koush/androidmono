@@ -17,10 +17,7 @@ namespace org.apache.http.io
 		global::org.apache.http.HttpMessage org.apache.http.io.HttpMessageParser.parse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageParser_._parse33467)) as org.apache.http.HttpMessage;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageParser_.staticClass, global::org.apache.http.io.HttpMessageParser_._parse33467)) as org.apache.http.HttpMessage;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpMessage>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageParser_._parse33467)) as org.apache.http.HttpMessage;
 		}
 		static HttpMessageParser_()
 		{

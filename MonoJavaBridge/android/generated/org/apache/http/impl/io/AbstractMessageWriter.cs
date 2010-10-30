@@ -10,11 +10,7 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _write33385;
 		public virtual void write(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageWriter._write33385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, global::org.apache.http.impl.io.AbstractMessageWriter._write33385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, global::org.apache.http.impl.io.AbstractMessageWriter._write33385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeHeadLine33386;
 		protected abstract void writeHeadLine(org.apache.http.HttpMessage arg0);
@@ -49,10 +45,7 @@ namespace org.apache.http.impl.io
 		protected override void writeHeadLine(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageWriter_._writeHeadLine33388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageWriter_.staticClass, global::org.apache.http.impl.io.AbstractMessageWriter_._writeHeadLine33388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.AbstractMessageWriter_._writeHeadLine33388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AbstractMessageWriter_()
 		{

@@ -10,20 +10,12 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _close27945;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.FileHandler._close27945);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.FileHandler.staticClass, global::java.util.logging.FileHandler._close27945);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.FileHandler.staticClass, global::java.util.logging.FileHandler._close27945);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish27946;
 		public override void publish(java.util.logging.LogRecord arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.FileHandler._publish27946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.FileHandler.staticClass, global::java.util.logging.FileHandler._publish27946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.FileHandler.staticClass, global::java.util.logging.FileHandler._publish27946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _FileHandler27947;
 		public FileHandler(java.lang.String arg0, int arg1, int arg2, bool arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

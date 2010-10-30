@@ -17,11 +17,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _setBaseContext3481;
 		public virtual void setBaseContext(android.content.Context arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.MutableContextWrapper._setBaseContext3481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._setBaseContext3481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._setBaseContext3481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _MutableContextWrapper3482;
 		public MutableContextWrapper(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

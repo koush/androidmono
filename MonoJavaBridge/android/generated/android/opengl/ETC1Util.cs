@@ -24,11 +24,7 @@ namespace android.opengl
 			internal static global::MonoJavaBridge.MethodId _getData8132;
 			public virtual global::java.nio.ByteBuffer getData()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture._getData8132)) as java.nio.ByteBuffer;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getData8132)) as java.nio.ByteBuffer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getData8132)) as java.nio.ByteBuffer;
 			}
 			public new int Width
 			{
@@ -40,11 +36,7 @@ namespace android.opengl
 			internal static global::MonoJavaBridge.MethodId _getWidth8133;
 			public virtual int getWidth()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture._getWidth8133);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getWidth8133);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getWidth8133);
 			}
 			public new int Height
 			{
@@ -56,11 +48,7 @@ namespace android.opengl
 			internal static global::MonoJavaBridge.MethodId _getHeight8134;
 			public virtual int getHeight()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture._getHeight8134);
-				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getHeight8134);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getHeight8134);
 			}
 			internal static global::MonoJavaBridge.MethodId _ETC1Texture8135;
 			public ETC1Texture(int arg0, int arg1, java.nio.ByteBuffer arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

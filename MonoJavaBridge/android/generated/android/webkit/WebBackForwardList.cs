@@ -10,11 +10,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _clone16123;
 		protected virtual global::android.webkit.WebBackForwardList clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList._clone16123)) as android.webkit.WebBackForwardList;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._clone16123)) as android.webkit.WebBackForwardList;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._clone16123)) as android.webkit.WebBackForwardList;
 		}
 		public new int Size
 		{
@@ -26,11 +22,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSize16124;
 		public virtual int getSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebBackForwardList._getSize16124);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getSize16124);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getSize16124);
 		}
 		public new global::android.webkit.WebHistoryItem CurrentItem
 		{
@@ -42,11 +34,7 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCurrentItem16125;
 		public virtual global::android.webkit.WebHistoryItem getCurrentItem()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList._getCurrentItem16125)) as android.webkit.WebHistoryItem;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentItem16125)) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentItem16125)) as android.webkit.WebHistoryItem;
 		}
 		public new int CurrentIndex
 		{
@@ -58,20 +46,12 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCurrentIndex16126;
 		public virtual int getCurrentIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.WebBackForwardList._getCurrentIndex16126);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentIndex16126);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentIndex16126);
 		}
 		internal static global::MonoJavaBridge.MethodId _getItemAtIndex16127;
 		public virtual global::android.webkit.WebHistoryItem getItemAtIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebHistoryItem;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebHistoryItem;
 		}
 		static WebBackForwardList()
 		{

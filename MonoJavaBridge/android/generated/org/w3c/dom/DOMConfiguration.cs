@@ -20,37 +20,25 @@ namespace org.w3c.dom
 		void org.w3c.dom.DOMConfiguration.setParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._setParameter34336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._setParameter34336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._setParameter34336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameter34337;
 		global::java.lang.Object org.w3c.dom.DOMConfiguration.getParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._getParameter34337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._getParameter34337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._getParameter34337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _canSetParameter34338;
 		bool org.w3c.dom.DOMConfiguration.canSetParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._canSetParameter34338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._canSetParameter34338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._canSetParameter34338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterNames34339;
 		global::org.w3c.dom.DOMStringList org.w3c.dom.DOMConfiguration.getParameterNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMStringList>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._getParameterNames34339)) as org.w3c.dom.DOMStringList;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMStringList>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._getParameterNames34339)) as org.w3c.dom.DOMStringList;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMStringList>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_._getParameterNames34339)) as org.w3c.dom.DOMStringList;
 		}
 		static DOMConfiguration_()
 		{

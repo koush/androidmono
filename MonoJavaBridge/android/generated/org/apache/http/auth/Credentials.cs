@@ -18,19 +18,13 @@ namespace org.apache.http.auth
 		global::java.lang.String org.apache.http.auth.Credentials.getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getPassword31826)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_.staticClass, global::org.apache.http.auth.Credentials_._getPassword31826)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getPassword31826)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserPrincipal31827;
 		global::java.security.Principal org.apache.http.auth.Credentials.getUserPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getUserPrincipal31827)) as java.security.Principal;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_.staticClass, global::org.apache.http.auth.Credentials_._getUserPrincipal31827)) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_._getUserPrincipal31827)) as java.security.Principal;
 		}
 		static Credentials_()
 		{

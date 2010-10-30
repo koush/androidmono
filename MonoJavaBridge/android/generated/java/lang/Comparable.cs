@@ -17,10 +17,7 @@ namespace java.lang
 		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Comparable_.staticClass, global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Comparable_()
 		{

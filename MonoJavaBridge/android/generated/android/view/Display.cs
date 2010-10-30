@@ -17,11 +17,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getWidth14014;
 		public virtual int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getWidth14014);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getWidth14014);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getWidth14014);
 		}
 		public new int Height
 		{
@@ -33,11 +29,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getHeight14015;
 		public virtual int getHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getHeight14015);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getHeight14015);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getHeight14015);
 		}
 		public new int Orientation
 		{
@@ -49,11 +41,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getOrientation14016;
 		public virtual int getOrientation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getOrientation14016);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getOrientation14016);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getOrientation14016);
 		}
 		public new int DisplayId
 		{
@@ -65,11 +53,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getDisplayId14017;
 		public virtual int getDisplayId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getDisplayId14017);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getDisplayId14017);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getDisplayId14017);
 		}
 		public new int Rotation
 		{
@@ -81,11 +65,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getRotation14018;
 		public virtual int getRotation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getRotation14018);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getRotation14018);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRotation14018);
 		}
 		public new int PixelFormat
 		{
@@ -97,11 +77,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getPixelFormat14019;
 		public virtual int getPixelFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.Display._getPixelFormat14019);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getPixelFormat14019);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getPixelFormat14019);
 		}
 		public new float RefreshRate
 		{
@@ -113,20 +89,12 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _getRefreshRate14020;
 		public virtual float getRefreshRate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.Display._getRefreshRate14020);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate14020);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate14020);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics14021;
 		public virtual void getMetrics(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.Display._getMetrics14021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getMetrics14021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getMetrics14021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int DEFAULT_DISPLAY
 		{

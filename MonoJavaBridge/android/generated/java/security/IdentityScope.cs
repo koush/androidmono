@@ -10,11 +10,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _toString22977;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope._toString22977)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope.staticClass, global::java.security.IdentityScope._toString22977)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.IdentityScope.staticClass, global::java.security.IdentityScope._toString22977)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _size22978;
 		public abstract int size();
@@ -37,11 +33,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getIdentity22983;
 		public virtual global::java.security.Identity getIdentity(java.security.Principal arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope._getIdentity22983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope.staticClass, global::java.security.IdentityScope._getIdentity22983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.IdentityScope.staticClass, global::java.security.IdentityScope._getIdentity22983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIdentity22984;
 		public abstract global::java.security.Identity getIdentity(java.lang.String arg0);
@@ -104,55 +96,37 @@ namespace java.security
 		public override int size()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.IdentityScope_._size22990);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._size22990);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.security.IdentityScope_._size22990);
 		}
 		internal static global::MonoJavaBridge.MethodId _addIdentity22991;
 		public override void addIdentity(java.security.Identity arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.IdentityScope_._addIdentity22991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._addIdentity22991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.IdentityScope_._addIdentity22991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getIdentity22992;
 		public override global::java.security.Identity getIdentity(java.security.PublicKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._getIdentity22992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._getIdentity22992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._getIdentity22992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIdentity22993;
 		public override global::java.security.Identity getIdentity(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._getIdentity22993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._getIdentity22993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._getIdentity22993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Identity;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeIdentity22994;
 		public override void removeIdentity(java.security.Identity arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.IdentityScope_._removeIdentity22994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._removeIdentity22994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.IdentityScope_._removeIdentity22994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _identities22995;
 		public override global::java.util.Enumeration identities()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._identities22995)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.IdentityScope_.staticClass, global::java.security.IdentityScope_._identities22995)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.IdentityScope_._identities22995)) as java.util.Enumeration;
 		}
 		static IdentityScope_()
 		{

@@ -20,37 +20,25 @@ namespace org.w3c.dom.ls
 		global::org.w3c.dom.ls.LSParser org.w3c.dom.ls.DOMImplementationLS.createLSParser(short arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSParser>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSParser34882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.ls.LSParser;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, global::org.w3c.dom.ls.DOMImplementationLS_._createLSParser34882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.ls.LSParser;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSParser>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSParser34882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.ls.LSParser;
 		}
 		internal static global::MonoJavaBridge.MethodId _createLSSerializer34883;
 		global::org.w3c.dom.ls.LSSerializer org.w3c.dom.ls.DOMImplementationLS.createLSSerializer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSSerializer>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSSerializer34883)) as org.w3c.dom.ls.LSSerializer;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSSerializer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, global::org.w3c.dom.ls.DOMImplementationLS_._createLSSerializer34883)) as org.w3c.dom.ls.LSSerializer;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSSerializer>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSSerializer34883)) as org.w3c.dom.ls.LSSerializer;
 		}
 		internal static global::MonoJavaBridge.MethodId _createLSInput34884;
 		global::org.w3c.dom.ls.LSInput org.w3c.dom.ls.DOMImplementationLS.createLSInput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSInput>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSInput34884)) as org.w3c.dom.ls.LSInput;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSInput>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, global::org.w3c.dom.ls.DOMImplementationLS_._createLSInput34884)) as org.w3c.dom.ls.LSInput;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSInput>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSInput34884)) as org.w3c.dom.ls.LSInput;
 		}
 		internal static global::MonoJavaBridge.MethodId _createLSOutput34885;
 		global::org.w3c.dom.ls.LSOutput org.w3c.dom.ls.DOMImplementationLS.createLSOutput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSOutput>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSOutput34885)) as org.w3c.dom.ls.LSOutput;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSOutput>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_.staticClass, global::org.w3c.dom.ls.DOMImplementationLS_._createLSOutput34885)) as org.w3c.dom.ls.LSOutput;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSOutput>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.DOMImplementationLS_._createLSOutput34885)) as org.w3c.dom.ls.LSOutput;
 		}
 		static DOMImplementationLS_()
 		{

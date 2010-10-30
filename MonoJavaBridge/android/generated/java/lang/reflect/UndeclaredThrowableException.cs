@@ -17,11 +17,7 @@ namespace java.lang.reflect
 		internal static global::MonoJavaBridge.MethodId _getCause21158;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.UndeclaredThrowableException._getCause21158)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.UndeclaredThrowableException.staticClass, global::java.lang.reflect.UndeclaredThrowableException._getCause21158)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.UndeclaredThrowableException.staticClass, global::java.lang.reflect.UndeclaredThrowableException._getCause21158)) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable UndeclaredThrowable
 		{
@@ -33,11 +29,7 @@ namespace java.lang.reflect
 		internal static global::MonoJavaBridge.MethodId _getUndeclaredThrowable21159;
 		public virtual global::java.lang.Throwable getUndeclaredThrowable()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.UndeclaredThrowableException._getUndeclaredThrowable21159)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.UndeclaredThrowableException.staticClass, global::java.lang.reflect.UndeclaredThrowableException._getUndeclaredThrowable21159)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.UndeclaredThrowableException.staticClass, global::java.lang.reflect.UndeclaredThrowableException._getUndeclaredThrowable21159)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _UndeclaredThrowableException21160;
 		public UndeclaredThrowableException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

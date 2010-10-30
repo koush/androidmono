@@ -40,217 +40,145 @@ namespace java.sql
 		global::java.lang.Object java.sql.SQLInput.readObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readObject24983)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readObject24983)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readObject24983)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _readInt24984;
 		int java.sql.SQLInput.readInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.SQLInput_._readInt24984);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readInt24984);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.SQLInput_._readInt24984);
 		}
 		internal static global::MonoJavaBridge.MethodId _readBytes24985;
 		byte[] java.sql.SQLInput.readBytes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBytes24985)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readBytes24985)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBytes24985)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _readLong24986;
 		long java.sql.SQLInput.readLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.sql.SQLInput_._readLong24986);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readLong24986);
+			return @__env.CallLongMethod(this.JvmHandle, global::java.sql.SQLInput_._readLong24986);
 		}
 		internal static global::MonoJavaBridge.MethodId _readByte24987;
 		byte java.sql.SQLInput.readByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.sql.SQLInput_._readByte24987);
-			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readByte24987);
+			return @__env.CallByteMethod(this.JvmHandle, global::java.sql.SQLInput_._readByte24987);
 		}
 		internal static global::MonoJavaBridge.MethodId _readShort24988;
 		short java.sql.SQLInput.readShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.sql.SQLInput_._readShort24988);
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readShort24988);
+			return @__env.CallShortMethod(this.JvmHandle, global::java.sql.SQLInput_._readShort24988);
 		}
 		internal static global::MonoJavaBridge.MethodId _readFloat24989;
 		float java.sql.SQLInput.readFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.sql.SQLInput_._readFloat24989);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readFloat24989);
+			return @__env.CallFloatMethod(this.JvmHandle, global::java.sql.SQLInput_._readFloat24989);
 		}
 		internal static global::MonoJavaBridge.MethodId _readBoolean24990;
 		bool java.sql.SQLInput.readBoolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_._readBoolean24990);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readBoolean24990);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_._readBoolean24990);
 		}
 		internal static global::MonoJavaBridge.MethodId _readDouble24991;
 		double java.sql.SQLInput.readDouble()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.sql.SQLInput_._readDouble24991);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readDouble24991);
+			return @__env.CallDoubleMethod(this.JvmHandle, global::java.sql.SQLInput_._readDouble24991);
 		}
 		internal static global::MonoJavaBridge.MethodId _readString24992;
 		global::java.lang.String java.sql.SQLInput.readString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readString24992)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readString24992)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readString24992)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readArray24993;
 		global::java.sql.Array java.sql.SQLInput.readArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Array>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readArray24993)) as java.sql.Array;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Array>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readArray24993)) as java.sql.Array;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Array>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readArray24993)) as java.sql.Array;
 		}
 		internal static global::MonoJavaBridge.MethodId _wasNull24994;
 		bool java.sql.SQLInput.wasNull()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_._wasNull24994);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._wasNull24994);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.SQLInput_._wasNull24994);
 		}
 		internal static global::MonoJavaBridge.MethodId _readBigDecimal24995;
 		global::java.math.BigDecimal java.sql.SQLInput.readBigDecimal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBigDecimal24995)) as java.math.BigDecimal;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readBigDecimal24995)) as java.math.BigDecimal;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBigDecimal24995)) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _readDate24996;
 		global::java.sql.Date java.sql.SQLInput.readDate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readDate24996)) as java.sql.Date;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readDate24996)) as java.sql.Date;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readDate24996)) as java.sql.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _readTime24997;
 		global::java.sql.Time java.sql.SQLInput.readTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readTime24997)) as java.sql.Time;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readTime24997)) as java.sql.Time;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readTime24997)) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _readTimestamp24998;
 		global::java.sql.Timestamp java.sql.SQLInput.readTimestamp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readTimestamp24998)) as java.sql.Timestamp;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readTimestamp24998)) as java.sql.Timestamp;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readTimestamp24998)) as java.sql.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _readCharacterStream24999;
 		global::java.io.Reader java.sql.SQLInput.readCharacterStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readCharacterStream24999)) as java.io.Reader;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readCharacterStream24999)) as java.io.Reader;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readCharacterStream24999)) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _readAsciiStream25000;
 		global::java.io.InputStream java.sql.SQLInput.readAsciiStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readAsciiStream25000)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readAsciiStream25000)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readAsciiStream25000)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _readBinaryStream25001;
 		global::java.io.InputStream java.sql.SQLInput.readBinaryStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBinaryStream25001)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readBinaryStream25001)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBinaryStream25001)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _readRef25002;
 		global::java.sql.Ref java.sql.SQLInput.readRef()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Ref>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readRef25002)) as java.sql.Ref;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Ref>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readRef25002)) as java.sql.Ref;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Ref>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readRef25002)) as java.sql.Ref;
 		}
 		internal static global::MonoJavaBridge.MethodId _readBlob25003;
 		global::java.sql.Blob java.sql.SQLInput.readBlob()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Blob>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBlob25003)) as java.sql.Blob;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Blob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readBlob25003)) as java.sql.Blob;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Blob>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readBlob25003)) as java.sql.Blob;
 		}
 		internal static global::MonoJavaBridge.MethodId _readClob25004;
 		global::java.sql.Clob java.sql.SQLInput.readClob()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Clob>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readClob25004)) as java.sql.Clob;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Clob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readClob25004)) as java.sql.Clob;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Clob>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readClob25004)) as java.sql.Clob;
 		}
 		internal static global::MonoJavaBridge.MethodId _readURL25005;
 		global::java.net.URL java.sql.SQLInput.readURL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readURL25005)) as java.net.URL;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readURL25005)) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readURL25005)) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _readNString25006;
 		global::java.lang.String java.sql.SQLInput.readNString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readNString25006)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLInput_.staticClass, global::java.sql.SQLInput_._readNString25006)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLInput_._readNString25006)) as java.lang.String;
 		}
 		static SQLInput_()
 		{

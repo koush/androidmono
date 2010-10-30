@@ -17,11 +17,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getWidth5827;
 		public virtual int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getWidth5827);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getWidth5827);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getWidth5827);
 		}
 		public new int Height
 		{
@@ -33,20 +29,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getHeight5828;
 		public virtual int getHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getHeight5828);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getHeight5828);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getHeight5828);
 		}
 		internal static global::MonoJavaBridge.MethodId _compressToJpeg5829;
 		public virtual bool compressToJpeg(android.graphics.Rect arg0, int arg1, java.io.OutputStream arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.YuvImage._compressToJpeg5829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._compressToJpeg5829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._compressToJpeg5829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new byte[] YuvData
 		{
@@ -58,11 +46,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getYuvData5830;
 		public virtual byte[] getYuvData()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.YuvImage._getYuvData5830)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvData5830)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvData5830)) as byte[];
 		}
 		public new int YuvFormat
 		{
@@ -74,11 +58,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getYuvFormat5831;
 		public virtual int getYuvFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getYuvFormat5831);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvFormat5831);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvFormat5831);
 		}
 		public new int[] Strides
 		{
@@ -90,11 +70,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getStrides5832;
 		public virtual int[] getStrides()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.YuvImage._getStrides5832)) as int[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getStrides5832)) as int[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getStrides5832)) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _YuvImage5833;
 		public YuvImage(byte[] arg0, int arg1, int arg2, int arg3, int[] arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

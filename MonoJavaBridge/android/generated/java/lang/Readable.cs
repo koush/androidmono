@@ -17,10 +17,7 @@ namespace java.lang
 		int java.lang.Readable.read(java.nio.CharBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Readable_.staticClass, global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read20427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Readable_()
 		{

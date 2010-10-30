@@ -45,28 +45,19 @@ namespace java.security
 		public override void login(javax.security.auth.Subject arg0, javax.security.auth.callback.CallbackHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._login22902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AuthProvider_.staticClass, global::java.security.AuthProvider_._login22902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._login22902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _logout22903;
 		public override void logout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._logout22903);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AuthProvider_.staticClass, global::java.security.AuthProvider_._logout22903);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._logout22903);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCallbackHandler22904;
 		public override void setCallbackHandler(javax.security.auth.callback.CallbackHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._setCallbackHandler22904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AuthProvider_.staticClass, global::java.security.AuthProvider_._setCallbackHandler22904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.AuthProvider_._setCallbackHandler22904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AuthProvider_()
 		{

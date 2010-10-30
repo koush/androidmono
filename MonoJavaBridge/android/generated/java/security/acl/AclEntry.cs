@@ -26,91 +26,61 @@ namespace java.security.acl
 		global::java.lang.String java.security.acl.AclEntry.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._toString23441)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._toString23441)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._toString23441)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23442;
 		global::java.lang.Object java.security.acl.AclEntry.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._clone23442)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._clone23442)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._clone23442)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _checkPermission23443;
 		bool java.security.acl.AclEntry.checkPermission(java.security.acl.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._checkPermission23443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._checkPermission23443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._checkPermission23443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _permissions23444;
 		global::java.util.Enumeration java.security.acl.AclEntry.permissions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._permissions23444)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._permissions23444)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._permissions23444)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _isNegative23445;
 		bool java.security.acl.AclEntry.isNegative()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._isNegative23445);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._isNegative23445);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._isNegative23445);
 		}
 		internal static global::MonoJavaBridge.MethodId _addPermission23446;
 		bool java.security.acl.AclEntry.addPermission(java.security.acl.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._addPermission23446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._addPermission23446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._addPermission23446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePermission23447;
 		bool java.security.acl.AclEntry.removePermission(java.security.acl.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._removePermission23447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._removePermission23447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._removePermission23447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrincipal23448;
 		global::java.security.Principal java.security.acl.AclEntry.getPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._getPrincipal23448)) as java.security.Principal;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._getPrincipal23448)) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.acl.AclEntry_._getPrincipal23448)) as java.security.Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPrincipal23449;
 		bool java.security.acl.AclEntry.setPrincipal(java.security.Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._setPrincipal23449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._setPrincipal23449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.acl.AclEntry_._setPrincipal23449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNegativePermissions23450;
 		void java.security.acl.AclEntry.setNegativePermissions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.acl.AclEntry_._setNegativePermissions23450);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.acl.AclEntry_.staticClass, global::java.security.acl.AclEntry_._setNegativePermissions23450);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.security.acl.AclEntry_._setNegativePermissions23450);
 		}
 		static AclEntry_()
 		{

@@ -16,37 +16,25 @@ namespace android.test
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.UiThreadTest_._equals12357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.UiThreadTest_.staticClass, global::android.test.UiThreadTest_._equals12357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.UiThreadTest_._equals12357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12358;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_._toString12358)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_.staticClass, global::android.test.UiThreadTest_._toString12358)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_._toString12358)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12359;
 		int java.lang.annotation.Annotation.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.UiThreadTest_._hashCode12359);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.UiThreadTest_.staticClass, global::android.test.UiThreadTest_._hashCode12359);
+			return @__env.CallIntMethod(this.JvmHandle, global::android.test.UiThreadTest_._hashCode12359);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType12360;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_._annotationType12360)) as java.lang.Class;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_.staticClass, global::android.test.UiThreadTest_._annotationType12360)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.UiThreadTest_._annotationType12360)) as java.lang.Class;
 		}
 		static UiThreadTest_()
 		{

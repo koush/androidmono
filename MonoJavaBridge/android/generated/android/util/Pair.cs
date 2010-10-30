@@ -10,20 +10,12 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _equals13813;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.util.Pair._equals13813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.util.Pair.staticClass, global::android.util.Pair._equals13813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._equals13813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode13814;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.util.Pair._hashCode13814);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.Pair.staticClass, global::android.util.Pair._hashCode13814);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._hashCode13814);
 		}
 		internal static global::MonoJavaBridge.MethodId _create13815;
 		public static global::android.util.Pair create(java.lang.Object arg0, java.lang.Object arg1)

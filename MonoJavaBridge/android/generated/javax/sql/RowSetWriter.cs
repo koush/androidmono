@@ -17,10 +17,7 @@ namespace javax.sql
 		bool javax.sql.RowSetWriter.writeData(javax.sql.RowSetInternal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.sql.RowSetWriter_._writeData30622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSetWriter_.staticClass, global::javax.sql.RowSetWriter_._writeData30622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.sql.RowSetWriter_._writeData30622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetWriter_()
 		{

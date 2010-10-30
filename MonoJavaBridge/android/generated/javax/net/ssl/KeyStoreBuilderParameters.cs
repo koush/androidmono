@@ -17,11 +17,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getParameters29879;
 		public virtual global::java.util.List getParameters()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.KeyStoreBuilderParameters._getParameters29879)) as java.util.List;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._getParameters29879)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._getParameters29879)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyStoreBuilderParameters29880;
 		public KeyStoreBuilderParameters(java.security.KeyStore.Builder arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

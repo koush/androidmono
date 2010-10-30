@@ -17,11 +17,7 @@ namespace android.graphics
 			internal static global::MonoJavaBridge.MethodId _requestCancelDecode5064;
 			public virtual void requestCancelDecode()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.BitmapFactory.Options._requestCancelDecode5064);
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.BitmapFactory.Options.staticClass, global::android.graphics.BitmapFactory.Options._requestCancelDecode5064);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.BitmapFactory.Options.staticClass, global::android.graphics.BitmapFactory.Options._requestCancelDecode5064);
 			}
 			internal static global::MonoJavaBridge.MethodId _Options5065;
 			public Options() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

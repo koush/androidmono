@@ -10,20 +10,12 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _equals24000;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.spec.ECPoint._equals24000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._equals24000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._equals24000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode24001;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECPoint._hashCode24001);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._hashCode24001);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._hashCode24001);
 		}
 		public new global::java.math.BigInteger AffineX
 		{
@@ -35,11 +27,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getAffineX24002;
 		public virtual global::java.math.BigInteger getAffineX()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPoint._getAffineX24002)) as java.math.BigInteger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineX24002)) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineX24002)) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger AffineY
 		{
@@ -51,11 +39,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getAffineY24003;
 		public virtual global::java.math.BigInteger getAffineY()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPoint._getAffineY24003)) as java.math.BigInteger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineY24003)) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineY24003)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECPoint24004;
 		public ECPoint(java.math.BigInteger arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

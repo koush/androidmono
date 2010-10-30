@@ -10,38 +10,22 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _add26213;
 		public override void add(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._add26213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._add26213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._add26213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals26214;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.GregorianCalendar._equals26214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._equals26214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._equals26214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26215;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._hashCode26215);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._hashCode26215);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._hashCode26215);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26216;
 		public override global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar._clone26216)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._clone26216)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._clone26216)) as java.lang.Object;
 		}
 		public new global::java.util.TimeZone TimeZone
 		{
@@ -57,128 +41,72 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getTimeZone26217;
 		public override global::java.util.TimeZone getTimeZone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar._getTimeZone26217)) as java.util.TimeZone;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getTimeZone26217)) as java.util.TimeZone;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getTimeZone26217)) as java.util.TimeZone;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimeZone26218;
 		public override void setTimeZone(java.util.TimeZone arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._setTimeZone26218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._setTimeZone26218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._setTimeZone26218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLeapYear26219;
 		public virtual bool isLeapYear(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.GregorianCalendar._isLeapYear26219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._isLeapYear26219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._isLeapYear26219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeTime26220;
 		protected override void computeTime()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._computeTime26220);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._computeTime26220);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._computeTime26220);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeFields26221;
 		protected override void computeFields()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._computeFields26221);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._computeFields26221);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._computeFields26221);
 		}
 		internal static global::MonoJavaBridge.MethodId _roll26222;
 		public override void roll(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._roll26222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._roll26222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._roll26222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _roll26223;
 		public override void roll(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._roll26223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._roll26223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._roll26223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinimum26224;
 		public override int getMinimum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getMinimum26224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getMinimum26224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getMinimum26224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaximum26225;
 		public override int getMaximum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getMaximum26225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getMaximum26225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getMaximum26225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getGreatestMinimum26226;
 		public override int getGreatestMinimum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getGreatestMinimum26226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getGreatestMinimum26226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getGreatestMinimum26226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLeastMaximum26227;
 		public override int getLeastMaximum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getLeastMaximum26227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getLeastMaximum26227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getLeastMaximum26227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getActualMinimum26228;
 		public override int getActualMinimum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getActualMinimum26228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getActualMinimum26228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getActualMinimum26228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getActualMaximum26229;
 		public override int getActualMaximum(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.GregorianCalendar._getActualMaximum26229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getActualMaximum26229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getActualMaximum26229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setGregorianChange26230;
 		public virtual void setGregorianChange(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar._setGregorianChange26230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._setGregorianChange26230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._setGregorianChange26230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Date GregorianChange
 		{
@@ -194,11 +122,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getGregorianChange26231;
 		public virtual global::java.util.Date getGregorianChange()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar._getGregorianChange26231)) as java.util.Date;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getGregorianChange26231)) as java.util.Date;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.GregorianCalendar.staticClass, global::java.util.GregorianCalendar._getGregorianChange26231)) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _GregorianCalendar26232;
 		public GregorianCalendar() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

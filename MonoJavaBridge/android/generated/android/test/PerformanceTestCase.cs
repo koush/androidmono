@@ -18,19 +18,13 @@ namespace android.test
 		int android.test.PerformanceTestCase.startPerformance(android.test.PerformanceTestCase_Intermediates arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isPerformanceOnly12273;
 		bool android.test.PerformanceTestCase.isPerformanceOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._isPerformanceOnly12273);
 		}
 		static PerformanceTestCase_()
 		{

@@ -11,82 +11,55 @@ namespace android.content
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toString3551)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString3551)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString3551)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear3552;
 		public void clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncResult._clear3552);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._clear3552);
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._clear3552);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3553;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncResult._writeToParcel3553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._writeToParcel3553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._writeToParcel3553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3554;
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.SyncResult._describeContents3554);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._describeContents3554);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._describeContents3554);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasHardError3555;
 		public bool hasHardError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.SyncResult._hasHardError3555);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasHardError3555);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasHardError3555);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasSoftError3556;
 		public bool hasSoftError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.SyncResult._hasSoftError3556);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasSoftError3556);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasSoftError3556);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasError3557;
 		public bool hasError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.SyncResult._hasError3557);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasError3557);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasError3557);
 		}
 		internal static global::MonoJavaBridge.MethodId _madeSomeProgress3558;
 		public bool madeSomeProgress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.SyncResult._madeSomeProgress3558);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._madeSomeProgress3558);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._madeSomeProgress3558);
 		}
 		internal static global::MonoJavaBridge.MethodId _toDebugString3559;
 		public global::java.lang.String toDebugString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toDebugString3559)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString3559)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString3559)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncResult3560;
 		public SyncResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

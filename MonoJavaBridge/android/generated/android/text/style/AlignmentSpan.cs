@@ -17,10 +17,7 @@ namespace android.text.style
 		global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_._getAlignment13441)) as android.text.Layout.Alignment;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_.staticClass, global::android.text.style.AlignmentSpan_._getAlignment13441)) as android.text.Layout.Alignment;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_._getAlignment13441)) as android.text.Layout.Alignment;
 		}
 		static AlignmentSpan_()
 		{

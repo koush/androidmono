@@ -19,28 +19,19 @@ namespace javax.sql
 		void javax.sql.RowSetListener.rowSetChanged(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowSetChanged30580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowSetChanged30580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowSetChanged30580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rowChanged30581;
 		void javax.sql.RowSetListener.rowChanged(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowChanged30581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowChanged30581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowChanged30581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cursorMoved30582;
 		void javax.sql.RowSetListener.cursorMoved(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._cursorMoved30582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._cursorMoved30582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._cursorMoved30582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetListener_()
 		{

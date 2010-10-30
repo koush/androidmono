@@ -19,28 +19,19 @@ namespace org.w3c.dom
 		int org.w3c.dom.DOMStringList.getLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._getLength34383);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._getLength34383);
+			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._getLength34383);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains34384;
 		bool org.w3c.dom.DOMStringList.contains(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._contains34384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._contains34384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._contains34384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _item34385;
 		global::java.lang.String org.w3c.dom.DOMStringList.item(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._item34385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._item34385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_._item34385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		static DOMStringList_()
 		{

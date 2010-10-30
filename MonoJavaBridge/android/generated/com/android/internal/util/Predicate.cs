@@ -17,10 +17,7 @@ namespace com.android.@internal.util
 		bool com.android.@internal.util.Predicate.apply(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::com.android.@internal.util.Predicate_.staticClass, global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::com.android.@internal.util.Predicate_._apply18336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Predicate_()
 		{

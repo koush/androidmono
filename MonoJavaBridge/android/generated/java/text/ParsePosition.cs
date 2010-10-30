@@ -10,29 +10,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25613;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.ParsePosition._equals25613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._equals25613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._equals25613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25614;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.ParsePosition._toString25614)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._toString25614)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._toString25614)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25615;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.ParsePosition._hashCode25615);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._hashCode25615);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._hashCode25615);
 		}
 		public new int Index
 		{
@@ -48,29 +36,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getIndex25616;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.ParsePosition._getIndex25616);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getIndex25616);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getIndex25616);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIndex25617;
 		public virtual void setIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.ParsePosition._setIndex25617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setIndex25617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setIndex25617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorIndex25618;
 		public virtual void setErrorIndex(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.ParsePosition._setErrorIndex25618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setErrorIndex25618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setErrorIndex25618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ErrorIndex
 		{
@@ -86,11 +62,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getErrorIndex25619;
 		public virtual int getErrorIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.ParsePosition._getErrorIndex25619);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getErrorIndex25619);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getErrorIndex25619);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParsePosition25620;
 		public ParsePosition(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

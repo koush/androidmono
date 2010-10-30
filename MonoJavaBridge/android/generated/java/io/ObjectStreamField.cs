@@ -10,29 +10,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _toString19338;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField._toString19338)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._toString19338)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._toString19338)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isPrimitive19339;
 		public virtual bool isPrimitive()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField._isPrimitive19339);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isPrimitive19339);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isPrimitive19339);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19340;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.ObjectStreamField._compareTo19340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._compareTo19340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._compareTo19340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Name
 		{
@@ -44,11 +32,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getName19341;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField._getName19341)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getName19341)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getName19341)) as java.lang.String;
 		}
 		public new global::java.lang.Class Type
 		{
@@ -60,11 +44,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getType19342;
 		public virtual global::java.lang.Class getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField._getType19342)) as java.lang.Class;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getType19342)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getType19342)) as java.lang.Class;
 		}
 		public new char TypeCode
 		{
@@ -76,11 +56,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getTypeCode19343;
 		public virtual char getTypeCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallCharMethod(this.JvmHandle, global::java.io.ObjectStreamField._getTypeCode19343);
-			else
-				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getTypeCode19343);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getTypeCode19343);
 		}
 		public new global::java.lang.String TypeString
 		{
@@ -92,11 +68,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getTypeString19344;
 		public virtual global::java.lang.String getTypeString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField._getTypeString19344)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getTypeString19344)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getTypeString19344)) as java.lang.String;
 		}
 		public new int Offset
 		{
@@ -112,29 +84,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getOffset19345;
 		public virtual int getOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.ObjectStreamField._getOffset19345);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getOffset19345);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getOffset19345);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOffset19346;
 		protected virtual void setOffset(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.ObjectStreamField._setOffset19346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._setOffset19346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._setOffset19346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnshared19347;
 		public virtual bool isUnshared()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField._isUnshared19347);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isUnshared19347);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isUnshared19347);
 		}
 		internal static global::MonoJavaBridge.MethodId _ObjectStreamField19348;
 		public ObjectStreamField(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

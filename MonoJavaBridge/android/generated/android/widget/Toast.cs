@@ -10,11 +10,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setText18183;
 		public virtual void setText(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setText18183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText18183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText18183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setText(string arg0)
 		{
@@ -23,47 +19,27 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setText18184;
 		public virtual void setText(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setText18184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText18184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText18184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel18185;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._cancel18185);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._cancel18185);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._cancel18185);
 		}
 		internal static global::MonoJavaBridge.MethodId _setGravity18186;
 		public virtual void setGravity(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setGravity18186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setGravity18186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setGravity18186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _show18187;
 		public virtual void show()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._show18187);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._show18187);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._show18187);
 		}
 		internal static global::MonoJavaBridge.MethodId _setView18188;
 		public virtual void setView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setView18188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setView18188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setView18188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.view.View View
 		{
@@ -79,11 +55,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getView18189;
 		public virtual global::android.view.View getView()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Toast._getView18189)) as android.view.View;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getView18189)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getView18189)) as android.view.View;
 		}
 		public new int Gravity
 		{
@@ -95,20 +67,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getGravity18190;
 		public virtual int getGravity()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Toast._getGravity18190);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getGravity18190);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getGravity18190);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDuration18191;
 		public virtual void setDuration(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setDuration18191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setDuration18191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setDuration18191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Duration
 		{
@@ -124,20 +88,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getDuration18192;
 		public virtual int getDuration()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Toast._getDuration18192);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getDuration18192);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getDuration18192);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMargin18193;
 		public virtual void setMargin(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Toast._setMargin18193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._setMargin18193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setMargin18193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new float HorizontalMargin
 		{
@@ -149,11 +105,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getHorizontalMargin18194;
 		public virtual float getHorizontalMargin()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.Toast._getHorizontalMargin18194);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getHorizontalMargin18194);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getHorizontalMargin18194);
 		}
 		public new float VerticalMargin
 		{
@@ -165,11 +117,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getVerticalMargin18195;
 		public virtual float getVerticalMargin()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.Toast._getVerticalMargin18195);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getVerticalMargin18195);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getVerticalMargin18195);
 		}
 		public new int XOffset
 		{
@@ -181,11 +129,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getXOffset18196;
 		public virtual int getXOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Toast._getXOffset18196);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getXOffset18196);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getXOffset18196);
 		}
 		public new int YOffset
 		{
@@ -197,11 +141,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getYOffset18197;
 		public virtual int getYOffset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Toast._getYOffset18197);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Toast.staticClass, global::android.widget.Toast._getYOffset18197);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getYOffset18197);
 		}
 		internal static global::MonoJavaBridge.MethodId _makeText18198;
 		public static global::android.widget.Toast makeText(android.content.Context arg0, java.lang.CharSequence arg1, int arg2)

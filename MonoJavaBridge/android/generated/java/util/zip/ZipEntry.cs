@@ -10,29 +10,17 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _toString28433;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry._toString28433)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._toString28433)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._toString28433)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode28434;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.zip.ZipEntry._hashCode28434);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._hashCode28434);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._hashCode28434);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone28435;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry._clone28435)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._clone28435)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._clone28435)) as java.lang.Object;
 		}
 		public new global::java.lang.String Name
 		{
@@ -44,11 +32,7 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getName28436;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getName28436)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getName28436)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getName28436)) as java.lang.String;
 		}
 		public new int Method
 		{
@@ -64,11 +48,7 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getMethod28437;
 		public virtual int getMethod()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getMethod28437);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getMethod28437);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getMethod28437);
 		}
 		public new long Size
 		{
@@ -84,38 +64,22 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getSize28438;
 		public virtual long getSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getSize28438);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getSize28438);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getSize28438);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSize28439;
 		public virtual void setSize(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setSize28439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setSize28439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setSize28439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDirectory28440;
 		public virtual bool isDirectory()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.zip.ZipEntry._isDirectory28440);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._isDirectory28440);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._isDirectory28440);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime28441;
 		public virtual void setTime(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setTime28441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setTime28441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setTime28441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long Time
 		{
@@ -131,11 +95,7 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getTime28442;
 		public virtual long getTime()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getTime28442);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getTime28442);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getTime28442);
 		}
 		public new long CompressedSize
 		{
@@ -151,29 +111,17 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getCompressedSize28443;
 		public virtual long getCompressedSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getCompressedSize28443);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getCompressedSize28443);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getCompressedSize28443);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCompressedSize28444;
 		public virtual void setCompressedSize(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setCompressedSize28444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setCompressedSize28444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setCompressedSize28444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCrc28445;
 		public virtual void setCrc(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setCrc28445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setCrc28445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setCrc28445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long Crc
 		{
@@ -189,29 +137,17 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getCrc28446;
 		public virtual long getCrc()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getCrc28446);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getCrc28446);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getCrc28446);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMethod28447;
 		public virtual void setMethod(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setMethod28447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setMethod28447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setMethod28447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setExtra28448;
 		public virtual void setExtra(byte[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setExtra28448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setExtra28448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setExtra28448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new byte[] Extra
 		{
@@ -227,20 +163,12 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getExtra28449;
 		public virtual byte[] getExtra()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getExtra28449)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getExtra28449)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getExtra28449)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setComment28450;
 		public virtual void setComment(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry._setComment28450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setComment28450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._setComment28450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Comment
 		{
@@ -256,11 +184,7 @@ namespace java.util.zip
 		internal static global::MonoJavaBridge.MethodId _getComment28451;
 		public virtual global::java.lang.String getComment()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry._getComment28451)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getComment28451)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.zip.ZipEntry.staticClass, global::java.util.zip.ZipEntry._getComment28451)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ZipEntry28452;
 		public ZipEntry(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

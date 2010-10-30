@@ -10,20 +10,12 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _equals23979;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._equals23979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._equals23979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._equals23979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23980;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._hashCode23980);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._hashCode23980);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._hashCode23980);
 		}
 		public new int FieldSize
 		{
@@ -35,11 +27,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getFieldSize23981;
 		public virtual int getFieldSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._getFieldSize23981);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getFieldSize23981);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getFieldSize23981);
 		}
 		public new int M
 		{
@@ -51,11 +39,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getM23982;
 		public virtual int getM()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._getM23982);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getM23982);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getM23982);
 		}
 		public new global::java.math.BigInteger ReductionPolynomial
 		{
@@ -67,11 +51,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getReductionPolynomial23983;
 		public virtual global::java.math.BigInteger getReductionPolynomial()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._getReductionPolynomial23983)) as java.math.BigInteger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getReductionPolynomial23983)) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getReductionPolynomial23983)) as java.math.BigInteger;
 		}
 		public new int[] MidTermsOfReductionPolynomial
 		{
@@ -83,11 +63,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getMidTermsOfReductionPolynomial23984;
 		public virtual int[] getMidTermsOfReductionPolynomial()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m._getMidTermsOfReductionPolynomial23984)) as int[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getMidTermsOfReductionPolynomial23984)) as int[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECFieldF2m.staticClass, global::java.security.spec.ECFieldF2m._getMidTermsOfReductionPolynomial23984)) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _ECFieldF2m23985;
 		public ECFieldF2m(int arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

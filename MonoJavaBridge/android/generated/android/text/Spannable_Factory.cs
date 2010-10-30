@@ -23,11 +23,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _newSpannable12931;
 		public virtual global::android.text.Spannable newSpannable(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spannable>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Spannable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spannable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Spannable;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spannable>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Spannable;
 		}
 		public android.text.Spannable newSpannable(string arg0)
 		{

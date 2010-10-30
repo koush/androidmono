@@ -10,29 +10,17 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _onCreate12379;
 		public override void onCreate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication._onCreate12379);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onCreate12379);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onCreate12379);
 		}
 		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged12380;
 		public override void onConfigurationChanged(android.content.res.Configuration arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication._onConfigurationChanged12380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onConfigurationChanged12380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onConfigurationChanged12380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTerminate12381;
 		public override void onTerminate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication._onTerminate12381);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onTerminate12381);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockApplication.staticClass, global::android.test.mock.MockApplication._onTerminate12381);
 		}
 		internal static global::MonoJavaBridge.MethodId _MockApplication12382;
 		public MockApplication() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

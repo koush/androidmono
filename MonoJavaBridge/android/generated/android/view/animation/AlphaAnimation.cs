@@ -10,29 +10,17 @@ namespace android.view.animation
 		internal static global::MonoJavaBridge.MethodId _willChangeTransformationMatrix15570;
 		public override bool willChangeTransformationMatrix()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix15570);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix15570);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix15570);
 		}
 		internal static global::MonoJavaBridge.MethodId _willChangeBounds15571;
 		public override bool willChangeBounds()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation._willChangeBounds15571);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeBounds15571);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeBounds15571);
 		}
 		internal static global::MonoJavaBridge.MethodId _applyTransformation15572;
 		protected override void applyTransformation(float arg0, android.view.animation.Transformation arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation._applyTransformation15572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._applyTransformation15572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._applyTransformation15572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _AlphaAnimation15573;
 		public AlphaAnimation(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

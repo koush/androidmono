@@ -10,29 +10,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _cancel16056;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._cancel16056);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel16056);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel16056);
 		}
 		internal static global::MonoJavaBridge.MethodId _confirm16057;
 		public virtual void confirm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._confirm16057);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm16057);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm16057);
 		}
 		internal static global::MonoJavaBridge.MethodId _wakeUp16058;
 		protected virtual void wakeUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._wakeUp16058);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp16058);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp16058);
 		}
 		static JsResult()
 		{

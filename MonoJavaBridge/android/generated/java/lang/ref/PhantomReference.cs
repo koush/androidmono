@@ -10,11 +10,7 @@ namespace java.lang.@ref
 		internal static global::MonoJavaBridge.MethodId _get20984;
 		public override global::java.lang.Object get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.@ref.PhantomReference._get20984)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.PhantomReference.staticClass, global::java.lang.@ref.PhantomReference._get20984)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.PhantomReference.staticClass, global::java.lang.@ref.PhantomReference._get20984)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _PhantomReference20985;
 		public PhantomReference(java.lang.Object arg0, java.lang.@ref.ReferenceQueue arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

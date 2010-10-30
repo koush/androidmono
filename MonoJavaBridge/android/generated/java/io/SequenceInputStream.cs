@@ -10,38 +10,22 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19567;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.SequenceInputStream._close19567);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._close19567);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._close19567);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19568;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.SequenceInputStream._read19568);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19568);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19568);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19569;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.SequenceInputStream._read19569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._read19569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _available19570;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.SequenceInputStream._available19570);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._available19570);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.SequenceInputStream.staticClass, global::java.io.SequenceInputStream._available19570);
 		}
 		internal static global::MonoJavaBridge.MethodId _SequenceInputStream19571;
 		public SequenceInputStream(java.util.Enumeration arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

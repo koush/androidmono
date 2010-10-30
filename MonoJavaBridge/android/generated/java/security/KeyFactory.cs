@@ -35,11 +35,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23017;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._getAlgorithm23017)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getAlgorithm23017)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getAlgorithm23017)) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -51,47 +47,27 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getProvider23018;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._getProvider23018)) as java.security.Provider;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getProvider23018)) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getProvider23018)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _generatePublic23019;
 		public virtual global::java.security.PublicKey generatePublic(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._generatePublic23019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PublicKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePublic23019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePublic23019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PublicKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _generatePrivate23020;
 		public virtual global::java.security.PrivateKey generatePrivate(java.security.spec.KeySpec arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._generatePrivate23020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PrivateKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePrivate23020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._generatePrivate23020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeySpec23021;
 		public virtual global::java.security.spec.KeySpec getKeySpec(java.security.Key arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.KeySpec>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._getKeySpec23021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.spec.KeySpec;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.KeySpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getKeySpec23021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.spec.KeySpec;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.KeySpec>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._getKeySpec23021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.spec.KeySpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _translateKey23022;
 		public virtual global::java.security.Key translateKey(java.security.Key arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyFactory._translateKey23022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Key;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._translateKey23022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyFactory.staticClass, global::java.security.KeyFactory._translateKey23022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.Key;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyFactory23023;
 		protected KeyFactory(java.security.KeyFactorySpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

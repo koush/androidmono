@@ -10,56 +10,32 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19369;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedInputStream._close19369);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._close19369);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._close19369);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19370;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.PipedInputStream._read19370);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._read19370);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._read19370);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19371;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.PipedInputStream._read19371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._read19371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._read19371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _available19372;
 		public override int available()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.PipedInputStream._available19372);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._available19372);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._available19372);
 		}
 		internal static global::MonoJavaBridge.MethodId _connect19373;
 		public virtual void connect(java.io.PipedOutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedInputStream._connect19373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._connect19373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._connect19373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _receive19374;
 		protected virtual void receive(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedInputStream._receive19374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._receive19374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedInputStream.staticClass, global::java.io.PipedInputStream._receive19374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PipedInputStream19375;
 		public PipedInputStream(java.io.PipedOutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

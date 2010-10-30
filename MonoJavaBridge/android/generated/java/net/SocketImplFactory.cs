@@ -17,10 +17,7 @@ namespace java.net
 		global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SocketImplFactory_._createSocketImpl21814)) as java.net.SocketImpl;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SocketImplFactory_.staticClass, global::java.net.SocketImplFactory_._createSocketImpl21814)) as java.net.SocketImpl;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SocketImplFactory_._createSocketImpl21814)) as java.net.SocketImpl;
 		}
 		static SocketImplFactory_()
 		{

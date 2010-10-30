@@ -21,20 +21,12 @@ namespace java.sql
 		internal static global::MonoJavaBridge.MethodId _getNextWarning25033;
 		public virtual global::java.sql.SQLWarning getNextWarning()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLWarning._getNextWarning25033)) as java.sql.SQLWarning;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._getNextWarning25033)) as java.sql.SQLWarning;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._getNextWarning25033)) as java.sql.SQLWarning;
 		}
 		internal static global::MonoJavaBridge.MethodId _setNextWarning25034;
 		public virtual void setNextWarning(java.sql.SQLWarning arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLWarning._setNextWarning25034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._setNextWarning25034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.SQLWarning.staticClass, global::java.sql.SQLWarning._setNextWarning25034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLWarning25035;
 		public SQLWarning(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

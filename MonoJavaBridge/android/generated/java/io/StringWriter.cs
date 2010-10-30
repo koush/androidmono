@@ -10,20 +10,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _toString19617;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._toString19617)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._toString19617)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._toString19617)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _append19618;
 		public virtual global::java.io.StringWriter append(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._append19618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.StringWriter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.StringWriter;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.StringWriter;
 		}
 		public java.io.StringWriter append(string arg0, int arg1, int arg2)
 		{
@@ -32,20 +24,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _append19619;
 		public virtual global::java.io.StringWriter append(char arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._append19619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
 		}
 		internal static global::MonoJavaBridge.MethodId _append19620;
 		public virtual global::java.io.StringWriter append(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._append19620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._append19620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.StringWriter;
 		}
 		public java.io.StringWriter append(string arg0)
 		{
@@ -54,56 +38,32 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _write19621;
 		public override void write(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._write19621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19622;
 		public override void write(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._write19622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19623;
 		public override void write(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._write19623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19624;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._write19624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._write19624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush19625;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._flush19625);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._flush19625);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._flush19625);
 		}
 		internal static global::MonoJavaBridge.MethodId _close19626;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.StringWriter._close19626);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._close19626);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._close19626);
 		}
 		public new global::java.lang.StringBuffer Buffer
 		{
@@ -115,11 +75,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getBuffer19627;
 		public virtual global::java.lang.StringBuffer getBuffer()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._getBuffer19627)) as java.lang.StringBuffer;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._getBuffer19627)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._getBuffer19627)) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _StringWriter19628;
 		public StringWriter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -18,19 +18,13 @@ namespace javax.security.auth
 		void javax.security.auth.Destroyable.destroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._destroy30167);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._destroy30167);
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._destroy30167);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDestroyed30168;
 		bool javax.security.auth.Destroyable.isDestroyed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._isDestroyed30168);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._isDestroyed30168);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._isDestroyed30168);
 		}
 		static Destroyable_()
 		{

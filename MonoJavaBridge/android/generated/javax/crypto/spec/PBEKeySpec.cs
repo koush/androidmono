@@ -17,20 +17,12 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getPassword28792;
 		public virtual char[] getPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec._getPassword28792)) as char[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getPassword28792)) as char[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getPassword28792)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPassword28793;
 		public virtual void clearPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec._clearPassword28793);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._clearPassword28793);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._clearPassword28793);
 		}
 		public new int IterationCount
 		{
@@ -42,11 +34,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getIterationCount28794;
 		public virtual int getIterationCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec._getIterationCount28794);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getIterationCount28794);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getIterationCount28794);
 		}
 		public new byte[] Salt
 		{
@@ -58,11 +46,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getSalt28795;
 		public virtual byte[] getSalt()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec._getSalt28795)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getSalt28795)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getSalt28795)) as byte[];
 		}
 		public new int KeyLength
 		{
@@ -74,11 +58,7 @@ namespace javax.crypto.spec
 		internal static global::MonoJavaBridge.MethodId _getKeyLength28796;
 		public virtual int getKeyLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec._getKeyLength28796);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getKeyLength28796);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getKeyLength28796);
 		}
 		internal static global::MonoJavaBridge.MethodId _PBEKeySpec28797;
 		public PBEKeySpec(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

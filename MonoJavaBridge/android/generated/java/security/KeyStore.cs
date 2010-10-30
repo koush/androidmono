@@ -70,19 +70,13 @@ namespace java.security
 			public override global::java.security.KeyStore getKeyStore()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_._getKeyStore23071)) as java.security.KeyStore;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_.staticClass, global::java.security.KeyStore.Builder_._getKeyStore23071)) as java.security.KeyStore;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_._getKeyStore23071)) as java.security.KeyStore;
 			}
 			internal static global::MonoJavaBridge.MethodId _getProtectionParameter23072;
 			public override global::java.security.KeyStore.ProtectionParameter getProtectionParameter(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_._getProtectionParameter23072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyStore.ProtectionParameter;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_.staticClass, global::java.security.KeyStore.Builder_._getProtectionParameter23072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyStore.ProtectionParameter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.Builder_._getProtectionParameter23072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyStore.ProtectionParameter;
 			}
 			static Builder_()
 			{
@@ -112,11 +106,7 @@ namespace java.security
 			internal static global::MonoJavaBridge.MethodId _getCallbackHandler23073;
 			public virtual global::javax.security.auth.callback.CallbackHandler getCallbackHandler()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.CallbackHandler>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.CallbackHandlerProtection._getCallbackHandler23073)) as javax.security.auth.callback.CallbackHandler;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.CallbackHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.CallbackHandlerProtection.staticClass, global::java.security.KeyStore.CallbackHandlerProtection._getCallbackHandler23073)) as javax.security.auth.callback.CallbackHandler;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.CallbackHandler>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.CallbackHandlerProtection.staticClass, global::java.security.KeyStore.CallbackHandlerProtection._getCallbackHandler23073)) as javax.security.auth.callback.CallbackHandler;
 			}
 			internal static global::MonoJavaBridge.MethodId _CallbackHandlerProtection23074;
 			public CallbackHandlerProtection(javax.security.auth.callback.CallbackHandler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -174,10 +164,7 @@ namespace java.security
 			global::java.security.KeyStore.ProtectionParameter java.security.KeyStore.LoadStoreParameter.getProtectionParameter()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.LoadStoreParameter_._getProtectionParameter23075)) as java.security.KeyStore.ProtectionParameter;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.LoadStoreParameter_.staticClass, global::java.security.KeyStore.LoadStoreParameter_._getProtectionParameter23075)) as java.security.KeyStore.ProtectionParameter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.ProtectionParameter>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.LoadStoreParameter_._getProtectionParameter23075)) as java.security.KeyStore.ProtectionParameter;
 			}
 			static LoadStoreParameter_()
 			{
@@ -199,20 +186,12 @@ namespace java.security
 			internal static global::MonoJavaBridge.MethodId _destroy23076;
 			public virtual void destroy()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection._destroy23076);
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._destroy23076);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._destroy23076);
 			}
 			internal static global::MonoJavaBridge.MethodId _isDestroyed23077;
 			public virtual bool isDestroyed()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection._isDestroyed23077);
-				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._isDestroyed23077);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._isDestroyed23077);
 			}
 			public new char[] Password
 			{
@@ -224,11 +203,7 @@ namespace java.security
 			internal static global::MonoJavaBridge.MethodId _getPassword23078;
 			public virtual char[] getPassword()
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection._getPassword23078)) as char[];
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._getPassword23078)) as char[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._getPassword23078)) as char[];
 			}
 			internal static global::MonoJavaBridge.MethodId _PasswordProtection23079;
 			public PasswordProtection(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -261,10 +236,7 @@ namespace java.security
 			public sealed override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry._toString23080)) as java.lang.String;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._toString23080)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._toString23080)) as java.lang.String;
 			}
 			public new global::java.security.cert.Certificate[] CertificateChain
 			{
@@ -277,10 +249,7 @@ namespace java.security
 			public global::java.security.cert.Certificate[] getCertificateChain()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry._getCertificateChain23081)) as java.security.cert.Certificate[];
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getCertificateChain23081)) as java.security.cert.Certificate[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getCertificateChain23081)) as java.security.cert.Certificate[];
 			}
 			public new global::java.security.cert.Certificate Certificate
 			{
@@ -293,10 +262,7 @@ namespace java.security
 			public global::java.security.cert.Certificate getCertificate()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry._getCertificate23082)) as java.security.cert.Certificate;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getCertificate23082)) as java.security.cert.Certificate;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getCertificate23082)) as java.security.cert.Certificate;
 			}
 			public new global::java.security.PrivateKey PrivateKey
 			{
@@ -309,10 +275,7 @@ namespace java.security
 			public global::java.security.PrivateKey getPrivateKey()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry._getPrivateKey23083)) as java.security.PrivateKey;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getPrivateKey23083)) as java.security.PrivateKey;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._getPrivateKey23083)) as java.security.PrivateKey;
 			}
 			internal static global::MonoJavaBridge.MethodId _PrivateKeyEntry23084;
 			public PrivateKeyEntry(java.security.PrivateKey arg0, java.security.cert.Certificate[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -367,10 +330,7 @@ namespace java.security
 			public sealed override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry._toString23085)) as java.lang.String;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry.staticClass, global::java.security.KeyStore.SecretKeyEntry._toString23085)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry.staticClass, global::java.security.KeyStore.SecretKeyEntry._toString23085)) as java.lang.String;
 			}
 			public new global::javax.crypto.SecretKey SecretKey
 			{
@@ -383,10 +343,7 @@ namespace java.security
 			public global::javax.crypto.SecretKey getSecretKey()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry._getSecretKey23086)) as javax.crypto.SecretKey;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry.staticClass, global::java.security.KeyStore.SecretKeyEntry._getSecretKey23086)) as javax.crypto.SecretKey;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.crypto.SecretKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.SecretKeyEntry.staticClass, global::java.security.KeyStore.SecretKeyEntry._getSecretKey23086)) as javax.crypto.SecretKey;
 			}
 			internal static global::MonoJavaBridge.MethodId _SecretKeyEntry23087;
 			public SecretKeyEntry(javax.crypto.SecretKey arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -418,10 +375,7 @@ namespace java.security
 			public sealed override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry._toString23088)) as java.lang.String;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, global::java.security.KeyStore.TrustedCertificateEntry._toString23088)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, global::java.security.KeyStore.TrustedCertificateEntry._toString23088)) as java.lang.String;
 			}
 			public new global::java.security.cert.Certificate TrustedCertificate
 			{
@@ -434,10 +388,7 @@ namespace java.security
 			public global::java.security.cert.Certificate getTrustedCertificate()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry._getTrustedCertificate23089)) as java.security.cert.Certificate;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, global::java.security.KeyStore.TrustedCertificateEntry._getTrustedCertificate23089)) as java.security.cert.Certificate;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, global::java.security.KeyStore.TrustedCertificateEntry._getTrustedCertificate23089)) as java.security.cert.Certificate;
 			}
 			internal static global::MonoJavaBridge.MethodId _TrustedCertificateEntry23090;
 			public TrustedCertificateEntry(java.security.cert.Certificate arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -461,20 +412,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _size23091;
 		public virtual int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.KeyStore._size23091);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._size23091);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._size23091);
 		}
 		internal static global::MonoJavaBridge.MethodId _getKey23092;
 		public virtual global::java.security.Key getKey(java.lang.String arg0, char[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getKey23092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.Key;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getKey23092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.Key;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Key>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getKey23092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.Key;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23093;
 		public static global::java.security.KeyStore getInstance(java.lang.String arg0)
@@ -497,38 +440,22 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _load23096;
 		public virtual void load(java.io.InputStream arg0, char[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._load23096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._load23096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._load23096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _load23097;
 		public virtual void load(java.security.KeyStore.LoadStoreParameter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._load23097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._load23097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._load23097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _store23098;
 		public virtual void store(java.io.OutputStream arg0, char[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._store23098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._store23098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._store23098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _store23099;
 		public virtual void store(java.security.KeyStore.LoadStoreParameter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._store23099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._store23099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._store23099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Type
 		{
@@ -540,47 +467,27 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getType23100;
 		public virtual global::java.lang.String getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getType23100)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getType23100)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getType23100)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntry23101;
 		public virtual global::java.security.KeyStore.Entry getEntry(java.lang.String arg0, java.security.KeyStore.ProtectionParameter arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.Entry>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getEntry23101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.KeyStore.Entry;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.Entry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getEntry23101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.KeyStore.Entry;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.KeyStore.Entry>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getEntry23101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.KeyStore.Entry;
 		}
 		internal static global::MonoJavaBridge.MethodId _aliases23102;
 		public virtual global::java.util.Enumeration aliases()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._aliases23102)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._aliases23102)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._aliases23102)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntry23103;
 		public virtual void setEntry(java.lang.String arg0, java.security.KeyStore.Entry arg1, java.security.KeyStore.ProtectionParameter arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._setEntry23103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setEntry23103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setEntry23103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificateChain23104;
 		public virtual global::java.security.cert.Certificate[] getCertificateChain(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getCertificateChain23104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificateChain23104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificateChain23104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate[];
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -592,20 +499,12 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getProvider23105;
 		public virtual global::java.security.Provider getProvider()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getProvider23105)) as java.security.Provider;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getProvider23105)) as java.security.Provider;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getProvider23105)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificate23106;
 		public virtual global::java.security.cert.Certificate getCertificate(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getCertificate23106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificate23106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificate23106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate;
 		}
 		public static global::java.lang.String DefaultType
 		{
@@ -623,92 +522,52 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _getCreationDate23108;
 		public virtual global::java.util.Date getCreationDate(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getCreationDate23108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Date;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCreationDate23108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Date;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCreationDate23108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyEntry23109;
 		public virtual void setKeyEntry(java.lang.String arg0, byte[] arg1, java.security.cert.Certificate[] arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._setKeyEntry23109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setKeyEntry23109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setKeyEntry23109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeyEntry23110;
 		public virtual void setKeyEntry(java.lang.String arg0, java.security.Key arg1, char[] arg2, java.security.cert.Certificate[] arg3)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._setKeyEntry23110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setKeyEntry23110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setKeyEntry23110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCertificateEntry23111;
 		public virtual void setCertificateEntry(java.lang.String arg0, java.security.cert.Certificate arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._setCertificateEntry23111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setCertificateEntry23111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._setCertificateEntry23111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteEntry23112;
 		public virtual void deleteEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.KeyStore._deleteEntry23112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._deleteEntry23112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._deleteEntry23112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _containsAlias23113;
 		public virtual bool containsAlias(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.KeyStore._containsAlias23113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._containsAlias23113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._containsAlias23113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isKeyEntry23114;
 		public virtual bool isKeyEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.KeyStore._isKeyEntry23114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._isKeyEntry23114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._isKeyEntry23114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCertificateEntry23115;
 		public virtual bool isCertificateEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.KeyStore._isCertificateEntry23115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._isCertificateEntry23115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._isCertificateEntry23115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificateAlias23116;
 		public virtual global::java.lang.String getCertificateAlias(java.security.cert.Certificate arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.KeyStore._getCertificateAlias23116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificateAlias23116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._getCertificateAlias23116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _entryInstanceOf23117;
 		public virtual bool entryInstanceOf(java.lang.String arg0, java.lang.Class arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.KeyStore._entryInstanceOf23117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._entryInstanceOf23117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.staticClass, global::java.security.KeyStore._entryInstanceOf23117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyStore23118;
 		protected KeyStore(java.security.KeyStoreSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

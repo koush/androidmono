@@ -10,20 +10,12 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _finalize10202;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.StatFs._finalize10202);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._finalize10202);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._finalize10202);
 		}
 		internal static global::MonoJavaBridge.MethodId _restat10203;
 		public virtual void restat(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.StatFs._restat10203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._restat10203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._restat10203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int BlockSize
 		{
@@ -35,11 +27,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getBlockSize10204;
 		public virtual int getBlockSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getBlockSize10204);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockSize10204);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockSize10204);
 		}
 		public new int BlockCount
 		{
@@ -51,11 +39,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getBlockCount10205;
 		public virtual int getBlockCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getBlockCount10205);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockCount10205);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockCount10205);
 		}
 		public new int FreeBlocks
 		{
@@ -67,11 +51,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getFreeBlocks10206;
 		public virtual int getFreeBlocks()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getFreeBlocks10206);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getFreeBlocks10206);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getFreeBlocks10206);
 		}
 		public new int AvailableBlocks
 		{
@@ -83,11 +63,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getAvailableBlocks10207;
 		public virtual int getAvailableBlocks()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getAvailableBlocks10207);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getAvailableBlocks10207);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getAvailableBlocks10207);
 		}
 		internal static global::MonoJavaBridge.MethodId _StatFs10208;
 		public StatFs(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

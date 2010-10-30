@@ -18,19 +18,13 @@ namespace org.apache.http.io
 		void org.apache.http.io.HttpTransportMetrics.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_._reset33469);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_.staticClass, global::org.apache.http.io.HttpTransportMetrics_._reset33469);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_._reset33469);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesTransferred33470;
 		long org.apache.http.io.HttpTransportMetrics.getBytesTransferred()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_.staticClass, global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470);
+			return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470);
 		}
 		static HttpTransportMetrics_()
 		{

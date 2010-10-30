@@ -23,64 +23,43 @@ namespace org.xml.sax.ext
 		void org.xml.sax.ext.LexicalHandler.comment(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._comment35130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._comment35130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._comment35130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _startCDATA35131;
 		void org.xml.sax.ext.LexicalHandler.startCDATA()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startCDATA35131);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._startCDATA35131);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startCDATA35131);
 		}
 		internal static global::MonoJavaBridge.MethodId _endCDATA35132;
 		void org.xml.sax.ext.LexicalHandler.endCDATA()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endCDATA35132);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._endCDATA35132);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endCDATA35132);
 		}
 		internal static global::MonoJavaBridge.MethodId _startEntity35133;
 		void org.xml.sax.ext.LexicalHandler.startEntity(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startEntity35133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._startEntity35133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startEntity35133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _endEntity35134;
 		void org.xml.sax.ext.LexicalHandler.endEntity(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endEntity35134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._endEntity35134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endEntity35134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startDTD35135;
 		void org.xml.sax.ext.LexicalHandler.startDTD(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startDTD35135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._startDTD35135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._startDTD35135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _endDTD35136;
 		void org.xml.sax.ext.LexicalHandler.endDTD()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endDTD35136);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_.staticClass, global::org.xml.sax.ext.LexicalHandler_._endDTD35136);
+			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.LexicalHandler_._endDTD35136);
 		}
 		static LexicalHandler_()
 		{

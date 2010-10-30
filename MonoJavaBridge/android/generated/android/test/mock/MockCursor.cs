@@ -10,83 +10,47 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getShort12470;
 		public virtual short getShort(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::android.test.mock.MockCursor._getShort12470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getShort12470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getShort12470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt12471;
 		public virtual int getInt(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getInt12471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getInt12471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getInt12471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong12472;
 		public virtual long getLong(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.test.mock.MockCursor._getLong12472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getLong12472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getLong12472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat12473;
 		public virtual float getFloat(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.test.mock.MockCursor._getFloat12473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getFloat12473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getFloat12473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble12474;
 		public virtual double getDouble(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::android.test.mock.MockCursor._getDouble12474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getDouble12474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getDouble12474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close12475;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._close12475);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._close12475);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._close12475);
 		}
 		internal static global::MonoJavaBridge.MethodId _getString12476;
 		public virtual global::java.lang.String getString(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._getString12476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getString12476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getString12476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isFirst12477;
 		public virtual bool isFirst()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isFirst12477);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isFirst12477);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isFirst12477);
 		}
 		internal static global::MonoJavaBridge.MethodId _isClosed12478;
 		public virtual bool isClosed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isClosed12478);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isClosed12478);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isClosed12478);
 		}
 		public new int Position
 		{
@@ -98,11 +62,7 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getPosition12479;
 		public virtual int getPosition()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getPosition12479);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getPosition12479);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getPosition12479);
 		}
 		public new global::android.os.Bundle Extras
 		{
@@ -114,29 +74,17 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getExtras12480;
 		public virtual global::android.os.Bundle getExtras()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._getExtras12480)) as android.os.Bundle;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getExtras12480)) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getExtras12480)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerContentObserver12481;
 		public virtual void registerContentObserver(android.database.ContentObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._registerContentObserver12481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._registerContentObserver12481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._registerContentObserver12481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterContentObserver12482;
 		public virtual void unregisterContentObserver(android.database.ContentObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._unregisterContentObserver12482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._unregisterContentObserver12482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._unregisterContentObserver12482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Count
 		{
@@ -148,119 +96,67 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getCount12483;
 		public virtual int getCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getCount12483);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getCount12483);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getCount12483);
 		}
 		internal static global::MonoJavaBridge.MethodId _move12484;
 		public virtual bool move(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._move12484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._move12484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._move12484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToPosition12485;
 		public virtual bool moveToPosition(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._moveToPosition12485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToPosition12485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToPosition12485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToFirst12486;
 		public virtual bool moveToFirst()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._moveToFirst12486);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToFirst12486);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToFirst12486);
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToLast12487;
 		public virtual bool moveToLast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._moveToLast12487);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToLast12487);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToLast12487);
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToNext12488;
 		public virtual bool moveToNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._moveToNext12488);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToNext12488);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToNext12488);
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToPrevious12489;
 		public virtual bool moveToPrevious()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._moveToPrevious12489);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToPrevious12489);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._moveToPrevious12489);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLast12490;
 		public virtual bool isLast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isLast12490);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isLast12490);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isLast12490);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBeforeFirst12491;
 		public virtual bool isBeforeFirst()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isBeforeFirst12491);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isBeforeFirst12491);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isBeforeFirst12491);
 		}
 		internal static global::MonoJavaBridge.MethodId _isAfterLast12492;
 		public virtual bool isAfterLast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isAfterLast12492);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isAfterLast12492);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isAfterLast12492);
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnIndex12493;
 		public virtual int getColumnIndex(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getColumnIndex12493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnIndex12493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnIndex12493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnIndexOrThrow12494;
 		public virtual int getColumnIndexOrThrow(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getColumnIndexOrThrow12494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnIndexOrThrow12494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnIndexOrThrow12494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnName12495;
 		public virtual global::java.lang.String getColumnName(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._getColumnName12495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnName12495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnName12495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public new global::java.lang.String[] ColumnNames
 		{
@@ -272,11 +168,7 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getColumnNames12496;
 		public virtual global::java.lang.String[] getColumnNames()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._getColumnNames12496)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnNames12496)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnNames12496)) as java.lang.String[];
 		}
 		public new int ColumnCount
 		{
@@ -288,83 +180,47 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getColumnCount12497;
 		public virtual int getColumnCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.mock.MockCursor._getColumnCount12497);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnCount12497);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getColumnCount12497);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlob12498;
 		public virtual byte[] getBlob(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._getBlob12498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getBlob12498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getBlob12498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _copyStringToBuffer12499;
 		public virtual void copyStringToBuffer(int arg0, android.database.CharArrayBuffer arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._copyStringToBuffer12499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._copyStringToBuffer12499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._copyStringToBuffer12499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNull12500;
 		public virtual bool isNull(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._isNull12500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isNull12500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._isNull12500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deactivate12501;
 		public virtual void deactivate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._deactivate12501);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._deactivate12501);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._deactivate12501);
 		}
 		internal static global::MonoJavaBridge.MethodId _requery12502;
 		public virtual bool requery()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._requery12502);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._requery12502);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._requery12502);
 		}
 		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver12503;
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._registerDataSetObserver12503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._registerDataSetObserver12503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._registerDataSetObserver12503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver12504;
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._unregisterDataSetObserver12504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._unregisterDataSetObserver12504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._unregisterDataSetObserver12504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNotificationUri12505;
 		public virtual void setNotificationUri(android.content.ContentResolver arg0, android.net.Uri arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._setNotificationUri12505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._setNotificationUri12505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._setNotificationUri12505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new bool WantsAllOnMoveCalls
 		{
@@ -376,146 +232,82 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _getWantsAllOnMoveCalls12506;
 		public virtual bool getWantsAllOnMoveCalls()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._getWantsAllOnMoveCalls12506);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getWantsAllOnMoveCalls12506);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._getWantsAllOnMoveCalls12506);
 		}
 		internal static global::MonoJavaBridge.MethodId _respond12507;
 		public virtual global::android.os.Bundle respond(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor._respond12507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._respond12507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._respond12507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _commitUpdates12508;
 		public virtual bool commitUpdates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._commitUpdates12508);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._commitUpdates12508);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._commitUpdates12508);
 		}
 		internal static global::MonoJavaBridge.MethodId _commitUpdates12509;
 		public virtual bool commitUpdates(java.util.Map arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._commitUpdates12509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._commitUpdates12509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._commitUpdates12509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasUpdates12510;
 		public virtual bool hasUpdates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._hasUpdates12510);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._hasUpdates12510);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._hasUpdates12510);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsUpdates12511;
 		public virtual bool supportsUpdates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._supportsUpdates12511);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._supportsUpdates12511);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._supportsUpdates12511);
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteRow12512;
 		public virtual bool deleteRow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._deleteRow12512);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._deleteRow12512);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._deleteRow12512);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob12513;
 		public virtual bool updateBlob(int arg0, byte[] arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateBlob12513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateBlob12513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateBlob12513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDouble12514;
 		public virtual bool updateDouble(int arg0, double arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateDouble12514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateDouble12514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateDouble12514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateFloat12515;
 		public virtual bool updateFloat(int arg0, float arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateFloat12515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateFloat12515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateFloat12515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateInt12516;
 		public virtual bool updateInt(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateInt12516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateInt12516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateInt12516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateLong12517;
 		public virtual bool updateLong(int arg0, long arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateLong12517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateLong12517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateLong12517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateShort12518;
 		public virtual bool updateShort(int arg0, short arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateShort12518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateShort12518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateShort12518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateString12519;
 		public virtual bool updateString(int arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateString12519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateString12519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateString12519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateToNull12520;
 		public virtual bool updateToNull(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor._updateToNull12520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateToNull12520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._updateToNull12520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _abortUpdates12521;
 		public virtual void abortUpdates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor._abortUpdates12521);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._abortUpdates12521);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockCursor.staticClass, global::android.test.mock.MockCursor._abortUpdates12521);
 		}
 		internal static global::MonoJavaBridge.MethodId _MockCursor12522;
 		public MockCursor() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

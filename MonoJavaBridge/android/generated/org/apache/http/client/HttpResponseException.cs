@@ -17,11 +17,7 @@ namespace org.apache.http.client
 		internal static global::MonoJavaBridge.MethodId _getStatusCode31892;
 		public virtual int getStatusCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.client.HttpResponseException._getStatusCode31892);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.client.HttpResponseException.staticClass, global::org.apache.http.client.HttpResponseException._getStatusCode31892);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.client.HttpResponseException.staticClass, global::org.apache.http.client.HttpResponseException._getStatusCode31892);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpResponseException31893;
 		public HttpResponseException(int arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

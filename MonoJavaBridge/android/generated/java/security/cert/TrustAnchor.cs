@@ -10,11 +10,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString23692;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._toString23692)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._toString23692)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._toString23692)) as java.lang.String;
 		}
 		public new global::java.security.cert.X509Certificate TrustedCert
 		{
@@ -26,11 +22,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getTrustedCert23693;
 		public virtual global::java.security.cert.X509Certificate getTrustedCert()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._getTrustedCert23693)) as java.security.cert.X509Certificate;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getTrustedCert23693)) as java.security.cert.X509Certificate;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getTrustedCert23693)) as java.security.cert.X509Certificate;
 		}
 		public new global::javax.security.auth.x500.X500Principal CA
 		{
@@ -42,11 +34,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCA23694;
 		public virtual global::javax.security.auth.x500.X500Principal getCA()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.x500.X500Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._getCA23694)) as javax.security.auth.x500.X500Principal;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.x500.X500Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCA23694)) as javax.security.auth.x500.X500Principal;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.x500.X500Principal>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCA23694)) as javax.security.auth.x500.X500Principal;
 		}
 		public new global::java.lang.String CAName
 		{
@@ -58,11 +46,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCAName23695;
 		public virtual global::java.lang.String getCAName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._getCAName23695)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCAName23695)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCAName23695)) as java.lang.String;
 		}
 		public new global::java.security.PublicKey CAPublicKey
 		{
@@ -74,11 +58,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getCAPublicKey23696;
 		public virtual global::java.security.PublicKey getCAPublicKey()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._getCAPublicKey23696)) as java.security.PublicKey;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCAPublicKey23696)) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getCAPublicKey23696)) as java.security.PublicKey;
 		}
 		public new byte[] NameConstraints
 		{
@@ -90,11 +70,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getNameConstraints23697;
 		public virtual byte[] getNameConstraints()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor._getNameConstraints23697)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getNameConstraints23697)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.TrustAnchor.staticClass, global::java.security.cert.TrustAnchor._getNameConstraints23697)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _TrustAnchor23698;
 		public TrustAnchor(java.security.cert.X509Certificate arg0, byte[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

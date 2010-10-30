@@ -19,28 +19,19 @@ namespace org.w3c.dom.ls
 		short org.w3c.dom.ls.LSParserFilter.startElement(org.w3c.dom.Element arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._startElement34930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._startElement34930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._startElement34930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getWhatToShow34931;
 		int org.w3c.dom.ls.LSParserFilter.getWhatToShow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34931);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34931);
+			return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34931);
 		}
 		internal static global::MonoJavaBridge.MethodId _acceptNode34932;
 		short org.w3c.dom.ls.LSParserFilter.acceptNode(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static LSParserFilter_()
 		{

@@ -10,11 +10,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _readLine19131;
 		public override global::java.lang.String readLine()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.LineNumberReader._readLine19131)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._readLine19131)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._readLine19131)) as java.lang.String;
 		}
 		public new int LineNumber
 		{
@@ -30,65 +26,37 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getLineNumber19132;
 		public virtual int getLineNumber()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.LineNumberReader._getLineNumber19132);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._getLineNumber19132);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._getLineNumber19132);
 		}
 		internal static global::MonoJavaBridge.MethodId _mark19133;
 		public override void mark(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.LineNumberReader._mark19133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._mark19133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._mark19133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset19134;
 		public override void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.LineNumberReader._reset19134);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._reset19134);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._reset19134);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19135;
 		public override int read(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.LineNumberReader._read19135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._read19135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._read19135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read19136;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.LineNumberReader._read19136);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._read19136);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._read19136);
 		}
 		internal static global::MonoJavaBridge.MethodId _skip19137;
 		public override long skip(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.LineNumberReader._skip19137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._skip19137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._skip19137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLineNumber19138;
 		public virtual void setLineNumber(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.LineNumberReader._setLineNumber19138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._setLineNumber19138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.LineNumberReader.staticClass, global::java.io.LineNumberReader._setLineNumber19138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LineNumberReader19139;
 		public LineNumberReader(java.io.Reader arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

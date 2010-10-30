@@ -18,10 +18,7 @@ namespace java.net
 		public char[] getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication._getPassword21652)) as char[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._getPassword21652)) as char[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._getPassword21652)) as char[];
 		}
 		public new global::java.lang.String UserName
 		{
@@ -34,10 +31,7 @@ namespace java.net
 		public global::java.lang.String getUserName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication._getUserName21653)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._getUserName21653)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._getUserName21653)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PasswordAuthentication21654;
 		public PasswordAuthentication(java.lang.String arg0, char[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -12,11 +12,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13465;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan._updateDrawState13465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._updateDrawState13465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._updateDrawState13465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ClickableSpan13466;
 		public ClickableSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -49,10 +45,7 @@ namespace android.text.style
 		public override void onClick(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan_._onClick13467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan_.staticClass, global::android.text.style.ClickableSpan_._onClick13467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.ClickableSpan_._onClick13467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ClickableSpan_()
 		{

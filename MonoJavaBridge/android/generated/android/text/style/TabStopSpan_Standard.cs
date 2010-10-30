@@ -17,11 +17,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getTabStop13596;
 		public virtual int getTabStop()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard._getTabStop13596);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop13596);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop13596);
 		}
 		internal static global::MonoJavaBridge.MethodId _TabStopSpan_Standard13597;
 		public TabStopSpan_Standard(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,38 +10,22 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _hasNext33523;
 		public virtual bool hasNext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator._hasNext33523);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._hasNext33523);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._hasNext33523);
 		}
 		internal static global::MonoJavaBridge.MethodId _next33524;
 		public virtual global::java.lang.Object next()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator._next33524)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._next33524)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._next33524)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove33525;
 		public virtual void remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator._remove33525);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._remove33525);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._remove33525);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextElement33526;
 		public virtual global::org.apache.http.HeaderElement nextElement()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderElement>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator._nextElement33526)) as org.apache.http.HeaderElement;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._nextElement33526)) as org.apache.http.HeaderElement;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderElement>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHeaderElementIterator.staticClass, global::org.apache.http.message.BasicHeaderElementIterator._nextElement33526)) as org.apache.http.HeaderElement;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHeaderElementIterator33527;
 		public BasicHeaderElementIterator(org.apache.http.HeaderIterator arg0, org.apache.http.message.HeaderValueParser arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

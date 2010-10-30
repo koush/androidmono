@@ -10,47 +10,27 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _write19379;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream._write19379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._write19379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._write19379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19380;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream._write19380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._write19380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._write19380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush19381;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream._flush19381);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._flush19381);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._flush19381);
 		}
 		internal static global::MonoJavaBridge.MethodId _close19382;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream._close19382);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._close19382);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._close19382);
 		}
 		internal static global::MonoJavaBridge.MethodId _connect19383;
 		public virtual void connect(java.io.PipedInputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream._connect19383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._connect19383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.PipedOutputStream.staticClass, global::java.io.PipedOutputStream._connect19383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PipedOutputStream19384;
 		public PipedOutputStream(java.io.PipedInputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

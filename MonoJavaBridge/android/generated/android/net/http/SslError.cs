@@ -10,11 +10,7 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _toString7961;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslError._toString7961)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._toString7961)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._toString7961)) as java.lang.String;
 		}
 		public new global::android.net.http.SslCertificate Certificate
 		{
@@ -26,29 +22,17 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _getCertificate7962;
 		public virtual global::android.net.http.SslCertificate getCertificate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslError._getCertificate7962)) as android.net.http.SslCertificate;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._getCertificate7962)) as android.net.http.SslCertificate;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._getCertificate7962)) as android.net.http.SslCertificate;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasError7963;
 		public virtual bool hasError(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.http.SslError._hasError7963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._hasError7963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._hasError7963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addError7964;
 		public virtual bool addError(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.http.SslError._addError7964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._addError7964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._addError7964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int PrimaryError
 		{
@@ -60,11 +44,7 @@ namespace android.net.http
 		internal static global::MonoJavaBridge.MethodId _getPrimaryError7965;
 		public virtual int getPrimaryError()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.http.SslError._getPrimaryError7965);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._getPrimaryError7965);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._getPrimaryError7965);
 		}
 		internal static global::MonoJavaBridge.MethodId _SslError7966;
 		public SslError(int arg0, android.net.http.SslCertificate arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

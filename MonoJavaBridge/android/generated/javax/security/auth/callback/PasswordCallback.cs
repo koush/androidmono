@@ -10,11 +10,7 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _setPassword30199;
 		public virtual void setPassword(char[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback._setPassword30199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._setPassword30199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._setPassword30199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new char[] Password
 		{
@@ -30,20 +26,12 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _getPassword30200;
 		public virtual char[] getPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback._getPassword30200)) as char[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._getPassword30200)) as char[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._getPassword30200)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPassword30201;
 		public virtual void clearPassword()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback._clearPassword30201);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._clearPassword30201);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._clearPassword30201);
 		}
 		public new global::java.lang.String Prompt
 		{
@@ -55,20 +43,12 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _getPrompt30202;
 		public virtual global::java.lang.String getPrompt()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback._getPrompt30202)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._getPrompt30202)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._getPrompt30202)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isEchoOn30203;
 		public virtual bool isEchoOn()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback._isEchoOn30203);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._isEchoOn30203);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.auth.callback.PasswordCallback.staticClass, global::javax.security.auth.callback.PasswordCallback._isEchoOn30203);
 		}
 		internal static global::MonoJavaBridge.MethodId _PasswordCallback30204;
 		public PasswordCallback(java.lang.String arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

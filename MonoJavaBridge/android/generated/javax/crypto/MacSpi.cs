@@ -10,11 +10,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _clone28690;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.MacSpi._clone28690)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.MacSpi.staticClass, global::javax.crypto.MacSpi._clone28690)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.MacSpi.staticClass, global::javax.crypto.MacSpi._clone28690)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28691;
 		protected abstract void engineInit(java.security.Key arg0, java.security.spec.AlgorithmParameterSpec arg1);
@@ -25,11 +21,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _engineUpdate28694;
 		protected virtual void engineUpdate(java.nio.ByteBuffer arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi._engineUpdate28694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi.staticClass, global::javax.crypto.MacSpi._engineUpdate28694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.MacSpi.staticClass, global::javax.crypto.MacSpi._engineUpdate28694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineReset28695;
 		protected abstract void engineReset();
@@ -74,55 +66,37 @@ namespace javax.crypto
 		protected override void engineInit(java.security.Key arg0, java.security.spec.AlgorithmParameterSpec arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineInit28699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineInit28699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineInit28699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate28700;
 		protected override void engineUpdate(byte arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineUpdate28700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineUpdate28700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineUpdate28700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate28701;
 		protected override void engineUpdate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineUpdate28701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineUpdate28701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineUpdate28701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineReset28702;
 		protected override void engineReset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineReset28702);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineReset28702);
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineReset28702);
 		}
 		internal static global::MonoJavaBridge.MethodId _engineDoFinal28703;
 		protected override byte[] engineDoFinal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineDoFinal28703)) as byte[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineDoFinal28703)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineDoFinal28703)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetMacLength28704;
 		protected override int engineGetMacLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineGetMacLength28704);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.MacSpi_.staticClass, global::javax.crypto.MacSpi_._engineGetMacLength28704);
+			return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.MacSpi_._engineGetMacLength28704);
 		}
 		static MacSpi_()
 		{

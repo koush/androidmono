@@ -10,20 +10,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _toString21722;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._toString21722)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._toString21722)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._toString21722)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _close21723;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._close21723);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._close21723);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._close21723);
 		}
 		public new int Port
 		{
@@ -35,11 +27,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getPort21724;
 		public virtual int getPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getPort21724);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getPort21724);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getPort21724);
 		}
 		public new global::java.io.InputStream InputStream
 		{
@@ -51,11 +39,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getInputStream21725;
 		public virtual global::java.io.InputStream getInputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getInputStream21725)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getInputStream21725)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getInputStream21725)) as java.io.InputStream;
 		}
 		public new global::java.nio.channels.SocketChannel Channel
 		{
@@ -67,38 +51,22 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getChannel21726;
 		public virtual global::java.nio.channels.SocketChannel getChannel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getChannel21726)) as java.nio.channels.SocketChannel;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getChannel21726)) as java.nio.channels.SocketChannel;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getChannel21726)) as java.nio.channels.SocketChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21727;
 		public virtual void connect(java.net.SocketAddress arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._connect21727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._connect21727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._connect21727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21728;
 		public virtual void connect(java.net.SocketAddress arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._connect21728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._connect21728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._connect21728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isClosed21729;
 		public virtual bool isClosed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._isClosed21729);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._isClosed21729);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isClosed21729);
 		}
 		public new global::java.io.OutputStream OutputStream
 		{
@@ -110,29 +78,17 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getOutputStream21730;
 		public virtual global::java.io.OutputStream getOutputStream()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getOutputStream21730)) as java.io.OutputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getOutputStream21730)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getOutputStream21730)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _bind21731;
 		public virtual void bind(java.net.SocketAddress arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._bind21731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._bind21731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._bind21731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnected21732;
 		public virtual bool isConnected()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._isConnected21732);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._isConnected21732);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isConnected21732);
 		}
 		public new global::java.net.SocketAddress LocalSocketAddress
 		{
@@ -144,38 +100,22 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress21733;
 		public virtual global::java.net.SocketAddress getLocalSocketAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getLocalSocketAddress21733)) as java.net.SocketAddress;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalSocketAddress21733)) as java.net.SocketAddress;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalSocketAddress21733)) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdownInput21734;
 		public virtual void shutdownInput()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._shutdownInput21734);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownInput21734);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownInput21734);
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdownOutput21735;
 		public virtual void shutdownOutput()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._shutdownOutput21735);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownOutput21735);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownOutput21735);
 		}
 		internal static global::MonoJavaBridge.MethodId _setReceiveBufferSize21736;
 		public virtual void setReceiveBufferSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setReceiveBufferSize21736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setReceiveBufferSize21736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setReceiveBufferSize21736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ReceiveBufferSize
 		{
@@ -191,20 +131,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getReceiveBufferSize21737;
 		public virtual int getReceiveBufferSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getReceiveBufferSize21737);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getReceiveBufferSize21737);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getReceiveBufferSize21737);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSoTimeout21738;
 		public virtual void setSoTimeout(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setSoTimeout21738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setSoTimeout21738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSoTimeout21738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int SoTimeout
 		{
@@ -220,20 +152,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getSoTimeout21739;
 		public virtual int getSoTimeout()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getSoTimeout21739);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getSoTimeout21739);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSoTimeout21739);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSendBufferSize21740;
 		public virtual void setSendBufferSize(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setSendBufferSize21740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setSendBufferSize21740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSendBufferSize21740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int SendBufferSize
 		{
@@ -249,11 +173,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getSendBufferSize21741;
 		public virtual int getSendBufferSize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getSendBufferSize21741);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getSendBufferSize21741);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSendBufferSize21741);
 		}
 		public new global::java.net.SocketAddress RemoteSocketAddress
 		{
@@ -265,38 +185,22 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getRemoteSocketAddress21742;
 		public virtual global::java.net.SocketAddress getRemoteSocketAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getRemoteSocketAddress21742)) as java.net.SocketAddress;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getRemoteSocketAddress21742)) as java.net.SocketAddress;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getRemoteSocketAddress21742)) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _isBound21743;
 		public virtual bool isBound()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._isBound21743);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._isBound21743);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isBound21743);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOutputShutdown21744;
 		public virtual bool isOutputShutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._isOutputShutdown21744);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._isOutputShutdown21744);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isOutputShutdown21744);
 		}
 		internal static global::MonoJavaBridge.MethodId _isInputShutdown21745;
 		public virtual bool isInputShutdown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._isInputShutdown21745);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._isInputShutdown21745);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isInputShutdown21745);
 		}
 		public new global::java.net.InetAddress InetAddress
 		{
@@ -308,11 +212,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getInetAddress21746;
 		public virtual global::java.net.InetAddress getInetAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getInetAddress21746)) as java.net.InetAddress;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getInetAddress21746)) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getInetAddress21746)) as java.net.InetAddress;
 		}
 		public new global::java.net.InetAddress LocalAddress
 		{
@@ -324,11 +224,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getLocalAddress21747;
 		public virtual global::java.net.InetAddress getLocalAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.Socket._getLocalAddress21747)) as java.net.InetAddress;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalAddress21747)) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalAddress21747)) as java.net.InetAddress;
 		}
 		public new int LocalPort
 		{
@@ -340,20 +236,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getLocalPort21748;
 		public virtual int getLocalPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getLocalPort21748);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalPort21748);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalPort21748);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTcpNoDelay21749;
 		public virtual void setTcpNoDelay(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setTcpNoDelay21749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setTcpNoDelay21749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setTcpNoDelay21749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool TcpNoDelay
 		{
@@ -369,20 +257,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getTcpNoDelay21750;
 		public virtual bool getTcpNoDelay()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._getTcpNoDelay21750);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getTcpNoDelay21750);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getTcpNoDelay21750);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSoLinger21751;
 		public virtual void setSoLinger(bool arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setSoLinger21751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setSoLinger21751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSoLinger21751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int SoLinger
 		{
@@ -394,29 +274,17 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getSoLinger21752;
 		public virtual int getSoLinger()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getSoLinger21752);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getSoLinger21752);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSoLinger21752);
 		}
 		internal static global::MonoJavaBridge.MethodId _sendUrgentData21753;
 		public virtual void sendUrgentData(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._sendUrgentData21753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._sendUrgentData21753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._sendUrgentData21753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOOBInline21754;
 		public virtual void setOOBInline(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setOOBInline21754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setOOBInline21754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setOOBInline21754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool OOBInline
 		{
@@ -432,20 +300,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getOOBInline21755;
 		public virtual bool getOOBInline()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._getOOBInline21755);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getOOBInline21755);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getOOBInline21755);
 		}
 		internal static global::MonoJavaBridge.MethodId _setKeepAlive21756;
 		public virtual void setKeepAlive(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setKeepAlive21756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setKeepAlive21756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setKeepAlive21756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool KeepAlive
 		{
@@ -461,20 +321,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getKeepAlive21757;
 		public virtual bool getKeepAlive()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._getKeepAlive21757);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getKeepAlive21757);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getKeepAlive21757);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTrafficClass21758;
 		public virtual void setTrafficClass(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setTrafficClass21758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setTrafficClass21758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setTrafficClass21758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int TrafficClass
 		{
@@ -490,20 +342,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getTrafficClass21759;
 		public virtual int getTrafficClass()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.Socket._getTrafficClass21759);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getTrafficClass21759);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getTrafficClass21759);
 		}
 		internal static global::MonoJavaBridge.MethodId _setReuseAddress21760;
 		public virtual void setReuseAddress(bool arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setReuseAddress21760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setReuseAddress21760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setReuseAddress21760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool ReuseAddress
 		{
@@ -519,11 +363,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getReuseAddress21761;
 		public virtual bool getReuseAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.Socket._getReuseAddress21761);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._getReuseAddress21761);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getReuseAddress21761);
 		}
 		public static global::java.net.SocketImplFactory SocketImplFactory
 		{
@@ -541,11 +381,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _setPerformancePreferences21763;
 		public virtual void setPerformancePreferences(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.Socket._setPerformancePreferences21763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.Socket.staticClass, global::java.net.Socket._setPerformancePreferences21763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setPerformancePreferences21763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _Socket21764;
 		public Socket() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -21,83 +21,47 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getContext12140;
 		public virtual global::android.content.Context getContext()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.AndroidTestCase._getContext12140)) as android.content.Context;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._getContext12140)) as android.content.Context;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._getContext12140)) as android.content.Context;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12141;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._setUp12141);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._setUp12141);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._setUp12141);
 		}
 		internal static global::MonoJavaBridge.MethodId _tearDown12142;
 		protected override void tearDown()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._tearDown12142);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._tearDown12142);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._tearDown12142);
 		}
 		internal static global::MonoJavaBridge.MethodId _scrubClass12143;
 		protected virtual void scrubClass(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._scrubClass12143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._scrubClass12143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._scrubClass12143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _testAndroidTestCaseSetupProperly12144;
 		public virtual void testAndroidTestCaseSetupProperly()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._testAndroidTestCaseSetupProperly12144);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._testAndroidTestCaseSetupProperly12144);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._testAndroidTestCaseSetupProperly12144);
 		}
 		internal static global::MonoJavaBridge.MethodId _setContext12145;
 		public virtual void setContext(android.content.Context arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._setContext12145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._setContext12145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._setContext12145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _assertActivityRequiresPermission12146;
 		public virtual void assertActivityRequiresPermission(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._assertActivityRequiresPermission12146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertActivityRequiresPermission12146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertActivityRequiresPermission12146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _assertReadingContentUriRequiresPermission12147;
 		public virtual void assertReadingContentUriRequiresPermission(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._assertReadingContentUriRequiresPermission12147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertReadingContentUriRequiresPermission12147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertReadingContentUriRequiresPermission12147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _assertWritingContentUriRequiresPermission12148;
 		public virtual void assertWritingContentUriRequiresPermission(android.net.Uri arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase._assertWritingContentUriRequiresPermission12148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertWritingContentUriRequiresPermission12148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.AndroidTestCase.staticClass, global::android.test.AndroidTestCase._assertWritingContentUriRequiresPermission12148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _AndroidTestCase12149;
 		public AndroidTestCase() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

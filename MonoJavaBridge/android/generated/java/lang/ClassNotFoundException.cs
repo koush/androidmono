@@ -17,11 +17,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getCause20071;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ClassNotFoundException._getCause20071)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._getCause20071)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._getCause20071)) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable Exception
 		{
@@ -33,11 +29,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getException20072;
 		public virtual global::java.lang.Throwable getException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ClassNotFoundException._getException20072)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._getException20072)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._getException20072)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassNotFoundException20073;
 		public ClassNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

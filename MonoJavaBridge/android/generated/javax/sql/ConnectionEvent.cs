@@ -17,11 +17,7 @@ namespace javax.sql
 		internal static global::MonoJavaBridge.MethodId _getSQLException30277;
 		public virtual global::java.sql.SQLException getSQLException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.ConnectionEvent._getSQLException30277)) as java.sql.SQLException;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._getSQLException30277)) as java.sql.SQLException;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._getSQLException30277)) as java.sql.SQLException;
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionEvent30278;
 		public ConnectionEvent(javax.sql.PooledConnection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

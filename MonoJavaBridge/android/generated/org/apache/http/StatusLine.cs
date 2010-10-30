@@ -19,28 +19,19 @@ namespace org.apache.http
 		global::org.apache.http.ProtocolVersion org.apache.http.StatusLine.getProtocolVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getProtocolVersion31763)) as org.apache.http.ProtocolVersion;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getProtocolVersion31763)) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getProtocolVersion31763)) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatusCode31764;
 		int org.apache.http.StatusLine.getStatusCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getStatusCode31764);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getStatusCode31764);
+			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getStatusCode31764);
 		}
 		internal static global::MonoJavaBridge.MethodId _getReasonPhrase31765;
 		global::java.lang.String org.apache.http.StatusLine.getReasonPhrase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getReasonPhrase31765)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getReasonPhrase31765)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getReasonPhrase31765)) as java.lang.String;
 		}
 		static StatusLine_()
 		{

@@ -10,47 +10,27 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _equals22905;
 		public override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.BasicPermission._equals22905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._equals22905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._equals22905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22906;
 		public override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.BasicPermission._hashCode22906);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._hashCode22906);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._hashCode22906);
 		}
 		internal static global::MonoJavaBridge.MethodId _implies22907;
 		public override bool implies(java.security.Permission arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.BasicPermission._implies22907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._implies22907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._implies22907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getActions22908;
 		public override global::java.lang.String getActions()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.BasicPermission._getActions22908)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._getActions22908)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._getActions22908)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _newPermissionCollection22909;
 		public override global::java.security.PermissionCollection newPermissionCollection()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.BasicPermission._newPermissionCollection22909)) as java.security.PermissionCollection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._newPermissionCollection22909)) as java.security.PermissionCollection;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.BasicPermission.staticClass, global::java.security.BasicPermission._newPermissionCollection22909)) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicPermission22910;
 		public BasicPermission(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -18,46 +18,31 @@ namespace android.content
 		void android.content.EntityIterator.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._close3095);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._close3095);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._close3095);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset3096;
 		void android.content.EntityIterator.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._reset3096);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._reset3096);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._reset3096);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext3097;
 		bool java.util.Iterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.EntityIterator_._hasNext3097);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._hasNext3097);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.EntityIterator_._hasNext3097);
 		}
 		internal static global::MonoJavaBridge.MethodId _next3098;
 		global::java.lang.Object java.util.Iterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.EntityIterator_._next3098)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._next3098)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.EntityIterator_._next3098)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove3099;
 		void java.util.Iterator.remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._remove3099);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._remove3099);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.content.EntityIterator_._remove3099);
 		}
 		static EntityIterator_()
 		{

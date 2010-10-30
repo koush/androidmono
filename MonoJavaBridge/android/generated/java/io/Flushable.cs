@@ -17,10 +17,7 @@ namespace java.io
 		void java.io.Flushable.flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Flushable_._flush19089);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Flushable_.staticClass, global::java.io.Flushable_._flush19089);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Flushable_._flush19089);
 		}
 		static Flushable_()
 		{

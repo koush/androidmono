@@ -17,10 +17,7 @@ namespace java.lang.reflect
 		global::java.lang.reflect.Type java.lang.reflect.GenericArrayType.getGenericComponentType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081)) as java.lang.reflect.Type;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericArrayType_.staticClass, global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081)) as java.lang.reflect.Type;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081)) as java.lang.reflect.Type;
 		}
 		static GenericArrayType_()
 		{

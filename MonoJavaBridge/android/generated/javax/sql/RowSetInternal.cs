@@ -21,46 +21,31 @@ namespace javax.sql
 		global::java.lang.Object[] javax.sql.RowSetInternal.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getParams30575)) as java.lang.Object[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._getParams30575)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getParams30575)) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection30576;
 		global::java.sql.Connection javax.sql.RowSetInternal.getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getConnection30576)) as java.sql.Connection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._getConnection30576)) as java.sql.Connection;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getConnection30576)) as java.sql.Connection;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOriginal30577;
 		global::java.sql.ResultSet javax.sql.RowSetInternal.getOriginal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getOriginal30577)) as java.sql.ResultSet;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._getOriginal30577)) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getOriginal30577)) as java.sql.ResultSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _setMetaData30578;
 		void javax.sql.RowSetInternal.setMetaData(javax.sql.RowSetMetaData arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._setMetaData30578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._setMetaData30578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._setMetaData30578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getOriginalRow30579;
 		global::java.sql.ResultSet javax.sql.RowSetInternal.getOriginalRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getOriginalRow30579)) as java.sql.ResultSet;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_.staticClass, global::javax.sql.RowSetInternal_._getOriginalRow30579)) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSet>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.RowSetInternal_._getOriginalRow30579)) as java.sql.ResultSet;
 		}
 		static RowSetInternal_()
 		{

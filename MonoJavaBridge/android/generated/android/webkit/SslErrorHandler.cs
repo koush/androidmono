@@ -10,29 +10,17 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _cancel16092;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler._cancel16092);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._cancel16092);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._cancel16092);
 		}
 		internal static global::MonoJavaBridge.MethodId _handleMessage16093;
 		public override void handleMessage(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler._handleMessage16093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._handleMessage16093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._handleMessage16093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _proceed16094;
 		public virtual void proceed()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler._proceed16094);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._proceed16094);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._proceed16094);
 		}
 		static SslErrorHandler()
 		{

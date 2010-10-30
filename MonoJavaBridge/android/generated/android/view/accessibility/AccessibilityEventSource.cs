@@ -18,19 +18,13 @@ namespace android.view.accessibility
 		void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEventUnchecked15558;
 		void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AccessibilityEventSource_()
 		{

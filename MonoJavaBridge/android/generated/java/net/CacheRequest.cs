@@ -42,19 +42,13 @@ namespace java.net
 		public override global::java.io.OutputStream getBody()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.CacheRequest_._getBody21352)) as java.io.OutputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.CacheRequest_.staticClass, global::java.net.CacheRequest_._getBody21352)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.CacheRequest_._getBody21352)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _abort21353;
 		public override void abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.CacheRequest_._abort21353);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.CacheRequest_.staticClass, global::java.net.CacheRequest_._abort21353);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.net.CacheRequest_._abort21353);
 		}
 		static CacheRequest_()
 		{

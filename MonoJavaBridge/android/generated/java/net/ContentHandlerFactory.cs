@@ -17,10 +17,7 @@ namespace java.net
 		global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_.staticClass, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
 		}
 		static ContentHandlerFactory_()
 		{

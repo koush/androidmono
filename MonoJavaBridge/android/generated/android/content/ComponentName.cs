@@ -11,55 +11,37 @@ namespace android.content
 		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.ComponentName._equals2611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._equals2611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._equals2611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString2612;
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._toString2612)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toString2612)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toString2612)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode2613;
 		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.ComponentName._hashCode2613);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode2613);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode2613);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone2614;
 		public global::android.content.ComponentName clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._clone2614)) as android.content.ComponentName;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._clone2614)) as android.content.ComponentName;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._clone2614)) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo2615;
 		public int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.ComponentName._compareTo2615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo2615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo2615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo2616;
 		public int compareTo(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.ComponentName._compareTo2616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo2616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo2616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String ClassName
 		{
@@ -72,10 +54,7 @@ namespace android.content
 		public global::java.lang.String getClassName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._getClassName2617)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getClassName2617)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getClassName2617)) as java.lang.String;
 		}
 		public new global::java.lang.String PackageName
 		{
@@ -88,19 +67,13 @@ namespace android.content
 		public global::java.lang.String getPackageName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._getPackageName2618)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getPackageName2618)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getPackageName2618)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2619;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentName._writeToParcel2619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._writeToParcel2619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._writeToParcel2619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2620;
 		public static void writeToParcel(android.content.ComponentName arg0, android.os.Parcel arg1)
@@ -112,10 +85,7 @@ namespace android.content
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.ComponentName._describeContents2621);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._describeContents2621);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._describeContents2621);
 		}
 		internal static global::MonoJavaBridge.MethodId _readFromParcel2622;
 		public static global::android.content.ComponentName readFromParcel(android.os.Parcel arg0)
@@ -134,28 +104,19 @@ namespace android.content
 		public global::java.lang.String getShortClassName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._getShortClassName2623)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getShortClassName2623)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getShortClassName2623)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _flattenToString2624;
 		public global::java.lang.String flattenToString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._flattenToString2624)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToString2624)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToString2624)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _flattenToShortString2625;
 		public global::java.lang.String flattenToShortString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._flattenToShortString2625)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToShortString2625)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToShortString2625)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _unflattenFromString2626;
 		public static global::android.content.ComponentName unflattenFromString(java.lang.String arg0)
@@ -167,10 +128,7 @@ namespace android.content
 		public global::java.lang.String toShortString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._toShortString2627)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toShortString2627)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toShortString2627)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ComponentName2628;
 		public ComponentName(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

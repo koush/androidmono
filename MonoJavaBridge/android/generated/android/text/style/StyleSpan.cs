@@ -10,20 +10,12 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13574;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan._writeToParcel13574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._writeToParcel13574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._writeToParcel13574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents13575;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.StyleSpan._describeContents13575);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._describeContents13575);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._describeContents13575);
 		}
 		public new int Style
 		{
@@ -35,11 +27,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getStyle13576;
 		public virtual int getStyle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.StyleSpan._getStyle13576);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._getStyle13576);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._getStyle13576);
 		}
 		public new int SpanTypeId
 		{
@@ -51,29 +39,17 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13577;
 		public virtual int getSpanTypeId()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.StyleSpan._getSpanTypeId13577);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._getSpanTypeId13577);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._getSpanTypeId13577);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13578;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan._updateDrawState13578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._updateDrawState13578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._updateDrawState13578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateMeasureState13579;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan._updateMeasureState13579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._updateMeasureState13579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._updateMeasureState13579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _StyleSpan13580;
 		public StyleSpan(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

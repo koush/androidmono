@@ -17,10 +17,7 @@ namespace android.util
 		void android.util.Printer.println(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.Printer_.staticClass, global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Printer_()
 		{

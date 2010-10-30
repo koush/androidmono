@@ -10,20 +10,12 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _notifyChanged4598;
 		public virtual void notifyChanged()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.DataSetObservable._notifyChanged4598);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyChanged4598);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyChanged4598);
 		}
 		internal static global::MonoJavaBridge.MethodId _notifyInvalidated4599;
 		public virtual void notifyInvalidated()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.DataSetObservable._notifyInvalidated4599);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyInvalidated4599);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyInvalidated4599);
 		}
 		internal static global::MonoJavaBridge.MethodId _DataSetObservable4600;
 		public DataSetObservable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

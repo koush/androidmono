@@ -17,10 +17,7 @@ namespace java.lang.reflect
 		global::java.lang.reflect.TypeVariable[] java.lang.reflect.GenericDeclaration.getTypeParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082)) as java.lang.reflect.TypeVariable[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericDeclaration_.staticClass, global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082)) as java.lang.reflect.TypeVariable[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082)) as java.lang.reflect.TypeVariable[];
 		}
 		static GenericDeclaration_()
 		{

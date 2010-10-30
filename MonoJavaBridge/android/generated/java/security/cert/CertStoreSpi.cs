@@ -42,19 +42,13 @@ namespace java.security.cert
 		public override global::java.util.Collection engineGetCertificates(java.security.cert.CertSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCertificates23552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_.staticClass, global::java.security.cert.CertStoreSpi_._engineGetCertificates23552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCertificates23552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetCRLs23553;
 		public override global::java.util.Collection engineGetCRLs(java.security.cert.CRLSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCRLs23553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_.staticClass, global::java.security.cert.CertStoreSpi_._engineGetCRLs23553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCRLs23553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		static CertStoreSpi_()
 		{

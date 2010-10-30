@@ -10,11 +10,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5806;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Typeface._finalize5806);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._finalize5806);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._finalize5806);
 		}
 		internal static global::MonoJavaBridge.MethodId _create5807;
 		public static global::android.graphics.Typeface create(java.lang.String arg0, int arg1)
@@ -38,29 +34,17 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getStyle5809;
 		public virtual int getStyle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Typeface._getStyle5809);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._getStyle5809);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._getStyle5809);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBold5810;
 		public virtual bool isBold()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Typeface._isBold5810);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isBold5810);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isBold5810);
 		}
 		internal static global::MonoJavaBridge.MethodId _isItalic5811;
 		public virtual bool isItalic()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Typeface._isItalic5811);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isItalic5811);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isItalic5811);
 		}
 		internal static global::MonoJavaBridge.MethodId _defaultFromStyle5812;
 		public static global::android.graphics.Typeface defaultFromStyle(int arg0)

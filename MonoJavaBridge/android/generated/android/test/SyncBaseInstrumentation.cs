@@ -10,29 +10,17 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _setUp12319;
 		protected override void setUp()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation._setUp12319);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._setUp12319);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._setUp12319);
 		}
 		internal static global::MonoJavaBridge.MethodId _syncProvider12320;
 		protected virtual void syncProvider(android.net.Uri arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation._syncProvider12320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._syncProvider12320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._syncProvider12320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _cancelSyncsandDisableAutoSync12321;
 		protected virtual void cancelSyncsandDisableAutoSync()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation._cancelSyncsandDisableAutoSync12321);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._cancelSyncsandDisableAutoSync12321);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.SyncBaseInstrumentation.staticClass, global::android.test.SyncBaseInstrumentation._cancelSyncsandDisableAutoSync12321);
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncBaseInstrumentation12322;
 		public SyncBaseInstrumentation() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

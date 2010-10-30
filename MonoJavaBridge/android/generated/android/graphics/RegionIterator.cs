@@ -10,20 +10,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5791;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.RegionIterator._finalize5791);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.RegionIterator.staticClass, global::android.graphics.RegionIterator._finalize5791);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.RegionIterator.staticClass, global::android.graphics.RegionIterator._finalize5791);
 		}
 		internal static global::MonoJavaBridge.MethodId _next5792;
 		public virtual bool next(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.RegionIterator._next5792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.RegionIterator.staticClass, global::android.graphics.RegionIterator._next5792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.RegionIterator.staticClass, global::android.graphics.RegionIterator._next5792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _RegionIterator5793;
 		public RegionIterator(android.graphics.Region arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

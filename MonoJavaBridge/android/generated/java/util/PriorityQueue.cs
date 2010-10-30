@@ -10,56 +10,32 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _add26538;
 		public override bool add(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue._add26538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._add26538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._add26538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _clear26539;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.PriorityQueue._clear26539);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._clear26539);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._clear26539);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains26540;
 		public override bool contains(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue._contains26540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._contains26540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._contains26540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _size26541;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.PriorityQueue._size26541);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._size26541);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._size26541);
 		}
 		internal static global::MonoJavaBridge.MethodId _toArray26542;
 		public override global::java.lang.Object[] toArray(java.lang.Object[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._toArray26542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._toArray26542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._toArray26542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _toArray26543;
 		public override global::java.lang.Object[] toArray()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._toArray26543)) as java.lang.Object[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._toArray26543)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._toArray26543)) as java.lang.Object[];
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -68,56 +44,32 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _iterator26544;
 		public override global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._iterator26544)) as java.util.Iterator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._iterator26544)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._iterator26544)) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26545;
 		public override bool remove(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue._remove26545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._remove26545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._remove26545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _poll26546;
 		public override global::java.lang.Object poll()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._poll26546)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._poll26546)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._poll26546)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _peek26547;
 		public override global::java.lang.Object peek()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._peek26547)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._peek26547)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._peek26547)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _offer26548;
 		public override bool offer(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue._offer26548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._offer26548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._offer26548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _comparator26549;
 		public virtual global::java.util.Comparator comparator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PriorityQueue._comparator26549)) as java.util.Comparator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._comparator26549)) as java.util.Comparator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._comparator26549)) as java.util.Comparator;
 		}
 		internal static global::MonoJavaBridge.MethodId _PriorityQueue26550;
 		public PriorityQueue() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,10 +17,7 @@ namespace java.util.concurrent
 		global::java.lang.Thread java.util.concurrent.ThreadFactory.newThread(java.lang.Runnable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadFactory_._newThread27455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadFactory_.staticClass, global::java.util.concurrent.ThreadFactory_._newThread27455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.ThreadFactory_._newThread27455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread;
 		}
 		static ThreadFactory_()
 		{

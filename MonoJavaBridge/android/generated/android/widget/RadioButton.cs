@@ -10,11 +10,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _toggle17532;
 		public override void toggle()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioButton._toggle17532);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioButton.staticClass, global::android.widget.RadioButton._toggle17532);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.RadioButton.staticClass, global::android.widget.RadioButton._toggle17532);
 		}
 		internal static global::MonoJavaBridge.MethodId _RadioButton17533;
 		public RadioButton(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

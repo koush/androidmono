@@ -17,10 +17,7 @@ namespace android.webkit
 		void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.ValueCallback_.staticClass, global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ValueCallback_()
 		{

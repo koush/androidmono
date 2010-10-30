@@ -10,56 +10,32 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getProperty27997;
 		public virtual global::java.lang.String getProperty(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogManager._getProperty27997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getProperty27997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getProperty27997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _checkAccess27998;
 		public virtual void checkAccess()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._checkAccess27998);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._checkAccess27998);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._checkAccess27998);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset27999;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._reset27999);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._reset27999);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._reset27999);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLogger28000;
 		public virtual global::java.util.logging.Logger getLogger(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogManager._getLogger28000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.logging.Logger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getLogger28000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.logging.Logger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getLogger28000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.logging.Logger;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener28001;
 		public virtual void addPropertyChangeListener(java.beans.PropertyChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._addPropertyChangeListener28001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._addPropertyChangeListener28001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._addPropertyChangeListener28001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener28002;
 		public virtual void removePropertyChangeListener(java.beans.PropertyChangeListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._removePropertyChangeListener28002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._removePropertyChangeListener28002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._removePropertyChangeListener28002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLogManager28003;
 		public static global::java.util.logging.LogManager getLogManager()
@@ -70,11 +46,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _addLogger28004;
 		public virtual bool addLogger(java.util.logging.Logger arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.logging.LogManager._addLogger28004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._addLogger28004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._addLogger28004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Enumeration LoggerNames
 		{
@@ -86,29 +58,17 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _getLoggerNames28005;
 		public virtual global::java.util.Enumeration getLoggerNames()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogManager._getLoggerNames28005)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getLoggerNames28005)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._getLoggerNames28005)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _readConfiguration28006;
 		public virtual void readConfiguration(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._readConfiguration28006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._readConfiguration28006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._readConfiguration28006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readConfiguration28007;
 		public virtual void readConfiguration()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogManager._readConfiguration28007);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._readConfiguration28007);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.logging.LogManager.staticClass, global::java.util.logging.LogManager._readConfiguration28007);
 		}
 		public static global::java.util.logging.LoggingMXBean LoggingMXBean
 		{

@@ -11,28 +11,19 @@ namespace org.apache.http.protocol
 		public global::java.lang.Object getAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext._getAttribute33843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._getAttribute33843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._getAttribute33843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAttribute33844;
 		public global::java.lang.Object removeAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext._removeAttribute33844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._removeAttribute33844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._removeAttribute33844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute33845;
 		public void setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext._setAttribute33845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._setAttribute33845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._setAttribute33845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::org.apache.http.protocol.HttpContext Defaults
 		{
@@ -45,10 +36,7 @@ namespace org.apache.http.protocol
 		public global::org.apache.http.protocol.HttpContext getDefaults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpContext>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext._getDefaults33846)) as org.apache.http.protocol.HttpContext;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpContext>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._getDefaults33846)) as org.apache.http.protocol.HttpContext;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpContext>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.DefaultedHttpContext.staticClass, global::org.apache.http.protocol.DefaultedHttpContext._getDefaults33846)) as org.apache.http.protocol.HttpContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultedHttpContext33847;
 		public DefaultedHttpContext(org.apache.http.protocol.HttpContext arg0, org.apache.http.protocol.HttpContext arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

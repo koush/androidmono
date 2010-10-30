@@ -17,10 +17,7 @@ namespace android.view.animation
 		float android.view.animation.Interpolator.getInterpolation(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_._getInterpolation15710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_.staticClass, global::android.view.animation.Interpolator_._getInterpolation15710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_._getInterpolation15710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Interpolator_()
 		{

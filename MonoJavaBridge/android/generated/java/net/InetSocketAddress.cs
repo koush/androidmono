@@ -10,29 +10,17 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _equals21586;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.InetSocketAddress._equals21586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._equals21586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._equals21586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21587;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress._toString21587)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._toString21587)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._toString21587)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21588;
 		public sealed override int hashCode()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.InetSocketAddress._hashCode21588);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._hashCode21588);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._hashCode21588);
 		}
 		public new global::java.net.InetAddress Address
 		{
@@ -44,11 +32,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getAddress21589;
 		public virtual global::java.net.InetAddress getAddress()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress._getAddress21589)) as java.net.InetAddress;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getAddress21589)) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getAddress21589)) as java.net.InetAddress;
 		}
 		public new int Port
 		{
@@ -60,20 +44,12 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getPort21590;
 		public virtual int getPort()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.net.InetSocketAddress._getPort21590);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getPort21590);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getPort21590);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnresolved21591;
 		public virtual bool isUnresolved()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.net.InetSocketAddress._isUnresolved21591);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._isUnresolved21591);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._isUnresolved21591);
 		}
 		public new global::java.lang.String HostName
 		{
@@ -85,11 +61,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getHostName21592;
 		public virtual global::java.lang.String getHostName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress._getHostName21592)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getHostName21592)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._getHostName21592)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _createUnresolved21593;
 		public static global::java.net.InetSocketAddress createUnresolved(java.lang.String arg0, int arg1)

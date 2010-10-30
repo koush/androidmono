@@ -10,20 +10,12 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5585;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Picture._finalize5585);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._finalize5585);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._finalize5585);
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5586;
 		public virtual void draw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Picture._draw5586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._draw5586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._draw5586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _createFromStream5587;
 		public static global::android.graphics.Picture createFromStream(java.io.InputStream arg0)
@@ -41,11 +33,7 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getWidth5588;
 		public virtual int getWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Picture._getWidth5588);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getWidth5588);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getWidth5588);
 		}
 		public new int Height
 		{
@@ -57,38 +45,22 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _getHeight5589;
 		public virtual int getHeight()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Picture._getHeight5589);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getHeight5589);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getHeight5589);
 		}
 		internal static global::MonoJavaBridge.MethodId _beginRecording5590;
 		public virtual global::android.graphics.Canvas beginRecording(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Picture._beginRecording5590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Canvas;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._beginRecording5590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Canvas;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._beginRecording5590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Canvas;
 		}
 		internal static global::MonoJavaBridge.MethodId _endRecording5591;
 		public virtual void endRecording()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Picture._endRecording5591);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._endRecording5591);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._endRecording5591);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToStream5592;
 		public virtual void writeToStream(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Picture._writeToStream5592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._writeToStream5592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._writeToStream5592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Picture5593;
 		public Picture() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

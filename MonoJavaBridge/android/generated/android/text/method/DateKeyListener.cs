@@ -30,11 +30,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getInputType13267;
 		public override int getInputType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.DateKeyListener._getInputType13267);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInputType13267);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInputType13267);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -46,11 +42,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13268;
 		protected override char[] getAcceptedChars()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.DateKeyListener._getAcceptedChars13268)) as char[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getAcceptedChars13268)) as char[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getAcceptedChars13268)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DateKeyListener13269;
 		public DateKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,20 +10,12 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _run31418;
 		public virtual void run(junit.framework.TestResult arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestSuite._run31418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._run31418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._run31418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString31419;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestSuite._toString31419)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._toString31419)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._toString31419)) as java.lang.String;
 		}
 		public new global::java.lang.String Name
 		{
@@ -39,56 +31,32 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _getName31420;
 		public virtual global::java.lang.String getName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestSuite._getName31420)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._getName31420)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._getName31420)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setName31421;
 		public virtual void setName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestSuite._setName31421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._setName31421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._setName31421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _runTest31422;
 		public virtual void runTest(junit.framework.Test arg0, junit.framework.TestResult arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestSuite._runTest31422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._runTest31422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._runTest31422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _countTestCases31423;
 		public virtual int countTestCases()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::junit.framework.TestSuite._countTestCases31423);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._countTestCases31423);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._countTestCases31423);
 		}
 		internal static global::MonoJavaBridge.MethodId _addTest31424;
 		public virtual void addTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestSuite._addTest31424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._addTest31424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._addTest31424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addTestSuite31425;
 		public virtual void addTestSuite(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.TestSuite._addTestSuite31425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._addTestSuite31425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._addTestSuite31425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _createTest31426;
 		public static global::junit.framework.Test createTest(java.lang.Class arg0, java.lang.String arg1)
@@ -105,29 +73,17 @@ namespace junit.framework
 		internal static global::MonoJavaBridge.MethodId _testAt31428;
 		public virtual global::junit.framework.Test testAt(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestSuite._testAt31428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as junit.framework.Test;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._testAt31428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as junit.framework.Test;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::junit.framework.Test>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._testAt31428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as junit.framework.Test;
 		}
 		internal static global::MonoJavaBridge.MethodId _testCount31429;
 		public virtual int testCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::junit.framework.TestSuite._testCount31429);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._testCount31429);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._testCount31429);
 		}
 		internal static global::MonoJavaBridge.MethodId _tests31430;
 		public virtual global::java.util.Enumeration tests()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::junit.framework.TestSuite._tests31430)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._tests31430)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::junit.framework.TestSuite.staticClass, global::junit.framework.TestSuite._tests31430)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _TestSuite31431;
 		public TestSuite(java.lang.Class arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

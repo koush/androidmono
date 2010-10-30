@@ -10,11 +10,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getKeepAliveDuration32881;
 		public virtual long getKeepAliveDuration(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultConnectionKeepAliveStrategy32882;
 		public DefaultConnectionKeepAliveStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

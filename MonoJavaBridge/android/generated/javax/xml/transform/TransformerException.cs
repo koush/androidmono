@@ -10,29 +10,17 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _printStackTrace30991;
 		public override void printStackTrace(java.io.PrintWriter arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._printStackTrace30991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace30992;
 		public override void printStackTrace()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._printStackTrace30992);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30992);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30992);
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace30993;
 		public override void printStackTrace(java.io.PrintStream arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._printStackTrace30993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._printStackTrace30993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.Throwable Cause
 		{
@@ -44,20 +32,12 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getCause30994;
 		public override global::java.lang.Throwable getCause()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._getCause30994)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getCause30994)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getCause30994)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _initCause30995;
 		public override global::java.lang.Throwable initCause(java.lang.Throwable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._initCause30995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._initCause30995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._initCause30995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable Exception
 		{
@@ -69,11 +49,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getException30996;
 		public virtual global::java.lang.Throwable getException()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._getException30996)) as java.lang.Throwable;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getException30996)) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getException30996)) as java.lang.Throwable;
 		}
 		public new global::javax.xml.transform.SourceLocator Locator
 		{
@@ -89,20 +65,12 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getLocator30997;
 		public virtual global::javax.xml.transform.SourceLocator getLocator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.SourceLocator>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._getLocator30997)) as javax.xml.transform.SourceLocator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.SourceLocator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getLocator30997)) as javax.xml.transform.SourceLocator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.SourceLocator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getLocator30997)) as javax.xml.transform.SourceLocator;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLocator30998;
 		public virtual void setLocator(javax.xml.transform.SourceLocator arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._setLocator30998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._setLocator30998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._setLocator30998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String MessageAndLocation
 		{
@@ -114,11 +82,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getMessageAndLocation30999;
 		public virtual global::java.lang.String getMessageAndLocation()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._getMessageAndLocation30999)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getMessageAndLocation30999)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getMessageAndLocation30999)) as java.lang.String;
 		}
 		public new global::java.lang.String LocationAsString
 		{
@@ -130,11 +94,7 @@ namespace javax.xml.transform
 		internal static global::MonoJavaBridge.MethodId _getLocationAsString31000;
 		public virtual global::java.lang.String getLocationAsString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException._getLocationAsString31000)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getLocationAsString31000)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.TransformerException.staticClass, global::javax.xml.transform.TransformerException._getLocationAsString31000)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TransformerException31001;
 		public TransformerException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

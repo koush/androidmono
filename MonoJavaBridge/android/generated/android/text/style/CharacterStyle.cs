@@ -18,11 +18,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getUnderlying13461;
 		public virtual global::android.text.style.CharacterStyle getUnderlying()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.CharacterStyle._getUnderlying13461)) as android.text.style.CharacterStyle;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying13461)) as android.text.style.CharacterStyle;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying13461)) as android.text.style.CharacterStyle;
 		}
 		internal static global::MonoJavaBridge.MethodId _CharacterStyle13462;
 		public CharacterStyle() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -56,10 +52,7 @@ namespace android.text.style
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_.staticClass, global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_._updateDrawState13463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CharacterStyle_()
 		{

@@ -18,19 +18,13 @@ namespace javax.microedition.khronos.opengles
 		int javax.microedition.khronos.opengles.GL10Ext.glQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return @__env.CallIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES29319;
 		int javax.microedition.khronos.opengles.GL10Ext.glQueryMatrixxOES(java.nio.IntBuffer arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallIntMethod(this.JvmHandle, global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static GL10Ext_()
 		{

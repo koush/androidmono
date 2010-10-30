@@ -10,38 +10,22 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _get20901;
 		public virtual global::java.lang.Object get()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ThreadLocal._get20901)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._get20901)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._get20901)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove20902;
 		public virtual void remove()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.ThreadLocal._remove20902);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._remove20902);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._remove20902);
 		}
 		internal static global::MonoJavaBridge.MethodId _set20903;
 		public virtual void set(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.ThreadLocal._set20903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._set20903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._set20903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _initialValue20904;
 		protected virtual global::java.lang.Object initialValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ThreadLocal._initialValue20904)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._initialValue20904)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ThreadLocal.staticClass, global::java.lang.ThreadLocal._initialValue20904)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _ThreadLocal20905;
 		public ThreadLocal() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

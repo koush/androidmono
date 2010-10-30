@@ -24,10 +24,7 @@ namespace android.widget
 			void android.widget.Chronometer.OnChronometerTickListener.onChronometerTick(android.widget.Chronometer arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer.OnChronometerTickListener_._onChronometerTick16859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.OnChronometerTickListener_.staticClass, global::android.widget.Chronometer.OnChronometerTickListener_._onChronometerTick16859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer.OnChronometerTickListener_._onChronometerTick16859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnChronometerTickListener_()
 			{
@@ -83,20 +80,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _start16861;
 		public virtual void start()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._start16861);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._start16861);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._start16861);
 		}
 		internal static global::MonoJavaBridge.MethodId _stop16862;
 		public virtual void stop()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._stop16862);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._stop16862);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._stop16862);
 		}
 		public new global::java.lang.String Format
 		{
@@ -112,47 +101,27 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getFormat16863;
 		public virtual global::java.lang.String getFormat()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Chronometer._getFormat16863)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getFormat16863)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getFormat16863)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16864;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._onDetachedFromWindow16864);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._onDetachedFromWindow16864);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._onDetachedFromWindow16864);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFormat16865;
 		public virtual void setFormat(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._setFormat16865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setFormat16865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setFormat16865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onWindowVisibilityChanged16866;
 		protected override void onWindowVisibilityChanged(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._onWindowVisibilityChanged16866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._onWindowVisibilityChanged16866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._onWindowVisibilityChanged16866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBase16867;
 		public virtual void setBase(long arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._setBase16867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setBase16867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setBase16867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long Base
 		{
@@ -168,20 +137,12 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getBase16868;
 		public virtual long getBase()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.Chronometer._getBase16868);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getBase16868);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getBase16868);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnChronometerTickListener16869;
 		public virtual void setOnChronometerTickListener(android.widget.Chronometer.OnChronometerTickListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Chronometer._setOnChronometerTickListener16869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setOnChronometerTickListener16869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._setOnChronometerTickListener16869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnChronometerTickListener(global::android.widget.Chronometer.OnChronometerTickListenerDelegate arg0)
 		{
@@ -190,11 +151,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getOnChronometerTickListener16870;
 		public virtual global::android.widget.Chronometer.OnChronometerTickListener getOnChronometerTickListener()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Chronometer.OnChronometerTickListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Chronometer._getOnChronometerTickListener16870)) as android.widget.Chronometer.OnChronometerTickListener;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Chronometer.OnChronometerTickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getOnChronometerTickListener16870)) as android.widget.Chronometer.OnChronometerTickListener;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Chronometer.OnChronometerTickListener>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Chronometer.staticClass, global::android.widget.Chronometer._getOnChronometerTickListener16870)) as android.widget.Chronometer.OnChronometerTickListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _Chronometer16871;
 		public Chronometer(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

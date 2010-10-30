@@ -17,11 +17,7 @@ namespace android.database
 			internal static global::MonoJavaBridge.MethodId _add4662;
 			public virtual global::android.database.MatrixCursor.RowBuilder add(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.RowBuilder._add4662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.MatrixCursor.RowBuilder;
-				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.RowBuilder.staticClass, global::android.database.MatrixCursor.RowBuilder._add4662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.MatrixCursor.RowBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MatrixCursor.RowBuilder.staticClass, global::android.database.MatrixCursor.RowBuilder._add4662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.MatrixCursor.RowBuilder;
 			}
 			static RowBuilder()
 			{
@@ -36,56 +32,32 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getShort4663;
 		public override short getShort(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::android.database.MatrixCursor._getShort4663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getShort4663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getShort4663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt4664;
 		public override int getInt(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.database.MatrixCursor._getInt4664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getInt4664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getInt4664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong4665;
 		public override long getLong(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.database.MatrixCursor._getLong4665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getLong4665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getLong4665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat4666;
 		public override float getFloat(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.database.MatrixCursor._getFloat4666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getFloat4666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getFloat4666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble4667;
 		public override double getDouble(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::android.database.MatrixCursor._getDouble4667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getDouble4667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getDouble4667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getString4668;
 		public override global::java.lang.String getString(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.MatrixCursor._getString4668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getString4668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getString4668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public new int Count
 		{
@@ -97,11 +69,7 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getCount4669;
 		public override int getCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.database.MatrixCursor._getCount4669);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getCount4669);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getCount4669);
 		}
 		public new global::java.lang.String[] ColumnNames
 		{
@@ -113,47 +81,27 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getColumnNames4670;
 		public override global::java.lang.String[] getColumnNames()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.MatrixCursor._getColumnNames4670)) as java.lang.String[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getColumnNames4670)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getColumnNames4670)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _isNull4671;
 		public override bool isNull(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.MatrixCursor._isNull4671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._isNull4671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._isNull4671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _newRow4672;
 		public virtual global::android.database.MatrixCursor.RowBuilder newRow()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.MatrixCursor._newRow4672)) as android.database.MatrixCursor.RowBuilder;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._newRow4672)) as android.database.MatrixCursor.RowBuilder;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._newRow4672)) as android.database.MatrixCursor.RowBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _addRow4673;
 		public virtual void addRow(java.lang.Iterable arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.MatrixCursor._addRow4673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow4673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow4673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addRow4674;
 		public virtual void addRow(java.lang.Object[] arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.MatrixCursor._addRow4674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow4674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow4674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _MatrixCursor4675;
 		public MatrixCursor(java.lang.String[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -18,19 +18,13 @@ namespace junit.framework
 		void junit.framework.Test.run(junit.framework.TestResult arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.Test_.staticClass, global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _countTestCases31376;
 		int junit.framework.Test.countTestCases()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::junit.framework.Test_._countTestCases31376);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::junit.framework.Test_.staticClass, global::junit.framework.Test_._countTestCases31376);
+			return @__env.CallIntMethod(this.JvmHandle, global::junit.framework.Test_._countTestCases31376);
 		}
 		static Test_()
 		{

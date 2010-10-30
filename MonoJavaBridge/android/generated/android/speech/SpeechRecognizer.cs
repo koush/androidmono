@@ -10,38 +10,22 @@ namespace android.speech
 		internal static global::MonoJavaBridge.MethodId _destroy11701;
 		public virtual void destroy()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer._destroy11701);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._destroy11701);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._destroy11701);
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel11702;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer._cancel11702);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._cancel11702);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._cancel11702);
 		}
 		internal static global::MonoJavaBridge.MethodId _startListening11703;
 		public virtual void startListening(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer._startListening11703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._startListening11703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._startListening11703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopListening11704;
 		public virtual void stopListening()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer._stopListening11704);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._stopListening11704);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._stopListening11704);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRecognitionAvailable11705;
 		public static bool isRecognitionAvailable(android.content.Context arg0)
@@ -71,11 +55,7 @@ namespace android.speech
 		internal static global::MonoJavaBridge.MethodId _setRecognitionListener11708;
 		public virtual void setRecognitionListener(android.speech.RecognitionListener arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer._setRecognitionListener11708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._setRecognitionListener11708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._setRecognitionListener11708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String RESULTS_RECOGNITION
 		{

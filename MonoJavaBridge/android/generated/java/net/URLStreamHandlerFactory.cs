@@ -17,10 +17,7 @@ namespace java.net
 		global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLStreamHandler;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLStreamHandlerFactory_.staticClass, global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLStreamHandler;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLStreamHandler;
 		}
 		static URLStreamHandlerFactory_()
 		{

@@ -10,11 +10,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _onFinishInflate18214;
 		protected override void onFinishInflate()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.TwoLineListItem._onFinishInflate18214);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._onFinishInflate18214);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._onFinishInflate18214);
 		}
 		public new global::android.widget.TextView Text1
 		{
@@ -26,11 +22,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getText118215;
 		public virtual global::android.widget.TextView getText1()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem._getText118215)) as android.widget.TextView;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText118215)) as android.widget.TextView;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText118215)) as android.widget.TextView;
 		}
 		public new global::android.widget.TextView Text2
 		{
@@ -42,11 +34,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getText218216;
 		public virtual global::android.widget.TextView getText2()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem._getText218216)) as android.widget.TextView;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText218216)) as android.widget.TextView;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText218216)) as android.widget.TextView;
 		}
 		internal static global::MonoJavaBridge.MethodId _TwoLineListItem18217;
 		public TwoLineListItem(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

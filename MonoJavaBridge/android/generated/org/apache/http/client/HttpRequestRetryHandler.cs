@@ -17,10 +17,7 @@ namespace org.apache.http.client
 		bool org.apache.http.client.HttpRequestRetryHandler.retryRequest(java.io.IOException arg0, int arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.client.HttpRequestRetryHandler_._retryRequest31891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.client.HttpRequestRetryHandler_.staticClass, global::org.apache.http.client.HttpRequestRetryHandler_._retryRequest31891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.client.HttpRequestRetryHandler_._retryRequest31891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static HttpRequestRetryHandler_()
 		{

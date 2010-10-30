@@ -10,65 +10,37 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _add26915;
 		public override bool add(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TreeSet._add26915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._add26915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._add26915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26916;
 		public virtual global::java.lang.Object clone()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._clone26916)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._clone26916)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._clone26916)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear26917;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.TreeSet._clear26917);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._clear26917);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._clear26917);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty26918;
 		public override bool isEmpty()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TreeSet._isEmpty26918);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._isEmpty26918);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._isEmpty26918);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains26919;
 		public override bool contains(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TreeSet._contains26919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._contains26919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._contains26919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addAll26920;
 		public override bool addAll(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TreeSet._addAll26920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._addAll26920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._addAll26920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _size26921;
 		public override int size()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.TreeSet._size26921);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._size26921);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._size26921);
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -77,137 +49,77 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _iterator26922;
 		public override global::java.util.Iterator iterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._iterator26922)) as java.util.Iterator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._iterator26922)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._iterator26922)) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26923;
 		public override bool remove(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TreeSet._remove26923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._remove26923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._remove26923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _floor26924;
 		public virtual global::java.lang.Object floor(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._floor26924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._floor26924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._floor26924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _pollFirst26925;
 		public virtual global::java.lang.Object pollFirst()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._pollFirst26925)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._pollFirst26925)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._pollFirst26925)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _pollLast26926;
 		public virtual global::java.lang.Object pollLast()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._pollLast26926)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._pollLast26926)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._pollLast26926)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _descendingIterator26927;
 		public virtual global::java.util.Iterator descendingIterator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._descendingIterator26927)) as java.util.Iterator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._descendingIterator26927)) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._descendingIterator26927)) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _last26928;
 		public virtual global::java.lang.Object last()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._last26928)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._last26928)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._last26928)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _first26929;
 		public virtual global::java.lang.Object first()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._first26929)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._first26929)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._first26929)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _comparator26930;
 		public virtual global::java.util.Comparator comparator()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._comparator26930)) as java.util.Comparator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._comparator26930)) as java.util.Comparator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._comparator26930)) as java.util.Comparator;
 		}
 		internal static global::MonoJavaBridge.MethodId _subSet26931;
 		public virtual global::java.util.SortedSet subSet(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._subSet26931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.SortedSet;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._subSet26931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.SortedSet;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._subSet26931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.SortedSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _headSet26932;
 		public virtual global::java.util.SortedSet headSet(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._headSet26932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._headSet26932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._headSet26932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _tailSet26933;
 		public virtual global::java.util.SortedSet tailSet(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._tailSet26933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._tailSet26933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedSet>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._tailSet26933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _lower26934;
 		public virtual global::java.lang.Object lower(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._lower26934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._lower26934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._lower26934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _ceiling26935;
 		public virtual global::java.lang.Object ceiling(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._ceiling26935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._ceiling26935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._ceiling26935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _higher26936;
 		public virtual global::java.lang.Object higher(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TreeSet._higher26936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._higher26936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.TreeSet.staticClass, global::java.util.TreeSet._higher26936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _TreeSet26937;
 		public TreeSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

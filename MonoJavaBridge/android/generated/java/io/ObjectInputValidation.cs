@@ -17,10 +17,7 @@ namespace java.io
 		void java.io.ObjectInputValidation.validateObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_._validateObject19223);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_.staticClass, global::java.io.ObjectInputValidation_._validateObject19223);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_._validateObject19223);
 		}
 		static ObjectInputValidation_()
 		{

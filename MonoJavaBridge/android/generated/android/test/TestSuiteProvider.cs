@@ -17,10 +17,7 @@ namespace android.test
 		global::junit.framework.TestSuite android.test.TestSuiteProvider.getTestSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_.staticClass, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
 		}
 		static TestSuiteProvider_()
 		{

@@ -10,29 +10,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _close19105;
 		public override void close()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.InputStreamReader._close19105);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._close19105);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._close19105);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19106;
 		public override int read()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.InputStreamReader._read19106);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19106);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19106);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19107;
 		public override int read(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.InputStreamReader._read19107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._read19107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::java.lang.String Encoding
 		{
@@ -44,20 +32,12 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getEncoding19108;
 		public virtual global::java.lang.String getEncoding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.InputStreamReader._getEncoding19108)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._getEncoding19108)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._getEncoding19108)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ready19109;
 		public override bool ready()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.InputStreamReader._ready19109);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._ready19109);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.InputStreamReader.staticClass, global::java.io.InputStreamReader._ready19109);
 		}
 		internal static global::MonoJavaBridge.MethodId _InputStreamReader19110;
 		public InputStreamReader(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

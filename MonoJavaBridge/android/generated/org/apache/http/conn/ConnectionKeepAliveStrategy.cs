@@ -17,10 +17,7 @@ namespace org.apache.http.conn
 		long org.apache.http.conn.ConnectionKeepAliveStrategy.getKeepAliveDuration(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionKeepAliveStrategy_._getKeepAliveDuration32090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionKeepAliveStrategy_.staticClass, global::org.apache.http.conn.ConnectionKeepAliveStrategy_._getKeepAliveDuration32090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionKeepAliveStrategy_._getKeepAliveDuration32090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static ConnectionKeepAliveStrategy_()
 		{

@@ -17,10 +17,7 @@ namespace java.security.interfaces
 		global::java.security.spec.ECParameterSpec java.security.interfaces.ECKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.ECKey_._getParams23913)) as java.security.spec.ECParameterSpec;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECKey_.staticClass, global::java.security.interfaces.ECKey_._getParams23913)) as java.security.spec.ECParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.ECKey_._getParams23913)) as java.security.spec.ECParameterSpec;
 		}
 		static ECKey_()
 		{

@@ -17,11 +17,7 @@ namespace org.apache.http.impl.client
 		internal static global::MonoJavaBridge.MethodId _getResponse32956;
 		public virtual global::org.apache.http.HttpResponse getResponse()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956)) as org.apache.http.HttpResponse;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.TunnelRefusedException.staticClass, global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956)) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.client.TunnelRefusedException.staticClass, global::org.apache.http.impl.client.TunnelRefusedException._getResponse32956)) as org.apache.http.HttpResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _TunnelRefusedException32957;
 		public TunnelRefusedException(java.lang.String arg0, org.apache.http.HttpResponse arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

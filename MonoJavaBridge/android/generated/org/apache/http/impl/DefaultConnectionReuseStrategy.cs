@@ -10,20 +10,12 @@ namespace org.apache.http.impl
 		internal static global::MonoJavaBridge.MethodId _keepAlive32633;
 		public virtual bool keepAlive(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy._keepAlive32633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._keepAlive32633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._keepAlive32633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _createTokenIterator32634;
 		protected virtual global::org.apache.http.TokenIterator createTokenIterator(org.apache.http.HeaderIterator arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.TokenIterator>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy._createTokenIterator32634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.TokenIterator;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.TokenIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._createTokenIterator32634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.TokenIterator;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.TokenIterator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._createTokenIterator32634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.TokenIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultConnectionReuseStrategy32635;
 		public DefaultConnectionReuseStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -17,10 +17,7 @@ namespace android.sax
 		void android.sax.EndElementListener.end()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_._end11610);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_.staticClass, global::android.sax.EndElementListener_._end11610);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_._end11610);
 		}
 		static EndElementListener_()
 		{

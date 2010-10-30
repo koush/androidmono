@@ -17,10 +17,7 @@ namespace org.w3c.dom
 		bool org.w3c.dom.DOMErrorHandler.handleError(org.w3c.dom.DOMError arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMErrorHandler_.staticClass, global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMErrorHandler_._handleError34349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DOMErrorHandler_()
 		{

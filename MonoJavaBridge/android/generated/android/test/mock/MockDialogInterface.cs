@@ -10,20 +10,12 @@ namespace android.test.mock
 		internal static global::MonoJavaBridge.MethodId _cancel12523;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockDialogInterface._cancel12523);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockDialogInterface.staticClass, global::android.test.mock.MockDialogInterface._cancel12523);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockDialogInterface.staticClass, global::android.test.mock.MockDialogInterface._cancel12523);
 		}
 		internal static global::MonoJavaBridge.MethodId _dismiss12524;
 		public virtual void dismiss()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.mock.MockDialogInterface._dismiss12524);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockDialogInterface.staticClass, global::android.test.mock.MockDialogInterface._dismiss12524);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.mock.MockDialogInterface.staticClass, global::android.test.mock.MockDialogInterface._dismiss12524);
 		}
 		internal static global::MonoJavaBridge.MethodId _MockDialogInterface12525;
 		public MockDialogInterface() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

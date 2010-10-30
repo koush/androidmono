@@ -19,28 +19,19 @@ namespace android.database.sqlite
 		void android.database.sqlite.SQLiteTransactionListener.onBegin()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onBegin4861);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCommit4862;
 		void android.database.sqlite.SQLiteTransactionListener.onCommit()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onCommit4862);
 		}
 		internal static global::MonoJavaBridge.MethodId _onRollback4863;
 		void android.database.sqlite.SQLiteTransactionListener.onRollback()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_.staticClass, global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
+			@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteTransactionListener_._onRollback4863);
 		}
 		static SQLiteTransactionListener_()
 		{

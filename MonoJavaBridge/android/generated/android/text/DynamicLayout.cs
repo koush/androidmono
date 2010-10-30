@@ -17,11 +17,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _getLineCount12724;
 		public override int getLineCount()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineCount12724);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineCount12724);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineCount12724);
 		}
 		public new int EllipsizedWidth
 		{
@@ -33,65 +29,37 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _getEllipsizedWidth12725;
 		public override int getEllipsizedWidth()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getEllipsizedWidth12725);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsizedWidth12725);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsizedWidth12725);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineTop12726;
 		public override int getLineTop(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineTop12726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineTop12726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineTop12726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineDescent12727;
 		public override int getLineDescent(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineDescent12727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineDescent12727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineDescent12727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineStart12728;
 		public override int getLineStart(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineStart12728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineStart12728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineStart12728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParagraphDirection12729;
 		public override int getParagraphDirection(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getParagraphDirection12729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getParagraphDirection12729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getParagraphDirection12729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineContainsTab12730;
 		public override bool getLineContainsTab(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineContainsTab12730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineContainsTab12730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineContainsTab12730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineDirections12731;
 		public sealed override global::android.text.Layout.Directions getLineDirections(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.DynamicLayout._getLineDirections12731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineDirections12731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getLineDirections12731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
 		}
 		public new int TopPadding
 		{
@@ -103,11 +71,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _getTopPadding12732;
 		public override int getTopPadding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getTopPadding12732);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getTopPadding12732);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getTopPadding12732);
 		}
 		public new int BottomPadding
 		{
@@ -119,29 +83,17 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _getBottomPadding12733;
 		public override int getBottomPadding()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getBottomPadding12733);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getBottomPadding12733);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getBottomPadding12733);
 		}
 		internal static global::MonoJavaBridge.MethodId _getEllipsisStart12734;
 		public override int getEllipsisStart(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getEllipsisStart12734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsisStart12734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsisStart12734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEllipsisCount12735;
 		public override int getEllipsisCount(int arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.DynamicLayout._getEllipsisCount12735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsisCount12735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.DynamicLayout.staticClass, global::android.text.DynamicLayout._getEllipsisCount12735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DynamicLayout12736;
 		public DynamicLayout(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, bool arg6) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

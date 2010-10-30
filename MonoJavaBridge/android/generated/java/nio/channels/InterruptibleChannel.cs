@@ -17,37 +17,25 @@ namespace java.nio.channels
 		void java.nio.channels.InterruptibleChannel.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22510);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22510);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22510);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22511;
 		void java.nio.channels.Channel.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22511);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22511);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22511);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen22512;
 		bool java.nio.channels.Channel.isOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._isOpen22512);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._isOpen22512);
+			return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._isOpen22512);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22513;
 		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22513);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22513);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_._close22513);
 		}
 		static InterruptibleChannel_()
 		{

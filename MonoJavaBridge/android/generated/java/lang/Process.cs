@@ -54,55 +54,37 @@ namespace java.lang
 		public override void destroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Process_._destroy20410);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._destroy20410);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Process_._destroy20410);
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream20411;
 		public override global::java.io.InputStream getInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getInputStream20411)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._getInputStream20411)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getInputStream20411)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream20412;
 		public override global::java.io.OutputStream getOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getOutputStream20412)) as java.io.OutputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._getOutputStream20412)) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getOutputStream20412)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorStream20413;
 		public override global::java.io.InputStream getErrorStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getErrorStream20413)) as java.io.InputStream;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._getErrorStream20413)) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Process_._getErrorStream20413)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _waitFor20414;
 		public override int waitFor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._waitFor20414);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._waitFor20414);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._waitFor20414);
 		}
 		internal static global::MonoJavaBridge.MethodId _exitValue20415;
 		public override int exitValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._exitValue20415);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Process_.staticClass, global::java.lang.Process_._exitValue20415);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Process_._exitValue20415);
 		}
 		static Process_()
 		{

@@ -17,11 +17,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getCertificates27857;
 		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry._getCertificates27857)) as java.security.cert.Certificate[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCertificates27857)) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCertificates27857)) as java.security.cert.Certificate[];
 		}
 		public new global::java.security.CodeSigner[] CodeSigners
 		{
@@ -33,11 +29,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getCodeSigners27858;
 		public virtual global::java.security.CodeSigner[] getCodeSigners()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry._getCodeSigners27858)) as java.security.CodeSigner[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCodeSigners27858)) as java.security.CodeSigner[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getCodeSigners27858)) as java.security.CodeSigner[];
 		}
 		public new global::java.util.jar.Attributes Attributes
 		{
@@ -49,11 +41,7 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _getAttributes27859;
 		public virtual global::java.util.jar.Attributes getAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry._getAttributes27859)) as java.util.jar.Attributes;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getAttributes27859)) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getAttributes27859)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarEntry27860;
 		public JarEntry(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

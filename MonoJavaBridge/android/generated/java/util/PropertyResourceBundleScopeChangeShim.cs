@@ -10,11 +10,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _handleGetObject26584;
 		protected override global::java.lang.Object handleGetObject(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		static PropertyResourceBundleScopeChangeShim()
 		{
@@ -38,10 +34,7 @@ namespace java.util
 		public override global::java.util.Enumeration getKeys()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26585)) as java.util.Enumeration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26585)) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26585)) as java.util.Enumeration;
 		}
 		static PropertyResourceBundleScopeChangeShim_()
 		{

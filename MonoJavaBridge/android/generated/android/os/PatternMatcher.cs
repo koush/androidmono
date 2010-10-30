@@ -10,11 +10,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _toString10117;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PatternMatcher._toString10117)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._toString10117)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._toString10117)) as java.lang.String;
 		}
 		public new int Type
 		{
@@ -26,11 +22,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getType10118;
 		public virtual int getType()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.PatternMatcher._getType10118);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getType10118);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getType10118);
 		}
 		public new global::java.lang.String Path
 		{
@@ -42,38 +34,22 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _getPath10119;
 		public virtual global::java.lang.String getPath()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PatternMatcher._getPath10119)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getPath10119)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getPath10119)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _match10120;
 		public virtual bool match(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.PatternMatcher._match10120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._match10120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._match10120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel10121;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PatternMatcher._writeToParcel10121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._writeToParcel10121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._writeToParcel10121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents10122;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.PatternMatcher._describeContents10122);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._describeContents10122);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._describeContents10122);
 		}
 		internal static global::MonoJavaBridge.MethodId _PatternMatcher10123;
 		public PatternMatcher(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

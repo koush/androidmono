@@ -17,11 +17,7 @@ namespace javax.security.auth.callback
 		internal static global::MonoJavaBridge.MethodId _getCallback30205;
 		public virtual global::javax.security.auth.callback.Callback getCallback()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.Callback>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205)) as javax.security.auth.callback.Callback;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.Callback>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.callback.UnsupportedCallbackException.staticClass, global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205)) as javax.security.auth.callback.Callback;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.security.auth.callback.Callback>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.security.auth.callback.UnsupportedCallbackException.staticClass, global::javax.security.auth.callback.UnsupportedCallbackException._getCallback30205)) as javax.security.auth.callback.Callback;
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedCallbackException30206;
 		public UnsupportedCallbackException(javax.security.auth.callback.Callback arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

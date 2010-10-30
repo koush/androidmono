@@ -17,11 +17,7 @@ namespace java.beans
 		internal static global::MonoJavaBridge.MethodId _getIndex18773;
 		public virtual int getIndex()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent._getIndex18773);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._getIndex18773);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._getIndex18773);
 		}
 		internal static global::MonoJavaBridge.MethodId _IndexedPropertyChangeEvent18774;
 		public IndexedPropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

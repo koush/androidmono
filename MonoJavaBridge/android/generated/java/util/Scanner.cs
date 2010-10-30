@@ -11,496 +11,331 @@ namespace java.util
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._toString26638)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._toString26638)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._toString26638)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext26639;
 		public bool hasNext(java.util.regex.Pattern arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNext26639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext26640;
 		public bool hasNext(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNext26640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext26641;
 		public bool hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNext26641);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26641);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNext26641);
 		}
 		internal static global::MonoJavaBridge.MethodId _next26642;
 		public global::java.lang.String next(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._next26642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _next26643;
 		public global::java.lang.Object next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._next26643)) as java.lang.Object;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26643)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26643)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _next26644;
 		public global::java.lang.String next(java.util.regex.Pattern arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._next26644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._next26644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26645;
 		public void remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Scanner._remove26645);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._remove26645);
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._remove26645);
 		}
 		internal static global::MonoJavaBridge.MethodId _close26646;
 		public void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Scanner._close26646);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._close26646);
+			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._close26646);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset26647;
 		public global::java.util.Scanner reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._reset26647)) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._reset26647)) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._reset26647)) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextDouble26648;
 		public double nextDouble()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.Scanner._nextDouble26648);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextDouble26648);
+			return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextDouble26648);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextInt26649;
 		public int nextInt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Scanner._nextInt26649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextInt26649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextInt26649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextInt26650;
 		public int nextInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Scanner._nextInt26650);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextInt26650);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextInt26650);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextLong26651;
 		public long nextLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Scanner._nextLong26651);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLong26651);
+			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLong26651);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextLong26652;
 		public long nextLong(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Scanner._nextLong26652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLong26652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLong26652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _skip26653;
 		public global::java.util.Scanner skip(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._skip26653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._skip26653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._skip26653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _skip26654;
 		public global::java.util.Scanner skip(java.util.regex.Pattern arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._skip26654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._skip26654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._skip26654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _locale26655;
 		public global::java.util.Locale locale()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._locale26655)) as java.util.Locale;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._locale26655)) as java.util.Locale;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._locale26655)) as java.util.Locale;
 		}
 		internal static global::MonoJavaBridge.MethodId _match26656;
 		public global::java.util.regex.MatchResult match()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.regex.MatchResult>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._match26656)) as java.util.regex.MatchResult;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.regex.MatchResult>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._match26656)) as java.util.regex.MatchResult;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.regex.MatchResult>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._match26656)) as java.util.regex.MatchResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBoolean26657;
 		public bool nextBoolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._nextBoolean26657);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBoolean26657);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBoolean26657);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextFloat26658;
 		public float nextFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.util.Scanner._nextFloat26658);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextFloat26658);
+			return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextFloat26658);
 		}
 		internal static global::MonoJavaBridge.MethodId _delimiter26659;
 		public global::java.util.regex.Pattern delimiter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._delimiter26659)) as java.util.regex.Pattern;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._delimiter26659)) as java.util.regex.Pattern;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._delimiter26659)) as java.util.regex.Pattern;
 		}
 		internal static global::MonoJavaBridge.MethodId _ioException26660;
 		public global::java.io.IOException ioException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._ioException26660)) as java.io.IOException;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._ioException26660)) as java.io.IOException;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._ioException26660)) as java.io.IOException;
 		}
 		internal static global::MonoJavaBridge.MethodId _radix26661;
 		public int radix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Scanner._radix26661);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._radix26661);
+			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._radix26661);
 		}
 		internal static global::MonoJavaBridge.MethodId _useDelimiter26662;
 		public global::java.util.Scanner useDelimiter(java.util.regex.Pattern arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._useDelimiter26662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useDelimiter26662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useDelimiter26662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _useDelimiter26663;
 		public global::java.util.Scanner useDelimiter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._useDelimiter26663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useDelimiter26663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useDelimiter26663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _useLocale26664;
 		public global::java.util.Scanner useLocale(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._useLocale26664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useLocale26664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useLocale26664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _useRadix26665;
 		public global::java.util.Scanner useRadix(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._useRadix26665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useRadix26665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Scanner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._useRadix26665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Scanner;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextLine26666;
 		public bool hasNextLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextLine26666);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLine26666);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLine26666);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextLine26667;
 		public global::java.lang.String nextLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._nextLine26667)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLine26667)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextLine26667)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findInLine26668;
 		public global::java.lang.String findInLine(java.util.regex.Pattern arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._findInLine26668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findInLine26668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findInLine26668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findInLine26669;
 		public global::java.lang.String findInLine(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._findInLine26669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findInLine26669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findInLine26669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findWithinHorizon26670;
 		public global::java.lang.String findWithinHorizon(java.util.regex.Pattern arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._findWithinHorizon26670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findWithinHorizon26670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findWithinHorizon26670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _findWithinHorizon26671;
 		public global::java.lang.String findWithinHorizon(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._findWithinHorizon26671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findWithinHorizon26671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._findWithinHorizon26671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextBoolean26672;
 		public bool hasNextBoolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextBoolean26672);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBoolean26672);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBoolean26672);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextByte26673;
 		public bool hasNextByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextByte26673);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextByte26673);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextByte26673);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextByte26674;
 		public bool hasNextByte(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextByte26674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextByte26674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextByte26674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextByte26675;
 		public byte nextByte(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.util.Scanner._nextByte26675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextByte26675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextByte26675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextByte26676;
 		public byte nextByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.util.Scanner._nextByte26676);
-			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextByte26676);
+			return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextByte26676);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextShort26677;
 		public bool hasNextShort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextShort26677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextShort26677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextShort26677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextShort26678;
 		public bool hasNextShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextShort26678);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextShort26678);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextShort26678);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextShort26679;
 		public short nextShort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.util.Scanner._nextShort26679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextShort26679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextShort26679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextShort26680;
 		public short nextShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.util.Scanner._nextShort26680);
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextShort26680);
+			return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextShort26680);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextInt26681;
 		public bool hasNextInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextInt26681);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextInt26681);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextInt26681);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextInt26682;
 		public bool hasNextInt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextInt26682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextInt26682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextInt26682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextLong26683;
 		public bool hasNextLong(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextLong26683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLong26683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLong26683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextLong26684;
 		public bool hasNextLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextLong26684);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLong26684);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextLong26684);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextFloat26685;
 		public bool hasNextFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextFloat26685);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextFloat26685);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextFloat26685);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextDouble26686;
 		public bool hasNextDouble()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextDouble26686);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextDouble26686);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextDouble26686);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextBigInteger26687;
 		public bool hasNextBigInteger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextBigInteger26687);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigInteger26687);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigInteger26687);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextBigInteger26688;
 		public bool hasNextBigInteger(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextBigInteger26688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigInteger26688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigInteger26688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBigInteger26689;
 		public global::java.math.BigInteger nextBigInteger(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._nextBigInteger26689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.BigInteger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigInteger26689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigInteger26689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBigInteger26690;
 		public global::java.math.BigInteger nextBigInteger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._nextBigInteger26690)) as java.math.BigInteger;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigInteger26690)) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigInteger26690)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNextBigDecimal26691;
 		public bool hasNextBigDecimal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Scanner._hasNextBigDecimal26691);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigDecimal26691);
+			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._hasNextBigDecimal26691);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextBigDecimal26692;
 		public global::java.math.BigDecimal nextBigDecimal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Scanner._nextBigDecimal26692)) as java.math.BigDecimal;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigDecimal26692)) as java.math.BigDecimal;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Scanner.staticClass, global::java.util.Scanner._nextBigDecimal26692)) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _Scanner26693;
 		public Scanner(java.nio.channels.ReadableByteChannel arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

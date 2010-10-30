@@ -17,10 +17,7 @@ namespace junit.framework
 		void junit.framework.Protectable.protect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Protectable_._protect31374);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.Protectable_.staticClass, global::junit.framework.Protectable_._protect31374);
+			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Protectable_._protect31374);
 		}
 		static Protectable_()
 		{

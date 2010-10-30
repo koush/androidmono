@@ -17,10 +17,7 @@ namespace org.apache.http.entity
 		long org.apache.http.entity.ContentLengthStrategy.determineLength(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.entity.ContentLengthStrategy_._determineLength32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.entity.ContentLengthStrategy_.staticClass, global::org.apache.http.entity.ContentLengthStrategy_._determineLength32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.entity.ContentLengthStrategy_._determineLength32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ContentLengthStrategy_()
 		{

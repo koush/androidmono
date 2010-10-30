@@ -17,11 +17,7 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _getMessage22815;
 		public override global::java.lang.String getMessage()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getMessage22815)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getMessage22815)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getMessage22815)) as java.lang.String;
 		}
 		public new int InputLength
 		{
@@ -33,11 +29,7 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _getInputLength22816;
 		public virtual int getInputLength()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getInputLength22816);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getInputLength22816);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getInputLength22816);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedInputException22817;
 		public MalformedInputException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

@@ -10,29 +10,17 @@ namespace android.net.wifi
 		internal static global::MonoJavaBridge.MethodId _toString7973;
 		public override global::java.lang.String toString()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.ScanResult._toString7973)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._toString7973)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._toString7973)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7974;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.net.wifi.ScanResult._writeToParcel7974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._writeToParcel7974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._writeToParcel7974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7975;
 		public virtual int describeContents()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.wifi.ScanResult._describeContents7975);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._describeContents7975);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.ScanResult.staticClass, global::android.net.wifi.ScanResult._describeContents7975);
 		}
 		internal static global::MonoJavaBridge.FieldId _SSID7976;
 		public global::java.lang.String SSID

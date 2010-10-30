@@ -10,67 +10,39 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getCertificates21597;
 		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getCertificates21597)) as java.security.cert.Certificate[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getCertificates21597)) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getCertificates21597)) as java.security.cert.Certificate[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getManifest21598;
 		public virtual global::java.util.jar.Manifest getManifest()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getManifest21598)) as java.util.jar.Manifest;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getManifest21598)) as java.util.jar.Manifest;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getManifest21598)) as java.util.jar.Manifest;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes21599;
 		public virtual global::java.util.jar.Attributes getAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getAttributes21599)) as java.util.jar.Attributes;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getAttributes21599)) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getAttributes21599)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMainAttributes21600;
 		public virtual global::java.util.jar.Attributes getMainAttributes()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getMainAttributes21600)) as java.util.jar.Attributes;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getMainAttributes21600)) as java.util.jar.Attributes;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getMainAttributes21600)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _getJarFileURL21601;
 		public virtual global::java.net.URL getJarFileURL()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getJarFileURL21601)) as java.net.URL;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getJarFileURL21601)) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getJarFileURL21601)) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _getJarFile21602;
 		public abstract global::java.util.jar.JarFile getJarFile();
 		internal static global::MonoJavaBridge.MethodId _getJarEntry21603;
 		public virtual global::java.util.jar.JarEntry getJarEntry()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getJarEntry21603)) as java.util.jar.JarEntry;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getJarEntry21603)) as java.util.jar.JarEntry;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getJarEntry21603)) as java.util.jar.JarEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntryName21604;
 		public virtual global::java.lang.String getEntryName()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection._getEntryName21604)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getEntryName21604)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getEntryName21604)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarURLConnection21605;
 		protected JarURLConnection(java.net.URL arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -109,19 +81,13 @@ namespace java.net
 		public override global::java.util.jar.JarFile getJarFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection_._getJarFile21606)) as java.util.jar.JarFile;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection_.staticClass, global::java.net.JarURLConnection_._getJarFile21606)) as java.util.jar.JarFile;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.JarURLConnection_._getJarFile21606)) as java.util.jar.JarFile;
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21607;
 		public override void connect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.net.JarURLConnection_._connect21607);
-			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.JarURLConnection_.staticClass, global::java.net.JarURLConnection_._connect21607);
+			@__env.CallVoidMethod(this.JvmHandle, global::java.net.JarURLConnection_._connect21607);
 		}
 		static JarURLConnection_()
 		{

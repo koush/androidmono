@@ -10,20 +10,12 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _byteValue20354;
 		public virtual byte byteValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.lang.Number._byteValue20354);
-			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.Number.staticClass, global::java.lang.Number._byteValue20354);
+			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::java.lang.Number.staticClass, global::java.lang.Number._byteValue20354);
 		}
 		internal static global::MonoJavaBridge.MethodId _shortValue20355;
 		public virtual short shortValue()
 		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.lang.Number._shortValue20355);
-			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.lang.Number.staticClass, global::java.lang.Number._shortValue20355);
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.lang.Number.staticClass, global::java.lang.Number._shortValue20355);
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue20356;
 		public abstract int intValue();
@@ -68,37 +60,25 @@ namespace java.lang
 		public override int intValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Number_._intValue20361);
-			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._intValue20361);
+			return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Number_._intValue20361);
 		}
 		internal static global::MonoJavaBridge.MethodId _longValue20362;
 		public override long longValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.lang.Number_._longValue20362);
-			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._longValue20362);
+			return @__env.CallLongMethod(this.JvmHandle, global::java.lang.Number_._longValue20362);
 		}
 		internal static global::MonoJavaBridge.MethodId _floatValue20363;
 		public override float floatValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.lang.Number_._floatValue20363);
-			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._floatValue20363);
+			return @__env.CallFloatMethod(this.JvmHandle, global::java.lang.Number_._floatValue20363);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleValue20364;
 		public override double doubleValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.lang.Number_._doubleValue20364);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._doubleValue20364);
+			return @__env.CallDoubleMethod(this.JvmHandle, global::java.lang.Number_._doubleValue20364);
 		}
 		static Number_()
 		{

@@ -19,28 +19,19 @@ namespace java.lang.reflect
 		global::java.lang.String java.lang.reflect.TypeVariable.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getName21155)) as java.lang.String;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getName21155)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getName21155)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBounds21156;
 		global::java.lang.reflect.Type[] java.lang.reflect.TypeVariable.getBounds()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getBounds21156)) as java.lang.reflect.Type[];
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getBounds21156)) as java.lang.reflect.Type[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getBounds21156)) as java.lang.reflect.Type[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getGenericDeclaration21157;
 		global::java.lang.reflect.GenericDeclaration java.lang.reflect.TypeVariable.getGenericDeclaration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.GenericDeclaration>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getGenericDeclaration21157)) as java.lang.reflect.GenericDeclaration;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.GenericDeclaration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getGenericDeclaration21157)) as java.lang.reflect.GenericDeclaration;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.GenericDeclaration>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_._getGenericDeclaration21157)) as java.lang.reflect.GenericDeclaration;
 		}
 		static TypeVariable_()
 		{
