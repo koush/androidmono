@@ -11,6 +11,8 @@ namespace android.graphics
 		public CornerPathEffect(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.CornerPathEffect._CornerPathEffect5261.native == global::System.IntPtr.Zero)
+				global::android.graphics.CornerPathEffect._CornerPathEffect5261 = @__env.GetMethodIDNoThrow(global::android.graphics.CornerPathEffect.staticClass, "<init>", "(F)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.CornerPathEffect.staticClass, global::android.graphics.CornerPathEffect._CornerPathEffect5261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.CornerPathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/CornerPathEffect"));
-			global::android.graphics.CornerPathEffect._CornerPathEffect5261 = @__env.GetMethodIDNoThrow(global::android.graphics.CornerPathEffect.staticClass, "<init>", "(F)V");
 		}
 		internal static void InitJNI()
 		{

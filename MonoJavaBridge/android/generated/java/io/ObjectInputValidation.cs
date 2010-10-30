@@ -17,13 +17,14 @@ namespace java.io
 		void java.io.ObjectInputValidation.validateObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.ObjectInputValidation_._validateObject19223.native == global::System.IntPtr.Zero)
+				global::java.io.ObjectInputValidation_._validateObject19223 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputValidation_.staticClass, "validateObject", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.io.ObjectInputValidation_._validateObject19223);
 		}
 		static ObjectInputValidation_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectInputValidation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectInputValidation"));
-			global::java.io.ObjectInputValidation_._validateObject19223 = @__env.GetMethodIDNoThrow(global::java.io.ObjectInputValidation_.staticClass, "validateObject", "()V");
 		}
 		internal static void InitJNI()
 		{

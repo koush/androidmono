@@ -11,6 +11,8 @@ namespace java.lang
 		public VirtualMachineError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.VirtualMachineError._VirtualMachineError20935.native == global::System.IntPtr.Zero)
+				global::java.lang.VirtualMachineError._VirtualMachineError20935 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20935);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public VirtualMachineError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.VirtualMachineError._VirtualMachineError20936.native == global::System.IntPtr.Zero)
+				global::java.lang.VirtualMachineError._VirtualMachineError20936 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.VirtualMachineError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/VirtualMachineError"));
-			global::java.lang.VirtualMachineError._VirtualMachineError20935 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "()V");
-			global::java.lang.VirtualMachineError._VirtualMachineError20936 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

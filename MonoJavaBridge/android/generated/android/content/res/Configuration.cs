@@ -11,54 +11,72 @@ namespace android.content.res
 		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._equals4127.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._equals4127 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals4127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals4128;
 		public bool equals(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._equals4128.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._equals4128 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Landroid/content/res/Configuration;)Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals4128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString4129;
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._toString4129.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._toString4129 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._toString4129)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode4130;
 		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._hashCode4130.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._hashCode4130 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "hashCode", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._hashCode4130);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo4131;
 		public int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._compareTo4131.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._compareTo4131 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Ljava/lang/Object;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo4131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo4132;
 		public int compareTo(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._compareTo4132.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._compareTo4132 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Landroid/content/res/Configuration;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo4132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel4133;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._writeToParcel4133.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._writeToParcel4133 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._writeToParcel4133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents4134;
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._describeContents4134.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._describeContents4134 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "describeContents", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._describeContents4134);
 		}
 		internal static global::MonoJavaBridge.MethodId _readFromParcel4135;
 		public void readFromParcel(android.os.Parcel arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._readFromParcel4135.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._readFromParcel4135 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._readFromParcel4135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.content.res.Configuration To
@@ -72,36 +90,48 @@ namespace android.content.res
 		public void setTo(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._setTo4136.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._setTo4136 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setTo", "(Landroid/content/res/Configuration;)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setTo4136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setToDefaults4137;
 		public void setToDefaults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._setToDefaults4137.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._setToDefaults4137 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setToDefaults", "()V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setToDefaults4137);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateFrom4138;
 		public int updateFrom(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._updateFrom4138.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._updateFrom4138 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "updateFrom", "(Landroid/content/res/Configuration;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._updateFrom4138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _diff4139;
 		public int diff(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._diff4139.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._diff4139 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "diff", "(Landroid/content/res/Configuration;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._diff4139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _needNewResources4140;
 		public static bool needNewResources(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._needNewResources4140.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._needNewResources4140 = @__env.GetStaticMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "needNewResources", "(II)Z");
 			return @__env.CallStaticBooleanMethod(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._needNewResources4140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _Configuration4141;
 		public Configuration() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._Configuration4141.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._Configuration4141 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration4141);
 			Init(@__env, handle);
 		}
@@ -109,6 +139,8 @@ namespace android.content.res
 		public Configuration(android.content.res.Configuration arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.res.Configuration._Configuration4142.native == global::System.IntPtr.Zero)
+				global::android.content.res.Configuration._Configuration4142 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "(Landroid/content/res/Configuration;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration4142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -589,22 +621,6 @@ namespace android.content.res
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.Configuration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Configuration"));
-			global::android.content.res.Configuration._equals4127 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.res.Configuration._equals4128 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Landroid/content/res/Configuration;)Z");
-			global::android.content.res.Configuration._toString4129 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.res.Configuration._hashCode4130 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "hashCode", "()I");
-			global::android.content.res.Configuration._compareTo4131 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::android.content.res.Configuration._compareTo4132 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._writeToParcel4133 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.res.Configuration._describeContents4134 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "describeContents", "()I");
-			global::android.content.res.Configuration._readFromParcel4135 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-			global::android.content.res.Configuration._setTo4136 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setTo", "(Landroid/content/res/Configuration;)V");
-			global::android.content.res.Configuration._setToDefaults4137 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setToDefaults", "()V");
-			global::android.content.res.Configuration._updateFrom4138 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "updateFrom", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._diff4139 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "diff", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._needNewResources4140 = @__env.GetStaticMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "needNewResources", "(II)Z");
-			global::android.content.res.Configuration._Configuration4141 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "()V");
-			global::android.content.res.Configuration._Configuration4142 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "(Landroid/content/res/Configuration;)V");
 			global::android.content.res.Configuration._fontScale4143 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "fontScale", "F");
 			global::android.content.res.Configuration._mcc4144 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "mcc", "I");
 			global::android.content.res.Configuration._mnc4145 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "mnc", "I");

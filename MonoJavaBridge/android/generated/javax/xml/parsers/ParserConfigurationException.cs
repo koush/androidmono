@@ -11,6 +11,8 @@ namespace javax.xml.parsers
 		public ParserConfigurationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889.native == global::System.IntPtr.Zero)
+				global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.xml.parsers
 		public ParserConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890.native == global::System.IntPtr.Zero)
+				global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.xml.parsers
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.ParserConfigurationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/ParserConfigurationException"));
-			global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "()V");
-			global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

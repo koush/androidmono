@@ -10,12 +10,17 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5298;
 		protected override void finalize()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.MaskFilter._finalize5298.native == global::System.IntPtr.Zero)
+				global::android.graphics.MaskFilter._finalize5298 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._finalize5298);
 		}
 		internal static global::MonoJavaBridge.MethodId _MaskFilter5299;
 		public MaskFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.MaskFilter._MaskFilter5299.native == global::System.IntPtr.Zero)
+				global::android.graphics.MaskFilter._MaskFilter5299 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._MaskFilter5299);
 			Init(@__env, handle);
 		}
@@ -23,8 +28,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.MaskFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/MaskFilter"));
-			global::android.graphics.MaskFilter._finalize5298 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
-			global::android.graphics.MaskFilter._MaskFilter5299 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

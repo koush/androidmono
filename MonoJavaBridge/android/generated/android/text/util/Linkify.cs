@@ -24,13 +24,14 @@ namespace android.text.util
 			bool android.text.util.Linkify.MatchFilter.acceptMatch(java.lang.CharSequence arg0, int arg1, int arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.text.util.Linkify.MatchFilter_._acceptMatch13634.native == global::System.IntPtr.Zero)
+					global::android.text.util.Linkify.MatchFilter_._acceptMatch13634 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.MatchFilter_.staticClass, "acceptMatch", "(Ljava/lang/CharSequence;II)Z");
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.util.Linkify.MatchFilter_._acceptMatch13634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static MatchFilter_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.util.Linkify.MatchFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Linkify$MatchFilter"));
-				global::android.text.util.Linkify.MatchFilter_._acceptMatch13634 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.MatchFilter_.staticClass, "acceptMatch", "(Ljava/lang/CharSequence;II)Z");
 			}
 			internal static void InitJNI()
 			{
@@ -49,6 +50,8 @@ namespace android.text.util
 			public MatchFilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.text.util.Linkify.MatchFilterDelegateWrapper._MatchFilterDelegateWrapper13635.native == global::System.IntPtr.Zero)
+					global::android.text.util.Linkify.MatchFilterDelegateWrapper._MatchFilterDelegateWrapper13635 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.MatchFilterDelegateWrapper.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Linkify.MatchFilterDelegateWrapper.staticClass, global::android.text.util.Linkify.MatchFilterDelegateWrapper._MatchFilterDelegateWrapper13635);
 				Init(@__env, handle);
 			}
@@ -56,7 +59,6 @@ namespace android.text.util
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.util.Linkify.MatchFilterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Linkify_MatchFilterDelegateWrapper"));
-				global::android.text.util.Linkify.MatchFilterDelegateWrapper._MatchFilterDelegateWrapper13635 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.MatchFilterDelegateWrapper.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -94,13 +96,14 @@ namespace android.text.util
 			global::java.lang.String android.text.util.Linkify.TransformFilter.transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.text.util.Linkify.TransformFilter_._transformUrl13636.native == global::System.IntPtr.Zero)
+					global::android.text.util.Linkify.TransformFilter_._transformUrl13636 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.TransformFilter_.staticClass, "transformUrl", "(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.util.Linkify.TransformFilter_._transformUrl13636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			}
 			static TransformFilter_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.util.Linkify.TransformFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Linkify$TransformFilter"));
-				global::android.text.util.Linkify.TransformFilter_._transformUrl13636 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.TransformFilter_.staticClass, "transformUrl", "(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;");
 			}
 			internal static void InitJNI()
 			{
@@ -119,6 +122,8 @@ namespace android.text.util
 			public TransformFilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.text.util.Linkify.TransformFilterDelegateWrapper._TransformFilterDelegateWrapper13637.native == global::System.IntPtr.Zero)
+					global::android.text.util.Linkify.TransformFilterDelegateWrapper._TransformFilterDelegateWrapper13637 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.TransformFilterDelegateWrapper.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Linkify.TransformFilterDelegateWrapper.staticClass, global::android.text.util.Linkify.TransformFilterDelegateWrapper._TransformFilterDelegateWrapper13637);
 				Init(@__env, handle);
 			}
@@ -126,7 +131,6 @@ namespace android.text.util
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.util.Linkify.TransformFilterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Linkify_TransformFilterDelegateWrapper"));
-				global::android.text.util.Linkify.TransformFilterDelegateWrapper._TransformFilterDelegateWrapper13637 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.TransformFilterDelegateWrapper.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -151,18 +155,24 @@ namespace android.text.util
 		public static bool addLinks(android.widget.TextView arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13638.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13638 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;I)Z");
 			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addLinks13639;
 		public static void addLinks(android.widget.TextView arg0, java.util.regex.Pattern arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13639.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13639 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;)V");
 			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addLinks13640;
 		public static void addLinks(android.widget.TextView arg0, java.util.regex.Pattern arg1, java.lang.String arg2, android.text.util.Linkify.MatchFilter arg3, android.text.util.Linkify.TransformFilter arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13640.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13640 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)V");
 			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public static void addLinks(android.widget.TextView arg0, java.util.regex.Pattern arg1, java.lang.String arg2, global::android.text.util.Linkify.MatchFilterDelegate arg3, global::android.text.util.Linkify.TransformFilterDelegate arg4)
@@ -173,12 +183,16 @@ namespace android.text.util
 		public static bool addLinks(android.text.Spannable arg0, java.util.regex.Pattern arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13641.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13641 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;)Z");
 			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addLinks13642;
 		public static bool addLinks(android.text.Spannable arg0, java.util.regex.Pattern arg1, java.lang.String arg2, android.text.util.Linkify.MatchFilter arg3, android.text.util.Linkify.TransformFilter arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13642.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13642 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)Z");
 			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public static bool addLinks(android.text.Spannable arg0, java.util.regex.Pattern arg1, java.lang.String arg2, global::android.text.util.Linkify.MatchFilterDelegate arg3, global::android.text.util.Linkify.TransformFilterDelegate arg4)
@@ -189,12 +203,16 @@ namespace android.text.util
 		public static bool addLinks(android.text.Spannable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._addLinks13643.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._addLinks13643 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;I)Z");
 			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks13643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _Linkify13644;
 		public Linkify() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.util.Linkify._Linkify13644.native == global::System.IntPtr.Zero)
+				global::android.text.util.Linkify._Linkify13644 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._Linkify13644);
 			Init(@__env, handle);
 		}
@@ -264,13 +282,6 @@ namespace android.text.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.util.Linkify.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Linkify"));
-			global::android.text.util.Linkify._addLinks13638 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;I)Z");
-			global::android.text.util.Linkify._addLinks13639 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;)V");
-			global::android.text.util.Linkify._addLinks13640 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)V");
-			global::android.text.util.Linkify._addLinks13641 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;)Z");
-			global::android.text.util.Linkify._addLinks13642 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)Z");
-			global::android.text.util.Linkify._addLinks13643 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "addLinks", "(Landroid/text/Spannable;I)Z");
-			global::android.text.util.Linkify._Linkify13644 = @__env.GetMethodIDNoThrow(global::android.text.util.Linkify.staticClass, "<init>", "()V");
 			global::android.text.util.Linkify._sUrlMatchFilter13650 = @__env.GetStaticFieldIDNoThrow(global::android.text.util.Linkify.staticClass, "sUrlMatchFilter", "Landroid/text/util/Linkify$MatchFilter;");
 			global::android.text.util.Linkify._sPhoneNumberMatchFilter13651 = @__env.GetStaticFieldIDNoThrow(global::android.text.util.Linkify.staticClass, "sPhoneNumberMatchFilter", "Landroid/text/util/Linkify$MatchFilter;");
 			global::android.text.util.Linkify._sPhoneNumberTransformFilter13652 = @__env.GetStaticFieldIDNoThrow(global::android.text.util.Linkify.staticClass, "sPhoneNumberTransformFilter", "Landroid/text/util/Linkify$TransformFilter;");

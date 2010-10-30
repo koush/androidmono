@@ -18,12 +18,16 @@ namespace android.webkit
 			public static global::android.webkit.ConsoleMessage.MessageLevel[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.webkit.ConsoleMessage.MessageLevel._values16012.native == global::System.IntPtr.Zero)
+					global::android.webkit.ConsoleMessage.MessageLevel._values16012 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "values", "()[Landroid/webkit/ConsoleMessage/MessageLevel;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.webkit.ConsoleMessage.MessageLevel>(@__env.CallStaticObjectMethod(android.webkit.ConsoleMessage.MessageLevel.staticClass, global::android.webkit.ConsoleMessage.MessageLevel._values16012)) as android.webkit.ConsoleMessage.MessageLevel[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf16013;
 			public static global::android.webkit.ConsoleMessage.MessageLevel valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.webkit.ConsoleMessage.MessageLevel._valueOf16013.native == global::System.IntPtr.Zero)
+					global::android.webkit.ConsoleMessage.MessageLevel._valueOf16013 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/ConsoleMessage$MessageLevel;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.ConsoleMessage.MessageLevel>(@__env.CallStaticObjectMethod(android.webkit.ConsoleMessage.MessageLevel.staticClass, global::android.webkit.ConsoleMessage.MessageLevel._valueOf16013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.ConsoleMessage.MessageLevel;
 			}
 			internal static global::MonoJavaBridge.FieldId _DEBUG16014;
@@ -75,8 +79,6 @@ namespace android.webkit
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.ConsoleMessage.MessageLevel.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/ConsoleMessage$MessageLevel"));
-				global::android.webkit.ConsoleMessage.MessageLevel._values16012 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "values", "()[Landroid/webkit/ConsoleMessage/MessageLevel;");
-				global::android.webkit.ConsoleMessage.MessageLevel._valueOf16013 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/ConsoleMessage$MessageLevel;");
 				global::android.webkit.ConsoleMessage.MessageLevel._DEBUG16014 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "DEBUG", "Landroid/webkit/ConsoleMessage$MessageLevel;");
 				global::android.webkit.ConsoleMessage.MessageLevel._ERROR16015 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "ERROR", "Landroid/webkit/ConsoleMessage$MessageLevel;");
 				global::android.webkit.ConsoleMessage.MessageLevel._LOG16016 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "LOG", "Landroid/webkit/ConsoleMessage$MessageLevel;");
@@ -90,27 +92,41 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _lineNumber16019;
 		public virtual int lineNumber()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.ConsoleMessage._lineNumber16019.native == global::System.IntPtr.Zero)
+				global::android.webkit.ConsoleMessage._lineNumber16019 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "lineNumber", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._lineNumber16019);
 		}
 		internal static global::MonoJavaBridge.MethodId _message16020;
 		public virtual global::java.lang.String message()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._message16020)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.ConsoleMessage._message16020.native == global::System.IntPtr.Zero)
+				global::android.webkit.ConsoleMessage._message16020 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "message", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._message16020) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _sourceId16021;
 		public virtual global::java.lang.String sourceId()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._sourceId16021)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.ConsoleMessage._sourceId16021.native == global::System.IntPtr.Zero)
+				global::android.webkit.ConsoleMessage._sourceId16021 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "sourceId", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._sourceId16021) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _messageLevel16022;
 		public virtual global::android.webkit.ConsoleMessage.MessageLevel messageLevel()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.ConsoleMessage.MessageLevel>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._messageLevel16022)) as android.webkit.ConsoleMessage.MessageLevel;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.ConsoleMessage._messageLevel16022.native == global::System.IntPtr.Zero)
+				global::android.webkit.ConsoleMessage._messageLevel16022 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "messageLevel", "()Landroid/webkit/ConsoleMessage$MessageLevel;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.webkit.ConsoleMessage.MessageLevel>(this, global::android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._messageLevel16022) as android.webkit.ConsoleMessage.MessageLevel;
 		}
 		internal static global::MonoJavaBridge.MethodId _ConsoleMessage16023;
 		public ConsoleMessage(java.lang.String arg0, java.lang.String arg1, int arg2, android.webkit.ConsoleMessage.MessageLevel arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.ConsoleMessage._ConsoleMessage16023.native == global::System.IntPtr.Zero)
+				global::android.webkit.ConsoleMessage._ConsoleMessage16023 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;ILandroid/webkit/ConsoleMessage$MessageLevel;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.ConsoleMessage.staticClass, global::android.webkit.ConsoleMessage._ConsoleMessage16023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
@@ -118,11 +134,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.ConsoleMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/ConsoleMessage"));
-			global::android.webkit.ConsoleMessage._lineNumber16019 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "lineNumber", "()I");
-			global::android.webkit.ConsoleMessage._message16020 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "message", "()Ljava/lang/String;");
-			global::android.webkit.ConsoleMessage._sourceId16021 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "sourceId", "()Ljava/lang/String;");
-			global::android.webkit.ConsoleMessage._messageLevel16022 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "messageLevel", "()Landroid/webkit/ConsoleMessage$MessageLevel;");
-			global::android.webkit.ConsoleMessage._ConsoleMessage16023 = @__env.GetMethodIDNoThrow(global::android.webkit.ConsoleMessage.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;ILandroid/webkit/ConsoleMessage$MessageLevel;)V");
 		}
 		internal static void InitJNI()
 		{

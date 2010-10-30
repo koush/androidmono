@@ -11,6 +11,8 @@ namespace java.lang
 		public UnsupportedOperationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.UnsupportedOperationException._UnsupportedOperationException20929.native == global::System.IntPtr.Zero)
+				global::java.lang.UnsupportedOperationException._UnsupportedOperationException20929 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20929);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public UnsupportedOperationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.UnsupportedOperationException._UnsupportedOperationException20930.native == global::System.IntPtr.Zero)
+				global::java.lang.UnsupportedOperationException._UnsupportedOperationException20930 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace java.lang
 		public UnsupportedOperationException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.UnsupportedOperationException._UnsupportedOperationException20931.native == global::System.IntPtr.Zero)
+				global::java.lang.UnsupportedOperationException._UnsupportedOperationException20931 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,6 +38,8 @@ namespace java.lang
 		public UnsupportedOperationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.UnsupportedOperationException._UnsupportedOperationException20932.native == global::System.IntPtr.Zero)
+				global::java.lang.UnsupportedOperationException._UnsupportedOperationException20932 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -39,10 +47,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.UnsupportedOperationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/UnsupportedOperationException"));
-			global::java.lang.UnsupportedOperationException._UnsupportedOperationException20929 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "()V");
-			global::java.lang.UnsupportedOperationException._UnsupportedOperationException20930 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.lang.UnsupportedOperationException._UnsupportedOperationException20931 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::java.lang.UnsupportedOperationException._UnsupportedOperationException20932 = @__env.GetMethodIDNoThrow(global::java.lang.UnsupportedOperationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

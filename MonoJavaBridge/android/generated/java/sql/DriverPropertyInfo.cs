@@ -11,6 +11,8 @@ namespace java.sql
 		public DriverPropertyInfo(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.DriverPropertyInfo._DriverPropertyInfo24640.native == global::System.IntPtr.Zero)
+				global::java.sql.DriverPropertyInfo._DriverPropertyInfo24640 = @__env.GetMethodIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DriverPropertyInfo.staticClass, global::java.sql.DriverPropertyInfo._DriverPropertyInfo24640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -78,7 +80,6 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DriverPropertyInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DriverPropertyInfo"));
-			global::java.sql.DriverPropertyInfo._DriverPropertyInfo24640 = @__env.GetMethodIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.sql.DriverPropertyInfo._name24641 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "name", "Ljava/lang/String;");
 			global::java.sql.DriverPropertyInfo._description24642 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "description", "Ljava/lang/String;");
 			global::java.sql.DriverPropertyInfo._required24643 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "required", "Z");

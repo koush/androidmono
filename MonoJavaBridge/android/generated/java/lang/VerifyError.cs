@@ -11,6 +11,8 @@ namespace java.lang
 		public VerifyError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.VerifyError._VerifyError20933.native == global::System.IntPtr.Zero)
+				global::java.lang.VerifyError._VerifyError20933 = @__env.GetMethodIDNoThrow(global::java.lang.VerifyError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VerifyError.staticClass, global::java.lang.VerifyError._VerifyError20933);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public VerifyError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.VerifyError._VerifyError20934.native == global::System.IntPtr.Zero)
+				global::java.lang.VerifyError._VerifyError20934 = @__env.GetMethodIDNoThrow(global::java.lang.VerifyError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VerifyError.staticClass, global::java.lang.VerifyError._VerifyError20934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.VerifyError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/VerifyError"));
-			global::java.lang.VerifyError._VerifyError20933 = @__env.GetMethodIDNoThrow(global::java.lang.VerifyError.staticClass, "<init>", "()V");
-			global::java.lang.VerifyError._VerifyError20934 = @__env.GetMethodIDNoThrow(global::java.lang.VerifyError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

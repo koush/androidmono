@@ -11,6 +11,8 @@ namespace java.lang
 		public InstantiationError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.InstantiationError._InstantiationError20191.native == global::System.IntPtr.Zero)
+				global::java.lang.InstantiationError._InstantiationError20191 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationError.staticClass, global::java.lang.InstantiationError._InstantiationError20191);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public InstantiationError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.InstantiationError._InstantiationError20192.native == global::System.IntPtr.Zero)
+				global::java.lang.InstantiationError._InstantiationError20192 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationError.staticClass, global::java.lang.InstantiationError._InstantiationError20192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InstantiationError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InstantiationError"));
-			global::java.lang.InstantiationError._InstantiationError20191 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationError.staticClass, "<init>", "()V");
-			global::java.lang.InstantiationError._InstantiationError20192 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

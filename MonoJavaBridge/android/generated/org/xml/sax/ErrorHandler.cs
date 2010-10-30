@@ -19,27 +19,30 @@ namespace org.xml.sax
 		void org.xml.sax.ErrorHandler.fatalError(org.xml.sax.SAXParseException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ErrorHandler_._fatalError34984.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ErrorHandler_._fatalError34984 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "fatalError", "(Lorg/xml/sax/SAXParseException;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ErrorHandler_._fatalError34984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _error34985;
 		void org.xml.sax.ErrorHandler.error(org.xml.sax.SAXParseException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ErrorHandler_._error34985.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ErrorHandler_._error34985 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "error", "(Lorg/xml/sax/SAXParseException;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ErrorHandler_._error34985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _warning34986;
 		void org.xml.sax.ErrorHandler.warning(org.xml.sax.SAXParseException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ErrorHandler_._warning34986.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ErrorHandler_._warning34986 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "warning", "(Lorg/xml/sax/SAXParseException;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ErrorHandler_._warning34986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ErrorHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ErrorHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ErrorHandler"));
-			global::org.xml.sax.ErrorHandler_._fatalError34984 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "fatalError", "(Lorg/xml/sax/SAXParseException;)V");
-			global::org.xml.sax.ErrorHandler_._error34985 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "error", "(Lorg/xml/sax/SAXParseException;)V");
-			global::org.xml.sax.ErrorHandler_._warning34986 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ErrorHandler_.staticClass, "warning", "(Lorg/xml/sax/SAXParseException;)V");
 		}
 		internal static void InitJNI()
 		{

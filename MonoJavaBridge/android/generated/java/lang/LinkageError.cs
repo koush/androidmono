@@ -11,6 +11,8 @@ namespace java.lang
 		public LinkageError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.LinkageError._LinkageError20241.native == global::System.IntPtr.Zero)
+				global::java.lang.LinkageError._LinkageError20241 = @__env.GetMethodIDNoThrow(global::java.lang.LinkageError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.LinkageError.staticClass, global::java.lang.LinkageError._LinkageError20241);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public LinkageError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.LinkageError._LinkageError20242.native == global::System.IntPtr.Zero)
+				global::java.lang.LinkageError._LinkageError20242 = @__env.GetMethodIDNoThrow(global::java.lang.LinkageError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.LinkageError.staticClass, global::java.lang.LinkageError._LinkageError20242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.LinkageError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/LinkageError"));
-			global::java.lang.LinkageError._LinkageError20241 = @__env.GetMethodIDNoThrow(global::java.lang.LinkageError.staticClass, "<init>", "()V");
-			global::java.lang.LinkageError._LinkageError20242 = @__env.GetMethodIDNoThrow(global::java.lang.LinkageError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

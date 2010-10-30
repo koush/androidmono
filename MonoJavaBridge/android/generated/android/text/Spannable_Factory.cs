@@ -18,12 +18,17 @@ namespace android.text
 		public static global::android.text.Spannable_Factory getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.Spannable_Factory._getInstance12930.native == global::System.IntPtr.Zero)
+				global::android.text.Spannable_Factory._getInstance12930 = @__env.GetStaticMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "getInstance", "()Landroid/text/Spannable$Factory;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._getInstance12930)) as android.text.Spannable_Factory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newSpannable12931;
 		public virtual global::android.text.Spannable newSpannable(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spannable>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Spannable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.Spannable_Factory._newSpannable12931.native == global::System.IntPtr.Zero)
+				global::android.text.Spannable_Factory._newSpannable12931 = @__env.GetMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "newSpannable", "(Ljava/lang/CharSequence;)Landroid/text/Spannable;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.text.Spannable>(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable12931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Spannable;
 		}
 		public android.text.Spannable newSpannable(string arg0)
 		{
@@ -33,6 +38,8 @@ namespace android.text
 		public Spannable_Factory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.Spannable_Factory._Spannable_Factory12932.native == global::System.IntPtr.Zero)
+				global::android.text.Spannable_Factory._Spannable_Factory12932 = @__env.GetMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._Spannable_Factory12932);
 			Init(@__env, handle);
 		}
@@ -40,9 +47,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Spannable_Factory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Spannable$Factory"));
-			global::android.text.Spannable_Factory._getInstance12930 = @__env.GetStaticMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "getInstance", "()Landroid/text/Spannable$Factory;");
-			global::android.text.Spannable_Factory._newSpannable12931 = @__env.GetMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "newSpannable", "(Ljava/lang/CharSequence;)Landroid/text/Spannable;");
-			global::android.text.Spannable_Factory._Spannable_Factory12932 = @__env.GetMethodIDNoThrow(global::android.text.Spannable_Factory.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

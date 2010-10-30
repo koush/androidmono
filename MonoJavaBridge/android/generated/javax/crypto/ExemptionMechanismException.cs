@@ -11,6 +11,8 @@ namespace javax.crypto
 		public ExemptionMechanismException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28607.native == global::System.IntPtr.Zero)
+				global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28607 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismException.staticClass, global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28607);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.crypto
 		public ExemptionMechanismException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28608.native == global::System.IntPtr.Zero)
+				global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28608 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismException.staticClass, global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.ExemptionMechanismException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/ExemptionMechanismException"));
-			global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28607 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismException.staticClass, "<init>", "()V");
-			global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28608 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

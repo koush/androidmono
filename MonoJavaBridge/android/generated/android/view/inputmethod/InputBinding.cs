@@ -11,18 +11,24 @@ namespace android.view.inputmethod
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._toString15862.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._toString15862 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._toString15862)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15863;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._writeToParcel15863.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._writeToParcel15863 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._writeToParcel15863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15864;
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._describeContents15864.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._describeContents15864 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "describeContents", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._describeContents15864);
 		}
 		public new global::android.view.inputmethod.InputConnection Connection
@@ -36,6 +42,8 @@ namespace android.view.inputmethod
 		public global::android.view.inputmethod.InputConnection getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._getConnection15865.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._getConnection15865 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnection", "()Landroid/view/inputmethod/InputConnection;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnection15865)) as android.view.inputmethod.InputConnection;
 		}
 		public new global::android.os.IBinder ConnectionToken
@@ -49,6 +57,8 @@ namespace android.view.inputmethod
 		public global::android.os.IBinder getConnectionToken()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._getConnectionToken15866.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._getConnectionToken15866 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnectionToken", "()Landroid/os/IBinder;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnectionToken15866)) as android.os.IBinder;
 		}
 		public new int Uid
@@ -62,6 +72,8 @@ namespace android.view.inputmethod
 		public int getUid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._getUid15867.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._getUid15867 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getUid", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getUid15867);
 		}
 		public new int Pid
@@ -75,12 +87,16 @@ namespace android.view.inputmethod
 		public int getPid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._getPid15868.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._getPid15868 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getPid", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getPid15868);
 		}
 		internal static global::MonoJavaBridge.MethodId _InputBinding15869;
 		public InputBinding(android.view.inputmethod.InputConnection arg0, android.os.IBinder arg1, int arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._InputBinding15869.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._InputBinding15869 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/os/IBinder;II)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding15869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
@@ -88,6 +104,8 @@ namespace android.view.inputmethod
 		public InputBinding(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.InputBinding arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.InputBinding._InputBinding15870.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.InputBinding._InputBinding15870 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputBinding;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding15870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -104,15 +122,6 @@ namespace android.view.inputmethod
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputBinding.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputBinding"));
-			global::android.view.inputmethod.InputBinding._toString15862 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.view.inputmethod.InputBinding._writeToParcel15863 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.inputmethod.InputBinding._describeContents15864 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "describeContents", "()I");
-			global::android.view.inputmethod.InputBinding._getConnection15865 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnection", "()Landroid/view/inputmethod/InputConnection;");
-			global::android.view.inputmethod.InputBinding._getConnectionToken15866 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnectionToken", "()Landroid/os/IBinder;");
-			global::android.view.inputmethod.InputBinding._getUid15867 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getUid", "()I");
-			global::android.view.inputmethod.InputBinding._getPid15868 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getPid", "()I");
-			global::android.view.inputmethod.InputBinding._InputBinding15869 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/os/IBinder;II)V");
-			global::android.view.inputmethod.InputBinding._InputBinding15870 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputBinding;)V");
 			global::android.view.inputmethod.InputBinding._CREATOR15871 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()

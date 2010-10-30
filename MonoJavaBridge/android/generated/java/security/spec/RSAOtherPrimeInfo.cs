@@ -17,7 +17,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getExponent24060;
 		public virtual global::java.math.BigInteger getExponent()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getExponent24060)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAOtherPrimeInfo._getExponent24060.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAOtherPrimeInfo._getExponent24060 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getExponent", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getExponent24060) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger CrtCoefficient
 		{
@@ -29,7 +32,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getCrtCoefficient24061;
 		public virtual global::java.math.BigInteger getCrtCoefficient()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getCrtCoefficient24061)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAOtherPrimeInfo._getCrtCoefficient24061.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAOtherPrimeInfo._getCrtCoefficient24061 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getCrtCoefficient24061) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger Prime
 		{
@@ -41,12 +47,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getPrime24062;
 		public virtual global::java.math.BigInteger getPrime()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getPrime24062)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAOtherPrimeInfo._getPrime24062.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAOtherPrimeInfo._getPrime24062 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getPrime", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getPrime24062) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAOtherPrimeInfo24063;
 		public RSAOtherPrimeInfo(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAOtherPrimeInfo._RSAOtherPrimeInfo24063.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAOtherPrimeInfo._RSAOtherPrimeInfo24063 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._RSAOtherPrimeInfo24063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -54,10 +65,6 @@ namespace java.security.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAOtherPrimeInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAOtherPrimeInfo"));
-			global::java.security.spec.RSAOtherPrimeInfo._getExponent24060 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getExponent", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAOtherPrimeInfo._getCrtCoefficient24061 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAOtherPrimeInfo._getPrime24062 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "getPrime", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAOtherPrimeInfo._RSAOtherPrimeInfo24063 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAOtherPrimeInfo.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 		}
 		internal static void InitJNI()
 		{

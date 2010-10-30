@@ -10,11 +10,17 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString4046;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._toString4046)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._toString4046.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._toString4046 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._toString4046) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump4047;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._dump4047.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._dump4047 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._dump4047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
@@ -24,17 +30,25 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _writeToParcel4048;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._writeToParcel4048.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._writeToParcel4048 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._writeToParcel4048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents4049;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._describeContents4049.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._describeContents4049 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._describeContents4049);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServiceInfo4050;
 		public ServiceInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._ServiceInfo4050.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._ServiceInfo4050 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._ServiceInfo4050);
 			Init(@__env, handle);
 		}
@@ -42,6 +56,8 @@ namespace android.content.pm
 		public ServiceInfo(android.content.pm.ServiceInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ServiceInfo._ServiceInfo4051.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ServiceInfo._ServiceInfo4051 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "<init>", "(Landroid/content/pm/ServiceInfo;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._ServiceInfo4051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -70,12 +86,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ServiceInfo"));
-			global::android.content.pm.ServiceInfo._toString4046 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.ServiceInfo._dump4047 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.content.pm.ServiceInfo._writeToParcel4048 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.ServiceInfo._describeContents4049 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.ServiceInfo._ServiceInfo4050 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.ServiceInfo._ServiceInfo4051 = @__env.GetMethodIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "<init>", "(Landroid/content/pm/ServiceInfo;)V");
 			global::android.content.pm.ServiceInfo._permission4052 = @__env.GetFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "permission", "Ljava/lang/String;");
 			global::android.content.pm.ServiceInfo._CREATOR4053 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}

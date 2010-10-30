@@ -21,7 +21,10 @@ namespace javax.xml.transform.dom
 		internal static global::MonoJavaBridge.MethodId _getNextSibling31045;
 		public virtual global::org.w3c.dom.Node getNextSibling()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getNextSibling31045)) as org.w3c.dom.Node;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._getNextSibling31045.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._getNextSibling31045 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getNextSibling", "()Lorg/w3c/dom/Node;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getNextSibling31045) as org.w3c.dom.Node;
 		}
 		public new global::java.lang.String SystemId
 		{
@@ -37,7 +40,10 @@ namespace javax.xml.transform.dom
 		internal static global::MonoJavaBridge.MethodId _getSystemId31046;
 		public virtual global::java.lang.String getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getSystemId31046)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._getSystemId31046.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._getSystemId31046 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getSystemId", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getSystemId31046) as java.lang.String;
 		}
 		public new global::org.w3c.dom.Node Node
 		{
@@ -53,27 +59,41 @@ namespace javax.xml.transform.dom
 		internal static global::MonoJavaBridge.MethodId _getNode31047;
 		public virtual global::org.w3c.dom.Node getNode()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getNode31047)) as org.w3c.dom.Node;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._getNode31047.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._getNode31047 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getNode", "()Lorg/w3c/dom/Node;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._getNode31047) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId31048;
 		public virtual void setSystemId(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._setSystemId31048.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._setSystemId31048 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setSystemId", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._setSystemId31048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNode31049;
 		public virtual void setNode(org.w3c.dom.Node arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._setNode31049.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._setNode31049 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setNode", "(Lorg/w3c/dom/Node;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._setNode31049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNextSibling31050;
 		public virtual void setNextSibling(org.w3c.dom.Node arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._setNextSibling31050.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._setNextSibling31050 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setNextSibling", "(Lorg/w3c/dom/Node;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._setNextSibling31050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DOMResult31051;
 		public DOMResult(org.w3c.dom.Node arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._DOMResult31051.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._DOMResult31051 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._DOMResult31051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -81,6 +101,8 @@ namespace javax.xml.transform.dom
 		public DOMResult(org.w3c.dom.Node arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._DOMResult31052.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._DOMResult31052 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._DOMResult31052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -88,6 +110,8 @@ namespace javax.xml.transform.dom
 		public DOMResult(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._DOMResult31053.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._DOMResult31053 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._DOMResult31053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -95,6 +119,8 @@ namespace javax.xml.transform.dom
 		public DOMResult(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._DOMResult31054.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._DOMResult31054 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._DOMResult31054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -102,6 +128,8 @@ namespace javax.xml.transform.dom
 		public DOMResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.transform.dom.DOMResult._DOMResult31055.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.dom.DOMResult._DOMResult31055 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.dom.DOMResult.staticClass, global::javax.xml.transform.dom.DOMResult._DOMResult31055);
 			Init(@__env, handle);
 		}
@@ -116,17 +144,6 @@ namespace javax.xml.transform.dom
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.dom.DOMResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/dom/DOMResult"));
-			global::javax.xml.transform.dom.DOMResult._getNextSibling31045 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getNextSibling", "()Lorg/w3c/dom/Node;");
-			global::javax.xml.transform.dom.DOMResult._getSystemId31046 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getSystemId", "()Ljava/lang/String;");
-			global::javax.xml.transform.dom.DOMResult._getNode31047 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "getNode", "()Lorg/w3c/dom/Node;");
-			global::javax.xml.transform.dom.DOMResult._setSystemId31048 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setSystemId", "(Ljava/lang/String;)V");
-			global::javax.xml.transform.dom.DOMResult._setNode31049 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setNode", "(Lorg/w3c/dom/Node;)V");
-			global::javax.xml.transform.dom.DOMResult._setNextSibling31050 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "setNextSibling", "(Lorg/w3c/dom/Node;)V");
-			global::javax.xml.transform.dom.DOMResult._DOMResult31051 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;)V");
-			global::javax.xml.transform.dom.DOMResult._DOMResult31052 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Ljava/lang/String;)V");
-			global::javax.xml.transform.dom.DOMResult._DOMResult31053 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)V");
-			global::javax.xml.transform.dom.DOMResult._DOMResult31054 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;Ljava/lang/String;)V");
-			global::javax.xml.transform.dom.DOMResult._DOMResult31055 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMResult.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,6 +11,8 @@ namespace android.net
 		public static int getPort(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.Proxy._getPort7747.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._getPort7747 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getPort", "(Landroid/content/Context;)I");
 			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getPort7747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int DefaultPort
@@ -24,12 +26,16 @@ namespace android.net
 		public static int getDefaultPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.Proxy._getDefaultPort7748.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._getDefaultPort7748 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultPort", "()I");
 			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultPort7748);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost7749;
 		public static global::java.lang.String getHost(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.Proxy._getHost7749.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._getHost7749 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getHost", "(Landroid/content/Context;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getHost7749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public static global::java.lang.String DefaultHost
@@ -43,12 +49,16 @@ namespace android.net
 		public static global::java.lang.String getDefaultHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.Proxy._getDefaultHost7750.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._getDefaultHost7750 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultHost", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultHost7750)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Proxy7751;
 		public Proxy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.Proxy._Proxy7751.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._Proxy7751 = @__env.GetMethodIDNoThrow(global::android.net.Proxy.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Proxy.staticClass, global::android.net.Proxy._Proxy7751);
 			Init(@__env, handle);
 		}
@@ -63,11 +73,6 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Proxy"));
-			global::android.net.Proxy._getPort7747 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getPort", "(Landroid/content/Context;)I");
-			global::android.net.Proxy._getDefaultPort7748 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultPort", "()I");
-			global::android.net.Proxy._getHost7749 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getHost", "(Landroid/content/Context;)Ljava/lang/String;");
-			global::android.net.Proxy._getDefaultHost7750 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultHost", "()Ljava/lang/String;");
-			global::android.net.Proxy._Proxy7751 = @__env.GetMethodIDNoThrow(global::android.net.Proxy.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

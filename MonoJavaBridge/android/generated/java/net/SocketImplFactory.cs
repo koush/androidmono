@@ -17,13 +17,14 @@ namespace java.net
 		global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.SocketImplFactory_._createSocketImpl21814.native == global::System.IntPtr.Zero)
+				global::java.net.SocketImplFactory_._createSocketImpl21814 = @__env.GetMethodIDNoThrow(global::java.net.SocketImplFactory_.staticClass, "createSocketImpl", "()Ljava/net/SocketImpl;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SocketImplFactory_._createSocketImpl21814)) as java.net.SocketImpl;
 		}
 		static SocketImplFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketImplFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketImplFactory"));
-			global::java.net.SocketImplFactory_._createSocketImpl21814 = @__env.GetMethodIDNoThrow(global::java.net.SocketImplFactory_.staticClass, "createSocketImpl", "()Ljava/net/SocketImpl;");
 		}
 		internal static void InitJNI()
 		{

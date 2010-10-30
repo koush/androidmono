@@ -11,6 +11,8 @@ namespace java.lang.reflect
 		public GenericSignatureFormatError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.GenericSignatureFormatError._GenericSignatureFormatError21083.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.GenericSignatureFormatError._GenericSignatureFormatError21083 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericSignatureFormatError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.GenericSignatureFormatError.staticClass, global::java.lang.reflect.GenericSignatureFormatError._GenericSignatureFormatError21083);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.lang.reflect
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.GenericSignatureFormatError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/GenericSignatureFormatError"));
-			global::java.lang.reflect.GenericSignatureFormatError._GenericSignatureFormatError21083 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericSignatureFormatError.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

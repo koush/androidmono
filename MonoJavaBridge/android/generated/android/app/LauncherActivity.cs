@@ -17,12 +17,17 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _createIconThumbnail1926;
 			public virtual global::android.graphics.drawable.Drawable createIconThumbnail(android.graphics.drawable.Drawable arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926.native == global::System.IntPtr.Zero)
+					global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "createIconThumbnail", "(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;");
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 			}
 			internal static global::MonoJavaBridge.MethodId _IconResizer1927;
 			public IconResizer(android.app.LauncherActivity arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.LauncherActivity.IconResizer._IconResizer1927.native == global::System.IntPtr.Zero)
+					global::android.app.LauncherActivity.IconResizer._IconResizer1927 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "<init>", "(Landroid/app/LauncherActivity;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._IconResizer1927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
@@ -30,8 +35,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.LauncherActivity.IconResizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity$IconResizer"));
-				global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "createIconThumbnail", "(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;");
-				global::android.app.LauncherActivity.IconResizer._IconResizer1927 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.IconResizer.staticClass, "<init>", "(Landroid/app/LauncherActivity;)V");
 			}
 			internal static void InitJNI()
 			{
@@ -48,6 +51,8 @@ namespace android.app
 			public ListItem() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.LauncherActivity.ListItem._ListItem1928.native == global::System.IntPtr.Zero)
+					global::android.app.LauncherActivity.ListItem._ListItem1928 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.ListItem.staticClass, global::android.app.LauncherActivity.ListItem._ListItem1928);
 				Init(@__env, handle);
 			}
@@ -127,7 +132,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.LauncherActivity.ListItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity$ListItem"));
-				global::android.app.LauncherActivity.ListItem._ListItem1928 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "<init>", "()V");
 				global::android.app.LauncherActivity.ListItem._resolveInfo1929 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "resolveInfo", "Landroid/content/pm/ResolveInfo;");
 				global::android.app.LauncherActivity.ListItem._label1930 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "label", "Ljava/lang/CharSequence;");
 				global::android.app.LauncherActivity.ListItem._icon1931 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "icon", "Landroid/graphics/drawable/Drawable;");
@@ -142,47 +146,73 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _onCreate1935;
 		protected override void onCreate(android.os.Bundle arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._onCreate1935.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._onCreate1935 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onCreate1935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSetContentView1936;
 		protected virtual void onSetContentView()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._onSetContentView1936.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._onSetContentView1936 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onSetContentView", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onSetContentView1936);
 		}
 		internal static global::MonoJavaBridge.MethodId _onListItemClick1937;
 		protected override void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._onListItemClick1937.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._onListItemClick1937 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onListItemClick", "(Landroid/widget/ListView;Landroid/view/View;IJ)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onListItemClick1937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _intentForPosition1938;
 		protected virtual global::android.content.Intent intentForPosition(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._intentForPosition1938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._intentForPosition1938.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._intentForPosition1938 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "intentForPosition", "(I)Landroid/content/Intent;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._intentForPosition1938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _itemForPosition1939;
 		protected virtual global::android.app.LauncherActivity.ListItem itemForPosition(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._itemForPosition1939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.LauncherActivity.ListItem;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._itemForPosition1939.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._itemForPosition1939 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "itemForPosition", "(I)Landroid/app/LauncherActivity$ListItem;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._itemForPosition1939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.LauncherActivity.ListItem;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetIntent1940;
 		protected virtual global::android.content.Intent getTargetIntent()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._getTargetIntent1940)) as android.content.Intent;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._getTargetIntent1940.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._getTargetIntent1940 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "getTargetIntent", "()Landroid/content/Intent;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._getTargetIntent1940) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _onQueryPackageManager1941;
 		protected virtual global::java.util.List onQueryPackageManager(android.content.Intent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onQueryPackageManager1941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._onQueryPackageManager1941.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._onQueryPackageManager1941 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onQueryPackageManager", "(Landroid/content/Intent;)Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onQueryPackageManager1941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeListItems1942;
 		public virtual global::java.util.List makeListItems()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._makeListItems1942)) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._makeListItems1942.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._makeListItems1942 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "makeListItems", "()Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._makeListItems1942) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _LauncherActivity1943;
 		public LauncherActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.LauncherActivity._LauncherActivity1943.native == global::System.IntPtr.Zero)
+				global::android.app.LauncherActivity._LauncherActivity1943 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._LauncherActivity1943);
 			Init(@__env, handle);
 		}
@@ -190,15 +220,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LauncherActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity"));
-			global::android.app.LauncherActivity._onCreate1935 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.app.LauncherActivity._onSetContentView1936 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onSetContentView", "()V");
-			global::android.app.LauncherActivity._onListItemClick1937 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onListItemClick", "(Landroid/widget/ListView;Landroid/view/View;IJ)V");
-			global::android.app.LauncherActivity._intentForPosition1938 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "intentForPosition", "(I)Landroid/content/Intent;");
-			global::android.app.LauncherActivity._itemForPosition1939 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "itemForPosition", "(I)Landroid/app/LauncherActivity$ListItem;");
-			global::android.app.LauncherActivity._getTargetIntent1940 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "getTargetIntent", "()Landroid/content/Intent;");
-			global::android.app.LauncherActivity._onQueryPackageManager1941 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "onQueryPackageManager", "(Landroid/content/Intent;)Ljava/util/List;");
-			global::android.app.LauncherActivity._makeListItems1942 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "makeListItems", "()Ljava/util/List;");
-			global::android.app.LauncherActivity._LauncherActivity1943 = @__env.GetMethodIDNoThrow(global::android.app.LauncherActivity.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

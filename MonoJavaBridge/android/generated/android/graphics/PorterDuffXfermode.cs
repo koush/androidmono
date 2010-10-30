@@ -11,6 +11,8 @@ namespace android.graphics
 		public PorterDuffXfermode(android.graphics.PorterDuff.Mode arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.PorterDuffXfermode._PorterDuffXfermode5663.native == global::System.IntPtr.Zero)
+				global::android.graphics.PorterDuffXfermode._PorterDuffXfermode5663 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuffXfermode.staticClass, "<init>", "(Landroid/graphics/PorterDuff$Mode;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuffXfermode.staticClass, global::android.graphics.PorterDuffXfermode._PorterDuffXfermode5663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PorterDuffXfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuffXfermode"));
-			global::android.graphics.PorterDuffXfermode._PorterDuffXfermode5663 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuffXfermode.staticClass, "<init>", "(Landroid/graphics/PorterDuff$Mode;)V");
 		}
 		internal static void InitJNI()
 		{

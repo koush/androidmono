@@ -10,22 +10,33 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3966;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._toString3966)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._toString3966.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._toString3966 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._toString3966) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3967;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._writeToParcel3967.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._writeToParcel3967 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._writeToParcel3967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3968;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._describeContents3968.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._describeContents3968 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._describeContents3968);
 		}
 		internal static global::MonoJavaBridge.MethodId _PackageStats3969;
 		public PackageStats(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._PackageStats3969.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._PackageStats3969 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._PackageStats3969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -33,6 +44,8 @@ namespace android.content.pm
 		public PackageStats(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._PackageStats3970.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._PackageStats3970 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._PackageStats3970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -40,6 +53,8 @@ namespace android.content.pm
 		public PackageStats(android.content.pm.PackageStats arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageStats._PackageStats3971.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageStats._PackageStats3971 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/content/pm/PackageStats;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageStats.staticClass, global::android.content.pm.PackageStats._PackageStats3971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -104,12 +119,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageStats"));
-			global::android.content.pm.PackageStats._toString3966 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PackageStats._writeToParcel3967 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PackageStats._describeContents3968 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "describeContents", "()I");
-			global::android.content.pm.PackageStats._PackageStats3969 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.content.pm.PackageStats._PackageStats3970 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::android.content.pm.PackageStats._PackageStats3971 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/content/pm/PackageStats;)V");
 			global::android.content.pm.PackageStats._packageName3972 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "packageName", "Ljava/lang/String;");
 			global::android.content.pm.PackageStats._codeSize3973 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "codeSize", "J");
 			global::android.content.pm.PackageStats._dataSize3974 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "dataSize", "J");

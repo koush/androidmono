@@ -11,6 +11,8 @@ namespace org.apache.http
 		public ProtocolException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.ProtocolException._ProtocolException31743.native == global::System.IntPtr.Zero)
+				global::org.apache.http.ProtocolException._ProtocolException31743 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31743);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace org.apache.http
 		public ProtocolException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.ProtocolException._ProtocolException31744.native == global::System.IntPtr.Zero)
+				global::org.apache.http.ProtocolException._ProtocolException31744 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace org.apache.http
 		public ProtocolException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.ProtocolException._ProtocolException31745.native == global::System.IntPtr.Zero)
+				global::org.apache.http.ProtocolException._ProtocolException31745 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,9 +38,6 @@ namespace org.apache.http
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ProtocolException"));
-			global::org.apache.http.ProtocolException._ProtocolException31743 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "()V");
-			global::org.apache.http.ProtocolException._ProtocolException31744 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.apache.http.ProtocolException._ProtocolException31745 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

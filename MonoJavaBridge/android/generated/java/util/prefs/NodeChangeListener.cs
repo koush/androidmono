@@ -18,20 +18,22 @@ namespace java.util.prefs
 		void java.util.prefs.NodeChangeListener.childAdded(java.util.prefs.NodeChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.prefs.NodeChangeListener_._childAdded28180.native == global::System.IntPtr.Zero)
+				global::java.util.prefs.NodeChangeListener_._childAdded28180 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childAdded28180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _childRemoved28181;
 		void java.util.prefs.NodeChangeListener.childRemoved(java.util.prefs.NodeChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.prefs.NodeChangeListener_._childRemoved28181.native == global::System.IntPtr.Zero)
+				global::java.util.prefs.NodeChangeListener_._childRemoved28181 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childRemoved28181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static NodeChangeListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.NodeChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/NodeChangeListener"));
-			global::java.util.prefs.NodeChangeListener_._childAdded28180 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V");
-			global::java.util.prefs.NodeChangeListener_._childRemoved28181 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V");
 		}
 		internal static void InitJNI()
 		{

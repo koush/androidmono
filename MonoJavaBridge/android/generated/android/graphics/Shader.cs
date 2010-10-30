@@ -18,12 +18,16 @@ namespace android.graphics
 			public static global::android.graphics.Shader.TileMode[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.Shader.TileMode._values5794.native == global::System.IntPtr.Zero)
+					global::android.graphics.Shader.TileMode._values5794 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "values", "()[Landroid/graphics/Shader/TileMode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Shader.TileMode>(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._values5794)) as android.graphics.Shader.TileMode[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5795;
 			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.Shader.TileMode._valueOf5795.native == global::System.IntPtr.Zero)
+					global::android.graphics.Shader.TileMode._valueOf5795 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Shader$TileMode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf5795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Shader.TileMode;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLAMP5796;
@@ -57,8 +61,6 @@ namespace android.graphics
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Shader.TileMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Shader$TileMode"));
-				global::android.graphics.Shader.TileMode._values5794 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "values", "()[Landroid/graphics/Shader/TileMode;");
-				global::android.graphics.Shader.TileMode._valueOf5795 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._CLAMP5796 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "CLAMP", "Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._MIRROR5797 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "MIRROR", "Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._REPEAT5798 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "REPEAT", "Landroid/graphics/Shader$TileMode;");
@@ -70,11 +72,17 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _finalize5799;
 		protected override void finalize()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.Shader._finalize5799.native == global::System.IntPtr.Zero)
+				global::android.graphics.Shader._finalize5799 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "finalize", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._finalize5799);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalMatrix5800;
 		public virtual bool getLocalMatrix(android.graphics.Matrix arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.Shader._getLocalMatrix5800.native == global::System.IntPtr.Zero)
+				global::android.graphics.Shader._getLocalMatrix5800 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "getLocalMatrix", "(Landroid/graphics/Matrix;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._getLocalMatrix5800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Matrix LocalMatrix
@@ -87,12 +95,17 @@ namespace android.graphics
 		internal static global::MonoJavaBridge.MethodId _setLocalMatrix5801;
 		public virtual void setLocalMatrix(android.graphics.Matrix arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.Shader._setLocalMatrix5801.native == global::System.IntPtr.Zero)
+				global::android.graphics.Shader._setLocalMatrix5801 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "setLocalMatrix", "(Landroid/graphics/Matrix;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._setLocalMatrix5801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Shader5802;
 		public Shader() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.Shader._Shader5802.native == global::System.IntPtr.Zero)
+				global::android.graphics.Shader._Shader5802 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Shader.staticClass, global::android.graphics.Shader._Shader5802);
 			Init(@__env, handle);
 		}
@@ -100,10 +113,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Shader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Shader"));
-			global::android.graphics.Shader._finalize5799 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "finalize", "()V");
-			global::android.graphics.Shader._getLocalMatrix5800 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "getLocalMatrix", "(Landroid/graphics/Matrix;)Z");
-			global::android.graphics.Shader._setLocalMatrix5801 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "setLocalMatrix", "(Landroid/graphics/Matrix;)V");
-			global::android.graphics.Shader._Shader5802 = @__env.GetMethodIDNoThrow(global::android.graphics.Shader.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

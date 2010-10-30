@@ -17,13 +17,14 @@ namespace java.security
 		global::java.lang.Object java.security.PrivilegedAction.run()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.PrivilegedAction_._run23247.native == global::System.IntPtr.Zero)
+				global::java.security.PrivilegedAction_._run23247 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedAction_.staticClass, "run", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.PrivilegedAction_._run23247)) as java.lang.Object;
 		}
 		static PrivilegedAction_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PrivilegedAction_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PrivilegedAction"));
-			global::java.security.PrivilegedAction_._run23247 = @__env.GetMethodIDNoThrow(global::java.security.PrivilegedAction_.staticClass, "run", "()Ljava/lang/Object;");
 		}
 		internal static void InitJNI()
 		{

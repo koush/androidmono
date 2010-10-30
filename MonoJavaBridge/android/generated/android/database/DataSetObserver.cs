@@ -10,17 +10,25 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _onChanged4601;
 		public virtual void onChanged()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.DataSetObserver._onChanged4601.native == global::System.IntPtr.Zero)
+				global::android.database.DataSetObserver._onChanged4601 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onChanged", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onChanged4601);
 		}
 		internal static global::MonoJavaBridge.MethodId _onInvalidated4602;
 		public virtual void onInvalidated()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.DataSetObserver._onInvalidated4602.native == global::System.IntPtr.Zero)
+				global::android.database.DataSetObserver._onInvalidated4602 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onInvalidated4602);
 		}
 		internal static global::MonoJavaBridge.MethodId _DataSetObserver4603;
 		public DataSetObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.DataSetObserver._DataSetObserver4603.native == global::System.IntPtr.Zero)
+				global::android.database.DataSetObserver._DataSetObserver4603 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._DataSetObserver4603);
 			Init(@__env, handle);
 		}
@@ -28,9 +36,6 @@ namespace android.database
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.DataSetObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DataSetObserver"));
-			global::android.database.DataSetObserver._onChanged4601 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onChanged", "()V");
-			global::android.database.DataSetObserver._onInvalidated4602 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V");
-			global::android.database.DataSetObserver._DataSetObserver4603 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

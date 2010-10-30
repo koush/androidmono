@@ -11,6 +11,8 @@ namespace org.apache.http
 		public HttpException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HttpException._HttpException31572.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HttpException._HttpException31572 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.HttpException.staticClass, global::org.apache.http.HttpException._HttpException31572);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace org.apache.http
 		public HttpException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HttpException._HttpException31573.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HttpException._HttpException31573 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.HttpException.staticClass, global::org.apache.http.HttpException._HttpException31573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace org.apache.http
 		public HttpException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HttpException._HttpException31574.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HttpException._HttpException31574 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.HttpException.staticClass, global::org.apache.http.HttpException._HttpException31574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,9 +38,6 @@ namespace org.apache.http
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpException"));
-			global::org.apache.http.HttpException._HttpException31572 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "()V");
-			global::org.apache.http.HttpException._HttpException31573 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.apache.http.HttpException._HttpException31574 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -10,6 +10,9 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getSize13473;
 		public override int getSize(android.graphics.Paint arg0, java.lang.CharSequence arg1, int arg2, int arg3, android.graphics.Paint.FontMetricsInt arg4)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan._getSize13473.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan._getSize13473 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "getSize", "(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._getSize13473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public int getSize(android.graphics.Paint arg0, string arg1, int arg2, int arg3, android.graphics.Paint.FontMetricsInt arg4)
@@ -21,6 +24,9 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _draw13475;
 		public override void draw(android.graphics.Canvas arg0, java.lang.CharSequence arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, android.graphics.Paint arg8)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan._draw13475.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan._draw13475 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "draw", "(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._draw13475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 		}
 		public void draw(android.graphics.Canvas arg0, string arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, android.graphics.Paint arg8)
@@ -30,12 +36,17 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getVerticalAlignment13476;
 		public virtual int getVerticalAlignment()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan._getVerticalAlignment13476.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan._getVerticalAlignment13476 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "getVerticalAlignment", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._getVerticalAlignment13476);
 		}
 		internal static global::MonoJavaBridge.MethodId _DynamicDrawableSpan13477;
 		public DynamicDrawableSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13477.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13477 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13477);
 			Init(@__env, handle);
 		}
@@ -43,6 +54,8 @@ namespace android.text.style
 		protected DynamicDrawableSpan(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13478.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13478 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -64,12 +77,6 @@ namespace android.text.style
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
-			global::android.text.style.DynamicDrawableSpan._getSize13473 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "getSize", "(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I");
-			global::android.text.style.DynamicDrawableSpan._getDrawable13474 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.text.style.DynamicDrawableSpan._draw13475 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "draw", "(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V");
-			global::android.text.style.DynamicDrawableSpan._getVerticalAlignment13476 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "getVerticalAlignment", "()I");
-			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13477 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "()V");
-			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan13478 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "(I)V");
 		}
 		internal static void InitJNI()
 		{
@@ -87,13 +94,14 @@ namespace android.text.style
 		public override global::android.graphics.drawable.Drawable getDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.DynamicDrawableSpan_._getDrawable13481.native == global::System.IntPtr.Zero)
+				global::android.text.style.DynamicDrawableSpan_._getDrawable13481 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan_.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.DynamicDrawableSpan_._getDrawable13481)) as android.graphics.drawable.Drawable;
 		}
 		static DynamicDrawableSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
-			global::android.text.style.DynamicDrawableSpan_._getDrawable13481 = @__env.GetMethodIDNoThrow(global::android.text.style.DynamicDrawableSpan_.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
 		}
 		internal static void InitJNI()
 		{

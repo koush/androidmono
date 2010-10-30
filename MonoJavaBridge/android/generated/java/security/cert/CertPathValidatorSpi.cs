@@ -13,6 +13,8 @@ namespace java.security.cert
 		public CertPathValidatorSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathValidatorSpi._CertPathValidatorSpi23530.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathValidatorSpi._CertPathValidatorSpi23530 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorSpi.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathValidatorSpi.staticClass, global::java.security.cert.CertPathValidatorSpi._CertPathValidatorSpi23530);
 			Init(@__env, handle);
 		}
@@ -20,8 +22,6 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathValidatorSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathValidatorSpi"));
-			global::java.security.cert.CertPathValidatorSpi._engineValidate23529 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorSpi.staticClass, "engineValidate", "(Ljava/security/cert/CertPath;Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathValidatorResult;");
-			global::java.security.cert.CertPathValidatorSpi._CertPathValidatorSpi23530 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorSpi.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -39,13 +39,14 @@ namespace java.security.cert
 		public override global::java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathValidatorSpi_._engineValidate23531.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathValidatorSpi_._engineValidate23531 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorSpi_.staticClass, "engineValidate", "(Ljava/security/cert/CertPath;Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathValidatorResult;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.CertPathValidatorResult>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorSpi_._engineValidate23531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertPathValidatorResult;
 		}
 		static CertPathValidatorSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathValidatorSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathValidatorSpi"));
-			global::java.security.cert.CertPathValidatorSpi_._engineValidate23531 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorSpi_.staticClass, "engineValidate", "(Ljava/security/cert/CertPath;Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathValidatorResult;");
 		}
 		internal static void InitJNI()
 		{

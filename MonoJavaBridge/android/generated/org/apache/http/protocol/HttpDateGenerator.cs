@@ -17,12 +17,17 @@ namespace org.apache.http.protocol
 		internal static global::MonoJavaBridge.MethodId _getCurrentDate33889;
 		public virtual global::java.lang.String getCurrentDate()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "getCurrentDate", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDateGenerator33890;
 		public HttpDateGenerator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33890.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33890 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33890);
 			Init(@__env, handle);
 		}
@@ -46,8 +51,6 @@ namespace org.apache.http.protocol
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpDateGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpDateGenerator"));
-			global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33889 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "getCurrentDate", "()Ljava/lang/String;");
-			global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33890 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "<init>", "()V");
 			global::org.apache.http.protocol.HttpDateGenerator._GMT33892 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "GMT", "Ljava/util/TimeZone;");
 		}
 		internal static void InitJNI()

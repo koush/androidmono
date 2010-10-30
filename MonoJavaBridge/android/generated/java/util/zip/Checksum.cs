@@ -20,34 +20,38 @@ namespace java.util.zip
 		long java.util.zip.Checksum.getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.zip.Checksum_._getValue28348.native == global::System.IntPtr.Zero)
+				global::java.util.zip.Checksum_._getValue28348 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "getValue", "()J");
 			return @__env.CallLongMethod(this.JvmHandle, global::java.util.zip.Checksum_._getValue28348);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28349;
 		void java.util.zip.Checksum.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.zip.Checksum_._reset28349.native == global::System.IntPtr.Zero)
+				global::java.util.zip.Checksum_._reset28349 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "reset", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_._reset28349);
 		}
 		internal static global::MonoJavaBridge.MethodId _update28350;
 		void java.util.zip.Checksum.update(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.zip.Checksum_._update28350.native == global::System.IntPtr.Zero)
+				global::java.util.zip.Checksum_._update28350 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "(I)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_._update28350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28351;
 		void java.util.zip.Checksum.update(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.zip.Checksum_._update28351.native == global::System.IntPtr.Zero)
+				global::java.util.zip.Checksum_._update28351 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "([BII)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_._update28351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static Checksum_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.zip.Checksum_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/zip/Checksum"));
-			global::java.util.zip.Checksum_._getValue28348 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "getValue", "()J");
-			global::java.util.zip.Checksum_._reset28349 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "reset", "()V");
-			global::java.util.zip.Checksum_._update28350 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "(I)V");
-			global::java.util.zip.Checksum_._update28351 = @__env.GetMethodIDNoThrow(global::java.util.zip.Checksum_.staticClass, "update", "([BII)V");
 		}
 		internal static void InitJNI()
 		{

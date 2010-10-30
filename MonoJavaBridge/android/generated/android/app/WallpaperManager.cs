@@ -10,12 +10,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _clear2212;
 		public virtual void clear()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._clear2212.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._clear2212 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "clear", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._clear2212);
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance2213;
 		public static global::android.app.WallpaperManager getInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getInstance2213.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getInstance2213 = @__env.GetStaticMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/app/WallpaperManager;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getInstance2213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.WallpaperManager;
 		}
 		public new global::android.graphics.drawable.Drawable Drawable
@@ -28,7 +33,10 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getDrawable2214;
 		public virtual global::android.graphics.drawable.Drawable getDrawable()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDrawable2214)) as android.graphics.drawable.Drawable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getDrawable2214.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getDrawable2214 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDrawable2214) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.graphics.Bitmap Bitmap
 		{
@@ -40,12 +48,18 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setBitmap2215;
 		public virtual void setBitmap(android.graphics.Bitmap arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._setBitmap2215.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._setBitmap2215 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setBitmap", "(Landroid/graphics/Bitmap;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setBitmap2215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _peekDrawable2216;
 		public virtual global::android.graphics.drawable.Drawable peekDrawable()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekDrawable2216)) as android.graphics.drawable.Drawable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._peekDrawable2216.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._peekDrawable2216 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "peekDrawable", "()Landroid/graphics/drawable/Drawable;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekDrawable2216) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.graphics.drawable.Drawable FastDrawable
 		{
@@ -57,12 +71,18 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getFastDrawable2217;
 		public virtual global::android.graphics.drawable.Drawable getFastDrawable()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getFastDrawable2217)) as android.graphics.drawable.Drawable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getFastDrawable2217.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getFastDrawable2217 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getFastDrawable", "()Landroid/graphics/drawable/Drawable;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getFastDrawable2217) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _peekFastDrawable2218;
 		public virtual global::android.graphics.drawable.Drawable peekFastDrawable()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekFastDrawable2218)) as android.graphics.drawable.Drawable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._peekFastDrawable2218.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._peekFastDrawable2218 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "peekFastDrawable", "()Landroid/graphics/drawable/Drawable;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekFastDrawable2218) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.app.WallpaperInfo WallpaperInfo
 		{
@@ -74,7 +94,10 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getWallpaperInfo2219;
 		public virtual global::android.app.WallpaperInfo getWallpaperInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.WallpaperInfo>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo2219)) as android.app.WallpaperInfo;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getWallpaperInfo2219.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getWallpaperInfo2219 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getWallpaperInfo", "()Landroid/app/WallpaperInfo;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.app.WallpaperInfo>(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo2219) as android.app.WallpaperInfo;
 		}
 		public new int Resource
 		{
@@ -86,6 +109,9 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setResource2220;
 		public virtual void setResource(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._setResource2220.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._setResource2220 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setResource", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setResource2220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.io.InputStream Stream
@@ -98,6 +124,9 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _setStream2221;
 		public virtual void setStream(java.io.InputStream arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._setStream2221.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._setStream2221 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setStream", "(Ljava/io/InputStream;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setStream2221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DesiredMinimumWidth
@@ -110,6 +139,9 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumWidth2222;
 		public virtual int getDesiredMinimumWidth()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getDesiredMinimumWidth2222.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getDesiredMinimumWidth2222 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDesiredMinimumWidth", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumWidth2222);
 		}
 		public new int DesiredMinimumHeight
@@ -122,31 +154,49 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumHeight2223;
 		public virtual int getDesiredMinimumHeight()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._getDesiredMinimumHeight2223.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._getDesiredMinimumHeight2223 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDesiredMinimumHeight", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumHeight2223);
 		}
 		internal static global::MonoJavaBridge.MethodId _suggestDesiredDimensions2224;
 		public virtual void suggestDesiredDimensions(int arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._suggestDesiredDimensions2224.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._suggestDesiredDimensions2224 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "suggestDesiredDimensions", "(II)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._suggestDesiredDimensions2224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWallpaperOffsets2225;
 		public virtual void setWallpaperOffsets(android.os.IBinder arg0, float arg1, float arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._setWallpaperOffsets2225.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._setWallpaperOffsets2225 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setWallpaperOffsets", "(Landroid/os/IBinder;FF)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsets2225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWallpaperOffsetSteps2226;
 		public virtual void setWallpaperOffsetSteps(float arg0, float arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._setWallpaperOffsetSteps2226.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._setWallpaperOffsetSteps2226 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setWallpaperOffsetSteps", "(FF)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsetSteps2226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _sendWallpaperCommand2227;
 		public virtual void sendWallpaperCommand(android.os.IBinder arg0, java.lang.String arg1, int arg2, int arg3, int arg4, android.os.Bundle arg5)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._sendWallpaperCommand2227.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._sendWallpaperCommand2227 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "sendWallpaperCommand", "(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._sendWallpaperCommand2227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearWallpaperOffsets2228;
 		public virtual void clearWallpaperOffsets(android.os.IBinder arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.WallpaperManager._clearWallpaperOffsets2228.native == global::System.IntPtr.Zero)
+				global::android.app.WallpaperManager._clearWallpaperOffsets2228 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "clearWallpaperOffsets", "(Landroid/os/IBinder;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._clearWallpaperOffsets2228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String ACTION_LIVE_WALLPAPER_CHOOSER
@@ -174,23 +224,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.WallpaperManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/WallpaperManager"));
-			global::android.app.WallpaperManager._clear2212 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "clear", "()V");
-			global::android.app.WallpaperManager._getInstance2213 = @__env.GetStaticMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/app/WallpaperManager;");
-			global::android.app.WallpaperManager._getDrawable2214 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.app.WallpaperManager._setBitmap2215 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setBitmap", "(Landroid/graphics/Bitmap;)V");
-			global::android.app.WallpaperManager._peekDrawable2216 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "peekDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.app.WallpaperManager._getFastDrawable2217 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getFastDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.app.WallpaperManager._peekFastDrawable2218 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "peekFastDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.app.WallpaperManager._getWallpaperInfo2219 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getWallpaperInfo", "()Landroid/app/WallpaperInfo;");
-			global::android.app.WallpaperManager._setResource2220 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setResource", "(I)V");
-			global::android.app.WallpaperManager._setStream2221 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setStream", "(Ljava/io/InputStream;)V");
-			global::android.app.WallpaperManager._getDesiredMinimumWidth2222 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDesiredMinimumWidth", "()I");
-			global::android.app.WallpaperManager._getDesiredMinimumHeight2223 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "getDesiredMinimumHeight", "()I");
-			global::android.app.WallpaperManager._suggestDesiredDimensions2224 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "suggestDesiredDimensions", "(II)V");
-			global::android.app.WallpaperManager._setWallpaperOffsets2225 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setWallpaperOffsets", "(Landroid/os/IBinder;FF)V");
-			global::android.app.WallpaperManager._setWallpaperOffsetSteps2226 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "setWallpaperOffsetSteps", "(FF)V");
-			global::android.app.WallpaperManager._sendWallpaperCommand2227 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "sendWallpaperCommand", "(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)V");
-			global::android.app.WallpaperManager._clearWallpaperOffsets2228 = @__env.GetMethodIDNoThrow(global::android.app.WallpaperManager.staticClass, "clearWallpaperOffsets", "(Landroid/os/IBinder;)V");
 		}
 		internal static void InitJNI()
 		{

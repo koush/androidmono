@@ -10,11 +10,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _enableCarMode2182;
 		public virtual void enableCarMode(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.UiModeManager._enableCarMode2182.native == global::System.IntPtr.Zero)
+				global::android.app.UiModeManager._enableCarMode2182 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "enableCarMode", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._enableCarMode2182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _disableCarMode2183;
 		public virtual void disableCarMode(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.UiModeManager._disableCarMode2183.native == global::System.IntPtr.Zero)
+				global::android.app.UiModeManager._disableCarMode2183 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "disableCarMode", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._disableCarMode2183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int CurrentModeType
@@ -27,11 +33,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getCurrentModeType2184;
 		public virtual int getCurrentModeType()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.UiModeManager._getCurrentModeType2184.native == global::System.IntPtr.Zero)
+				global::android.app.UiModeManager._getCurrentModeType2184 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "getCurrentModeType", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getCurrentModeType2184);
 		}
 		internal static global::MonoJavaBridge.MethodId _setNightMode2185;
 		public virtual void setNightMode(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.UiModeManager._setNightMode2185.native == global::System.IntPtr.Zero)
+				global::android.app.UiModeManager._setNightMode2185 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "setNightMode", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._setNightMode2185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int NightMode
@@ -48,6 +60,9 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getNightMode2186;
 		public virtual int getNightMode()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.UiModeManager._getNightMode2186.native == global::System.IntPtr.Zero)
+				global::android.app.UiModeManager._getNightMode2186 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "getNightMode", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getNightMode2186);
 		}
 		internal static global::MonoJavaBridge.FieldId _ACTION_ENTER_CAR_MODE2187;
@@ -137,11 +152,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.UiModeManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/UiModeManager"));
-			global::android.app.UiModeManager._enableCarMode2182 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "enableCarMode", "(I)V");
-			global::android.app.UiModeManager._disableCarMode2183 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "disableCarMode", "(I)V");
-			global::android.app.UiModeManager._getCurrentModeType2184 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "getCurrentModeType", "()I");
-			global::android.app.UiModeManager._setNightMode2185 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "setNightMode", "(I)V");
-			global::android.app.UiModeManager._getNightMode2186 = @__env.GetMethodIDNoThrow(global::android.app.UiModeManager.staticClass, "getNightMode", "()I");
 			global::android.app.UiModeManager._ACTION_ENTER_CAR_MODE2187 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_ENTER_CAR_MODE", "Ljava/lang/String;");
 			global::android.app.UiModeManager._ACTION_EXIT_CAR_MODE2188 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_EXIT_CAR_MODE", "Ljava/lang/String;");
 			global::android.app.UiModeManager._ACTION_ENTER_DESK_MODE2189 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_ENTER_DESK_MODE", "Ljava/lang/String;");

@@ -17,13 +17,14 @@ namespace javax.crypto.interfaces
 		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.interfaces.DHKey_._getParams28736.native == global::System.IntPtr.Zero)
+				global::javax.crypto.interfaces.DHKey_._getParams28736 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
 		}
 		static DHKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.DHKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/DHKey"));
-			global::javax.crypto.interfaces.DHKey_._getParams28736 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
 		}
 		internal static void InitJNI()
 		{

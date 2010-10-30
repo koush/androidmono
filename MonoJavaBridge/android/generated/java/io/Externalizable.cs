@@ -18,20 +18,22 @@ namespace java.io
 		void java.io.Externalizable.writeExternal(java.io.ObjectOutput arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.Externalizable_._writeExternal18950.native == global::System.IntPtr.Zero)
+				global::java.io.Externalizable_._writeExternal18950 = @__env.GetMethodIDNoThrow(global::java.io.Externalizable_.staticClass, "writeExternal", "(Ljava/io/ObjectOutput;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Externalizable_._writeExternal18950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readExternal18951;
 		void java.io.Externalizable.readExternal(java.io.ObjectInput arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.Externalizable_._readExternal18951.native == global::System.IntPtr.Zero)
+				global::java.io.Externalizable_._readExternal18951 = @__env.GetMethodIDNoThrow(global::java.io.Externalizable_.staticClass, "readExternal", "(Ljava/io/ObjectInput;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Externalizable_._readExternal18951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Externalizable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Externalizable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Externalizable"));
-			global::java.io.Externalizable_._writeExternal18950 = @__env.GetMethodIDNoThrow(global::java.io.Externalizable_.staticClass, "writeExternal", "(Ljava/io/ObjectOutput;)V");
-			global::java.io.Externalizable_._readExternal18951 = @__env.GetMethodIDNoThrow(global::java.io.Externalizable_.staticClass, "readExternal", "(Ljava/io/ObjectInput;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -17,27 +17,41 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _resetAndStart9696;
 			public virtual bool resetAndStart()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.InstructionCount._resetAndStart9696.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.InstructionCount._resetAndStart9696 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "resetAndStart", "()Z");
 				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._resetAndStart9696);
 			}
 			internal static global::MonoJavaBridge.MethodId _collect9697;
 			public virtual bool collect()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.InstructionCount._collect9697.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.InstructionCount._collect9697 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "collect", "()Z");
 				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._collect9697);
 			}
 			internal static global::MonoJavaBridge.MethodId _globalTotal9698;
 			public virtual int globalTotal()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.InstructionCount._globalTotal9698.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.InstructionCount._globalTotal9698 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "globalTotal", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalTotal9698);
 			}
 			internal static global::MonoJavaBridge.MethodId _globalMethodInvocations9699;
 			public virtual int globalMethodInvocations()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.InstructionCount._globalMethodInvocations9699.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.InstructionCount._globalMethodInvocations9699 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "globalMethodInvocations", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalMethodInvocations9699);
 			}
 			internal static global::MonoJavaBridge.MethodId _InstructionCount9700;
 			public InstructionCount() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.InstructionCount._InstructionCount9700.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.InstructionCount._InstructionCount9700 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._InstructionCount9700);
 				Init(@__env, handle);
 			}
@@ -45,11 +59,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Debug.InstructionCount.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug$InstructionCount"));
-				global::android.os.Debug.InstructionCount._resetAndStart9696 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "resetAndStart", "()Z");
-				global::android.os.Debug.InstructionCount._collect9697 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "collect", "()Z");
-				global::android.os.Debug.InstructionCount._globalTotal9698 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "globalTotal", "()I");
-				global::android.os.Debug.InstructionCount._globalMethodInvocations9699 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "globalMethodInvocations", "()I");
-				global::android.os.Debug.InstructionCount._InstructionCount9700 = @__env.GetMethodIDNoThrow(global::android.os.Debug.InstructionCount.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -65,16 +74,25 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _writeToParcel9701;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._writeToParcel9701.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._writeToParcel9701 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._writeToParcel9701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents9702;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._describeContents9702.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._describeContents9702 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._describeContents9702);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel9703;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._readFromParcel9703.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._readFromParcel9703 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._readFromParcel9703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int TotalPss
@@ -87,6 +105,9 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalPss9704;
 			public virtual int getTotalPss()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._getTotalPss9704.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._getTotalPss9704 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalPss", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPss9704);
 			}
 			public new int TotalPrivateDirty
@@ -99,6 +120,9 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalPrivateDirty9705;
 			public virtual int getTotalPrivateDirty()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalPrivateDirty", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705);
 			}
 			public new int TotalSharedDirty
@@ -111,12 +135,17 @@ namespace android.os
 			internal static global::MonoJavaBridge.MethodId _getTotalSharedDirty9706;
 			public virtual int getTotalSharedDirty()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalSharedDirty", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706);
 			}
 			internal static global::MonoJavaBridge.MethodId _MemoryInfo9707;
 			public MemoryInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Debug.MemoryInfo._MemoryInfo9707.native == global::System.IntPtr.Zero)
+					global::android.os.Debug.MemoryInfo._MemoryInfo9707 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._MemoryInfo9707);
 				Init(@__env, handle);
 			}
@@ -241,13 +270,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Debug.MemoryInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug$MemoryInfo"));
-				global::android.os.Debug.MemoryInfo._writeToParcel9701 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.os.Debug.MemoryInfo._describeContents9702 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "describeContents", "()I");
-				global::android.os.Debug.MemoryInfo._readFromParcel9703 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.os.Debug.MemoryInfo._getTotalPss9704 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalPss", "()I");
-				global::android.os.Debug.MemoryInfo._getTotalPrivateDirty9705 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalPrivateDirty", "()I");
-				global::android.os.Debug.MemoryInfo._getTotalSharedDirty9706 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "getTotalSharedDirty", "()I");
-				global::android.os.Debug.MemoryInfo._MemoryInfo9707 = @__env.GetMethodIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "<init>", "()V");
 				global::android.os.Debug.MemoryInfo._dalvikPss9708 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "dalvikPss", "I");
 				global::android.os.Debug.MemoryInfo._dalvikPrivateDirty9709 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "dalvikPrivateDirty", "I");
 				global::android.os.Debug.MemoryInfo._dalvikSharedDirty9710 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "dalvikSharedDirty", "I");
@@ -267,96 +289,128 @@ namespace android.os
 		public static void getMemoryInfo(android.os.Debug.MemoryInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getMemoryInfo9718.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getMemoryInfo9718 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getMemoryInfo", "(Landroid/os/Debug$MemoryInfo;)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._getMemoryInfo9718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _waitForDebugger9719;
 		public static void waitForDebugger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._waitForDebugger9719.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._waitForDebugger9719 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "waitForDebugger", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._waitForDebugger9719);
 		}
 		internal static global::MonoJavaBridge.MethodId _waitingForDebugger9720;
 		public static bool waitingForDebugger()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._waitingForDebugger9720.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._waitingForDebugger9720 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "waitingForDebugger", "()Z");
 			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, global::android.os.Debug._waitingForDebugger9720);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDebuggerConnected9721;
 		public static bool isDebuggerConnected()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._isDebuggerConnected9721.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._isDebuggerConnected9721 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "isDebuggerConnected", "()Z");
 			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, global::android.os.Debug._isDebuggerConnected9721);
 		}
 		internal static global::MonoJavaBridge.MethodId _changeDebugPort9722;
 		public static void changeDebugPort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._changeDebugPort9722.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._changeDebugPort9722 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "changeDebugPort", "(I)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._changeDebugPort9722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startNativeTracing9723;
 		public static void startNativeTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startNativeTracing9723.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startNativeTracing9723 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startNativeTracing", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startNativeTracing9723);
 		}
 		internal static global::MonoJavaBridge.MethodId _stopNativeTracing9724;
 		public static void stopNativeTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._stopNativeTracing9724.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._stopNativeTracing9724 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopNativeTracing", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopNativeTracing9724);
 		}
 		internal static global::MonoJavaBridge.MethodId _enableEmulatorTraceOutput9725;
 		public static void enableEmulatorTraceOutput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._enableEmulatorTraceOutput9725.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._enableEmulatorTraceOutput9725 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "enableEmulatorTraceOutput", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._enableEmulatorTraceOutput9725);
 		}
 		internal static global::MonoJavaBridge.MethodId _startMethodTracing9726;
 		public static void startMethodTracing(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startMethodTracing9726.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startMethodTracing9726 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing9726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startMethodTracing9727;
 		public static void startMethodTracing(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startMethodTracing9727.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startMethodTracing9727 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;I)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing9727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _startMethodTracing9728;
 		public static void startMethodTracing(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startMethodTracing9728.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startMethodTracing9728 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;II)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing9728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _startMethodTracing9729;
 		public static void startMethodTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startMethodTracing9729.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startMethodTracing9729 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing9729);
 		}
 		internal static global::MonoJavaBridge.MethodId _stopMethodTracing9730;
 		public static void stopMethodTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._stopMethodTracing9730.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._stopMethodTracing9730 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopMethodTracing", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopMethodTracing9730);
 		}
 		internal static global::MonoJavaBridge.MethodId _threadCpuTimeNanos9731;
 		public static long threadCpuTimeNanos()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._threadCpuTimeNanos9731.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._threadCpuTimeNanos9731 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "threadCpuTimeNanos", "()J");
 			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._threadCpuTimeNanos9731);
 		}
 		internal static global::MonoJavaBridge.MethodId _startAllocCounting9732;
 		public static void startAllocCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._startAllocCounting9732.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._startAllocCounting9732 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startAllocCounting", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startAllocCounting9732);
 		}
 		internal static global::MonoJavaBridge.MethodId _stopAllocCounting9733;
 		public static void stopAllocCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._stopAllocCounting9733.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._stopAllocCounting9733 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopAllocCounting", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopAllocCounting9733);
 		}
 		public static int GlobalAllocCount
@@ -370,6 +424,8 @@ namespace android.os
 		public static int getGlobalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalAllocCount9734.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalAllocCount9734 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalAllocCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalAllocCount9734);
 		}
 		public static int GlobalAllocSize
@@ -383,6 +439,8 @@ namespace android.os
 		public static int getGlobalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalAllocSize9735.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalAllocSize9735 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalAllocSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalAllocSize9735);
 		}
 		public static int GlobalFreedCount
@@ -396,6 +454,8 @@ namespace android.os
 		public static int getGlobalFreedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalFreedCount9736.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalFreedCount9736 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalFreedCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalFreedCount9736);
 		}
 		public static int GlobalFreedSize
@@ -409,6 +469,8 @@ namespace android.os
 		public static int getGlobalFreedSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalFreedSize9737.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalFreedSize9737 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalFreedSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalFreedSize9737);
 		}
 		public static int GlobalClassInitCount
@@ -422,6 +484,8 @@ namespace android.os
 		public static int getGlobalClassInitCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalClassInitCount9738.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalClassInitCount9738 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalClassInitCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalClassInitCount9738);
 		}
 		public static int GlobalClassInitTime
@@ -435,6 +499,8 @@ namespace android.os
 		public static int getGlobalClassInitTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalClassInitTime9739.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalClassInitTime9739 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalClassInitTime", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalClassInitTime9739);
 		}
 		public static int GlobalExternalAllocCount
@@ -448,6 +514,8 @@ namespace android.os
 		public static int getGlobalExternalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalExternalAllocCount9740.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalExternalAllocCount9740 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalAllocCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalAllocCount9740);
 		}
 		public static int GlobalExternalAllocSize
@@ -461,6 +529,8 @@ namespace android.os
 		public static int getGlobalExternalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalExternalAllocSize9741.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalExternalAllocSize9741 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalAllocSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalAllocSize9741);
 		}
 		public static int GlobalExternalFreedCount
@@ -474,6 +544,8 @@ namespace android.os
 		public static int getGlobalExternalFreedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalExternalFreedCount9742.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalExternalFreedCount9742 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalFreedCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalFreedCount9742);
 		}
 		public static int GlobalExternalFreedSize
@@ -487,6 +559,8 @@ namespace android.os
 		public static int getGlobalExternalFreedSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalExternalFreedSize9743.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalExternalFreedSize9743 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalFreedSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalFreedSize9743);
 		}
 		public static int GlobalGcInvocationCount
@@ -500,6 +574,8 @@ namespace android.os
 		public static int getGlobalGcInvocationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getGlobalGcInvocationCount9744.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getGlobalGcInvocationCount9744 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalGcInvocationCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalGcInvocationCount9744);
 		}
 		public static int ThreadAllocCount
@@ -513,6 +589,8 @@ namespace android.os
 		public static int getThreadAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getThreadAllocCount9745.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getThreadAllocCount9745 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadAllocCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadAllocCount9745);
 		}
 		public static int ThreadAllocSize
@@ -526,6 +604,8 @@ namespace android.os
 		public static int getThreadAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getThreadAllocSize9746.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getThreadAllocSize9746 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadAllocSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadAllocSize9746);
 		}
 		public static int ThreadExternalAllocCount
@@ -539,6 +619,8 @@ namespace android.os
 		public static int getThreadExternalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getThreadExternalAllocCount9747.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getThreadExternalAllocCount9747 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadExternalAllocCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadExternalAllocCount9747);
 		}
 		public static int ThreadExternalAllocSize
@@ -552,6 +634,8 @@ namespace android.os
 		public static int getThreadExternalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getThreadExternalAllocSize9748.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getThreadExternalAllocSize9748 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadExternalAllocSize", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadExternalAllocSize9748);
 		}
 		public static int ThreadGcInvocationCount
@@ -565,108 +649,144 @@ namespace android.os
 		public static int getThreadGcInvocationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getThreadGcInvocationCount9749.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getThreadGcInvocationCount9749 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadGcInvocationCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadGcInvocationCount9749);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalAllocCount9750;
 		public static void resetGlobalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalAllocCount9750.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalAllocCount9750 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalAllocCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalAllocCount9750);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalAllocSize9751;
 		public static void resetGlobalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalAllocSize9751.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalAllocSize9751 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalAllocSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalAllocSize9751);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalFreedCount9752;
 		public static void resetGlobalFreedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalFreedCount9752.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalFreedCount9752 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalFreedCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalFreedCount9752);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalFreedSize9753;
 		public static void resetGlobalFreedSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalFreedSize9753.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalFreedSize9753 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalFreedSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalFreedSize9753);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalClassInitCount9754;
 		public static void resetGlobalClassInitCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalClassInitCount9754.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalClassInitCount9754 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalClassInitCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalClassInitCount9754);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalClassInitTime9755;
 		public static void resetGlobalClassInitTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalClassInitTime9755.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalClassInitTime9755 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalClassInitTime", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalClassInitTime9755);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalExternalAllocCount9756;
 		public static void resetGlobalExternalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalExternalAllocCount9756.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalExternalAllocCount9756 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalAllocCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalAllocCount9756);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalExternalAllocSize9757;
 		public static void resetGlobalExternalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalExternalAllocSize9757.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalExternalAllocSize9757 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalAllocSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalAllocSize9757);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalExternalFreedCount9758;
 		public static void resetGlobalExternalFreedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalExternalFreedCount9758.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalExternalFreedCount9758 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalFreedCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalFreedCount9758);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalExternalFreedSize9759;
 		public static void resetGlobalExternalFreedSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalExternalFreedSize9759.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalExternalFreedSize9759 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalFreedSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalFreedSize9759);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetGlobalGcInvocationCount9760;
 		public static void resetGlobalGcInvocationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetGlobalGcInvocationCount9760.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetGlobalGcInvocationCount9760 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalGcInvocationCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalGcInvocationCount9760);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetThreadAllocCount9761;
 		public static void resetThreadAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetThreadAllocCount9761.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetThreadAllocCount9761 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadAllocCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadAllocCount9761);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetThreadAllocSize9762;
 		public static void resetThreadAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetThreadAllocSize9762.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetThreadAllocSize9762 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadAllocSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadAllocSize9762);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetThreadExternalAllocCount9763;
 		public static void resetThreadExternalAllocCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetThreadExternalAllocCount9763.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetThreadExternalAllocCount9763 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadExternalAllocCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadExternalAllocCount9763);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetThreadExternalAllocSize9764;
 		public static void resetThreadExternalAllocSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetThreadExternalAllocSize9764.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetThreadExternalAllocSize9764 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadExternalAllocSize", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadExternalAllocSize9764);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetThreadGcInvocationCount9765;
 		public static void resetThreadGcInvocationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetThreadGcInvocationCount9765.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetThreadGcInvocationCount9765 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadGcInvocationCount", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadGcInvocationCount9765);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetAllCounts9766;
 		public static void resetAllCounts()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._resetAllCounts9766.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._resetAllCounts9766 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetAllCounts", "()V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetAllCounts9766);
 		}
 		public static long NativeHeapSize
@@ -680,6 +800,8 @@ namespace android.os
 		public static long getNativeHeapSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getNativeHeapSize9767.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getNativeHeapSize9767 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapSize", "()J");
 			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapSize9767);
 		}
 		public static long NativeHeapAllocatedSize
@@ -693,6 +815,8 @@ namespace android.os
 		public static long getNativeHeapAllocatedSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getNativeHeapAllocatedSize9768.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getNativeHeapAllocatedSize9768 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapAllocatedSize", "()J");
 			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapAllocatedSize9768);
 		}
 		public static long NativeHeapFreeSize
@@ -706,6 +830,8 @@ namespace android.os
 		public static long getNativeHeapFreeSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getNativeHeapFreeSize9769.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getNativeHeapFreeSize9769 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapFreeSize", "()J");
 			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapFreeSize9769);
 		}
 		public static int AllocationLimit
@@ -719,6 +845,8 @@ namespace android.os
 		public static int setAllocationLimit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._setAllocationLimit9770.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._setAllocationLimit9770 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "setAllocationLimit", "(I)I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._setAllocationLimit9770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int GlobalAllocationLimit
@@ -732,12 +860,16 @@ namespace android.os
 		public static int setGlobalAllocationLimit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._setGlobalAllocationLimit9771.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._setGlobalAllocationLimit9771 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "setGlobalAllocationLimit", "(I)I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._setGlobalAllocationLimit9771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _printLoadedClasses9772;
 		public static void printLoadedClasses(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._printLoadedClasses9772.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._printLoadedClasses9772 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "printLoadedClasses", "(I)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._printLoadedClasses9772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int LoadedClassCount
@@ -751,12 +883,16 @@ namespace android.os
 		public static int getLoadedClassCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getLoadedClassCount9773.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getLoadedClassCount9773 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getLoadedClassCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getLoadedClassCount9773);
 		}
 		internal static global::MonoJavaBridge.MethodId _dumpHprofData9774;
 		public static void dumpHprofData(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._dumpHprofData9774.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._dumpHprofData9774 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "dumpHprofData", "(Ljava/lang/String;)V");
 			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._dumpHprofData9774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int BinderSentTransactions
@@ -770,6 +906,8 @@ namespace android.os
 		public static int getBinderSentTransactions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getBinderSentTransactions9775.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getBinderSentTransactions9775 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderSentTransactions", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderSentTransactions9775);
 		}
 		public static int BinderReceivedTransactions
@@ -783,6 +921,8 @@ namespace android.os
 		public static int getBinderReceivedTransactions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getBinderReceivedTransactions9776.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getBinderReceivedTransactions9776 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderReceivedTransactions", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderReceivedTransactions9776);
 		}
 		public static int BinderLocalObjectCount
@@ -796,6 +936,8 @@ namespace android.os
 		public static int getBinderLocalObjectCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getBinderLocalObjectCount9777.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getBinderLocalObjectCount9777 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderLocalObjectCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderLocalObjectCount9777);
 		}
 		public static int BinderProxyObjectCount
@@ -809,6 +951,8 @@ namespace android.os
 		public static int getBinderProxyObjectCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getBinderProxyObjectCount9778.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getBinderProxyObjectCount9778 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderProxyObjectCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderProxyObjectCount9778);
 		}
 		public static int BinderDeathObjectCount
@@ -822,12 +966,16 @@ namespace android.os
 		public static int getBinderDeathObjectCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._getBinderDeathObjectCount9779.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._getBinderDeathObjectCount9779 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderDeathObjectCount", "()I");
 			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderDeathObjectCount9779);
 		}
 		internal static global::MonoJavaBridge.MethodId _dumpService9780;
 		public static bool dumpService(java.lang.String arg0, java.io.FileDescriptor arg1, java.lang.String[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Debug._dumpService9780.native == global::System.IntPtr.Zero)
+				global::android.os.Debug._dumpService9780 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "dumpService", "(Ljava/lang/String;Ljava/io/FileDescriptor;[Ljava/lang/String;)Z");
 			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, global::android.os.Debug._dumpService9780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int TRACE_COUNT_ALLOCS
@@ -862,69 +1010,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Debug.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug"));
-			global::android.os.Debug._getMemoryInfo9718 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getMemoryInfo", "(Landroid/os/Debug$MemoryInfo;)V");
-			global::android.os.Debug._waitForDebugger9719 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "waitForDebugger", "()V");
-			global::android.os.Debug._waitingForDebugger9720 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "waitingForDebugger", "()Z");
-			global::android.os.Debug._isDebuggerConnected9721 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "isDebuggerConnected", "()Z");
-			global::android.os.Debug._changeDebugPort9722 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "changeDebugPort", "(I)V");
-			global::android.os.Debug._startNativeTracing9723 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startNativeTracing", "()V");
-			global::android.os.Debug._stopNativeTracing9724 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopNativeTracing", "()V");
-			global::android.os.Debug._enableEmulatorTraceOutput9725 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "enableEmulatorTraceOutput", "()V");
-			global::android.os.Debug._startMethodTracing9726 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;)V");
-			global::android.os.Debug._startMethodTracing9727 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;I)V");
-			global::android.os.Debug._startMethodTracing9728 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "(Ljava/lang/String;II)V");
-			global::android.os.Debug._startMethodTracing9729 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startMethodTracing", "()V");
-			global::android.os.Debug._stopMethodTracing9730 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopMethodTracing", "()V");
-			global::android.os.Debug._threadCpuTimeNanos9731 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "threadCpuTimeNanos", "()J");
-			global::android.os.Debug._startAllocCounting9732 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "startAllocCounting", "()V");
-			global::android.os.Debug._stopAllocCounting9733 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "stopAllocCounting", "()V");
-			global::android.os.Debug._getGlobalAllocCount9734 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalAllocCount", "()I");
-			global::android.os.Debug._getGlobalAllocSize9735 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalAllocSize", "()I");
-			global::android.os.Debug._getGlobalFreedCount9736 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalFreedCount", "()I");
-			global::android.os.Debug._getGlobalFreedSize9737 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalFreedSize", "()I");
-			global::android.os.Debug._getGlobalClassInitCount9738 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalClassInitCount", "()I");
-			global::android.os.Debug._getGlobalClassInitTime9739 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalClassInitTime", "()I");
-			global::android.os.Debug._getGlobalExternalAllocCount9740 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalAllocCount", "()I");
-			global::android.os.Debug._getGlobalExternalAllocSize9741 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalAllocSize", "()I");
-			global::android.os.Debug._getGlobalExternalFreedCount9742 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalFreedCount", "()I");
-			global::android.os.Debug._getGlobalExternalFreedSize9743 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalExternalFreedSize", "()I");
-			global::android.os.Debug._getGlobalGcInvocationCount9744 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getGlobalGcInvocationCount", "()I");
-			global::android.os.Debug._getThreadAllocCount9745 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadAllocCount", "()I");
-			global::android.os.Debug._getThreadAllocSize9746 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadAllocSize", "()I");
-			global::android.os.Debug._getThreadExternalAllocCount9747 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadExternalAllocCount", "()I");
-			global::android.os.Debug._getThreadExternalAllocSize9748 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadExternalAllocSize", "()I");
-			global::android.os.Debug._getThreadGcInvocationCount9749 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getThreadGcInvocationCount", "()I");
-			global::android.os.Debug._resetGlobalAllocCount9750 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalAllocCount", "()V");
-			global::android.os.Debug._resetGlobalAllocSize9751 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalAllocSize", "()V");
-			global::android.os.Debug._resetGlobalFreedCount9752 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalFreedCount", "()V");
-			global::android.os.Debug._resetGlobalFreedSize9753 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalFreedSize", "()V");
-			global::android.os.Debug._resetGlobalClassInitCount9754 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalClassInitCount", "()V");
-			global::android.os.Debug._resetGlobalClassInitTime9755 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalClassInitTime", "()V");
-			global::android.os.Debug._resetGlobalExternalAllocCount9756 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalAllocCount", "()V");
-			global::android.os.Debug._resetGlobalExternalAllocSize9757 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalAllocSize", "()V");
-			global::android.os.Debug._resetGlobalExternalFreedCount9758 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalFreedCount", "()V");
-			global::android.os.Debug._resetGlobalExternalFreedSize9759 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalExternalFreedSize", "()V");
-			global::android.os.Debug._resetGlobalGcInvocationCount9760 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetGlobalGcInvocationCount", "()V");
-			global::android.os.Debug._resetThreadAllocCount9761 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadAllocCount", "()V");
-			global::android.os.Debug._resetThreadAllocSize9762 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadAllocSize", "()V");
-			global::android.os.Debug._resetThreadExternalAllocCount9763 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadExternalAllocCount", "()V");
-			global::android.os.Debug._resetThreadExternalAllocSize9764 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadExternalAllocSize", "()V");
-			global::android.os.Debug._resetThreadGcInvocationCount9765 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetThreadGcInvocationCount", "()V");
-			global::android.os.Debug._resetAllCounts9766 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "resetAllCounts", "()V");
-			global::android.os.Debug._getNativeHeapSize9767 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapSize", "()J");
-			global::android.os.Debug._getNativeHeapAllocatedSize9768 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapAllocatedSize", "()J");
-			global::android.os.Debug._getNativeHeapFreeSize9769 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getNativeHeapFreeSize", "()J");
-			global::android.os.Debug._setAllocationLimit9770 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "setAllocationLimit", "(I)I");
-			global::android.os.Debug._setGlobalAllocationLimit9771 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "setGlobalAllocationLimit", "(I)I");
-			global::android.os.Debug._printLoadedClasses9772 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "printLoadedClasses", "(I)V");
-			global::android.os.Debug._getLoadedClassCount9773 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getLoadedClassCount", "()I");
-			global::android.os.Debug._dumpHprofData9774 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "dumpHprofData", "(Ljava/lang/String;)V");
-			global::android.os.Debug._getBinderSentTransactions9775 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderSentTransactions", "()I");
-			global::android.os.Debug._getBinderReceivedTransactions9776 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderReceivedTransactions", "()I");
-			global::android.os.Debug._getBinderLocalObjectCount9777 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderLocalObjectCount", "()I");
-			global::android.os.Debug._getBinderProxyObjectCount9778 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderProxyObjectCount", "()I");
-			global::android.os.Debug._getBinderDeathObjectCount9779 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "getBinderDeathObjectCount", "()I");
-			global::android.os.Debug._dumpService9780 = @__env.GetStaticMethodIDNoThrow(global::android.os.Debug.staticClass, "dumpService", "(Ljava/lang/String;Ljava/io/FileDescriptor;[Ljava/lang/String;)Z");
 		}
 		internal static void InitJNI()
 		{

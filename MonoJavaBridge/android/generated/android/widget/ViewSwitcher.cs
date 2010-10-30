@@ -24,13 +24,14 @@ namespace android.widget
 			global::android.view.View android.widget.ViewSwitcher.ViewFactory.makeView()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.widget.ViewSwitcher.ViewFactory_._makeView18280.native == global::System.IntPtr.Zero)
+					global::android.widget.ViewSwitcher.ViewFactory_._makeView18280 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.ViewFactory_.staticClass, "makeView", "()Landroid/view/View;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ViewSwitcher.ViewFactory_._makeView18280)) as android.view.View;
 			}
 			static ViewFactory_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ViewSwitcher.ViewFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ViewSwitcher$ViewFactory"));
-				global::android.widget.ViewSwitcher.ViewFactory_._makeView18280 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.ViewFactory_.staticClass, "makeView", "()Landroid/view/View;");
 			}
 			internal static void InitJNI()
 			{
@@ -49,6 +50,8 @@ namespace android.widget
 			public ViewFactoryDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper._ViewFactoryDelegateWrapper18281.native == global::System.IntPtr.Zero)
+					global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper._ViewFactoryDelegateWrapper18281 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewSwitcher.ViewFactoryDelegateWrapper.staticClass, global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper._ViewFactoryDelegateWrapper18281);
 				Init(@__env, handle);
 			}
@@ -56,7 +59,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ViewSwitcher_ViewFactoryDelegateWrapper"));
-				global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper._ViewFactoryDelegateWrapper18281 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.ViewFactoryDelegateWrapper.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -80,11 +82,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _reset18282;
 		public virtual void reset()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._reset18282.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._reset18282 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "reset", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset18282);
 		}
 		internal static global::MonoJavaBridge.MethodId _addView18283;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._addView18283.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._addView18283 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView18283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new global::android.widget.ViewSwitcher.ViewFactory Factory
@@ -97,6 +105,9 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setFactory18284;
 		public virtual void setFactory(android.widget.ViewSwitcher.ViewFactory arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._setFactory18284.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._setFactory18284 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "setFactory", "(Landroid/widget/ViewSwitcher$ViewFactory;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory18284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setFactory(global::android.widget.ViewSwitcher.ViewFactoryDelegate arg0)
@@ -113,12 +124,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getNextView18285;
 		public virtual global::android.view.View getNextView()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView18285)) as android.view.View;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._getNextView18285.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._getNextView18285 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "getNextView", "()Landroid/view/View;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView18285) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _ViewSwitcher18286;
 		public ViewSwitcher(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._ViewSwitcher18286.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._ViewSwitcher18286 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher18286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -126,6 +142,8 @@ namespace android.widget
 		public ViewSwitcher(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.ViewSwitcher._ViewSwitcher18287.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewSwitcher._ViewSwitcher18287 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher18287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -133,12 +151,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ViewSwitcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ViewSwitcher"));
-			global::android.widget.ViewSwitcher._reset18282 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "reset", "()V");
-			global::android.widget.ViewSwitcher._addView18283 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
-			global::android.widget.ViewSwitcher._setFactory18284 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "setFactory", "(Landroid/widget/ViewSwitcher$ViewFactory;)V");
-			global::android.widget.ViewSwitcher._getNextView18285 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "getNextView", "()Landroid/view/View;");
-			global::android.widget.ViewSwitcher._ViewSwitcher18286 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.ViewSwitcher._ViewSwitcher18287 = @__env.GetMethodIDNoThrow(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 		internal static void InitJNI()
 		{

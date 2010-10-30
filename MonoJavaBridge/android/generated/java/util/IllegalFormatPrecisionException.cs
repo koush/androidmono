@@ -17,7 +17,10 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26322;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IllegalFormatPrecisionException.staticClass, global::java.util.IllegalFormatPrecisionException._getMessage26322)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatPrecisionException._getMessage26322.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatPrecisionException._getMessage26322 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "getMessage", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatPrecisionException.staticClass, global::java.util.IllegalFormatPrecisionException._getMessage26322) as java.lang.String;
 		}
 		public new int Precision
 		{
@@ -29,12 +32,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getPrecision26323;
 		public virtual int getPrecision()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatPrecisionException._getPrecision26323.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatPrecisionException._getPrecision26323 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "getPrecision", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatPrecisionException.staticClass, global::java.util.IllegalFormatPrecisionException._getPrecision26323);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatPrecisionException26324;
 		public IllegalFormatPrecisionException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatPrecisionException._IllegalFormatPrecisionException26324.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatPrecisionException._IllegalFormatPrecisionException26324 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatPrecisionException.staticClass, global::java.util.IllegalFormatPrecisionException._IllegalFormatPrecisionException26324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -42,9 +50,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatPrecisionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatPrecisionException"));
-			global::java.util.IllegalFormatPrecisionException._getMessage26322 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.IllegalFormatPrecisionException._getPrecision26323 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "getPrecision", "()I");
-			global::java.util.IllegalFormatPrecisionException._IllegalFormatPrecisionException26324 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatPrecisionException.staticClass, "<init>", "(I)V");
 		}
 		internal static void InitJNI()
 		{

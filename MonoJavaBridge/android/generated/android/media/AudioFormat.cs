@@ -11,6 +11,8 @@ namespace android.media
 		public AudioFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.AudioFormat._AudioFormat6994.native == global::System.IntPtr.Zero)
+				global::android.media.AudioFormat._AudioFormat6994 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat6994);
 			Init(@__env, handle);
 		}
@@ -312,7 +314,6 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioFormat"));
-			global::android.media.AudioFormat._AudioFormat6994 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

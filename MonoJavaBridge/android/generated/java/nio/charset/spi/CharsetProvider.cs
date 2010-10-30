@@ -15,6 +15,8 @@ namespace java.nio.charset.spi
 		protected CharsetProvider() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.charset.spi.CharsetProvider._CharsetProvider22825.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.spi.CharsetProvider._CharsetProvider22825 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.spi.CharsetProvider.staticClass, global::java.nio.charset.spi.CharsetProvider._CharsetProvider22825);
 			Init(@__env, handle);
 		}
@@ -22,9 +24,6 @@ namespace java.nio.charset.spi
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.spi.CharsetProvider.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/spi/CharsetProvider"));
-			global::java.nio.charset.spi.CharsetProvider._charsetForName22823 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider.staticClass, "charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;");
-			global::java.nio.charset.spi.CharsetProvider._charsets22824 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider.staticClass, "charsets", "()Ljava/util/Iterator;");
-			global::java.nio.charset.spi.CharsetProvider._CharsetProvider22825 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,20 +41,22 @@ namespace java.nio.charset.spi
 		public override global::java.nio.charset.Charset charsetForName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.charset.spi.CharsetProvider_._charsetForName22826.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.spi.CharsetProvider_._charsetForName22826 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.spi.CharsetProvider_._charsetForName22826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.Charset;
 		}
 		internal static global::MonoJavaBridge.MethodId _charsets22827;
 		public override global::java.util.Iterator charsets()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.charset.spi.CharsetProvider_._charsets22827.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.spi.CharsetProvider_._charsets22827 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsets", "()Ljava/util/Iterator;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.spi.CharsetProvider_._charsets22827)) as java.util.Iterator;
 		}
 		static CharsetProvider_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.spi.CharsetProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/spi/CharsetProvider"));
-			global::java.nio.charset.spi.CharsetProvider_._charsetForName22826 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;");
-			global::java.nio.charset.spi.CharsetProvider_._charsets22827 = @__env.GetMethodIDNoThrow(global::java.nio.charset.spi.CharsetProvider_.staticClass, "charsets", "()Ljava/util/Iterator;");
 		}
 		internal static void InitJNI()
 		{

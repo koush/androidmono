@@ -18,20 +18,22 @@ namespace android.content
 		void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ComponentCallbacks_._onConfigurationChanged2609.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentCallbacks_._onConfigurationChanged2609 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onLowMemory2610;
 		void android.content.ComponentCallbacks.onLowMemory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ComponentCallbacks_._onLowMemory2610.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentCallbacks_._onLowMemory2610 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onLowMemory2610);
 		}
 		static ComponentCallbacks_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ComponentCallbacks_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ComponentCallbacks"));
-			global::android.content.ComponentCallbacks_._onConfigurationChanged2609 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
-			global::android.content.ComponentCallbacks_._onLowMemory2610 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
 		}
 		internal static void InitJNI()
 		{

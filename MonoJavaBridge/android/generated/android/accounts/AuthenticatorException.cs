@@ -11,6 +11,8 @@ namespace android.accounts
 		public AuthenticatorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AuthenticatorException._AuthenticatorException1376.native == global::System.IntPtr.Zero)
+				global::android.accounts.AuthenticatorException._AuthenticatorException1376 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1376);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace android.accounts
 		public AuthenticatorException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AuthenticatorException._AuthenticatorException1377.native == global::System.IntPtr.Zero)
+				global::android.accounts.AuthenticatorException._AuthenticatorException1377 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace android.accounts
 		public AuthenticatorException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AuthenticatorException._AuthenticatorException1378.native == global::System.IntPtr.Zero)
+				global::android.accounts.AuthenticatorException._AuthenticatorException1378 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,6 +38,8 @@ namespace android.accounts
 		public AuthenticatorException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AuthenticatorException._AuthenticatorException1379.native == global::System.IntPtr.Zero)
+				global::android.accounts.AuthenticatorException._AuthenticatorException1379 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -39,10 +47,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AuthenticatorException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AuthenticatorException"));
-			global::android.accounts.AuthenticatorException._AuthenticatorException1376 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "()V");
-			global::android.accounts.AuthenticatorException._AuthenticatorException1377 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.accounts.AuthenticatorException._AuthenticatorException1378 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.accounts.AuthenticatorException._AuthenticatorException1379 = @__env.GetMethodIDNoThrow(global::android.accounts.AuthenticatorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

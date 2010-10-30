@@ -17,13 +17,14 @@ namespace java.io
 		void java.io.Flushable.flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.Flushable_._flush19089.native == global::System.IntPtr.Zero)
+				global::java.io.Flushable_._flush19089 = @__env.GetMethodIDNoThrow(global::java.io.Flushable_.staticClass, "flush", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Flushable_._flush19089);
 		}
 		static Flushable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Flushable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Flushable"));
-			global::java.io.Flushable_._flush19089 = @__env.GetMethodIDNoThrow(global::java.io.Flushable_.staticClass, "flush", "()V");
 		}
 		internal static void InitJNI()
 		{

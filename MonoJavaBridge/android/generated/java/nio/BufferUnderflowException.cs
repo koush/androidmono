@@ -11,6 +11,8 @@ namespace java.nio
 		public BufferUnderflowException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.BufferUnderflowException._BufferUnderflowException22016.native == global::System.IntPtr.Zero)
+				global::java.nio.BufferUnderflowException._BufferUnderflowException22016 = @__env.GetMethodIDNoThrow(global::java.nio.BufferUnderflowException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.BufferUnderflowException.staticClass, global::java.nio.BufferUnderflowException._BufferUnderflowException22016);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.BufferUnderflowException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/BufferUnderflowException"));
-			global::java.nio.BufferUnderflowException._BufferUnderflowException22016 = @__env.GetMethodIDNoThrow(global::java.nio.BufferUnderflowException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

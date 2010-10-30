@@ -17,13 +17,14 @@ namespace android.content
 		void android.content.DialogInterface_OnMultiChoiceClickListener.onClick(android.content.DialogInterface arg0, int arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick3075.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick3075 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;IZ)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick3075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static DialogInterface_OnMultiChoiceClickListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnMultiChoiceClickListener"));
-			global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick3075 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;IZ)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.content
 		public DialogInterface_OnMultiChoiceClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper._DialogInterface_OnMultiChoiceClickListenerDelegateWrapper3076.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper._DialogInterface_OnMultiChoiceClickListenerDelegateWrapper3076 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper._DialogInterface_OnMultiChoiceClickListenerDelegateWrapper3076);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnMultiChoiceClickListenerDelegateWrapper"));
-			global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper._DialogInterface_OnMultiChoiceClickListenerDelegateWrapper3076 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

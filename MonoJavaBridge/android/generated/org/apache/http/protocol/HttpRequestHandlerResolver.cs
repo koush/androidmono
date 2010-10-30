@@ -17,13 +17,14 @@ namespace org.apache.http.protocol
 		global::org.apache.http.protocol.HttpRequestHandler org.apache.http.protocol.HttpRequestHandlerResolver.lookup(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass, "lookup", "(Ljava/lang/String;)Lorg/apache/http/protocol/HttpRequestHandler;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpRequestHandler>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.protocol.HttpRequestHandler;
 		}
 		static HttpRequestHandlerResolver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestHandlerResolver"));
-			global::org.apache.http.protocol.HttpRequestHandlerResolver_._lookup33910 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass, "lookup", "(Ljava/lang/String;)Lorg/apache/http/protocol/HttpRequestHandler;");
 		}
 		internal static void InitJNI()
 		{

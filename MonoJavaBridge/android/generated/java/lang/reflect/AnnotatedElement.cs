@@ -20,34 +20,38 @@ namespace java.lang.reflect
 		global::java.lang.annotation.Annotation java.lang.reflect.AnnotatedElement.getAnnotation(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.AnnotatedElement_._getAnnotation21007.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.AnnotatedElement_._getAnnotation21007 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AnnotatedElement_._getAnnotation21007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 		}
 		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent21008;
 		bool java.lang.reflect.AnnotatedElement.isAnnotationPresent(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.AnnotatedElement_._isAnnotationPresent21008.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.AnnotatedElement_._isAnnotationPresent21008 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.AnnotatedElement_._isAnnotationPresent21008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnnotations21009;
 		global::java.lang.annotation.Annotation[] java.lang.reflect.AnnotatedElement.getAnnotations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.AnnotatedElement_._getAnnotations21009.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.AnnotatedElement_._getAnnotations21009 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AnnotatedElement_._getAnnotations21009)) as java.lang.annotation.Annotation[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21010;
 		global::java.lang.annotation.Annotation[] java.lang.reflect.AnnotatedElement.getDeclaredAnnotations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.AnnotatedElement_._getDeclaredAnnotations21010.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.AnnotatedElement_._getDeclaredAnnotations21010 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AnnotatedElement_._getDeclaredAnnotations21010)) as java.lang.annotation.Annotation[];
 		}
 		static AnnotatedElement_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.AnnotatedElement_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/AnnotatedElement"));
-			global::java.lang.reflect.AnnotatedElement_._getAnnotation21007 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.AnnotatedElement_._isAnnotationPresent21008 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
-			global::java.lang.reflect.AnnotatedElement_._getAnnotations21009 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.AnnotatedElement_._getDeclaredAnnotations21010 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AnnotatedElement_.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
 		}
 		internal static void InitJNI()
 		{

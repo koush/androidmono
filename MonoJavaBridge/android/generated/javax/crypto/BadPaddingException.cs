@@ -11,6 +11,8 @@ namespace javax.crypto
 		public BadPaddingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.BadPaddingException._BadPaddingException28489.native == global::System.IntPtr.Zero)
+				global::javax.crypto.BadPaddingException._BadPaddingException28489 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28489);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.crypto
 		public BadPaddingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.BadPaddingException._BadPaddingException28490.native == global::System.IntPtr.Zero)
+				global::javax.crypto.BadPaddingException._BadPaddingException28490 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.BadPaddingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/BadPaddingException"));
-			global::javax.crypto.BadPaddingException._BadPaddingException28489 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "()V");
-			global::javax.crypto.BadPaddingException._BadPaddingException28490 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

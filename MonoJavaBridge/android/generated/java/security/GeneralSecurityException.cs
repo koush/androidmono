@@ -11,6 +11,8 @@ namespace java.security
 		public GeneralSecurityException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.GeneralSecurityException._GeneralSecurityException22953.native == global::System.IntPtr.Zero)
+				global::java.security.GeneralSecurityException._GeneralSecurityException22953 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GeneralSecurityException.staticClass, global::java.security.GeneralSecurityException._GeneralSecurityException22953);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.security
 		public GeneralSecurityException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.GeneralSecurityException._GeneralSecurityException22954.native == global::System.IntPtr.Zero)
+				global::java.security.GeneralSecurityException._GeneralSecurityException22954 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GeneralSecurityException.staticClass, global::java.security.GeneralSecurityException._GeneralSecurityException22954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace java.security
 		public GeneralSecurityException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.GeneralSecurityException._GeneralSecurityException22955.native == global::System.IntPtr.Zero)
+				global::java.security.GeneralSecurityException._GeneralSecurityException22955 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GeneralSecurityException.staticClass, global::java.security.GeneralSecurityException._GeneralSecurityException22955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,6 +38,8 @@ namespace java.security
 		public GeneralSecurityException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.GeneralSecurityException._GeneralSecurityException22956.native == global::System.IntPtr.Zero)
+				global::java.security.GeneralSecurityException._GeneralSecurityException22956 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GeneralSecurityException.staticClass, global::java.security.GeneralSecurityException._GeneralSecurityException22956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -39,10 +47,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.GeneralSecurityException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/GeneralSecurityException"));
-			global::java.security.GeneralSecurityException._GeneralSecurityException22953 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "()V");
-			global::java.security.GeneralSecurityException._GeneralSecurityException22954 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.security.GeneralSecurityException._GeneralSecurityException22955 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::java.security.GeneralSecurityException._GeneralSecurityException22956 = @__env.GetMethodIDNoThrow(global::java.security.GeneralSecurityException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

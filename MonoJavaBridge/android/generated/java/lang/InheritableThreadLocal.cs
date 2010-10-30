@@ -10,12 +10,17 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _childValue20189;
 		protected virtual global::java.lang.Object childValue(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.InheritableThreadLocal._childValue20189.native == global::System.IntPtr.Zero)
+				global::java.lang.InheritableThreadLocal._childValue20189 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "childValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._childValue20189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _InheritableThreadLocal20190;
 		public InheritableThreadLocal() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190.native == global::System.IntPtr.Zero)
+				global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InheritableThreadLocal.staticClass, global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190);
 			Init(@__env, handle);
 		}
@@ -23,8 +28,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InheritableThreadLocal.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InheritableThreadLocal"));
-			global::java.lang.InheritableThreadLocal._childValue20189 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "childValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.lang.InheritableThreadLocal._InheritableThreadLocal20190 = @__env.GetMethodIDNoThrow(global::java.lang.InheritableThreadLocal.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

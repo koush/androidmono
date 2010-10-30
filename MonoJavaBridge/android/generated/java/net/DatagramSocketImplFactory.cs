@@ -17,13 +17,14 @@ namespace java.net
 		global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465)) as java.net.DatagramSocketImpl;
 		}
 		static DatagramSocketImplFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramSocketImplFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramSocketImplFactory"));
-			global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;");
 		}
 		internal static void InitJNI()
 		{

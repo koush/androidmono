@@ -11,6 +11,8 @@ namespace java.util
 		public LinkedHashSet(int arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.LinkedHashSet._LinkedHashSet26344.native == global::System.IntPtr.Zero)
+				global::java.util.LinkedHashSet._LinkedHashSet26344 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(IF)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.util
 		public LinkedHashSet(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.LinkedHashSet._LinkedHashSet26345.native == global::System.IntPtr.Zero)
+				global::java.util.LinkedHashSet._LinkedHashSet26345 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace java.util
 		public LinkedHashSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.LinkedHashSet._LinkedHashSet26346.native == global::System.IntPtr.Zero)
+				global::java.util.LinkedHashSet._LinkedHashSet26346 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26346);
 			Init(@__env, handle);
 		}
@@ -32,6 +38,8 @@ namespace java.util
 		public LinkedHashSet(java.util.Collection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.LinkedHashSet._LinkedHashSet26347.native == global::System.IntPtr.Zero)
+				global::java.util.LinkedHashSet._LinkedHashSet26347 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(Ljava/util/Collection;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -39,10 +47,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.LinkedHashSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/LinkedHashSet"));
-			global::java.util.LinkedHashSet._LinkedHashSet26344 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(IF)V");
-			global::java.util.LinkedHashSet._LinkedHashSet26345 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(I)V");
-			global::java.util.LinkedHashSet._LinkedHashSet26346 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "()V");
-			global::java.util.LinkedHashSet._LinkedHashSet26347 = @__env.GetMethodIDNoThrow(global::java.util.LinkedHashSet.staticClass, "<init>", "(Ljava/util/Collection;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,6 +11,8 @@ namespace java.lang
 		public NegativeArraySizeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.NegativeArraySizeException._NegativeArraySizeException20340.native == global::System.IntPtr.Zero)
+				global::java.lang.NegativeArraySizeException._NegativeArraySizeException20340 = @__env.GetMethodIDNoThrow(global::java.lang.NegativeArraySizeException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NegativeArraySizeException.staticClass, global::java.lang.NegativeArraySizeException._NegativeArraySizeException20340);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public NegativeArraySizeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.NegativeArraySizeException._NegativeArraySizeException20341.native == global::System.IntPtr.Zero)
+				global::java.lang.NegativeArraySizeException._NegativeArraySizeException20341 = @__env.GetMethodIDNoThrow(global::java.lang.NegativeArraySizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NegativeArraySizeException.staticClass, global::java.lang.NegativeArraySizeException._NegativeArraySizeException20341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.NegativeArraySizeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/NegativeArraySizeException"));
-			global::java.lang.NegativeArraySizeException._NegativeArraySizeException20340 = @__env.GetMethodIDNoThrow(global::java.lang.NegativeArraySizeException.staticClass, "<init>", "()V");
-			global::java.lang.NegativeArraySizeException._NegativeArraySizeException20341 = @__env.GetMethodIDNoThrow(global::java.lang.NegativeArraySizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

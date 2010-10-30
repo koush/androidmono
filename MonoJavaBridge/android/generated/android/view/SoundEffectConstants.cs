@@ -11,6 +11,8 @@ namespace android.view
 		public static int getContantForFocusDirection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.SoundEffectConstants._getContantForFocusDirection14482.native == global::System.IntPtr.Zero)
+				global::android.view.SoundEffectConstants._getContantForFocusDirection14482 = @__env.GetStaticMethodIDNoThrow(global::android.view.SoundEffectConstants.staticClass, "getContantForFocusDirection", "(I)I");
 			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, global::android.view.SoundEffectConstants._getContantForFocusDirection14482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int CLICK
@@ -52,7 +54,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SoundEffectConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SoundEffectConstants"));
-			global::android.view.SoundEffectConstants._getContantForFocusDirection14482 = @__env.GetStaticMethodIDNoThrow(global::android.view.SoundEffectConstants.staticClass, "getContantForFocusDirection", "(I)I");
 		}
 		internal static void InitJNI()
 		{

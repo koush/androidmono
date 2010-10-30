@@ -11,6 +11,8 @@ namespace java.nio.channels
 		public CancelledKeyException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.channels.CancelledKeyException._CancelledKeyException22405.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.CancelledKeyException._CancelledKeyException22405 = @__env.GetMethodIDNoThrow(global::java.nio.channels.CancelledKeyException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.CancelledKeyException.staticClass, global::java.nio.channels.CancelledKeyException._CancelledKeyException22405);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.CancelledKeyException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/CancelledKeyException"));
-			global::java.nio.channels.CancelledKeyException._CancelledKeyException22405 = @__env.GetMethodIDNoThrow(global::java.nio.channels.CancelledKeyException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

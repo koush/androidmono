@@ -18,6 +18,8 @@ namespace android.os
 			public VERSION() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Build.VERSION._VERSION9558.native == global::System.IntPtr.Zero)
+					global::android.os.Build.VERSION._VERSION9558 = @__env.GetMethodIDNoThrow(global::android.os.Build.VERSION.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.VERSION.staticClass, global::android.os.Build.VERSION._VERSION9558);
 				Init(@__env, handle);
 			}
@@ -68,7 +70,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Build.VERSION.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build$VERSION"));
-				global::android.os.Build.VERSION._VERSION9558 = @__env.GetMethodIDNoThrow(global::android.os.Build.VERSION.staticClass, "<init>", "()V");
 				global::android.os.Build.VERSION._INCREMENTAL9559 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.VERSION.staticClass, "INCREMENTAL", "Ljava/lang/String;");
 				global::android.os.Build.VERSION._RELEASE9560 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.VERSION.staticClass, "RELEASE", "Ljava/lang/String;");
 				global::android.os.Build.VERSION._SDK9561 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.VERSION.staticClass, "SDK", "Ljava/lang/String;");
@@ -89,6 +90,8 @@ namespace android.os
 			public VERSION_CODES() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.os.Build.VERSION_CODES._VERSION_CODES9564.native == global::System.IntPtr.Zero)
+					global::android.os.Build.VERSION_CODES._VERSION_CODES9564 = @__env.GetMethodIDNoThrow(global::android.os.Build.VERSION_CODES.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.VERSION_CODES.staticClass, global::android.os.Build.VERSION_CODES._VERSION_CODES9564);
 				Init(@__env, handle);
 			}
@@ -159,7 +162,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Build.VERSION_CODES.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build$VERSION_CODES"));
-				global::android.os.Build.VERSION_CODES._VERSION_CODES9564 = @__env.GetMethodIDNoThrow(global::android.os.Build.VERSION_CODES.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -169,6 +171,8 @@ namespace android.os
 		public Build() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Build._Build9574.native == global::System.IntPtr.Zero)
+				global::android.os.Build._Build9574 = @__env.GetMethodIDNoThrow(global::android.os.Build.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.staticClass, global::android.os.Build._Build9574);
 			Init(@__env, handle);
 		}
@@ -352,7 +356,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Build.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Build"));
-			global::android.os.Build._Build9574 = @__env.GetMethodIDNoThrow(global::android.os.Build.staticClass, "<init>", "()V");
 			global::android.os.Build._ID9576 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "ID", "Ljava/lang/String;");
 			global::android.os.Build._DISPLAY9577 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "DISPLAY", "Ljava/lang/String;");
 			global::android.os.Build._PRODUCT9578 = @__env.GetStaticFieldIDNoThrow(global::android.os.Build.staticClass, "PRODUCT", "Ljava/lang/String;");

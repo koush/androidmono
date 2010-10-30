@@ -11,6 +11,8 @@ namespace java.lang
 		public IndexOutOfBoundsException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20187.native == global::System.IntPtr.Zero)
+				global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20187 = @__env.GetMethodIDNoThrow(global::java.lang.IndexOutOfBoundsException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IndexOutOfBoundsException.staticClass, global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20187);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public IndexOutOfBoundsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20188.native == global::System.IntPtr.Zero)
+				global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20188 = @__env.GetMethodIDNoThrow(global::java.lang.IndexOutOfBoundsException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IndexOutOfBoundsException.staticClass, global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.IndexOutOfBoundsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/IndexOutOfBoundsException"));
-			global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20187 = @__env.GetMethodIDNoThrow(global::java.lang.IndexOutOfBoundsException.staticClass, "<init>", "()V");
-			global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20188 = @__env.GetMethodIDNoThrow(global::java.lang.IndexOutOfBoundsException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

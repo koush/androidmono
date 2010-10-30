@@ -17,7 +17,10 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26325;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getMessage26325)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatWidthException._getMessage26325.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatWidthException._getMessage26325 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getMessage26325) as java.lang.String;
 		}
 		public new int Width
 		{
@@ -29,12 +32,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getWidth26326;
 		public virtual int getWidth()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatWidthException._getWidth26326.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatWidthException._getWidth26326 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getWidth", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getWidth26326);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatWidthException26327;
 		public IllegalFormatWidthException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -42,9 +50,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatWidthException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatWidthException"));
-			global::java.util.IllegalFormatWidthException._getMessage26325 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.IllegalFormatWidthException._getWidth26326 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "getWidth", "()I");
-			global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26327 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatWidthException.staticClass, "<init>", "(I)V");
 		}
 		internal static void InitJNI()
 		{

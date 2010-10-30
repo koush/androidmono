@@ -17,13 +17,14 @@ namespace org.apache.http.conn.routing
 		int org.apache.http.conn.routing.HttpRouteDirector.nextStep(org.apache.http.conn.routing.RouteInfo arg0, org.apache.http.conn.routing.RouteInfo arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass, "nextStep", "(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static HttpRouteDirector_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/HttpRouteDirector"));
-			global::org.apache.http.conn.routing.HttpRouteDirector_._nextStep32239 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.routing.HttpRouteDirector_.staticClass, "nextStep", "(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I");
 		}
 		internal static void InitJNI()
 		{

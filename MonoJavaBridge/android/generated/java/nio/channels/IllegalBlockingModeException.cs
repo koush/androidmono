@@ -11,6 +11,8 @@ namespace java.nio.channels
 		public IllegalBlockingModeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.channels.IllegalBlockingModeException._IllegalBlockingModeException22508.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.IllegalBlockingModeException._IllegalBlockingModeException22508 = @__env.GetMethodIDNoThrow(global::java.nio.channels.IllegalBlockingModeException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.IllegalBlockingModeException.staticClass, global::java.nio.channels.IllegalBlockingModeException._IllegalBlockingModeException22508);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.IllegalBlockingModeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/IllegalBlockingModeException"));
-			global::java.nio.channels.IllegalBlockingModeException._IllegalBlockingModeException22508 = @__env.GetMethodIDNoThrow(global::java.nio.channels.IllegalBlockingModeException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

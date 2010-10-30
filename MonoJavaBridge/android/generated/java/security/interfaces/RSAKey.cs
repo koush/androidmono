@@ -17,13 +17,14 @@ namespace java.security.interfaces
 		global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAKey_._getModulus23926.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAKey_._getModulus23926 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAKey_._getModulus23926)) as java.math.BigInteger;
 		}
 		static RSAKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.RSAKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/RSAKey"));
-			global::java.security.interfaces.RSAKey_._getModulus23926 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
 		}
 		internal static void InitJNI()
 		{

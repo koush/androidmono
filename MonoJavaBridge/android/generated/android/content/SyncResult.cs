@@ -11,60 +11,80 @@ namespace android.content
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._toString3551.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._toString3551 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString3551)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear3552;
 		public void clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._clear3552.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._clear3552 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "clear", "()V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._clear3552);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3553;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._writeToParcel3553.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._writeToParcel3553 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._writeToParcel3553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3554;
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._describeContents3554.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._describeContents3554 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "describeContents", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._describeContents3554);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasHardError3555;
 		public bool hasHardError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._hasHardError3555.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._hasHardError3555 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasHardError", "()Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasHardError3555);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasSoftError3556;
 		public bool hasSoftError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._hasSoftError3556.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._hasSoftError3556 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasSoftError", "()Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasSoftError3556);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasError3557;
 		public bool hasError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._hasError3557.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._hasError3557 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasError", "()Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasError3557);
 		}
 		internal static global::MonoJavaBridge.MethodId _madeSomeProgress3558;
 		public bool madeSomeProgress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._madeSomeProgress3558.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._madeSomeProgress3558 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "madeSomeProgress", "()Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._madeSomeProgress3558);
 		}
 		internal static global::MonoJavaBridge.MethodId _toDebugString3559;
 		public global::java.lang.String toDebugString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._toDebugString3559.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._toDebugString3559 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "toDebugString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString3559)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncResult3560;
 		public SyncResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncResult._SyncResult3560.native == global::System.IntPtr.Zero)
+				global::android.content.SyncResult._SyncResult3560 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SyncResult.staticClass, global::android.content.SyncResult._SyncResult3560);
 			Init(@__env, handle);
 		}
@@ -192,16 +212,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncResult"));
-			global::android.content.SyncResult._toString3551 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.SyncResult._clear3552 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "clear", "()V");
-			global::android.content.SyncResult._writeToParcel3553 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.SyncResult._describeContents3554 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "describeContents", "()I");
-			global::android.content.SyncResult._hasHardError3555 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasHardError", "()Z");
-			global::android.content.SyncResult._hasSoftError3556 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasSoftError", "()Z");
-			global::android.content.SyncResult._hasError3557 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "hasError", "()Z");
-			global::android.content.SyncResult._madeSomeProgress3558 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "madeSomeProgress", "()Z");
-			global::android.content.SyncResult._toDebugString3559 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "toDebugString", "()Ljava/lang/String;");
-			global::android.content.SyncResult._SyncResult3560 = @__env.GetMethodIDNoThrow(global::android.content.SyncResult.staticClass, "<init>", "()V");
 			global::android.content.SyncResult._syncAlreadyInProgress3561 = @__env.GetFieldIDNoThrow(global::android.content.SyncResult.staticClass, "syncAlreadyInProgress", "Z");
 			global::android.content.SyncResult._tooManyDeletions3562 = @__env.GetFieldIDNoThrow(global::android.content.SyncResult.staticClass, "tooManyDeletions", "Z");
 			global::android.content.SyncResult._tooManyRetries3563 = @__env.GetFieldIDNoThrow(global::android.content.SyncResult.staticClass, "tooManyRetries", "Z");

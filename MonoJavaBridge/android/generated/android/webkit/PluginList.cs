@@ -10,6 +10,9 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _clear16084;
 		public virtual void clear()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._clear16084.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._clear16084 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "clear", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._clear16084);
 		}
 		public new global::java.util.List List
@@ -22,27 +25,41 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getList16085;
 		public virtual global::java.util.List getList()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._getList16085)) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._getList16085.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._getList16085 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "getList", "()Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._getList16085) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPlugin16086;
 		public virtual void addPlugin(android.webkit.Plugin arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._addPlugin16086.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._addPlugin16086 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "addPlugin", "(Landroid/webkit/Plugin;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._addPlugin16086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePlugin16087;
 		public virtual void removePlugin(android.webkit.Plugin arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._removePlugin16087.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._removePlugin16087 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "removePlugin", "(Landroid/webkit/Plugin;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._removePlugin16087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _pluginClicked16088;
 		public virtual void pluginClicked(android.content.Context arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._pluginClicked16088.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._pluginClicked16088 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "pluginClicked", "(Landroid/content/Context;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._pluginClicked16088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _PluginList16089;
 		public PluginList() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.PluginList._PluginList16089.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginList._PluginList16089 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginList.staticClass, global::android.webkit.PluginList._PluginList16089);
 			Init(@__env, handle);
 		}
@@ -50,12 +67,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginList"));
-			global::android.webkit.PluginList._clear16084 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "clear", "()V");
-			global::android.webkit.PluginList._getList16085 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "getList", "()Ljava/util/List;");
-			global::android.webkit.PluginList._addPlugin16086 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "addPlugin", "(Landroid/webkit/Plugin;)V");
-			global::android.webkit.PluginList._removePlugin16087 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "removePlugin", "(Landroid/webkit/Plugin;)V");
-			global::android.webkit.PluginList._pluginClicked16088 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "pluginClicked", "(Landroid/content/Context;I)V");
-			global::android.webkit.PluginList._PluginList16089 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginList.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

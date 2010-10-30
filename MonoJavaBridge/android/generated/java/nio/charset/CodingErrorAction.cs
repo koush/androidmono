@@ -10,7 +10,10 @@ namespace java.nio.charset
 		internal static global::MonoJavaBridge.MethodId _toString22809;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CodingErrorAction.staticClass, global::java.nio.charset.CodingErrorAction._toString22809)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.charset.CodingErrorAction._toString22809.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.CodingErrorAction._toString22809 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.CodingErrorAction.staticClass, global::java.nio.charset.CodingErrorAction._toString22809) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.FieldId _IGNORE22810;
 		public static global::java.nio.charset.CodingErrorAction IGNORE
@@ -43,7 +46,6 @@ namespace java.nio.charset
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CodingErrorAction.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CodingErrorAction"));
-			global::java.nio.charset.CodingErrorAction._toString22809 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;");
 			global::java.nio.charset.CodingErrorAction._IGNORE22810 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "IGNORE", "Ljava/nio/charset/CodingErrorAction;");
 			global::java.nio.charset.CodingErrorAction._REPLACE22811 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPLACE", "Ljava/nio/charset/CodingErrorAction;");
 			global::java.nio.charset.CodingErrorAction._REPORT22812 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPORT", "Ljava/nio/charset/CodingErrorAction;");

@@ -11,36 +11,48 @@ namespace android.text
 		public static bool mirror(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._mirror12673.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._mirror12673 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "mirror", "([CII)Z");
 			return @__env.CallStaticBooleanMethod(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._mirror12673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDirectionalities12674;
 		public static void getDirectionalities(char[] arg0, byte[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._getDirectionalities12674.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._getDirectionalities12674 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getDirectionalities", "([C[BI)V");
 			@__env.CallStaticVoidMethod(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._getDirectionalities12674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEastAsianWidth12675;
 		public static int getEastAsianWidth(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._getEastAsianWidth12675.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._getEastAsianWidth12675 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getEastAsianWidth", "(C)I");
 			return @__env.CallStaticIntMethod(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._getEastAsianWidth12675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEastAsianWidths12676;
 		public static void getEastAsianWidths(char[] arg0, int arg1, int arg2, byte[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._getEastAsianWidths12676.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._getEastAsianWidths12676 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getEastAsianWidths", "([CII[B)V");
 			@__env.CallStaticVoidMethod(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._getEastAsianWidths12676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMirror12677;
 		public static char getMirror(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._getMirror12677.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._getMirror12677 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getMirror", "(C)C");
 			return @__env.CallStaticCharMethod(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._getMirror12677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AndroidCharacter12678;
 		public AndroidCharacter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.AndroidCharacter._AndroidCharacter12678.native == global::System.IntPtr.Zero)
+				global::android.text.AndroidCharacter._AndroidCharacter12678 = @__env.GetMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.AndroidCharacter.staticClass, global::android.text.AndroidCharacter._AndroidCharacter12678);
 			Init(@__env, handle);
 		}
@@ -90,12 +102,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.AndroidCharacter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/AndroidCharacter"));
-			global::android.text.AndroidCharacter._mirror12673 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "mirror", "([CII)Z");
-			global::android.text.AndroidCharacter._getDirectionalities12674 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getDirectionalities", "([C[BI)V");
-			global::android.text.AndroidCharacter._getEastAsianWidth12675 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getEastAsianWidth", "(C)I");
-			global::android.text.AndroidCharacter._getEastAsianWidths12676 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getEastAsianWidths", "([CII[B)V");
-			global::android.text.AndroidCharacter._getMirror12677 = @__env.GetStaticMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "getMirror", "(C)C");
-			global::android.text.AndroidCharacter._AndroidCharacter12678 = @__env.GetMethodIDNoThrow(global::android.text.AndroidCharacter.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

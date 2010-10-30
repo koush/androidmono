@@ -11,12 +11,16 @@ namespace java.nio
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.ByteOrder._toString22115.native == global::System.IntPtr.Zero)
+				global::java.nio.ByteOrder._toString22115 = @__env.GetMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._toString22115)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nativeOrder22116;
 		public static global::java.nio.ByteOrder nativeOrder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.ByteOrder._nativeOrder22116.native == global::System.IntPtr.Zero)
+				global::java.nio.ByteOrder._nativeOrder22116 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "nativeOrder", "()Ljava/nio/ByteOrder;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.CallStaticObjectMethod(java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._nativeOrder22116)) as java.nio.ByteOrder;
 		}
 		internal static global::MonoJavaBridge.FieldId _BIG_ENDIAN22117;
@@ -41,8 +45,6 @@ namespace java.nio
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.ByteOrder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/ByteOrder"));
-			global::java.nio.ByteOrder._toString22115 = @__env.GetMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.nio.ByteOrder._nativeOrder22116 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ByteOrder.staticClass, "nativeOrder", "()Ljava/nio/ByteOrder;");
 			global::java.nio.ByteOrder._BIG_ENDIAN22117 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "BIG_ENDIAN", "Ljava/nio/ByteOrder;");
 			global::java.nio.ByteOrder._LITTLE_ENDIAN22118 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "LITTLE_ENDIAN", "Ljava/nio/ByteOrder;");
 		}

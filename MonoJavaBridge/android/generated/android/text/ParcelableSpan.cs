@@ -17,27 +17,30 @@ namespace android.text
 		int android.text.ParcelableSpan.getSpanTypeId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.ParcelableSpan_._getSpanTypeId12903.native == global::System.IntPtr.Zero)
+				global::android.text.ParcelableSpan_._getSpanTypeId12903 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "getSpanTypeId", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::android.text.ParcelableSpan_._getSpanTypeId12903);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel12904;
 		void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.ParcelableSpan_._writeToParcel12904.native == global::System.IntPtr.Zero)
+				global::android.text.ParcelableSpan_._writeToParcel12904 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.text.ParcelableSpan_._writeToParcel12904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents12905;
 		int android.os.Parcelable.describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.ParcelableSpan_._describeContents12905.native == global::System.IntPtr.Zero)
+				global::android.text.ParcelableSpan_._describeContents12905 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "describeContents", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::android.text.ParcelableSpan_._describeContents12905);
 		}
 		static ParcelableSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.ParcelableSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/ParcelableSpan"));
-			global::android.text.ParcelableSpan_._getSpanTypeId12903 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "getSpanTypeId", "()I");
-			global::android.text.ParcelableSpan_._writeToParcel12904 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.text.ParcelableSpan_._describeContents12905 = @__env.GetMethodIDNoThrow(global::android.text.ParcelableSpan_.staticClass, "describeContents", "()I");
 		}
 		internal static void InitJNI()
 		{

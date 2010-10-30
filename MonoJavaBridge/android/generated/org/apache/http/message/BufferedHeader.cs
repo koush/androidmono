@@ -10,12 +10,18 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _toString33666;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._toString33666)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._toString33666.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._toString33666 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._toString33666) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone33667;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._clone33667)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._clone33667.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._clone33667 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "clone", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._clone33667) as java.lang.Object;
 		}
 		public new global::java.lang.String Name
 		{
@@ -27,7 +33,10 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getName33668;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getName33668)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._getName33668.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._getName33668 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getName", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getName33668) as java.lang.String;
 		}
 		public new global::java.lang.String Value
 		{
@@ -39,7 +48,10 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getValue33669;
 		public virtual global::java.lang.String getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getValue33669)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._getValue33669.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._getValue33669 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getValue", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getValue33669) as java.lang.String;
 		}
 		public new global::org.apache.http.HeaderElement[] Elements
 		{
@@ -51,7 +63,10 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getElements33670;
 		public virtual global::org.apache.http.HeaderElement[] getElements()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.HeaderElement>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getElements33670)) as org.apache.http.HeaderElement[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._getElements33670.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._getElements33670 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getElements33670) as org.apache.http.HeaderElement[];
 		}
 		public new global::org.apache.http.util.CharArrayBuffer Buffer
 		{
@@ -63,7 +78,10 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getBuffer33671;
 		public virtual global::org.apache.http.util.CharArrayBuffer getBuffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getBuffer33671)) as org.apache.http.util.CharArrayBuffer;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._getBuffer33671.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._getBuffer33671 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.util.CharArrayBuffer>(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getBuffer33671) as org.apache.http.util.CharArrayBuffer;
 		}
 		public new int ValuePos
 		{
@@ -75,12 +93,17 @@ namespace org.apache.http.message
 		internal static global::MonoJavaBridge.MethodId _getValuePos33672;
 		public virtual int getValuePos()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._getValuePos33672.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._getValuePos33672 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getValuePos", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._getValuePos33672);
 		}
 		internal static global::MonoJavaBridge.MethodId _BufferedHeader33673;
 		public BufferedHeader(org.apache.http.util.CharArrayBuffer arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.message.BufferedHeader._BufferedHeader33673.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._BufferedHeader33673 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "<init>", "(Lorg/apache/http/util/CharArrayBuffer;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._BufferedHeader33673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -88,14 +111,6 @@ namespace org.apache.http.message
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BufferedHeader.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BufferedHeader"));
-			global::org.apache.http.message.BufferedHeader._toString33666 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "toString", "()Ljava/lang/String;");
-			global::org.apache.http.message.BufferedHeader._clone33667 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "clone", "()Ljava/lang/Object;");
-			global::org.apache.http.message.BufferedHeader._getName33668 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getName", "()Ljava/lang/String;");
-			global::org.apache.http.message.BufferedHeader._getValue33669 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getValue", "()Ljava/lang/String;");
-			global::org.apache.http.message.BufferedHeader._getElements33670 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;");
-			global::org.apache.http.message.BufferedHeader._getBuffer33671 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;");
-			global::org.apache.http.message.BufferedHeader._getValuePos33672 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "getValuePos", "()I");
-			global::org.apache.http.message.BufferedHeader._BufferedHeader33673 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "<init>", "(Lorg/apache/http/util/CharArrayBuffer;)V");
 		}
 		internal static void InitJNI()
 		{

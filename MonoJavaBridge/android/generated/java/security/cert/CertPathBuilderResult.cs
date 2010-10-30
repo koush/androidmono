@@ -18,20 +18,22 @@ namespace java.security.cert
 		global::java.lang.Object java.security.cert.CertPathBuilderResult.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilderResult_._clone23507.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilderResult_._clone23507 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "clone", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderResult_._clone23507)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertPath23508;
 		global::java.security.cert.CertPath java.security.cert.CertPathBuilderResult.getCertPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilderResult_._getCertPath23508.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilderResult_._getCertPath23508 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderResult_._getCertPath23508)) as java.security.cert.CertPath;
 		}
 		static CertPathBuilderResult_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathBuilderResult_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathBuilderResult"));
-			global::java.security.cert.CertPathBuilderResult_._clone23507 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.security.cert.CertPathBuilderResult_._getCertPath23508 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderResult_.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
 		}
 		internal static void InitJNI()
 		{

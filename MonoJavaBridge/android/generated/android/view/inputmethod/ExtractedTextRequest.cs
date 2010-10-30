@@ -10,17 +10,25 @@ namespace android.view.inputmethod
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15854;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15855;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.ExtractedTextRequest._describeContents15855.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.ExtractedTextRequest._describeContents15855 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._describeContents15855);
 		}
 		internal static global::MonoJavaBridge.MethodId _ExtractedTextRequest15856;
 		public ExtractedTextRequest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.inputmethod.ExtractedTextRequest._ExtractedTextRequest15856.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.ExtractedTextRequest._ExtractedTextRequest15856 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._ExtractedTextRequest15856);
 			Init(@__env, handle);
 		}
@@ -85,9 +93,6 @@ namespace android.view.inputmethod
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.ExtractedTextRequest.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/ExtractedTextRequest"));
-			global::android.view.inputmethod.ExtractedTextRequest._writeToParcel15854 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.inputmethod.ExtractedTextRequest._describeContents15855 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "describeContents", "()I");
-			global::android.view.inputmethod.ExtractedTextRequest._ExtractedTextRequest15856 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "<init>", "()V");
 			global::android.view.inputmethod.ExtractedTextRequest._token15857 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "token", "I");
 			global::android.view.inputmethod.ExtractedTextRequest._flags15858 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "flags", "I");
 			global::android.view.inputmethod.ExtractedTextRequest._hintMaxLines15859 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "hintMaxLines", "I");

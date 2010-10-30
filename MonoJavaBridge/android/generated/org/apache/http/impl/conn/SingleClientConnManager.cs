@@ -18,6 +18,8 @@ namespace org.apache.http.impl.conn
 			protected ConnAdapter(org.apache.http.impl.conn.SingleClientConnManager arg0, org.apache.http.impl.conn.SingleClientConnManager.PoolEntry arg1, org.apache.http.conn.routing.HttpRoute arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077.native == global::System.IntPtr.Zero)
+					global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;Lorg/apache/http/conn/routing/HttpRoute;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
@@ -25,7 +27,6 @@ namespace org.apache.http.impl.conn
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager$ConnAdapter"));
-				global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter._ConnAdapter33077 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;Lorg/apache/http/conn/routing/HttpRoute;)V");
 			}
 			internal static void InitJNI()
 			{
@@ -41,17 +42,25 @@ namespace org.apache.http.impl.conn
 			internal static global::MonoJavaBridge.MethodId _shutdown33078;
 			protected virtual void shutdown()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._shutdown33078.native == global::System.IntPtr.Zero)
+					global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._shutdown33078 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "shutdown", "()V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._shutdown33078);
 			}
 			internal static global::MonoJavaBridge.MethodId _close33079;
 			protected virtual void close()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._close33079.native == global::System.IntPtr.Zero)
+					global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._close33079 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "close", "()V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._close33079);
 			}
 			internal static global::MonoJavaBridge.MethodId _PoolEntry33080;
 			protected PoolEntry(org.apache.http.impl.conn.SingleClientConnManager arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080.native == global::System.IntPtr.Zero)
+					global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
@@ -59,9 +68,6 @@ namespace org.apache.http.impl.conn
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager$PoolEntry"));
-				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._shutdown33078 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "shutdown", "()V");
-				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._close33079 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "close", "()V");
-				global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry._PoolEntry33080 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.PoolEntry.staticClass, "<init>", "(Lorg/apache/http/impl/conn/SingleClientConnManager;)V");
 			}
 			internal static void InitJNI()
 			{
@@ -70,17 +76,26 @@ namespace org.apache.http.impl.conn
 		internal static global::MonoJavaBridge.MethodId _shutdown33081;
 		public virtual void shutdown()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._shutdown33081.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._shutdown33081 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "shutdown", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._shutdown33081);
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize33082;
 		protected override void finalize()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._finalize33082.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._finalize33082 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "finalize", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._finalize33082);
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection33083;
 		public virtual global::org.apache.http.conn.ManagedClientConnection getConnection(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ManagedClientConnection>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._getConnection33083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ManagedClientConnection;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._getConnection33083.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._getConnection33083 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "getConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ManagedClientConnection;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ManagedClientConnection>(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._getConnection33083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.conn.ManagedClientConnection;
 		}
 		public new global::org.apache.http.conn.scheme.SchemeRegistry SchemeRegistry
 		{
@@ -92,47 +107,73 @@ namespace org.apache.http.impl.conn
 		internal static global::MonoJavaBridge.MethodId _getSchemeRegistry33084;
 		public virtual global::org.apache.http.conn.scheme.SchemeRegistry getSchemeRegistry()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.SchemeRegistry>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._getSchemeRegistry33084)) as org.apache.http.conn.scheme.SchemeRegistry;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._getSchemeRegistry33084.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._getSchemeRegistry33084 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "getSchemeRegistry", "()Lorg/apache/http/conn/scheme/SchemeRegistry;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.conn.scheme.SchemeRegistry>(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._getSchemeRegistry33084) as org.apache.http.conn.scheme.SchemeRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _requestConnection33085;
 		public virtual global::org.apache.http.conn.ClientConnectionRequest requestConnection(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionRequest>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._requestConnection33085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ClientConnectionRequest;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._requestConnection33085.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._requestConnection33085 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "requestConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionRequest>(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._requestConnection33085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.conn.ClientConnectionRequest;
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseConnection33086;
 		public virtual void releaseConnection(org.apache.http.conn.ManagedClientConnection arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._releaseConnection33086.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._releaseConnection33086 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "releaseConnection", "(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._releaseConnection33086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeIdleConnections33087;
 		public virtual void closeIdleConnections(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._closeIdleConnections33087.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._closeIdleConnections33087 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "closeIdleConnections", "(JLjava/util/concurrent/TimeUnit;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._closeIdleConnections33087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeExpiredConnections33088;
 		public virtual void closeExpiredConnections()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._closeExpiredConnections33088.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._closeExpiredConnections33088 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "closeExpiredConnections", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._closeExpiredConnections33088);
 		}
 		internal static global::MonoJavaBridge.MethodId _createConnectionOperator33089;
 		protected virtual global::org.apache.http.conn.ClientConnectionOperator createConnectionOperator(org.apache.http.conn.scheme.SchemeRegistry arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionOperator>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._createConnectionOperator33089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.ClientConnectionOperator;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._createConnectionOperator33089.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._createConnectionOperator33089 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "createConnectionOperator", "(Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionOperator;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ClientConnectionOperator>(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._createConnectionOperator33089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.conn.ClientConnectionOperator;
 		}
 		internal static global::MonoJavaBridge.MethodId _assertStillUp33090;
 		protected virtual void assertStillUp()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._assertStillUp33090.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._assertStillUp33090 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "assertStillUp", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._assertStillUp33090);
 		}
 		internal static global::MonoJavaBridge.MethodId _revokeConnection33091;
 		protected virtual void revokeConnection()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._revokeConnection33091.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._revokeConnection33091 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "revokeConnection", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._revokeConnection33091);
 		}
 		internal static global::MonoJavaBridge.MethodId _SingleClientConnManager33092;
 		public SingleClientConnManager(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.scheme.SchemeRegistry arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.impl.conn.SingleClientConnManager._SingleClientConnManager33092.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.SingleClientConnManager._SingleClientConnManager33092 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.SingleClientConnManager.staticClass, global::org.apache.http.impl.conn.SingleClientConnManager._SingleClientConnManager33092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -147,18 +188,6 @@ namespace org.apache.http.impl.conn
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.SingleClientConnManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/SingleClientConnManager"));
-			global::org.apache.http.impl.conn.SingleClientConnManager._shutdown33081 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "shutdown", "()V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._finalize33082 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "finalize", "()V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._getConnection33083 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "getConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ManagedClientConnection;");
-			global::org.apache.http.impl.conn.SingleClientConnManager._getSchemeRegistry33084 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "getSchemeRegistry", "()Lorg/apache/http/conn/scheme/SchemeRegistry;");
-			global::org.apache.http.impl.conn.SingleClientConnManager._requestConnection33085 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "requestConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;");
-			global::org.apache.http.impl.conn.SingleClientConnManager._releaseConnection33086 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "releaseConnection", "(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._closeIdleConnections33087 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "closeIdleConnections", "(JLjava/util/concurrent/TimeUnit;)V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._closeExpiredConnections33088 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "closeExpiredConnections", "()V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._createConnectionOperator33089 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "createConnectionOperator", "(Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionOperator;");
-			global::org.apache.http.impl.conn.SingleClientConnManager._assertStillUp33090 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "assertStillUp", "()V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._revokeConnection33091 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "revokeConnection", "()V");
-			global::org.apache.http.impl.conn.SingleClientConnManager._SingleClientConnManager33092 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.SingleClientConnManager.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V");
 		}
 		internal static void InitJNI()
 		{

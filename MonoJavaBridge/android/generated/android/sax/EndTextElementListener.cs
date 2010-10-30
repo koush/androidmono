@@ -17,13 +17,14 @@ namespace android.sax
 		void android.sax.EndTextElementListener.end(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.sax.EndTextElementListener_._end11612.native == global::System.IntPtr.Zero)
+				global::android.sax.EndTextElementListener_._end11612 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListener_.staticClass, "end", "(Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndTextElementListener_._end11612, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static EndTextElementListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.EndTextElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndTextElementListener"));
-			global::android.sax.EndTextElementListener_._end11612 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListener_.staticClass, "end", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.sax
 		public EndTextElementListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.sax.EndTextElementListenerDelegateWrapper._EndTextElementListenerDelegateWrapper11613.native == global::System.IntPtr.Zero)
+				global::android.sax.EndTextElementListenerDelegateWrapper._EndTextElementListenerDelegateWrapper11613 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListenerDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.EndTextElementListenerDelegateWrapper.staticClass, global::android.sax.EndTextElementListenerDelegateWrapper._EndTextElementListenerDelegateWrapper11613);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.sax
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.EndTextElementListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndTextElementListenerDelegateWrapper"));
-			global::android.sax.EndTextElementListenerDelegateWrapper._EndTextElementListenerDelegateWrapper11613 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListenerDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

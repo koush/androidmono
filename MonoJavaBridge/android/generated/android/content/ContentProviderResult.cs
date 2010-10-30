@@ -10,22 +10,33 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _toString2697;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString2697)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._toString2697.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._toString2697 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString2697) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2698;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._writeToParcel2698.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._writeToParcel2698 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._writeToParcel2698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents2699;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._describeContents2699.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._describeContents2699 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._describeContents2699);
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentProviderResult2700;
 		public ContentProviderResult(android.net.Uri arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._ContentProviderResult2700.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._ContentProviderResult2700 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(Landroid/net/Uri;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._ContentProviderResult2700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -33,6 +44,8 @@ namespace android.content
 		public ContentProviderResult(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._ContentProviderResult2701.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._ContentProviderResult2701 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._ContentProviderResult2701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -40,6 +53,8 @@ namespace android.content
 		public ContentProviderResult(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.ContentProviderResult._ContentProviderResult2702.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProviderResult._ContentProviderResult2702 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._ContentProviderResult2702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -74,12 +89,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentProviderResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentProviderResult"));
-			global::android.content.ContentProviderResult._toString2697 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.ContentProviderResult._writeToParcel2698 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.ContentProviderResult._describeContents2699 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "describeContents", "()I");
-			global::android.content.ContentProviderResult._ContentProviderResult2700 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(Landroid/net/Uri;)V");
-			global::android.content.ContentProviderResult._ContentProviderResult2701 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(I)V");
-			global::android.content.ContentProviderResult._ContentProviderResult2702 = @__env.GetMethodIDNoThrow(global::android.content.ContentProviderResult.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.content.ContentProviderResult._uri2703 = @__env.GetFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "uri", "Landroid/net/Uri;");
 			global::android.content.ContentProviderResult._count2704 = @__env.GetFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "count", "Ljava/lang/Integer;");
 			global::android.content.ContentProviderResult._CREATOR2705 = @__env.GetStaticFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");

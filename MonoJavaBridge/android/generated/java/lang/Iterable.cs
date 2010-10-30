@@ -21,13 +21,14 @@ namespace java.lang
 		global::java.util.Iterator java.lang.Iterable.iterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Iterable_._iterator20240.native == global::System.IntPtr.Zero)
+				global::java.lang.Iterable_._iterator20240 = @__env.GetMethodIDNoThrow(global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Iterable_._iterator20240)) as java.util.Iterator;
 		}
 		static Iterable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Iterable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Iterable"));
-			global::java.lang.Iterable_._iterator20240 = @__env.GetMethodIDNoThrow(global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;");
 		}
 		internal static void InitJNI()
 		{

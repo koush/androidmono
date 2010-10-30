@@ -17,13 +17,14 @@ namespace android.accounts
 		void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AccountManagerCallback_._run1351.native == global::System.IntPtr.Zero)
+				global::android.accounts.AccountManagerCallback_._run1351 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallback_.staticClass, "run", "(Landroid/accounts/AccountManagerFuture;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountManagerCallback_._run1351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AccountManagerCallback_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerCallback"));
-			global::android.accounts.AccountManagerCallback_._run1351 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallback_.staticClass, "run", "(Landroid/accounts/AccountManagerFuture;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.accounts
 		public AccountManagerCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.AccountManagerCallbackDelegateWrapper._AccountManagerCallbackDelegateWrapper1352.native == global::System.IntPtr.Zero)
+				global::android.accounts.AccountManagerCallbackDelegateWrapper._AccountManagerCallbackDelegateWrapper1352 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallbackDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountManagerCallbackDelegateWrapper.staticClass, global::android.accounts.AccountManagerCallbackDelegateWrapper._AccountManagerCallbackDelegateWrapper1352);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerCallbackDelegateWrapper"));
-			global::android.accounts.AccountManagerCallbackDelegateWrapper._AccountManagerCallbackDelegateWrapper1352 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallbackDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

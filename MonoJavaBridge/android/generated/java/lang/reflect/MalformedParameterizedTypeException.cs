@@ -11,6 +11,8 @@ namespace java.lang.reflect
 		public MalformedParameterizedTypeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.MalformedParameterizedTypeException._MalformedParameterizedTypeException21090.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.MalformedParameterizedTypeException._MalformedParameterizedTypeException21090 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.MalformedParameterizedTypeException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.MalformedParameterizedTypeException.staticClass, global::java.lang.reflect.MalformedParameterizedTypeException._MalformedParameterizedTypeException21090);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.lang.reflect
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.MalformedParameterizedTypeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/MalformedParameterizedTypeException"));
-			global::java.lang.reflect.MalformedParameterizedTypeException._MalformedParameterizedTypeException21090 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.MalformedParameterizedTypeException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

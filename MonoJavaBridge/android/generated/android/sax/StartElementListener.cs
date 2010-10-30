@@ -17,13 +17,14 @@ namespace android.sax
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.sax.StartElementListener_._start11617.native == global::System.IntPtr.Zero)
+				global::android.sax.StartElementListener_._start11617 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static StartElementListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.StartElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/StartElementListener"));
-			global::android.sax.StartElementListener_._start11617 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.sax
 		public StartElementListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618.native == global::System.IntPtr.Zero)
+				global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListenerDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.StartElementListenerDelegateWrapper.staticClass, global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.sax
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.StartElementListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/StartElementListenerDelegateWrapper"));
-			global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListenerDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

@@ -18,41 +18,46 @@ namespace org.apache.http
 		bool org.apache.http.HeaderIterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HeaderIterator_._hasNext31511.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HeaderIterator_._hasNext31511 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HeaderIterator_._hasNext31511);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextHeader31512;
 		global::org.apache.http.Header org.apache.http.HeaderIterator.nextHeader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HeaderIterator_._nextHeader31512.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HeaderIterator_._nextHeader31512 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "nextHeader", "()Lorg/apache/http/Header;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderIterator_._nextHeader31512)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext31513;
 		bool java.util.Iterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HeaderIterator_._hasNext31513.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HeaderIterator_._hasNext31513 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HeaderIterator_._hasNext31513);
 		}
 		internal static global::MonoJavaBridge.MethodId _next31514;
 		global::java.lang.Object java.util.Iterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HeaderIterator_._next31514.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HeaderIterator_._next31514 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "next", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderIterator_._next31514)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove31515;
 		void java.util.Iterator.remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HeaderIterator_._remove31515.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HeaderIterator_._remove31515 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "remove", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HeaderIterator_._remove31515);
 		}
 		static HeaderIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HeaderIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HeaderIterator"));
-			global::org.apache.http.HeaderIterator_._hasNext31511 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z");
-			global::org.apache.http.HeaderIterator_._nextHeader31512 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "nextHeader", "()Lorg/apache/http/Header;");
-			global::org.apache.http.HeaderIterator_._hasNext31513 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z");
-			global::org.apache.http.HeaderIterator_._next31514 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "next", "()Ljava/lang/Object;");
-			global::org.apache.http.HeaderIterator_._remove31515 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderIterator_.staticClass, "remove", "()V");
 		}
 		internal static void InitJNI()
 		{

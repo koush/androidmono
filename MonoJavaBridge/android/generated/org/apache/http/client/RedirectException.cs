@@ -11,6 +11,8 @@ namespace org.apache.http.client
 		public RedirectException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.RedirectException._RedirectException31896.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.RedirectException._RedirectException31896 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.RedirectException.staticClass, global::org.apache.http.client.RedirectException._RedirectException31896);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace org.apache.http.client
 		public RedirectException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.RedirectException._RedirectException31897.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.RedirectException._RedirectException31897 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.RedirectException.staticClass, global::org.apache.http.client.RedirectException._RedirectException31897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace org.apache.http.client
 		public RedirectException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.RedirectException._RedirectException31898.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.RedirectException._RedirectException31898 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.RedirectException.staticClass, global::org.apache.http.client.RedirectException._RedirectException31898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,9 +38,6 @@ namespace org.apache.http.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.RedirectException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/RedirectException"));
-			global::org.apache.http.client.RedirectException._RedirectException31896 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "()V");
-			global::org.apache.http.client.RedirectException._RedirectException31897 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.apache.http.client.RedirectException._RedirectException31898 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.RedirectException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

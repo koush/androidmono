@@ -10,7 +10,10 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _toString26175;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._toString26175)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.EventObject._toString26175.native == global::System.IntPtr.Zero)
+				global::java.util.EventObject._toString26175 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._toString26175) as java.lang.String;
 		}
 		public new global::java.lang.Object Source
 		{
@@ -22,12 +25,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getSource26176;
 		public virtual global::java.lang.Object getSource()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._getSource26176)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.EventObject._getSource26176.native == global::System.IntPtr.Zero)
+				global::java.util.EventObject._getSource26176 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "getSource", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.EventObject.staticClass, global::java.util.EventObject._getSource26176) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventObject26177;
 		public EventObject(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.EventObject._EventObject26177.native == global::System.IntPtr.Zero)
+				global::java.util.EventObject._EventObject26177 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "<init>", "(Ljava/lang/Object;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.EventObject.staticClass, global::java.util.EventObject._EventObject26177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -35,9 +43,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.EventObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EventObject"));
-			global::java.util.EventObject._toString26175 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.EventObject._getSource26176 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "getSource", "()Ljava/lang/Object;");
-			global::java.util.EventObject._EventObject26177 = @__env.GetMethodIDNoThrow(global::java.util.EventObject.staticClass, "<init>", "(Ljava/lang/Object;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -18,6 +18,8 @@ namespace javax.xml.datatype
 			public sealed override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::javax.xml.datatype.DatatypeConstants.Field._toString30639.native == global::System.IntPtr.Zero)
+					global::javax.xml.datatype.DatatypeConstants.Field._toString30639 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "toString", "()Ljava/lang/String;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._toString30639)) as java.lang.String;
 			}
 			public new int Id
@@ -31,14 +33,14 @@ namespace javax.xml.datatype
 			public int getId()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::javax.xml.datatype.DatatypeConstants.Field._getId30640.native == global::System.IntPtr.Zero)
+					global::javax.xml.datatype.DatatypeConstants.Field._getId30640 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "getId", "()I");
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._getId30640);
 			}
 			static Field()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::javax.xml.datatype.DatatypeConstants.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeConstants$Field"));
-				global::javax.xml.datatype.DatatypeConstants.Field._toString30639 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "toString", "()Ljava/lang/String;");
-				global::javax.xml.datatype.DatatypeConstants.Field._getId30640 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConstants.Field.staticClass, "getId", "()I");
 			}
 			internal static void InitJNI()
 			{

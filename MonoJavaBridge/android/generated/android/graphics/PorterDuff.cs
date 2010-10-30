@@ -18,12 +18,16 @@ namespace android.graphics
 			public static global::android.graphics.PorterDuff.Mode[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.PorterDuff.Mode._values5643.native == global::System.IntPtr.Zero)
+					global::android.graphics.PorterDuff.Mode._values5643 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "values", "()[Landroid/graphics/PorterDuff/Mode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.PorterDuff.Mode>(@__env.CallStaticObjectMethod(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._values5643)) as android.graphics.PorterDuff.Mode[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5644;
 			public static global::android.graphics.PorterDuff.Mode valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.PorterDuff.Mode._valueOf5644.native == global::System.IntPtr.Zero)
+					global::android.graphics.PorterDuff.Mode._valueOf5644 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PorterDuff$Mode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.CallStaticObjectMethod(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._valueOf5644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.PorterDuff.Mode;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLEAR5645;
@@ -174,8 +178,6 @@ namespace android.graphics
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.PorterDuff.Mode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuff$Mode"));
-				global::android.graphics.PorterDuff.Mode._values5643 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "values", "()[Landroid/graphics/PorterDuff/Mode;");
-				global::android.graphics.PorterDuff.Mode._valueOf5644 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PorterDuff$Mode;");
 				global::android.graphics.PorterDuff.Mode._CLEAR5645 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "CLEAR", "Landroid/graphics/PorterDuff$Mode;");
 				global::android.graphics.PorterDuff.Mode._DARKEN5646 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "DARKEN", "Landroid/graphics/PorterDuff$Mode;");
 				global::android.graphics.PorterDuff.Mode._DST5647 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "DST", "Landroid/graphics/PorterDuff$Mode;");
@@ -201,6 +203,8 @@ namespace android.graphics
 		public PorterDuff() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.PorterDuff._PorterDuff5661.native == global::System.IntPtr.Zero)
+				global::android.graphics.PorterDuff._PorterDuff5661 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuff.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuff.staticClass, global::android.graphics.PorterDuff._PorterDuff5661);
 			Init(@__env, handle);
 		}
@@ -208,7 +212,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PorterDuff.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuff"));
-			global::android.graphics.PorterDuff._PorterDuff5661 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuff.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

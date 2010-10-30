@@ -11,6 +11,8 @@ namespace javax.crypto
 		public IllegalBlockSizeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28622.native == global::System.IntPtr.Zero)
+				global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28622 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28622);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.crypto
 		public IllegalBlockSizeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28623.native == global::System.IntPtr.Zero)
+				global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28623 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.IllegalBlockSizeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/IllegalBlockSizeException"));
-			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28622 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "()V");
-			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28623 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

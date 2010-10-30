@@ -17,22 +17,33 @@ namespace java.util.jar
 			internal static global::MonoJavaBridge.MethodId _equals27815;
 			public override bool equals(java.lang.Object arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.jar.Attributes.Name._equals27815.native == global::System.IntPtr.Zero)
+					global::java.util.jar.Attributes.Name._equals27815 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "equals", "(Ljava/lang/Object;)Z");
 				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Attributes.Name.staticClass, global::java.util.jar.Attributes.Name._equals27815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString27816;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.Name.staticClass, global::java.util.jar.Attributes.Name._toString27816)) as java.lang.String;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.jar.Attributes.Name._toString27816.native == global::System.IntPtr.Zero)
+					global::java.util.jar.Attributes.Name._toString27816 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "toString", "()Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.jar.Attributes.Name.staticClass, global::java.util.jar.Attributes.Name._toString27816) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode27817;
 			public override int hashCode()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.jar.Attributes.Name._hashCode27817.native == global::System.IntPtr.Zero)
+					global::java.util.jar.Attributes.Name._hashCode27817 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "hashCode", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.jar.Attributes.Name.staticClass, global::java.util.jar.Attributes.Name._hashCode27817);
 			}
 			internal static global::MonoJavaBridge.MethodId _Name27818;
 			public Name(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.jar.Attributes.Name._Name27818.native == global::System.IntPtr.Zero)
+					global::java.util.jar.Attributes.Name._Name27818 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.Attributes.Name.staticClass, global::java.util.jar.Attributes.Name._Name27818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
@@ -193,10 +204,6 @@ namespace java.util.jar
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.jar.Attributes.Name.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Attributes$Name"));
-				global::java.util.jar.Attributes.Name._equals27815 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				global::java.util.jar.Attributes.Name._toString27816 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "toString", "()Ljava/lang/String;");
-				global::java.util.jar.Attributes.Name._hashCode27817 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "hashCode", "()I");
-				global::java.util.jar.Attributes.Name._Name27818 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::java.util.jar.Attributes.Name._MANIFEST_VERSION27819 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "MANIFEST_VERSION", "Ljava/util/jar/Attributes$Name;");
 				global::java.util.jar.Attributes.Name._SIGNATURE_VERSION27820 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "SIGNATURE_VERSION", "Ljava/util/jar/Attributes$Name;");
 				global::java.util.jar.Attributes.Name._CONTENT_TYPE27821 = @__env.GetStaticFieldIDNoThrow(global::java.util.jar.Attributes.Name.staticClass, "CONTENT_TYPE", "Ljava/util/jar/Attributes$Name;");
@@ -222,97 +229,153 @@ namespace java.util.jar
 		internal static global::MonoJavaBridge.MethodId _get27836;
 		public virtual global::java.lang.Object get(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._get27836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._get27836.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._get27836 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._get27836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _put27837;
 		public virtual global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._put27837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._put27837.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._put27837 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._put27837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals27838;
 		public override bool equals(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._equals27838.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._equals27838 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._equals27838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _values27839;
 		public virtual global::java.util.Collection values()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._values27839)) as java.util.Collection;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._values27839.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._values27839 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "values", "()Ljava/util/Collection;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._values27839) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode27840;
 		public override int hashCode()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._hashCode27840.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._hashCode27840 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "hashCode", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._hashCode27840);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone27841;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._clone27841)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._clone27841.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._clone27841 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "clone", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._clone27841) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear27842;
 		public virtual void clear()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._clear27842.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._clear27842 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "clear", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._clear27842);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty27843;
 		public virtual bool isEmpty()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._isEmpty27843.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._isEmpty27843 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "isEmpty", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._isEmpty27843);
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue27844;
 		public virtual global::java.lang.String getValue(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._getValue27844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._getValue27844.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._getValue27844 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._getValue27844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue27845;
 		public virtual global::java.lang.String getValue(java.util.jar.Attributes.Name arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._getValue27845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._getValue27845.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._getValue27845 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "getValue", "(Ljava/util/jar/Attributes$Name;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._getValue27845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _size27846;
 		public virtual int size()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._size27846.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._size27846 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "size", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._size27846);
 		}
 		internal static global::MonoJavaBridge.MethodId _entrySet27847;
 		public virtual global::java.util.Set entrySet()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._entrySet27847)) as java.util.Set;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._entrySet27847.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._entrySet27847 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "entrySet", "()Ljava/util/Set;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._entrySet27847) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _putAll27848;
 		public virtual void putAll(java.util.Map arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._putAll27848.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._putAll27848 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "putAll", "(Ljava/util/Map;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._putAll27848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _remove27849;
 		public virtual global::java.lang.Object remove(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._remove27849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._remove27849.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._remove27849 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._remove27849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _keySet27850;
 		public virtual global::java.util.Set keySet()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._keySet27850)) as java.util.Set;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._keySet27850.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._keySet27850 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "keySet", "()Ljava/util/Set;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._keySet27850) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _containsValue27851;
 		public virtual bool containsValue(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._containsValue27851.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._containsValue27851 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._containsValue27851, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _containsKey27852;
 		public virtual bool containsKey(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._containsKey27852.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._containsKey27852 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._containsKey27852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _putValue27853;
 		public virtual global::java.lang.String putValue(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._putValue27853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._putValue27853.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._putValue27853 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "putValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._putValue27853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Attributes27854;
 		public Attributes(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._Attributes27854.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._Attributes27854 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._Attributes27854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -320,6 +383,8 @@ namespace java.util.jar
 		public Attributes(java.util.jar.Attributes arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._Attributes27855.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._Attributes27855 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(Ljava/util/jar/Attributes;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._Attributes27855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -327,6 +392,8 @@ namespace java.util.jar
 		public Attributes() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.jar.Attributes._Attributes27856.native == global::System.IntPtr.Zero)
+				global::java.util.jar.Attributes._Attributes27856 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.Attributes.staticClass, global::java.util.jar.Attributes._Attributes27856);
 			Init(@__env, handle);
 		}
@@ -334,27 +401,6 @@ namespace java.util.jar
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.Attributes.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Attributes"));
-			global::java.util.jar.Attributes._get27836 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.jar.Attributes._put27837 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.jar.Attributes._equals27838 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.jar.Attributes._values27839 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "values", "()Ljava/util/Collection;");
-			global::java.util.jar.Attributes._hashCode27840 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "hashCode", "()I");
-			global::java.util.jar.Attributes._clone27841 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.jar.Attributes._clear27842 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "clear", "()V");
-			global::java.util.jar.Attributes._isEmpty27843 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "isEmpty", "()Z");
-			global::java.util.jar.Attributes._getValue27844 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::java.util.jar.Attributes._getValue27845 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "getValue", "(Ljava/util/jar/Attributes$Name;)Ljava/lang/String;");
-			global::java.util.jar.Attributes._size27846 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "size", "()I");
-			global::java.util.jar.Attributes._entrySet27847 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "entrySet", "()Ljava/util/Set;");
-			global::java.util.jar.Attributes._putAll27848 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "putAll", "(Ljava/util/Map;)V");
-			global::java.util.jar.Attributes._remove27849 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.jar.Attributes._keySet27850 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "keySet", "()Ljava/util/Set;");
-			global::java.util.jar.Attributes._containsValue27851 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
-			global::java.util.jar.Attributes._containsKey27852 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
-			global::java.util.jar.Attributes._putValue27853 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "putValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			global::java.util.jar.Attributes._Attributes27854 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(I)V");
-			global::java.util.jar.Attributes._Attributes27855 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "(Ljava/util/jar/Attributes;)V");
-			global::java.util.jar.Attributes._Attributes27856 = @__env.GetMethodIDNoThrow(global::java.util.jar.Attributes.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

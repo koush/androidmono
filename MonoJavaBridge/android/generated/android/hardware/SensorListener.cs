@@ -18,20 +18,22 @@ namespace android.hardware
 		void android.hardware.SensorListener.onSensorChanged(int arg0, float[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorListener_._onSensorChanged6454.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorListener_._onSensorChanged6454 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorListener_.staticClass, "onSensorChanged", "(I[F)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.hardware.SensorListener_._onSensorChanged6454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onAccuracyChanged6455;
 		void android.hardware.SensorListener.onAccuracyChanged(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorListener_._onAccuracyChanged6455.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorListener_._onAccuracyChanged6455 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorListener_.staticClass, "onAccuracyChanged", "(II)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.hardware.SensorListener_._onAccuracyChanged6455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static SensorListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorListener"));
-			global::android.hardware.SensorListener_._onSensorChanged6454 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorListener_.staticClass, "onSensorChanged", "(I[F)V");
-			global::android.hardware.SensorListener_._onAccuracyChanged6455 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorListener_.staticClass, "onAccuracyChanged", "(II)V");
 		}
 		internal static void InitJNI()
 		{

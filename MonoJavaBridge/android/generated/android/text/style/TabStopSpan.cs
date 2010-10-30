@@ -17,13 +17,14 @@ namespace android.text.style
 		int android.text.style.TabStopSpan.getTabStop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.TabStopSpan_._getTabStop13598.native == global::System.IntPtr.Zero)
+				global::android.text.style.TabStopSpan_._getTabStop13598 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_.staticClass, "getTabStop", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_._getTabStop13598);
 		}
 		static TabStopSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.TabStopSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/TabStopSpan"));
-			global::android.text.style.TabStopSpan_._getTabStop13598 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_.staticClass, "getTabStop", "()I");
 		}
 		internal static void InitJNI()
 		{

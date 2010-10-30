@@ -17,13 +17,14 @@ namespace java.util.prefs
 		void java.util.prefs.PreferenceChangeListener.preferenceChange(java.util.prefs.PreferenceChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186.native == global::System.IntPtr.Zero)
+				global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeListener_.staticClass, "preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static PreferenceChangeListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.PreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/PreferenceChangeListener"));
-			global::java.util.prefs.PreferenceChangeListener_._preferenceChange28186 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferenceChangeListener_.staticClass, "preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V");
 		}
 		internal static void InitJNI()
 		{

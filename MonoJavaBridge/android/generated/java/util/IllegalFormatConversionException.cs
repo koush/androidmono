@@ -17,7 +17,10 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getMessage26315;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getMessage26315)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatConversionException._getMessage26315.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatConversionException._getMessage26315 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getMessage", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getMessage26315) as java.lang.String;
 		}
 		public new char Conversion
 		{
@@ -29,6 +32,9 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getConversion26316;
 		public virtual char getConversion()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatConversionException._getConversion26316.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatConversionException._getConversion26316 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getConversion", "()C");
 			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getConversion26316);
 		}
 		public new global::java.lang.Class ArgumentClass
@@ -41,12 +47,17 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _getArgumentClass26317;
 		public virtual global::java.lang.Class getArgumentClass()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getArgumentClass26317)) as java.lang.Class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatConversionException._getArgumentClass26317.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatConversionException._getArgumentClass26317 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getArgumentClass", "()Ljava/lang/Class;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getArgumentClass26317) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatConversionException26318;
 		public IllegalFormatConversionException(char arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.IllegalFormatConversionException._IllegalFormatConversionException26318.native == global::System.IntPtr.Zero)
+				global::java.util.IllegalFormatConversionException._IllegalFormatConversionException26318 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "<init>", "(CLjava/lang/Class;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._IllegalFormatConversionException26318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -54,10 +65,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.IllegalFormatConversionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/IllegalFormatConversionException"));
-			global::java.util.IllegalFormatConversionException._getMessage26315 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.IllegalFormatConversionException._getConversion26316 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getConversion", "()C");
-			global::java.util.IllegalFormatConversionException._getArgumentClass26317 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "getArgumentClass", "()Ljava/lang/Class;");
-			global::java.util.IllegalFormatConversionException._IllegalFormatConversionException26318 = @__env.GetMethodIDNoThrow(global::java.util.IllegalFormatConversionException.staticClass, "<init>", "(CLjava/lang/Class;)V");
 		}
 		internal static void InitJNI()
 		{

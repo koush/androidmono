@@ -11,30 +11,40 @@ namespace android.net.wifi
 		public static global::android.net.wifi.SupplicantState[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.wifi.SupplicantState._values7981.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.SupplicantState._values7981 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "values", "()[Landroid/net/wifi/SupplicantState;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.wifi.SupplicantState>(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._values7981)) as android.net.wifi.SupplicantState[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf7982;
 		public static global::android.net.wifi.SupplicantState valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.wifi.SupplicantState._valueOf7982.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.SupplicantState._valueOf7982 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/wifi/SupplicantState;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._valueOf7982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.wifi.SupplicantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7983;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.wifi.SupplicantState._writeToParcel7983.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.SupplicantState._writeToParcel7983 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._writeToParcel7983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7984;
 		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.wifi.SupplicantState._describeContents7984.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.SupplicantState._describeContents7984 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "describeContents", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._describeContents7984);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidState7985;
 		public static bool isValidState(android.net.wifi.SupplicantState arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.wifi.SupplicantState._isValidState7985.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.SupplicantState._isValidState7985 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "isValidState", "(Landroid/net/wifi/SupplicantState;)Z");
 			return @__env.CallStaticBooleanMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._isValidState7985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.FieldId _ASSOCIATED7986;
@@ -140,11 +150,6 @@ namespace android.net.wifi
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.SupplicantState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/SupplicantState"));
-			global::android.net.wifi.SupplicantState._values7981 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "values", "()[Landroid/net/wifi/SupplicantState;");
-			global::android.net.wifi.SupplicantState._valueOf7982 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/wifi/SupplicantState;");
-			global::android.net.wifi.SupplicantState._writeToParcel7983 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.net.wifi.SupplicantState._describeContents7984 = @__env.GetMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "describeContents", "()I");
-			global::android.net.wifi.SupplicantState._isValidState7985 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "isValidState", "(Landroid/net/wifi/SupplicantState;)Z");
 			global::android.net.wifi.SupplicantState._ASSOCIATED7986 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "ASSOCIATED", "Landroid/net/wifi/SupplicantState;");
 			global::android.net.wifi.SupplicantState._ASSOCIATING7987 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "ASSOCIATING", "Landroid/net/wifi/SupplicantState;");
 			global::android.net.wifi.SupplicantState._COMPLETED7988 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "COMPLETED", "Landroid/net/wifi/SupplicantState;");

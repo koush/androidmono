@@ -11,6 +11,8 @@ namespace java.net
 		public NoRouteToHostException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.NoRouteToHostException._NoRouteToHostException21650.native == global::System.IntPtr.Zero)
+				global::java.net.NoRouteToHostException._NoRouteToHostException21650 = @__env.GetMethodIDNoThrow(global::java.net.NoRouteToHostException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.NoRouteToHostException.staticClass, global::java.net.NoRouteToHostException._NoRouteToHostException21650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.net
 		public NoRouteToHostException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.NoRouteToHostException._NoRouteToHostException21651.native == global::System.IntPtr.Zero)
+				global::java.net.NoRouteToHostException._NoRouteToHostException21651 = @__env.GetMethodIDNoThrow(global::java.net.NoRouteToHostException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.NoRouteToHostException.staticClass, global::java.net.NoRouteToHostException._NoRouteToHostException21651);
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.NoRouteToHostException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/NoRouteToHostException"));
-			global::java.net.NoRouteToHostException._NoRouteToHostException21650 = @__env.GetMethodIDNoThrow(global::java.net.NoRouteToHostException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.net.NoRouteToHostException._NoRouteToHostException21651 = @__env.GetMethodIDNoThrow(global::java.net.NoRouteToHostException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

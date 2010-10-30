@@ -17,22 +17,33 @@ namespace java.lang
 			internal static global::MonoJavaBridge.MethodId _equals19765;
 			public sealed override bool equals(java.lang.Object arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.Subset._equals19765.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.Subset._equals19765 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "equals", "(Ljava/lang/Object;)Z");
 				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._equals19765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString19766;
 			public sealed override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._toString19766)) as java.lang.String;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.Subset._toString19766.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.Subset._toString19766 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "toString", "()Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._toString19766) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode19767;
 			public sealed override int hashCode()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.Subset._hashCode19767.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.Subset._hashCode19767 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "hashCode", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._hashCode19767);
 			}
 			internal static global::MonoJavaBridge.MethodId _Subset19768;
 			protected Subset(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.Subset._Subset19768.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.Subset._Subset19768 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "<init>", "(Ljava/lang/String;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._Subset19768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
@@ -40,10 +51,6 @@ namespace java.lang
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Character.Subset.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character$Subset"));
-				global::java.lang.Character.Subset._equals19765 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "equals", "(Ljava/lang/Object;)Z");
-				global::java.lang.Character.Subset._toString19766 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "toString", "()Ljava/lang/String;");
-				global::java.lang.Character.Subset._hashCode19767 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "hashCode", "()I");
-				global::java.lang.Character.Subset._Subset19768 = @__env.GetMethodIDNoThrow(global::java.lang.Character.Subset.staticClass, "<init>", "(Ljava/lang/String;)V");
 			}
 			internal static void InitJNI()
 			{
@@ -60,18 +67,24 @@ namespace java.lang
 			public static global::java.lang.Character.UnicodeBlock forName(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.UnicodeBlock._forName19769.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.UnicodeBlock._forName19769 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "forName", "(Ljava/lang/String;)Ljava/lang/Character$UnicodeBlock;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._forName19769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.MethodId _of19770;
 			public static global::java.lang.Character.UnicodeBlock of(char arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.UnicodeBlock._of19770.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.UnicodeBlock._of19770 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "of", "(C)Ljava/lang/Character$UnicodeBlock;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.MethodId _of19771;
 			public static global::java.lang.Character.UnicodeBlock of(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Character.UnicodeBlock._of19771.native == global::System.IntPtr.Zero)
+					global::java.lang.Character.UnicodeBlock._of19771 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "of", "(I)Ljava/lang/Character$UnicodeBlock;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.FieldId _BASIC_LATIN19772;
@@ -1212,9 +1225,6 @@ namespace java.lang
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Character.UnicodeBlock.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character$UnicodeBlock"));
-				global::java.lang.Character.UnicodeBlock._forName19769 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "forName", "(Ljava/lang/String;)Ljava/lang/Character$UnicodeBlock;");
-				global::java.lang.Character.UnicodeBlock._of19770 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "of", "(C)Ljava/lang/Character$UnicodeBlock;");
-				global::java.lang.Character.UnicodeBlock._of19771 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "of", "(I)Ljava/lang/Character$UnicodeBlock;");
 				global::java.lang.Character.UnicodeBlock._BASIC_LATIN19772 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "BASIC_LATIN", "Ljava/lang/Character$UnicodeBlock;");
 				global::java.lang.Character.UnicodeBlock._LATIN_1_SUPPLEMENT19773 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "LATIN_1_SUPPLEMENT", "Ljava/lang/Character$UnicodeBlock;");
 				global::java.lang.Character.UnicodeBlock._LATIN_EXTENDED_A19774 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Character.UnicodeBlock.staticClass, "LATIN_EXTENDED_A", "Ljava/lang/Character$UnicodeBlock;");
@@ -1350,78 +1360,104 @@ namespace java.lang
 		public static bool isJavaIdentifierStart(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaIdentifierStart19898.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaIdentifierStart19898 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierStart", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaIdentifierStart19898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaIdentifierStart19899;
 		public static bool isJavaIdentifierStart(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaIdentifierStart19899.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaIdentifierStart19899 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierStart", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaIdentifierStart19899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaIdentifierPart19900;
 		public static bool isJavaIdentifierPart(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaIdentifierPart19900.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaIdentifierPart19900 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierPart", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaIdentifierPart19900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaIdentifierPart19901;
 		public static bool isJavaIdentifierPart(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaIdentifierPart19901.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaIdentifierPart19901 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierPart", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaIdentifierPart19901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals19902;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._equals19902.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._equals19902 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._equals19902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19903;
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toString19903.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toString19903 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._toString19903)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19904;
 		public static global::java.lang.String toString(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toString19904.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toString19904 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toString", "(C)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._toString19904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode19905;
 		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._hashCode19905.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._hashCode19905 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "hashCode", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._hashCode19905);
 		}
 		internal static global::MonoJavaBridge.MethodId _reverseBytes19906;
 		public static char reverseBytes(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._reverseBytes19906.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._reverseBytes19906 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "reverseBytes", "(C)C");
 			return @__env.CallStaticCharMethod(java.lang.Character.staticClass, global::java.lang.Character._reverseBytes19906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19907;
 		public int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._compareTo19907.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._compareTo19907 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "compareTo", "(Ljava/lang/Object;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._compareTo19907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19908;
 		public int compareTo(java.lang.Character arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._compareTo19908.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._compareTo19908 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "compareTo", "(Ljava/lang/Character;)I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._compareTo19908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _codePointAt19909;
 		public static int codePointAt(char[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointAt19909.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointAt19909 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "([CI)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointAt19909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _codePointAt19910;
 		public static int codePointAt(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointAt19910.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointAt19910 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "(Ljava/lang/CharSequence;I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointAt19910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int codePointAt(string arg0, int arg1)
@@ -1432,12 +1468,16 @@ namespace java.lang
 		public static int codePointAt(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointAt19911.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointAt19911 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "([CII)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointAt19911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _codePointBefore19912;
 		public static int codePointBefore(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointBefore19912.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointBefore19912 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "(Ljava/lang/CharSequence;I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointBefore19912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int codePointBefore(string arg0, int arg1)
@@ -1448,18 +1488,24 @@ namespace java.lang
 		public static int codePointBefore(char[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointBefore19913.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointBefore19913 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "([CI)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointBefore19913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _codePointBefore19914;
 		public static int codePointBefore(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointBefore19914.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointBefore19914 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "([CII)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointBefore19914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _codePointCount19915;
 		public static int codePointCount(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointCount19915.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointCount19915 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointCount", "(Ljava/lang/CharSequence;II)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointCount19915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int codePointCount(string arg0, int arg1, int arg2)
@@ -1470,18 +1516,24 @@ namespace java.lang
 		public static int codePointCount(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._codePointCount19916.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._codePointCount19916 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointCount", "([CII)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._codePointCount19916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _offsetByCodePoints19917;
 		public static int offsetByCodePoints(char[] arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._offsetByCodePoints19917.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._offsetByCodePoints19917 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "offsetByCodePoints", "([CIIII)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._offsetByCodePoints19917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _offsetByCodePoints19918;
 		public static int offsetByCodePoints(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._offsetByCodePoints19918.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._offsetByCodePoints19918 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "offsetByCodePoints", "(Ljava/lang/CharSequence;II)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._offsetByCodePoints19918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int offsetByCodePoints(string arg0, int arg1, int arg2)
@@ -1492,348 +1544,464 @@ namespace java.lang
 		public static int toLowerCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toLowerCase19919.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toLowerCase19919 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toLowerCase", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._toLowerCase19919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toLowerCase19920;
 		public static char toLowerCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toLowerCase19920.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toLowerCase19920 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toLowerCase", "(C)C");
 			return @__env.CallStaticCharMethod(java.lang.Character.staticClass, global::java.lang.Character._toLowerCase19920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toUpperCase19921;
 		public static char toUpperCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toUpperCase19921.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toUpperCase19921 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toUpperCase", "(C)C");
 			return @__env.CallStaticCharMethod(java.lang.Character.staticClass, global::java.lang.Character._toUpperCase19921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toUpperCase19922;
 		public static int toUpperCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toUpperCase19922.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toUpperCase19922 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toUpperCase", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._toUpperCase19922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf19923;
 		public static global::java.lang.Character valueOf(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._valueOf19923.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._valueOf19923 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "valueOf", "(C)Ljava/lang/Character;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character>(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._valueOf19923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character;
 		}
 		internal static global::MonoJavaBridge.MethodId _toChars19924;
 		public static char[] toChars(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toChars19924.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toChars19924 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toChars", "(I)[C");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._toChars19924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _toChars19925;
 		public static int toChars(int arg0, char[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toChars19925.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toChars19925 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toChars", "(I[CI)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._toChars19925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _charCount19926;
 		public static int charCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._charCount19926.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._charCount19926 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "charCount", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._charCount19926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getType19927;
 		public static int getType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getType19927.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getType19927 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getType", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._getType19927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getType19928;
 		public static int getType(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getType19928.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getType19928 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getType", "(C)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._getType19928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidCodePoint19929;
 		public static bool isValidCodePoint(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isValidCodePoint19929.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isValidCodePoint19929 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isValidCodePoint", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isValidCodePoint19929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLowSurrogate19930;
 		public static bool isLowSurrogate(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLowSurrogate19930.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLowSurrogate19930 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowSurrogate", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLowSurrogate19930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isHighSurrogate19931;
 		public static bool isHighSurrogate(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isHighSurrogate19931.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isHighSurrogate19931 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isHighSurrogate", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isHighSurrogate19931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _charValue19932;
 		public char charValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._charValue19932.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._charValue19932 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "charValue", "()C");
 			return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._charValue19932);
 		}
 		internal static global::MonoJavaBridge.MethodId _isSupplementaryCodePoint19933;
 		public static bool isSupplementaryCodePoint(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isSupplementaryCodePoint19933.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isSupplementaryCodePoint19933 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSupplementaryCodePoint", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isSupplementaryCodePoint19933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSurrogatePair19934;
 		public static bool isSurrogatePair(char arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isSurrogatePair19934.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isSurrogatePair19934 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSurrogatePair", "(CC)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isSurrogatePair19934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _toCodePoint19935;
 		public static int toCodePoint(char arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toCodePoint19935.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toCodePoint19935 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toCodePoint", "(CC)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._toCodePoint19935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLowerCase19936;
 		public static bool isLowerCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLowerCase19936.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLowerCase19936 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowerCase", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLowerCase19936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLowerCase19937;
 		public static bool isLowerCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLowerCase19937.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLowerCase19937 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowerCase", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLowerCase19937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUpperCase19938;
 		public static bool isUpperCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUpperCase19938.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUpperCase19938 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUpperCase", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUpperCase19938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUpperCase19939;
 		public static bool isUpperCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUpperCase19939.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUpperCase19939 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUpperCase", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUpperCase19939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTitleCase19940;
 		public static bool isTitleCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isTitleCase19940.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isTitleCase19940 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isTitleCase", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isTitleCase19940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTitleCase19941;
 		public static bool isTitleCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isTitleCase19941.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isTitleCase19941 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isTitleCase", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isTitleCase19941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDigit19942;
 		public static bool isDigit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isDigit19942.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isDigit19942 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDigit", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isDigit19942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDigit19943;
 		public static bool isDigit(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isDigit19943.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isDigit19943 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDigit", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isDigit19943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDefined19944;
 		public static bool isDefined(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isDefined19944.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isDefined19944 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDefined", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isDefined19944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDefined19945;
 		public static bool isDefined(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isDefined19945.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isDefined19945 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDefined", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isDefined19945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLetter19946;
 		public static bool isLetter(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLetter19946.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLetter19946 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetter", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLetter19946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLetter19947;
 		public static bool isLetter(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLetter19947.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLetter19947 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetter", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLetter19947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLetterOrDigit19948;
 		public static bool isLetterOrDigit(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLetterOrDigit19948.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLetterOrDigit19948 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetterOrDigit", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLetterOrDigit19948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLetterOrDigit19949;
 		public static bool isLetterOrDigit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isLetterOrDigit19949.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isLetterOrDigit19949 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetterOrDigit", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isLetterOrDigit19949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaLetter19950;
 		public static bool isJavaLetter(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaLetter19950.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaLetter19950 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaLetter", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaLetter19950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isJavaLetterOrDigit19951;
 		public static bool isJavaLetterOrDigit(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isJavaLetterOrDigit19951.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isJavaLetterOrDigit19951 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaLetterOrDigit", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isJavaLetterOrDigit19951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnicodeIdentifierStart19952;
 		public static bool isUnicodeIdentifierStart(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUnicodeIdentifierStart19952.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUnicodeIdentifierStart19952 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierStart", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUnicodeIdentifierStart19952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnicodeIdentifierStart19953;
 		public static bool isUnicodeIdentifierStart(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUnicodeIdentifierStart19953.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUnicodeIdentifierStart19953 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierStart", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUnicodeIdentifierStart19953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnicodeIdentifierPart19954;
 		public static bool isUnicodeIdentifierPart(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUnicodeIdentifierPart19954.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUnicodeIdentifierPart19954 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierPart", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUnicodeIdentifierPart19954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnicodeIdentifierPart19955;
 		public static bool isUnicodeIdentifierPart(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isUnicodeIdentifierPart19955.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isUnicodeIdentifierPart19955 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierPart", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isUnicodeIdentifierPart19955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIdentifierIgnorable19956;
 		public static bool isIdentifierIgnorable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isIdentifierIgnorable19956.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isIdentifierIgnorable19956 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isIdentifierIgnorable", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isIdentifierIgnorable19956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIdentifierIgnorable19957;
 		public static bool isIdentifierIgnorable(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isIdentifierIgnorable19957.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isIdentifierIgnorable19957 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isIdentifierIgnorable", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isIdentifierIgnorable19957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toTitleCase19958;
 		public static char toTitleCase(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toTitleCase19958.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toTitleCase19958 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toTitleCase", "(C)C");
 			return @__env.CallStaticCharMethod(java.lang.Character.staticClass, global::java.lang.Character._toTitleCase19958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toTitleCase19959;
 		public static int toTitleCase(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._toTitleCase19959.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._toTitleCase19959 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toTitleCase", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._toTitleCase19959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _digit19960;
 		public static int digit(char arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._digit19960.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._digit19960 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "digit", "(CI)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._digit19960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _digit19961;
 		public static int digit(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._digit19961.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._digit19961 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "digit", "(II)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._digit19961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNumericValue19962;
 		public static int getNumericValue(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getNumericValue19962.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getNumericValue19962 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getNumericValue", "(C)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._getNumericValue19962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNumericValue19963;
 		public static int getNumericValue(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getNumericValue19963.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getNumericValue19963 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getNumericValue", "(I)I");
 			return @__env.CallStaticIntMethod(java.lang.Character.staticClass, global::java.lang.Character._getNumericValue19963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSpace19964;
 		public static bool isSpace(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isSpace19964.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isSpace19964 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpace", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isSpace19964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSpaceChar19965;
 		public static bool isSpaceChar(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isSpaceChar19965.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isSpaceChar19965 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpaceChar", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isSpaceChar19965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSpaceChar19966;
 		public static bool isSpaceChar(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isSpaceChar19966.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isSpaceChar19966 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpaceChar", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isSpaceChar19966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isWhitespace19967;
 		public static bool isWhitespace(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isWhitespace19967.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isWhitespace19967 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isWhitespace", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isWhitespace19967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isWhitespace19968;
 		public static bool isWhitespace(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isWhitespace19968.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isWhitespace19968 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isWhitespace", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isWhitespace19968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isISOControl19969;
 		public static bool isISOControl(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isISOControl19969.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isISOControl19969 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isISOControl", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isISOControl19969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isISOControl19970;
 		public static bool isISOControl(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isISOControl19970.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isISOControl19970 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isISOControl", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isISOControl19970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _forDigit19971;
 		public static char forDigit(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._forDigit19971.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._forDigit19971 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "forDigit", "(II)C");
 			return @__env.CallStaticCharMethod(java.lang.Character.staticClass, global::java.lang.Character._forDigit19971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDirectionality19972;
 		public static byte getDirectionality(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getDirectionality19972.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getDirectionality19972 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getDirectionality", "(C)B");
 			return @__env.CallStaticByteMethod(java.lang.Character.staticClass, global::java.lang.Character._getDirectionality19972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDirectionality19973;
 		public static byte getDirectionality(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._getDirectionality19973.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._getDirectionality19973 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getDirectionality", "(I)B");
 			return @__env.CallStaticByteMethod(java.lang.Character.staticClass, global::java.lang.Character._getDirectionality19973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isMirrored19974;
 		public static bool isMirrored(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isMirrored19974.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isMirrored19974 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(I)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isMirrored19974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isMirrored19975;
 		public static bool isMirrored(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._isMirrored19975.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._isMirrored19975 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(C)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Character.staticClass, global::java.lang.Character._isMirrored19975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Character19976;
 		public Character(char arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Character._Character19976.native == global::System.IntPtr.Zero)
+				global::java.lang.Character._Character19976 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "<init>", "(C)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Character.staticClass, global::java.lang.Character._Character19976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -1841,85 +2009,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Character.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Character"));
-			global::java.lang.Character._isJavaIdentifierStart19898 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierStart", "(C)Z");
-			global::java.lang.Character._isJavaIdentifierStart19899 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierStart", "(I)Z");
-			global::java.lang.Character._isJavaIdentifierPart19900 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierPart", "(I)Z");
-			global::java.lang.Character._isJavaIdentifierPart19901 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaIdentifierPart", "(C)Z");
-			global::java.lang.Character._equals19902 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.lang.Character._toString19903 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.Character._toString19904 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toString", "(C)Ljava/lang/String;");
-			global::java.lang.Character._hashCode19905 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "hashCode", "()I");
-			global::java.lang.Character._reverseBytes19906 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "reverseBytes", "(C)C");
-			global::java.lang.Character._compareTo19907 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.lang.Character._compareTo19908 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "compareTo", "(Ljava/lang/Character;)I");
-			global::java.lang.Character._codePointAt19909 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "([CI)I");
-			global::java.lang.Character._codePointAt19910 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "(Ljava/lang/CharSequence;I)I");
-			global::java.lang.Character._codePointAt19911 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointAt", "([CII)I");
-			global::java.lang.Character._codePointBefore19912 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "(Ljava/lang/CharSequence;I)I");
-			global::java.lang.Character._codePointBefore19913 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "([CI)I");
-			global::java.lang.Character._codePointBefore19914 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointBefore", "([CII)I");
-			global::java.lang.Character._codePointCount19915 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointCount", "(Ljava/lang/CharSequence;II)I");
-			global::java.lang.Character._codePointCount19916 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "codePointCount", "([CII)I");
-			global::java.lang.Character._offsetByCodePoints19917 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "offsetByCodePoints", "([CIIII)I");
-			global::java.lang.Character._offsetByCodePoints19918 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "offsetByCodePoints", "(Ljava/lang/CharSequence;II)I");
-			global::java.lang.Character._toLowerCase19919 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toLowerCase", "(I)I");
-			global::java.lang.Character._toLowerCase19920 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toLowerCase", "(C)C");
-			global::java.lang.Character._toUpperCase19921 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toUpperCase", "(C)C");
-			global::java.lang.Character._toUpperCase19922 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toUpperCase", "(I)I");
-			global::java.lang.Character._valueOf19923 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "valueOf", "(C)Ljava/lang/Character;");
-			global::java.lang.Character._toChars19924 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toChars", "(I)[C");
-			global::java.lang.Character._toChars19925 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toChars", "(I[CI)I");
-			global::java.lang.Character._charCount19926 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "charCount", "(I)I");
-			global::java.lang.Character._getType19927 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getType", "(I)I");
-			global::java.lang.Character._getType19928 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getType", "(C)I");
-			global::java.lang.Character._isValidCodePoint19929 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isValidCodePoint", "(I)Z");
-			global::java.lang.Character._isLowSurrogate19930 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowSurrogate", "(C)Z");
-			global::java.lang.Character._isHighSurrogate19931 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isHighSurrogate", "(C)Z");
-			global::java.lang.Character._charValue19932 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "charValue", "()C");
-			global::java.lang.Character._isSupplementaryCodePoint19933 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSupplementaryCodePoint", "(I)Z");
-			global::java.lang.Character._isSurrogatePair19934 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSurrogatePair", "(CC)Z");
-			global::java.lang.Character._toCodePoint19935 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toCodePoint", "(CC)I");
-			global::java.lang.Character._isLowerCase19936 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowerCase", "(I)Z");
-			global::java.lang.Character._isLowerCase19937 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLowerCase", "(C)Z");
-			global::java.lang.Character._isUpperCase19938 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUpperCase", "(I)Z");
-			global::java.lang.Character._isUpperCase19939 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUpperCase", "(C)Z");
-			global::java.lang.Character._isTitleCase19940 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isTitleCase", "(C)Z");
-			global::java.lang.Character._isTitleCase19941 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isTitleCase", "(I)Z");
-			global::java.lang.Character._isDigit19942 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDigit", "(I)Z");
-			global::java.lang.Character._isDigit19943 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDigit", "(C)Z");
-			global::java.lang.Character._isDefined19944 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDefined", "(I)Z");
-			global::java.lang.Character._isDefined19945 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isDefined", "(C)Z");
-			global::java.lang.Character._isLetter19946 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetter", "(C)Z");
-			global::java.lang.Character._isLetter19947 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetter", "(I)Z");
-			global::java.lang.Character._isLetterOrDigit19948 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetterOrDigit", "(C)Z");
-			global::java.lang.Character._isLetterOrDigit19949 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isLetterOrDigit", "(I)Z");
-			global::java.lang.Character._isJavaLetter19950 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaLetter", "(C)Z");
-			global::java.lang.Character._isJavaLetterOrDigit19951 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isJavaLetterOrDigit", "(C)Z");
-			global::java.lang.Character._isUnicodeIdentifierStart19952 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierStart", "(C)Z");
-			global::java.lang.Character._isUnicodeIdentifierStart19953 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierStart", "(I)Z");
-			global::java.lang.Character._isUnicodeIdentifierPart19954 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierPart", "(C)Z");
-			global::java.lang.Character._isUnicodeIdentifierPart19955 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isUnicodeIdentifierPart", "(I)Z");
-			global::java.lang.Character._isIdentifierIgnorable19956 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isIdentifierIgnorable", "(I)Z");
-			global::java.lang.Character._isIdentifierIgnorable19957 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isIdentifierIgnorable", "(C)Z");
-			global::java.lang.Character._toTitleCase19958 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toTitleCase", "(C)C");
-			global::java.lang.Character._toTitleCase19959 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "toTitleCase", "(I)I");
-			global::java.lang.Character._digit19960 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "digit", "(CI)I");
-			global::java.lang.Character._digit19961 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "digit", "(II)I");
-			global::java.lang.Character._getNumericValue19962 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getNumericValue", "(C)I");
-			global::java.lang.Character._getNumericValue19963 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getNumericValue", "(I)I");
-			global::java.lang.Character._isSpace19964 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpace", "(C)Z");
-			global::java.lang.Character._isSpaceChar19965 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpaceChar", "(C)Z");
-			global::java.lang.Character._isSpaceChar19966 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isSpaceChar", "(I)Z");
-			global::java.lang.Character._isWhitespace19967 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isWhitespace", "(I)Z");
-			global::java.lang.Character._isWhitespace19968 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isWhitespace", "(C)Z");
-			global::java.lang.Character._isISOControl19969 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isISOControl", "(I)Z");
-			global::java.lang.Character._isISOControl19970 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isISOControl", "(C)Z");
-			global::java.lang.Character._forDigit19971 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "forDigit", "(II)C");
-			global::java.lang.Character._getDirectionality19972 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getDirectionality", "(C)B");
-			global::java.lang.Character._getDirectionality19973 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "getDirectionality", "(I)B");
-			global::java.lang.Character._isMirrored19974 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(I)Z");
-			global::java.lang.Character._isMirrored19975 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Character.staticClass, "isMirrored", "(C)Z");
-			global::java.lang.Character._Character19976 = @__env.GetMethodIDNoThrow(global::java.lang.Character.staticClass, "<init>", "(C)V");
 		}
 		internal static void InitJNI()
 		{

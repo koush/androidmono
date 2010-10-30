@@ -17,13 +17,14 @@ namespace java.security
 		global::java.security.ProtectionDomain[] java.security.DomainCombiner.combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.DomainCombiner_._combine22952.native == global::System.IntPtr.Zero)
+				global::java.security.DomainCombiner_._combine22952 = @__env.GetMethodIDNoThrow(global::java.security.DomainCombiner_.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.ProtectionDomain>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.ProtectionDomain[];
 		}
 		static DomainCombiner_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.DomainCombiner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/DomainCombiner"));
-			global::java.security.DomainCombiner_._combine22952 = @__env.GetMethodIDNoThrow(global::java.security.DomainCombiner_.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;");
 		}
 		internal static void InitJNI()
 		{

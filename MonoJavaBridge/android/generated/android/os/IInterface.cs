@@ -17,13 +17,14 @@ namespace android.os
 		global::android.os.IBinder android.os.IInterface.asBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.IInterface_._asBinder9911.native == global::System.IntPtr.Zero)
+				global::android.os.IInterface_._asBinder9911 = @__env.GetMethodIDNoThrow(global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.IInterface_._asBinder9911)) as android.os.IBinder;
 		}
 		static IInterface_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IInterface_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IInterface"));
-			global::android.os.IInterface_._asBinder9911 = @__env.GetMethodIDNoThrow(global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.os
 		public IInterfaceDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912.native == global::System.IntPtr.Zero)
+				global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912 = @__env.GetMethodIDNoThrow(global::android.os.IInterfaceDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IInterfaceDelegateWrapper.staticClass, global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IInterfaceDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IInterfaceDelegateWrapper"));
-			global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912 = @__env.GetMethodIDNoThrow(global::android.os.IInterfaceDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

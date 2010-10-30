@@ -17,13 +17,14 @@ namespace java.security
 		void java.security.Guard.checkGuard(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.Guard_._checkGuard22957.native == global::System.IntPtr.Zero)
+				global::java.security.Guard_._checkGuard22957 = @__env.GetMethodIDNoThrow(global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.security.Guard_._checkGuard22957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Guard_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.Guard_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Guard"));
-			global::java.security.Guard_._checkGuard22957 = @__env.GetMethodIDNoThrow(global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V");
 		}
 		internal static void InitJNI()
 		{

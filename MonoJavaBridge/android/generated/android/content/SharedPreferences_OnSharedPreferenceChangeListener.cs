@@ -17,13 +17,14 @@ namespace android.content
 		void android.content.SharedPreferences_OnSharedPreferenceChangeListener.onSharedPreferenceChanged(android.content.SharedPreferences arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_._onSharedPreferenceChanged3520.native == global::System.IntPtr.Zero)
+				global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_._onSharedPreferenceChanged3520 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_.staticClass, "onSharedPreferenceChanged", "(Landroid/content/SharedPreferences;Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_._onSharedPreferenceChanged3520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static SharedPreferences_OnSharedPreferenceChangeListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences$OnSharedPreferenceChangeListener"));
-			global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_._onSharedPreferenceChanged3520 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_.staticClass, "onSharedPreferenceChanged", "(Landroid/content/SharedPreferences;Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.content
 		public SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper._SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper3521.native == global::System.IntPtr.Zero)
+				global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper._SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper3521 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper.staticClass, global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper._SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper3521);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper"));
-			global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper._SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper3521 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

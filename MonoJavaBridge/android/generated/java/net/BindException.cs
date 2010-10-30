@@ -11,6 +11,8 @@ namespace java.net
 		public BindException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.BindException._BindException21347.native == global::System.IntPtr.Zero)
+				global::java.net.BindException._BindException21347 = @__env.GetMethodIDNoThrow(global::java.net.BindException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.BindException.staticClass, global::java.net.BindException._BindException21347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.net
 		public BindException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.BindException._BindException21348.native == global::System.IntPtr.Zero)
+				global::java.net.BindException._BindException21348 = @__env.GetMethodIDNoThrow(global::java.net.BindException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.BindException.staticClass, global::java.net.BindException._BindException21348);
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.BindException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/BindException"));
-			global::java.net.BindException._BindException21347 = @__env.GetMethodIDNoThrow(global::java.net.BindException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.net.BindException._BindException21348 = @__env.GetMethodIDNoThrow(global::java.net.BindException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

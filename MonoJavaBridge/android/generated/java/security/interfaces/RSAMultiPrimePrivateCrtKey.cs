@@ -23,90 +23,102 @@ namespace java.security.interfaces
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getPublicExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPublicExponent23927.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPublicExponent23927 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPublicExponent23927)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimeP23928;
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getPrimeP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeP23928.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeP23928 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeP", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeP23928)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimeQ23929;
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getPrimeQ()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeQ23929.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeQ23929 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeQ", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeQ23929)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimeExponentP23930;
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getPrimeExponentP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentP23930.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentP23930 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeExponentP", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentP23930)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimeExponentQ23931;
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getPrimeExponentQ()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentQ23931.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentQ23931 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeExponentQ", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentQ23931)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCrtCoefficient23932;
 		global::java.math.BigInteger java.security.interfaces.RSAMultiPrimePrivateCrtKey.getCrtCoefficient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getCrtCoefficient23932.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getCrtCoefficient23932 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getCrtCoefficient23932)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOtherPrimeInfo23933;
 		global::java.security.spec.RSAOtherPrimeInfo[] java.security.interfaces.RSAMultiPrimePrivateCrtKey.getOtherPrimeInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getOtherPrimeInfo23933.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getOtherPrimeInfo23933 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getOtherPrimeInfo", "()[Ljava/security/spec/RSAOtherPrimeInfo;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.spec.RSAOtherPrimeInfo>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getOtherPrimeInfo23933)) as java.security.spec.RSAOtherPrimeInfo[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivateExponent23934;
 		global::java.math.BigInteger java.security.interfaces.RSAPrivateKey.getPrivateExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrivateExponent23934.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrivateExponent23934 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrivateExponent", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrivateExponent23934)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded23935;
 		byte[] java.security.Key.getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getEncoded23935.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getEncoded23935 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getEncoded", "()[B");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getEncoded23935)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23936;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getAlgorithm23936.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getAlgorithm23936 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getAlgorithm23936)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23937;
 		global::java.lang.String java.security.Key.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getFormat23937.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getFormat23937 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getFormat", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getFormat23937)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getModulus23938;
 		global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getModulus23938.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getModulus23938 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getModulus23938)) as java.math.BigInteger;
 		}
 		static RSAMultiPrimePrivateCrtKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/RSAMultiPrimePrivateCrtKey"));
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPublicExponent23927 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeP23928 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeP", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeQ23929 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeQ", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentP23930 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeExponentP", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrimeExponentQ23931 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrimeExponentQ", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getCrtCoefficient23932 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getCrtCoefficient", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getOtherPrimeInfo23933 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getOtherPrimeInfo", "()[Ljava/security/spec/RSAOtherPrimeInfo;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getPrivateExponent23934 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getPrivateExponent", "()Ljava/math/BigInteger;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getEncoded23935 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getEncoded", "()[B");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getAlgorithm23936 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getFormat23937 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getFormat", "()Ljava/lang/String;");
-			global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_._getModulus23938 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_.staticClass, "getModulus", "()Ljava/math/BigInteger;");
 		}
 		internal static void InitJNI()
 		{

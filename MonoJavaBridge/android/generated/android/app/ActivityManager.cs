@@ -17,22 +17,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1553;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.MemoryInfo._writeToParcel1553.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.MemoryInfo._writeToParcel1553 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._writeToParcel1553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1554;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.MemoryInfo._describeContents1554.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.MemoryInfo._describeContents1554 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._describeContents1554);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1555;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.MemoryInfo._readFromParcel1555.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.MemoryInfo._readFromParcel1555 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._readFromParcel1555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _MemoryInfo1556;
 			public MemoryInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.MemoryInfo._MemoryInfo1556.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.MemoryInfo._MemoryInfo1556 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._MemoryInfo1556);
 				Init(@__env, handle);
 			}
@@ -85,10 +96,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.MemoryInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$MemoryInfo"));
-				global::android.app.ActivityManager.MemoryInfo._writeToParcel1553 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.MemoryInfo._describeContents1554 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.MemoryInfo._readFromParcel1555 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.MemoryInfo._MemoryInfo1556 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "<init>", "()V");
 				global::android.app.ActivityManager.MemoryInfo._availMem1557 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "availMem", "J");
 				global::android.app.ActivityManager.MemoryInfo._threshold1558 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "threshold", "J");
 				global::android.app.ActivityManager.MemoryInfo._lowMemory1559 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.MemoryInfo.staticClass, "lowMemory", "Z");
@@ -108,22 +115,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1561;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel1561.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel1561 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel1561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1562;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents1562.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents1562 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents1562);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1563;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel1563.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel1563 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel1563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _ProcessErrorStateInfo1564;
 			public ProcessErrorStateInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.ProcessErrorStateInfo._ProcessErrorStateInfo1564.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.ProcessErrorStateInfo._ProcessErrorStateInfo1564 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._ProcessErrorStateInfo1564);
 				Init(@__env, handle);
 			}
@@ -269,10 +287,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$ProcessErrorStateInfo"));
-				global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel1561 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents1562 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel1563 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.ProcessErrorStateInfo._ProcessErrorStateInfo1564 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "<init>", "()V");
 				global::android.app.ActivityManager.ProcessErrorStateInfo._condition1568 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "condition", "I");
 				global::android.app.ActivityManager.ProcessErrorStateInfo._processName1569 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "processName", "Ljava/lang/String;");
 				global::android.app.ActivityManager.ProcessErrorStateInfo._pid1570 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, "pid", "I");
@@ -298,22 +312,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1578;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RecentTaskInfo._writeToParcel1578.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RecentTaskInfo._writeToParcel1578 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._writeToParcel1578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1579;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RecentTaskInfo._describeContents1579.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RecentTaskInfo._describeContents1579 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._describeContents1579);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1580;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RecentTaskInfo._readFromParcel1580.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RecentTaskInfo._readFromParcel1580 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._readFromParcel1580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _RecentTaskInfo1581;
 			public RecentTaskInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RecentTaskInfo._RecentTaskInfo1581.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RecentTaskInfo._RecentTaskInfo1581 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._RecentTaskInfo1581);
 				Init(@__env, handle);
 			}
@@ -366,10 +391,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RecentTaskInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RecentTaskInfo"));
-				global::android.app.ActivityManager.RecentTaskInfo._writeToParcel1578 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.RecentTaskInfo._describeContents1579 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.RecentTaskInfo._readFromParcel1580 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.RecentTaskInfo._RecentTaskInfo1581 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "<init>", "()V");
 				global::android.app.ActivityManager.RecentTaskInfo._id1582 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "id", "I");
 				global::android.app.ActivityManager.RecentTaskInfo._baseIntent1583 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "baseIntent", "Landroid/content/Intent;");
 				global::android.app.ActivityManager.RecentTaskInfo._origActivity1584 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RecentTaskInfo.staticClass, "origActivity", "Landroid/content/ComponentName;");
@@ -389,22 +410,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1586;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel1586.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel1586 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel1586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1587;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningAppProcessInfo._describeContents1587.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningAppProcessInfo._describeContents1587 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._describeContents1587);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1588;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel1588.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel1588 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel1588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _RunningAppProcessInfo1589;
 			public RunningAppProcessInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1589.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1589 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1589);
 				Init(@__env, handle);
 			}
@@ -412,6 +444,8 @@ namespace android.app
 			public RunningAppProcessInfo(java.lang.String arg0, int arg1, java.lang.String[] arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1590.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1590 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "<init>", "(Ljava/lang/String;I[Ljava/lang/String;)V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
@@ -592,11 +626,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningAppProcessInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningAppProcessInfo"));
-				global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel1586 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.RunningAppProcessInfo._describeContents1587 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel1588 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1589 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "<init>", "()V");
-				global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo1590 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "<init>", "(Ljava/lang/String;I[Ljava/lang/String;)V");
 				global::android.app.ActivityManager.RunningAppProcessInfo._processName1591 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "processName", "Ljava/lang/String;");
 				global::android.app.ActivityManager.RunningAppProcessInfo._pid1592 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "pid", "I");
 				global::android.app.ActivityManager.RunningAppProcessInfo._uid1593 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, "uid", "I");
@@ -622,22 +651,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1609;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningServiceInfo._writeToParcel1609.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningServiceInfo._writeToParcel1609 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._writeToParcel1609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1610;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningServiceInfo._describeContents1610.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningServiceInfo._describeContents1610 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._describeContents1610);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1611;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningServiceInfo._readFromParcel1611.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningServiceInfo._readFromParcel1611 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._readFromParcel1611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _RunningServiceInfo1612;
 			public RunningServiceInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningServiceInfo._RunningServiceInfo1612.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningServiceInfo._RunningServiceInfo1612 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._RunningServiceInfo1612);
 				Init(@__env, handle);
 			}
@@ -850,10 +890,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningServiceInfo"));
-				global::android.app.ActivityManager.RunningServiceInfo._writeToParcel1609 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.RunningServiceInfo._describeContents1610 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.RunningServiceInfo._readFromParcel1611 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.RunningServiceInfo._RunningServiceInfo1612 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "<init>", "()V");
 				global::android.app.ActivityManager.RunningServiceInfo._service1613 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "service", "Landroid/content/ComponentName;");
 				global::android.app.ActivityManager.RunningServiceInfo._pid1614 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "pid", "I");
 				global::android.app.ActivityManager.RunningServiceInfo._uid1615 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningServiceInfo.staticClass, "uid", "I");
@@ -884,22 +920,33 @@ namespace android.app
 			internal static global::MonoJavaBridge.MethodId _writeToParcel1632;
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningTaskInfo._writeToParcel1632.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningTaskInfo._writeToParcel1632 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._writeToParcel1632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents1633;
 			public virtual int describeContents()
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningTaskInfo._describeContents1633.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningTaskInfo._describeContents1633 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "describeContents", "()I");
 				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._describeContents1633);
 			}
 			internal static global::MonoJavaBridge.MethodId _readFromParcel1634;
 			public virtual void readFromParcel(android.os.Parcel arg0)
 			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningTaskInfo._readFromParcel1634.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningTaskInfo._readFromParcel1634 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
 				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._readFromParcel1634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _RunningTaskInfo1635;
 			public RunningTaskInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo1635.native == global::System.IntPtr.Zero)
+					global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo1635 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo1635);
 				Init(@__env, handle);
 			}
@@ -1000,10 +1047,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.ActivityManager.RunningTaskInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager$RunningTaskInfo"));
-				global::android.app.ActivityManager.RunningTaskInfo._writeToParcel1632 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-				global::android.app.ActivityManager.RunningTaskInfo._describeContents1633 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "describeContents", "()I");
-				global::android.app.ActivityManager.RunningTaskInfo._readFromParcel1634 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-				global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo1635 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "<init>", "()V");
 				global::android.app.ActivityManager.RunningTaskInfo._id1636 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "id", "I");
 				global::android.app.ActivityManager.RunningTaskInfo._baseActivity1637 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "baseActivity", "Landroid/content/ComponentName;");
 				global::android.app.ActivityManager.RunningTaskInfo._topActivity1638 = @__env.GetFieldIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "topActivity", "Landroid/content/ComponentName;");
@@ -1027,31 +1070,49 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getMemoryClass1644;
 		public virtual int getMemoryClass()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getMemoryClass1644.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getMemoryClass1644 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getMemoryClass", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getMemoryClass1644);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRecentTasks1645;
 		public virtual global::java.util.List getRecentTasks(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRecentTasks1645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getRecentTasks1645.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getRecentTasks1645 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRecentTasks", "(II)Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRecentTasks1645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunningTasks1646;
 		public virtual global::java.util.List getRunningTasks(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningTasks1646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getRunningTasks1646.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getRunningTasks1646 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningTasks", "(I)Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningTasks1646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunningServices1647;
 		public virtual global::java.util.List getRunningServices(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServices1647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getRunningServices1647.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getRunningServices1647 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningServices", "(I)Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServices1647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunningServiceControlPanel1648;
 		public virtual global::android.app.PendingIntent getRunningServiceControlPanel(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.PendingIntent>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServiceControlPanel1648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.PendingIntent;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getRunningServiceControlPanel1648.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getRunningServiceControlPanel1648 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningServiceControlPanel", "(Landroid/content/ComponentName;)Landroid/app/PendingIntent;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.app.PendingIntent>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServiceControlPanel1648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.PendingIntent;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMemoryInfo1649;
 		public virtual void getMemoryInfo(android.app.ActivityManager.MemoryInfo arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getMemoryInfo1649.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getMemoryInfo1649 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getMemoryInfo", "(Landroid/app/ActivityManager$MemoryInfo;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getMemoryInfo1649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.List ProcessesInErrorState
@@ -1064,7 +1125,10 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getProcessesInErrorState1650;
 		public virtual global::java.util.List getProcessesInErrorState()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessesInErrorState1650)) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getProcessesInErrorState1650.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getProcessesInErrorState1650 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getProcessesInErrorState", "()Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessesInErrorState1650) as java.util.List;
 		}
 		public new global::java.util.List RunningAppProcesses
 		{
@@ -1076,21 +1140,33 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getRunningAppProcesses1651;
 		public virtual global::java.util.List getRunningAppProcesses()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningAppProcesses1651)) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getRunningAppProcesses1651.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getRunningAppProcesses1651 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningAppProcesses", "()Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningAppProcesses1651) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProcessMemoryInfo1652;
 		public virtual global::android.os.Debug.MemoryInfo[] getProcessMemoryInfo(int[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.os.Debug.MemoryInfo>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessMemoryInfo1652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Debug.MemoryInfo[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getProcessMemoryInfo1652.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getProcessMemoryInfo1652 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getProcessMemoryInfo", "([I)[Landroid/os/Debug/MemoryInfo;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.os.Debug.MemoryInfo>(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessMemoryInfo1652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.Debug.MemoryInfo[];
 		}
 		internal static global::MonoJavaBridge.MethodId _restartPackage1653;
 		public virtual void restartPackage(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._restartPackage1653.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._restartPackage1653 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "restartPackage", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._restartPackage1653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _killBackgroundProcesses1654;
 		public virtual void killBackgroundProcesses(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._killBackgroundProcesses1654.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._killBackgroundProcesses1654 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "killBackgroundProcesses", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._killBackgroundProcesses1654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.content.pm.ConfigurationInfo DeviceConfigurationInfo
@@ -1103,12 +1179,17 @@ namespace android.app
 		internal static global::MonoJavaBridge.MethodId _getDeviceConfigurationInfo1655;
 		public virtual global::android.content.pm.ConfigurationInfo getDeviceConfigurationInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getDeviceConfigurationInfo1655)) as android.content.pm.ConfigurationInfo;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._getDeviceConfigurationInfo1655.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._getDeviceConfigurationInfo1655 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getDeviceConfigurationInfo", "()Landroid/content/pm/ConfigurationInfo;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getDeviceConfigurationInfo1655) as android.content.pm.ConfigurationInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _isUserAMonkey1656;
 		public static bool isUserAMonkey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.app.ActivityManager._isUserAMonkey1656.native == global::System.IntPtr.Zero)
+				global::android.app.ActivityManager._isUserAMonkey1656 = @__env.GetStaticMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "isUserAMonkey", "()Z");
 			return @__env.CallStaticBooleanMethod(android.app.ActivityManager.staticClass, global::android.app.ActivityManager._isUserAMonkey1656);
 		}
 		public static int RECENT_WITH_EXCLUDED
@@ -1122,19 +1203,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.ActivityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/ActivityManager"));
-			global::android.app.ActivityManager._getMemoryClass1644 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getMemoryClass", "()I");
-			global::android.app.ActivityManager._getRecentTasks1645 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRecentTasks", "(II)Ljava/util/List;");
-			global::android.app.ActivityManager._getRunningTasks1646 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningTasks", "(I)Ljava/util/List;");
-			global::android.app.ActivityManager._getRunningServices1647 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningServices", "(I)Ljava/util/List;");
-			global::android.app.ActivityManager._getRunningServiceControlPanel1648 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningServiceControlPanel", "(Landroid/content/ComponentName;)Landroid/app/PendingIntent;");
-			global::android.app.ActivityManager._getMemoryInfo1649 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getMemoryInfo", "(Landroid/app/ActivityManager$MemoryInfo;)V");
-			global::android.app.ActivityManager._getProcessesInErrorState1650 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getProcessesInErrorState", "()Ljava/util/List;");
-			global::android.app.ActivityManager._getRunningAppProcesses1651 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getRunningAppProcesses", "()Ljava/util/List;");
-			global::android.app.ActivityManager._getProcessMemoryInfo1652 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getProcessMemoryInfo", "([I)[Landroid/os/Debug/MemoryInfo;");
-			global::android.app.ActivityManager._restartPackage1653 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "restartPackage", "(Ljava/lang/String;)V");
-			global::android.app.ActivityManager._killBackgroundProcesses1654 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "killBackgroundProcesses", "(Ljava/lang/String;)V");
-			global::android.app.ActivityManager._getDeviceConfigurationInfo1655 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "getDeviceConfigurationInfo", "()Landroid/content/pm/ConfigurationInfo;");
-			global::android.app.ActivityManager._isUserAMonkey1656 = @__env.GetStaticMethodIDNoThrow(global::android.app.ActivityManager.staticClass, "isUserAMonkey", "()Z");
 		}
 		internal static void InitJNI()
 		{

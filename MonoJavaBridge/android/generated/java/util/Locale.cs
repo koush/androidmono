@@ -11,24 +11,32 @@ namespace java.util
 		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._equals26450.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._equals26450 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._equals26450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString26451;
 		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._toString26451.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._toString26451 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._toString26451)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26452;
 		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._hashCode26452.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._hashCode26452 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "hashCode", "()I");
 			return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode26452);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26453;
 		public global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._clone26453.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._clone26453 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._clone26453)) as java.lang.Object;
 		}
 		public new global::java.lang.String Language
@@ -42,6 +50,8 @@ namespace java.util
 		public global::java.lang.String getLanguage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getLanguage26454.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getLanguage26454 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getLanguage", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getLanguage26454)) as java.lang.String;
 		}
 		public static global::java.util.Locale Default
@@ -59,12 +69,16 @@ namespace java.util
 		public static global::java.util.Locale getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDefault26455.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDefault26455 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getDefault", "()Ljava/util/Locale;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getDefault26455)) as java.util.Locale;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault26456;
 		public static void setDefault(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._setDefault26456.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._setDefault26456 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "setDefault", "(Ljava/util/Locale;)V");
 			@__env.CallStaticVoidMethod(java.util.Locale.staticClass, global::java.util.Locale._setDefault26456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.util.Locale[] AvailableLocales
@@ -78,6 +92,8 @@ namespace java.util
 		public static global::java.util.Locale[] getAvailableLocales()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getAvailableLocales26457.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getAvailableLocales26457 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getAvailableLocales26457)) as java.util.Locale[];
 		}
 		public static global::java.lang.String[] ISOCountries
@@ -91,6 +107,8 @@ namespace java.util
 		public static global::java.lang.String[] getISOCountries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getISOCountries26458.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getISOCountries26458 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getISOCountries", "()[Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getISOCountries26458)) as java.lang.String[];
 		}
 		public static global::java.lang.String[] ISOLanguages
@@ -104,6 +122,8 @@ namespace java.util
 		public static global::java.lang.String[] getISOLanguages()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getISOLanguages26459.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getISOLanguages26459 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getISOLanguages", "()[Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getISOLanguages26459)) as java.lang.String[];
 		}
 		public new global::java.lang.String Country
@@ -117,6 +137,8 @@ namespace java.util
 		public global::java.lang.String getCountry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getCountry26460.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getCountry26460 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getCountry", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getCountry26460)) as java.lang.String;
 		}
 		public new global::java.lang.String Variant
@@ -130,6 +152,8 @@ namespace java.util
 		public global::java.lang.String getVariant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getVariant26461.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getVariant26461 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getVariant", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getVariant26461)) as java.lang.String;
 		}
 		public new global::java.lang.String ISO3Language
@@ -143,6 +167,8 @@ namespace java.util
 		public global::java.lang.String getISO3Language()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getISO3Language26462.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getISO3Language26462 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Language", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Language26462)) as java.lang.String;
 		}
 		public new global::java.lang.String ISO3Country
@@ -156,12 +182,16 @@ namespace java.util
 		public global::java.lang.String getISO3Country()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getISO3Country26463.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getISO3Country26463 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Country", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Country26463)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayLanguage26464;
 		public global::java.lang.String getDisplayLanguage(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayLanguage26464.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayLanguage26464 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage26464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayLanguage
@@ -175,12 +205,16 @@ namespace java.util
 		public global::java.lang.String getDisplayLanguage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayLanguage26465.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayLanguage26465 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage26465)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayCountry26466;
 		public global::java.lang.String getDisplayCountry(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayCountry26466.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayCountry26466 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry26466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayCountry
@@ -194,6 +228,8 @@ namespace java.util
 		public global::java.lang.String getDisplayCountry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayCountry26467.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayCountry26467 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry26467)) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayVariant
@@ -207,18 +243,24 @@ namespace java.util
 		public global::java.lang.String getDisplayVariant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayVariant26468.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayVariant26468 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26468)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayVariant26469;
 		public global::java.lang.String getDisplayVariant(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayVariant26469.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayVariant26469 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26470;
 		public global::java.lang.String getDisplayName(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayName26470.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayName26470 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName26470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayName
@@ -232,12 +274,16 @@ namespace java.util
 		public global::java.lang.String getDisplayName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._getDisplayName26471.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._getDisplayName26471 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName26471)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Locale26472;
 		public Locale(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._Locale26472.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._Locale26472 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -245,6 +291,8 @@ namespace java.util
 		public Locale(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._Locale26473.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._Locale26473 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -252,6 +300,8 @@ namespace java.util
 		public Locale(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Locale._Locale26474.native == global::System.IntPtr.Zero)
+				global::java.util.Locale._Locale26474 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -457,31 +507,6 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Locale.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Locale"));
-			global::java.util.Locale._equals26450 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Locale._toString26451 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.Locale._hashCode26452 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "hashCode", "()I");
-			global::java.util.Locale._clone26453 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.Locale._getLanguage26454 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getLanguage", "()Ljava/lang/String;");
-			global::java.util.Locale._getDefault26455 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getDefault", "()Ljava/util/Locale;");
-			global::java.util.Locale._setDefault26456 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "setDefault", "(Ljava/util/Locale;)V");
-			global::java.util.Locale._getAvailableLocales26457 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
-			global::java.util.Locale._getISOCountries26458 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getISOCountries", "()[Ljava/lang/String;");
-			global::java.util.Locale._getISOLanguages26459 = @__env.GetStaticMethodIDNoThrow(global::java.util.Locale.staticClass, "getISOLanguages", "()[Ljava/lang/String;");
-			global::java.util.Locale._getCountry26460 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getCountry", "()Ljava/lang/String;");
-			global::java.util.Locale._getVariant26461 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getVariant", "()Ljava/lang/String;");
-			global::java.util.Locale._getISO3Language26462 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Language", "()Ljava/lang/String;");
-			global::java.util.Locale._getISO3Country26463 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getISO3Country", "()Ljava/lang/String;");
-			global::java.util.Locale._getDisplayLanguage26464 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Locale._getDisplayLanguage26465 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayLanguage", "()Ljava/lang/String;");
-			global::java.util.Locale._getDisplayCountry26466 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Locale._getDisplayCountry26467 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayCountry", "()Ljava/lang/String;");
-			global::java.util.Locale._getDisplayVariant26468 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "()Ljava/lang/String;");
-			global::java.util.Locale._getDisplayVariant26469 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Locale._getDisplayName26470 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Locale._getDisplayName26471 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "getDisplayName", "()Ljava/lang/String;");
-			global::java.util.Locale._Locale26472 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::java.util.Locale._Locale26473 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::java.util.Locale._Locale26474 = @__env.GetMethodIDNoThrow(global::java.util.Locale.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.util.Locale._ENGLISH26475 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ENGLISH", "Ljava/util/Locale;");
 			global::java.util.Locale._FRENCH26476 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "FRENCH", "Ljava/util/Locale;");
 			global::java.util.Locale._GERMAN26477 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "GERMAN", "Ljava/util/Locale;");

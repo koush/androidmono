@@ -10,31 +10,49 @@ namespace android.media
 		internal static global::MonoJavaBridge.MethodId _getAttribute7246;
 		public virtual global::java.lang.String getAttribute(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttribute7246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._getAttribute7246.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._getAttribute7246 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttribute7246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributeInt7247;
 		public virtual int getAttributeInt(java.lang.String arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._getAttributeInt7247.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._getAttributeInt7247 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttributeInt", "(Ljava/lang/String;I)I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttributeInt7247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributeDouble7248;
 		public virtual double getAttributeDouble(java.lang.String arg0, double arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._getAttributeDouble7248.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._getAttributeDouble7248 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttributeDouble", "(Ljava/lang/String;D)D");
 			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttributeDouble7248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute7249;
 		public virtual void setAttribute(java.lang.String arg0, java.lang.String arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._setAttribute7249.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._setAttribute7249 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._setAttribute7249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _saveAttributes7250;
 		public virtual void saveAttributes()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._saveAttributes7250.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._saveAttributes7250 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "saveAttributes", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._saveAttributes7250);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasThumbnail7251;
 		public virtual bool hasThumbnail()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._hasThumbnail7251.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._hasThumbnail7251 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "hasThumbnail", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._hasThumbnail7251);
 		}
 		public new byte[] Thumbnail
@@ -47,17 +65,25 @@ namespace android.media
 		internal static global::MonoJavaBridge.MethodId _getThumbnail7252;
 		public virtual byte[] getThumbnail()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getThumbnail7252)) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._getThumbnail7252.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._getThumbnail7252 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getThumbnail", "()[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getThumbnail7252) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getLatLong7253;
 		public virtual bool getLatLong(float[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._getLatLong7253.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._getLatLong7253 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getLatLong", "([F)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getLatLong7253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ExifInterface7254;
 		public ExifInterface(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.ExifInterface._ExifInterface7254.native == global::System.IntPtr.Zero)
+				global::android.media.ExifInterface._ExifInterface7254 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ExifInterface.staticClass, global::android.media.ExifInterface._ExifInterface7254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -254,15 +280,6 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.ExifInterface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ExifInterface"));
-			global::android.media.ExifInterface._getAttribute7246 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.media.ExifInterface._getAttributeInt7247 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttributeInt", "(Ljava/lang/String;I)I");
-			global::android.media.ExifInterface._getAttributeDouble7248 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getAttributeDouble", "(Ljava/lang/String;D)D");
-			global::android.media.ExifInterface._setAttribute7249 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.media.ExifInterface._saveAttributes7250 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "saveAttributes", "()V");
-			global::android.media.ExifInterface._hasThumbnail7251 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "hasThumbnail", "()Z");
-			global::android.media.ExifInterface._getThumbnail7252 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getThumbnail", "()[B");
-			global::android.media.ExifInterface._getLatLong7253 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "getLatLong", "([F)Z");
-			global::android.media.ExifInterface._ExifInterface7254 = @__env.GetMethodIDNoThrow(global::android.media.ExifInterface.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

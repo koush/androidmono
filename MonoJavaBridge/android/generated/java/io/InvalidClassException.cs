@@ -17,12 +17,17 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _getMessage19117;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.io.InvalidClassException.staticClass, global::java.io.InvalidClassException._getMessage19117)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.InvalidClassException._getMessage19117.native == global::System.IntPtr.Zero)
+				global::java.io.InvalidClassException._getMessage19117 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "getMessage", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.io.InvalidClassException.staticClass, global::java.io.InvalidClassException._getMessage19117) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidClassException19118;
 		public InvalidClassException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.InvalidClassException._InvalidClassException19118.native == global::System.IntPtr.Zero)
+				global::java.io.InvalidClassException._InvalidClassException19118 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InvalidClassException.staticClass, global::java.io.InvalidClassException._InvalidClassException19118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -30,6 +35,8 @@ namespace java.io
 		public InvalidClassException(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.InvalidClassException._InvalidClassException19119.native == global::System.IntPtr.Zero)
+				global::java.io.InvalidClassException._InvalidClassException19119 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InvalidClassException.staticClass, global::java.io.InvalidClassException._InvalidClassException19119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -49,9 +56,6 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InvalidClassException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InvalidClassException"));
-			global::java.io.InvalidClassException._getMessage19117 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.io.InvalidClassException._InvalidClassException19118 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.InvalidClassException._InvalidClassException19119 = @__env.GetMethodIDNoThrow(global::java.io.InvalidClassException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::java.io.InvalidClassException._classname19120 = @__env.GetFieldIDNoThrow(global::java.io.InvalidClassException.staticClass, "classname", "Ljava/lang/String;");
 		}
 		internal static void InitJNI()

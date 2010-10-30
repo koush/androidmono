@@ -18,6 +18,8 @@ namespace java.security
 		public global::java.security.PublicKey getPublic()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.KeyPair._getPublic23037.native == global::System.IntPtr.Zero)
+				global::java.security.KeyPair._getPublic23037 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "getPublic", "()Ljava/security/PublicKey;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPublic23037)) as java.security.PublicKey;
 		}
 		public new global::java.security.PrivateKey Private
@@ -31,12 +33,16 @@ namespace java.security
 		public global::java.security.PrivateKey getPrivate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.KeyPair._getPrivate23038.native == global::System.IntPtr.Zero)
+				global::java.security.KeyPair._getPrivate23038 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "getPrivate", "()Ljava/security/PrivateKey;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPrivate23038)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyPair23039;
 		public KeyPair(java.security.PublicKey arg0, java.security.PrivateKey arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.KeyPair._KeyPair23039.native == global::System.IntPtr.Zero)
+				global::java.security.KeyPair._KeyPair23039 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "<init>", "(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyPair.staticClass, global::java.security.KeyPair._KeyPair23039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -44,9 +50,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.KeyPair.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyPair"));
-			global::java.security.KeyPair._getPublic23037 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "getPublic", "()Ljava/security/PublicKey;");
-			global::java.security.KeyPair._getPrivate23038 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "getPrivate", "()Ljava/security/PrivateKey;");
-			global::java.security.KeyPair._KeyPair23039 = @__env.GetMethodIDNoThrow(global::java.security.KeyPair.staticClass, "<init>", "(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -10,22 +10,33 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _registerObserver4696;
 		public virtual void registerObserver(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.Observable._registerObserver4696.native == global::System.IntPtr.Zero)
+				global::android.database.Observable._registerObserver4696 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "registerObserver", "(Ljava/lang/Object;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._registerObserver4696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterObserver4697;
 		public virtual void unregisterObserver(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.Observable._unregisterObserver4697.native == global::System.IntPtr.Zero)
+				global::android.database.Observable._unregisterObserver4697 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "unregisterObserver", "(Ljava/lang/Object;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterObserver4697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterAll4698;
 		public virtual void unregisterAll()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.Observable._unregisterAll4698.native == global::System.IntPtr.Zero)
+				global::android.database.Observable._unregisterAll4698 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "unregisterAll", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterAll4698);
 		}
 		internal static global::MonoJavaBridge.MethodId _Observable4699;
 		public Observable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.Observable._Observable4699.native == global::System.IntPtr.Zero)
+				global::android.database.Observable._Observable4699 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.Observable.staticClass, global::android.database.Observable._Observable4699);
 			Init(@__env, handle);
 		}
@@ -33,10 +44,6 @@ namespace android.database
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.Observable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/Observable"));
-			global::android.database.Observable._registerObserver4696 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "registerObserver", "(Ljava/lang/Object;)V");
-			global::android.database.Observable._unregisterObserver4697 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "unregisterObserver", "(Ljava/lang/Object;)V");
-			global::android.database.Observable._unregisterAll4698 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "unregisterAll", "()V");
-			global::android.database.Observable._Observable4699 = @__env.GetMethodIDNoThrow(global::android.database.Observable.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

@@ -17,7 +17,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getP23973;
 		public virtual global::java.math.BigInteger getP()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getP23973)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.DSAPublicKeySpec._getP23973.native == global::System.IntPtr.Zero)
+				global::java.security.spec.DSAPublicKeySpec._getP23973 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getP", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getP23973) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger Q
 		{
@@ -29,7 +32,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getQ23974;
 		public virtual global::java.math.BigInteger getQ()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getQ23974)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.DSAPublicKeySpec._getQ23974.native == global::System.IntPtr.Zero)
+				global::java.security.spec.DSAPublicKeySpec._getQ23974 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getQ", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getQ23974) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger G
 		{
@@ -41,7 +47,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getG23975;
 		public virtual global::java.math.BigInteger getG()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getG23975)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.DSAPublicKeySpec._getG23975.native == global::System.IntPtr.Zero)
+				global::java.security.spec.DSAPublicKeySpec._getG23975 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getG", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getG23975) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger Y
 		{
@@ -53,12 +62,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getY23976;
 		public virtual global::java.math.BigInteger getY()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getY23976)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.DSAPublicKeySpec._getY23976.native == global::System.IntPtr.Zero)
+				global::java.security.spec.DSAPublicKeySpec._getY23976 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getY", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getY23976) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _DSAPublicKeySpec23977;
 		public DSAPublicKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2, java.math.BigInteger arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.DSAPublicKeySpec._DSAPublicKeySpec23977.native == global::System.IntPtr.Zero)
+				global::java.security.spec.DSAPublicKeySpec._DSAPublicKeySpec23977 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._DSAPublicKeySpec23977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
@@ -66,11 +80,6 @@ namespace java.security.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.DSAPublicKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/DSAPublicKeySpec"));
-			global::java.security.spec.DSAPublicKeySpec._getP23973 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getP", "()Ljava/math/BigInteger;");
-			global::java.security.spec.DSAPublicKeySpec._getQ23974 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getQ", "()Ljava/math/BigInteger;");
-			global::java.security.spec.DSAPublicKeySpec._getG23975 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getG", "()Ljava/math/BigInteger;");
-			global::java.security.spec.DSAPublicKeySpec._getY23976 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "getY", "()Ljava/math/BigInteger;");
-			global::java.security.spec.DSAPublicKeySpec._DSAPublicKeySpec23977 = @__env.GetMethodIDNoThrow(global::java.security.spec.DSAPublicKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 		}
 		internal static void InitJNI()
 		{

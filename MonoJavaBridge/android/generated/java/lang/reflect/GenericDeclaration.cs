@@ -17,13 +17,14 @@ namespace java.lang.reflect
 		global::java.lang.reflect.TypeVariable[] java.lang.reflect.GenericDeclaration.getTypeParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericDeclaration_.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082)) as java.lang.reflect.TypeVariable[];
 		}
 		static GenericDeclaration_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.GenericDeclaration_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/GenericDeclaration"));
-			global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericDeclaration_.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
 		}
 		internal static void InitJNI()
 		{

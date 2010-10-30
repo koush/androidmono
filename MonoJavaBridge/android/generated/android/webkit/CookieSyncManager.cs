@@ -18,20 +18,22 @@ namespace android.webkit
 		public static global::android.webkit.CookieSyncManager getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.CookieSyncManager._getInstance16033.native == global::System.IntPtr.Zero)
+				global::android.webkit.CookieSyncManager._getInstance16033 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CookieSyncManager.staticClass, "getInstance", "()Landroid/webkit/CookieSyncManager;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.CookieSyncManager>(@__env.CallStaticObjectMethod(android.webkit.CookieSyncManager.staticClass, global::android.webkit.CookieSyncManager._getInstance16033)) as android.webkit.CookieSyncManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _createInstance16034;
 		public static global::android.webkit.CookieSyncManager createInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.CookieSyncManager._createInstance16034.native == global::System.IntPtr.Zero)
+				global::android.webkit.CookieSyncManager._createInstance16034 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CookieSyncManager.staticClass, "createInstance", "(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.CookieSyncManager>(@__env.CallStaticObjectMethod(android.webkit.CookieSyncManager.staticClass, global::android.webkit.CookieSyncManager._createInstance16034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.CookieSyncManager;
 		}
 		static CookieSyncManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CookieSyncManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CookieSyncManager"));
-			global::android.webkit.CookieSyncManager._getInstance16033 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CookieSyncManager.staticClass, "getInstance", "()Landroid/webkit/CookieSyncManager;");
-			global::android.webkit.CookieSyncManager._createInstance16034 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CookieSyncManager.staticClass, "createInstance", "(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;");
 		}
 		internal static void InitJNI()
 		{

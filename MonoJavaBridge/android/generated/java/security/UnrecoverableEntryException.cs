@@ -11,6 +11,8 @@ namespace java.security
 		public UnrecoverableEntryException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23415.native == global::System.IntPtr.Zero)
+				global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23415 = @__env.GetMethodIDNoThrow(global::java.security.UnrecoverableEntryException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableEntryException.staticClass, global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23415);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.security
 		public UnrecoverableEntryException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23416.native == global::System.IntPtr.Zero)
+				global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23416 = @__env.GetMethodIDNoThrow(global::java.security.UnrecoverableEntryException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableEntryException.staticClass, global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.UnrecoverableEntryException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/UnrecoverableEntryException"));
-			global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23415 = @__env.GetMethodIDNoThrow(global::java.security.UnrecoverableEntryException.staticClass, "<init>", "()V");
-			global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23416 = @__env.GetMethodIDNoThrow(global::java.security.UnrecoverableEntryException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

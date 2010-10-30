@@ -11,6 +11,8 @@ namespace java.net
 		public SocketAddress() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.SocketAddress._SocketAddress21773.native == global::System.IntPtr.Zero)
+				global::java.net.SocketAddress._SocketAddress21773 = @__env.GetMethodIDNoThrow(global::java.net.SocketAddress.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._SocketAddress21773);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketAddress"));
-			global::java.net.SocketAddress._SocketAddress21773 = @__env.GetMethodIDNoThrow(global::java.net.SocketAddress.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

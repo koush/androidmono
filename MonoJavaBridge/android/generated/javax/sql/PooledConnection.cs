@@ -20,34 +20,38 @@ namespace javax.sql
 		void javax.sql.PooledConnection.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.PooledConnection_._close30286.native == global::System.IntPtr.Zero)
+				global::javax.sql.PooledConnection_._close30286 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "close", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.PooledConnection_._close30286);
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection30287;
 		global::java.sql.Connection javax.sql.PooledConnection.getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.PooledConnection_._getConnection30287.native == global::System.IntPtr.Zero)
+				global::javax.sql.PooledConnection_._getConnection30287 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "getConnection", "()Ljava/sql/Connection;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallObjectMethod(this.JvmHandle, global::javax.sql.PooledConnection_._getConnection30287)) as java.sql.Connection;
 		}
 		internal static global::MonoJavaBridge.MethodId _addConnectionEventListener30288;
 		void javax.sql.PooledConnection.addConnectionEventListener(javax.sql.ConnectionEventListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.PooledConnection_._addConnectionEventListener30288.native == global::System.IntPtr.Zero)
+				global::javax.sql.PooledConnection_._addConnectionEventListener30288 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "addConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.PooledConnection_._addConnectionEventListener30288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeConnectionEventListener30289;
 		void javax.sql.PooledConnection.removeConnectionEventListener(javax.sql.ConnectionEventListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.PooledConnection_._removeConnectionEventListener30289.native == global::System.IntPtr.Zero)
+				global::javax.sql.PooledConnection_._removeConnectionEventListener30289 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "removeConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.PooledConnection_._removeConnectionEventListener30289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static PooledConnection_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.PooledConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/PooledConnection"));
-			global::javax.sql.PooledConnection_._close30286 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "close", "()V");
-			global::javax.sql.PooledConnection_._getConnection30287 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "getConnection", "()Ljava/sql/Connection;");
-			global::javax.sql.PooledConnection_._addConnectionEventListener30288 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "addConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V");
-			global::javax.sql.PooledConnection_._removeConnectionEventListener30289 = @__env.GetMethodIDNoThrow(global::javax.sql.PooledConnection_.staticClass, "removeConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V");
 		}
 		internal static void InitJNI()
 		{

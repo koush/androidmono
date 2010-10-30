@@ -17,13 +17,14 @@ namespace javax.sql
 		void javax.sql.RowSetReader.readData(javax.sql.RowSetInternal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.RowSetReader_._readData30621.native == global::System.IntPtr.Zero)
+				global::javax.sql.RowSetReader_._readData30621 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetReader_.staticClass, "readData", "(Ljavax/sql/RowSetInternal;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetReader_._readData30621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetReader_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetReader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetReader"));
-			global::javax.sql.RowSetReader_._readData30621 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetReader_.staticClass, "readData", "(Ljavax/sql/RowSetInternal;)V");
 		}
 		internal static void InitJNI()
 		{

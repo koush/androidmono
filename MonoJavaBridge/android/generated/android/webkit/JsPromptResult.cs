@@ -10,13 +10,15 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _confirm16055;
 		public virtual void confirm(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.JsPromptResult._confirm16055.native == global::System.IntPtr.Zero)
+				global::android.webkit.JsPromptResult._confirm16055 = @__env.GetMethodIDNoThrow(global::android.webkit.JsPromptResult.staticClass, "confirm", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsPromptResult.staticClass, global::android.webkit.JsPromptResult._confirm16055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static JsPromptResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.JsPromptResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/JsPromptResult"));
-			global::android.webkit.JsPromptResult._confirm16055 = @__env.GetMethodIDNoThrow(global::android.webkit.JsPromptResult.staticClass, "confirm", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,6 +11,8 @@ namespace javax.xml.xpath
 		public XPathExpressionException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31308.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31308 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpressionException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathExpressionException.staticClass, global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.xml.xpath
 		public XPathExpressionException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31309.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31309 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpressionException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathExpressionException.staticClass, global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.xml.xpath
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathExpressionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathExpressionException"));
-			global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31308 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpressionException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::javax.xml.xpath.XPathExpressionException._XPathExpressionException31309 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathExpressionException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

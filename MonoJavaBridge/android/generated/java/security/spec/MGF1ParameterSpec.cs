@@ -17,12 +17,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm24030;
 		public virtual global::java.lang.String getDigestAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030.native == global::System.IntPtr.Zero)
+				global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030 = @__env.GetMethodIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MGF1ParameterSpec24031;
 		public MGF1ParameterSpec(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.MGF1ParameterSpec._MGF1ParameterSpec24031.native == global::System.IntPtr.Zero)
+				global::java.security.spec.MGF1ParameterSpec._MGF1ParameterSpec24031 = @__env.GetMethodIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._MGF1ParameterSpec24031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -66,8 +71,6 @@ namespace java.security.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.MGF1ParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/MGF1ParameterSpec"));
-			global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24030 = @__env.GetMethodIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
-			global::java.security.spec.MGF1ParameterSpec._MGF1ParameterSpec24031 = @__env.GetMethodIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::java.security.spec.MGF1ParameterSpec._SHA124032 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA1", "Ljava/security/spec/MGF1ParameterSpec;");
 			global::java.security.spec.MGF1ParameterSpec._SHA25624033 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA256", "Ljava/security/spec/MGF1ParameterSpec;");
 			global::java.security.spec.MGF1ParameterSpec._SHA38424034 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.MGF1ParameterSpec.staticClass, "SHA384", "Ljava/security/spec/MGF1ParameterSpec;");

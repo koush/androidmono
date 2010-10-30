@@ -18,6 +18,8 @@ namespace android.os
 		public static global::java.io.File getRootDirectory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getRootDirectory9808.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getRootDirectory9808 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getRootDirectory", "()Ljava/io/File;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getRootDirectory9808)) as java.io.File;
 		}
 		public static global::java.io.File DataDirectory
@@ -31,6 +33,8 @@ namespace android.os
 		public static global::java.io.File getDataDirectory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getDataDirectory9809.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getDataDirectory9809 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getDataDirectory", "()Ljava/io/File;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getDataDirectory9809)) as java.io.File;
 		}
 		public static global::java.io.File ExternalStorageDirectory
@@ -44,12 +48,16 @@ namespace android.os
 		public static global::java.io.File getExternalStorageDirectory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getExternalStorageDirectory9810.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getExternalStorageDirectory9810 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStorageDirectory", "()Ljava/io/File;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageDirectory9810)) as java.io.File;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExternalStoragePublicDirectory9811;
 		public static global::java.io.File getExternalStoragePublicDirectory(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getExternalStoragePublicDirectory9811.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getExternalStoragePublicDirectory9811 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStoragePublicDirectory", "(Ljava/lang/String;)Ljava/io/File;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStoragePublicDirectory9811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
 		}
 		public static global::java.io.File DownloadCacheDirectory
@@ -63,6 +71,8 @@ namespace android.os
 		public static global::java.io.File getDownloadCacheDirectory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getDownloadCacheDirectory9812.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getDownloadCacheDirectory9812 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getDownloadCacheDirectory", "()Ljava/io/File;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getDownloadCacheDirectory9812)) as java.io.File;
 		}
 		public static global::java.lang.String ExternalStorageState
@@ -76,12 +86,16 @@ namespace android.os
 		public static global::java.lang.String getExternalStorageState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._getExternalStorageState9813.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._getExternalStorageState9813 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStorageState", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageState9813)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Environment9814;
 		public Environment() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.Environment._Environment9814.native == global::System.IntPtr.Zero)
+				global::android.os.Environment._Environment9814 = @__env.GetMethodIDNoThrow(global::android.os.Environment.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Environment.staticClass, global::android.os.Environment._Environment9814);
 			Init(@__env, handle);
 		}
@@ -260,13 +274,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Environment.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Environment"));
-			global::android.os.Environment._getRootDirectory9808 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getRootDirectory", "()Ljava/io/File;");
-			global::android.os.Environment._getDataDirectory9809 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getDataDirectory", "()Ljava/io/File;");
-			global::android.os.Environment._getExternalStorageDirectory9810 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStorageDirectory", "()Ljava/io/File;");
-			global::android.os.Environment._getExternalStoragePublicDirectory9811 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStoragePublicDirectory", "(Ljava/lang/String;)Ljava/io/File;");
-			global::android.os.Environment._getDownloadCacheDirectory9812 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getDownloadCacheDirectory", "()Ljava/io/File;");
-			global::android.os.Environment._getExternalStorageState9813 = @__env.GetStaticMethodIDNoThrow(global::android.os.Environment.staticClass, "getExternalStorageState", "()Ljava/lang/String;");
-			global::android.os.Environment._Environment9814 = @__env.GetMethodIDNoThrow(global::android.os.Environment.staticClass, "<init>", "()V");
 			global::android.os.Environment._DIRECTORY_MUSIC9815 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_MUSIC", "Ljava/lang/String;");
 			global::android.os.Environment._DIRECTORY_PODCASTS9816 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_PODCASTS", "Ljava/lang/String;");
 			global::android.os.Environment._DIRECTORY_RINGTONES9817 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_RINGTONES", "Ljava/lang/String;");

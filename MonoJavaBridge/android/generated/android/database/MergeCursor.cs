@@ -10,46 +10,73 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getShort4677;
 		public override short getShort(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getShort4677.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getShort4677 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getShort", "(I)S");
 			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getShort4677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt4678;
 		public override int getInt(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getInt4678.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getInt4678 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getInt", "(I)I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getInt4678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong4679;
 		public override long getLong(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getLong4679.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getLong4679 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getLong", "(I)J");
 			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getLong4679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat4680;
 		public override float getFloat(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getFloat4680.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getFloat4680 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getFloat", "(I)F");
 			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getFloat4680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble4681;
 		public override double getDouble(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getDouble4681.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getDouble4681 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getDouble", "(I)D");
 			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getDouble4681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close4682;
 		public override void close()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._close4682.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._close4682 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "close", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._close4682);
 		}
 		internal static global::MonoJavaBridge.MethodId _getString4683;
 		public override global::java.lang.String getString(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getString4683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getString4683.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getString4683 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getString", "(I)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getString4683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerContentObserver4684;
 		public override void registerContentObserver(android.database.ContentObserver arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._registerContentObserver4684.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._registerContentObserver4684 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "registerContentObserver", "(Landroid/database/ContentObserver;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerContentObserver4684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterContentObserver4685;
 		public override void unregisterContentObserver(android.database.ContentObserver arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._unregisterContentObserver4685.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._unregisterContentObserver4685 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "unregisterContentObserver", "(Landroid/database/ContentObserver;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterContentObserver4685, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Count
@@ -62,6 +89,9 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getCount4686;
 		public override int getCount()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getCount4686.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getCount4686 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getCount", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getCount4686);
 		}
 		public new global::java.lang.String[] ColumnNames
@@ -74,47 +104,73 @@ namespace android.database
 		internal static global::MonoJavaBridge.MethodId _getColumnNames4687;
 		public override global::java.lang.String[] getColumnNames()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getColumnNames4687)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getColumnNames4687.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getColumnNames4687 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getColumnNames", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getColumnNames4687) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlob4688;
 		public override byte[] getBlob(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getBlob4688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._getBlob4688.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._getBlob4688 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getBlob", "(I)[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getBlob4688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _isNull4689;
 		public override bool isNull(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._isNull4689.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._isNull4689 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "isNull", "(I)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._isNull4689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deactivate4690;
 		public override void deactivate()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._deactivate4690.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._deactivate4690 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "deactivate", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._deactivate4690);
 		}
 		internal static global::MonoJavaBridge.MethodId _requery4691;
 		public override bool requery()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._requery4691.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._requery4691 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "requery", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._requery4691);
 		}
 		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver4692;
 		public override void registerDataSetObserver(android.database.DataSetObserver arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._registerDataSetObserver4692.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._registerDataSetObserver4692 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerDataSetObserver4692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver4693;
 		public override void unregisterDataSetObserver(android.database.DataSetObserver arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._unregisterDataSetObserver4693.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._unregisterDataSetObserver4693 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterDataSetObserver4693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMove4694;
 		public override bool onMove(int arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._onMove4694.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._onMove4694 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "onMove", "(II)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._onMove4694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _MergeCursor4695;
 		public MergeCursor(android.database.Cursor[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.database.MergeCursor._MergeCursor4695.native == global::System.IntPtr.Zero)
+				global::android.database.MergeCursor._MergeCursor4695 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "<init>", "([Landroid/database/Cursor;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.MergeCursor.staticClass, global::android.database.MergeCursor._MergeCursor4695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -122,25 +178,6 @@ namespace android.database
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.MergeCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/MergeCursor"));
-			global::android.database.MergeCursor._getShort4677 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getShort", "(I)S");
-			global::android.database.MergeCursor._getInt4678 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getInt", "(I)I");
-			global::android.database.MergeCursor._getLong4679 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getLong", "(I)J");
-			global::android.database.MergeCursor._getFloat4680 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getFloat", "(I)F");
-			global::android.database.MergeCursor._getDouble4681 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getDouble", "(I)D");
-			global::android.database.MergeCursor._close4682 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "close", "()V");
-			global::android.database.MergeCursor._getString4683 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getString", "(I)Ljava/lang/String;");
-			global::android.database.MergeCursor._registerContentObserver4684 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "registerContentObserver", "(Landroid/database/ContentObserver;)V");
-			global::android.database.MergeCursor._unregisterContentObserver4685 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "unregisterContentObserver", "(Landroid/database/ContentObserver;)V");
-			global::android.database.MergeCursor._getCount4686 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getCount", "()I");
-			global::android.database.MergeCursor._getColumnNames4687 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getColumnNames", "()[Ljava/lang/String;");
-			global::android.database.MergeCursor._getBlob4688 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "getBlob", "(I)[B");
-			global::android.database.MergeCursor._isNull4689 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "isNull", "(I)Z");
-			global::android.database.MergeCursor._deactivate4690 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "deactivate", "()V");
-			global::android.database.MergeCursor._requery4691 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "requery", "()Z");
-			global::android.database.MergeCursor._registerDataSetObserver4692 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.database.MergeCursor._unregisterDataSetObserver4693 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.database.MergeCursor._onMove4694 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "onMove", "(II)Z");
-			global::android.database.MergeCursor._MergeCursor4695 = @__env.GetMethodIDNoThrow(global::android.database.MergeCursor.staticClass, "<init>", "([Landroid/database/Cursor;)V");
 		}
 		internal static void InitJNI()
 		{

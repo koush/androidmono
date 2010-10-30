@@ -11,6 +11,8 @@ namespace android.text
 		public NoCopySpan_Concrete() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902.native == global::System.IntPtr.Zero)
+				global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902 = @__env.GetMethodIDNoThrow(global::android.text.NoCopySpan_Concrete.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.NoCopySpan_Concrete.staticClass, global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.NoCopySpan_Concrete.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/NoCopySpan$Concrete"));
-			global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902 = @__env.GetMethodIDNoThrow(global::android.text.NoCopySpan_Concrete.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

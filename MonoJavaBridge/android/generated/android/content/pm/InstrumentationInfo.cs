@@ -10,22 +10,33 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3728;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._toString3728)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.InstrumentationInfo._toString3728.native == global::System.IntPtr.Zero)
+				global::android.content.pm.InstrumentationInfo._toString3728 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._toString3728) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3729;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.InstrumentationInfo._writeToParcel3729.native == global::System.IntPtr.Zero)
+				global::android.content.pm.InstrumentationInfo._writeToParcel3729 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._writeToParcel3729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3730;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.InstrumentationInfo._describeContents3730.native == global::System.IntPtr.Zero)
+				global::android.content.pm.InstrumentationInfo._describeContents3730 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._describeContents3730);
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationInfo3731;
 		public InstrumentationInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.InstrumentationInfo._InstrumentationInfo3731.native == global::System.IntPtr.Zero)
+				global::android.content.pm.InstrumentationInfo._InstrumentationInfo3731 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._InstrumentationInfo3731);
 			Init(@__env, handle);
 		}
@@ -33,6 +44,8 @@ namespace android.content.pm
 		public InstrumentationInfo(android.content.pm.InstrumentationInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.InstrumentationInfo._InstrumentationInfo3732.native == global::System.IntPtr.Zero)
+				global::android.content.pm.InstrumentationInfo._InstrumentationInfo3732 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "<init>", "(Landroid/content/pm/InstrumentationInfo;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.InstrumentationInfo.staticClass, global::android.content.pm.InstrumentationInfo._InstrumentationInfo3732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -121,11 +134,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.InstrumentationInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/InstrumentationInfo"));
-			global::android.content.pm.InstrumentationInfo._toString3728 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.InstrumentationInfo._writeToParcel3729 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.InstrumentationInfo._describeContents3730 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.InstrumentationInfo._InstrumentationInfo3731 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.InstrumentationInfo._InstrumentationInfo3732 = @__env.GetMethodIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "<init>", "(Landroid/content/pm/InstrumentationInfo;)V");
 			global::android.content.pm.InstrumentationInfo._targetPackage3733 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "targetPackage", "Ljava/lang/String;");
 			global::android.content.pm.InstrumentationInfo._sourceDir3734 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "sourceDir", "Ljava/lang/String;");
 			global::android.content.pm.InstrumentationInfo._publicSourceDir3735 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "publicSourceDir", "Ljava/lang/String;");

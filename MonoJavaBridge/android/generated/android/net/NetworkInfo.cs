@@ -18,12 +18,16 @@ namespace android.net
 			public static global::android.net.NetworkInfo.DetailedState[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.net.NetworkInfo.DetailedState._values7710.native == global::System.IntPtr.Zero)
+					global::android.net.NetworkInfo.DetailedState._values7710 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "values", "()[Landroid/net/NetworkInfo/DetailedState;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.DetailedState.staticClass, global::android.net.NetworkInfo.DetailedState._values7710)) as android.net.NetworkInfo.DetailedState[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf7711;
 			public static global::android.net.NetworkInfo.DetailedState valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.net.NetworkInfo.DetailedState._valueOf7711.native == global::System.IntPtr.Zero)
+					global::android.net.NetworkInfo.DetailedState._valueOf7711 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/NetworkInfo$DetailedState;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.DetailedState.staticClass, global::android.net.NetworkInfo.DetailedState._valueOf7711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.DetailedState;
 			}
 			internal static global::MonoJavaBridge.FieldId _AUTHENTICATING7712;
@@ -120,8 +124,6 @@ namespace android.net
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.NetworkInfo.DetailedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo$DetailedState"));
-				global::android.net.NetworkInfo.DetailedState._values7710 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "values", "()[Landroid/net/NetworkInfo/DetailedState;");
-				global::android.net.NetworkInfo.DetailedState._valueOf7711 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/NetworkInfo$DetailedState;");
 				global::android.net.NetworkInfo.DetailedState._AUTHENTICATING7712 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "AUTHENTICATING", "Landroid/net/NetworkInfo$DetailedState;");
 				global::android.net.NetworkInfo.DetailedState._CONNECTED7713 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "CONNECTED", "Landroid/net/NetworkInfo$DetailedState;");
 				global::android.net.NetworkInfo.DetailedState._CONNECTING7714 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "CONNECTING", "Landroid/net/NetworkInfo$DetailedState;");
@@ -148,12 +150,16 @@ namespace android.net
 			public static global::android.net.NetworkInfo.State[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.net.NetworkInfo.State._values7722.native == global::System.IntPtr.Zero)
+					global::android.net.NetworkInfo.State._values7722 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "values", "()[Landroid/net/NetworkInfo/State;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo.State>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.State.staticClass, global::android.net.NetworkInfo.State._values7722)) as android.net.NetworkInfo.State[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf7723;
 			public static global::android.net.NetworkInfo.State valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.net.NetworkInfo.State._valueOf7723.native == global::System.IntPtr.Zero)
+					global::android.net.NetworkInfo.State._valueOf7723 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/NetworkInfo$State;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.State>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.State.staticClass, global::android.net.NetworkInfo.State._valueOf7723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.State;
 			}
 			internal static global::MonoJavaBridge.FieldId _CONNECTED7724;
@@ -214,8 +220,6 @@ namespace android.net
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.NetworkInfo.State.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo$State"));
-				global::android.net.NetworkInfo.State._values7722 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "values", "()[Landroid/net/NetworkInfo/State;");
-				global::android.net.NetworkInfo.State._valueOf7723 = @__env.GetStaticMethodIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._CONNECTED7724 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "CONNECTED", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._CONNECTING7725 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "CONNECTING", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._DISCONNECTED7726 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "DISCONNECTED", "Landroid/net/NetworkInfo$State;");
@@ -230,12 +234,18 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _toString7730;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._toString7730)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._toString7730.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._toString7730 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._toString7730) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getState7731;
 		public virtual global::android.net.NetworkInfo.State getState()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.State>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getState7731)) as android.net.NetworkInfo.State;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getState7731.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getState7731 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getState", "()Landroid/net/NetworkInfo$State;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.NetworkInfo.State>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getState7731) as android.net.NetworkInfo.State;
 		}
 		public new int Type
 		{
@@ -247,6 +257,9 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getType7732;
 		public virtual int getType()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getType7732.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getType7732 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getType", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getType7732);
 		}
 		public new global::java.lang.String TypeName
@@ -259,21 +272,33 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getTypeName7733;
 		public virtual global::java.lang.String getTypeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getTypeName7733)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getTypeName7733.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getTypeName7733 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getTypeName", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getTypeName7733) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isAvailable7734;
 		public virtual bool isAvailable()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._isAvailable7734.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._isAvailable7734 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isAvailable", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isAvailable7734);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7735;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._writeToParcel7735.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._writeToParcel7735 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._writeToParcel7735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7736;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._describeContents7736.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._describeContents7736 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._describeContents7736);
 		}
 		public new global::java.lang.String Reason
@@ -286,16 +311,25 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getReason7737;
 		public virtual global::java.lang.String getReason()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getReason7737)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getReason7737.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getReason7737 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getReason", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getReason7737) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnected7738;
 		public virtual bool isConnected()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._isConnected7738.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._isConnected7738 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isConnected", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnected7738);
 		}
 		internal static global::MonoJavaBridge.MethodId _isFailover7739;
 		public virtual bool isFailover()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._isFailover7739.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._isFailover7739 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isFailover", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isFailover7739);
 		}
 		public new int Subtype
@@ -308,6 +342,9 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getSubtype7740;
 		public virtual int getSubtype()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getSubtype7740.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getSubtype7740 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getSubtype", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtype7740);
 		}
 		public new global::java.lang.String SubtypeName
@@ -320,22 +357,34 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getSubtypeName7741;
 		public virtual global::java.lang.String getSubtypeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtypeName7741)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getSubtypeName7741.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getSubtypeName7741 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getSubtypeName", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtypeName7741) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnectedOrConnecting7742;
 		public virtual bool isConnectedOrConnecting()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._isConnectedOrConnecting7742.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._isConnectedOrConnecting7742 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isConnectedOrConnecting", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnectedOrConnecting7742);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRoaming7743;
 		public virtual bool isRoaming()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._isRoaming7743.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._isRoaming7743 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isRoaming", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isRoaming7743);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDetailedState7744;
 		public virtual global::android.net.NetworkInfo.DetailedState getDetailedState()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getDetailedState7744)) as android.net.NetworkInfo.DetailedState;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getDetailedState7744.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getDetailedState7744 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getDetailedState", "()Landroid/net/NetworkInfo$DetailedState;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.NetworkInfo.DetailedState>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getDetailedState7744) as android.net.NetworkInfo.DetailedState;
 		}
 		public new global::java.lang.String ExtraInfo
 		{
@@ -347,28 +396,15 @@ namespace android.net
 		internal static global::MonoJavaBridge.MethodId _getExtraInfo7745;
 		public virtual global::java.lang.String getExtraInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getExtraInfo7745)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.net.NetworkInfo._getExtraInfo7745.native == global::System.IntPtr.Zero)
+				global::android.net.NetworkInfo._getExtraInfo7745 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getExtraInfo", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getExtraInfo7745) as java.lang.String;
 		}
 		static NetworkInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.NetworkInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo"));
-			global::android.net.NetworkInfo._toString7730 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.net.NetworkInfo._getState7731 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getState", "()Landroid/net/NetworkInfo$State;");
-			global::android.net.NetworkInfo._getType7732 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getType", "()I");
-			global::android.net.NetworkInfo._getTypeName7733 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getTypeName", "()Ljava/lang/String;");
-			global::android.net.NetworkInfo._isAvailable7734 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isAvailable", "()Z");
-			global::android.net.NetworkInfo._writeToParcel7735 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.net.NetworkInfo._describeContents7736 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "describeContents", "()I");
-			global::android.net.NetworkInfo._getReason7737 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getReason", "()Ljava/lang/String;");
-			global::android.net.NetworkInfo._isConnected7738 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isConnected", "()Z");
-			global::android.net.NetworkInfo._isFailover7739 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isFailover", "()Z");
-			global::android.net.NetworkInfo._getSubtype7740 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getSubtype", "()I");
-			global::android.net.NetworkInfo._getSubtypeName7741 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getSubtypeName", "()Ljava/lang/String;");
-			global::android.net.NetworkInfo._isConnectedOrConnecting7742 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isConnectedOrConnecting", "()Z");
-			global::android.net.NetworkInfo._isRoaming7743 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "isRoaming", "()Z");
-			global::android.net.NetworkInfo._getDetailedState7744 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getDetailedState", "()Landroid/net/NetworkInfo$DetailedState;");
-			global::android.net.NetworkInfo._getExtraInfo7745 = @__env.GetMethodIDNoThrow(global::android.net.NetworkInfo.staticClass, "getExtraInfo", "()Ljava/lang/String;");
 		}
 		internal static void InitJNI()
 		{

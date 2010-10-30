@@ -17,13 +17,14 @@ namespace javax.security.auth.callback
 		void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.security.auth.callback.CallbackHandler_._handle30198.native == global::System.IntPtr.Zero)
+				global::javax.security.auth.callback.CallbackHandler_._handle30198 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CallbackHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.CallbackHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/CallbackHandler"));
-			global::javax.security.auth.callback.CallbackHandler_._handle30198 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
 		}
 		internal static void InitJNI()
 		{

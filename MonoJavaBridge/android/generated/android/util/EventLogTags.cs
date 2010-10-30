@@ -46,17 +46,25 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _get13764;
 		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.EventLogTags.Description;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.EventLogTags._get13764.native == global::System.IntPtr.Zero)
+				global::android.util.EventLogTags._get13764 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _get13765;
 		public virtual global::android.util.EventLogTags.Description get(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.EventLogTags.Description;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.EventLogTags._get13765.native == global::System.IntPtr.Zero)
+				global::android.util.EventLogTags._get13765 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventLogTags13766;
 		public EventLogTags() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.EventLogTags._EventLogTags13766.native == global::System.IntPtr.Zero)
+				global::android.util.EventLogTags._EventLogTags13766 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLogTags.staticClass, global::android.util.EventLogTags._EventLogTags13766);
 			Init(@__env, handle);
 		}
@@ -64,6 +72,8 @@ namespace android.util
 		public EventLogTags(java.io.BufferedReader arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.EventLogTags._EventLogTags13767.native == global::System.IntPtr.Zero)
+				global::android.util.EventLogTags._EventLogTags13767 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "<init>", "(Ljava/io/BufferedReader;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLogTags.staticClass, global::android.util.EventLogTags._EventLogTags13767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -71,10 +81,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.EventLogTags.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/EventLogTags"));
-			global::android.util.EventLogTags._get13764 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;");
-			global::android.util.EventLogTags._get13765 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;");
-			global::android.util.EventLogTags._EventLogTags13766 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "<init>", "()V");
-			global::android.util.EventLogTags._EventLogTags13767 = @__env.GetMethodIDNoThrow(global::android.util.EventLogTags.staticClass, "<init>", "(Ljava/io/BufferedReader;)V");
 		}
 		internal static void InitJNI()
 		{

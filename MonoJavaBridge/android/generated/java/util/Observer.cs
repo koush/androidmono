@@ -17,13 +17,14 @@ namespace java.util
 		void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Observer_._update26537.native == global::System.IntPtr.Zero)
+				global::java.util.Observer_._update26537 = @__env.GetMethodIDNoThrow(global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.Observer_._update26537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Observer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Observer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Observer"));
-			global::java.util.Observer_._update26537 = @__env.GetMethodIDNoThrow(global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
 		}
 		internal static void InitJNI()
 		{

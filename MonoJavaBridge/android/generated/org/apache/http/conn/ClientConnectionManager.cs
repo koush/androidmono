@@ -22,48 +22,54 @@ namespace org.apache.http.conn
 		void org.apache.http.conn.ClientConnectionManager.shutdown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._shutdown32076.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._shutdown32076 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "shutdown", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._shutdown32076);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchemeRegistry32077;
 		global::org.apache.http.conn.scheme.SchemeRegistry org.apache.http.conn.ClientConnectionManager.getSchemeRegistry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry32077.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry32077 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "getSchemeRegistry", "()Lorg/apache/http/conn/scheme/SchemeRegistry;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.SchemeRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry32077)) as org.apache.http.conn.scheme.SchemeRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _requestConnection32078;
 		global::org.apache.http.conn.ClientConnectionRequest org.apache.http.conn.ClientConnectionManager.requestConnection(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._requestConnection32078.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._requestConnection32078 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "requestConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionRequest>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._requestConnection32078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ClientConnectionRequest;
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseConnection32079;
 		void org.apache.http.conn.ClientConnectionManager.releaseConnection(org.apache.http.conn.ManagedClientConnection arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._releaseConnection32079.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._releaseConnection32079 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "releaseConnection", "(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._releaseConnection32079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeIdleConnections32080;
 		void org.apache.http.conn.ClientConnectionManager.closeIdleConnections(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._closeIdleConnections32080.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._closeIdleConnections32080 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeIdleConnections", "(JLjava/util/concurrent/TimeUnit;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._closeIdleConnections32080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeExpiredConnections32081;
 		void org.apache.http.conn.ClientConnectionManager.closeExpiredConnections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeExpiredConnections", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081);
 		}
 		static ClientConnectionManager_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ClientConnectionManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ClientConnectionManager"));
-			global::org.apache.http.conn.ClientConnectionManager_._shutdown32076 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "shutdown", "()V");
-			global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry32077 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "getSchemeRegistry", "()Lorg/apache/http/conn/scheme/SchemeRegistry;");
-			global::org.apache.http.conn.ClientConnectionManager_._requestConnection32078 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "requestConnection", "(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;");
-			global::org.apache.http.conn.ClientConnectionManager_._releaseConnection32079 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "releaseConnection", "(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V");
-			global::org.apache.http.conn.ClientConnectionManager_._closeIdleConnections32080 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeIdleConnections", "(JLjava/util/concurrent/TimeUnit;)V");
-			global::org.apache.http.conn.ClientConnectionManager_._closeExpiredConnections32081 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionManager_.staticClass, "closeExpiredConnections", "()V");
 		}
 		internal static void InitJNI()
 		{

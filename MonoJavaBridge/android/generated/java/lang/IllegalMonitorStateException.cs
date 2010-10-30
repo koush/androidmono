@@ -11,6 +11,8 @@ namespace java.lang
 		public IllegalMonitorStateException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20177.native == global::System.IntPtr.Zero)
+				global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20177 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalMonitorStateException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalMonitorStateException.staticClass, global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20177);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public IllegalMonitorStateException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20178.native == global::System.IntPtr.Zero)
+				global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20178 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalMonitorStateException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalMonitorStateException.staticClass, global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.IllegalMonitorStateException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/IllegalMonitorStateException"));
-			global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20177 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalMonitorStateException.staticClass, "<init>", "()V");
-			global::java.lang.IllegalMonitorStateException._IllegalMonitorStateException20178 = @__env.GetMethodIDNoThrow(global::java.lang.IllegalMonitorStateException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

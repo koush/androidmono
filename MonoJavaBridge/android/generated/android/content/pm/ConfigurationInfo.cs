@@ -10,16 +10,25 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3701;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._toString3701)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._toString3701.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._toString3701 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._toString3701) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3702;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._writeToParcel3702.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._writeToParcel3702 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._writeToParcel3702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3703;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._describeContents3703.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._describeContents3703 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._describeContents3703);
 		}
 		public new global::java.lang.String GlEsVersion
@@ -32,12 +41,17 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _getGlEsVersion3704;
 		public virtual global::java.lang.String getGlEsVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._getGlEsVersion3704)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._getGlEsVersion3704.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._getGlEsVersion3704 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._getGlEsVersion3704) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ConfigurationInfo3705;
 		public ConfigurationInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._ConfigurationInfo3705.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._ConfigurationInfo3705 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._ConfigurationInfo3705);
 			Init(@__env, handle);
 		}
@@ -45,6 +59,8 @@ namespace android.content.pm
 		public ConfigurationInfo(android.content.pm.ConfigurationInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.ConfigurationInfo._ConfigurationInfo3706.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ConfigurationInfo._ConfigurationInfo3706 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "<init>", "(Landroid/content/pm/ConfigurationInfo;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._ConfigurationInfo3706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -142,12 +158,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ConfigurationInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ConfigurationInfo"));
-			global::android.content.pm.ConfigurationInfo._toString3701 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.ConfigurationInfo._writeToParcel3702 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.ConfigurationInfo._describeContents3703 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.ConfigurationInfo._getGlEsVersion3704 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;");
-			global::android.content.pm.ConfigurationInfo._ConfigurationInfo3705 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.ConfigurationInfo._ConfigurationInfo3706 = @__env.GetMethodIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "<init>", "(Landroid/content/pm/ConfigurationInfo;)V");
 			global::android.content.pm.ConfigurationInfo._reqTouchScreen3707 = @__env.GetFieldIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "reqTouchScreen", "I");
 			global::android.content.pm.ConfigurationInfo._reqKeyboardType3708 = @__env.GetFieldIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "reqKeyboardType", "I");
 			global::android.content.pm.ConfigurationInfo._reqNavigation3709 = @__env.GetFieldIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "reqNavigation", "I");

@@ -18,41 +18,46 @@ namespace org.apache.http
 		bool org.apache.http.TokenIterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.TokenIterator_._hasNext31766.native == global::System.IntPtr.Zero)
+				global::org.apache.http.TokenIterator_._hasNext31766 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._hasNext31766);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken31767;
 		global::java.lang.String org.apache.http.TokenIterator.nextToken()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.TokenIterator_._nextToken31767.native == global::System.IntPtr.Zero)
+				global::org.apache.http.TokenIterator_._nextToken31767 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "nextToken", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._nextToken31767)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext31768;
 		bool java.util.Iterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.TokenIterator_._hasNext31768.native == global::System.IntPtr.Zero)
+				global::org.apache.http.TokenIterator_._hasNext31768 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._hasNext31768);
 		}
 		internal static global::MonoJavaBridge.MethodId _next31769;
 		global::java.lang.Object java.util.Iterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.TokenIterator_._next31769.native == global::System.IntPtr.Zero)
+				global::org.apache.http.TokenIterator_._next31769 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "next", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._next31769)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove31770;
 		void java.util.Iterator.remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.TokenIterator_._remove31770.native == global::System.IntPtr.Zero)
+				global::org.apache.http.TokenIterator_._remove31770 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "remove", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.TokenIterator_._remove31770);
 		}
 		static TokenIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.TokenIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/TokenIterator"));
-			global::org.apache.http.TokenIterator_._hasNext31766 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
-			global::org.apache.http.TokenIterator_._nextToken31767 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "nextToken", "()Ljava/lang/String;");
-			global::org.apache.http.TokenIterator_._hasNext31768 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "hasNext", "()Z");
-			global::org.apache.http.TokenIterator_._next31769 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "next", "()Ljava/lang/Object;");
-			global::org.apache.http.TokenIterator_._remove31770 = @__env.GetMethodIDNoThrow(global::org.apache.http.TokenIterator_.staticClass, "remove", "()V");
 		}
 		internal static void InitJNI()
 		{

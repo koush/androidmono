@@ -11,6 +11,8 @@ namespace java.lang
 		public IncompatibleClassChangeError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20185.native == global::System.IntPtr.Zero)
+				global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20185 = @__env.GetMethodIDNoThrow(global::java.lang.IncompatibleClassChangeError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IncompatibleClassChangeError.staticClass, global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20185);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public IncompatibleClassChangeError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20186.native == global::System.IntPtr.Zero)
+				global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20186 = @__env.GetMethodIDNoThrow(global::java.lang.IncompatibleClassChangeError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IncompatibleClassChangeError.staticClass, global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.IncompatibleClassChangeError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/IncompatibleClassChangeError"));
-			global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20185 = @__env.GetMethodIDNoThrow(global::java.lang.IncompatibleClassChangeError.staticClass, "<init>", "()V");
-			global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20186 = @__env.GetMethodIDNoThrow(global::java.lang.IncompatibleClassChangeError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

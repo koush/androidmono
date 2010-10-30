@@ -17,13 +17,14 @@ namespace javax.xml.xpath
 		global::java.lang.Object javax.xml.xpath.XPathFunction.evaluate(java.util.List arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.xml.xpath.XPathFunction_._evaluate31330.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathFunction_._evaluate31330 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunction_.staticClass, "evaluate", "(Ljava/util/List;)Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFunction_._evaluate31330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		static XPathFunction_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathFunction_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathFunction"));
-			global::javax.xml.xpath.XPathFunction_._evaluate31330 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunction_.staticClass, "evaluate", "(Ljava/util/List;)Ljava/lang/Object;");
 		}
 		internal static void InitJNI()
 		{

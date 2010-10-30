@@ -26,76 +26,86 @@ namespace java.text
 		global::java.lang.Object java.text.CharacterIterator.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._clone25254.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._clone25254 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "clone", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.CharacterIterator_._clone25254)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _next25255;
 		char java.text.CharacterIterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._next25255.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._next25255 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "next", "()C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._next25255);
 		}
 		internal static global::MonoJavaBridge.MethodId _previous25256;
 		char java.text.CharacterIterator.previous()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._previous25256.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._previous25256 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "previous", "()C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._previous25256);
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex25257;
 		int java.text.CharacterIterator.getIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._getIndex25257.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._getIndex25257 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getIndex", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getIndex25257);
 		}
 		internal static global::MonoJavaBridge.MethodId _current25258;
 		char java.text.CharacterIterator.current()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._current25258.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._current25258 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "current", "()C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._current25258);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIndex25259;
 		char java.text.CharacterIterator.setIndex(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._setIndex25259.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._setIndex25259 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "setIndex", "(I)C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._setIndex25259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getBeginIndex25260;
 		int java.text.CharacterIterator.getBeginIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._getBeginIndex25260.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._getBeginIndex25260 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getBeginIndex", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getBeginIndex25260);
 		}
 		internal static global::MonoJavaBridge.MethodId _getEndIndex25261;
 		int java.text.CharacterIterator.getEndIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._getEndIndex25261.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._getEndIndex25261 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getEndIndex", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getEndIndex25261);
 		}
 		internal static global::MonoJavaBridge.MethodId _last25262;
 		char java.text.CharacterIterator.last()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._last25262.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._last25262 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "last", "()C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._last25262);
 		}
 		internal static global::MonoJavaBridge.MethodId _first25263;
 		char java.text.CharacterIterator.first()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.CharacterIterator_._first25263.native == global::System.IntPtr.Zero)
+				global::java.text.CharacterIterator_._first25263 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "first", "()C");
 			return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._first25263);
 		}
 		static CharacterIterator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.CharacterIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CharacterIterator"));
-			global::java.text.CharacterIterator_._clone25254 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.text.CharacterIterator_._next25255 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "next", "()C");
-			global::java.text.CharacterIterator_._previous25256 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "previous", "()C");
-			global::java.text.CharacterIterator_._getIndex25257 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getIndex", "()I");
-			global::java.text.CharacterIterator_._current25258 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "current", "()C");
-			global::java.text.CharacterIterator_._setIndex25259 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "setIndex", "(I)C");
-			global::java.text.CharacterIterator_._getBeginIndex25260 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getBeginIndex", "()I");
-			global::java.text.CharacterIterator_._getEndIndex25261 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getEndIndex", "()I");
-			global::java.text.CharacterIterator_._last25262 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "last", "()C");
-			global::java.text.CharacterIterator_._first25263 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "first", "()C");
 		}
 		internal static void InitJNI()
 		{

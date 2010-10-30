@@ -19,27 +19,30 @@ namespace org.apache.http.client.methods
 		void org.apache.http.client.methods.AbortableHttpRequest.abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "abort", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906);
 		}
 		internal static global::MonoJavaBridge.MethodId _setConnectionRequest31907;
 		void org.apache.http.client.methods.AbortableHttpRequest.setConnectionRequest(org.apache.http.conn.ClientConnectionRequest arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "setConnectionRequest", "(Lorg/apache/http/conn/ClientConnectionRequest;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setReleaseTrigger31908;
 		void org.apache.http.client.methods.AbortableHttpRequest.setReleaseTrigger(org.apache.http.conn.ConnectionReleaseTrigger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "setReleaseTrigger", "(Lorg/apache/http/conn/ConnectionReleaseTrigger;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AbortableHttpRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/AbortableHttpRequest"));
-			global::org.apache.http.client.methods.AbortableHttpRequest_._abort31906 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "abort", "()V");
-			global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31907 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "setConnectionRequest", "(Lorg/apache/http/conn/ClientConnectionRequest;)V");
-			global::org.apache.http.client.methods.AbortableHttpRequest_._setReleaseTrigger31908 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, "setReleaseTrigger", "(Lorg/apache/http/conn/ConnectionReleaseTrigger;)V");
 		}
 		internal static void InitJNI()
 		{

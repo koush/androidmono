@@ -25,6 +25,8 @@ namespace javax.net.ssl
 		public SSLContextSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi._SSLContextSpi29904.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi._SSLContextSpi29904 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLContextSpi.staticClass, global::javax.net.ssl.SSLContextSpi._SSLContextSpi29904);
 			Init(@__env, handle);
 		}
@@ -32,14 +34,6 @@ namespace javax.net.ssl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLContextSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLContextSpi"));
-			global::javax.net.ssl.SSLContextSpi._engineInit29897 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V");
-			global::javax.net.ssl.SSLContextSpi._engineGetSocketFactory29898 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineGetSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
-			global::javax.net.ssl.SSLContextSpi._engineGetServerSocketFactory29899 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineGetServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;");
-			global::javax.net.ssl.SSLContextSpi._engineCreateSSLEngine29900 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineCreateSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;");
-			global::javax.net.ssl.SSLContextSpi._engineCreateSSLEngine29901 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineCreateSSLEngine", "()Ljavax/net/ssl/SSLEngine;");
-			global::javax.net.ssl.SSLContextSpi._engineGetServerSessionContext29902 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineGetServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
-			global::javax.net.ssl.SSLContextSpi._engineGetClientSessionContext29903 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "engineGetClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
-			global::javax.net.ssl.SSLContextSpi._SSLContextSpi29904 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -57,55 +51,62 @@ namespace javax.net.ssl
 		protected override void engineInit(javax.net.ssl.KeyManager[] arg0, javax.net.ssl.TrustManager[] arg1, java.security.SecureRandom arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineInit29905.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineInit29905 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineInit29905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetSocketFactory29906;
 		protected override global::javax.net.ssl.SSLSocketFactory engineGetSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineGetSocketFactory29906.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineGetSocketFactory29906 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineGetSocketFactory29906)) as javax.net.ssl.SSLSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetServerSocketFactory29907;
 		protected override global::javax.net.ssl.SSLServerSocketFactory engineGetServerSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineGetServerSocketFactory29907.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineGetServerSocketFactory29907 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineGetServerSocketFactory29907)) as javax.net.ssl.SSLServerSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineCreateSSLEngine29908;
 		protected override global::javax.net.ssl.SSLEngine engineCreateSSLEngine(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29908.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29908 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineCreateSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.net.ssl.SSLEngine;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineCreateSSLEngine29909;
 		protected override global::javax.net.ssl.SSLEngine engineCreateSSLEngine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29909.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29909 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineCreateSSLEngine", "()Ljavax/net/ssl/SSLEngine;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29909)) as javax.net.ssl.SSLEngine;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetServerSessionContext29910;
 		protected override global::javax.net.ssl.SSLSessionContext engineGetServerSessionContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineGetServerSessionContext29910.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineGetServerSessionContext29910 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSessionContext>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineGetServerSessionContext29910)) as javax.net.ssl.SSLSessionContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetClientSessionContext29911;
 		protected override global::javax.net.ssl.SSLSessionContext engineGetClientSessionContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLContextSpi_._engineGetClientSessionContext29911.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLContextSpi_._engineGetClientSessionContext29911 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSessionContext>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContextSpi_._engineGetClientSessionContext29911)) as javax.net.ssl.SSLSessionContext;
 		}
 		static SSLContextSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLContextSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLContextSpi"));
-			global::javax.net.ssl.SSLContextSpi_._engineInit29905 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V");
-			global::javax.net.ssl.SSLContextSpi_._engineGetSocketFactory29906 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
-			global::javax.net.ssl.SSLContextSpi_._engineGetServerSocketFactory29907 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;");
-			global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29908 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineCreateSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;");
-			global::javax.net.ssl.SSLContextSpi_._engineCreateSSLEngine29909 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineCreateSSLEngine", "()Ljavax/net/ssl/SSLEngine;");
-			global::javax.net.ssl.SSLContextSpi_._engineGetServerSessionContext29910 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
-			global::javax.net.ssl.SSLContextSpi_._engineGetClientSessionContext29911 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLContextSpi_.staticClass, "engineGetClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
 		}
 		internal static void InitJNI()
 		{

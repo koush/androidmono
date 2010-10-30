@@ -10,22 +10,33 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _equals25400;
 		public override bool equals(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._equals25400.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._equals25400 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._equals25400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25401;
 		public override int hashCode()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._hashCode25401.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._hashCode25401 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "hashCode", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._hashCode25401);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone25402;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._clone25402)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._clone25402.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._clone25402 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "clone", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._clone25402) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25403;
 		public static global::java.text.DateFormatSymbols getInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getInstance25403.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getInstance25403 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/text/DateFormatSymbols;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getInstance25403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormatSymbols;
 		}
 		public static global::java.text.DateFormatSymbols Instance
@@ -39,6 +50,8 @@ namespace java.text
 		public static global::java.text.DateFormatSymbols getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getInstance25404.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getInstance25404 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getInstance", "()Ljava/text/DateFormatSymbols;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getInstance25404)) as java.text.DateFormatSymbols;
 		}
 		public static global::java.util.Locale[] AvailableLocales
@@ -52,6 +65,8 @@ namespace java.text
 		public static global::java.util.Locale[] getAvailableLocales()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getAvailableLocales25405.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getAvailableLocales25405 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getAvailableLocales25405)) as java.util.Locale[];
 		}
 		public new global::java.lang.String[] Eras
@@ -68,11 +83,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getEras25406;
 		public virtual global::java.lang.String[] getEras()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getEras25406)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getEras25406.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getEras25406 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getEras", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getEras25406) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setEras25407;
 		public virtual void setEras(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setEras25407.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setEras25407 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setEras", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setEras25407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String[] Months
@@ -89,7 +110,10 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getMonths25408;
 		public virtual global::java.lang.String[] getMonths()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getMonths25408)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getMonths25408.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getMonths25408 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getMonths", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getMonths25408) as java.lang.String[];
 		}
 		public new global::java.lang.String[] ShortMonths
 		{
@@ -105,7 +129,10 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getShortMonths25409;
 		public virtual global::java.lang.String[] getShortMonths()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortMonths25409)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getShortMonths25409.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getShortMonths25409 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getShortMonths", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortMonths25409) as java.lang.String[];
 		}
 		public new global::java.lang.String[] Weekdays
 		{
@@ -121,7 +148,10 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getWeekdays25410;
 		public virtual global::java.lang.String[] getWeekdays()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getWeekdays25410)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getWeekdays25410.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getWeekdays25410 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getWeekdays", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getWeekdays25410) as java.lang.String[];
 		}
 		public new global::java.lang.String[] ShortWeekdays
 		{
@@ -137,7 +167,10 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getShortWeekdays25411;
 		public virtual global::java.lang.String[] getShortWeekdays()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortWeekdays25411)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getShortWeekdays25411.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getShortWeekdays25411 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getShortWeekdays", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getShortWeekdays25411) as java.lang.String[];
 		}
 		public new global::java.lang.String[] AmPmStrings
 		{
@@ -153,31 +186,49 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getAmPmStrings25412;
 		public virtual global::java.lang.String[] getAmPmStrings()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getAmPmStrings25412)) as java.lang.String[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getAmPmStrings25412.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getAmPmStrings25412 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getAmPmStrings", "()[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getAmPmStrings25412) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setMonths25413;
 		public virtual void setMonths(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setMonths25413.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setMonths25413 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setMonths", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setMonths25413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShortMonths25414;
 		public virtual void setShortMonths(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setShortMonths25414.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setShortMonths25414 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setShortMonths", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortMonths25414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWeekdays25415;
 		public virtual void setWeekdays(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setWeekdays25415.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setWeekdays25415 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setWeekdays", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setWeekdays25415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShortWeekdays25416;
 		public virtual void setShortWeekdays(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setShortWeekdays25416.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setShortWeekdays25416 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setShortWeekdays", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setShortWeekdays25416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAmPmStrings25417;
 		public virtual void setAmPmStrings(java.lang.String[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setAmPmStrings25417.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setAmPmStrings25417 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setAmPmStrings", "([Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setAmPmStrings25417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String[][] ZoneStrings
@@ -194,11 +245,17 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getZoneStrings25418;
 		public virtual global::java.lang.String[][] getZoneStrings()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String[]>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getZoneStrings25418)) as java.lang.String[][];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getZoneStrings25418.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getZoneStrings25418 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getZoneStrings", "()[[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String[]>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getZoneStrings25418) as java.lang.String[][];
 		}
 		internal static global::MonoJavaBridge.MethodId _setZoneStrings25419;
 		public virtual void setZoneStrings(java.lang.String[][] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setZoneStrings25419.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setZoneStrings25419 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setZoneStrings", "([[Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setZoneStrings25419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String LocalPatternChars
@@ -215,17 +272,25 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getLocalPatternChars25420;
 		public virtual global::java.lang.String getLocalPatternChars()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getLocalPatternChars25420)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._getLocalPatternChars25420.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._getLocalPatternChars25420 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getLocalPatternChars", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._getLocalPatternChars25420) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLocalPatternChars25421;
 		public virtual void setLocalPatternChars(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._setLocalPatternChars25421.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._setLocalPatternChars25421 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setLocalPatternChars", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._setLocalPatternChars25421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DateFormatSymbols25422;
 		public DateFormatSymbols() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._DateFormatSymbols25422.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._DateFormatSymbols25422 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._DateFormatSymbols25422);
 			Init(@__env, handle);
 		}
@@ -233,6 +298,8 @@ namespace java.text
 		public DateFormatSymbols(java.util.Locale arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.text.DateFormatSymbols._DateFormatSymbols25423.native == global::System.IntPtr.Zero)
+				global::java.text.DateFormatSymbols._DateFormatSymbols25423 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "(Ljava/util/Locale;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DateFormatSymbols.staticClass, global::java.text.DateFormatSymbols._DateFormatSymbols25423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -240,30 +307,6 @@ namespace java.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DateFormatSymbols.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormatSymbols"));
-			global::java.text.DateFormatSymbols._equals25400 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.DateFormatSymbols._hashCode25401 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "hashCode", "()I");
-			global::java.text.DateFormatSymbols._clone25402 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.text.DateFormatSymbols._getInstance25403 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/text/DateFormatSymbols;");
-			global::java.text.DateFormatSymbols._getInstance25404 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getInstance", "()Ljava/text/DateFormatSymbols;");
-			global::java.text.DateFormatSymbols._getAvailableLocales25405 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
-			global::java.text.DateFormatSymbols._getEras25406 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getEras", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._setEras25407 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setEras", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._getMonths25408 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getMonths", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._getShortMonths25409 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getShortMonths", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._getWeekdays25410 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getWeekdays", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._getShortWeekdays25411 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getShortWeekdays", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._getAmPmStrings25412 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getAmPmStrings", "()[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._setMonths25413 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setMonths", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._setShortMonths25414 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setShortMonths", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._setWeekdays25415 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setWeekdays", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._setShortWeekdays25416 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setShortWeekdays", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._setAmPmStrings25417 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setAmPmStrings", "([Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._getZoneStrings25418 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getZoneStrings", "()[[Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._setZoneStrings25419 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setZoneStrings", "([[Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._getLocalPatternChars25420 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "getLocalPatternChars", "()Ljava/lang/String;");
-			global::java.text.DateFormatSymbols._setLocalPatternChars25421 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "setLocalPatternChars", "(Ljava/lang/String;)V");
-			global::java.text.DateFormatSymbols._DateFormatSymbols25422 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "()V");
-			global::java.text.DateFormatSymbols._DateFormatSymbols25423 = @__env.GetMethodIDNoThrow(global::java.text.DateFormatSymbols.staticClass, "<init>", "(Ljava/util/Locale;)V");
 		}
 		internal static void InitJNI()
 		{

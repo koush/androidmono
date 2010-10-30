@@ -18,20 +18,22 @@ namespace java.net
 		global::java.lang.Object java.net.SocketOptions.getOption(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.SocketOptions_._getOption21815.native == global::System.IntPtr.Zero)
+				global::java.net.SocketOptions_._getOption21815 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "getOption", "(I)Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SocketOptions_._getOption21815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setOption21816;
 		void java.net.SocketOptions.setOption(int arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.SocketOptions_._setOption21816.native == global::System.IntPtr.Zero)
+				global::java.net.SocketOptions_._setOption21816 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "setOption", "(ILjava/lang/Object;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.net.SocketOptions_._setOption21816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static SocketOptions_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketOptions_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketOptions"));
-			global::java.net.SocketOptions_._getOption21815 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "getOption", "(I)Ljava/lang/Object;");
-			global::java.net.SocketOptions_._setOption21816 = @__env.GetMethodIDNoThrow(global::java.net.SocketOptions_.staticClass, "setOption", "(ILjava/lang/Object;)V");
 		}
 		internal static void InitJNI()
 		{

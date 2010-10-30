@@ -17,13 +17,14 @@ namespace java.util.logging
 		bool java.util.logging.Filter.isLoggable(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.logging.Filter_._isLoggable27952.native == global::System.IntPtr.Zero)
+				global::java.util.logging.Filter_._isLoggable27952 = @__env.GetMethodIDNoThrow(global::java.util.logging.Filter_.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_._isLoggable27952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Filter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Filter"));
-			global::java.util.logging.Filter_._isLoggable27952 = @__env.GetMethodIDNoThrow(global::java.util.logging.Filter_.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
 		}
 		internal static void InitJNI()
 		{

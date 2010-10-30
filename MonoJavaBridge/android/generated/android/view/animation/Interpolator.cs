@@ -17,13 +17,14 @@ namespace android.view.animation
 		float android.view.animation.Interpolator.getInterpolation(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.animation.Interpolator_._getInterpolation15710.native == global::System.IntPtr.Zero)
+				global::android.view.animation.Interpolator_._getInterpolation15710 = @__env.GetMethodIDNoThrow(global::android.view.animation.Interpolator_.staticClass, "getInterpolation", "(F)F");
 			return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_._getInterpolation15710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Interpolator_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.Interpolator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Interpolator"));
-			global::android.view.animation.Interpolator_._getInterpolation15710 = @__env.GetMethodIDNoThrow(global::android.view.animation.Interpolator_.staticClass, "getInterpolation", "(F)F");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.view.animation
 		public InterpolatorDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.animation.InterpolatorDelegateWrapper._InterpolatorDelegateWrapper15711.native == global::System.IntPtr.Zero)
+				global::android.view.animation.InterpolatorDelegateWrapper._InterpolatorDelegateWrapper15711 = @__env.GetMethodIDNoThrow(global::android.view.animation.InterpolatorDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.InterpolatorDelegateWrapper.staticClass, global::android.view.animation.InterpolatorDelegateWrapper._InterpolatorDelegateWrapper15711);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.view.animation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.InterpolatorDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/InterpolatorDelegateWrapper"));
-			global::android.view.animation.InterpolatorDelegateWrapper._InterpolatorDelegateWrapper15711 = @__env.GetMethodIDNoThrow(global::android.view.animation.InterpolatorDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,12 +11,16 @@ namespace android.preference
 		public void onDismiss(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.preference.PreferenceScreen._onDismiss10450.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceScreen._onDismiss10450 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._onDismiss10450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _bind10451;
 		public void bind(android.widget.ListView arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.preference.PreferenceScreen._bind10451.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceScreen._bind10451 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "bind", "(Landroid/widget/ListView;)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._bind10451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.app.Dialog Dialog
@@ -30,6 +34,8 @@ namespace android.preference
 		public global::android.app.Dialog getDialog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.preference.PreferenceScreen._getDialog10452.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceScreen._getDialog10452 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "getDialog", "()Landroid/app/Dialog;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._getDialog10452)) as android.app.Dialog;
 		}
 		public new global::android.widget.ListAdapter RootAdapter
@@ -43,23 +49,22 @@ namespace android.preference
 		public global::android.widget.ListAdapter getRootAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.preference.PreferenceScreen._getRootAdapter10453.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceScreen._getRootAdapter10453 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "getRootAdapter", "()Landroid/widget/ListAdapter;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._getRootAdapter10453)) as android.widget.ListAdapter;
 		}
 		internal static global::MonoJavaBridge.MethodId _onItemClick10454;
 		public void onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.preference.PreferenceScreen._onItemClick10454.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceScreen._onItemClick10454 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "onItemClick", "(Landroid/widget/AdapterView;Landroid/view/View;IJ)V");
 			@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._onItemClick10454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		static PreferenceScreen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceScreen.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceScreen"));
-			global::android.preference.PreferenceScreen._onDismiss10450 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
-			global::android.preference.PreferenceScreen._bind10451 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "bind", "(Landroid/widget/ListView;)V");
-			global::android.preference.PreferenceScreen._getDialog10452 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "getDialog", "()Landroid/app/Dialog;");
-			global::android.preference.PreferenceScreen._getRootAdapter10453 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "getRootAdapter", "()Landroid/widget/ListAdapter;");
-			global::android.preference.PreferenceScreen._onItemClick10454 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceScreen.staticClass, "onItemClick", "(Landroid/widget/AdapterView;Landroid/view/View;IJ)V");
 		}
 		internal static void InitJNI()
 		{

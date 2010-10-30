@@ -24,13 +24,14 @@ namespace android.widget
 			void android.widget.Filter.FilterListener.onFilterComplete(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.widget.Filter.FilterListener_._onFilterComplete17074.native == global::System.IntPtr.Zero)
+					global::android.widget.Filter.FilterListener_._onFilterComplete17074 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListener_.staticClass, "onFilterComplete", "(I)V");
 				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter.FilterListener_._onFilterComplete17074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static FilterListener_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterListener"));
-				global::android.widget.Filter.FilterListener_._onFilterComplete17074 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListener_.staticClass, "onFilterComplete", "(I)V");
 			}
 			internal static void InitJNI()
 			{
@@ -49,6 +50,8 @@ namespace android.widget
 			public FilterListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075.native == global::System.IntPtr.Zero)
+					global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterListenerDelegateWrapper.staticClass, global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075);
 				Init(@__env, handle);
 			}
@@ -56,7 +59,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter_FilterListenerDelegateWrapper"));
-				global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -88,6 +90,8 @@ namespace android.widget
 			public FilterResults() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.widget.Filter.FilterResults._FilterResults17076.native == global::System.IntPtr.Zero)
+					global::android.widget.Filter.FilterResults._FilterResults17076 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterResults.staticClass, global::android.widget.Filter.FilterResults._FilterResults17076);
 				Init(@__env, handle);
 			}
@@ -119,7 +123,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterResults.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterResults"));
-				global::android.widget.Filter.FilterResults._FilterResults17076 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "<init>", "()V");
 				global::android.widget.Filter.FilterResults._values17077 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "values", "Ljava/lang/Object;");
 				global::android.widget.Filter.FilterResults._count17078 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "count", "I");
 			}
@@ -130,6 +133,9 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _filter17079;
 		public virtual void filter(java.lang.CharSequence arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter._filter17079.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter._filter17079 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter17079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void filter(string arg0)
@@ -139,6 +145,9 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _filter17080;
 		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter._filter17080.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter._filter17080 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterListener;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter17080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void filter(string arg0, global::android.widget.Filter.FilterListenerDelegate arg1)
@@ -152,12 +161,17 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _convertResultToString17083;
 		public virtual global::java.lang.CharSequence convertResultToString(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString17083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter._convertResultToString17083.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter._convertResultToString17083 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString17083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _Filter17084;
 		public Filter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter._Filter17084.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter._Filter17084 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.staticClass, global::android.widget.Filter._Filter17084);
 			Init(@__env, handle);
 		}
@@ -165,12 +179,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
-			global::android.widget.Filter._filter17079 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;)V");
-			global::android.widget.Filter._filter17080 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterListener;)V");
-			global::android.widget.Filter._performFiltering17081 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
-			global::android.widget.Filter._publishResults17082 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
-			global::android.widget.Filter._convertResultToString17083 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
-			global::android.widget.Filter._Filter17084 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -188,6 +196,8 @@ namespace android.widget
 		protected override global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter_._performFiltering17085.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter_._performFiltering17085 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Filter_._performFiltering17085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.Filter.FilterResults;
 		}
 		protected android.widget.Filter.FilterResults performFiltering(string arg0)
@@ -198,6 +208,8 @@ namespace android.widget
 		protected override void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Filter_._publishResults17086.native == global::System.IntPtr.Zero)
+				global::android.widget.Filter_._publishResults17086 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter_._publishResults17086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		protected void publishResults(string arg0, android.widget.Filter.FilterResults arg1)
@@ -208,8 +220,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
-			global::android.widget.Filter_._performFiltering17085 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
-			global::android.widget.Filter_._publishResults17086 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
 		}
 		internal static void InitJNI()
 		{

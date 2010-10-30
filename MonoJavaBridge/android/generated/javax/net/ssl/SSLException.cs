@@ -11,6 +11,8 @@ namespace javax.net.ssl
 		public SSLException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLException._SSLException29987.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLException._SSLException29987 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLException.staticClass, global::javax.net.ssl.SSLException._SSLException29987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.net.ssl
 		public SSLException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLException._SSLException29988.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLException._SSLException29988 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLException.staticClass, global::javax.net.ssl.SSLException._SSLException29988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace javax.net.ssl
 		public SSLException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.SSLException._SSLException29989.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLException._SSLException29989 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLException.staticClass, global::javax.net.ssl.SSLException._SSLException29989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -32,9 +38,6 @@ namespace javax.net.ssl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLException"));
-			global::javax.net.ssl.SSLException._SSLException29987 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::javax.net.ssl.SSLException._SSLException29988 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::javax.net.ssl.SSLException._SSLException29989 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

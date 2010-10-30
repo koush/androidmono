@@ -10,18 +10,26 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _lookup13350;
 		protected virtual int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener._lookup13350.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener._lookup13350 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._lookup13350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ok13351;
 		protected static bool ok(char[] arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener._ok13351.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener._ok13351 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "ok", "([CC)Z");
 			return @__env.CallStaticBooleanMethod(android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._ok13351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _filter13352;
 		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._filter13352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.lang.CharSequence;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener._filter13352.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener._filter13352 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._filter13352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence filter(string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
@@ -30,6 +38,9 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _onKeyDown13353;
 		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener._onKeyDown13353.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener._onKeyDown13353 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._onKeyDown13353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13354;
@@ -38,6 +49,8 @@ namespace android.text.method
 		public NumberKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener._NumberKeyListener13355.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener._NumberKeyListener13355 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._NumberKeyListener13355);
 			Init(@__env, handle);
 		}
@@ -45,12 +58,6 @@ namespace android.text.method
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.NumberKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/NumberKeyListener"));
-			global::android.text.method.NumberKeyListener._lookup13350 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I");
-			global::android.text.method.NumberKeyListener._ok13351 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "ok", "([CC)Z");
-			global::android.text.method.NumberKeyListener._filter13352 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;");
-			global::android.text.method.NumberKeyListener._onKeyDown13353 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			global::android.text.method.NumberKeyListener._getAcceptedChars13354 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "getAcceptedChars", "()[C");
-			global::android.text.method.NumberKeyListener._NumberKeyListener13355 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -68,20 +75,22 @@ namespace android.text.method
 		protected override char[] getAcceptedChars()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener_._getAcceptedChars13356.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener_._getAcceptedChars13356 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getAcceptedChars", "()[C");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.NumberKeyListener_._getAcceptedChars13356)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType13357;
 		public override int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.method.NumberKeyListener_._getInputType13357.native == global::System.IntPtr.Zero)
+				global::android.text.method.NumberKeyListener_._getInputType13357 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getInputType", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.NumberKeyListener_._getInputType13357);
 		}
 		static NumberKeyListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.NumberKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/NumberKeyListener"));
-			global::android.text.method.NumberKeyListener_._getAcceptedChars13356 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getAcceptedChars", "()[C");
-			global::android.text.method.NumberKeyListener_._getInputType13357 = @__env.GetMethodIDNoThrow(global::android.text.method.NumberKeyListener_.staticClass, "getInputType", "()I");
 		}
 		internal static void InitJNI()
 		{

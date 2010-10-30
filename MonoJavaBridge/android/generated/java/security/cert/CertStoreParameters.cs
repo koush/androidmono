@@ -17,13 +17,14 @@ namespace java.security.cert
 		global::java.lang.Object java.security.cert.CertStoreParameters.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertStoreParameters_._clone23548.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertStoreParameters_._clone23548 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreParameters_.staticClass, "clone", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreParameters_._clone23548)) as java.lang.Object;
 		}
 		static CertStoreParameters_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertStoreParameters_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertStoreParameters"));
-			global::java.security.cert.CertStoreParameters_._clone23548 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreParameters_.staticClass, "clone", "()Ljava/lang/Object;");
 		}
 		internal static void InitJNI()
 		{

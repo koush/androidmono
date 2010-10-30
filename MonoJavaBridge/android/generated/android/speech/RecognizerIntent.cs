@@ -11,6 +11,8 @@ namespace android.speech
 		public static global::android.content.Intent getVoiceDetailsIntent(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674.native == global::System.IntPtr.Zero)
+				global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674 = @__env.GetStaticMethodIDNoThrow(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.RecognizerIntent.staticClass, global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
 		}
 		public static global::java.lang.String EXTRA_CALLING_PACKAGE
@@ -199,7 +201,6 @@ namespace android.speech
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognizerIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognizerIntent"));
-			global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674 = @__env.GetStaticMethodIDNoThrow(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
 		}
 		internal static void InitJNI()
 		{

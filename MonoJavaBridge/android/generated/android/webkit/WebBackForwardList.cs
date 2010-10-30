@@ -10,7 +10,10 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _clone16123;
 		protected virtual global::android.webkit.WebBackForwardList clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._clone16123)) as android.webkit.WebBackForwardList;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.WebBackForwardList._clone16123.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebBackForwardList._clone16123 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "clone", "()Landroid/webkit/WebBackForwardList;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._clone16123) as android.webkit.WebBackForwardList;
 		}
 		public new int Size
 		{
@@ -22,6 +25,9 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getSize16124;
 		public virtual int getSize()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.WebBackForwardList._getSize16124.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebBackForwardList._getSize16124 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getSize", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getSize16124);
 		}
 		public new global::android.webkit.WebHistoryItem CurrentItem
@@ -34,7 +40,10 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCurrentItem16125;
 		public virtual global::android.webkit.WebHistoryItem getCurrentItem()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentItem16125)) as android.webkit.WebHistoryItem;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.WebBackForwardList._getCurrentItem16125.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebBackForwardList._getCurrentItem16125 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getCurrentItem", "()Landroid/webkit/WebHistoryItem;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentItem16125) as android.webkit.WebHistoryItem;
 		}
 		public new int CurrentIndex
 		{
@@ -46,22 +55,23 @@ namespace android.webkit
 		internal static global::MonoJavaBridge.MethodId _getCurrentIndex16126;
 		public virtual int getCurrentIndex()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.WebBackForwardList._getCurrentIndex16126.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebBackForwardList._getCurrentIndex16126 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getCurrentIndex", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentIndex16126);
 		}
 		internal static global::MonoJavaBridge.MethodId _getItemAtIndex16127;
 		public virtual global::android.webkit.WebHistoryItem getItemAtIndex(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebHistoryItem;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.webkit.WebBackForwardList._getItemAtIndex16127.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebBackForwardList._getItemAtIndex16127 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getItemAtIndex", "(I)Landroid/webkit/WebHistoryItem;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.webkit.WebHistoryItem;
 		}
 		static WebBackForwardList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebBackForwardList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebBackForwardList"));
-			global::android.webkit.WebBackForwardList._clone16123 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "clone", "()Landroid/webkit/WebBackForwardList;");
-			global::android.webkit.WebBackForwardList._getSize16124 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getSize", "()I");
-			global::android.webkit.WebBackForwardList._getCurrentItem16125 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getCurrentItem", "()Landroid/webkit/WebHistoryItem;");
-			global::android.webkit.WebBackForwardList._getCurrentIndex16126 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getCurrentIndex", "()I");
-			global::android.webkit.WebBackForwardList._getItemAtIndex16127 = @__env.GetMethodIDNoThrow(global::android.webkit.WebBackForwardList.staticClass, "getItemAtIndex", "(I)Landroid/webkit/WebHistoryItem;");
 		}
 		internal static void InitJNI()
 		{

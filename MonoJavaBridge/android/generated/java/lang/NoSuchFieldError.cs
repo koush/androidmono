@@ -11,6 +11,8 @@ namespace java.lang
 		public NoSuchFieldError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.NoSuchFieldError._NoSuchFieldError20344.native == global::System.IntPtr.Zero)
+				global::java.lang.NoSuchFieldError._NoSuchFieldError20344 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchFieldError.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoSuchFieldError.staticClass, global::java.lang.NoSuchFieldError._NoSuchFieldError20344);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.lang
 		public NoSuchFieldError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.NoSuchFieldError._NoSuchFieldError20345.native == global::System.IntPtr.Zero)
+				global::java.lang.NoSuchFieldError._NoSuchFieldError20345 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchFieldError.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoSuchFieldError.staticClass, global::java.lang.NoSuchFieldError._NoSuchFieldError20345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.NoSuchFieldError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/NoSuchFieldError"));
-			global::java.lang.NoSuchFieldError._NoSuchFieldError20344 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchFieldError.staticClass, "<init>", "()V");
-			global::java.lang.NoSuchFieldError._NoSuchFieldError20345 = @__env.GetMethodIDNoThrow(global::java.lang.NoSuchFieldError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

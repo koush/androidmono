@@ -17,13 +17,14 @@ namespace java.net
 		global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990.native == global::System.IntPtr.Zero)
+				global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990 = @__env.GetMethodIDNoThrow(global::java.net.URLStreamHandlerFactory_.staticClass, "createURLStreamHandler", "(Ljava/lang/String;)Ljava/net/URLStreamHandler;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLStreamHandler;
 		}
 		static URLStreamHandlerFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.URLStreamHandlerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/URLStreamHandlerFactory"));
-			global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990 = @__env.GetMethodIDNoThrow(global::java.net.URLStreamHandlerFactory_.staticClass, "createURLStreamHandler", "(Ljava/lang/String;)Ljava/net/URLStreamHandler;");
 		}
 		internal static void InitJNI()
 		{

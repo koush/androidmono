@@ -11,18 +11,24 @@ namespace java.math
 		public static global::java.math.RoundingMode[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.math.RoundingMode._values21318.native == global::System.IntPtr.Zero)
+				global::java.math.RoundingMode._values21318 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "values", "()[Ljava/math/RoundingMode;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._values21318)) as java.math.RoundingMode[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf21319;
 		public static global::java.math.RoundingMode valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.math.RoundingMode._valueOf21319.native == global::System.IntPtr.Zero)
+				global::java.math.RoundingMode._valueOf21319 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._valueOf21319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.RoundingMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf21320;
 		public static global::java.math.RoundingMode valueOf(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.math.RoundingMode._valueOf21320.native == global::System.IntPtr.Zero)
+				global::java.math.RoundingMode._valueOf21320 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "valueOf", "(I)Ljava/math/RoundingMode;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._valueOf21320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.RoundingMode;
 		}
 		internal static global::MonoJavaBridge.FieldId _UP21321;
@@ -101,9 +107,6 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.RoundingMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/RoundingMode"));
-			global::java.math.RoundingMode._values21318 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "values", "()[Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._valueOf21319 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._valueOf21320 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "valueOf", "(I)Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._UP21321 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UP", "Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._DOWN21322 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "DOWN", "Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._CEILING21323 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "CEILING", "Ljava/math/RoundingMode;");

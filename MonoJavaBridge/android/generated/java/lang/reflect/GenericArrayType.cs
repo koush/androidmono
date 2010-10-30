@@ -17,13 +17,14 @@ namespace java.lang.reflect
 		global::java.lang.reflect.Type java.lang.reflect.GenericArrayType.getGenericComponentType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081.native == global::System.IntPtr.Zero)
+				global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericArrayType_.staticClass, "getGenericComponentType", "()Ljava/lang/reflect/Type;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081)) as java.lang.reflect.Type;
 		}
 		static GenericArrayType_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.GenericArrayType_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/GenericArrayType"));
-			global::java.lang.reflect.GenericArrayType_._getGenericComponentType21081 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.GenericArrayType_.staticClass, "getGenericComponentType", "()Ljava/lang/reflect/Type;");
 		}
 		internal static void InitJNI()
 		{

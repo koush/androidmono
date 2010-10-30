@@ -17,13 +17,14 @@ namespace javax.net.ssl
 		bool javax.net.ssl.HostnameVerifier.verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ssl.HostnameVerifier_._verify29841.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.HostnameVerifier_._verify29841 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.net.ssl.HostnameVerifier_._verify29841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static HostnameVerifier_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HostnameVerifier_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HostnameVerifier"));
-			global::javax.net.ssl.HostnameVerifier_._verify29841 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HostnameVerifier_.staticClass, "verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z");
 		}
 		internal static void InitJNI()
 		{

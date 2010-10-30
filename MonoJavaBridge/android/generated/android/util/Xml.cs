@@ -18,12 +18,16 @@ namespace android.util
 			public static global::android.util.Xml.Encoding[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.util.Xml.Encoding._values13955.native == global::System.IntPtr.Zero)
+					global::android.util.Xml.Encoding._values13955 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.Encoding.staticClass, "values", "()[Landroid/util/Xml/Encoding;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.util.Xml.Encoding>(@__env.CallStaticObjectMethod(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._values13955)) as android.util.Xml.Encoding[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf13956;
 			public static global::android.util.Xml.Encoding valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.util.Xml.Encoding._valueOf13956.native == global::System.IntPtr.Zero)
+					global::android.util.Xml.Encoding._valueOf13956 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.Encoding.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.CallStaticObjectMethod(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._valueOf13956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
 			}
 			internal static global::MonoJavaBridge.FieldId _ISO_8859_113957;
@@ -66,8 +70,6 @@ namespace android.util
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.util.Xml.Encoding.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Xml$Encoding"));
-				global::android.util.Xml.Encoding._values13955 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.Encoding.staticClass, "values", "()[Landroid/util/Xml/Encoding;");
-				global::android.util.Xml.Encoding._valueOf13956 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.Encoding.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._ISO_8859_113957 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "ISO_8859_1", "Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._US_ASCII13958 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "US_ASCII", "Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._UTF_1613959 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "UTF_16", "Landroid/util/Xml$Encoding;");
@@ -81,48 +83,64 @@ namespace android.util
 		public static void parse(java.lang.String arg0, org.xml.sax.ContentHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._parse13961.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._parse13961 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/ContentHandler;)V");
 			@__env.CallStaticVoidMethod(android.util.Xml.staticClass, global::android.util.Xml._parse13961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse13962;
 		public static void parse(java.io.Reader arg0, org.xml.sax.ContentHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._parse13962.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._parse13962 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/io/Reader;Lorg/xml/sax/ContentHandler;)V");
 			@__env.CallStaticVoidMethod(android.util.Xml.staticClass, global::android.util.Xml._parse13962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse13963;
 		public static void parse(java.io.InputStream arg0, android.util.Xml.Encoding arg1, org.xml.sax.ContentHandler arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._parse13963.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._parse13963 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/io/InputStream;Landroid/util/Xml$Encoding;Lorg/xml/sax/ContentHandler;)V");
 			@__env.CallStaticVoidMethod(android.util.Xml.staticClass, global::android.util.Xml._parse13963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _newPullParser13964;
 		public static global::org.xmlpull.v1.XmlPullParser newPullParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._newPullParser13964.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._newPullParser13964 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "newPullParser", "()Lorg/xmlpull/v1/XmlPullParser;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xmlpull.v1.XmlPullParser>(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._newPullParser13964)) as org.xmlpull.v1.XmlPullParser;
 		}
 		internal static global::MonoJavaBridge.MethodId _newSerializer13965;
 		public static global::org.xmlpull.v1.XmlSerializer newSerializer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._newSerializer13965.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._newSerializer13965 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "newSerializer", "()Lorg/xmlpull/v1/XmlSerializer;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xmlpull.v1.XmlSerializer>(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._newSerializer13965)) as org.xmlpull.v1.XmlSerializer;
 		}
 		internal static global::MonoJavaBridge.MethodId _findEncodingByName13966;
 		public static global::android.util.Xml.Encoding findEncodingByName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._findEncodingByName13966.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._findEncodingByName13966 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "findEncodingByName", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._findEncodingByName13966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
 		}
 		internal static global::MonoJavaBridge.MethodId _asAttributeSet13967;
 		public static global::android.util.AttributeSet asAttributeSet(org.xmlpull.v1.XmlPullParser arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._asAttributeSet13967.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._asAttributeSet13967 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "asAttributeSet", "(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.util.AttributeSet>(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._asAttributeSet13967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.AttributeSet;
 		}
 		internal static global::MonoJavaBridge.MethodId _Xml13968;
 		public Xml() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Xml._Xml13968.native == global::System.IntPtr.Zero)
+				global::android.util.Xml._Xml13968 = @__env.GetMethodIDNoThrow(global::android.util.Xml.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Xml.staticClass, global::android.util.Xml._Xml13968);
 			Init(@__env, handle);
 		}
@@ -142,14 +160,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Xml.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Xml"));
-			global::android.util.Xml._parse13961 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/ContentHandler;)V");
-			global::android.util.Xml._parse13962 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/io/Reader;Lorg/xml/sax/ContentHandler;)V");
-			global::android.util.Xml._parse13963 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "parse", "(Ljava/io/InputStream;Landroid/util/Xml$Encoding;Lorg/xml/sax/ContentHandler;)V");
-			global::android.util.Xml._newPullParser13964 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "newPullParser", "()Lorg/xmlpull/v1/XmlPullParser;");
-			global::android.util.Xml._newSerializer13965 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "newSerializer", "()Lorg/xmlpull/v1/XmlSerializer;");
-			global::android.util.Xml._findEncodingByName13966 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "findEncodingByName", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
-			global::android.util.Xml._asAttributeSet13967 = @__env.GetStaticMethodIDNoThrow(global::android.util.Xml.staticClass, "asAttributeSet", "(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;");
-			global::android.util.Xml._Xml13968 = @__env.GetMethodIDNoThrow(global::android.util.Xml.staticClass, "<init>", "()V");
 			global::android.util.Xml._FEATURE_RELAXED13969 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.staticClass, "FEATURE_RELAXED", "Ljava/lang/String;");
 		}
 		internal static void InitJNI()

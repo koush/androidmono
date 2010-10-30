@@ -64,6 +64,8 @@ namespace android.provider
 			public Constants() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Constants._Constants11571.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Constants._Constants11571 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Constants.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SyncStateContract.Constants.staticClass, global::android.provider.SyncStateContract.Constants._Constants11571);
 				Init(@__env, handle);
 			}
@@ -78,7 +80,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.SyncStateContract.Constants.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract$Constants"));
-				global::android.provider.SyncStateContract.Constants._Constants11571 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Constants.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -95,48 +96,64 @@ namespace android.provider
 			public static byte[] get(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._get11573.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._get11573 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "get", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)[B");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._get11573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as byte[];
 			}
 			internal static global::MonoJavaBridge.MethodId _set11574;
 			public static void set(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2, byte[] arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._set11574.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._set11574 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "set", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)V");
 				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._set11574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			internal static global::MonoJavaBridge.MethodId _insert11575;
 			public static global::android.net.Uri insert(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2, byte[] arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._insert11575.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._insert11575 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "insert", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/net/Uri;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._insert11575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.net.Uri;
 			}
 			internal static global::MonoJavaBridge.MethodId _update11576;
 			public static void update(android.content.ContentProviderClient arg0, android.net.Uri arg1, byte[] arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._update11576.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._update11576 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "update", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;[B)V");
 				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._update11576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			internal static global::MonoJavaBridge.MethodId _getWithUri11577;
 			public static global::android.util.Pair getWithUri(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._getWithUri11577.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._getWithUri11577 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "getWithUri", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)Landroid/util/Pair;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._getWithUri11577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.util.Pair;
 			}
 			internal static global::MonoJavaBridge.MethodId _newSetOperation11578;
 			public static global::android.content.ContentProviderOperation newSetOperation(android.net.Uri arg0, android.accounts.Account arg1, byte[] arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._newSetOperation11578.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._newSetOperation11578 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "newSetOperation", "(Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/content/ContentProviderOperation;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._newSetOperation11578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.content.ContentProviderOperation;
 			}
 			internal static global::MonoJavaBridge.MethodId _newUpdateOperation11579;
 			public static global::android.content.ContentProviderOperation newUpdateOperation(android.net.Uri arg0, byte[] arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._newUpdateOperation11579.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._newUpdateOperation11579 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "newUpdateOperation", "(Landroid/net/Uri;[B)Landroid/content/ContentProviderOperation;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._newUpdateOperation11579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.ContentProviderOperation;
 			}
 			internal static global::MonoJavaBridge.MethodId _Helpers11580;
 			public Helpers() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.SyncStateContract.Helpers._Helpers11580.native == global::System.IntPtr.Zero)
+					global::android.provider.SyncStateContract.Helpers._Helpers11580 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._Helpers11580);
 				Init(@__env, handle);
 			}
@@ -144,14 +161,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.SyncStateContract.Helpers.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract$Helpers"));
-				global::android.provider.SyncStateContract.Helpers._get11573 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "get", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)[B");
-				global::android.provider.SyncStateContract.Helpers._set11574 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "set", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)V");
-				global::android.provider.SyncStateContract.Helpers._insert11575 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "insert", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/net/Uri;");
-				global::android.provider.SyncStateContract.Helpers._update11576 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "update", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;[B)V");
-				global::android.provider.SyncStateContract.Helpers._getWithUri11577 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "getWithUri", "(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)Landroid/util/Pair;");
-				global::android.provider.SyncStateContract.Helpers._newSetOperation11578 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "newSetOperation", "(Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/content/ContentProviderOperation;");
-				global::android.provider.SyncStateContract.Helpers._newUpdateOperation11579 = @__env.GetStaticMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "newUpdateOperation", "(Landroid/net/Uri;[B)Landroid/content/ContentProviderOperation;");
-				global::android.provider.SyncStateContract.Helpers._Helpers11580 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.Helpers.staticClass, "<init>", "()V");
 			}
 			internal static void InitJNI()
 			{
@@ -161,6 +170,8 @@ namespace android.provider
 		public SyncStateContract() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.provider.SyncStateContract._SyncStateContract11581.native == global::System.IntPtr.Zero)
+				global::android.provider.SyncStateContract._SyncStateContract11581 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SyncStateContract.staticClass, global::android.provider.SyncStateContract._SyncStateContract11581);
 			Init(@__env, handle);
 		}
@@ -168,7 +179,6 @@ namespace android.provider
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.SyncStateContract.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SyncStateContract"));
-			global::android.provider.SyncStateContract._SyncStateContract11581 = @__env.GetMethodIDNoThrow(global::android.provider.SyncStateContract.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

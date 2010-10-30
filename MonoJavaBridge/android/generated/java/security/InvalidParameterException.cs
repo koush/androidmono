@@ -11,6 +11,8 @@ namespace java.security
 		public InvalidParameterException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.InvalidParameterException._InvalidParameterException23004.native == global::System.IntPtr.Zero)
+				global::java.security.InvalidParameterException._InvalidParameterException23004 = @__env.GetMethodIDNoThrow(global::java.security.InvalidParameterException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidParameterException.staticClass, global::java.security.InvalidParameterException._InvalidParameterException23004);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.security
 		public InvalidParameterException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.InvalidParameterException._InvalidParameterException23005.native == global::System.IntPtr.Zero)
+				global::java.security.InvalidParameterException._InvalidParameterException23005 = @__env.GetMethodIDNoThrow(global::java.security.InvalidParameterException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidParameterException.staticClass, global::java.security.InvalidParameterException._InvalidParameterException23005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.InvalidParameterException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/InvalidParameterException"));
-			global::java.security.InvalidParameterException._InvalidParameterException23004 = @__env.GetMethodIDNoThrow(global::java.security.InvalidParameterException.staticClass, "<init>", "()V");
-			global::java.security.InvalidParameterException._InvalidParameterException23005 = @__env.GetMethodIDNoThrow(global::java.security.InvalidParameterException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

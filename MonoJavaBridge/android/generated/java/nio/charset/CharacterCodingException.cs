@@ -11,6 +11,8 @@ namespace java.nio.charset
 		public CharacterCodingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.charset.CharacterCodingException._CharacterCodingException22721.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.CharacterCodingException._CharacterCodingException22721 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharacterCodingException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharacterCodingException.staticClass, global::java.nio.charset.CharacterCodingException._CharacterCodingException22721);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.charset
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CharacterCodingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CharacterCodingException"));
-			global::java.nio.charset.CharacterCodingException._CharacterCodingException22721 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharacterCodingException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

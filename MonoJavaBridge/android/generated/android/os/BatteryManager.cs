@@ -11,6 +11,8 @@ namespace android.os
 		public BatteryManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.os.BatteryManager._BatteryManager9515.native == global::System.IntPtr.Zero)
+				global::android.os.BatteryManager._BatteryManager9515 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager9515);
 			Init(@__env, handle);
 		}
@@ -179,7 +181,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.BatteryManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/BatteryManager"));
-			global::android.os.BatteryManager._BatteryManager9515 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

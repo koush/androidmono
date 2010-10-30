@@ -25,69 +25,78 @@ namespace java.sql
 		int java.sql.ParameterMetaData.getScale(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getScale24646.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getScale24646 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getScale", "(I)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getScale24646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrecision24647;
 		int java.sql.ParameterMetaData.getPrecision(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getPrecision24647.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getPrecision24647 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getPrecision", "(I)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getPrecision24647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNullable24648;
 		int java.sql.ParameterMetaData.isNullable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._isNullable24648.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._isNullable24648 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "isNullable", "(I)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._isNullable24648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSigned24649;
 		bool java.sql.ParameterMetaData.isSigned(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._isSigned24649.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._isSigned24649 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "isSigned", "(I)Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._isSigned24649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterCount24650;
 		int java.sql.ParameterMetaData.getParameterCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getParameterCount24650.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getParameterCount24650 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterCount", "()I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getParameterCount24650);
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterType24651;
 		int java.sql.ParameterMetaData.getParameterType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getParameterType24651.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getParameterType24651 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterType", "(I)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getParameterType24651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterTypeName24652;
 		global::java.lang.String java.sql.ParameterMetaData.getParameterTypeName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getParameterTypeName24652.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getParameterTypeName24652 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterTypeName", "(I)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getParameterTypeName24652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterClassName24653;
 		global::java.lang.String java.sql.ParameterMetaData.getParameterClassName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getParameterClassName24653.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getParameterClassName24653 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterClassName", "(I)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getParameterClassName24653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterMode24654;
 		int java.sql.ParameterMetaData.getParameterMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.sql.ParameterMetaData_._getParameterMode24654.native == global::System.IntPtr.Zero)
+				global::java.sql.ParameterMetaData_._getParameterMode24654 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterMode", "(I)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_._getParameterMode24654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ParameterMetaData_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.ParameterMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/ParameterMetaData"));
-			global::java.sql.ParameterMetaData_._getScale24646 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getScale", "(I)I");
-			global::java.sql.ParameterMetaData_._getPrecision24647 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getPrecision", "(I)I");
-			global::java.sql.ParameterMetaData_._isNullable24648 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "isNullable", "(I)I");
-			global::java.sql.ParameterMetaData_._isSigned24649 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "isSigned", "(I)Z");
-			global::java.sql.ParameterMetaData_._getParameterCount24650 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterCount", "()I");
-			global::java.sql.ParameterMetaData_._getParameterType24651 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterType", "(I)I");
-			global::java.sql.ParameterMetaData_._getParameterTypeName24652 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterTypeName", "(I)Ljava/lang/String;");
-			global::java.sql.ParameterMetaData_._getParameterClassName24653 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterClassName", "(I)Ljava/lang/String;");
-			global::java.sql.ParameterMetaData_._getParameterMode24654 = @__env.GetMethodIDNoThrow(global::java.sql.ParameterMetaData_.staticClass, "getParameterMode", "(I)I");
 		}
 		internal static void InitJNI()
 		{

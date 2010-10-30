@@ -11,6 +11,8 @@ namespace java.security
 		public ProviderException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.ProviderException._ProviderException23291.native == global::System.IntPtr.Zero)
+				global::java.security.ProviderException._ProviderException23291 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23291);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.security
 		public ProviderException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.ProviderException._ProviderException23292.native == global::System.IntPtr.Zero)
+				global::java.security.ProviderException._ProviderException23292 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,6 +29,8 @@ namespace java.security
 		public ProviderException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.ProviderException._ProviderException23293.native == global::System.IntPtr.Zero)
+				global::java.security.ProviderException._ProviderException23293 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -32,6 +38,8 @@ namespace java.security
 		public ProviderException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.ProviderException._ProviderException23294.native == global::System.IntPtr.Zero)
+				global::java.security.ProviderException._ProviderException23294 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -39,10 +47,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.ProviderException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/ProviderException"));
-			global::java.security.ProviderException._ProviderException23291 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "()V");
-			global::java.security.ProviderException._ProviderException23292 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.security.ProviderException._ProviderException23293 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::java.security.ProviderException._ProviderException23294 = @__env.GetMethodIDNoThrow(global::java.security.ProviderException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

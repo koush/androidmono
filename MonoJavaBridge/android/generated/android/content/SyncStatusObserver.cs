@@ -17,13 +17,14 @@ namespace android.content
 		void android.content.SyncStatusObserver.onStatusChanged(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncStatusObserver_._onStatusChanged3588.native == global::System.IntPtr.Zero)
+				global::android.content.SyncStatusObserver_._onStatusChanged3588 = @__env.GetMethodIDNoThrow(global::android.content.SyncStatusObserver_.staticClass, "onStatusChanged", "(I)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncStatusObserver_._onStatusChanged3588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SyncStatusObserver_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncStatusObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncStatusObserver"));
-			global::android.content.SyncStatusObserver_._onStatusChanged3588 = @__env.GetMethodIDNoThrow(global::android.content.SyncStatusObserver_.staticClass, "onStatusChanged", "(I)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.content
 		public SyncStatusObserverDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.SyncStatusObserverDelegateWrapper._SyncStatusObserverDelegateWrapper3589.native == global::System.IntPtr.Zero)
+				global::android.content.SyncStatusObserverDelegateWrapper._SyncStatusObserverDelegateWrapper3589 = @__env.GetMethodIDNoThrow(global::android.content.SyncStatusObserverDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SyncStatusObserverDelegateWrapper.staticClass, global::android.content.SyncStatusObserverDelegateWrapper._SyncStatusObserverDelegateWrapper3589);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncStatusObserverDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncStatusObserverDelegateWrapper"));
-			global::android.content.SyncStatusObserverDelegateWrapper._SyncStatusObserverDelegateWrapper3589 = @__env.GetMethodIDNoThrow(global::android.content.SyncStatusObserverDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

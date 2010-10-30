@@ -11,13 +11,14 @@ namespace org.apache.http.util
 		public static void initCause(java.lang.Throwable arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.util.ExceptionUtils._initCause34014.native == global::System.IntPtr.Zero)
+				global::org.apache.http.util.ExceptionUtils._initCause34014 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.ExceptionUtils.staticClass, "initCause", "(Ljava/lang/Throwable;Ljava/lang/Throwable;)V");
 			@__env.CallStaticVoidMethod(org.apache.http.util.ExceptionUtils.staticClass, global::org.apache.http.util.ExceptionUtils._initCause34014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static ExceptionUtils()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.ExceptionUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/ExceptionUtils"));
-			global::org.apache.http.util.ExceptionUtils._initCause34014 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.ExceptionUtils.staticClass, "initCause", "(Ljava/lang/Throwable;Ljava/lang/Throwable;)V");
 		}
 		internal static void InitJNI()
 		{

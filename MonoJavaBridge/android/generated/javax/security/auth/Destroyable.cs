@@ -18,20 +18,22 @@ namespace javax.security.auth
 		void javax.security.auth.Destroyable.destroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.security.auth.Destroyable_._destroy30167.native == global::System.IntPtr.Zero)
+				global::javax.security.auth.Destroyable_._destroy30167 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._destroy30167);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDestroyed30168;
 		bool javax.security.auth.Destroyable.isDestroyed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.security.auth.Destroyable_._isDestroyed30168.native == global::System.IntPtr.Zero)
+				global::javax.security.auth.Destroyable_._isDestroyed30168 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._isDestroyed30168);
 		}
 		static Destroyable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Destroyable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Destroyable"));
-			global::javax.security.auth.Destroyable_._destroy30167 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V");
-			global::javax.security.auth.Destroyable_._isDestroyed30168 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z");
 		}
 		internal static void InitJNI()
 		{

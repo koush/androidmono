@@ -11,6 +11,8 @@ namespace javax.crypto
 		public ShortBufferException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.ShortBufferException._ShortBufferException28734.native == global::System.IntPtr.Zero)
+				global::javax.crypto.ShortBufferException._ShortBufferException28734 = @__env.GetMethodIDNoThrow(global::javax.crypto.ShortBufferException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ShortBufferException.staticClass, global::javax.crypto.ShortBufferException._ShortBufferException28734);
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace javax.crypto
 		public ShortBufferException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.crypto.ShortBufferException._ShortBufferException28735.native == global::System.IntPtr.Zero)
+				global::javax.crypto.ShortBufferException._ShortBufferException28735 = @__env.GetMethodIDNoThrow(global::javax.crypto.ShortBufferException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ShortBufferException.staticClass, global::javax.crypto.ShortBufferException._ShortBufferException28735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.ShortBufferException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/ShortBufferException"));
-			global::javax.crypto.ShortBufferException._ShortBufferException28734 = @__env.GetMethodIDNoThrow(global::javax.crypto.ShortBufferException.staticClass, "<init>", "()V");
-			global::javax.crypto.ShortBufferException._ShortBufferException28735 = @__env.GetMethodIDNoThrow(global::javax.crypto.ShortBufferException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

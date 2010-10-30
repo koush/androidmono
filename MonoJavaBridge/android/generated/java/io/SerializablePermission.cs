@@ -11,6 +11,8 @@ namespace java.io
 		public SerializablePermission(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.SerializablePermission._SerializablePermission19573.native == global::System.IntPtr.Zero)
+				global::java.io.SerializablePermission._SerializablePermission19573 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.SerializablePermission.staticClass, global::java.io.SerializablePermission._SerializablePermission19573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,6 +20,8 @@ namespace java.io
 		public SerializablePermission(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.SerializablePermission._SerializablePermission19574.native == global::System.IntPtr.Zero)
+				global::java.io.SerializablePermission._SerializablePermission19574 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.SerializablePermission.staticClass, global::java.io.SerializablePermission._SerializablePermission19574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -25,8 +29,6 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.SerializablePermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/SerializablePermission"));
-			global::java.io.SerializablePermission._SerializablePermission19573 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.SerializablePermission._SerializablePermission19574 = @__env.GetMethodIDNoThrow(global::java.io.SerializablePermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,6 +11,8 @@ namespace org.apache.http.@params
 		public HttpAbstractParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpAbstractParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.HttpAbstractParamBean.staticClass, global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace org.apache.http.@params
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpAbstractParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpAbstractParamBean"));
-			global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33765 = @__env.GetMethodIDNoThrow(global::org.apache.http.@params.HttpAbstractParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
 		}
 		internal static void InitJNI()
 		{

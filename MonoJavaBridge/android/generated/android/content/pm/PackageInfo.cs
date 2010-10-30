@@ -10,22 +10,33 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3753;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString3753)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageInfo._toString3753.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageInfo._toString3753 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString3753) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3754;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageInfo._writeToParcel3754.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageInfo._writeToParcel3754 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel3754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3755;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageInfo._describeContents3755.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageInfo._describeContents3755 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents3755);
 		}
 		internal static global::MonoJavaBridge.MethodId _PackageInfo3756;
 		public PackageInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PackageInfo._PackageInfo3756.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageInfo._PackageInfo3756 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo3756);
 			Init(@__env, handle);
 		}
@@ -246,10 +257,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PackageInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageInfo"));
-			global::android.content.pm.PackageInfo._toString3753 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PackageInfo._writeToParcel3754 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PackageInfo._describeContents3755 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.PackageInfo._PackageInfo3756 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
 			global::android.content.pm.PackageInfo._packageName3757 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "packageName", "Ljava/lang/String;");
 			global::android.content.pm.PackageInfo._versionCode3758 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "versionCode", "I");
 			global::android.content.pm.PackageInfo._versionName3759 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "versionName", "Ljava/lang/String;");

@@ -10,12 +10,17 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent14602;
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.TouchDelegate._onTouchEvent14602.native == global::System.IntPtr.Zero)
+				global::android.view.TouchDelegate._onTouchEvent14602 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent14602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _TouchDelegate14603;
 		public TouchDelegate(android.graphics.Rect arg0, android.view.View arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.view.TouchDelegate._TouchDelegate14603.native == global::System.IntPtr.Zero)
+				global::android.view.TouchDelegate._TouchDelegate14603 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._TouchDelegate14603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -51,8 +56,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.TouchDelegate.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/TouchDelegate"));
-			global::android.view.TouchDelegate._onTouchEvent14602 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.view.TouchDelegate._TouchDelegate14603 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V");
 		}
 		internal static void InitJNI()
 		{

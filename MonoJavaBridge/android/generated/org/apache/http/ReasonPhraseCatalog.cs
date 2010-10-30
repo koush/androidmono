@@ -17,13 +17,14 @@ namespace org.apache.http
 		global::java.lang.String org.apache.http.ReasonPhraseCatalog.getReason(int arg0, java.util.Locale arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.ReasonPhraseCatalog_._getReason31759.native == global::System.IntPtr.Zero)
+				global::org.apache.http.ReasonPhraseCatalog_._getReason31759 = @__env.GetMethodIDNoThrow(global::org.apache.http.ReasonPhraseCatalog_.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.ReasonPhraseCatalog_._getReason31759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		static ReasonPhraseCatalog_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ReasonPhraseCatalog_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ReasonPhraseCatalog"));
-			global::org.apache.http.ReasonPhraseCatalog_._getReason31759 = @__env.GetMethodIDNoThrow(global::org.apache.http.ReasonPhraseCatalog_.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;");
 		}
 		internal static void InitJNI()
 		{

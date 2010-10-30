@@ -18,12 +18,16 @@ namespace android.telephony.gsm
 			public static global::android.telephony.gsm.SmsMessage.MessageClass[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.telephony.gsm.SmsMessage.MessageClass._values12061.native == global::System.IntPtr.Zero)
+					global::android.telephony.gsm.SmsMessage.MessageClass._values12061 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "values", "()[Landroid/telephony/gsm/SmsMessage/MessageClass;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.telephony.gsm.SmsMessage.MessageClass>(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.MessageClass.staticClass, global::android.telephony.gsm.SmsMessage.MessageClass._values12061)) as android.telephony.gsm.SmsMessage.MessageClass[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf12062;
 			public static global::android.telephony.gsm.SmsMessage.MessageClass valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.telephony.gsm.SmsMessage.MessageClass._valueOf12062.native == global::System.IntPtr.Zero)
+					global::android.telephony.gsm.SmsMessage.MessageClass._valueOf12062 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.telephony.gsm.SmsMessage.MessageClass>(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.MessageClass.staticClass, global::android.telephony.gsm.SmsMessage.MessageClass._valueOf12062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.telephony.gsm.SmsMessage.MessageClass;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLASS_012063;
@@ -75,8 +79,6 @@ namespace android.telephony.gsm
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.gsm.SmsMessage.MessageClass.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage$MessageClass"));
-				global::android.telephony.gsm.SmsMessage.MessageClass._values12061 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "values", "()[Landroid/telephony/gsm/SmsMessage/MessageClass;");
-				global::android.telephony.gsm.SmsMessage.MessageClass._valueOf12062 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				global::android.telephony.gsm.SmsMessage.MessageClass._CLASS_012063 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "CLASS_0", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				global::android.telephony.gsm.SmsMessage.MessageClass._CLASS_112064 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "CLASS_1", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				global::android.telephony.gsm.SmsMessage.MessageClass._CLASS_212065 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "CLASS_2", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
@@ -97,12 +99,17 @@ namespace android.telephony.gsm
 			internal static global::MonoJavaBridge.MethodId _toString12068;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, global::android.telephony.gsm.SmsMessage.SubmitPdu._toString12068)) as java.lang.String;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.telephony.gsm.SmsMessage.SubmitPdu._toString12068.native == global::System.IntPtr.Zero)
+					global::android.telephony.gsm.SmsMessage.SubmitPdu._toString12068 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "toString", "()Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, global::android.telephony.gsm.SmsMessage.SubmitPdu._toString12068) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _SubmitPdu12069;
 			public SubmitPdu() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.telephony.gsm.SmsMessage.SubmitPdu._SubmitPdu12069.native == global::System.IntPtr.Zero)
+					global::android.telephony.gsm.SmsMessage.SubmitPdu._SubmitPdu12069 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, global::android.telephony.gsm.SmsMessage.SubmitPdu._SubmitPdu12069);
 				Init(@__env, handle);
 			}
@@ -134,8 +141,6 @@ namespace android.telephony.gsm
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage$SubmitPdu"));
-				global::android.telephony.gsm.SmsMessage.SubmitPdu._toString12068 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "toString", "()Ljava/lang/String;");
-				global::android.telephony.gsm.SmsMessage.SubmitPdu._SubmitPdu12069 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "<init>", "()V");
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedScAddress12070 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedScAddress", "[B");
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedMessage12071 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedMessage", "[B");
 			}
@@ -153,7 +158,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getUserData12072;
 		public virtual byte[] getUserData()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getUserData12072)) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getUserData12072.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getUserData12072 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getUserData", "()[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getUserData12072) as byte[];
 		}
 		public new int Status
 		{
@@ -165,24 +173,33 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getStatus12073;
 		public virtual int getStatus()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getStatus12073.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getStatus12073 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getStatus", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getStatus12073);
 		}
 		internal static global::MonoJavaBridge.MethodId _createFromPdu12074;
 		public static global::android.telephony.gsm.SmsMessage createFromPdu(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._createFromPdu12074.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._createFromPdu12074 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "createFromPdu", "([B)Landroid/telephony/gsm/SmsMessage;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._createFromPdu12074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.telephony.gsm.SmsMessage;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTPLayerLengthForPDU12075;
 		public static int getTPLayerLengthForPDU(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getTPLayerLengthForPDU12075.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getTPLayerLengthForPDU12075 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getTPLayerLengthForPDU", "(Ljava/lang/String;)I");
 			return @__env.CallStaticIntMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getTPLayerLengthForPDU12075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _calculateLength12076;
 		public static int[] calculateLength(java.lang.CharSequence arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._calculateLength12076.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._calculateLength12076 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "calculateLength", "(Ljava/lang/CharSequence;Z)[I");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._calculateLength12076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
 		}
 		public static int[] calculateLength(string arg0, bool arg1)
@@ -193,18 +210,24 @@ namespace android.telephony.gsm
 		public static int[] calculateLength(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._calculateLength12077.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._calculateLength12077 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "calculateLength", "(Ljava/lang/String;Z)[I");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._calculateLength12077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubmitPdu12078;
 		public static global::android.telephony.gsm.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String arg0, java.lang.String arg1, short arg2, byte[] arg3, bool arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getSubmitPdu12078.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getSubmitPdu12078 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;S[BZ)Landroid/telephony/gsm/SmsMessage$SubmitPdu;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getSubmitPdu12078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.telephony.gsm.SmsMessage.SubmitPdu;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubmitPdu12079;
 		public static global::android.telephony.gsm.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, bool arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getSubmitPdu12079.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getSubmitPdu12079 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Landroid/telephony/gsm/SmsMessage$SubmitPdu;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getSubmitPdu12079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.telephony.gsm.SmsMessage.SubmitPdu;
 		}
 		public new global::java.lang.String ServiceCenterAddress
@@ -217,7 +240,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getServiceCenterAddress12080;
 		public virtual global::java.lang.String getServiceCenterAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getServiceCenterAddress12080)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getServiceCenterAddress12080.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getServiceCenterAddress12080 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getServiceCenterAddress", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getServiceCenterAddress12080) as java.lang.String;
 		}
 		public new global::java.lang.String OriginatingAddress
 		{
@@ -229,7 +255,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getOriginatingAddress12081;
 		public virtual global::java.lang.String getOriginatingAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getOriginatingAddress12081)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getOriginatingAddress12081.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getOriginatingAddress12081 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getOriginatingAddress", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getOriginatingAddress12081) as java.lang.String;
 		}
 		public new global::java.lang.String DisplayOriginatingAddress
 		{
@@ -241,7 +270,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getDisplayOriginatingAddress12082;
 		public virtual global::java.lang.String getDisplayOriginatingAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress12082)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress12082.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress12082 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getDisplayOriginatingAddress", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress12082) as java.lang.String;
 		}
 		public new global::java.lang.String MessageBody
 		{
@@ -253,12 +285,18 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getMessageBody12083;
 		public virtual global::java.lang.String getMessageBody()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageBody12083)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getMessageBody12083.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getMessageBody12083 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getMessageBody", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageBody12083) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessageClass12084;
 		public virtual global::android.telephony.gsm.SmsMessage.MessageClass getMessageClass()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.telephony.gsm.SmsMessage.MessageClass>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageClass12084)) as android.telephony.gsm.SmsMessage.MessageClass;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getMessageClass12084.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getMessageClass12084 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getMessageClass", "()Landroid/telephony/gsm/SmsMessage$MessageClass;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.telephony.gsm.SmsMessage.MessageClass>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageClass12084) as android.telephony.gsm.SmsMessage.MessageClass;
 		}
 		public new global::java.lang.String DisplayMessageBody
 		{
@@ -270,7 +308,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getDisplayMessageBody12085;
 		public virtual global::java.lang.String getDisplayMessageBody()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayMessageBody12085)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getDisplayMessageBody12085.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getDisplayMessageBody12085 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getDisplayMessageBody", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayMessageBody12085) as java.lang.String;
 		}
 		public new global::java.lang.String PseudoSubject
 		{
@@ -282,7 +323,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getPseudoSubject12086;
 		public virtual global::java.lang.String getPseudoSubject()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPseudoSubject12086)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getPseudoSubject12086.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getPseudoSubject12086 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getPseudoSubject", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPseudoSubject12086) as java.lang.String;
 		}
 		public new long TimestampMillis
 		{
@@ -294,11 +338,17 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getTimestampMillis12087;
 		public virtual long getTimestampMillis()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getTimestampMillis12087.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getTimestampMillis12087 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getTimestampMillis", "()J");
 			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getTimestampMillis12087);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmail12088;
 		public virtual bool isEmail()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isEmail12088.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isEmail12088 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isEmail", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isEmail12088);
 		}
 		public new global::java.lang.String EmailBody
@@ -311,7 +361,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getEmailBody12089;
 		public virtual global::java.lang.String getEmailBody()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailBody12089)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getEmailBody12089.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getEmailBody12089 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getEmailBody", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailBody12089) as java.lang.String;
 		}
 		public new global::java.lang.String EmailFrom
 		{
@@ -323,7 +376,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getEmailFrom12090;
 		public virtual global::java.lang.String getEmailFrom()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailFrom12090)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getEmailFrom12090.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getEmailFrom12090 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getEmailFrom", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailFrom12090) as java.lang.String;
 		}
 		public new int ProtocolIdentifier
 		{
@@ -335,31 +391,49 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getProtocolIdentifier12091;
 		public virtual int getProtocolIdentifier()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getProtocolIdentifier12091.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getProtocolIdentifier12091 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getProtocolIdentifier", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getProtocolIdentifier12091);
 		}
 		internal static global::MonoJavaBridge.MethodId _isReplace12092;
 		public virtual bool isReplace()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isReplace12092.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isReplace12092 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isReplace", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isReplace12092);
 		}
 		internal static global::MonoJavaBridge.MethodId _isCphsMwiMessage12093;
 		public virtual bool isCphsMwiMessage()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isCphsMwiMessage12093.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isCphsMwiMessage12093 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isCphsMwiMessage", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isCphsMwiMessage12093);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMWIClearMessage12094;
 		public virtual bool isMWIClearMessage()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isMWIClearMessage12094.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isMWIClearMessage12094 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMWIClearMessage", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMWIClearMessage12094);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMWISetMessage12095;
 		public virtual bool isMWISetMessage()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isMWISetMessage12095.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isMWISetMessage12095 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMWISetMessage", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMWISetMessage12095);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMwiDontStore12096;
 		public virtual bool isMwiDontStore()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isMwiDontStore12096.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isMwiDontStore12096 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMwiDontStore", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMwiDontStore12096);
 		}
 		public new byte[] Pdu
@@ -372,7 +446,10 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getPdu12097;
 		public virtual byte[] getPdu()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPdu12097)) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getPdu12097.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getPdu12097 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getPdu", "()[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPdu12097) as byte[];
 		}
 		public new int StatusOnSim
 		{
@@ -384,6 +461,9 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getStatusOnSim12098;
 		public virtual int getStatusOnSim()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getStatusOnSim12098.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getStatusOnSim12098 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getStatusOnSim", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getStatusOnSim12098);
 		}
 		public new int IndexOnSim
@@ -396,22 +476,33 @@ namespace android.telephony.gsm
 		internal static global::MonoJavaBridge.MethodId _getIndexOnSim12099;
 		public virtual int getIndexOnSim()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._getIndexOnSim12099.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._getIndexOnSim12099 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getIndexOnSim", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getIndexOnSim12099);
 		}
 		internal static global::MonoJavaBridge.MethodId _isStatusReportMessage12100;
 		public virtual bool isStatusReportMessage()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isStatusReportMessage12100.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isStatusReportMessage12100 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isStatusReportMessage", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isStatusReportMessage12100);
 		}
 		internal static global::MonoJavaBridge.MethodId _isReplyPathPresent12101;
 		public virtual bool isReplyPathPresent()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._isReplyPathPresent12101.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._isReplyPathPresent12101 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isReplyPathPresent", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isReplyPathPresent12101);
 		}
 		internal static global::MonoJavaBridge.MethodId _SmsMessage12102;
 		public SmsMessage() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.gsm.SmsMessage._SmsMessage12102.native == global::System.IntPtr.Zero)
+				global::android.telephony.gsm.SmsMessage._SmsMessage12102 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._SmsMessage12102);
 			Init(@__env, handle);
 		}
@@ -468,37 +559,6 @@ namespace android.telephony.gsm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.SmsMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage"));
-			global::android.telephony.gsm.SmsMessage._getUserData12072 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getUserData", "()[B");
-			global::android.telephony.gsm.SmsMessage._getStatus12073 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getStatus", "()I");
-			global::android.telephony.gsm.SmsMessage._createFromPdu12074 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "createFromPdu", "([B)Landroid/telephony/gsm/SmsMessage;");
-			global::android.telephony.gsm.SmsMessage._getTPLayerLengthForPDU12075 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getTPLayerLengthForPDU", "(Ljava/lang/String;)I");
-			global::android.telephony.gsm.SmsMessage._calculateLength12076 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "calculateLength", "(Ljava/lang/CharSequence;Z)[I");
-			global::android.telephony.gsm.SmsMessage._calculateLength12077 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "calculateLength", "(Ljava/lang/String;Z)[I");
-			global::android.telephony.gsm.SmsMessage._getSubmitPdu12078 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;S[BZ)Landroid/telephony/gsm/SmsMessage$SubmitPdu;");
-			global::android.telephony.gsm.SmsMessage._getSubmitPdu12079 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Landroid/telephony/gsm/SmsMessage$SubmitPdu;");
-			global::android.telephony.gsm.SmsMessage._getServiceCenterAddress12080 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getServiceCenterAddress", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getOriginatingAddress12081 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getOriginatingAddress", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress12082 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getDisplayOriginatingAddress", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getMessageBody12083 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getMessageBody", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getMessageClass12084 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getMessageClass", "()Landroid/telephony/gsm/SmsMessage$MessageClass;");
-			global::android.telephony.gsm.SmsMessage._getDisplayMessageBody12085 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getDisplayMessageBody", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getPseudoSubject12086 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getPseudoSubject", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getTimestampMillis12087 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getTimestampMillis", "()J");
-			global::android.telephony.gsm.SmsMessage._isEmail12088 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isEmail", "()Z");
-			global::android.telephony.gsm.SmsMessage._getEmailBody12089 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getEmailBody", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getEmailFrom12090 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getEmailFrom", "()Ljava/lang/String;");
-			global::android.telephony.gsm.SmsMessage._getProtocolIdentifier12091 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getProtocolIdentifier", "()I");
-			global::android.telephony.gsm.SmsMessage._isReplace12092 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isReplace", "()Z");
-			global::android.telephony.gsm.SmsMessage._isCphsMwiMessage12093 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isCphsMwiMessage", "()Z");
-			global::android.telephony.gsm.SmsMessage._isMWIClearMessage12094 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMWIClearMessage", "()Z");
-			global::android.telephony.gsm.SmsMessage._isMWISetMessage12095 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMWISetMessage", "()Z");
-			global::android.telephony.gsm.SmsMessage._isMwiDontStore12096 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isMwiDontStore", "()Z");
-			global::android.telephony.gsm.SmsMessage._getPdu12097 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getPdu", "()[B");
-			global::android.telephony.gsm.SmsMessage._getStatusOnSim12098 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getStatusOnSim", "()I");
-			global::android.telephony.gsm.SmsMessage._getIndexOnSim12099 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "getIndexOnSim", "()I");
-			global::android.telephony.gsm.SmsMessage._isStatusReportMessage12100 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isStatusReportMessage", "()Z");
-			global::android.telephony.gsm.SmsMessage._isReplyPathPresent12101 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "isReplyPathPresent", "()Z");
-			global::android.telephony.gsm.SmsMessage._SmsMessage12102 = @__env.GetMethodIDNoThrow(global::android.telephony.gsm.SmsMessage.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

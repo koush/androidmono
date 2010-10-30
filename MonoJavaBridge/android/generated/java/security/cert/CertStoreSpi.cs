@@ -15,6 +15,8 @@ namespace java.security.cert
 		public CertStoreSpi(java.security.cert.CertStoreParameters arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertStoreSpi._CertStoreSpi23551.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertStoreSpi._CertStoreSpi23551 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi.staticClass, "<init>", "(Ljava/security/cert/CertStoreParameters;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertStoreSpi.staticClass, global::java.security.cert.CertStoreSpi._CertStoreSpi23551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -22,9 +24,6 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertStoreSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertStoreSpi"));
-			global::java.security.cert.CertStoreSpi._engineGetCertificates23549 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi.staticClass, "engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;");
-			global::java.security.cert.CertStoreSpi._engineGetCRLs23550 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi.staticClass, "engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;");
-			global::java.security.cert.CertStoreSpi._CertStoreSpi23551 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi.staticClass, "<init>", "(Ljava/security/cert/CertStoreParameters;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,20 +41,22 @@ namespace java.security.cert
 		public override global::java.util.Collection engineGetCertificates(java.security.cert.CertSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertStoreSpi_._engineGetCertificates23552.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertStoreSpi_._engineGetCertificates23552 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi_.staticClass, "engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCertificates23552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetCRLs23553;
 		public override global::java.util.Collection engineGetCRLs(java.security.cert.CRLSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertStoreSpi_._engineGetCRLs23553.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertStoreSpi_._engineGetCRLs23553 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi_.staticClass, "engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_._engineGetCRLs23553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		static CertStoreSpi_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertStoreSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertStoreSpi"));
-			global::java.security.cert.CertStoreSpi_._engineGetCertificates23552 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi_.staticClass, "engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;");
-			global::java.security.cert.CertStoreSpi_._engineGetCRLs23553 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertStoreSpi_.staticClass, "engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;");
 		}
 		internal static void InitJNI()
 		{

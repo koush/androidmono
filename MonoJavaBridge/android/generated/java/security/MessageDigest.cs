@@ -10,96 +10,145 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _toString23161;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._toString23161)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._toString23161.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._toString23161 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._toString23161) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23162;
 		public override global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._clone23162)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._clone23162.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._clone23162 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "clone", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._clone23162) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23163;
 		public static global::java.security.MessageDigest getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getInstance23163.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getInstance23163 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/MessageDigest;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getInstance23163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.MessageDigest;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23164;
 		public static global::java.security.MessageDigest getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getInstance23164.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getInstance23164 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/MessageDigest;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getInstance23164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.MessageDigest;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23165;
 		public static global::java.security.MessageDigest getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getInstance23165.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getInstance23165 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getInstance23165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.MessageDigest;
 		}
 		internal static global::MonoJavaBridge.MethodId _reset23166;
 		public virtual void reset()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._reset23166.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._reset23166 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "reset", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._reset23166);
 		}
 		internal static global::MonoJavaBridge.MethodId _digest23167;
 		public virtual int digest(byte[] arg0, int arg1, int arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._digest23167.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._digest23167 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "([BII)I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._digest23167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _digest23168;
 		public virtual byte[] digest(byte[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._digest23168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._digest23168.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._digest23168 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "([B)[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._digest23168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _digest23169;
 		public virtual byte[] digest()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._digest23169)) as byte[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._digest23169.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._digest23169 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "()[B");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._digest23169) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _update23170;
 		public virtual void update(byte arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._update23170.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._update23170 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "(B)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._update23170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update23171;
 		public virtual void update(byte[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._update23171.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._update23171 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "([B)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._update23171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update23172;
 		public virtual void update(byte[] arg0, int arg1, int arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._update23172.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._update23172 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "([BII)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._update23172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _update23173;
 		public virtual void update(java.nio.ByteBuffer arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._update23173.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._update23173 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "(Ljava/nio/ByteBuffer;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._update23173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23174;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getAlgorithm23174)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getAlgorithm23174.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getAlgorithm23174 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getAlgorithm", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getAlgorithm23174) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isEqual23175;
 		public static bool isEqual(byte[] arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._isEqual23175.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._isEqual23175 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "isEqual", "([B[B)Z");
 			return @__env.CallStaticBooleanMethod(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._isEqual23175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23176;
 		public virtual global::java.security.Provider getProvider()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getProvider23176)) as java.security.Provider;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getProvider23176.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getProvider23176 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getProvider", "()Ljava/security/Provider;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getProvider23176) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDigestLength23177;
 		public virtual int getDigestLength()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._getDigestLength23177.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._getDigestLength23177 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getDigestLength", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.MessageDigest.staticClass, global::java.security.MessageDigest._getDigestLength23177);
 		}
 		internal static global::MonoJavaBridge.MethodId _MessageDigest23178;
 		protected MessageDigest(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest._MessageDigest23178.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest._MessageDigest23178 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.MessageDigest.staticClass, global::java.security.MessageDigest._MessageDigest23178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -107,24 +156,6 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.MessageDigest.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/MessageDigest"));
-			global::java.security.MessageDigest._toString23161 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.security.MessageDigest._clone23162 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.security.MessageDigest._getInstance23163 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/MessageDigest;");
-			global::java.security.MessageDigest._getInstance23164 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/MessageDigest;");
-			global::java.security.MessageDigest._getInstance23165 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest;");
-			global::java.security.MessageDigest._reset23166 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "reset", "()V");
-			global::java.security.MessageDigest._digest23167 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "([BII)I");
-			global::java.security.MessageDigest._digest23168 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "([B)[B");
-			global::java.security.MessageDigest._digest23169 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "digest", "()[B");
-			global::java.security.MessageDigest._update23170 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "(B)V");
-			global::java.security.MessageDigest._update23171 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "([B)V");
-			global::java.security.MessageDigest._update23172 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "([BII)V");
-			global::java.security.MessageDigest._update23173 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "update", "(Ljava/nio/ByteBuffer;)V");
-			global::java.security.MessageDigest._getAlgorithm23174 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.MessageDigest._isEqual23175 = @__env.GetStaticMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "isEqual", "([B[B)Z");
-			global::java.security.MessageDigest._getProvider23176 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getProvider", "()Ljava/security/Provider;");
-			global::java.security.MessageDigest._getDigestLength23177 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "getDigestLength", "()I");
-			global::java.security.MessageDigest._MessageDigest23178 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -142,34 +173,38 @@ namespace java.security
 		protected override void engineUpdate(byte arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest_._engineUpdate23179.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest_._engineUpdate23179 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineUpdate", "(B)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.security.MessageDigest_._engineUpdate23179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23180;
 		protected override void engineUpdate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest_._engineUpdate23180.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest_._engineUpdate23180 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineUpdate", "([BII)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.security.MessageDigest_._engineUpdate23180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineDigest23181;
 		protected override byte[] engineDigest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest_._engineDigest23181.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest_._engineDigest23181 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineDigest", "()[B");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.MessageDigest_._engineDigest23181)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineReset23182;
 		protected override void engineReset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.MessageDigest_._engineReset23182.native == global::System.IntPtr.Zero)
+				global::java.security.MessageDigest_._engineReset23182 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineReset", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.security.MessageDigest_._engineReset23182);
 		}
 		static MessageDigest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.MessageDigest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/MessageDigest"));
-			global::java.security.MessageDigest_._engineUpdate23179 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineUpdate", "(B)V");
-			global::java.security.MessageDigest_._engineUpdate23180 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineUpdate", "([BII)V");
-			global::java.security.MessageDigest_._engineDigest23181 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineDigest", "()[B");
-			global::java.security.MessageDigest_._engineReset23182 = @__env.GetMethodIDNoThrow(global::java.security.MessageDigest_.staticClass, "engineReset", "()V");
 		}
 		internal static void InitJNI()
 		{

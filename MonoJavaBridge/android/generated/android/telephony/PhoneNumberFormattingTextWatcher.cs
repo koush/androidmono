@@ -10,6 +10,9 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _onTextChanged11793;
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged11793.native == global::System.IntPtr.Zero)
+				global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged11793 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged11793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void onTextChanged(string arg0, int arg1, int arg2, int arg3)
@@ -19,6 +22,9 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _beforeTextChanged11794;
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged11794.native == global::System.IntPtr.Zero)
+				global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged11794 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged11794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void beforeTextChanged(string arg0, int arg1, int arg2, int arg3)
@@ -28,12 +34,17 @@ namespace android.telephony
 		internal static global::MonoJavaBridge.MethodId _afterTextChanged11795;
 		public virtual void afterTextChanged(android.text.Editable arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged11795.native == global::System.IntPtr.Zero)
+				global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged11795 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged11795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PhoneNumberFormattingTextWatcher11796;
 		public PhoneNumberFormattingTextWatcher() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher11796.native == global::System.IntPtr.Zero)
+				global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher11796 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher11796);
 			Init(@__env, handle);
 		}
@@ -41,10 +52,6 @@ namespace android.telephony
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/PhoneNumberFormattingTextWatcher"));
-			global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged11793 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged11794 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged11795 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
-			global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher11796 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

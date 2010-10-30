@@ -17,13 +17,14 @@ namespace java.beans
 		void java.beans.PropertyChangeListener.propertyChange(java.beans.PropertyChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.beans.PropertyChangeListener_._propertyChange18781.native == global::System.IntPtr.Zero)
+				global::java.beans.PropertyChangeListener_._propertyChange18781 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeListener_.staticClass, "propertyChange", "(Ljava/beans/PropertyChangeEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.beans.PropertyChangeListener_._propertyChange18781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static PropertyChangeListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.beans.PropertyChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/beans/PropertyChangeListener"));
-			global::java.beans.PropertyChangeListener_._propertyChange18781 = @__env.GetMethodIDNoThrow(global::java.beans.PropertyChangeListener_.staticClass, "propertyChange", "(Ljava/beans/PropertyChangeEvent;)V");
 		}
 		internal static void InitJNI()
 		{

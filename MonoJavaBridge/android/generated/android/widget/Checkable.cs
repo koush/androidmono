@@ -19,27 +19,30 @@ namespace android.widget
 		void android.widget.Checkable.toggle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Checkable_._toggle16843.native == global::System.IntPtr.Zero)
+				global::android.widget.Checkable_._toggle16843 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "toggle", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Checkable_._toggle16843);
 		}
 		internal static global::MonoJavaBridge.MethodId _isChecked16844;
 		bool android.widget.Checkable.isChecked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Checkable_._isChecked16844.native == global::System.IntPtr.Zero)
+				global::android.widget.Checkable_._isChecked16844 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "isChecked", "()Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Checkable_._isChecked16844);
 		}
 		internal static global::MonoJavaBridge.MethodId _setChecked16845;
 		void android.widget.Checkable.setChecked(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.widget.Checkable_._setChecked16845.native == global::System.IntPtr.Zero)
+				global::android.widget.Checkable_._setChecked16845 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Checkable_._setChecked16845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Checkable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Checkable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Checkable"));
-			global::android.widget.Checkable_._toggle16843 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "toggle", "()V");
-			global::android.widget.Checkable_._isChecked16844 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "isChecked", "()Z");
-			global::android.widget.Checkable_._setChecked16845 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V");
 		}
 		internal static void InitJNI()
 		{

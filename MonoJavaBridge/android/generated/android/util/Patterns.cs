@@ -11,12 +11,16 @@ namespace android.util
 		public static global::java.lang.String concatGroups(java.util.regex.Matcher arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Patterns._concatGroups13819.native == global::System.IntPtr.Zero)
+				global::android.util.Patterns._concatGroups13819 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "concatGroups", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups13819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _digitsAndPlusOnly13820;
 		public static global::java.lang.String digitsAndPlusOnly(java.util.regex.Matcher arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Patterns._digitsAndPlusOnly13820.native == global::System.IntPtr.Zero)
+				global::android.util.Patterns._digitsAndPlusOnly13820 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "digitsAndPlusOnly", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly13820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public static global::java.lang.String TOP_LEVEL_DOMAIN_STR
@@ -98,8 +102,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Patterns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Patterns"));
-			global::android.util.Patterns._concatGroups13819 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "concatGroups", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
-			global::android.util.Patterns._digitsAndPlusOnly13820 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "digitsAndPlusOnly", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
 			global::android.util.Patterns._TOP_LEVEL_DOMAIN13822 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "TOP_LEVEL_DOMAIN", "Ljava/util/regex/Pattern;");
 			global::android.util.Patterns._WEB_URL13825 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "WEB_URL", "Ljava/util/regex/Pattern;");
 			global::android.util.Patterns._IP_ADDRESS13826 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "IP_ADDRESS", "Ljava/util/regex/Pattern;");

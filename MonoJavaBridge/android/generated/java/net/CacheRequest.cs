@@ -15,6 +15,8 @@ namespace java.net
 		public CacheRequest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.CacheRequest._CacheRequest21351.native == global::System.IntPtr.Zero)
+				global::java.net.CacheRequest._CacheRequest21351 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.CacheRequest.staticClass, global::java.net.CacheRequest._CacheRequest21351);
 			Init(@__env, handle);
 		}
@@ -22,9 +24,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheRequest.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheRequest"));
-			global::java.net.CacheRequest._getBody21349 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "getBody", "()Ljava/io/OutputStream;");
-			global::java.net.CacheRequest._abort21350 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "abort", "()V");
-			global::java.net.CacheRequest._CacheRequest21351 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,20 +41,22 @@ namespace java.net
 		public override global::java.io.OutputStream getBody()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.CacheRequest_._getBody21352.native == global::System.IntPtr.Zero)
+				global::java.net.CacheRequest_._getBody21352 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "getBody", "()Ljava/io/OutputStream;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.CacheRequest_._getBody21352)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _abort21353;
 		public override void abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.net.CacheRequest_._abort21353.native == global::System.IntPtr.Zero)
+				global::java.net.CacheRequest_._abort21353 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "abort", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.net.CacheRequest_._abort21353);
 		}
 		static CacheRequest_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.CacheRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/CacheRequest"));
-			global::java.net.CacheRequest_._getBody21352 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "getBody", "()Ljava/io/OutputStream;");
-			global::java.net.CacheRequest_._abort21353 = @__env.GetMethodIDNoThrow(global::java.net.CacheRequest_.staticClass, "abort", "()V");
 		}
 		internal static void InitJNI()
 		{

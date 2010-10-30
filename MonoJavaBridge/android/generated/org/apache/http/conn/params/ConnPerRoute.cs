@@ -17,13 +17,14 @@ namespace org.apache.http.conn.@params
 		int org.apache.http.conn.@params.ConnPerRoute.getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnPerRoute_.staticClass, "getMaxForRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)I");
 			return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ConnPerRoute_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnPerRoute_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnPerRoute"));
-			global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnPerRoute_.staticClass, "getMaxForRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)I");
 		}
 		internal static void InitJNI()
 		{

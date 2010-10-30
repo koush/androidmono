@@ -11,6 +11,8 @@ namespace org.w3c.dom.ls
 		public LSException(short arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.w3c.dom.ls.LSException._LSException34888.native == global::System.IntPtr.Zero)
+				global::org.w3c.dom.ls.LSException._LSException34888 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "<init>", "(SLjava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.w3c.dom.ls.LSException.staticClass, global::org.w3c.dom.ls.LSException._LSException34888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -44,7 +46,6 @@ namespace org.w3c.dom.ls
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSException"));
-			global::org.w3c.dom.ls.LSException._LSException34888 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "<init>", "(SLjava/lang/String;)V");
 			global::org.w3c.dom.ls.LSException._code34889 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "code", "S");
 		}
 		internal static void InitJNI()

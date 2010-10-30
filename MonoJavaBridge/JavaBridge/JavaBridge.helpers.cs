@@ -12,13 +12,37 @@ namespace MonoJavaBridge
             else
                 env.CallNonVirtualVoidMethod(obj.JvmHandle, clazz, methodId, args);
         }
-        public static JniLocalHandle CallObjectMethod(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args)
+        public static T CallIJavaObjectMethod<T>(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args) where T: class, IJavaObject
         {
             var env = JNIEnv.ThreadEnv;
             if (!obj.IsClrObject)
-                return env.CallObjectMethod(obj.JvmHandle, methodId, args);
+                return WrapIJavaObject<T>(env.CallObjectMethod(obj.JvmHandle, methodId, args));
             else
-                return env.CallNonVirtualObjectMethod(obj.JvmHandle, clazz, methodId, args);
+                return WrapIJavaObject<T>(env.CallNonVirtualObjectMethod(obj.JvmHandle, clazz, methodId, args));
+        }
+        public static T CallSealedClassObjectMethod<T>(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args) where T: class, IJavaObject
+        {
+            var env = JNIEnv.ThreadEnv;
+            if (!obj.IsClrObject)
+                return WrapJavaObjectSealedClass<T>(env.CallObjectMethod(obj.JvmHandle, methodId, args));
+            else
+                return WrapJavaObjectSealedClass<T>(env.CallNonVirtualObjectMethod(obj.JvmHandle, clazz, methodId, args));
+        }
+        public static T[] CallArrayObjectMethod<T>(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args)
+        {
+            var env = JNIEnv.ThreadEnv;
+            if (!obj.IsClrObject)
+                return WrapJavaArrayObject<T>(env.CallObjectMethod(obj.JvmHandle, methodId, args));
+            else
+                return WrapJavaArrayObject<T>(env.CallNonVirtualObjectMethod(obj.JvmHandle, clazz, methodId, args));
+        }
+        public static object CallObjectMethod(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args)
+        {
+            var env = JNIEnv.ThreadEnv;
+            if (!obj.IsClrObject)
+                return WrapJavaObject(env.CallObjectMethod(obj.JvmHandle, methodId, args));
+            else
+                return WrapJavaObject(env.CallNonVirtualObjectMethod(obj.JvmHandle, clazz, methodId, args));
         }
         public static bool CallBooleanMethod(IJavaObject obj, JniGlobalHandle clazz, MethodId methodId, params Value[] args)
         {

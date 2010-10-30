@@ -698,18 +698,43 @@ namespace MonoDroid
             }
             
             StringBuilder ret = new StringBuilder();
-            if (method.Return == null)
-                Console.WriteLine(method.ToString() + "::" + method.Type);
-            if (method.Return.EndsWith("[]"))
-                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", method.Return.Substring(0, method.Return.Length - 2));
-            else if (method.ReturnType.IsInterface)
-                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", method.Return);
-            else if (!type.IsSealed)
-                ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+            if (method.IsConstructor || method.Type.IsSealed || method.Static)
+            {
+                if (method.Return.EndsWith("[]"))
+                    ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", method.Return.Substring(0, method.Return.Length - 2));
+                else if (method.ReturnType.IsInterface)
+                    ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", method.Return);
+                else if (!type.IsSealed)
+                    ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+                else
+                    ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<{0}>", typeName);
+                ret.Append("(@__env.Call{0}ObjectMethod({1}))");
+            }
             else
-                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<{0}>", typeName);
-            //ret.AppendFormat("(typeof({0}), ", method.Return);            
-            ret.Append("(@__env.Call{0}ObjectMethod({1}))");
+            {
+                string callType = null;
+                string templateArg = string.Empty;
+                if (method.Return.EndsWith("[]"))
+                {
+                    templateArg = "<" + method.Return.Substring(0, method.Return.Length - 2) + ">";
+                    callType = "Array";
+                }
+                else if (method.ReturnType.IsInterface)
+                {
+                    templateArg = "<" + method.Return + ">";
+                    callType = "IJava";
+                }
+                else if (!type.IsSealed)
+                {
+                    callType = string.Empty;
+                }
+                else
+                {
+                    templateArg = "<" + method.Return + ">";
+                    callType = "SealedClass";
+                }
+                ret.Append("return global::MonoJavaBridge.JavaBridge.Call{0}" + callType + "ObjectMethod" + templateArg + "({1})");
+            }
             ret.AppendFormat(" as {0};", method.Return);
             
             return ret.ToString();
@@ -842,6 +867,7 @@ namespace MonoDroid
                 WriteLine("}");
             }
             
+            String initJni = null;
             string methodId = null;
             if (!method.Type.IsInterface)
             {
@@ -865,8 +891,8 @@ namespace MonoDroid
                     methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
                 string methodIdLookup = methodId;
                 methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
-                string initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : methodIdLookup, signature, method.Static ? "Static" : string.Empty);
-                myInitJni.Add(initJni);
+                initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : methodIdLookup, signature, method.Static ? "Static" : string.Empty);
+                //myInitJni.Add(initJni);
                 WriteLine("internal static global::MonoJavaBridge.MethodId {0};", methodId);
                 
                 if (method.Scope != null)
@@ -910,8 +936,12 @@ namespace MonoDroid
                     WriteLine();
                 WriteLine("{");
                 myIndent++;
-                if (method.IsConstructor || method.Type.IsSealed || method.Static)
+                //if (method.IsConstructor || method.Type.IsSealed || method.Static)
                     WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
+                WriteLine("if (global::{0}.{1}.native == global::System.IntPtr.Zero)", method.Type.Name, methodId);
+                myIndent++;
+                WriteLine(initJni);
+                myIndent--;
                 var statement = GetMethodStatement(method);
                 StringBuilder parBuilder = new StringBuilder();
                 if (method.Static || method.IsConstructor)

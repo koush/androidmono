@@ -11,12 +11,16 @@ namespace org.apache.http
 		public sealed override global::org.apache.http.ProtocolVersion forVersion(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HttpVersion._forVersion31728.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HttpVersion._forVersion31728 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "forVersion", "(II)Lorg/apache/http/ProtocolVersion;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpVersion.staticClass, global::org.apache.http.HttpVersion._forVersion31728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpVersion31729;
 		public HttpVersion(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.HttpVersion._HttpVersion31729.native == global::System.IntPtr.Zero)
+				global::org.apache.http.HttpVersion._HttpVersion31729 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "<init>", "(II)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.HttpVersion.staticClass, global::org.apache.http.HttpVersion._HttpVersion31729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -58,8 +62,6 @@ namespace org.apache.http
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.HttpVersion.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpVersion"));
-			global::org.apache.http.HttpVersion._forVersion31728 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "forVersion", "(II)Lorg/apache/http/ProtocolVersion;");
-			global::org.apache.http.HttpVersion._HttpVersion31729 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "<init>", "(II)V");
 			global::org.apache.http.HttpVersion._HTTP_0_931731 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_0_9", "Lorg/apache/http/HttpVersion;");
 			global::org.apache.http.HttpVersion._HTTP_1_031732 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_0", "Lorg/apache/http/HttpVersion;");
 			global::org.apache.http.HttpVersion._HTTP_1_131733 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_1", "Lorg/apache/http/HttpVersion;");

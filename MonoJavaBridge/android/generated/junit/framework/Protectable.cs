@@ -17,13 +17,14 @@ namespace junit.framework
 		void junit.framework.Protectable.protect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::junit.framework.Protectable_._protect31374.native == global::System.IntPtr.Zero)
+				global::junit.framework.Protectable_._protect31374 = @__env.GetMethodIDNoThrow(global::junit.framework.Protectable_.staticClass, "protect", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Protectable_._protect31374);
 		}
 		static Protectable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.Protectable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/Protectable"));
-			global::junit.framework.Protectable_._protect31374 = @__env.GetMethodIDNoThrow(global::junit.framework.Protectable_.staticClass, "protect", "()V");
 		}
 		internal static void InitJNI()
 		{

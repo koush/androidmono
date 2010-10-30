@@ -10,32 +10,49 @@ namespace android.accounts
 		internal static global::MonoJavaBridge.MethodId _equals1278;
 		public override bool equals(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._equals1278.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._equals1278 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals1278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString1279;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString1279)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._toString1279.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._toString1279 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString1279) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode1280;
 		public override int hashCode()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._hashCode1280.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._hashCode1280 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "hashCode", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode1280);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1281;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._writeToParcel1281.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._writeToParcel1281 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._writeToParcel1281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents1282;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._describeContents1282.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._describeContents1282 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._describeContents1282);
 		}
 		internal static global::MonoJavaBridge.MethodId _Account1283;
 		public Account(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._Account1283.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._Account1283 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.Account.staticClass, global::android.accounts.Account._Account1283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -43,6 +60,8 @@ namespace android.accounts
 		public Account(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.accounts.Account._Account1284.native == global::System.IntPtr.Zero)
+				global::android.accounts.Account._Account1284 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.Account.staticClass, global::android.accounts.Account._Account1284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -77,13 +96,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.Account.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/Account"));
-			global::android.accounts.Account._equals1278 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.accounts.Account._toString1279 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.accounts.Account._hashCode1280 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "hashCode", "()I");
-			global::android.accounts.Account._writeToParcel1281 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.accounts.Account._describeContents1282 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "describeContents", "()I");
-			global::android.accounts.Account._Account1283 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.accounts.Account._Account1284 = @__env.GetMethodIDNoThrow(global::android.accounts.Account.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 			global::android.accounts.Account._name1285 = @__env.GetFieldIDNoThrow(global::android.accounts.Account.staticClass, "name", "Ljava/lang/String;");
 			global::android.accounts.Account._type1286 = @__env.GetFieldIDNoThrow(global::android.accounts.Account.staticClass, "type", "Ljava/lang/String;");
 			global::android.accounts.Account._CREATOR1287 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.Account.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");

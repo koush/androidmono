@@ -17,13 +17,14 @@ namespace java.io
 		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.Closeable_._close18883.native == global::System.IntPtr.Zero)
+				global::java.io.Closeable_._close18883 = @__env.GetMethodIDNoThrow(global::java.io.Closeable_.staticClass, "close", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.io.Closeable_._close18883);
 		}
 		static Closeable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Closeable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Closeable"));
-			global::java.io.Closeable_._close18883 = @__env.GetMethodIDNoThrow(global::java.io.Closeable_.staticClass, "close", "()V");
 		}
 		internal static void InitJNI()
 		{

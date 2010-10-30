@@ -11,6 +11,8 @@ namespace android.media
 		public static global::android.media.CamcorderProfile get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.media.CamcorderProfile._get7226.native == global::System.IntPtr.Zero)
+				global::android.media.CamcorderProfile._get7226 = @__env.GetStaticMethodIDNoThrow(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._get7226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.CamcorderProfile;
 		}
 		public static int QUALITY_LOW
@@ -175,7 +177,6 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.CamcorderProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CamcorderProfile"));
-			global::android.media.CamcorderProfile._get7226 = @__env.GetStaticMethodIDNoThrow(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
 			global::android.media.CamcorderProfile._duration7229 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "duration", "I");
 			global::android.media.CamcorderProfile._quality7230 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "quality", "I");
 			global::android.media.CamcorderProfile._fileFormat7231 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "fileFormat", "I");

@@ -17,7 +17,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getPublicExponent24047;
 		public virtual global::java.math.BigInteger getPublicExponent()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047) as java.math.BigInteger;
 		}
 		public new int Keysize
 		{
@@ -29,12 +32,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getKeysize24048;
 		public virtual int getKeysize()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getKeysize", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048);
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAKeyGenParameterSpec24049;
 		public RSAKeyGenParameterSpec(int arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24049.native == global::System.IntPtr.Zero)
+				global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24049 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "<init>", "(ILjava/math/BigInteger;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -60,9 +68,6 @@ namespace java.security.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAKeyGenParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAKeyGenParameterSpec"));
-			global::java.security.spec.RSAKeyGenParameterSpec._getPublicExponent24047 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24048 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "getKeysize", "()I");
-			global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24049 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "<init>", "(ILjava/math/BigInteger;)V");
 			global::java.security.spec.RSAKeyGenParameterSpec._F024050 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "F0", "Ljava/math/BigInteger;");
 			global::java.security.spec.RSAKeyGenParameterSpec._F424051 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.RSAKeyGenParameterSpec.staticClass, "F4", "Ljava/math/BigInteger;");
 		}

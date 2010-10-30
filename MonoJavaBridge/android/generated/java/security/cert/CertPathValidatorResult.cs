@@ -17,13 +17,14 @@ namespace java.security.cert
 		global::java.lang.Object java.security.cert.CertPathValidatorResult.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathValidatorResult_._clone23528.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathValidatorResult_._clone23528 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorResult_.staticClass, "clone", "()Ljava/lang/Object;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.CertPathValidatorResult_._clone23528)) as java.lang.Object;
 		}
 		static CertPathValidatorResult_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathValidatorResult_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathValidatorResult"));
-			global::java.security.cert.CertPathValidatorResult_._clone23528 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathValidatorResult_.staticClass, "clone", "()Ljava/lang/Object;");
 		}
 		internal static void InitJNI()
 		{

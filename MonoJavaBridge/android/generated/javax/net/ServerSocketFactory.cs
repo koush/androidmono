@@ -11,12 +11,17 @@ namespace javax.net
 		public static global::javax.net.ServerSocketFactory getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory._getDefault29809.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory._getDefault29809 = @__env.GetStaticMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "getDefault", "()Ljavax/net/ServerSocketFactory;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._getDefault29809)) as javax.net.ServerSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29810;
 		public virtual global::java.net.ServerSocket createServerSocket()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._createServerSocket29810)) as java.net.ServerSocket;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory._createServerSocket29810.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory._createServerSocket29810 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "createServerSocket", "()Ljava/net/ServerSocket;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._createServerSocket29810) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29811;
 		public abstract global::java.net.ServerSocket createServerSocket(int arg0);
@@ -28,6 +33,8 @@ namespace javax.net
 		protected ServerSocketFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory._ServerSocketFactory29814.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory._ServerSocketFactory29814 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._ServerSocketFactory29814);
 			Init(@__env, handle);
 		}
@@ -35,12 +42,6 @@ namespace javax.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ServerSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ServerSocketFactory"));
-			global::javax.net.ServerSocketFactory._getDefault29809 = @__env.GetStaticMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "getDefault", "()Ljavax/net/ServerSocketFactory;");
-			global::javax.net.ServerSocketFactory._createServerSocket29810 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "createServerSocket", "()Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory._createServerSocket29811 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "createServerSocket", "(I)Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory._createServerSocket29812 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "createServerSocket", "(II)Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory._createServerSocket29813 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory._ServerSocketFactory29814 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -58,27 +59,30 @@ namespace javax.net
 		public override global::java.net.ServerSocket createServerSocket(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory_._createServerSocket29815.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory_._createServerSocket29815 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(I)Ljava/net/ServerSocket;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ServerSocketFactory_._createServerSocket29815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29816;
 		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory_._createServerSocket29816.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory_._createServerSocket29816 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(II)Ljava/net/ServerSocket;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ServerSocketFactory_._createServerSocket29816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29817;
 		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.net.ServerSocketFactory_._createServerSocket29817.native == global::System.IntPtr.Zero)
+				global::javax.net.ServerSocketFactory_._createServerSocket29817 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ServerSocketFactory_._createServerSocket29817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.net.ServerSocket;
 		}
 		static ServerSocketFactory_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ServerSocketFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ServerSocketFactory"));
-			global::javax.net.ServerSocketFactory_._createServerSocket29815 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(I)Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory_._createServerSocket29816 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(II)Ljava/net/ServerSocket;");
-			global::javax.net.ServerSocketFactory_._createServerSocket29817 = @__env.GetMethodIDNoThrow(global::javax.net.ServerSocketFactory_.staticClass, "createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;");
 		}
 		internal static void InitJNI()
 		{

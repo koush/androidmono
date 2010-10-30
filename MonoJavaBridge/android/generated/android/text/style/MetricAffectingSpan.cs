@@ -10,7 +10,10 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getUnderlying13528;
 		public virtual global::android.text.style.MetricAffectingSpan getUnderlying()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.MetricAffectingSpan.staticClass, global::android.text.style.MetricAffectingSpan._getUnderlying13528)) as android.text.style.MetricAffectingSpan;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MetricAffectingSpan._getUnderlying13528.native == global::System.IntPtr.Zero)
+				global::android.text.style.MetricAffectingSpan._getUnderlying13528 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan.staticClass, "getUnderlying", "()Landroid/text/style/MetricAffectingSpan;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.MetricAffectingSpan.staticClass, global::android.text.style.MetricAffectingSpan._getUnderlying13528) as android.text.style.MetricAffectingSpan;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateMeasureState13529;
 		public abstract void updateMeasureState(android.text.TextPaint arg0);
@@ -18,6 +21,8 @@ namespace android.text.style
 		public MetricAffectingSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MetricAffectingSpan._MetricAffectingSpan13530.native == global::System.IntPtr.Zero)
+				global::android.text.style.MetricAffectingSpan._MetricAffectingSpan13530 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.MetricAffectingSpan.staticClass, global::android.text.style.MetricAffectingSpan._MetricAffectingSpan13530);
 			Init(@__env, handle);
 		}
@@ -25,9 +30,6 @@ namespace android.text.style
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.MetricAffectingSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/MetricAffectingSpan"));
-			global::android.text.style.MetricAffectingSpan._getUnderlying13528 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan.staticClass, "getUnderlying", "()Landroid/text/style/MetricAffectingSpan;");
-			global::android.text.style.MetricAffectingSpan._updateMeasureState13529 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.MetricAffectingSpan._MetricAffectingSpan13530 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -45,20 +47,22 @@ namespace android.text.style
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MetricAffectingSpan_._updateMeasureState13531.native == global::System.IntPtr.Zero)
+				global::android.text.style.MetricAffectingSpan_._updateMeasureState13531 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan_.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.MetricAffectingSpan_._updateMeasureState13531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13532;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MetricAffectingSpan_._updateDrawState13532.native == global::System.IntPtr.Zero)
+				global::android.text.style.MetricAffectingSpan_._updateDrawState13532 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.MetricAffectingSpan_._updateDrawState13532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static MetricAffectingSpan_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.MetricAffectingSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/MetricAffectingSpan"));
-			global::android.text.style.MetricAffectingSpan_._updateMeasureState13531 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan_.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.MetricAffectingSpan_._updateDrawState13532 = @__env.GetMethodIDNoThrow(global::android.text.style.MetricAffectingSpan_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
 		}
 		internal static void InitJNI()
 		{

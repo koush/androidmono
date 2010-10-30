@@ -18,12 +18,16 @@ namespace android.provider
 			public static void addWord(android.content.Context arg0, java.lang.String arg1, int arg2, int arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.UserDictionary.Words._addWord11582.native == global::System.IntPtr.Zero)
+					global::android.provider.UserDictionary.Words._addWord11582 = @__env.GetStaticMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "addWord", "(Landroid/content/Context;Ljava/lang/String;II)V");
 				@__env.CallStaticVoidMethod(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._addWord11582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			internal static global::MonoJavaBridge.MethodId _Words11583;
 			public Words() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.provider.UserDictionary.Words._Words11583.native == global::System.IntPtr.Zero)
+					global::android.provider.UserDictionary.Words._Words11583 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "<init>", "()V");
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._Words11583);
 				Init(@__env, handle);
 			}
@@ -110,8 +114,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.UserDictionary.Words.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary$Words"));
-				global::android.provider.UserDictionary.Words._addWord11582 = @__env.GetStaticMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "addWord", "(Landroid/content/Context;Ljava/lang/String;II)V");
-				global::android.provider.UserDictionary.Words._Words11583 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "<init>", "()V");
 				global::android.provider.UserDictionary.Words._CONTENT_URI11584 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
@@ -122,6 +124,8 @@ namespace android.provider
 		public UserDictionary() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.provider.UserDictionary._UserDictionary11595.native == global::System.IntPtr.Zero)
+				global::android.provider.UserDictionary._UserDictionary11595 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.UserDictionary.staticClass, global::android.provider.UserDictionary._UserDictionary11595);
 			Init(@__env, handle);
 		}
@@ -145,7 +149,6 @@ namespace android.provider
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.UserDictionary.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary"));
-			global::android.provider.UserDictionary._UserDictionary11595 = @__env.GetMethodIDNoThrow(global::android.provider.UserDictionary.staticClass, "<init>", "()V");
 			global::android.provider.UserDictionary._CONTENT_URI11597 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 		}
 		internal static void InitJNI()

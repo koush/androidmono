@@ -17,13 +17,14 @@ namespace org.apache.http.protocol
 		void org.apache.http.protocol.HttpRequestHandler.handle(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.protocol.HttpRequestHandler_._handle33903.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HttpRequestHandler_._handle33903 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandler_.staticClass, "handle", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandler_._handle33903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static HttpRequestHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestHandler"));
-			global::org.apache.http.protocol.HttpRequestHandler_._handle33903 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestHandler_.staticClass, "handle", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 		}
 		internal static void InitJNI()
 		{

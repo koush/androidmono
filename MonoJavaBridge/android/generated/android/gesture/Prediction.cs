@@ -10,7 +10,10 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _toString5006;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString5006)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.Prediction._toString5006.native == global::System.IntPtr.Zero)
+				global::android.gesture.Prediction._toString5006 = @__env.GetMethodIDNoThrow(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString5006) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.FieldId _name5007;
 		public global::java.lang.String name
@@ -37,7 +40,6 @@ namespace android.gesture
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.Prediction.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/Prediction"));
-			global::android.gesture.Prediction._toString5006 = @__env.GetMethodIDNoThrow(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
 			global::android.gesture.Prediction._name5007 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "name", "Ljava/lang/String;");
 			global::android.gesture.Prediction._score5008 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "score", "D");
 		}

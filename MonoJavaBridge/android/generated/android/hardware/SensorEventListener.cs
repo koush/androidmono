@@ -18,20 +18,22 @@ namespace android.hardware
 		void android.hardware.SensorEventListener.onSensorChanged(android.hardware.SensorEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorEventListener_._onSensorChanged6452.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorEventListener_._onSensorChanged6452 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onSensorChanged", "(Landroid/hardware/SensorEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.hardware.SensorEventListener_._onSensorChanged6452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onAccuracyChanged6453;
 		void android.hardware.SensorEventListener.onAccuracyChanged(android.hardware.Sensor arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorEventListener_._onAccuracyChanged6453.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorEventListener_._onAccuracyChanged6453 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onAccuracyChanged", "(Landroid/hardware/Sensor;I)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.hardware.SensorEventListener_._onAccuracyChanged6453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static SensorEventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorEventListener"));
-			global::android.hardware.SensorEventListener_._onSensorChanged6452 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onSensorChanged", "(Landroid/hardware/SensorEvent;)V");
-			global::android.hardware.SensorEventListener_._onAccuracyChanged6453 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorEventListener_.staticClass, "onAccuracyChanged", "(Landroid/hardware/Sensor;I)V");
 		}
 		internal static void InitJNI()
 		{

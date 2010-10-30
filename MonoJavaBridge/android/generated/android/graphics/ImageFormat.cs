@@ -11,12 +11,16 @@ namespace android.graphics
 		public static int getBitsPerPixel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.ImageFormat._getBitsPerPixel5267.native == global::System.IntPtr.Zero)
+				global::android.graphics.ImageFormat._getBitsPerPixel5267 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
 			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel5267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageFormat5268;
 		public ImageFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.ImageFormat._ImageFormat5268.native == global::System.IntPtr.Zero)
+				global::android.graphics.ImageFormat._ImageFormat5268 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat5268);
 			Init(@__env, handle);
 		}
@@ -66,8 +70,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ImageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ImageFormat"));
-			global::android.graphics.ImageFormat._getBitsPerPixel5267 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
-			global::android.graphics.ImageFormat._ImageFormat5268 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

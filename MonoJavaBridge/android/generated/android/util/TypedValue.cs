@@ -10,7 +10,10 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _toString13895;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._toString13895)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._toString13895.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._toString13895 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._toString13895) as java.lang.String;
 		}
 		public new float Float
 		{
@@ -22,6 +25,9 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _getFloat13896;
 		public virtual float getFloat()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._getFloat13896.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._getFloat13896 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFloat", "()F");
 			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFloat13896);
 		}
 		public new global::android.util.TypedValue To
@@ -34,75 +40,105 @@ namespace android.util
 		internal static global::MonoJavaBridge.MethodId _setTo13897;
 		public virtual void setTo(android.util.TypedValue arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._setTo13897.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._setTo13897 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._setTo13897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDimension13898;
 		public virtual float getDimension(android.util.DisplayMetrics arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._getDimension13898.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._getDimension13898 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F");
 			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getDimension13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFraction13899;
 		public virtual float getFraction(float arg0, float arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._getFraction13899.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._getFraction13899 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F");
 			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFraction13899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToFloat13900;
 		public static float complexToFloat(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToFloat13900.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToFloat13900 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToFloat", "(I)F");
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToFloat13900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimension13901;
 		public static float complexToDimension(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToDimension13901.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToDimension13901 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimension", "(ILandroid/util/DisplayMetrics;)F");
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimension13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionPixelOffset13902;
 		public static int complexToDimensionPixelOffset(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToDimensionPixelOffset13902.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToDimensionPixelOffset13902 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionPixelOffset", "(ILandroid/util/DisplayMetrics;)I");
 			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionPixelOffset13902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionPixelSize13903;
 		public static int complexToDimensionPixelSize(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToDimensionPixelSize13903.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToDimensionPixelSize13903 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionPixelSize", "(ILandroid/util/DisplayMetrics;)I");
 			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionPixelSize13903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionNoisy13904;
 		public static float complexToDimensionNoisy(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToDimensionNoisy13904.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToDimensionNoisy13904 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionNoisy", "(ILandroid/util/DisplayMetrics;)F");
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionNoisy13904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _applyDimension13905;
 		public static float applyDimension(int arg0, float arg1, android.util.DisplayMetrics arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._applyDimension13905.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._applyDimension13905 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "applyDimension", "(IFLandroid/util/DisplayMetrics;)F");
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._applyDimension13905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToFraction13906;
 		public static float complexToFraction(int arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._complexToFraction13906.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._complexToFraction13906 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToFraction", "(IFF)F");
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToFraction13906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _coerceToString13907;
 		public virtual global::java.lang.CharSequence coerceToString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13907)) as java.lang.CharSequence;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._coerceToString13907.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._coerceToString13907 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13907) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _coerceToString13908;
 		public static global::java.lang.String coerceToString(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._coerceToString13908.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._coerceToString13908 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "coerceToString", "(II)Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TypedValue13909;
 		public TypedValue() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.TypedValue._TypedValue13909.native == global::System.IntPtr.Zero)
+				global::android.util.TypedValue._TypedValue13909 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TypedValue.staticClass, global::android.util.TypedValue._TypedValue13909);
 			Init(@__env, handle);
 		}
@@ -460,21 +496,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.TypedValue.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/TypedValue"));
-			global::android.util.TypedValue._toString13895 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.util.TypedValue._getFloat13896 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFloat", "()F");
-			global::android.util.TypedValue._setTo13897 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V");
-			global::android.util.TypedValue._getDimension13898 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F");
-			global::android.util.TypedValue._getFraction13899 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F");
-			global::android.util.TypedValue._complexToFloat13900 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToFloat", "(I)F");
-			global::android.util.TypedValue._complexToDimension13901 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimension", "(ILandroid/util/DisplayMetrics;)F");
-			global::android.util.TypedValue._complexToDimensionPixelOffset13902 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionPixelOffset", "(ILandroid/util/DisplayMetrics;)I");
-			global::android.util.TypedValue._complexToDimensionPixelSize13903 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionPixelSize", "(ILandroid/util/DisplayMetrics;)I");
-			global::android.util.TypedValue._complexToDimensionNoisy13904 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToDimensionNoisy", "(ILandroid/util/DisplayMetrics;)F");
-			global::android.util.TypedValue._applyDimension13905 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "applyDimension", "(IFLandroid/util/DisplayMetrics;)F");
-			global::android.util.TypedValue._complexToFraction13906 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "complexToFraction", "(IFF)F");
-			global::android.util.TypedValue._coerceToString13907 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;");
-			global::android.util.TypedValue._coerceToString13908 = @__env.GetStaticMethodIDNoThrow(global::android.util.TypedValue.staticClass, "coerceToString", "(II)Ljava/lang/String;");
-			global::android.util.TypedValue._TypedValue13909 = @__env.GetMethodIDNoThrow(global::android.util.TypedValue.staticClass, "<init>", "()V");
 			global::android.util.TypedValue._type13948 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "type", "I");
 			global::android.util.TypedValue._string13949 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "@string", "Ljava/lang/CharSequence;");
 			global::android.util.TypedValue._data13950 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "data", "I");

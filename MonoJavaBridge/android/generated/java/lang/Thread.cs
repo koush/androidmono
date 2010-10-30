@@ -18,12 +18,16 @@ namespace java.lang
 			public static global::java.lang.Thread.State[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Thread.State._values20812.native == global::System.IntPtr.Zero)
+					global::java.lang.Thread.State._values20812 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.State.staticClass, "values", "()[Ljava/lang/Thread/State;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Thread.State>(@__env.CallStaticObjectMethod(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._values20812)) as java.lang.Thread.State[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf20813;
 			public static global::java.lang.Thread.State valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Thread.State._valueOf20813.native == global::System.IntPtr.Zero)
+					global::java.lang.Thread.State._valueOf20813 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.State.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.CallStaticObjectMethod(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._valueOf20813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread.State;
 			}
 			internal static global::MonoJavaBridge.FieldId _NEW20814;
@@ -84,8 +88,6 @@ namespace java.lang
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Thread.State.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread$State"));
-				global::java.lang.Thread.State._values20812 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.State.staticClass, "values", "()[Ljava/lang/Thread/State;");
-				global::java.lang.Thread.State._valueOf20813 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.State.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
 				global::java.lang.Thread.State._NEW20814 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Thread.State.staticClass, "NEW", "Ljava/lang/Thread$State;");
 				global::java.lang.Thread.State._RUNNABLE20815 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Thread.State.staticClass, "RUNNABLE", "Ljava/lang/Thread$State;");
 				global::java.lang.Thread.State._BLOCKED20816 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Thread.State.staticClass, "BLOCKED", "Ljava/lang/Thread$State;");
@@ -114,13 +116,14 @@ namespace java.lang
 			void java.lang.Thread.UncaughtExceptionHandler.uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820.native == global::System.IntPtr.Zero)
+					global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.UncaughtExceptionHandler_.staticClass, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
 				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static UncaughtExceptionHandler_()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.lang.Thread.UncaughtExceptionHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread$UncaughtExceptionHandler"));
-				global::java.lang.Thread.UncaughtExceptionHandler_._uncaughtException20820 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.UncaughtExceptionHandler_.staticClass, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
 			}
 			internal static void InitJNI()
 			{
@@ -129,22 +132,33 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _run20821;
 		public virtual void run()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._run20821.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._run20821 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "run", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._run20821);
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20822;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString20822)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._toString20822.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._toString20822 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString20822) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isInterrupted20823;
 		public virtual bool isInterrupted()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._isInterrupted20823.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._isInterrupted20823 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isInterrupted", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isInterrupted20823);
 		}
 		internal static global::MonoJavaBridge.MethodId _currentThread20824;
 		public static global::java.lang.Thread currentThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._currentThread20824.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._currentThread20824 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "currentThread", "()Ljava/lang/Thread;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Thread.staticClass, global::java.lang.Thread._currentThread20824)) as java.lang.Thread;
 		}
 		public new global::java.lang.String Name
@@ -161,7 +175,10 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getName20825;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getName20825)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getName20825.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getName20825 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getName", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getName20825) as java.lang.String;
 		}
 		public new global::java.lang.ThreadGroup ThreadGroup
 		{
@@ -173,7 +190,10 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getThreadGroup20826;
 		public virtual global::java.lang.ThreadGroup getThreadGroup()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getThreadGroup20826)) as java.lang.ThreadGroup;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getThreadGroup20826.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getThreadGroup20826 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getThreadGroup", "()Ljava/lang/ThreadGroup;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getThreadGroup20826) as java.lang.ThreadGroup;
 		}
 		public new global::java.lang.StackTraceElement[] StackTrace
 		{
@@ -185,17 +205,25 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getStackTrace20827;
 		public virtual global::java.lang.StackTraceElement[] getStackTrace()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getStackTrace20827)) as java.lang.StackTraceElement[];
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getStackTrace20827.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getStackTrace20827 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.StackTraceElement>(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getStackTrace20827) as java.lang.StackTraceElement[];
 		}
 		internal static global::MonoJavaBridge.MethodId _dumpStack20828;
 		public static void dumpStack()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._dumpStack20828.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._dumpStack20828 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "dumpStack", "()V");
 			@__env.CallStaticVoidMethod(java.lang.Thread.staticClass, global::java.lang.Thread._dumpStack20828);
 		}
 		internal static global::MonoJavaBridge.MethodId _setPriority20829;
 		public virtual void setPriority(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setPriority20829.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setPriority20829 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setPriority", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setPriority20829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool Daemon
@@ -208,70 +236,105 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _setDaemon20830;
 		public virtual void setDaemon(bool arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setDaemon20830.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setDaemon20830 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setDaemon", "(Z)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setDaemon20830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _start20831;
 		public virtual void start()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._start20831.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._start20831 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "start", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._start20831);
 		}
 		internal static global::MonoJavaBridge.MethodId _yield20832;
 		public static void yield()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._yield20832.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._yield20832 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "yield", "()V");
 			@__env.CallStaticVoidMethod(java.lang.Thread.staticClass, global::java.lang.Thread._yield20832);
 		}
 		internal static global::MonoJavaBridge.MethodId _sleep20833;
 		public static void sleep(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._sleep20833.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._sleep20833 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "sleep", "(J)V");
 			@__env.CallStaticVoidMethod(java.lang.Thread.staticClass, global::java.lang.Thread._sleep20833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sleep20834;
 		public static void sleep(long arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._sleep20834.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._sleep20834 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "sleep", "(JI)V");
 			@__env.CallStaticVoidMethod(java.lang.Thread.staticClass, global::java.lang.Thread._sleep20834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _stop20835;
 		public virtual void stop()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._stop20835.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._stop20835 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "stop", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._stop20835);
 		}
 		internal static global::MonoJavaBridge.MethodId _stop20836;
 		public virtual void stop(java.lang.Throwable arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._stop20836.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._stop20836 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "stop", "(Ljava/lang/Throwable;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._stop20836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _interrupt20837;
 		public virtual void interrupt()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._interrupt20837.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._interrupt20837 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "interrupt", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._interrupt20837);
 		}
 		internal static global::MonoJavaBridge.MethodId _interrupted20838;
 		public static bool interrupted()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._interrupted20838.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._interrupted20838 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "interrupted", "()Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Thread.staticClass, global::java.lang.Thread._interrupted20838);
 		}
 		internal static global::MonoJavaBridge.MethodId _destroy20839;
 		public virtual void destroy()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._destroy20839.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._destroy20839 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "destroy", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._destroy20839);
 		}
 		internal static global::MonoJavaBridge.MethodId _isAlive20840;
 		public virtual bool isAlive()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._isAlive20840.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._isAlive20840 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isAlive", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isAlive20840);
 		}
 		internal static global::MonoJavaBridge.MethodId _suspend20841;
 		public virtual void suspend()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._suspend20841.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._suspend20841 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "suspend", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._suspend20841);
 		}
 		internal static global::MonoJavaBridge.MethodId _resume20842;
 		public virtual void resume()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._resume20842.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._resume20842 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "resume", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._resume20842);
 		}
 		public new int Priority
@@ -288,53 +351,81 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getPriority20843;
 		public virtual int getPriority()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getPriority20843.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getPriority20843 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getPriority", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getPriority20843);
 		}
 		internal static global::MonoJavaBridge.MethodId _setName20844;
 		public virtual void setName(java.lang.String arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setName20844.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setName20844 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setName", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setName20844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _activeCount20845;
 		public static int activeCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._activeCount20845.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._activeCount20845 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "activeCount", "()I");
 			return @__env.CallStaticIntMethod(java.lang.Thread.staticClass, global::java.lang.Thread._activeCount20845);
 		}
 		internal static global::MonoJavaBridge.MethodId _enumerate20846;
 		public static int enumerate(java.lang.Thread[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._enumerate20846.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._enumerate20846 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "enumerate", "([Ljava/lang/Thread;)I");
 			return @__env.CallStaticIntMethod(java.lang.Thread.staticClass, global::java.lang.Thread._enumerate20846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _countStackFrames20847;
 		public virtual int countStackFrames()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._countStackFrames20847.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._countStackFrames20847 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "countStackFrames", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._countStackFrames20847);
 		}
 		internal static global::MonoJavaBridge.MethodId _join20848;
 		public virtual void join()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._join20848.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._join20848 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join20848);
 		}
 		internal static global::MonoJavaBridge.MethodId _join20849;
 		public virtual void join(long arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._join20849.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._join20849 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "(JI)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join20849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _join20850;
 		public virtual void join(long arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._join20850.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._join20850 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "(J)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join20850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDaemon20851;
 		public virtual bool isDaemon()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._isDaemon20851.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._isDaemon20851 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isDaemon", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isDaemon20851);
 		}
 		internal static global::MonoJavaBridge.MethodId _checkAccess20852;
 		public virtual void checkAccess()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._checkAccess20852.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._checkAccess20852 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "checkAccess", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._checkAccess20852);
 		}
 		public new global::java.lang.ClassLoader ContextClassLoader
@@ -351,17 +442,25 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getContextClassLoader20853;
 		public virtual global::java.lang.ClassLoader getContextClassLoader()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getContextClassLoader20853)) as java.lang.ClassLoader;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getContextClassLoader20853.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getContextClassLoader20853 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getContextClassLoader", "()Ljava/lang/ClassLoader;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getContextClassLoader20853) as java.lang.ClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _setContextClassLoader20854;
 		public virtual void setContextClassLoader(java.lang.ClassLoader arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setContextClassLoader20854.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setContextClassLoader20854 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setContextClassLoader20854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _holdsLock20855;
 		public static bool holdsLock(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._holdsLock20855.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._holdsLock20855 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "holdsLock", "(Ljava/lang/Object;)Z");
 			return @__env.CallStaticBooleanMethod(java.lang.Thread.staticClass, global::java.lang.Thread._holdsLock20855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.util.Map AllStackTraces
@@ -375,6 +474,8 @@ namespace java.lang
 		public static global::java.util.Map getAllStackTraces()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getAllStackTraces20856.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getAllStackTraces20856 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "getAllStackTraces", "()Ljava/util/Map;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallStaticObjectMethod(java.lang.Thread.staticClass, global::java.lang.Thread._getAllStackTraces20856)) as java.util.Map;
 		}
 		public new long Id
@@ -387,17 +488,25 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _getId20857;
 		public virtual long getId()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getId20857.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getId20857 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getId", "()J");
 			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getId20857);
 		}
 		internal static global::MonoJavaBridge.MethodId _getState20858;
 		public virtual global::java.lang.Thread.State getState()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getState20858)) as java.lang.Thread.State;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getState20858.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getState20858 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getState", "()Ljava/lang/Thread$State;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Thread.State>(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getState20858) as java.lang.Thread.State;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultUncaughtExceptionHandler20859;
 		public static void setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setDefaultUncaughtExceptionHandler20859.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setDefaultUncaughtExceptionHandler20859 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "setDefaultUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
 			@__env.CallStaticVoidMethod(java.lang.Thread.staticClass, global::java.lang.Thread._setDefaultUncaughtExceptionHandler20859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
@@ -415,22 +524,32 @@ namespace java.lang
 		public static global::java.lang.Thread.UncaughtExceptionHandler getDefaultUncaughtExceptionHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getDefaultUncaughtExceptionHandler20860.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getDefaultUncaughtExceptionHandler20860 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "getDefaultUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Thread.UncaughtExceptionHandler>(@__env.CallStaticObjectMethod(java.lang.Thread.staticClass, global::java.lang.Thread._getDefaultUncaughtExceptionHandler20860)) as java.lang.Thread.UncaughtExceptionHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUncaughtExceptionHandler20861;
 		public virtual global::java.lang.Thread.UncaughtExceptionHandler getUncaughtExceptionHandler()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Thread.UncaughtExceptionHandler>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getUncaughtExceptionHandler20861)) as java.lang.Thread.UncaughtExceptionHandler;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._getUncaughtExceptionHandler20861.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._getUncaughtExceptionHandler20861 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Thread.UncaughtExceptionHandler>(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getUncaughtExceptionHandler20861) as java.lang.Thread.UncaughtExceptionHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUncaughtExceptionHandler20862;
 		public virtual void setUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._setUncaughtExceptionHandler20862.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._setUncaughtExceptionHandler20862 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setUncaughtExceptionHandler20862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Thread20863;
 		public Thread(java.lang.ThreadGroup arg0, java.lang.Runnable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20863.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20863 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -438,6 +557,8 @@ namespace java.lang
 		public Thread(java.lang.ThreadGroup arg0, java.lang.Runnable arg1, java.lang.String arg2, long arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20864.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20864 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
@@ -445,6 +566,8 @@ namespace java.lang
 		public Thread(java.lang.ThreadGroup arg0, java.lang.Runnable arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20865.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20865 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -452,6 +575,8 @@ namespace java.lang
 		public Thread(java.lang.Runnable arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20866.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20866 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/Runnable;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -459,6 +584,8 @@ namespace java.lang
 		public Thread(java.lang.Runnable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20867.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20867 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/Runnable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -466,6 +593,8 @@ namespace java.lang
 		public Thread(java.lang.ThreadGroup arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20868.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20868 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -473,6 +602,8 @@ namespace java.lang
 		public Thread(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20869.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20869 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -480,6 +611,8 @@ namespace java.lang
 		public Thread() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Thread._Thread20870.native == global::System.IntPtr.Zero)
+				global::java.lang.Thread._Thread20870 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Thread.staticClass, global::java.lang.Thread._Thread20870);
 			Init(@__env, handle);
 		}
@@ -508,56 +641,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Thread.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Thread"));
-			global::java.lang.Thread._run20821 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "run", "()V");
-			global::java.lang.Thread._toString20822 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.Thread._isInterrupted20823 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isInterrupted", "()Z");
-			global::java.lang.Thread._currentThread20824 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "currentThread", "()Ljava/lang/Thread;");
-			global::java.lang.Thread._getName20825 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getName", "()Ljava/lang/String;");
-			global::java.lang.Thread._getThreadGroup20826 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getThreadGroup", "()Ljava/lang/ThreadGroup;");
-			global::java.lang.Thread._getStackTrace20827 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
-			global::java.lang.Thread._dumpStack20828 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "dumpStack", "()V");
-			global::java.lang.Thread._setPriority20829 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setPriority", "(I)V");
-			global::java.lang.Thread._setDaemon20830 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setDaemon", "(Z)V");
-			global::java.lang.Thread._start20831 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "start", "()V");
-			global::java.lang.Thread._yield20832 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "yield", "()V");
-			global::java.lang.Thread._sleep20833 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "sleep", "(J)V");
-			global::java.lang.Thread._sleep20834 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "sleep", "(JI)V");
-			global::java.lang.Thread._stop20835 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "stop", "()V");
-			global::java.lang.Thread._stop20836 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "stop", "(Ljava/lang/Throwable;)V");
-			global::java.lang.Thread._interrupt20837 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "interrupt", "()V");
-			global::java.lang.Thread._interrupted20838 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "interrupted", "()Z");
-			global::java.lang.Thread._destroy20839 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "destroy", "()V");
-			global::java.lang.Thread._isAlive20840 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isAlive", "()Z");
-			global::java.lang.Thread._suspend20841 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "suspend", "()V");
-			global::java.lang.Thread._resume20842 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "resume", "()V");
-			global::java.lang.Thread._getPriority20843 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getPriority", "()I");
-			global::java.lang.Thread._setName20844 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setName", "(Ljava/lang/String;)V");
-			global::java.lang.Thread._activeCount20845 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "activeCount", "()I");
-			global::java.lang.Thread._enumerate20846 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "enumerate", "([Ljava/lang/Thread;)I");
-			global::java.lang.Thread._countStackFrames20847 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "countStackFrames", "()I");
-			global::java.lang.Thread._join20848 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "()V");
-			global::java.lang.Thread._join20849 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "(JI)V");
-			global::java.lang.Thread._join20850 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "join", "(J)V");
-			global::java.lang.Thread._isDaemon20851 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "isDaemon", "()Z");
-			global::java.lang.Thread._checkAccess20852 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "checkAccess", "()V");
-			global::java.lang.Thread._getContextClassLoader20853 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getContextClassLoader", "()Ljava/lang/ClassLoader;");
-			global::java.lang.Thread._setContextClassLoader20854 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V");
-			global::java.lang.Thread._holdsLock20855 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "holdsLock", "(Ljava/lang/Object;)Z");
-			global::java.lang.Thread._getAllStackTraces20856 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "getAllStackTraces", "()Ljava/util/Map;");
-			global::java.lang.Thread._getId20857 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getId", "()J");
-			global::java.lang.Thread._getState20858 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getState", "()Ljava/lang/Thread$State;");
-			global::java.lang.Thread._setDefaultUncaughtExceptionHandler20859 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "setDefaultUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
-			global::java.lang.Thread._getDefaultUncaughtExceptionHandler20860 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Thread.staticClass, "getDefaultUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
-			global::java.lang.Thread._getUncaughtExceptionHandler20861 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "getUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
-			global::java.lang.Thread._setUncaughtExceptionHandler20862 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
-			global::java.lang.Thread._Thread20863 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V");
-			global::java.lang.Thread._Thread20864 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)V");
-			global::java.lang.Thread._Thread20865 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V");
-			global::java.lang.Thread._Thread20866 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/Runnable;Ljava/lang/String;)V");
-			global::java.lang.Thread._Thread20867 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/Runnable;)V");
-			global::java.lang.Thread._Thread20868 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
-			global::java.lang.Thread._Thread20869 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.lang.Thread._Thread20870 = @__env.GetMethodIDNoThrow(global::java.lang.Thread.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

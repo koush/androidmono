@@ -10,31 +10,39 @@ namespace java.lang.@ref
 		internal static global::MonoJavaBridge.MethodId _get20986;
 		public virtual global::java.lang.Object get()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._get20986)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.@ref.Reference._get20986.native == global::System.IntPtr.Zero)
+				global::java.lang.@ref.Reference._get20986 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "get", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._get20986) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear20987;
 		public virtual void clear()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.@ref.Reference._clear20987.native == global::System.IntPtr.Zero)
+				global::java.lang.@ref.Reference._clear20987 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "clear", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._clear20987);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEnqueued20988;
 		public virtual bool isEnqueued()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.@ref.Reference._isEnqueued20988.native == global::System.IntPtr.Zero)
+				global::java.lang.@ref.Reference._isEnqueued20988 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "isEnqueued", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._isEnqueued20988);
 		}
 		internal static global::MonoJavaBridge.MethodId _enqueue20989;
 		public virtual bool enqueue()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.@ref.Reference._enqueue20989.native == global::System.IntPtr.Zero)
+				global::java.lang.@ref.Reference._enqueue20989 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "enqueue", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._enqueue20989);
 		}
 		static Reference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.Reference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/Reference"));
-			global::java.lang.@ref.Reference._get20986 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "get", "()Ljava/lang/Object;");
-			global::java.lang.@ref.Reference._clear20987 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "clear", "()V");
-			global::java.lang.@ref.Reference._isEnqueued20988 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "isEnqueued", "()Z");
-			global::java.lang.@ref.Reference._enqueue20989 = @__env.GetMethodIDNoThrow(global::java.lang.@ref.Reference.staticClass, "enqueue", "()Z");
 		}
 		internal static void InitJNI()
 		{

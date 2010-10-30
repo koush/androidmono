@@ -20,34 +20,38 @@ namespace org.xml.sax.ext
 		void org.xml.sax.ext.DeclHandler.elementDecl(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ext.DeclHandler_._elementDecl35108.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ext.DeclHandler_._elementDecl35108 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DeclHandler_._elementDecl35108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _attributeDecl35109;
 		void org.xml.sax.ext.DeclHandler.attributeDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ext.DeclHandler_._attributeDecl35109.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ext.DeclHandler_._attributeDecl35109 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DeclHandler_._attributeDecl35109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _internalEntityDecl35110;
 		void org.xml.sax.ext.DeclHandler.internalEntityDecl(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ext.DeclHandler_._internalEntityDecl35110.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ext.DeclHandler_._internalEntityDecl35110 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DeclHandler_._internalEntityDecl35110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _externalEntityDecl35111;
 		void org.xml.sax.ext.DeclHandler.externalEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static DeclHandler_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.DeclHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/DeclHandler"));
-			global::org.xml.sax.ext.DeclHandler_._elementDecl35108 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DeclHandler_._attributeDecl35109 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DeclHandler_._internalEntityDecl35110 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DeclHandler_._externalEntityDecl35111 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DeclHandler_.staticClass, "externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

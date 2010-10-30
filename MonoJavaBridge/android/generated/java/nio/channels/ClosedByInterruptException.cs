@@ -11,6 +11,8 @@ namespace java.nio.channels
 		public ClosedByInterruptException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.channels.ClosedByInterruptException._ClosedByInterruptException22417.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.ClosedByInterruptException._ClosedByInterruptException22417 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ClosedByInterruptException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ClosedByInterruptException.staticClass, global::java.nio.channels.ClosedByInterruptException._ClosedByInterruptException22417);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ClosedByInterruptException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ClosedByInterruptException"));
-			global::java.nio.channels.ClosedByInterruptException._ClosedByInterruptException22417 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ClosedByInterruptException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

@@ -17,13 +17,14 @@ namespace java.io
 		bool java.io.FilenameFilter.accept(java.io.File arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.FilenameFilter_._accept19057.native == global::System.IntPtr.Zero)
+				global::java.io.FilenameFilter_._accept19057 = @__env.GetMethodIDNoThrow(global::java.io.FilenameFilter_.staticClass, "accept", "(Ljava/io/File;Ljava/lang/String;)Z");
 			return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FilenameFilter_._accept19057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static FilenameFilter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilenameFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilenameFilter"));
-			global::java.io.FilenameFilter_._accept19057 = @__env.GetMethodIDNoThrow(global::java.io.FilenameFilter_.staticClass, "accept", "(Ljava/io/File;Ljava/lang/String;)Z");
 		}
 		internal static void InitJNI()
 		{

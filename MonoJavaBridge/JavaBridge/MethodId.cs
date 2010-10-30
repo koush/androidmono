@@ -30,11 +30,13 @@ namespace MonoJavaBridge
         {
             return native.ToString();
         }
-        internal IntPtr native;
+        public IntPtr native;
 
         internal MethodId(IntPtr ptr)
         {
             native = ptr;
         }
+        
+        public static readonly MethodId Null = new MethodId(IntPtr.Zero);
     }
 }

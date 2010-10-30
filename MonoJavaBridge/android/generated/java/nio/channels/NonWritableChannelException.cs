@@ -11,6 +11,8 @@ namespace java.nio.channels
 		public NonWritableChannelException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.channels.NonWritableChannelException._NonWritableChannelException22516.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.NonWritableChannelException._NonWritableChannelException22516 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NonWritableChannelException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NonWritableChannelException.staticClass, global::java.nio.channels.NonWritableChannelException._NonWritableChannelException22516);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.NonWritableChannelException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/NonWritableChannelException"));
-			global::java.nio.channels.NonWritableChannelException._NonWritableChannelException22516 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NonWritableChannelException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

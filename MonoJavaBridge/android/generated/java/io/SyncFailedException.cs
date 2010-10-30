@@ -11,6 +11,8 @@ namespace java.io
 		public SyncFailedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.io.SyncFailedException._SyncFailedException19630.native == global::System.IntPtr.Zero)
+				global::java.io.SyncFailedException._SyncFailedException19630 = @__env.GetMethodIDNoThrow(global::java.io.SyncFailedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.SyncFailedException.staticClass, global::java.io.SyncFailedException._SyncFailedException19630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.SyncFailedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/SyncFailedException"));
-			global::java.io.SyncFailedException._SyncFailedException19630 = @__env.GetMethodIDNoThrow(global::java.io.SyncFailedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

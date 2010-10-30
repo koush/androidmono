@@ -11,12 +11,16 @@ namespace android.hardware
 		public static float[] getOrientation(float[] arg0, float[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getOrientation6456.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getOrientation6456 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getOrientation", "([F[F)[F");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<float>(@__env.CallStaticObjectMethod(android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getOrientation6456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as float[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getInclination6457;
 		public static float getInclination(float[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getInclination6457.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getInclination6457 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getInclination", "([F)F");
 			return @__env.CallStaticFloatMethod(android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getInclination6457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Sensors
@@ -29,68 +33,105 @@ namespace android.hardware
 		internal static global::MonoJavaBridge.MethodId _getSensors6458;
 		public virtual int getSensors()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getSensors6458.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getSensors6458 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getSensors", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getSensors6458);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSensorList6459;
 		public virtual global::java.util.List getSensorList(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getSensorList6459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getSensorList6459.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getSensorList6459 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getSensorList", "(I)Ljava/util/List;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getSensorList6459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultSensor6460;
 		public virtual global::android.hardware.Sensor getDefaultSensor(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getDefaultSensor6460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.hardware.Sensor;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getDefaultSensor6460.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getDefaultSensor6460 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getDefaultSensor", "(I)Landroid/hardware/Sensor;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getDefaultSensor6460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.hardware.Sensor;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerListener6461;
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._registerListener6461.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._registerListener6461 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener6461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _registerListener6462;
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1, int arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._registerListener6462.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._registerListener6462 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;II)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener6462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _registerListener6463;
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2, android.os.Handler arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._registerListener6463.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._registerListener6463 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener6463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _registerListener6464;
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._registerListener6464.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._registerListener6464 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;I)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener6464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterListener6465;
 		public virtual void unregisterListener(android.hardware.SensorListener arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._unregisterListener6465.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._unregisterListener6465 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener6465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterListener6466;
 		public virtual void unregisterListener(android.hardware.SensorListener arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._unregisterListener6466.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._unregisterListener6466 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener6466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterListener6467;
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._unregisterListener6467.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._unregisterListener6467 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener6467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterListener6468;
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._unregisterListener6468.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._unregisterListener6468 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener6468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getRotationMatrix6469;
 		public static bool getRotationMatrix(float[] arg0, float[] arg1, float[] arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._getRotationMatrix6469.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._getRotationMatrix6469 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getRotationMatrix", "([F[F[F[F)Z");
 			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getRotationMatrix6469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _remapCoordinateSystem6470;
 		public static bool remapCoordinateSystem(float[] arg0, int arg1, int arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.hardware.SensorManager._remapCoordinateSystem6470.native == global::System.IntPtr.Zero)
+				global::android.hardware.SensorManager._remapCoordinateSystem6470 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "remapCoordinateSystem", "([FII[F)Z");
 			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._remapCoordinateSystem6470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static int SENSOR_ORIENTATION
@@ -489,21 +530,6 @@ namespace android.hardware
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorManager"));
-			global::android.hardware.SensorManager._getOrientation6456 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getOrientation", "([F[F)[F");
-			global::android.hardware.SensorManager._getInclination6457 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getInclination", "([F)F");
-			global::android.hardware.SensorManager._getSensors6458 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getSensors", "()I");
-			global::android.hardware.SensorManager._getSensorList6459 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getSensorList", "(I)Ljava/util/List;");
-			global::android.hardware.SensorManager._getDefaultSensor6460 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getDefaultSensor", "(I)Landroid/hardware/Sensor;");
-			global::android.hardware.SensorManager._registerListener6461 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z");
-			global::android.hardware.SensorManager._registerListener6462 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;II)Z");
-			global::android.hardware.SensorManager._registerListener6463 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z");
-			global::android.hardware.SensorManager._registerListener6464 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;I)Z");
-			global::android.hardware.SensorManager._unregisterListener6465 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;I)V");
-			global::android.hardware.SensorManager._unregisterListener6466 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;)V");
-			global::android.hardware.SensorManager._unregisterListener6467 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V");
-			global::android.hardware.SensorManager._unregisterListener6468 = @__env.GetMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;)V");
-			global::android.hardware.SensorManager._getRotationMatrix6469 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "getRotationMatrix", "([F[F[F[F)Z");
-			global::android.hardware.SensorManager._remapCoordinateSystem6470 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.SensorManager.staticClass, "remapCoordinateSystem", "([FII[F)Z");
 		}
 		internal static void InitJNI()
 		{

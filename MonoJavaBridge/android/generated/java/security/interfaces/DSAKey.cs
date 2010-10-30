@@ -17,13 +17,14 @@ namespace java.security.interfaces
 		global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.interfaces.DSAKey_._getParams23895.native == global::System.IntPtr.Zero)
+				global::java.security.interfaces.DSAKey_._getParams23895 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;");
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.interfaces.DSAParams>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAKey_._getParams23895)) as java.security.interfaces.DSAParams;
 		}
 		static DSAKey_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.interfaces.DSAKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/interfaces/DSAKey"));
-			global::java.security.interfaces.DSAKey_._getParams23895 = @__env.GetMethodIDNoThrow(global::java.security.interfaces.DSAKey_.staticClass, "getParams", "()Ljava/security/interfaces/DSAParams;");
 		}
 		internal static void InitJNI()
 		{

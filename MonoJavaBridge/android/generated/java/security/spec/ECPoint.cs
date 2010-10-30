@@ -10,11 +10,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _equals24000;
 		public override bool equals(java.lang.Object arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.ECPoint._equals24000.native == global::System.IntPtr.Zero)
+				global::java.security.spec.ECPoint._equals24000 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "equals", "(Ljava/lang/Object;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._equals24000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode24001;
 		public override int hashCode()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.ECPoint._hashCode24001.native == global::System.IntPtr.Zero)
+				global::java.security.spec.ECPoint._hashCode24001 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "hashCode", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._hashCode24001);
 		}
 		public new global::java.math.BigInteger AffineX
@@ -27,7 +33,10 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getAffineX24002;
 		public virtual global::java.math.BigInteger getAffineX()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineX24002)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.ECPoint._getAffineX24002.native == global::System.IntPtr.Zero)
+				global::java.security.spec.ECPoint._getAffineX24002 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "getAffineX", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineX24002) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger AffineY
 		{
@@ -39,12 +48,17 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getAffineY24003;
 		public virtual global::java.math.BigInteger getAffineY()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineY24003)) as java.math.BigInteger;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.ECPoint._getAffineY24003.native == global::System.IntPtr.Zero)
+				global::java.security.spec.ECPoint._getAffineY24003 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "getAffineY", "()Ljava/math/BigInteger;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._getAffineY24003) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECPoint24004;
 		public ECPoint(java.math.BigInteger arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.spec.ECPoint._ECPoint24004.native == global::System.IntPtr.Zero)
+				global::java.security.spec.ECPoint._ECPoint24004 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECPoint.staticClass, global::java.security.spec.ECPoint._ECPoint24004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -61,11 +75,6 @@ namespace java.security.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECPoint.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECPoint"));
-			global::java.security.spec.ECPoint._equals24000 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.security.spec.ECPoint._hashCode24001 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "hashCode", "()I");
-			global::java.security.spec.ECPoint._getAffineX24002 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "getAffineX", "()Ljava/math/BigInteger;");
-			global::java.security.spec.ECPoint._getAffineY24003 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "getAffineY", "()Ljava/math/BigInteger;");
-			global::java.security.spec.ECPoint._ECPoint24004 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPoint.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 			global::java.security.spec.ECPoint._POINT_INFINITY24005 = @__env.GetStaticFieldIDNoThrow(global::java.security.spec.ECPoint.staticClass, "POINT_INFINITY", "Ljava/security/spec/ECPoint;");
 		}
 		internal static void InitJNI()

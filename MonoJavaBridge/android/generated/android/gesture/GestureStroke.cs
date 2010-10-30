@@ -10,7 +10,10 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _clone4986;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clone4986)) as java.lang.Object;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._clone4986.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._clone4986 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "clone", "()Ljava/lang/Object;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clone4986) as java.lang.Object;
 		}
 		public new global::android.graphics.Path Path
 		{
@@ -22,27 +25,41 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _getPath4987;
 		public virtual global::android.graphics.Path getPath()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._getPath4987)) as android.graphics.Path;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._getPath4987.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._getPath4987 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "getPath", "()Landroid/graphics/Path;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._getPath4987) as android.graphics.Path;
 		}
 		internal static global::MonoJavaBridge.MethodId _toPath4988;
 		public virtual global::android.graphics.Path toPath(float arg0, float arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._toPath4988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.Path;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._toPath4988.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._toPath4988 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "toPath", "(FFI)Landroid/graphics/Path;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._toPath4988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.graphics.Path;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPath4989;
 		public virtual void clearPath()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._clearPath4989.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._clearPath4989 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "clearPath", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clearPath4989);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeOrientedBoundingBox4990;
 		public virtual global::android.gesture.OrientedBoundingBox computeOrientedBoundingBox()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._computeOrientedBoundingBox4990)) as android.gesture.OrientedBoundingBox;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._computeOrientedBoundingBox4990.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._computeOrientedBoundingBox4990 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "computeOrientedBoundingBox", "()Landroid/gesture/OrientedBoundingBox;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._computeOrientedBoundingBox4990) as android.gesture.OrientedBoundingBox;
 		}
 		internal static global::MonoJavaBridge.MethodId _GestureStroke4991;
 		public GestureStroke(java.util.ArrayList arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.gesture.GestureStroke._GestureStroke4991.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStroke._GestureStroke4991 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "<init>", "(Ljava/util/ArrayList;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._GestureStroke4991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -77,12 +94,6 @@ namespace android.gesture
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureStroke.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureStroke"));
-			global::android.gesture.GestureStroke._clone4986 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "clone", "()Ljava/lang/Object;");
-			global::android.gesture.GestureStroke._getPath4987 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "getPath", "()Landroid/graphics/Path;");
-			global::android.gesture.GestureStroke._toPath4988 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "toPath", "(FFI)Landroid/graphics/Path;");
-			global::android.gesture.GestureStroke._clearPath4989 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "clearPath", "()V");
-			global::android.gesture.GestureStroke._computeOrientedBoundingBox4990 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "computeOrientedBoundingBox", "()Landroid/gesture/OrientedBoundingBox;");
-			global::android.gesture.GestureStroke._GestureStroke4991 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStroke.staticClass, "<init>", "(Ljava/util/ArrayList;)V");
 			global::android.gesture.GestureStroke._boundingBox4992 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "boundingBox", "Landroid/graphics/RectF;");
 			global::android.gesture.GestureStroke._length4993 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "length", "F");
 			global::android.gesture.GestureStroke._points4994 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "points", "[F");

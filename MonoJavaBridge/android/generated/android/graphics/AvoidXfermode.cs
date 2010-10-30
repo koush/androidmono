@@ -18,12 +18,16 @@ namespace android.graphics
 			public static global::android.graphics.AvoidXfermode.Mode[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.AvoidXfermode.Mode._values5009.native == global::System.IntPtr.Zero)
+					global::android.graphics.AvoidXfermode.Mode._values5009 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "values", "()[Landroid/graphics/AvoidXfermode/Mode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.AvoidXfermode.Mode>(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._values5009)) as android.graphics.AvoidXfermode.Mode[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5010;
 			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.AvoidXfermode.Mode._valueOf5010.native == global::System.IntPtr.Zero)
+					global::android.graphics.AvoidXfermode.Mode._valueOf5010 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/AvoidXfermode$Mode;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.AvoidXfermode.Mode>(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.AvoidXfermode.Mode;
 			}
 			internal static global::MonoJavaBridge.FieldId _AVOID5011;
@@ -48,8 +52,6 @@ namespace android.graphics
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.AvoidXfermode.Mode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/AvoidXfermode$Mode"));
-				global::android.graphics.AvoidXfermode.Mode._values5009 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "values", "()[Landroid/graphics/AvoidXfermode/Mode;");
-				global::android.graphics.AvoidXfermode.Mode._valueOf5010 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/AvoidXfermode$Mode;");
 				global::android.graphics.AvoidXfermode.Mode._AVOID5011 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "AVOID", "Landroid/graphics/AvoidXfermode$Mode;");
 				global::android.graphics.AvoidXfermode.Mode._TARGET5012 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "TARGET", "Landroid/graphics/AvoidXfermode$Mode;");
 			}
@@ -61,6 +63,8 @@ namespace android.graphics
 		public AvoidXfermode(int arg0, int arg1, android.graphics.AvoidXfermode.Mode arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.AvoidXfermode._AvoidXfermode5013.native == global::System.IntPtr.Zero)
+				global::android.graphics.AvoidXfermode._AvoidXfermode5013 = @__env.GetMethodIDNoThrow(global::android.graphics.AvoidXfermode.staticClass, "<init>", "(IILandroid/graphics/AvoidXfermode$Mode;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.AvoidXfermode.staticClass, global::android.graphics.AvoidXfermode._AvoidXfermode5013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -68,7 +72,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.AvoidXfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/AvoidXfermode"));
-			global::android.graphics.AvoidXfermode._AvoidXfermode5013 = @__env.GetMethodIDNoThrow(global::android.graphics.AvoidXfermode.staticClass, "<init>", "(IILandroid/graphics/AvoidXfermode$Mode;)V");
 		}
 		internal static void InitJNI()
 		{

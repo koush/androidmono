@@ -17,13 +17,14 @@ namespace java.util
 		void java.util.Formattable.formatTo(java.util.Formatter arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.util.Formattable_._formatTo26182.native == global::System.IntPtr.Zero)
+				global::java.util.Formattable_._formatTo26182 = @__env.GetMethodIDNoThrow(global::java.util.Formattable_.staticClass, "formatTo", "(Ljava/util/Formatter;III)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.util.Formattable_._formatTo26182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		static Formattable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Formattable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Formattable"));
-			global::java.util.Formattable_._formatTo26182 = @__env.GetMethodIDNoThrow(global::java.util.Formattable_.staticClass, "formatTo", "(Ljava/util/Formatter;III)V");
 		}
 		internal static void InitJNI()
 		{

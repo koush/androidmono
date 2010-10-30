@@ -11,12 +11,16 @@ namespace java.lang.annotation
 		public static global::java.lang.annotation.ElementType[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.annotation.ElementType._values20952.native == global::System.IntPtr.Zero)
+				global::java.lang.annotation.ElementType._values20952 = @__env.GetStaticMethodIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "values", "()[Ljava/lang/annotation/ElementType;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.ElementType>(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._values20952)) as java.lang.annotation.ElementType[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20953;
 		public static global::java.lang.annotation.ElementType valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.annotation.ElementType._valueOf20953.native == global::System.IntPtr.Zero)
+				global::java.lang.annotation.ElementType._valueOf20953 = @__env.GetStaticMethodIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/annotation/ElementType;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._valueOf20953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.ElementType;
 		}
 		internal static global::MonoJavaBridge.FieldId _TYPE20954;
@@ -95,8 +99,6 @@ namespace java.lang.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.ElementType.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/ElementType"));
-			global::java.lang.annotation.ElementType._values20952 = @__env.GetStaticMethodIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "values", "()[Ljava/lang/annotation/ElementType;");
-			global::java.lang.annotation.ElementType._valueOf20953 = @__env.GetStaticMethodIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/annotation/ElementType;");
 			global::java.lang.annotation.ElementType._TYPE20954 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "TYPE", "Ljava/lang/annotation/ElementType;");
 			global::java.lang.annotation.ElementType._FIELD20955 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "FIELD", "Ljava/lang/annotation/ElementType;");
 			global::java.lang.annotation.ElementType._METHOD20956 = @__env.GetStaticFieldIDNoThrow(global::java.lang.annotation.ElementType.staticClass, "METHOD", "Ljava/lang/annotation/ElementType;");

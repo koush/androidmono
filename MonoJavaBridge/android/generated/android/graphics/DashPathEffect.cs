@@ -11,6 +11,8 @@ namespace android.graphics
 		public DashPathEffect(float[] arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.DashPathEffect._DashPathEffect5262.native == global::System.IntPtr.Zero)
+				global::android.graphics.DashPathEffect._DashPathEffect5262 = @__env.GetMethodIDNoThrow(global::android.graphics.DashPathEffect.staticClass, "<init>", "([FF)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DashPathEffect.staticClass, global::android.graphics.DashPathEffect._DashPathEffect5262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.DashPathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/DashPathEffect"));
-			global::android.graphics.DashPathEffect._DashPathEffect5262 = @__env.GetMethodIDNoThrow(global::android.graphics.DashPathEffect.staticClass, "<init>", "([FF)V");
 		}
 		internal static void InitJNI()
 		{

@@ -17,13 +17,14 @@ namespace org.apache.http.io
 		void org.apache.http.io.HttpMessageWriter.write(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::org.apache.http.io.HttpMessageWriter_._write33468.native == global::System.IntPtr.Zero)
+				global::org.apache.http.io.HttpMessageWriter_._write33468 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageWriter_.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpMessageWriter_._write33468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static HttpMessageWriter_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.io.HttpMessageWriter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/io/HttpMessageWriter"));
-			global::org.apache.http.io.HttpMessageWriter_._write33468 = @__env.GetMethodIDNoThrow(global::org.apache.http.io.HttpMessageWriter_.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V");
 		}
 		internal static void InitJNI()
 		{

@@ -11,6 +11,8 @@ namespace java.nio.channels
 		public NonReadableChannelException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.nio.channels.NonReadableChannelException._NonReadableChannelException22515.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.NonReadableChannelException._NonReadableChannelException22515 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NonReadableChannelException.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NonReadableChannelException.staticClass, global::java.nio.channels.NonReadableChannelException._NonReadableChannelException22515);
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.NonReadableChannelException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/NonReadableChannelException"));
-			global::java.nio.channels.NonReadableChannelException._NonReadableChannelException22515 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NonReadableChannelException.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

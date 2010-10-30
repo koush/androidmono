@@ -17,13 +17,14 @@ namespace android.util
 		void android.util.Printer.println(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.Printer_._println13834.native == global::System.IntPtr.Zero)
+				global::android.util.Printer_._println13834 = @__env.GetMethodIDNoThrow(global::android.util.Printer_.staticClass, "println", "(Ljava/lang/String;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.util.Printer_._println13834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Printer_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Printer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Printer"));
-			global::android.util.Printer_._println13834 = @__env.GetMethodIDNoThrow(global::android.util.Printer_.staticClass, "println", "(Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.util
 		public PrinterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.util.PrinterDelegateWrapper._PrinterDelegateWrapper13835.native == global::System.IntPtr.Zero)
+				global::android.util.PrinterDelegateWrapper._PrinterDelegateWrapper13835 = @__env.GetMethodIDNoThrow(global::android.util.PrinterDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.PrinterDelegateWrapper.staticClass, global::android.util.PrinterDelegateWrapper._PrinterDelegateWrapper13835);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.PrinterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/PrinterDelegateWrapper"));
-			global::android.util.PrinterDelegateWrapper._PrinterDelegateWrapper13835 = @__env.GetMethodIDNoThrow(global::android.util.PrinterDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

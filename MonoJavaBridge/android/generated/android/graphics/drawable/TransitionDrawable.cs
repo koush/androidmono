@@ -10,21 +10,33 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _draw6233;
 		public override void draw(android.graphics.Canvas arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._draw6233.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._draw6233 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._draw6233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startTransition6234;
 		public virtual void startTransition(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._startTransition6234.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._startTransition6234 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "startTransition", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._startTransition6234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _resetTransition6235;
 		public virtual void resetTransition()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._resetTransition6235.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._resetTransition6235 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "resetTransition", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._resetTransition6235);
 		}
 		internal static global::MonoJavaBridge.MethodId _reverseTransition6236;
 		public virtual void reverseTransition(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._reverseTransition6236.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._reverseTransition6236 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "reverseTransition", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._reverseTransition6236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool CrossFadeEnabled
@@ -37,17 +49,25 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setCrossFadeEnabled6237;
 		public virtual void setCrossFadeEnabled(bool arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "setCrossFadeEnabled", "(Z)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCrossFadeEnabled6238;
 		public virtual bool isCrossFadeEnabled()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "isCrossFadeEnabled", "()Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238);
 		}
 		internal static global::MonoJavaBridge.MethodId _TransitionDrawable6239;
 		public TransitionDrawable(android.graphics.drawable.Drawable[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "<init>", "([Landroid/graphics/drawable/Drawable;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -55,13 +75,6 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.TransitionDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/TransitionDrawable"));
-			global::android.graphics.drawable.TransitionDrawable._draw6233 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.graphics.drawable.TransitionDrawable._startTransition6234 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "startTransition", "(I)V");
-			global::android.graphics.drawable.TransitionDrawable._resetTransition6235 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "resetTransition", "()V");
-			global::android.graphics.drawable.TransitionDrawable._reverseTransition6236 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "reverseTransition", "(I)V");
-			global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "setCrossFadeEnabled", "(Z)V");
-			global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "isCrossFadeEnabled", "()Z");
-			global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.TransitionDrawable.staticClass, "<init>", "([Landroid/graphics/drawable/Drawable;)V");
 		}
 		internal static void InitJNI()
 		{

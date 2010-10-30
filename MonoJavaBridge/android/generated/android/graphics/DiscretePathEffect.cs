@@ -11,6 +11,8 @@ namespace android.graphics
 		public DiscretePathEffect(float arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.DiscretePathEffect._DiscretePathEffect5263.native == global::System.IntPtr.Zero)
+				global::android.graphics.DiscretePathEffect._DiscretePathEffect5263 = @__env.GetMethodIDNoThrow(global::android.graphics.DiscretePathEffect.staticClass, "<init>", "(FF)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DiscretePathEffect.staticClass, global::android.graphics.DiscretePathEffect._DiscretePathEffect5263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -18,7 +20,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.DiscretePathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/DiscretePathEffect"));
-			global::android.graphics.DiscretePathEffect._DiscretePathEffect5263 = @__env.GetMethodIDNoThrow(global::android.graphics.DiscretePathEffect.staticClass, "<init>", "(FF)V");
 		}
 		internal static void InitJNI()
 		{

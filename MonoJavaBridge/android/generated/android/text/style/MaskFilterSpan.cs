@@ -17,17 +17,25 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _getMaskFilter13525;
 		public virtual global::android.graphics.MaskFilter getMaskFilter()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._getMaskFilter13525)) as android.graphics.MaskFilter;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MaskFilterSpan._getMaskFilter13525.native == global::System.IntPtr.Zero)
+				global::android.text.style.MaskFilterSpan._getMaskFilter13525 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "getMaskFilter", "()Landroid/graphics/MaskFilter;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._getMaskFilter13525) as android.graphics.MaskFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13526;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MaskFilterSpan._updateDrawState13526.native == global::System.IntPtr.Zero)
+				global::android.text.style.MaskFilterSpan._updateDrawState13526 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._updateDrawState13526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _MaskFilterSpan13527;
 		public MaskFilterSpan(android.graphics.MaskFilter arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.text.style.MaskFilterSpan._MaskFilterSpan13527.native == global::System.IntPtr.Zero)
+				global::android.text.style.MaskFilterSpan._MaskFilterSpan13527 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "<init>", "(Landroid/graphics/MaskFilter;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._MaskFilterSpan13527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -35,9 +43,6 @@ namespace android.text.style
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.MaskFilterSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/MaskFilterSpan"));
-			global::android.text.style.MaskFilterSpan._getMaskFilter13525 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "getMaskFilter", "()Landroid/graphics/MaskFilter;");
-			global::android.text.style.MaskFilterSpan._updateDrawState13526 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.MaskFilterSpan._MaskFilterSpan13527 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "<init>", "(Landroid/graphics/MaskFilter;)V");
 		}
 		internal static void InitJNI()
 		{

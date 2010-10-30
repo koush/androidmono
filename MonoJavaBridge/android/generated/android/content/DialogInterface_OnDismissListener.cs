@@ -17,13 +17,14 @@ namespace android.content
 		void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.DialogInterface_OnDismissListener_._onDismiss3071.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnDismissListener_._onDismiss3071 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListener_.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnDismissListener_._onDismiss3071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DialogInterface_OnDismissListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnDismissListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnDismissListener"));
-			global::android.content.DialogInterface_OnDismissListener_._onDismiss3071 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListener_.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace android.content
 		public DialogInterface_OnDismissListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.DialogInterface_OnDismissListenerDelegateWrapper._DialogInterface_OnDismissListenerDelegateWrapper3072.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnDismissListenerDelegateWrapper._DialogInterface_OnDismissListenerDelegateWrapper3072 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListenerDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnDismissListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnDismissListenerDelegateWrapper._DialogInterface_OnDismissListenerDelegateWrapper3072);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnDismissListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnDismissListenerDelegateWrapper"));
-			global::android.content.DialogInterface_OnDismissListenerDelegateWrapper._DialogInterface_OnDismissListenerDelegateWrapper3072 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListenerDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

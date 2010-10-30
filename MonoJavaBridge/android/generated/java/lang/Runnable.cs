@@ -17,13 +17,14 @@ namespace java.lang
 		void java.lang.Runnable.run()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.Runnable_._run20428.native == global::System.IntPtr.Zero)
+				global::java.lang.Runnable_._run20428 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
 			@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run20428);
 		}
 		static Runnable_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Runnable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Runnable"));
-			global::java.lang.Runnable_._run20428 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
 		}
 		internal static void InitJNI()
 		{
@@ -42,6 +43,8 @@ namespace java.lang
 		public RunnableDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429.native == global::System.IntPtr.Zero)
+				global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429 = @__env.GetMethodIDNoThrow(global::java.lang.RunnableDelegateWrapper.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RunnableDelegateWrapper.staticClass, global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429);
 			Init(@__env, handle);
 		}
@@ -49,7 +52,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.RunnableDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("internal/java/lang/RunnableDelegateWrapper"));
-			global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429 = @__env.GetMethodIDNoThrow(global::java.lang.RunnableDelegateWrapper.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

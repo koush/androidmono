@@ -18,20 +18,22 @@ namespace javax.sql
 		void javax.sql.ConnectionEventListener.connectionClosed(javax.sql.ConnectionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.ConnectionEventListener_._connectionClosed30280.native == global::System.IntPtr.Zero)
+				global::javax.sql.ConnectionEventListener_._connectionClosed30280 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.ConnectionEventListener_._connectionClosed30280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _connectionErrorOccurred30281;
 		void javax.sql.ConnectionEventListener.connectionErrorOccurred(javax.sql.ConnectionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281.native == global::System.IntPtr.Zero)
+				global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V");
 			@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ConnectionEventListener_()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.ConnectionEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/ConnectionEventListener"));
-			global::javax.sql.ConnectionEventListener_._connectionClosed30280 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V");
-			global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281 = @__env.GetMethodIDNoThrow(global::javax.sql.ConnectionEventListener_.staticClass, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V");
 		}
 		internal static void InitJNI()
 		{

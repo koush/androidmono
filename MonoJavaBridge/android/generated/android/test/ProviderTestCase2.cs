@@ -10,33 +10,49 @@ namespace android.test
 		internal static global::MonoJavaBridge.MethodId _getProvider12280;
 		public virtual global::android.content.ContentProvider getProvider()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getProvider12280)) as android.content.ContentProvider;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._getProvider12280.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._getProvider12280 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getProvider", "()Landroid/content/ContentProvider;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getProvider12280) as android.content.ContentProvider;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12281;
 		protected override void setUp()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._setUp12281.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._setUp12281 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "setUp", "()V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._setUp12281);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContentResolver12282;
 		public virtual global::android.test.mock.MockContentResolver getMockContentResolver()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContentResolver12282)) as android.test.mock.MockContentResolver;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._getMockContentResolver12282.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._getMockContentResolver12282 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getMockContentResolver", "()Landroid/test/mock/MockContentResolver;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContentResolver12282) as android.test.mock.MockContentResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContext12283;
 		public virtual global::android.test.IsolatedContext getMockContext()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContext12283)) as android.test.IsolatedContext;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._getMockContext12283.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._getMockContext12283 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getMockContext", "()Landroid/test/IsolatedContext;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContext12283) as android.test.IsolatedContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _newResolverWithContentProviderFromSql12284;
 		public static global::android.content.ContentResolver newResolverWithContentProviderFromSql(android.content.Context arg0, java.lang.String arg1, java.lang.Class arg2, java.lang.String arg3, java.lang.String arg4, int arg5, java.lang.String arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._newResolverWithContentProviderFromSql12284.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._newResolverWithContentProviderFromSql12284 = @__env.GetStaticMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "newResolverWithContentProviderFromSql", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/ContentResolver;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._newResolverWithContentProviderFromSql12284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6))) as android.content.ContentResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderTestCase212285;
 		public ProviderTestCase2(java.lang.Class arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.test.ProviderTestCase2._ProviderTestCase212285.native == global::System.IntPtr.Zero)
+				global::android.test.ProviderTestCase2._ProviderTestCase212285 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "<init>", "(Ljava/lang/Class;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._ProviderTestCase212285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -44,12 +60,6 @@ namespace android.test
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ProviderTestCase2.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ProviderTestCase2"));
-			global::android.test.ProviderTestCase2._getProvider12280 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getProvider", "()Landroid/content/ContentProvider;");
-			global::android.test.ProviderTestCase2._setUp12281 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "setUp", "()V");
-			global::android.test.ProviderTestCase2._getMockContentResolver12282 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getMockContentResolver", "()Landroid/test/mock/MockContentResolver;");
-			global::android.test.ProviderTestCase2._getMockContext12283 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "getMockContext", "()Landroid/test/IsolatedContext;");
-			global::android.test.ProviderTestCase2._newResolverWithContentProviderFromSql12284 = @__env.GetStaticMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "newResolverWithContentProviderFromSql", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/ContentResolver;");
-			global::android.test.ProviderTestCase2._ProviderTestCase212285 = @__env.GetMethodIDNoThrow(global::android.test.ProviderTestCase2.staticClass, "<init>", "(Ljava/lang/Class;Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

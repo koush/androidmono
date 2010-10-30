@@ -11,18 +11,24 @@ namespace java.security.cert
 		public static global::java.security.cert.CertPathBuilder getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getInstance23495.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getInstance23495 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getInstance23495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertPathBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23496;
 		public static global::java.security.cert.CertPathBuilder getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getInstance23496.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getInstance23496 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertPathBuilder;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getInstance23496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertPathBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23497;
 		public static global::java.security.cert.CertPathBuilder getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getInstance23497.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getInstance23497 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getInstance23497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPathBuilder;
 		}
 		public new global::java.lang.String Algorithm
@@ -35,7 +41,10 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23498;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getAlgorithm23498)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getAlgorithm23498.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getAlgorithm23498 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getAlgorithm", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getAlgorithm23498) as java.lang.String;
 		}
 		public new global::java.security.Provider Provider
 		{
@@ -47,12 +56,18 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getProvider23499;
 		public virtual global::java.security.Provider getProvider()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getProvider23499)) as java.security.Provider;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getProvider23499.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getProvider23499 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getProvider", "()Ljava/security/Provider;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getProvider23499) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _build23500;
 		public virtual global::java.security.cert.CertPathBuilderResult build(java.security.cert.CertPathParameters arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.CertPathBuilderResult>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._build23500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPathBuilderResult;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._build23500.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._build23500 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "build", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.cert.CertPathBuilderResult>(this, global::java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._build23500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.cert.CertPathBuilderResult;
 		}
 		public static global::java.lang.String DefaultType
 		{
@@ -65,12 +80,16 @@ namespace java.security.cert
 		public static global::java.lang.String getDefaultType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._getDefaultType23501.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._getDefaultType23501 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getDefaultType", "()Ljava/lang/String;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._getDefaultType23501)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertPathBuilder23502;
 		protected CertPathBuilder(java.security.cert.CertPathBuilderSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::java.security.cert.CertPathBuilder._CertPathBuilder23502.native == global::System.IntPtr.Zero)
+				global::java.security.cert.CertPathBuilder._CertPathBuilder23502 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "<init>", "(Ljava/security/cert/CertPathBuilderSpi;Ljava/security/Provider;Ljava/lang/String;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathBuilder.staticClass, global::java.security.cert.CertPathBuilder._CertPathBuilder23502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
@@ -78,14 +97,6 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathBuilder"));
-			global::java.security.cert.CertPathBuilder._getInstance23495 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;");
-			global::java.security.cert.CertPathBuilder._getInstance23496 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertPathBuilder;");
-			global::java.security.cert.CertPathBuilder._getInstance23497 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;");
-			global::java.security.cert.CertPathBuilder._getAlgorithm23498 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.cert.CertPathBuilder._getProvider23499 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getProvider", "()Ljava/security/Provider;");
-			global::java.security.cert.CertPathBuilder._build23500 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "build", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;");
-			global::java.security.cert.CertPathBuilder._getDefaultType23501 = @__env.GetStaticMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "getDefaultType", "()Ljava/lang/String;");
-			global::java.security.cert.CertPathBuilder._CertPathBuilder23502 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilder.staticClass, "<init>", "(Ljava/security/cert/CertPathBuilderSpi;Ljava/security/Provider;Ljava/lang/String;)V");
 		}
 		internal static void InitJNI()
 		{

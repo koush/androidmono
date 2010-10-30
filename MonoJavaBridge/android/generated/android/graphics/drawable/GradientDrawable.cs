@@ -18,12 +18,16 @@ namespace android.graphics.drawable
 			public static global::android.graphics.drawable.GradientDrawable.Orientation[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.drawable.GradientDrawable.Orientation._values6019.native == global::System.IntPtr.Zero)
+					global::android.graphics.drawable.GradientDrawable.Orientation._values6019 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "values", "()[Landroid/graphics/drawable/GradientDrawable/Orientation;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.drawable.GradientDrawable.Orientation>(@__env.CallStaticObjectMethod(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._values6019)) as android.graphics.drawable.GradientDrawable.Orientation[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf6020;
 			public static global::android.graphics.drawable.GradientDrawable.Orientation valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6020.native == global::System.IntPtr.Zero)
+					global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6020 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.CallStaticObjectMethod(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.GradientDrawable.Orientation;
 			}
 			internal static global::MonoJavaBridge.FieldId _BL_TR6021;
@@ -102,8 +106,6 @@ namespace android.graphics.drawable
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.GradientDrawable.Orientation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/GradientDrawable$Orientation"));
-				global::android.graphics.drawable.GradientDrawable.Orientation._values6019 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "values", "()[Landroid/graphics/drawable/GradientDrawable/Orientation;");
-				global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6020 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._BL_TR6021 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "BL_TR", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._BOTTOM_TOP6022 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "BOTTOM_TOP", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._BR_TL6023 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "BR_TL", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
@@ -120,16 +122,25 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setSize6029;
 		public virtual void setSize(int arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setSize6029.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setSize6029 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setSize", "(II)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setSize6029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate6030;
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._inflate6030.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._inflate6030 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._inflate6030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6031;
 		public override void draw(android.graphics.Canvas arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._draw6031.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._draw6031 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._draw6031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ChangingConfigurations
@@ -142,6 +153,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations6032;
 		public override int getChangingConfigurations()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getChangingConfigurations6032.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getChangingConfigurations6032 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getChangingConfigurations", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getChangingConfigurations6032);
 		}
 		public new bool Dither
@@ -154,6 +168,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setDither6033;
 		public override void setDither(bool arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setDither6033.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setDither6033 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setDither", "(Z)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setDither6033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Alpha
@@ -166,6 +183,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setAlpha6034;
 		public override void setAlpha(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setAlpha6034.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setAlpha6034 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setAlpha", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setAlpha6034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.ColorFilter ColorFilter
@@ -178,6 +198,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setColorFilter6035;
 		public override void setColorFilter(android.graphics.ColorFilter arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setColorFilter6035.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setColorFilter6035 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setColorFilter6035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Opacity
@@ -190,16 +213,25 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getOpacity6036;
 		public override int getOpacity()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getOpacity6036.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getOpacity6036 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getOpacity", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getOpacity6036);
 		}
 		internal static global::MonoJavaBridge.MethodId _onLevelChange6037;
 		protected override bool onLevelChange(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._onLevelChange6037.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._onLevelChange6037 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "onLevelChange", "(I)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._onLevelChange6037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onBoundsChange6038;
 		protected override void onBoundsChange(android.graphics.Rect arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._onBoundsChange6038.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._onBoundsChange6038 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._onBoundsChange6038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int IntrinsicWidth
@@ -212,6 +244,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth6039;
 		public override int getIntrinsicWidth()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth6039.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth6039 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getIntrinsicWidth", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth6039);
 		}
 		public new int IntrinsicHeight
@@ -224,17 +259,26 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight6040;
 		public override int getIntrinsicHeight()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getIntrinsicHeight6040.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getIntrinsicHeight6040 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getIntrinsicHeight", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getIntrinsicHeight6040);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPadding6041;
 		public override bool getPadding(android.graphics.Rect arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getPadding6041.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getPadding6041 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
 			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getPadding6041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _mutate6042;
 		public override global::android.graphics.drawable.Drawable mutate()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._mutate6042)) as android.graphics.drawable.Drawable;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._mutate6042.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._mutate6042 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._mutate6042) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
 		{
@@ -246,7 +290,10 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _getConstantState6043;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getConstantState6043)) as android.graphics.drawable.Drawable.ConstantState;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._getConstantState6043.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._getConstantState6043 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getConstantState6043) as android.graphics.drawable.Drawable.ConstantState;
 		}
 		public new int Color
 		{
@@ -258,6 +305,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setColor6044;
 		public virtual void setColor(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setColor6044.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setColor6044 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setColor", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setColor6044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float[] CornerRadii
@@ -270,6 +320,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setCornerRadii6045;
 		public virtual void setCornerRadii(float[] arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setCornerRadii6045.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setCornerRadii6045 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setCornerRadii", "([F)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setCornerRadii6045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float CornerRadius
@@ -282,16 +335,25 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setCornerRadius6046;
 		public virtual void setCornerRadius(float arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setCornerRadius6046.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setCornerRadius6046 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setCornerRadius", "(F)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setCornerRadius6046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStroke6047;
 		public virtual void setStroke(int arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setStroke6047.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setStroke6047 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setStroke", "(II)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setStroke6047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStroke6048;
 		public virtual void setStroke(int arg0, int arg1, float arg2, float arg3)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setStroke6048.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setStroke6048 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setStroke", "(IIFF)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setStroke6048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new int Shape
@@ -304,6 +366,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setShape6049;
 		public virtual void setShape(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setShape6049.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setShape6049 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setShape", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setShape6049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int GradientType
@@ -316,11 +381,17 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setGradientType6050;
 		public virtual void setGradientType(int arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setGradientType6050.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setGradientType6050 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientType", "(I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setGradientType6050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setGradientCenter6051;
 		public virtual void setGradientCenter(float arg0, float arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setGradientCenter6051.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setGradientCenter6051 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientCenter", "(FF)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setGradientCenter6051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new float GradientRadius
@@ -333,6 +404,9 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setGradientRadius6052;
 		public virtual void setGradientRadius(float arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setGradientRadius6052.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setGradientRadius6052 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientRadius", "(F)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setGradientRadius6052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool UseLevel
@@ -345,12 +419,17 @@ namespace android.graphics.drawable
 		internal static global::MonoJavaBridge.MethodId _setUseLevel6053;
 		public virtual void setUseLevel(bool arg0)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._setUseLevel6053.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._setUseLevel6053 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setUseLevel", "(Z)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setUseLevel6053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _GradientDrawable6054;
 		public GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation arg0, int[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._GradientDrawable6054.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._GradientDrawable6054 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._GradientDrawable6054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
@@ -358,6 +437,8 @@ namespace android.graphics.drawable
 		public GradientDrawable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.graphics.drawable.GradientDrawable._GradientDrawable6055.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.GradientDrawable._GradientDrawable6055 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._GradientDrawable6055);
 			Init(@__env, handle);
 		}
@@ -414,33 +495,6 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.GradientDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/GradientDrawable"));
-			global::android.graphics.drawable.GradientDrawable._setSize6029 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setSize", "(II)V");
-			global::android.graphics.drawable.GradientDrawable._inflate6030 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
-			global::android.graphics.drawable.GradientDrawable._draw6031 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.graphics.drawable.GradientDrawable._getChangingConfigurations6032 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getChangingConfigurations", "()I");
-			global::android.graphics.drawable.GradientDrawable._setDither6033 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setDither", "(Z)V");
-			global::android.graphics.drawable.GradientDrawable._setAlpha6034 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setAlpha", "(I)V");
-			global::android.graphics.drawable.GradientDrawable._setColorFilter6035 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
-			global::android.graphics.drawable.GradientDrawable._getOpacity6036 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getOpacity", "()I");
-			global::android.graphics.drawable.GradientDrawable._onLevelChange6037 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "onLevelChange", "(I)Z");
-			global::android.graphics.drawable.GradientDrawable._onBoundsChange6038 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
-			global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth6039 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getIntrinsicWidth", "()I");
-			global::android.graphics.drawable.GradientDrawable._getIntrinsicHeight6040 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getIntrinsicHeight", "()I");
-			global::android.graphics.drawable.GradientDrawable._getPadding6041 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
-			global::android.graphics.drawable.GradientDrawable._mutate6042 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.GradientDrawable._getConstantState6043 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
-			global::android.graphics.drawable.GradientDrawable._setColor6044 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setColor", "(I)V");
-			global::android.graphics.drawable.GradientDrawable._setCornerRadii6045 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setCornerRadii", "([F)V");
-			global::android.graphics.drawable.GradientDrawable._setCornerRadius6046 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setCornerRadius", "(F)V");
-			global::android.graphics.drawable.GradientDrawable._setStroke6047 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setStroke", "(II)V");
-			global::android.graphics.drawable.GradientDrawable._setStroke6048 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setStroke", "(IIFF)V");
-			global::android.graphics.drawable.GradientDrawable._setShape6049 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setShape", "(I)V");
-			global::android.graphics.drawable.GradientDrawable._setGradientType6050 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientType", "(I)V");
-			global::android.graphics.drawable.GradientDrawable._setGradientCenter6051 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientCenter", "(FF)V");
-			global::android.graphics.drawable.GradientDrawable._setGradientRadius6052 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setGradientRadius", "(F)V");
-			global::android.graphics.drawable.GradientDrawable._setUseLevel6053 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "setUseLevel", "(Z)V");
-			global::android.graphics.drawable.GradientDrawable._GradientDrawable6054 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V");
-			global::android.graphics.drawable.GradientDrawable._GradientDrawable6055 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.GradientDrawable.staticClass, "<init>", "()V");
 		}
 		internal static void InitJNI()
 		{

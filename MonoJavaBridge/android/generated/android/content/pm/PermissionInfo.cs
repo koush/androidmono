@@ -10,27 +10,41 @@ namespace android.content.pm
 		internal static global::MonoJavaBridge.MethodId _toString3992;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._toString3992)) as java.lang.String;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._toString3992.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._toString3992 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "toString", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._toString3992) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3993;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._writeToParcel3993.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._writeToParcel3993 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._writeToParcel3993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3994;
 		public virtual int describeContents()
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._describeContents3994.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._describeContents3994 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "describeContents", "()I");
 			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._describeContents3994);
 		}
 		internal static global::MonoJavaBridge.MethodId _loadDescription3995;
 		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._loadDescription3995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._loadDescription3995.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._loadDescription3995 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._loadDescription3995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _PermissionInfo3996;
 		public PermissionInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._PermissionInfo3996.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._PermissionInfo3996 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "<init>", "()V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._PermissionInfo3996);
 			Init(@__env, handle);
 		}
@@ -38,6 +52,8 @@ namespace android.content.pm
 		public PermissionInfo(android.content.pm.PermissionInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (global::android.content.pm.PermissionInfo._PermissionInfo3997.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PermissionInfo._PermissionInfo3997 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "<init>", "(Landroid/content/pm/PermissionInfo;)V");
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._PermissionInfo3997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
@@ -130,12 +146,6 @@ namespace android.content.pm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PermissionInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PermissionInfo"));
-			global::android.content.pm.PermissionInfo._toString3992 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PermissionInfo._writeToParcel3993 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PermissionInfo._describeContents3994 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.PermissionInfo._loadDescription3995 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			global::android.content.pm.PermissionInfo._PermissionInfo3996 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.PermissionInfo._PermissionInfo3997 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "<init>", "(Landroid/content/pm/PermissionInfo;)V");
 			global::android.content.pm.PermissionInfo._group4002 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "group", "Ljava/lang/String;");
 			global::android.content.pm.PermissionInfo._descriptionRes4003 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "descriptionRes", "I");
 			global::android.content.pm.PermissionInfo._nonLocalizedDescription4004 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionInfo.staticClass, "nonLocalizedDescription", "Ljava/lang/CharSequence;");
